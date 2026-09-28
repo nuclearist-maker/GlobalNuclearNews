@@ -1,0 +1,16 @@
+{
+  "canvas": {"width": 1600, "height": 900, "format": "png"},
+  "method": "ImageGen photorealistic/3D base + deterministic HTML/CSS typography and data layer",
+  "images": [
+    {"id":"001-body-01","subject_bbox":[560,110,1530,770],"text_bbox":[64,48,584,706]},
+    {"id":"001-body-02","subject_bbox":[520,95,1540,790],"text_bbox":[64,48,584,706]},
+    {"id":"002-body-01","subject_bbox":[470,80,1540,815],"text_bbox":[64,48,584,706]},
+    {"id":"002-body-02","subject_bbox":[720,120,1510,815],"text_bbox":[64,48,584,706]},
+    {"id":"003-body-01","subject_bbox":[650,90,1420,820],"text_bbox":[64,48,584,706]},
+    {"id":"003-body-02","subject_bbox":[160,120,1460,690],"text_bbox":[54,48,1546,854]},
+    {"id":"004-body-01","subject_bbox":[760,105,1450,810],"text_bbox":[64,48,1542,710]},
+    {"id":"004-body-02","subject_bbox":[115,130,1480,710],"text_bbox":[58,48,1542,854]},
+    {"id":"005-body-01","subject_bbox":[90,155,1510,745],"text_bbox":[54,48,1546,854]},
+    {"id":"005-body-02","subject_bbox":[280,100,1530,750],"text_bbox":[58,48,1542,854]}
+  ]
+}
