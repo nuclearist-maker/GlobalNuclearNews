@@ -4,7 +4,7 @@
 
 ## 게시물 추가 방법
 
-1. `posts/`에 새 HTML 게시물을 추가합니다.
+1. 원자력이론 게시물은 `posts/theory/`, 글로벌 원자력 소식 게시물은 `posts/news/`에 추가합니다. 두 유형의 HTML을 `posts/` 바로 아래에 혼합하지 않습니다.
 2. `assets/app.js`의 `posts` 배열에 제목, 날짜, 게시 영역(`section`), 분야, 요약, 썸네일 경로·대체텍스트, URL과 검색어를 등록합니다. 뉴스는 `section: "news"`, 이론·기초개념 설명 게시물은 `section: "theory"`로 지정합니다.
 3. 변경사항을 `main` 브랜치에 반영하면 GitHub Pages가 자동 배포합니다.
 
