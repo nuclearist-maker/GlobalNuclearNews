@@ -8,6 +8,10 @@ from pathlib import Path
 
 
 def digest(path: Path) -> str:
+    text_extensions = {".html", ".css", ".js", ".json", ".md", ".py", ".yml", ".yaml"}
+    if path.suffix.lower() in text_extensions:
+        data = path.read_bytes().replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+        return hashlib.sha256(data).hexdigest()
     value = hashlib.sha256()
     with path.open("rb") as stream:
         for chunk in iter(lambda: stream.read(1024 * 1024), b""):
