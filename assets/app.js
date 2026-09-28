@@ -1,7 +1,4 @@
-const posts=[
-  {title:"질량결손과 결합에너지",date:"2026-09-27",displayDate:"2026.09.27",section:"theory",category:"핵물리 기초",summary:"원자핵이 결합할 때 줄어든 질량이 핵분열과 핵융합의 에너지로 전환되는 원리를 설명합니다.",thumbnail:"assets/images/theory/mass-defect/binding-energy-curve.png",thumbnailAlt:"핵자당 결합에너지 곡선과 핵분열 및 핵융합의 방향",url:"posts/001-mass-defect.html?v=20260927-1",keywords:"질량결손 결합에너지 핵분열 핵융합 E=mc2 헬륨 핵물리"},
-  {title:"폴란드 AP1000 3기, EPC 주요조건 합의",date:"2026-09-23",displayDate:"2026.09.23",section:"news",category:"대형원전",summary:"최종 EPC 계약에 앞서 합의된 주요 조건의 의미와 아직 확정되지 않은 위험분담을 살펴봅니다.",thumbnail:"assets/images/thumb-poland-ap1000-epc.png",thumbnailAlt:"폴란드 AP1000 3기 건설계획과 EPC 계약을 표현한 이미지",url:"posts/2026-09-23-poland-ap1000-epc.html?v=20260927-3",keywords:"폴란드 PEJ 웨스팅하우스 벡텔 계약 공급망"}
-];
+const posts=[{title:"폴란드 AP1000 3기, EPC 주요조건 합의",date:"2026-09-23",displayDate:"2026.09.23",section:"news",category:"대형원전",summary:"최종 EPC 계약에 앞서 합의된 주요 조건의 의미와 아직 확정되지 않은 위험분담을 살펴봅니다.",thumbnail:"assets/images/thumb-poland-ap1000-epc.png",thumbnailAlt:"폴란드 AP1000 3기 건설계획과 EPC 계약을 표현한 이미지",url:"posts/2026-09-23-poland-ap1000-epc.html?v=20260927-3",keywords:"폴란드 PEJ 웨스팅하우스 벡텔 계약 공급망"}];
 const view=document.body.dataset.section||"news";
 const list=document.querySelector("#post-list"),empty=document.querySelector("#empty-state"),search=document.querySelector("#search"),buttons=[...document.querySelectorAll("[data-filter]")];let active="전체";
 document.querySelectorAll("[data-view-link]").forEach(link=>link.classList.toggle("active",link.dataset.viewLink===view));
