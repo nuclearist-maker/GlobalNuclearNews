@@ -1,0 +1,40 @@
+{
+  "range": [
+    1,
+    5
+  ],
+  "compare_range": [
+    1,
+    5
+  ],
+  "status": "PASS",
+  "finding_count": 0,
+  "posts": {
+    "001": {
+      "visible_chars": 1334,
+      "non_honorific": 0,
+      "findings": []
+    },
+    "002": {
+      "visible_chars": 1439,
+      "non_honorific": 0,
+      "findings": []
+    },
+    "003": {
+      "visible_chars": 1406,
+      "non_honorific": 0,
+      "findings": []
+    },
+    "004": {
+      "visible_chars": 1322,
+      "non_honorific": 0,
+      "findings": []
+    },
+    "005": {
+      "visible_chars": 1413,
+      "non_honorific": 0,
+      "findings": []
+    }
+  },
+  "findings": []
+}

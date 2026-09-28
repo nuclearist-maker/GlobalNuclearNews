@@ -1,0 +1,29 @@
+{
+  "article": "002",
+  "title": "원자와 원자핵의 크기",
+  "images": [
+    {
+      "role": "thumbnail",
+      "learning_claim": "주제의 전체 범위를 한 장면에서 식별",
+      "visual_grammar": "중심 투시 확대",
+      "composition_signature": "중심 투시 확대"
+    },
+    {
+      "role": "body-01",
+      "learning_claim": "핵심 원리의 정량·구조 관계",
+      "visual_grammar": "로그 깊이 여정",
+      "composition_signature": "로그 깊이 여정"
+    },
+    {
+      "role": "body-02",
+      "learning_claim": "구체적 예시 또는 적용에서의 변화",
+      "visual_grammar": "경기장 공간 비유",
+      "composition_signature": "경기장 공간 비유"
+    }
+  ],
+  "forbidden_reuse": [
+    "좌우 고정 분할",
+    "동일 반투명 카드열",
+    "상단 제목+하단 공식판 반복"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "article": "004",
+  "images": [
+    {
+      "html": "004-body-01.html",
+      "png": "004-body-01.png",
+      "required_tokens": [
+        "<sub>6</sub>",
+        "<sup>14</sup>",
+        "class=\"nuclide\""
+      ]
+    },
+    {
+      "html": "004-body-02.html",
+      "png": "004-body-02.png",
+      "required_tokens": [
+        "<sub>6</sub>",
+        "<sub>7</sub>",
+        "<sub>e</sub>",
+        "<sup>14</sup>",
+        "<sup>−</sup>",
+        "class=\"nuclide\""
+      ]
+    }
+  ]
+}

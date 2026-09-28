@@ -1,0 +1,23 @@
+{
+  "article": "002",
+  "images": [
+    {
+      "html": "002-body-01.html",
+      "png": "002-body-01.png",
+      "required_tokens": [
+        "<sup>−10</sup>",
+        "<sup>−15</sup>",
+        "<sup>−3</sup>",
+        "<sup>−5</sup>",
+        "<sup>−9</sup>"
+      ]
+    },
+    {
+      "html": "002-body-02.html",
+      "png": "002-body-02.png",
+      "required_tokens": [
+        "<sup>5</sup>"
+      ]
+    }
+  ]
+}

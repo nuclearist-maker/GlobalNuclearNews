@@ -9,7 +9,7 @@
     {
       "post": "001",
       "title": "원자력공학의 범위",
-      "body_characters": 1438,
+      "body_characters": 1466,
       "sections": 7,
       "example_signals": 10,
       "images": 3
@@ -17,7 +17,7 @@
     {
       "post": "002",
       "title": "원자와 원자핵의 크기",
-      "body_characters": 1501,
+      "body_characters": 1544,
       "sections": 7,
       "example_signals": 17,
       "images": 3
@@ -25,7 +25,7 @@
     {
       "post": "003",
       "title": "양성자·중성자·전자의 역할",
-      "body_characters": 1469,
+      "body_characters": 1503,
       "sections": 10,
       "example_signals": 12,
       "images": 3
@@ -33,7 +33,7 @@
     {
       "post": "004",
       "title": "원자번호와 질량수",
-      "body_characters": 1433,
+      "body_characters": 1469,
       "sections": 10,
       "example_signals": 4,
       "images": 3
@@ -41,7 +41,7 @@
     {
       "post": "005",
       "title": "동위원소의 의미",
-      "body_characters": 1485,
+      "body_characters": 1517,
       "sections": 11,
       "example_signals": 19,
       "images": 3

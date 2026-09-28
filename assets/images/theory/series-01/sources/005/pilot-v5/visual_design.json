@@ -1,0 +1,29 @@
+{
+  "article": "005",
+  "title": "동위원소의 의미",
+  "images": [
+    {
+      "role": "thumbnail",
+      "learning_claim": "주제의 전체 범위를 한 장면에서 식별",
+      "visual_grammar": "삼각형 동위원소군",
+      "composition_signature": "삼각형 동위원소군"
+    },
+    {
+      "role": "body-01",
+      "learning_claim": "핵심 원리의 정량·구조 관계",
+      "visual_grammar": "중성자축 원근 배열",
+      "composition_signature": "중성자축 원근 배열"
+    },
+    {
+      "role": "body-02",
+      "learning_claim": "구체적 예시 또는 적용에서의 변화",
+      "visual_grammar": "실험실 서사 파노라마",
+      "composition_signature": "실험실 서사 파노라마"
+    }
+  ],
+  "forbidden_reuse": [
+    "좌우 고정 분할",
+    "동일 반투명 카드열",
+    "상단 제목+하단 공식판 반복"
+  ]
+}

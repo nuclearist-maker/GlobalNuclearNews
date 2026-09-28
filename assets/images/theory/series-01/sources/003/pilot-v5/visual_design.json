@@ -1,0 +1,29 @@
+{
+  "article": "003",
+  "title": "양성자·중성자·전자의 역할",
+  "images": [
+    {
+      "role": "thumbnail",
+      "learning_claim": "주제의 전체 범위를 한 장면에서 식별",
+      "visual_grammar": "비대칭 확률구름",
+      "composition_signature": "비대칭 확률구름"
+    },
+    {
+      "role": "body-01",
+      "learning_claim": "핵심 원리의 정량·구조 관계",
+      "visual_grammar": "곡선형 전시 공간",
+      "composition_signature": "곡선형 전시 공간"
+    },
+    {
+      "role": "body-02",
+      "learning_claim": "구체적 예시 또는 적용에서의 변화",
+      "visual_grammar": "연속 반응 궤적",
+      "composition_signature": "연속 반응 궤적"
+    }
+  ],
+  "forbidden_reuse": [
+    "좌우 고정 분할",
+    "동일 반투명 카드열",
+    "상단 제목+하단 공식판 반복"
+  ]
+}

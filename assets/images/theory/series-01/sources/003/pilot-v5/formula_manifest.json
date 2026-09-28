@@ -1,0 +1,20 @@
+{
+  "article": "003",
+  "images": [
+    {
+      "html": "003-body-01.html",
+      "png": "003-body-01.png",
+      "required_tokens": [
+        "<sup>−</sup>"
+      ]
+    },
+    {
+      "html": "003-body-02.html",
+      "png": "003-body-02.png",
+      "required_tokens": [
+        "<sub>e</sub>",
+        "<sup>−</sup>"
+      ]
+    }
+  ]
+}

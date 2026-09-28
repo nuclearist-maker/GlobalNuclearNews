@@ -1,0 +1,31 @@
+{
+  "article_meta": {
+    "id": "001",
+    "title": "원자력공학의 범위"
+  },
+  "thumbnail": {
+    "filename": "001-thumbnail.png",
+    "aspect_ratio": "16:9"
+  },
+  "body_images": [
+    {
+      "filename": "001-body-01.png",
+      "aspect_ratio": "16:9",
+      "composition_signature": "대각선 에너지 경로"
+    },
+    {
+      "filename": "001-body-02.png",
+      "aspect_ratio": "16:9",
+      "composition_signature": "동심 장벽 단면"
+    }
+  ],
+  "quality_check": {
+    "article_relevance": true,
+    "three_second_recognition": true,
+    "technical_accuracy": true,
+    "no_fake_text": true,
+    "no_overlap": true,
+    "mobile_readability": true,
+    "composition_diversity": true
+  }
+}
