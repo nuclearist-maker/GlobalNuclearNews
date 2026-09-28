@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="글로벌 원자력 뉴스와 심층 분석을 제공하는 한국어 게시판">
+  <title>GlobalNuclearNews</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="index.html" aria-label="GlobalNuclearNews 홈">
+      <span class="brand-mark" aria-hidden="true">GN</span>
+      <span><strong>GlobalNuclearNews</strong><small>GLOBAL NUCLEAR INTELLIGENCE</small></span>
+    </a>
+    <nav aria-label="주요 메뉴">
+      <a class="active" href="index.html">게시판</a>
+      <a href="#about">소개</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">NUCLEAR NEWS BOARD</p>
+      <h1 id="page-title">세계 원자력 산업의 변화를<br>근거와 맥락으로 읽습니다.</h1>
+      <p>정책, 인허가, 기술, 공급망의 핵심 변화를 비전공자도 이해할 수 있도록 설명합니다.</p>
+      <dl class="stats" aria-label="게시판 현황">
+        <div><dt id="post-count">1</dt><dd>게시물</dd></div>
+        <div><dt>공개</dt><dd>운영 상태</dd></div>
+        <div><dt>근거 기반</dt><dd>편집 원칙</dd></div>
+      </dl>
+    </section>
+
+    <section class="board" aria-labelledby="board-title">
+      <div class="board-heading">
+        <div><p class="eyebrow">LATEST ANALYSIS</p><h2 id="board-title">최신 게시물</h2></div>
+        <label class="search"><span class="sr-only">게시물 검색</span><input id="search" type="search" placeholder="제목과 내용 검색" autocomplete="off"></label>
+      </div>
+      <div class="filters" role="group" aria-label="분야 필터">
+        <button class="selected" type="button" data-filter="전체">전체</button>
+        <button type="button" data-filter="대형원전">대형원전</button>
+        <button type="button" data-filter="SMR">SMR</button>
+        <button type="button" data-filter="연료주기">연료주기</button>
+        <button type="button" data-filter="정책·규제">정책·규제</button>
+      </div>
+      <div id="post-list" class="post-list" aria-live="polite"></div>
+      <p id="empty-state" class="empty" hidden>조건에 맞는 게시물이 없습니다.</p>
+    </section>
+
+    <section id="about" class="about">
+      <p class="eyebrow">EDITORIAL STANDARD</p>
+      <h2>뉴스를 넘어 판단에 필요한 배경까지</h2>
+      <p>공식 발표와 원자료를 우선 확인하고, 사실과 분석을 구분합니다. 계약, 인허가, 투자결정처럼 단계가 다른 사건을 과장하지 않으며, 전문용어에는 짧은 설명을 덧붙입니다.</p>
+    </section>
+  </main>
+
+  <footer><span>© 2026 GlobalNuclearNews</span><span>Independent nuclear industry briefing</span></footer>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
