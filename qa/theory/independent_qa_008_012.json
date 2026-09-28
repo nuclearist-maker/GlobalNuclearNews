@@ -1,0 +1,51 @@
+{
+  "range": [
+    8,
+    12
+  ],
+  "status": "PASS",
+  "release_blocked": false,
+  "summary": [
+    {
+      "post": "008",
+      "title": "원자수밀도",
+      "body_characters": 1482,
+      "sections": 12,
+      "example_signals": 9,
+      "images": 3
+    },
+    {
+      "post": "009",
+      "title": "원자핵 반지름",
+      "body_characters": 1467,
+      "sections": 12,
+      "example_signals": 14,
+      "images": 3
+    },
+    {
+      "post": "010",
+      "title": "핵종도 읽는 법",
+      "body_characters": 1430,
+      "sections": 12,
+      "example_signals": 5,
+      "images": 3
+    },
+    {
+      "post": "011",
+      "title": "안정핵과 불안정핵",
+      "body_characters": 1481,
+      "sections": 12,
+      "example_signals": 5,
+      "images": 3
+    },
+    {
+      "post": "012",
+      "title": "핵력의 성질",
+      "body_characters": 1441,
+      "sections": 12,
+      "example_signals": 7,
+      "images": 3
+    }
+  ],
+  "findings": []
+}

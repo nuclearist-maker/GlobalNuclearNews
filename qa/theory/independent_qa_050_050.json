@@ -1,0 +1,19 @@
+{
+  "range": [
+    50,
+    50
+  ],
+  "status": "PASS",
+  "release_blocked": false,
+  "summary": [
+    {
+      "post": "050",
+      "title": "반감기",
+      "body_characters": 1444,
+      "sections": 7,
+      "example_signals": 15,
+      "images": 3
+    }
+  ],
+  "findings": []
+}

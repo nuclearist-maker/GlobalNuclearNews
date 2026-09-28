@@ -1,0 +1,81 @@
+{
+  "post_id": "010",
+  "version": "hybrid-v4",
+  "reason": "visual_audit_001_017 FAIL correction",
+  "assets": [
+    {
+      "key": "010-thumbnail",
+      "final": "assets/images/theory/series-01/hybrid-v4/010-thumbnail.png",
+      "critical_subject_bbox": [
+        0,
+        0,
+        1600,
+        900
+      ],
+      "critical_path_bbox": [
+        0,
+        0,
+        1600,
+        900
+      ],
+      "integrated_overlay_bbox": null,
+      "no_intrusion_bbox": null
+    },
+    {
+      "key": "010-body-01",
+      "final": "assets/images/theory/series-01/hybrid-v4/010-body-01.png",
+      "critical_subject_bbox": [
+        0,
+        0,
+        1600,
+        900
+      ],
+      "critical_path_bbox": [
+        0,
+        0,
+        1600,
+        900
+      ],
+      "integrated_overlay_bbox": [
+        825,
+        55,
+        1545,
+        845
+      ],
+      "no_intrusion_bbox": [
+        0,
+        0,
+        780,
+        900
+      ]
+    },
+    {
+      "key": "010-body-02",
+      "final": "assets/images/theory/series-01/hybrid-v4/010-body-02.png",
+      "critical_subject_bbox": [
+        0,
+        0,
+        1600,
+        900
+      ],
+      "critical_path_bbox": [
+        0,
+        0,
+        1600,
+        900
+      ],
+      "integrated_overlay_bbox": [
+        825,
+        55,
+        1545,
+        845
+      ],
+      "no_intrusion_bbox": [
+        0,
+        0,
+        780,
+        900
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "range": [
+    6,
+    7
+  ],
+  "status": "PASS",
+  "release_blocked": false,
+  "summary": [
+    {
+      "post": "006",
+      "title": "원자질량단위 u",
+      "body_characters": 1465,
+      "sections": 11,
+      "example_signals": 5,
+      "images": 3
+    },
+    {
+      "post": "007",
+      "title": "아보가드로수와 원자 개수",
+      "body_characters": 1459,
+      "sections": 11,
+      "example_signals": 13,
+      "images": 3
+    }
+  ],
+  "findings": []
+}

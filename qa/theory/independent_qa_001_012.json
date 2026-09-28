@@ -1,0 +1,107 @@
+{
+  "range": [
+    1,
+    12
+  ],
+  "status": "PASS",
+  "release_blocked": false,
+  "summary": [
+    {
+      "post": "001",
+      "title": "원자력공학의 범위",
+      "body_characters": 1438,
+      "sections": 7,
+      "example_signals": 10,
+      "images": 3
+    },
+    {
+      "post": "002",
+      "title": "원자와 원자핵의 크기",
+      "body_characters": 1501,
+      "sections": 7,
+      "example_signals": 17,
+      "images": 3
+    },
+    {
+      "post": "003",
+      "title": "양성자·중성자·전자의 역할",
+      "body_characters": 1469,
+      "sections": 10,
+      "example_signals": 12,
+      "images": 3
+    },
+    {
+      "post": "004",
+      "title": "원자번호와 질량수",
+      "body_characters": 1433,
+      "sections": 10,
+      "example_signals": 4,
+      "images": 3
+    },
+    {
+      "post": "005",
+      "title": "동위원소의 의미",
+      "body_characters": 1485,
+      "sections": 11,
+      "example_signals": 19,
+      "images": 3
+    },
+    {
+      "post": "006",
+      "title": "원자질량단위 u",
+      "body_characters": 1465,
+      "sections": 11,
+      "example_signals": 5,
+      "images": 3
+    },
+    {
+      "post": "007",
+      "title": "아보가드로수와 원자 개수",
+      "body_characters": 1459,
+      "sections": 11,
+      "example_signals": 13,
+      "images": 3
+    },
+    {
+      "post": "008",
+      "title": "원자수밀도",
+      "body_characters": 1482,
+      "sections": 12,
+      "example_signals": 9,
+      "images": 3
+    },
+    {
+      "post": "009",
+      "title": "원자핵 반지름",
+      "body_characters": 1467,
+      "sections": 12,
+      "example_signals": 14,
+      "images": 3
+    },
+    {
+      "post": "010",
+      "title": "핵종도 읽는 법",
+      "body_characters": 1416,
+      "sections": 12,
+      "example_signals": 4,
+      "images": 3
+    },
+    {
+      "post": "011",
+      "title": "안정핵과 불안정핵",
+      "body_characters": 1481,
+      "sections": 12,
+      "example_signals": 5,
+      "images": 3
+    },
+    {
+      "post": "012",
+      "title": "핵력의 성질",
+      "body_characters": 1445,
+      "sections": 12,
+      "example_signals": 8,
+      "images": 3
+    }
+  ],
+  "findings": []
+}

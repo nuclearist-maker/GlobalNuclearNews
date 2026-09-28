@@ -1,0 +1,59 @@
+{
+  "range": [
+    45,
+    50
+  ],
+  "status": "PASS",
+  "release_blocked": false,
+  "summary": [
+    {
+      "post": "045",
+      "title": "전자포획",
+      "body_characters": 1463,
+      "sections": 7,
+      "example_signals": 4,
+      "images": 3
+    },
+    {
+      "post": "046",
+      "title": "감마붕괴",
+      "body_characters": 1484,
+      "sections": 7,
+      "example_signals": 8,
+      "images": 3
+    },
+    {
+      "post": "047",
+      "title": "내부전환",
+      "body_characters": 1458,
+      "sections": 7,
+      "example_signals": 10,
+      "images": 3
+    },
+    {
+      "post": "048",
+      "title": "붕괴상수",
+      "body_characters": 1506,
+      "sections": 7,
+      "example_signals": 12,
+      "images": 3
+    },
+    {
+      "post": "049",
+      "title": "지수붕괴법칙",
+      "body_characters": 1499,
+      "sections": 7,
+      "example_signals": 15,
+      "images": 3
+    },
+    {
+      "post": "050",
+      "title": "반감기",
+      "body_characters": 1444,
+      "sections": 7,
+      "example_signals": 15,
+      "images": 3
+    }
+  ],
+  "findings": []
+}

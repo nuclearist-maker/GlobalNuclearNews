@@ -1,0 +1,14 @@
+{
+  "version": "hybrid-v3",
+  "size": [1600, 900],
+  "rules": {"independent_bases": true, "deterministic_text": true, "no_crop_reuse": true},
+  "posts": {
+    "001": {"thumbnail": "001-thumbnail.png", "body": ["001-body-01.png", "001-body-02.png"]},
+    "002": {"thumbnail": "002-thumbnail.png", "body": ["002-body-01.png", "002-body-02.png"]},
+    "003": {"thumbnail": "003-thumbnail.png", "body": ["003-body-01.png", "003-body-02.png"], "functions": ["입자 역할 비교", "탄소 적용"]},
+    "004": {"thumbnail": "004-thumbnail.png", "body": ["004-body-01.png", "004-body-02.png"], "functions": ["핵종 구성 비교", "반응 장부"]},
+    "005": {"thumbnail": "005-thumbnail.png", "body": ["005-body-01.png", "005-body-02.png"], "functions": ["수소 동위원소", "추적자 적용"]},
+    "006": {"thumbnail": "006-thumbnail.png", "body": ["006-body-01.png", "006-body-02.png"], "functions": ["탄소-12 기준", "질량 단위 연결"]},
+    "007": {"thumbnail": "007-thumbnail.png", "body": ["007-body-01.png", "007-body-02.png"], "functions": ["몰-입자 연결", "연료펠릿 계산"]}
+  }
+}

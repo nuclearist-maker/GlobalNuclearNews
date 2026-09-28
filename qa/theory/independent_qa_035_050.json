@@ -1,0 +1,139 @@
+{
+  "range": [
+    35,
+    50
+  ],
+  "status": "PASS",
+  "release_blocked": false,
+  "summary": [
+    {
+      "post": "035",
+      "title": "핵분열 에너지",
+      "body_characters": 1502,
+      "sections": 7,
+      "example_signals": 17,
+      "images": 3
+    },
+    {
+      "post": "036",
+      "title": "핵분열생성물 수율",
+      "body_characters": 1485,
+      "sections": 7,
+      "example_signals": 10,
+      "images": 3
+    },
+    {
+      "post": "037",
+      "title": "즉발중성자와 지발중성자",
+      "body_characters": 1543,
+      "sections": 7,
+      "example_signals": 6,
+      "images": 3
+    },
+    {
+      "post": "038",
+      "title": "핵융합",
+      "body_characters": 1509,
+      "sections": 7,
+      "example_signals": 18,
+      "images": 3
+    },
+    {
+      "post": "039",
+      "title": "쿨롱장벽과 터널링",
+      "body_characters": 1496,
+      "sections": 7,
+      "example_signals": 4,
+      "images": 3
+    },
+    {
+      "post": "040",
+      "title": "별의 핵합성",
+      "body_characters": 1490,
+      "sections": 7,
+      "example_signals": 4,
+      "images": 3
+    },
+    {
+      "post": "041",
+      "title": "방사능의 발견",
+      "body_characters": 1469,
+      "sections": 7,
+      "example_signals": 8,
+      "images": 3
+    },
+    {
+      "post": "042",
+      "title": "알파붕괴",
+      "body_characters": 1476,
+      "sections": 7,
+      "example_signals": 12,
+      "images": 3
+    },
+    {
+      "post": "043",
+      "title": "베타 마이너스 붕괴",
+      "body_characters": 1445,
+      "sections": 7,
+      "example_signals": 4,
+      "images": 3
+    },
+    {
+      "post": "044",
+      "title": "베타 플러스 붕괴",
+      "body_characters": 1469,
+      "sections": 7,
+      "example_signals": 9,
+      "images": 3
+    },
+    {
+      "post": "045",
+      "title": "전자포획",
+      "body_characters": 1463,
+      "sections": 7,
+      "example_signals": 4,
+      "images": 3
+    },
+    {
+      "post": "046",
+      "title": "감마붕괴",
+      "body_characters": 1484,
+      "sections": 7,
+      "example_signals": 8,
+      "images": 3
+    },
+    {
+      "post": "047",
+      "title": "내부전환",
+      "body_characters": 1458,
+      "sections": 7,
+      "example_signals": 10,
+      "images": 3
+    },
+    {
+      "post": "048",
+      "title": "붕괴상수",
+      "body_characters": 1506,
+      "sections": 7,
+      "example_signals": 12,
+      "images": 3
+    },
+    {
+      "post": "049",
+      "title": "지수붕괴법칙",
+      "body_characters": 1499,
+      "sections": 7,
+      "example_signals": 15,
+      "images": 3
+    },
+    {
+      "post": "050",
+      "title": "반감기",
+      "body_characters": 1444,
+      "sections": 7,
+      "example_signals": 15,
+      "images": 3
+    }
+  ],
+  "findings": []
+}

@@ -1,23 +1,75 @@
 {
   "post": "017",
   "title": "스핀과 각운동량",
-  "base": "exec-3d336fe1-621a-40a8-9fcd-3f0b8d740d51.png",
-  "thumbnail": {
-    "role": "목록 식별",
-    "text": "없음"
-  },
-  "body_01": {
-    "role": "정의와 관계식",
-    "anchor": "기본 원리 뒤"
-  },
-  "body_02": {
-    "role": "계산 예시와 활용",
-    "anchor": "관계식과 계산 예시 뒤"
-  },
-  "qa": [
-    "1600x900",
-    "결정론적 한글 레이어",
-    "본문 중복 최소화",
-    "원본 장면 보존"
+  "assets": [
+    {
+      "role": "thumbnail",
+      "path": "../../017-thumbnail.png",
+      "critical_subject_bbox": [
+        260,
+        100,
+        1360,
+        820
+      ],
+      "critical_path_bbox": [
+        280,
+        130,
+        1320,
+        780
+      ],
+      "integrated_overlay_bbox": [],
+      "no_intrusion_bbox": [
+        220,
+        80,
+        1400,
+        840
+      ]
+    },
+    {
+      "role": "principle",
+      "path": "../../hybrid-v2/017-body-01.png",
+      "critical_subject_bbox": [
+        180,
+        100,
+        1450,
+        820
+      ],
+      "critical_path_bbox": [
+        220,
+        140,
+        1400,
+        780
+      ],
+      "integrated_overlay_bbox": [],
+      "no_intrusion_bbox": [
+        150,
+        70,
+        1480,
+        840
+      ]
+    },
+    {
+      "role": "example",
+      "path": "../../hybrid-v2/017-body-02.png",
+      "critical_subject_bbox": [
+        180,
+        100,
+        1450,
+        820
+      ],
+      "critical_path_bbox": [
+        220,
+        140,
+        1400,
+        780
+      ],
+      "integrated_overlay_bbox": [],
+      "no_intrusion_bbox": [
+        150,
+        70,
+        1480,
+        840
+      ]
+    }
   ]
 }

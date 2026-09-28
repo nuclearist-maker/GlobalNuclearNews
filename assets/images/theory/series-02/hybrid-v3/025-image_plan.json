@@ -1,0 +1,33 @@
+{
+  "post": "025",
+  "version": "hybrid-v3",
+  "roles": {
+    "thumbnail": "목록 식별",
+    "body-01": "원리·상태 변화",
+    "body-02": "계산·적용"
+  },
+  "critical_subject_bbox": [
+    700,
+    80,
+    1530,
+    840
+  ],
+  "critical_path_bbox": [
+    720,
+    130,
+    1490,
+    800
+  ],
+  "integrated_overlay_bbox": [
+    60,
+    60,
+    1540,
+    840
+  ],
+  "no_intrusion_bbox": [
+    690,
+    70,
+    1540,
+    850
+  ]
+}

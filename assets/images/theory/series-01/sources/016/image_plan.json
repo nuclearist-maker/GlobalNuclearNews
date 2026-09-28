@@ -1,23 +1,75 @@
 {
   "post": "016",
   "title": "마법수",
-  "base": "exec-fe8d6081-ff54-4a9e-9a75-53e794051ffc.png",
-  "thumbnail": {
-    "role": "목록 식별",
-    "text": "없음"
-  },
-  "body_01": {
-    "role": "정의와 관계식",
-    "anchor": "기본 원리 뒤"
-  },
-  "body_02": {
-    "role": "계산 예시와 활용",
-    "anchor": "관계식과 계산 예시 뒤"
-  },
-  "qa": [
-    "1600x900",
-    "결정론적 한글 레이어",
-    "본문 중복 최소화",
-    "원본 장면 보존"
+  "assets": [
+    {
+      "role": "thumbnail",
+      "path": "../../016-thumbnail.png",
+      "critical_subject_bbox": [
+        260,
+        100,
+        1360,
+        820
+      ],
+      "critical_path_bbox": [
+        280,
+        130,
+        1320,
+        780
+      ],
+      "integrated_overlay_bbox": [],
+      "no_intrusion_bbox": [
+        220,
+        80,
+        1400,
+        840
+      ]
+    },
+    {
+      "role": "principle",
+      "path": "../../hybrid-v2/016-body-01.png",
+      "critical_subject_bbox": [
+        180,
+        100,
+        1450,
+        820
+      ],
+      "critical_path_bbox": [
+        220,
+        140,
+        1400,
+        780
+      ],
+      "integrated_overlay_bbox": [],
+      "no_intrusion_bbox": [
+        150,
+        70,
+        1480,
+        840
+      ]
+    },
+    {
+      "role": "example",
+      "path": "../../hybrid-v2/016-body-02.png",
+      "critical_subject_bbox": [
+        180,
+        100,
+        1450,
+        820
+      ],
+      "critical_path_bbox": [
+        220,
+        140,
+        1400,
+        780
+      ],
+      "integrated_overlay_bbox": [],
+      "no_intrusion_bbox": [
+        150,
+        70,
+        1480,
+        840
+      ]
+    }
   ]
 }

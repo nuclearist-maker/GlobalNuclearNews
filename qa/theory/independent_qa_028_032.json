@@ -1,0 +1,51 @@
+{
+  "range": [
+    28,
+    32
+  ],
+  "status": "PASS",
+  "release_blocked": false,
+  "summary": [
+    {
+      "post": "028",
+      "title": "운동량 보존과 반동",
+      "body_characters": 1459,
+      "sections": 6,
+      "example_signals": 6,
+      "images": 3
+    },
+    {
+      "post": "029",
+      "title": "복합핵 모형",
+      "body_characters": 1445,
+      "sections": 6,
+      "example_signals": 6,
+      "images": 3
+    },
+    {
+      "post": "030",
+      "title": "탄성산란",
+      "body_characters": 1487,
+      "sections": 6,
+      "example_signals": 7,
+      "images": 3
+    },
+    {
+      "post": "031",
+      "title": "비탄성산란",
+      "body_characters": 1465,
+      "sections": 6,
+      "example_signals": 9,
+      "images": 3
+    },
+    {
+      "post": "032",
+      "title": "중성자 포획",
+      "body_characters": 1482,
+      "sections": 6,
+      "example_signals": 5,
+      "images": 3
+    }
+  ],
+  "findings": []
+}

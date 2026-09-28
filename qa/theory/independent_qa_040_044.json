@@ -1,0 +1,51 @@
+{
+  "range": [
+    40,
+    44
+  ],
+  "status": "PASS",
+  "release_blocked": false,
+  "summary": [
+    {
+      "post": "040",
+      "title": "별의 핵합성",
+      "body_characters": 1490,
+      "sections": 7,
+      "example_signals": 4,
+      "images": 3
+    },
+    {
+      "post": "041",
+      "title": "방사능의 발견",
+      "body_characters": 1469,
+      "sections": 7,
+      "example_signals": 8,
+      "images": 3
+    },
+    {
+      "post": "042",
+      "title": "알파붕괴",
+      "body_characters": 1476,
+      "sections": 7,
+      "example_signals": 12,
+      "images": 3
+    },
+    {
+      "post": "043",
+      "title": "베타 마이너스 붕괴",
+      "body_characters": 1445,
+      "sections": 7,
+      "example_signals": 4,
+      "images": 3
+    },
+    {
+      "post": "044",
+      "title": "베타 플러스 붕괴",
+      "body_characters": 1469,
+      "sections": 7,
+      "example_signals": 9,
+      "images": 3
+    }
+  ],
+  "findings": []
+}

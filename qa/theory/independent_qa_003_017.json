@@ -1,0 +1,660 @@
+{
+  "range": [
+    3,
+    17
+  ],
+  "status": "FAIL",
+  "release_blocked": true,
+  "summary": [
+    {
+      "post": "003",
+      "title": "양성자·중성자·전자의 역할",
+      "body_characters": 532,
+      "sections": 4,
+      "example_signals": 6,
+      "images": 3
+    },
+    {
+      "post": "004",
+      "title": "원자번호와 질량수",
+      "body_characters": 504,
+      "sections": 4,
+      "example_signals": 0,
+      "images": 3
+    },
+    {
+      "post": "005",
+      "title": "동위원소의 의미",
+      "body_characters": 576,
+      "sections": 4,
+      "example_signals": 9,
+      "images": 3
+    },
+    {
+      "post": "006",
+      "title": "원자질량단위 u",
+      "body_characters": 495,
+      "sections": 4,
+      "example_signals": 3,
+      "images": 3
+    },
+    {
+      "post": "007",
+      "title": "아보가드로수와 원자 개수",
+      "body_characters": 489,
+      "sections": 4,
+      "example_signals": 3,
+      "images": 3
+    },
+    {
+      "post": "008",
+      "title": "원자수밀도",
+      "body_characters": 478,
+      "sections": 4,
+      "example_signals": 3,
+      "images": 3
+    },
+    {
+      "post": "009",
+      "title": "원자핵 반지름",
+      "body_characters": 472,
+      "sections": 4,
+      "example_signals": 4,
+      "images": 3
+    },
+    {
+      "post": "010",
+      "title": "핵종도 읽는 법",
+      "body_characters": 468,
+      "sections": 4,
+      "example_signals": 2,
+      "images": 3
+    },
+    {
+      "post": "011",
+      "title": "안정핵과 불안정핵",
+      "body_characters": 467,
+      "sections": 4,
+      "example_signals": 2,
+      "images": 3
+    },
+    {
+      "post": "012",
+      "title": "핵력의 성질",
+      "body_characters": 466,
+      "sections": 4,
+      "example_signals": 4,
+      "images": 3
+    },
+    {
+      "post": "013",
+      "title": "쿨롱힘과 핵력의 경쟁",
+      "body_characters": 466,
+      "sections": 4,
+      "example_signals": 2,
+      "images": 3
+    },
+    {
+      "post": "014",
+      "title": "액적모형",
+      "body_characters": 469,
+      "sections": 4,
+      "example_signals": 2,
+      "images": 3
+    },
+    {
+      "post": "015",
+      "title": "껍질모형",
+      "body_characters": 460,
+      "sections": 4,
+      "example_signals": 2,
+      "images": 3
+    },
+    {
+      "post": "016",
+      "title": "마법수",
+      "body_characters": 475,
+      "sections": 4,
+      "example_signals": 2,
+      "images": 3
+    },
+    {
+      "post": "017",
+      "title": "스핀과 각운동량",
+      "body_characters": 468,
+      "sections": 4,
+      "example_signals": 2,
+      "images": 3
+    }
+  ],
+  "findings": [
+    {
+      "post": "003",
+      "severity": "FAIL",
+      "code": "BODY_TOO_SHORT",
+      "detail": "본문 유효문자 532자"
+    },
+    {
+      "post": "003",
+      "severity": "FAIL",
+      "code": "LEARNING_FLOW",
+      "detail": "본문 절 4개"
+    },
+    {
+      "post": "003",
+      "severity": "FAIL",
+      "code": "SOURCE_TRACEABILITY",
+      "detail": "클릭 가능한 주제별 참고자료 없음"
+    },
+    {
+      "post": "003",
+      "severity": "FAIL",
+      "code": "IMAGE_SIZE",
+      "detail": "003-thumbnail.png: (1672, 941)"
+    },
+    {
+      "post": "003",
+      "severity": "FAIL",
+      "code": "REVIEW_NOTES_MISSING",
+      "detail": "G:\\내 드라이브\\MY_CODEX\\Global Nuclear Daily Brief\\GlobalNuclearNews\\assets\\images\\theory\\series-01\\sources\\003\\review_notes.md"
+    },
+    {
+      "post": "004",
+      "severity": "FAIL",
+      "code": "BODY_TOO_SHORT",
+      "detail": "본문 유효문자 504자"
+    },
+    {
+      "post": "004",
+      "severity": "FAIL",
+      "code": "LEARNING_FLOW",
+      "detail": "본문 절 4개"
+    },
+    {
+      "post": "004",
+      "severity": "FAIL",
+      "code": "EXAMPLE_DEPTH",
+      "detail": "구체적 예시 신호 0개"
+    },
+    {
+      "post": "004",
+      "severity": "FAIL",
+      "code": "SOURCE_TRACEABILITY",
+      "detail": "클릭 가능한 주제별 참고자료 없음"
+    },
+    {
+      "post": "004",
+      "severity": "FAIL",
+      "code": "IMAGE_SIZE",
+      "detail": "004-thumbnail.png: (1672, 941)"
+    },
+    {
+      "post": "004",
+      "severity": "FAIL",
+      "code": "REVIEW_NOTES_MISSING",
+      "detail": "G:\\내 드라이브\\MY_CODEX\\Global Nuclear Daily Brief\\GlobalNuclearNews\\assets\\images\\theory\\series-01\\sources\\004\\review_notes.md"
+    },
+    {
+      "post": "005",
+      "severity": "FAIL",
+      "code": "BODY_TOO_SHORT",
+      "detail": "본문 유효문자 576자"
+    },
+    {
+      "post": "005",
+      "severity": "FAIL",
+      "code": "LEARNING_FLOW",
+      "detail": "본문 절 4개"
+    },
+    {
+      "post": "005",
+      "severity": "FAIL",
+      "code": "SOURCE_TRACEABILITY",
+      "detail": "클릭 가능한 주제별 참고자료 없음"
+    },
+    {
+      "post": "005",
+      "severity": "FAIL",
+      "code": "IMAGE_SIZE",
+      "detail": "005-thumbnail.png: (1672, 941)"
+    },
+    {
+      "post": "005",
+      "severity": "FAIL",
+      "code": "REVIEW_NOTES_MISSING",
+      "detail": "G:\\내 드라이브\\MY_CODEX\\Global Nuclear Daily Brief\\GlobalNuclearNews\\assets\\images\\theory\\series-01\\sources\\005\\review_notes.md"
+    },
+    {
+      "post": "006",
+      "severity": "FAIL",
+      "code": "BODY_TOO_SHORT",
+      "detail": "본문 유효문자 495자"
+    },
+    {
+      "post": "006",
+      "severity": "FAIL",
+      "code": "LEARNING_FLOW",
+      "detail": "본문 절 4개"
+    },
+    {
+      "post": "006",
+      "severity": "FAIL",
+      "code": "TABLE_MISSING",
+      "detail": "비교·정리 표 없음"
+    },
+    {
+      "post": "006",
+      "severity": "FAIL",
+      "code": "SOURCE_TRACEABILITY",
+      "detail": "클릭 가능한 주제별 참고자료 없음"
+    },
+    {
+      "post": "006",
+      "severity": "FAIL",
+      "code": "NEAR_DUPLICATE_IMAGE",
+      "detail": "006-body-01.png ~ 006-body-02.png, dHash 거리 11"
+    },
+    {
+      "post": "006",
+      "severity": "FAIL",
+      "code": "REVIEW_NOTES_INCOMPLETE",
+      "detail": "누락: 원본, 모바일, 기술, 중복, PASS"
+    },
+    {
+      "post": "007",
+      "severity": "FAIL",
+      "code": "BODY_TOO_SHORT",
+      "detail": "본문 유효문자 489자"
+    },
+    {
+      "post": "007",
+      "severity": "FAIL",
+      "code": "LEARNING_FLOW",
+      "detail": "본문 절 4개"
+    },
+    {
+      "post": "007",
+      "severity": "FAIL",
+      "code": "TABLE_MISSING",
+      "detail": "비교·정리 표 없음"
+    },
+    {
+      "post": "007",
+      "severity": "FAIL",
+      "code": "SOURCE_TRACEABILITY",
+      "detail": "클릭 가능한 주제별 참고자료 없음"
+    },
+    {
+      "post": "007",
+      "severity": "FAIL",
+      "code": "NEAR_DUPLICATE_IMAGE",
+      "detail": "007-body-01.png ~ 007-body-02.png, dHash 거리 7"
+    },
+    {
+      "post": "007",
+      "severity": "FAIL",
+      "code": "REVIEW_NOTES_INCOMPLETE",
+      "detail": "누락: 원본, 모바일, 기술, 중복, PASS"
+    },
+    {
+      "post": "008",
+      "severity": "FAIL",
+      "code": "BODY_TOO_SHORT",
+      "detail": "본문 유효문자 478자"
+    },
+    {
+      "post": "008",
+      "severity": "FAIL",
+      "code": "LEARNING_FLOW",
+      "detail": "본문 절 4개"
+    },
+    {
+      "post": "008",
+      "severity": "FAIL",
+      "code": "TABLE_MISSING",
+      "detail": "비교·정리 표 없음"
+    },
+    {
+      "post": "008",
+      "severity": "FAIL",
+      "code": "SOURCE_TRACEABILITY",
+      "detail": "클릭 가능한 주제별 참고자료 없음"
+    },
+    {
+      "post": "008",
+      "severity": "FAIL",
+      "code": "NEAR_DUPLICATE_IMAGE",
+      "detail": "008-body-01.png ~ 008-body-02.png, dHash 거리 7"
+    },
+    {
+      "post": "008",
+      "severity": "FAIL",
+      "code": "REVIEW_NOTES_INCOMPLETE",
+      "detail": "누락: 원본, 모바일, 기술, 중복, PASS"
+    },
+    {
+      "post": "009",
+      "severity": "FAIL",
+      "code": "BODY_TOO_SHORT",
+      "detail": "본문 유효문자 472자"
+    },
+    {
+      "post": "009",
+      "severity": "FAIL",
+      "code": "LEARNING_FLOW",
+      "detail": "본문 절 4개"
+    },
+    {
+      "post": "009",
+      "severity": "FAIL",
+      "code": "TABLE_MISSING",
+      "detail": "비교·정리 표 없음"
+    },
+    {
+      "post": "009",
+      "severity": "FAIL",
+      "code": "SOURCE_TRACEABILITY",
+      "detail": "클릭 가능한 주제별 참고자료 없음"
+    },
+    {
+      "post": "009",
+      "severity": "FAIL",
+      "code": "NEAR_DUPLICATE_IMAGE",
+      "detail": "009-body-01.png ~ 009-body-02.png, dHash 거리 8"
+    },
+    {
+      "post": "009",
+      "severity": "FAIL",
+      "code": "REVIEW_NOTES_INCOMPLETE",
+      "detail": "누락: 원본, 모바일, 기술, 중복, PASS"
+    },
+    {
+      "post": "010",
+      "severity": "FAIL",
+      "code": "BODY_TOO_SHORT",
+      "detail": "본문 유효문자 468자"
+    },
+    {
+      "post": "010",
+      "severity": "FAIL",
+      "code": "LEARNING_FLOW",
+      "detail": "본문 절 4개"
+    },
+    {
+      "post": "010",
+      "severity": "FAIL",
+      "code": "TABLE_MISSING",
+      "detail": "비교·정리 표 없음"
+    },
+    {
+      "post": "010",
+      "severity": "FAIL",
+      "code": "SOURCE_TRACEABILITY",
+      "detail": "클릭 가능한 주제별 참고자료 없음"
+    },
+    {
+      "post": "010",
+      "severity": "FAIL",
+      "code": "NEAR_DUPLICATE_IMAGE",
+      "detail": "010-body-01.png ~ 010-body-02.png, dHash 거리 12"
+    },
+    {
+      "post": "010",
+      "severity": "FAIL",
+      "code": "REVIEW_NOTES_INCOMPLETE",
+      "detail": "누락: 원본, 모바일, 기술, 중복, PASS"
+    },
+    {
+      "post": "011",
+      "severity": "FAIL",
+      "code": "BODY_TOO_SHORT",
+      "detail": "본문 유효문자 467자"
+    },
+    {
+      "post": "011",
+      "severity": "FAIL",
+      "code": "LEARNING_FLOW",
+      "detail": "본문 절 4개"
+    },
+    {
+      "post": "011",
+      "severity": "FAIL",
+      "code": "TABLE_MISSING",
+      "detail": "비교·정리 표 없음"
+    },
+    {
+      "post": "011",
+      "severity": "FAIL",
+      "code": "SOURCE_TRACEABILITY",
+      "detail": "클릭 가능한 주제별 참고자료 없음"
+    },
+    {
+      "post": "011",
+      "severity": "FAIL",
+      "code": "NEAR_DUPLICATE_IMAGE",
+      "detail": "011-body-01.png ~ 011-body-02.png, dHash 거리 7"
+    },
+    {
+      "post": "011",
+      "severity": "FAIL",
+      "code": "REVIEW_NOTES_INCOMPLETE",
+      "detail": "누락: 원본, 모바일, 기술, 중복, PASS"
+    },
+    {
+      "post": "012",
+      "severity": "FAIL",
+      "code": "BODY_TOO_SHORT",
+      "detail": "본문 유효문자 466자"
+    },
+    {
+      "post": "012",
+      "severity": "FAIL",
+      "code": "LEARNING_FLOW",
+      "detail": "본문 절 4개"
+    },
+    {
+      "post": "012",
+      "severity": "FAIL",
+      "code": "TABLE_MISSING",
+      "detail": "비교·정리 표 없음"
+    },
+    {
+      "post": "012",
+      "severity": "FAIL",
+      "code": "SOURCE_TRACEABILITY",
+      "detail": "클릭 가능한 주제별 참고자료 없음"
+    },
+    {
+      "post": "012",
+      "severity": "FAIL",
+      "code": "NEAR_DUPLICATE_IMAGE",
+      "detail": "012-body-01.png ~ 012-body-02.png, dHash 거리 5"
+    },
+    {
+      "post": "012",
+      "severity": "FAIL",
+      "code": "REVIEW_NOTES_INCOMPLETE",
+      "detail": "누락: 원본, 모바일, 기술, 중복, PASS"
+    },
+    {
+      "post": "013",
+      "severity": "FAIL",
+      "code": "BODY_TOO_SHORT",
+      "detail": "본문 유효문자 466자"
+    },
+    {
+      "post": "013",
+      "severity": "FAIL",
+      "code": "LEARNING_FLOW",
+      "detail": "본문 절 4개"
+    },
+    {
+      "post": "013",
+      "severity": "FAIL",
+      "code": "TABLE_MISSING",
+      "detail": "비교·정리 표 없음"
+    },
+    {
+      "post": "013",
+      "severity": "FAIL",
+      "code": "SOURCE_TRACEABILITY",
+      "detail": "클릭 가능한 주제별 참고자료 없음"
+    },
+    {
+      "post": "013",
+      "severity": "FAIL",
+      "code": "NEAR_DUPLICATE_IMAGE",
+      "detail": "013-body-01.png ~ 013-body-02.png, dHash 거리 9"
+    },
+    {
+      "post": "013",
+      "severity": "FAIL",
+      "code": "REVIEW_NOTES_INCOMPLETE",
+      "detail": "누락: 원본, 모바일, 기술, 중복, PASS"
+    },
+    {
+      "post": "014",
+      "severity": "FAIL",
+      "code": "BODY_TOO_SHORT",
+      "detail": "본문 유효문자 469자"
+    },
+    {
+      "post": "014",
+      "severity": "FAIL",
+      "code": "LEARNING_FLOW",
+      "detail": "본문 절 4개"
+    },
+    {
+      "post": "014",
+      "severity": "FAIL",
+      "code": "TABLE_MISSING",
+      "detail": "비교·정리 표 없음"
+    },
+    {
+      "post": "014",
+      "severity": "FAIL",
+      "code": "SOURCE_TRACEABILITY",
+      "detail": "클릭 가능한 주제별 참고자료 없음"
+    },
+    {
+      "post": "014",
+      "severity": "FAIL",
+      "code": "NEAR_DUPLICATE_IMAGE",
+      "detail": "014-body-01.png ~ 014-body-02.png, dHash 거리 12"
+    },
+    {
+      "post": "014",
+      "severity": "FAIL",
+      "code": "REVIEW_NOTES_INCOMPLETE",
+      "detail": "누락: 원본, 모바일, 기술, 중복, PASS"
+    },
+    {
+      "post": "015",
+      "severity": "FAIL",
+      "code": "BODY_TOO_SHORT",
+      "detail": "본문 유효문자 460자"
+    },
+    {
+      "post": "015",
+      "severity": "FAIL",
+      "code": "LEARNING_FLOW",
+      "detail": "본문 절 4개"
+    },
+    {
+      "post": "015",
+      "severity": "FAIL",
+      "code": "TABLE_MISSING",
+      "detail": "비교·정리 표 없음"
+    },
+    {
+      "post": "015",
+      "severity": "FAIL",
+      "code": "SOURCE_TRACEABILITY",
+      "detail": "클릭 가능한 주제별 참고자료 없음"
+    },
+    {
+      "post": "015",
+      "severity": "FAIL",
+      "code": "NEAR_DUPLICATE_IMAGE",
+      "detail": "015-body-01.png ~ 015-body-02.png, dHash 거리 11"
+    },
+    {
+      "post": "015",
+      "severity": "FAIL",
+      "code": "REVIEW_NOTES_INCOMPLETE",
+      "detail": "누락: 원본, 모바일, 기술, 중복, PASS"
+    },
+    {
+      "post": "016",
+      "severity": "FAIL",
+      "code": "BODY_TOO_SHORT",
+      "detail": "본문 유효문자 475자"
+    },
+    {
+      "post": "016",
+      "severity": "FAIL",
+      "code": "LEARNING_FLOW",
+      "detail": "본문 절 4개"
+    },
+    {
+      "post": "016",
+      "severity": "FAIL",
+      "code": "TABLE_MISSING",
+      "detail": "비교·정리 표 없음"
+    },
+    {
+      "post": "016",
+      "severity": "FAIL",
+      "code": "SOURCE_TRACEABILITY",
+      "detail": "클릭 가능한 주제별 참고자료 없음"
+    },
+    {
+      "post": "016",
+      "severity": "FAIL",
+      "code": "NEAR_DUPLICATE_IMAGE",
+      "detail": "016-body-01.png ~ 016-body-02.png, dHash 거리 12"
+    },
+    {
+      "post": "016",
+      "severity": "FAIL",
+      "code": "REVIEW_NOTES_INCOMPLETE",
+      "detail": "누락: 원본, 모바일, 기술, 중복, PASS"
+    },
+    {
+      "post": "017",
+      "severity": "FAIL",
+      "code": "BODY_TOO_SHORT",
+      "detail": "본문 유효문자 468자"
+    },
+    {
+      "post": "017",
+      "severity": "FAIL",
+      "code": "LEARNING_FLOW",
+      "detail": "본문 절 4개"
+    },
+    {
+      "post": "017",
+      "severity": "FAIL",
+      "code": "TABLE_MISSING",
+      "detail": "비교·정리 표 없음"
+    },
+    {
+      "post": "017",
+      "severity": "FAIL",
+      "code": "SOURCE_TRACEABILITY",
+      "detail": "클릭 가능한 주제별 참고자료 없음"
+    },
+    {
+      "post": "017",
+      "severity": "FAIL",
+      "code": "NEAR_DUPLICATE_IMAGE",
+      "detail": "017-body-01.png ~ 017-body-02.png, dHash 거리 8"
+    },
+    {
+      "post": "017",
+      "severity": "FAIL",
+      "code": "REVIEW_NOTES_INCOMPLETE",
+      "detail": "누락: 원본, 모바일, 기술, 중복, PASS"
+    }
+  ]
+}

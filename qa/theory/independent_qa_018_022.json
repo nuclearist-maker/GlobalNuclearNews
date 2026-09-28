@@ -1,0 +1,51 @@
+{
+  "range": [
+    18,
+    22
+  ],
+  "status": "PASS",
+  "release_blocked": false,
+  "summary": [
+    {
+      "post": "018",
+      "title": "핵의 들뜬상태",
+      "body_characters": 1483,
+      "sections": 6,
+      "example_signals": 17,
+      "images": 3
+    },
+    {
+      "post": "019",
+      "title": "파동-입자 이중성",
+      "body_characters": 1477,
+      "sections": 6,
+      "example_signals": 6,
+      "images": 3
+    },
+    {
+      "post": "020",
+      "title": "불확정성원리",
+      "body_characters": 1493,
+      "sections": 6,
+      "example_signals": 11,
+      "images": 3
+    },
+    {
+      "post": "021",
+      "title": "질량-에너지 등가성",
+      "body_characters": 1530,
+      "sections": 6,
+      "example_signals": 14,
+      "images": 3
+    },
+    {
+      "post": "022",
+      "title": "질량결손",
+      "body_characters": 1491,
+      "sections": 6,
+      "example_signals": 10,
+      "images": 3
+    }
+  ],
+  "findings": []
+}

@@ -1,0 +1,51 @@
+{
+  "range": [
+    23,
+    27
+  ],
+  "status": "PASS",
+  "release_blocked": false,
+  "summary": [
+    {
+      "post": "023",
+      "title": "결합에너지",
+      "body_characters": 1455,
+      "sections": 6,
+      "example_signals": 8,
+      "images": 3
+    },
+    {
+      "post": "024",
+      "title": "핵자당 결합에너지",
+      "body_characters": 1435,
+      "sections": 6,
+      "example_signals": 7,
+      "images": 3
+    },
+    {
+      "post": "025",
+      "title": "분리에너지",
+      "body_characters": 1465,
+      "sections": 6,
+      "example_signals": 8,
+      "images": 3
+    },
+    {
+      "post": "026",
+      "title": "핵반응의 Q값",
+      "body_characters": 1445,
+      "sections": 6,
+      "example_signals": 7,
+      "images": 3
+    },
+    {
+      "post": "027",
+      "title": "문턱에너지",
+      "body_characters": 1470,
+      "sections": 6,
+      "example_signals": 9,
+      "images": 3
+    }
+  ],
+  "findings": []
+}
