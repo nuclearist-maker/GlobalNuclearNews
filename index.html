@@ -15,20 +15,13 @@
     </a>
     <nav aria-label="주요 메뉴">
       <a class="active" href="index.html">게시판</a>
-      <a href="#about">소개</a>
     </nav>
   </header>
 
   <main>
     <section class="intro" aria-labelledby="page-title">
-      <p class="eyebrow">NUCLEAR NEWS BOARD</p>
-      <h1 id="page-title">세계 원자력 산업의 변화를<br>근거와 맥락으로 읽습니다.</h1>
-      <p>정책, 인허가, 기술, 공급망의 핵심 변화를 비전공자도 이해할 수 있도록 설명합니다.</p>
-      <dl class="stats" aria-label="게시판 현황">
-        <div><dt id="post-count">1</dt><dd>게시물</dd></div>
-        <div><dt>공개</dt><dd>운영 상태</dd></div>
-        <div><dt>근거 기반</dt><dd>편집 원칙</dd></div>
-      </dl>
+      <img class="hero-image" src="assets/images/global-nuclear-future-hero.png" alt="원자력발전이 데이터센터와 인공지능, 항공, 우주개발, 친환경 에너지 체계를 연결하는 미래 풍경">
+      <div class="hero-title"><h1 id="page-title">글로벌 원자력 소식</h1></div>
     </section>
 
     <section class="board" aria-labelledby="board-title">
@@ -42,16 +35,15 @@
         <button type="button" data-filter="SMR">SMR</button>
         <button type="button" data-filter="연료주기">연료주기</button>
         <button type="button" data-filter="정책·규제">정책·규제</button>
+        <button type="button" data-filter="선진원자로">선진원자로</button>
+        <button type="button" data-filter="해양원전">해양원전</button>
+        <button type="button" data-filter="우주원자로">우주원자로</button>
+        <button type="button" data-filter="다목적이용">다목적이용</button>
       </div>
       <div id="post-list" class="post-list" aria-live="polite"></div>
       <p id="empty-state" class="empty" hidden>조건에 맞는 게시물이 없습니다.</p>
     </section>
 
-    <section id="about" class="about">
-      <p class="eyebrow">EDITORIAL STANDARD</p>
-      <h2>뉴스를 넘어 판단에 필요한 배경까지</h2>
-      <p>공식 발표와 원자료를 우선 확인하고, 사실과 분석을 구분합니다. 계약, 인허가, 투자결정처럼 단계가 다른 사건을 과장하지 않으며, 전문용어에는 짧은 설명을 덧붙입니다.</p>
-    </section>
   </main>
 
   <footer><span>© 2026 GlobalNuclearNews</span><span>Independent nuclear industry briefing</span></footer>
