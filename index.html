@@ -14,7 +14,8 @@
       <span><strong>GlobalNuclearNews</strong><small>GLOBAL NUCLEAR INTELLIGENCE</small></span>
     </a>
     <nav aria-label="주요 메뉴">
-      <a class="active" href="index.html">글로벌 원자력 뉴스</a>
+      <a class="active" data-view-link="news" href="index.html">글로벌 원자력 뉴스</a>
+      <a data-view-link="theory" href="index.html?view=theory">원자력 이론</a>
     </nav>
   </header>
 
@@ -26,7 +27,7 @@
 
     <section class="board" aria-labelledby="board-title">
       <div class="board-heading">
-        <div><p class="eyebrow">LATEST ANALYSIS</p><h2 id="board-title">최신 게시물</h2></div>
+        <div><p class="eyebrow" id="board-eyebrow">LATEST ANALYSIS</p><h2 id="board-title">최신 게시물</h2></div>
         <label class="search"><span class="sr-only">게시물 검색</span><input id="search" type="search" placeholder="제목과 내용 검색" autocomplete="off"></label>
       </div>
       <div class="filters" role="group" aria-label="분야 필터">
@@ -39,7 +40,6 @@
         <button type="button" data-filter="해양원전">해양원전</button>
         <button type="button" data-filter="우주원자로">우주원자로</button>
         <button type="button" data-filter="다목적이용">다목적이용</button>
-        <button type="button" data-filter="원자력 이론">원자력 이론</button>
       </div>
       <div id="post-list" class="post-list" aria-live="polite"></div>
       <p id="empty-state" class="empty" hidden>조건에 맞는 게시물이 없습니다.</p>
