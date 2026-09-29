@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "reviewer": "/root/qa041",
+  "baseline_commit": "898979add79e82cb4e5d79556446bde5208267e4",
+  "changes": [
+    {
+      "post": 11,
+      "path": "posts/theory/011-stable-and-unstable-nuclei.html",
+      "old": "핵물리 기초",
+      "new": "원자와 원자핵의 기초",
+      "old_sha256": "bbc38873887e7f726fd4ba402422c779b7c48a22be380f380ee88e88fef96389",
+      "new_sha256": "69230b4d7165efe1ad439fb0de4ee7cc1920a7c582c89d92ab0ee82a4732dc5d",
+      "only_expected_replacement": true
+    },
+    {
+      "post": 12,
+      "path": "posts/theory/012-nuclear-force.html",
+      "old": "핵물리 기초",
+      "new": "원자와 원자핵의 기초",
+      "old_sha256": "6e031954ef323fa5044fe8cc7876e029783769adc0a8cf7aa279b103881af6eb",
+      "new_sha256": "b1a065bed04c37055fa61fc7d70de7a00adfa1448fbff2042c49957bd61ea0a4",
+      "only_expected_replacement": true
+    },
+    {
+      "post": 31,
+      "path": "posts/theory/031-inelastic-scattering.html",
+      "old": "질량·에너지·핵반응",
+      "new": "질량·에너지와 핵반응",
+      "old_sha256": "d4fb0339b47627898fe60d56d836f1679db5f36d72660a567f1b443f303b9fb0",
+      "new_sha256": "9313f374f5627a6fe97371b849f717856f8190f0e1f9142f6d5d2a6d3c898800",
+      "only_expected_replacement": true
+    },
+    {
+      "post": 32,
+      "path": "posts/theory/032-neutron-capture.html",
+      "old": "질량·에너지·핵반응",
+      "new": "질량·에너지와 핵반응",
+      "old_sha256": "c06355be71c067d04409c37aa2582341787fea7117cde2b56f2a9346fb5b5287",
+      "new_sha256": "6c8e847bcaf408abd0f89ce86b524cea48dfb74913e4d03b9d0770a9b29ddda8",
+      "only_expected_replacement": true
+    },
+    {
+      "post": 33,
+      "path": "posts/theory/033-charged-particle-reaction.html",
+      "old": "질량·에너지·핵반응",
+      "new": "질량·에너지와 핵반응",
+      "old_sha256": "1549e1cc2b63259091a49b5528cb9b5f18508eaf82b6d8655ed177118907ff67",
+      "new_sha256": "a3fc6ee3387b9a5a3742306b905f46e4b742c5ca58f1b1b598989a7837f94393",
+      "only_expected_replacement": true
+    },
+    {
+      "post": 34,
+      "path": "posts/theory/034-photonuclear-reaction.html",
+      "old": "질량·에너지·핵반응",
+      "new": "질량·에너지와 핵반응",
+      "old_sha256": "34f3db831ff4dc5690dfb0c9b58b3f684a9323be86c5a7d22dcf90d24b5390f3",
+      "new_sha256": "fc0e84cac1dbaea1fb2f3b0f851f0b3f3d9e3a037acc52fbbe452326a86d416c",
+      "only_expected_replacement": true
+    },
+    {
+      "post": 35,
+      "path": "posts/theory/035-fission-energy.html",
+      "old": "질량·에너지·핵반응",
+      "new": "질량·에너지와 핵반응",
+      "old_sha256": "931a2c4cc90c07d6e193d4242630d2334365953d372830820457b7649313bc1a",
+      "new_sha256": "a1320b554fa31d6220daffbbf9db1d38113e21f04dc58eaf041c079ce4b2865c",
+      "only_expected_replacement": true
+    },
+    {
+      "post": 36,
+      "path": "posts/theory/036-fission-product-yield.html",
+      "old": "질량·에너지·핵반응",
+      "new": "질량·에너지와 핵반응",
+      "old_sha256": "877fe464417e8402710c60a3c7070e8355b5f070963c83ac536a11abe1d13240",
+      "new_sha256": "1c93c4393c611dcf1d4051d8a143994205a824d2d1ec96945f0e1b852de52cee",
+      "only_expected_replacement": true
+    },
+    {
+      "post": 37,
+      "path": "posts/theory/037-prompt-and-delayed-neutrons.html",
+      "old": "질량·에너지·핵반응",
+      "new": "질량·에너지와 핵반응",
+      "old_sha256": "991121eff5bb285d7e4b9598b993f313a61c1ffede1f4db2be609ed0e1e79fe4",
+      "new_sha256": "151428fbdfe797de866d0f27ed0c87f29c33fac40e5d89ac458bf3c66a4af6e5",
+      "only_expected_replacement": true
+    },
+    {
+      "post": 38,
+      "path": "posts/theory/038-nuclear-fusion.html",
+      "old": "질량·에너지·핵반응",
+      "new": "질량·에너지와 핵반응",
+      "old_sha256": "8896cec919e9606207ebbb268d0437234cc31b9986742f707cf0dc25033b8fe5",
+      "new_sha256": "dd9ef51970e7241f97740c479fa5a3dafef78d29378f7fff57d1a72396117626",
+      "only_expected_replacement": true
+    },
+    {
+      "post": 39,
+      "path": "posts/theory/039-coulomb-barrier-tunneling.html",
+      "old": "질량·에너지·핵반응",
+      "new": "질량·에너지와 핵반응",
+      "old_sha256": "370dcb743dd9660a390b681cfc5f9b163afcf8c7b023af47e980d164f18ef9b8",
+      "new_sha256": "c46b0e1a74fe8ab302a2c3fd730a182f66f0894c034b8cba5c6382aaa8ff1983",
+      "only_expected_replacement": true
+    },
+    {
+      "post": 40,
+      "path": "posts/theory/040-stellar-nucleosynthesis.html",
+      "old": "질량·에너지·핵반응",
+      "new": "질량·에너지와 핵반응",
+      "old_sha256": "bd252bc6f1e22e75813fa519545c15800171cec139299d041f024b203a22fe6d",
+      "new_sha256": "535ac8091758cf622274ea8a839227488ab5fc76e8faf1eaa0df879b6406aca0",
+      "only_expected_replacement": true
+    }
+  ],
+  "app_only_category_replacements": true,
+  "category_counts": {
+    "방사성붕괴와 시간": 10,
+    "질량·에너지와 핵반응": 20,
+    "원자와 원자핵의 기초": 20
+  },
+  "app_sha256": "2b58f6e2f97aa06bece88ea63deede2b4c0ec41d8cba26f454faae7aebe28af7",
+  "prior_independent_reports_preserved": true,
+  "direct_mobile_visual": "All 12 changed article headers at390px directly inspected in temp/category_independent_20260929/headers.png; category labels single-line, readable, no overlap or clipping.",
+  "screenshot_sha256": "cbbf1f8835117df6ed011a2bb720a084a89d6f6662fa4d4a01739dc40dc4cde6"
+}

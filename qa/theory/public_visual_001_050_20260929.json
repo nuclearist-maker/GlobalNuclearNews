@@ -1,0 +1,1713 @@
+{
+  "status": "PASS",
+  "reviewer": "/root/qa041",
+  "date": "2026-09-29",
+  "commit": "898979add79e82cb4e5d79556446bde5208267e4",
+  "pages_run": "36609247073",
+  "pages_conclusion": "success",
+  "scope": "150 public URL images loaded in Chrome gallery and all 10 sheets directly inspected. Public bytes match previously independently reviewed originals. This is deployment appearance verification, not a new full original/mobile content QA.",
+  "images": [
+    {
+      "path": "assets/images/theory/series-01/verified-v3/001-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/001-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "f2f0a3971d602e17d71501d8c28356253215be98214f26e4df47f42bb58a6ad1",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/001-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/001-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "e5d4ec67c67a7061f7cbc9df017e83024cfa3afa2e0d9fd900d95f87f3ec7b7d",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/001-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/001-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "3ad92a46a8830c970794539565c5e6d1c2869336da9b295c288f209ced8c718e",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/002-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/002-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "4b01e3d3f34ddd706aa08f37a670e6d3b3ee4c842b16e5c96ca75aaf8c8bf314",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/002-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/002-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "8ef061cc479867eedd7bb0a86c709d12dd58f970abfdcc5dc06dbeae1adfd944",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/002-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/002-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "8de5a5ff705d659c75b3d096c3d772a93ac54755b7341fc20370b815ec8d674e",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/003-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/003-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "2e192f91143ca19137e3574f7c4843c09ff2abf62ccdcfa1710afe9e75985269",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/003-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/003-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "8c6699d57e6e66ff54e18562cd445e9febf9d8164fa0d43c5ebf68cebdb7e549",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/003-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/003-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "2519ab9b6b608beb40c5f94a35d7fb92dd92b161de4c3896f4e5117938e8b722",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/004-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/004-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "1e5037c8a025416d82d674a2cbb3bb9e595c9302df2fe0cd47a01b89f9f3da36",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/004-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/004-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "28a069fac77a19a01d231c02a7ec3d4561e8dfbac003551a7ed085d62c889b87",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/004-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/004-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "acfa797cf6fd5d898d33a807479af4157f4c5eaf6eec7ac601edcf7d8b5199bc",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/005-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/005-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "50acda31599158a89013b777d75b9bda7fc321a0f76521881cf2b19b09350a70",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/005-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/005-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "47f5b0b6169531d2fb0b76903d01e3585b4f3eb1512ba44bb9a68ba3c7746ace",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/005-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/005-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "466642de507bc7802ac660a8beeaf21ca0c3866ab932d19473eda819e9c6a561",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/006-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/006-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "c70d2ad899d98de382e129e74ccd9fdfbd448546cfb8275798c84a9305a5e9fe",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/006-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/006-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "2babff7af6466a324f7ea88de95f7addfc9a71b3eac23aa50f116339a0c911ba",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/006-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/006-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "63051352a256a09930f1d09a4809a66be2b788fce2bd1e142afd1c18cb562846",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/007-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/007-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "68d6ba483aefb9b1ecc9cf2d46c3c28d5d8f9c52a3694f9ed155056b9f78ee2d",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/007-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/007-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "143d4f74c1da091f834b35543464de18216cdf68a45fde67621a17fc6214a3b1",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/007-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/007-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "9841437b30f4c799e8095606b8a7746c67b5f6f1cba58e56500338dcee64e178",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/008-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/008-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "4f4c909a70c22722d7d996bacddd1074af9337db2cee6bbfe8ec47ed6a9ef9f9",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/008-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/008-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "283fff5a06d33cf5fac64baad76298b11784ee1a5204dbb734136b750aef3ada",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/008-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/008-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "1979447d3d1221f9b4c4d425264de151910f908e45815495a6c3a62a77f2fb79",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/009-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/009-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "8744b51dad49b82baf4344939b5da1cd3c886c43a9f1b54deb840d035f2f542d",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/009-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/009-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "643162714988ea5a6d12d7b33179a618e835730486dcd6c7944e4adce56fc58f",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/009-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/009-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "87077b863bd96fcb88fc289f8b62e674bdf3206dfc41558b18e7010f66970c6f",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/010-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/010-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "0cd617906a1c65aa18e654ce0dbbcebf586aa38f1127a9dac7a4dd3115a45d4d",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/010-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/010-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "cedd9c9c43277dc9768550fd1193a234d0b2dfc950dd94b73a7fd9de62dbc41d",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/010-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/010-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "a36a82e8fbe08c88abcac461c7634308d47221e4c2eb0cd7374d42a42d6ee71a",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/resume-v2/011-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/resume-v2/011-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "cea169cf20e2eaad68db431e3a71d63df97b3ffeb555dce414050a32df105200",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/resume-v2/011-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/resume-v2/011-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "95f73495de268e793cd1c3b0ae54ed17de12dbea5824c934597d27d9028bbd8e",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/resume-v2/011-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/resume-v2/011-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "80a0c85b9820a007e8b350770b85defa7360b25a97ccff75ea462fb63d45b85a",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/resume-v2/012-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/resume-v2/012-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "c65e17a59978269d6cb98227802afeb7c9effc906fe6ba33e323aa48415feea7",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/resume-v2/012-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/resume-v2/012-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "18152f9c11ea6b7007de79d390bfeeff6ede238aa393be9c9e94a57e6fd31c6a",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/resume-v2/012-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/resume-v2/012-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "7e9a7ed27038bdd973eb9e14edd613da495825cc223cb3afcc998203347ad135",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/013-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/013-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "65540392d49d246bf6cf8af284d34c4232ee1cf3317b429a0d5d700a299b0e87",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/013-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/013-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "5dc8923010a14d04bf78f5e2d12ed1628ab63c05ac6b3606984190e83ed38a89",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/013-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/013-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "f79a51be3ff2ab8b0e9794746a480d7cdefc8a0e2d18f7ad4eab8567ded11999",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/014-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/014-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "cbafc673deb2d33c74867ab3ffb8f1faffe9eae68002ae1a146642050ce2d25f",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/014-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/014-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "6252039db12811ddd4c93bad681929f51aac516eee1690c06f600aa70f4203ad",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/014-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/014-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "263a68db55e7a31f689d73c63b183c336bccd50f49150bf8e081d4344db96df3",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/015-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/015-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "1eaca87866dcb7ee51dcf911e256ac6e25f0e7d07fa3d4a992bca3e873ce79cd",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/015-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/015-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "e6d6d1e29dfff20765f69feac32c6c10c7a9c718671d0362d52887cb31ec2a9f",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/015-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/015-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "ad778c6b8b98ddb64d54d9e84a75bd4a8605bca743a2f892d5561e2ddb1acf26",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/016-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/016-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "7a8060325b083706c8830b170fbd71645b98097ceb21f22e906a8c5786585f42",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/016-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/016-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "17791b0adff04a169cffdd756406e4cbd0eb64b1016fc621171b3ef70e1bc3f8",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/016-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/016-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "75e37fe2ff355e5cfe80657902ca4c16c4baa81eb37f4ada6c775dcc4c876eee",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/017-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/017-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "93feffe221356626cbe6b6fa66429387b9a40303b65bf6b231bff2ed51d3125a",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/017-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/017-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "7243613f6fc26a19650eb13724187931896b991e7aa9aaffdebc21e644511af8",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/017-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/017-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "4feb8ea3c51f479b42be29f637cc0c5240fb029c680ee699293101439703cd15",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/018-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/018-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "c662bd9990f962895adfaf0ede71682189e8c7c59c0bbdc14b3b0c4c207eaa51",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/018-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/018-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "6b0a8550f679b9f6679d730fe02cf73a57de199e26032389a9abf1ab208c556e",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/018-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/018-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "eddc3a78dd160f444087b569289345bf1da9fafd650d7b338e4d0125e384b151",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/019-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/019-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "17e28304c76089898e403447ae1576f0e8fad503cb2df5544e35ddbec9f91fa8",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/019-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/019-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "373adcc6c8a6582a50fbd6e6fa4738bb444f3ce35eb80d5002b4c795366239c1",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/019-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/019-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "6ebb4043d3802c9b471e91eab570ec411bbecea0386a6af8df360e528f97a360",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/020-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/020-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "9a8d52c4efdbd3fad917fbd122d45efce46841a1485b8522316c901b687001d6",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/020-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/020-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "1d40a55d85e96ffe038748cebb3a326eea7a880c3e9111e02954fcadd4d5de48",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-01/verified-v3/020-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-01/verified-v3/020-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "f7d177bb59229b77c755a2a5d51f4c99eabe8d88f14a305133f6b0020184fe9d",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/021-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/021-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "a1e312b033aad297558cac40864a7d0afaa90f1b994c16d6c7285a76b18c14c4",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/021-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/021-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "04e00e0fae7a060216fcd6e0d7080f339f2c87cd6f4b997d5fd19073aca8cc49",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/021-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/021-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "0e0b1a6470deb2d757b0653db559cfbfb11549c82179f0aafb90aa2a3d0aa5de",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/022-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/022-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "3a19fd9e5b75fccbfb18461716a40f5f46d968aa3e1119d4011f12b611492660",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/022-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/022-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "9366d87bc84982e3140f96752e01657d56fb160bd86328d7ea308b0b864a0402",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/022-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/022-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "8e41a785f97c90384583b2d4cb0b6f7e8786623629b90c4b9cdc12ffd472dd25",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/023-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/023-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "13b56688803e646a12fc9810698c1ca20ca3ae28039eac2406bf768cc5f56f23",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/023-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/023-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "c1f8ef86c9dc23157bbb4bbd2f533f31e327fd46e185845e6a8a6493a49acc33",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/023-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/023-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "353aea60d21431c2330855e273fc90eba82ce28d7021b5d770093e5c5333012a",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/024-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/024-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "a6247e2ef1c2bd266e8976675485cb3491ff7cced78461cc5389e2f1e28eb592",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/024-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/024-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "db65aa60d38e45990017cae7d795c2555643e6567b64fedc398ac3414905a438",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/024-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/024-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "f06f2cbb3416aeda6e6237608dde328c02a6f0ae5d1c6eacb63644a39f411391",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/025-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/025-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "bf5f1aaabd33f3b9071d4764d242d2d3bc91f0c31d357eebeea7756487e36c95",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/025-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/025-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "9f58b4d9eb29964169dab5cd63712e8ffc7ca9a4e8b7b9e1639e49df77ef93cb",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/025-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/025-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "7775362f916541df21c7fa9d9f42bb22e387625f2fc6c4d0c15a442663b0025d",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/026-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/026-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "ea2015f6e418c136306f3d01d0f4ec95d2f95ae8cd2501dc7894539750c06bbc",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/026-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/026-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "65cfdad5f9272a84ad1bdb11beb908ce13e6ad37b61748e8eae7456ee2a2f7d6",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/026-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/026-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "e6c05b6da1b5f117e28b9943c65fe6a097e3d2767e14682055cae582e31179d1",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/027-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/027-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "3c4fb6c414d4aa9f51dc0621537a07d2204f9b8a27f693a8ab14344b008d7fdd",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/027-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/027-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "d3211a8702395c8dbf283ef24ecd80601c747a3f585ba3a089bd7b360f85cad4",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/027-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/027-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "961d2215da799c6102c7af0c2272883ba86202d51ab5a7e4b44c5f29acb02109",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/028-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/028-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "79c5a5b02051c9144aa37b3d963334b5536a53cf15f7c05dee8e6c3a04a397ed",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/028-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/028-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "312d8252be05d4525ea25ff14dded4709b3429acc28457bbcbf6fdcefc724f75",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/028-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/028-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "a333ad33c2563c26c835e409564c24af3615ba6a25f25909037b4dd776d077ba",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/029-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/029-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "c8dfd5050698ef6e824d9d7ebe6dfbdfa9ddf2822c507474302dc64e379d1e44",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/029-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/029-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "5e173cb0a23344a137be56a297e30c57354875420acb1af9373fc8b367717045",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/029-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/029-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "94d608ae6038db6839388146aea2c4781abd4381d569d6479a157d96ea88d656",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/030-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/030-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "b0daf802c62acc4204dd675ac7494fda86cc279933dd529bf73fceb5024103d5",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/030-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/030-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "d75d95a72e99bb1c9c957beb464e5c74e4640879a294ee17b611c37dcfb0cba4",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/030-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/030-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "288bc32e0fb8b691aff2291ed615703c960885dd9a3544648fe06bab1bf37716",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/031-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/031-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "026449c86f40a65d2fcf86a2f00fde470d76192b93cb3f2db9bb566af013d49b",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/031-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/031-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "4964b822e07c1e486a3181cf539a5bfa21c4505e1905e4698803861e701d967e",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/031-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/031-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "9e8168da7ebd0990fafb7285c5623d3bf9be227c98ff8edf0218d17e14010522",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/032-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/032-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "dfd5e84ef57e3cad27970df64394d75e969a5543cd0acc7fe534cc98c96b5404",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/032-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/032-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "b1d21dd7ec4b3fad97202a2d964280014e5a8cb8f1d3a0778e849895df934784",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/032-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/032-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "4138664e7221d8358cef3900832cfeeb054e41b181b7aedd93bc90dfd5e34838",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/033-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/033-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "c96606293ddf6fa7746251f44a62976ee920e529c06c652d37462a81fde75c80",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/033-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/033-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "ffba40c10d3be7123adfe56c07fff29299900c3a6733e631ffe3d5bc6498cfc4",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/033-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/033-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "f82bb5b91c6d307bf4bab9f6548f5e8b3bbf8fc3ef6881e20167ed2fbb9c462d",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/034-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/034-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "810e6485a16cd68d170ac30f9e01105b1dc1048d28d3e9637f7751b4ecc823f1",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/034-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/034-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "1564bc72fa46016db774e727a8566809123737f6e0f90b0dbe1a35d1dc57fd1b",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/034-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/034-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "a546b2524e18979d60c30cd7249dc4bca6e7ad28f1cfaed8eec89444303d8eef",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/035-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/035-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "040d5daf2b382c934a4d453a9389d97b765c1c2d9fd0ab863edef578348b3bc5",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/035-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/035-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "a84e6c07bdd04d0bc96d0471a938cb1328d319f307129cf56732550e0f789059",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/035-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/035-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "3ced5f6136da2a8cefd81d313bcd40238cfba0979bfe6239ae5ad16550c88e82",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/036-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/036-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "234a8700728cad3ae9695834629a9265206f1ebe9079fcc48404979c13b5535e",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/036-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/036-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "b44739651150bdd031a4b8cb0d20289d566541e9c206d596f1a76bf74fdc2c08",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/036-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/036-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "5dacc7776325f9b460c997b3d66fb76f7d11c3491d70669cc17496a68e8e41bc",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/037-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/037-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "491a61b9e7d5cafca00553b71016c8e7ac0adc2a6cb827a84984e16b3cd0b982",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/037-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/037-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "e4014c99a8517d7dd8949f85cbd780af39f82ca636fbff40666a156de3bb395e",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/037-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/037-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "d35a5eec11d0dbecdd45d0e8a3c8d79b125e10b8577bac5f047ee93260b45cb4",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/038-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/038-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "edc1d1cdfadb7163a77f5a38671d7fa95a3f839aa08022f33971e552b3614fc4",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/038-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/038-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "f94c1ddca48cc460591fcb8573198a7a988a21bd9713388369c3ebf06fa7b075",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/038-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/038-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "3e1b2847c6dff2890e7199c9125c305789cc39b7874204e2f88cf8076b09e540",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/039-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/039-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "6c4374a576c22b0d2d23435d24fe96704ab55db2da1625d07b0baf9dad53a153",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/039-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/039-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "c11e35ccd01125b7fd773a2ce6df8403b75eed06ced60af6e3e89b1d6d7cbb9d",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/039-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/039-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "c86d9d41b9b5659d20e4527462d61340ac44278dbc89624141ff2604017be554",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/040-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/040-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "b25617a94283106f8ea6a6d5c24dfe5402bf57b9e87b7fd409380a636f0db893",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/040-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/040-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "c6f43f204ca2f7dcf83fd89fd6a8f87e76acb92baeb6df012c733e40f0460dd9",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-02/verified-v3/040-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-02/verified-v3/040-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "a6287646ded76953b5b684078106be9893565c40cb6d3af7a8fbd9f8786ae285",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/041-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/041-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "be0890607f05a7a2fe36472de071f7c29314bac1189f6b06cd8e62ebe6bc665f",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/041-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/041-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "393bd257b5221cee4a04eea04aa005a7e3e9ab8dc4f224142973155b03640a5e",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/041-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/041-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "a9bdada5ffc4de1240b4bc17b842cadf8ec65f1afcc652dfdc96b1a27f4f727b",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/042-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/042-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "b825f0bfb5138e70b05a7891bca57b106a4ca569f0510055f5d2e1b290598357",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/042-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/042-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "f13eff9b82399e86ea64841abeb545f734a4f01f5ac0042073b3792898421056",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/042-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/042-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "f5e6c387810c916414f1032a776aecc88c77759c963741efe8e0743a52978910",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/043-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/043-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "ccc7897e385875b2ce338294bfae6307d25ae5c4e68ffdf3d4718f3c128e7094",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/043-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/043-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "352632f4f09e2539cde91e500e2a113cc244fe0ee2742e2cd5c1dea7de168a42",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/043-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/043-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "350b1c08dbf614ed1538812f9a8313103dea42256f0ec20650a9cebe1d7061d9",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/044-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/044-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "b2105dbd0f4bc602d295867e0d20c2d2b4123d69995a666334be8e352c119b92",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/044-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/044-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "c0f5fb1479173710b0a53582d7be9119cfa3b922ecf2e52944bd011acf9ea700",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/044-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/044-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "a648d4f3d9aeb7d0608a1d2838325684921f4c3fe5016e6d6222dd69494e825d",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/045-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/045-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "1524f2bdd59f0f7558c36bc76f55ae26500ffaff557d9f8c25c8b49445381483",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/045-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/045-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "6bf42e6be703c92985bf2914bcb98d0e053c667e2cc4e46c220f61c582a97ddb",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/045-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/045-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "4f413860bf930eb61a14423a5ecd1cd88b6f350ad7178685d1cbdd7cb8f5be53",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/046-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/046-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "243e30b30555470a17ba6a933278cd75842ab46c5bde7bc61dd84abcc0f1ef15",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/046-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/046-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "57baeb96866941837ec787ba902ca2d1c28a7be05817e9a96e1e546c05800d4a",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/046-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/046-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "f16f4f21f4513b6bdeb2938f2c402a452d76203cb936c75d1382c3acc45255d7",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/047-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/047-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "6fa8db692b425c7678c793056e7d74fbfd29500210ab5172af06b00c96e63d5f",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/047-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/047-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "9635daa0f6c5a51f3c6de8b2c8bfcbc2754405023c9d4894ffb5e7c78e070848",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/047-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/047-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "e01732e98ce22e34f1ae413e4d2f87eb91c85ed31617eb592ae84b79014be940",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/048-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/048-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "bc559bba7a6fc073a429ec96f44d8e02392c6dc8eb645cb35543ce269aea2075",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/048-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/048-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "b253924a0965efb8ffc1cf6702709da3ce2a1e965a62deea43d2f6aeede6131a",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/048-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/048-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "346675cae3aa5c11c18eab7f246026c8cd3f71532ff026b5314d0234a2af6c96",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/049-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/049-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "afdc32d292d82e6c74c4d5a8a4bfab720dac1ee9facb7964436c80e990388aca",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/049-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/049-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "4c06f63ec701a1641f325c4b9df10b7e8dcb3cc311be34635956cf3c53c328e3",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/049-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/049-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "9e829432a231f483223e8ff4cf504396408b7a2c4cd031d27cd8b911ec2b00bc",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/050-thumbnail.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/050-thumbnail.png?v=898979a",
+      "http_status": 200,
+      "sha256": "e89a2a758d0cddd7c6b74d9388144a1dbb4f44a02757a3150482a9d9fc946436",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/050-body-01.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/050-body-01.png?v=898979a",
+      "http_status": 200,
+      "sha256": "42f0927a6c04506d9169187c29bf1824ed9fcbaae8f94bea714f738e10f88918",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/images/theory/series-03/verified-v3/050-body-02.png",
+      "url": "https://nuclearist-maker.github.io/GlobalNuclearNews/assets/images/theory/series-03/verified-v3/050-body-02.png?v=898979a",
+      "http_status": 200,
+      "sha256": "e3a851abf844b4b3401eeac11d166018a7ee5a339efe6928211ad8b9d7c1b5fd",
+      "matches_reviewed_original": true,
+      "dimensions": [
+        1600,
+        900
+      ]
+    }
+  ],
+  "sheets": [
+    {
+      "path": "temp\\public_visual_001_050_20260929\\public_001_005.png",
+      "sha256": "0714d7e7adee9db6f5b34076dfd3cb45c8878b1ff7c06abede20b67dd7f80ea3",
+      "direct_visual_status": "PASS"
+    },
+    {
+      "path": "temp\\public_visual_001_050_20260929\\public_006_010.png",
+      "sha256": "200237b504db552669b7f5fbc375d48a964d99de4b289efad0609ed3741f03f2",
+      "direct_visual_status": "PASS"
+    },
+    {
+      "path": "temp\\public_visual_001_050_20260929\\public_011_015.png",
+      "sha256": "bf8eb62d8e9da664df3d672e0cabc6cb821b7cdaa2a61e28bc7bb7b3c51dc238",
+      "direct_visual_status": "PASS"
+    },
+    {
+      "path": "temp\\public_visual_001_050_20260929\\public_016_020.png",
+      "sha256": "6d7720b275bc10aad7d0010a6c07c52a58e69428e77dd2df7fb94683b9376a8e",
+      "direct_visual_status": "PASS"
+    },
+    {
+      "path": "temp\\public_visual_001_050_20260929\\public_021_025.png",
+      "sha256": "fefacb9ba2ac4631e12c5995e88b05fd63a3ba32b25ffb64ae3a3eed359d6f5b",
+      "direct_visual_status": "PASS"
+    },
+    {
+      "path": "temp\\public_visual_001_050_20260929\\public_026_030.png",
+      "sha256": "dbd5673f6636b02a056e8de3f968759507a2e1e921f54e3facf1bbf405a443ae",
+      "direct_visual_status": "PASS"
+    },
+    {
+      "path": "temp\\public_visual_001_050_20260929\\public_031_035.png",
+      "sha256": "7fa850f7e23443e14c6e8a9a6b945c923ea89bbd929ba1d30d948ef32b162b5b",
+      "direct_visual_status": "PASS"
+    },
+    {
+      "path": "temp\\public_visual_001_050_20260929\\public_036_040.png",
+      "sha256": "cf420fdc6deb076c8107069fb7930a9799947784c5d532449df5531776b25d90",
+      "direct_visual_status": "PASS"
+    },
+    {
+      "path": "temp\\public_visual_001_050_20260929\\public_041_045.png",
+      "sha256": "4cdc667c6c42b223e72fab2eb092e3f4a21e06ee41550bee2bff0cae78aeb4ca",
+      "direct_visual_status": "PASS"
+    },
+    {
+      "path": "temp\\public_visual_001_050_20260929\\public_046_050.png",
+      "sha256": "ad0c36bdc02eb4c4f308d4641fe0d7b7d5bcdfb3a4acec02185ae19bd5bcccfb",
+      "direct_visual_status": "PASS"
+    }
+  ]
+}
