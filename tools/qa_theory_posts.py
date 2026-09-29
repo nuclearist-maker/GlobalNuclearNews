@@ -157,6 +157,8 @@ def audit(root: Path, first: int, last: int) -> dict:
     failures = [asdict(item) for item in findings if item.severity == "FAIL"]
     return {
         "range": [first, last],
+        "scope": "AUTOMATED_PREFLIGHT_ONLY",
+        "independent_visual_approval": False,
         "status": "PASS" if not failures else "FAIL",
         "release_blocked": bool(failures),
         "summary": summaries,
@@ -177,10 +179,11 @@ def main() -> int:
     output.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     markdown = output.with_suffix(".md")
     lines = [
-        f"# 원자력이론 {args.first:03d}~{args.last:03d} 독립 QA",
+        f"# 원자력이론 {args.first:03d}~{args.last:03d} 자동 사전검사",
         "",
         f"- 판정: **{result['status']}**",
-        f"- 배포 차단: **{'예' if result['release_blocked'] else '아니오'}**",
+        f"- 자동검사 결함에 따른 차단: **{'예' if result['release_blocked'] else '없음'}**",
+        "- 독립 시각승인·게시 승인: 이 검사로 부여하지 않음",
         f"- 발견사항: {len(result['findings'])}건",
         "",
         "## 발견사항",
