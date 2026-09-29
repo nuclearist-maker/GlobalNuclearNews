@@ -1,0 +1,65 @@
+{
+  "range": [
+    6,
+    10
+  ],
+  "compare_range": [
+    1,
+    10
+  ],
+  "status": "PASS",
+  "finding_count": 0,
+  "posts": {
+    "001": {
+      "visible_chars": 1334,
+      "non_honorific": 0,
+      "findings": []
+    },
+    "002": {
+      "visible_chars": 1439,
+      "non_honorific": 0,
+      "findings": []
+    },
+    "003": {
+      "visible_chars": 1406,
+      "non_honorific": 0,
+      "findings": []
+    },
+    "004": {
+      "visible_chars": 1322,
+      "non_honorific": 0,
+      "findings": []
+    },
+    "005": {
+      "visible_chars": 1413,
+      "non_honorific": 0,
+      "findings": []
+    },
+    "006": {
+      "visible_chars": 1434,
+      "non_honorific": 0,
+      "findings": []
+    },
+    "007": {
+      "visible_chars": 1433,
+      "non_honorific": 0,
+      "findings": []
+    },
+    "008": {
+      "visible_chars": 1439,
+      "non_honorific": 0,
+      "findings": []
+    },
+    "009": {
+      "visible_chars": 1339,
+      "non_honorific": 0,
+      "findings": []
+    },
+    "010": {
+      "visible_chars": 1366,
+      "non_honorific": 0,
+      "findings": []
+    }
+  },
+  "findings": []
+}

@@ -49,40 +49,40 @@
     {
       "post": "006",
       "title": "원자질량단위 u",
-      "body_characters": 1465,
-      "sections": 11,
-      "example_signals": 5,
+      "body_characters": 1528,
+      "sections": 10,
+      "example_signals": 4,
       "images": 3
     },
     {
       "post": "007",
       "title": "아보가드로수와 원자 개수",
-      "body_characters": 1459,
-      "sections": 11,
-      "example_signals": 13,
+      "body_characters": 1508,
+      "sections": 10,
+      "example_signals": 14,
       "images": 3
     },
     {
       "post": "008",
       "title": "원자수밀도",
-      "body_characters": 1482,
-      "sections": 12,
-      "example_signals": 9,
+      "body_characters": 1504,
+      "sections": 11,
+      "example_signals": 10,
       "images": 3
     },
     {
       "post": "009",
       "title": "원자핵 반지름",
-      "body_characters": 1467,
-      "sections": 12,
-      "example_signals": 14,
+      "body_characters": 1409,
+      "sections": 11,
+      "example_signals": 15,
       "images": 3
     },
     {
       "post": "010",
       "title": "핵종도 읽는 법",
-      "body_characters": 1416,
-      "sections": 12,
+      "body_characters": 1417,
+      "sections": 11,
       "example_signals": 4,
       "images": 3
     },
