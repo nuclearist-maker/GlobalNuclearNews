@@ -1,0 +1,51 @@
+{
+  "range": [
+    26,
+    30
+  ],
+  "status": "PASS",
+  "release_blocked": false,
+  "summary": [
+    {
+      "post": "026",
+      "title": "핵반응의 Q값",
+      "body_characters": 1950,
+      "sections": 6,
+      "example_signals": 12,
+      "images": 3
+    },
+    {
+      "post": "027",
+      "title": "문턱에너지",
+      "body_characters": 1951,
+      "sections": 6,
+      "example_signals": 14,
+      "images": 3
+    },
+    {
+      "post": "028",
+      "title": "운동량 보존과 반동",
+      "body_characters": 2020,
+      "sections": 6,
+      "example_signals": 11,
+      "images": 3
+    },
+    {
+      "post": "029",
+      "title": "복합핵 모형",
+      "body_characters": 1927,
+      "sections": 6,
+      "example_signals": 11,
+      "images": 3
+    },
+    {
+      "post": "030",
+      "title": "탄성산란",
+      "body_characters": 1942,
+      "sections": 6,
+      "example_signals": 12,
+      "images": 3
+    }
+  ],
+  "findings": []
+}

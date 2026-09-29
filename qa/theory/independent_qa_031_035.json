@@ -1,0 +1,51 @@
+{
+  "range": [
+    31,
+    35
+  ],
+  "status": "PASS",
+  "release_blocked": false,
+  "summary": [
+    {
+      "post": "031",
+      "title": "비탄성산란",
+      "body_characters": 1946,
+      "sections": 6,
+      "example_signals": 14,
+      "images": 3
+    },
+    {
+      "post": "032",
+      "title": "중성자 포획",
+      "body_characters": 1962,
+      "sections": 6,
+      "example_signals": 10,
+      "images": 3
+    },
+    {
+      "post": "033",
+      "title": "하전입자 핵반응",
+      "body_characters": 2034,
+      "sections": 6,
+      "example_signals": 13,
+      "images": 3
+    },
+    {
+      "post": "034",
+      "title": "광핵반응",
+      "body_characters": 1939,
+      "sections": 6,
+      "example_signals": 14,
+      "images": 3
+    },
+    {
+      "post": "035",
+      "title": "핵분열 에너지",
+      "body_characters": 1843,
+      "sections": 7,
+      "example_signals": 23,
+      "images": 3
+    }
+  ],
+  "findings": []
+}

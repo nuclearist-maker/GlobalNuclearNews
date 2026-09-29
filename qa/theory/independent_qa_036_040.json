@@ -1,0 +1,51 @@
+{
+  "range": [
+    36,
+    40
+  ],
+  "status": "PASS",
+  "release_blocked": false,
+  "summary": [
+    {
+      "post": "036",
+      "title": "핵분열생성물 수율",
+      "body_characters": 1865,
+      "sections": 7,
+      "example_signals": 16,
+      "images": 3
+    },
+    {
+      "post": "037",
+      "title": "즉발중성자와 지발중성자",
+      "body_characters": 1975,
+      "sections": 7,
+      "example_signals": 12,
+      "images": 3
+    },
+    {
+      "post": "038",
+      "title": "핵융합",
+      "body_characters": 1794,
+      "sections": 7,
+      "example_signals": 24,
+      "images": 3
+    },
+    {
+      "post": "039",
+      "title": "쿨롱장벽과 터널링",
+      "body_characters": 1873,
+      "sections": 7,
+      "example_signals": 10,
+      "images": 3
+    },
+    {
+      "post": "040",
+      "title": "별의 핵합성",
+      "body_characters": 1815,
+      "sections": 7,
+      "example_signals": 10,
+      "images": 3
+    }
+  ],
+  "findings": []
+}

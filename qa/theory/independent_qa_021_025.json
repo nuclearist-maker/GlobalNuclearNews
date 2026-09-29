@@ -1,0 +1,51 @@
+{
+  "range": [
+    21,
+    25
+  ],
+  "status": "PASS",
+  "release_blocked": false,
+  "summary": [
+    {
+      "post": "021",
+      "title": "질량-에너지 등가성",
+      "body_characters": 1887,
+      "sections": 6,
+      "example_signals": 15,
+      "images": 3
+    },
+    {
+      "post": "022",
+      "title": "질량결손",
+      "body_characters": 1773,
+      "sections": 6,
+      "example_signals": 11,
+      "images": 3
+    },
+    {
+      "post": "023",
+      "title": "결합에너지",
+      "body_characters": 1935,
+      "sections": 6,
+      "example_signals": 13,
+      "images": 3
+    },
+    {
+      "post": "024",
+      "title": "핵자당 결합에너지",
+      "body_characters": 1995,
+      "sections": 6,
+      "example_signals": 12,
+      "images": 3
+    },
+    {
+      "post": "025",
+      "title": "분리에너지",
+      "body_characters": 1945,
+      "sections": 6,
+      "example_signals": 13,
+      "images": 3
+    }
+  ],
+  "findings": []
+}

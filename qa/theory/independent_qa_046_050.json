@@ -1,0 +1,51 @@
+{
+  "range": [
+    46,
+    50
+  ],
+  "status": "PASS",
+  "release_blocked": false,
+  "summary": [
+    {
+      "post": "046",
+      "title": "감마붕괴",
+      "body_characters": 1788,
+      "sections": 7,
+      "example_signals": 14,
+      "images": 3
+    },
+    {
+      "post": "047",
+      "title": "내부전환",
+      "body_characters": 1764,
+      "sections": 7,
+      "example_signals": 16,
+      "images": 3
+    },
+    {
+      "post": "048",
+      "title": "붕괴상수",
+      "body_characters": 1815,
+      "sections": 7,
+      "example_signals": 18,
+      "images": 3
+    },
+    {
+      "post": "049",
+      "title": "지수붕괴법칙",
+      "body_characters": 1836,
+      "sections": 7,
+      "example_signals": 21,
+      "images": 3
+    },
+    {
+      "post": "050",
+      "title": "반감기",
+      "body_characters": 1733,
+      "sections": 7,
+      "example_signals": 21,
+      "images": 3
+    }
+  ],
+  "findings": []
+}

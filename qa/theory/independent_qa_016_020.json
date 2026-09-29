@@ -1,0 +1,51 @@
+{
+  "range": [
+    16,
+    20
+  ],
+  "status": "PASS",
+  "release_blocked": false,
+  "summary": [
+    {
+      "post": "016",
+      "title": "마법수",
+      "body_characters": 1638,
+      "sections": 6,
+      "example_signals": 4,
+      "images": 3
+    },
+    {
+      "post": "017",
+      "title": "스핀과 각운동량",
+      "body_characters": 1709,
+      "sections": 6,
+      "example_signals": 5,
+      "images": 3
+    },
+    {
+      "post": "018",
+      "title": "핵의 들뜬상태",
+      "body_characters": 1793,
+      "sections": 6,
+      "example_signals": 18,
+      "images": 3
+    },
+    {
+      "post": "019",
+      "title": "파동-입자 이중성",
+      "body_characters": 1818,
+      "sections": 6,
+      "example_signals": 7,
+      "images": 3
+    },
+    {
+      "post": "020",
+      "title": "불확정성원리",
+      "body_characters": 1805,
+      "sections": 6,
+      "example_signals": 12,
+      "images": 3
+    }
+  ],
+  "findings": []
+}

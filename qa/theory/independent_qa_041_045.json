@@ -1,0 +1,51 @@
+{
+  "range": [
+    41,
+    45
+  ],
+  "status": "PASS",
+  "release_blocked": false,
+  "summary": [
+    {
+      "post": "041",
+      "title": "방사능의 발견",
+      "body_characters": 1820,
+      "sections": 7,
+      "example_signals": 14,
+      "images": 3
+    },
+    {
+      "post": "042",
+      "title": "알파붕괴",
+      "body_characters": 1781,
+      "sections": 7,
+      "example_signals": 18,
+      "images": 3
+    },
+    {
+      "post": "043",
+      "title": "베타 마이너스 붕괴",
+      "body_characters": 1822,
+      "sections": 7,
+      "example_signals": 10,
+      "images": 3
+    },
+    {
+      "post": "044",
+      "title": "베타 플러스 붕괴",
+      "body_characters": 1826,
+      "sections": 7,
+      "example_signals": 15,
+      "images": 3
+    },
+    {
+      "post": "045",
+      "title": "전자포획",
+      "body_characters": 1771,
+      "sections": 7,
+      "example_signals": 10,
+      "images": 3
+    }
+  ],
+  "findings": []
+}
