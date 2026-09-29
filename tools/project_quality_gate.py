@@ -119,6 +119,11 @@ def validate(record, root, kind, stage, required_paths=()):
         else:
             for name, sha in evidence.items():
                 check_file(name, sha, rule)
+        if rule == 'NEWS-07':
+            from news_spacing_gate import html_errors
+            for name in artifacts:
+                if name.endswith('.html') and 'posts/news/' in name:
+                    errors.extend('NEWS-07: '+name+': '+json.dumps(e,ensure_ascii=False) for e in html_errors(local(root,name)))
         if rule == 'NEWS-06':
             basis_name=c.get('report_basis')
             if not isinstance(basis_name,str) or basis_name not in evidence:
@@ -168,6 +173,8 @@ def validate(record, root, kind, stage, required_paths=()):
 def site_errors(site):
     baseline = read(site / 'policies/published_baseline.json')
     errors = []
+    from news_spacing_gate import site_errors as news_spacing_errors
+    errors.extend('NEWS-07: '+json.dumps(e,ensure_ascii=False) for e in news_spacing_errors(site))
     covered = {}
     for f in (site/'qa/releases').glob('*.json'):
         r=read(f)

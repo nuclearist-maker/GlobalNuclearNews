@@ -3,16 +3,16 @@
   "kind": "news",
   "author": "Codex",
   "artifacts": {
-    "posts/news/2026-09-29-nrc-reform-safety-evidence.html": "4040f4dbd46cff20ad844736fd011a2547af472e3035e1b2a98c64d42d8d7dd7",
+    "posts/news/2026-09-29-nrc-reform-safety-evidence.html": "ac205e01e2d2f527bd776f13f77c35f1ec503ba712733d758fc9d14ef9092ed2",
     "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/thumbnail_01.png": "e542ad6b4a60eef2d742d441dc385213cb6eefcc60b860f51a0a7c4a9c455299",
     "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_01.png": "c490026253d4fb4728bd8705af733596667de6027956499da5379942f37009e3",
     "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_02.png": "65548933659c1e54ef4306beb36a9d76511e44ce1129869429c438d813753dad",
-    "assets/app.js": "75fbcbaee844903b2fcc5fb6e5dc0884aa19e10ba57a004138143d0b4a84d42c",
+    "assets/app.js": "1ce23ba944dcf538fb9bded80f341e803f4adab9cd709cf817e65db87310f970",
     "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
     "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
-    "index.html": "d6709097ff4c6fee747c6bdb5d676841de1705de3de648dc47d3845e0a522556",
-    "news.html": "8d4a052676229688915e3eda0443e3f56392d767b0dbc2ff3f2dcbe6d08c9972",
-    "theory.html": "12d0f4e69e2807944c66ad577a6307040e90a75b90828884056288d13862ca2e",
+    "index.html": "6122a241b4e065867aecc4f290f8e658df5477e9a7182d7f0ddf5edcf58dbc80",
+    "news.html": "1bc0dc4afc5ee5f3bf0d5d20bf8f85ddbfc285a9aa0fe603896a0237cdb717e9",
+    "theory.html": "6bd12d5a887750dac4ba08a4ac1c052a8b16129fa76b5f3c9a7aa39ab6680676",
     "qa/news/20260929/B02_direction.json": "c72f655b41e5a13b2a33327d26f60fb1b14f10e599f3c3af2531ad5a4aeeac63",
     "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e"
   },
@@ -29,19 +29,19 @@
     {
       "by": "user",
       "scope": "publish",
-      "text": "글로벌 원자력 뉴스 게시물 업로드!",
-      "at": "2026-09-29T16:46:38.205190-04:00",
+      "text": "본문 및 제목 등의 글에서 띄어쓰기가 제대로 되지 않은 부분들이 발견된다. 특히 본문에 숫자가 포함되는 경우에는 띄어쓰기가 되지 않는게 반복적으로 발견된다. 확인하여 수정하고 재발을 방지하도록 하며 게시물을 재업로드하라",
+      "at": "2026-09-29T17:07:34.959536-04:00",
       "artifacts": {
-        "posts/news/2026-09-29-nrc-reform-safety-evidence.html": "4040f4dbd46cff20ad844736fd011a2547af472e3035e1b2a98c64d42d8d7dd7",
+        "posts/news/2026-09-29-nrc-reform-safety-evidence.html": "ac205e01e2d2f527bd776f13f77c35f1ec503ba712733d758fc9d14ef9092ed2",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/thumbnail_01.png": "e542ad6b4a60eef2d742d441dc385213cb6eefcc60b860f51a0a7c4a9c455299",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_01.png": "c490026253d4fb4728bd8705af733596667de6027956499da5379942f37009e3",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_02.png": "65548933659c1e54ef4306beb36a9d76511e44ce1129869429c438d813753dad",
-        "assets/app.js": "75fbcbaee844903b2fcc5fb6e5dc0884aa19e10ba57a004138143d0b4a84d42c",
+        "assets/app.js": "1ce23ba944dcf538fb9bded80f341e803f4adab9cd709cf817e65db87310f970",
         "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
         "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
-        "index.html": "d6709097ff4c6fee747c6bdb5d676841de1705de3de648dc47d3845e0a522556",
-        "news.html": "8d4a052676229688915e3eda0443e3f56392d767b0dbc2ff3f2dcbe6d08c9972",
-        "theory.html": "12d0f4e69e2807944c66ad577a6307040e90a75b90828884056288d13862ca2e",
+        "index.html": "6122a241b4e065867aecc4f290f8e658df5477e9a7182d7f0ddf5edcf58dbc80",
+        "news.html": "1bc0dc4afc5ee5f3bf0d5d20bf8f85ddbfc285a9aa0fe603896a0237cdb717e9",
+        "theory.html": "6bd12d5a887750dac4ba08a4ac1c052a8b16129fa76b5f3c9a7aa39ab6680676",
         "qa/news/20260929/B02_direction.json": "c72f655b41e5a13b2a33327d26f60fb1b14f10e599f3c3af2531ad5a4aeeac63",
         "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e"
       }
@@ -51,18 +51,18 @@
     "NEWS-01": {
       "status": "PASS",
       "reviewer": "Codex",
-      "checked_at": "2026-09-29T16:49:40.037174-04:00",
+      "checked_at": "2026-09-29T17:07:34.959536-04:00",
       "artifacts": {
-        "posts/news/2026-09-29-nrc-reform-safety-evidence.html": "4040f4dbd46cff20ad844736fd011a2547af472e3035e1b2a98c64d42d8d7dd7",
+        "posts/news/2026-09-29-nrc-reform-safety-evidence.html": "ac205e01e2d2f527bd776f13f77c35f1ec503ba712733d758fc9d14ef9092ed2",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/thumbnail_01.png": "e542ad6b4a60eef2d742d441dc385213cb6eefcc60b860f51a0a7c4a9c455299",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_01.png": "c490026253d4fb4728bd8705af733596667de6027956499da5379942f37009e3",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_02.png": "65548933659c1e54ef4306beb36a9d76511e44ce1129869429c438d813753dad",
-        "assets/app.js": "75fbcbaee844903b2fcc5fb6e5dc0884aa19e10ba57a004138143d0b4a84d42c",
+        "assets/app.js": "1ce23ba944dcf538fb9bded80f341e803f4adab9cd709cf817e65db87310f970",
         "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
         "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
-        "index.html": "d6709097ff4c6fee747c6bdb5d676841de1705de3de648dc47d3845e0a522556",
-        "news.html": "8d4a052676229688915e3eda0443e3f56392d767b0dbc2ff3f2dcbe6d08c9972",
-        "theory.html": "12d0f4e69e2807944c66ad577a6307040e90a75b90828884056288d13862ca2e",
+        "index.html": "6122a241b4e065867aecc4f290f8e658df5477e9a7182d7f0ddf5edcf58dbc80",
+        "news.html": "1bc0dc4afc5ee5f3bf0d5d20bf8f85ddbfc285a9aa0fe603896a0237cdb717e9",
+        "theory.html": "6bd12d5a887750dac4ba08a4ac1c052a8b16129fa76b5f3c9a7aa39ab6680676",
         "qa/news/20260929/B02_direction.json": "c72f655b41e5a13b2a33327d26f60fb1b14f10e599f3c3af2531ad5a4aeeac63",
         "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e"
       },
@@ -71,24 +71,28 @@
         "qa/news/20260929/publication_independent_review.json": "d4cff3b46639020e7f448739684c115bbb143ca787eb7cbf542fa2aa500f01f4",
         "qa/news/20260929/browser_preflight.json": "4443743709915abd6977e3f2965ad728479e5a2e4d9bedf8386b90ccb3b88459",
         "qa/news/20260929/publication_preflight.json": "f2a1b2c60d620e3652d1e9dff991721b2c864430fb5047e8704fca8166f9c56f",
-        "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e"
+        "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e",
+        "qa/news/spacing_20260929/spacing_edits.json": "235ea0950cff72be254a4cb46a9bf0abce5373f42d4dce7686bd019ae6cc59ec",
+        "qa/news/spacing_20260929/browser_preflight.json": "4443743709915abd6977e3f2965ad728479e5a2e4d9bedf8386b90ccb3b88459",
+        "qa/news/spacing_20260929/independent_review.json": "8b05041d3e56f661c5f6c1136d22be752134dfd16927e7b236bb740d386d0bd8",
+        "qa/news/spacing_20260929/producer_review.json": "a93ce74d060df6b1b7a5dca0bf0fe490b0ea6926c39d5e22a0c5680e31483750"
       }
     },
     "NEWS-02": {
       "status": "PASS",
       "reviewer": "Codex",
-      "checked_at": "2026-09-29T16:49:40.037174-04:00",
+      "checked_at": "2026-09-29T17:07:34.959536-04:00",
       "artifacts": {
-        "posts/news/2026-09-29-nrc-reform-safety-evidence.html": "4040f4dbd46cff20ad844736fd011a2547af472e3035e1b2a98c64d42d8d7dd7",
+        "posts/news/2026-09-29-nrc-reform-safety-evidence.html": "ac205e01e2d2f527bd776f13f77c35f1ec503ba712733d758fc9d14ef9092ed2",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/thumbnail_01.png": "e542ad6b4a60eef2d742d441dc385213cb6eefcc60b860f51a0a7c4a9c455299",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_01.png": "c490026253d4fb4728bd8705af733596667de6027956499da5379942f37009e3",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_02.png": "65548933659c1e54ef4306beb36a9d76511e44ce1129869429c438d813753dad",
-        "assets/app.js": "75fbcbaee844903b2fcc5fb6e5dc0884aa19e10ba57a004138143d0b4a84d42c",
+        "assets/app.js": "1ce23ba944dcf538fb9bded80f341e803f4adab9cd709cf817e65db87310f970",
         "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
         "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
-        "index.html": "d6709097ff4c6fee747c6bdb5d676841de1705de3de648dc47d3845e0a522556",
-        "news.html": "8d4a052676229688915e3eda0443e3f56392d767b0dbc2ff3f2dcbe6d08c9972",
-        "theory.html": "12d0f4e69e2807944c66ad577a6307040e90a75b90828884056288d13862ca2e",
+        "index.html": "6122a241b4e065867aecc4f290f8e658df5477e9a7182d7f0ddf5edcf58dbc80",
+        "news.html": "1bc0dc4afc5ee5f3bf0d5d20bf8f85ddbfc285a9aa0fe603896a0237cdb717e9",
+        "theory.html": "6bd12d5a887750dac4ba08a4ac1c052a8b16129fa76b5f3c9a7aa39ab6680676",
         "qa/news/20260929/B02_direction.json": "c72f655b41e5a13b2a33327d26f60fb1b14f10e599f3c3af2531ad5a4aeeac63",
         "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e"
       },
@@ -97,24 +101,28 @@
         "qa/news/20260929/publication_independent_review.json": "d4cff3b46639020e7f448739684c115bbb143ca787eb7cbf542fa2aa500f01f4",
         "qa/news/20260929/browser_preflight.json": "4443743709915abd6977e3f2965ad728479e5a2e4d9bedf8386b90ccb3b88459",
         "qa/news/20260929/publication_preflight.json": "f2a1b2c60d620e3652d1e9dff991721b2c864430fb5047e8704fca8166f9c56f",
-        "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e"
+        "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e",
+        "qa/news/spacing_20260929/spacing_edits.json": "235ea0950cff72be254a4cb46a9bf0abce5373f42d4dce7686bd019ae6cc59ec",
+        "qa/news/spacing_20260929/browser_preflight.json": "4443743709915abd6977e3f2965ad728479e5a2e4d9bedf8386b90ccb3b88459",
+        "qa/news/spacing_20260929/independent_review.json": "8b05041d3e56f661c5f6c1136d22be752134dfd16927e7b236bb740d386d0bd8",
+        "qa/news/spacing_20260929/producer_review.json": "a93ce74d060df6b1b7a5dca0bf0fe490b0ea6926c39d5e22a0c5680e31483750"
       }
     },
     "NEWS-03": {
       "status": "PASS",
       "reviewer": "Codex",
-      "checked_at": "2026-09-29T16:49:40.037174-04:00",
+      "checked_at": "2026-09-29T17:07:34.959536-04:00",
       "artifacts": {
-        "posts/news/2026-09-29-nrc-reform-safety-evidence.html": "4040f4dbd46cff20ad844736fd011a2547af472e3035e1b2a98c64d42d8d7dd7",
+        "posts/news/2026-09-29-nrc-reform-safety-evidence.html": "ac205e01e2d2f527bd776f13f77c35f1ec503ba712733d758fc9d14ef9092ed2",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/thumbnail_01.png": "e542ad6b4a60eef2d742d441dc385213cb6eefcc60b860f51a0a7c4a9c455299",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_01.png": "c490026253d4fb4728bd8705af733596667de6027956499da5379942f37009e3",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_02.png": "65548933659c1e54ef4306beb36a9d76511e44ce1129869429c438d813753dad",
-        "assets/app.js": "75fbcbaee844903b2fcc5fb6e5dc0884aa19e10ba57a004138143d0b4a84d42c",
+        "assets/app.js": "1ce23ba944dcf538fb9bded80f341e803f4adab9cd709cf817e65db87310f970",
         "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
         "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
-        "index.html": "d6709097ff4c6fee747c6bdb5d676841de1705de3de648dc47d3845e0a522556",
-        "news.html": "8d4a052676229688915e3eda0443e3f56392d767b0dbc2ff3f2dcbe6d08c9972",
-        "theory.html": "12d0f4e69e2807944c66ad577a6307040e90a75b90828884056288d13862ca2e",
+        "index.html": "6122a241b4e065867aecc4f290f8e658df5477e9a7182d7f0ddf5edcf58dbc80",
+        "news.html": "1bc0dc4afc5ee5f3bf0d5d20bf8f85ddbfc285a9aa0fe603896a0237cdb717e9",
+        "theory.html": "6bd12d5a887750dac4ba08a4ac1c052a8b16129fa76b5f3c9a7aa39ab6680676",
         "qa/news/20260929/B02_direction.json": "c72f655b41e5a13b2a33327d26f60fb1b14f10e599f3c3af2531ad5a4aeeac63",
         "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e"
       },
@@ -123,24 +131,28 @@
         "qa/news/20260929/publication_independent_review.json": "d4cff3b46639020e7f448739684c115bbb143ca787eb7cbf542fa2aa500f01f4",
         "qa/news/20260929/browser_preflight.json": "4443743709915abd6977e3f2965ad728479e5a2e4d9bedf8386b90ccb3b88459",
         "qa/news/20260929/publication_preflight.json": "f2a1b2c60d620e3652d1e9dff991721b2c864430fb5047e8704fca8166f9c56f",
-        "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e"
+        "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e",
+        "qa/news/spacing_20260929/spacing_edits.json": "235ea0950cff72be254a4cb46a9bf0abce5373f42d4dce7686bd019ae6cc59ec",
+        "qa/news/spacing_20260929/browser_preflight.json": "4443743709915abd6977e3f2965ad728479e5a2e4d9bedf8386b90ccb3b88459",
+        "qa/news/spacing_20260929/independent_review.json": "8b05041d3e56f661c5f6c1136d22be752134dfd16927e7b236bb740d386d0bd8",
+        "qa/news/spacing_20260929/producer_review.json": "a93ce74d060df6b1b7a5dca0bf0fe490b0ea6926c39d5e22a0c5680e31483750"
       }
     },
     "NEWS-04": {
       "status": "PASS",
-      "reviewer": "independent-news-publication-reviewer",
-      "checked_at": "2026-09-29T16:49:40.037174-04:00",
+      "reviewer": "independent-news-spacing-reviewer",
+      "checked_at": "2026-09-29T17:07:34.959536-04:00",
       "artifacts": {
-        "posts/news/2026-09-29-nrc-reform-safety-evidence.html": "4040f4dbd46cff20ad844736fd011a2547af472e3035e1b2a98c64d42d8d7dd7",
+        "posts/news/2026-09-29-nrc-reform-safety-evidence.html": "ac205e01e2d2f527bd776f13f77c35f1ec503ba712733d758fc9d14ef9092ed2",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/thumbnail_01.png": "e542ad6b4a60eef2d742d441dc385213cb6eefcc60b860f51a0a7c4a9c455299",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_01.png": "c490026253d4fb4728bd8705af733596667de6027956499da5379942f37009e3",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_02.png": "65548933659c1e54ef4306beb36a9d76511e44ce1129869429c438d813753dad",
-        "assets/app.js": "75fbcbaee844903b2fcc5fb6e5dc0884aa19e10ba57a004138143d0b4a84d42c",
+        "assets/app.js": "1ce23ba944dcf538fb9bded80f341e803f4adab9cd709cf817e65db87310f970",
         "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
         "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
-        "index.html": "d6709097ff4c6fee747c6bdb5d676841de1705de3de648dc47d3845e0a522556",
-        "news.html": "8d4a052676229688915e3eda0443e3f56392d767b0dbc2ff3f2dcbe6d08c9972",
-        "theory.html": "12d0f4e69e2807944c66ad577a6307040e90a75b90828884056288d13862ca2e",
+        "index.html": "6122a241b4e065867aecc4f290f8e658df5477e9a7182d7f0ddf5edcf58dbc80",
+        "news.html": "1bc0dc4afc5ee5f3bf0d5d20bf8f85ddbfc285a9aa0fe603896a0237cdb717e9",
+        "theory.html": "6bd12d5a887750dac4ba08a4ac1c052a8b16129fa76b5f3c9a7aa39ab6680676",
         "qa/news/20260929/B02_direction.json": "c72f655b41e5a13b2a33327d26f60fb1b14f10e599f3c3af2531ad5a4aeeac63",
         "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e"
       },
@@ -149,24 +161,28 @@
         "qa/news/20260929/publication_independent_review.json": "d4cff3b46639020e7f448739684c115bbb143ca787eb7cbf542fa2aa500f01f4",
         "qa/news/20260929/browser_preflight.json": "4443743709915abd6977e3f2965ad728479e5a2e4d9bedf8386b90ccb3b88459",
         "qa/news/20260929/publication_preflight.json": "f2a1b2c60d620e3652d1e9dff991721b2c864430fb5047e8704fca8166f9c56f",
-        "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e"
+        "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e",
+        "qa/news/spacing_20260929/spacing_edits.json": "235ea0950cff72be254a4cb46a9bf0abce5373f42d4dce7686bd019ae6cc59ec",
+        "qa/news/spacing_20260929/browser_preflight.json": "4443743709915abd6977e3f2965ad728479e5a2e4d9bedf8386b90ccb3b88459",
+        "qa/news/spacing_20260929/independent_review.json": "8b05041d3e56f661c5f6c1136d22be752134dfd16927e7b236bb740d386d0bd8",
+        "qa/news/spacing_20260929/producer_review.json": "a93ce74d060df6b1b7a5dca0bf0fe490b0ea6926c39d5e22a0c5680e31483750"
       }
     },
     "NEWS-05": {
       "status": "PASS",
       "reviewer": "Codex",
-      "checked_at": "2026-09-29T16:49:40.037174-04:00",
+      "checked_at": "2026-09-29T17:07:34.959536-04:00",
       "artifacts": {
-        "posts/news/2026-09-29-nrc-reform-safety-evidence.html": "4040f4dbd46cff20ad844736fd011a2547af472e3035e1b2a98c64d42d8d7dd7",
+        "posts/news/2026-09-29-nrc-reform-safety-evidence.html": "ac205e01e2d2f527bd776f13f77c35f1ec503ba712733d758fc9d14ef9092ed2",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/thumbnail_01.png": "e542ad6b4a60eef2d742d441dc385213cb6eefcc60b860f51a0a7c4a9c455299",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_01.png": "c490026253d4fb4728bd8705af733596667de6027956499da5379942f37009e3",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_02.png": "65548933659c1e54ef4306beb36a9d76511e44ce1129869429c438d813753dad",
-        "assets/app.js": "75fbcbaee844903b2fcc5fb6e5dc0884aa19e10ba57a004138143d0b4a84d42c",
+        "assets/app.js": "1ce23ba944dcf538fb9bded80f341e803f4adab9cd709cf817e65db87310f970",
         "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
         "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
-        "index.html": "d6709097ff4c6fee747c6bdb5d676841de1705de3de648dc47d3845e0a522556",
-        "news.html": "8d4a052676229688915e3eda0443e3f56392d767b0dbc2ff3f2dcbe6d08c9972",
-        "theory.html": "12d0f4e69e2807944c66ad577a6307040e90a75b90828884056288d13862ca2e",
+        "index.html": "6122a241b4e065867aecc4f290f8e658df5477e9a7182d7f0ddf5edcf58dbc80",
+        "news.html": "1bc0dc4afc5ee5f3bf0d5d20bf8f85ddbfc285a9aa0fe603896a0237cdb717e9",
+        "theory.html": "6bd12d5a887750dac4ba08a4ac1c052a8b16129fa76b5f3c9a7aa39ab6680676",
         "qa/news/20260929/B02_direction.json": "c72f655b41e5a13b2a33327d26f60fb1b14f10e599f3c3af2531ad5a4aeeac63",
         "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e"
       },
@@ -175,24 +191,28 @@
         "qa/news/20260929/publication_independent_review.json": "d4cff3b46639020e7f448739684c115bbb143ca787eb7cbf542fa2aa500f01f4",
         "qa/news/20260929/browser_preflight.json": "4443743709915abd6977e3f2965ad728479e5a2e4d9bedf8386b90ccb3b88459",
         "qa/news/20260929/publication_preflight.json": "f2a1b2c60d620e3652d1e9dff991721b2c864430fb5047e8704fca8166f9c56f",
-        "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e"
+        "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e",
+        "qa/news/spacing_20260929/spacing_edits.json": "235ea0950cff72be254a4cb46a9bf0abce5373f42d4dce7686bd019ae6cc59ec",
+        "qa/news/spacing_20260929/browser_preflight.json": "4443743709915abd6977e3f2965ad728479e5a2e4d9bedf8386b90ccb3b88459",
+        "qa/news/spacing_20260929/independent_review.json": "8b05041d3e56f661c5f6c1136d22be752134dfd16927e7b236bb740d386d0bd8",
+        "qa/news/spacing_20260929/producer_review.json": "a93ce74d060df6b1b7a5dca0bf0fe490b0ea6926c39d5e22a0c5680e31483750"
       }
     },
     "NEWS-06": {
       "status": "PASS",
       "reviewer": "Codex",
-      "checked_at": "2026-09-29T16:49:40.037174-04:00",
+      "checked_at": "2026-09-29T17:07:34.959536-04:00",
       "artifacts": {
-        "posts/news/2026-09-29-nrc-reform-safety-evidence.html": "4040f4dbd46cff20ad844736fd011a2547af472e3035e1b2a98c64d42d8d7dd7",
+        "posts/news/2026-09-29-nrc-reform-safety-evidence.html": "ac205e01e2d2f527bd776f13f77c35f1ec503ba712733d758fc9d14ef9092ed2",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/thumbnail_01.png": "e542ad6b4a60eef2d742d441dc385213cb6eefcc60b860f51a0a7c4a9c455299",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_01.png": "c490026253d4fb4728bd8705af733596667de6027956499da5379942f37009e3",
         "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_02.png": "65548933659c1e54ef4306beb36a9d76511e44ce1129869429c438d813753dad",
-        "assets/app.js": "75fbcbaee844903b2fcc5fb6e5dc0884aa19e10ba57a004138143d0b4a84d42c",
+        "assets/app.js": "1ce23ba944dcf538fb9bded80f341e803f4adab9cd709cf817e65db87310f970",
         "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
         "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
-        "index.html": "d6709097ff4c6fee747c6bdb5d676841de1705de3de648dc47d3845e0a522556",
-        "news.html": "8d4a052676229688915e3eda0443e3f56392d767b0dbc2ff3f2dcbe6d08c9972",
-        "theory.html": "12d0f4e69e2807944c66ad577a6307040e90a75b90828884056288d13862ca2e",
+        "index.html": "6122a241b4e065867aecc4f290f8e658df5477e9a7182d7f0ddf5edcf58dbc80",
+        "news.html": "1bc0dc4afc5ee5f3bf0d5d20bf8f85ddbfc285a9aa0fe603896a0237cdb717e9",
+        "theory.html": "6bd12d5a887750dac4ba08a4ac1c052a8b16129fa76b5f3c9a7aa39ab6680676",
         "qa/news/20260929/B02_direction.json": "c72f655b41e5a13b2a33327d26f60fb1b14f10e599f3c3af2531ad5a4aeeac63",
         "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e"
       },
@@ -201,9 +221,38 @@
         "qa/news/20260929/publication_independent_review.json": "d4cff3b46639020e7f448739684c115bbb143ca787eb7cbf542fa2aa500f01f4",
         "qa/news/20260929/browser_preflight.json": "4443743709915abd6977e3f2965ad728479e5a2e4d9bedf8386b90ccb3b88459",
         "qa/news/20260929/publication_preflight.json": "f2a1b2c60d620e3652d1e9dff991721b2c864430fb5047e8704fca8166f9c56f",
-        "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e"
+        "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e",
+        "qa/news/spacing_20260929/spacing_edits.json": "235ea0950cff72be254a4cb46a9bf0abce5373f42d4dce7686bd019ae6cc59ec",
+        "qa/news/spacing_20260929/browser_preflight.json": "4443743709915abd6977e3f2965ad728479e5a2e4d9bedf8386b90ccb3b88459",
+        "qa/news/spacing_20260929/independent_review.json": "8b05041d3e56f661c5f6c1136d22be752134dfd16927e7b236bb740d386d0bd8",
+        "qa/news/spacing_20260929/producer_review.json": "a93ce74d060df6b1b7a5dca0bf0fe490b0ea6926c39d5e22a0c5680e31483750"
       },
       "report_basis": "qa/news/20260929/B02_report_basis.json"
+    },
+    "NEWS-07": {
+      "status": "PASS",
+      "reviewer": "Codex",
+      "checked_at": "2026-09-29T17:07:34.959536-04:00",
+      "artifacts": {
+        "posts/news/2026-09-29-nrc-reform-safety-evidence.html": "ac205e01e2d2f527bd776f13f77c35f1ec503ba712733d758fc9d14ef9092ed2",
+        "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/thumbnail_01.png": "e542ad6b4a60eef2d742d441dc385213cb6eefcc60b860f51a0a7c4a9c455299",
+        "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_01.png": "c490026253d4fb4728bd8705af733596667de6027956499da5379942f37009e3",
+        "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_02.png": "65548933659c1e54ef4306beb36a9d76511e44ce1129869429c438d813753dad",
+        "assets/app.js": "1ce23ba944dcf538fb9bded80f341e803f4adab9cd709cf817e65db87310f970",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "index.html": "6122a241b4e065867aecc4f290f8e658df5477e9a7182d7f0ddf5edcf58dbc80",
+        "news.html": "1bc0dc4afc5ee5f3bf0d5d20bf8f85ddbfc285a9aa0fe603896a0237cdb717e9",
+        "theory.html": "6bd12d5a887750dac4ba08a4ac1c052a8b16129fa76b5f3c9a7aa39ab6680676",
+        "qa/news/20260929/B02_direction.json": "c72f655b41e5a13b2a33327d26f60fb1b14f10e599f3c3af2531ad5a4aeeac63",
+        "qa/news/20260929/B02_report_basis.json": "473ea05bd8712760a7a42999137315bd0f57ffe1cba933fc0de9c56bb842f75e"
+      },
+      "evidence": {
+        "qa/news/spacing_20260929/spacing_edits.json": "235ea0950cff72be254a4cb46a9bf0abce5373f42d4dce7686bd019ae6cc59ec",
+        "qa/news/spacing_20260929/browser_preflight.json": "4443743709915abd6977e3f2965ad728479e5a2e4d9bedf8386b90ccb3b88459",
+        "qa/news/spacing_20260929/independent_review.json": "8b05041d3e56f661c5f6c1136d22be752134dfd16927e7b236bb740d386d0bd8",
+        "qa/news/spacing_20260929/producer_review.json": "a93ce74d060df6b1b7a5dca0bf0fe490b0ea6926c39d5e22a0c5680e31483750"
+      }
     }
   }
 }

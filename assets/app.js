@@ -7,21 +7,21 @@ const posts=[
     "category": "대형원전",
     "summary": "Crane의 환경평가와 마안산의 계획 승인을 구분하고, 실제 운전에 필요한 증거를 살펴봅니다.",
     "thumbnail": "assets/images/news/2026-09-29-nuclear-restart-review/hybrid-v2/thumbnail_01.png",
-    "thumbnailAlt": "재가동에는 설비·인력·허가의 준비상태 입증이 함께 필요함을 보여 주는 개념 장면",
+    "thumbnailAlt": "재가동에는 설비·인력·허가의 준비 상태 입증이 함께 필요함을 보여 주는 개념 장면",
     "url": "posts/news/2026-09-29-nuclear-restart-review.html",
     "keywords": "원전 재가동, 심사 완료 뒤에 남은 일 원전 재가동 · 인허가"
   },
   {
-    "title": "NRC 규제개편: 선량한도가 같아도 달라지는 것들",
+    "title": "NRC 규제 개편: 선량 한도가 같아도 달라지는 것들",
     "date": "2026.09.29",
     "displayDate": "2026.09.29",
     "section": "news",
     "category": "정책·규제",
-    "summary": "5년 선량 계산, 공중 피폭 예외, 비용 추정과 관측자료를 통해 개편의 실질을 읽습니다.",
+    "summary": "5년 선량 계산, 공중 피폭 예외, 비용 추정과 관측 자료를 통해 개편의 실질을 읽습니다.",
     "thumbnail": "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/thumbnail_01.png",
-    "thumbnailAlt": "선량계와 규칙 문서를 통해 기본한도와 관리·예외·보고 조건을 함께 읽는 NRC 규칙안 개념 장면",
+    "thumbnailAlt": "선량계와 규칙 문서를 통해 기본 한도와 관리·예외·보고 조건을 함께 읽는 NRC 규칙안 개념 장면",
     "url": "posts/news/2026-09-29-nrc-reform-safety-evidence.html",
-    "keywords": "NRC 규제개편: 선량한도가 같아도 달라지는 것들 미국 규제 · 방사선방호"
+    "keywords": "NRC 규제 개편: 선량 한도가 같아도 달라지는 것들 미국 규제 · 방사선방호"
   },
   {
     "title": "핵연료를 재활용한 뒤, 남은 폐기물은 어디로 갈까요",

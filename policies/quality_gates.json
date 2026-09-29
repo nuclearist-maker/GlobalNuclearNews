@@ -15,6 +15,6 @@
   },
   "news": {
     "draft": {"approvals": ["direction"], "checks": ["NEWS-01", "NEWS-06"]},
-    "publish": {"approvals": ["direction", "publish"], "checks": ["NEWS-01", "NEWS-02", "NEWS-03", "NEWS-04", "NEWS-05", "NEWS-06"]}
+    "publish": {"approvals": ["direction", "publish"], "checks": ["NEWS-01", "NEWS-02", "NEWS-03", "NEWS-04", "NEWS-05", "NEWS-06", "NEWS-07"]}
   }
 }
