@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "reviewer": "independent-news-publication-reviewer",
+  "reviewed_at": "2026-09-29T20:48:31.391768+00:00",
+  "baseline_commit": "8454abae002e4e44f4bdaf494e4f69ce88e33b60",
+  "scope": "Approved news publication payload integrity and narrowly scoped shared-index change; browser deployment checks performed separately",
+  "checks": {
+    "three_articles_and_nine_images_match_final_independent_review": "PASS",
+    "three_new_news_entries_match_existing_filters": "PASS",
+    "all_previous_posts_metadata_unchanged": "PASS",
+    "javascript_execution_logic_unchanged": "PASS",
+    "root_pages_only_cache_version_changed": "PASS",
+    "other_theory_sealed_files_unchanged": "PASS"
+  },
+  "news_urls": [
+    "posts/news/2026-09-29-nuclear-restart-review.html",
+    "posts/news/2026-09-29-nrc-reform-safety-evidence.html",
+    "posts/news/2026-09-29-recycled-fuel-deep-borehole.html"
+  ],
+  "changed_file_hashes": {
+    "posts/news/2026-09-29-nuclear-restart-review.html": "daf2a9336c7a9d790f318e9d63c835836f8995ef05f4fe68b2c299510e416d97",
+    "assets/images/news/2026-09-29-nuclear-restart-review/hybrid-v2/thumbnail_01.png": "77b1ce033061be4bb7619975b6450dc3a24095003daa278aeebee24593577825",
+    "assets/images/news/2026-09-29-nuclear-restart-review/hybrid-v2/body_01.png": "47ad782642442b50c11fb239e8f8e3c7998b8a96f1b71ef09864811a452d4808",
+    "assets/images/news/2026-09-29-nuclear-restart-review/hybrid-v2/body_02.png": "0764536cae9a74efc4bba339e02c3e3463899685f76331d907fd3c924cb6e5f4",
+    "posts/news/2026-09-29-nrc-reform-safety-evidence.html": "4040f4dbd46cff20ad844736fd011a2547af472e3035e1b2a98c64d42d8d7dd7",
+    "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/thumbnail_01.png": "e542ad6b4a60eef2d742d441dc385213cb6eefcc60b860f51a0a7c4a9c455299",
+    "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_01.png": "c490026253d4fb4728bd8705af733596667de6027956499da5379942f37009e3",
+    "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_02.png": "65548933659c1e54ef4306beb36a9d76511e44ce1129869429c438d813753dad",
+    "posts/news/2026-09-29-recycled-fuel-deep-borehole.html": "45212ef9a72f01a4b5c76e1852bb6cf48b033e3ed8a9e6acaad2d0d2f9a80fd5",
+    "assets/images/news/2026-09-29-recycled-fuel-deep-borehole/hybrid-v2/thumbnail_01.png": "2d418ea6dda179ecca2eba8ea555adde2b65aed9d0dc61f76b7b97360efc98d6",
+    "assets/images/news/2026-09-29-recycled-fuel-deep-borehole/hybrid-v2/body_01.png": "98ee018bda063ff4b03057140ef08e7f66ad87ce3da4f83f7576e283be94021e",
+    "assets/images/news/2026-09-29-recycled-fuel-deep-borehole/hybrid-v2/body_02.png": "6fda51ba95cd554be889bf163005e9bf64836ab5dc3e8fa04b9394eb36d5dc84",
+    "index.html": "d6709097ff4c6fee747c6bdb5d676841de1705de3de648dc47d3845e0a522556",
+    "news.html": "8d4a052676229688915e3eda0443e3f56392d767b0dbc2ff3f2dcbe6d08c9972",
+    "theory.html": "12d0f4e69e2807944c66ad577a6307040e90a75b90828884056288d13862ca2e",
+    "assets/app.js": "75fbcbaee844903b2fcc5fb6e5dc0884aa19e10ba57a004138143d0b4a84d42c",
+    "qa/theory/visual_approval_001_050.json": "4aa33b7386e353b37e9e6cfc446506b81087b206909b877c50cc3e4c8c0f96eb",
+    ".github/workflows/deploy-pages.yml": "74075aa200ef8c3e4e3d196541260476c44459b0e8658e9c22c3b9cfbef004cc",
+    "tools/build_pages_release.py": "83de413d7ecf7c351d90a46179e144970e62b0bb3f6a40f1fda900d56c6aa8b3",
+    "tools/project_quality_gate.py": "748b0096d95b22f42bf4d7e0f2233dbe7703a065073e5b2fef564d11df0baf82",
+    "tools/public_files.py": "3486c0df49d84d92760dbaf56cfd19e16ce319bdfc08851cbd14aeb3fed3705e",
+    "tools/report_visual_gate.py": "30e9771f323a1abf1dbe4d3b44830ceb4a7789e60758958be2b06d2bd81689c9"
+  },
+  "theory_seal_update": {
+    "file": "assets/app.js",
+    "previous": "d48c187842ddb86e79de0621341615056bebef613d19ef20e883b1aac90dd4f8",
+    "current": "75fbcbaee844903b2fcc5fb6e5dc0884aa19e10ba57a004138143d0b4a84d42c",
+    "scope": "Add three news metadata entries only",
+    "full_theory_visual_reinspection": false
+  },
+  "limitations": [
+    "This review does not claim a new full visual inspection of the theory series.",
+    "Deployment success and browser listing/mobile checks require their separate verification records."
+  ]
+}

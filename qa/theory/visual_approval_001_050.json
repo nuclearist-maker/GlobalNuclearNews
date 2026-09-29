@@ -4,7 +4,7 @@
   "reviewer": "/root/qa041",
   "sealed_at": "2026-09-29T18:09:28.224492+00:00",
   "files": {
-    "assets/app.js": "d48c187842ddb86e79de0621341615056bebef613d19ef20e883b1aac90dd4f8",
+    "assets/app.js": "75fbcbaee844903b2fcc5fb6e5dc0884aa19e10ba57a004138143d0b4a84d42c",
     "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
     "assets/images/theory/series-01/resume-v2/011-body-01.png": "95f73495de268e793cd1c3b0ae54ed17de12dbea5824c934597d27d9028bbd8e",
     "assets/images/theory/series-01/resume-v2/011-body-02.png": "80a0c85b9820a007e8b350770b85defa7360b25a97ccff75ea462fb63d45b85a",
@@ -206,5 +206,17 @@
     "posts/theory/048-decay-constant.html": "e5db4a4cf274635cf0a70cfbe2fe137a559f2ad314da12e335847a8b26440956",
     "posts/theory/049-exponential-decay-law.html": "f2597cc0c5c881e0b3be7f72e8c418c851e3e1196395d563c9da67b15bf8b56b",
     "posts/theory/050-half-life.html": "8d181a7ce7b47bc0f9c4a2365d76f7e92aa43268f45def209e11caff58602fc6"
-  }
+  },
+  "scoped_amendments": [
+    {
+      "reviewer": "independent-news-publication-reviewer",
+      "reviewed_at": "2026-09-29T20:48:31.391768+00:00",
+      "scope": "News metadata addition only; unchanged theory content and JavaScript rendering logic",
+      "file": "assets/app.js",
+      "previous_sha256": "d48c187842ddb86e79de0621341615056bebef613d19ef20e883b1aac90dd4f8",
+      "new_sha256": "75fbcbaee844903b2fcc5fb6e5dc0884aa19e10ba57a004138143d0b4a84d42c",
+      "evidence": "qa/news/20260929/publication_independent_review.json",
+      "theory_full_visual_review_repeated": false
+    }
+  ]
 }

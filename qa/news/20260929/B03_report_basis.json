@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "status": "READY",
+  "proposal_id": "B03",
+  "primary_reports": [
+    {
+      "id": "20260929_NEWS_B03",
+      "title": "핵연료 재활용 잔류물과 심부시추공 처분의 안전 입증 조건",
+      "report_date": "2026-09-29",
+      "qa_status": "PASS",
+      "report_sha256": "6f9237df34a608fff34ae3a05bd0b10e167c7fe62e0d615228c170b18f924de9",
+      "qa_sha256": "3f96775e352e8c8d48be052a6ec0d7557b90a6735a4dd91530a801eba31820c0",
+      "section_ids": [
+        "overview",
+        "waste_path",
+        "barriers",
+        "operations",
+        "cost_evidence",
+        "capabilities"
+      ]
+    }
+  ],
+  "body_sections": [
+    "research_result",
+    "material_flow",
+    "barrier_system",
+    "cost_example",
+    "dose_evidence",
+    "retrieval"
+  ],
+  "images": [
+    "thumbnail_01",
+    "body_01",
+    "body_02"
+  ],
+  "section_map": {
+    "research_result": {
+      "report_id": "20260929_NEWS_B03",
+      "report_section": "overview",
+      "source_urls": [
+        "https://www.deepisolation.com/press/nuclear-waste-innovator-deep-isolation-demonstrates-safe-cost-effective-disposal-pathway-for-waste-from-recycled-fuel/",
+        "https://arpa-e-foa.energy.gov/Default.aspx?foaId=49ab487d-8b8b-46cb-8f1f-9c57f44f744d",
+        "https://www.osti.gov/servlets/purl/1029790",
+        "https://gnssn.iaea.org/RTWS/hidra/Shared%20Documents/related%20IAEA%20SS/SSR-5.pdf"
+      ],
+      "finding": "CURIE3년연구는잔류물처분모델의회사발표",
+      "explanation_gain": "상용허가·실측성능과연구결과를 구분합니다."
+    },
+    "material_flow": {
+      "report_id": "20260929_NEWS_B03",
+      "report_section": "waste_path",
+      "source_urls": [
+        "https://www.deepisolation.com/press/nuclear-waste-innovator-deep-isolation-demonstrates-safe-cost-effective-disposal-pathway-for-waste-from-recycled-fuel/",
+        "https://arpa-e-foa.energy.gov/Default.aspx?foaId=49ab487d-8b8b-46cb-8f1f-9c57f44f744d",
+        "https://arpa-e.energy.gov/sites/default/files/2025-01/Project%20Descriptions_CURIE.pdf",
+        "https://gnssn.iaea.org/RTWS/hidra/Shared%20Documents/related%20IAEA%20SS/SSR-5.pdf",
+        "https://www.deepisolation.com/press/nuclear-waste-innovator-further-validates-borehole-technology-for-safe-disposal-of-recycled-fuel-waste/"
+      ],
+      "finding": "연료제품회수후에도폐기물형태·발열·핵종·WAC가필요",
+      "explanation_gain": "작은부피만으로처분부담을평가할수없는이유를설명합니다."
+    },
+    "barrier_system": {
+      "report_id": "20260929_NEWS_B03",
+      "report_section": "barriers",
+      "source_urls": [
+        "https://www.osti.gov/servlets/purl/1029790",
+        "https://gnssn.iaea.org/RTWS/hidra/Shared%20Documents/related%20IAEA%20SS/SSR-5.pdf"
+      ],
+      "finding": "Sandia2011의5km·하부2km 참조설계와다중안전기능",
+      "explanation_gain": "깊이뿐아니라용기·봉쇄·모암·지하수가함께작동하는구조를설명합니다."
+    },
+    "cost_example": {
+      "report_id": "20260929_NEWS_B03",
+      "report_section": "cost_evidence",
+      "source_urls": [
+        "https://www.deepisolation.com/press/nuclear-waste-innovator-deep-isolation-demonstrates-safe-cost-effective-disposal-pathway-for-waste-from-recycled-fuel/",
+        "https://arpa-e-foa.energy.gov/Default.aspx?foaId=49ab487d-8b8b-46cb-8f1f-9c57f44f744d",
+        "https://gnssn.iaea.org/RTWS/hidra/Shared%20Documents/related%20IAEA%20SS/SSR-5.pdf"
+      ],
+      "finding": "0.1cent/kWh=1USD/MWh의처분비단위와총발전비구분",
+      "explanation_gain": "원가범위·발전량분모·연구목표의의미를설명합니다."
+    },
+    "dose_evidence": {
+      "report_id": "20260929_NEWS_B03",
+      "report_section": "cost_evidence",
+      "source_urls": [
+        "https://www.deepisolation.com/press/nuclear-waste-innovator-deep-isolation-demonstrates-safe-cost-effective-disposal-pathway-for-waste-from-recycled-fuel/",
+        "https://arpa-e-foa.energy.gov/Default.aspx?foaId=49ab487d-8b8b-46cb-8f1f-9c57f44f744d",
+        "https://gnssn.iaea.org/RTWS/hidra/Shared%20Documents/related%20IAEA%20SS/SSR-5.pdf"
+      ],
+      "finding": "예상조건·대부분시나리오·10mrem/년비교기준의한정",
+      "explanation_gain": "규제승인이나모든상황안전보장으로확대하지않습니다."
+    },
+    "retrieval": {
+      "report_id": "20260929_NEWS_B03",
+      "report_section": "operations",
+      "source_urls": [
+        "https://www.deepisolation.com/press/nuclear-waste-innovator-deep-isolation-demonstrates-safe-cost-effective-disposal-pathway-for-waste-from-recycled-fuel/",
+        "https://www.osti.gov/servlets/purl/1029790",
+        "https://www.osti.gov/servlets/purl/1207655",
+        "https://gnssn.iaea.org/RTWS/hidra/Shared%20Documents/related%20IAEA%20SS/SSR-5.pdf",
+        "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1378_web.pdf",
+        "https://www.deepisolation.com/press/nuclear-waste-innovator-further-validates-borehole-technology-for-safe-disposal-of-recycled-fuel-waste/"
+      ],
+      "finding": "정치시연·봉쇄전회수·폐쇄후회수의차이",
+      "explanation_gain": "기술시연·부지검증·허가·상업운영이서로다름을설명합니다."
+    }
+  },
+  "image_map": {
+    "thumbnail_01": {
+      "report_id": "20260929_NEWS_B03",
+      "report_section": "waste_path",
+      "source_urls": [
+        "https://www.deepisolation.com/press/nuclear-waste-innovator-deep-isolation-demonstrates-safe-cost-effective-disposal-pathway-for-waste-from-recycled-fuel/",
+        "https://arpa-e-foa.energy.gov/Default.aspx?foaId=49ab487d-8b8b-46cb-8f1f-9c57f44f744d",
+        "https://arpa-e.energy.gov/sites/default/files/2025-01/Project%20Descriptions_CURIE.pdf",
+        "https://gnssn.iaea.org/RTWS/hidra/Shared%20Documents/related%20IAEA%20SS/SSR-5.pdf",
+        "https://www.deepisolation.com/press/nuclear-waste-innovator-further-validates-borehole-technology-for-safe-disposal-of-recycled-fuel-waste/"
+      ],
+      "learning_point": "재활용과잔류물처분을함께설계합니다.",
+      "visual_encoding": "연료회수설비에서제품과밀봉잔류물의두경로로이어지는입체장면",
+      "caveat": "물질량이나회수비율을나타내지않습니다."
+    },
+    "body_01": {
+      "report_id": "20260929_NEWS_B03",
+      "report_section": "barriers",
+      "source_urls": [
+        "https://www.osti.gov/servlets/purl/1029790",
+        "https://gnssn.iaea.org/RTWS/hidra/Shared%20Documents/related%20IAEA%20SS/SSR-5.pdf"
+      ],
+      "learning_point": "깊이만이아니라장벽과부지환경이격리를담당합니다.",
+      "visual_encoding": "수직지질단면에약5km와하부2km참조설계,용기·봉쇄·모암표시",
+      "caveat": "2011Sandia참조개념,회사의확정설계·법정깊이아닙니다."
+    },
+    "body_02": {
+      "report_id": "20260929_NEWS_B03",
+      "report_section": "cost_evidence",
+      "source_urls": [
+        "https://www.deepisolation.com/press/nuclear-waste-innovator-deep-isolation-demonstrates-safe-cost-effective-disposal-pathway-for-waste-from-recycled-fuel/",
+        "https://arpa-e-foa.energy.gov/Default.aspx?foaId=49ab487d-8b8b-46cb-8f1f-9c57f44f744d",
+        "https://gnssn.iaea.org/RTWS/hidra/Shared%20Documents/related%20IAEA%20SS/SSR-5.pdf"
+      ],
+      "learning_point": "1USD/MWh는처분비목표의단위변환입니다.",
+      "visual_encoding": "에너지분모와처분비분자를분수관계로보여주고연료·총발전비와경계구분",
+      "caveat": "프로그램목표·회사추정이며실제계약단가·전체원가아닙니다."
+    }
+  },
+  "depth_coverage": {
+    "mechanism_or_process": [
+      "material_flow"
+    ],
+    "evidence": [
+      "research_result",
+      "barrier_system"
+    ],
+    "case_or_comparison": [
+      "cost_example"
+    ],
+    "limits": [
+      "retrieval"
+    ]
+  }
+}

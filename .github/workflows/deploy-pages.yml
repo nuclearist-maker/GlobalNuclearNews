@@ -31,7 +31,9 @@ jobs:
         run: python tools/qa_theory_posts.py --first 1 --last 50
       - name: Require independent visual approval for unchanged release files
         run: python tools/theory_release_gate.py
-      - name: Package public site files
+      - name: Require approval and evidence for every changed public file
+        run: python tools/project_quality_gate.py --site
+      - name: Package verified public site files
         run: python tools/build_pages_release.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
