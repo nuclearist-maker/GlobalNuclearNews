@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-09-29T17:07:34.959536-04:00",
+  "reviewer": "Codex",
+  "checks": {
+    "numeric_spacing_all_four_news_posts_and_listing": "PASS",
+    "original_and_corrected_text_read": "PASS",
+    "390px_titles_and_numeric_sections_visual_read": "PASS",
+    "1440px_and390px_browser_preflight": "PASS",
+    "numeric_values_units_source_urls_unchanged": "PASS",
+    "images_unchanged": "PASS",
+    "regression_tests": "3 PASS"
+  },
+  "examples": [
+    "직전4년 → 직전 4년",
+    "50mSv → 50 mSv",
+    "2026년7월15일 → 2026년 7월 15일",
+    "추정합니다.2024년 → 추정합니다. 2024년"
+  ]
+}

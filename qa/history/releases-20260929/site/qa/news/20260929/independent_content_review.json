@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "reviewer": "independent agent /root/b02_report_basis_qa",
+  "scope": "승인된 3편 본문·9 PNG와 390px 판독·보고서별 근거·수식/수치·공개정보 독립검수",
+  "original_audit_sha256": "89cc2f71ccc667acecd43ed538e8089c7e558a8a874bc2278d5f138825dabfb2",
+  "reviewed_artifacts": {
+    "posts/news/2026-09-29-nuclear-restart-review.html": "daf2a9336c7a9d790f318e9d63c835836f8995ef05f4fe68b2c299510e416d97",
+    "assets/images/news/2026-09-29-nuclear-restart-review/hybrid-v2/thumbnail_01.png": "77b1ce033061be4bb7619975b6450dc3a24095003daa278aeebee24593577825",
+    "assets/images/news/2026-09-29-nuclear-restart-review/hybrid-v2/body_01.png": "47ad782642442b50c11fb239e8f8e3c7998b8a96f1b71ef09864811a452d4808",
+    "assets/images/news/2026-09-29-nuclear-restart-review/hybrid-v2/body_02.png": "0764536cae9a74efc4bba339e02c3e3463899685f76331d907fd3c924cb6e5f4",
+    "posts/news/2026-09-29-nrc-reform-safety-evidence.html": "4040f4dbd46cff20ad844736fd011a2547af472e3035e1b2a98c64d42d8d7dd7",
+    "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/thumbnail_01.png": "e542ad6b4a60eef2d742d441dc385213cb6eefcc60b860f51a0a7c4a9c455299",
+    "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_01.png": "c490026253d4fb4728bd8705af733596667de6027956499da5379942f37009e3",
+    "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_02.png": "65548933659c1e54ef4306beb36a9d76511e44ce1129869429c438d813753dad",
+    "posts/news/2026-09-29-recycled-fuel-deep-borehole.html": "45212ef9a72f01a4b5c76e1852bb6cf48b033e3ed8a9e6acaad2d0d2f9a80fd5",
+    "assets/images/news/2026-09-29-recycled-fuel-deep-borehole/hybrid-v2/thumbnail_01.png": "2d418ea6dda179ecca2eba8ea555adde2b65aed9d0dc61f76b7b97360efc98d6",
+    "assets/images/news/2026-09-29-recycled-fuel-deep-borehole/hybrid-v2/body_01.png": "98ee018bda063ff4b03057140ef08e7f66ad87ce3da4f83f7576e283be94021e",
+    "assets/images/news/2026-09-29-recycled-fuel-deep-borehole/hybrid-v2/body_02.png": "6fda51ba95cd554be889bf163005e9bf64836ab5dc3e8fa04b9394eb36d5dc84"
+  },
+  "unresolved_blockers": []
+}

@@ -32,9 +32,9 @@ jobs:
           python tools/test_news_spacing_gate.py
           python tools/news_spacing_gate.py
       - name: Block deployment when theory content or images fail QA
-        run: python tools/qa_theory_posts.py --first 1 --last 50
+        run: python tools/qa_theory_posts.py --first 1 --last 55
       - name: Require independent visual approval for unchanged release files
-        run: python tools/theory_release_gate.py
+        run: python tools/theory_release_gate.py --first 1 --last 55
       - name: Require approval and evidence for every changed public file
         run: python tools/project_quality_gate.py --site
       - name: Package verified public site files

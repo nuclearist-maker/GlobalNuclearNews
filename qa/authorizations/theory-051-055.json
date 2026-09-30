@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "kind": "theory",
+  "approved_range": [
+    51,
+    55
+  ],
+  "user_instruction_excerpt": "일단 이번에는 55번 게시물까지만 작성하여 업로드하고",
+  "prior_direction": "업데잇된 지침을 적용하여 원자력 이론의 51~75번 게시물을 작성하여 업로드까지 완료하라",
+  "scope_interpretation": "051~055를 최신 지침에 따라 작성·검증한 후 공개 게시. 이후 묶음은 별도 예약 실행.",
+  "recorded_at": "2026-09-29",
+  "approval_type": "explicit conditional write-verify-publish"
+}

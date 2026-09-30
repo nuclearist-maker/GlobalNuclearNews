@@ -1,0 +1,215 @@
+{
+  "version": 1,
+  "status": "READY",
+  "proposal_id": "B02",
+  "primary_reports": [
+    {
+      "id": "20260929_R01",
+      "title": "미국 NRC 규제개편 의회 요구자료와 안전성 입증 근거",
+      "report_date": "2026-09-29",
+      "qa_status": "PASS",
+      "report_sha256": "ff60a151bcf3fec17c38c7759d85a5b82fcf0e4ef1ab07d1ae80eefa5df50a84",
+      "qa_sha256": "f566b31fbfb82fb6c89a3f00bcf823d9bdd0d92a6fd3b655a4d00b7f0e62082e",
+      "section_ids": [
+        "overview",
+        "legal",
+        "matrix",
+        "radiation",
+        "baseline",
+        "economics",
+        "governance",
+        "roadmap"
+      ]
+    }
+  ],
+  "body_sections": [
+    "questions",
+    "rule_status",
+    "dose_example",
+    "public_conditions",
+    "cost_scope",
+    "baseline",
+    "reading_changes"
+  ],
+  "images": [
+    "thumbnail_01",
+    "body_01",
+    "body_02"
+  ],
+  "section_map": {
+    "questions": {
+      "report_id": "20260929_R01",
+      "report_section": "matrix",
+      "source_urls": [
+        "https://www.appropriations.senate.gov/imo/media/doc/nrc_oversight_letter.pdf",
+        "https://www.govinfo.gov/content/pkg/FR-2026-07-15/pdf/2026-14208.pdf",
+        "https://www.whitehouse.gov/wp-content/uploads/2025/05/eo-14300.pdf",
+        "https://www.nrc.gov/about-nrc/governing-laws/advance-act/wholesale-revision-regs",
+        "https://www.govinfo.gov/content/pkg/FR-2026-06-16/pdf/2026-12067.pdf",
+        "https://www.nrc.gov/about-nrc/values",
+        "https://www.nrc.gov/facilities-safety/radiation-protection/health-physics-questions-and-answers---question-133",
+        "https://www.nrc.gov/docs/ML2618/ML26180A025.pdf",
+        "https://www.nrc.gov/documents-reports/congressional-documents/correspondence/2026",
+        "https://www.nrc.gov/docs/ML2606/ML26069A604.pdf",
+        "https://www.nrc.gov/docs/ML2609/ML26093A123.pdf"
+      ],
+      "finding": "의회17개요구는 조문·원가·안전영향·관측지표를 묻습니다.",
+      "explanation_gain": "감독서한이 안전저하 확정판정이나 규칙개정이 아님을 설명합니다."
+    },
+    "rule_status": {
+      "report_id": "20260929_R01",
+      "report_section": "legal",
+      "source_urls": [
+        "https://www.appropriations.senate.gov/imo/media/doc/nrc_oversight_letter.pdf",
+        "https://www.govinfo.gov/content/pkg/FR-2026-07-15/pdf/2026-14208.pdf",
+        "https://www.whitehouse.gov/wp-content/uploads/2025/05/eo-14300.pdf",
+        "https://www.nrc.gov/about-nrc/governing-laws/advance-act/wholesale-revision-regs",
+        "https://www.govinfo.gov/content/pkg/FR-2026-06-16/pdf/2026-12067.pdf",
+        "https://www.nrc.gov/docs/ML2609/ML26093A123.pdf"
+      ],
+      "finding": "7월15일 방사선방호 규칙안과6월16일 수수료 최종규칙의 지위 차이",
+      "explanation_gain": "규칙안·최종규칙·시행과 예산요구를 구분합니다."
+    },
+    "dose_example": {
+      "report_id": "20260929_R01",
+      "report_section": "radiation",
+      "source_urls": [
+        "https://www.govinfo.gov/content/pkg/FR-2026-07-15/pdf/2026-14208.pdf",
+        "https://www.nrc.gov/facilities-safety/radiation-protection/health-physics-questions-and-answers---question-133"
+      ],
+      "finding": "계획연장의5년250mSv·단일연도100mSv 동시제약,가상추가여유60mSv",
+      "explanation_gain": "기간별한도를동시에충족해야 하는 이유와 사전조건을 설명합니다."
+    },
+    "public_conditions": {
+      "report_id": "20260929_R01",
+      "report_section": "radiation",
+      "source_urls": [
+        "https://www.govinfo.gov/content/pkg/FR-2026-07-15/pdf/2026-14208.pdf",
+        "https://www.nrc.gov/facilities-safety/radiation-protection/health-physics-questions-and-answers---question-133"
+      ],
+      "finding": "공중기본1mSv/년 유지와 예외500mrem/년상한삭제 제안",
+      "explanation_gain": "사전NRC승인·필요성·기간·방호근거가 없는 자동예외가 아님을 설명합니다."
+    },
+    "cost_scope": {
+      "report_id": "20260929_R01",
+      "report_section": "economics",
+      "source_urls": [
+        "https://www.appropriations.senate.gov/imo/media/doc/nrc_oversight_letter.pdf",
+        "https://www.govinfo.gov/content/pkg/FR-2026-07-15/pdf/2026-14208.pdf",
+        "https://www.govinfo.gov/content/pkg/FR-2026-06-16/pdf/2026-12067.pdf",
+        "https://www.nrc.gov/docs/ML2618/ML26180A025.pdf",
+        "https://www.nrc.gov/docs/ML2609/ML26093A123.pdf"
+      ],
+      "finding": "할인율7%10.479백만/3%11.840백만달러의 연간환산순절감",
+      "explanation_gain": "2024가격·2027~2046추정과 건강영향 증거의 차이를 설명합니다."
+    },
+    "baseline": {
+      "report_id": "20260929_R01",
+      "report_section": "baseline",
+      "source_urls": [
+        "https://www.appropriations.senate.gov/imo/media/doc/nrc_oversight_letter.pdf",
+        "https://www.govinfo.gov/content/pkg/FR-2026-07-15/pdf/2026-14208.pdf",
+        "https://www.nrc.gov/regulations-legislation/nureg-series-publications/publications-prepared-by-nrc-staff/nureg-0713",
+        "https://www.nrc.gov/docs/ML2606/ML26069A604.pdf"
+      ],
+      "finding": "2024측정가능선량자 평균1.6mSv와 집단선량분포",
+      "explanation_gain": "관측분모·시점·개인집중도가 달라지면 평균 해석이 달라짐을 설명합니다."
+    },
+    "reading_changes": {
+      "report_id": "20260929_R01",
+      "report_section": "governance",
+      "source_urls": [
+        "https://www.appropriations.senate.gov/imo/media/doc/nrc_oversight_letter.pdf",
+        "https://www.govinfo.gov/content/pkg/FR-2026-07-15/pdf/2026-14208.pdf",
+        "https://www.nrc.gov/about-nrc/values",
+        "https://www.nrc.gov/docs/ML2618/ML26180A025.pdf",
+        "https://www.nrc.gov/docs/ML2606/ML26069A604.pdf",
+        "https://www.nrc.gov/docs/ML2609/ML26093A123.pdf"
+      ],
+      "finding": "보호수준은동일정의기준선·실측·보고범위·이견종결을 함께검증",
+      "explanation_gain": "절감효과와 실제보호수준을 각각 입증하는 읽기 기준을 제공합니다."
+    }
+  },
+  "image_map": {
+    "thumbnail_01": {
+      "report_id": "20260929_R01",
+      "report_section": "radiation",
+      "source_urls": [
+        "https://www.govinfo.gov/content/pkg/FR-2026-07-15/pdf/2026-14208.pdf",
+        "https://www.nrc.gov/facilities-safety/radiation-protection/health-physics-questions-and-answers---question-133"
+      ],
+      "learning_point": "기본선량 숫자와 관리·예외·보고조건을 함께 읽습니다.",
+      "visual_encoding": "선량계와 규칙 문서가 연결된 실물 장면, 기본한도·조건 변화의 두 개념",
+      "caveat": "2026년7월규칙안이며 시행된 기준으로 표시하지 않습니다."
+    },
+    "body_01": {
+      "report_id": "20260929_R01",
+      "report_section": "radiation",
+      "source_urls": [
+        "https://www.govinfo.gov/content/pkg/FR-2026-07-15/pdf/2026-14208.pdf",
+        "https://www.nrc.gov/facilities-safety/radiation-protection/health-physics-questions-and-answers---question-133"
+      ],
+      "learning_point": "계획연장에는5년누계와단일연도상한을동시에적용합니다.",
+      "visual_encoding": "정확한20/30/40/50/40mSv 이력과 잔여70/60을결합해추가60을고르는차트",
+      "caveat": "가상산술예시;권장선량·실제승인아님,다른승인조건별도입니다."
+    },
+    "body_02": {
+      "report_id": "20260929_R01",
+      "report_section": "economics",
+      "source_urls": [
+        "https://www.appropriations.senate.gov/imo/media/doc/nrc_oversight_letter.pdf",
+        "https://www.govinfo.gov/content/pkg/FR-2026-07-15/pdf/2026-14208.pdf",
+        "https://www.govinfo.gov/content/pkg/FR-2026-06-16/pdf/2026-12067.pdf",
+        "https://www.nrc.gov/docs/ML2618/ML26180A025.pdf",
+        "https://www.nrc.gov/docs/ML2609/ML26093A123.pdf",
+        "https://www.nrc.gov/regulations-legislation/nureg-series-publications/publications-prepared-by-nrc-staff/nureg-0713",
+        "https://www.nrc.gov/docs/ML2606/ML26069A604.pdf"
+      ],
+      "learning_point": "절감추정과피폭관측은다른자료입니다.",
+      "visual_encoding": "비용모델10.479/11.840과관측1.6mSv를시간·분모가다른증거축으로표시",
+      "caveat": "2024기준선은개편효과가아니며절감은할인율별2027~2046추정입니다.",
+      "report_sections": [
+        "economics",
+        "baseline"
+      ],
+      "supporting_evidence": [
+        {
+          "report_section": "economics",
+          "claim": "할인율7%/3% 연간환산순절감10.479/11.840백만달러,2024년가격·2027~2046년평가",
+          "source_urls": [
+            "https://www.appropriations.senate.gov/imo/media/doc/nrc_oversight_letter.pdf",
+            "https://www.govinfo.gov/content/pkg/FR-2026-07-15/pdf/2026-14208.pdf",
+            "https://www.govinfo.gov/content/pkg/FR-2026-06-16/pdf/2026-12067.pdf",
+            "https://www.nrc.gov/docs/ML2618/ML26180A025.pdf",
+            "https://www.nrc.gov/docs/ML2609/ML26093A123.pdf"
+          ]
+        },
+        {
+          "report_section": "baseline",
+          "claim": "2024년 측정가능선량자 평균1.6mSv;개편효과아님",
+          "source_urls": [
+            "https://www.appropriations.senate.gov/imo/media/doc/nrc_oversight_letter.pdf",
+            "https://www.govinfo.gov/content/pkg/FR-2026-07-15/pdf/2026-14208.pdf",
+            "https://www.nrc.gov/regulations-legislation/nureg-series-publications/publications-prepared-by-nrc-staff/nureg-0713",
+            "https://www.nrc.gov/docs/ML2606/ML26069A604.pdf"
+          ]
+        }
+      ]
+    }
+  },
+  "depth_coverage": {
+    "mechanism_or_process": [
+      "rule_status"
+    ],
+    "evidence": [
+      "questions",
+      "dose_example"
+    ],
+    "case_or_comparison": [
+      "public_conditions"
+    ],
+    "limits": [
+      "reading_changes"
+    ]
+  }
+}

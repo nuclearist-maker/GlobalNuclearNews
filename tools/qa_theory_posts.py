@@ -131,7 +131,7 @@ def audit(root: Path, first: int, last: int) -> dict:
             "images": len(images),
         })
 
-        series = "series-01" if number <= 20 else ("series-02" if number <= 40 else "series-03")
+        series = f"series-{(number - 1) // 20 + 1:02d}"
         notes = root / "assets" / "images" / "theory" / series / "sources" / post_id / "review_notes.md"
         if not notes.exists():
             findings.append(Finding(post_id, "FAIL", "REVIEW_NOTES_MISSING", str(notes)))

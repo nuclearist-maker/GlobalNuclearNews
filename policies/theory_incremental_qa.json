@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "mode": "content_addressed_computation_cache",
+  "comparison_scope": "all_current_posts_and_images",
+  "content_identity": "sha256_bytes_not_mtime",
+  "reuse_is_approval": false,
+  "cache_max_bytes": 268435456,
+  "invalidate_on": ["input_content", "algorithm_or_model_revision", "preprocessor_configuration_or_implementation", "relevant_runtime_version", "corrupt_or_missing_cache"],
+  "text_overlap_threshold": 0.15,
+  "sentence_post_threshold": 3,
+  "clip_candidate_threshold": 0.90,
+  "all_pairs_required": true,
+  "visual_reuse_requires": ["prior_independent_seal_verified", "article_and_render_dependency_hashes_unchanged", "metadata_entry_unchanged", "no_unresolved_or_new_candidate"],
+  "new_or_changed_visuals_require": ["original_1600x900", "mobile_390", "actual_listing_crop", "independent_review"],
+  "shared_css_changes": "invalidate_all_dependent_article_visual_reviews",
+  "missing_or_invalid_evidence": "recompute_and_or_reinspect_never_assume_pass"
+}

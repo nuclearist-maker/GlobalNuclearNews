@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "kind": "theory",
+  "author": "codex",
+  "artifacts": {
+    "posts/theory/052-activity-units.html": "4f8ad82b51d9195796b3339fa81f5b1c6c481858581f8dd920746966c041f24f",
+    "assets/images/theory/series-03/verified-v4/052-thumbnail.png": "ed8b6fb6654747c1b9eff29ab69aa26bd5e09f78d61bb36ed3d4ada9efd7dd3a",
+    "assets/images/theory/series-03/verified-v4/052-body-01.png": "facbe511134831ce693d07245e880eaef3d70b1a7debb1e0bc5264ea775795c3",
+    "assets/images/theory/series-03/verified-v4/052-body-02.png": "446358409435294540579e27622e7d01a4e6b0398df7cac6e637259edb69bae6",
+    "assets/app.js": "2d4ce5d8b078bde37ca8491cf18f752b7f3c0778c0e98220136a68cf3e46906d",
+    "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+    "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+    "index.html": "afe9bcdb6d94e60374658931b1a568ba85320b2627aac106c5b4c37447fe8d79",
+    "news.html": "532b3c2bb9195c5aee8f25a727f398dfd4871b3942fba7d3a4818c9a8bca2b25",
+    "theory.html": "7d23c3aef0495b20472e2fe40469e794b65a024f8ff1855746df21083d4f7ed2",
+    "qa/authorizations/theory-051-055.json": "1aa49a7349dc0c02b43f0451522259793b37cd4e93bd0bcb2ad6ac5e84cd9177"
+  },
+  "approvals": [
+    {
+      "by": "user",
+      "scope": "direction",
+      "text": "일단 이번에는 55번 게시물까지만 작성하여 업로드하고, 이후부터는 매일 5개씩 자정에 작성을 시작하여 업로드 하는 것으로 스케쥴링해줘.",
+      "at": "2026-09-30T01:50:56.869128+00:00",
+      "artifacts": {
+        "qa/authorizations/theory-051-055.json": "1aa49a7349dc0c02b43f0451522259793b37cd4e93bd0bcb2ad6ac5e84cd9177"
+      }
+    },
+    {
+      "by": "user",
+      "scope": "publish",
+      "text": "일단 이번에는 55번 게시물까지만 작성하여 업로드하고, 이후부터는 매일 5개씩 자정에 작성을 시작하여 업로드 하는 것으로 스케쥴링해줘.",
+      "at": "2026-09-30T01:50:56.869128+00:00",
+      "artifacts": {
+        "qa/authorizations/theory-051-055.json": "1aa49a7349dc0c02b43f0451522259793b37cd4e93bd0bcb2ad6ac5e84cd9177"
+      },
+      "mode": "conditional",
+      "direction": "qa/authorizations/theory-051-055.json"
+    }
+  ],
+  "checks": {
+    "THEORY-01": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-09-30T05:52:42.290690+00:00",
+      "artifacts": {
+        "posts/theory/052-activity-units.html": "4f8ad82b51d9195796b3339fa81f5b1c6c481858581f8dd920746966c041f24f",
+        "assets/images/theory/series-03/verified-v4/052-thumbnail.png": "ed8b6fb6654747c1b9eff29ab69aa26bd5e09f78d61bb36ed3d4ada9efd7dd3a",
+        "assets/images/theory/series-03/verified-v4/052-body-01.png": "facbe511134831ce693d07245e880eaef3d70b1a7debb1e0bc5264ea775795c3",
+        "assets/images/theory/series-03/verified-v4/052-body-02.png": "446358409435294540579e27622e7d01a4e6b0398df7cac6e637259edb69bae6",
+        "assets/app.js": "2d4ce5d8b078bde37ca8491cf18f752b7f3c0778c0e98220136a68cf3e46906d",
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "index.html": "afe9bcdb6d94e60374658931b1a568ba85320b2627aac106c5b4c37447fe8d79",
+        "news.html": "532b3c2bb9195c5aee8f25a727f398dfd4871b3942fba7d3a4818c9a8bca2b25",
+        "theory.html": "7d23c3aef0495b20472e2fe40469e794b65a024f8ff1855746df21083d4f7ed2",
+        "qa/authorizations/theory-051-055.json": "1aa49a7349dc0c02b43f0451522259793b37cd4e93bd0bcb2ad6ac5e84cd9177"
+      },
+      "evidence": {
+        "qa/theory/release_051_055_checks_20260930.json": "379e797f4bc66f62c0349fe2031e3fae8c9919fa50ad87d486bfc78fdd24b968",
+        "qa/theory/independent_001_055_20260930.json": "4f3040981229812313a045f5bd7eeb0a91d1ea7a01470a1399223b6339c3dad2"
+      }
+    },
+    "THEORY-02": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-09-30T05:52:42.290690+00:00",
+      "artifacts": {
+        "posts/theory/052-activity-units.html": "4f8ad82b51d9195796b3339fa81f5b1c6c481858581f8dd920746966c041f24f",
+        "assets/images/theory/series-03/verified-v4/052-thumbnail.png": "ed8b6fb6654747c1b9eff29ab69aa26bd5e09f78d61bb36ed3d4ada9efd7dd3a",
+        "assets/images/theory/series-03/verified-v4/052-body-01.png": "facbe511134831ce693d07245e880eaef3d70b1a7debb1e0bc5264ea775795c3",
+        "assets/images/theory/series-03/verified-v4/052-body-02.png": "446358409435294540579e27622e7d01a4e6b0398df7cac6e637259edb69bae6",
+        "assets/app.js": "2d4ce5d8b078bde37ca8491cf18f752b7f3c0778c0e98220136a68cf3e46906d",
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "index.html": "afe9bcdb6d94e60374658931b1a568ba85320b2627aac106c5b4c37447fe8d79",
+        "news.html": "532b3c2bb9195c5aee8f25a727f398dfd4871b3942fba7d3a4818c9a8bca2b25",
+        "theory.html": "7d23c3aef0495b20472e2fe40469e794b65a024f8ff1855746df21083d4f7ed2",
+        "qa/authorizations/theory-051-055.json": "1aa49a7349dc0c02b43f0451522259793b37cd4e93bd0bcb2ad6ac5e84cd9177"
+      },
+      "evidence": {
+        "qa/theory/release_051_055_checks_20260930.json": "379e797f4bc66f62c0349fe2031e3fae8c9919fa50ad87d486bfc78fdd24b968",
+        "qa/theory/independent_001_055_20260930.json": "4f3040981229812313a045f5bd7eeb0a91d1ea7a01470a1399223b6339c3dad2"
+      }
+    },
+    "THEORY-03": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-09-30T05:52:42.290690+00:00",
+      "artifacts": {
+        "posts/theory/052-activity-units.html": "4f8ad82b51d9195796b3339fa81f5b1c6c481858581f8dd920746966c041f24f",
+        "assets/images/theory/series-03/verified-v4/052-thumbnail.png": "ed8b6fb6654747c1b9eff29ab69aa26bd5e09f78d61bb36ed3d4ada9efd7dd3a",
+        "assets/images/theory/series-03/verified-v4/052-body-01.png": "facbe511134831ce693d07245e880eaef3d70b1a7debb1e0bc5264ea775795c3",
+        "assets/images/theory/series-03/verified-v4/052-body-02.png": "446358409435294540579e27622e7d01a4e6b0398df7cac6e637259edb69bae6",
+        "assets/app.js": "2d4ce5d8b078bde37ca8491cf18f752b7f3c0778c0e98220136a68cf3e46906d",
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "index.html": "afe9bcdb6d94e60374658931b1a568ba85320b2627aac106c5b4c37447fe8d79",
+        "news.html": "532b3c2bb9195c5aee8f25a727f398dfd4871b3942fba7d3a4818c9a8bca2b25",
+        "theory.html": "7d23c3aef0495b20472e2fe40469e794b65a024f8ff1855746df21083d4f7ed2",
+        "qa/authorizations/theory-051-055.json": "1aa49a7349dc0c02b43f0451522259793b37cd4e93bd0bcb2ad6ac5e84cd9177"
+      },
+      "evidence": {
+        "qa/theory/release_051_055_checks_20260930.json": "379e797f4bc66f62c0349fe2031e3fae8c9919fa50ad87d486bfc78fdd24b968",
+        "qa/theory/independent_001_055_20260930.json": "4f3040981229812313a045f5bd7eeb0a91d1ea7a01470a1399223b6339c3dad2"
+      }
+    },
+    "THEORY-04": {
+      "status": "PASS",
+      "reviewer": "claude-code",
+      "checked_at": "2026-09-30T05:52:42.290690+00:00",
+      "artifacts": {
+        "posts/theory/052-activity-units.html": "4f8ad82b51d9195796b3339fa81f5b1c6c481858581f8dd920746966c041f24f",
+        "assets/images/theory/series-03/verified-v4/052-thumbnail.png": "ed8b6fb6654747c1b9eff29ab69aa26bd5e09f78d61bb36ed3d4ada9efd7dd3a",
+        "assets/images/theory/series-03/verified-v4/052-body-01.png": "facbe511134831ce693d07245e880eaef3d70b1a7debb1e0bc5264ea775795c3",
+        "assets/images/theory/series-03/verified-v4/052-body-02.png": "446358409435294540579e27622e7d01a4e6b0398df7cac6e637259edb69bae6",
+        "assets/app.js": "2d4ce5d8b078bde37ca8491cf18f752b7f3c0778c0e98220136a68cf3e46906d",
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "index.html": "afe9bcdb6d94e60374658931b1a568ba85320b2627aac106c5b4c37447fe8d79",
+        "news.html": "532b3c2bb9195c5aee8f25a727f398dfd4871b3942fba7d3a4818c9a8bca2b25",
+        "theory.html": "7d23c3aef0495b20472e2fe40469e794b65a024f8ff1855746df21083d4f7ed2",
+        "qa/authorizations/theory-051-055.json": "1aa49a7349dc0c02b43f0451522259793b37cd4e93bd0bcb2ad6ac5e84cd9177"
+      },
+      "evidence": {
+        "qa/theory/release_051_055_checks_20260930.json": "379e797f4bc66f62c0349fe2031e3fae8c9919fa50ad87d486bfc78fdd24b968",
+        "qa/theory/independent_001_055_20260930.json": "4f3040981229812313a045f5bd7eeb0a91d1ea7a01470a1399223b6339c3dad2"
+      }
+    },
+    "THEORY-05": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-09-30T05:52:42.290690+00:00",
+      "artifacts": {
+        "posts/theory/052-activity-units.html": "4f8ad82b51d9195796b3339fa81f5b1c6c481858581f8dd920746966c041f24f",
+        "assets/images/theory/series-03/verified-v4/052-thumbnail.png": "ed8b6fb6654747c1b9eff29ab69aa26bd5e09f78d61bb36ed3d4ada9efd7dd3a",
+        "assets/images/theory/series-03/verified-v4/052-body-01.png": "facbe511134831ce693d07245e880eaef3d70b1a7debb1e0bc5264ea775795c3",
+        "assets/images/theory/series-03/verified-v4/052-body-02.png": "446358409435294540579e27622e7d01a4e6b0398df7cac6e637259edb69bae6",
+        "assets/app.js": "2d4ce5d8b078bde37ca8491cf18f752b7f3c0778c0e98220136a68cf3e46906d",
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "index.html": "afe9bcdb6d94e60374658931b1a568ba85320b2627aac106c5b4c37447fe8d79",
+        "news.html": "532b3c2bb9195c5aee8f25a727f398dfd4871b3942fba7d3a4818c9a8bca2b25",
+        "theory.html": "7d23c3aef0495b20472e2fe40469e794b65a024f8ff1855746df21083d4f7ed2",
+        "qa/authorizations/theory-051-055.json": "1aa49a7349dc0c02b43f0451522259793b37cd4e93bd0bcb2ad6ac5e84cd9177"
+      },
+      "evidence": {
+        "qa/theory/release_051_055_checks_20260930.json": "379e797f4bc66f62c0349fe2031e3fae8c9919fa50ad87d486bfc78fdd24b968",
+        "qa/theory/independent_001_055_20260930.json": "4f3040981229812313a045f5bd7eeb0a91d1ea7a01470a1399223b6339c3dad2"
+      }
+    },
+    "THEORY-06": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-09-30T05:52:42.290690+00:00",
+      "artifacts": {
+        "posts/theory/052-activity-units.html": "4f8ad82b51d9195796b3339fa81f5b1c6c481858581f8dd920746966c041f24f",
+        "assets/images/theory/series-03/verified-v4/052-thumbnail.png": "ed8b6fb6654747c1b9eff29ab69aa26bd5e09f78d61bb36ed3d4ada9efd7dd3a",
+        "assets/images/theory/series-03/verified-v4/052-body-01.png": "facbe511134831ce693d07245e880eaef3d70b1a7debb1e0bc5264ea775795c3",
+        "assets/images/theory/series-03/verified-v4/052-body-02.png": "446358409435294540579e27622e7d01a4e6b0398df7cac6e637259edb69bae6",
+        "assets/app.js": "2d4ce5d8b078bde37ca8491cf18f752b7f3c0778c0e98220136a68cf3e46906d",
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "index.html": "afe9bcdb6d94e60374658931b1a568ba85320b2627aac106c5b4c37447fe8d79",
+        "news.html": "532b3c2bb9195c5aee8f25a727f398dfd4871b3942fba7d3a4818c9a8bca2b25",
+        "theory.html": "7d23c3aef0495b20472e2fe40469e794b65a024f8ff1855746df21083d4f7ed2",
+        "qa/authorizations/theory-051-055.json": "1aa49a7349dc0c02b43f0451522259793b37cd4e93bd0bcb2ad6ac5e84cd9177"
+      },
+      "evidence": {
+        "qa/theory/release_051_055_checks_20260930.json": "379e797f4bc66f62c0349fe2031e3fae8c9919fa50ad87d486bfc78fdd24b968",
+        "qa/theory/independent_001_055_20260930.json": "4f3040981229812313a045f5bd7eeb0a91d1ea7a01470a1399223b6339c3dad2"
+      }
+    },
+    "THEORY-07": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-09-30T05:52:42.290690+00:00",
+      "artifacts": {
+        "posts/theory/052-activity-units.html": "4f8ad82b51d9195796b3339fa81f5b1c6c481858581f8dd920746966c041f24f",
+        "assets/images/theory/series-03/verified-v4/052-thumbnail.png": "ed8b6fb6654747c1b9eff29ab69aa26bd5e09f78d61bb36ed3d4ada9efd7dd3a",
+        "assets/images/theory/series-03/verified-v4/052-body-01.png": "facbe511134831ce693d07245e880eaef3d70b1a7debb1e0bc5264ea775795c3",
+        "assets/images/theory/series-03/verified-v4/052-body-02.png": "446358409435294540579e27622e7d01a4e6b0398df7cac6e637259edb69bae6",
+        "assets/app.js": "2d4ce5d8b078bde37ca8491cf18f752b7f3c0778c0e98220136a68cf3e46906d",
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "index.html": "afe9bcdb6d94e60374658931b1a568ba85320b2627aac106c5b4c37447fe8d79",
+        "news.html": "532b3c2bb9195c5aee8f25a727f398dfd4871b3942fba7d3a4818c9a8bca2b25",
+        "theory.html": "7d23c3aef0495b20472e2fe40469e794b65a024f8ff1855746df21083d4f7ed2",
+        "qa/authorizations/theory-051-055.json": "1aa49a7349dc0c02b43f0451522259793b37cd4e93bd0bcb2ad6ac5e84cd9177"
+      },
+      "evidence": {
+        "qa/theory/release_051_055_checks_20260930.json": "379e797f4bc66f62c0349fe2031e3fae8c9919fa50ad87d486bfc78fdd24b968",
+        "qa/theory/independent_001_055_20260930.json": "4f3040981229812313a045f5bd7eeb0a91d1ea7a01470a1399223b6339c3dad2"
+      }
+    },
+    "COMMON-05": {
+      "status": "PASS",
+      "reviewer": "claude-code",
+      "checked_at": "2026-09-30T05:52:42.290690+00:00",
+      "artifacts": {
+        "posts/theory/052-activity-units.html": "4f8ad82b51d9195796b3339fa81f5b1c6c481858581f8dd920746966c041f24f",
+        "assets/images/theory/series-03/verified-v4/052-thumbnail.png": "ed8b6fb6654747c1b9eff29ab69aa26bd5e09f78d61bb36ed3d4ada9efd7dd3a",
+        "assets/images/theory/series-03/verified-v4/052-body-01.png": "facbe511134831ce693d07245e880eaef3d70b1a7debb1e0bc5264ea775795c3",
+        "assets/images/theory/series-03/verified-v4/052-body-02.png": "446358409435294540579e27622e7d01a4e6b0398df7cac6e637259edb69bae6",
+        "assets/app.js": "2d4ce5d8b078bde37ca8491cf18f752b7f3c0778c0e98220136a68cf3e46906d",
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "index.html": "afe9bcdb6d94e60374658931b1a568ba85320b2627aac106c5b4c37447fe8d79",
+        "news.html": "532b3c2bb9195c5aee8f25a727f398dfd4871b3942fba7d3a4818c9a8bca2b25",
+        "theory.html": "7d23c3aef0495b20472e2fe40469e794b65a024f8ff1855746df21083d4f7ed2",
+        "qa/authorizations/theory-051-055.json": "1aa49a7349dc0c02b43f0451522259793b37cd4e93bd0bcb2ad6ac5e84cd9177"
+      },
+      "evidence": {
+        "qa/claude/theory_051_055_052_20260930.json": "f6134490c3e5b34367765356890145ad7cfebbbc45982f756e32b7cf3a9e9783"
+      },
+      "claude_review": "qa/claude/theory_051_055_052_20260930.json"
+    }
+  }
+}

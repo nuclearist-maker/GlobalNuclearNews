@@ -1,20 +1,187 @@
 {
-  "independent": ["THEORY-04", "NEWS-04"],
+  "independent": [
+    "THEORY-04",
+    "NEWS-04",
+    "COMMON-05"
+  ],
   "brief": {
-    "generate": {"approvals": ["items"], "checks": ["BRIEF-01", "BRIEF-02"]},
-    "finalize": {"approvals": ["items"], "checks": ["BRIEF-01", "BRIEF-02", "BRIEF-03", "BRIEF-04"]}
+    "generate": {
+      "approvals": [
+        "items"
+      ],
+      "checks": [
+        "BRIEF-01",
+        "BRIEF-02",
+        "COMMON-05"
+      ],
+      "claude_checkpoints": [
+        "direction",
+        "plan",
+        "research",
+        "design"
+      ]
+    },
+    "finalize": {
+      "approvals": [
+        "items"
+      ],
+      "checks": [
+        "BRIEF-01",
+        "BRIEF-02",
+        "BRIEF-03",
+        "BRIEF-04",
+        "COMMON-05"
+      ],
+      "claude_checkpoints": [
+        "direction",
+        "plan",
+        "research",
+        "design",
+        "draft",
+        "final"
+      ]
+    }
   },
   "report": {
-    "research": {"approvals": ["direction"], "checks": ["REPORT-01"]},
-    "generate": {"approvals": ["direction"], "checks": ["REPORT-01", "REPORT-02", "REPORT-05"]},
-    "finalize": {"approvals": ["direction"], "checks": ["REPORT-01", "REPORT-02", "REPORT-03", "REPORT-04", "REPORT-05"]}
+    "research": {
+      "approvals": [
+        "direction"
+      ],
+      "checks": [
+        "REPORT-01",
+        "COMMON-05"
+      ],
+      "claude_checkpoints": [
+        "direction",
+        "plan"
+      ]
+    },
+    "generate": {
+      "approvals": [
+        "direction"
+      ],
+      "checks": [
+        "REPORT-01",
+        "REPORT-02",
+        "REPORT-05",
+        "COMMON-05"
+      ],
+      "claude_checkpoints": [
+        "direction",
+        "plan",
+        "research",
+        "design"
+      ]
+    },
+    "finalize": {
+      "approvals": [
+        "direction"
+      ],
+      "checks": [
+        "REPORT-01",
+        "REPORT-02",
+        "REPORT-03",
+        "REPORT-04",
+        "REPORT-05",
+        "COMMON-05"
+      ],
+      "claude_checkpoints": [
+        "direction",
+        "plan",
+        "research",
+        "design",
+        "draft",
+        "final"
+      ]
+    }
   },
   "theory": {
-    "draft": {"approvals": ["direction"], "checks": ["THEORY-01"]},
-    "publish": {"approvals": ["direction", "publish"], "checks": ["THEORY-01", "THEORY-02", "THEORY-03", "THEORY-04", "THEORY-05"]}
+    "draft": {
+      "approvals": [
+        "direction"
+      ],
+      "checks": [
+        "THEORY-01",
+        "COMMON-05",
+        "THEORY-06",
+        "THEORY-07"
+      ],
+      "claude_checkpoints": [
+        "direction",
+        "plan",
+        "research",
+        "design"
+      ]
+    },
+    "publish": {
+      "approvals": [
+        "direction",
+        "publish"
+      ],
+      "checks": [
+        "THEORY-01",
+        "THEORY-02",
+        "THEORY-03",
+        "THEORY-04",
+        "THEORY-05",
+        "COMMON-05",
+        "THEORY-06",
+        "THEORY-07"
+      ],
+      "claude_checkpoints": [
+        "direction",
+        "plan",
+        "research",
+        "design",
+        "draft",
+        "final"
+      ]
+    }
   },
   "news": {
-    "draft": {"approvals": ["direction"], "checks": ["NEWS-01", "NEWS-06"]},
-    "publish": {"approvals": ["direction", "publish"], "checks": ["NEWS-01", "NEWS-02", "NEWS-03", "NEWS-04", "NEWS-05", "NEWS-06", "NEWS-07"]}
+    "draft": {
+      "approvals": [
+        "direction"
+      ],
+      "checks": [
+        "NEWS-01",
+        "NEWS-06",
+        "COMMON-05",
+        "NEWS-08",
+        "NEWS-09"
+      ],
+      "claude_checkpoints": [
+        "direction",
+        "plan",
+        "research",
+        "design"
+      ]
+    },
+    "publish": {
+      "approvals": [
+        "direction",
+        "publish"
+      ],
+      "checks": [
+        "NEWS-01",
+        "NEWS-02",
+        "NEWS-03",
+        "NEWS-04",
+        "NEWS-05",
+        "NEWS-06",
+        "NEWS-07",
+        "COMMON-05",
+        "NEWS-08",
+        "NEWS-09"
+      ],
+      "claude_checkpoints": [
+        "direction",
+        "plan",
+        "research",
+        "design",
+        "draft",
+        "final"
+      ]
+    }
   }
 }

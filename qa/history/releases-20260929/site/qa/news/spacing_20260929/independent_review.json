@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "reviewer": "independent-news-spacing-reviewer",
+  "reviewed_at": "2026-09-29T21:05:04.617248+00:00",
+  "baseline_commit": "094e4c0608f5e38671e7394b7dbcd1be273977a7",
+  "scope": "Spacing-only corrections for three news articles and matching listing metadata; no new factual research or image reauthoring",
+  "article_checks": [
+    {
+      "file": "posts/news/2026-09-29-nrc-reform-safety-evidence.html",
+      "status": "PASS",
+      "full_html_without_whitespace_equal": true,
+      "url_and_image_paths_exactly_equal": true,
+      "numeric_tokens_exactly_equal": true,
+      "manual_read": "수정 전후 제목·문단·표·캡션·alt 읽기 완료; 숫자/영문단위·날짜·조사 사이붙임 및문장경계 개선,사실의미변경없음"
+    },
+    {
+      "file": "posts/news/2026-09-29-nuclear-restart-review.html",
+      "status": "PASS",
+      "full_html_without_whitespace_equal": true,
+      "url_and_image_paths_exactly_equal": true,
+      "numeric_tokens_exactly_equal": true,
+      "manual_read": "수정 전후 제목·문단·표·캡션·alt 읽기 완료; 숫자/영문단위·날짜·조사 사이붙임 및문장경계 개선,사실의미변경없음"
+    },
+    {
+      "file": "posts/news/2026-09-29-recycled-fuel-deep-borehole.html",
+      "status": "PASS",
+      "full_html_without_whitespace_equal": true,
+      "url_and_image_paths_exactly_equal": true,
+      "numeric_tokens_exactly_equal": true,
+      "manual_read": "수정 전후 제목·문단·표·캡션·alt 읽기 완료; 숫자/영문단위·날짜·조사 사이붙임 및문장경계 개선,사실의미변경없음"
+    }
+  ],
+  "artifacts": {
+    "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/thumbnail_01.png": "e542ad6b4a60eef2d742d441dc385213cb6eefcc60b860f51a0a7c4a9c455299",
+    "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_01.png": "c490026253d4fb4728bd8705af733596667de6027956499da5379942f37009e3",
+    "assets/images/news/2026-09-29-nrc-reform-safety-evidence/hybrid-v2/body_02.png": "65548933659c1e54ef4306beb36a9d76511e44ce1129869429c438d813753dad",
+    "posts/news/2026-09-29-nrc-reform-safety-evidence.html": "ac205e01e2d2f527bd776f13f77c35f1ec503ba712733d758fc9d14ef9092ed2",
+    "assets/images/news/2026-09-29-nuclear-restart-review/hybrid-v2/thumbnail_01.png": "77b1ce033061be4bb7619975b6450dc3a24095003daa278aeebee24593577825",
+    "assets/images/news/2026-09-29-nuclear-restart-review/hybrid-v2/body_01.png": "47ad782642442b50c11fb239e8f8e3c7998b8a96f1b71ef09864811a452d4808",
+    "assets/images/news/2026-09-29-nuclear-restart-review/hybrid-v2/body_02.png": "0764536cae9a74efc4bba339e02c3e3463899685f76331d907fd3c924cb6e5f4",
+    "posts/news/2026-09-29-nuclear-restart-review.html": "55d17c6b947dbe0e2ac9d27cf40ce0d3be17bfd217dd230fec6277c0b5e8397c",
+    "assets/images/news/2026-09-29-recycled-fuel-deep-borehole/hybrid-v2/thumbnail_01.png": "2d418ea6dda179ecca2eba8ea555adde2b65aed9d0dc61f76b7b97360efc98d6",
+    "assets/images/news/2026-09-29-recycled-fuel-deep-borehole/hybrid-v2/body_01.png": "98ee018bda063ff4b03057140ef08e7f66ad87ce3da4f83f7576e283be94021e",
+    "assets/images/news/2026-09-29-recycled-fuel-deep-borehole/hybrid-v2/body_02.png": "6fda51ba95cd554be889bf163005e9bf64836ab5dc3e8fa04b9394eb36d5dc84",
+    "posts/news/2026-09-29-recycled-fuel-deep-borehole.html": "b8e2fca3ee0a00d46f2162626a7b1992d3da75f4bc25834a12874e4ef99592cd",
+    "index.html": "6122a241b4e065867aecc4f290f8e658df5477e9a7182d7f0ddf5edcf58dbc80",
+    "news.html": "1bc0dc4afc5ee5f3bf0d5d20bf8f85ddbfc285a9aa0fe603896a0237cdb717e9",
+    "theory.html": "6bd12d5a887750dac4ba08a4ac1c052a8b16129fa76b5f3c9a7aa39ab6680676",
+    "assets/app.js": "1ce23ba944dcf538fb9bded80f341e803f4adab9cd709cf817e65db87310f970",
+    "qa/theory/visual_approval_001_050.json": "9aad06cfb02335d976216472df2fee097736f326b523f46e807256d240dad8c3",
+    "tools/news_spacing_gate.py": "3d65364a5191cc47c872fea0ec33f9b66755d75d77ab0ce9fe5857fc112078c2",
+    "tools/test_news_spacing_gate.py": "c83146b6305f1cd3f0ef8a67d064e8f20be306b4042df084a5d48e36fabbf3aa",
+    "tools/project_quality_gate.py": "a8bac792b76fef8550390e88a361ab6c319c5da2895fb60e9478825aff461288",
+    "policies/quality_gates.json": "b319ae7e9598efda1104b973e2e46081e172326c623e8e162740ad2bd754ca56",
+    ".github/workflows/deploy-pages.yml": "14edaaa37703bf6cf87c1d9612fa5cb992646c8174bb4a843e674094d5d83925"
+  },
+  "checks": {
+    "all_nine_png_identical_to_published_baseline": "PASS",
+    "all_theory_metadata_and_execution_logic_unchanged": "PASS",
+    "root_pages_cache_version_only": "PASS",
+    "spacing_gate": "PASS",
+    "spacing_unit_tests": "3 PASS",
+    "manual_spacing_review": "PASS",
+    "no_nonwhitespace_semantic_change": "PASS"
+  },
+  "app_metadata_changed_fields": [
+    {
+      "url": "posts/news/2026-09-29-nuclear-restart-review.html",
+      "field": "thumbnailAlt"
+    },
+    {
+      "url": "posts/news/2026-09-29-nrc-reform-safety-evidence.html",
+      "field": "title"
+    },
+    {
+      "url": "posts/news/2026-09-29-nrc-reform-safety-evidence.html",
+      "field": "summary"
+    },
+    {
+      "url": "posts/news/2026-09-29-nrc-reform-safety-evidence.html",
+      "field": "thumbnailAlt"
+    },
+    {
+      "url": "posts/news/2026-09-29-nrc-reform-safety-evidence.html",
+      "field": "keywords"
+    }
+  ],
+  "theory_seal_amendment": {
+    "reviewer": "independent-news-spacing-reviewer",
+    "file": "assets/app.js",
+    "previous_sha256": "75fbcbaee844903b2fcc5fb6e5dc0884aa19e10ba57a004138143d0b4a84d42c",
+    "new_sha256": "1ce23ba944dcf538fb9bded80f341e803f4adab9cd709cf817e65db87310f970",
+    "all_other_sealed_hashes_unchanged": true,
+    "full_theory_visual_review_repeated": false
+  },
+  "gate_review": "반복된한글-숫자/영문단위/문장·쉼표붙임을검사하며URL/식별자와조문예외를보존. DOM경계를넘는인라인붙임과alt검사테스트확인. 범용한국어맞춤법검사기라는주장은하지않음.",
+  "limitations": [
+    "Browser layout/mobile preflight is recorded separately.",
+    "Raster images are unchanged and retain their earlier direct visual review."
+  ],
+  "findings": [],
+  "checker_amendment_review": {
+    "status": "PASS",
+    "previous_sha256": "fc21912048e7f87832b02d98e8636a5190031156cb68306008da9bd53f5d1476",
+    "current_sha256": "a8bac792b76fef8550390e88a361ab6c319c5da2895fb60e9478825aff461288",
+    "review": "Small block reviewed: per-record NEWS-07 validation runs html_errors on bound news HTML. Same checks also remain enforced by site_errors.",
+    "tests": "3 spacing tests PASS",
+    "content_changed": false
+  }
+}

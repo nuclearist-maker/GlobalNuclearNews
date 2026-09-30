@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "releases": [
+    {
+      "record": "qa/releases/news_20260929_B01_v3_spacing.json",
+      "record_sha256": "2560d7a8366b5934c79e3374e016ad9b354cc658260bdb464683d094dd642b72",
+      "snapshot_root": "qa/history/releases-20260929/site",
+      "policy": "qa/history/releases-20260929/quality_gates.json",
+      "policy_sha256": "b319ae7e9598efda1104b973e2e46081e172326c623e8e162740ad2bd754ca56",
+      "source_commit": "9ac5f673d68d4697cac0b2543204644ffaa2fe6d"
+    },
+    {
+      "record": "qa/releases/news_20260929_B02_v3_spacing.json",
+      "record_sha256": "85153a0ab9e8c5c3de3a79ccf1ab8d0c11283d6de59cc344fcefa55d8b10beaf",
+      "snapshot_root": "qa/history/releases-20260929/site",
+      "policy": "qa/history/releases-20260929/quality_gates.json",
+      "policy_sha256": "b319ae7e9598efda1104b973e2e46081e172326c623e8e162740ad2bd754ca56",
+      "source_commit": "9ac5f673d68d4697cac0b2543204644ffaa2fe6d"
+    },
+    {
+      "record": "qa/releases/news_20260929_B03_v3_spacing.json",
+      "record_sha256": "0471c7e8f8416dca8c854353e8bf96e5873d0f5b042b19023428bec901492f24",
+      "snapshot_root": "qa/history/releases-20260929/site",
+      "policy": "qa/history/releases-20260929/quality_gates.json",
+      "policy_sha256": "b319ae7e9598efda1104b973e2e46081e172326c623e8e162740ad2bd754ca56",
+      "source_commit": "9ac5f673d68d4697cac0b2543204644ffaa2fe6d"
+    }
+  ]
+}

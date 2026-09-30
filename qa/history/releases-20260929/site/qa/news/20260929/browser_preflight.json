@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "page": "news.html",
+      "width": 1440,
+      "status": "PASS",
+      "checks": [
+        "3 new cards",
+        "matching categories/filter",
+        "no horizontal overflow"
+      ]
+    },
+    {
+      "page": "posts/news/2026-09-29-nuclear-restart-review.html",
+      "width": 1440,
+      "status": "PASS",
+      "checks": [
+        "exact title",
+        "3 loaded final PNGs",
+        "source anchors",
+        "no horizontal overflow",
+        "no private source paths"
+      ]
+    },
+    {
+      "page": "posts/news/2026-09-29-nrc-reform-safety-evidence.html",
+      "width": 1440,
+      "status": "PASS",
+      "checks": [
+        "exact title",
+        "3 loaded final PNGs",
+        "source anchors",
+        "no horizontal overflow",
+        "no private source paths"
+      ]
+    },
+    {
+      "page": "posts/news/2026-09-29-recycled-fuel-deep-borehole.html",
+      "width": 1440,
+      "status": "PASS",
+      "checks": [
+        "exact title",
+        "3 loaded final PNGs",
+        "source anchors",
+        "no horizontal overflow",
+        "no private source paths"
+      ]
+    },
+    {
+      "page": "news.html",
+      "width": 390,
+      "status": "PASS",
+      "checks": [
+        "3 new cards",
+        "matching categories/filter",
+        "no horizontal overflow"
+      ]
+    },
+    {
+      "page": "posts/news/2026-09-29-nuclear-restart-review.html",
+      "width": 390,
+      "status": "PASS",
+      "checks": [
+        "exact title",
+        "3 loaded final PNGs",
+        "source anchors",
+        "no horizontal overflow",
+        "no private source paths"
+      ]
+    },
+    {
+      "page": "posts/news/2026-09-29-nrc-reform-safety-evidence.html",
+      "width": 390,
+      "status": "PASS",
+      "checks": [
+        "exact title",
+        "3 loaded final PNGs",
+        "source anchors",
+        "no horizontal overflow",
+        "no private source paths"
+      ]
+    },
+    {
+      "page": "posts/news/2026-09-29-recycled-fuel-deep-borehole.html",
+      "width": 390,
+      "status": "PASS",
+      "checks": [
+        "exact title",
+        "3 loaded final PNGs",
+        "source anchors",
+        "no horizontal overflow",
+        "no private source paths"
+      ]
+    }
+  ],
+  "public_file_count": 223,
+  "public_scope": "browser dependency closure only; no internal reports, source archives, QA, scripts or manifests",
+  "images": "separate final original/mobile image review already hash-bound"
+}

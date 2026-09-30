@@ -12,6 +12,15 @@ import sys
 SITE = Path(__file__).resolve().parents[1]
 POLICY = SITE / 'policies/quality_gates.json'
 
+# Exact existing release records from the already deployed 9ac5f67 commit.
+# This is not an extensible whitelist for newly approved public files.
+HISTORICAL_POLICY_SHA = 'b319ae7e9598efda1104b973e2e46081e172326c623e8e162740ad2bd754ca56'
+HISTORICAL_RECORDS = {
+    'qa/releases/news_20260929_B01_v3_spacing.json':'2560d7a8366b5934c79e3374e016ad9b354cc658260bdb464683d094dd642b72',
+    'qa/releases/news_20260929_B02_v3_spacing.json':'85153a0ab9e8c5c3de3a79ccf1ab8d0c11283d6de59cc344fcefa55d8b10beaf',
+    'qa/releases/news_20260929_B03_v3_spacing.json':'0471c7e8f8416dca8c854353e8bf96e5873d0f5b042b19023428bec901492f24',
+}
+
 def digest(path):
     data=path.read_bytes()
     if path.suffix.lower() in ('.html','.css','.js','.json','.md','.txt','.xml'):
@@ -71,8 +80,8 @@ def report_basis_errors(basis):
             require(isinstance(coverage.get(field),list) and bool(coverage[field]) and all(s in basis.get('body_sections',[]) for s in coverage[field]),'missing depth coverage: '+field)
     return problems
 
-def validate(record, root, kind, stage, required_paths=()):
-    policy = read(POLICY)
+def validate(record, root, kind, stage, required_paths=(), *, public_site=False, _historical_policy=None):
+    policy = read(POLICY) if _historical_policy is None else _historical_policy
     errors = []
     if record.get('version') != 1 or record.get('kind') != kind:
         errors.append('COMMON-01: record version/kind mismatch')
@@ -119,6 +128,17 @@ def validate(record, root, kind, stage, required_paths=()):
         else:
             for name, sha in evidence.items():
                 check_file(name, sha, rule)
+        if rule == 'COMMON-05':
+            review_name = c.get('claude_review')
+            if not isinstance(evidence, dict) or not isinstance(review_name, str) or review_name not in evidence:
+                errors.append('COMMON-05: hash-bound claude_review manifest required')
+            else:
+                try:
+                    from claude_review_gate import review_errors
+                    errors.extend(review_errors(read(local(root, review_name)), root, kind,
+                                                rules['claude_checkpoints'], artifacts, author, public_site=public_site))
+                except (ValueError, TypeError, OSError) as e:
+                    errors.append('COMMON-05: invalid review manifest: ' + str(e))
         if rule == 'NEWS-07':
             from news_spacing_gate import html_errors
             for name in artifacts:
@@ -176,12 +196,41 @@ def site_errors(site):
     from news_spacing_gate import site_errors as news_spacing_errors
     errors.extend('NEWS-07: '+json.dumps(e,ensure_ascii=False) for e in news_spacing_errors(site))
     covered = {}
+    historical = {}
+    history_path=site/'policies/historical_releases.json'
+    if history_path.exists():
+        history=read(history_path)
+        if history.get('version')!=1:
+            errors.append('Invalid historical release registry')
+        else:
+            for entry in history.get('releases',[]):
+                try:
+                    name=entry['record']
+                    if name in historical:raise ValueError('Duplicate historical record')
+                    if HISTORICAL_RECORDS.get(name)!=entry['record_sha256']:raise ValueError('Unrecognized original historical record')
+                    original=local(site,name)
+                    if digest(original)!=entry['record_sha256']:raise ValueError('Historical release record changed')
+                    snapshot=local(site,entry['snapshot_root'])
+                    policy_path=local(site,entry['policy'])
+                    if entry['policy_sha256']!=HISTORICAL_POLICY_SHA or digest(policy_path)!=entry['policy_sha256']:raise ValueError('Historical policy changed')
+                    if entry['source_commit']!='9ac5f673d68d4697cac0b2543204644ffaa2fe6d':raise ValueError('Unregistered historical publication')
+                    if not name.startswith('qa/releases/news_20260929_') or not name.endswith('_v3_spacing.json'):raise ValueError('Not a pre-existing release')
+                    r=read(original)
+                    err=validate(r,snapshot,r['kind'],'publish',_historical_policy=read(policy_path))
+                    if err:raise ValueError('; '.join(err))
+                    historical[name]=True
+                    for path,h in r['artifacts'].items():
+                        current=local(site,path)
+                        if current.is_file() and digest(current)==h:covered[path]=h
+                except (KeyError,ValueError,TypeError,OSError) as e:
+                    errors.append('Historical release: '+str(e))
     for f in (site/'qa/releases').glob('*.json'):
+        if f.relative_to(site).as_posix() in historical:continue
         r=read(f)
         kind=r.get('kind')
         if kind not in ('theory','news'):
             errors.append('Unexpected release kind: '+f.name); continue
-        err=validate(r, site, kind, 'publish')
+        err=validate(r, site, kind, 'publish',public_site=True)
         if err:
             errors.extend([f.name+': '+e for e in err]); continue
         covered.update(r['artifacts'])

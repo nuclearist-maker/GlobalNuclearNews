@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "status": "READY",
+  "proposal_id": "B01",
+  "primary_reports": [
+    {
+      "id": "20260929_NEWS_B01",
+      "title": "미국 Crane과 대만 마안산 원전 재가동의 심사 단계와 안전 입증 조건",
+      "report_date": "2026-09-29",
+      "qa_status": "PASS",
+      "report_sha256": "01ed86433296a0cf17c1801a5211417e5c429120b90e62a1b1fb89b76e722955",
+      "qa_sha256": "d38f70543d4da43551df3d77fdcf53920c61e4301e124218fb3ff42e8b545155",
+      "section_ids": [
+        "overview",
+        "crane_path",
+        "readiness",
+        "maanshan_path",
+        "comparison",
+        "capabilities"
+      ]
+    }
+  ],
+  "body_sections": [
+    "decisions",
+    "us_path",
+    "taiwan_path",
+    "tube_example",
+    "readiness",
+    "next_evidence"
+  ],
+  "images": [
+    "thumbnail_01",
+    "body_01",
+    "body_02"
+  ],
+  "section_map": {
+    "decisions": {
+      "report_id": "20260929_NEWS_B01",
+      "report_section": "overview",
+      "source_urls": [
+        "https://www.govinfo.gov/content/pkg/FR-2026-09-25/html/2026-19603.htm",
+        "https://www.nrc.gov/docs/ML2623/ML26231A018.pdf",
+        "https://www.nrc.gov/docs/ML2501/ML25017A231.pdf",
+        "https://www.nusc.gov.tw/share/file/regulation/IuilkEv222lAWRYjPrrttw__.pdf"
+      ],
+      "finding": "미국 EA/FONSI와 대만 재운전계획 승인의 판단대상 차이",
+      "explanation_gain": "중간 승인과 발전 재개 허가를 구분합니다."
+    },
+    "us_path": {
+      "report_id": "20260929_NEWS_B01",
+      "report_section": "crane_path",
+      "source_urls": [
+        "https://www.govinfo.gov/content/pkg/FR-2026-09-25/html/2026-19603.htm",
+        "https://www.nrc.gov/docs/ML2623/ML26231A018.pdf",
+        "https://www.nrc.gov/docs/ML2501/ML25017A231.pdf"
+      ],
+      "finding": "영구정지신고·면제·허가변경·환경검토의 연결",
+      "explanation_gain": "기존 허가 종료일이 남아도 운전할 수 없는 이유를 설명합니다."
+    },
+    "taiwan_path": {
+      "report_id": "20260929_NEWS_B01",
+      "report_section": "maanshan_path",
+      "source_urls": [
+        "https://www.nusc.gov.tw/share/file/regulation/IuilkEv222lAWRYjPrrttw__.pdf",
+        "https://www.nusc.gov.tw/share/file/regulation/~IX-Q5u-W3XzhEC94irZ4w__.pdf"
+      ],
+      "finding": "계획승인→실행결과와 안전기술문서 종합→면허재발급",
+      "explanation_gain": "589개 심사의견 해명과 현장 검증 완료의 차이를 설명합니다."
+    },
+    "tube_example": {
+      "report_id": "20260929_NEWS_B01",
+      "report_section": "maanshan_path",
+      "source_urls": [
+        "https://www.nusc.gov.tw/share/file/regulation/IuilkEv222lAWRYjPrrttw__.pdf",
+        "https://www.nusc.gov.tw/share/file/regulation/~IX-Q5u-W3XzhEC94irZ4w__.pdf"
+      ],
+      "finding": "관막음률2.99%·한계10%와2026년 전수와전류검사 계획",
+      "explanation_gain": "낮은 현재 비율만으로 미래 건전성을 보장할 수 없는 이유와 실제시험을 설명합니다."
+    },
+    "readiness": {
+      "report_id": "20260929_NEWS_B01",
+      "report_section": "readiness",
+      "source_urls": [
+        "https://www.nrc.gov/docs/ML2501/ML25017A231.pdf",
+        "https://www.nrc.gov/docs/ML2603/ML26034A001.pdf"
+      ],
+      "finding": "설비·인력·프로그램·시험종결과 지표 유효성",
+      "explanation_gain": "설비 보수 외에도 인력과 운전기록이 필요한 이유를 설명합니다."
+    },
+    "next_evidence": {
+      "report_id": "20260929_NEWS_B01",
+      "report_section": "comparison",
+      "source_urls": [
+        "https://www.govinfo.gov/content/pkg/FR-2026-09-25/html/2026-19603.htm",
+        "https://www.nrc.gov/docs/ML2623/ML26231A018.pdf",
+        "https://www.nrc.gov/docs/ML2501/ML25017A231.pdf",
+        "https://www.nrc.gov/docs/ML2603/ML26034A001.pdf",
+        "https://www.nusc.gov.tw/share/file/regulation/IuilkEv222lAWRYjPrrttw__.pdf",
+        "https://www.nusc.gov.tw/share/file/regulation/~IX-Q5u-W3XzhEC94irZ4w__.pdf"
+      ],
+      "finding": "계획일·검사결과·최종규제결정의 서로 다른 증거",
+      "explanation_gain": "2027시험·보고 목표를 발전재개 확정일로 읽지 않도록 안내합니다."
+    }
+  },
+  "image_map": {
+    "thumbnail_01": {
+      "report_id": "20260929_NEWS_B01",
+      "report_section": "overview",
+      "source_urls": [
+        "https://www.govinfo.gov/content/pkg/FR-2026-09-25/html/2026-19603.htm",
+        "https://www.nrc.gov/docs/ML2623/ML26231A018.pdf",
+        "https://www.nrc.gov/docs/ML2501/ML25017A231.pdf",
+        "https://www.nusc.gov.tw/share/file/regulation/IuilkEv222lAWRYjPrrttw__.pdf"
+      ],
+      "learning_point": "환경결정·계획승인 이후 실제준비 입증이 남습니다.",
+      "visual_encoding": "복원중인 단면 원전과 설비·인력·허가의 연결을 짧은 정확한 레이블로 표현",
+      "caveat": "실제 특정발전소의 사진이 아닌 개념도입니다."
+    },
+    "body_01": {
+      "report_id": "20260929_NEWS_B01",
+      "report_section": "comparison",
+      "source_urls": [
+        "https://www.govinfo.gov/content/pkg/FR-2026-09-25/html/2026-19603.htm",
+        "https://www.nrc.gov/docs/ML2623/ML26231A018.pdf",
+        "https://www.nrc.gov/docs/ML2501/ML25017A231.pdf",
+        "https://www.nrc.gov/docs/ML2603/ML26034A001.pdf",
+        "https://www.nusc.gov.tw/share/file/regulation/IuilkEv222lAWRYjPrrttw__.pdf",
+        "https://www.nusc.gov.tw/share/file/regulation/~IX-Q5u-W3XzhEC94irZ4w__.pdf"
+      ],
+      "learning_point": "두 나라의 승인 경로는 같지 않습니다.",
+      "visual_encoding": "서로 다른 출발점과9월결정,후속 입증을 평행 경로도에 표시",
+      "caveat": "법률상 모든 세부절차나 고정 일정이 아닌 핵심 연결도입니다."
+    },
+    "body_02": {
+      "report_id": "20260929_NEWS_B01",
+      "report_section": "maanshan_path",
+      "source_urls": [
+        "https://www.nusc.gov.tw/share/file/regulation/IuilkEv222lAWRYjPrrttw__.pdf",
+        "https://www.nusc.gov.tw/share/file/regulation/~IX-Q5u-W3XzhEC94irZ4w__.pdf"
+      ],
+      "learning_point": "관막음률과 전열관 전수검사는 서로 다른 정보입니다.",
+      "visual_encoding": "증기발생기 관다발·와전류 탐촉자 개념과2.99%/10%/100%의 역할을 구분",
+      "caveat": "2.99%는최고관막음률,10%는분석한계,100%는2026년검사계획입니다."
+    }
+  },
+  "depth_coverage": {
+    "mechanism_or_process": [
+      "us_path"
+    ],
+    "evidence": [
+      "decisions",
+      "taiwan_path"
+    ],
+    "case_or_comparison": [
+      "tube_example"
+    ],
+    "limits": [
+      "next_evidence"
+    ]
+  }
+}

@@ -36,66 +36,6 @@ const posts=[
     "keywords": "핵연료를 재활용한 뒤, 남은 폐기물은 어디로 갈까요 핵연료주기 · 방사성폐기물"
   },
   {
-    "title": "방사평형",
-    "date": "2026.09.30",
-    "displayDate": "2026.09.30",
-    "section": "theory",
-    "category": "방사성붕괴와 시간",
-    "summary": "영속평형과 과도평형의 시간곡선을 비교하며, 계속 붕괴하는 모·딸핵종의 방사능 비가 일정한 관계에 가까워지는 원리를 이해합니다.",
-    "thumbnail": "assets/images/theory/series-03/verified-v4/055-thumbnail.png",
-    "thumbnailAlt": "붕괴가 계속되는 동안 모·딸 방사능의 관계가 가까워집니다를 설명하는 그림",
-    "url": "posts/theory/055-radioactive-equilibrium.html",
-    "keywords": "방사평형 영속평형 과도평형 모핵종 딸핵종 반감기 방사능 비 붕괴사슬"
-  },
-  {
-    "title": "모핵종과 딸핵종",
-    "date": "2026.09.30",
-    "displayDate": "2026.09.30",
-    "section": "theory",
-    "category": "방사성붕괴와 시간",
-    "summary": "딸핵종의 생성과 소멸을 함께 계산하고, Mo-99/Tc-99m 발생기에서 부모 잔류와 딸 분리의 관계를 살펴봅니다.",
-    "thumbnail": "assets/images/theory/series-03/verified-v4/054-thumbnail.png",
-    "thumbnailAlt": "모핵종은 남고 새 딸핵종이 생성되어 분리됩니다를 보여주는 교육용 개념 그림",
-    "url": "posts/theory/054-parent-daughter.html",
-    "keywords": "모핵종 딸핵종 붕괴사슬 생성 소멸 Mo99 Tc99m 발생기 핵수 방사능"
-  },
-  {
-    "title": "분기비",
-    "date": "2026.09.29",
-    "displayDate": "2026.09.29",
-    "section": "theory",
-    "category": "방사성붕괴와 시간",
-    "summary": "부분 붕괴상수로 경로의 몫을 계산하고, K40의 딸핵종 생성과 감마선 방출확률을 구분합니다.",
-    "thumbnail": "assets/images/theory/series-03/verified-v4/053-thumbnail.png",
-    "thumbnailAlt": "K40의 딸핵종별 선택은 Ca40 약89.56%, Ar40 약10.44%입니다.을 나타내는 교육용 개념 그림",
-    "url": "posts/theory/053-branching-ratio.html",
-    "keywords": "분기비 붕괴경로 부분붕괴상수 칼륨40 K40 전자포획 감마선 원자력 이론"
-  },
-  {
-    "title": "방사능과 단위",
-    "date": "2026.09.29",
-    "displayDate": "2026.09.29",
-    "section": "theory",
-    "category": "방사성붕괴와 시간",
-    "summary": "Bq와 Ci를 환산하고 순간 발생률, 구간의 기대 횟수, 계수율과 선량을 구분합니다.",
-    "thumbnail": "assets/images/theory/series-03/verified-v4/052-thumbnail.png",
-    "thumbnailAlt": "하나의 개념 선원과 1마이크로퀴리·37,000베크렐의 등가 관계를 결합한 장면",
-    "url": "posts/theory/052-activity-units.html",
-    "keywords": "방사능 베크렐 Bq Ci 퀴리 계수율 접두어 연기감지기 원자력 이론"
-  },
-  {
-    "title": "평균수명",
-    "date": "2026.09.29",
-    "displayDate": "2026.09.29",
-    "section": "theory",
-    "category": "방사성붕괴와 시간",
-    "summary": "생존시간의 평균과 반감기, 이미 생존한 핵의 잔여시간을 구분합니다.",
-    "thumbnail": "assets/images/theory/series-03/verified-v4/051-thumbnail.png",
-    "thumbnailAlt": "서로 다른 생존시간의 경로와 평균수명·반감기의 관계를 결합한 핵 집단 개념 장면",
-    "url": "posts/theory/051-mean-lifetime.html",
-    "keywords": "평균수명 생존확률 반감기 지수분포 조건부 잔여수명 원자력 이론"
-  },
-  {
     "title": "반감기",
     "date": "2026.09.29",
     "displayDate": "2026.09.29",

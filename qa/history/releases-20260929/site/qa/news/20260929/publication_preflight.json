@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "reviewer": "Codex",
+  "checked_at": "2026-09-29T16:49:40.037174-04:00",
+  "checks": {
+    "user_final_approval": "글로벌 원자력 뉴스 게시물 업로드!",
+    "exact_approved_articles_and_images": "PASS",
+    "public_information_and_dependency_closure": "PASS",
+    "desktop_mobile_list_filters_and_9_images": "PASS",
+    "source_anchors": "PASS",
+    "theory_automatic_regression": "PASS"
+  },
+  "independent_record": "qa/news/20260929/publication_independent_review.json",
+  "scope": "Three news articles plus listing/cache references; existing theory content unchanged."
+}
