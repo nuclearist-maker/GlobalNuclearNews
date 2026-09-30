@@ -97,6 +97,9 @@ def audit(root, first, last, threshold=20, cache_dir=None):
         soup = BeautifulSoup(path.read_text(encoding='utf-8'), 'html.parser')
         title = soup.select_one('article h1')
         title = title.get_text(' ', strip=True) if title else ''
+        # Citation labels are metadata, not scientific prose for overlap detection.
+        for citation in soup.select('a.citation'):
+            citation.decompose()
         nodes = soup.select('article .lead p, article section p, article section li, article section td, article figcaption')
         strings = [x.get_text(' ', strip=True) for x in nodes]
         body = norm(' '.join(strings))

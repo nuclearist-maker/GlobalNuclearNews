@@ -1,0 +1,6 @@
+{
+  "scope": "Existing theory001–055 sentence-end numbered citations and bibliography; preserve scientific claims and images.",
+  "user_instruction": "원자력 이론 게시물의 본문에서 특정 자료를 직접 언급하는 것 보다는 해당 참고문헌의 번호를 문장끝에 표시하는 것으로 바꿔줘. 관련 지침과 파일들을 수정하도록 해주고, 지난 게시물들을 확인해서 이것을 반영하여 수정해줘.",
+  "recorded_at": "2026-09-30T06:19:00.608281+00:00",
+  "authorization": "User requested corrections to existing published posts. Publish verified editorial corrections within this scope."
+}

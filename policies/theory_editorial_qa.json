@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "scope": "existing_theory_citation_only_revision",
+  "new_articles_allowed": false,
+  "prior_seal_required": true,
+  "all_changed_blocks_bound": true,
+  "unchanged_render_dependencies_required": true,
+  "source_url_preservation_required": true,
+  "independent_semantic_review_required": true,
+  "current_html_desktop_mobile_review_required": true,
+  "numeric_differences_require_individual_review": true,
+  "structure_is_approval": false,
+  "reuse_scope": "previous_actual_image_pixel_review_only",
+  "fallback": "full_affected_original_and_mobile_independent_review"
+}

@@ -1,8 +1,10 @@
 {
   "status": "PASS",
-  "scope": "001-055",
+  "independent": true,
+  "author": "codex",
   "reviewer": "claude-code",
-  "sealed_at": "2026-09-30T08:38:31.737975+00:00",
+  "checked_at": "2026-09-30T08:36:40.934641+00:00",
+  "scope": "001–055 citation-only revision: new current HTML/caption semantics and desktop390 screenshots; unchanged prior image-pixel judgments distinguished in bound reviews",
   "files": {
     "assets/app.js": "2d4ce5d8b078bde37ca8491cf18f752b7f3c0778c0e98220136a68cf3e46906d",
     "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
@@ -228,7 +230,94 @@
     "posts/theory/054-parent-daughter.html": "51483e560cd4cc2c967d2382aa92725b4256fdf6d9d72a35553b9aeb13d4272b",
     "posts/theory/055-radioactive-equilibrium.html": "5aa7cfc42f0e2ffa3919032bb9a207a893cd8a5acecfe48a796ce29c0f5c7ac4"
   },
-  "audits": {
-    "qa/theory/independent_citations_001_055_20260930.json": "6b01fcade33cc9d80303dd45e8f2bfe4c14a8f676ecae256be6485b84bcf9cc6"
-  }
+  "current_html_posts": 55,
+  "current_html_views": 110,
+  "current_changed_blocks": 142,
+  "current_screenshots": 394,
+  "independent_groups": [
+    [
+      1,
+      5
+    ],
+    [
+      6,
+      10
+    ],
+    [
+      11,
+      15
+    ],
+    [
+      16,
+      20
+    ],
+    [
+      21,
+      25
+    ],
+    [
+      26,
+      30
+    ],
+    [
+      31,
+      35
+    ],
+    [
+      36,
+      40
+    ],
+    [
+      41,
+      45
+    ],
+    [
+      46,
+      50
+    ],
+    [
+      51,
+      55
+    ]
+  ],
+  "image_pairs": 13530,
+  "original_image_byte_matches": 165,
+  "review_provenance": {
+    "provider": "claude-code",
+    "session_id": "99d3b576-cc9c-4167-81e5-4952e6e7ee78",
+    "receipt_sha256": "500f13d528850c7ea7d71d4f995c838f574fa396cc22b7ebc22d1a91274a2fff",
+    "request_sha256": "7ee07a347b3baeb1992f85cd04458b9fde179b607161aa9203128fb964ff5491",
+    "response_sha256": "8764cb7248efac15cd44b695214d1216fe5b77d4103359d83bf996c69d0edb5a"
+  },
+  "visual_reviews": [
+    {
+      "scope": [
+        1,
+        20
+      ],
+      "session_id": "6fd771c5-570d-4a09-bb77-2f9f2164c428",
+      "receipt_sha256": "ed56187e0968a9482da5d21d5db3c283332b12e0054484d1eb7652ea47213ad1",
+      "response_sha256": "1f62f1b57fbbed64747fef97178c1d8562e94b8d08b6a57bb4c1f72628801e9b"
+    },
+    {
+      "scope": [
+        21,
+        40
+      ],
+      "session_id": "58de7803-2c15-4048-bea3-7288278a6524",
+      "receipt_sha256": "ca48fee25a446aab73584c2811f165f12078c1ae56840db72cc8b084789ee390",
+      "response_sha256": "fa899cbf24918256ad3d26afab7635d86d59dfc2c3ac7b8c0277056320ce6edb"
+    },
+    {
+      "scope": [
+        41,
+        55
+      ],
+      "session_id": "b2b524a5-6faf-47cd-9049-6e91058c43b5",
+      "receipt_sha256": "446a5e231f43e3e628ed5592af17c374ebaf8eda0176d963ea9b3202118ffde6",
+      "response_sha256": "ab50088a29f69a1467444f27ebaf3e1ce632b3e70e2a461436edfab72a7615d3"
+    }
+  ],
+  "prior_image_seal_sha256": "ac57402b12f5cd0e09c0dde59e7b329dfe3ec277171e7b53897145f74e80c1a5",
+  "private_records_included": false
 }

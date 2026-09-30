@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "scope": [
+    1,
+    55
+  ],
+  "checked_at": "2026-09-30T08:36:40.934641+00:00",
+  "author": "codex",
+  "independent_reviewer": "claude-code",
+  "checks": {
+    "citation_selfchecks": 55,
+    "five_post_groups": 11,
+    "posts": "PASS",
+    "style": "PASS",
+    "cumulative_text": "PREFLIGHT_PASS",
+    "render_dependency_invariance": "PASS with independent semantic/currentHTML review",
+    "images_unchanged": 165,
+    "base_images_unchanged": 165,
+    "all_clip_pairs": 13530,
+    "embedding_cache_hits": 165,
+    "new_embedding_inference": 0,
+    "current_browser_views": 110,
+    "current_changed_blocks": 142,
+    "current_screenshots": 394
+  },
+  "independent_audit": "qa/theory/independent_citations_001_055_20260930.json",
+  "independent_audit_sha256": "6b01fcade33cc9d80303dd45e8f2bfe4c14a8f676ecae256be6485b84bcf9cc6",
+  "source_evidence_hashes": {
+    "invariance-r1.json": "167d135ae421ee4c6ea387086c40af41d92d7ef8b3f9542257da6836dff6611f",
+    "posts-qa-r1.json": "7b55a10957d36729dba42665fd88116115e2d0361ae3fd41a73b2e33c7201a89",
+    "style_qa_001_055.json": "03c6e36a227a0eb59077701d107e5743e6dce4b382603c88528d27abce8ea85d",
+    "cumulative-current-r3.json": "59d281467406c3d0f22ab2fdf5f7724c7838d4d5863810b7ceecb18506c6409b",
+    "incremental-bindings-r1.json": "dc42d9fe0919c68b702f726ace0a38d585d18471606dfbb9ff35cd61b3e28da1",
+    "image-history-bindings-r1.json": "058515f572154ccf810c86ac4b7dcc5eeb0cdb0d7c259f47f347973746141e16",
+    "browser-r1/browser.json": "6b0ce2c06aadc4a694ce65c62b9940b1c00678bfd418e862718d85738ef5ceeb"
+  },
+  "not_claimed": "Deployment and public URL verification follow local publication gates."
+}

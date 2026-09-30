@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "body_selector": "article",
+  "bibliography_selector": "footer.source",
+  "reference_selector": ".reference-entry",
+  "citation_class": "citation",
+  "target_prefix": "ref-",
+  "display": "[n]",
+  "position": "after_sentence_punctuation",
+  "reuse_number_for_same_source": true,
+  "multiple_sources": "[1] [2]",
+  "semantic_review_required": true,
+  "new_access_dates_must_be_observed": true
+}

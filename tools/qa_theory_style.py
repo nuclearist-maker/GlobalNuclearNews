@@ -17,6 +17,7 @@ def main():
         p=files.get(n)
         if not p: findings.append(f'{n:03d}: HTML 누락'); continue
         soup=BeautifulSoup(p.read_text(encoding='utf-8'),'html.parser')
+        for citation in soup.select('a.citation'): citation.decompose()
         nodes=soup.select('main section p, main .lead p, main figcaption')
         visible=' '.join(x.get_text(' ',strip=True) for x in nodes)
         local=[]

@@ -1,0 +1,31 @@
+{
+  "source_commit": "ee0616826cc73b221a893b5bd651e87d367cf355",
+  "scope": "Unmodified prior releases retained as history; current revised HTML needs new release",
+  "records": [
+    {
+      "original": "qa/releases/theory_20260930_051.json",
+      "archived": "qa/history/theory-citation-revision-20260930/theory_20260930_051.json",
+      "sha256": "ac82dc9c1997519bf281e94fb831a2274532d67e34ce60fa2c9a9f9cc2290941"
+    },
+    {
+      "original": "qa/releases/theory_20260930_052.json",
+      "archived": "qa/history/theory-citation-revision-20260930/theory_20260930_052.json",
+      "sha256": "4565085cc7c16461eb166af743462ddcfafddcfbd3c1c547c11d8efdf15dfd87"
+    },
+    {
+      "original": "qa/releases/theory_20260930_053.json",
+      "archived": "qa/history/theory-citation-revision-20260930/theory_20260930_053.json",
+      "sha256": "68c363df1cb0defb5373d7724522fef25fcdc701047b55a333718c3790328620"
+    },
+    {
+      "original": "qa/releases/theory_20260930_054.json",
+      "archived": "qa/history/theory-citation-revision-20260930/theory_20260930_054.json",
+      "sha256": "860c1f76626dbe8146ad8e8b8ec5213d0ff4fb5a7f0be0971894150520eda606"
+    },
+    {
+      "original": "qa/releases/theory_20260930_055.json",
+      "archived": "qa/history/theory-citation-revision-20260930/theory_20260930_055.json",
+      "sha256": "13e012c90389ad7f2139af90590256ce1b3e811eaff61078bf5a634cfd8dd345"
+    }
+  ]
+}

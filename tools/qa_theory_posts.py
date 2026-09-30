@@ -9,6 +9,7 @@ from pathlib import Path
 
 from bs4 import BeautifulSoup
 from PIL import Image
+from qa_theory_citations import audit_html
 
 
 @dataclass
@@ -60,6 +61,8 @@ def audit(root: Path, first: int, last: int) -> dict:
             continue
         html_file = matches[0]
         soup = BeautifulSoup(html_file.read_text(encoding="utf-8"), "html.parser")
+        for error in audit_html(str(soup)):
+            findings.append(Finding(post_id, "FAIL", "CITATION", error))
         h1 = soup.select_one("article > header h1")
         sections = soup.select("article > section")
         figures = soup.select("article figure.article-image")
