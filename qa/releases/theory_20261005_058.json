@@ -1,0 +1,271 @@
+{
+  "version": 1,
+  "kind": "theory",
+  "author": "codex",
+  "artifacts": {
+    "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+    "assets/images/theory/series-03/hybrid-v8/058-body-01.png": "0c2baaf3246547ce0ee65f41a79e9ba64ea81917a60393471b14f291b144a3e4",
+    "assets/images/theory/series-03/hybrid-v8/058-body-02.png": "c7f8333bc6bd14454f9c9bbc3b5ecb0291dea609c24bf672cb1333fc1ff26014",
+    "assets/images/theory/series-03/hybrid-v8/058-body-03.png": "69fba4b18e0157dbeca544ce1bd49f34475ffe3f96ecba1a6eecbbdbe92a915b",
+    "assets/images/theory/series-03/hybrid-v8/058-thumbnail.png": "04b903295dac6263cca875cfc22bc5d3c22a8b40ed1f7ad502dcddfd52a6e2b2",
+    "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+    "posts/theory/058-natural-radionuclides.html": "f21ebbd8e8877d46bbc0ba5f20913c45ab95a309e8c88eeb20889cdac9ba8cde"
+  },
+  "scope": "New058 article; mutable listing excluded",
+  "approvals": [
+    {
+      "by": "user",
+      "scope": "direction",
+      "text": "원자력 이론 56~60번 게시물을 제작성해줘.",
+      "at": "2026-10-04 America/New_York",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/058-body-01.png": "0c2baaf3246547ce0ee65f41a79e9ba64ea81917a60393471b14f291b144a3e4",
+        "assets/images/theory/series-03/hybrid-v8/058-body-02.png": "c7f8333bc6bd14454f9c9bbc3b5ecb0291dea609c24bf672cb1333fc1ff26014",
+        "assets/images/theory/series-03/hybrid-v8/058-body-03.png": "69fba4b18e0157dbeca544ce1bd49f34475ffe3f96ecba1a6eecbbdbe92a915b",
+        "assets/images/theory/series-03/hybrid-v8/058-thumbnail.png": "04b903295dac6263cca875cfc22bc5d3c22a8b40ed1f7ad502dcddfd52a6e2b2",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/058-natural-radionuclides.html": "f21ebbd8e8877d46bbc0ba5f20913c45ab95a309e8c88eeb20889cdac9ba8cde"
+      }
+    },
+    {
+      "by": "user",
+      "scope": "publish",
+      "text": "업로드 하라",
+      "at": "2026-10-05T01:25:08.470074-04:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/058-body-01.png": "0c2baaf3246547ce0ee65f41a79e9ba64ea81917a60393471b14f291b144a3e4",
+        "assets/images/theory/series-03/hybrid-v8/058-body-02.png": "c7f8333bc6bd14454f9c9bbc3b5ecb0291dea609c24bf672cb1333fc1ff26014",
+        "assets/images/theory/series-03/hybrid-v8/058-body-03.png": "69fba4b18e0157dbeca544ce1bd49f34475ffe3f96ecba1a6eecbbdbe92a915b",
+        "assets/images/theory/series-03/hybrid-v8/058-thumbnail.png": "04b903295dac6263cca875cfc22bc5d3c22a8b40ed1f7ad502dcddfd52a6e2b2",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/058-natural-radionuclides.html": "f21ebbd8e8877d46bbc0ba5f20913c45ab95a309e8c88eeb20889cdac9ba8cde"
+      },
+      "scope_note": "Upload approved056–060, register metadata/navigation; preserve unchanged already-approved historical content."
+    }
+  ],
+  "checks": {
+    "THEORY-01": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/058-body-01.png": "0c2baaf3246547ce0ee65f41a79e9ba64ea81917a60393471b14f291b144a3e4",
+        "assets/images/theory/series-03/hybrid-v8/058-body-02.png": "c7f8333bc6bd14454f9c9bbc3b5ecb0291dea609c24bf672cb1333fc1ff26014",
+        "assets/images/theory/series-03/hybrid-v8/058-body-03.png": "69fba4b18e0157dbeca544ce1bd49f34475ffe3f96ecba1a6eecbbdbe92a915b",
+        "assets/images/theory/series-03/hybrid-v8/058-thumbnail.png": "04b903295dac6263cca875cfc22bc5d3c22a8b40ed1f7ad502dcddfd52a6e2b2",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/058-natural-radionuclides.html": "f21ebbd8e8877d46bbc0ba5f20913c45ab95a309e8c88eeb20889cdac9ba8cde"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_058.json": "8ae1660df9dea91119fd49a2043694f58c7c050188aac827e984124dd3b9c5dc"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-02": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/058-body-01.png": "0c2baaf3246547ce0ee65f41a79e9ba64ea81917a60393471b14f291b144a3e4",
+        "assets/images/theory/series-03/hybrid-v8/058-body-02.png": "c7f8333bc6bd14454f9c9bbc3b5ecb0291dea609c24bf672cb1333fc1ff26014",
+        "assets/images/theory/series-03/hybrid-v8/058-body-03.png": "69fba4b18e0157dbeca544ce1bd49f34475ffe3f96ecba1a6eecbbdbe92a915b",
+        "assets/images/theory/series-03/hybrid-v8/058-thumbnail.png": "04b903295dac6263cca875cfc22bc5d3c22a8b40ed1f7ad502dcddfd52a6e2b2",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/058-natural-radionuclides.html": "f21ebbd8e8877d46bbc0ba5f20913c45ab95a309e8c88eeb20889cdac9ba8cde"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_058.json": "8ae1660df9dea91119fd49a2043694f58c7c050188aac827e984124dd3b9c5dc"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-03": {
+      "status": "PASS",
+      "reviewer": "Claude Code independent session ad4bc644-2ca5-48de-bd12-39518fd2ea55",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/058-body-01.png": "0c2baaf3246547ce0ee65f41a79e9ba64ea81917a60393471b14f291b144a3e4",
+        "assets/images/theory/series-03/hybrid-v8/058-body-02.png": "c7f8333bc6bd14454f9c9bbc3b5ecb0291dea609c24bf672cb1333fc1ff26014",
+        "assets/images/theory/series-03/hybrid-v8/058-body-03.png": "69fba4b18e0157dbeca544ce1bd49f34475ffe3f96ecba1a6eecbbdbe92a915b",
+        "assets/images/theory/series-03/hybrid-v8/058-thumbnail.png": "04b903295dac6263cca875cfc22bc5d3c22a8b40ed1f7ad502dcddfd52a6e2b2",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/058-natural-radionuclides.html": "f21ebbd8e8877d46bbc0ba5f20913c45ab95a309e8c88eeb20889cdac9ba8cde"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_058.json": "8ae1660df9dea91119fd49a2043694f58c7c050188aac827e984124dd3b9c5dc"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-04": {
+      "status": "PASS",
+      "reviewer": "Claude Code independent session ad4bc644-2ca5-48de-bd12-39518fd2ea55",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/058-body-01.png": "0c2baaf3246547ce0ee65f41a79e9ba64ea81917a60393471b14f291b144a3e4",
+        "assets/images/theory/series-03/hybrid-v8/058-body-02.png": "c7f8333bc6bd14454f9c9bbc3b5ecb0291dea609c24bf672cb1333fc1ff26014",
+        "assets/images/theory/series-03/hybrid-v8/058-body-03.png": "69fba4b18e0157dbeca544ce1bd49f34475ffe3f96ecba1a6eecbbdbe92a915b",
+        "assets/images/theory/series-03/hybrid-v8/058-thumbnail.png": "04b903295dac6263cca875cfc22bc5d3c22a8b40ed1f7ad502dcddfd52a6e2b2",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/058-natural-radionuclides.html": "f21ebbd8e8877d46bbc0ba5f20913c45ab95a309e8c88eeb20889cdac9ba8cde"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_058.json": "8ae1660df9dea91119fd49a2043694f58c7c050188aac827e984124dd3b9c5dc"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-06": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/058-body-01.png": "0c2baaf3246547ce0ee65f41a79e9ba64ea81917a60393471b14f291b144a3e4",
+        "assets/images/theory/series-03/hybrid-v8/058-body-02.png": "c7f8333bc6bd14454f9c9bbc3b5ecb0291dea609c24bf672cb1333fc1ff26014",
+        "assets/images/theory/series-03/hybrid-v8/058-body-03.png": "69fba4b18e0157dbeca544ce1bd49f34475ffe3f96ecba1a6eecbbdbe92a915b",
+        "assets/images/theory/series-03/hybrid-v8/058-thumbnail.png": "04b903295dac6263cca875cfc22bc5d3c22a8b40ed1f7ad502dcddfd52a6e2b2",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/058-natural-radionuclides.html": "f21ebbd8e8877d46bbc0ba5f20913c45ab95a309e8c88eeb20889cdac9ba8cde"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_058.json": "8ae1660df9dea91119fd49a2043694f58c7c050188aac827e984124dd3b9c5dc"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-07": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/058-body-01.png": "0c2baaf3246547ce0ee65f41a79e9ba64ea81917a60393471b14f291b144a3e4",
+        "assets/images/theory/series-03/hybrid-v8/058-body-02.png": "c7f8333bc6bd14454f9c9bbc3b5ecb0291dea609c24bf672cb1333fc1ff26014",
+        "assets/images/theory/series-03/hybrid-v8/058-body-03.png": "69fba4b18e0157dbeca544ce1bd49f34475ffe3f96ecba1a6eecbbdbe92a915b",
+        "assets/images/theory/series-03/hybrid-v8/058-thumbnail.png": "04b903295dac6263cca875cfc22bc5d3c22a8b40ed1f7ad502dcddfd52a6e2b2",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/058-natural-radionuclides.html": "f21ebbd8e8877d46bbc0ba5f20913c45ab95a309e8c88eeb20889cdac9ba8cde"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_058.json": "8ae1660df9dea91119fd49a2043694f58c7c050188aac827e984124dd3b9c5dc"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-08": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/058-body-01.png": "0c2baaf3246547ce0ee65f41a79e9ba64ea81917a60393471b14f291b144a3e4",
+        "assets/images/theory/series-03/hybrid-v8/058-body-02.png": "c7f8333bc6bd14454f9c9bbc3b5ecb0291dea609c24bf672cb1333fc1ff26014",
+        "assets/images/theory/series-03/hybrid-v8/058-body-03.png": "69fba4b18e0157dbeca544ce1bd49f34475ffe3f96ecba1a6eecbbdbe92a915b",
+        "assets/images/theory/series-03/hybrid-v8/058-thumbnail.png": "04b903295dac6263cca875cfc22bc5d3c22a8b40ed1f7ad502dcddfd52a6e2b2",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/058-natural-radionuclides.html": "f21ebbd8e8877d46bbc0ba5f20913c45ab95a309e8c88eeb20889cdac9ba8cde"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_058.json": "8ae1660df9dea91119fd49a2043694f58c7c050188aac827e984124dd3b9c5dc"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-09": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/058-body-01.png": "0c2baaf3246547ce0ee65f41a79e9ba64ea81917a60393471b14f291b144a3e4",
+        "assets/images/theory/series-03/hybrid-v8/058-body-02.png": "c7f8333bc6bd14454f9c9bbc3b5ecb0291dea609c24bf672cb1333fc1ff26014",
+        "assets/images/theory/series-03/hybrid-v8/058-body-03.png": "69fba4b18e0157dbeca544ce1bd49f34475ffe3f96ecba1a6eecbbdbe92a915b",
+        "assets/images/theory/series-03/hybrid-v8/058-thumbnail.png": "04b903295dac6263cca875cfc22bc5d3c22a8b40ed1f7ad502dcddfd52a6e2b2",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/058-natural-radionuclides.html": "f21ebbd8e8877d46bbc0ba5f20913c45ab95a309e8c88eeb20889cdac9ba8cde"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_058.json": "8ae1660df9dea91119fd49a2043694f58c7c050188aac827e984124dd3b9c5dc"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-10": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/058-body-01.png": "0c2baaf3246547ce0ee65f41a79e9ba64ea81917a60393471b14f291b144a3e4",
+        "assets/images/theory/series-03/hybrid-v8/058-body-02.png": "c7f8333bc6bd14454f9c9bbc3b5ecb0291dea609c24bf672cb1333fc1ff26014",
+        "assets/images/theory/series-03/hybrid-v8/058-body-03.png": "69fba4b18e0157dbeca544ce1bd49f34475ffe3f96ecba1a6eecbbdbe92a915b",
+        "assets/images/theory/series-03/hybrid-v8/058-thumbnail.png": "04b903295dac6263cca875cfc22bc5d3c22a8b40ed1f7ad502dcddfd52a6e2b2",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/058-natural-radionuclides.html": "f21ebbd8e8877d46bbc0ba5f20913c45ab95a309e8c88eeb20889cdac9ba8cde"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_058.json": "8ae1660df9dea91119fd49a2043694f58c7c050188aac827e984124dd3b9c5dc"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "COMMON-05": {
+      "status": "PASS",
+      "reviewer": "Claude Code independent session ad4bc644-2ca5-48de-bd12-39518fd2ea55",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/058-body-01.png": "0c2baaf3246547ce0ee65f41a79e9ba64ea81917a60393471b14f291b144a3e4",
+        "assets/images/theory/series-03/hybrid-v8/058-body-02.png": "c7f8333bc6bd14454f9c9bbc3b5ecb0291dea609c24bf672cb1333fc1ff26014",
+        "assets/images/theory/series-03/hybrid-v8/058-body-03.png": "69fba4b18e0157dbeca544ce1bd49f34475ffe3f96ecba1a6eecbbdbe92a915b",
+        "assets/images/theory/series-03/hybrid-v8/058-thumbnail.png": "04b903295dac6263cca875cfc22bc5d3c22a8b40ed1f7ad502dcddfd52a6e2b2",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/058-natural-radionuclides.html": "f21ebbd8e8877d46bbc0ba5f20913c45ab95a309e8c88eeb20889cdac9ba8cde"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_058.json": "8ae1660df9dea91119fd49a2043694f58c7c050188aac827e984124dd3b9c5dc"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access.",
+      "claude_review": "qa/claude/theory_20261005_058.json"
+    },
+    "THEORY-05": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/058-body-01.png": "0c2baaf3246547ce0ee65f41a79e9ba64ea81917a60393471b14f291b144a3e4",
+        "assets/images/theory/series-03/hybrid-v8/058-body-02.png": "c7f8333bc6bd14454f9c9bbc3b5ecb0291dea609c24bf672cb1333fc1ff26014",
+        "assets/images/theory/series-03/hybrid-v8/058-body-03.png": "69fba4b18e0157dbeca544ce1bd49f34475ffe3f96ecba1a6eecbbdbe92a915b",
+        "assets/images/theory/series-03/hybrid-v8/058-thumbnail.png": "04b903295dac6263cca875cfc22bc5d3c22a8b40ed1f7ad502dcddfd52a6e2b2",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/058-natural-radionuclides.html": "f21ebbd8e8877d46bbc0ba5f20913c45ab95a309e8c88eeb20889cdac9ba8cde"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_058.json": "8ae1660df9dea91119fd49a2043694f58c7c050188aac827e984124dd3b9c5dc"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    }
+  }
+}

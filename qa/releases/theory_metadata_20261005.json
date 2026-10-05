@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "kind": "theory",
+  "author": "codex",
+  "artifacts": {
+    "assets/app.js": "56ea3efd48ff4891d9bdee3f65e4773621f89dea5ffc8a58070e7510b48b5d64"
+  },
+  "scope": "Listing metadata only",
+  "approvals": [
+    {
+      "by": "user",
+      "scope": "direction",
+      "text": "원자력 이론 56~60번 게시물을 제작성해줘.",
+      "at": "2026-10-04 America/New_York",
+      "artifacts": {
+        "assets/app.js": "56ea3efd48ff4891d9bdee3f65e4773621f89dea5ffc8a58070e7510b48b5d64"
+      }
+    },
+    {
+      "by": "user",
+      "scope": "publish",
+      "text": "업로드 하라",
+      "at": "2026-10-05T01:25:08.470074-04:00",
+      "artifacts": {
+        "assets/app.js": "56ea3efd48ff4891d9bdee3f65e4773621f89dea5ffc8a58070e7510b48b5d64"
+      },
+      "scope_note": "Upload approved056–060, register metadata/navigation; preserve unchanged already-approved historical content."
+    }
+  ],
+  "checks": {
+    "THEORY-01": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/app.js": "56ea3efd48ff4891d9bdee3f65e4773621f89dea5ffc8a58070e7510b48b5d64"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_metadata_20261005.json": "647a2b3131403ff1036c6b51eae3f0c6a30b7a0a53fb82f1cdf27ae0064f65e9"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-02": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/app.js": "56ea3efd48ff4891d9bdee3f65e4773621f89dea5ffc8a58070e7510b48b5d64"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_metadata_20261005.json": "647a2b3131403ff1036c6b51eae3f0c6a30b7a0a53fb82f1cdf27ae0064f65e9"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-03": {
+      "status": "PASS",
+      "reviewer": "Claude Code independent session ad4bc644-2ca5-48de-bd12-39518fd2ea55",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/app.js": "56ea3efd48ff4891d9bdee3f65e4773621f89dea5ffc8a58070e7510b48b5d64"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_metadata_20261005.json": "647a2b3131403ff1036c6b51eae3f0c6a30b7a0a53fb82f1cdf27ae0064f65e9"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-04": {
+      "status": "PASS",
+      "reviewer": "Claude Code independent session ad4bc644-2ca5-48de-bd12-39518fd2ea55",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/app.js": "56ea3efd48ff4891d9bdee3f65e4773621f89dea5ffc8a58070e7510b48b5d64"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_metadata_20261005.json": "647a2b3131403ff1036c6b51eae3f0c6a30b7a0a53fb82f1cdf27ae0064f65e9"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-06": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/app.js": "56ea3efd48ff4891d9bdee3f65e4773621f89dea5ffc8a58070e7510b48b5d64"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_metadata_20261005.json": "647a2b3131403ff1036c6b51eae3f0c6a30b7a0a53fb82f1cdf27ae0064f65e9"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-07": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/app.js": "56ea3efd48ff4891d9bdee3f65e4773621f89dea5ffc8a58070e7510b48b5d64"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_metadata_20261005.json": "647a2b3131403ff1036c6b51eae3f0c6a30b7a0a53fb82f1cdf27ae0064f65e9"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-08": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/app.js": "56ea3efd48ff4891d9bdee3f65e4773621f89dea5ffc8a58070e7510b48b5d64"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_metadata_20261005.json": "647a2b3131403ff1036c6b51eae3f0c6a30b7a0a53fb82f1cdf27ae0064f65e9"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-09": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/app.js": "56ea3efd48ff4891d9bdee3f65e4773621f89dea5ffc8a58070e7510b48b5d64"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_metadata_20261005.json": "647a2b3131403ff1036c6b51eae3f0c6a30b7a0a53fb82f1cdf27ae0064f65e9"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-10": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/app.js": "56ea3efd48ff4891d9bdee3f65e4773621f89dea5ffc8a58070e7510b48b5d64"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_metadata_20261005.json": "647a2b3131403ff1036c6b51eae3f0c6a30b7a0a53fb82f1cdf27ae0064f65e9"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "COMMON-05": {
+      "status": "PASS",
+      "reviewer": "Claude Code independent session ad4bc644-2ca5-48de-bd12-39518fd2ea55",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/app.js": "56ea3efd48ff4891d9bdee3f65e4773621f89dea5ffc8a58070e7510b48b5d64"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_metadata_20261005.json": "647a2b3131403ff1036c6b51eae3f0c6a30b7a0a53fb82f1cdf27ae0064f65e9"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access.",
+      "claude_review": "qa/claude/theory_metadata_20261005.json"
+    },
+    "THEORY-05": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/app.js": "56ea3efd48ff4891d9bdee3f65e4773621f89dea5ffc8a58070e7510b48b5d64"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_metadata_20261005.json": "647a2b3131403ff1036c6b51eae3f0c6a30b7a0a53fb82f1cdf27ae0064f65e9"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    }
+  }
+}

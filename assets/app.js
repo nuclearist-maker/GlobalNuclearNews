@@ -1,4 +1,64 @@
-const posts=[
+const posts = [
+  {
+    "title": "붕괴열",
+    "date": "2026.10.05",
+    "displayDate": "2026.10.05",
+    "section": "theory",
+    "category": "방사성붕괴와 시간",
+    "summary": "붕괴열 발생과 침착 에너지, 1000MWth 교육용 환산, 노심·수조·건식저장의 열 전달을 설명합니다.",
+    "thumbnail": "assets/images/theory/series-03/hybrid-v8/060-thumbnail.png",
+    "thumbnailAlt": "제어봉이삽입된노심의연료에서남은열이냉각경로와열교환기로전달되는개념절개도",
+    "url": "posts/theory/060-decay-heat.html",
+    "keywords": "붕괴열 붕괴 시간 원자력"
+  },
+  {
+    "title": "방사화",
+    "date": "2026.10.05",
+    "displayDate": "2026.10.05",
+    "section": "theory",
+    "category": "방사성붕괴와 시간",
+    "summary": "코발트-60 생성과 붕괴, 일정 생성률의 조사·냉각 예시, 방사화된 부식 생성물의 이동을 설명합니다.",
+    "thumbnail": "assets/images/theory/series-03/hybrid-v8/059-thumbnail.png",
+    "thumbnailAlt": "금속절단면의원자격자 안으로중성자가 들어가 하나의핵종이변환되는 거시미시 통합장면",
+    "url": "posts/theory/059-activation.html",
+    "keywords": "방사화 붕괴 시간 원자력"
+  },
+  {
+    "title": "자연방사성핵종",
+    "date": "2026.10.05",
+    "displayDate": "2026.10.05",
+    "section": "theory",
+    "category": "방사성붕괴와 시간",
+    "summary": "자연방사성핵종의 세 기원과 활동도, 일정 생성·붕괴 평형을 두 정량 예시로 설명합니다.",
+    "thumbnail": "assets/images/theory/series-03/hybrid-v8/058-thumbnail.png",
+    "thumbnailAlt": "지각의 원시핵종과 토양의 붕괴계열 및 대기의 우주선 생성핵종을 연결한 지층대기 단면",
+    "url": "posts/theory/058-natural-radionuclides.html",
+    "keywords": "자연방사성핵종 붕괴 시간 원자력"
+  },
+  {
+    "title": "방사성연대측정",
+    "date": "2026.10.05",
+    "displayDate": "2026.10.05",
+    "section": "theory",
+    "category": "방사성붕괴와 시간",
+    "summary": "탄소-14 잔존비율25%·70%의 역산을 계산하고, 초기조건과 방사성탄소연대·달력연대의 차이를 설명합니다.",
+    "thumbnail": "assets/images/theory/series-03/hybrid-v8/057-thumbnail.png",
+    "thumbnailAlt": "나무 시료와 분석용 바이알이 동위원소 측정 장치로 이어지는 실험대 개념 장면",
+    "url": "posts/theory/057-radiometric-dating.html",
+    "keywords": "방사성연대측정 붕괴 시간 원자력"
+  },
+  {
+    "title": "연속 붕괴사슬",
+    "date": "2026.10.05",
+    "displayDate": "2026.10.05",
+    "section": "theory",
+    "category": "방사성붕괴와 시간",
+    "summary": "부모의 공급과 딸의 소멸을 함께 계산해 연속 붕괴사슬의 증가·정점·감소와 라돈 유출을 이해합니다.",
+    "thumbnail": "assets/images/theory/series-03/hybrid-v8/056-thumbnail.png",
+    "thumbnailAlt": "서로 다른 세대의 핵종 집단이 전환 경로로 이어져 안정 끝점에 도달하는 개념 장면",
+    "url": "posts/theory/056-serial-decay-chain.html",
+    "keywords": "연속 붕괴사슬 붕괴 시간 원자력"
+  },
   {
     "title": "원전 재가동, 심사 완료 뒤에 남은 일",
     "date": "2026.09.29",
@@ -713,3 +773,4 @@ const list=document.querySelector("#post-list"),empty=document.querySelector("#e
 document.querySelectorAll("[data-view-link]").forEach(link=>link.classList.toggle("active",link.dataset.viewLink===view));
 if(view==="theory"){document.querySelector("#board-eyebrow").textContent="NUCLEAR THEORY";document.querySelector("#board-title").textContent="원자력 이론";empty.textContent="선택한 카테고리에 등록된 원자력 이론 게시물이 없습니다.";const categories=[...new Set(posts.filter(p=>p.section==="theory").map(p=>p.category))];filters.innerHTML=`<button class="selected" type="button" data-filter="전체">전체 게시물</button>${categories.map(category=>`<button type="button" data-filter="${category}">${category}</button>`).join("")}`;buttons=[...filters.querySelectorAll("[data-filter]")]}
 function render(){const q=search.value.trim().toLowerCase();const filtered=posts.filter(p=>p.section===view&&(active==="전체"||p.category===active)&&(`${p.title} ${p.summary} ${p.keywords}`.toLowerCase().includes(q))).sort((a,b)=>b.date.localeCompare(a.date));list.innerHTML=filtered.map(p=>`<a class="post" href="${p.url}"><img class="post-thumb" src="${p.thumbnail}" alt="${p.thumbnailAlt}"><div class="post-copy"><div class="post-meta"><strong>${p.category}</strong>${p.displayDate}</div><h3>${p.title}</h3><p>${p.summary}</p></div><span class="arrow" aria-hidden="true">→</span></a>`).join("");empty.hidden=filtered.length!==0}search.addEventListener("input",render);buttons.forEach(b=>b.addEventListener("click",()=>{active=b.dataset.filter;buttons.forEach(x=>x.classList.toggle("selected",x===b));render()}));render();
+

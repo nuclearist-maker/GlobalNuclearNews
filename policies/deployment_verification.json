@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "user_directive_date": "2026-10-05",
+  "article_scope": "new_posts_only",
+  "image_scope": "new_posts_only",
+  "listing_scope": "new_posts_only",
+  "existing_posts": "explicit_changed_feature_only",
+  "repeat_completed_cumulative_qa": false,
+  "require_all_new_posts": true,
+  "reject_unjustified_existing_post_checks": true,
+  "preserve_approval_and_hash_gates": true
+}

@@ -1,0 +1,271 @@
+{
+  "version": 1,
+  "kind": "theory",
+  "author": "codex",
+  "artifacts": {
+    "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+    "assets/images/theory/series-03/hybrid-v8/060-body-01.png": "176ae46d3084bbabbbbbe07e4667fe16f3aba2dd3da2a97a73dbd14642321bd8",
+    "assets/images/theory/series-03/hybrid-v8/060-body-02.png": "6f73c05000edc00b25d8300bd773cacf6f11178c5baaf5399c66a0cc4d8f134c",
+    "assets/images/theory/series-03/hybrid-v8/060-body-03.png": "d82e80f35516f212aecbffcfaca91e3583bf0653df8d6ff0950fffeccfcaae3c",
+    "assets/images/theory/series-03/hybrid-v8/060-thumbnail.png": "aa83d1a90841081e597d6a1f16692b20b00f0f4181a8a18525ed8229f7eda53c",
+    "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+    "posts/theory/060-decay-heat.html": "6be54d5f059924e0433d814b4b7a237d782a567014cf2915cae361a599c785a1"
+  },
+  "scope": "New060 article; mutable listing excluded",
+  "approvals": [
+    {
+      "by": "user",
+      "scope": "direction",
+      "text": "원자력 이론 56~60번 게시물을 제작성해줘.",
+      "at": "2026-10-04 America/New_York",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/060-body-01.png": "176ae46d3084bbabbbbbe07e4667fe16f3aba2dd3da2a97a73dbd14642321bd8",
+        "assets/images/theory/series-03/hybrid-v8/060-body-02.png": "6f73c05000edc00b25d8300bd773cacf6f11178c5baaf5399c66a0cc4d8f134c",
+        "assets/images/theory/series-03/hybrid-v8/060-body-03.png": "d82e80f35516f212aecbffcfaca91e3583bf0653df8d6ff0950fffeccfcaae3c",
+        "assets/images/theory/series-03/hybrid-v8/060-thumbnail.png": "aa83d1a90841081e597d6a1f16692b20b00f0f4181a8a18525ed8229f7eda53c",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/060-decay-heat.html": "6be54d5f059924e0433d814b4b7a237d782a567014cf2915cae361a599c785a1"
+      }
+    },
+    {
+      "by": "user",
+      "scope": "publish",
+      "text": "업로드 하라",
+      "at": "2026-10-05T01:25:08.470074-04:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/060-body-01.png": "176ae46d3084bbabbbbbe07e4667fe16f3aba2dd3da2a97a73dbd14642321bd8",
+        "assets/images/theory/series-03/hybrid-v8/060-body-02.png": "6f73c05000edc00b25d8300bd773cacf6f11178c5baaf5399c66a0cc4d8f134c",
+        "assets/images/theory/series-03/hybrid-v8/060-body-03.png": "d82e80f35516f212aecbffcfaca91e3583bf0653df8d6ff0950fffeccfcaae3c",
+        "assets/images/theory/series-03/hybrid-v8/060-thumbnail.png": "aa83d1a90841081e597d6a1f16692b20b00f0f4181a8a18525ed8229f7eda53c",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/060-decay-heat.html": "6be54d5f059924e0433d814b4b7a237d782a567014cf2915cae361a599c785a1"
+      },
+      "scope_note": "Upload approved056–060, register metadata/navigation; preserve unchanged already-approved historical content."
+    }
+  ],
+  "checks": {
+    "THEORY-01": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/060-body-01.png": "176ae46d3084bbabbbbbe07e4667fe16f3aba2dd3da2a97a73dbd14642321bd8",
+        "assets/images/theory/series-03/hybrid-v8/060-body-02.png": "6f73c05000edc00b25d8300bd773cacf6f11178c5baaf5399c66a0cc4d8f134c",
+        "assets/images/theory/series-03/hybrid-v8/060-body-03.png": "d82e80f35516f212aecbffcfaca91e3583bf0653df8d6ff0950fffeccfcaae3c",
+        "assets/images/theory/series-03/hybrid-v8/060-thumbnail.png": "aa83d1a90841081e597d6a1f16692b20b00f0f4181a8a18525ed8229f7eda53c",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/060-decay-heat.html": "6be54d5f059924e0433d814b4b7a237d782a567014cf2915cae361a599c785a1"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_060.json": "8c86ee7d5f1ddc42c4a109c9ad3ce072def4694eecc57e9892720e75bff7889a"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-02": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/060-body-01.png": "176ae46d3084bbabbbbbe07e4667fe16f3aba2dd3da2a97a73dbd14642321bd8",
+        "assets/images/theory/series-03/hybrid-v8/060-body-02.png": "6f73c05000edc00b25d8300bd773cacf6f11178c5baaf5399c66a0cc4d8f134c",
+        "assets/images/theory/series-03/hybrid-v8/060-body-03.png": "d82e80f35516f212aecbffcfaca91e3583bf0653df8d6ff0950fffeccfcaae3c",
+        "assets/images/theory/series-03/hybrid-v8/060-thumbnail.png": "aa83d1a90841081e597d6a1f16692b20b00f0f4181a8a18525ed8229f7eda53c",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/060-decay-heat.html": "6be54d5f059924e0433d814b4b7a237d782a567014cf2915cae361a599c785a1"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_060.json": "8c86ee7d5f1ddc42c4a109c9ad3ce072def4694eecc57e9892720e75bff7889a"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-03": {
+      "status": "PASS",
+      "reviewer": "Claude Code independent session ad4bc644-2ca5-48de-bd12-39518fd2ea55",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/060-body-01.png": "176ae46d3084bbabbbbbe07e4667fe16f3aba2dd3da2a97a73dbd14642321bd8",
+        "assets/images/theory/series-03/hybrid-v8/060-body-02.png": "6f73c05000edc00b25d8300bd773cacf6f11178c5baaf5399c66a0cc4d8f134c",
+        "assets/images/theory/series-03/hybrid-v8/060-body-03.png": "d82e80f35516f212aecbffcfaca91e3583bf0653df8d6ff0950fffeccfcaae3c",
+        "assets/images/theory/series-03/hybrid-v8/060-thumbnail.png": "aa83d1a90841081e597d6a1f16692b20b00f0f4181a8a18525ed8229f7eda53c",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/060-decay-heat.html": "6be54d5f059924e0433d814b4b7a237d782a567014cf2915cae361a599c785a1"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_060.json": "8c86ee7d5f1ddc42c4a109c9ad3ce072def4694eecc57e9892720e75bff7889a"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-04": {
+      "status": "PASS",
+      "reviewer": "Claude Code independent session ad4bc644-2ca5-48de-bd12-39518fd2ea55",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/060-body-01.png": "176ae46d3084bbabbbbbe07e4667fe16f3aba2dd3da2a97a73dbd14642321bd8",
+        "assets/images/theory/series-03/hybrid-v8/060-body-02.png": "6f73c05000edc00b25d8300bd773cacf6f11178c5baaf5399c66a0cc4d8f134c",
+        "assets/images/theory/series-03/hybrid-v8/060-body-03.png": "d82e80f35516f212aecbffcfaca91e3583bf0653df8d6ff0950fffeccfcaae3c",
+        "assets/images/theory/series-03/hybrid-v8/060-thumbnail.png": "aa83d1a90841081e597d6a1f16692b20b00f0f4181a8a18525ed8229f7eda53c",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/060-decay-heat.html": "6be54d5f059924e0433d814b4b7a237d782a567014cf2915cae361a599c785a1"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_060.json": "8c86ee7d5f1ddc42c4a109c9ad3ce072def4694eecc57e9892720e75bff7889a"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-06": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/060-body-01.png": "176ae46d3084bbabbbbbe07e4667fe16f3aba2dd3da2a97a73dbd14642321bd8",
+        "assets/images/theory/series-03/hybrid-v8/060-body-02.png": "6f73c05000edc00b25d8300bd773cacf6f11178c5baaf5399c66a0cc4d8f134c",
+        "assets/images/theory/series-03/hybrid-v8/060-body-03.png": "d82e80f35516f212aecbffcfaca91e3583bf0653df8d6ff0950fffeccfcaae3c",
+        "assets/images/theory/series-03/hybrid-v8/060-thumbnail.png": "aa83d1a90841081e597d6a1f16692b20b00f0f4181a8a18525ed8229f7eda53c",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/060-decay-heat.html": "6be54d5f059924e0433d814b4b7a237d782a567014cf2915cae361a599c785a1"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_060.json": "8c86ee7d5f1ddc42c4a109c9ad3ce072def4694eecc57e9892720e75bff7889a"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-07": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/060-body-01.png": "176ae46d3084bbabbbbbe07e4667fe16f3aba2dd3da2a97a73dbd14642321bd8",
+        "assets/images/theory/series-03/hybrid-v8/060-body-02.png": "6f73c05000edc00b25d8300bd773cacf6f11178c5baaf5399c66a0cc4d8f134c",
+        "assets/images/theory/series-03/hybrid-v8/060-body-03.png": "d82e80f35516f212aecbffcfaca91e3583bf0653df8d6ff0950fffeccfcaae3c",
+        "assets/images/theory/series-03/hybrid-v8/060-thumbnail.png": "aa83d1a90841081e597d6a1f16692b20b00f0f4181a8a18525ed8229f7eda53c",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/060-decay-heat.html": "6be54d5f059924e0433d814b4b7a237d782a567014cf2915cae361a599c785a1"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_060.json": "8c86ee7d5f1ddc42c4a109c9ad3ce072def4694eecc57e9892720e75bff7889a"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-08": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/060-body-01.png": "176ae46d3084bbabbbbbe07e4667fe16f3aba2dd3da2a97a73dbd14642321bd8",
+        "assets/images/theory/series-03/hybrid-v8/060-body-02.png": "6f73c05000edc00b25d8300bd773cacf6f11178c5baaf5399c66a0cc4d8f134c",
+        "assets/images/theory/series-03/hybrid-v8/060-body-03.png": "d82e80f35516f212aecbffcfaca91e3583bf0653df8d6ff0950fffeccfcaae3c",
+        "assets/images/theory/series-03/hybrid-v8/060-thumbnail.png": "aa83d1a90841081e597d6a1f16692b20b00f0f4181a8a18525ed8229f7eda53c",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/060-decay-heat.html": "6be54d5f059924e0433d814b4b7a237d782a567014cf2915cae361a599c785a1"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_060.json": "8c86ee7d5f1ddc42c4a109c9ad3ce072def4694eecc57e9892720e75bff7889a"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-09": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/060-body-01.png": "176ae46d3084bbabbbbbe07e4667fe16f3aba2dd3da2a97a73dbd14642321bd8",
+        "assets/images/theory/series-03/hybrid-v8/060-body-02.png": "6f73c05000edc00b25d8300bd773cacf6f11178c5baaf5399c66a0cc4d8f134c",
+        "assets/images/theory/series-03/hybrid-v8/060-body-03.png": "d82e80f35516f212aecbffcfaca91e3583bf0653df8d6ff0950fffeccfcaae3c",
+        "assets/images/theory/series-03/hybrid-v8/060-thumbnail.png": "aa83d1a90841081e597d6a1f16692b20b00f0f4181a8a18525ed8229f7eda53c",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/060-decay-heat.html": "6be54d5f059924e0433d814b4b7a237d782a567014cf2915cae361a599c785a1"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_060.json": "8c86ee7d5f1ddc42c4a109c9ad3ce072def4694eecc57e9892720e75bff7889a"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "THEORY-10": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/060-body-01.png": "176ae46d3084bbabbbbbe07e4667fe16f3aba2dd3da2a97a73dbd14642321bd8",
+        "assets/images/theory/series-03/hybrid-v8/060-body-02.png": "6f73c05000edc00b25d8300bd773cacf6f11178c5baaf5399c66a0cc4d8f134c",
+        "assets/images/theory/series-03/hybrid-v8/060-body-03.png": "d82e80f35516f212aecbffcfaca91e3583bf0653df8d6ff0950fffeccfcaae3c",
+        "assets/images/theory/series-03/hybrid-v8/060-thumbnail.png": "aa83d1a90841081e597d6a1f16692b20b00f0f4181a8a18525ed8229f7eda53c",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/060-decay-heat.html": "6be54d5f059924e0433d814b4b7a237d782a567014cf2915cae361a599c785a1"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_060.json": "8c86ee7d5f1ddc42c4a109c9ad3ce072def4694eecc57e9892720e75bff7889a"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    },
+    "COMMON-05": {
+      "status": "PASS",
+      "reviewer": "Claude Code independent session ad4bc644-2ca5-48de-bd12-39518fd2ea55",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/060-body-01.png": "176ae46d3084bbabbbbbe07e4667fe16f3aba2dd3da2a97a73dbd14642321bd8",
+        "assets/images/theory/series-03/hybrid-v8/060-body-02.png": "6f73c05000edc00b25d8300bd773cacf6f11178c5baaf5399c66a0cc4d8f134c",
+        "assets/images/theory/series-03/hybrid-v8/060-body-03.png": "d82e80f35516f212aecbffcfaca91e3583bf0653df8d6ff0950fffeccfcaae3c",
+        "assets/images/theory/series-03/hybrid-v8/060-thumbnail.png": "aa83d1a90841081e597d6a1f16692b20b00f0f4181a8a18525ed8229f7eda53c",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/060-decay-heat.html": "6be54d5f059924e0433d814b4b7a237d782a567014cf2915cae361a599c785a1"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_060.json": "8c86ee7d5f1ddc42c4a109c9ad3ce072def4694eecc57e9892720e75bff7889a"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access.",
+      "claude_review": "qa/claude/theory_20261005_060.json"
+    },
+    "THEORY-05": {
+      "status": "PASS",
+      "reviewer": "codex",
+      "checked_at": "2026-10-05T05:49:20.686887+00:00",
+      "artifacts": {
+        "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+        "assets/images/theory/series-03/hybrid-v8/060-body-01.png": "176ae46d3084bbabbbbbe07e4667fe16f3aba2dd3da2a97a73dbd14642321bd8",
+        "assets/images/theory/series-03/hybrid-v8/060-body-02.png": "6f73c05000edc00b25d8300bd773cacf6f11178c5baaf5399c66a0cc4d8f134c",
+        "assets/images/theory/series-03/hybrid-v8/060-body-03.png": "d82e80f35516f212aecbffcfaca91e3583bf0653df8d6ff0950fffeccfcaae3c",
+        "assets/images/theory/series-03/hybrid-v8/060-thumbnail.png": "aa83d1a90841081e597d6a1f16692b20b00f0f4181a8a18525ed8229f7eda53c",
+        "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+        "posts/theory/060-decay-heat.html": "6be54d5f059924e0433d814b4b7a237d782a567014cf2915cae361a599c785a1"
+      },
+      "evidence": {
+        "qa/theory/independent_001_060_20261005.json": "54debef476ecd2f1a533b8d73091af58353e80f3a9b95f5767f4402ebf7710ed",
+        "qa/theory/visual_approval_056_060.json": "896a176e5c030fdca94e6d8023a11e9b5faba05cd32ba1df50e1dc1f06d02ba1",
+        "qa/claude/theory_20261005_060.json": "8c86ee7d5f1ddc42c4a109c9ad3ce072def4694eecc57e9892720e75bff7889a"
+      },
+      "scope": "Minimum public attestation; original evidence validated locally, not claimed as private CI access."
+    }
+  }
+}

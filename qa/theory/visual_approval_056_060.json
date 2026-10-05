@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "scope": "056-060",
+  "reviewer": "Claude Code independent session ad4bc644-2ca5-48de-bd12-39518fd2ea55",
+  "sealed_at": "2026-10-05T05:49:31.658569+00:00",
+  "files": {
+    "assets/app.js": "56ea3efd48ff4891d9bdee3f65e4773621f89dea5ffc8a58070e7510b48b5d64",
+    "assets/article.css": "7f24eaf4d1100da4f059c3c3c60c8150ddacfe4ef578141a691d0472dde044d9",
+    "assets/images/theory/series-03/hybrid-v8/056-body-01.png": "dcc246e154283f54ccb6bc53ce04292aaf333b62342c73337d5bff333945a72a",
+    "assets/images/theory/series-03/hybrid-v8/056-body-02.png": "a5922398acb8818fb365eb543e729bd712e8fe3378baf3e1b91c8c70d52e2c04",
+    "assets/images/theory/series-03/hybrid-v8/056-body-03.png": "92fd88bc1c07352ff648ceab554a96627887e24f990f68f802bc2b5d971f8b57",
+    "assets/images/theory/series-03/hybrid-v8/056-thumbnail.png": "d7acfb8e7ab59fc02c8743be10f7a49dc3c2435d6f53983a9cfa813925699de0",
+    "assets/images/theory/series-03/hybrid-v8/057-body-01.png": "01d18fd65622d2c0d4de74359e9d3633a5bcf71bae06ebc975de58d035dece97",
+    "assets/images/theory/series-03/hybrid-v8/057-body-02.png": "5b7a1b2a5de4bc2aab5896d7d55f24b0627d9a5545ee60c6c68c4174af4bd920",
+    "assets/images/theory/series-03/hybrid-v8/057-body-03.png": "c1f56118c4932b5897b1d26c1439cf7b821f96d2e3479b14e5863943a2bba2f5",
+    "assets/images/theory/series-03/hybrid-v8/057-thumbnail.png": "b71aacbccb04baac4257f8ea5b7cfffdec6ae5c826ea15cb999de5e890893ffb",
+    "assets/images/theory/series-03/hybrid-v8/058-body-01.png": "0c2baaf3246547ce0ee65f41a79e9ba64ea81917a60393471b14f291b144a3e4",
+    "assets/images/theory/series-03/hybrid-v8/058-body-02.png": "c7f8333bc6bd14454f9c9bbc3b5ecb0291dea609c24bf672cb1333fc1ff26014",
+    "assets/images/theory/series-03/hybrid-v8/058-body-03.png": "69fba4b18e0157dbeca544ce1bd49f34475ffe3f96ecba1a6eecbbdbe92a915b",
+    "assets/images/theory/series-03/hybrid-v8/058-thumbnail.png": "04b903295dac6263cca875cfc22bc5d3c22a8b40ed1f7ad502dcddfd52a6e2b2",
+    "assets/images/theory/series-03/hybrid-v8/059-body-01.png": "d7b6d13979b3d1ca04602986f4c4d05d9f49f1336778aa8239eaac41988f9ee7",
+    "assets/images/theory/series-03/hybrid-v8/059-body-02.png": "a604a84badaf2182cddb90d5ecbe079000db9cb30f56d2fbaee2f77a3f28f20d",
+    "assets/images/theory/series-03/hybrid-v8/059-body-03.png": "e775c296ef4a9051bf8cc7f6964c87d772733f76138f0ea9c26f7c63abdd7b8e",
+    "assets/images/theory/series-03/hybrid-v8/059-thumbnail.png": "098fd8e7f25c10f99b9db718cc1c8ef00a937885a9354d9230192720efdbb0fa",
+    "assets/images/theory/series-03/hybrid-v8/060-body-01.png": "176ae46d3084bbabbbbbe07e4667fe16f3aba2dd3da2a97a73dbd14642321bd8",
+    "assets/images/theory/series-03/hybrid-v8/060-body-02.png": "6f73c05000edc00b25d8300bd773cacf6f11178c5baaf5399c66a0cc4d8f134c",
+    "assets/images/theory/series-03/hybrid-v8/060-body-03.png": "d82e80f35516f212aecbffcfaca91e3583bf0653df8d6ff0950fffeccfcaae3c",
+    "assets/images/theory/series-03/hybrid-v8/060-thumbnail.png": "aa83d1a90841081e597d6a1f16692b20b00f0f4181a8a18525ed8229f7eda53c",
+    "assets/styles.css": "baf9ce20451086230491cd80b9e883c9560463c6d09f5ff34b1d756b24ec6a70",
+    "posts/theory/056-serial-decay-chain.html": "eb3c1e756e8778d28230f6be0389905600f9f47861a2526870b94f4cd4e39453",
+    "posts/theory/057-radiometric-dating.html": "9d13e39869bbed63266a76c88af87cec03c0e708eb57231941d293acdf577bc3",
+    "posts/theory/058-natural-radionuclides.html": "f21ebbd8e8877d46bbc0ba5f20913c45ab95a309e8c88eeb20889cdac9ba8cde",
+    "posts/theory/059-activation.html": "f98088a68c89d2a5c389f09ebc5aa8a8fae61867a09373fbbe17b8c20271ba0f",
+    "posts/theory/060-decay-heat.html": "6be54d5f059924e0433d814b4b7a237d782a567014cf2915cae361a599c785a1"
+  },
+  "audits": {
+    "qa/theory/independent_056_060_20261005.json": "fd4c40634f3e29784b2ce97820235c79a72a1787eb65f15c4b528bdb292ec051"
+  }
+}
