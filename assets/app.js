@@ -72,6 +72,78 @@ const posts = [
     "keywords": "multiple barriers physical barriers fission product barriers defence in depth fuel pellet cladding reactor coolant pressure boundary RCPB containment SAFDL 10 CFR 50.46 overpressure containment bypass SGTR ISLOCA"
   },
   {
+    "title": "Station blackout — definition, coping duration, AAC and post-Fukushima rules",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Accidents, Safety Analysis & Severe Accidents",
+    "summary": "In an SBO the plant copes with natural circulation, the turbine-driven auxiliary feedwater pump and DC batteries for a coping duration of 2–16 h set by RG 1.155; an AAC shown by test to supply power within 10 minutes removes the need for a coping analysis.",
+    "thumbnail": "assets/images/concepts/c-sa-009-station-blackout/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Station blackout (SBO), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-sa-009-station-blackout.html",
+    "keywords": "station blackout SBO loss of all AC power 10 CFR 50.63 RG 1.155 coping duration alternate AC source AAC turbine-driven auxiliary feedwater RCP seal leakage LOOP ELAP 10 CFR 50.155 FLEX Fukushima APR1400"
+  },
+  {
+    "title": "Hydrogen sources in accidents — Zr–steam reaction, rate laws and other sources",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Accidents, Safety Analysis & Severe Accidents",
+    "summary": "Each kilogram of zirconium that reacts with steam gives 0.0442 kg of hydrogen and about 6.4 MJ of heat; the parabolic rate law and thermal feedback make the reaction accelerate sharply above about 1,200 °C.",
+    "thumbnail": "assets/images/concepts/c-sa-008-hydrogen-sources/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Hydrogen sources in accidents (Zr–water reaction), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-sa-008-hydrogen-sources.html",
+    "keywords": "hydrogen sources zirconium water reaction Zr steam oxidation Baker-Just Cathcart-Pawel parabolic law ECR 10 CFR 50.46 radiolysis aluminum zinc corrosion MCCI TMI-2 severe accident"
+  },
+  {
+    "title": "Main steam line break — overcooling, return to power and break location",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Accidents, Safety Analysis & Severe Accidents",
+    "summary": "An MSLB overcools the primary side so the negative MTC inserts positive reactivity; the limiting return-to-power case is hot zero power at end of cycle with the most reactive rod stuck, and an MSIV cannot isolate a break upstream of it.",
+    "thumbnail": "assets/images/concepts/c-sa-007-mslb/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Main steam line break (MSLB), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-sa-007-mslb.html",
+    "keywords": "MSLB main steam line break overcooling return to power recriticality moderator temperature coefficient shutdown margin hot zero power end of cycle stuck rod MSIV MSIS flow restrictor critical flow SRP 15.1.5 APR1400"
+  },
+  {
+    "title": "ATWS — peak pressure, MTC and UET, 10 CFR 50.62, AMSAC, DSS and DPS",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Accidents, Safety Analysis & Severe Accidents",
+    "summary": "In an ATWS the peak RCS pressure must stay below about 3,200 psig (22.06 MPa(g)); it depends mostly on the MTC, so the beginning of the cycle (UET) is the weak point, backed up by diverse turbine trip, auxiliary feedwater and reactor trip.",
+    "thumbnail": "assets/images/concepts/c-sa-006-atws/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Anticipated transient without scram (ATWS), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-sa-006-atws.html",
+    "keywords": "ATWS ATWT anticipated transient without scram 10 CFR 50.62 AMSAC DSS DPS diverse protection system UET unfavorable exposure time moderator temperature coefficient Service Level C loss of normal feedwater Salem APR1400"
+  },
+  {
+    "title": "Containment failure modes — bypass, isolation failure, early, late and basemat melt-through",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Accidents, Safety Analysis & Severe Accidents",
+    "summary": "Containment failure modes are classified by release path and timing; early failure, bypass and isolation failure dominate LERF, while late failure and basemat melt-through leave more time for deposition.",
+    "thumbnail": "assets/images/concepts/c-sa-005-containment-failure-modes/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Containment failure modes, Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-sa-005-containment-failure-modes.html",
+    "keywords": "containment failure modes bypass SGTR ISLOCA isolation failure early containment failure late failure basemat melt-through MCCI DCH HPME steam explosion CET release category LERF Level 2 PSA APR1400"
+  },
+  {
+    "title": "Containment hydrogen control — mixing, PARs, igniters, inerting and the 10 % criterion",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Accidents, Safety Analysis & Severe Accidents",
+    "summary": "Hydrogen risk is judged by how it would burn; containments are designed to keep uniform hydrogen from a 100 % cladding reaction below an average of 10 vol% using PARs, igniters or inerting.",
+    "thumbnail": "assets/images/concepts/c-sa-003-hydrogen-control/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Containment hydrogen control strategy, Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-sa-003-hydrogen-control.html",
+    "keywords": "hydrogen control containment PAR passive autocatalytic recombiner igniter inerting flammability limit detonation DDT steam inerting Shapiro diagram 10 CFR 50.44 APR1400 severe accident"
+  },
+  {
     "title": "Steam Generator Tube Rupture (SGTR) — bypass and pressure equalization",
     "date": "2026.10.25",
     "displayDate": "2026.10.25",
