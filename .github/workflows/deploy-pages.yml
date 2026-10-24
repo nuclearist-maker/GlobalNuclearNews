@@ -1,4 +1,4 @@
-name: Deploy GlobalNuclearNews to Pages
+name: Deploy GlobalNuclearNews (English) to Pages
 
 on:
   push:
@@ -25,24 +25,8 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-      - name: Install theory QA dependencies
-        run: python -m pip install --disable-pip-version-check beautifulsoup4 pillow
-      - name: Verify news spacing checker and actual published text
-        run: |
-          python tools/test_news_spacing_gate.py
-          python tools/news_spacing_gate.py
-      - name: Verify new-post-only deployment scope
-        run: |
-          python tools/test_deployment_scope.py
-          python tools/check_deployment_scope.py --manifest qa/deployments/current.json --first 56 --last 60
-      - name: Block deployment when new theory content or images fail QA
-        run: python tools/qa_theory_posts.py --first 56 --last 60
-      - name: Require independent visual approval for unchanged release files
-        run: python tools/theory_release_gate.py --first 56 --last 60
-      - name: Require approval and evidence for every changed public file
-        run: python tools/project_quality_gate.py --site
-      - name: Package verified public site files
-        run: python tools/build_pages_release.py
+      - name: Package public site files (fails on any missing linked file)
+        run: python tools/build_en_site.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:

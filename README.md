@@ -1,18 +1,20 @@
 # GlobalNuclearNews
 
-글로벌 원자력 뉴스와 심층 분석을 일반 독자에게 설명하는 한국어 공개 게시판입니다.
+An English-language public board that explains global nuclear news and core nuclear theory for general readers.
 
-## 게시물 추가 방법
+Live site: https://nuclearist-maker.github.io/GlobalNuclearNews/
 
-1. 원자력이론 게시물은 `posts/theory/`, 글로벌 원자력 소식 게시물은 `posts/news/`에 추가합니다. 두 유형의 HTML을 `posts/` 바로 아래에 혼합하지 않습니다.
-2. `assets/app.js`의 `posts` 배열에 제목, 날짜, 게시 영역(`section`), 분야, 요약, 썸네일 경로·대체텍스트, URL과 검색어를 등록합니다. 뉴스는 `section: "news"`, 이론·기초개념 설명 게시물은 `section: "theory"`로 지정합니다.
-3. 변경사항을 `main` 브랜치에 반영하면 GitHub Pages가 자동 배포합니다.
+## Adding a post
 
-## 원자력이론 게시물과 이미지
+1. Put news articles in `posts/news/` and nuclear theory articles in `posts/theory/` (do not mix them directly under `posts/`).
+2. Register the post in the `posts` array in `assets/app.js` (title, date, `section`: `"news"` or `"theory"`, category, one-sentence summary, thumbnail path and alt text, URL, keywords). The theory board builds its category buttons automatically from the posts' `category` values.
+3. Push to `main`. The GitHub Actions workflow runs `tools/build_en_site.py`, which packages only the files the pages actually link to and aborts on any missing image or page, then deploys to GitHub Pages.
 
-- 원자력이론 게시물은 [원자력이론 게시물 운영 기준](docs/theory-publication-workflow.md)을 따릅니다.
-- 본문 이미지는 ImageGen 실사형·3차원 기반 장면과 정확하게 조판한 수식·표·그래프 레이어를 합성하고, 편집 원본과 QA 기록을 함께 보존합니다.
-- 새 이론 게시물에는 `assets/app.js`의 `category`를 일관되게 지정합니다. 이론 게시판은 실제 게시물의 고유 카테고리를 자동 추출하므로 버튼을 수동 추가하지 않으며 빈 카테고리도 노출하지 않습니다.
-- 배포 후 원자력이론 목록의 `전체 게시물`·카테고리 필터와 공개 이미지 URL을 브라우저에서 확인합니다.
+## Sources of the English posts
 
-게시물은 브리프와 심층분석을 토대로 주제·방향·초안을 검토한 뒤 최종 승인을 받은 콘텐츠만 공개합니다.
+- Nuclear theory posts are English adaptations of the Korean public blog series (working files under `My_Claude/Blog-Nuclear/output-EN/`).
+- Body figures keep every number of the original and render all text in English as a separate layer over text-free scene images.
+
+## Korean edition
+
+The previous Korean edition (theory lessons 001–060, four news articles, and its QA pipeline) is preserved in git history at tag `korean-site-2026-10-05`. The Korean-pipeline tools under `tools/`, `qa/`, `policies/` and `docs/` are kept in the repository but are not used by the English deployment.
