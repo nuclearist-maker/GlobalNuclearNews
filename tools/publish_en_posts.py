@@ -113,6 +113,7 @@ def render(p: dict) -> str:
     img_base = f"../../assets/images/{sec}/{m['slug']}/"
     body = IMG_RE.sub(lambda g: f'{g.group(1)}="{img_base}{site_name(g.group(2))}"', p["body"]).strip()
     note = f"<span>{e('byline_note')}</span>" if m.get("byline_note") else ""
+    date = f'<span>{e("date")}</span>' if sec == "news" else ""
     board, back = SECTIONS[sec]
     return (
         '<!doctype html>\n<html lang="en"><head><meta charset="utf-8">'
@@ -123,7 +124,7 @@ def render(p: dict) -> str:
         f'<body><header class="masthead">{BRAND}{nav(sec)}</header>\n'
         f'<main class="article"><a class="back" href="../../{board}">{back}</a><article><header>'
         f'<p class="eyebrow">{e("eyebrow")}</p><h1>{e("title")}</h1><p class="subtitle">{e("subtitle")}</p>'
-        f'<div class="byline"><span>{e("date")}</span>{note}</div></header>\n{body}\n</article></main>\n'
+        f'<div class="byline">{date}{note}</div></header>\n{body}\n</article></main>\n'
         '<footer><span>© 2026 GlobalNuclearNews</span><span>Independent nuclear industry briefing</span></footer>'
         '</body></html>\n')
 
