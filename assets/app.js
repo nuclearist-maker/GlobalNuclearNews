@@ -72,6 +72,78 @@ const posts = [
     "keywords": "multiple barriers physical barriers fission product barriers defence in depth fuel pellet cladding reactor coolant pressure boundary RCPB containment SAFDL 10 CFR 50.46 overpressure containment bypass SGTR ISLOCA"
   },
   {
+    "title": "Steam Generator Tube Rupture (SGTR) — bypass and pressure equalization",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Accidents, Safety Analysis & Severe Accidents",
+    "summary": "An SGTR breaches the primary boundary across a ΔP of about 8.5 MPa and bypasses containment through the ADVs and MSSVs; operators cool, depressurize to ΔP = 0 and terminate SI while avoiding MSSV opening and overfill.",
+    "thumbnail": "assets/images/concepts/c-sa-002-sgtr/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Steam Generator Tube Rupture (SGTR), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-sa-002-sgtr.html",
+    "keywords": "SGTR steam generator tube rupture containment bypass primary to secondary leak N-16 monitor air ejector blowdown pressure equalization SI termination overfill backfill iodine spike SRP 15.6.3 RG 1.183 Ginna"
+  },
+  {
+    "title": "Accident Management Plan (AMP) — scope, criteria and review",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Accidents, Safety Analysis & Severe Accidents",
+    "summary": "The AMP covers four accident categories, nine mandatory multiple failures and seven containment threats, with criteria of 250 mSv and a Cs-137 (> 100 TBq) release frequency below 10⁻⁶ per year.",
+    "thumbnail": "assets/images/concepts/c-sa-001-accident-management-plan/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Accident Management Plan (AMP), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-sa-001-accident-management-plan.html",
+    "keywords": "accident management plan AMP severe accident management multiple failure accidents containment threats risk target Cs-137 100 TBq Nuclear Safety Act NSSC notice SAMG APR1400 Saeul Shin-Hanul"
+  },
+  {
+    "title": "Subcritical Multiplication and 1/M — extrapolating to criticality",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Reactor Physics & Kinetics",
+    "summary": "1/M = CR₀/CR = (1−k)/(1−k₀) falls to zero at criticality; each count-rate doubling halves 1−k, and curvature from detector position makes extrapolations conservative or non-conservative.",
+    "thumbnail": "assets/images/concepts/c-rx-027-subcritical-multiplication-1m/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Subcritical Multiplication & 1/M, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-rx-027-subcritical-multiplication-1m.html",
+    "keywords": "subcritical multiplication inverse multiplication 1/M plot approach to criticality count rate doubling source range fuel loading estimated critical position ECP premature criticality neutron source Cf-252 Sb-Be"
+  },
+  {
+    "title": "Binding Energy per Nucleon — Ni-62 peak, fission and fusion",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Reactor Physics & Kinetics",
+    "summary": "B/A is largest for Ni-62 (8.795 MeV) and U-235 sits at 7.59 MeV; S_n = 6.55 MeV exceeds the 5.3 MeV barrier for U-236 but S_n = 4.81 MeV falls short of 5.5 MeV for U-239.",
+    "thumbnail": "assets/images/concepts/c-rx-026-binding-energy-per-nucleon/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Binding Energy per Nucleon, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-rx-026-binding-energy-per-nucleon.html",
+    "keywords": "binding energy per nucleon mass defect B/A curve Ni-62 Fe-56 semi-empirical mass formula Weizsacker fission energy fusion energy separation energy critical energy fissile fissionable fertile pairing decay heat AME2020"
+  },
+  {
+    "title": "Neutron Slowing Down and Lethargy — u, ξ and collision counts",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Reactor Physics & Kinetics",
+    "summary": "Lethargy grows by ξ = 1 + α lnα/(1−α) per collision regardless of energy, giving 18, 115 and 152 collisions to thermalize in hydrogen, carbon and oxygen.",
+    "thumbnail": "assets/images/concepts/c-rx-025-lethargy-slowing-down/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Neutron Slowing Down & Lethargy, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-rx-025-lethargy-slowing-down.html",
+    "keywords": "lethargy neutron slowing down average logarithmic energy decrement xi collisions to thermalize slowing-down density 1/E flux Fermi age resonance escape probability elastic scattering moderator"
+  },
+  {
+    "title": "Inhour Equation — seven roots, one stable period",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Reactor Physics & Kinetics",
+    "summary": "ρ = ωΛ + Σβᵢω/(ω+λᵢ) has seven real roots with six delayed groups; for ρ > 0 only ω₁ is positive and sets T = 1/ω₁, while for ρ < 0 the period is bounded by −1/λ₁ ≈ −80 s.",
+    "thumbnail": "assets/images/concepts/c-rx-024-inhour-equation/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Inhour Equation, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-rx-024-inhour-equation.html",
+    "keywords": "inhour equation stable period reactor period point kinetics delayed neutrons reactivity roots asymptotes one-group approximation inverse kinetics reactivity computer positive period method"
+  },
+  {
     "title": "Reactivity coefficients — sign, size, response speed and cycle trend",
     "date": "2026.10.25",
     "displayDate": "2026.10.25",
