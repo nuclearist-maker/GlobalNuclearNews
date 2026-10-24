@@ -1,5 +1,77 @@
 const posts = [
   {
+    "title": "Loss-of-coolant accident — break size, location and ECCS response",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Accidents, Safety Analysis & Severe Accidents",
+    "summary": "A large LOCA depressurizes in tens of seconds and is decided by stored heat and reflood, while a small LOCA plateaus near SG pressure and is decided by loop seal, boil-off and operator actions.",
+    "thumbnail": "assets/images/concepts/c-sa-021-loss-of-coolant-accident/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Loss-of-Coolant Accident (LOCA), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-sa-021-loss-of-coolant-accident.html",
+    "keywords": "loss-of-coolant accident LOCA LBLOCA SBLOCA MBLOCA blowdown refill reflood loop seal boil-off ECC bypass steam binding DVI RCP trip Trip-2 Leave-2 upper head voiding RCGVS 10 CFR 50.46 ECCS"
+  },
+  {
+    "title": "Critical safety functions — six status trees, colours and priority",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Accidents, Safety Analysis & Severe Accidents",
+    "summary": "The six CSFs (S, C, H, P, Z, I) are judged from measured variables on status trees; red goes to a recovery procedure at once, and colour outranks tree priority.",
+    "thumbnail": "assets/images/concepts/c-sa-020-critical-safety-functions/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Critical Safety Functions (CSF), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-sa-020-critical-safety-functions.html",
+    "keywords": "critical safety functions CSF status tree CSFST function restoration procedure emergency operating procedure symptom-based core exit thermocouple RVLIS subcooling SPDS safety function status check SAMG Westinghouse"
+  },
+  {
+    "title": "Severe accident progression — in-vessel stages and ex-vessel FCI, MCCI, DCH",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Accidents, Safety Analysis & Severe Accidents",
+    "summary": "Fuel liquefies far below the UO2 melting point through oxidation and eutectic reactions; after vessel failure, RCS pressure and cavity water decide between DCH, FCI and MCCI loads on containment.",
+    "thumbnail": "assets/images/concepts/c-sa-019-severe-accident-progression/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Severe Accident Progression, Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-sa-019-severe-accident-progression.html",
+    "keywords": "severe accident progression core melt in-vessel ex-vessel oxidation hydrogen eutectic candling relocation lower head failure HPME DCH FCI steam explosion MCCI TMI-2 Fukushima IVR"
+  },
+  {
+    "title": "Fire protection — three objectives, App. R separation and safe shutdown",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Accidents, Safety Analysis & Severe Accidents",
+    "summary": "Fire protection rests on prevention, detection and suppression, and protection of safe shutdown, with redundant trains separated by a 3 h barrier, more than 20 ft plus suppression, or a 1 h enclosure plus suppression.",
+    "thumbnail": "assets/images/concepts/c-sa-018-fire-protection/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Fire Protection: Three Objectives, Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-sa-018-fire-protection.html",
+    "keywords": "fire protection Appendix R 10 CFR 50.48 NFPA 805 fire hazard analysis safe shutdown train separation fire barrier alternative shutdown multiple spurious operations Browns Ferry fire PSA RG 1.189"
+  },
+  {
+    "title": "Multiple-failure accidents — the nine mandatory scenarios and DEC-A",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Accidents, Safety Analysis & Severe Accidents",
+    "summary": "Multiple-failure accidents assume loss of a safety function beyond a single failure; the nine mandatory scenarios plus PSA additions must not cause significant damage to reactor or spent fuel pool fuel.",
+    "thumbnail": "assets/images/concepts/c-sa-017-multiple-failure-accidents/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Nine Multiple-Failure Accidents, Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-sa-017-multiple-failure-accidents.html",
+    "keywords": "multiple failure accident management plan DEC-A design extension conditions single failure common cause failure ATWS SBO SGTR ISLOCA shutdown cooling ultimate heat sink spent fuel pool APR1400 WENRA"
+  },
+  {
+    "title": "INES — levels 0–7, three assessment areas and I-131 equivalent release",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Accidents, Safety Analysis & Severe Accidents",
+    "summary": "INES rates an event in three areas and takes the highest; defence in depth alone stops at level 3, and levels 4–7 for releases use I-131 equivalent boundaries of about 500, 5,000 and 50,000 TBq.",
+    "thumbnail": "assets/images/concepts/c-sa-016-ines-event-scale/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, INES Levels 0–7, Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-sa-016-ines-event-scale.html",
+    "keywords": "INES event scale level incident accident defence in depth radiological barriers I-131 equivalent TBq Chernobyl Fukushima TMI NSSC event reporting IAEA"
+  },
+  {
     "title": "Emergency operating procedures — SPTA, ORP, FRP and CSFSTs",
     "date": "2026.10.25",
     "displayDate": "2026.10.25",
