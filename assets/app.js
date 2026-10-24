@@ -1,5 +1,17 @@
 const posts = [
   {
+    "title": "Burnup — MWd/tU, %FIMA and EFPD conversions",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Fuel & Materials",
+    "summary": "Burnup divides released energy by the initial heavy-metal mass (not the UO₂ mass); 1 MWd ≈ 2.70×10²¹ fissions and 1 %FIMA ≈ 9.4 GWd/tHM.",
+    "thumbnail": "assets/images/concepts/c-fm-001-burnup/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Burnup (MWd/tU · FIMA), Fuel & Materials · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-fm-001-burnup.html",
+    "keywords": "burnup MWd/tU GWd/tHM FIMA EFPD specific burnup UO2 heavy metal plutonium contribution beta effective burnup limit rod average nuclear fuel"
+  },
+  {
     "title": "Read It Like a Nutrition Label — Five Checks for Reading Nuclear Information",
     "date": "2026.10.24",
     "displayDate": "2026.10.24",
@@ -4279,8 +4291,9 @@ const pagination=document.querySelector("#pagination");let page=1;
 const esc=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 const list=document.querySelector("#post-list"),empty=document.querySelector("#empty-state"),search=document.querySelector("#search"),filters=document.querySelector(".filters");let buttons=[...document.querySelectorAll("[data-filter]")],active=ALL;
 document.querySelectorAll("[data-view-link]").forEach(link=>link.classList.toggle("active",!home&&link.dataset.viewLink===view));
-if(view==="theory"){document.querySelector("#board-eyebrow").textContent="NUCLEAR THEORY";document.querySelector("#board-title").textContent="Nuclear Theory";empty.textContent="No nuclear theory posts in this category yet.";const categories=[...new Set(posts.filter(p=>p.section==="theory").map(p=>p.category))];filters.innerHTML=`<button class="selected" type="button" data-filter="${ALL}">All posts</button>${categories.map(c=>`<button type="button" data-filter="${esc(c)}">${esc(c)}</button>`).join("")}`;buttons=[...filters.querySelectorAll("[data-filter]")]}
-function render(){const q=search.value.trim().toLowerCase();const filtered=posts.filter(p=>(home||p.section===view)&&(active===ALL||(home?p.section:p.category)===active)&&(`${p.title} ${p.summary} ${p.keywords}`.toLowerCase().includes(q))).sort((a,b)=>b.date.localeCompare(a.date));const total=Math.ceil(filtered.length/size);page=Math.max(1,Math.min(page,total));list.innerHTML=filtered.slice((page-1)*size,page*size).map(p=>`<a class="post" href="${p.url}"><img class="post-thumb" src="${p.thumbnail}" alt="${esc(p.thumbnailAlt)}"><div class="post-copy"><div class="post-meta"><strong>${esc(p.category)}</strong>${p.section==="theory"?"":esc(p.displayDate)}</div><h3>${esc(p.title)}</h3><p>${esc(p.summary)}</p></div><span class="arrow" aria-hidden="true">→</span></a>`).join("");empty.hidden=filtered.length!==0;
+const BOARDS={theory:["NUCLEAR THEORY","Nuclear Theory","No nuclear theory posts in this category yet."],concepts:["CONCEPT DICTIONARY","Concept Dictionary","No concepts in this domain yet."]};
+if(!home&&BOARDS[view]){const [eb,ti,em]=BOARDS[view];document.querySelector("#board-eyebrow").textContent=eb;document.querySelector("#board-title").textContent=ti;empty.textContent=em;const categories=[...new Set(posts.filter(p=>p.section===view).map(p=>p.category))];if(view==="concepts")categories.sort();filters.innerHTML=`<button class="selected" type="button" data-filter="${ALL}">All posts</button>${categories.map(c=>`<button type="button" data-filter="${esc(c)}">${esc(c)}</button>`).join("")}`;buttons=[...filters.querySelectorAll("[data-filter]")]}
+function render(){const q=search.value.trim().toLowerCase();const filtered=posts.filter(p=>(home||p.section===view)&&(active===ALL||(home?p.section:p.category)===active)&&(`${p.title} ${p.summary} ${p.keywords}`.toLowerCase().includes(q))).sort((a,b)=>!home&&view==="concepts"?a.title.localeCompare(b.title):b.date.localeCompare(a.date));const total=Math.ceil(filtered.length/size);page=Math.max(1,Math.min(page,total));list.innerHTML=filtered.slice((page-1)*size,page*size).map(p=>`<a class="post" href="${p.url}"><img class="post-thumb" src="${p.thumbnail}" alt="${esc(p.thumbnailAlt)}"><div class="post-copy"><div class="post-meta"><strong>${esc(p.category)}</strong>${p.section==="news"?esc(p.displayDate):""}</div><h3>${esc(p.title)}</h3><p>${esc(p.summary)}</p></div><span class="arrow" aria-hidden="true">→</span></a>`).join("");empty.hidden=filtered.length!==0;
 if(pagination){pagination.hidden=total<=1;const control=(n,label,disabled=false)=>`<button type="button" data-page="${n}" ${disabled?'disabled':''} ${label===String(page)?'aria-current="page"':''} aria-label="${/^\d+$/.test(label)?'Page '+n:label}">${label}</button>`;
 const nums=[...new Set([1,page-1,page,page+1,total])].filter(n=>n>=1&&n<=total).sort((a,b)=>a-b);let prev=0;
 pagination.innerHTML=control(page-1,"Previous",page===1)+nums.map(n=>{const gap=prev&&n-prev>1?'<span aria-hidden="true">…</span>':'';prev=n;return gap+control(n,String(n))}).join('')+control(page+1,"Next",page===total)+`<span class="page-status">Page ${page} of ${total} · ${filtered.length} posts</span>`;}

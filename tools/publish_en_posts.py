@@ -1,8 +1,9 @@
 """Publish English posts from the writing folders into this GitHub Pages site.
 
 Sources (see tools/publish_sources.json):
-  theory -> G:/내 드라이브/My_Claude/Blog-Nuclear/output-EN/<post>/web/
-  news   -> G:/내 드라이브/My_Claude/Blog/output/drafts_EN/<post>/web/
+  theory   -> G:/내 드라이브/My_Claude/Blog-Nuclear/output-EN/<post>/web/
+  news     -> G:/내 드라이브/My_Claude/Blog/output/drafts_EN/<post>/web/
+  concepts -> G:/내 드라이브/My_Claude/Blog-Nuclear/output-pe-EN/<post>/web/
 
 Each post folder publishes only when it contains a web/ package:
   web/post.json      metadata; "status": "ready" to publish ("draft" = skip)
@@ -37,11 +38,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SECTIONS = {"news": ("news.html", "← Global Nuclear News"),
-            "theory": ("theory.html", "← Nuclear Theory")}
+            "theory": ("theory.html", "← Nuclear Theory"),
+            "concepts": ("concepts.html", "← Concept Dictionary")}
+NAV_LABELS = {"news": "Global Nuclear News", "theory": "Nuclear Theory", "concepts": "Concept Dictionary"}
 REQUIRED = ["status", "section", "slug", "title", "page_title", "description", "eyebrow",
             "subtitle", "date", "category", "summary", "list_title", "thumbnail",
             "thumbnailAlt", "keywords"]
-ASSET_V = "20261024-en1"
+ASSET_V = "20261025-en2"
 IMG_RE = re.compile(r'(src|href)="([^"/\\:#?]+\.(?:png|jpe?g|webp|gif|svg))"', re.I)
 KOREAN = re.compile(r"[\uac00-\ud7a3]")
 
@@ -54,7 +57,7 @@ def nav(section: str) -> str:
     def a(s: str, label: str) -> str:
         cls = ' class="active"' if s == section else ""
         return f'<a{cls} href="../../{SECTIONS[s][0]}">{label}</a>'
-    return f'<nav aria-label="Main menu">{a("news", "Global Nuclear News")}{a("theory", "Nuclear Theory")}</nav>'
+    return '<nav aria-label="Main menu">' + "".join(a(s, NAV_LABELS[s]) for s in SECTIONS) + '</nav>'
 
 
 def load_packages(errors: list[str]) -> list[dict]:
@@ -103,7 +106,8 @@ def load_packages(errors: list[str]) -> list[dict]:
             text = json.dumps(meta, ensure_ascii=False) + body + head
             if KOREAN.search(text):
                 errors.append(f"{where}: Korean characters found (site is English-only)")
-            pkgs.append(dict(meta=meta, web=web, body=body, head=head, images=sorted(images)))
+            pkgs.append(dict(meta=meta, web=web, body=body, head=head, images=sorted(images),
+                             folder=web.parent.name, source=section))
     return pkgs
 
 
@@ -195,6 +199,8 @@ def main() -> int:
                     "posts of the other board stay as they are on the site")
     ap.add_argument("--range", metavar="LO-HI", help="with --only theory: publish only slugs numbered LO..HI "
                     "(e.g. 1-50); other unpublished theory posts are held back")
+    ap.add_argument("--match", metavar="REGEX", help="publish only new posts whose source folder name matches "
+                    "REGEX (e.g. '^C-FM-'); other unpublished posts are held back")
     args = ap.parse_args()
 
     errors: list[str] = []
@@ -202,9 +208,15 @@ def main() -> int:
     pkgs = load_packages(errors)
     # Problems in packages that this run would hold back anyway (other board with --only,
     # outside --range) are reported but do not block publishing the requested posts.
+    sources = json.loads((ROOT / "tools" / "publish_sources.json").read_text(encoding="utf-8"))
+    folder_section = {d.name: sec for sec, src in sources.items() if Path(src).is_dir()
+                      for d in Path(src).iterdir() if d.is_dir()}
+
     def in_scope(err: str) -> bool:
         folder = err.split(":", 1)[0].strip()
-        if args.only == "theory" and re.match(r"\d{4}-\d{2}-\d{2}", folder):
+        if args.only and folder in folder_section and folder_section[folder] != args.only:
+            return False
+        if args.match and folder in folder_section and not re.search(args.match, folder):
             return False
         if args.range and re.match(r"\d{3}_", folder):
             lo, hi = (int(x) for x in args.range.split("-"))
@@ -228,6 +240,12 @@ def main() -> int:
                 and not (ROOT / "posts" / p["meta"]["section"] / f"{p['meta']['slug']}.html").exists()]
         if held:
             print(f"  --only {args.only}: holding back {len(held)} unpublished post(s) of the other board")
+        pkgs = [p for p in pkgs if p not in held]
+    if args.match:
+        held = [p for p in pkgs if not re.search(args.match, p["folder"])
+                and not (ROOT / "posts" / p["meta"]["section"] / f"{p['meta']['slug']}.html").exists()]
+        if held:
+            print(f"  --match {args.match}: holding back {len(held)} unpublished post(s)")
         pkgs = [p for p in pkgs if p not in held]
     if args.range:
         lo, hi = (int(x) for x in args.range.split("-"))
@@ -293,7 +311,7 @@ def main() -> int:
         print("Site is already up to date.")
         return 0
     for kind, sec, slug, title in changed:
-        print(f"  {kind:8} {sec:6} {slug}  {title}")
+        print(f"  {kind:8} {sec:8} {slug}  {title}")
 
     if not args.push:
         print("\nWorking tree updated. Run again with --push to commit and publish.")
