@@ -72,6 +72,78 @@ const posts = [
     "keywords": "linear heat rate LHGR LHR q′ volumetric heat generation rate power density specific power FQ hot channel factor centerline melting SAFDL COLSS CPC LPD Catawba APR1400"
   },
   {
+    "title": "Fuel Rod Temperature — radial resistances, ∫k dT and axial maxima",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Thermal Hydraulics & Thermodynamics",
+    "summary": "The pellet center-to-surface drop is q′/(4πk), independent of radius; at 40 kW/m the example centerline reaches about 1,926 °C, and axially the coolant peaks at the outlet, the cladding between, and the centerline just above the mid-plane.",
+    "thumbnail": "assets/images/concepts/c-th-008-fuel-rod-temperature/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Fuel Rod Temperature (Radial and Axial), Thermal Hydraulics & Thermodynamics · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-th-008-fuel-rod-temperature.html",
+    "keywords": "fuel rod temperature distribution centerline temperature thermal resistance gap conductance UO2 thermal conductivity conductivity integral burnup degradation TCD linear heat rate axial temperature chopped cosine centerline melting SAFDL"
+  },
+  {
+    "title": "Critical Heat Flux and DNB — boiling curve, DNB versus dryout, correlations",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Thermal Hydraulics & Thermodynamics",
+    "summary": "CHF is the maximum heat flux of nucleate boiling (about 1.26 MW/m² for water at 1 atm); beyond it a heat-flux-controlled rod jumps to film boiling, which is why no DNB is a fuel design limit.",
+    "thumbnail": "assets/images/concepts/c-th-007-chf-dnb/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Critical Heat Flux and DNB (CHF), Thermal Hydraulics & Thermodynamics · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-th-007-chf-dnb.html",
+    "keywords": "critical heat flux CHF departure from nucleate boiling DNB dryout boiling curve ONB Leidenfrost film boiling Zuber W-3 look-up table DNBR MCPR SAFDL PWR BWR"
+  },
+  {
+    "title": "Heat Flux — q‴, q′ and q″, average and peak heat flux",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Thermal Hydraulics & Thermodynamics",
+    "summary": "q′ = q‴·πRf² = q″·2πRco; the core-average heat flux is γP/(NπDH) (about 0.6 MW/m² in a PWR) and the peak is FQ times the average (about 1.5 MW/m²).",
+    "thumbnail": "assets/images/concepts/c-th-006-heat-flux/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Heat Flux q″ (Average and Peak), Thermal Hydraulics & Thermodynamics · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-th-006-heat-flux.html",
+    "keywords": "heat flux linear heat rate volumetric heat generation rate average heat flux peak heat flux FQ hot channel factor chopped cosine axial peaking DNBR CHF fuel rod PWR thermal design"
+  },
+  {
+    "title": "Rankine Cycle — PWR secondary T-s diagram, reheat and regeneration",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Thermal Hydraulics & Thermodynamics",
+    "summary": "For 6.9 MPa saturated steam and a 5 kPa condenser the ideal Rankine efficiency is 37.8 % (Carnot 45.2 %); regeneration raises it to 42.6 %, while the MSR mainly lifts exhaust quality from 0.675 to 0.820.",
+    "thumbnail": "assets/images/concepts/c-th-005-rankine-cycle/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Rankine Cycle and Thermal Efficiency, Thermal Hydraulics & Thermodynamics · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-th-005-rankine-cycle.html",
+    "keywords": "Rankine cycle thermal efficiency T-s diagram PWR secondary steam generator turbine condenser MSR moisture separator reheater feedwater heater regeneration reheat superheat Carnot IAPWS-IF97 heat rate"
+  },
+  {
+    "title": "Decay Heat — Way-Wigner formula, operating history and Appendix K",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Thermal Hydraulics & Thermodynamics",
+    "summary": "Decay heat from fission-product and actinide decay follows P/P0 = 0.0622[ts⁻⁰·² − (ts + t0)⁻⁰·²]; Appendix K uses 1.2 × the 1971 ANS infinite-operation value at 1.02 × power.",
+    "thumbnail": "assets/images/concepts/c-th-004-decay-heat/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Decay Heat, Thermal Hydraulics & Thermodynamics · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-th-004-decay-heat.html",
+    "keywords": "decay heat residual heat Way-Wigner fission products actinides U-239 Np-239 ANS-5.1 Appendix K 10 CFR 50.46 residual heat removal shutdown cooling GDC 34 TMI-2 Fukushima"
+  },
+  {
+    "title": "Natural Circulation — thermal-center height, flow relation and the three modes",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Thermal Hydraulics & Thermodynamics",
+    "summary": "Natural circulation needs the SG thermal center above the core thermal center; ΔPb = (ρc − ρh)gΔH and ṁ ∝ (QΔH)^1/3, so a 20 % loss of ΔH raises ΔT by only about 7.7 %.",
+    "thumbnail": "assets/images/concepts/c-th-003-natural-circulation/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Natural Circulation, Thermal Hydraulics & Thermodynamics · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-th-003-natural-circulation.html",
+    "keywords": "natural circulation thermal center driving head buoyancy reflux condensation two-phase CCFL non-condensable gas upper head bubble decay heat removal steam generator GL 81-21 BTP 5-4"
+  },
+  {
     "title": "Hot channel factors — FQ, FΔH, nuclear and engineering factors",
     "date": "2026.10.25",
     "displayDate": "2026.10.25",
