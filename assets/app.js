@@ -1,29 +1,28 @@
 const posts = [
-{
-  "title": "The Nucleus Gets a Bulk Discount — Mass Defect and Binding Energy",
-  "date": "2026.10.24",
-  "displayDate": "2026.10.24",
-  "section": "theory",
-  "category": "Nuclear & Radiation Basics",
-  "summary": "An assembled nucleus always weighs less than its separate protons and neutrons, and that missing mass, about 0.75% for helium-4, is the binding energy that explains why both fission and fusion release energy.",
-  "thumbnail": "assets/images/theory/001-mass-defect/thumbnail.png",
-  "thumbnailAlt": "A silver balance scale with four loose spheres on one pan and the same four spheres packed into a tight cluster on the other, the cluster side sitting slightly higher",
-  "url": "posts/theory/001-mass-defect.html",
-  "keywords": "mass defect binding energy binding energy per nucleon atomic nucleus helium-4 atomic mass unit nuclear fission nuclear fusion nuclear physics basics"
-},
-{
-  "title": "NRC Reform: What Changes Even When the Dose Limits Stay the Same",
-  "date": "2026.09.29",
-  "displayDate": "2026.09.29",
-  "section": "news",
-  "category": "Policy & Regulation",
-  "summary": "The NRC's July 2026 proposed radiation protection rule keeps the 50 mSv and 1 mSv basic limits but changes dose-management, exception and reporting conditions, so cost-savings estimates and exposure data must be read as separate evidence.",
-  "thumbnail": "assets/images/news/2026-09-29-nrc-reform-safety-evidence/en/thumbnail_01.png",
-  "thumbnailAlt": "Dosimeter, papers and safety glasses on a desk with the text NRC Radiation Protection Proposed Rule: read the limits and the conditions together",
-  "url": "posts/news/2026-09-29-nrc-reform-safety-evidence.html",
-  "keywords": "NRC radiation protection proposed rule 10 CFR Part 20 dose limits ALARA planned dose limit extension public dose regulatory analysis occupational exposure"
-}
-
+  {
+    "title": "The Nucleus Gets a Bulk Discount — Mass Defect and Binding Energy",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear & Radiation Basics",
+    "summary": "An assembled nucleus always weighs less than its separate protons and neutrons, and that missing mass, about 0.75% for helium-4, is the binding energy that explains why both fission and fusion release energy.",
+    "thumbnail": "assets/images/theory/001-mass-defect/thumbnail.png",
+    "thumbnailAlt": "A silver balance scale with four loose spheres on one pan and the same four spheres packed into a tight cluster on the other, the cluster side sitting slightly higher",
+    "url": "posts/theory/001-mass-defect.html",
+    "keywords": "mass defect binding energy binding energy per nucleon atomic nucleus helium-4 atomic mass unit nuclear fission nuclear fusion nuclear physics basics"
+  },
+  {
+    "title": "NRC Reform: What Changes Even When the Dose Limits Stay the Same",
+    "date": "2026.09.29",
+    "displayDate": "2026.09.29",
+    "section": "news",
+    "category": "Policy & Regulation",
+    "summary": "The NRC's July 2026 proposed radiation protection rule keeps the 50 mSv and 1 mSv basic limits but changes dose-management, exception and reporting conditions, so cost-savings estimates and exposure data must be read as separate evidence.",
+    "thumbnail": "assets/images/news/2026-09-29-nrc-reform-safety-evidence/thumbnail_01.png",
+    "thumbnailAlt": "Dosimeter, papers and safety glasses on a desk with the text NRC Radiation Protection Proposed Rule: read the limits and the conditions together",
+    "url": "posts/news/2026-09-29-nrc-reform-safety-evidence.html",
+    "keywords": "NRC radiation protection proposed rule 10 CFR Part 20 dose limits ALARA planned dose limit extension public dose regulatory analysis occupational exposure"
+  }
 ];
 const view=document.body.dataset.section||"news";
 const ALL="All";

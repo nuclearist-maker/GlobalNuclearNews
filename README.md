@@ -4,11 +4,22 @@ An English-language public board that explains global nuclear news and core nucl
 
 Live site: https://nuclearist-maker.github.io/GlobalNuclearNews/
 
-## Adding a post
+## Adding or revising a post
 
-1. Put news articles in `posts/news/` and nuclear theory articles in `posts/theory/` (do not mix them directly under `posts/`).
-2. Register the post in the `posts` array in `assets/app.js` (title, date, `section`: `"news"` or `"theory"`, category, one-sentence summary, thumbnail path and alt text, URL, keywords). The theory board builds its category buttons automatically from the posts' `category` values.
-3. Push to `main`. The GitHub Actions workflow runs `tools/build_en_site.py`, which packages only the files the pages actually link to and aborts on any missing image or page, then deploys to GitHub Pages.
+Posts are written outside this repository and published from here:
+
+- Nuclear theory: `G:\내 드라이브\My_Claude\Blog-Nuclear\output-EN\<NNN_slug>\web\`
+- Global nuclear news: `G:\내 드라이브\My_Claude\Blog\output\drafts_EN\<YYYY-MM-DD-slug>\web\`
+
+Each `web/` package holds `post.json` (metadata, `"status": "ready"` to publish), `article.html` and its images. The format is specified in [docs/english-post-package.md](docs/english-post-package.md).
+
+To update the website after a post is created or revised:
+
+```
+python tools/publish_en_posts.py --push
+```
+
+The script renders every ready package into `posts/`, copies images into `assets/images/`, rebuilds the post list in `assets/app.js`, checks that every linked file exists, then commits and pushes to `main`. The GitHub Actions workflow (`tools/build_en_site.py` + Pages deploy) publishes the site in about a minute. Run it without `--push` to preview the changes in the working tree first.
 
 ## Sources of the English posts
 
