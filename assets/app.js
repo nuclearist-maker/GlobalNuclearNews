@@ -1,5 +1,77 @@
 const posts = [
   {
+    "title": "Macroscopic cross section — N, Σ = Nσ and the mean free path",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Reactor Physics & Kinetics",
+    "summary": "Σ = Nσ is the reaction probability per cm and λ = 1/Σ the mean free path; for water Σ_s = 3.44 cm⁻¹ (λ_s 0.29 cm) and Σ_a = 0.0222 cm⁻¹ (λ_a 45 cm) at 2200 m/s.",
+    "thumbnail": "assets/images/concepts/c-rx-017-macroscopic-cross-section/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Macroscopic Cross Section and Atom Density, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-rx-017-macroscopic-cross-section.html",
+    "keywords": "macroscopic cross section microscopic cross section atom density number density mean free path transport mean free path beam attenuation reaction rate 1/v Westcott g factor Maxwellian average barn UO2 water"
+  },
+  {
+    "title": "Axial power distribution and ASI — AO, ΔI and the sign trap",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Reactor Physics & Kinetics",
+    "summary": "AO = (P_T − P_B)/(P_T + P_B) and ASI = (P_B − P_T)/(P_B + P_T) = −AO; in a chopped-cosine model F_Z rises from 1.44 at ASI 0 to 1.61 at |ASI| 0.30.",
+    "thumbnail": "assets/images/concepts/c-rx-016-axial-power-asi/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Axial Power Distribution and ASI, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-rx-016-axial-power-asi.html",
+    "keywords": "axial power distribution axial shape index ASI axial offset AO axial flux difference AFD delta I F_Z FQ xenon oscillation CAOC RAOC part-strength control rod COLSS CPC ex-core detector"
+  },
+  {
+    "title": "Inherent safety — negative feedback and the boundary with passive safety",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Reactor Physics & Kinetics",
+    "summary": "Inherent safety removes hazards by design choice, in the core mainly through prompt negative feedback (ρ_fb = α_F·ΔT_F + α_M·ΔT_M + α_V·Δv + α_p·Δp); passive safety is a way of performing functions, classified A–D in TECDOC-626.",
+    "thumbnail": "assets/images/concepts/c-rx-015-inherent-safety/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Inherent Safety, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-rx-015-inherent-safety.html",
+    "keywords": "inherent safety passive safety TECDOC-626 reactivity feedback Doppler FTC MTC void coefficient pressure coefficient under-moderation GDC 11 walk-away safety NuScale i-SMR APR1400 RBMK"
+  },
+  {
+    "title": "Delayed neutron fraction β and βeff — nuclide, importance and burnup",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Reactor Physics & Kinetics",
+    "summary": "βeff = I·β̄ weights delayed neutrons by importance; I ≈ 0.97 in a large PWR, and Pu-239 build-up lowers βeff from about 623 to 503 pcm over a cycle in an illustrative calculation.",
+    "thumbnail": "assets/images/concepts/c-rx-014-beta-effective/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Delayed Neutron Fraction β · βeff, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-rx-014-beta-effective.html",
+    "keywords": "delayed neutron fraction beta effective βeff importance adjoint flux Keepin U-235 Pu-239 burnup dollar reactivity prompt critical point kinetics reactor kinetics"
+  },
+  {
+    "title": "Shutdown margin — stuck-rod assumption, budget and requirement",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Reactor Physics & Kinetics",
+    "summary": "SDM = (1 − k_N−1)/k_N−1 with the highest-worth rod fully withdrawn; it is an initial condition of the EOC zero-power MSLB analysis, e.g. 1.3 %Δk/k in a Westinghouse-type COLR.",
+    "thumbnail": "assets/images/concepts/c-rx-013-shutdown-margin/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Shutdown Margin (SDM), Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-rx-013-shutdown-margin.html",
+    "keywords": "shutdown margin SDM technical specifications LCO 3.1.1 stuck rod highest worth rod power defect MSLB recriticality boron dilution COLR estimated critical condition excess reactivity PWR"
+  },
+  {
+    "title": "Power coefficient — reactivity per 1 % power and the power defect",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Reactor Physics & Kinetics",
+    "summary": "α_P = MTC·dT_M/dP + FTC·dT_F/dP (not MTC + FTC); its integral is the power defect, about −1,200 pcm at BOL and −2,100 pcm at EOL in a Westinghouse training example.",
+    "thumbnail": "assets/images/concepts/c-rx-012-power-coefficient/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Power Coefficient, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-rx-012-power-coefficient.html",
+    "keywords": "power coefficient power defect reactivity coefficient MTC FTC ITC Doppler moderator temperature coefficient self-regulation load follow shutdown margin rod insertion limit GDC 11 PWR"
+  },
+  {
     "title": "Burnup — MWd/tU, %FIMA and EFPD conversions",
     "date": "2026.10.25",
     "displayDate": "2026.10.25",
