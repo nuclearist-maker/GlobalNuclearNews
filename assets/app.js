@@ -1,5 +1,53 @@
 const posts = [
   {
+    "title": "Hot spot factors and rod count — worked heat flux problem",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Thermal Hydraulics & Thermodynamics",
+    "summary": "With F_Q = 1.60 × 1.75 = 2.80, the average heat flux is 0.571 MW/m², the total area 5,250 m² and the core needs about 34,815 rods of 6 mm radius and 4.0 m length.",
+    "thumbnail": "assets/images/concepts/p-th-001-hot-spot-factor-rod-count/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Practice · 2015 exam, session 2, Q6, Rod Count from Hot Spot Factors, Thermal Hydraulics & Thermodynamics · Practice · Step-by-step solution, with an atom icon",
+    "url": "posts/concepts/p-th-001-hot-spot-factor-rod-count.html",
+    "keywords": "hot spot factor hot channel factor F_Q F_N F_E heat flux average heat flux heat transfer area fuel rod count PWR core design worked problem linear heat rate"
+  },
+  {
+    "title": "Nuclear criticality safety — control parameters, double contingency and pool keff limits",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Waste, Fuel Cycle & Decommissioning",
+    "summary": "Spent fuel racks must stay at keff ≤ 0.95 in unborated water at 95/95 (or < 1.0 unborated with boron credit), and designs require two unlikely, independent, concurrent changes before criticality is possible.",
+    "thumbnail": "assets/images/concepts/c-wd-007-criticality-safety/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Nuclear Criticality Safety, Waste, Fuel Cycle & Decommissioning · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-wd-007-criticality-safety.html",
+    "keywords": "criticality safety keff spent fuel pool 10 CFR 50.68 double contingency ANSI/ANS-8.1 boron credit burnup credit loading curve critical mass moderation CSI criticality alarm JCO"
+  },
+  {
+    "title": "Pyroprocessing — molten-salt recovery of U and U/TRU",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Waste, Fuel Cycle & Decommissioning",
+    "summary": "U deposits on a solid cathode and U+TRU in a liquid cadmium cathode because UCl₃ is the least stable actinide chloride; the waste-reduction benefit holds only if the TRU are burned in an SFR.",
+    "thumbnail": "assets/images/concepts/c-wd-006-pyroprocessing/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Pyroprocessing, Waste, Fuel Cycle & Decommissioning · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-wd-006-pyroprocessing.html",
+    "keywords": "pyroprocessing dry reprocessing molten salt electrolytic reduction electrorefining electrowinning liquid cadmium cathode chloride free energy PUREX UREX+ proliferation resistance SFR PRIDE JFCS"
+  },
+  {
+    "title": "Radioactive waste treatment — sources, processes and decontamination factors",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Waste, Fuel Cycle & Decommissioning",
+    "summary": "Gases are delayed and filtered before monitored release, liquids are evaporated or treated by RO and ion exchange before reuse or release, and solids are volume-reduced and packaged; DF multiplies in series and H-3 has DF 1.",
+    "thumbnail": "assets/images/concepts/c-wd-005-radwaste-treatment/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Radioactive Waste Treatment Process, Waste, Fuel Cycle & Decommissioning · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-wd-005-radwaste-treatment.html",
+    "keywords": "radioactive waste treatment gaseous waste liquid waste solid waste charcoal delay bed decay tank decontamination factor DF NUREG-0017 GALE evaporator reverse osmosis ion exchange supercompaction effluent limits ODCM"
+  },
+  {
     "title": "Waste management principles — IAEA nine principles and three treatment principles",
     "date": "2026.10.25",
     "displayDate": "2026.10.25",

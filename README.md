@@ -9,6 +9,7 @@ Live site: https://nuclearist-maker.github.io/GlobalNuclearNews/
 Posts are written outside this repository and published from here:
 
 - Nuclear theory: `G:\내 드라이브\My_Claude\Blog-Nuclear\output-EN\<NNN_slug>\web\`
+- Concept Dictionary: `G:\내 드라이브\My_Claude\Blog-Nuclear\output-pe-EN\<C-XX-NNN_slug>\web\`
 - Global nuclear news: `G:\내 드라이브\My_Claude\Blog\output\drafts_EN\<YYYY-MM-DD-slug>\web\`
 
 Each `web/` package holds `post.json` (metadata, `"status": "ready"` to publish), `article.html` and its images. The format is specified in [docs/english-post-package.md](docs/english-post-package.md).
@@ -24,6 +25,7 @@ The script renders every ready package into `posts/`, copies images into `assets
 ## Sources of the English posts
 
 - Nuclear theory posts are English adaptations of the Korean public blog series (working files under `My_Claude/Blog-Nuclear/output-EN/`).
+- Concept Dictionary entries are English adaptations of the Korean nuclear power engineering concept notes (working files under `My_Claude/Blog-Nuclear/output-pe-EN/`).
 - Body figures keep every number of the original and render all text in English as a separate layer over text-free scene images.
 
 ## Korean edition
