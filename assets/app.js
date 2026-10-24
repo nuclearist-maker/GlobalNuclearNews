@@ -1,12 +1,276 @@
 const posts = [
   {
+    "title": "The Iron Stays Hot After You Switch It Off — Why Reactors Need Residual Heat Removal",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Reactor Components",
+    "summary": "After shutdown, fission products keep releasing decay heat that fades only gradually, so the residual heat removal system must keep cooling the core, the step that follows the protection system's trip.",
+    "thumbnail": "assets/images/theory/070-residual-heat-removal/thumbnail.webp",
+    "thumbnailAlt": "A cutaway reactor vessel with a glowing core wrapped in blue coolant flow, piped to a heat exchanger",
+    "url": "posts/theory/070-residual-heat-removal.html",
+    "keywords": "residual heat removal decay heat reactor shutdown core cooling fission products steam generator spent fuel pool reactor protection system reactor components nuclear safety"
+  },
+  {
+    "title": "Sense Danger, Stop at Once — How the Reactor Protection System Works",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Reactor Components",
+    "summary": "The reactor protection system trips the reactor automatically, using several independent channels and voting logic, as soon as neutron flux or coolant temperature, pressure or flow crosses a setpoint, and a trip by itself does not mean an accident.",
+    "thumbnail": "assets/images/theory/069-reactor-protection-system/thumbnail.webp",
+    "thumbnailAlt": "A cutaway reactor vessel inside a translucent shield, with control rods driving down into the glowing core",
+    "url": "posts/theory/069-reactor-protection-system.html",
+    "keywords": "reactor protection system reactor trip scram setpoint automatic shutdown control rods redundant channels voting logic instrumentation and control reactor components nuclear safety"
+  },
+  {
+    "title": "A Nuclear Plant Has Senses Too — The Instrumentation and Control System",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Reactor Components",
+    "summary": "The instrumentation and control system gathers sensor readings such as neutron flux, coolant temperature, pressure, flow and steam generator level into the main control room, with redundant sensors so one faulty reading does not mislead.",
+    "thumbnail": "assets/images/theory/068-instrumentation-and-control/thumbnail.webp",
+    "thumbnailAlt": "A cutaway nuclear plant ringed by sensor icons, with glowing wires converging on a glass-domed brain",
+    "url": "posts/theory/068-instrumentation-and-control.html",
+    "keywords": "instrumentation and control I&C main control room sensors neutron flux automatic control reactor protection system redundancy reactor components nuclear power plant"
+  },
+  {
+    "title": "Why the Lights Stay On in a Blackout — The Emergency Diesel Generator",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Reactor Components",
+    "summary": "When a shut-down reactor also loses its off-site grid connection, several redundant emergency diesel generators start automatically and power the safety equipment, especially cooling.",
+    "thumbnail": "assets/images/theory/067-emergency-diesel-generator/thumbnail.webp",
+    "thumbnailAlt": "A large steel diesel generator set with a glowing cable running to switchgear and a pump, a nuclear plant in the background",
+    "url": "posts/theory/067-emergency-diesel-generator.html",
+    "keywords": "emergency diesel generator loss of off-site power backup power redundancy safety equipment reactor cooling station blackout reactor components nuclear safety nuclear power plant"
+  },
+  {
+    "title": "Clearing the Steamy Window — How the Condenser and Cooling Tower Close the Loop",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Reactor Components",
+    "summary": "The condenser turns turbine exhaust steam back into water on cold tubes, the cooling tower releases the cooling water's heat into the air, and its white plume is plain water vapor, not radioactive material.",
+    "thumbnail": "assets/images/theory/066-condenser-and-cooling-tower/thumbnail.webp",
+    "thumbnailAlt": "A cutaway steel condenser with steam condensing into droplets over blue cooling-water tubes, a cooling tower releasing a white plume behind it",
+    "url": "posts/theory/066-condenser-and-cooling-tower.html",
+    "keywords": "condenser cooling tower secondary loop condensation steam turbine waste heat cooling water steam generator reactor components nuclear power plant"
+  },
+  {
+    "title": "All It Needs Is Steam — Why the Turbine Isn't Nuclear Technology",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Reactor Components",
+    "summary": "A turbine converts the expansion of high-pressure steam into rotation for the generator and does not care whether that steam came from coal, gas or fission, so this stage is shared mechanical technology rather than nuclear technology.",
+    "thumbnail": "assets/images/theory/065-turbine/thumbnail.webp",
+    "thumbnailAlt": "A cutaway steam turbine with rows of steel blades, blue steam streaming in from a pipe on the left and a warm golden glow around the shaft on the right",
+    "url": "posts/theory/065-turbine.html",
+    "keywords": "steam turbine generator steam cycle electromagnetic induction fossil vs nuclear heat source pressurized water reactor reactor components power plant"
+  },
+  {
+    "title": "How Many Layers Do You Wrap a Gift In? — What the Containment Building Holds In",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Reactor Components",
+    "summary": "The containment building is the thick, airtight structure around the whole primary system and the last of four independent barriers that keep radioactive material confined.",
+    "thumbnail": "assets/images/theory/064-containment-building/thumbnail.webp",
+    "thumbnailAlt": "A cutaway of nested arches, an outer concrete dome, a blue layer and inner translucent shells, enclosing a steel reactor vessel with a glowing core on a stepped platform, against a bright pale-blue background",
+    "url": "posts/theory/064-containment-building.html",
+    "keywords": "containment building multiple barriers defense in depth reactor pressure vessel fuel cladding nuclear safety radioactive material confinement reactor components"
+  },
+  {
+    "title": "The Heartbeat of a Reactor — What the Reactor Coolant Pump Does",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Reactor Components",
+    "summary": "Reactor coolant pumps drive the primary-system water from the core to the steam generator and back without pause, much as a heart circulates blood, though a reactor can still circulate some coolant naturally if the pumps stop.",
+    "thumbnail": "assets/images/theory/063-reactor-coolant-pump/thumbnail.webp",
+    "thumbnailAlt": "A polished steel centrifugal pump with a visible impeller at the center of glass pipes filled with flowing blue water, the pipes curving around it in a heart shape",
+    "url": "posts/theory/063-reactor-coolant-pump.html",
+    "keywords": "reactor coolant pump pressurized water reactor PWR primary system forced circulation natural circulation steam generator pressurizer flow reactor components"
+  },
+  {
+    "title": "Pumping Up the Tires of a Nuclear Plant — How the Pressurizer Controls Pressure",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Reactor Components",
+    "summary": "The pressurizer is a separate vessel holding water and steam that automatically raises primary-system pressure with heaters and lowers it with spray, while the pressure vessel only withstands that pressure.",
+    "thumbnail": "assets/images/theory/062-pressurizer/thumbnail.webp",
+    "thumbnailAlt": "A cutaway steel pressurizer vessel with steam in the upper half, water in the lower half, a spray nozzle at the top and glowing heater rods at the bottom, framed by a translucent orange-and-blue ring",
+    "url": "posts/theory/062-pressurizer.html",
+    "keywords": "pressurizer pressurized water reactor PWR pressure control primary system heaters spray safety valve reactor pressure vessel reactor components"
+  },
+  {
+    "title": "Why Your Boiler Heats Water Twice — The Steam Generator, Explained",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Reactor Components",
+    "summary": "A steam generator is a large heat exchanger that hands only heat from the reactor's primary water to separate secondary water, keeping any radioactive material out of the turbine loop.",
+    "thumbnail": "assets/images/theory/061-steam-generator/thumbnail.webp",
+    "thumbnailAlt": "A clear glass loop with an orange stream and a blue stream flowing side by side inside it without mixing, on a bright pale-blue background",
+    "url": "posts/theory/061-steam-generator.html",
+    "keywords": "steam generator pressurized water reactor PWR heat exchanger U-tube primary system secondary system reactor components multiple barriers nuclear plant"
+  },
+  {
+    "title": "Built Like a Pressure Cooker — Why the Reactor Pressure Vessel Is So Thick",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Reactor Components",
+    "summary": "The reactor pressure vessel holds the whole core and is made of thick special steel to withstand high pressure, long-term radiation exposure and sudden temperature changes while serving as a safety barrier.",
+    "thumbnail": "assets/images/theory/060-why-pressure-vessel-is-thick/thumbnail.webp",
+    "thumbnailAlt": "A massive cutaway steel reactor pressure vessel with thick bolted walls and a glowing core inside, next to a small cutaway kettle of boiling water linked to it by dashed lines",
+    "url": "posts/theory/060-why-pressure-vessel-is-thick.html",
+    "keywords": "reactor pressure vessel pressurized water reactor safety barrier reactor core reactor components defense in depth pressure design embrittlement"
+  },
+  {
+    "title": "The Pool Table Cushion of the Core — How a Neutron Reflector Sends Neutrons Back",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Reactor Components",
+    "summary": "A reflector made of water, beryllium or graphite scatters leaking neutrons back into the core, so the core needs less fuel or can be smaller and its edge power is evened out.",
+    "thumbnail": "assets/images/theory/059-neutron-reflector/thumbnail.webp",
+    "thumbnailAlt": "A cylindrical reactor core packed with fuel rods, ringed by a thick segmented wall, with glowing blue neutron paths arcing out to the wall and bouncing back inward, and a single dashed path escaping",
+    "url": "posts/theory/059-neutron-reflector.html",
+    "keywords": "neutron reflector neutron leakage neutron economy core design beryllium graphite reactor components reactor physics neutron scattering"
+  },
+  {
+    "title": "Like Bath Salts in the Tub — Is Borated Water Really a Liquid Control Rod?",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Reactor Components",
+    "summary": "Borated water absorbs neutrons like a control rod, but it acts evenly on the whole core over hours to days, while control rods act locally within seconds to minutes, so the two complement each other.",
+    "thumbnail": "assets/images/theory/058-borated-water-liquid-control-rod/thumbnail.webp",
+    "thumbnailAlt": "A cutaway reactor vessel filled with glowing blue water and fuel rods, with a magnified circle showing violet particles pouring from a pipe and dispersing evenly through the water",
+    "url": "posts/theory/058-borated-water-liquid-control-rod.html",
+    "keywords": "borated water boric acid soluble boron control rods reactivity control neutron absorption light water reactor reactor components"
+  },
+  {
+    "title": "Brake or Gas Pedal? What Control Rods Really Do in a Reactor",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Reactor Components",
+    "summary": "Control rods absorb neutrons to lower reactivity the deeper they go, acting as a brake during a scram and as a fine-tuning control for power in normal operation.",
+    "thumbnail": "assets/images/theory/057-control-rods-brake-or-pedal/thumbnail.webp",
+    "thumbnailAlt": "Two views of a reactor core: on the left, control rods descending into a blue-lit core with downward arrows; on the right, rods partly raised above a core ringed by a glowing amber dial",
+    "url": "posts/theory/057-control-rods-brake-or-pedal.html",
+    "keywords": "control rods scram reactivity control neutron absorption reactor safety reactor components reactor physics emergency shutdown"
+  },
+  {
+    "title": "Like the Coolant in Your Car — What a Reactor Coolant Really Does",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Reactor Components",
+    "summary": "The coolant absorbs heat at the fuel rod surfaces and carries it to the steam generator in a closed loop, a different purpose from the moderator even when both are the same water.",
+    "thumbnail": "assets/images/theory/056-role-of-the-coolant/thumbnail.webp",
+    "thumbnailAlt": "Glowing car engine and radiator joined by blue coolant hoses on the left, and a reactor vessel, steam generator and pump joined by coolant piping on the right",
+    "url": "posts/theory/056-role-of-the-coolant.html",
+    "keywords": "reactor coolant moderator reactor cooling heat transfer steam generator reactor components light water reactor coolant pump"
+  },
+  {
+    "title": "Picking Packing Material for Neutrons — How a Reactor Moderator Is Chosen",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Reactor Components",
+    "summary": "Light water slows neutrons well but absorbs some, so it needs low-enriched fuel; heavy water absorbs almost none and allows natural uranium; graphite is a solid with low absorption.",
+    "thumbnail": "assets/images/theory/055-moderator-role/thumbnail.webp",
+    "thumbnailAlt": "A water sphere, a crystal drop and a graphite cube on pedestals with streams of blue neutrons passing through",
+    "url": "posts/theory/055-moderator-role.html",
+    "keywords": "moderator light water heavy water graphite neutron moderation thermal neutrons low-enriched uranium natural uranium reactor components"
+  },
+  {
+    "title": "One Straw Falls, a Bundle Stands — Why Fuel Rods Come Packed in a Fuel Assembly",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Reactor Components",
+    "summary": "Fuel rods are held in grids of tens to hundreds by end fittings and spacer grids, which makes refueling practical, keeps coolant channels even and keeps long rods from bending.",
+    "thumbnail": "assets/images/theory/054-fuel-assembly-structure/thumbnail.webp",
+    "thumbnailAlt": "A square fuel assembly of metal rods with spacer grids being lowered into a glowing blue reactor core lattice",
+    "url": "posts/theory/054-fuel-assembly-structure.html",
+    "keywords": "fuel assembly fuel rod spacer grid coolant channel reactor core refueling loading pattern reactor components"
+  },
+  {
+    "title": "Filling and Casing — How Fuel Pellets and Cladding Split the Work",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Reactor Components",
+    "summary": "Fission happens inside ceramic uranium dioxide pellets, while the zirconium-alloy cladding around them acts as the first barrier against radioactive release and the path for heat to reach the coolant.",
+    "thumbnail": "assets/images/theory/053-fuel-pellet-and-cladding/thumbnail.webp",
+    "thumbnailAlt": "A cutaway cladding tube revealing glowing orange fuel pellets with blue coolant flowing past",
+    "url": "posts/theory/053-fuel-pellet-and-cladding.html",
+    "keywords": "fuel pellet cladding zirconium alloy uranium dioxide first barrier defense in depth reactor components nuclear fuel rod"
+  },
+  {
+    "title": "A PEZ Dispenser in the Reactor Core? — What a Nuclear Fuel Rod Really Looks Like",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Reactor Components",
+    "summary": "A fuel rod is a 3-to-4-meter metal cladding tube holding hundreds of pellets about 1 centimeter across, a shape that moves heat efficiently and forms the first barrier around radioactive material.",
+    "thumbnail": "assets/images/theory/052-fuel-rod-shape/thumbnail.webp",
+    "thumbnailAlt": "A cutaway metal fuel rod showing a long column of grey ceramic fuel pellets stacked inside",
+    "url": "posts/theory/052-fuel-rod-shape.html",
+    "keywords": "nuclear fuel rod fuel pellet cladding uranium dioxide helium reactor components reactor core nuclear fuel"
+  },
+  {
+    "title": "Is a Nuclear Reactor Just a Giant Kettle? — How a Reactor Really Heats Water",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Reactor Components",
+    "summary": "A reactor shares a kettle's goal of making steam, but its fission chain reaction heat source requires pressurized coolant, precise control by rods and boric acid, and several layers of safety equipment.",
+    "thumbnail": "assets/images/theory/051-reactor-giant-kettle/thumbnail.webp",
+    "thumbnailAlt": "A stainless-steel kettle on a gas flame with glowing heat ribbons flowing toward a cutaway nuclear reactor vessel",
+    "url": "posts/theory/051-reactor-giant-kettle.html",
+    "keywords": "nuclear reactor kettle how nuclear power works pressurized water reactor coolant fission chain reaction control rods boric acid reactor components"
+  },
+  {
+    "title": "One Moving Truck vs 120,000 — Feeling Nuclear Energy Density at Power-Plant Scale",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear Reactions & Fission",
+    "summary": "A 1,000 MW plant needs about 3 million tonnes of coal or about 25 tonnes of uranium fuel a year, a roughly 120,000-fold gap that eases transport and stockpiling but leaves 20–27 tonnes of spent fuel to manage.",
+    "thumbnail": "assets/images/theory/050-nuclear-energy-density/thumbnail.webp",
+    "thumbnailAlt": "A single dark fuel pellet on a white pedestal in front of an open, empty cardboard moving box",
+    "url": "posts/theory/050-nuclear-energy-density.html",
+    "keywords": "energy density nuclear power uranium fuel coal LNG energy security spent fuel fuel transport fission energy capacity factor"
+  },
+  {
+    "title": "The Marathoner and the 100-Meter Sprinter — How a Reactor's Chain Reaction Differs from a Bomb's",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear Reactions & Fission",
+    "summary": "A power reactor runs on 3–5% low-enriched fuel, slowed neutrons, delayed neutrons and negative feedback to hold k = 1, so unlike a bomb it physically cannot produce a nuclear explosion.",
+    "thumbnail": "assets/images/theory/049-reactor-vs-bomb/thumbnail.webp",
+    "thumbnailAlt": "A nuclear fuel assembly standing in clear sunlit water with a red running track behind it",
+    "url": "posts/theory/049-reactor-vs-bomb.html",
+    "keywords": "nuclear reactor atomic bomb fission chain reaction enriched uranium low-enriched uranium delayed neutrons Doppler effect negative feedback Chernobyl nuclear safety"
+  },
+  {
     "title": "Two Slopes, One Valley — How Nuclear Fusion and Fission Are Alike and Different",
     "date": "2026.10.24",
     "displayDate": "2026.10.24",
     "section": "theory",
     "category": "Nuclear Reactions & Fission",
     "summary": "Fusion and fission both release energy by binding nucleons more tightly; fission gives more per reaction (about 200 vs 17.6 MeV), fusion about 4 times more per nucleon, but it needs a plasma above 100 million °C.",
-    "thumbnail": "assets/images/theory/048-fusion-vs-fission/thumbnail.png",
+    "thumbnail": "assets/images/theory/048-fusion-vs-fission/thumbnail.webp",
     "thumbnailAlt": "A curved clear glass valley with blue glass spheres on the left slope and amber glass spheres on the right slope",
     "url": "posts/theory/048-fusion-vs-fission.html",
     "keywords": "nuclear fusion nuclear fission fusion vs fission deuterium tritium uranium-235 binding energy plasma ITER chain reaction nuclear basics"
@@ -18,7 +282,7 @@ const posts = [
     "section": "theory",
     "category": "Nuclear Reactions & Fission",
     "summary": "The Q-value is a reaction's energy altitude gap: positive for fission (about +200 MeV) or boron-10 capture (+2.79 MeV), negative for Rutherford's nitrogen reaction (−1.19 MeV), which needs a 1.53 MeV threshold.",
-    "thumbnail": "assets/images/theory/047-nuclear-reaction-q-value/thumbnail.png",
+    "thumbnail": "assets/images/theory/047-nuclear-reaction-q-value/thumbnail.webp",
     "thumbnailAlt": "A glass and steel terraced path stepping down in amber on one side and up in blue on the other, with a tiny backpack on the middle platform",
     "url": "posts/theory/047-nuclear-reaction-q-value.html",
     "keywords": "Q-value nuclear reactions exothermic endothermic threshold energy Rutherford fission energy nitrogen-16 boron-10 reactor physics"
@@ -30,10 +294,34 @@ const posts = [
     "section": "theory",
     "category": "Nuclear Reactions & Fission",
     "summary": "Neutron capture adds one neutron without splitting the nucleus, and when the product is unstable, as with cobalt-59 becoming cobalt-60 (half-life 5.27 years), the material is activated, building toward a saturation ceiling.",
-    "thumbnail": "assets/images/theory/046-neutron-capture-activation/thumbnail.png",
+    "thumbnail": "assets/images/theory/046-neutron-capture-activation/thumbnail.webp",
     "thumbnailAlt": "A sheet of stainless steel wire mesh with a single spiky brown burr caught in its weave",
     "url": "posts/theory/046-neutron-capture-activation.html",
     "keywords": "neutron capture activation cobalt-60 half-life saturation activity occupational dose decommissioning gamma rays nuclear basics"
+  },
+  {
+    "title": "The Strange Knife That Won't Cut Down the Middle — Reading the Fission Yield Curve",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear Reactions & Fission",
+    "summary": "The U-235 fission yield curve shows two peaks of about 6–8% near mass numbers 95 and 134, a valley of about 0.01% at an even split, and a total of about 200% because every fission makes two pieces.",
+    "thumbnail": "assets/images/theory/045-fission-yield-curve/thumbnail.webp",
+    "thumbnailAlt": "A round glass cake split into one large amber piece and one smaller blue piece on a white marble board, with a steel kitchen knife lying beside it",
+    "url": "posts/theory/045-fission-yield-curve.html",
+    "keywords": "fission yield curve fission products uranium-235 mass number double hump magic numbers strontium-90 cesium-137 iodine-131 xenon-135"
+  },
+  {
+    "title": "Two Transfers and You've Arrived — How Plutonium-239 Is Made",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear Reactions & Fission",
+    "summary": "Uranium-238 captures a neutron, becomes uranium-239, and transfers twice by beta decay (23.5 minutes, then 2.36 days) to plutonium-239, much of which fissions on the spot.",
+    "thumbnail": "assets/images/theory/044-making-plutonium-239/thumbnail.webp",
+    "thumbnailAlt": "A ceramic fuel pellet split in two on a clear glass dish, its cut faces full of glowing golden specks, with a thin glowing stepped line rising above it",
+    "url": "posts/theory/044-making-plutonium-239.html",
+    "keywords": "plutonium-239 uranium-238 uranium-239 neptunium-239 neutron capture beta decay half-life Bateman equations fissile spent fuel"
   },
   {
     "title": "The Supporting Actor Who Carries the Show — Why Uranium-238 Is Not Just Waste",
@@ -42,7 +330,7 @@ const posts = [
     "section": "theory",
     "category": "Nuclear Reactions & Fission",
     "summary": "Uranium-238 supplies about 7–8% of fissions directly, breeds the plutonium that provides about one-third of a light water reactor's output, and provides the Doppler feedback that holds back power rises.",
-    "thumbnail": "assets/images/theory/043-value-of-uranium-238/thumbnail.png",
+    "thumbnail": "assets/images/theory/043-value-of-uranium-238/thumbnail.webp",
     "thumbnailAlt": "A cut-away fuel rod showing a row of ceramic fuel pellets, lying center stage on a wooden floor under a soft spotlight with pale curtains at the sides",
     "url": "posts/theory/043-value-of-uranium-238.html",
     "keywords": "uranium-238 uranium-235 plutonium-239 fast fission capture Doppler effect fuel temperature coefficient nuclear fuel light water reactor burnup"
@@ -54,7 +342,7 @@ const posts = [
     "section": "theory",
     "category": "Nuclear Reactions & Fission",
     "summary": "Slowed to thermal energy, a neutron is about 500 times more likely to split uranium-235, so moderators like light water, heavy water and graphite let reactors run on low-enriched or even natural uranium.",
-    "thumbnail": "assets/images/theory/042-moderation-and-fission/thumbnail.png",
+    "thumbnail": "assets/images/theory/042-moderation-and-fission/thumbnail.webp",
     "thumbnailAlt": "A clear glass water tank with a dotted glowing neutron path that drifts down and slows to a small fuel pellet resting on the bottom",
     "url": "posts/theory/042-moderation-and-fission.html",
     "keywords": "moderator neutron moderation thermal neutrons nuclear fission cross section 1/v law light water heavy water graphite low-enriched uranium"
@@ -66,10 +354,46 @@ const posts = [
     "section": "theory",
     "category": "Nuclear Reactions & Fission",
     "summary": "A thermal neutron at room temperature carries about 0.0253 eV and moves at 2,200 m/s, a fresh fission neutron carries about 2 MeV and moves about 9,000 times faster, and reactors are designed to fission with one or the other.",
-    "thumbnail": "assets/images/theory/041-thermal-vs-fast-neutrons/thumbnail.png",
+    "thumbnail": "assets/images/theory/041-thermal-vs-fast-neutrons/thumbnail.webp",
     "thumbnailAlt": "A tiny walking figure at one end of a long glass ruler and a white rocket lifting off at the far end, on a bright pale-blue background",
     "url": "posts/theory/041-thermal-vs-fast-neutrons.html",
     "keywords": "thermal neutrons fast neutrons neutron energy electronvolt thermal equilibrium thermal reactor fast reactor sodium-cooled fast reactor moderator nuclear fission"
+  },
+  {
+    "title": "Locking On Like a Radio Dial — Resonance Absorption",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear Reactions & Fission",
+    "summary": "Uranium-238's resonance peaks capture slowing neutrons thousands of times more strongly than the valleys between them, reducing the resonance escape probability to about 0.7–0.8, while Doppler broadening of those peaks gives fuel a negative temperature coefficient.",
+    "thumbnail": "assets/images/theory/040-resonance-absorption/thumbnail.webp",
+    "thumbnailAlt": "A sleek wood-and-brushed-steel radio tuner with a long cream dial window, where a single sharp glowing spike rises from the tuning line at the exact point the needle locks on",
+    "url": "posts/theory/040-resonance-absorption.html",
+    "keywords": "resonance absorption uranium-238 capture cross section compound nucleus resonance escape probability self-shielding Doppler broadening Doppler coefficient negative temperature coefficient reactor physics"
+  },
+  {
+    "title": "The Magic Dartboard — Fission Cross Section Explained",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear Reactions & Fission",
+    "summary": "The fission cross section expresses the chance of fission as an effective target area; uranium-235 offers about 585 barns to thermal neutrons but only about 1.2 barns at 1 MeV, which is why reactors slow their neutrons down.",
+    "thumbnail": "assets/images/theory/039-fission-cross-section/thumbnail.webp",
+    "thumbnailAlt": "A small woven dartboard in a brushed-steel ring set in the middle of a much larger translucent blue glass disc, with a single dart landing on the outer glass edge",
+    "url": "posts/theory/039-fission-cross-section.html",
+    "keywords": "fission cross section cross section barn uranium-235 uranium-238 thermal neutrons fast neutrons 1/v law macroscopic cross section mean free path reactor physics"
+  },
+  {
+    "title": "A Cruise Ship, Not a Skateboard — Delayed Neutrons and Reactor Control",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear Reactions & Fission",
+    "summary": "Delayed neutrons make up only about 0.65% of fission neutrons, but their long wait stretches the mean generation time from about 0.0001 to about 0.085 second, so power changes take tens of seconds instead of a fraction of a second.",
+    "thumbnail": "assets/images/theory/038-delayed-neutrons-reactor-control/thumbnail.webp",
+    "thumbnailAlt": "Aerial view of a large white cruise ship carving a wide, gentle curving wake across a bright turquoise sea dotted with distant islands",
+    "url": "posts/theory/038-delayed-neutrons-reactor-control.html",
+    "keywords": "delayed neutrons prompt neutrons reactor control neutron generation time prompt criticality reactivity reactor period point kinetics nuclear fission reactor physics"
   },
   {
     "title": "Ships Now or Ships Later — Prompt and Delayed Neutrons",
@@ -78,7 +402,7 @@ const posts = [
     "section": "theory",
     "category": "Nuclear Reactions & Fission",
     "summary": "Almost all fission neutrons are prompt, but about 0.65% are delayed by the beta decay of precursor nuclides such as bromine-87, which are grouped into six half-life groups from 0.23 to 55.7 seconds.",
-    "thumbnail": "assets/images/theory/037-prompt-and-delayed-neutrons/thumbnail.png",
+    "thumbnail": "assets/images/theory/037-prompt-and-delayed-neutrons/thumbnail.webp",
     "thumbnailAlt": "A white conveyor belt carrying fast-moving blue boxes, ending at a glass-walled processing booth where a single glowing golden box waits beside an hourglass",
     "url": "posts/theory/037-prompt-and-delayed-neutrons.html",
     "keywords": "prompt neutrons delayed neutrons precursor delayed neutron fraction beta decay bromine-87 six-group model Keepin nuclear fission reactor physics"
@@ -90,10 +414,46 @@ const posts = [
     "section": "theory",
     "category": "Nuclear Reactions & Fission",
     "summary": "Neutrons from uranium-235 fission are born with a spread of energies that peaks near 0.7 MeV and averages about 2 MeV, and the number per fission ranges from 0 to 7 around an average of about 2.43.",
-    "thumbnail": "assets/images/theory/036-fission-neutron-energy-spectrum/thumbnail.png",
+    "thumbnail": "assets/images/theory/036-fission-neutron-energy-spectrum/thumbnail.webp",
     "thumbnailAlt": "A glossy translucent hump-shaped curve on a white pedestal, with a dense crowd of small silver runners at its tall left end thinning out to a few lone runners along its long right tail",
     "url": "posts/theory/036-fission-neutron-energy-spectrum.html",
     "keywords": "fission neutrons neutron energy spectrum Watt spectrum fission spectrum prompt neutrons neutrons per fission nu-bar uranium-235 moderator reactor physics"
+  },
+  {
+    "title": "The Misunderstanding Behind \"Critical Mass\"",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear Reactions & Fission",
+    "summary": "Critical mass is the minimum fissile material for a self-sustaining chain reaction under given conditions, and it changes greatly with shape, density, enrichment, moderator, reflector and absorber.",
+    "thumbnail": "assets/images/theory/035-critical-mass-misconception/thumbnail.webp",
+    "thumbnailAlt": "A white model stadium seen from above at an angle, with a green field in the middle and one curved band of blue spectators standing with arms raised in a stadium wave",
+    "url": "posts/theory/035-critical-mass-misconception.html",
+    "keywords": "critical mass criticality nuclear fission chain reaction neutron leakage enrichment moderator reflector criticality safety Tokaimura"
+  },
+  {
+    "title": "Critical, Subcritical and Supercritical — A Reactor's Three States",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear Reactions & Fission",
+    "summary": "A reactor is subcritical, critical or supercritical when its multiplication factor k is below, equal to or above 1, so critical simply means steady power, the normal operating state.",
+    "thumbnail": "assets/images/theory/034-critical-subcritical-supercritical/thumbnail.webp",
+    "thumbnailAlt": "A modern bicycle with fading ghost images behind it, riding on a flat glass plate that floats above a softly glowing bundle of fuel rods",
+    "url": "posts/theory/034-critical-subcritical-supercritical.html",
+    "keywords": "criticality critical subcritical supercritical multiplication factor reactivity pcm control rods boron reactor operation"
+  },
+  {
+    "title": "What a Chain Reaction Really Is — The Neutron Ledger and k",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear Reactions & Fission",
+    "summary": "In a fission chain reaction each fission releases about 2.4 neutrons, but at steady power only one on average causes the next fission, so the multiplication factor k stays at 1.",
+    "thumbnail": "assets/images/theory/033-chain-reaction/thumbnail.webp",
+    "thumbnailAlt": "A curved row of clear teal glass dominoes, each holding a glowing amber sphere, with the first domino tipping into the next",
+    "url": "posts/theory/033-chain-reaction.html",
+    "keywords": "chain reaction nuclear fission multiplication factor neutron generation criticality exponential growth reactor basics nuclear power"
   },
   {
     "title": "One Grain of Sand, One Whole Desert — The Energy of a Single Fission",
@@ -102,7 +462,7 @@ const posts = [
     "section": "theory",
     "category": "Nuclear Reactions & Fission",
     "summary": "One fission releases only about 3.2×10⁻¹¹ joules, but a 3,000 MW-thermal plant repeats it about 10²⁰ times a second, splitting a little over 3 kg of uranium-235 a day.",
-    "thumbnail": "assets/images/theory/032-fission-energy-scale/thumbnail.png",
+    "thumbnail": "assets/images/theory/032-fission-energy-scale/thumbnail.webp",
     "thumbnailAlt": "A single clear quartz grain of sand resting on top of a brushed steel pedestal, with sunlit desert dunes stretching to the horizon behind it",
     "url": "posts/theory/032-fission-energy-scale.html",
     "keywords": "fission energy 200 MeV fission rate nuclear power plant uranium-235 thermal power megawatt-day energy unit conversion nuclear basics"
@@ -114,10 +474,46 @@ const posts = [
     "section": "theory",
     "category": "Nuclear Reactions & Fission",
     "summary": "Of the about 200 MeV released per fission, about 168 MeV first appears as the speed of two fragments pushed apart by electrical repulsion, which becomes heat inside the fuel, while about 7% arrives later through decay and the antineutrino share escapes.",
-    "thumbnail": "assets/images/theory/031-fission-energy-source/thumbnail.png",
+    "thumbnail": "assets/images/theory/031-fission-energy-source/thumbnail.webp",
     "thumbnailAlt": "A clear glass tube holding a small copper marble and a larger blue marble on either side of a compressed steel spring, with motion blur showing the marbles moving apart",
     "url": "posts/theory/031-fission-energy-source.html",
     "keywords": "nuclear fission fission energy 200 MeV Coulomb repulsion fission fragments binding energy antineutrino decay heat reactor thermal power"
+  },
+  {
+    "title": "Like an Overloaded Truck — Why Fission Products Are Radioactive",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear Reactions & Fission",
+    "summary": "Fission products share uranium's N/Z of about 1.55 while stable nuclei of their size sit near 1.25 to 1.45, so they beta-decay toward stability, producing decay heat of about 6–7% of power right after shutdown.",
+    "thumbnail": "assets/images/theory/030-why-fission-products-are-radioactive/thumbnail.webp",
+    "thumbnailAlt": "A white small pickup truck at a bright rest stop with glassy blue cubes stacked high in the rear of its bed and a few amber cubes near the cab",
+    "url": "posts/theory/030-why-fission-products-are-radioactive.html",
+    "keywords": "fission products radioactive decay beta decay decay heat cesium-137 neutron excess decay chain half-life nuclear power nuclear basics"
+  },
+  {
+    "title": "Stretch, Stretch, Snap Like Mochi — The Sequence of Uranium-235 Fission",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear Reactions & Fission",
+    "summary": "A slow neutron absorbed by uranium-235 excites it by about 6.5 MeV, above the roughly 6 MeV fission barrier, so the nucleus stretches and splits within about 10⁻¹⁴ s, releasing about 2.4 neutrons, while about 15% of absorptions end in capture instead.",
+    "thumbnail": "assets/images/theory/029-uranium-235-fission-sequence/thumbnail.webp",
+    "thumbnailAlt": "A white powdered mochi stretched into two unequal lumps joined by a thin strand on a pale celadon plate, with a small blue glass bead beside it",
+    "url": "posts/theory/029-uranium-235-fission-sequence.html",
+    "keywords": "uranium-235 nuclear fission compound nucleus prompt neutrons prompt gamma rays fission barrier neutron capture beta decay reactor physics"
+  },
+  {
+    "title": "The Culprit Was Supposed to Be a Heavier Element — How Fission Was Discovered",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear Reactions & Fission",
+    "summary": "In December 1938 Hahn and Strassmann found barium in neutron-irradiated uranium, Meitner and Frisch explained it as the nucleus splitting with about 200 MeV, and the 1939 discovery of fission neutrons opened the way to the chain reaction.",
+    "thumbnail": "assets/images/theory/028-discovery-of-fission/thumbnail.webp",
+    "thumbnailAlt": "A glossy amber liquid drop pinching into two unequal drops under a brass magnifying glass, with small blue droplets floating nearby",
+    "url": "posts/theory/028-discovery-of-fission.html",
+    "keywords": "nuclear fission discovery of fission Otto Hahn Lise Meitner Otto Frisch Enrico Fermi liquid drop model barium chain reaction nuclear history"
   },
   {
     "title": "The Lock That Cuts You New Keys — Why the Neutron Is the Key",
@@ -126,7 +522,7 @@ const posts = [
     "section": "theory",
     "category": "Nuclear Reactions & Fission",
     "summary": "The uncharged neutron, inferred by Chadwick in 1932 from recoiling protons, can scatter, be captured or cause fission, and fission's average of about 2.4 new neutrons is what lets a chain reaction sustain itself.",
-    "thumbnail": "assets/images/theory/027-role-of-the-neutron/thumbnail.png",
+    "thumbnail": "assets/images/theory/027-role-of-the-neutron/thumbnail.webp",
     "thumbnailAlt": "An open brass padlock engraved with an atom, a key in its keyhole, and three new silver keys flying out of it",
     "url": "posts/theory/027-role-of-the-neutron.html",
     "keywords": "neutron Chadwick discovery of the neutron nuclear reaction nuclear fission neutron capture neutron scattering chain reaction nuclear basics"
@@ -138,10 +534,58 @@ const posts = [
     "section": "theory",
     "category": "Nuclear Reactions & Fission",
     "summary": "A chemical reaction moves outer electrons while a nuclear reaction changes the nucleus, so one U-235 fission releases about 200 MeV against about 2.5–3 eV for one burning hydrogen molecule, and decay rates ignore temperature.",
-    "thumbnail": "assets/images/theory/026-nuclear-vs-chemical-reactions/thumbnail.png",
+    "thumbnail": "assets/images/theory/026-nuclear-vs-chemical-reactions/thumbnail.webp",
     "thumbnailAlt": "An isometric cut-away model of a house with furnished rooms while a crane lowers a steel beam into its structural frame",
     "url": "posts/theory/026-nuclear-vs-chemical-reactions.html",
     "keywords": "nuclear reaction chemical reaction atomic nucleus electronvolt fission energy radioactive decay half-life mass number conservation nuclear basics"
+  },
+  {
+    "title": "How to Interpret Everyday Radiation Numbers",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear & Radiation Basics",
+    "summary": "Bq, μSv/h and mSv measure different things, a meter's hourly rate times 8,760 gives a rough annual figure that captures only external gamma rays, and the 1 mSv public limit covers added man-made dose, not natural or medical exposure.",
+    "thumbnail": "assets/images/theory/025-reading-radiation-numbers/thumbnail.webp",
+    "thumbnailAlt": "A yellow handheld radiation survey meter with a blank glowing screen, with a magnifying glass leaning against it",
+    "url": "posts/theory/025-reading-radiation-numbers.html",
+    "keywords": "radiation numbers dose rate microsievert millisievert becquerel natural radiation background dose limit LNT medical radiation CT dose UNSCEAR"
+  },
+  {
+    "title": "How Radiation Detectors Count What You Can't See",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear & Radiation Basics",
+    "summary": "Ionization chambers, proportional counters and GM tubes differ only in applied voltage, scintillators and germanium detectors read energy from pulse size, and dosimeters record the dose a body receives, which is not the same as a count in cpm.",
+    "thumbnail": "assets/images/theory/024-radiation-detectors/thumbnail.webp",
+    "thumbnailAlt": "A brushed-metal radiation detector probe with a coiled cable lying on a corrugated tin sheet, with water droplets splashing around it",
+    "url": "posts/theory/024-radiation-detectors.html",
+    "keywords": "radiation detector Geiger counter GM tube ionization chamber proportional counter scintillation detector NaI HPGe germanium personal dosimeter TLD OSL cpm microsievert"
+  },
+  {
+    "title": "Why Lead, Water and Concrete Shield Different Kinds of Radiation",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear & Radiation Basics",
+    "summary": "Gamma rays are stopped by electrons, so dense lead or thick concrete works, while neutrons must be slowed by light hydrogen nuclei in water, polyethylene or concrete and then captured by absorbers such as boron.",
+    "thumbnail": "assets/images/theory/023-lead-water-concrete-shielding/thumbnail.webp",
+    "thumbnailAlt": "A four-lane wooden obstacle course on artificial turf: a blue exercise ball before a paper curtain, a tennis ball caught in a net, steel marbles among metal posts, and a row of billiard balls",
+    "url": "posts/theory/023-lead-water-concrete-shielding.html",
+    "keywords": "radiation shielding shielding materials lead concrete water gamma rays neutrons beta radiation bremsstrahlung half-value layer tenth-value layer spent fuel pool biological shield"
+  },
+  {
+    "title": "Time, Distance and Shielding: The Three Principles of Radiation Protection",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear & Radiation Basics",
+    "summary": "External dose falls in proportion to time, with the square of distance from a point source and by half for every half-value layer of shielding, and ALARA asks workers to combine all three to go as low as reasonably achievable.",
+    "thumbnail": "assets/images/theory/022-time-distance-shielding/thumbnail.webp",
+    "thumbnailAlt": "A thick, multi-layered green-tinted shielding window set in a white wall, with a remote manipulator arm reaching through to hold a small metal canister on a steel table",
+    "url": "posts/theory/022-time-distance-shielding.html",
+    "keywords": "time distance shielding radiation protection external exposure dose rate inverse-square law half-value layer HVL ALARA nuclear plant workers"
   },
   {
     "title": "How Radiation Interacts with Matter",
@@ -150,7 +594,7 @@ const posts = [
     "section": "theory",
     "category": "Nuclear & Radiation Basics",
     "summary": "Alpha and beta particles ionize directly and lose energy bit by bit, gamma rays have single chance events (photoelectric, Compton, pair production), and neutrons slow down by colliding with nuclei, most effectively with hydrogen.",
-    "thumbnail": "assets/images/theory/021-radiation-matter-interaction/thumbnail.png",
+    "thumbnail": "assets/images/theory/021-radiation-matter-interaction/thumbnail.webp",
     "thumbnailAlt": "A clear glass block filled with sunlit water holding two white pearls, one sitting still in a ring of ripples and the other moving away with a streak of light",
     "url": "posts/theory/021-radiation-matter-interaction.html",
     "keywords": "radiation interaction with matter ionization excitation Bragg peak alpha beta gamma neutron photoelectric effect Compton scattering pair production half-value layer neutron moderation activation"
@@ -162,10 +606,58 @@ const posts = [
     "section": "theory",
     "category": "Nuclear & Radiation Basics",
     "summary": "Radon from the soil collects in poorly ventilated rooms, its short-lived decay products deliver alpha doses to the airways, and long-term measurement plus steady ventilation are the simple remedies.",
-    "thumbnail": "assets/images/theory/020-radon-indoor-air/thumbnail.png",
+    "thumbnail": "assets/images/theory/020-radon-indoor-air/thumbnail.webp",
     "thumbnailAlt": "A cutaway model of a small white house sitting on a block of layered soil and stones, with a lit basement below ground and an open upstairs window",
     "url": "posts/theory/020-radon-indoor-air.html",
     "keywords": "radon indoor air quality radon testing ventilation stack effect radon progeny lung cancer risk natural radiation uranium decay chain alpha particles becquerel"
+  },
+  {
+    "title": "When the Sky's Blanket Wears Thin — Cosmic Rays and Radiation on Flights",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear & Radiation Basics",
+    "summary": "Cosmic rays become air showers in the atmosphere; at cruising altitude the dose rate is roughly 3 to 6 microsieverts per hour, and a long-haul round trip adds about 0.15 mSv.",
+    "thumbnail": "assets/images/theory/019-cosmic-rays-flight-radiation/thumbnail.webp",
+    "thumbnailAlt": "A white airliner flying above bright clouds beneath a translucent quilted blanket floating high in the sky, with thin streaks of light falling onto the blanket from above",
+    "url": "posts/theory/019-cosmic-rays-flight-radiation.html",
+    "keywords": "cosmic rays cosmic radiation flight radiation air shower muons neutrons altitude dose rate aircrew natural radiation microsievert nuclear physics basics"
+  },
+  {
+    "title": "Opening Your Yearly \"Dose Budget\" — Where Natural Radiation Comes From",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear & Radiation Basics",
+    "summary": "The world-average natural radiation dose is about 3.0 mSv a year (UNSCEAR 2024): radon inhalation 1.8, ingestion 0.5, terrestrial gamma 0.4 and cosmic rays 0.3 mSv.",
+    "thumbnail": "assets/images/theory/018-natural-radiation/thumbnail.webp",
+    "thumbnailAlt": "A small clear glass house standing on a block of pink granite placed on an open leather-bound notebook, in soft bright light",
+    "url": "posts/theory/018-natural-radiation.html",
+    "keywords": "natural radiation background radiation UNSCEAR radon potassium-40 millisievert cosmic rays terrestrial gamma radiation dose Ramsar Kerala nuclear physics basics"
+  },
+  {
+    "title": "Raindrops, Soaked Clothes and the Chance of a Cold — Becquerel, Gray and Sievert",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear & Radiation Basics",
+    "summary": "Bq counts decays per second, Gy is energy absorbed per kilogram, and Sv weights that dose by radiation type (alpha 20, gamma 1) and organ sensitivity, so the same 1 mGy can be 1 mSv or 20 mSv.",
+    "thumbnail": "assets/images/theory/017-becquerel-gray-sievert/thumbnail.webp",
+    "thumbnailAlt": "A small white cloud dripping raindrops into a clear glass half filled with turquoise water against a bright sky-blue background",
+    "url": "posts/theory/017-becquerel-gray-sievert.html",
+    "keywords": "becquerel gray sievert radiation units absorbed dose equivalent dose effective dose radiation weighting factor tissue weighting factor ICRP radiation protection"
+  },
+  {
+    "title": "Firewood, Flame and Heat — How Radioactivity and Radiation Really Differ",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear & Radiation Basics",
+    "summary": "Radioactive material is the substance, radioactivity is its decays per second (a banana is about 15 Bq), and radiation is what flies out; contamination means material on or in you, exposure means being hit by radiation.",
+    "thumbnail": "assets/images/theory/016-radioactivity-vs-radiation/thumbnail.webp",
+    "thumbnailAlt": "A ripe banana resting on a white pedestal with a round magnifying lens showing tightly packed pale spheres inside, and one glowing teal trail leaving a single sphere",
+    "url": "posts/theory/016-radioactivity-vs-radiation.html",
+    "keywords": "radioactivity radiation radioactive material becquerel banana potassium-40 contamination exposure activation decay constant nuclear physics basics"
   },
   {
     "title": "Half-Life Explained with a Coin-Toss Elimination Game",
@@ -174,7 +666,7 @@ const posts = [
     "section": "theory",
     "category": "Nuclear & Radiation Basics",
     "summary": "A half-life is the time for half of the remaining radioactive atoms to decay: two half-lives leave 25%, ten leave about 1/1000, and values range from 164 microseconds to 4.5 billion years.",
-    "thumbnail": "assets/images/theory/015-half-life/thumbnail.png",
+    "thumbnail": "assets/images/theory/015-half-life/thumbnail.webp",
     "thumbnailAlt": "Gold coin stacks on a white marble block, each stack about half the height of the one before, with a single coin flipping in the air above the tallest stack",
     "url": "posts/theory/015-half-life.html",
     "keywords": "half-life radioactive decay exponential decay decay constant cesium-137 iodine-131 carbon-14 radiocarbon dating uranium-238 radioactivity nuclear physics basics"
@@ -186,10 +678,58 @@ const posts = [
     "section": "theory",
     "category": "Nuclear & Radiation Basics",
     "summary": "A gamma ray is a chargeless, massless photon emitted by an excited nucleus; the 0.662 MeV gamma of the cesium-137 chain carries about 330,000 times the energy of a visible-light photon.",
-    "thumbnail": "assets/images/theory/014-gamma-rays/thumbnail.png",
+    "thumbnail": "assets/images/theory/014-gamma-rays/thumbnail.webp",
     "thumbnailAlt": "A clear glass plate floating in soft blue light with concentric ripples spreading across its surface and a single bright point of light near the edge",
     "url": "posts/theory/014-gamma-rays.html",
     "keywords": "gamma rays photon wave-particle duality electromagnetic spectrum cesium-137 barium-137m excited state gamma spectroscopy X-rays nuclear physics basics"
+  },
+  {
+    "title": "A Quick Change on Stage — How Beta Decay Turns a Neutron into a Proton",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear & Radiation Basics",
+    "summary": "In beta-minus decay a neutron becomes a proton and creates an electron and an antineutrino, raising the atomic number by 1 with the mass number unchanged; the shared energy makes the beta spectrum continuous.",
+    "thumbnail": "assets/images/theory/013-beta-decay/thumbnail.webp",
+    "thumbnailAlt": "A miniature wooden theater stage with teal curtains and a frosted folding screen, a teal sphere on one side and an amber sphere on the other, and two small clear spheres arcing up and away above the screen",
+    "url": "posts/theory/013-beta-decay.html",
+    "keywords": "beta decay neutron proton antineutrino neutrino carbon-14 beta spectrum decay heat radioactive decay nuclear basics"
+  },
+  {
+    "title": "A Bead That Slips Through a Balloon's Skin — How Alpha Decay Lets a Helium Nucleus Escape",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear & Radiation Basics",
+    "summary": "In alpha decay a heavy nucleus emits a helium-4 nucleus, losing 4 in mass number and 2 in atomic number; the alpha particle tunnels through a barrier about seven times its energy and is stopped by paper outside the body.",
+    "thumbnail": "assets/images/theory/012-alpha-decay/thumbnail.webp",
+    "thumbnailAlt": "A translucent blue balloon filled with gold and steel-gray spheres, with a small cluster of four spheres emerging through the balloon skin trailing a faint streak of light",
+    "url": "posts/theory/012-alpha-decay.html",
+    "keywords": "alpha decay alpha particle helium nucleus uranium-238 quantum tunneling Coulomb barrier smoke detector americium-241 nuclear basics"
+  },
+  {
+    "title": "What a Popcorn Pot Teaches About Nuclei — Radioactive Decay Explained",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear & Radiation Basics",
+    "summary": "Radioactive decay is an unstable nucleus spontaneously turning into a more stable one; single decays are random, but large samples follow dN/dt = −λN precisely and the rate ignores heat and chemistry.",
+    "thumbnail": "assets/images/theory/011-radioactive-decay/thumbnail.webp",
+    "thumbnailAlt": "A clear glass cooking pot holding many small orange-and-teal nucleus models like popcorn kernels, one of them glowing and sending out a small particle",
+    "url": "posts/theory/011-radioactive-decay.html",
+    "keywords": "radioactive decay decay constant atomic nucleus radiation half-life decay chain uranium-238 decay heat nuclear basics"
+  },
+  {
+    "title": "A Tower Stands Only If the Block Mix Is Right — Stable and Unstable Nuclei",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear & Radiation Basics",
+    "summary": "Only about 250 of more than 3,300 known nuclides are stable; they follow a band where N/Z rises from about 1 to 1.5 and ends at lead, and nuclei off the band decay toward it by β⁻, β⁺/electron capture or α.",
+    "thumbnail": "assets/images/theory/010-stable-and-unstable-nuclei/thumbnail.webp",
+    "thumbnailAlt": "A tall Jenga-style tower of blue glass blocks and brushed-steel blocks standing on a white round pedestal against a bright pale-blue background",
+    "url": "posts/theory/010-stable-and-unstable-nuclei.html",
+    "keywords": "stable nucleus unstable nucleus band of stability nuclide neutron-to-proton ratio beta decay alpha decay magic numbers radionuclide"
   },
   {
     "title": "A Force That Only Works When Touching, Like Velcro — How the Nuclear Force Beats Electric Repulsion",
@@ -198,7 +738,7 @@ const posts = [
     "section": "theory",
     "category": "Nuclear & Radiation Basics",
     "summary": "The nuclear force attracts strongly only at about 0.8–2 fm and acts between neighbors, while Coulomb repulsion reaches every proton pair, 4,186 pairs in uranium, so bigger nuclei need more neutrons.",
-    "thumbnail": "assets/images/theory/009-nuclear-force-vs-repulsion/thumbnail.png",
+    "thumbnail": "assets/images/theory/009-nuclear-force-vs-repulsion/thumbnail.webp",
     "thumbnailAlt": "A small cluster of gold and steel-blue spheres hovering just above a white Velcro strip whose end is peeling up, showing the hooks and loops",
     "url": "posts/theory/009-nuclear-force-vs-repulsion.html",
     "keywords": "nuclear force strong interaction Coulomb repulsion atomic nucleus proton neutron saturation femtometer nuclear physics basics"
@@ -210,10 +750,58 @@ const posts = [
     "section": "theory",
     "category": "Nuclear & Radiation Basics",
     "summary": "E=mc² sets one fixed exchange rate between mass and energy for every reaction; fission converts about 0.09% of its mass, so 1 g of uranium-235 gives about 1 MW·day, the same as about 3 tonnes of coal.",
-    "thumbnail": "assets/images/theory/008-mass-energy-equivalence/thumbnail.png",
+    "thumbnail": "assets/images/theory/008-mass-energy-equivalence/thumbnail.webp",
     "thumbnailAlt": "A brushed-steel exchange counter behind glass, with a small 1 gram calibration weight on a metal tray and a blank paper receipt ribbon unrolling across the counter",
     "url": "posts/theory/008-mass-energy-equivalence.html",
     "keywords": "E=mc2 mass-energy equivalence Einstein special relativity fission energy uranium-235 megawatt-day nuclear power basics"
+  },
+  {
+    "title": "Every Box on the Envelope Means Something — How to Read Nuclide Notation",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear & Radiation Basics",
+    "summary": "In ²³⁵₉₂U the 235 is the mass number and the 92 the atomic number, so N = 235 − 92 = 143, and in every nuclear reaction the top and bottom numbers balance on both sides.",
+    "thumbnail": "assets/images/theory/007-nuclide-notation/thumbnail.webp",
+    "thumbnailAlt": "A light wooden cubby shelf with a grid of frosted compartments, a few holding small red and blue nucleus models and one holding a white envelope",
+    "url": "posts/theory/007-nuclide-notation.html",
+    "keywords": "nuclide notation mass number atomic number neutron number uranium-235 isotope technetium-99m nuclear reaction equation chart of nuclides nuclear basics"
+  },
+  {
+    "title": "No Class Ever Earned a 3.75 — Atomic Weight vs Mass Number",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear & Radiation Basics",
+    "summary": "Chlorine's atomic weight of 35.45 is the abundance-weighted average of chlorine-35 (34.969 u, 75.8%) and chlorine-37 (36.966 u, 24.2%), distinct from the whole-number mass numbers 35 and 37.",
+    "thumbnail": "assets/images/theory/006-atomic-weight-vs-mass-number/thumbnail.webp",
+    "thumbnailAlt": "A brushed-steel seesaw on a triangular pivot with three green glass cylinders on the long left side and one on the right, balanced off-center",
+    "url": "posts/theory/006-atomic-weight-vs-mass-number.html",
+    "keywords": "atomic weight mass number atomic mass isotope abundance weighted average unified atomic mass unit chlorine enriched uranium nuclear basics"
+  },
+  {
+    "title": "Same Face, Different Weight Class — Why Isotopes Behave Differently",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear & Radiation Basics",
+    "summary": "Isotopes have the same protons but different neutrons, so U-235 (0.72% of natural uranium) splits readily while U-238 hardly does, and deuterium absorbs about 1/650 as many neutrons as ordinary hydrogen.",
+    "thumbnail": "assets/images/theory/005-isotopes/thumbnail.webp",
+    "thumbnailAlt": "Three small groups of glossy spheres on a glass and brushed-steel platform: one blue sphere, one blue with one silver, and one blue with two silver",
+    "url": "posts/theory/005-isotopes.html",
+    "keywords": "isotope uranium-235 uranium-238 enriched uranium deuterium tritium heavy water neutron proton nuclear basics"
+  },
+  {
+    "title": "One Names the Team, One Keeps the Ball Moving — Why Protons and Neutrons Matter",
+    "date": "2026.10.24",
+    "displayDate": "2026.10.24",
+    "section": "theory",
+    "category": "Nuclear & Radiation Basics",
+    "summary": "Protons set an atom's identity and neutrons its isotope, and because neutrons face no Coulomb barrier, even a 0.025 eV neutron can split uranium-235 and pass on about 2.4 new neutrons.",
+    "thumbnail": "assets/images/theory/004-proton-neutron-roles/thumbnail.webp",
+    "thumbnailAlt": "A cluster of glossy orange and blue spheres sitting inside a small white soccer goal on bright green grass, with a single blue sphere rolling toward it",
+    "url": "posts/theory/004-proton-neutron-roles.html",
+    "keywords": "proton neutron atomic number isotope Coulomb barrier nuclear fission chain reaction uranium-235 enrichment nuclear basics"
   },
   {
     "title": "Just Two Ingredients — Protons and Neutrons, the Building Blocks of the Nucleus",
@@ -222,7 +810,7 @@ const posts = [
     "section": "theory",
     "category": "Nuclear & Radiation Basics",
     "summary": "A nucleus is built from Z protons and N neutrons (A = Z + N), each about 1 u and made of three quarks, packed so tightly that the radius grows only as the cube root of A.",
-    "thumbnail": "assets/images/theory/003-inside-the-nucleus/thumbnail.png",
+    "thumbnail": "assets/images/theory/003-inside-the-nucleus/thumbnail.webp",
     "thumbnailAlt": "A clear glass measuring jug holding a tight cluster of glossy orange and silver spheres",
     "url": "posts/theory/003-inside-the-nucleus.html",
     "keywords": "atomic nucleus proton neutron nucleon quark atomic number mass number atomic mass unit nuclear radius nuclear basics"
@@ -234,7 +822,7 @@ const posts = [
     "section": "theory",
     "category": "Nuclear & Radiation Basics",
     "summary": "The nucleus is only 1/10,000 to 1/100,000 of an atom's diameter but holds more than 99.9% of its mass, a fact revealed when about 1 in 8,000 alpha particles bounced back in 1909.",
-    "thumbnail": "assets/images/theory/002-mostly-empty-atom/thumbnail.png",
+    "thumbnail": "assets/images/theory/002-mostly-empty-atom/thumbnail.webp",
     "thumbnailAlt": "A small glossy green pea on a clear glass pillar in a bright city plaza, surrounded by a huge pale mint-colored misty sphere",
     "url": "posts/theory/002-mostly-empty-atom.html",
     "keywords": "atomic structure atomic nucleus atom size Rutherford experiment alpha particles electron cloud Pauli exclusion principle nuclear basics"
@@ -246,7 +834,7 @@ const posts = [
     "section": "theory",
     "category": "Nuclear & Radiation Basics",
     "summary": "An assembled nucleus always weighs less than its separate protons and neutrons, and that missing mass, about 0.75% for helium-4, is the binding energy that explains why both fission and fusion release energy.",
-    "thumbnail": "assets/images/theory/001-mass-defect/thumbnail.png",
+    "thumbnail": "assets/images/theory/001-mass-defect/thumbnail.webp",
     "thumbnailAlt": "A silver balance scale with four loose spheres on one pan and the same four spheres packed into a tight cluster on the other, the cluster side sitting slightly higher",
     "url": "posts/theory/001-mass-defect.html",
     "keywords": "mass defect binding energy binding energy per nucleon atomic nucleus helium-4 atomic mass unit nuclear fission nuclear fusion nuclear physics basics"
@@ -258,7 +846,7 @@ const posts = [
     "section": "news",
     "category": "SMR",
     "summary": "A SmartPort-commissioned study by Tractebel and Technopolis identifies 92 potential supply chain companies around Rotterdam and four port roles; entry requires quality systems, traceability and customer qualification, while maritime nuclear remains a long-term goal.",
-    "thumbnail": "assets/images/news/2026-10-23-rotterdam-port-smr-supply-chain/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-23-rotterdam-port-smr-supply-chain/thumbnail_01.webp",
     "thumbnailAlt": "A crane lifting a large cylindrical module from a cargo ship onto the quay of a major port at sunrise",
     "url": "posts/news/2026-10-23-rotterdam-port-smr-supply-chain.html",
     "keywords": "SMR Small Modular Reactor Port Of Rotterdam Nuclear Supply Chain Module Transport ISO19443 Traceability Quality Management Nuclear Ships IMO SOLAS Tractebel Maritime Nuclear Netherlands Nuclear Energy"
@@ -270,7 +858,7 @@ const posts = [
     "section": "news",
     "category": "Fuel Cycle",
     "summary": "On 22 October 2026 Finland granted Posiva the world's first operating licence for a spent fuel encapsulation and final disposal facility, based on STUK's August safety assessment; commissioning and STUK approval come next, and no disposal start date has been disclosed.",
-    "thumbnail": "assets/images/news/2026-10-23-posiva-spent-fuel-repository-licence/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-23-posiva-spent-fuel-repository-licence/thumbnail_01.webp",
     "thumbnailAlt": "Repository buildings beside a tunnel entrance into coastal bedrock in a Nordic pine forest",
     "url": "posts/news/2026-10-23-posiva-spent-fuel-repository-licence.html",
     "keywords": "Spent Fuel Final Disposal Repository Operating Licence Multi Barrier Engineered Barrier Encapsulation Posiva Olkiluoto STUK TVO Fortum Finland Radioactive Materials Nuclear Energy"
@@ -282,7 +870,7 @@ const posts = [
     "section": "news",
     "category": "Policy & Regulation",
     "summary": "The NRC's October 22, 2026 final rule amends 10 CFR Parts 50 and 53 so applicants can show how prior DOE or Department of War authorization and test data meet NRC requirements; candidates such as Antares, Aalo, Last Energy and BWXT Pele sit at different demonstration stages.",
-    "thumbnail": "assets/images/news/2026-10-23-nrc-rule-demonstration-reactor-data/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-23-nrc-rule-demonstration-reactor-data/thumbnail_01.webp",
     "thumbnailAlt": "A compact test reactor module in a laboratory high bay, with review binders on a desk in the foreground",
     "url": "posts/news/2026-10-23-nrc-rule-demonstration-reactor-data.html",
     "keywords": "NRC Reactor Licensing Demonstration Data Final Rule DOE Reactor Pilot Program Zero Power Criticality Documented Safety Analysis Antares Aalo Last Energy BWXT INL Nuclear Energy"
@@ -294,7 +882,7 @@ const posts = [
     "section": "news",
     "category": "Policy & Regulation",
     "summary": "GAO's October 2026 reports compare land use plans with cleanup decisions at six DOE sites, find residential assumptions driving deeper excavation at Hanford and Idaho, and recommend evaluating multiple future-use assumptions; DOE disagreed with that recommendation while both agencies agreed to a task force.",
-    "thumbnail": "assets/images/news/2026-10-23-doe-cleanup-future-land-use/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-23-doe-cleanup-future-land-use/thumbnail_01.webp",
     "thumbnailAlt": "Wide restored land in the arid American West with old industrial buildings in the distance",
     "url": "posts/news/2026-10-23-doe-cleanup-future-land-use.html",
     "keywords": "Nuclear Cleanup Future Land Use Cleanup Levels GAO DOE EPA Hanford Idaho Oak Ridge CERCLA Mixed Waste Exposure Pathways Residual Contamination Nuclear Energy"
@@ -306,7 +894,7 @@ const posts = [
     "section": "news",
     "category": "Space Nuclear",
     "summary": "Within CAD 11.1 million for 16 space projects, the Canadian Space Agency funded Canadensys's tritium-based heater unit (CAD 499,997) and CSMC's isotope power concept (CAD 350,000); both are early-stage research ahead of design and testing.",
-    "thumbnail": "assets/images/news/2026-10-23-canada-space-isotope-heat-power/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-23-canada-space-isotope-heat-power/thumbnail_01.webp",
     "thumbnailAlt": "A small rover on the lunar surface at night with a softly glowing equipment box and Earth above the horizon",
     "url": "posts/news/2026-10-23-canada-space-isotope-heat-power.html",
     "keywords": "Space Nuclear Radioisotopes Tritium Radioisotope Heater Unit Isotope Power Lunar Exploration Lunar Night Canadian Space Agency CSA Canadensys CSMC CNL Canadian Centre For Space Isotopes Nuclear Energy"
@@ -318,7 +906,7 @@ const posts = [
     "section": "news",
     "category": "Fuel Cycle",
     "summary": "Westinghouse announced on October 21, 2026 an investment of about $1 billion in a new LEU+ plant at its Columbia facility in South Carolina, targeting operation in 2030, with NRC and SC-DES license amendments needed for 5–8% enriched fuel.",
-    "thumbnail": "assets/images/news/2026-10-22-westinghouse-leu-plus-fuel-plant-columbia/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-22-westinghouse-leu-plus-fuel-plant-columbia/thumbnail_01.webp",
     "thumbnailAlt": "Technicians inspecting upright nuclear fuel assemblies in a bright fuel fabrication plant",
     "url": "posts/news/2026-10-22-westinghouse-leu-plus-fuel-plant-columbia.html",
     "keywords": "LEUPlus Westinghouse Nuclear Fuel Fuel Fabrication Enrichment Criticality Safety Subcriticality Integrated Safety Analysis IROFS NRC 10CFR70.61 AP1000 Power Uprate Nuclear Energy"
@@ -330,7 +918,7 @@ const posts = [
     "section": "news",
     "category": "Advanced Reactors",
     "summary": "IPP and Columbia University announced on October 20, 2026 the Max Planck Columbia Center, a virtual fusion research center with a total budget of US$13.3 million over five years from 2027 covering six research areas.",
-    "thumbnail": "assets/images/news/2026-10-22-max-planck-columbia-virtual-fusion-center/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-22-max-planck-columbia-virtual-fusion-center/thumbnail_01.webp",
     "thumbnailAlt": "Researchers looking at a stellarator experimental device wrapped in twisted coils",
     "url": "posts/news/2026-10-22-max-planck-columbia-virtual-fusion-center.html",
     "keywords": "Fusion Max Planck Columbia Center IPP Max Planck Institute For Plasma Physics Columbia University Stellarator Tokamak Wendelstein7-X ASDEXUpgrade Superconducting Magnets Plasma International Collaboration Nuclear Energy"
@@ -342,7 +930,7 @@ const posts = [
     "section": "news",
     "category": "Policy & Regulation",
     "summary": "Malaysia's MyPOWER is assessing 19 IAEA nuclear infrastructure issues over 12 months from May 2026, implementing 22 recommendations from a 2024 pre-feasibility study, while the country stays in the IAEA's first phase of considering nuclear power.",
-    "thumbnail": "assets/images/news/2026-10-22-malaysia-mypower-19-issue-nuclear-assessment/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-22-malaysia-mypower-19-issue-nuclear-assessment/thumbnail_01.webp",
     "thumbnailAlt": "Southeast Asian city skyline at sunrise with tropical greenery and a river",
     "url": "posts/news/2026-10-22-malaysia-mypower-19-issue-nuclear-assessment.html",
     "keywords": "Nuclear Newcomer Malaysia My POWER NEPIO IAEA Milestones Approach Nuclear Infrastructure Atom Malaysia TNBGenco ASEAN Pre Feasibility Study Nuclear Regulation Nuclear Energy"
@@ -354,7 +942,7 @@ const posts = [
     "section": "news",
     "category": "Large Reactors",
     "summary": "The Nuclear Company has proposed Prosperity One, up to six AP1000 units (about 6.6 GW) in Lewis County, Kentucky, with two Phase 1 units targeting a 2028 construction start.",
-    "thumbnail": "assets/images/news/2026-10-22-kentucky-prosperity-one-ap1000-site/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-22-kentucky-prosperity-one-ap1000-site/thumbnail_01.webp",
     "thumbnailAlt": "A misty autumn river bend with wooded hills and a survey team in a riverside field",
     "url": "posts/news/2026-10-22-kentucky-prosperity-one-ap1000-site.html",
     "keywords": "Prosperity One AP1000 Kentucky Nuclear The Nuclear Company Ohio River Nuclear Site Geotechnical Investigation Environmental Assessment Power Grid NRC Nuclear Licensing Pressurized Water Reactor New Nuclear Nuclear Energy"
@@ -366,7 +954,7 @@ const posts = [
     "section": "news",
     "category": "Non-power Uses",
     "summary": "DOE announced $159 million for 12 new Genesis Mission Phase II projects on October 8, 2026, including Fermilab-led AXESS, which uses AI to shorten the design of radiation-tolerant ASICs.",
-    "thumbnail": "assets/images/news/2026-10-22-ai-designed-radiation-tolerant-chips-axess/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-22-ai-designed-radiation-tolerant-chips-axess/thumbnail_01.webp",
     "thumbnailAlt": "A glowing semiconductor wafer under cleanroom lighting with a particle detector in the background",
     "url": "posts/news/2026-10-22-ai-designed-radiation-tolerant-chips-axess.html",
     "keywords": "Radiation Hardening AIChip Design Genesis Mission AXESS ASIC Fermilab DOE Total Ionizing Dose Single Event Effects Radiation Testing Environmental Qualification Fusion Nuclear Energy"
@@ -378,7 +966,7 @@ const posts = [
     "section": "news",
     "category": "Fuel Cycle",
     "summary": "SDU 6, one of seven large-volume concrete disposal units at SRS that began receiving waste in 2018, is now filled with grout (ANS, Oct 20; DOE, Oct 13), alongside Saltstone's first 24-hour continuous run.",
-    "thumbnail": "assets/images/news/2026-10-21-srs-salt-waste-grout-disposal-unit/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-21-srs-salt-waste-grout-disposal-unit/thumbnail_01.webp",
     "thumbnailAlt": "A massive cylindrical concrete disposal facility surrounded by pine forest",
     "url": "posts/news/2026-10-21-srs-salt-waste-grout-disposal-unit.html",
     "keywords": "Radioactive Waste Salt Waste Grout Solidification Disposal Facility Savannah River Site SRS SDU6 Saltstone SWPF Department Of Energy DOE Radionuclides Long Term Monitoring Nuclear Energy"
@@ -390,7 +978,7 @@ const posts = [
     "section": "news",
     "category": "Policy & Regulation",
     "summary": "The Philippine Department of Energy set targets of 1.2 GW by 2032, 2.4 GW by 2035 and 4.8 GW by 2050, and is preparing sites, regulation, procurement and commercial terms in parallel under the IAEA Milestones Approach.",
-    "thumbnail": "assets/images/news/2026-10-21-philippines-first-nuclear-plant-preparation/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-21-philippines-first-nuclear-plant-preparation/thumbnail_01.webp",
     "thumbnailAlt": "Survey team checking ground between survey stakes on a Philippine coastal plain at sunrise",
     "url": "posts/news/2026-10-21-philippines-first-nuclear-plant-preparation.html",
     "keywords": "Philippines New Nuclear First Nuclear Plant Department Of Energy IAEA Milestones Approach SMR Small Modular Reactor Nuclear Regulator Site Selection Radioactive Waste Lifecycle Economics Nuclear Procurement Nuclear Power"
@@ -402,7 +990,7 @@ const posts = [
     "section": "news",
     "category": "Policy & Regulation",
     "summary": "At the third Korea–Czech steering committee, reported by WNN on October 20, 2026, Dukovany was confirmed on schedule, the local licensing application is next, Korea asked for Czech cooperation on the EU Industrial Accelerator Act proposed in March, and a fourth implementation review meeting is set for Korea within the year.",
-    "thumbnail": "assets/images/news/2026-10-21-dukovany-schedule-eu-industrial-accelerator-act/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-21-dukovany-schedule-eu-industrial-accelerator-act/thumbnail_01.webp",
     "thumbnailAlt": "Southern Czech nuclear landscape with four cooling towers beyond autumn fields",
     "url": "posts/news/2026-10-21-dukovany-schedule-eu-industrial-accelerator-act.html",
     "keywords": "Dukovany Czech Nuclear Industrial Accelerator Act EUIndustrial Policy Nuclear Steering Committee Implementation Review Temelin Licensing Application Localization Nuclear Supply Chain Nuclear Exports MOTIE WNN Nuclear Energy"
@@ -414,7 +1002,7 @@ const posts = [
     "section": "news",
     "category": "Policy & Regulation",
     "summary": "AtkinsRéalis, the State of Indiana and Hoosier Energy signed an MOU on October 19, 2026 to evaluate up to eight CANDU units (6.0 GW), as the 700 MWe-class EC6 enters US NRC pre-application review with its first quality assurance topical report.",
-    "thumbnail": "assets/images/news/2026-10-21-candu-ec6-us-licensing-quality-assurance/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-21-candu-ec6-us-licensing-quality-assurance/thumbnail_01.webp",
     "thumbnailAlt": "A cylindrical concrete reactor building on a former power plant site in the Midwestern plains",
     "url": "posts/news/2026-10-21-candu-ec6-us-licensing-quality-assurance.html",
     "keywords": "CANDU Heavy Water Reactor EC6 Quality Assurance Topical Report NRC Atkins Realis Indiana Hoosier Energy Natural Uranium NQA1 CNSC Nuclear Licensing Nuclear Energy"
@@ -426,7 +1014,7 @@ const posts = [
     "section": "news",
     "category": "Policy & Regulation",
     "summary": "Barakah Unit 3 lost offsite power on May 17 and ran on emergency diesel generators until grid power was restored; a six-member IAEA team reviewed the response on 12-20 October and recommended improvements in three areas.",
-    "thumbnail": "assets/images/news/2026-10-21-barakah-unit-3-offsite-power-iaea/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-21-barakah-unit-3-offsite-power-iaea/thumbnail_01.webp",
     "thumbnailAlt": "Domed reactor buildings on a desert coastline at dusk, with transmission lines running inland",
     "url": "posts/news/2026-10-21-barakah-unit-3-offsite-power-iaea.html",
     "keywords": "Barakah Barakah Nuclear Plant Loss Of Offsite Power Emergency Diesel Generator Emergency Power Alternate Power IAEA FANR UAE ENEC Nuclear Safety Emergency Response Emergency Exercise Nuclear Energy"
@@ -438,7 +1026,7 @@ const posts = [
     "section": "news",
     "category": "Policy & Regulation",
     "summary": "Senators Merkley and Markey introduced a joint resolution of disapproval on October 15 against the U.S.–Saudi 123 Agreement transmitted to Congress on September 14, citing enrichment, reprocessing and IAEA Additional Protocol concerns; a 90-day review applies and Senate consideration is possible after November 29.",
-    "thumbnail": "assets/images/news/2026-10-20-us-saudi-123-agreement-disapproval-resolution/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-20-us-saudi-123-agreement-disapproval-resolution/thumbnail_01.webp",
     "thumbnailAlt": "A neoclassical domed capitol building in early golden light with a distant nuclear power plant silhouette",
     "url": "posts/news/2026-10-20-us-saudi-123-agreement-disapproval-resolution.html",
     "keywords": "123Agreement USSaudi Nuclear Agreement Resolution Of Disapproval Nuclear Cooperation Agreement Atomic Energy Act USCongress Senate Uranium Enrichment Reprocessing Spent Fuel IAEAAdditional Protocol Safeguards Nonproliferation Saudi Arabia Nuclear Energy"
@@ -450,7 +1038,7 @@ const posts = [
     "section": "news",
     "category": "Advanced Reactors",
     "summary": "Fort Benning surveyed candidate sites on October 16 for three planned Radiant microreactors with a 2028 first-operation target, while National Tsing Hua University signed a technical exchange and feasibility assessment agreement with NuCube on October 19 as its THOR research reactor nears 2040 decommissioning.",
-    "thumbnail": "assets/images/news/2026-10-20-microreactors-army-base-university-campus/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-20-microreactors-army-base-university-campus/thumbnail_01.webp",
     "thumbnailAlt": "Container-sized microreactor module on a concrete pad beside a pine forest",
     "url": "posts/news/2026-10-20-microreactors-army-base-university-campus.html",
     "keywords": "Microreactor Research Reactor Fort Benning Radiant Kaleidos Janus National Tsing Hua University Nu Cube Nu Sun THOR TRISO Heat Pipe BNCT NEPA Nuclear Energy"
@@ -462,7 +1050,7 @@ const posts = [
     "section": "news",
     "category": "Advanced Reactors",
     "summary": "ITER reported on October 19, 2026 that the JOREK MHD code is available to researchers worldwide under LGPLv3.0-or-later, supporting disruption and shattered pellet injection studies.",
-    "thumbnail": "assets/images/news/2026-10-20-jorek-open-source-plasma-disruption-code/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-20-jorek-open-source-plasma-disruption-code/thumbnail_01.webp",
     "thumbnailAlt": "A researcher looking at a glowing three-dimensional plasma ring visualization on a large screen",
     "url": "posts/news/2026-10-20-jorek-open-source-plasma-disruption-code.html",
     "keywords": "JOREK Plasma Disruption Fusion ITER Magnetohydrodynamics MHD Shattered Pellet Injection SPI Runaway Electrons ASDEXUpgrade IPP EUROfusion Open Source Regression Testing Convergence Testing"
@@ -474,7 +1062,7 @@ const posts = [
     "section": "news",
     "category": "Advanced Reactors",
     "summary": "F4E and Research Instruments completed ITER's first series IVT (delivered 6 October 2026), the first of 58 units F4E must supply, designed for heat fluxes up to 20 MW/m².",
-    "thumbnail": "assets/images/news/2026-10-20-iter-divertor-inner-target-first-unit/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-20-iter-divertor-inner-target-first-unit/thumbnail_01.webp",
     "thumbnailAlt": "A technician inspecting a curved divertor component lined with small tungsten blocks in a clean manufacturing hall",
     "url": "posts/news/2026-10-20-iter-divertor-inner-target-first-unit.html",
     "keywords": "ITER Fusion Divertor Inner Vertical Target Plasma Facing Component Tungsten Brazing High Heat Flux Heat Flux F4E Research Instruments HELCZA Fusion Reactor Nuclear Energy"
@@ -486,7 +1074,7 @@ const posts = [
     "section": "news",
     "category": "Non-power Uses",
     "summary": "Ekalia (IBA and Framatome) and Telix announced on October 19, 2026 a U.S. At-211 production agreement, with the first unit planned at RLS Radiopharmacies' Trevose site; licenses, specifications and start date are still to come.",
-    "thumbnail": "assets/images/news/2026-10-20-astatine-211-cancer-isotope-supply/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-20-astatine-211-cancer-isotope-supply/thumbnail_01.webp",
     "thumbnailAlt": "A technician inspecting a compact cyclotron and beamline at a medical isotope production facility",
     "url": "posts/news/2026-10-20-astatine-211-cancer-isotope-supply.html",
     "keywords": "Astatine211 At211 Targeted Alpha Therapy Radioisotopes Medical Isotopes Radiopharmaceuticals Half Life Ekalia Telix IBA Framatome Particle Accelerator Bismuth209 Nuclear"
@@ -498,7 +1086,7 @@ const posts = [
     "section": "news",
     "category": "Marine Nuclear",
     "summary": "Rosatom and PT Pembangkit Listrik Nuklir signed an agreement on October 16 to supply northern Halmahera with power from two FPU-100 floating units totalling 200MW, under a model where Rosatom owns and operates the units and the customer pays for the electricity.",
-    "thumbnail": "assets/images/news/2026-10-19-rosatom-indonesia-floating-nuclear-power/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-19-rosatom-indonesia-floating-nuclear-power/thumbnail_01.webp",
     "thumbnailAlt": "A floating power unit moored in a calm bay off a tropical island",
     "url": "posts/news/2026-10-19-rosatom-indonesia-floating-nuclear-power.html",
     "keywords": "Floating Nuclear Plant Indonesia Nuclear Halmahera North Maluku Rosatom FPU100 PTPembangkit Listrik Nuklir Marine Nuclear Power Supply Contract Nuclear Liability Private Investment Russian Energy Week Nuclear Energy"
@@ -510,7 +1098,7 @@ const posts = [
     "section": "news",
     "category": "Fuel Cycle",
     "summary": "Studsvik and NND agreed on October 16, 2026 to manage about 16.5 tonnes of Norwegian research reactor spent fuel, with a minimum obligation of about SEK 875.5 million and an expected total of SEK 3-4 billion through 2055.",
-    "thumbnail": "assets/images/news/2026-10-19-norway-spent-fuel-sweden-studsvik/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-19-norway-spent-fuel-sweden-studsvik/thumbnail_01.webp",
     "thumbnailAlt": "A sealed transport cask on a cargo ship crossing a calm Nordic sea at sunrise",
     "url": "posts/news/2026-10-19-norway-spent-fuel-sweden-studsvik.html",
     "keywords": "Spent Fuel Interim Storage Research Reactor Metallic Uranium Return Guarantee Export Licence Studsvik NND Halden Kjeller DSA SSM Norway Sweden Nuclear Energy"
@@ -522,7 +1110,7 @@ const posts = [
     "section": "news",
     "category": "Fuel Cycle",
     "summary": "Centrus completed its roughly $116 million acquisition of Westerman Holdings on top of more than 1,900 kg of HALEU output and a $900 million DOE expansion contract targeting 12 tonnes a year, while QLE and Necsa agreed an 80:20 HALEU joint-venture framework in South Africa.",
-    "thumbnail": "assets/images/news/2026-10-19-haleu-fuel-supply-chain-centrus-south-africa/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-19-haleu-fuel-supply-chain-centrus-south-africa/thumbnail_01.webp",
     "thumbnailAlt": "Long rows of tall centrifuges inside a bright enrichment facility",
     "url": "posts/news/2026-10-19-haleu-fuel-supply-chain-centrus-south-africa.html",
     "keywords": "HALEU Uranium Enrichment Centrifuge Nuclear Fuel Supply Chain Centrus Westerman Piketon Oak Ridge Department Of Energy Necsa Pelindaba Terra Power SMR Nuclear Energy"
@@ -534,7 +1122,7 @@ const posts = [
     "section": "news",
     "category": "SMR",
     "summary": "AEP and X-energy signed a joint development agreement on 2026-10-19 to study 12 Xe-100 units (960MW) near the former Breed coal plant in Sullivan County, Indiana, with milestone-based development funding from Amazon.",
-    "thumbnail": "assets/images/news/2026-10-19-amazon-indiana-xe100-smr-project/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-19-amazon-indiana-xe100-smr-project/thumbnail_01.webp",
     "thumbnailAlt": "Survey crew marking out new reactor foundations at dawn on a cleared former coal plant site",
     "url": "posts/news/2026-10-19-amazon-indiana-xe100-smr-project.html",
     "keywords": "Amazon Nuclear Indiana SMR Small Modular Reactor Xe100 XEnergy AEP Amazon High Temperature Gas Reactor TRISO Final Investment Decision Construction Permit Long Mott NRC Data Center Power Nuclear Energy"
@@ -546,7 +1134,7 @@ const posts = [
     "section": "news",
     "category": "SMR",
     "summary": "ZE PAK, PAK SMR and SGE signed a shareholders' agreement for up to six BWRX-300 units (1,800 MW) at Pątnów, with a PLN 300 million land deal, a EUR 100 million put option and a land buyback right; competition approval and PAA licensing come next.",
-    "thumbnail": "assets/images/news/2026-10-16-patnow-coal-site-smr-joint-venture/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-16-patnow-coal-site-smr-joint-venture/thumbnail_01.webp",
     "thumbnailAlt": "Modern small modular reactor buildings in front of the chimney of a former coal-fired plant at sunrise",
     "url": "posts/news/2026-10-16-patnow-coal-site-smr-joint-venture.html",
     "keywords": "Small Modular Reactor SMR Patnow Poland Nuclear Coal To Nuclear BWRX300 ZEPAK SGE Shareholders Agreement Joint Venture Put Option Nuclear Licensing PAA Nuclear Energy"
@@ -558,7 +1146,7 @@ const posts = [
     "section": "news",
     "category": "Policy & Regulation",
     "summary": "NRC's October 13 letter identified a chilled work environment in the supply chain and quality assurance departments at Palisades, with no violations found; Holtec's independent assessment plan is due November 12.",
-    "thumbnail": "assets/images/news/2026-10-16-palisades-safety-culture-nrc-review/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-16-palisades-safety-culture-nrc-review/thumbnail_01.webp",
     "thumbnailAlt": "A quality assurance inspector examines a large valve component in a bright warehouse while a colleague listens closely",
     "url": "posts/news/2026-10-16-palisades-safety-culture-nrc-review.html",
     "keywords": "Palisades Safety Culture Chilled Work Environment SCWE Quality Assurance Independent Assessment Corrective Action Program Employee Concerns Program NRC Holtec 10CFR50Appendix B Nuclear Restart Nuclear Regulation Nuclear Energy"
@@ -570,7 +1158,7 @@ const posts = [
     "section": "news",
     "category": "Fuel Cycle",
     "summary": "Newcleo opened its €10 million FASTER MOX fuel test center with seven test rigs, while MHI delivered three certified replacement steam generators, each about 21 m tall and 330 t, for EDF's Cruas Unit 2.",
-    "thumbnail": "assets/images/news/2026-10-16-newcleo-faster-mhi-steam-generators/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-16-newcleo-faster-mhi-steam-generators/thumbnail_01.webp",
     "thumbnailAlt": "A giant cylindrical steam generator on a heavy-haul trailer at a harbor quay at dusk",
     "url": "posts/news/2026-10-16-newcleo-faster-mhi-steam-generators.html",
     "keywords": "Nuclear Verification MOXFuel Steam Generator Nuclear Fuel Newcleo FASTER MHI EDF Cruas ASNR Glovebox Conformity Certification Pressurized Water Reactor Nuclear Energy"
@@ -582,7 +1170,7 @@ const posts = [
     "section": "news",
     "category": "Large Reactors",
     "summary": "Slovenské elektrárne connected Mochovce Unit 4 (471 MWe) to the Slovak grid at 20:41 on October 15, 2026, at 20% reactor power; at rated operation it is expected to generate about 3.5 million MWh a year, roughly 13% of Slovakia's consumption.",
-    "thumbnail": "assets/images/news/2026-10-16-mochovce-4-first-grid-connection/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-16-mochovce-4-first-grid-connection/thumbnail_01.webp",
     "thumbnailAlt": "A nuclear power plant with cooling towers at dusk, with high-voltage transmission towers in the foreground",
     "url": "posts/news/2026-10-16-mochovce-4-first-grid-connection.html",
     "keywords": "Mochovce4 Grid Connection Nuclear Commissioning Power Ascension Testing First Criticality Synchronization Turbine Generator Rated Power MWe MWh Slovenske Elektrarne Slovakia Nuclear Power Nuclear Energy"
@@ -594,7 +1182,7 @@ const posts = [
     "section": "news",
     "category": "Advanced Reactors",
     "summary": "DOE approved ARDP cost-share support for the final phase of the 150 kW Molten Chloride Reactor Experiment at INL, which targets initial criticality as early as 2027.",
-    "thumbnail": "assets/images/news/2026-10-16-mcre-molten-chloride-reactor-experiment/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-16-mcre-molten-chloride-reactor-experiment/thumbnail_01.webp",
     "thumbnailAlt": "Researchers inspecting a small molten salt experimental reactor rig with glowing orange fuel piping in a laboratory hall",
     "url": "posts/news/2026-10-16-mcre-molten-chloride-reactor-experiment.html",
     "keywords": "Molten Salt Reactor MCRE Liquid Fuel Fast Neutrons Criticality Reactor Kinetics INL Idaho National Laboratory DOE ARDP COREPOWER Nuclear Propulsion IMO Advanced Reactors Nuclear Energy"
@@ -606,7 +1194,7 @@ const posts = [
     "section": "news",
     "category": "Large Reactors",
     "summary": "Bruce Power announced on October 13, 2026 that Bruce Unit 4's Major Component Replacement has completed all 480 calandria tubes, 25 days ahead of Unit 3, with a record 20 tubes in 24 hours; Unit 5's MCR is set to begin in November.",
-    "thumbnail": "assets/images/news/2026-10-15-bruce-4-robotic-calandria-tube-installation/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-15-bruce-4-robotic-calandria-tube-installation/thumbnail_01.webp",
     "thumbnailAlt": "A six-axis robotic tool working at the face of a reactor drilled with a grid of tube openings",
     "url": "posts/news/2026-10-15-bruce-4-robotic-calandria-tube-installation.html",
     "keywords": "Calandria Tubes Life Extension Major Component Replacement MCR Robotic Tooling Six Axis Robot Fuel Channels Bruce Power Bruce Nuclear CANDU PHWR Heavy Water Canada Nuclear Refurbishment Nuclear Energy"
@@ -618,7 +1206,7 @@ const posts = [
     "section": "news",
     "category": "Large Reactors",
     "summary": "The NRC published a direct final rule on October 14 renewing the AP1000 design certification with DCD Rev.20, which incorporates 190 previously approved licensing actions from Vogtle 3 and 4 and is scheduled to take effect on December 28 with a 40-year referencing period.",
-    "thumbnail": "assets/images/news/2026-10-15-ap1000-rev20-vogtle-lessons-design/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-15-ap1000-rev20-vogtle-lessons-design/thumbnail_01.webp",
     "thumbnailAlt": "Two completed AP1000 units at dusk, with design drawings and a tablet on a desk in the foreground",
     "url": "posts/news/2026-10-15-ap1000-rev20-vogtle-lessons-design.html",
     "keywords": "AP1000 Design Certification Design Control Document Vogtle DCD NRC Westinghouse ITAAC Core Makeup Tank Commissioning Sanmen Nuclear Construction Nuclear Energy"
@@ -630,7 +1218,7 @@ const posts = [
     "section": "news",
     "category": "Advanced Reactors",
     "summary": "ORNL's award-winning CF-ABS forms took about two weeks to design, print and deliver versus about six months for a steel mold, reached 1/16 inch precision, and were demonstrated at full scale at Kairos Power's Oak Ridge site.",
-    "thumbnail": "assets/images/news/2026-10-15-3d-printed-forms-nuclear-shielding/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-15-3d-printed-forms-nuclear-shielding/thumbnail_01.webp",
     "thumbnailAlt": "A large 3D printer building a curved form layer by layer from carbon-fiber composite",
     "url": "posts/news/2026-10-15-3d-printed-forms-nuclear-shielding.html",
     "keywords": "3DPrinting Formwork Composite Formwork Additive Manufacturing Nuclear Construction Biological Shield Precast Concrete Cast In Place CFABS ORNL Kairos Power Barnard Construction Hermes CAMX Nuclear Energy"
@@ -642,7 +1230,7 @@ const posts = [
     "section": "news",
     "category": "Large Reactors",
     "summary": "On October 13, 2026, Westinghouse announced conditional purchase orders with Mostostal Kielce, EPG, Mostostal Krakow and FAMAK for CA02, CA03, CA05 and CA20 floor modules for Lubiatowo-Kopalino Unit 1; the full scope follows NQA-1 certification and successful pre-production qualification mock-ups.",
-    "thumbnail": "assets/images/news/2026-10-14-poland-ap1000-conditional-module-orders/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-14-poland-ap1000-conditional-module-orders/thumbnail_01.webp",
     "thumbnailAlt": "Welders and an inspector working on steel plate wall modules in a fabrication plant",
     "url": "posts/news/2026-10-14-poland-ap1000-conditional-module-orders.html",
     "keywords": "Conditional Order Poland Nuclear AP1000 Westinghouse NQA1 Qualification Mockup IRWST Design Control Document Quality Assurance Design Change Nonconformance Steel Plate Modules Supply Chain Nuclear Energy"
@@ -654,7 +1242,7 @@ const posts = [
     "section": "news",
     "category": "Non-power Uses",
     "summary": "Oklo announced Groves-2 Forge on October 13, 2026, a demonstration facility combining reactor irradiation with hot cell processing to produce Lu-177, building on 2 g of enriched Yb-176 and its Nuclear Energy Launch Pad selection.",
-    "thumbnail": "assets/images/news/2026-10-14-oklo-groves-2-lutetium-177-isotopes/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-14-oklo-groves-2-lutetium-177-isotopes/thumbnail_01.webp",
     "thumbnailAlt": "Radiopharmaceutical production lab where an operator handles small vials with remote manipulator arms behind a shielded window",
     "url": "posts/news/2026-10-14-oklo-groves-2-lutetium-177-isotopes.html",
     "keywords": "Lutetium177 Lu177 Medical Isotopes Isotopes Hot Cell Targeted Cancer Therapy Ytterbium176 Oklo Groves2Forge Nuclear Energy Launch Pad DOE NRC INL IAEA Nuclear Energy"
@@ -666,7 +1254,7 @@ const posts = [
     "section": "news",
     "category": "Marine Nuclear",
     "summary": "Bluecore Energy announced a 4.95% UF6 purchase on October 13 for its 10 MWe net BC-12 barge reactor concept, while the NRC–USCG MOU of June 22, 2026 sets out separate approvals for reactor and vessel.",
-    "thumbnail": "assets/images/news/2026-10-14-bluecore-floating-nuclear-fuel-purchase/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-14-bluecore-floating-nuclear-fuel-purchase/thumbnail_01.webp",
     "thumbnailAlt": "Small reactor module building on a flat barge moored in a harbor at sunrise",
     "url": "posts/news/2026-10-14-bluecore-floating-nuclear-fuel-purchase.html",
     "keywords": "Maritime Nuclear Floating Nuclear Plant Nuclear Fuel Low Enriched Uranium Uranium Hexafluoride Fuel Assembly Zero Power Criticality Bluecore BC12 Nautilus NRC USCoast Guard ABS DOE Nuclear Energy"
@@ -678,7 +1266,7 @@ const posts = [
     "section": "news",
     "category": "Large Reactors",
     "summary": "WNN reported on October 12, 2026 that Rooppur Unit 1, Bangladesh's first nuclear reactor, reached first criticality on October 11 after the local regulator allowed the start-up; power tests and grid connection come next.",
-    "thumbnail": "assets/images/news/2026-10-13-rooppur-1-first-criticality-bangladesh/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-13-rooppur-1-first-criticality-bangladesh/thumbnail_01.webp",
     "thumbnailAlt": "Two nuclear units on a riverside plain in Bangladesh at early morning, with a small boat on the river",
     "url": "posts/news/2026-10-13-rooppur-1-first-criticality-bangladesh.html",
     "keywords": "First Criticality Rooppur Rooppur NPP Bangladesh Criticality Nuclear Fission Chain Reaction Commissioning Grid Connection Commercial Operation Rosatom Bangladesh Atomic Energy Commission Nuclear Energy"
@@ -690,7 +1278,7 @@ const posts = [
     "section": "news",
     "category": "Space Nuclear",
     "summary": "NASA and DOE signed a space nuclear power and propulsion MOU on October 8, 2026, effective November 1; LR-1 targets 20 kWe and December 2030 launch readiness, with Phase 1 testing using an electric heater.",
-    "thumbnail": "assets/images/news/2026-10-13-nasa-doe-space-nuclear-power-agreement/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-13-nasa-doe-space-nuclear-power-agreement/thumbnail_01.webp",
     "thumbnailAlt": "A small reactor power unit with deployed radiator panels standing on the lunar surface near a crater rim, with Earth rising in the sky",
     "url": "posts/news/2026-10-13-nasa-doe-space-nuclear-power-agreement.html",
     "keywords": "Lunar Reactor Space Nuclear Power NASA DOE LR1 SR1Freedom Fission Surface Power HALEU Brayton Power Conversion Nuclear Flight Safety Memorandum Of Understanding Dragonfly Radioisotope Power Nuclear Electric Propulsion Nuclear Energy"
@@ -702,7 +1290,7 @@ const posts = [
     "section": "news",
     "category": "Fuel Cycle",
     "summary": "Hyundai E&C announced on 2 October that it completed a bedrock test of its 1.75 m by 5.7 m deposition hole excavation machine, part of KORAD's national spent fuel research, with AI ground analysis and LiDAR quality mapping.",
-    "thumbnail": "assets/images/news/2026-10-13-hyundai-ec-deposition-hole-excavation-test/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-13-hyundai-ec-deposition-hole-excavation-test/thumbnail_01.webp",
     "thumbnailAlt": "Engineers watching excavation equipment above a circular deposition hole in the floor of a bright underground granite tunnel",
     "url": "posts/news/2026-10-13-hyundai-ec-deposition-hole-excavation-test.html",
     "keywords": "Deposition Hole Spent Fuel Excavation Deep Geological Disposal Multi Barrier Disposal Canister Excavation Equipment Cutterhead Excavation Damage Li DAR AI KORADIS KORAD Hyundai EC Nuclear Energy"
@@ -714,7 +1302,7 @@ const posts = [
     "section": "news",
     "category": "Fuel Cycle",
     "summary": "Urenco USA said on October 8 that 6 of 8 new cascades at its New Mexico enrichment facility have started production, adding more than 500,000 SWU per year toward an expansion target of about 700,000 SWU per year over 2025–2027.",
-    "thumbnail": "assets/images/news/2026-10-12-urenco-usa-enrichment-expansion-progress/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-12-urenco-usa-enrichment-expansion-progress/thumbnail_01.webp",
     "thumbnailAlt": "Inside an enrichment facility, a technician walks past endless rows of silver centrifuges",
     "url": "posts/news/2026-10-12-urenco-usa-enrichment-expansion-progress.html",
     "keywords": "Uranium Enrichment Urenco Urenco USA Cascade Centrifuge SWU Separative Work Unit Enrichment Facility Uranium235 New Mexico Nuclear Fuel Nuclear Energy"
@@ -726,7 +1314,7 @@ const posts = [
     "section": "news",
     "category": "Policy & Regulation",
     "summary": "The NRC opened comments until November 23, 2026 on a draft environmental impact statement for four AP1000 units at Fermi America's Project Matador, while Terrestrial Energy asked the NRC to confirm that building its IMSR heat and power facility falls outside nuclear construction under 10 CFR 50.10(a)(1).",
-    "thumbnail": "assets/images/news/2026-10-12-nuclear-licensing-boundaries-matador-imsr/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-12-nuclear-licensing-boundaries-matador-imsr/thumbnail_01.webp",
     "thumbnailAlt": "Survey stakes marking a boundary line across a Texas plain at sunrise",
     "url": "posts/news/2026-10-12-nuclear-licensing-boundaries-matador-imsr.html",
     "keywords": "Nuclear Licensing Environmental Impact Statement Safety Review Topical Report Non Nuclear Facility NRC Project Matador Fermi America AP1000 Terrestrial Energy IMSR TEF 10CFR50.10 Nuclear Energy"
@@ -738,7 +1326,7 @@ const posts = [
     "section": "news",
     "category": "Policy & Regulation",
     "summary": "At Sweden's Ringhals plant, AI analysis developed by Trueflaw and EPRI was combined with a qualified ultrasonic inspection procedure in 2025, with the SQC granting qualification per the parties; data review workload fell by up to 95% at Unit 3 and about one week was saved at Unit 4.",
-    "thumbnail": "assets/images/news/2026-10-12-ai-assisted-ultrasonic-inspection-qualification/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-12-ai-assisted-ultrasonic-inspection-qualification/thumbnail_01.webp",
     "thumbnailAlt": "An ultrasonic inspection device working on a reactor vessel head while an inspector watches the signal on a screen",
     "url": "posts/news/2026-10-12-ai-assisted-ultrasonic-inspection-qualification.html",
     "keywords": "AIAssisted Inspection Non Destructive Testing Ultrasonic Testing Inspection Qualification Probability Of Detection False Calls Missed Flaws Frozen Model Ringhals EPRI Trueflaw SQC ENIQ DEEPAI Nuclear Energy"
@@ -750,7 +1338,7 @@ const posts = [
     "section": "news",
     "category": "Large Reactors",
     "summary": "On October 7, 2026, Framatome and EDF UK announced a renewal of the Sizewell B long-term service agreement through 2040 for the UK's only PWR (1,198 MW, operating since 1995); continued-operation regulatory steps proceed separately.",
-    "thumbnail": "assets/images/news/2026-10-09-sizewell-b-maintenance-contract-2040/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-09-sizewell-b-maintenance-contract-2040/thumbnail_01.webp",
     "thumbnailAlt": "A white domed pressurized water reactor building on a British shingle beach at sunrise",
     "url": "posts/news/2026-10-09-sizewell-b-maintenance-contract-2040.html",
     "keywords": "Sizewell B Long Term Maintenance Continued Operation Preventive Maintenance Outage Non Destructive Testing Steam Generator Reactor Coolant Pump Framatome EDFUK Pressurized Water Reactor Supply Chain Plant Maintenance Nuclear Energy"
@@ -762,7 +1350,7 @@ const posts = [
     "section": "news",
     "category": "Large Reactors",
     "summary": "Poland's Ministry of Energy announced on October 8, 2026 that PEJ instructed Westinghouse to start early procurement of six key nuclear island long-lead items under the Engineering Development Agreement; manufacturing and site delivery follow under a later construction contract.",
-    "thumbnail": "assets/images/news/2026-10-09-poland-ap1000-long-lead-items/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-09-poland-ap1000-long-lead-items/thumbnail_01.webp",
     "thumbnailAlt": "Steel containment vessel rings being fabricated in a large factory hall",
     "url": "posts/news/2026-10-09-poland-ap1000-long-lead-items.html",
     "keywords": "Long Lead Items Early Procurement Poland Nuclear Containment Vessel Reactor Pressure Vessel EPCContract Engineering Development Agreement Quality Assurance AP1000 Westinghouse Bechtel PEJ NQA1 Nuclear Energy"
@@ -774,7 +1362,7 @@ const posts = [
     "section": "news",
     "category": "Policy & Regulation",
     "summary": "The NRC announced on October 6, 2026 that it is reviewing the Palisades DD41 recovery request, which sets a 133-hour air-exposure limit and calculates accident doses below the applicable acceptance criteria; NRC approval and completion of the work come next.",
-    "thumbnail": "assets/images/news/2026-10-09-palisades-dd41-tilted-fuel-assembly-recovery/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-09-palisades-dd41-tilted-fuel-assembly-recovery/thumbnail_01.webp",
     "thumbnailAlt": "A custom lifting device gripping a single fuel assembly in a blue spent fuel pool",
     "url": "posts/news/2026-10-09-palisades-dd41-tilted-fuel-assembly-recovery.html",
     "keywords": "Palisades DD41 Fuel Assembly Fuel Recovery Spent Fuel Pool Safety Analysis Accident Dose Fuel Handling Accident NRC UFSAR TEDE License Amendment Nuclear Safety Nuclear Energy"
@@ -786,7 +1374,7 @@ const posts = [
     "section": "news",
     "category": "Advanced Reactors",
     "summary": "Last Energy announced on October 7, 2026 that DOE approved its pilot reactor DSA; the next steps are a readiness review of plant, procedures and staff, then startup approval and staged testing at hold points.",
-    "thumbnail": "assets/images/news/2026-10-09-last-energy-pilot-reactor-readiness-review/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-09-last-energy-pilot-reactor-readiness-review/thumbnail_01.webp",
     "thumbnailAlt": "A small pilot reactor facility on a Texas university research campus under a sunrise sky",
     "url": "posts/news/2026-10-09-last-energy-pilot-reactor-readiness-review.html",
     "keywords": "Safety Analysis Readiness Review Startup Approval Hold Points Pilot Reactor Last Energy DSA PWR20 DOE Texas AM RELLIS Small Reactor Nuclear Safety Nuclear Energy"
@@ -798,7 +1386,7 @@ const posts = [
     "section": "news",
     "category": "Large Reactors",
     "summary": "Akkuyu Unit 1 passed its primary circuit hydrostatic test at about 24.5 MPa and Tianwan Unit 7 first supplied the grid at 02:11 on October 8, 2026; power ascension through about 25%, around 50% and rated power precedes commercial operation.",
-    "thumbnail": "assets/images/news/2026-10-09-akkuyu-tianwan-commissioning-milestones/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-09-akkuyu-tianwan-commissioning-milestones/thumbnail_01.webp",
     "thumbnailAlt": "A new nuclear power plant at dusk with its lights coming on one by one",
     "url": "posts/news/2026-10-09-akkuyu-tianwan-commissioning-milestones.html",
     "keywords": "Commissioning Hydrostatic Test First Grid Connection Commercial Operation Power Ascension Akkuyu Tianwan VVER1200 Rosatom Atomstroyexport Primary Circuit Criticality Turkiye Nuclear China Nuclear Nuclear Energy"
@@ -810,7 +1398,7 @@ const posts = [
     "section": "news",
     "category": "Policy & Regulation",
     "summary": "The NRC published a direct final rule on October 5, 2026 (FR 2026-20336) that links Schedule B to Part 20 Appendix C and sets a contractor training exemption; it takes effect December 21 unless significant adverse comments arrive by November 4.",
-    "thumbnail": "assets/images/news/2026-10-08-nrc-materials-license-exemption-rule/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-08-nrc-materials-license-exemption-rule/thumbnail_01.webp",
     "thumbnailAlt": "A bright lab bench with shielded containers and a radiation survey meter neatly arranged",
     "url": "posts/news/2026-10-08-nrc-materials-license-exemption-rule.html",
     "keywords": "NRC License Exemption Direct Final Rule Radioactive Materials Byproduct Material Exempt Quantities Schedule B DOE Agreement States 10CFR Microcurie Radiation Safety Nuclear Regulation Nuclear Energy"
@@ -822,7 +1410,7 @@ const posts = [
     "section": "news",
     "category": "Large Reactors",
     "summary": "Hyundai E&C signed a FEED 1 contract with Westinghouse on October 7 for two new large reactors in the Netherlands; NEO NL also has a FEED 1 contract with EDF, expects FEED to take 12 to 18 months, and will pick the final supplier through formal procurement.",
-    "thumbnail": "assets/images/news/2026-10-08-netherlands-ap1000-feed-hyundai-ec/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-08-netherlands-ap1000-feed-hyundai-ec/thumbnail_01.webp",
     "thumbnailAlt": "Engineers reviewing design drawings at an open candidate site on the Dutch coastal plain",
     "url": "posts/news/2026-10-08-netherlands-ap1000-feed-hyundai-ec.html",
     "keywords": "Netherlands Nuclear FEED Front End Engineering Hyundai EC Westinghouse AP1000 EDF NEONL ANVS PSAR EPC Nuclear Licensing Large Reactors Nuclear Energy"
@@ -834,7 +1422,7 @@ const posts = [
     "section": "news",
     "category": "Policy & Regulation",
     "summary": "GAIN's fourth FY 2026 round, announced October 5, pairs BNNT Materials, Tam Fortis Solutions and Ur-Energy USA with ORNL, Argonne and PNNL, with each company covering at least 20% of the cost.",
-    "thumbnail": "assets/images/news/2026-10-08-gain-vouchers-national-lab-support/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-08-gain-vouchers-national-lab-support/thumbnail_01.webp",
     "thumbnailAlt": "Researchers and a startup team walking together across a national laboratory campus in morning sunlight",
     "url": "posts/news/2026-10-08-gain-vouchers-national-lab-support.html",
     "keywords": "GAINVouchers Nuclear Technical Assistance Nuclear Startups National Laboratories GAIN DOE Oak Ridge National Laboratory Argonne National Laboratory BNNT Gasket Molten Salt Heat Pipe Microreactor Multiphysics Analysis Groundwater Remediation Nuclear Energy"
@@ -846,7 +1434,7 @@ const posts = [
     "section": "news",
     "category": "Fuel Cycle",
     "summary": "Urenco commissioned its Gronau U3O8 storage facility on October 6, with depleted UF6 deconverted in France and the UK, while an October 8 MoU with Thorizon explores enrichment, fuel salt supply and future use of depleted uranium.",
-    "thumbnail": "assets/images/news/2026-10-08-depleted-uranium-storage-and-reuse/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-08-depleted-uranium-storage-and-reuse/thumbnail_01.webp",
     "thumbnailAlt": "Grey containers lined up neatly inside a bright storage building",
     "url": "posts/news/2026-10-08-depleted-uranium-storage-and-reuse.html",
     "keywords": "Depleted Uranium Uranium Enrichment Uranium Oxide Uranium Hexafluoride Deconversion Long Term Storage Nuclear Fuel Cycle Molten Salt Reactor Fuel Salt HALEU Urenco Gronau Thorizon Thorizon One Nuclear Energy"
@@ -858,7 +1446,7 @@ const posts = [
     "section": "news",
     "category": "Policy & Regulation",
     "summary": "ANS announced on October 8, 2026 a webinar with Nuclearn on October 13 (1–2 p.m. CDT) showing Equipment AI from data input to evidence-based recommendations; accuracy, false-positive rates and independent verification results were not included.",
-    "thumbnail": "assets/images/news/2026-10-08-ai-equipment-diagnostics-nuclear-plants/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-08-ai-equipment-diagnostics-nuclear-plants/thumbnail_01.webp",
     "thumbnailAlt": "An engineer at dawn in an engineering room examining a 3D hologram of a pump",
     "url": "posts/news/2026-10-08-ai-equipment-diagnostics-nuclear-plants.html",
     "keywords": "Nuclear AI Equipment Diagnostics AIDiagnostics Equipment Alarms False Positive Rate Independent Verification Traceability Nuclearn Equipment AI ANS American Nuclear Society Webinar Plant Operations Nuclear Energy"
@@ -870,7 +1458,7 @@ const posts = [
     "section": "news",
     "category": "Fuel Cycle",
     "summary": "General Matter's Paducah enrichment application went public on October 5, NANO Nuclear's subsidiary agreed to buy the inactive SUB-1011 deconversion licence and design assets pending NRC consent, and DOE cut the first fissile converter in Paducah's C-337 building.",
-    "thumbnail": "assets/images/news/2026-10-07-us-uranium-fuel-supply-chain-status/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-07-us-uranium-fuel-supply-chain-status/thumbnail_01.webp",
     "thumbnailAlt": "A stack of engineering drawings on a desk with a real chemical process plant rising behind it",
     "url": "posts/news/2026-10-07-us-uranium-fuel-supply-chain-status.html",
     "keywords": "Nuclear Fuel Supply Chain Uranium Enrichment Deconversion Depleted Uranium HALEU NANONuclear General Matter Paducah NRC Decommissioning Gaseous Diffusion Uranium Nuclear Energy"
@@ -882,7 +1470,7 @@ const posts = [
     "section": "news",
     "category": "Non-power Uses",
     "summary": "Jefferson Lab and Canary Instruments signed a CRADA on October 5 to commercialize SCREM, an in-well monitor that reads light from scintillating fiber with silicon photomultipliers, with fusion facilities as the first market under review.",
-    "thumbnail": "assets/images/news/2026-10-07-tritium-groundwater-continuous-monitoring/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-07-tritium-groundwater-continuous-monitoring/thumbnail_01.webp",
     "thumbnailAlt": "Cross-section of the ground with a softly glowing sensor inside a monitoring well that reaches down into the groundwater layer",
     "url": "posts/news/2026-10-07-tritium-groundwater-continuous-monitoring.html",
     "keywords": "Tritium Groundwater Monitoring Radiation Monitoring Environmental Radiation Jefferson Lab Canary Instruments SCREM Scintillating Fiber Silicon Photomultiplier CRADA Fusion Radiation Detection Nuclear Safety Nuclear Energy"
@@ -894,7 +1482,7 @@ const posts = [
     "section": "news",
     "category": "Large Reactors",
     "summary": "A 20-year PPA for 890 MW of uprates at 11 units in Illinois, Pennsylvania and New Jersey, backed by more than $4.3 billion of planned investment, with first output targeted by 2028.",
-    "thumbnail": "assets/images/news/2026-10-07-google-constellation-nuclear-uprate-deal/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-07-google-constellation-nuclear-uprate-deal/thumbnail_01.webp",
     "thumbnailAlt": "Nuclear plant and data center linked by glowing transmission lines at dusk",
     "url": "posts/news/2026-10-07-google-constellation-nuclear-uprate-deal.html",
     "keywords": "Google Constellation Nuclear Uprate Power Uprate Power Purchase Agreement PPA AIData Centers AIPower 890MW USNuclear PJM NRC Nuclear Energy"
@@ -906,7 +1494,7 @@ const posts = [
     "section": "news",
     "category": "Advanced Reactors",
     "summary": "BWXT's two BANR units (75 MWt or 22 MWe each) were selected on October 5, 2026 for Canada's Belledune transportable nuclear plant, which ships unfuelled and loads fuel on site, targeting operation in the early 2030s.",
-    "thumbnail": "assets/images/news/2026-10-07-canada-transportable-nuclear-plant-banr/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-10-07-canada-transportable-nuclear-plant-banr/thumbnail_01.webp",
     "thumbnailAlt": "A reactor module on a heavy-lift vessel approaching a harbour at dawn",
     "url": "posts/news/2026-10-07-canada-transportable-nuclear-plant-banr.html",
     "keywords": "Transportable Nuclear TNPP BANR BWXT Prodigy Clean Energy SMR HTGR TRISO HALEU Belledune New Brunswick Canada CNSC Nuclear Licensing Nuclear Energy"
@@ -918,7 +1506,7 @@ const posts = [
     "section": "news",
     "category": "Policy & Regulation",
     "summary": "The NRC's July 2026 proposed radiation protection rule keeps the 50 mSv and 1 mSv basic limits but changes dose-management, exception and reporting conditions, so cost-savings estimates and exposure data must be read as separate evidence.",
-    "thumbnail": "assets/images/news/2026-09-29-nrc-reform-safety-evidence/thumbnail_01.png",
+    "thumbnail": "assets/images/news/2026-09-29-nrc-reform-safety-evidence/thumbnail_01.webp",
     "thumbnailAlt": "Dosimeter, papers and safety glasses on a desk with the text NRC Radiation Protection Proposed Rule: read the limits and the conditions together",
     "url": "posts/news/2026-09-29-nrc-reform-safety-evidence.html",
     "keywords": "NRC radiation protection proposed rule 10 CFR Part 20 dose limits ALARA planned dose limit extension public dose regulatory analysis occupational exposure"

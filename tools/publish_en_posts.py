@@ -18,6 +18,8 @@ assets/app.js, and checks that every linked file exists (tools/build_en_site.py)
 Usage (run from anywhere):
   python tools/publish_en_posts.py            # update the working tree, report
   python tools/publish_en_posts.py --push     # ... then commit and push to main
+  python tools/publish_en_posts.py --check    # validate packages only, write nothing
+  python tools/publish_en_posts.py --only theory --push   # publish one board only
   python tools/publish_en_posts.py --prune    # also remove site posts whose
                                               # source package no longer exists
 """
@@ -109,7 +111,7 @@ def render(p: dict) -> str:
     m, sec = p["meta"], p["meta"]["section"]
     e = lambda k: html.escape(m[k], quote=True)
     img_base = f"../../assets/images/{sec}/{m['slug']}/"
-    body = IMG_RE.sub(lambda g: f'{g.group(1)}="{img_base}{g.group(2)}"', p["body"]).strip()
+    body = IMG_RE.sub(lambda g: f'{g.group(1)}="{img_base}{site_name(g.group(2))}"', p["body"]).strip()
     note = f"<span>{e('byline_note')}</span>" if m.get("byline_note") else ""
     board, back = SECTIONS[sec]
     return (
@@ -124,6 +126,30 @@ def render(p: dict) -> str:
         f'<div class="byline"><span>{e("date")}</span>{note}</div></header>\n{body}\n</article></main>\n'
         '<footer><span>© 2026 GlobalNuclearNews</span><span>Independent nuclear industry briefing</span></footer>'
         '</body></html>\n')
+
+
+WEBP_QUALITY = 85
+
+
+def site_name(name: str) -> str:
+    """Raster images are published as WebP (keeps the site well under the Pages size limit)."""
+    stem, dot, ext = name.rpartition(".")
+    return f"{stem}.webp" if ext.lower() in ("png", "jpg", "jpeg") else name
+
+
+def publish_image(src: Path, dst: Path) -> bool:
+    """Write dst from src (converting to WebP when needed) if dst is missing or older than src."""
+    if dst.is_file() and dst.stat().st_mtime >= src.stat().st_mtime:
+        return False
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    if dst.suffix == ".webp" and src.suffix.lower() != ".webp":
+        from PIL import Image
+        with Image.open(src) as im:
+            im = im.convert("RGBA") if im.mode in ("P", "LA", "RGBA") else im.convert("RGB")
+            im.save(dst, "WEBP", quality=WEBP_QUALITY, method=6)
+    else:
+        shutil.copy2(src, dst)
+    return True
 
 
 def write_if_changed(path: Path, data: bytes) -> bool:
@@ -141,7 +167,7 @@ def update_app_js(pkgs: list[dict]) -> bool:
         entries.append({
             "title": m["list_title"], "date": m["date"], "displayDate": m["date"],
             "section": m["section"], "category": m["category"], "summary": m["summary"],
-            "thumbnail": f"assets/images/{m['section']}/{m['slug']}/{m['thumbnail']}",
+            "thumbnail": f"assets/images/{m['section']}/{m['slug']}/{site_name(m['thumbnail'])}",
             "thumbnailAlt": m["thumbnailAlt"], "url": f"posts/{m['section']}/{m['slug']}.html",
             "keywords": m["keywords"]})
     app = ROOT / "assets" / "app.js"
@@ -163,6 +189,11 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--push", action="store_true", help="commit the site changes and push to origin/main")
     ap.add_argument("--prune", action="store_true", help="delete site posts with no source package")
+    ap.add_argument("--check", action="store_true", help="only validate the source packages; write nothing")
+    ap.add_argument("--only", choices=sorted(SECTIONS), help="publish new/changed posts of this board only; "
+                    "posts of the other board stay as they are on the site")
+    ap.add_argument("--range", metavar="LO-HI", help="with --only theory: publish only slugs numbered LO..HI "
+                    "(e.g. 1-50); other unpublished theory posts are held back")
     args = ap.parse_args()
 
     errors: list[str] = []
@@ -173,6 +204,28 @@ def main() -> int:
         for e in errors:
             print("  -", e)
         return 1
+    if args.check:
+        print(f"OK: {len(pkgs)} ready package(s) are valid (nothing written).")
+        return 0
+    if args.only:
+        # Keep the other board exactly as published: only its already-live posts stay in the list.
+        held = [p for p in pkgs if p["meta"]["section"] != args.only
+                and not (ROOT / "posts" / p["meta"]["section"] / f"{p['meta']['slug']}.html").exists()]
+        if held:
+            print(f"  --only {args.only}: holding back {len(held)} unpublished post(s) of the other board")
+        pkgs = [p for p in pkgs if p not in held]
+    if args.range:
+        lo, hi = (int(x) for x in args.range.split("-"))
+        def out_of_range(p):
+            m = p["meta"]
+            num = m["slug"].split("-")[0]
+            live = (ROOT / "posts" / m["section"] / f"{m['slug']}.html").exists()
+            return (m["section"] == "theory" and not live
+                    and not (num.isdigit() and lo <= int(num) <= hi))
+        held = [p for p in pkgs if out_of_range(p)]
+        if held:
+            print(f"  --range {args.range}: holding back {len(held)} theory post(s) outside the range")
+        pkgs = [p for p in pkgs if p not in held]
 
     changed = []
     for p in pkgs:
@@ -183,16 +236,15 @@ def main() -> int:
         touched = write_if_changed(page, render(p).encode("utf-8"))
         img_dir = ROOT / "assets" / "images" / sec / slug
         img_dir.mkdir(parents=True, exist_ok=True)
+        wanted = {site_name(n) for n in p["images"]}
         for name in p["images"]:
-            dst = img_dir / name
-            if not dst.is_file() or digest(dst) != digest(p["web"] / name):
-                shutil.copy2(p["web"] / name, dst)
+            if publish_image(p["web"] / name, img_dir / site_name(name)):
                 touched = True
         for stale in img_dir.iterdir():
             if stale.is_dir():
                 shutil.rmtree(stale)
                 touched = True
-            elif stale.name not in p["images"]:
+            elif stale.name not in wanted:
                 stale.unlink()
                 touched = True
         if touched:
