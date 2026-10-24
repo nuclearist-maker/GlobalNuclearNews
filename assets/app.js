@@ -1,5 +1,77 @@
 const posts = [
   {
+    "title": "Emergency operating procedures — SPTA, ORP, FRP and CSFSTs",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Accidents, Safety Analysis & Severe Accidents",
+    "summary": "After a trip, operators check nine safety functions (SPTA), diagnose, follow an event-specific ORP while repeating the SFSC, and fall back to function-based FRPs if diagnosis fails.",
+    "thumbnail": "assets/images/concepts/c-sa-015-emergency-operating-procedures/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Emergency operating procedures (EOP), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-sa-015-emergency-operating-procedures.html",
+    "keywords": "emergency operating procedures EOP EOG symptom-based event-based SPTA diagnostic action ORP FRP SFSC resource assessment tree success path Westinghouse ERG CSFST critical safety functions SAMG TMI NUREG-0899 computerized procedure system"
+  },
+  {
+    "title": "ECCS acceptance criteria — PCT 1,204 °C, ECR 17 %, hydrogen 1 %",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Accidents, Safety Analysis & Severe Accidents",
+    "summary": "Five LOCA criteria (PCT ≤ 1,204 °C, local ECR ≤ 17 %, core-wide H₂ ≤ 1 %, coolable geometry, long-term cooling), judged by Appendix K or a best-estimate 95/95 bound.",
+    "thumbnail": "assets/images/concepts/c-sa-014-eccs-acceptance-criteria/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, ECCS acceptance criteria (50.46), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-sa-014-eccs-acceptance-criteria.html",
+    "keywords": "ECCS acceptance criteria 10 CFR 50.46 peak cladding temperature PCT 1204 ECR 17 percent hydrogen coolable geometry long-term cooling LOCA LBLOCA blowdown refill reflood Appendix K best estimate BEPU 95/95 50.46c"
+  },
+  {
+    "title": "APR1400 severe accident features — prevention and mitigation by threat",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Accidents, Safety Analysis & Severe Accidents",
+    "summary": "APR1400 mitigation: POSRVs depressurize the RCS below 250 psia before vessel failure, 30 PARs and 10 igniters, gravity cavity flooding up to about 6.4 m, and an external-water spray backup.",
+    "thumbnail": "assets/images/concepts/c-sa-013-apr1400-severe-accident-features/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, APR1400 severe accident features, Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-sa-013-apr1400-severe-accident-features.html",
+    "keywords": "APR1400 severe accident features prevention mitigation safety depressurization and vent system SDVS POSRV ERDV hydrogen mitigation PAR igniter cavity flooding system CFS ECSBS IVR-ERVC core catcher HPME DCH MCCI accident management plan"
+  },
+  {
+    "title": "SSE and OBE — design earthquakes, RG 1.60 spectra and OBE exceedance",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Accidents, Safety Analysis & Severe Accidents",
+    "summary": "SSE (minimum 0.1 g) is the design ground motion for safety functions; an OBE of at most SSE/3 needs no design analysis but remains the shutdown criterion, judged by spectrum and CAV.",
+    "thumbnail": "assets/images/concepts/c-sa-012-sse-obe/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, SSE and OBE, Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-sa-012-sse-obe.html",
+    "keywords": "safe shutdown earthquake operating basis earthquake SSE OBE DBE seismic design response spectrum RG 1.60 10 CFR 50 Appendix S CAV cumulative absolute velocity OBE exceedance HCLPF seismic category Gyeongju earthquake"
+  },
+  {
+    "title": "Defence in depth — five functional levels and independence between them",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Accidents, Safety Analysis & Severe Accidents",
+    "summary": "Five independent levels (prevention, control, accident control, severe-accident mitigation, off-site response) protect the physical barriers; early or large releases must be practically eliminated.",
+    "thumbnail": "assets/images/concepts/c-sa-011-defence-in-depth/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Five levels of defence in depth, Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-sa-011-defence-in-depth.html",
+    "keywords": "defence in depth defense in depth five levels INSAG-10 SSR-2/1 WENRA 3a 3b design extension conditions DEC practical elimination independence plant states multiple barriers accident management APR1400"
+  },
+  {
+    "title": "Multiple barriers — four physical barriers and their design limits",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "concepts",
+    "category": "Accidents, Safety Analysis & Severe Accidents",
+    "summary": "Fission products must pass pellet, cladding, RCPB and containment in series; the barriers are not fully independent, so safety functions are assured redundantly to keep them effective.",
+    "thumbnail": "assets/images/concepts/c-sa-010-multiple-barriers/thumbnail.webp",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Multiple barriers (physical barriers), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "url": "posts/concepts/c-sa-010-multiple-barriers.html",
+    "keywords": "multiple barriers physical barriers fission product barriers defence in depth fuel pellet cladding reactor coolant pressure boundary RCPB containment SAFDL 10 CFR 50.46 overpressure containment bypass SGTR ISLOCA"
+  },
+  {
     "title": "Reactivity coefficients — sign, size, response speed and cycle trend",
     "date": "2026.10.25",
     "displayDate": "2026.10.25",
