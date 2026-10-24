@@ -199,6 +199,20 @@ def main() -> int:
     errors: list[str] = []
     print("Scanning source folders ...")
     pkgs = load_packages(errors)
+    # Problems in packages that this run would hold back anyway (other board with --only,
+    # outside --range) are reported but do not block publishing the requested posts.
+    def in_scope(err: str) -> bool:
+        folder = err.split(":", 1)[0].strip()
+        if args.only == "theory" and re.match(r"\d{4}-\d{2}-\d{2}", folder):
+            return False
+        if args.range and re.match(r"\d{3}_", folder):
+            lo, hi = (int(x) for x in args.range.split("-"))
+            return lo <= int(folder[:3]) <= hi
+        return True
+    held_errors = [e for e in errors if not in_scope(e)]
+    errors = [e for e in errors if in_scope(e)]
+    for e in held_errors:
+        print("  note (out of scope, not blocking):", e)
     if errors:
         print("\nBLOCKED — fix these and run again:")
         for e in errors:
