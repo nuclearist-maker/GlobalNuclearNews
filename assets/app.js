@@ -703,7 +703,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "The Doppler FTC is always negative and prompt (−1 to −2 pcm/°F), the MTC depends on boron (BOC near 0, EOC −30 to −45 pcm/°F), and the power coefficient MTC·dT_M/dP + FTC·dT_F/dP must stay negative.",
     "thumbnail": "assets/images/concepts/c-rx-023-reactivity-coefficients/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Reactivity Coefficients, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Reactivity Coefficients, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-023-reactivity-coefficients.html",
     "keywords": "reactivity coefficient fuel temperature coefficient Doppler moderator temperature coefficient MTC density coefficient void coefficient pressure coefficient boron worth power coefficient isothermal temperature coefficient ITC power defect COLR GDC 11 reactor physics"
   },
@@ -715,7 +715,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "After shutdown xenon peaks at about 10 h; in a textbook case at 5×10¹³ n/cm²·s an available margin of 4,000 pcm leaves restart blocked from 1.8 h to 24.0 h, and the window grows with pre-shutdown flux.",
     "thumbnail": "assets/images/concepts/c-rx-022-xenon-dead-time/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Xenon Dead Time, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Xenon Dead Time, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-022-xenon-dead-time.html",
     "keywords": "xenon dead time xenon-precluded startup xenon-135 iodine-135 xenon peak excess reactivity shutdown restart end of cycle boron dilution poison out CANDU estimated critical position reactor physics"
   },
@@ -727,7 +727,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "A U-235 fission releases about 207 MeV; with 12 MeV of antineutrinos lost and 3–12 MeV of capture γ gained, about 200 MeV becomes heat, so 1 MWd ≈ 2.70×10²¹ fissions ≈ 1.05 g of U-235.",
     "thumbnail": "assets/images/concepts/c-rx-021-fission-energy-recoverable/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Fission Energy and Recoverable Energy, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Fission Energy and Recoverable Energy, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-021-fission-energy-recoverable.html",
     "keywords": "fission energy recoverable energy 200 MeV 207 MeV fission fragments antineutrino capture gamma prompt energy delayed energy decay heat mass defect MWd conversion Pu-239 ENDF/B-VII.1 reactor physics"
   },
@@ -739,7 +739,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "Prompt neutrons live about 2×10⁻⁵ s in an LWR, giving a prompt-only period of 0.02 s; delayed neutrons raise the mean generation time to about 0.085 s, and Λ matters mainly above prompt critical.",
     "thumbnail": "assets/images/concepts/c-rx-020-generation-time/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Neutron Generation Time and Prompt Neutron Lifetime, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Neutron Generation Time and Prompt Neutron Lifetime, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-020-generation-time.html",
     "keywords": "neutron generation time prompt neutron lifetime mean generation time diffusion time delayed neutrons reactor period inhour equation prompt critical point kinetics Rossi-alpha mean free path CANDU fast reactor reactor kinetics"
   },
@@ -751,7 +751,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "Light water has the largest moderating power (ξΣs 1.35 cm⁻¹), heavy water the largest moderating ratio (5,670), and only 0.19 at% light hydrogen halves the heavy-water ratio.",
     "thumbnail": "assets/images/concepts/c-rx-019-moderating-power-ratio/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Moderating Power and Moderating Ratio, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Moderating Power and Moderating Ratio, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-019-moderating-power-ratio.html",
     "keywords": "moderating power moderating ratio slowing-down power average logarithmic energy decrement xi lethargy elastic scattering alpha moderator heavy water light water graphite D2O purity CANDU reactor physics"
   },
@@ -763,7 +763,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "Substituting J = −D∇φ into the neutron balance gives (1/v)∂φ/∂t = D∇²φ − Σaφ + S; its solutions fall off over the diffusion length L (2.85 cm in light water, 59 cm in graphite).",
     "thumbnail": "assets/images/concepts/c-rx-018-one-group-diffusion/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, One-Group Neutron Diffusion Equation, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, One-Group Neutron Diffusion Equation, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-018-one-group-diffusion.html",
     "keywords": "neutron diffusion equation one-group diffusion Fick's law diffusion coefficient diffusion length extrapolation distance boundary conditions plane source point source keff buckling P1 approximation reactor physics"
   },
@@ -775,7 +775,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "Σ = Nσ is the reaction probability per cm and λ = 1/Σ the mean free path; for water Σ_s = 3.44 cm⁻¹ (λ_s 0.29 cm) and Σ_a = 0.0222 cm⁻¹ (λ_a 45 cm) at 2200 m/s.",
     "thumbnail": "assets/images/concepts/c-rx-017-macroscopic-cross-section/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Macroscopic Cross Section and Atom Density, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Macroscopic Cross Section and Atom Density, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-017-macroscopic-cross-section.html",
     "keywords": "macroscopic cross section microscopic cross section atom density number density mean free path transport mean free path beam attenuation reaction rate 1/v Westcott g factor Maxwellian average barn UO2 water"
   },
@@ -787,7 +787,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "AO = (P_T − P_B)/(P_T + P_B) and ASI = (P_B − P_T)/(P_B + P_T) = −AO; in a chopped-cosine model F_Z rises from 1.44 at ASI 0 to 1.61 at |ASI| 0.30.",
     "thumbnail": "assets/images/concepts/c-rx-016-axial-power-asi/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Axial Power Distribution and ASI, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Axial Power Distribution and ASI, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-016-axial-power-asi.html",
     "keywords": "axial power distribution axial shape index ASI axial offset AO axial flux difference AFD delta I F_Z FQ xenon oscillation CAOC RAOC part-strength control rod COLSS CPC ex-core detector"
   },
@@ -799,9 +799,9 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "Inherent safety removes hazards by design choice, in the core mainly through prompt negative feedback (ρ_fb = α_F·ΔT_F + α_M·ΔT_M + α_V·Δv + α_p·Δp); passive safety is a way of performing functions, classified A–D in TECDOC-626.",
     "thumbnail": "assets/images/concepts/c-rx-015-inherent-safety/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Inherent Safety, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Inherent Safety, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-015-inherent-safety.html",
-    "keywords": "inherent safety passive safety TECDOC-626 reactivity feedback Doppler FTC MTC void coefficient pressure coefficient under-moderation GDC 11 walk-away safety NuScale i-SMR APR1400 RBMK"
+    "keywords": "inherent safety passive safety TECDOC-626 reactivity feedback Doppler FTC MTC void coefficient pressure coefficient under-moderation GDC 11 walk-away safety NuScale APR1400 RBMK"
   },
   {
     "title": "Delayed neutron fraction β and βeff — nuclide, importance and burnup",
@@ -811,7 +811,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "βeff = I·β̄ weights delayed neutrons by importance; I ≈ 0.97 in a large PWR, and Pu-239 build-up lowers βeff from about 623 to 503 pcm over a cycle in an illustrative calculation.",
     "thumbnail": "assets/images/concepts/c-rx-014-beta-effective/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Delayed Neutron Fraction β · βeff, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Delayed Neutron Fraction β · βeff, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-014-beta-effective.html",
     "keywords": "delayed neutron fraction beta effective βeff importance adjoint flux Keepin U-235 Pu-239 burnup dollar reactivity prompt critical point kinetics reactor kinetics"
   },
@@ -823,7 +823,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "SDM = (1 − k_N−1)/k_N−1 with the highest-worth rod fully withdrawn; it is an initial condition of the EOC zero-power MSLB analysis, e.g. 1.3 %Δk/k in a Westinghouse-type COLR.",
     "thumbnail": "assets/images/concepts/c-rx-013-shutdown-margin/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Shutdown Margin (SDM), Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Shutdown Margin (SDM), Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-013-shutdown-margin.html",
     "keywords": "shutdown margin SDM technical specifications LCO 3.1.1 stuck rod highest worth rod power defect MSLB recriticality boron dilution COLR estimated critical condition excess reactivity PWR"
   },
@@ -835,7 +835,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "α_P = MTC·dT_M/dP + FTC·dT_F/dP (not MTC + FTC); its integral is the power defect, about −1,200 pcm at BOL and −2,100 pcm at EOL in a Westinghouse training example.",
     "thumbnail": "assets/images/concepts/c-rx-012-power-coefficient/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Power Coefficient, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Power Coefficient, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-012-power-coefficient.html",
     "keywords": "power coefficient power defect reactivity coefficient MTC FTC ITC Doppler moderator temperature coefficient self-regulation load follow shutdown margin rod insertion limit GDC 11 PWR"
   },
@@ -859,7 +859,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "Doppler broadening keeps the resonance area constant but weakens self-shielding, so U-238 absorption rises with fuel temperature; a large PWR has an FTC of roughly −1 to −2 pcm/°F.",
     "thumbnail": "assets/images/concepts/c-rx-010-fuel-temperature-coefficient/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Fuel Temperature Coefficient (FTC), Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Fuel Temperature Coefficient (FTC), Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-010-fuel-temperature-coefficient.html",
     "keywords": "fuel temperature coefficient FTC Doppler coefficient Doppler broadening U-238 resonance self-shielding resonance escape probability prompt temperature coefficient power defect Pu-240 Voigt GDC 11"
   },
@@ -871,7 +871,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "Short-term feedback is met by control rods and inherent feedback, medium-term xenon and samarium by rods then boron, and long-term burnup by boron dilution and burnable absorbers.",
     "thumbnail": "assets/images/concepts/c-rx-009-reactivity-control-timescales/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Reactivity Control and Timescales, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Reactivity Control and Timescales, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-009-reactivity-control-timescales.html",
     "keywords": "reactivity control timescale short term medium term long term control rods soluble boron chemical shim burnable absorber xenon samarium burnup power defect APR1400 CEA premature criticality GDC 26"
   },
@@ -883,7 +883,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "About 96 % of xenon-135 comes from iodine-135 decay; equilibrium xenon saturates near −2.7 % at high flux, and after shutdown xenon peaks at about 10 hours before decaying over several days.",
     "thumbnail": "assets/images/concepts/c-rx-008-xenon-poisoning/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Xenon-135 Poisoning, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Xenon-135 Poisoning, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-008-xenon-poisoning.html",
     "keywords": "xenon-135 xenon poisoning iodine-135 equilibrium xenon burnout xenon peak dead time restart load following samarium-149 fission product poison GDC 26"
   },
@@ -895,7 +895,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "Light water has the largest moderating power (1.35 cm⁻¹) but the lowest moderating ratio (about 70), so light-water reactors need enrichment while heavy-water and graphite reactors can use natural uranium.",
     "thumbnail": "assets/images/concepts/c-rx-007-moderator-selection/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Moderator Selection Criteria, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Moderator Selection Criteria, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-007-moderator-selection.html",
     "keywords": "moderator moderating power moderating ratio xi lethargy light water heavy water graphite beryllium slowing-down length diffusion length CANDU heavy water purity Wigner energy under-moderated"
   },
@@ -907,7 +907,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "In a light-water reactor the MTC is set mainly by the drop in water density; high BOC boron shifts the k∞ peak left of the design point, so the MTC can be positive at low power.",
     "thumbnail": "assets/images/concepts/c-rx-006-moderator-temperature-coefficient/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Moderator Temperature Coefficient (MTC), Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Moderator Temperature Coefficient (MTC), Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-006-moderator-temperature-coefficient.html",
     "keywords": "moderator temperature coefficient MTC reactivity coefficient density effect under-moderated boron positive MTC BOC EOC ITC power coefficient minimum temperature for criticality COLR LCO 3.1.3 GDC 11"
   },
@@ -917,9 +917,9 @@ const posts = [
     "displayDate": "2026.10.25",
     "section": "concepts",
     "category": "Reactor Physics & Kinetics",
-    "summary": "B_m² = (k∞ − 1)/L² (or M²) and B_g² from the shape, e.g. (2.405/R)² + (π/H)²; setting them equal gives a critical radius of 21.0 cm in the 2011 exam example and 2.56 t of natural uranium in the 2009 heavy-water example.",
+    "summary": "B_m² = (k∞ − 1)/L² (or M²) and B_g² from the shape, e.g. (2.405/R)² + (π/H)²; setting them equal gives a critical radius of 21.0 cm in a cylindrical worked example and 2.56 t of natural uranium in a heavy-water example.",
     "thumbnail": "assets/images/concepts/c-rx-005-buckling/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Material and Geometric Buckling, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Material and Geometric Buckling, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-005-buckling.html",
     "keywords": "buckling material buckling geometric buckling criticality condition critical radius critical mass Helmholtz equation extrapolation distance non-leakage probability Fermi age migration area diffusion theory"
   },
@@ -931,7 +931,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "Prompt neutrons alone would give T = ℓp/(k−1) ≈ 0.01 s for ρ = 0.002; with delayed neutrons the one-group period is 28.1 s, SUR = 26.06/T, and after shutdown the period approaches about −80 s.",
     "thumbnail": "assets/images/concepts/c-rx-004-reactor-period/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Reactor Period, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Reactor Period, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-004-reactor-period.html",
     "keywords": "reactor period stable period instantaneous period startup rate SUR dpm doubling time inhour equation prompt jump prompt drop negative period minus 80 seconds point kinetics delayed neutrons"
   },
@@ -943,7 +943,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "In the DOE teaching example 10,000 fast neutrons become 10,065 after six factors (k∞ = 1.251, keff ≈ 1.0065); η is about 2.07 for U-235, 1.79 at 2.5 % enrichment and 1.33 for natural uranium.",
     "thumbnail": "assets/images/concepts/c-rx-003-multiplication-factor/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Multiplication Factor and Six-Factor Formula, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Multiplication Factor and Six-Factor Formula, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-003-multiplication-factor.html",
     "keywords": "multiplication factor k-infinity keff four-factor formula six-factor formula fast fission factor resonance escape probability thermal utilization reproduction factor non-leakage buckling criticality"
   },
@@ -955,7 +955,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "One-group boron worth is (Σ̄aB/Σ̄aM)(1−f₀) with Σ̄aB/Σ̄aM = 1.905×10⁻³·C; 1 ppm B = 5.72 mg H₃BO₃/kg, so 21,000 ppm B ≈ 12.0 w/o boric acid.",
     "thumbnail": "assets/images/concepts/c-rx-002-chemical-shim/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Chemical Shim (Boron), Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Chemical Shim (Boron), Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-002-chemical-shim.html",
     "keywords": "chemical shim soluble boron boric acid soluble poison B-10 boron worth pcm per ppm letdown curve positive MTC boron dilution B-10 depletion CVCS GDC 26 PWR"
   },
@@ -967,7 +967,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "With β = 0.0065 and a mean precursor life of about 13 s, ℓ̄ ≈ ℓp + β·τ̄ rises to about 0.08 s, giving a 55 s period at ρ = 0.001 instead of 0.02 s.",
     "thumbnail": "assets/images/concepts/c-rx-001-delayed-neutrons/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Delayed Neutrons, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Delayed Neutrons, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-001-delayed-neutrons.html",
     "keywords": "delayed neutrons prompt neutrons precursor Br-87 beta beta effective six groups Keepin mean generation time reactor period inhour equation prompt critical dollar reactivity"
   },
@@ -979,9 +979,9 @@ const posts = [
     "category": "Radiation Protection & Emergency",
     "summary": "Tritium (T½ 12.3 years, β⁻ max 18.6 keV) is an internal hazard only; PHWR releases are about 31 times those of PWRs, and HTO passes through liquid treatment with a decontamination factor of 1.",
     "thumbnail": "assets/images/concepts/c-rp-005-tritium/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Tritium (³H), Radiation Protection & Emergency · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Tritium (³H), Radiation Protection & Emergency · Concept, with an atom icon",
     "url": "posts/concepts/c-rp-005-tritium.html",
-    "keywords": "tritium H-3 HTO OBT HT ternary fission boron-10 lithium-7 deuterium heavy water reactor PHWR WTRF LPCE cryogenic distillation discharge limit ALPS WHO dose coefficient"
+    "keywords": "tritium H-3 HTO OBT HT ternary fission boron-10 lithium-7 deuterium heavy water reactor PHWR tritium removal facility LPCE cryogenic distillation discharge limit ALPS WHO dose coefficient"
   },
   {
     "title": "Emergency planning zones — PAZ, UPZ and how they are set",
@@ -1020,16 +1020,16 @@ const posts = [
     "keywords": "equivalent dose effective dose radiation weighting factor tissue weighting factor ICRP 103 ICRP 60 neutron weighting factor committed dose collective dose operational quantities Hp(10) H*(10) dose limit lens of the eye sievert"
   },
   {
-    "title": "Radiation emergency classes — white, blue and red",
+    "title": "Radiation emergency classes — facility, site and general levels",
     "date": "2026.10.25",
     "displayDate": "2026.10.25",
     "section": "concepts",
     "category": "Radiation Protection & Emergency",
-    "summary": "Each class combines facility state with the expected extent of impact and is declared when damage occurs or is threatened; a red emergency is not automatically a radiological disaster declaration.",
+    "summary": "Each class combines facility state with the expected extent of impact and is declared when damage occurs or is threatened; IAEA and US schemes use alert, site area and general emergency classes.",
     "thumbnail": "assets/images/concepts/c-rp-001-radiation-emergency-classes/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Three radiation emergency classes, Radiation Protection & Emergency · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Radiation emergency classes, Radiation Protection & Emergency · Concept, with an atom icon",
     "url": "posts/concepts/c-rp-001-radiation-emergency-classes.html",
-    "keywords": "radiation emergency white emergency blue emergency red emergency emergency action level EAL radiological disaster radiological emergency plan PAZ UPZ emergency planning zone NSSC Annex 3 general emergency site area emergency alert"
+    "keywords": "radiation emergency emergency classification emergency action level EAL facility emergency site area emergency general emergency alert notification of unusual event radiological emergency plan PAZ UPZ emergency planning zone GSR Part 7 NUREG-0654 NEI 99-01"
   },
   {
     "title": "Single failure criterion — active and passive failures, N+1 and CCF",
@@ -1039,7 +1039,7 @@ const posts = [
     "category": "Probabilistic Safety & Reliability",
     "summary": "Assume the initiating event, LOOP and the worst single failure with its consequences; the remaining trains must still meet the acceptance criteria, but this says nothing about common-cause failure.",
     "thumbnail": "assets/images/concepts/c-pr-002-single-failure-criterion/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Single failure criterion (SFC), Probabilistic Safety & Reliability · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Single failure criterion (SFC), Probabilistic Safety & Reliability · Concept, with an atom icon",
     "url": "posts/concepts/c-pr-002-single-failure-criterion.html",
     "keywords": "single failure criterion SFC single failure active failure passive failure redundancy N+1 independence worst single failure LOOP design basis accident ECCS common cause failure diversity beta factor IEEE 603 IEEE 379 GDC 35 SSR-2/1"
   },
@@ -1051,9 +1051,9 @@ const posts = [
     "category": "Probabilistic Safety & Reliability",
     "summary": "Level 1 ends at core damage (CDF), Level 2 at the release to the environment (release-category frequencies, LRF, LERF) and Level 3 at off-site health risk (CCDF); PSA complements, not replaces, deterministic analysis.",
     "thumbnail": "assets/images/concepts/c-pr-001-psa-levels/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, PSA overview and Levels 1, 2, 3, Probabilistic Safety & Reliability · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, PSA overview and Levels 1, 2, 3, Probabilistic Safety & Reliability · Concept, with an atom icon",
     "url": "posts/concepts/c-pr-001-psa-levels.html",
-    "keywords": "probabilistic safety assessment PSA PRA Level 1 Level 2 Level 3 core damage frequency CDF LERF LRF event tree fault tree minimal cut set plant damage state containment event tree source term importance Fussell-Vesely RAW accident management plan"
+    "keywords": "probabilistic safety assessment PSA PRA Level 1 Level 2 Level 3 core damage frequency CDF LERF LRF event tree fault tree minimal cut set plant damage state containment event tree source term importance Fussell-Vesely RAW risk-informed regulation"
   },
   {
     "title": "PHWR (CANDU) Characteristics — pressure tubes, natural uranium, on-power refuelling",
@@ -1099,9 +1099,9 @@ const posts = [
     "category": "Policy, Economics & Reactor Types",
     "summary": "The APR1400 keeps the OPR1000's two loops but moves to 3,983 MWt, 60 years, SSE 0.3 g, CDF below 10⁻⁵/RY, four-train direct vessel injection from an in-containment IRWST and a fully digital MMIS.",
     "thumbnail": "assets/images/concepts/c-pe-002-apr1400-design-features/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, APR1400 Design Features, Policy, Economics & Reactor Types · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, APR1400 Design Features, Policy, Economics & Reactor Types · Concept, with an atom icon",
     "url": "posts/concepts/c-pe-002-apr1400-design-features.html",
-    "keywords": "APR1400 OPR1000 KURD evolutionary PWR direct vessel injection DVI IRWST safety injection fluidic device POSRV digital MMIS AAC severe accident Saeul Shin-Kori plot plan design certification"
+    "keywords": "APR1400 OPR1000 utility requirements evolutionary PWR direct vessel injection DVI IRWST safety injection fluidic device POSRV digital MMIS AAC severe accident plot plan design certification"
   },
   {
     "title": "Reactor Coolant Selection — requirements, properties and reactor types",
@@ -1111,7 +1111,7 @@ const posts = [
     "category": "Policy, Economics & Reactor Types",
     "summary": "Water stores heat best but must be pressurized; liquid metals conduct heat best and run near atmospheric pressure; gases need high pressure and a large ΔT because pumping power scales as μ^0.2/(ρ²cₚ^2.8).",
     "thumbnail": "assets/images/concepts/c-pe-001-coolant-selection/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Reactor Coolant Selection, Policy, Economics & Reactor Types · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Reactor Coolant Selection, Policy, Economics & Reactor Types · Concept, with an atom icon",
     "url": "posts/concepts/c-pe-001-coolant-selection.html",
     "keywords": "reactor coolant coolant requirements volumetric heat capacity pumping power sodium lead helium CO2 FLiBe molten salt PWR BWR PHWR CANDU HTGR SFR LFR MSR Generation IV activation"
   },
@@ -1123,9 +1123,9 @@ const posts = [
     "category": "Operation, Regulation & Quality",
     "summary": "ISI runs on a 10-year interval split into three periods with cumulative minimums of 16, 50 and 100 %; flaws beyond IWB-3500 go to repair or IWB-3600 evaluation, and RI-ISI moves exams to high-risk piping.",
     "thumbnail": "assets/images/concepts/c-op-010-in-service-inspection/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, In-Service Inspection (ISI), Operation, Regulation & Quality · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, In-Service Inspection (ISI), Operation, Regulation & Quality · Concept, with an atom icon",
     "url": "posts/concepts/c-op-010-in-service-inspection.html",
-    "keywords": "in-service inspection ISI pre-service inspection PSI ASME Section XI KEPIC MI 10 CFR 50.55a inspection interval examination category nondestructive examination IWB-3500 IWB-3600 risk-informed ISI RBI"
+    "keywords": "in-service inspection ISI pre-service inspection PSI ASME Section XI 10 CFR 50.55a inspection interval examination category nondestructive examination IWB-3500 IWB-3600 risk-informed ISI RBI"
   },
   {
     "title": "Capacity Factor and Operating Factor — energy vs time",
@@ -1169,11 +1169,11 @@ const posts = [
     "displayDate": "2026.10.25",
     "section": "concepts",
     "category": "Operation, Regulation & Quality",
-    "summary": "Siting covers seven items (rule Articles 4–10); the EAB and LPZ boundaries must stay at or below 250 mSv effective dose in a hypothetical accident, and the population center distance must be at least 1⅓ times the LPZ distance.",
+    "summary": "Siting covers seven items from geology to multiple units; the EAB and LPZ boundaries must stay at or below 250 mSv effective dose in a hypothetical accident, and the population center distance must be at least 1⅓ times the LPZ distance.",
     "thumbnail": "assets/images/concepts/c-op-006-site-selection-criteria/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, NPP Site Selection Criteria, Operation, Regulation & Quality · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, NPP Site Selection Criteria, Operation, Regulation & Quality · Concept, with an atom icon",
     "url": "posts/concepts/c-op-006-site-selection-criteria.html",
-    "keywords": "site selection siting criteria exclusion area boundary EAB low population zone LPZ population center distance PCD active fault 10 CFR 100 RG 4.7 IAEA SSR-1 early site approval"
+    "keywords": "site selection siting criteria exclusion area boundary EAB low population zone LPZ population center distance PCD capable fault 10 CFR 100 RG 4.7 IAEA SSR-1 ultimate heat sink"
   },
   {
     "title": "Safety Class — Classes 1, 2, 3 and their codes, seismic and QA links",
@@ -1183,9 +1183,9 @@ const posts = [
     "category": "Operation, Regulation & Quality",
     "summary": "Safety Class 1 covers RCPB parts whose failure exceeds the coolant makeup capacity, Class 2 containment and emergency cooling, Class 3 support functions; each maps to ASME III Class 1, 2, 3 and quality groups A, B, C.",
     "thumbnail": "assets/images/concepts/c-op-005-safety-class/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Safety Classes 1 · 2 · 3, Operation, Regulation & Quality · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Safety Classes 1 · 2 · 3, Operation, Regulation & Quality · Concept, with an atom icon",
     "url": "posts/concepts/c-op-005-safety-class.html",
-    "keywords": "safety class safety-related RCPB quality group seismic category Class 1E ASME Section III KEPIC quality class SSG-30 10 CFR 50.55a"
+    "keywords": "safety class safety-related RCPB quality group seismic category Class 1E ASME Section III quality class SSG-30 10 CFR 50.55a"
   },
   {
     "title": "Safety Limits — core SL, RCS pressure SL and violation actions",
@@ -1195,7 +1195,7 @@ const posts = [
     "category": "Operation, Regulation & Quality",
     "summary": "The core SL (MDNBR ≥ correlation 95/95 limit, centerline temperature below melting) and the RCS pressure SL (2,750 psia = 110 % of design pressure) are protected by LSSS trips; exceeding one requires shutdown, a report and approval before restart.",
     "thumbnail": "assets/images/concepts/c-op-004-safety-limits/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Safety Limits (SL), Operation, Regulation & Quality · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Safety Limits (SL), Operation, Regulation & Quality · Concept, with an atom icon",
     "url": "posts/concepts/c-op-004-safety-limits.html",
     "keywords": "safety limit SL core safety limit DNBR 95/95 centerline temperature RCS pressure 2750 psia LSSS SAFDL technical specifications 10 CFR 50.36 APR1400 POSRV"
   },
@@ -1219,7 +1219,7 @@ const posts = [
     "category": "Operation, Regulation & Quality",
     "summary": "The T/S set safety limits (e.g. RCS pressure 18.96 MPa), LSSS and LCOs with completion times; LCO 3.0.3 requires Mode 3 in 7 h, Mode 4 in 13 h and Mode 5 in 37 h.",
     "thumbnail": "assets/images/concepts/c-op-001-technical-specifications/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Technical Specifications (T/S), Operation, Regulation & Quality · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Technical Specifications (T/S), Operation, Regulation & Quality · Concept, with an atom icon",
     "url": "posts/concepts/c-op-001-technical-specifications.html",
     "keywords": "Technical Specifications safety limit LSSS limiting condition for operation LCO selection criteria surveillance requirement design features operability LCO 3.0.3 completion time Bases ISTS 10 CFR 50.36 NUREG-1432"
   },
@@ -1231,7 +1231,7 @@ const posts = [
     "category": "Fuel & Materials",
     "summary": "SAFDLs (GDC 10) cover fuel damage and failure in normal operation and AOOs, led by MDNBR ≥ 95/95 and no centerline melting, and are protected by the core SL, LSSS and LCOs.",
     "thumbnail": "assets/images/concepts/c-fm-012-safdl/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Specified Acceptable Fuel Design Limits (SAFDL), Fuel & Materials · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Specified Acceptable Fuel Design Limits (SAFDL), Fuel & Materials · Concept, with an atom icon",
     "url": "posts/concepts/c-fm-012-safdl.html",
     "keywords": "SAFDL specified acceptable fuel design limits GDC 10 SRP 4.2 DNBR 95/95 centerline melting uniform strain rod internal pressure lift-off anticipated operational occurrence safety limit LSSS LCO CPC COLSS"
   },
@@ -1243,7 +1243,7 @@ const posts = [
     "category": "Fuel & Materials",
     "summary": "FGR follows diffusion, boundary bubble growth and interlinkage; the Halden 1 % threshold falls from about 1,311 °C at 10 GWd/tU to 1,079 °C at 50 GWd/tU.",
     "thumbnail": "assets/images/concepts/c-fm-011-fission-gas-release/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Fission Gas Release (FGR), Fuel & Materials · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Fission Gas Release (FGR), Fuel & Materials · Concept, with an atom icon",
     "url": "posts/concepts/c-fm-011-fission-gas-release.html",
     "keywords": "fission gas release FGR xenon krypton Booth diffusion grain boundary bubble interlinkage burst release Halden threshold Vitanza rod internal pressure gap conductance lift-off high burnup rim"
   },
@@ -1255,7 +1255,7 @@ const posts = [
     "category": "Fuel & Materials",
     "summary": "PCI-SCC needs tensile stress from a power increase after gap closure, iodine and susceptible Zr alloy; the most common ramp limit above a 20–50 % threshold is 3 %/h.",
     "thumbnail": "assets/images/concepts/c-fm-010-pellet-cladding-interaction/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Pellet-Cladding Interaction (PCI), Fuel & Materials · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Pellet-Cladding Interaction (PCI), Fuel & Materials · Concept, with an atom icon",
     "url": "posts/concepts/c-fm-010-pellet-cladding-interaction.html",
     "keywords": "pellet-cladding interaction PCI PCMI iodine stress corrosion cracking gap closure creep-down hourglassing bamboo ridging soak operation ramp rate limit PCIOMR barrier cladding doped pellet SRP 4.2"
   },
@@ -1267,7 +1267,7 @@ const posts = [
     "category": "Fuel & Materials",
     "summary": "Xe-133 flags a new failure, I-131/I-133 and the R/B slope separate failed rods from tramp uranium, and sipping, UT and visual inspection locate the failed rod at refueling.",
     "thumbnail": "assets/images/concepts/c-fm-009-fuel-integrity-monitoring/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Fuel Integrity Monitoring, Fuel & Materials · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Fuel Integrity Monitoring, Fuel & Materials · Concept, with an atom icon",
     "url": "posts/concepts/c-fm-009-fuel-integrity-monitoring.html",
     "keywords": "fuel integrity monitoring fuel failure diagnosis Xe-133 I-131 I-133 iodine ratio R/B slope tramp uranium iodine spike DEI-131 DEX-133 TSTF-490 sipping ultrasonic testing grid-to-rod fretting"
   },
@@ -1291,7 +1291,7 @@ const posts = [
     "category": "Fuel & Materials",
     "summary": "1 MWd fissions about 1.05 g of U-235 and consumes about 1.23 g including capture (α ≈ 0.169); enrichment = remaining U-235 / remaining U, e.g. 3 % UO2 100 t after 1.08×10⁶ MWd → 1.73 %.",
     "thumbnail": "assets/images/concepts/c-fm-007-u235-depletion/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, U-235 Consumption & Enrichment Change, Fuel & Materials · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, U-235 Consumption & Enrichment Change, Fuel & Materials · Concept, with an atom icon",
     "url": "posts/concepts/c-fm-007-u235-depletion.html",
     "keywords": "U-235 consumption depletion enrichment fission rate capture-to-fission ratio alpha U-236 burnup MWd UO2 to U conversion 0.8815 Pu-239 contribution 10 CFR 50.68 5 wt% LEU"
   },
@@ -1303,7 +1303,7 @@ const posts = [
     "category": "Fuel & Materials",
     "summary": "Densification removes fine pores early (about −1 % volume, saturating within a few GWd/tU); solid fission-product swelling then adds about 0.9 % per 10 GWd/tU, so the pellet regains its initial volume at 5–20 GWd/tU.",
     "thumbnail": "assets/images/concepts/c-fm-006-densification-swelling/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Fuel Densification & Swelling, Fuel & Materials · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Fuel Densification & Swelling, Fuel & Materials · Concept, with an atom icon",
     "url": "posts/concepts/c-fm-006-densification-swelling.html",
     "keywords": "fuel densification swelling UO2 pellet resintering test RG 1.126 solid fission product swelling gaseous swelling pellet-cladding gap PCMI cladding collapse Ginna high burnup structure rim HBS"
   },
@@ -1315,7 +1315,7 @@ const posts = [
     "category": "Fuel & Materials",
     "summary": "About 7.5 wppm of hydrogen per µm of oxide (PUF 15 %) enters the cladding; above TSS it forms δ-hydrides, and radial reorientation under hoop stress on cooling sharply cuts ductility, hence the 400 °C dry-storage limit.",
     "thumbnail": "assets/images/concepts/c-fm-005-cladding-hydriding/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Cladding Hydriding & Hydrogen Embrittlement, Fuel & Materials · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Cladding Hydriding & Hydrogen Embrittlement, Fuel & Materials · Concept, with an atom icon",
     "url": "posts/concepts/c-fm-005-cladding-hydriding.html",
     "keywords": "hydrogen embrittlement cladding hydriding zirconium alloy Zircaloy PUF hydrogen pickup TSS terminal solid solubility hydride reorientation delayed hydride cracking DHC RIA RG 1.236 LOCA 50.46c dry storage ISG-11 NUREG-2224"
   },
@@ -1327,7 +1327,7 @@ const posts = [
     "category": "Fuel & Materials",
     "summary": "RTNDT = max(TNDT, TCv − 33 °C) under NB-2331; irradiation raises it by ΔRTNDT = CF × f^(0.28 − 0.10 log f), giving ART = initial RTNDT + ΔRTNDT + margin (191.5 °F at 1/4T in the worked example).",
     "thumbnail": "assets/images/concepts/c-fm-003-rtndt-dbtt/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Nil-Ductility Transition Temperature (RTNDT), Fuel & Materials · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Nil-Ductility Transition Temperature (RTNDT), Fuel & Materials · Concept, with an atom icon",
     "url": "posts/concepts/c-fm-003-rtndt-dbtt.html",
     "keywords": "nil-ductility transition temperature NDTT RTNDT DBTT Charpy drop-weight test NB-2331 irradiation embrittlement ART RG 1.99 upper-shelf energy surveillance specimens lead factor P-T limit curves reactor pressure vessel"
   },
@@ -1339,7 +1339,7 @@ const posts = [
     "category": "Fuel & Materials",
     "summary": "PTS is severe overcooling with concurrent or later high pressure; on embrittled beltline material KI can exceed KIC, so RTPTS is limited to 270 °F (axial welds, plates) and 300 °F (circumferential welds).",
     "thumbnail": "assets/images/concepts/c-fm-002-pressurized-thermal-shock/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Pressurized Thermal Shock (PTS), Fuel & Materials · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Pressurized Thermal Shock (PTS), Fuel & Materials · Concept, with an atom icon",
     "url": "posts/concepts/c-fm-002-pressurized-thermal-shock.html",
     "keywords": "pressurized thermal shock PTS reactor pressure vessel irradiation embrittlement RTPTS RTNDT 10 CFR 50.61 50.61a fracture toughness KIC warm prestress safety injection termination annealing"
   },
