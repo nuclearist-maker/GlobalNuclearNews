@@ -5,11 +5,13 @@ assets/app.js (see public_files.collect). A missing linked file aborts the build
 so a broken image or page link can never be deployed.
 """
 from pathlib import Path
+import json
 import shutil
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from public_files import collect
+from search_discovery import enrich
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "_site"
@@ -25,6 +27,8 @@ def main():
         target = OUT / p.relative_to(ROOT)
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(p, target)
+    discovery = enrich(OUT, json.loads((ROOT / 'tools/search_config.json').read_text(encoding='utf-8')))
+    print('Search discovery:', json.dumps(discovery))
     size = sum(p.stat().st_size for p in files) / 2**20
     print(f"Packaged {len(files)} public files, {size:.1f} MiB")
     for p in sorted(files):

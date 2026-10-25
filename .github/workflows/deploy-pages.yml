@@ -27,6 +27,8 @@ jobs:
           python-version: "3.12"
       - name: Package public site files (fails on any missing linked file)
         run: python tools/build_en_site.py
+      - name: Validate search metadata and crawlable links
+        run: python tools/check_search_discovery.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
