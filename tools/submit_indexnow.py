@@ -25,7 +25,7 @@ def main():
         return
     with urlopen(payload['keyLocation'], timeout=30) as response:
         if response.read().decode('utf-8').strip() != key: raise ValueError('Live key does not match')
-    request = Request('https://api.indexnow.org/indexnow', data=json.dumps(payload).encode(), headers={'Content-Type': 'application/json; charset=utf-8'}, method='POST')
+    request = Request('https://www.bing.com/indexnow', data=json.dumps(payload).encode(), headers={'Content-Type': 'application/json; charset=utf-8'}, method='POST')
     with urlopen(request, timeout=60) as response:
         print(json.dumps({'http_status': response.status, 'url_count': len(urls), 'meaning': 'Received; indexing is not guaranteed' if response.status == 200 else 'Key verification pending; indexing is not guaranteed', 'response': response.read().decode('utf-8')}))
 
