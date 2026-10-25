@@ -1351,7 +1351,7 @@ const posts = [
     "category": "Fuel & Materials",
     "summary": "Burnup divides released energy by the initial heavy-metal mass (not the UO₂ mass); 1 MWd ≈ 2.70×10²¹ fissions and 1 %FIMA ≈ 9.4 GWd/tHM.",
     "thumbnail": "assets/images/concepts/c-fm-001-burnup/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Burnup (MWd/tU · FIMA), Fuel & Materials · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Burnup (MWd/tU · FIMA), Fuel & Materials · Concept, with an atom icon",
     "url": "posts/concepts/c-fm-001-burnup.html",
     "keywords": "burnup MWd/tU GWd/tHM FIMA EFPD specific burnup UO2 heavy metal plutonium contribution beta effective burnup limit rod average nuclear fuel"
   },
