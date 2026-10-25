@@ -8,7 +8,7 @@ from urllib.parse import urljoin
 import xml.etree.ElementTree as ET
 
 BASE = "https://nuclearist-maker.github.io/GlobalNuclearNews/"
-SECTIONS = {"news": "Global Nuclear News", "theory": "Nuclear Theory", "concepts": "Concept Dictionary"}
+SECTIONS = {"news": "Global Nuclear News", "theory": "Nuclear Theory", "concepts": "Concept Dictionary", "history": "Nuclear History"}
 ESC = html.escape
 
 
@@ -99,6 +99,12 @@ def archive_page(title, description, content):
             f'<footer><a href="{BASE}archive/index.html">Article archive</a><a href="{BASE}">Home</a></footer></body></html>')
 
 
+def board_order(section, posts):
+    if section == "concepts": return sorted(posts, key=lambda p: p["title"].casefold())
+    if section == "history": return sorted(posts, key=lambda p: p["url"])
+    return newest(posts)
+
+
 def enrich(root, config):
     posts = posts_from(root)
     postmap = {p["url"]: p for p in posts}
@@ -109,7 +115,7 @@ def enrich(root, config):
     archive_links = []
     for section, label in SECTIONS.items():
         selected = [p for p in posts if p["section"] == section]
-        selected = sorted(selected, key=lambda p: p["title"].casefold()) if section == "concepts" else newest(selected)
+        selected = board_order(section, selected)
         total = (len(selected) + 9) // 10
         for n in range(1, total + 1):
             links = []
@@ -123,11 +129,11 @@ def enrich(root, config):
             content = '<div class="post-list">' + cards(selected[(n-1)*10:n*10]) + '</div>' + paging
             (archive / f"{section}-{n}.html").write_text(archive_page(title, f"Browse {label} articles, page {n} of {total}.", content), encoding="utf-8")
         if total: archive_links.append(f'<li><a href="{section}-1.html">{label}: {len(selected)} articles</a></li>')
-    (archive / "index.html").write_text(archive_page("Article archive", "Browse all nuclear news, theory lessons and concept dictionary entries.", '<ul>' + ''.join(archive_links) + '</ul>'), encoding="utf-8")
+    (archive / "index.html").write_text(archive_page("Article archive", "Browse all nuclear news, theory lessons, concept dictionary entries and nuclear history articles.", '<ul>' + ''.join(archive_links) + '</ul>'), encoding="utf-8")
     for name in ["index", *SECTIONS]:
         p = root / f"{name}.html"; text = p.read_text(encoding="utf-8")
         selected = newest(posts)[:5] if name == "index" else [x for x in posts if x["section"] == name]
-        if name != "index": selected = (sorted(selected, key=lambda x: x["title"].casefold()) if name == "concepts" else newest(selected))[:10]
+        if name != "index": selected = board_order(name, selected)[:10]
         text = text.replace('<div id="post-list" class="post-list" aria-live="polite"></div>', '<div id="post-list" class="post-list" aria-live="polite">' + cards(selected) + '</div>')
         if 'data-discovery-links' not in text:
             links = f'<span data-discovery-links><a href="{BASE}archive/index.html">Article archive</a> · <a href="{BASE}sitemap.xml">Sitemap</a> · <a href="{BASE}feed.xml">RSS</a></span>'

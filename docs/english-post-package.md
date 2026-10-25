@@ -9,6 +9,7 @@ written elsewhere:
 | Nuclear Theory | `G:\내 드라이브\My_Claude\Blog-Nuclear\output-EN\<NNN_slug>\` | `posts/theory/<slug>.html` |
 | Global Nuclear News | `G:\내 드라이브\My_Claude\Blog\output\drafts_EN\<YYYY-MM-DD-slug>\` | `posts/news/<slug>.html` |
 | Concept Dictionary | `G:\내 드라이브\My_Claude\Blog-Nuclear\output-pe-EN\<C-XX-NNN_slug>\` | `posts/concepts/<slug>.html` |
+| Nuclear History | `G:\내 드라이브\My_Claude\Blog-Nuclear\output-history\<NNN_slug>\` | `posts/history/<slug>.html` |
 
 A post folder may hold any working files (draft, fact sheet, figure sources, review notes).
 It is published only through its `web/` subfolder:
@@ -45,8 +46,9 @@ It is published only through its `web/` subfolder:
 ```
 
 - `status`: `"ready"` publishes; anything else (e.g. `"draft"`) is skipped.
-- `section` must match the writing folder (`theory` for output-EN, `news` for drafts_EN, `concepts` for output-pe-EN).
+- `section` must match the writing folder (`theory` for output-EN, `news` for drafts_EN, `concepts` for output-pe-EN, `history` for output-history).
 - Concept Dictionary entries: category = engineering domain (e.g. "Reactor Physics & Kinetics"); the board lists them alphabetically with domain filters. Publish selectively with `--only concepts --match '^C-RX-'`.
+- Nuclear History articles: category = era (e.g. "Atoms & the Discovery of Radiation"); the board lists them in series order (by slug number). The post folder also holds the Korean edition (ko/), shared images/ and figs/; only web/ is published.
 - `slug`: lowercase letters, digits and hyphens; it becomes the file and image folder name.
 - `date`: `YYYY.MM.DD`. Boards sort newest first.
 - News categories (fixed filter buttons): Large Reactors, SMR, Fuel Cycle,

@@ -1356,6 +1356,126 @@ const posts = [
     "keywords": "burnup MWd/tU GWd/tHM FIMA EFPD specific burnup UO2 heavy metal plutonium contribution beta effective burnup limit rod average nuclear fuel"
   },
   {
+    "title": "Villard Discovers Gamma Rays (1900)",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "history",
+    "category": "Atoms & the Discovery of Radiation",
+    "summary": "Paul Villard's 1900 plates showed an undeflected beam from radium that passed 0.2 mm of lead; he called it X-rays from radium, Rutherford named it gamma rays in 1903, and in 1914 it was shown to be electromagnetic.",
+    "thumbnail": "assets/images/history/010-villard-gamma-rays/thumbnail.webp",
+    "thumbnailAlt": "A straight beam of light from a glowing sample in a lead block passes unbent between the poles of a horseshoe magnet onto a glass plate, while thinner beams beside it curve away",
+    "url": "posts/history/010-villard-gamma-rays.html",
+    "keywords": "Paul Villard gamma rays 1900 radium Rutherford Curie magnetic deflection radiation penetration half-value layer shielding history of radiation nuclear history"
+  },
+  {
+    "title": "Rutherford Splits Uranium's Rays into Alpha and Beta (1899)",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "history",
+    "category": "Atoms & the Discovery of Radiation",
+    "summary": "Rutherford's foil-by-foil measurements, signed in Cambridge in September 1898 and published in January 1899, showed two components in uranium radiation; identifying them as electrons and helium nuclei took another decade.",
+    "thumbnail": "assets/images/history/009-rutherford-alpha-beta/thumbnail.webp",
+    "thumbnailAlt": "A glowing green lump of uranium ore sends beams of light into a row of upright aluminium foils; the orange beams stop at the first foil while the blue beams pass through all of them",
+    "url": "posts/history/009-rutherford-alpha-beta.html",
+    "keywords": "Ernest Rutherford alpha radiation beta radiation alpha particle beta particle uranium radioactivity aluminium foil Cavendish Laboratory McGill history of nuclear physics 1899"
+  },
+  {
+    "title": "The Curies Discover Polonium and Radium (1898)",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "history",
+    "category": "Atoms & the Discovery of Radiation",
+    "summary": "In 1898 the Curies announced polonium and radium by following radioactivity through pitchblende, and by 1902 several tons of mine residue had yielded 0.12 g of radium chloride.",
+    "thumbnail": "assets/images/history/008-curies-polonium-radium/thumbnail.webp",
+    "thumbnailAlt": "A small corked glass vial holding a few softly glowing blue crystals, resting on a heap of black pitchblende ore",
+    "url": "posts/history/008-curies-polonium-radium.html",
+    "keywords": "Marie Curie Pierre Curie polonium radium radioactivity pitchblende Bemont Demarcay radiochemistry 1898 discovery of elements history of nuclear science"
+  },
+  {
+    "title": "J.J. Thomson Discovers the Electron (1897)",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "history",
+    "category": "Atoms & the Discovery of Radiation",
+    "summary": "In 1897 J.J. Thomson measured the mass-to-charge ratio of cathode rays, found it over a thousand times smaller than a hydrogen ion's, and concluded that atoms contain far lighter charged particles.",
+    "thumbnail": "assets/images/history/007-thomson-electron/thumbnail.webp",
+    "thumbnailAlt": "A clear glass vacuum tube in which a glowing blue beam passes between two metal plates and curves down to a green spot at the wide end",
+    "url": "posts/history/007-thomson-electron.html",
+    "keywords": "J.J. Thomson electron discovery of the electron cathode rays mass-to-charge ratio corpuscle Cavendish Laboratory 1897 history of physics nuclear history"
+  },
+  {
+    "title": "Becquerel and the Uranium Rays (1896)",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "history",
+    "category": "Atoms & the Discovery of Radiation",
+    "summary": "In 1896 photographic plates stored in a drawer during cloudy weather showed Henri Becquerel that uranium emits radiation without sunlight, a discovery that won him half of the 1903 Nobel Prize and gave its name to the unit of radioactivity.",
+    "thumbnail": "assets/images/history/006-becquerel-uranium-rays/thumbnail.webp",
+    "thumbnailAlt": "A half-open wooden desk drawer lined with black paper, holding a glass plate with yellow-green uranium-salt crystals and a small metal cross whose shadow glows faintly beneath it, next to a window with a cloudy sky",
+    "url": "posts/history/006-becquerel-uranium-rays.html",
+    "keywords": "Henri Becquerel uranium rays radioactivity discovery 1896 photographic plate phosphorescence potassium uranyl sulfate Poincare X-rays Marie Curie Nobel Prize 1903 becquerel unit nuclear history"
+  },
+  {
+    "title": "Röntgen Discovers X-rays (1895)",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "history",
+    "category": "Atoms & the Discovery of Radiation",
+    "summary": "In November 1895 Wilhelm Röntgen noticed a screen glowing beside a covered discharge tube, spent about seven weeks testing the invisible rays, and published the discovery of X-rays that swept the world in 1896.",
+    "thumbnail": "assets/images/history/005-roentgen-x-rays/thumbnail.webp",
+    "thumbnailAlt": "A glowing vintage glass discharge tube next to a softly lit fluorescent screen on a bright background",
+    "url": "posts/history/005-roentgen-x-rays.html",
+    "keywords": "Wilhelm Roentgen Röntgen X-rays 1895 discovery Würzburg cathode rays Anna Bertha hand X-ray Becquerel radioactivity Nobel Prize physics 1901 medical imaging radiation protection nuclear history"
+  },
+  {
+    "title": "Particle or Wave? Cathode Rays from Faraday to the Crookes Tube",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "history",
+    "category": "Atoms & the Discovery of Radiation",
+    "summary": "From Faraday's dark space in 1838 to Crookes's \"radiant matter\" lecture in 1879 and Perrin's negative-charge measurement in 1895, cathode rays split physicists into particle and wave camps and built the vacuum tools behind X-rays and the electron.",
+    "thumbnail": "assets/images/history/004-cathode-rays/thumbnail.webp",
+    "thumbnailAlt": "A glowing glass Crookes tube with a violet beam leaving the cathode, a metal cross in the middle and the cross's dark shadow on the apple-green glowing far end",
+    "url": "posts/history/004-cathode-rays.html",
+    "keywords": "cathode rays Crookes tube William Crookes Michael Faraday Geissler tube Julius Plucker Johann Hittorf Eugen Goldstein Heinrich Hertz Philipp Lenard Jean Perrin radiant matter vacuum tube history of physics nuclear history"
+  },
+  {
+    "title": "Mendeleev's Periodic Table and Its Blanks (1869)",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "history",
+    "category": "Atoms & the Discovery of Radiation",
+    "summary": "Mendeleev's 1869 table ordered 63 elements by atomic weight and left gaps whose predicted occupants, gallium, scandium and germanium, were found by 1886.",
+    "thumbnail": "assets/images/history/003-mendeleev-periodic-table/thumbnail.webp",
+    "thumbnailAlt": "A grid of blue, teal and amber glass tiles with three glowing empty squares, one golden tile hovering above a gap",
+    "url": "posts/history/003-mendeleev-periodic-table.html",
+    "keywords": "Mendeleev periodic table 1869 elements atomic weight atomic number eka-silicon germanium gallium scandium Moseley mendelevium history of chemistry nuclear history"
+  },
+  {
+    "title": "Weighing the Invisible — Dalton's Atomic Theory (1808)",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "history",
+    "category": "Atoms & the Discovery of Radiation",
+    "summary": "Dalton's 1808 atomic theory gave every element an atom with a characteristic weight and explained the law of multiple proportions, even though his rule of greatest simplicity made water HO and oxygen 7 instead of 16.",
+    "thumbnail": "assets/images/history/002-dalton-atomic-theory/thumbnail.webp",
+    "thumbnailAlt": "A polished brass balance scale with a small pearly sphere on the raised pan and a larger sphere on the lower pan, against a bright pale-blue background",
+    "url": "posts/history/002-dalton-atomic-theory.html",
+    "keywords": "John Dalton atomic theory atomic weight relative atomic mass law of multiple proportions Avogadro Karlsruhe Congress history of chemistry history of the atom dalton unit"
+  },
+  {
+    "title": "Ancient Atomism: Democritus, Epicurus and the Uncuttable Atom",
+    "date": "2026.10.25",
+    "displayDate": "2026.10.25",
+    "section": "history",
+    "category": "Atoms & the Discovery of Radiation",
+    "summary": "Democritus and Epicurus imagined uncuttable atoms in a void; Lucretius's poem carried the idea, a 1417 rediscovery and Pierre Gassendi revived it, and modern physics kept the name while splitting the atom.",
+    "thumbnail": "assets/images/history/001-ancient-atomism/thumbnail.webp",
+    "thumbnailAlt": "A rough block of white marble on a sunlit surface, with clear glass beads breaking away from it and shrinking into fine sparkling grains against a bright blue sky",
+    "url": "posts/history/001-ancient-atomism.html",
+    "keywords": "ancient atomism atomos Democritus Leucippus Epicurus Lucretius De rerum natura Poggio Bracciolini Pierre Gassendi history of the atom nuclear history"
+  },
+  {
     "title": "Read It Like a Nutrition Label — Five Checks for Reading Nuclear Information",
     "date": "2026.10.24",
     "displayDate": "2026.10.24",
@@ -5635,9 +5755,9 @@ const pagination=document.querySelector("#pagination");let page=1;
 const esc=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 const list=document.querySelector("#post-list"),empty=document.querySelector("#empty-state"),search=document.querySelector("#search"),filters=document.querySelector(".filters");let buttons=[...document.querySelectorAll("[data-filter]")],active=ALL;
 document.querySelectorAll("[data-view-link]").forEach(link=>link.classList.toggle("active",!home&&link.dataset.viewLink===view));
-const BOARDS={theory:["NUCLEAR THEORY","Nuclear Theory","No nuclear theory posts in this category yet."],concepts:["CONCEPT DICTIONARY","Concept Dictionary","No concepts in this domain yet."]};
+const BOARDS={theory:["NUCLEAR THEORY","Nuclear Theory","No nuclear theory posts in this category yet."],concepts:["CONCEPT DICTIONARY","Concept Dictionary","No concepts in this domain yet."],history:["NUCLEAR HISTORY","Nuclear History","No history articles in this era yet."]};
 if(!home&&BOARDS[view]){const [eb,ti,em]=BOARDS[view];document.querySelector("#board-eyebrow").textContent=eb;document.querySelector("#board-title").textContent=ti;empty.textContent=em;const categories=[...new Set(posts.filter(p=>p.section===view).map(p=>p.category))];if(view==="concepts")categories.sort();filters.innerHTML=`<button class="selected" type="button" data-filter="${ALL}">All posts</button>${categories.map(c=>`<button type="button" data-filter="${esc(c)}">${esc(c)}</button>`).join("")}`;buttons=[...filters.querySelectorAll("[data-filter]")]}
-function render(){const q=search.value.trim().toLowerCase();const filtered=posts.filter(p=>(home||p.section===view)&&(active===ALL||(home?p.section:p.category)===active)&&(`${p.title} ${p.summary} ${p.keywords}`.toLowerCase().includes(q))).sort((a,b)=>!home&&view==="concepts"?a.title.localeCompare(b.title):b.date.localeCompare(a.date));const total=Math.ceil(filtered.length/size);page=Math.max(1,Math.min(page,total));list.innerHTML=filtered.slice((page-1)*size,page*size).map(p=>`<a class="post" href="${p.url}"><img class="post-thumb" src="${p.thumbnail}" alt="${esc(p.thumbnailAlt)}"><div class="post-copy"><div class="post-meta"><strong>${esc(p.category)}</strong>${p.section==="news"?esc(p.displayDate):""}</div><h3>${esc(p.title)}</h3><p>${esc(p.summary)}</p></div><span class="arrow" aria-hidden="true">→</span></a>`).join("");empty.hidden=filtered.length!==0;
+function render(){const q=search.value.trim().toLowerCase();const filtered=posts.filter(p=>(home||p.section===view)&&(active===ALL||(home?p.section:p.category)===active)&&(`${p.title} ${p.summary} ${p.keywords}`.toLowerCase().includes(q))).sort((a,b)=>!home&&view==="concepts"?a.title.localeCompare(b.title):!home&&view==="history"?a.url.localeCompare(b.url):b.date.localeCompare(a.date));const total=Math.ceil(filtered.length/size);page=Math.max(1,Math.min(page,total));list.innerHTML=filtered.slice((page-1)*size,page*size).map(p=>`<a class="post" href="${p.url}"><img class="post-thumb" src="${p.thumbnail}" alt="${esc(p.thumbnailAlt)}"><div class="post-copy"><div class="post-meta"><strong>${esc(p.category)}</strong>${p.section==="news"?esc(p.displayDate):""}</div><h3>${esc(p.title)}</h3><p>${esc(p.summary)}</p></div><span class="arrow" aria-hidden="true">→</span></a>`).join("");empty.hidden=filtered.length!==0;
 if(pagination){pagination.hidden=total<=1;const control=(n,label,disabled=false)=>`<button type="button" data-page="${n}" ${disabled?'disabled':''} ${label===String(page)?'aria-current="page"':''} aria-label="${/^\d+$/.test(label)?'Page '+n:label}">${label}</button>`;
 const nums=[...new Set([1,page-1,page,page+1,total])].filter(n=>n>=1&&n<=total).sort((a,b)=>a-b);let prev=0;
 pagination.innerHTML=control(page-1,"Previous",page===1)+nums.map(n=>{const gap=prev&&n-prev>1?'<span aria-hidden="true">…</span>':'';prev=n;return gap+control(n,String(n))}).join('')+control(page+1,"Next",page===total)+`<span class="page-status">Page ${page} of ${total} · ${filtered.length} posts</span>`;}

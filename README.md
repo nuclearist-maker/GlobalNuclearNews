@@ -10,6 +10,7 @@ Posts are written outside this repository and published from here:
 
 - Nuclear theory: `G:\내 드라이브\My_Claude\Blog-Nuclear\output-EN\<NNN_slug>\web\`
 - Concept Dictionary: `G:\내 드라이브\My_Claude\Blog-Nuclear\output-pe-EN\<C-XX-NNN_slug>\web\`
+- Nuclear History: `G:\내 드라이브\My_Claude\Blog-Nuclear\output-history\<NNN_slug>\web\`
 - Global nuclear news: `G:\내 드라이브\My_Claude\Blog\output\drafts_EN\<YYYY-MM-DD-slug>\web\`
 
 Each `web/` package holds `post.json` (metadata, `"status": "ready"` to publish), `article.html` and its images. The format is specified in [docs/english-post-package.md](docs/english-post-package.md).

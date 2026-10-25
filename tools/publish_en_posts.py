@@ -4,6 +4,7 @@ Sources (see tools/publish_sources.json):
   theory   -> G:/내 드라이브/My_Claude/Blog-Nuclear/output-EN/<post>/web/
   news     -> G:/내 드라이브/My_Claude/Blog/output/drafts_EN/<post>/web/
   concepts -> G:/내 드라이브/My_Claude/Blog-Nuclear/output-pe-EN/<post>/web/
+  history  -> G:/내 드라이브/My_Claude/Blog-Nuclear/output-history/<post>/web/
 
 Each post folder publishes only when it contains a web/ package:
   web/post.json      metadata; "status": "ready" to publish ("draft" = skip)
@@ -39,8 +40,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SECTIONS = {"news": ("news.html", "← Global Nuclear News"),
             "theory": ("theory.html", "← Nuclear Theory"),
-            "concepts": ("concepts.html", "← Concept Dictionary")}
-NAV_LABELS = {"news": "Global Nuclear News", "theory": "Nuclear Theory", "concepts": "Concept Dictionary"}
+            "concepts": ("concepts.html", "← Concept Dictionary"),
+            "history": ("history.html", "← Nuclear History")}
+NAV_LABELS = {"news": "Global Nuclear News", "theory": "Nuclear Theory", "concepts": "Concept Dictionary", "history": "Nuclear History"}
 REQUIRED = ["status", "section", "slug", "title", "page_title", "description", "eyebrow",
             "subtitle", "date", "category", "summary", "list_title", "thumbnail",
             "thumbnailAlt", "keywords"]
