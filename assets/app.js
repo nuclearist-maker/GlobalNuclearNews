@@ -7,7 +7,7 @@ const posts = [
     "category": "Thermal Hydraulics & Thermodynamics",
     "summary": "With F_Q = 1.60 × 1.75 = 2.80, the average heat flux is 0.571 MW/m², the total area 5,250 m² and the core needs about 34,815 rods of 6 mm radius and 4.0 m length.",
     "thumbnail": "assets/images/concepts/p-th-001-hot-spot-factor-rod-count/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Practice · 2015 exam, session 2, Q6, Rod Count from Hot Spot Factors, Thermal Hydraulics & Thermodynamics · Practice · Step-by-step solution, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Worked problem, Rod Count from Hot Spot Factors, Thermal Hydraulics & Thermodynamics · Worked problem · Step-by-step solution, with an atom icon",
     "url": "posts/concepts/p-th-001-hot-spot-factor-rod-count.html",
     "keywords": "hot spot factor hot channel factor F_Q F_N F_E heat flux average heat flux heat transfer area fuel rod count PWR core design worked problem linear heat rate"
   },
@@ -19,7 +19,7 @@ const posts = [
     "category": "Waste, Fuel Cycle & Decommissioning",
     "summary": "Spent fuel racks must stay at keff ≤ 0.95 in unborated water at 95/95 (or < 1.0 unborated with boron credit), and designs require two unlikely, independent, concurrent changes before criticality is possible.",
     "thumbnail": "assets/images/concepts/c-wd-007-criticality-safety/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Nuclear Criticality Safety, Waste, Fuel Cycle & Decommissioning · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Nuclear Criticality Safety, Waste, Fuel Cycle & Decommissioning · Concept, with an atom icon",
     "url": "posts/concepts/c-wd-007-criticality-safety.html",
     "keywords": "criticality safety keff spent fuel pool 10 CFR 50.68 double contingency ANSI/ANS-8.1 boron credit burnup credit loading curve critical mass moderation CSI criticality alarm JCO"
   },
@@ -31,9 +31,9 @@ const posts = [
     "category": "Waste, Fuel Cycle & Decommissioning",
     "summary": "U deposits on a solid cathode and U+TRU in a liquid cadmium cathode because UCl₃ is the least stable actinide chloride; the waste-reduction benefit holds only if the TRU are burned in an SFR.",
     "thumbnail": "assets/images/concepts/c-wd-006-pyroprocessing/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Pyroprocessing, Waste, Fuel Cycle & Decommissioning · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Pyroprocessing, Waste, Fuel Cycle & Decommissioning · Concept, with an atom icon",
     "url": "posts/concepts/c-wd-006-pyroprocessing.html",
-    "keywords": "pyroprocessing dry reprocessing molten salt electrolytic reduction electrorefining electrowinning liquid cadmium cathode chloride free energy PUREX UREX+ proliferation resistance SFR PRIDE JFCS"
+    "keywords": "pyroprocessing dry reprocessing molten salt electrolytic reduction electrorefining electrowinning liquid cadmium cathode chloride free energy PUREX UREX+ proliferation resistance SFR safeguards"
   },
   {
     "title": "Radioactive waste treatment — sources, processes and decontamination factors",
@@ -43,7 +43,7 @@ const posts = [
     "category": "Waste, Fuel Cycle & Decommissioning",
     "summary": "Gases are delayed and filtered before monitored release, liquids are evaporated or treated by RO and ion exchange before reuse or release, and solids are volume-reduced and packaged; DF multiplies in series and H-3 has DF 1.",
     "thumbnail": "assets/images/concepts/c-wd-005-radwaste-treatment/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Radioactive Waste Treatment Process, Waste, Fuel Cycle & Decommissioning · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Radioactive Waste Treatment Process, Waste, Fuel Cycle & Decommissioning · Concept, with an atom icon",
     "url": "posts/concepts/c-wd-005-radwaste-treatment.html",
     "keywords": "radioactive waste treatment gaseous waste liquid waste solid waste charcoal delay bed decay tank decontamination factor DF NUREG-0017 GALE evaporator reverse osmosis ion exchange supercompaction effluent limits ODCM"
   },
@@ -55,21 +55,21 @@ const posts = [
     "category": "Waste, Fuel Cycle & Decommissioning",
     "summary": "Protect people and the environment now and in future without undue burdens on future generations; after 60 days of holding only 0.036 % of Xe-133 remains, but 98.9 % of Kr-85.",
     "thumbnail": "assets/images/concepts/c-wd-004-waste-management-principles/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Radioactive Waste Management Principles, Waste, Fuel Cycle & Decommissioning · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Radioactive Waste Management Principles, Waste, Fuel Cycle & Decommissioning · Concept, with an atom icon",
     "url": "posts/concepts/c-wd-004-waste-management-principles.html",
-    "keywords": "radioactive waste management principles IAEA 111-F nine principles SF-1 GSR Part 5 Joint Convention concentrate and contain delay and decay dilute and disperse waste minimization waste hierarchy Radioactive Waste Management Act"
+    "keywords": "radioactive waste management principles IAEA 111-F nine principles SF-1 GSR Part 5 Joint Convention concentrate and contain delay and decay dilute and disperse waste minimization waste hierarchy"
   },
   {
-    "title": "Radioactive waste classification — thresholds, boundaries and IAEA/US comparison",
+    "title": "Radioactive waste classification — IAEA classes, clearance and US Classes A, B, C",
     "date": "2026.10.25",
     "displayDate": "2026.10.25",
     "section": "concepts",
     "category": "Waste, Fuel Cycle & Decommissioning",
-    "summary": "High-level waste needs both α ≥ 4,000 Bq/g (T½ ≥ 20 years) and heat ≥ 2 kW/m³; for Cs-137 the clearance, very-low/low and low/intermediate boundaries are 0.1, 10 and 1.11×10⁶ Bq/g.",
+    "summary": "IAEA GSG-1 defines six classes by the need for isolation without fixed numbers; the US sets Classes A, B and C by intruder-dose tables, e.g. 1, 44 and 4,600 Ci/m³ for Cs-137.",
     "thumbnail": "assets/images/concepts/c-wd-003-waste-classification/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Radioactive Waste Classification, Waste, Fuel Cycle & Decommissioning · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Radioactive Waste Classification, Waste, Fuel Cycle & Decommissioning · Concept, with an atom icon",
     "url": "posts/concepts/c-wd-003-waste-classification.html",
-    "keywords": "radioactive waste classification high-level waste intermediate-level waste low-level waste very low level waste clearance clearance level clearance dose minimum detectable concentration MDC GSG-1 10 CFR 61.55 Class A B C GTCC NSSC"
+    "keywords": "radioactive waste classification high-level waste intermediate-level waste low-level waste very low level waste exempt waste clearance clearance level minimum detectable concentration MDC GSG-1 10 CFR 61.55 Class A B C GTCC"
   },
   {
     "title": "Spent fuel storage — wet, dry, interim storage and final disposal",
@@ -79,21 +79,21 @@ const posts = [
     "category": "Waste, Fuel Cycle & Decommissioning",
     "summary": "Storage assumes retrieval and disposal does not; pools must stay at keff ≤ 0.95 even with unborated water, dry casks keep peak cladding temperature at or below 400 °C.",
     "thumbnail": "assets/images/concepts/c-wd-002-spent-fuel-storage/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Spent Fuel Storage, Waste, Fuel Cycle & Decommissioning · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Spent Fuel Storage, Waste, Fuel Cycle & Decommissioning · Concept, with an atom icon",
     "url": "posts/concepts/c-wd-002-spent-fuel-storage.html",
-    "keywords": "spent fuel storage wet storage dry storage spent fuel pool high-density racks Boraflex neutron absorber transport cask Type B interim storage deep geological disposal KBS-3 Onkalo High-Level Radioactive Waste Act decay heat"
+    "keywords": "spent fuel storage wet storage dry storage spent fuel pool high-density racks Boraflex neutron absorber transport cask Type B interim storage deep geological disposal KBS-3 Onkalo decay heat"
   },
   {
-    "title": "LILW disposal — classification, disposal methods and the Gyeongju facility",
+    "title": "LILW disposal — waste classes, disposal methods and multiple barriers",
     "date": "2026.10.25",
     "displayDate": "2026.10.25",
     "section": "concepts",
     "category": "Waste, Fuel Cycle & Decommissioning",
-    "summary": "Intermediate-level waste may not go to surface or landfill-type disposal and low-level waste not to landfill-type; post-closure control is at most 200 years for caverns and 300 years for other near-surface facilities.",
+    "summary": "Each waste class goes to a facility with at least the isolation it needs: landfill-type for very low level, engineered near-surface for low level, greater depth for intermediate level; Cs-137 falls to about 1/1,000 in 300 years.",
     "thumbnail": "assets/images/concepts/c-wd-001-lilw-disposal/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Low- and Intermediate-Level Waste Disposal, Waste, Fuel Cycle & Decommissioning · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Low- and Intermediate-Level Waste Disposal, Waste, Fuel Cycle & Decommissioning · Concept, with an atom icon",
     "url": "posts/concepts/c-wd-001-lilw-disposal.html",
-    "keywords": "LILW low-level waste intermediate-level waste radioactive waste disposal cavern disposal surface disposal landfill disposal disposal restrictions multiple barriers Gyeongju KORAD post-closure control acceptance criteria GSG-1 SSR-5"
+    "keywords": "LILW low-level waste intermediate-level waste radioactive waste disposal near-surface disposal rock cavern disposal surface vault landfill disposal multiple barriers waste acceptance criteria institutional control performance objectives GSG-1 SSR-5"
   },
   {
     "title": "Boiling curve — regime correlations, pressure and flow effects",
@@ -103,7 +103,7 @@ const posts = [
     "category": "Thermal Hydraulics & Thermodynamics",
     "summary": "For water at 1 atm, CHF is about 1.26 MW/m² at ΔTe ≈ 21 K and the Leidenfrost minimum about 0.019 MW/m² at ΔTe ≈ 73 K; at 15.5 MPa nucleate superheat falls from 19.3 to 4.5 K.",
     "thumbnail": "assets/images/concepts/c-th-010-boiling-curve/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Boiling Curve, Thermal Hydraulics & Thermodynamics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Boiling Curve, Thermal Hydraulics & Thermodynamics · Concept, with an atom icon",
     "url": "posts/concepts/c-th-010-boiling-curve.html",
     "keywords": "boiling curve nucleate boiling transition boiling film boiling Leidenfrost temperature MHF CHF ONB OSV subcooled boiling Rohsenow Zuber Berenson Bromley Chen Thom Jens-Lottes reflood quench"
   },
@@ -115,7 +115,7 @@ const posts = [
     "category": "Thermal Hydraulics & Thermodynamics",
     "summary": "q′avg = γ·P/(N·H) and q′max = FQ·q′avg; because ΔT = q′/(4πk) does not depend on pellet radius, the melt limit is set in kW/m.",
     "thumbnail": "assets/images/concepts/c-th-009-linear-heat-rate/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Linear Heat Rate q′ and Power Density, Thermal Hydraulics & Thermodynamics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Linear Heat Rate q′ and Power Density, Thermal Hydraulics & Thermodynamics · Concept, with an atom icon",
     "url": "posts/concepts/c-th-009-linear-heat-rate.html",
     "keywords": "linear heat rate LHGR LHR q′ volumetric heat generation rate power density specific power FQ hot channel factor centerline melting SAFDL COLSS CPC LPD Catawba APR1400"
   },
@@ -127,7 +127,7 @@ const posts = [
     "category": "Thermal Hydraulics & Thermodynamics",
     "summary": "The pellet center-to-surface drop is q′/(4πk), independent of radius; at 40 kW/m the example centerline reaches about 1,926 °C, and axially the coolant peaks at the outlet, the cladding between, and the centerline just above the mid-plane.",
     "thumbnail": "assets/images/concepts/c-th-008-fuel-rod-temperature/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Fuel Rod Temperature (Radial and Axial), Thermal Hydraulics & Thermodynamics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Fuel Rod Temperature (Radial and Axial), Thermal Hydraulics & Thermodynamics · Concept, with an atom icon",
     "url": "posts/concepts/c-th-008-fuel-rod-temperature.html",
     "keywords": "fuel rod temperature distribution centerline temperature thermal resistance gap conductance UO2 thermal conductivity conductivity integral burnup degradation TCD linear heat rate axial temperature chopped cosine centerline melting SAFDL"
   },
@@ -139,7 +139,7 @@ const posts = [
     "category": "Thermal Hydraulics & Thermodynamics",
     "summary": "CHF is the maximum heat flux of nucleate boiling (about 1.26 MW/m² for water at 1 atm); beyond it a heat-flux-controlled rod jumps to film boiling, which is why no DNB is a fuel design limit.",
     "thumbnail": "assets/images/concepts/c-th-007-chf-dnb/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Critical Heat Flux and DNB (CHF), Thermal Hydraulics & Thermodynamics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Critical Heat Flux and DNB (CHF), Thermal Hydraulics & Thermodynamics · Concept, with an atom icon",
     "url": "posts/concepts/c-th-007-chf-dnb.html",
     "keywords": "critical heat flux CHF departure from nucleate boiling DNB dryout boiling curve ONB Leidenfrost film boiling Zuber W-3 look-up table DNBR MCPR SAFDL PWR BWR"
   },
@@ -151,7 +151,7 @@ const posts = [
     "category": "Thermal Hydraulics & Thermodynamics",
     "summary": "q′ = q‴·πRf² = q″·2πRco; the core-average heat flux is γP/(NπDH) (about 0.6 MW/m² in a PWR) and the peak is FQ times the average (about 1.5 MW/m²).",
     "thumbnail": "assets/images/concepts/c-th-006-heat-flux/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Heat Flux q″ (Average and Peak), Thermal Hydraulics & Thermodynamics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Heat Flux q″ (Average and Peak), Thermal Hydraulics & Thermodynamics · Concept, with an atom icon",
     "url": "posts/concepts/c-th-006-heat-flux.html",
     "keywords": "heat flux linear heat rate volumetric heat generation rate average heat flux peak heat flux FQ hot channel factor chopped cosine axial peaking DNBR CHF fuel rod PWR thermal design"
   },
@@ -163,7 +163,7 @@ const posts = [
     "category": "Thermal Hydraulics & Thermodynamics",
     "summary": "For 6.9 MPa saturated steam and a 5 kPa condenser the ideal Rankine efficiency is 37.8 % (Carnot 45.2 %); regeneration raises it to 42.6 %, while the MSR mainly lifts exhaust quality from 0.675 to 0.820.",
     "thumbnail": "assets/images/concepts/c-th-005-rankine-cycle/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Rankine Cycle and Thermal Efficiency, Thermal Hydraulics & Thermodynamics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Rankine Cycle and Thermal Efficiency, Thermal Hydraulics & Thermodynamics · Concept, with an atom icon",
     "url": "posts/concepts/c-th-005-rankine-cycle.html",
     "keywords": "Rankine cycle thermal efficiency T-s diagram PWR secondary steam generator turbine condenser MSR moisture separator reheater feedwater heater regeneration reheat superheat Carnot IAPWS-IF97 heat rate"
   },
@@ -175,7 +175,7 @@ const posts = [
     "category": "Thermal Hydraulics & Thermodynamics",
     "summary": "Decay heat from fission-product and actinide decay follows P/P0 = 0.0622[ts⁻⁰·² − (ts + t0)⁻⁰·²]; Appendix K uses 1.2 × the 1971 ANS infinite-operation value at 1.02 × power.",
     "thumbnail": "assets/images/concepts/c-th-004-decay-heat/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Decay Heat, Thermal Hydraulics & Thermodynamics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Decay Heat, Thermal Hydraulics & Thermodynamics · Concept, with an atom icon",
     "url": "posts/concepts/c-th-004-decay-heat.html",
     "keywords": "decay heat residual heat Way-Wigner fission products actinides U-239 Np-239 ANS-5.1 Appendix K 10 CFR 50.46 residual heat removal shutdown cooling GDC 34 TMI-2 Fukushima"
   },
@@ -187,7 +187,7 @@ const posts = [
     "category": "Thermal Hydraulics & Thermodynamics",
     "summary": "Natural circulation needs the SG thermal center above the core thermal center; ΔPb = (ρc − ρh)gΔH and ṁ ∝ (QΔH)^1/3, so a 20 % loss of ΔH raises ΔT by only about 7.7 %.",
     "thumbnail": "assets/images/concepts/c-th-003-natural-circulation/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Natural Circulation, Thermal Hydraulics & Thermodynamics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Natural Circulation, Thermal Hydraulics & Thermodynamics · Concept, with an atom icon",
     "url": "posts/concepts/c-th-003-natural-circulation.html",
     "keywords": "natural circulation thermal center driving head buoyancy reflux condensation two-phase CCFL non-condensable gas upper head bubble decay heat removal steam generator GL 81-21 BTP 5-4"
   },
@@ -199,7 +199,7 @@ const posts = [
     "category": "Thermal Hydraulics & Thermodynamics",
     "summary": "FQ = q″max/q″avg protects against LOCA peak cladding temperature and fuel melting; FΔH, the ratio of the strongest rod's integrated power to the average, protects the DNB limit.",
     "thumbnail": "assets/images/concepts/c-th-002-hot-channel-factor/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Hot Channel Factors (FQ · FΔH), Thermal Hydraulics & Thermodynamics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Hot Channel Factors (FQ · FΔH), Thermal Hydraulics & Thermodynamics · Concept, with an atom icon",
     "url": "posts/concepts/c-th-002-hot-channel-factor.html",
     "keywords": "hot channel factor FQ FΔH heat flux hot channel factor enthalpy rise hot channel factor nuclear factor engineering factor peaking factor axial peaking radial peaking K(Z) CFQ COLR flux map AFD QPTR LHR Fxy power flattening"
   },
@@ -211,7 +211,7 @@ const posts = [
     "category": "Thermal Hydraulics & Thermodynamics",
     "summary": "DNBR = q″CHF/q″ at each location; the core minimum MDNBR must stay at or above the correlation-specific 95/95 limit (1.29 for the APR1400 with KCE-1), and it lies downstream of the peak heat flux.",
     "thumbnail": "assets/images/concepts/c-th-001-dnbr/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, DNBR (Departure from Nucleate Boiling Ratio), Thermal Hydraulics & Thermodynamics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, DNBR (Departure from Nucleate Boiling Ratio), Thermal Hydraulics & Thermodynamics · Concept, with an atom icon",
     "url": "posts/concepts/c-th-001-dnbr.html",
     "keywords": "DNBR MDNBR departure from nucleate boiling critical heat flux CHF correlation W-3 KCE-1 SAFDL 95/95 DNBR margin boiling curve influencing factors COLSS CPC OTDT loss of flow APR1400 thermal hydraulics"
   },
@@ -221,9 +221,9 @@ const posts = [
     "displayDate": "2026.10.25",
     "section": "concepts",
     "category": "Systems & Equipment",
-    "summary": "The CVCS lets down RCS coolant, cools and purifies it and charges it back (72 + 16 = 88 gpm in the OPR1000 example) to control inventory, boron and chemistry, with seal injection and auxiliary spray.",
+    "summary": "The CVCS lets down RCS coolant, cools and purifies it and charges it back, with letdown plus seal bleed-off balancing charging, to control inventory, boron and chemistry, and supplies seal injection and auxiliary spray.",
     "thumbnail": "assets/images/concepts/c-sy-012-cvcs/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Chemical and Volume Control System (CVCS), Systems & Equipment · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Chemical and Volume Control System (CVCS), Systems & Equipment · Concept, with an atom icon",
     "url": "posts/concepts/c-sy-012-cvcs.html",
     "keywords": "chemical and volume control system CVCS letdown charging regenerative heat exchanger volume control tank VCT seal injection auxiliary spray boration dilution boric acid concentrator ppm boron w/o boric acid water chemistry LiOH hydrogen hydrazine boron dilution SRP 15.4.6 APR1400 OPR1000"
   },
@@ -235,7 +235,7 @@ const posts = [
     "category": "Systems & Equipment",
     "summary": "ESFAS measures each variable in four channels and initiates SIAS, CIAS, CSAS, MSIS, AFAS or RAS on 2 of 4, latching the action until manual reset except for AFAS cycling.",
     "thumbnail": "assets/images/concepts/c-sy-011-esfas-actuation-signals/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, ESF Actuation Signals (ESFAS), Systems & Equipment · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, ESF Actuation Signals (ESFAS), Systems & Equipment · Concept, with an atom icon",
     "url": "posts/concepts/c-sy-011-esfas-actuation-signals.html",
     "keywords": "ESFAS engineered safety features actuation system SIAS CIAS CSAS MSIS AFAS RAS CREVAS CPIAS selective 2/4 lockout operating bypass channel bypass PPS ESF-CCS EDG load sequencing APR1400 OPR1000 design basis accident IEEE 603"
   },
@@ -247,7 +247,7 @@ const posts = [
     "category": "Systems & Equipment",
     "summary": "The ENFMS covers source level to 200 % with overlapping ranges: counting, then Campbelling (MSV), then current, with log power for trips and startup rate and linear power for VOPT and the CPC.",
     "thumbnail": "assets/images/concepts/c-sy-010-excore-neutron-flux-monitoring/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Ex-core Neutron Flux Monitoring (ENFMS), Systems & Equipment · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Ex-core Neutron Flux Monitoring (ENFMS), Systems & Equipment · Concept, with an atom icon",
     "url": "posts/concepts/c-sy-010-excore-neutron-flux-monitoring.html",
     "keywords": "ex-core neutron flux monitoring ENFMS NIS neutron detector BF3 proportional counter fission chamber compensated ion chamber Campbelling MSV source range intermediate range power range P-6 P-10 logarithmic power linear power startup rate VOPT CPC rhodium SPND"
   },
@@ -259,7 +259,7 @@ const posts = [
     "category": "Systems & Equipment",
     "summary": "The RCPB extends to the outermost containment isolation valve, to the second of two normally closed valves, and includes the RCS safety and relief valves; its scope is not the same as Safety Class 1.",
     "thumbnail": "assets/images/concepts/c-sy-009-rcpb/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Reactor Coolant Pressure Boundary (RCPB), Systems & Equipment · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Reactor Coolant Pressure Boundary (RCPB), Systems & Equipment · Concept, with an atom icon",
     "url": "posts/concepts/c-sy-009-rcpb.html",
     "keywords": "reactor coolant pressure boundary RCPB outer limits containment isolation valve 10 CFR 50.2 50.55a ASME Class 1 GDC 14 GDC 30 GDC 31 leak detection RG 1.45 in-service inspection leak-before-break pressure isolation valve APR1400"
   },
@@ -269,9 +269,9 @@ const posts = [
     "displayDate": "2026.10.25",
     "section": "concepts",
     "category": "Systems & Equipment",
-    "summary": "In the OPR1000, four SITs (600–625 psig), two HPSI and two LPSI pumps inject borated water from the RWT, RAS transfers suction to the sump, and simultaneous hot-leg injection prevents boric acid precipitation.",
+    "summary": "In the OPR1000, four nitrogen-pressurized SITs, two HPSI and two LPSI pumps inject borated water from the RWT, RAS transfers suction to the sump, and simultaneous hot-leg injection prevents boric acid precipitation.",
     "thumbnail": "assets/images/concepts/c-sy-008-emergency-core-cooling-system/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Emergency Core Cooling System (ECCS), Systems & Equipment · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Emergency Core Cooling System (ECCS), Systems & Equipment · Concept, with an atom icon",
     "url": "posts/concepts/c-sy-008-emergency-core-cooling-system.html",
     "keywords": "emergency core cooling system ECCS safety injection tank SIT HPSI LPSI RWT sump SIAS RAS hot-leg recirculation boric acid precipitation LOCA OPR1000 APR1400 DVI IRWST"
   },
@@ -283,7 +283,7 @@ const posts = [
     "category": "Systems & Equipment",
     "summary": "Type A tests the whole containment (≤ 0.75 La, mass-point L = −2400·B/A), Types B and C the penetrations and isolation valves (maximum-pathway sum ≤ 0.60 La); La is % of air mass per day at Pa.",
     "thumbnail": "assets/images/concepts/c-sy-007-containment-leakage-rate-test/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Containment Leakage Rate Test, Systems & Equipment · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Containment Leakage Rate Test, Systems & Equipment · Concept, with an atom icon",
     "url": "posts/concepts/c-sy-007-containment-leakage-rate-test.html",
     "keywords": "containment leakage rate test ILRT LLRT Type A Type B Type C Pa La maximum pathway mass-point method Appendix J Option B NEI 94-01 RG 1.163 leak-tightness"
   },
@@ -295,7 +295,7 @@ const posts = [
     "category": "Systems & Equipment",
     "summary": "The four-channel CPC computes minimum DNBR and peak linear heat rate (LPD, kW/ft) in real time and trips through the PPS 2/4 logic; COLSS only monitors, and a COLSS failure is covered by CPC-channel monitoring.",
     "thumbnail": "assets/images/concepts/c-sy-006-core-protection-calculator/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Core Protection Calculator (CPC), Systems & Equipment · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Core Protection Calculator (CPC), Systems & Equipment · Concept, with an atom icon",
     "url": "posts/concepts/c-sy-006-core-protection-calculator.html",
     "keywords": "core protection calculator CPC CEAC COLSS DNBR local power density LPD shadowing factor shape annealing matrix OTDT OPDT ROP CANDU OPR1000 APR1400"
   },
@@ -305,9 +305,9 @@ const posts = [
     "displayDate": "2026.10.25",
     "section": "concepts",
     "category": "Systems & Equipment",
-    "summary": "The SDS lowers RCS pressure below the HPSI shutoff head for feed and bleed; the APR1400 uses four POSRVs (2,470 psia, 244.9 t/h each) and depressurizes to 250 psia or below before vessel failure.",
+    "summary": "The SDS lowers RCS pressure below the HPSI shutoff head for feed and bleed; the APR1400 uses four POSRVs (2,470 psia, 244.9 t/h each) and depressurizes to low pressure before vessel failure.",
     "thumbnail": "assets/images/concepts/c-sy-005-safety-depressurization-system/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Safety Depressurization (SDS · SDVS), Systems & Equipment · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Safety Depressurization (SDS · SDVS), Systems & Equipment · Concept, with an atom icon",
     "url": "posts/concepts/c-sy-005-safety-depressurization-system.html",
     "keywords": "safety depressurization system SDS SDVS POSRV feed and bleed total loss of feedwater HPSI shutoff head IRWST ERDV HPME DCH APR1400 OPR1000"
   },
@@ -319,7 +319,7 @@ const posts = [
     "category": "Systems & Equipment",
     "summary": "The DPS is independent of and diverse from the PPS; at OPR1000 plants it trips the reactor by opening the CEDM MG set contacts through 2/2 logic, and the APR1400 DC uses four FPGA channels in 2/4.",
     "thumbnail": "assets/images/concepts/c-sy-004-diverse-protection-system/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Diverse Protection System (DPS), Systems & Equipment · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Diverse Protection System (DPS), Systems & Equipment · Concept, with an atom icon",
     "url": "posts/concepts/c-sy-004-diverse-protection-system.html",
     "keywords": "diverse protection system DPS ATWS common-cause failure CCF BTP 7-19 D3 10 CFR 50.62 DAS DMA DIS FPGA APR1400 OPR1000 MG set"
   },
@@ -331,7 +331,7 @@ const posts = [
     "category": "Systems & Equipment",
     "summary": "The EDG starts automatically on LOOP and picks up loads in steps, keeping voltage ≥ 75 % and frequency ≥ 95 % and recovering within 60 % of each interval; its start time is a T/S value (10 s or 17 s).",
     "thumbnail": "assets/images/concepts/c-sy-003-emergency-diesel-generator/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Emergency Diesel Generator (EDG), Systems & Equipment · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Emergency Diesel Generator (EDG), Systems & Equipment · Concept, with an atom icon",
     "url": "posts/concepts/c-sy-003-emergency-diesel-generator.html",
     "keywords": "emergency diesel generator EDG Class 1E LOOP load sequencing RG 1.9 auto-start signal SIAS valid test reliability station blackout AAC APR1400"
   },
@@ -343,7 +343,7 @@ const posts = [
     "category": "Systems & Equipment",
     "summary": "The RPS trips the reactor when two of four channels of one protective function reach their setpoint; 2/4 ignores one spurious input, tolerates two failed channels, and becomes 2/3 with one channel bypassed.",
     "thumbnail": "assets/images/concepts/c-sy-002-reactor-protection-system/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Reactor Protection System (RPS, PPS), Systems & Equipment · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Reactor Protection System (RPS, PPS), Systems & Equipment · Concept, with an atom icon",
     "url": "posts/concepts/c-sy-002-reactor-protection-system.html",
     "keywords": "reactor protection system RPS plant protection system PPS ESFAS coincidence logic 2 out of 4 bistable LCL trip breakers RTSS channel bypass single failure criterion IEEE 603 10 CFR 50.55a GDC 20 CPC DNBR OTDT OPDT DPS APR1400"
   },
@@ -355,7 +355,7 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "A PAR recombines H₂ and O₂ flamelessly on Pt/Pd and draws gas through by chimney draft; a large unit removes about 1.2–1.5 g/s at 4 %, and the catalyst can ignite the mixture above about 5.5–7.5 % in dry tests.",
     "thumbnail": "assets/images/concepts/c-sa-026-passive-autocatalytic-recombiner/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Passive Autocatalytic Recombiner (PAR), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Passive Autocatalytic Recombiner (PAR), Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-026-passive-autocatalytic-recombiner.html",
     "keywords": "passive autocatalytic recombiner PAR hydrogen recombiner hydrogen control containment catalyst platinum palladium chimney draft removal rate correlation AREVA FR1-1500T THAI ignition poisoning APR1400 igniter severe accident"
   },
@@ -367,7 +367,7 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "ANS Conditions I–IV class design-basis events by frequency and consequence; SRP 15.0 Rev. 3 maps them to AOO = II + III and postulated accident = IV, and each Condition must not escalate to a higher one.",
     "thumbnail": "assets/images/concepts/c-sa-025-ans-condition-classification/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, ANS Condition I–IV Classification, Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, ANS Condition I–IV Classification, Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-025-ans-condition-classification.html",
     "keywords": "ANS Condition I II III IV ANSI N18.2 ANS-51.1 moderate frequency infrequent incidents limiting faults anticipated operational occurrence AOO postulated accident SRP 15.0 acceptance criteria MDNBR 110 percent 10 CFR 100 ASME service levels IAEA DEC loss of condenser vacuum"
   },
@@ -379,7 +379,7 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "IVR prevents vessel failure by external cooling; success requires q″(θ) < q″CHF(θ) everywhere, and the tightest margin is usually at the thin upper metal layer where heat is focused.",
     "thumbnail": "assets/images/concepts/c-sa-024-in-vessel-retention/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, In-Vessel Retention (IVR), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, In-Vessel Retention (IVR), Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-024-in-vessel-retention.html",
     "keywords": "in-vessel retention IVR ERVC external reactor vessel cooling lower head critical heat flux CHF ULPU focusing effect metal layer stratification core catcher AP1000 AP600 Loviisa APR1400 SAMG severe accident"
   },
@@ -391,7 +391,7 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "SAMG takes over when CET reaches 649 °C and EOP core cooling fails; the TSC uses the DFC to pick among seven strategies, weighing each one's negative impacts against the result of not acting.",
     "thumbnail": "assets/images/concepts/c-sa-023-samg/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Severe Accident Management Guidelines (SAMG), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Severe Accident Management Guidelines (SAMG), Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-023-samg.html",
     "keywords": "SAMG severe accident management guidelines core-exit temperature 649 C diagnostic flow chart DFC SCST SACRG SAEG technical support center TSC RCS depressurization HPME DCH induced SGTR negative impacts PWROG DPG accident management plan"
   },
@@ -403,7 +403,7 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "At TMI-2 in 1979 a stuck-open PORV drained the RCS while a high pressurizer level hid the loss; about 45 % of the core melted, the vessel and containment held, and NUREG-0737 followed.",
     "thumbnail": "assets/images/concepts/c-sa-022-tmi2-accident/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, TMI-2 Accident, Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, TMI-2 Accident, Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-022-tmi2-accident.html",
     "keywords": "TMI-2 Three Mile Island PORV stuck open small break LOCA SBLOCA pressurizer level RCS inventory HPI throttling core melt INES 5 NUREG-0737 NUREG-0660 SPDS STA symptom-based EOP Kemeny"
   },
@@ -415,7 +415,7 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "A large LOCA depressurizes in tens of seconds and is decided by stored heat and reflood, while a small LOCA plateaus near SG pressure and is decided by loop seal, boil-off and operator actions.",
     "thumbnail": "assets/images/concepts/c-sa-021-loss-of-coolant-accident/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Loss-of-Coolant Accident (LOCA), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Loss-of-Coolant Accident (LOCA), Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-021-loss-of-coolant-accident.html",
     "keywords": "loss-of-coolant accident LOCA LBLOCA SBLOCA MBLOCA blowdown refill reflood loop seal boil-off ECC bypass steam binding DVI RCP trip Trip-2 Leave-2 upper head voiding RCGVS 10 CFR 50.46 ECCS"
   },
@@ -427,7 +427,7 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "The six CSFs (S, C, H, P, Z, I) are judged from measured variables on status trees; red goes to a recovery procedure at once, and colour outranks tree priority.",
     "thumbnail": "assets/images/concepts/c-sa-020-critical-safety-functions/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Critical Safety Functions (CSF), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Critical Safety Functions (CSF), Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-020-critical-safety-functions.html",
     "keywords": "critical safety functions CSF status tree CSFST function restoration procedure emergency operating procedure symptom-based core exit thermocouple RVLIS subcooling SPDS safety function status check SAMG Westinghouse"
   },
@@ -439,7 +439,7 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "Fuel liquefies far below the UO2 melting point through oxidation and eutectic reactions; after vessel failure, RCS pressure and cavity water decide between DCH, FCI and MCCI loads on containment.",
     "thumbnail": "assets/images/concepts/c-sa-019-severe-accident-progression/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Severe Accident Progression, Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Severe Accident Progression, Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-019-severe-accident-progression.html",
     "keywords": "severe accident progression core melt in-vessel ex-vessel oxidation hydrogen eutectic candling relocation lower head failure HPME DCH FCI steam explosion MCCI TMI-2 Fukushima IVR"
   },
@@ -451,21 +451,21 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "Fire protection rests on prevention, detection and suppression, and protection of safe shutdown, with redundant trains separated by a 3 h barrier, more than 20 ft plus suppression, or a 1 h enclosure plus suppression.",
     "thumbnail": "assets/images/concepts/c-sa-018-fire-protection/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Fire Protection: Three Objectives, Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Fire Protection: Three Objectives, Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-018-fire-protection.html",
     "keywords": "fire protection Appendix R 10 CFR 50.48 NFPA 805 fire hazard analysis safe shutdown train separation fire barrier alternative shutdown multiple spurious operations Browns Ferry fire PSA RG 1.189"
   },
   {
-    "title": "Multiple-failure accidents — the nine mandatory scenarios and DEC-A",
+    "title": "Multiple-failure accidents — typical sequences and DEC-A",
     "date": "2026.10.25",
     "displayDate": "2026.10.25",
     "section": "concepts",
     "category": "Accidents, Safety Analysis & Severe Accidents",
-    "summary": "Multiple-failure accidents assume loss of a safety function beyond a single failure; the nine mandatory scenarios plus PSA additions must not cause significant damage to reactor or spent fuel pool fuel.",
+    "summary": "Multiple-failure accidents assume loss of a safety function beyond a single failure; typical sequences plus PSA-selected additions must not cause significant damage to reactor or spent fuel pool fuel.",
     "thumbnail": "assets/images/concepts/c-sa-017-multiple-failure-accidents/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Nine Multiple-Failure Accidents, Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Multiple-Failure Accidents (DEC-A), Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-017-multiple-failure-accidents.html",
-    "keywords": "multiple failure accident management plan DEC-A design extension conditions single failure common cause failure ATWS SBO SGTR ISLOCA shutdown cooling ultimate heat sink spent fuel pool APR1400 WENRA"
+    "keywords": "multiple failure accident management DEC-A design extension conditions single failure common cause failure ATWS SBO SGTR ISLOCA shutdown cooling ultimate heat sink spent fuel pool WENRA alternate AC"
   },
   {
     "title": "INES — levels 0–7, three assessment areas and I-131 equivalent release",
@@ -475,9 +475,9 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "INES rates an event in three areas and takes the highest; defence in depth alone stops at level 3, and levels 4–7 for releases use I-131 equivalent boundaries of about 500, 5,000 and 50,000 TBq.",
     "thumbnail": "assets/images/concepts/c-sa-016-ines-event-scale/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, INES Levels 0–7, Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, INES Levels 0–7, Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-016-ines-event-scale.html",
-    "keywords": "INES event scale level incident accident defence in depth radiological barriers I-131 equivalent TBq Chernobyl Fukushima TMI NSSC event reporting IAEA"
+    "keywords": "INES event scale level incident accident defence in depth radiological barriers I-131 equivalent TBq Chernobyl Fukushima TMI event reporting IAEA"
   },
   {
     "title": "Emergency operating procedures — SPTA, ORP, FRP and CSFSTs",
@@ -487,7 +487,7 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "After a trip, operators check nine safety functions (SPTA), diagnose, follow an event-specific ORP while repeating the SFSC, and fall back to function-based FRPs if diagnosis fails.",
     "thumbnail": "assets/images/concepts/c-sa-015-emergency-operating-procedures/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Emergency operating procedures (EOP), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Emergency operating procedures (EOP), Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-015-emergency-operating-procedures.html",
     "keywords": "emergency operating procedures EOP EOG symptom-based event-based SPTA diagnostic action ORP FRP SFSC resource assessment tree success path Westinghouse ERG CSFST critical safety functions SAMG TMI NUREG-0899 computerized procedure system"
   },
@@ -499,7 +499,7 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "Five LOCA criteria (PCT ≤ 1,204 °C, local ECR ≤ 17 %, core-wide H₂ ≤ 1 %, coolable geometry, long-term cooling), judged by Appendix K or a best-estimate 95/95 bound.",
     "thumbnail": "assets/images/concepts/c-sa-014-eccs-acceptance-criteria/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, ECCS acceptance criteria (50.46), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, ECCS acceptance criteria (50.46), Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-014-eccs-acceptance-criteria.html",
     "keywords": "ECCS acceptance criteria 10 CFR 50.46 peak cladding temperature PCT 1204 ECR 17 percent hydrogen coolable geometry long-term cooling LOCA LBLOCA blowdown refill reflood Appendix K best estimate BEPU 95/95 50.46c"
   },
@@ -511,9 +511,9 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "APR1400 mitigation: POSRVs depressurize the RCS below 250 psia before vessel failure, 30 PARs and 10 igniters, gravity cavity flooding up to about 6.4 m, and an external-water spray backup.",
     "thumbnail": "assets/images/concepts/c-sa-013-apr1400-severe-accident-features/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, APR1400 severe accident features, Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, APR1400 severe accident features, Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-013-apr1400-severe-accident-features.html",
-    "keywords": "APR1400 severe accident features prevention mitigation safety depressurization and vent system SDVS POSRV ERDV hydrogen mitigation PAR igniter cavity flooding system CFS ECSBS IVR-ERVC core catcher HPME DCH MCCI accident management plan"
+    "keywords": "APR1400 severe accident features prevention mitigation safety depressurization and vent system SDVS POSRV hydrogen mitigation PAR igniter cavity flooding system CFS ECSBS core catcher HPME DCH MCCI SAMG"
   },
   {
     "title": "SSE and OBE — design earthquakes, RG 1.60 spectra and OBE exceedance",
@@ -523,9 +523,9 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "SSE (minimum 0.1 g) is the design ground motion for safety functions; an OBE of at most SSE/3 needs no design analysis but remains the shutdown criterion, judged by spectrum and CAV.",
     "thumbnail": "assets/images/concepts/c-sa-012-sse-obe/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, SSE and OBE, Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, SSE and OBE, Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-012-sse-obe.html",
-    "keywords": "safe shutdown earthquake operating basis earthquake SSE OBE DBE seismic design response spectrum RG 1.60 10 CFR 50 Appendix S CAV cumulative absolute velocity OBE exceedance HCLPF seismic category Gyeongju earthquake"
+    "keywords": "safe shutdown earthquake operating basis earthquake SSE OBE DBE seismic design response spectrum RG 1.60 10 CFR 50 Appendix S CAV cumulative absolute velocity OBE exceedance HCLPF seismic category"
   },
   {
     "title": "Defence in depth — five functional levels and independence between them",
@@ -535,9 +535,9 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "Five independent levels (prevention, control, accident control, severe-accident mitigation, off-site response) protect the physical barriers; early or large releases must be practically eliminated.",
     "thumbnail": "assets/images/concepts/c-sa-011-defence-in-depth/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Five levels of defence in depth, Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Five levels of defence in depth, Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-011-defence-in-depth.html",
-    "keywords": "defence in depth defense in depth five levels INSAG-10 SSR-2/1 WENRA 3a 3b design extension conditions DEC practical elimination independence plant states multiple barriers accident management APR1400"
+    "keywords": "defence in depth defense in depth five levels INSAG-10 SSR-2/1 WENRA 3a 3b design extension conditions DEC practical elimination independence plant states multiple barriers accident management"
   },
   {
     "title": "Multiple barriers — four physical barriers and their design limits",
@@ -547,7 +547,7 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "Fission products must pass pellet, cladding, RCPB and containment in series; the barriers are not fully independent, so safety functions are assured redundantly to keep them effective.",
     "thumbnail": "assets/images/concepts/c-sa-010-multiple-barriers/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Multiple barriers (physical barriers), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Multiple barriers (physical barriers), Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-010-multiple-barriers.html",
     "keywords": "multiple barriers physical barriers fission product barriers defence in depth fuel pellet cladding reactor coolant pressure boundary RCPB containment SAFDL 10 CFR 50.46 overpressure containment bypass SGTR ISLOCA"
   },
@@ -559,7 +559,7 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "In an SBO the plant copes with natural circulation, the turbine-driven auxiliary feedwater pump and DC batteries for a coping duration of 2–16 h set by RG 1.155; an AAC shown by test to supply power within 10 minutes removes the need for a coping analysis.",
     "thumbnail": "assets/images/concepts/c-sa-009-station-blackout/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Station blackout (SBO), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Station blackout (SBO), Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-009-station-blackout.html",
     "keywords": "station blackout SBO loss of all AC power 10 CFR 50.63 RG 1.155 coping duration alternate AC source AAC turbine-driven auxiliary feedwater RCP seal leakage LOOP ELAP 10 CFR 50.155 FLEX Fukushima APR1400"
   },
@@ -571,7 +571,7 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "Each kilogram of zirconium that reacts with steam gives 0.0442 kg of hydrogen and about 6.4 MJ of heat; the parabolic rate law and thermal feedback make the reaction accelerate sharply above about 1,200 °C.",
     "thumbnail": "assets/images/concepts/c-sa-008-hydrogen-sources/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Hydrogen sources in accidents (Zr–water reaction), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Hydrogen sources in accidents (Zr–water reaction), Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-008-hydrogen-sources.html",
     "keywords": "hydrogen sources zirconium water reaction Zr steam oxidation Baker-Just Cathcart-Pawel parabolic law ECR 10 CFR 50.46 radiolysis aluminum zinc corrosion MCCI TMI-2 severe accident"
   },
@@ -583,7 +583,7 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "An MSLB overcools the primary side so the negative MTC inserts positive reactivity; the limiting return-to-power case is hot zero power at end of cycle with the most reactive rod stuck, and an MSIV cannot isolate a break upstream of it.",
     "thumbnail": "assets/images/concepts/c-sa-007-mslb/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Main steam line break (MSLB), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Main steam line break (MSLB), Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-007-mslb.html",
     "keywords": "MSLB main steam line break overcooling return to power recriticality moderator temperature coefficient shutdown margin hot zero power end of cycle stuck rod MSIV MSIS flow restrictor critical flow SRP 15.1.5 APR1400"
   },
@@ -595,7 +595,7 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "In an ATWS the peak RCS pressure must stay below about 3,200 psig (22.06 MPa(g)); it depends mostly on the MTC, so the beginning of the cycle (UET) is the weak point, backed up by diverse turbine trip, auxiliary feedwater and reactor trip.",
     "thumbnail": "assets/images/concepts/c-sa-006-atws/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Anticipated transient without scram (ATWS), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Anticipated transient without scram (ATWS), Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-006-atws.html",
     "keywords": "ATWS ATWT anticipated transient without scram 10 CFR 50.62 AMSAC DSS DPS diverse protection system UET unfavorable exposure time moderator temperature coefficient Service Level C loss of normal feedwater Salem APR1400"
   },
@@ -607,7 +607,7 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "Containment failure modes are classified by release path and timing; early failure, bypass and isolation failure dominate LERF, while late failure and basemat melt-through leave more time for deposition.",
     "thumbnail": "assets/images/concepts/c-sa-005-containment-failure-modes/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Containment failure modes, Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Containment failure modes, Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-005-containment-failure-modes.html",
     "keywords": "containment failure modes bypass SGTR ISLOCA isolation failure early containment failure late failure basemat melt-through MCCI DCH HPME steam explosion CET release category LERF Level 2 PSA APR1400"
   },
@@ -619,7 +619,7 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "Hydrogen risk is judged by how it would burn; containments are designed to keep uniform hydrogen from a 100 % cladding reaction below an average of 10 vol% using PARs, igniters or inerting.",
     "thumbnail": "assets/images/concepts/c-sa-003-hydrogen-control/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Containment hydrogen control strategy, Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Containment hydrogen control strategy, Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-003-hydrogen-control.html",
     "keywords": "hydrogen control containment PAR passive autocatalytic recombiner igniter inerting flammability limit detonation DDT steam inerting Shapiro diagram 10 CFR 50.44 APR1400 severe accident"
   },
@@ -631,7 +631,7 @@ const posts = [
     "category": "Accidents, Safety Analysis & Severe Accidents",
     "summary": "An SGTR breaches the primary boundary across a ΔP of about 8.5 MPa and bypasses containment through the ADVs and MSSVs; operators cool, depressurize to ΔP = 0 and terminate SI while avoiding MSSV opening and overfill.",
     "thumbnail": "assets/images/concepts/c-sa-002-sgtr/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Steam Generator Tube Rupture (SGTR), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Steam Generator Tube Rupture (SGTR), Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-002-sgtr.html",
     "keywords": "SGTR steam generator tube rupture containment bypass primary to secondary leak N-16 monitor air ejector blowdown pressure equalization SI termination overfill backfill iodine spike SRP 15.6.3 RG 1.183 Ginna"
   },
@@ -641,11 +641,11 @@ const posts = [
     "displayDate": "2026.10.25",
     "section": "concepts",
     "category": "Accidents, Safety Analysis & Severe Accidents",
-    "summary": "The AMP covers four accident categories, nine mandatory multiple failures and seven containment threats, with criteria of 250 mSv and a Cs-137 (> 100 TBq) release frequency below 10⁻⁶ per year.",
+    "summary": "An AMP covers four accident categories — design basis, multiple failures, beyond-design external hazards and severe accidents — with prevention, mitigation, consequence and risk assessment, implemented through EOPs, extreme-hazard guidelines and SAMG.",
     "thumbnail": "assets/images/concepts/c-sa-001-accident-management-plan/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Accident Management Plan (AMP), Accidents, Safety Analysis & Severe Accidents · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Accident Management Plan (AMP), Accidents, Safety Analysis & Severe Accidents · Concept, with an atom icon",
     "url": "posts/concepts/c-sa-001-accident-management-plan.html",
-    "keywords": "accident management plan AMP severe accident management multiple failure accidents containment threats risk target Cs-137 100 TBq Nuclear Safety Act NSSC notice SAMG APR1400 Saeul Shin-Hanul"
+    "keywords": "accident management plan AMP severe accident management multiple failure accidents containment threats design extension conditions SAMG FLEX IAEA SSG-54 10 CFR 50.155 PSA risk target"
   },
   {
     "title": "Subcritical Multiplication and 1/M — extrapolating to criticality",
@@ -655,7 +655,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "1/M = CR₀/CR = (1−k)/(1−k₀) falls to zero at criticality; each count-rate doubling halves 1−k, and curvature from detector position makes extrapolations conservative or non-conservative.",
     "thumbnail": "assets/images/concepts/c-rx-027-subcritical-multiplication-1m/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Subcritical Multiplication & 1/M, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Subcritical Multiplication & 1/M, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-027-subcritical-multiplication-1m.html",
     "keywords": "subcritical multiplication inverse multiplication 1/M plot approach to criticality count rate doubling source range fuel loading estimated critical position ECP premature criticality neutron source Cf-252 Sb-Be"
   },
@@ -667,7 +667,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "B/A is largest for Ni-62 (8.795 MeV) and U-235 sits at 7.59 MeV; S_n = 6.55 MeV exceeds the 5.3 MeV barrier for U-236 but S_n = 4.81 MeV falls short of 5.5 MeV for U-239.",
     "thumbnail": "assets/images/concepts/c-rx-026-binding-energy-per-nucleon/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Binding Energy per Nucleon, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Binding Energy per Nucleon, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-026-binding-energy-per-nucleon.html",
     "keywords": "binding energy per nucleon mass defect B/A curve Ni-62 Fe-56 semi-empirical mass formula Weizsacker fission energy fusion energy separation energy critical energy fissile fissionable fertile pairing decay heat AME2020"
   },
@@ -679,7 +679,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "Lethargy grows by ξ = 1 + α lnα/(1−α) per collision regardless of energy, giving 18, 115 and 152 collisions to thermalize in hydrogen, carbon and oxygen.",
     "thumbnail": "assets/images/concepts/c-rx-025-lethargy-slowing-down/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Neutron Slowing Down & Lethargy, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Neutron Slowing Down & Lethargy, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-025-lethargy-slowing-down.html",
     "keywords": "lethargy neutron slowing down average logarithmic energy decrement xi collisions to thermalize slowing-down density 1/E flux Fermi age resonance escape probability elastic scattering moderator"
   },
@@ -691,7 +691,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "ρ = ωΛ + Σβᵢω/(ω+λᵢ) has seven real roots with six delayed groups; for ρ > 0 only ω₁ is positive and sets T = 1/ω₁, while for ρ < 0 the period is bounded by −1/λ₁ ≈ −80 s.",
     "thumbnail": "assets/images/concepts/c-rx-024-inhour-equation/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Inhour Equation, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Inhour Equation, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-024-inhour-equation.html",
     "keywords": "inhour equation stable period reactor period point kinetics delayed neutrons reactivity roots asymptotes one-group approximation inverse kinetics reactivity computer positive period method"
   },
@@ -847,7 +847,7 @@ const posts = [
     "category": "Reactor Physics & Kinetics",
     "summary": "Excess reactivity ρex = (k_max − 1)/k_max is about 0.29 Δk/k for a cold, clean PWR first core; it shrinks with heat-up, poisons and burnup, and total control worth = ρex + shutdown margin in the same state.",
     "thumbnail": "assets/images/concepts/c-rx-011-excess-reactivity/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Excess Reactivity, Reactor Physics & Kinetics · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Excess Reactivity, Reactor Physics & Kinetics · Concept, with an atom icon",
     "url": "posts/concepts/c-rx-011-excess-reactivity.html",
     "keywords": "excess reactivity reserve reactivity k_max built-in reactivity shutdown margin total control worth burnup reactivity temperature defect power defect burnable absorber boron letdown curve end of cycle GDC 26"
   },
@@ -989,11 +989,11 @@ const posts = [
     "displayDate": "2026.10.25",
     "section": "concepts",
     "category": "Radiation Protection & Emergency",
-    "summary": "The law fixes base-area ranges of 3–5 km (PAZ) and 20–30 km (UPZ); the actual zones are agreed with provincial governors and approved by the NSSC, and they are preparation ranges, not the reach of radiation.",
+    "summary": "IAEA EPR-NPP suggests a PAZ of 3–5 km for precautionary evacuation and a UPZ of 15–30 km for assessment-based actions; actual boundaries follow local conditions, and the radii are preparation ranges, not the reach of radiation.",
     "thumbnail": "assets/images/concepts/c-rp-004-emergency-planning-zones/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Emergency planning zones (PAZ, UPZ), Radiation Protection & Emergency · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Emergency planning zones (PAZ, UPZ), Radiation Protection & Emergency · Concept, with an atom icon",
     "url": "posts/concepts/c-rp-004-emergency-planning-zones.html",
-    "keywords": "emergency planning zone PAZ UPZ precautionary action zone urgent protective action planning zone base area Radiological Emergency Act evacuation sheltering thyroid blocking operational intervention level OIL EPD ICPD Fukushima EPZ"
+    "keywords": "emergency planning zone PAZ UPZ precautionary action zone urgent protective action planning zone EPD ICPD IAEA EPR-NPP GSR Part 7 evacuation sheltering thyroid blocking operational intervention level OIL plume exposure EPZ Fukushima"
   },
   {
     "title": "Emergency action levels — ICs, barrier matrix and release criteria",
@@ -1001,11 +1001,11 @@ const posts = [
     "displayDate": "2026.10.25",
     "section": "concepts",
     "category": "Radiation Protection & Emergency",
-    "summary": "EALs are plant-specific observable thresholds attached to initiating conditions; two barriers lost plus the third threatened means GE (about red), and the South Korean release criterion is a site-boundary dose rate of 10 mSv/h whole body or 50 mSv/h thyroid.",
+    "summary": "EALs are plant-specific observable thresholds attached to initiating conditions; two barriers lost plus the third threatened means a General Emergency, and NEI release ICs use projected dose (0.1, 1, 10 mSv TEDE) rather than dose rate.",
     "thumbnail": "assets/images/concepts/c-rp-003-emergency-action-levels/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Emergency action levels (EAL), Radiation Protection & Emergency · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Emergency action levels (EAL), Radiation Protection & Emergency · Concept, with an atom icon",
     "url": "posts/concepts/c-rp-003-emergency-action-levels.html",
-    "keywords": "emergency action level EAL initiating condition NEI 99-01 recognition category fission product barrier FA1 FS1 FG1 general emergency site area emergency alert red emergency radiological emergency plan core exit temperature"
+    "keywords": "emergency action level EAL initiating condition NEI 99-01 recognition category fission product barrier FA1 FS1 FG1 general emergency site area emergency alert radiological emergency plan core exit temperature"
   },
   {
     "title": "Equivalent and effective dose — wR, wT, ICRP 60 vs 103",
@@ -1015,7 +1015,7 @@ const posts = [
     "category": "Radiation Protection & Emergency",
     "summary": "HT = Σ wR·DT,R and E = Σ wT·HT (Σw_T = 1), both in Sv; they are protection quantities for a reference person that cannot be measured and are estimated with H*(10) and Hp(10).",
     "thumbnail": "assets/images/concepts/c-rp-002-equivalent-effective-dose/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Equivalent and effective dose, Radiation Protection & Emergency · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Equivalent and effective dose, Radiation Protection & Emergency · Concept, with an atom icon",
     "url": "posts/concepts/c-rp-002-equivalent-effective-dose.html",
     "keywords": "equivalent dose effective dose radiation weighting factor tissue weighting factor ICRP 103 ICRP 60 neutron weighting factor committed dose collective dose operational quantities Hp(10) H*(10) dose limit lens of the eye sievert"
   },
@@ -1063,9 +1063,9 @@ const posts = [
     "category": "Policy, Economics & Reactor Types",
     "summary": "CANDU-6 keeps its high-pressure D₂O coolant in 380 pressure tubes inside a cool calandria, burns natural uranium with about 16 bundles a day of on-power refuelling, and offsets a positive void reactivity with two independent shutdown systems.",
     "thumbnail": "assets/images/concepts/c-pe-005-phwr-candu/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, PHWR (CANDU) Characteristics, Policy, Economics & Reactor Types · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, PHWR (CANDU) Characteristics, Policy, Economics & Reactor Types · Concept, with an atom icon",
     "url": "posts/concepts/c-pe-005-phwr-candu.html",
-    "keywords": "PHWR CANDU CANDU-6 heavy water pressure tube calandria natural uranium on-power refuelling void reactivity photoneutrons prompt neutron lifetime SDS1 SDS2 special safety systems group separation tritium Wolsong"
+    "keywords": "PHWR CANDU CANDU-6 heavy water pressure tube calandria natural uranium on-power refuelling void reactivity photoneutrons prompt neutron lifetime SDS1 SDS2 special safety systems group separation tritium"
   },
   {
     "title": "Present Worth — six interest factors, IDC, decommissioning funds and levelized cost",
@@ -1073,9 +1073,9 @@ const posts = [
     "displayDate": "2026.10.25",
     "section": "concepts",
     "category": "Policy, Economics & Reactor Types",
-    "summary": "P = F/(1+i)ⁿ: with CRF = SFF + i and the end-of-period convention, the same factors give decommissioning contributions, interest during construction (19.8 % in the 76th exam case) and the levelized cost.",
+    "summary": "P = F/(1+i)ⁿ: with CRF = SFF + i and the end-of-period convention, the same factors give decommissioning contributions, interest during construction (19.8 % in the worked example) and the levelized cost.",
     "thumbnail": "assets/images/concepts/c-pe-004-present-worth/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Present Worth and Engineering Economics, Policy, Economics & Reactor Types · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Present Worth and Engineering Economics, Policy, Economics & Reactor Types · Concept, with an atom icon",
     "url": "posts/concepts/c-pe-004-present-worth.html",
     "keywords": "present worth present value time value of money interest factors capital recovery factor sinking fund interest during construction decommissioning fund discount rate Fisher NPV IRR payback levelized cost lead lag fuel cost"
   },
@@ -1085,11 +1085,11 @@ const posts = [
     "displayDate": "2026.10.25",
     "section": "concepts",
     "category": "Policy, Economics & Reactor Types",
-    "summary": "Nuclear LCOE is about half investment, so the discount rate dominates: 39.4 to 67.2 USD/MWh from 3 to 10 %, with crossovers against coal and LNG near 14–15 % in the OECD 2020 Korean model.",
+    "summary": "Nuclear LCOE is about half investment, so the discount rate dominates: 39.4 to 67.2 USD/MWh from 3 to 10 %, with crossovers against coal and LNG near 14–15 % for the example inputs.",
     "thumbnail": "assets/images/concepts/c-pe-003-generation-cost-economics/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Generation Cost and Economics, Policy, Economics & Reactor Types · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Generation Cost and Economics, Policy, Economics & Reactor Types · Concept, with an atom icon",
     "url": "posts/concepts/c-pe-003-generation-cost-economics.html",
-    "keywords": "nuclear economics generation cost LCOE levelized cost overnight cost interest during construction carrying charges capital recovery factor fuel cycle cost discount rate crossover settlement price decommissioning spent fuel charge external cost"
+    "keywords": "nuclear economics generation cost LCOE levelized cost overnight cost interest during construction carrying charges capital recovery factor fuel cycle cost discount rate crossover settlement price decommissioning external cost system cost"
   },
   {
     "title": "APR1400 Design Features — what changed from the OPR1000",
@@ -1121,7 +1121,7 @@ const posts = [
     "displayDate": "2026.10.25",
     "section": "concepts",
     "category": "Operation, Regulation & Quality",
-    "summary": "ISI runs on a 10-year interval split into three periods with cumulative minimums of 16, 50 and 100 %; flaws beyond IWB-3500 go to repair or IWB-3600 evaluation, and RI-ISI moves exams to high-risk piping.",
+    "summary": "ISI runs on a 10-year interval split into three periods with cumulative minimums of 16, 50 and 100 %; flaws beyond IWB-3500 go to repair or IWB-3600 evaluation, and RI-ISI moves examinations to high-risk piping.",
     "thumbnail": "assets/images/concepts/c-op-010-in-service-inspection/thumbnail.webp",
     "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, In-Service Inspection (ISI), Operation, Regulation & Quality · Concept, with an atom icon",
     "url": "posts/concepts/c-op-010-in-service-inspection.html",
@@ -1135,9 +1135,9 @@ const posts = [
     "category": "Operation, Regulation & Quality",
     "summary": "Capacity factor = energy generated / (rating × clock hours); operating factor = on-line hours / clock hours; without above-rated output the capacity factor cannot exceed the operating factor.",
     "thumbnail": "assets/images/concepts/c-op-009-capacity-operating-factor/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Capacity Factor and Operating Factor, Operation, Regulation & Quality · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Capacity Factor and Operating Factor, Operation, Regulation & Quality · Concept, with an atom icon",
     "url": "posts/concepts/c-op-009-capacity-operating-factor.html",
-    "keywords": "capacity factor load factor operating factor availability EAF UCF UCLF forced loss rate FOR refueling outage coastdown load following LCOE KHNP PRIS WANO"
+    "keywords": "capacity factor load factor operating factor availability EAF UCF UCLF forced loss rate FOR refueling outage coastdown load following LCOE PRIS WANO"
   },
   {
     "title": "Nuclear QA — App. B 18 criteria, NQA-1, CGD and CFSI",
@@ -1147,9 +1147,9 @@ const posts = [
     "category": "Operation, Regulation & Quality",
     "summary": "QA is all planned and systematic actions giving adequate confidence that safety-related SSCs perform; its 18 App. B criteria run from organization to audits, and commercial-grade dedication and CFSI checks guard the supply chain.",
     "thumbnail": "assets/images/concepts/c-op-008-quality-assurance/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Nuclear Quality Assurance (QA), Operation, Regulation & Quality · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Nuclear Quality Assurance (QA), Operation, Regulation & Quality · Concept, with an atom icon",
     "url": "posts/concepts/c-op-008-quality-assurance.html",
-    "keywords": "quality assurance QA QC 10 CFR 50 Appendix B 18 criteria ASME NQA-1 RG 1.28 KEPIC QAP commercial-grade dedication CFSI counterfeit Part 21 supplier inspection graded approach"
+    "keywords": "quality assurance QA QC 10 CFR 50 Appendix B 18 criteria ASME NQA-1 RG 1.28 commercial-grade dedication CFSI counterfeit Part 21 graded approach IAEA GSR Part 2"
   },
   {
     "title": "Reactor Coolant Leakage — identified, unidentified and pressure boundary",
@@ -1159,7 +1159,7 @@ const posts = [
     "category": "Operation, Regulation & Quality",
     "summary": "STS limits are zero pressure boundary leakage, 1 gpm unidentified, 10 gpm identified and 150 gpd per SG primary-to-secondary (APR1400 US DC: 0.5 gpm unidentified); unidentified leakage is found by a 72-hour water inventory balance.",
     "thumbnail": "assets/images/concepts/c-op-007-rcs-leakage/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Reactor Coolant Leakage, Operation, Regulation & Quality · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Reactor Coolant Leakage, Operation, Regulation & Quality · Concept, with an atom icon",
     "url": "posts/concepts/c-op-007-rcs-leakage.html",
     "keywords": "reactor coolant leakage identified unidentified pressure boundary primary-to-secondary operational leakage LCO 3.4.13 water inventory balance RG 1.45 leakage detection TSTF-554 LBB APR1400"
   },
@@ -1207,7 +1207,7 @@ const posts = [
     "category": "Operation, Regulation & Quality",
     "summary": "An item becomes an LCO if it meets one or more of four criteria (RCPB degradation instruments, analysis initial conditions, primary success path SSCs, PSA/experience); completion times run from discovery.",
     "thumbnail": "assets/images/concepts/c-op-002-lco/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Limiting Condition for Operation (LCO), Operation, Regulation & Quality · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Limiting Condition for Operation (LCO), Operation, Regulation & Quality · Concept, with an atom icon",
     "url": "posts/concepts/c-op-002-lco.html",
     "keywords": "limiting condition for operation LCO selection criteria primary success path initial conditions completion time required action surveillance requirement LCO 3.0.4 SR 3.0.2 relocation 10 CFR 50.36 Technical Specifications"
   },
@@ -1279,7 +1279,7 @@ const posts = [
     "category": "Fuel & Materials",
     "summary": "Thin SG tubes (wall about 1 mm) degrade by PWSCC, ODSCC/IGA, denting, wear and fatigue; flaws of 40 %TW or deeper are plugged or sleeved, and a 10 % UA loss cuts steam pressure from 6.90 to about 6.75 MPa.",
     "thumbnail": "assets/images/concepts/c-fm-008-sg-tube-degradation/thumbnail.webp",
-    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Steam Generator Tube Degradation, Fuel & Materials · Concept · Key points, with an atom icon",
+    "thumbnailAlt": "Text card reading Nuclear Power Engineering, Concept, Steam Generator Tube Degradation, Fuel & Materials · Concept, with an atom icon",
     "url": "posts/concepts/c-fm-008-sg-tube-degradation.html",
     "keywords": "steam generator tube degradation PWSCC ODSCC IGA denting wastage pitting fretting wear fatigue Alloy 600 Alloy 690 eddy current testing bobbin rotating probe plugging sleeving 40 %TW NEI 97-06 SGTR fouling secondary water chemistry"
   },
