@@ -9,7 +9,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/p-th-001-hot-spot-factor-rod-count/thumbnail.webp",
     "thumbnailAlt": "A fuel-rod grid with a few warmer highlighted rods among a cooler majority.",
     "url": "posts/concepts/p-th-001-hot-spot-factor-rod-count.html",
-    "keywords": "hot spot factor hot channel factor F_Q F_N F_E heat flux average heat flux heat transfer area fuel rod count PWR core design worked problem linear heat rate"
+    "keywords": "hot spot factor hot channel factor F_Q F_N F_E heat flux average heat flux heat transfer area fuel rod count PWR core design worked problem linear heat rate",
+    "publishedAt": "2026-10-24T23:51:57Z"
   },
   {
     "title": "Nuclear criticality safety — control parameters, double contingency and pool keff limits",
@@ -21,7 +22,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-wd-007-criticality-safety/thumbnail.webp",
     "thumbnailAlt": "Storage containers kept in a spaced rack with neutron-absorbing plates between them.",
     "url": "posts/concepts/c-wd-007-criticality-safety.html",
-    "keywords": "criticality safety keff spent fuel pool 10 CFR 50.68 double contingency ANSI/ANS-8.1 boron credit burnup credit loading curve critical mass moderation CSI criticality alarm JCO"
+    "keywords": "criticality safety keff spent fuel pool 10 CFR 50.68 double contingency ANSI/ANS-8.1 boron credit burnup credit loading curve critical mass moderation CSI criticality alarm JCO",
+    "publishedAt": "2026-10-24T23:51:57Z"
   },
   {
     "title": "Pyroprocessing — molten-salt recovery of U and U/TRU",
@@ -33,7 +35,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-wd-006-pyroprocessing/thumbnail.webp",
     "thumbnailAlt": "An electrorefining cell with electrodes in molten salt and a metal deposit growing on one electrode.",
     "url": "posts/concepts/c-wd-006-pyroprocessing.html",
-    "keywords": "pyroprocessing dry reprocessing molten salt electrolytic reduction electrorefining electrowinning liquid cadmium cathode chloride free energy PUREX UREX+ proliferation resistance SFR safeguards"
+    "keywords": "pyroprocessing dry reprocessing molten salt electrolytic reduction electrorefining electrowinning liquid cadmium cathode chloride free energy PUREX UREX+ proliferation resistance SFR safeguards",
+    "publishedAt": "2026-10-24T23:51:57Z"
   },
   {
     "title": "Radioactive waste treatment — sources, processes and decontamination factors",
@@ -45,7 +48,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-wd-005-radwaste-treatment/thumbnail.webp",
     "thumbnailAlt": "A treatment line from tank through filter and evaporator to a sealed solidified drum.",
     "url": "posts/concepts/c-wd-005-radwaste-treatment.html",
-    "keywords": "radioactive waste treatment gaseous waste liquid waste solid waste charcoal delay bed decay tank decontamination factor DF NUREG-0017 GALE evaporator reverse osmosis ion exchange supercompaction effluent limits ODCM"
+    "keywords": "radioactive waste treatment gaseous waste liquid waste solid waste charcoal delay bed decay tank decontamination factor DF NUREG-0017 GALE evaporator reverse osmosis ion exchange supercompaction effluent limits ODCM",
+    "publishedAt": "2026-10-24T23:51:57Z"
   },
   {
     "title": "Waste management principles — IAEA nine principles and three treatment principles",
@@ -57,7 +61,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-wd-004-waste-management-principles/thumbnail.webp",
     "thumbnailAlt": "A compacting, filtering and sealing flow ending in one small container.",
     "url": "posts/concepts/c-wd-004-waste-management-principles.html",
-    "keywords": "radioactive waste management principles IAEA 111-F nine principles SF-1 GSR Part 5 Joint Convention concentrate and contain delay and decay dilute and disperse waste minimization waste hierarchy"
+    "keywords": "radioactive waste management principles IAEA 111-F nine principles SF-1 GSR Part 5 Joint Convention concentrate and contain delay and decay dilute and disperse waste minimization waste hierarchy",
+    "publishedAt": "2026-10-24T23:41:01Z"
   },
   {
     "title": "Radioactive waste classification — IAEA classes, clearance and US Classes A, B, C",
@@ -69,7 +74,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-wd-003-waste-classification/thumbnail.webp",
     "thumbnailAlt": "Four graded waste drums in a row with increasing sturdiness and deepening color.",
     "url": "posts/concepts/c-wd-003-waste-classification.html",
-    "keywords": "radioactive waste classification high-level waste intermediate-level waste low-level waste very low level waste exempt waste clearance clearance level minimum detectable concentration MDC GSG-1 10 CFR 61.55 Class A B C GTCC"
+    "keywords": "radioactive waste classification high-level waste intermediate-level waste low-level waste very low level waste exempt waste clearance clearance level minimum detectable concentration MDC GSG-1 10 CFR 61.55 Class A B C GTCC",
+    "publishedAt": "2026-10-24T23:41:01Z"
   },
   {
     "title": "Spent fuel storage — wet, dry, interim storage and final disposal",
@@ -81,7 +87,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-wd-002-spent-fuel-storage/thumbnail.webp",
     "thumbnailAlt": "A spent fuel pool rack beside a ventilated dry storage cask on a concrete pad.",
     "url": "posts/concepts/c-wd-002-spent-fuel-storage.html",
-    "keywords": "spent fuel storage wet storage dry storage spent fuel pool high-density racks Boraflex neutron absorber transport cask Type B interim storage deep geological disposal KBS-3 Onkalo decay heat"
+    "keywords": "spent fuel storage wet storage dry storage spent fuel pool high-density racks Boraflex neutron absorber transport cask Type B interim storage deep geological disposal KBS-3 Onkalo decay heat",
+    "publishedAt": "2026-10-24T23:41:01Z"
   },
   {
     "title": "LILW disposal — waste classes, disposal methods and multiple barriers",
@@ -93,7 +100,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-wd-001-lilw-disposal/thumbnail.webp",
     "thumbnailAlt": "A cutaway underground vault of stacked sealed drums under layered clay and soil.",
     "url": "posts/concepts/c-wd-001-lilw-disposal.html",
-    "keywords": "LILW low-level waste intermediate-level waste radioactive waste disposal near-surface disposal rock cavern disposal surface vault landfill disposal multiple barriers waste acceptance criteria institutional control performance objectives GSG-1 SSR-5"
+    "keywords": "LILW low-level waste intermediate-level waste radioactive waste disposal near-surface disposal rock cavern disposal surface vault landfill disposal multiple barriers waste acceptance criteria institutional control performance objectives GSG-1 SSR-5",
+    "publishedAt": "2026-10-24T23:41:01Z"
   },
   {
     "title": "Boiling curve — regime correlations, pressure and flow effects",
@@ -105,7 +113,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-th-010-boiling-curve/thumbnail.webp",
     "thumbnailAlt": "A row of heated-surface panels from still water through bubbling to vapor film under an arching ribbon.",
     "url": "posts/concepts/c-th-010-boiling-curve.html",
-    "keywords": "boiling curve nucleate boiling transition boiling film boiling Leidenfrost temperature MHF CHF ONB OSV subcooled boiling Rohsenow Zuber Berenson Bromley Chen Thom Jens-Lottes reflood quench"
+    "keywords": "boiling curve nucleate boiling transition boiling film boiling Leidenfrost temperature MHF CHF ONB OSV subcooled boiling Rohsenow Zuber Berenson Bromley Chen Thom Jens-Lottes reflood quench",
+    "publishedAt": "2026-10-24T23:41:01Z"
   },
   {
     "title": "Linear heat rate (LHGR) — q′, q‴, kW/L and kW/kgU",
@@ -117,7 +126,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-th-009-linear-heat-rate/thumbnail.webp",
     "thumbnailAlt": "A tall fuel rod with a smooth glowing profile of heat peaking near its midpoint.",
     "url": "posts/concepts/c-th-009-linear-heat-rate.html",
-    "keywords": "linear heat rate LHGR LHR q′ volumetric heat generation rate power density specific power FQ hot channel factor centerline melting SAFDL COLSS CPC LPD Catawba APR1400"
+    "keywords": "linear heat rate LHGR LHR q′ volumetric heat generation rate power density specific power FQ hot channel factor centerline melting SAFDL COLSS CPC LPD Catawba APR1400",
+    "publishedAt": "2026-10-24T23:41:01Z"
   },
   {
     "title": "Fuel Rod Temperature — radial resistances, ∫k dT and axial maxima",
@@ -129,7 +139,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-th-008-fuel-rod-temperature/thumbnail.webp",
     "thumbnailAlt": "A sectioned fuel rod showing pellets, gap and cladding with a warm-to-cool temperature gradient.",
     "url": "posts/concepts/c-th-008-fuel-rod-temperature.html",
-    "keywords": "fuel rod temperature distribution centerline temperature thermal resistance gap conductance UO2 thermal conductivity conductivity integral burnup degradation TCD linear heat rate axial temperature chopped cosine centerline melting SAFDL"
+    "keywords": "fuel rod temperature distribution centerline temperature thermal resistance gap conductance UO2 thermal conductivity conductivity integral burnup degradation TCD linear heat rate axial temperature chopped cosine centerline melting SAFDL",
+    "publishedAt": "2026-10-24T23:44:43Z"
   },
   {
     "title": "Critical Heat Flux and DNB — boiling curve, DNB versus dryout, correlations",
@@ -141,7 +152,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-th-007-chf-dnb/thumbnail.webp",
     "thumbnailAlt": "Bubbles on a hot surface merging into a thin insulating vapor blanket patch.",
     "url": "posts/concepts/c-th-007-chf-dnb.html",
-    "keywords": "critical heat flux CHF departure from nucleate boiling DNB dryout boiling curve ONB Leidenfrost film boiling Zuber W-3 look-up table DNBR MCPR SAFDL PWR BWR"
+    "keywords": "critical heat flux CHF departure from nucleate boiling DNB dryout boiling curve ONB Leidenfrost film boiling Zuber W-3 look-up table DNBR MCPR SAFDL PWR BWR",
+    "publishedAt": "2026-10-24T23:44:43Z"
   },
   {
     "title": "Heat Flux — q‴, q′ and q″, average and peak heat flux",
@@ -153,7 +165,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-th-006-heat-flux/thumbnail.webp",
     "thumbnailAlt": "Parallel streams of light crossing a metal surface into flowing water, illustrating heat flowing across an area.",
     "url": "posts/concepts/c-th-006-heat-flux.html",
-    "keywords": "heat flux linear heat rate volumetric heat generation rate average heat flux peak heat flux FQ hot channel factor chopped cosine axial peaking DNBR CHF fuel rod PWR thermal design"
+    "keywords": "heat flux linear heat rate volumetric heat generation rate average heat flux peak heat flux FQ hot channel factor chopped cosine axial peaking DNBR CHF fuel rod PWR thermal design",
+    "publishedAt": "2026-10-24T23:44:43Z"
   },
   {
     "title": "Rankine Cycle — PWR secondary T-s diagram, reheat and regeneration",
@@ -165,7 +178,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-th-005-rankine-cycle/thumbnail.webp",
     "thumbnailAlt": "An isometric closed loop of boiler, turbine, condenser and pump with warm steam and cool water sides.",
     "url": "posts/concepts/c-th-005-rankine-cycle.html",
-    "keywords": "Rankine cycle thermal efficiency T-s diagram PWR secondary steam generator turbine condenser MSR moisture separator reheater feedwater heater regeneration reheat superheat Carnot IAPWS-IF97 heat rate"
+    "keywords": "Rankine cycle thermal efficiency T-s diagram PWR secondary steam generator turbine condenser MSR moisture separator reheater feedwater heater regeneration reheat superheat Carnot IAPWS-IF97 heat rate",
+    "publishedAt": "2026-10-24T23:44:43Z"
   },
   {
     "title": "Decay Heat — Way-Wigner formula, operating history and Appendix K",
@@ -177,7 +191,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-th-004-decay-heat/thumbnail.webp",
     "thumbnailAlt": "A shut-down fuel assembly with gentle residual warm glow beside a calm cooling pool.",
     "url": "posts/concepts/c-th-004-decay-heat.html",
-    "keywords": "decay heat residual heat Way-Wigner fission products actinides U-239 Np-239 ANS-5.1 Appendix K 10 CFR 50.46 residual heat removal shutdown cooling GDC 34 TMI-2 Fukushima"
+    "keywords": "decay heat residual heat Way-Wigner fission products actinides U-239 Np-239 ANS-5.1 Appendix K 10 CFR 50.46 residual heat removal shutdown cooling GDC 34 TMI-2 Fukushima",
+    "publishedAt": "2026-10-24T23:44:43Z"
   },
   {
     "title": "Natural Circulation — thermal-center height, flow relation and the three modes",
@@ -189,7 +204,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-th-003-natural-circulation/thumbnail.webp",
     "thumbnailAlt": "A pump-free vertical loop with warm fluid rising on one side and cooler fluid sinking on the other.",
     "url": "posts/concepts/c-th-003-natural-circulation.html",
-    "keywords": "natural circulation thermal center driving head buoyancy reflux condensation two-phase CCFL non-condensable gas upper head bubble decay heat removal steam generator GL 81-21 BTP 5-4"
+    "keywords": "natural circulation thermal center driving head buoyancy reflux condensation two-phase CCFL non-condensable gas upper head bubble decay heat removal steam generator GL 81-21 BTP 5-4",
+    "publishedAt": "2026-10-24T23:44:43Z"
   },
   {
     "title": "Hot channel factors — FQ, FΔH, nuclear and engineering factors",
@@ -201,7 +217,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-th-002-hot-channel-factor/thumbnail.webp",
     "thumbnailAlt": "A fuel-bundle cross-section with one slightly hotter channel glowing among cooler neighbors.",
     "url": "posts/concepts/c-th-002-hot-channel-factor.html",
-    "keywords": "hot channel factor FQ FΔH heat flux hot channel factor enthalpy rise hot channel factor nuclear factor engineering factor peaking factor axial peaking radial peaking K(Z) CFQ COLR flux map AFD QPTR LHR Fxy power flattening"
+    "keywords": "hot channel factor FQ FΔH heat flux hot channel factor enthalpy rise hot channel factor nuclear factor engineering factor peaking factor axial peaking radial peaking K(Z) CFQ COLR flux map AFD QPTR LHR Fxy power flattening",
+    "publishedAt": "2026-10-24T23:36:31Z"
   },
   {
     "title": "DNBR — critical heat flux ratio, MDNBR, 95/95 limit and margin",
@@ -213,7 +230,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-th-001-dnbr/thumbnail.webp",
     "thumbnailAlt": "A heated rod with a thin vapor film forming on one side while water flows over the other.",
     "url": "posts/concepts/c-th-001-dnbr.html",
-    "keywords": "DNBR MDNBR departure from nucleate boiling critical heat flux CHF correlation W-3 KCE-1 SAFDL 95/95 DNBR margin boiling curve influencing factors COLSS CPC OTDT loss of flow APR1400 thermal hydraulics"
+    "keywords": "DNBR MDNBR departure from nucleate boiling critical heat flux CHF correlation W-3 KCE-1 SAFDL 95/95 DNBR margin boiling curve influencing factors COLSS CPC OTDT loss of flow APR1400 thermal hydraulics",
+    "publishedAt": "2026-10-24T23:36:31Z"
   },
   {
     "title": "Chemical and volume control system — letdown, charging, VCT and boron control",
@@ -225,7 +243,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sy-012-cvcs/thumbnail.webp",
     "thumbnailAlt": "A purification loop with a transparent resin demineralizer vessel, pump and dosing tank feeding a coolant circuit.",
     "url": "posts/concepts/c-sy-012-cvcs.html",
-    "keywords": "chemical and volume control system CVCS letdown charging regenerative heat exchanger volume control tank VCT seal injection auxiliary spray boration dilution boric acid concentrator ppm boron w/o boric acid water chemistry LiOH hydrogen hydrazine boron dilution SRP 15.4.6 APR1400 OPR1000"
+    "keywords": "chemical and volume control system CVCS letdown charging regenerative heat exchanger volume control tank VCT seal injection auxiliary spray boration dilution boric acid concentrator ppm boron w/o boric acid water chemistry LiOH hydrogen hydrazine boron dilution SRP 15.4.6 APR1400 OPR1000",
+    "publishedAt": "2026-10-24T23:41:01Z"
   },
   {
     "title": "ESFAS actuation signals — inputs, setpoints, logic and accidents",
@@ -237,7 +256,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sy-011-esfas-actuation-signals/thumbnail.webp",
     "thumbnailAlt": "One logic cabinet fanning out signals to a valve, pump, fan and isolation valve.",
     "url": "posts/concepts/c-sy-011-esfas-actuation-signals.html",
-    "keywords": "ESFAS engineered safety features actuation system SIAS CIAS CSAS MSIS AFAS RAS CREVAS CPIAS selective 2/4 lockout operating bypass channel bypass PPS ESF-CCS EDG load sequencing APR1400 OPR1000 design basis accident IEEE 603"
+    "keywords": "ESFAS engineered safety features actuation system SIAS CIAS CSAS MSIS AFAS RAS CREVAS CPIAS selective 2/4 lockout operating bypass channel bypass PPS ESF-CCS EDG load sequencing APR1400 OPR1000 design basis accident IEEE 603",
+    "publishedAt": "2026-10-24T23:41:01Z"
   },
   {
     "title": "Ex-core neutron flux monitoring — detectors, overlapping ranges, log and linear power",
@@ -249,7 +269,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sy-010-excore-neutron-flux-monitoring/thumbnail.webp",
     "thumbnailAlt": "Slender detector stacks standing outside a reactor vessel wall sensing leakage from the core.",
     "url": "posts/concepts/c-sy-010-excore-neutron-flux-monitoring.html",
-    "keywords": "ex-core neutron flux monitoring ENFMS NIS neutron detector BF3 proportional counter fission chamber compensated ion chamber Campbelling MSV source range intermediate range power range P-6 P-10 logarithmic power linear power startup rate VOPT CPC rhodium SPND"
+    "keywords": "ex-core neutron flux monitoring ENFMS NIS neutron detector BF3 proportional counter fission chamber compensated ion chamber Campbelling MSV source range intermediate range power range P-6 P-10 logarithmic power linear power startup rate VOPT CPC rhodium SPND",
+    "publishedAt": "2026-10-24T23:41:01Z"
   },
   {
     "title": "Reactor coolant pressure boundary — three outer limits and requirements",
@@ -261,7 +282,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sy-009-rcpb/thumbnail.webp",
     "thumbnailAlt": "A continuous highlighted loop of vessel, steam generator and piping forming a closed pressure boundary.",
     "url": "posts/concepts/c-sy-009-rcpb.html",
-    "keywords": "reactor coolant pressure boundary RCPB outer limits containment isolation valve 10 CFR 50.2 50.55a ASME Class 1 GDC 14 GDC 30 GDC 31 leak detection RG 1.45 in-service inspection leak-before-break pressure isolation valve APR1400"
+    "keywords": "reactor coolant pressure boundary RCPB outer limits containment isolation valve 10 CFR 50.2 50.55a ASME Class 1 GDC 14 GDC 30 GDC 31 leak detection RG 1.45 in-service inspection leak-before-break pressure isolation valve APR1400",
+    "publishedAt": "2026-10-24T23:41:01Z"
   },
   {
     "title": "Emergency Core Cooling System (ECCS) — SIT, HPSI, LPSI and recirculation",
@@ -273,7 +295,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sy-008-emergency-core-cooling-system/thumbnail.webp",
     "thumbnailAlt": "A cutaway reactor vessel with fuel assemblies being flooded by cool water from several injection lines.",
     "url": "posts/concepts/c-sy-008-emergency-core-cooling-system.html",
-    "keywords": "emergency core cooling system ECCS safety injection tank SIT HPSI LPSI RWT sump SIAS RAS hot-leg recirculation boric acid precipitation LOCA OPR1000 APR1400 DVI IRWST"
+    "keywords": "emergency core cooling system ECCS safety injection tank SIT HPSI LPSI RWT sump SIAS RAS hot-leg recirculation boric acid precipitation LOCA OPR1000 APR1400 DVI IRWST",
+    "publishedAt": "2026-10-24T23:41:01Z"
   },
   {
     "title": "Containment Leakage Rate Test (ILRT/LLRT) — Pa, La and the 0.75 / 0.60 criteria",
@@ -285,7 +308,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sy-007-containment-leakage-rate-test/thumbnail.webp",
     "thumbnailAlt": "A containment dome being pressure-tested with an instrument rack and a magnifier at a penetration.",
     "url": "posts/concepts/c-sy-007-containment-leakage-rate-test.html",
-    "keywords": "containment leakage rate test ILRT LLRT Type A Type B Type C Pa La maximum pathway mass-point method Appendix J Option B NEI 94-01 RG 1.163 leak-tightness"
+    "keywords": "containment leakage rate test ILRT LLRT Type A Type B Type C Pa La maximum pathway mass-point method Appendix J Option B NEI 94-01 RG 1.163 leak-tightness",
+    "publishedAt": "2026-10-24T23:41:01Z"
   },
   {
     "title": "Core Protection Calculator (CPC) — DNBR and LPD trips from ex-core signals",
@@ -297,7 +321,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sy-006-core-protection-calculator/thumbnail.webp",
     "thumbnailAlt": "A computing cabinet receiving sensor signals from a cutaway fuel assembly model.",
     "url": "posts/concepts/c-sy-006-core-protection-calculator.html",
-    "keywords": "core protection calculator CPC CEAC COLSS DNBR local power density LPD shadowing factor shape annealing matrix OTDT OPDT ROP CANDU OPR1000 APR1400"
+    "keywords": "core protection calculator CPC CEAC COLSS DNBR local power density LPD shadowing factor shape annealing matrix OTDT OPDT ROP CANDU OPR1000 APR1400",
+    "publishedAt": "2026-10-24T23:41:01Z"
   },
   {
     "title": "Safety Depressurization System (SDS, SDVS) — feed and bleed and severe-accident depressurization",
@@ -309,7 +334,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sy-005-safety-depressurization-system/thumbnail.webp",
     "thumbnailAlt": "A pressurizer-top valve gently venting vapor to a quench tank while a gauge needle falls.",
     "url": "posts/concepts/c-sy-005-safety-depressurization-system.html",
-    "keywords": "safety depressurization system SDS SDVS POSRV feed and bleed total loss of feedwater HPSI shutoff head IRWST ERDV HPME DCH APR1400 OPR1000"
+    "keywords": "safety depressurization system SDS SDVS POSRV feed and bleed total loss of feedwater HPSI shutoff head IRWST ERDV HPME DCH APR1400 OPR1000",
+    "publishedAt": "2026-10-24T23:41:01Z"
   },
   {
     "title": "Diverse Protection System (DPS) — an independent trip path against CCF",
@@ -321,7 +347,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sy-004-diverse-protection-system/thumbnail.webp",
     "thumbnailAlt": "Two dissimilar protection hardware assemblies wired independently to the same trip breakers.",
     "url": "posts/concepts/c-sy-004-diverse-protection-system.html",
-    "keywords": "diverse protection system DPS ATWS common-cause failure CCF BTP 7-19 D3 10 CFR 50.62 DAS DMA DIS FPGA APR1400 OPR1000 MG set"
+    "keywords": "diverse protection system DPS ATWS common-cause failure CCF BTP 7-19 D3 10 CFR 50.62 DAS DMA DIS FPGA APR1400 OPR1000 MG set",
+    "publishedAt": "2026-10-24T23:41:01Z"
   },
   {
     "title": "Emergency Diesel Generator (EDG) — start signals, load sequencing and reliability",
@@ -333,7 +360,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sy-003-emergency-diesel-generator/thumbnail.webp",
     "thumbnailAlt": "A standby emergency diesel generator set beside a switchgear panel in a tidy equipment room.",
     "url": "posts/concepts/c-sy-003-emergency-diesel-generator.html",
-    "keywords": "emergency diesel generator EDG Class 1E LOOP load sequencing RG 1.9 auto-start signal SIAS valid test reliability station blackout AAC APR1400"
+    "keywords": "emergency diesel generator EDG Class 1E LOOP load sequencing RG 1.9 auto-start signal SIAS valid test reliability station blackout AAC APR1400",
+    "publishedAt": "2026-10-24T23:41:01Z"
   },
   {
     "title": "Reactor protection system — four channels, 2/4 logic and design criteria",
@@ -345,7 +373,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sy-002-reactor-protection-system/thumbnail.webp",
     "thumbnailAlt": "Four parallel instrument cabinets feeding a central voting module and an opened trip breaker above falling control rods.",
     "url": "posts/concepts/c-sy-002-reactor-protection-system.html",
-    "keywords": "reactor protection system RPS plant protection system PPS ESFAS coincidence logic 2 out of 4 bistable LCL trip breakers RTSS channel bypass single failure criterion IEEE 603 10 CFR 50.55a GDC 20 CPC DNBR OTDT OPDT DPS APR1400"
+    "keywords": "reactor protection system RPS plant protection system PPS ESFAS coincidence logic 2 out of 4 bistable LCL trip breakers RTSS channel bypass single failure criterion IEEE 603 10 CFR 50.55a GDC 20 CPC DNBR OTDT OPDT DPS APR1400",
+    "publishedAt": "2026-10-24T23:41:01Z"
   },
   {
     "title": "Passive autocatalytic recombiner — principle, removal rate and ignition risk",
@@ -357,7 +386,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-026-passive-autocatalytic-recombiner/thumbnail.webp",
     "thumbnailAlt": "A tall open-ended steel box with catalyst plates and a gentle rising air current inside.",
     "url": "posts/concepts/c-sa-026-passive-autocatalytic-recombiner.html",
-    "keywords": "passive autocatalytic recombiner PAR hydrogen recombiner hydrogen control containment catalyst platinum palladium chimney draft removal rate correlation AREVA FR1-1500T THAI ignition poisoning APR1400 igniter severe accident"
+    "keywords": "passive autocatalytic recombiner PAR hydrogen recombiner hydrogen control containment catalyst platinum palladium chimney draft removal rate correlation AREVA FR1-1500T THAI ignition poisoning APR1400 igniter severe accident",
+    "publishedAt": "2026-10-24T23:36:31Z"
   },
   {
     "title": "ANS Condition I–IV — event classes and acceptance criteria",
@@ -369,7 +399,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-025-ans-condition-classification/thumbnail.webp",
     "thumbnailAlt": "A four-tier glass rack with many small spheres on the lowest shelf and one large one on top.",
     "url": "posts/concepts/c-sa-025-ans-condition-classification.html",
-    "keywords": "ANS Condition I II III IV ANSI N18.2 ANS-51.1 moderate frequency infrequent incidents limiting faults anticipated operational occurrence AOO postulated accident SRP 15.0 acceptance criteria MDNBR 110 percent 10 CFR 100 ASME service levels IAEA DEC loss of condenser vacuum"
+    "keywords": "ANS Condition I II III IV ANSI N18.2 ANS-51.1 moderate frequency infrequent incidents limiting faults anticipated operational occurrence AOO postulated accident SRP 15.0 acceptance criteria MDNBR 110 percent 10 CFR 100 ASME service levels IAEA DEC loss of condenser vacuum",
+    "publishedAt": "2026-10-24T23:36:31Z"
   },
   {
     "title": "In-vessel retention — external vessel cooling and the heat flux versus CHF limit",
@@ -381,7 +412,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-024-in-vessel-retention/thumbnail.webp",
     "thumbnailAlt": "A steel vessel lower head submerged in water with melt contained inside, cooled by fine bubbles outside.",
     "url": "posts/concepts/c-sa-024-in-vessel-retention.html",
-    "keywords": "in-vessel retention IVR ERVC external reactor vessel cooling lower head critical heat flux CHF ULPU focusing effect metal layer stratification core catcher AP1000 AP600 Loviisa APR1400 SAMG severe accident"
+    "keywords": "in-vessel retention IVR ERVC external reactor vessel cooling lower head critical heat flux CHF ULPU focusing effect metal layer stratification core catcher AP1000 AP600 Loviisa APR1400 SAMG severe accident",
+    "publishedAt": "2026-10-24T23:36:31Z"
   },
   {
     "title": "SAMG — entry, diagnosis, mitigation strategies and exit",
@@ -393,7 +425,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-023-samg/thumbnail.webp",
     "thumbnailAlt": "A balance scale weighing a tool against a protective shield in front of a guidebook.",
     "url": "posts/concepts/c-sa-023-samg.html",
-    "keywords": "SAMG severe accident management guidelines core-exit temperature 649 C diagnostic flow chart DFC SCST SACRG SAEG technical support center TSC RCS depressurization HPME DCH induced SGTR negative impacts PWROG DPG accident management plan"
+    "keywords": "SAMG severe accident management guidelines core-exit temperature 649 C diagnostic flow chart DFC SCST SACRG SAEG technical support center TSC RCS depressurization HPME DCH induced SGTR negative impacts PWROG DPG accident management plan",
+    "publishedAt": "2026-10-24T23:36:31Z"
   },
   {
     "title": "TMI-2 accident — stuck-open PORV and the pressurizer level trap",
@@ -405,7 +438,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-022-tmi2-accident/thumbnail.webp",
     "thumbnailAlt": "A slightly open relief valve above a tank whose level gauge looks high while the tank is only partly filled.",
     "url": "posts/concepts/c-sa-022-tmi2-accident.html",
-    "keywords": "TMI-2 Three Mile Island PORV stuck open small break LOCA SBLOCA pressurizer level RCS inventory HPI throttling core melt INES 5 NUREG-0737 NUREG-0660 SPDS STA symptom-based EOP Kemeny"
+    "keywords": "TMI-2 Three Mile Island PORV stuck open small break LOCA SBLOCA pressurizer level RCS inventory HPI throttling core melt INES 5 NUREG-0737 NUREG-0660 SPDS STA symptom-based EOP Kemeny",
+    "publishedAt": "2026-10-24T23:36:31Z"
   },
   {
     "title": "Loss-of-coolant accident — break size, location and ECCS response",
@@ -417,7 +451,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-021-loss-of-coolant-accident/thumbnail.webp",
     "thumbnailAlt": "A vessel with a pipe break leaking water while a replenishing emergency line keeps the fuel covered.",
     "url": "posts/concepts/c-sa-021-loss-of-coolant-accident.html",
-    "keywords": "loss-of-coolant accident LOCA LBLOCA SBLOCA MBLOCA blowdown refill reflood loop seal boil-off ECC bypass steam binding DVI RCP trip Trip-2 Leave-2 upper head voiding RCGVS 10 CFR 50.46 ECCS"
+    "keywords": "loss-of-coolant accident LOCA LBLOCA SBLOCA MBLOCA blowdown refill reflood loop seal boil-off ECC bypass steam binding DVI RCP trip Trip-2 Leave-2 upper head voiding RCGVS 10 CFR 50.46 ECCS",
+    "publishedAt": "2026-10-24T23:33:04Z"
   },
   {
     "title": "Critical safety functions — six status trees, colours and priority",
@@ -429,7 +464,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-020-critical-safety-functions/thumbnail.webp",
     "thumbnailAlt": "Six pillars with glowing orbs arranged in a hexagon, representing six safety functions.",
     "url": "posts/concepts/c-sa-020-critical-safety-functions.html",
-    "keywords": "critical safety functions CSF status tree CSFST function restoration procedure emergency operating procedure symptom-based core exit thermocouple RVLIS subcooling SPDS safety function status check SAMG Westinghouse"
+    "keywords": "critical safety functions CSF status tree CSFST function restoration procedure emergency operating procedure symptom-based core exit thermocouple RVLIS subcooling SPDS safety function status check SAMG Westinghouse",
+    "publishedAt": "2026-10-24T23:33:04Z"
   },
   {
     "title": "Severe accident progression — in-vessel stages and ex-vessel FCI, MCCI, DCH",
@@ -441,7 +477,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-019-severe-accident-progression/thumbnail.webp",
     "thumbnailAlt": "A staircase of three glass chambers showing core, vessel bottom and concrete floor in sequence.",
     "url": "posts/concepts/c-sa-019-severe-accident-progression.html",
-    "keywords": "severe accident progression core melt in-vessel ex-vessel oxidation hydrogen eutectic candling relocation lower head failure HPME DCH FCI steam explosion MCCI TMI-2 Fukushima IVR"
+    "keywords": "severe accident progression core melt in-vessel ex-vessel oxidation hydrogen eutectic candling relocation lower head failure HPME DCH FCI steam explosion MCCI TMI-2 Fukushima IVR",
+    "publishedAt": "2026-10-24T23:33:04Z"
   },
   {
     "title": "Fire protection — three objectives, App. R separation and safe shutdown",
@@ -453,7 +490,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-018-fire-protection/thumbnail.webp",
     "thumbnailAlt": "Separated cable bundles behind fire barriers with a sprinkler and detector overhead.",
     "url": "posts/concepts/c-sa-018-fire-protection.html",
-    "keywords": "fire protection Appendix R 10 CFR 50.48 NFPA 805 fire hazard analysis safe shutdown train separation fire barrier alternative shutdown multiple spurious operations Browns Ferry fire PSA RG 1.189"
+    "keywords": "fire protection Appendix R 10 CFR 50.48 NFPA 805 fire hazard analysis safe shutdown train separation fire barrier alternative shutdown multiple spurious operations Browns Ferry fire PSA RG 1.189",
+    "publishedAt": "2026-10-24T23:33:04Z"
   },
   {
     "title": "Multiple-failure accidents — typical sequences and DEC-A",
@@ -465,7 +503,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-017-multiple-failure-accidents/thumbnail.webp",
     "thumbnailAlt": "Two parallel pipelines with stuck valves and a bypass pipe delivering water through a different route.",
     "url": "posts/concepts/c-sa-017-multiple-failure-accidents.html",
-    "keywords": "multiple failure accident management DEC-A design extension conditions single failure common cause failure ATWS SBO SGTR ISLOCA shutdown cooling ultimate heat sink spent fuel pool WENRA alternate AC"
+    "keywords": "multiple failure accident management DEC-A design extension conditions single failure common cause failure ATWS SBO SGTR ISLOCA shutdown cooling ultimate heat sink spent fuel pool WENRA alternate AC",
+    "publishedAt": "2026-10-24T23:33:04Z"
   },
   {
     "title": "INES — levels 0–7, three assessment areas and I-131 equivalent release",
@@ -477,7 +516,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-016-ines-event-scale/thumbnail.webp",
     "thumbnailAlt": "A tall glass scale column with graduated segments tinted from pale blue to amber.",
     "url": "posts/concepts/c-sa-016-ines-event-scale.html",
-    "keywords": "INES event scale level incident accident defence in depth radiological barriers I-131 equivalent TBq Chernobyl Fukushima TMI event reporting IAEA"
+    "keywords": "INES event scale level incident accident defence in depth radiological barriers I-131 equivalent TBq Chernobyl Fukushima TMI event reporting IAEA",
+    "publishedAt": "2026-10-24T23:33:04Z"
   },
   {
     "title": "Emergency operating procedures — SPTA, ORP, FRP and CSFSTs",
@@ -489,7 +529,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-015-emergency-operating-procedures/thumbnail.webp",
     "thumbnailAlt": "A marble rolling down a branching glass track with indicator lamps, like following a procedure.",
     "url": "posts/concepts/c-sa-015-emergency-operating-procedures.html",
-    "keywords": "emergency operating procedures EOP EOG symptom-based event-based SPTA diagnostic action ORP FRP SFSC resource assessment tree success path Westinghouse ERG CSFST critical safety functions SAMG TMI NUREG-0899 computerized procedure system"
+    "keywords": "emergency operating procedures EOP EOG symptom-based event-based SPTA diagnostic action ORP FRP SFSC resource assessment tree success path Westinghouse ERG CSFST critical safety functions SAMG TMI NUREG-0899 computerized procedure system",
+    "publishedAt": "2026-10-24T23:22:13Z"
   },
   {
     "title": "ECCS acceptance criteria — PCT 1,204 °C, ECR 17 %, hydrogen 1 %",
@@ -501,7 +542,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-014-eccs-acceptance-criteria/thumbnail.webp",
     "thumbnailAlt": "A fuel rod in cooling spray with five unmarked gauges all in their safe range.",
     "url": "posts/concepts/c-sa-014-eccs-acceptance-criteria.html",
-    "keywords": "ECCS acceptance criteria 10 CFR 50.46 peak cladding temperature PCT 1204 ECR 17 percent hydrogen coolable geometry long-term cooling LOCA LBLOCA blowdown refill reflood Appendix K best estimate BEPU 95/95 50.46c"
+    "keywords": "ECCS acceptance criteria 10 CFR 50.46 peak cladding temperature PCT 1204 ECR 17 percent hydrogen coolable geometry long-term cooling LOCA LBLOCA blowdown refill reflood Appendix K best estimate BEPU 95/95 50.46c",
+    "publishedAt": "2026-10-24T23:22:13Z"
   },
   {
     "title": "APR1400 severe accident features — prevention and mitigation by threat",
@@ -513,7 +555,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-013-apr1400-severe-accident-features/thumbnail.webp",
     "thumbnailAlt": "A cutaway containment with a flooded cavity under the vessel, wall-mounted recombiners and overhead sprays.",
     "url": "posts/concepts/c-sa-013-apr1400-severe-accident-features.html",
-    "keywords": "APR1400 severe accident features prevention mitigation safety depressurization and vent system SDVS POSRV hydrogen mitigation PAR igniter cavity flooding system CFS ECSBS core catcher HPME DCH MCCI SAMG"
+    "keywords": "APR1400 severe accident features prevention mitigation safety depressurization and vent system SDVS POSRV hydrogen mitigation PAR igniter cavity flooding system CFS ECSBS core catcher HPME DCH MCCI SAMG",
+    "publishedAt": "2026-10-24T23:22:13Z"
   },
   {
     "title": "SSE and OBE — design earthquakes, RG 1.60 spectra and OBE exceedance",
@@ -525,7 +568,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-012-sse-obe/thumbnail.webp",
     "thumbnailAlt": "A sturdy building model on a vibration table with two sizes of ripples beneath it.",
     "url": "posts/concepts/c-sa-012-sse-obe.html",
-    "keywords": "safe shutdown earthquake operating basis earthquake SSE OBE DBE seismic design response spectrum RG 1.60 10 CFR 50 Appendix S CAV cumulative absolute velocity OBE exceedance HCLPF seismic category"
+    "keywords": "safe shutdown earthquake operating basis earthquake SSE OBE DBE seismic design response spectrum RG 1.60 10 CFR 50 Appendix S CAV cumulative absolute velocity OBE exceedance HCLPF seismic category",
+    "publishedAt": "2026-10-24T23:22:13Z"
   },
   {
     "title": "Defence in depth — five functional levels and independence between them",
@@ -537,7 +581,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-011-defence-in-depth/thumbnail.webp",
     "thumbnailAlt": "Five successive glass gateways progressively dimming a light beam.",
     "url": "posts/concepts/c-sa-011-defence-in-depth.html",
-    "keywords": "defence in depth defense in depth five levels INSAG-10 SSR-2/1 WENRA 3a 3b design extension conditions DEC practical elimination independence plant states multiple barriers accident management"
+    "keywords": "defence in depth defense in depth five levels INSAG-10 SSR-2/1 WENRA 3a 3b design extension conditions DEC practical elimination independence plant states multiple barriers accident management",
+    "publishedAt": "2026-10-24T23:22:13Z"
   },
   {
     "title": "Multiple barriers — four physical barriers and their design limits",
@@ -549,7 +594,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-010-multiple-barriers/thumbnail.webp",
     "thumbnailAlt": "Nested glass-like barrier shells enclosing a small glowing core.",
     "url": "posts/concepts/c-sa-010-multiple-barriers.html",
-    "keywords": "multiple barriers physical barriers fission product barriers defence in depth fuel pellet cladding reactor coolant pressure boundary RCPB containment SAFDL 10 CFR 50.46 overpressure containment bypass SGTR ISLOCA"
+    "keywords": "multiple barriers physical barriers fission product barriers defence in depth fuel pellet cladding reactor coolant pressure boundary RCPB containment SAFDL 10 CFR 50.46 overpressure containment bypass SGTR ISLOCA",
+    "publishedAt": "2026-10-24T23:22:13Z"
   },
   {
     "title": "Station blackout — definition, coping duration, AAC and post-Fukushima rules",
@@ -561,7 +607,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-009-station-blackout/thumbnail.webp",
     "thumbnailAlt": "A de-energized power line behind a battery bank and portable generator that keep a lamp glowing.",
     "url": "posts/concepts/c-sa-009-station-blackout.html",
-    "keywords": "station blackout SBO loss of all AC power 10 CFR 50.63 RG 1.155 coping duration alternate AC source AAC turbine-driven auxiliary feedwater RCP seal leakage LOOP ELAP 10 CFR 50.155 FLEX Fukushima APR1400"
+    "keywords": "station blackout SBO loss of all AC power 10 CFR 50.63 RG 1.155 coping duration alternate AC source AAC turbine-driven auxiliary feedwater RCP seal leakage LOOP ELAP 10 CFR 50.155 FLEX Fukushima APR1400",
+    "publishedAt": "2026-10-24T23:29:28Z"
   },
   {
     "title": "Hydrogen sources in accidents — Zr–steam reaction, rate laws and other sources",
@@ -573,7 +620,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-008-hydrogen-sources/thumbnail.webp",
     "thumbnailAlt": "A hot zirconium fuel rod forming an oxide skin in steam while releasing a stream of tiny bubbles.",
     "url": "posts/concepts/c-sa-008-hydrogen-sources.html",
-    "keywords": "hydrogen sources zirconium water reaction Zr steam oxidation Baker-Just Cathcart-Pawel parabolic law ECR 10 CFR 50.46 radiolysis aluminum zinc corrosion MCCI TMI-2 severe accident"
+    "keywords": "hydrogen sources zirconium water reaction Zr steam oxidation Baker-Just Cathcart-Pawel parabolic law ECR 10 CFR 50.46 radiolysis aluminum zinc corrosion MCCI TMI-2 severe accident",
+    "publishedAt": "2026-10-24T23:29:28Z"
   },
   {
     "title": "Main steam line break — overcooling, return to power and break location",
@@ -585,7 +633,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-007-mslb/thumbnail.webp",
     "thumbnailAlt": "A steam generator and main steam pipe with a clean break releasing steam and cooling the pipes below.",
     "url": "posts/concepts/c-sa-007-mslb.html",
-    "keywords": "MSLB main steam line break overcooling return to power recriticality moderator temperature coefficient shutdown margin hot zero power end of cycle stuck rod MSIV MSIS flow restrictor critical flow SRP 15.1.5 APR1400"
+    "keywords": "MSLB main steam line break overcooling return to power recriticality moderator temperature coefficient shutdown margin hot zero power end of cycle stuck rod MSIV MSIS flow restrictor critical flow SRP 15.1.5 APR1400",
+    "publishedAt": "2026-10-24T23:29:28Z"
   },
   {
     "title": "ATWS — peak pressure, MTC and UET, 10 CFR 50.62, AMSAC, DSS and DPS",
@@ -597,7 +646,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-006-atws/thumbnail.webp",
     "thumbnailAlt": "Primary control rods held up while a separate diverse backup insertion path steps in.",
     "url": "posts/concepts/c-sa-006-atws.html",
-    "keywords": "ATWS ATWT anticipated transient without scram 10 CFR 50.62 AMSAC DSS DPS diverse protection system UET unfavorable exposure time moderator temperature coefficient Service Level C loss of normal feedwater Salem APR1400"
+    "keywords": "ATWS ATWT anticipated transient without scram 10 CFR 50.62 AMSAC DSS DPS diverse protection system UET unfavorable exposure time moderator temperature coefficient Service Level C loss of normal feedwater Salem APR1400",
+    "publishedAt": "2026-10-24T23:29:28Z"
   },
   {
     "title": "Containment failure modes — bypass, isolation failure, early, late and basemat melt-through",
@@ -609,7 +659,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-005-containment-failure-modes/thumbnail.webp",
     "thumbnailAlt": "A cutaway containment dome with several distinct highlighted pathways showing different failure modes.",
     "url": "posts/concepts/c-sa-005-containment-failure-modes.html",
-    "keywords": "containment failure modes bypass SGTR ISLOCA isolation failure early containment failure late failure basemat melt-through MCCI DCH HPME steam explosion CET release category LERF Level 2 PSA APR1400"
+    "keywords": "containment failure modes bypass SGTR ISLOCA isolation failure early containment failure late failure basemat melt-through MCCI DCH HPME steam explosion CET release category LERF Level 2 PSA APR1400",
+    "publishedAt": "2026-10-24T23:29:28Z"
   },
   {
     "title": "Containment hydrogen control — mixing, PARs, igniters, inerting and the 10 % criterion",
@@ -621,7 +672,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-003-hydrogen-control/thumbnail.webp",
     "thumbnailAlt": "A glass dome with a mixing fan, a catalytic recombiner box and a gentle igniter keeping hydrogen wisps evenly dispersed.",
     "url": "posts/concepts/c-sa-003-hydrogen-control.html",
-    "keywords": "hydrogen control containment PAR passive autocatalytic recombiner igniter inerting flammability limit detonation DDT steam inerting Shapiro diagram 10 CFR 50.44 APR1400 severe accident"
+    "keywords": "hydrogen control containment PAR passive autocatalytic recombiner igniter inerting flammability limit detonation DDT steam inerting Shapiro diagram 10 CFR 50.44 APR1400 severe accident",
+    "publishedAt": "2026-10-24T23:29:28Z"
   },
   {
     "title": "Steam Generator Tube Rupture (SGTR) — bypass and pressure equalization",
@@ -633,7 +685,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-002-sgtr/thumbnail.webp",
     "thumbnailAlt": "A cutaway steam generator U-tube with a tiny pinhole leaking a thin jet into the surrounding shell side.",
     "url": "posts/concepts/c-sa-002-sgtr.html",
-    "keywords": "SGTR steam generator tube rupture containment bypass primary to secondary leak N-16 monitor air ejector blowdown pressure equalization SI termination overfill backfill iodine spike SRP 15.6.3 RG 1.183 Ginna"
+    "keywords": "SGTR steam generator tube rupture containment bypass primary to secondary leak N-16 monitor air ejector blowdown pressure equalization SI termination overfill backfill iodine spike SRP 15.6.3 RG 1.183 Ginna",
+    "publishedAt": "2026-10-24T23:25:56Z"
   },
   {
     "title": "Accident Management Plan (AMP) — scope, criteria and review",
@@ -645,7 +698,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sa-001-accident-management-plan/thumbnail.webp",
     "thumbnailAlt": "An organized binder, hard hat, flashlight and toolkit arranged as a ready accident management plan.",
     "url": "posts/concepts/c-sa-001-accident-management-plan.html",
-    "keywords": "accident management plan AMP severe accident management multiple failure accidents containment threats design extension conditions SAMG FLEX IAEA SSG-54 10 CFR 50.155 PSA risk target"
+    "keywords": "accident management plan AMP severe accident management multiple failure accidents containment threats design extension conditions SAMG FLEX IAEA SSG-54 10 CFR 50.155 PSA risk target",
+    "publishedAt": "2026-10-24T23:25:56Z"
   },
   {
     "title": "Subcritical Multiplication and 1/M — extrapolating to criticality",
@@ -657,7 +711,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-027-subcritical-multiplication-1m/thumbnail.webp",
     "thumbnailAlt": "A fading chain of glass dominoes started by a small glowing bead, evoking neutron multiplication in a subcritical core.",
     "url": "posts/concepts/c-rx-027-subcritical-multiplication-1m.html",
-    "keywords": "subcritical multiplication inverse multiplication 1/M plot approach to criticality count rate doubling source range fuel loading estimated critical position ECP premature criticality neutron source Cf-252 Sb-Be"
+    "keywords": "subcritical multiplication inverse multiplication 1/M plot approach to criticality count rate doubling source range fuel loading estimated critical position ECP premature criticality neutron source Cf-252 Sb-Be",
+    "publishedAt": "2026-10-24T23:25:56Z"
   },
   {
     "title": "Binding Energy per Nucleon — Ni-62 peak, fission and fusion",
@@ -669,7 +724,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-026-binding-energy-per-nucleon/thumbnail.webp",
     "thumbnailAlt": "A glass valley track with a steel ball at its lowest point and small sphere clusters on both slopes, evoking the stability peak of binding energy per nucleon.",
     "url": "posts/concepts/c-rx-026-binding-energy-per-nucleon.html",
-    "keywords": "binding energy per nucleon mass defect B/A curve Ni-62 Fe-56 semi-empirical mass formula Weizsacker fission energy fusion energy separation energy critical energy fissile fissionable fertile pairing decay heat AME2020"
+    "keywords": "binding energy per nucleon mass defect B/A curve Ni-62 Fe-56 semi-empirical mass formula Weizsacker fission energy fusion energy separation energy critical energy fissile fissionable fertile pairing decay heat AME2020",
+    "publishedAt": "2026-10-24T23:25:56Z"
   },
   {
     "title": "Neutron Slowing Down and Lethargy — u, ξ and collision counts",
@@ -681,7 +737,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-025-lethargy-slowing-down/thumbnail.webp",
     "thumbnailAlt": "A silver ball descending a glass staircase whose steps shrink proportionally.",
     "url": "posts/concepts/c-rx-025-lethargy-slowing-down.html",
-    "keywords": "lethargy neutron slowing down average logarithmic energy decrement xi collisions to thermalize slowing-down density 1/E flux Fermi age resonance escape probability elastic scattering moderator"
+    "keywords": "lethargy neutron slowing down average logarithmic energy decrement xi collisions to thermalize slowing-down density 1/E flux Fermi age resonance escape probability elastic scattering moderator",
+    "publishedAt": "2026-10-24T23:25:56Z"
   },
   {
     "title": "Inhour Equation — seven roots, one stable period",
@@ -693,7 +750,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-024-inhour-equation/thumbnail.webp",
     "thumbnailAlt": "Seven tuning forks in a row, with only the largest ringing and dominating.",
     "url": "posts/concepts/c-rx-024-inhour-equation.html",
-    "keywords": "inhour equation stable period reactor period point kinetics delayed neutrons reactivity roots asymptotes one-group approximation inverse kinetics reactivity computer positive period method"
+    "keywords": "inhour equation stable period reactor period point kinetics delayed neutrons reactivity roots asymptotes one-group approximation inverse kinetics reactivity computer positive period method",
+    "publishedAt": "2026-10-24T23:25:56Z"
   },
   {
     "title": "Reactivity coefficients — sign, size, response speed and cycle trend",
@@ -705,7 +763,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-023-reactivity-coefficients/thumbnail.webp",
     "thumbnailAlt": "Five blank-faced dials connected to a thermometer, droplet, bubble, pressure disc and pill around a stable sphere.",
     "url": "posts/concepts/c-rx-023-reactivity-coefficients.html",
-    "keywords": "reactivity coefficient fuel temperature coefficient Doppler moderator temperature coefficient MTC density coefficient void coefficient pressure coefficient boron worth power coefficient isothermal temperature coefficient ITC power defect COLR GDC 11 reactor physics"
+    "keywords": "reactivity coefficient fuel temperature coefficient Doppler moderator temperature coefficient MTC density coefficient void coefficient pressure coefficient boron worth power coefficient isothermal temperature coefficient ITC power defect COLR GDC 11 reactor physics",
+    "publishedAt": "2026-10-24T22:45:44Z"
   },
   {
     "title": "Xenon dead time — when the post-shutdown xenon peak blocks restart",
@@ -717,7 +776,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-022-xenon-dead-time/thumbnail.webp",
     "thumbnailAlt": "An hourglass with rising violet sand in front of a closed gate whose key is still locked away.",
     "url": "posts/concepts/c-rx-022-xenon-dead-time.html",
-    "keywords": "xenon dead time xenon-precluded startup xenon-135 iodine-135 xenon peak excess reactivity shutdown restart end of cycle boron dilution poison out CANDU estimated critical position reactor physics"
+    "keywords": "xenon dead time xenon-precluded startup xenon-135 iodine-135 xenon peak excess reactivity shutdown restart end of cycle boron dilution poison out CANDU estimated critical position reactor physics",
+    "publishedAt": "2026-10-24T22:45:44Z"
   },
   {
     "title": "Fission energy and recoverable energy — 207 MeV released, about 200 MeV recovered",
@@ -729,7 +789,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-021-fission-energy-recoverable/thumbnail.webp",
     "thumbnailAlt": "Gold coins collected in a bowl while a few pale-blue coins drift away out of reach.",
     "url": "posts/concepts/c-rx-021-fission-energy-recoverable.html",
-    "keywords": "fission energy recoverable energy 200 MeV 207 MeV fission fragments antineutrino capture gamma prompt energy delayed energy decay heat mass defect MWd conversion Pu-239 ENDF/B-VII.1 reactor physics"
+    "keywords": "fission energy recoverable energy 200 MeV 207 MeV fission fragments antineutrino capture gamma prompt energy delayed energy decay heat mass defect MWd conversion Pu-239 ENDF/B-VII.1 reactor physics",
+    "publishedAt": "2026-10-24T22:45:44Z"
   },
   {
     "title": "Neutron generation time — ℓp, Λ and ℓ̄, and when Λ changes the period",
@@ -741,7 +802,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-020-generation-time/thumbnail.webp",
     "thumbnailAlt": "A fast relay of beads next to one amber bead traveling a long winding glass tube.",
     "url": "posts/concepts/c-rx-020-generation-time.html",
-    "keywords": "neutron generation time prompt neutron lifetime mean generation time diffusion time delayed neutrons reactor period inhour equation prompt critical point kinetics Rossi-alpha mean free path CANDU fast reactor reactor kinetics"
+    "keywords": "neutron generation time prompt neutron lifetime mean generation time diffusion time delayed neutrons reactor period inhour equation prompt critical point kinetics Rossi-alpha mean free path CANDU fast reactor reactor kinetics",
+    "publishedAt": "2026-10-24T22:45:44Z"
   },
   {
     "title": "Moderating power and moderating ratio — ξ, collisions to thermalize and heavy-water purity",
@@ -753,7 +815,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-019-moderating-power-ratio/thumbnail.webp",
     "thumbnailAlt": "Two balls slowing in different transparent media, one losing tiny sparks.",
     "url": "posts/concepts/c-rx-019-moderating-power-ratio.html",
-    "keywords": "moderating power moderating ratio slowing-down power average logarithmic energy decrement xi lethargy elastic scattering alpha moderator heavy water light water graphite D2O purity CANDU reactor physics"
+    "keywords": "moderating power moderating ratio slowing-down power average logarithmic energy decrement xi lethargy elastic scattering alpha moderator heavy water light water graphite D2O purity CANDU reactor physics",
+    "publishedAt": "2026-10-24T22:45:44Z"
   },
   {
     "title": "One-group diffusion equation — terms, boundary conditions, source solutions and keff",
@@ -765,7 +828,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-018-one-group-diffusion/thumbnail.webp",
     "thumbnailAlt": "A water drop's ripples spreading and fading across a glass tray.",
     "url": "posts/concepts/c-rx-018-one-group-diffusion.html",
-    "keywords": "neutron diffusion equation one-group diffusion Fick's law diffusion coefficient diffusion length extrapolation distance boundary conditions plane source point source keff buckling P1 approximation reactor physics"
+    "keywords": "neutron diffusion equation one-group diffusion Fick's law diffusion coefficient diffusion length extrapolation distance boundary conditions plane source point source keff buckling P1 approximation reactor physics",
+    "publishedAt": "2026-10-24T22:45:44Z"
   },
   {
     "title": "Macroscopic cross section — N, Σ = Nσ and the mean free path",
@@ -777,7 +841,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-017-macroscopic-cross-section/thumbnail.webp",
     "thumbnailAlt": "A light beam fading as it passes through a block of dense tiny pins, with a measuring tape.",
     "url": "posts/concepts/c-rx-017-macroscopic-cross-section.html",
-    "keywords": "macroscopic cross section microscopic cross section atom density number density mean free path transport mean free path beam attenuation reaction rate 1/v Westcott g factor Maxwellian average barn UO2 water"
+    "keywords": "macroscopic cross section microscopic cross section atom density number density mean free path transport mean free path beam attenuation reaction rate 1/v Westcott g factor Maxwellian average barn UO2 water",
+    "publishedAt": "2026-10-24T22:42:13Z"
   },
   {
     "title": "Axial power distribution and ASI — AO, ΔI and the sign trap",
@@ -789,7 +854,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-016-axial-power-asi/thumbnail.webp",
     "thumbnailAlt": "A tall glass core cylinder glowing brighter at the top with a bubble level gauge beside it.",
     "url": "posts/concepts/c-rx-016-axial-power-asi.html",
-    "keywords": "axial power distribution axial shape index ASI axial offset AO axial flux difference AFD delta I F_Z FQ xenon oscillation CAOC RAOC part-strength control rod COLSS CPC ex-core detector"
+    "keywords": "axial power distribution axial shape index ASI axial offset AO axial flux difference AFD delta I F_Z FQ xenon oscillation CAOC RAOC part-strength control rod COLSS CPC ex-core detector",
+    "publishedAt": "2026-10-24T22:42:13Z"
   },
   {
     "title": "Inherent safety — negative feedback and the boundary with passive safety",
@@ -801,7 +867,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-015-inherent-safety/thumbnail.webp",
     "thumbnailAlt": "A ball rolling back to the center of a bowl by itself beside a reactor vessel model.",
     "url": "posts/concepts/c-rx-015-inherent-safety.html",
-    "keywords": "inherent safety passive safety TECDOC-626 reactivity feedback Doppler FTC MTC void coefficient pressure coefficient under-moderation GDC 11 walk-away safety NuScale APR1400 RBMK"
+    "keywords": "inherent safety passive safety TECDOC-626 reactivity feedback Doppler FTC MTC void coefficient pressure coefficient under-moderation GDC 11 walk-away safety NuScale APR1400 RBMK",
+    "publishedAt": "2026-10-24T22:42:13Z"
   },
   {
     "title": "Delayed neutron fraction β and βeff — nuclide, importance and burnup",
@@ -813,7 +880,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-014-beta-effective/thumbnail.webp",
     "thumbnailAlt": "A precision lever where a small amber bead counts for more near the pivot.",
     "url": "posts/concepts/c-rx-014-beta-effective.html",
-    "keywords": "delayed neutron fraction beta effective βeff importance adjoint flux Keepin U-235 Pu-239 burnup dollar reactivity prompt critical point kinetics reactor kinetics"
+    "keywords": "delayed neutron fraction beta effective βeff importance adjoint flux Keepin U-235 Pu-239 burnup dollar reactivity prompt critical point kinetics reactor kinetics",
+    "publishedAt": "2026-10-24T22:42:13Z"
   },
   {
     "title": "Shutdown margin — stuck-rod assumption, budget and requirement",
@@ -825,7 +893,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-013-shutdown-margin/thumbnail.webp",
     "thumbnailAlt": "A rod array with one rod fully withdrawn while a clear safety margin remains.",
     "url": "posts/concepts/c-rx-013-shutdown-margin.html",
-    "keywords": "shutdown margin SDM technical specifications LCO 3.1.1 stuck rod highest worth rod power defect MSLB recriticality boron dilution COLR estimated critical condition excess reactivity PWR"
+    "keywords": "shutdown margin SDM technical specifications LCO 3.1.1 stuck rod highest worth rod power defect MSLB recriticality boron dilution COLR estimated critical condition excess reactivity PWR",
+    "publishedAt": "2026-10-24T22:42:13Z"
   },
   {
     "title": "Power coefficient — reactivity per 1 % power and the power defect",
@@ -837,7 +906,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-012-power-coefficient/thumbnail.webp",
     "thumbnailAlt": "A flyball governor spreading its arms as a fuel rod glows brighter, pushing the glow back down.",
     "url": "posts/concepts/c-rx-012-power-coefficient.html",
-    "keywords": "power coefficient power defect reactivity coefficient MTC FTC ITC Doppler moderator temperature coefficient self-regulation load follow shutdown margin rod insertion limit GDC 11 PWR"
+    "keywords": "power coefficient power defect reactivity coefficient MTC FTC ITC Doppler moderator temperature coefficient self-regulation load follow shutdown margin rod insertion limit GDC 11 PWR",
+    "publishedAt": "2026-10-24T22:42:13Z"
   },
   {
     "title": "Excess Reactivity — cycle reactivity budget and shutdown margin",
@@ -849,7 +919,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-011-excess-reactivity/thumbnail.webp",
     "thumbnailAlt": "A glass tank of golden liquid held to a level by pressing rods, with a fuel assembly model.",
     "url": "posts/concepts/c-rx-011-excess-reactivity.html",
-    "keywords": "excess reactivity reserve reactivity k_max built-in reactivity shutdown margin total control worth burnup reactivity temperature defect power defect burnable absorber boron letdown curve end of cycle GDC 26"
+    "keywords": "excess reactivity reserve reactivity k_max built-in reactivity shutdown margin total control worth burnup reactivity temperature defect power defect burnable absorber boron letdown curve end of cycle GDC 26",
+    "publishedAt": "2026-10-24T22:45:44Z"
   },
   {
     "title": "Fuel Temperature Coefficient (FTC) — Doppler broadening and prompt feedback",
@@ -861,7 +932,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-010-fuel-temperature-coefficient/thumbnail.webp",
     "thumbnailAlt": "A warm glowing fuel pellet with a blue curtain that thickens as it heats up.",
     "url": "posts/concepts/c-rx-010-fuel-temperature-coefficient.html",
-    "keywords": "fuel temperature coefficient FTC Doppler coefficient Doppler broadening U-238 resonance self-shielding resonance escape probability prompt temperature coefficient power defect Pu-240 Voigt GDC 11"
+    "keywords": "fuel temperature coefficient FTC Doppler coefficient Doppler broadening U-238 resonance self-shielding resonance escape probability prompt temperature coefficient power defect Pu-240 Voigt GDC 11",
+    "publishedAt": "2026-10-24T22:45:44Z"
   },
   {
     "title": "Reactivity Control and Timescales — rods, boron and burnable absorbers",
@@ -873,7 +945,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-009-reactivity-control-timescales/thumbnail.webp",
     "thumbnailAlt": "A small, medium and large clock each linked to a different reactivity control tool.",
     "url": "posts/concepts/c-rx-009-reactivity-control-timescales.html",
-    "keywords": "reactivity control timescale short term medium term long term control rods soluble boron chemical shim burnable absorber xenon samarium burnup power defect APR1400 CEA premature criticality GDC 26"
+    "keywords": "reactivity control timescale short term medium term long term control rods soluble boron chemical shim burnable absorber xenon samarium burnup power defect APR1400 CEA premature criticality GDC 26",
+    "publishedAt": "2026-10-24T22:45:44Z"
   },
   {
     "title": "Xenon-135 Poisoning — equilibrium xenon, post-shutdown peak and power steps",
@@ -885,7 +958,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-008-xenon-poisoning/thumbnail.webp",
     "thumbnailAlt": "An hourglass with violet sand piling up in the lower chamber before a reactor vessel model.",
     "url": "posts/concepts/c-rx-008-xenon-poisoning.html",
-    "keywords": "xenon-135 xenon poisoning iodine-135 equilibrium xenon burnout xenon peak dead time restart load following samarium-149 fission product poison GDC 26"
+    "keywords": "xenon-135 xenon poisoning iodine-135 equilibrium xenon burnout xenon peak dead time restart load following samarium-149 fission product poison GDC 26",
+    "publishedAt": "2026-10-24T22:45:44Z"
   },
   {
     "title": "Moderator Selection Criteria — ξ, moderating power and moderating ratio",
@@ -897,7 +971,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-007-moderator-selection/thumbnail.webp",
     "thumbnailAlt": "Three tubes of water, heavy liquid and graphite blocks, each with a decelerating ball inside.",
     "url": "posts/concepts/c-rx-007-moderator-selection.html",
-    "keywords": "moderator moderating power moderating ratio xi lethargy light water heavy water graphite beryllium slowing-down length diffusion length CANDU heavy water purity Wigner energy under-moderated"
+    "keywords": "moderator moderating power moderating ratio xi lethargy light water heavy water graphite beryllium slowing-down length diffusion length CANDU heavy water purity Wigner energy under-moderated",
+    "publishedAt": "2026-10-24T22:45:44Z"
   },
   {
     "title": "Moderator Temperature Coefficient (MTC) — density effect and positive MTC at BOC",
@@ -909,7 +984,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-006-moderator-temperature-coefficient/thumbnail.webp",
     "thumbnailAlt": "Water in a glass cylinder with dense beads below and sparse beads above around a rod bundle.",
     "url": "posts/concepts/c-rx-006-moderator-temperature-coefficient.html",
-    "keywords": "moderator temperature coefficient MTC reactivity coefficient density effect under-moderated boron positive MTC BOC EOC ITC power coefficient minimum temperature for criticality COLR LCO 3.1.3 GDC 11"
+    "keywords": "moderator temperature coefficient MTC reactivity coefficient density effect under-moderated boron positive MTC BOC EOC ITC power coefficient minimum temperature for criticality COLR LCO 3.1.3 GDC 11",
+    "publishedAt": "2026-10-24T22:45:44Z"
   },
   {
     "title": "Buckling — material vs geometric, critical radius and critical mass",
@@ -921,7 +997,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-005-buckling/thumbnail.webp",
     "thumbnailAlt": "A curved glass arch with a glowing bell-shaped ridge fitting a matching cylindrical frame.",
     "url": "posts/concepts/c-rx-005-buckling.html",
-    "keywords": "buckling material buckling geometric buckling criticality condition critical radius critical mass Helmholtz equation extrapolation distance non-leakage probability Fermi age migration area diffusion theory"
+    "keywords": "buckling material buckling geometric buckling criticality condition critical radius critical mass Helmholtz equation extrapolation distance non-leakage probability Fermi age migration area diffusion theory",
+    "publishedAt": "2026-10-24T22:50:01Z"
   },
   {
     "title": "Reactor Period — stable period, startup rate and the −80 s limit",
@@ -933,7 +1010,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-004-reactor-period/thumbnail.webp",
     "thumbnailAlt": "A pearl rolling up an exponential glass curve beside a blank-faced stopwatch.",
     "url": "posts/concepts/c-rx-004-reactor-period.html",
-    "keywords": "reactor period stable period instantaneous period startup rate SUR dpm doubling time inhour equation prompt jump prompt drop negative period minus 80 seconds point kinetics delayed neutrons"
+    "keywords": "reactor period stable period instantaneous period startup rate SUR dpm doubling time inhour equation prompt jump prompt drop negative period minus 80 seconds point kinetics delayed neutrons",
+    "publishedAt": "2026-10-24T22:50:01Z"
   },
   {
     "title": "Multiplication Factor — k∞, keff and the six-factor formula",
@@ -945,7 +1023,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-003-multiplication-factor/thumbnail.webp",
     "thumbnailAlt": "A level balance scale with beads produced on one side and absorbed or leaked on the other.",
     "url": "posts/concepts/c-rx-003-multiplication-factor.html",
-    "keywords": "multiplication factor k-infinity keff four-factor formula six-factor formula fast fission factor resonance escape probability thermal utilization reproduction factor non-leakage buckling criticality"
+    "keywords": "multiplication factor k-infinity keff four-factor formula six-factor formula fast fission factor resonance escape probability thermal utilization reproduction factor non-leakage buckling criticality",
+    "publishedAt": "2026-10-24T22:50:01Z"
   },
   {
     "title": "Chemical Shim — boron worth, ppm conversions and letdown curve",
@@ -957,7 +1036,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-002-chemical-shim/thumbnail.webp",
     "thumbnailAlt": "A water tank with a dropper adding tint that spreads, beside a small fuel assembly model.",
     "url": "posts/concepts/c-rx-002-chemical-shim.html",
-    "keywords": "chemical shim soluble boron boric acid soluble poison B-10 boron worth pcm per ppm letdown curve positive MTC boron dilution B-10 depletion CVCS GDC 26 PWR"
+    "keywords": "chemical shim soluble boron boric acid soluble poison B-10 boron worth pcm per ppm letdown curve positive MTC boron dilution B-10 depletion CVCS GDC 26 PWR",
+    "publishedAt": "2026-10-24T22:50:01Z"
   },
   {
     "title": "Delayed Neutrons — β, βeff, generation time and reactor period",
@@ -969,7 +1049,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rx-001-delayed-neutrons/thumbnail.webp",
     "thumbnailAlt": "Many fast white balls race ahead while one amber ball lags behind on a slow slide.",
     "url": "posts/concepts/c-rx-001-delayed-neutrons.html",
-    "keywords": "delayed neutrons prompt neutrons precursor Br-87 beta beta effective six groups Keepin mean generation time reactor period inhour equation prompt critical dollar reactivity"
+    "keywords": "delayed neutrons prompt neutrons precursor Br-87 beta beta effective six groups Keepin mean generation time reactor period inhour equation prompt critical dollar reactivity",
+    "publishedAt": "2026-10-24T22:50:01Z"
   },
   {
     "title": "Tritium — sources, dose coefficients and discharge standards",
@@ -981,7 +1062,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rp-005-tritium/thumbnail.webp",
     "thumbnailAlt": "A clear water droplet with a faint glowing spark inside, in front of a fine filter mesh.",
     "url": "posts/concepts/c-rp-005-tritium.html",
-    "keywords": "tritium H-3 HTO OBT HT ternary fission boron-10 lithium-7 deuterium heavy water reactor PHWR tritium removal facility LPCE cryogenic distillation discharge limit ALPS WHO dose coefficient"
+    "keywords": "tritium H-3 HTO OBT HT ternary fission boron-10 lithium-7 deuterium heavy water reactor PHWR tritium removal facility LPCE cryogenic distillation discharge limit ALPS WHO dose coefficient",
+    "publishedAt": "2026-10-24T22:50:01Z"
   },
   {
     "title": "Emergency planning zones — PAZ, UPZ and how they are set",
@@ -993,7 +1075,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rp-004-emergency-planning-zones/thumbnail.webp",
     "thumbnailAlt": "A miniature aerial model of a domed plant surrounded by two concentric translucent protection zones.",
     "url": "posts/concepts/c-rp-004-emergency-planning-zones.html",
-    "keywords": "emergency planning zone PAZ UPZ precautionary action zone urgent protective action planning zone EPD ICPD IAEA EPR-NPP GSR Part 7 evacuation sheltering thyroid blocking operational intervention level OIL plume exposure EPZ Fukushima"
+    "keywords": "emergency planning zone PAZ UPZ precautionary action zone urgent protective action planning zone EPD ICPD IAEA EPR-NPP GSR Part 7 evacuation sheltering thyroid blocking operational intervention level OIL plume exposure EPZ Fukushima",
+    "publishedAt": "2026-10-24T22:50:01Z"
   },
   {
     "title": "Emergency action levels — ICs, barrier matrix and release criteria",
@@ -1005,7 +1088,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rp-003-emergency-action-levels/thumbnail.webp",
     "thumbnailAlt": "A glass gauge column with stacked colored bands and a pointer at a threshold between two bands.",
     "url": "posts/concepts/c-rp-003-emergency-action-levels.html",
-    "keywords": "emergency action level EAL initiating condition NEI 99-01 recognition category fission product barrier FA1 FS1 FG1 general emergency site area emergency alert radiological emergency plan core exit temperature"
+    "keywords": "emergency action level EAL initiating condition NEI 99-01 recognition category fission product barrier FA1 FS1 FG1 general emergency site area emergency alert radiological emergency plan core exit temperature",
+    "publishedAt": "2026-10-24T22:50:01Z"
   },
   {
     "title": "Equivalent and effective dose — wR, wT, ICRP 60 vs 103",
@@ -1017,7 +1101,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rp-002-equivalent-effective-dose/thumbnail.webp",
     "thumbnailAlt": "A faceless glass torso model with organs of different weight and a prism splitting a ray, symbolising weighted dose quantities.",
     "url": "posts/concepts/c-rp-002-equivalent-effective-dose.html",
-    "keywords": "equivalent dose effective dose radiation weighting factor tissue weighting factor ICRP 103 ICRP 60 neutron weighting factor committed dose collective dose operational quantities Hp(10) H*(10) dose limit lens of the eye sievert"
+    "keywords": "equivalent dose effective dose radiation weighting factor tissue weighting factor ICRP 103 ICRP 60 neutron weighting factor committed dose collective dose operational quantities Hp(10) H*(10) dose limit lens of the eye sievert",
+    "publishedAt": "2026-10-24T22:50:01Z"
   },
   {
     "title": "Radiation emergency classes — facility, site and general levels",
@@ -1029,7 +1114,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-rp-001-radiation-emergency-classes/thumbnail.webp",
     "thumbnailAlt": "A mast with three graduated beacon lights in green, amber and orange, symbolising graded emergency classes.",
     "url": "posts/concepts/c-rp-001-radiation-emergency-classes.html",
-    "keywords": "radiation emergency emergency classification emergency action level EAL facility emergency site area emergency general emergency alert notification of unusual event radiological emergency plan PAZ UPZ emergency planning zone GSR Part 7 NUREG-0654 NEI 99-01"
+    "keywords": "radiation emergency emergency classification emergency action level EAL facility emergency site area emergency general emergency alert notification of unusual event radiological emergency plan PAZ UPZ emergency planning zone GSR Part 7 NUREG-0654 NEI 99-01",
+    "publishedAt": "2026-10-24T22:50:01Z"
   },
   {
     "title": "Single failure criterion — active and passive failures, N+1 and CCF",
@@ -1041,7 +1127,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-pr-002-single-failure-criterion/thumbnail.webp",
     "thumbnailAlt": "Two redundant pumps where one is idle and the other keeps water flowing, symbolising redundancy against a single failure.",
     "url": "posts/concepts/c-pr-002-single-failure-criterion.html",
-    "keywords": "single failure criterion SFC single failure active failure passive failure redundancy N+1 independence worst single failure LOOP design basis accident ECCS common cause failure diversity beta factor IEEE 603 IEEE 379 GDC 35 SSR-2/1"
+    "keywords": "single failure criterion SFC single failure active failure passive failure redundancy N+1 independence worst single failure LOOP design basis accident ECCS common cause failure diversity beta factor IEEE 603 IEEE 379 GDC 35 SSR-2/1",
+    "publishedAt": "2026-10-24T22:50:01Z"
   },
   {
     "title": "PSA — Level 1, 2 and 3 scope, steps and outputs",
@@ -1053,7 +1140,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-pr-001-psa-levels/thumbnail.webp",
     "thumbnailAlt": "Three rising glass steps holding a fuel assembly, a containment dome and a landscape, symbolising the three levels of probabilistic assessment.",
     "url": "posts/concepts/c-pr-001-psa-levels.html",
-    "keywords": "probabilistic safety assessment PSA PRA Level 1 Level 2 Level 3 core damage frequency CDF LERF LRF event tree fault tree minimal cut set plant damage state containment event tree source term importance Fussell-Vesely RAW risk-informed regulation"
+    "keywords": "probabilistic safety assessment PSA PRA Level 1 Level 2 Level 3 core damage frequency CDF LERF LRF event tree fault tree minimal cut set plant damage state containment event tree source term importance Fussell-Vesely RAW risk-informed regulation",
+    "publishedAt": "2026-10-24T22:50:01Z"
   },
   {
     "title": "PHWR (CANDU) Characteristics — pressure tubes, natural uranium, on-power refuelling",
@@ -1065,7 +1153,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-pe-005-phwr-candu/thumbnail.webp",
     "thumbnailAlt": "A cutaway horizontal tank crossed by many parallel tubes, one with a fuelling machine attached, in the style of a pressure-tube reactor.",
     "url": "posts/concepts/c-pe-005-phwr-candu.html",
-    "keywords": "PHWR CANDU CANDU-6 heavy water pressure tube calandria natural uranium on-power refuelling void reactivity photoneutrons prompt neutron lifetime SDS1 SDS2 special safety systems group separation tritium"
+    "keywords": "PHWR CANDU CANDU-6 heavy water pressure tube calandria natural uranium on-power refuelling void reactivity photoneutrons prompt neutron lifetime SDS1 SDS2 special safety systems group separation tritium",
+    "publishedAt": "2026-10-24T22:54:55Z"
   },
   {
     "title": "Present Worth — six interest factors, IDC, decommissioning funds and levelized cost",
@@ -1077,7 +1166,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-pe-004-present-worth/thumbnail.webp",
     "thumbnailAlt": "Coin stacks that become smaller and fainter into the distance beside a sapling, symbolising discounting future money to its present value.",
     "url": "posts/concepts/c-pe-004-present-worth.html",
-    "keywords": "present worth present value time value of money interest factors capital recovery factor sinking fund interest during construction decommissioning fund discount rate Fisher NPV IRR payback levelized cost lead lag fuel cost"
+    "keywords": "present worth present value time value of money interest factors capital recovery factor sinking fund interest during construction decommissioning fund discount rate Fisher NPV IRR payback levelized cost lead lag fuel cost",
+    "publishedAt": "2026-10-24T22:54:55Z"
   },
   {
     "title": "Nuclear Generation Cost — LCOE, capital, O&M, fuel and the discount rate",
@@ -1089,7 +1179,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-pe-003-generation-cost-economics/thumbnail.webp",
     "thumbnailAlt": "A balance scale with a large stack of coins on one side and a small pile of fuel pellets on the other, symbolising capital-heavy costs.",
     "url": "posts/concepts/c-pe-003-generation-cost-economics.html",
-    "keywords": "nuclear economics generation cost LCOE levelized cost overnight cost interest during construction carrying charges capital recovery factor fuel cycle cost discount rate crossover settlement price decommissioning external cost system cost"
+    "keywords": "nuclear economics generation cost LCOE levelized cost overnight cost interest during construction carrying charges capital recovery factor fuel cycle cost discount rate crossover settlement price decommissioning external cost system cost",
+    "publishedAt": "2026-10-24T22:54:55Z"
   },
   {
     "title": "APR1400 Design Features — what changed from the OPR1000",
@@ -1101,7 +1192,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-pe-002-apr1400-design-features/thumbnail.webp",
     "thumbnailAlt": "An architectural model of a modern containment dome with supporting safety structures around it.",
     "url": "posts/concepts/c-pe-002-apr1400-design-features.html",
-    "keywords": "APR1400 OPR1000 utility requirements evolutionary PWR direct vessel injection DVI IRWST safety injection fluidic device POSRV digital MMIS AAC severe accident plot plan design certification"
+    "keywords": "APR1400 OPR1000 utility requirements evolutionary PWR direct vessel injection DVI IRWST safety injection fluidic device POSRV digital MMIS AAC severe accident plot plan design certification",
+    "publishedAt": "2026-10-24T22:54:55Z"
   },
   {
     "title": "Reactor Coolant Selection — requirements, properties and reactor types",
@@ -1113,7 +1205,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-pe-001-coolant-selection/thumbnail.webp",
     "thumbnailAlt": "Four glass vials holding water, gas, liquid metal and molten salt, symbolising the choice among coolants.",
     "url": "posts/concepts/c-pe-001-coolant-selection.html",
-    "keywords": "reactor coolant coolant requirements volumetric heat capacity pumping power sodium lead helium CO2 FLiBe molten salt PWR BWR PHWR CANDU HTGR SFR LFR MSR Generation IV activation"
+    "keywords": "reactor coolant coolant requirements volumetric heat capacity pumping power sodium lead helium CO2 FLiBe molten salt PWR BWR PHWR CANDU HTGR SFR LFR MSR Generation IV activation",
+    "publishedAt": "2026-10-24T22:54:55Z"
   },
   {
     "title": "In-Service Inspection (ISI) — 10-year interval, categories, flaw disposition and RI-ISI",
@@ -1125,7 +1218,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-op-010-in-service-inspection/thumbnail.webp",
     "thumbnailAlt": "An ultrasonic probe scanning a thick steel pipe weld, its beams revealing a tiny flaw inside.",
     "url": "posts/concepts/c-op-010-in-service-inspection.html",
-    "keywords": "in-service inspection ISI pre-service inspection PSI ASME Section XI 10 CFR 50.55a inspection interval examination category nondestructive examination IWB-3500 IWB-3600 risk-informed ISI RBI"
+    "keywords": "in-service inspection ISI pre-service inspection PSI ASME Section XI 10 CFR 50.55a inspection interval examination category nondestructive examination IWB-3500 IWB-3600 risk-informed ISI RBI",
+    "publishedAt": "2026-10-24T22:54:55Z"
   },
   {
     "title": "Capacity Factor and Operating Factor — energy vs time",
@@ -1137,7 +1231,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-op-009-capacity-operating-factor/thumbnail.webp",
     "thumbnailAlt": "A mostly full glass of water beside a blank clock face, symbolising energy delivered versus time online.",
     "url": "posts/concepts/c-op-009-capacity-operating-factor.html",
-    "keywords": "capacity factor load factor operating factor availability EAF UCF UCLF forced loss rate FOR refueling outage coastdown load following LCOE PRIS WANO"
+    "keywords": "capacity factor load factor operating factor availability EAF UCF UCLF forced loss rate FOR refueling outage coastdown load following LCOE PRIS WANO",
+    "publishedAt": "2026-10-24T22:54:55Z"
   },
   {
     "title": "Nuclear QA — App. B 18 criteria, NQA-1, CGD and CFSI",
@@ -1149,7 +1244,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-op-008-quality-assurance/thumbnail.webp",
     "thumbnailAlt": "Precision calipers and a magnifying glass inspecting a polished valve component on a clean inspection table.",
     "url": "posts/concepts/c-op-008-quality-assurance.html",
-    "keywords": "quality assurance QA QC 10 CFR 50 Appendix B 18 criteria ASME NQA-1 RG 1.28 commercial-grade dedication CFSI counterfeit Part 21 graded approach IAEA GSR Part 2"
+    "keywords": "quality assurance QA QC 10 CFR 50 Appendix B 18 criteria ASME NQA-1 RG 1.28 commercial-grade dedication CFSI counterfeit Part 21 graded approach IAEA GSR Part 2",
+    "publishedAt": "2026-10-24T22:54:55Z"
   },
   {
     "title": "Reactor Coolant Leakage — identified, unidentified and pressure boundary",
@@ -1161,7 +1257,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-op-007-rcs-leakage/thumbnail.webp",
     "thumbnailAlt": "A tiny droplet at a pipe flange joint caught by a collecting funnel, symbolising measured coolant leakage.",
     "url": "posts/concepts/c-op-007-rcs-leakage.html",
-    "keywords": "reactor coolant leakage identified unidentified pressure boundary primary-to-secondary operational leakage LCO 3.4.13 water inventory balance RG 1.45 leakage detection TSTF-554 LBB APR1400"
+    "keywords": "reactor coolant leakage identified unidentified pressure boundary primary-to-secondary operational leakage LCO 3.4.13 water inventory balance RG 1.45 leakage detection TSTF-554 LBB APR1400",
+    "publishedAt": "2026-10-24T22:54:55Z"
   },
   {
     "title": "NPP Site Selection — seven criteria, EAB, LPZ and PCD",
@@ -1173,7 +1270,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-op-006-site-selection-criteria/thumbnail.webp",
     "thumbnailAlt": "A tiny model of a plant site on contoured terrain, surrounded by concentric translucent rings that suggest buffer zones.",
     "url": "posts/concepts/c-op-006-site-selection-criteria.html",
-    "keywords": "site selection siting criteria exclusion area boundary EAB low population zone LPZ population center distance PCD capable fault 10 CFR 100 RG 4.7 IAEA SSR-1 ultimate heat sink"
+    "keywords": "site selection siting criteria exclusion area boundary EAB low population zone LPZ population center distance PCD capable fault 10 CFR 100 RG 4.7 IAEA SSR-1 ultimate heat sink",
+    "publishedAt": "2026-10-24T22:54:55Z"
   },
   {
     "title": "Safety Class — Classes 1, 2, 3 and their codes, seismic and QA links",
@@ -1185,7 +1283,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-op-005-safety-class/thumbnail.webp",
     "thumbnailAlt": "A staircase of three protective casings, from heavy-duty to light-duty, symbolising graded safety classes.",
     "url": "posts/concepts/c-op-005-safety-class.html",
-    "keywords": "safety class safety-related RCPB quality group seismic category Class 1E ASME Section III quality class SSG-30 10 CFR 50.55a"
+    "keywords": "safety class safety-related RCPB quality group seismic category Class 1E ASME Section III quality class SSG-30 10 CFR 50.55a",
+    "publishedAt": "2026-10-24T22:54:55Z"
   },
   {
     "title": "Safety Limits — core SL, RCS pressure SL and violation actions",
@@ -1197,7 +1296,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-op-004-safety-limits/thumbnail.webp",
     "thumbnailAlt": "A calm blue ball rolling beneath a clear barrier with a glowing top edge, symbolising staying within a safety limit.",
     "url": "posts/concepts/c-op-004-safety-limits.html",
-    "keywords": "safety limit SL core safety limit DNBR 95/95 centerline temperature RCS pressure 2750 psia LSSS SAFDL technical specifications 10 CFR 50.36 APR1400 POSRV"
+    "keywords": "safety limit SL core safety limit DNBR 95/95 centerline temperature RCS pressure 2750 psia LSSS SAFDL technical specifications 10 CFR 50.36 APR1400 POSRV",
+    "publishedAt": "2026-10-24T22:54:55Z"
   },
   {
     "title": "LCO — four selection criteria, actions and completion times",
@@ -1209,7 +1309,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-op-002-lco/thumbnail.webp",
     "thumbnailAlt": "A glass hourglass with most sand still in the top, suggesting the limited time allowed to restore equipment.",
     "url": "posts/concepts/c-op-002-lco.html",
-    "keywords": "limiting condition for operation LCO selection criteria primary success path initial conditions completion time required action surveillance requirement LCO 3.0.4 SR 3.0.2 relocation 10 CFR 50.36 Technical Specifications"
+    "keywords": "limiting condition for operation LCO selection criteria primary success path initial conditions completion time required action surveillance requirement LCO 3.0.4 SR 3.0.2 relocation 10 CFR 50.36 Technical Specifications",
+    "publishedAt": "2026-10-24T22:54:55Z"
   },
   {
     "title": "Technical Specifications — SL, LSSS, LCO and the four selection criteria",
@@ -1221,7 +1322,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-op-001-technical-specifications/thumbnail.webp",
     "thumbnailAlt": "A blank-paged rulebook binder linked by a thin glowing line to a miniature control panel, symbolising rules turned into operating practice.",
     "url": "posts/concepts/c-op-001-technical-specifications.html",
-    "keywords": "Technical Specifications safety limit LSSS limiting condition for operation LCO selection criteria surveillance requirement design features operability LCO 3.0.3 completion time Bases ISTS 10 CFR 50.36 NUREG-1432"
+    "keywords": "Technical Specifications safety limit LSSS limiting condition for operation LCO selection criteria surveillance requirement design features operability LCO 3.0.3 completion time Bases ISTS 10 CFR 50.36 NUREG-1432",
+    "publishedAt": "2026-10-24T22:54:55Z"
   },
   {
     "title": "SAFDL — fuel design limits for normal operation and AOOs",
@@ -1233,7 +1335,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-fm-012-safdl/thumbnail.webp",
     "thumbnailAlt": "Fuel rods standing comfortably inside a translucent protective boundary, symbolising design limits that keep fuel intact.",
     "url": "posts/concepts/c-fm-012-safdl.html",
-    "keywords": "SAFDL specified acceptable fuel design limits GDC 10 SRP 4.2 DNBR 95/95 centerline melting uniform strain rod internal pressure lift-off anticipated operational occurrence safety limit LSSS LCO CPC COLSS"
+    "keywords": "SAFDL specified acceptable fuel design limits GDC 10 SRP 4.2 DNBR 95/95 centerline melting uniform strain rod internal pressure lift-off anticipated operational occurrence safety limit LSSS LCO CPC COLSS",
+    "publishedAt": "2026-10-24T22:54:55Z"
   },
   {
     "title": "Fission gas release (FGR) — release path, Halden threshold and feedbacks",
@@ -1245,7 +1348,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-fm-011-fission-gas-release/thumbnail.webp",
     "thumbnailAlt": "Translucent gas bubbles travelling along grain boundaries of a ceramic pellet toward the open gap and plenum.",
     "url": "posts/concepts/c-fm-011-fission-gas-release.html",
-    "keywords": "fission gas release FGR xenon krypton Booth diffusion grain boundary bubble interlinkage burst release Halden threshold Vitanza rod internal pressure gap conductance lift-off high burnup rim"
+    "keywords": "fission gas release FGR xenon krypton Booth diffusion grain boundary bubble interlinkage burst release Halden threshold Vitanza rod internal pressure gap conductance lift-off high burnup rim",
+    "publishedAt": "2026-10-24T22:54:55Z"
   },
   {
     "title": "Pellet-cladding interaction (PCI) — iodine SCC, ramp-rate limits and soak operation",
@@ -1257,7 +1361,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-fm-010-pellet-cladding-interaction/thumbnail.webp",
     "thumbnailAlt": "A cut-open fuel rod where an hourglass-shaped pellet presses against the cladding at the closed gap, with a faint stress highlight.",
     "url": "posts/concepts/c-fm-010-pellet-cladding-interaction.html",
-    "keywords": "pellet-cladding interaction PCI PCMI iodine stress corrosion cracking gap closure creep-down hourglassing bamboo ridging soak operation ramp rate limit PCIOMR barrier cladding doped pellet SRP 4.2"
+    "keywords": "pellet-cladding interaction PCI PCMI iodine stress corrosion cracking gap closure creep-down hourglassing bamboo ridging soak operation ramp rate limit PCIOMR barrier cladding doped pellet SRP 4.2",
+    "publishedAt": "2026-10-24T22:54:55Z"
   },
   {
     "title": "Fuel integrity monitoring — coolant indicators, iodine ratios, sipping and UT",
@@ -1269,7 +1374,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-fm-009-fuel-integrity-monitoring/thumbnail.webp",
     "thumbnailAlt": "A water sampling line leading to a precision analyzer, with fuel rods softly visible behind, symbolising coolant-based fuel monitoring.",
     "url": "posts/concepts/c-fm-009-fuel-integrity-monitoring.html",
-    "keywords": "fuel integrity monitoring fuel failure diagnosis Xe-133 I-131 I-133 iodine ratio R/B slope tramp uranium iodine spike DEI-131 DEX-133 TSTF-490 sipping ultrasonic testing grid-to-rod fretting"
+    "keywords": "fuel integrity monitoring fuel failure diagnosis Xe-133 I-131 I-133 iodine ratio R/B slope tramp uranium iodine spike DEI-131 DEX-133 TSTF-490 sipping ultrasonic testing grid-to-rod fretting",
+    "publishedAt": "2026-10-24T22:54:55Z"
   },
   {
     "title": "Steam generator tube degradation — mechanisms, ECT and the 40 %TW criterion",
@@ -1281,7 +1387,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-fm-008-sg-tube-degradation/thumbnail.webp",
     "thumbnailAlt": "A cutaway of slender steam generator tubes with one tube wall showing a small localized thinning.",
     "url": "posts/concepts/c-fm-008-sg-tube-degradation.html",
-    "keywords": "steam generator tube degradation PWSCC ODSCC IGA denting wastage pitting fretting wear fatigue Alloy 600 Alloy 690 eddy current testing bobbin rotating probe plugging sleeving 40 %TW NEI 97-06 SGTR fouling secondary water chemistry"
+    "keywords": "steam generator tube degradation PWSCC ODSCC IGA denting wastage pitting fretting wear fatigue Alloy 600 Alloy 690 eddy current testing bobbin rotating probe plugging sleeving 40 %TW NEI 97-06 SGTR fouling secondary water chemistry",
+    "publishedAt": "2026-10-24T22:50:01Z"
   },
   {
     "title": "U-235 consumption — fissions, capture (α) and remaining enrichment",
@@ -1293,7 +1400,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-fm-007-u235-depletion/thumbnail.webp",
     "thumbnailAlt": "A clear glass vessel where bright blue granules are slowly being replaced by darker ones, symbolising U-235 being consumed.",
     "url": "posts/concepts/c-fm-007-u235-depletion.html",
-    "keywords": "U-235 consumption depletion enrichment fission rate capture-to-fission ratio alpha U-236 burnup MWd UO2 to U conversion 0.8815 Pu-239 contribution 10 CFR 50.68 5 wt% LEU"
+    "keywords": "U-235 consumption depletion enrichment fission rate capture-to-fission ratio alpha U-236 burnup MWd UO2 to U conversion 0.8815 Pu-239 contribution 10 CFR 50.68 5 wt% LEU",
+    "publishedAt": "2026-10-24T22:50:01Z"
   },
   {
     "title": "Fuel densification and swelling — net pellet volume vs burnup",
@@ -1305,7 +1413,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-fm-006-densification-swelling/thumbnail.webp",
     "thumbnailAlt": "Two fuel pellets, one slightly shrunken and one swollen, showing early densification followed by swelling.",
     "url": "posts/concepts/c-fm-006-densification-swelling.html",
-    "keywords": "fuel densification swelling UO2 pellet resintering test RG 1.126 solid fission product swelling gaseous swelling pellet-cladding gap PCMI cladding collapse Ginna high burnup structure rim HBS"
+    "keywords": "fuel densification swelling UO2 pellet resintering test RG 1.126 solid fission product swelling gaseous swelling pellet-cladding gap PCMI cladding collapse Ginna high burnup structure rim HBS",
+    "publishedAt": "2026-10-24T22:50:01Z"
   },
   {
     "title": "Cladding hydriding — hydrogen pickup, TSS and hydride reorientation",
@@ -1317,7 +1426,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-fm-005-cladding-hydriding/thumbnail.webp",
     "thumbnailAlt": "A cutaway of a silvery zirconium cladding tube with thin brittle platelets embedded in its wall and a hairline crack along them.",
     "url": "posts/concepts/c-fm-005-cladding-hydriding.html",
-    "keywords": "hydrogen embrittlement cladding hydriding zirconium alloy Zircaloy PUF hydrogen pickup TSS terminal solid solubility hydride reorientation delayed hydride cracking DHC RIA RG 1.236 LOCA 50.46c dry storage ISG-11 NUREG-2224"
+    "keywords": "hydrogen embrittlement cladding hydriding zirconium alloy Zircaloy PUF hydrogen pickup TSS terminal solid solubility hydride reorientation delayed hydride cracking DHC RIA RG 1.236 LOCA 50.46c dry storage ISG-11 NUREG-2224",
+    "publishedAt": "2026-10-24T22:50:01Z"
   },
   {
     "title": "Nil-ductility transition temperature — NDTT, RTNDT, DBTT and ART",
@@ -1329,7 +1439,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-fm-003-rtndt-dbtt/thumbnail.webp",
     "thumbnailAlt": "A steel impact test bar that bends on its warm side and snaps cleanly on its cold side, showing the ductile-to-brittle transition.",
     "url": "posts/concepts/c-fm-003-rtndt-dbtt.html",
-    "keywords": "nil-ductility transition temperature NDTT RTNDT DBTT Charpy drop-weight test NB-2331 irradiation embrittlement ART RG 1.99 upper-shelf energy surveillance specimens lead factor P-T limit curves reactor pressure vessel"
+    "keywords": "nil-ductility transition temperature NDTT RTNDT DBTT Charpy drop-weight test NB-2331 irradiation embrittlement ART RG 1.99 upper-shelf energy surveillance specimens lead factor P-T limit curves reactor pressure vessel",
+    "publishedAt": "2026-10-24T22:50:01Z"
   },
   {
     "title": "Pressurized thermal shock — overcooling, repressurization and RTPTS",
@@ -1341,7 +1452,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-fm-002-pressurized-thermal-shock/thumbnail.webp",
     "thumbnailAlt": "A thick steel vessel wall cut open, cold water flowing along its inner face with a tiny crack beginning at the surface.",
     "url": "posts/concepts/c-fm-002-pressurized-thermal-shock.html",
-    "keywords": "pressurized thermal shock PTS reactor pressure vessel irradiation embrittlement RTPTS RTNDT 10 CFR 50.61 50.61a fracture toughness KIC warm prestress safety injection termination annealing"
+    "keywords": "pressurized thermal shock PTS reactor pressure vessel irradiation embrittlement RTPTS RTNDT 10 CFR 50.61 50.61a fracture toughness KIC warm prestress safety injection termination annealing",
+    "publishedAt": "2026-10-24T22:50:01Z"
   },
   {
     "title": "Burnup — MWd/tU, %FIMA and EFPD conversions",
@@ -1353,7 +1465,8 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-fm-001-burnup/thumbnail.webp",
     "thumbnailAlt": "A fuel pellet beside an unmarked odometer-like dial whose needle has swept most of the way round, suggesting accumulated burnup.",
     "url": "posts/concepts/c-fm-001-burnup.html",
-    "keywords": "burnup MWd/tU GWd/tHM FIMA EFPD specific burnup UO2 heavy metal plutonium contribution beta effective burnup limit rod average nuclear fuel"
+    "keywords": "burnup MWd/tU GWd/tHM FIMA EFPD specific burnup UO2 heavy metal plutonium contribution beta effective burnup limit rod average nuclear fuel",
+    "publishedAt": "2026-10-24T22:17:42Z"
   },
   {
     "title": "Villard Discovers Gamma Rays (1900)",
@@ -1365,7 +1478,8 @@ const posts = [
     "thumbnail": "assets/images/history/010-villard-gamma-rays/thumbnail.webp",
     "thumbnailAlt": "A straight beam of light from a glowing sample in a lead block passes unbent between the poles of a horseshoe magnet onto a glass plate, while thinner beams beside it curve away",
     "url": "posts/history/010-villard-gamma-rays.html",
-    "keywords": "Paul Villard gamma rays 1900 radium Rutherford Curie magnetic deflection radiation penetration half-value layer shielding history of radiation nuclear history"
+    "keywords": "Paul Villard gamma rays 1900 radium Rutherford Curie magnetic deflection radiation penetration half-value layer shielding history of radiation nuclear history",
+    "publishedAt": "2026-10-25T20:28:07Z"
   },
   {
     "title": "Rutherford Splits Uranium's Rays into Alpha and Beta (1899)",
@@ -1377,7 +1491,8 @@ const posts = [
     "thumbnail": "assets/images/history/009-rutherford-alpha-beta/thumbnail.webp",
     "thumbnailAlt": "A glowing green lump of uranium ore sends beams of light into a row of upright aluminium foils; the orange beams stop at the first foil while the blue beams pass through all of them",
     "url": "posts/history/009-rutherford-alpha-beta.html",
-    "keywords": "Ernest Rutherford alpha radiation beta radiation alpha particle beta particle uranium radioactivity aluminium foil Cavendish Laboratory McGill history of nuclear physics 1899"
+    "keywords": "Ernest Rutherford alpha radiation beta radiation alpha particle beta particle uranium radioactivity aluminium foil Cavendish Laboratory McGill history of nuclear physics 1899",
+    "publishedAt": "2026-10-25T20:28:07Z"
   },
   {
     "title": "The Curies Discover Polonium and Radium (1898)",
@@ -1389,7 +1504,8 @@ const posts = [
     "thumbnail": "assets/images/history/008-curies-polonium-radium/thumbnail.webp",
     "thumbnailAlt": "A small corked glass vial holding a few softly glowing blue crystals, resting on a heap of black pitchblende ore",
     "url": "posts/history/008-curies-polonium-radium.html",
-    "keywords": "Marie Curie Pierre Curie polonium radium radioactivity pitchblende Bemont Demarcay radiochemistry 1898 discovery of elements history of nuclear science"
+    "keywords": "Marie Curie Pierre Curie polonium radium radioactivity pitchblende Bemont Demarcay radiochemistry 1898 discovery of elements history of nuclear science",
+    "publishedAt": "2026-10-25T20:28:07Z"
   },
   {
     "title": "J.J. Thomson Discovers the Electron (1897)",
@@ -1401,7 +1517,8 @@ const posts = [
     "thumbnail": "assets/images/history/007-thomson-electron/thumbnail.webp",
     "thumbnailAlt": "A clear glass vacuum tube in which a glowing blue beam passes between two metal plates and curves down to a green spot at the wide end",
     "url": "posts/history/007-thomson-electron.html",
-    "keywords": "J.J. Thomson electron discovery of the electron cathode rays mass-to-charge ratio corpuscle Cavendish Laboratory 1897 history of physics nuclear history"
+    "keywords": "J.J. Thomson electron discovery of the electron cathode rays mass-to-charge ratio corpuscle Cavendish Laboratory 1897 history of physics nuclear history",
+    "publishedAt": "2026-10-25T20:28:07Z"
   },
   {
     "title": "Becquerel and the Uranium Rays (1896)",
@@ -1413,7 +1530,8 @@ const posts = [
     "thumbnail": "assets/images/history/006-becquerel-uranium-rays/thumbnail.webp",
     "thumbnailAlt": "A half-open wooden desk drawer lined with black paper, holding a glass plate with yellow-green uranium-salt crystals and a small metal cross whose shadow glows faintly beneath it, next to a window with a cloudy sky",
     "url": "posts/history/006-becquerel-uranium-rays.html",
-    "keywords": "Henri Becquerel uranium rays radioactivity discovery 1896 photographic plate phosphorescence potassium uranyl sulfate Poincare X-rays Marie Curie Nobel Prize 1903 becquerel unit nuclear history"
+    "keywords": "Henri Becquerel uranium rays radioactivity discovery 1896 photographic plate phosphorescence potassium uranyl sulfate Poincare X-rays Marie Curie Nobel Prize 1903 becquerel unit nuclear history",
+    "publishedAt": "2026-10-25T20:28:07Z"
   },
   {
     "title": "Röntgen Discovers X-rays (1895)",
@@ -1425,7 +1543,8 @@ const posts = [
     "thumbnail": "assets/images/history/005-roentgen-x-rays/thumbnail.webp",
     "thumbnailAlt": "A glowing vintage glass discharge tube next to a softly lit fluorescent screen on a bright background",
     "url": "posts/history/005-roentgen-x-rays.html",
-    "keywords": "Wilhelm Roentgen Röntgen X-rays 1895 discovery Würzburg cathode rays Anna Bertha hand X-ray Becquerel radioactivity Nobel Prize physics 1901 medical imaging radiation protection nuclear history"
+    "keywords": "Wilhelm Roentgen Röntgen X-rays 1895 discovery Würzburg cathode rays Anna Bertha hand X-ray Becquerel radioactivity Nobel Prize physics 1901 medical imaging radiation protection nuclear history",
+    "publishedAt": "2026-10-25T20:28:07Z"
   },
   {
     "title": "Particle or Wave? Cathode Rays from Faraday to the Crookes Tube",
@@ -1437,7 +1556,8 @@ const posts = [
     "thumbnail": "assets/images/history/004-cathode-rays/thumbnail.webp",
     "thumbnailAlt": "A glowing glass Crookes tube with a violet beam leaving the cathode, a metal cross in the middle and the cross's dark shadow on the apple-green glowing far end",
     "url": "posts/history/004-cathode-rays.html",
-    "keywords": "cathode rays Crookes tube William Crookes Michael Faraday Geissler tube Julius Plucker Johann Hittorf Eugen Goldstein Heinrich Hertz Philipp Lenard Jean Perrin radiant matter vacuum tube history of physics nuclear history"
+    "keywords": "cathode rays Crookes tube William Crookes Michael Faraday Geissler tube Julius Plucker Johann Hittorf Eugen Goldstein Heinrich Hertz Philipp Lenard Jean Perrin radiant matter vacuum tube history of physics nuclear history",
+    "publishedAt": "2026-10-25T20:28:07Z"
   },
   {
     "title": "Mendeleev's Periodic Table and Its Blanks (1869)",
@@ -1449,7 +1569,8 @@ const posts = [
     "thumbnail": "assets/images/history/003-mendeleev-periodic-table/thumbnail.webp",
     "thumbnailAlt": "A grid of blue, teal and amber glass tiles with three glowing empty squares, one golden tile hovering above a gap",
     "url": "posts/history/003-mendeleev-periodic-table.html",
-    "keywords": "Mendeleev periodic table 1869 elements atomic weight atomic number eka-silicon germanium gallium scandium Moseley mendelevium history of chemistry nuclear history"
+    "keywords": "Mendeleev periodic table 1869 elements atomic weight atomic number eka-silicon germanium gallium scandium Moseley mendelevium history of chemistry nuclear history",
+    "publishedAt": "2026-10-25T20:28:07Z"
   },
   {
     "title": "Weighing the Invisible — Dalton's Atomic Theory (1808)",
@@ -1461,7 +1582,8 @@ const posts = [
     "thumbnail": "assets/images/history/002-dalton-atomic-theory/thumbnail.webp",
     "thumbnailAlt": "A polished brass balance scale with a small pearly sphere on the raised pan and a larger sphere on the lower pan, against a bright pale-blue background",
     "url": "posts/history/002-dalton-atomic-theory.html",
-    "keywords": "John Dalton atomic theory atomic weight relative atomic mass law of multiple proportions Avogadro Karlsruhe Congress history of chemistry history of the atom dalton unit"
+    "keywords": "John Dalton atomic theory atomic weight relative atomic mass law of multiple proportions Avogadro Karlsruhe Congress history of chemistry history of the atom dalton unit",
+    "publishedAt": "2026-10-25T20:28:07Z"
   },
   {
     "title": "Ancient Atomism: Democritus, Epicurus and the Uncuttable Atom",
@@ -1473,7 +1595,8 @@ const posts = [
     "thumbnail": "assets/images/history/001-ancient-atomism/thumbnail.webp",
     "thumbnailAlt": "A rough block of white marble on a sunlit surface, with clear glass beads breaking away from it and shrinking into fine sparkling grains against a bright blue sky",
     "url": "posts/history/001-ancient-atomism.html",
-    "keywords": "ancient atomism atomos Democritus Leucippus Epicurus Lucretius De rerum natura Poggio Bracciolini Pierre Gassendi history of the atom nuclear history"
+    "keywords": "ancient atomism atomos Democritus Leucippus Epicurus Lucretius De rerum natura Poggio Bracciolini Pierre Gassendi history of the atom nuclear history",
+    "publishedAt": "2026-10-25T20:28:07Z"
   },
   {
     "title": "Read It Like a Nutrition Label — Five Checks for Reading Nuclear Information",
@@ -1485,7 +1608,8 @@ const posts = [
     "thumbnail": "assets/images/theory/300-reading-nuclear-information/thumbnail.webp",
     "thumbnailAlt": "A brass magnifying glass leaning over a staircase of clear glass steps, with a banana on the lowest step and a small airplane on a higher step seen through the lens, in a bright sunlit setting",
     "url": "posts/theory/300-reading-nuclear-information.html",
-    "keywords": "nuclear information radiation units becquerel gray sievert natural radiation dose ladder relative risk absolute risk detection limit science literacy risk communication"
+    "keywords": "nuclear information radiation units becquerel gray sievert natural radiation dose ladder relative risk absolute risk detection limit science literacy risk communication",
+    "publishedAt": "2026-10-24T07:01:56Z"
   },
   {
     "title": "What If Your Driving Examiner Worked for a Car Company? — What a Nuclear Regulator Does",
@@ -1497,7 +1621,8 @@ const posts = [
     "thumbnail": "assets/images/theory/299-nuclear-regulator/thumbnail.webp",
     "thumbnailAlt": "A raised teal-and-white striped barrier gate on a clean road leading toward a domed nuclear power plant under a bright morning sky",
     "url": "posts/theory/299-nuclear-regulator.html",
-    "keywords": "nuclear regulator regulatory independence Nuclear Safety and Security Commission NSSC KINS KINAC nuclear licensing periodic inspection continued operation Kori Unit 1 US NRC"
+    "keywords": "nuclear regulator regulatory independence Nuclear Safety and Security Commission NSSC KINS KINAC nuclear licensing periodic inspection continued operation Kori Unit 1 US NRC",
+    "publishedAt": "2026-10-24T07:01:56Z"
   },
   {
     "title": "Uranium Watched Like a Bank Vault — Nuclear Non-Proliferation and Nuclear Technology",
@@ -1509,7 +1634,8 @@ const posts = [
     "thumbnail": "assets/images/theory/298-nuclear-nonproliferation/thumbnail.webp",
     "thumbnailAlt": "A dark uranium fuel pellet on a metal stand inside a glass display case, with a wire seal and round metal tag fastened to the case door, on a white pedestal in a bright room",
     "url": "posts/theory/298-nuclear-nonproliferation.html",
-    "keywords": "nuclear non-proliferation NPT IAEA safeguards uranium enrichment separative work SWU HALEU dual-use technology Additional Protocol nuclear material accountancy"
+    "keywords": "nuclear non-proliferation NPT IAEA safeguards uranium enrichment separative work SWU HALEU dual-use technology Additional Protocol nuclear material accountancy",
+    "publishedAt": "2026-10-24T07:01:56Z"
   },
   {
     "title": "A Log Won't Light Without Kindling — The Thorium Fuel Cycle Explained",
@@ -1521,7 +1647,8 @@ const posts = [
     "thumbnail": "assets/images/theory/297-thorium-fuel-cycle/thumbnail.webp",
     "thumbnailAlt": "Two birch logs on a bright pale-blue background, with a bundle of thin twigs pressed against them and a small blue spark where the twigs touch the log",
     "url": "posts/theory/297-thorium-fuel-cycle.html",
-    "keywords": "thorium thorium fuel cycle uranium-233 fertile material fissile material breeding protactinium-233 eta neutron economy molten salt reactor India three-stage programme"
+    "keywords": "thorium thorium fuel cycle uranium-233 fertile material fissile material breeding protactinium-233 eta neutron economy molten salt reactor India three-stage programme",
+    "publishedAt": "2026-10-24T07:01:56Z"
   },
   {
     "title": "From 2G to 5G, You Could Always Make a Call — What a Generation IV Reactor Really Is",
@@ -1533,7 +1660,8 @@ const posts = [
     "thumbnail": "assets/images/theory/296-generation-iv-reactors/thumbnail.webp",
     "thumbnailAlt": "Six different reactor modules, cooled by gas, liquid metal, salt and water, connected by pipes to one glowing central core on a bright white background",
     "url": "posts/theory/296-generation-iv-reactors.html",
-    "keywords": "Generation IV reactors GIF sodium-cooled fast reactor lead-cooled fast reactor gas-cooled fast reactor very-high-temperature reactor molten salt reactor supercritical water reactor reactor generations Carnot efficiency"
+    "keywords": "Generation IV reactors GIF sodium-cooled fast reactor lead-cooled fast reactor gas-cooled fast reactor very-high-temperature reactor molten salt reactor supercritical water reactor reactor generations Carnot efficiency",
+    "publishedAt": "2026-10-24T07:01:56Z"
   },
   {
     "title": "Big Restaurant or Food Truck? What SMRs Can Change, and What They Can't",
@@ -1545,7 +1673,8 @@ const posts = [
     "thumbnail": "assets/images/theory/295-what-smrs-can-and-cannot-change/thumbnail.webp",
     "thumbnailAlt": "A single polished steel reactor module on a steel skid in a bright, open factory hangar, with a yellow tape measure stretched across the floor in front of it",
     "url": "posts/theory/295-what-smrs-can-and-cannot-change.html",
-    "keywords": "SMR small modular reactor i-SMR economies of scale learning curve emergency planning zone HALEU nuclear economics NuScale Darlington BWRX-300"
+    "keywords": "SMR small modular reactor i-SMR economies of scale learning curve emergency planning zone HALEU nuclear economics NuScale Darlington BWRX-300",
+    "publishedAt": "2026-10-24T07:01:56Z"
   },
   {
     "title": "Sorted by Numbers, Like Packing for a Move — Classifying Nuclear Decommissioning Waste",
@@ -1557,7 +1686,8 @@ const posts = [
     "thumbnail": "assets/images/theory/294-decommissioning-waste-classification/thumbnail.webp",
     "thumbnailAlt": "A polished steel pipe section resting on a pallet inside a white arch-shaped measurement portal glowing with soft teal light",
     "url": "posts/theory/294-decommissioning-waste-classification.html",
-    "keywords": "decommissioning waste classification Kori Unit 1 clearance contamination activation decontamination very low level waste intermediate level waste radioactive waste"
+    "keywords": "decommissioning waste classification Kori Unit 1 clearance contamination activation decontamination very low level waste intermediate level waste radioactive waste",
+    "publishedAt": "2026-10-24T07:01:56Z"
   },
   {
     "title": "Handing Back the Empty Lot After Moving Out — How Nuclear Plant Decommissioning Really Ends",
@@ -1569,7 +1699,8 @@ const posts = [
     "thumbnail": "assets/images/theory/293-nuclear-plant-decommissioning/thumbnail.webp",
     "thumbnailAlt": "A detailed model of a nuclear power plant on a white table, partly opened up, with a gantry crane lifting a roof panel and the removed parts neatly sorted into a compartment tray beside it",
     "url": "posts/theory/293-nuclear-plant-decommissioning.html",
-    "keywords": "nuclear decommissioning Kori Unit 1 immediate dismantling deferred dismantling decontamination spent nuclear fuel site release cobalt-60 SAFSTOR Maine Yankee"
+    "keywords": "nuclear decommissioning Kori Unit 1 immediate dismantling deferred dismantling decontamination spent nuclear fuel site release cobalt-60 SAFSTOR Maine Yankee",
+    "publishedAt": "2026-10-24T07:01:56Z"
   },
   {
     "title": "Candles That Burn at Different Speeds — The Time Scales of Radioactive Waste",
@@ -1581,7 +1712,8 @@ const posts = [
     "thumbnail": "assets/images/theory/292-radioactive-waste-timescales/thumbnail.webp",
     "thumbnailAlt": "Three hourglasses of increasing size on a marble surface, a small one with amber sand, a medium one with indigo sand and a tall one with teal sand on a granite base",
     "url": "posts/theory/292-radioactive-waste-timescales.html",
-    "keywords": "radioactive waste time scale spent nuclear fuel radiotoxicity half-life fission products plutonium minor actinides natural uranium baseline high-level waste deep geological disposal"
+    "keywords": "radioactive waste time scale spent nuclear fuel radiotoxicity half-life fission products plutonium minor actinides natural uranium baseline high-level waste deep geological disposal",
+    "publishedAt": "2026-10-24T07:01:56Z"
   },
   {
     "title": "Nested Like Russian Dolls — What Is Deep Geological Disposal?",
@@ -1593,7 +1725,8 @@ const posts = [
     "thumbnail": "assets/images/theory/291-deep-geological-disposal/thumbnail.webp",
     "thumbnailAlt": "Two halves of a matryoshka-shaped shell made of speckled granite lined with pale clay, opened around a polished copper cylinder standing in the middle",
     "url": "posts/theory/291-deep-geological-disposal.html",
-    "keywords": "deep geological disposal high-level radioactive waste spent nuclear fuel multiple barriers KBS-3 bentonite copper canister Onkalo Forsmark KURT"
+    "keywords": "deep geological disposal high-level radioactive waste spent nuclear fuel multiple barriers KBS-3 bentonite copper canister Onkalo Forsmark KURT",
+    "publishedAt": "2026-10-24T07:01:56Z"
   },
   {
     "title": "What If You Designed a Thermos Backwards? — How a Dry Storage Cask Works",
@@ -1605,7 +1738,8 @@ const posts = [
     "thumbnail": "assets/images/theory/290-dry-storage-cask/thumbnail.webp",
     "thumbnailAlt": "A tall concrete storage cask with a steel lid and air vents at top and bottom standing on a concrete pad by a sunlit coast, with a small steel thermos flask beside its base",
     "url": "posts/theory/290-dry-storage-cask.html",
-    "keywords": "dry storage cask spent nuclear fuel decay heat natural convection passive cooling helium backfill radiation shielding subcriticality canister overpack MACSTOR NUREG-2215"
+    "keywords": "dry storage cask spent nuclear fuel decay heat natural convection passive cooling helium backfill radiation shielding subcriticality canister overpack MACSTOR NUREG-2215",
+    "publishedAt": "2026-10-24T06:59:04Z"
   },
   {
     "title": "Trash or Compost? Is Spent Nuclear Fuel Waste or a Resource?",
@@ -1617,7 +1751,8 @@ const posts = [
     "thumbnail": "assets/images/theory/289-spent-fuel-waste-or-resource/thumbnail.webp",
     "thumbnailAlt": "A single dark ceramic fuel pellet with a granular cut face resting on a clear glass dish against a bright, pale blue background",
     "url": "posts/theory/289-spent-fuel-waste-or-resource.html",
-    "keywords": "spent nuclear fuel high-level radioactive waste fission products plutonium burnup reprocessing direct disposal MOX Onkalo Forsmark nuclear fuel cycle IAEA Joint Convention"
+    "keywords": "spent nuclear fuel high-level radioactive waste fission products plutonium burnup reprocessing direct disposal MOX Onkalo Forsmark nuclear fuel cycle IAEA Joint Convention",
+    "publishedAt": "2026-10-24T06:59:04Z"
   },
   {
     "title": "Two Questions at the Recycling Bin — How Intermediate- and High-Level Waste Are Told Apart",
@@ -1629,7 +1764,8 @@ const posts = [
     "thumbnail": "assets/images/theory/288-intermediate-vs-high-level-waste/thumbnail.webp",
     "thumbnailAlt": "A brushed-steel and glass cabinet with four compartments on a block showing layers of soil and rock, with a single metal canister lit in the upper-right compartment",
     "url": "posts/theory/288-intermediate-vs-high-level-waste.html",
-    "keywords": "intermediate-level waste high-level waste radioactive waste classification long-lived alpha emitters heat generation rate deep geological disposal cavern disposal reactor internals transuranic waste IAEA GSG-1"
+    "keywords": "intermediate-level waste high-level waste radioactive waste classification long-lived alpha emitters heat generation rate deep geological disposal cavern disposal reactor internals transuranic waste IAEA GSG-1",
+    "publishedAt": "2026-10-24T06:59:04Z"
   },
   {
     "title": "No Glowing Green Drums — The Real Face of Low-Level Radioactive Waste",
@@ -1641,7 +1777,8 @@ const posts = [
     "thumbnail": "assets/images/theory/287-low-level-radioactive-waste/thumbnail.webp",
     "thumbnailAlt": "A cutaway steel drum packed with layers of compressed white and blue protective clothing and plastic sheeting, with a blank tag on the rim and a single blue glove on the floor beside it",
     "url": "posts/theory/287-low-level-radioactive-waste.html",
-    "keywords": "low-level radioactive waste LILW clearance level very low-level waste becquerel per gram compaction solidification 200-litre drum Gyeongju disposal facility near-surface disposal cavern disposal"
+    "keywords": "low-level radioactive waste LILW clearance level very low-level waste becquerel per gram compaction solidification 200-litre drum Gyeongju disposal facility near-surface disposal cavern disposal",
+    "publishedAt": "2026-10-24T06:59:04Z"
   },
   {
     "title": "Like Bathwater Down a Stream — How Far Does a Nuclear Plant's Thermal Discharge Spread?",
@@ -1653,7 +1790,8 @@ const posts = [
     "thumbnail": "assets/images/theory/286-thermal-discharge-marine-ecosystems/thumbnail.webp",
     "thumbnailAlt": "A clear glass bathtub on a sunlit coastal rock pouring a stream of water into a calm turquoise sea",
     "url": "posts/theory/286-thermal-discharge-marine-ecosystems.html",
-    "keywords": "thermal discharge marine ecosystem nuclear power plant condenser cooling water once-through cooling thermal plume dilution impingement entrainment environmental impact assessment"
+    "keywords": "thermal discharge marine ecosystem nuclear power plant condenser cooling water once-through cooling thermal plume dilution impingement entrainment environmental impact assessment",
+    "publishedAt": "2026-10-24T06:59:04Z"
   },
   {
     "title": "What If Electricity Came with a Carbon Label? — Nuclear Power's Life-Cycle Emissions",
@@ -1665,7 +1803,8 @@ const posts = [
     "thumbnail": "assets/images/theory/285-nuclear-lifecycle-carbon/thumbnail.webp",
     "thumbnailAlt": "A clear glass plug with a blank paper tag, its cable looping through miniature ore, fuel pellets, a fuel assembly, a nuclear plant and a storage cask",
     "url": "posts/theory/285-nuclear-lifecycle-carbon.html",
-    "keywords": "life-cycle assessment LCA carbon footprint nuclear carbon emissions greenhouse gases uranium enrichment gas centrifuge IPCC UNECE low-carbon electricity"
+    "keywords": "life-cycle assessment LCA carbon footprint nuclear carbon emissions greenhouse gases uranium enrichment gas centrifuge IPCC UNECE low-carbon electricity",
+    "publishedAt": "2026-10-24T06:59:04Z"
   },
   {
     "title": "Stairs or Elevator? — Why Temperature Matters in Nuclear Hydrogen Production",
@@ -1677,7 +1816,8 @@ const posts = [
     "thumbnail": "assets/images/theory/284-nuclear-hydrogen-production/thumbnail.webp",
     "thumbnailAlt": "A marble mountain model with a glowing glass elevator halfway up and a staircase to the summit, a pool of water at its base",
     "url": "posts/theory/284-nuclear-hydrogen-production.html",
-    "keywords": "nuclear hydrogen hydrogen production high-temperature reactor high-temperature steam electrolysis water electrolysis sulfur-iodine cycle thermochemical cycle HTGR Gibbs free energy clean hydrogen"
+    "keywords": "nuclear hydrogen hydrogen production high-temperature reactor high-temperature steam electrolysis water electrolysis sulfur-iodine cycle thermochemical cycle HTGR Gibbs free energy clean hydrogen",
+    "publishedAt": "2026-10-24T06:59:04Z"
   },
   {
     "title": "One Boiler Room for the Whole Neighborhood — Nuclear District Heating",
@@ -1689,7 +1829,8 @@ const posts = [
     "thumbnail": "assets/images/theory/283-nuclear-district-heating/thumbnail.webp",
     "thumbnailAlt": "Two insulated district heating pipes glowing orange inside, lying in snow between a nuclear plant and apartment blocks",
     "url": "posts/theory/283-nuclear-district-heating.html",
-    "keywords": "nuclear district heating combined heat and power cogeneration nuclear heat district heating second law of thermodynamics power plant efficiency Haiyang Beznau steam extraction"
+    "keywords": "nuclear district heating combined heat and power cogeneration nuclear heat district heating second law of thermodynamics power plant efficiency Haiyang Beznau steam extraction",
+    "publishedAt": "2026-10-24T06:59:04Z"
   },
   {
     "title": "Why the Drops on a Kettle Lid Aren't Salty — Nuclear Desalination and Reactor Heat",
@@ -1701,7 +1842,8 @@ const posts = [
     "thumbnail": "assets/images/theory/282-nuclear-desalination/thumbnail.webp",
     "thumbnailAlt": "A clear drop of water falling from a steel pipe above a sunlit sea, with a nuclear power plant on the far shore",
     "url": "posts/theory/282-nuclear-desalination.html",
-    "keywords": "nuclear desalination seawater desalination reverse osmosis multi-effect distillation multi-stage flash nuclear heat cogeneration BN-350 SMART reactor IAEA DEEP"
+    "keywords": "nuclear desalination seawater desalination reverse osmosis multi-effect distillation multi-stage flash nuclear heat cogeneration BN-350 SMART reactor IAEA DEEP",
+    "publishedAt": "2026-10-24T06:59:04Z"
   },
   {
     "title": "Like Dye in a River — How Radioactive Tracers Follow Flows You Can't See",
@@ -1713,7 +1855,8 @@ const posts = [
     "thumbnail": "assets/images/theory/281-radioactive-tracers/thumbnail.webp",
     "thumbnailAlt": "A clear glass pipe of flowing water with a teal cloud of tracer drifting between two white detector rings",
     "url": "posts/theory/281-radioactive-tracers.html",
-    "keywords": "radioactive tracer radiotracer isotopes flow measurement leak detection residence time distribution half-life bromine-82 nitrogen-16 nuclear applications"
+    "keywords": "radioactive tracer radiotracer isotopes flow measurement leak detection residence time distribution half-life bromine-82 nitrogen-16 nuclear applications",
+    "publishedAt": "2026-10-24T06:59:04Z"
   },
   {
     "title": "Cold Pasteurization with Radiation Instead of Heat — Food Irradiation, Myths and Facts",
@@ -1725,7 +1868,8 @@ const posts = [
     "thumbnail": "assets/images/theory/280-food-irradiation/thumbnail.webp",
     "thumbnailAlt": "A wooden crate of potatoes, onions and garlic on a steel roller conveyor heading into a clean concrete irradiation tunnel under a bright sky-blue background",
     "url": "posts/theory/280-food-irradiation.html",
-    "keywords": "food irradiation irradiated food Radura cold pasteurization absorbed dose gray kGy cobalt-60 electron beam X-ray food safety Codex"
+    "keywords": "food irradiation irradiated food Radura cold pasteurization absorbed dose gray kGy cobalt-60 electron beam X-ray food safety Codex",
+    "publishedAt": "2026-10-24T06:53:17Z"
   },
   {
     "title": "An X-Ray for Steel — Industrial Radiography and Non-Destructive Testing",
@@ -1737,7 +1881,8 @@ const posts = [
     "thumbnail": "assets/images/theory/279-industrial-radiography/thumbnail.webp",
     "thumbnailAlt": "A brushed-steel pipe with a welded joint and a cutaway showing a tiny pore inside the weld, floating above a pale blue film plate that carries a matching small dark spot",
     "url": "posts/theory/279-industrial-radiography.html",
-    "keywords": "non-destructive testing radiographic testing industrial radiography iridium-192 cobalt-60 weld inspection attenuation law X-ray radiation safety gauges"
+    "keywords": "non-destructive testing radiographic testing industrial radiography iridium-192 cobalt-60 weld inspection attenuation law X-ray radiation safety gauges",
+    "publishedAt": "2026-10-24T06:53:17Z"
   },
   {
     "title": "Five Flashlights on One Spot — How Radiation Therapy Takes Aim at Cancer",
@@ -1749,7 +1894,8 @@ const posts = [
     "thumbnail": "assets/images/theory/278-radiation-therapy/thumbnail.webp",
     "thumbnailAlt": "A bright white medical linear accelerator with its gantry head above a treatment couch holding a clear glass body phantom with a small glowing amber target inside",
     "url": "posts/theory/278-radiation-therapy.html",
-    "keywords": "radiation therapy radiotherapy cancer treatment fractionation gray linear accelerator proton therapy Bragg peak heavy-ion therapy brachytherapy"
+    "keywords": "radiation therapy radiotherapy cancer treatment fractionation gray linear accelerator proton therapy Bragg peak heavy-ion therapy brachytherapy",
+    "publishedAt": "2026-10-24T06:53:17Z"
   },
   {
     "title": "Milked Fresh Every Morning — Why Medical Radioisotopes Have to Be Just Right",
@@ -1761,7 +1907,8 @@ const posts = [
     "thumbnail": "assets/images/theory/277-medical-radioisotopes/thumbnail.webp",
     "thumbnailAlt": "A glossy white milk-churn-shaped shielded container with a teal band and steel handles, a small vial set into its open top, on a bright pale-teal background",
     "url": "posts/theory/277-medical-radioisotopes.html",
-    "keywords": "medical radioisotopes technetium-99m molybdenum-99 nuclear medicine PET fluorine-18 iodine-131 radiopharmaceuticals half-life research reactors isotope supply chain"
+    "keywords": "medical radioisotopes technetium-99m molybdenum-99 nuclear medicine PET fluorine-18 iodine-131 radiopharmaceuticals half-life research reactors isotope supply chain",
+    "publishedAt": "2026-10-24T06:53:17Z"
   },
   {
     "title": "Nuclear's Swiss Army Knife — Non-Power Applications Beyond Electricity",
@@ -1773,7 +1920,8 @@ const posts = [
     "thumbnail": "assets/images/theory/276-nuclear-beyond-electricity/thumbnail.webp",
     "thumbnailAlt": "A floating multi-tool with a glowing teal handle holding an atomic nucleus, its blades ending in a syringe, a sprouting seed, a water droplet, a Mars rover and a welded pipe",
     "url": "posts/theory/276-nuclear-beyond-electricity.html",
-    "keywords": "non-power nuclear applications radiation uses nuclear medicine radioisotopes research reactors radiation sterilization food irradiation non-destructive testing RTG technetium-99m"
+    "keywords": "non-power nuclear applications radiation uses nuclear medicine radioisotopes research reactors radiation sterilization food irradiation non-destructive testing RTG technetium-99m",
+    "publishedAt": "2026-10-24T06:53:17Z"
   },
   {
     "title": "Wait Before You \"Turn Left\" — Seven Questions to Ask Before Trusting a Simulation",
@@ -1785,7 +1933,8 @@ const posts = [
     "thumbnail": "assets/images/theory/275-questions-before-trusting-simulation/thumbnail.webp",
     "thumbnailAlt": "A miniature white nuclear power plant with a domed containment on a glowing grid, with a winding road leading up to a translucent violet map pin standing at its entrance",
     "url": "posts/theory/275-questions-before-trusting-simulation.html",
-    "keywords": "simulation nuclear safety safety analysis computational model validated range extrapolation conservative analysis best estimate verification validation modeling"
+    "keywords": "simulation nuclear safety safety analysis computational model validated range extrapolation conservative analysis best estimate verification validation modeling",
+    "publishedAt": "2026-10-24T06:53:17Z"
   },
   {
     "title": "Read It Top to Bottom, Like a Medical Checkup Report — How to Read a Calculation Result Graph",
@@ -1797,7 +1946,8 @@ const posts = [
     "thumbnail": "assets/images/theory/274-reading-result-graphs/thumbnail.webp",
     "thumbnailAlt": "A clear acrylic panel on a stand with a gold horizontal bar near the top and a glowing blue curve inside a soft violet band below it, with a magnifying glass leaning against the panel over the gap between bar and curve",
     "url": "posts/theory/274-reading-result-graphs.html",
-    "keywords": "calculation result graph reading graphs nuclear safety analysis peak cladding temperature log scale safety margin uncertainty band loss of coolant accident"
+    "keywords": "calculation result graph reading graphs nuclear safety analysis peak cladding temperature log scale safety margin uncertainty band loss of coolant accident",
+    "publishedAt": "2026-10-24T06:53:17Z"
   },
   {
     "title": "The Bus Timetable That Drives the Day Ahead — Load Change Simulation at a Nuclear Plant",
@@ -1809,7 +1959,8 @@ const posts = [
     "thumbnail": "assets/images/theory/273-load-change-simulation/thumbnail.webp",
     "thumbnailAlt": "A glass dome containing a miniature bus stop with four people waiting, a round blue-and-violet sign, and a white nuclear power plant with a domed containment on a green hill behind them",
     "url": "posts/theory/273-load-change-simulation.html",
-    "keywords": "load change simulation load following xenon-135 reactor modeling reactivity boron concentration axial offset pressurized water reactor nuclear simulation"
+    "keywords": "load change simulation load following xenon-135 reactor modeling reactivity boron concentration axial offset pressurized water reactor nuclear simulation",
+    "publishedAt": "2026-10-24T06:53:17Z"
   },
   {
     "title": "A Roly-Poly Toy on a Tilted Desk — How Reactivity Feedback Modeling Shows a Reactor Steadying Itself",
@@ -1821,7 +1972,8 @@ const posts = [
     "thumbnail": "assets/images/theory/272-reactivity-feedback-modeling/thumbnail.webp",
     "thumbnailAlt": "A smiling white roly-poly toy with a glass lower half and a glowing gold weight inside, standing slightly tilted on a sloped glass shelf against a bright pastel background",
     "url": "posts/theory/272-reactivity-feedback-modeling.html",
-    "keywords": "reactivity feedback point kinetics Doppler coefficient moderator temperature coefficient reactor simulation reactor kinetics temperature coefficient modeling pcm"
+    "keywords": "reactivity feedback point kinetics Doppler coefficient moderator temperature coefficient reactor simulation reactor kinetics temperature coefficient modeling pcm",
+    "publishedAt": "2026-10-24T06:53:17Z"
   },
   {
     "title": "Hot by the Inlet, Lukewarm at the Far End — Building a Simple Steam Generator Model",
@@ -1833,7 +1985,8 @@ const posts = [
     "thumbnail": "assets/images/theory/271-steam-generator-simple-model/thumbnail.webp",
     "thumbnailAlt": "A cutaway of a stone-and-wood heated floor with a metal U-shaped pipe glowing orange on the inlet side and cooling to silver on the outlet side, its arch rising into a block of bubbling water",
     "url": "posts/theory/271-steam-generator-simple-model.html",
-    "keywords": "steam generator model log mean temperature difference heat exchanger steam pressure saturation temperature PWR APR1400 swell shrink nuclear simulation"
+    "keywords": "steam generator model log mean temperature difference heat exchanger steam pressure saturation temperature PWR APR1400 swell shrink nuclear simulation",
+    "publishedAt": "2026-10-24T06:53:17Z"
   },
   {
     "title": "Folding a Reactor's Cooling Water into One Bathtub — Building a Simple RCS Model",
@@ -1845,7 +1998,8 @@ const posts = [
     "thumbnail": "assets/images/theory/270-simple-rcs-model/thumbnail.webp",
     "thumbnailAlt": "A transparent glass bathtub rimmed with steel pipes, a metal tap pouring a glowing stream into swirling blue water, and a drain at the bottom with a whirlpool",
     "url": "posts/theory/270-simple-rcs-model.html",
-    "keywords": "simple RCS model reactor coolant system energy balance lumped model average coolant temperature time constant heat capacity nuclear simulation APR1400 steam generator"
+    "keywords": "simple RCS model reactor coolant system energy balance lumped model average coolant temperature time constant heat capacity nuclear simulation APR1400 steam generator",
+    "publishedAt": "2026-10-24T06:53:17Z"
   },
   {
     "title": "Arrows That Come Back Around — Reading a Nuclear Plant Model as a Block Diagram",
@@ -1857,7 +2011,8 @@ const posts = [
     "thumbnail": "assets/images/theory/269-block-diagrams/thumbnail.webp",
     "thumbnailAlt": "A clear acrylic panel mounted on a wall with brushed-metal blocks joined by a blue main line through a small reactor vessel model, and two orange tubes looping back from the right side to a round junction on the left",
     "url": "posts/theory/269-block-diagrams.html",
-    "keywords": "block diagram nuclear plant model feedback loop negative feedback reactivity integrator control loop pressurized water reactor system modeling gain"
+    "keywords": "block diagram nuclear plant model feedback loop negative feedback reactivity integrator control loop pressurized water reactor system modeling gain",
+    "publishedAt": "2026-10-24T06:53:17Z"
   },
   {
     "title": "How to Shut Down an Engine Without Leaving the Ground — Operator Training Simulators",
@@ -1869,7 +2024,8 @@ const posts = [
     "thumbnail": "assets/images/theory/268-operator-training-simulator/thumbnail.webp",
     "thumbnailAlt": "A brushed-metal control console with a grid of alarm windows, three round analog gauges, a row of rotary switches and an aircraft-style control yoke mounted on the desk",
     "url": "posts/theory/268-operator-training-simulator.html",
-    "keywords": "nuclear plant simulator operator training full-scope simulator main control room flight simulator reactor operator license emergency operating procedures simulator fidelity ANSI/ANS-3.5"
+    "keywords": "nuclear plant simulator operator training full-scope simulator main control room flight simulator reactor operator license emergency operating procedures simulator fidelity ANSI/ANS-3.5",
+    "publishedAt": "2026-10-24T06:53:17Z"
   },
   {
     "title": "Why the Bathroom Mirror Fogs First — How Containment Analysis Models Work",
@@ -1881,7 +2037,8 @@ const posts = [
     "thumbnail": "assets/images/theory/267-containment-analysis-models/thumbnail.webp",
     "thumbnailAlt": "A transparent glass model of a containment building with a domed roof, its internal compartments and tanks visible, wisps of steam rising and droplets beading on the inside of the dome",
     "url": "posts/theory/267-containment-analysis-models.html",
-    "keywords": "containment analysis model containment building loss-of-coolant accident mass and energy release lumped-parameter model design pressure heat sink containment spray hydrogen distribution CFD"
+    "keywords": "containment analysis model containment building loss-of-coolant accident mass and energy release lumped-parameter model design pressure heat sink containment spray hydrogen distribution CFD",
+    "publishedAt": "2026-10-24T06:53:17Z"
   },
   {
     "title": "Writing the Tire Logbook Before the Drive — What Fuel Performance Codes Do",
@@ -1893,7 +2050,8 @@ const posts = [
     "thumbnail": "assets/images/theory/266-fuel-performance-codes/thumbnail.webp",
     "thumbnailAlt": "A brushed-metal fuel rod segment with its dark ceramic pellet visible at the end, resting on a disc with a tire-tread pattern beside a blank metal logbook plate",
     "url": "posts/theory/266-fuel-performance-codes.html",
-    "keywords": "fuel performance code nuclear fuel fuel rod pellet centerline temperature fission gas release rod internal pressure pellet-cladding interaction cladding oxidation burnup nuclear safety analysis"
+    "keywords": "fuel performance code nuclear fuel fuel rod pellet centerline temperature fission gas release rod internal pressure pellet-cladding interaction cladding oxidation burnup nuclear safety analysis",
+    "publishedAt": "2026-10-24T06:53:17Z"
   },
   {
     "title": "Make the Brick Chart First, Then Build the Castle — What Core Analysis Codes Do",
@@ -1905,7 +2063,8 @@ const posts = [
     "thumbnail": "assets/images/theory/265-core-analysis-codes/thumbnail.webp",
     "thumbnailAlt": "A round core shape built from glowing transparent glass toy bricks, with one loose brick beside it",
     "url": "posts/theory/265-core-analysis-codes.html",
-    "keywords": "core analysis code lattice calculation group constants nodal diffusion power distribution peaking factor F_Q F_dH critical boron CASMO SIMULATE PARAGON ANC KARMA ASTRA"
+    "keywords": "core analysis code lattice calculation group constants nodal diffusion power distribution peaking factor F_Q F_dH critical boron CASMO SIMULATE PARAGON ANC KARMA ASTRA",
+    "publishedAt": "2026-10-24T06:53:17Z"
   },
   {
     "title": "Following the Blood Around the Body, One Compartment at a Time — What System Thermal-Hydraulic Codes Do",
@@ -1917,7 +2076,8 @@ const posts = [
     "thumbnail": "assets/images/theory/264-system-thermal-hydraulic-codes/thumbnail.webp",
     "thumbnailAlt": "A closed loop of glass pipe with steel flanges, amber water turning blue, and a steel pump at the bottom",
     "url": "posts/theory/264-system-thermal-hydraulic-codes.html",
-    "keywords": "system thermal-hydraulic code nodalization volume junction heat structure two-fluid model RELAP5 TRACE MARS-KS SPACE CFD PWR primary loop"
+    "keywords": "system thermal-hydraulic code nodalization volume junction heat structure two-fluid model RELAP5 TRACE MARS-KS SPACE CFD PWR primary loop",
+    "publishedAt": "2026-10-24T06:53:17Z"
   },
   {
     "title": "Perfect Grammar, Wrong Meaning — The Difference Between Verification and Validation (V&V)",
@@ -1929,7 +2089,8 @@ const posts = [
     "thumbnail": "assets/images/theory/263-verification-vs-validation/thumbnail.webp",
     "thumbnailAlt": "A rod that is half glowing wireframe mesh and half brushed metal fitted with temperature sensors",
     "url": "posts/theory/263-verification-vs-validation.html",
-    "keywords": "verification validation V&V nuclear simulation code verification mesh convergence separate effects test integral effects test reflood RG 1.203 EMDAP"
+    "keywords": "verification validation V&V nuclear simulation code verification mesh convergence separate effects test integral effects test reflood RG 1.203 EMDAP",
+    "publishedAt": "2026-10-24T06:53:17Z"
   },
   {
     "title": "Everyone Sits the Same Exam — Benchmark Problems in Reactor Physics Calculations",
@@ -1941,7 +2102,8 @@ const posts = [
     "thumbnail": "assets/images/theory/262-benchmark-problems/thumbnail.webp",
     "thumbnailAlt": "A transparent glass fuel assembly model lying across a bubble-style answer sheet",
     "url": "posts/theory/262-benchmark-problems.html",
-    "keywords": "benchmark problem reference solution reactor physics code verification validation pcm effective multiplication factor ICSBEP IAEA PWR benchmark critical experiment"
+    "keywords": "benchmark problem reference solution reactor physics code verification validation pcm effective multiplication factor ICSBEP IAEA PWR benchmark critical experiment",
+    "publishedAt": "2026-10-24T06:53:17Z"
   },
   {
     "title": "Why Your Parcel Arrives \"Between 2 and 4 pm\" — The Case for Uncertainty Analysis in Nuclear Safety Calculations",
@@ -1953,7 +2115,8 @@ const posts = [
     "thumbnail": "assets/images/theory/261-uncertainty-analysis/thumbnail.webp",
     "thumbnailAlt": "A row of glass cylinders filled with blue liquid to heights that form a histogram, the last small one glowing violet",
     "url": "posts/theory/261-uncertainty-analysis.html",
-    "keywords": "uncertainty analysis uncertainty propagation Wilks formula 95/95 peak cladding temperature Monte Carlo sampling best estimate safety analysis 10 CFR 50.46 LOCA"
+    "keywords": "uncertainty analysis uncertainty propagation Wilks formula 95/95 peak cladding temperature Monte Carlo sampling best estimate safety analysis 10 CFR 50.46 LOCA",
+    "publishedAt": "2026-10-24T06:53:17Z"
   },
   {
     "title": "Which Knob Really Matters? — What Sensitivity Analysis Is",
@@ -1965,7 +2128,8 @@ const posts = [
     "thumbnail": "assets/images/theory/260-sensitivity-analysis/thumbnail.webp",
     "thumbnailAlt": "Five brushed-metal control knobs in a row on a bright white surface, the second one glowing blue with ripples spreading around it, with a small fuel-rod cutaway standing behind them",
     "url": "posts/theory/260-sensitivity-analysis.html",
-    "keywords": "sensitivity analysis sensitivity coefficient tornado chart one-at-a-time OAT fuel centerline temperature thermal conductivity gap conductance uncertainty analysis reactor analysis"
+    "keywords": "sensitivity analysis sensitivity coefficient tornado chart one-at-a-time OAT fuel centerline temperature thermal conductivity gap conductance uncertainty analysis reactor analysis",
+    "publishedAt": "2026-10-24T06:46:39Z"
   },
   {
     "title": "When Does the Bathwater Stop Rising? — Steady-State and Transient Analysis",
@@ -1977,7 +2141,8 @@ const posts = [
     "thumbnail": "assets/images/theory/259-steady-state-vs-transient/thumbnail.webp",
     "thumbnailAlt": "A transparent glass bathtub filled with turquoise water, with a chrome tap pouring in from above, water draining out through the bottom and a glass level gauge on the side",
     "url": "posts/theory/259-steady-state-vs-transient.html",
-    "keywords": "steady state transient steady-state analysis transient analysis heat balance null transient initial condition system analysis code nuclear simulation APR1400"
+    "keywords": "steady state transient steady-state analysis transient analysis heat balance null transient initial condition system analysis code nuclear simulation APR1400",
+    "publishedAt": "2026-10-24T06:46:39Z"
   },
   {
     "title": "The Driver Who Only Opens His Eyes Every Few Seconds — Why the Time Step Shakes Numerical Stability",
@@ -1989,7 +2154,8 @@ const posts = [
     "thumbnail": "assets/images/theory/258-time-step-stability/thumbnail.webp",
     "thumbnailAlt": "A white car on a bright, futuristic elevated road, followed by a trail of fading translucent copies of itself spaced at regular intervals along the lane",
     "url": "posts/theory/258-time-step-stability.html",
-    "keywords": "time step numerical stability numerical analysis explicit Euler implicit method backward Euler stiff equations reactor simulation reactor kinetics thermal-hydraulic codes"
+    "keywords": "time step numerical stability numerical analysis explicit Euler implicit method backward Euler stiff equations reactor simulation reactor kinetics thermal-hydraulic codes",
+    "publishedAt": "2026-10-24T06:46:39Z"
   },
   {
     "title": "How Many Mosaic Tiles Are Enough? — The Grid in Numerical Analysis",
@@ -2001,7 +2167,8 @@ const posts = [
     "thumbnail": "assets/images/theory/257-numerical-grid/thumbnail.webp",
     "thumbnailAlt": "A dark cylindrical fuel pellet whose top face is split in half: the left half shows three wide orange temperature rings, the right half many thin rings fading from orange at the center to pale at the edge",
     "url": "posts/theory/257-numerical-grid.html",
-    "keywords": "numerical analysis computational grid mesh grid sensitivity grid convergence discretization error fuel pellet temperature nodes nodalization nuclear simulation"
+    "keywords": "numerical analysis computational grid mesh grid sensitivity grid convergence discretization error fuel pellet temperature nodes nodalization nuclear simulation",
+    "publishedAt": "2026-10-24T06:46:39Z"
   },
   {
     "title": "How You Hold the Ends Decides the Shape — Why Boundary Conditions Matter in Reactor Calculations",
@@ -2013,7 +2180,8 @@ const posts = [
     "thumbnail": "assets/images/theory/256-boundary-conditions/thumbnail.webp",
     "thumbnailAlt": "A taut steel string fixed to a metal post on the left fans out into several glowing blue curves that end on rings sliding along a vertical pole on the right, above a glowing glass slab",
     "url": "posts/theory/256-boundary-conditions.html",
-    "keywords": "boundary conditions diffusion equation extrapolation distance Dirichlet Neumann Robin symmetry plane reflector neutron flux reactor analysis core design"
+    "keywords": "boundary conditions diffusion equation extrapolation distance Dirichlet Neumann Robin symmetry plane reflector neutron flux reactor analysis core design",
+    "publishedAt": "2026-10-24T06:46:39Z"
   },
   {
     "title": "Taste, Season, Taste Again — Why We Actually Solve the Diffusion Equation",
@@ -2025,7 +2193,8 @@ const posts = [
     "thumbnail": "assets/images/theory/255-why-solve-the-diffusion-equation/thumbnail.webp",
     "thumbnailAlt": "A clear glass cylinder filled with glowing blue and violet cubes, brightest at the center, with a steel ladle hovering above it as if tasting soup",
     "url": "posts/theory/255-why-solve-the-diffusion-equation.html",
-    "keywords": "diffusion equation core design neutron flux effective multiplication factor source iteration peaking factor Bessel function critical boron control rod worth reactor physics"
+    "keywords": "diffusion equation core design neutron flux effective multiplication factor source iteration peaking factor Bessel function critical boron control rod worth reactor physics",
+    "publishedAt": "2026-10-24T06:46:39Z"
   },
   {
     "title": "The Building Averages 23 °C, but My Bedroom Is a Sauna — What Happens When You Ignore Spatial Effects in a Reactor",
@@ -2037,7 +2206,8 @@ const posts = [
     "thumbnail": "assets/images/theory/254-ignoring-spatial-effects/thumbnail.webp",
     "thumbnailAlt": "An isometric transparent cylindrical reactor core with glowing blue fuel assemblies and control rods, where a small cluster of assemblies on one side glows warm orange",
     "url": "posts/theory/254-ignoring-spatial-effects.html",
-    "keywords": "spatial effects peaking factor hot channel hot spot xenon oscillation power distribution in-core instrumentation control rods core design reactor physics APR1400"
+    "keywords": "spatial effects peaking factor hot channel hot spot xenon oscillation power distribution in-core instrumentation control rods core design reactor physics APR1400",
+    "publishedAt": "2026-10-24T06:46:39Z"
   },
   {
     "title": "The Referee Who Only Counts the Jumps — Strengths and Limits of the Point Kinetics Model",
@@ -2049,7 +2219,8 @@ const posts = [
     "thumbnail": "assets/images/theory/253-point-kinetics-strengths-limits/thumbnail.webp",
     "thumbnailAlt": "A transparent cylindrical reactor core model with glowing blue fuel assemblies standing on a polished gym floor, encircled by a teal jump rope with wooden handles",
     "url": "posts/theory/253-point-kinetics-strengths-limits.html",
-    "keywords": "point kinetics reactor kinetics shape function amplitude delayed neutrons 3D core analysis xenon oscillation control rod ejection reactivity meter simulator"
+    "keywords": "point kinetics reactor kinetics shape function amplitude delayed neutrons 3D core analysis xenon oscillation control rod ejection reactivity meter simulator",
+    "publishedAt": "2026-10-24T06:46:39Z"
   },
   {
     "title": "A Reactor Keeps Books Like a Bank Account — What It Means to Write a Reactor as Equations",
@@ -2061,7 +2232,8 @@ const posts = [
     "thumbnail": "assets/images/theory/252-reactor-as-equations/thumbnail.webp",
     "thumbnailAlt": "An open leather ledger book with a few coins on the left page and a small transparent reactor vessel with fuel rods standing on the right page, linked by a thin glass tube",
     "url": "posts/theory/252-reactor-as-equations.html",
-    "keywords": "reactor equations balance equation conservation principle differential equation state variable parameter Doppler effect reactivity feedback reactor modeling"
+    "keywords": "reactor equations balance equation conservation principle differential equation state variable parameter Doppler effect reactivity feedback reactor modeling",
+    "publishedAt": "2026-10-24T06:46:39Z"
   },
   {
     "title": "Trust the Tube Map, Walk 260 Metres — A Model Is a Scaled-Down Map of Reality",
@@ -2073,7 +2245,8 @@ const posts = [
     "thumbnail": "assets/images/theory/251-model-as-scaled-map/thumbnail.webp",
     "thumbnailAlt": "A cylindrical bundle of polished metal fuel rods beside a folded paper strip that changes from a fine grid to a coarse grid to a simple transit-style line map",
     "url": "posts/theory/251-model-as-scaled-map.html",
-    "keywords": "nuclear modeling simulation computer code verification validation V&V core design safety analysis operator training simulator APR1400 startup test"
+    "keywords": "nuclear modeling simulation computer code verification validation V&V core design safety analysis operator training simulator APR1400 startup test",
+    "publishedAt": "2026-10-24T06:46:39Z"
   },
   {
     "title": "You Don't Pick a Cleanup Hitter on Batting Average Alone — How to Read Nuclear Plant Performance Indicators",
@@ -2085,7 +2258,8 @@ const posts = [
     "thumbnail": "assets/images/theory/250-reading-performance-indicators/thumbnail.webp",
     "thumbnailAlt": "A brushed-steel panel with five round analog gauges, some with blue and some with amber marked zones, standing in front of a softly blurred nuclear plant dome on a bright lakeside",
     "url": "posts/theory/250-reading-performance-indicators.html",
-    "keywords": "nuclear performance indicators WANO unit capability factor UCLF forced loss rate UA7 scram collective dose industrial safety fuel reliability NRC reactor oversight"
+    "keywords": "nuclear performance indicators WANO unit capability factor UCLF forced loss rate UA7 scram collective dose industrial safety fuel reliability NRC reactor oversight",
+    "publishedAt": "2026-10-24T06:32:32Z"
   },
   {
     "title": "Nuclear Plants Get School Holidays Too — The Planned Maintenance Outage Every 18 Months",
@@ -2097,7 +2271,8 @@ const posts = [
     "thumbnail": "assets/images/theory/249-planned-maintenance-outage/thumbnail.webp",
     "thumbnailAlt": "Looking down into a bright, flooded reactor cavity: a refueling machine mast lowers a single glowing fuel assembly toward the open core grid at the bottom of a deep pool of clear blue water",
     "url": "posts/theory/249-planned-maintenance-outage.html",
-    "keywords": "planned maintenance outage refueling outage outage duration periodic inspection reactor cavity critical path pressurized water reactor eddy-current testing APR1400 nuclear plant operation"
+    "keywords": "planned maintenance outage refueling outage outage duration periodic inspection reactor cavity critical path pressurized water reactor eddy-current testing APR1400 nuclear plant operation",
+    "publishedAt": "2026-10-24T06:32:32Z"
   },
   {
     "title": "The Laundromat Washer's Report Card — How to Read a Nuclear Plant's Capacity Factor",
@@ -2109,7 +2284,8 @@ const posts = [
     "thumbnail": "assets/images/theory/248-capacity-factor/thumbnail.webp",
     "thumbnailAlt": "A white miniature nuclear plant with a domed containment on a round platform, encircled by a glowing golden glass tube that turns clear for a short stretch where a small yellow crane stands",
     "url": "posts/theory/248-capacity-factor.html",
-    "keywords": "capacity factor utilization rate load factor nuclear plant performance refueling outage coastdown unplanned shutdown net gross capacity availability efficiency"
+    "keywords": "capacity factor utilization rate load factor nuclear plant performance refueling outage coastdown unplanned shutdown net gross capacity availability efficiency",
+    "publishedAt": "2026-10-24T06:32:32Z"
   },
   {
     "title": "The Hum in a Recording Knows What Time It Is — Grid Frequency Control and Nuclear Power",
@@ -2121,7 +2297,8 @@ const posts = [
     "thumbnail": "assets/images/theory/247-frequency-control-and-nuclear/thumbnail.webp",
     "thumbnailAlt": "A brushed-steel vibrating-reed frequency meter with a row of white reeds, one blurred as it vibrates, in front of a bright lakeside with transmission towers and a nuclear plant dome",
     "url": "posts/theory/247-frequency-control-and-nuclear.html",
-    "keywords": "frequency control grid frequency droop governor RoCoF under-frequency load shedding nuclear power grid code France primary frequency control"
+    "keywords": "frequency control grid frequency droop governor RoCoF under-frequency load shedding nuclear power grid code France primary frequency control",
+    "publishedAt": "2026-10-24T06:32:32Z"
   },
   {
     "title": "When the Sun Rises Over the Tetris Well — The Duck Curve and How Nuclear and Renewables Share a Grid",
@@ -2133,7 +2310,8 @@ const posts = [
     "thumbnail": "assets/images/theory/246-nuclear-and-renewables-on-the-grid/thumbnail.webp",
     "thumbnailAlt": "A floating solar platform shaped like a duck on a calm blue lake, with a small nuclear plant dome and transmission towers on the far shore",
     "url": "posts/theory/246-nuclear-and-renewables-on-the-grid.html",
-    "keywords": "duck curve net load nuclear renewables grid flexibility curtailment solar battery storage load following CAISO power grid"
+    "keywords": "duck curve net load nuclear renewables grid flexibility curtailment solar battery storage load following CAISO power grid",
+    "publishedAt": "2026-10-24T06:32:32Z"
   },
   {
     "title": "A Level That Fizzes Up Like an Opened Soda — Why Feedwater Control Is So Tricky",
@@ -2145,7 +2323,8 @@ const posts = [
     "thumbnail": "assets/images/theory/245-why-feedwater-control-is-hard/thumbnail.webp",
     "thumbnailAlt": "A clear cylindrical vessel with steel caps full of rising bubbles, the bubbly mixture swelling toward the top while a jet of blue water enters from a side nozzle",
     "url": "posts/theory/245-why-feedwater-control-is-hard.html",
-    "keywords": "feedwater control steam generator shrink and swell inverse response void fraction pressurized water reactor low-power operation reactor trip nuclear plant operation"
+    "keywords": "feedwater control steam generator shrink and swell inverse response void fraction pressurized water reactor low-power operation reactor trip nuclear plant operation",
+    "publishedAt": "2026-10-24T06:32:32Z"
   },
   {
     "title": "A Toilet-Tank Float Won't Cut It — The Three Eyes of Steam Generator Level Control",
@@ -2157,7 +2336,8 @@ const posts = [
     "thumbnail": "assets/images/theory/244-steam-generator-level-control/thumbnail.webp",
     "thumbnailAlt": "A clear glass tank of water with a stainless-steel float ball on an arm controlling an inlet spout at the top, and an outlet pipe near the bottom",
     "url": "posts/theory/244-steam-generator-level-control.html",
-    "keywords": "steam generator level control three-element control feedwater control pressurized water reactor narrow-range level level program feedwater control valve reactor trip nuclear plant operation"
+    "keywords": "steam generator level control three-element control feedwater control pressurized water reactor narrow-range level level program feedwater control valve reactor trip nuclear plant operation",
+    "publishedAt": "2026-10-24T06:32:32Z"
   },
   {
     "title": "Squeeze So It Won't Boil, Release So It Won't Burst — Pressure Control in a Nuclear Plant",
@@ -2169,7 +2349,8 @@ const posts = [
     "thumbnail": "assets/images/theory/243-system-pressure-control/thumbnail.webp",
     "thumbnailAlt": "A tall glass-walled pressurizer tank on a pedestal: steam and a spray cone in the upper half, blue water with four glowing heater rods in the lower half",
     "url": "posts/theory/243-system-pressure-control.html",
-    "keywords": "system pressure control pressurizer pressurized water reactor subcooling margin reactor coolant system pressurizer spray pressurizer heaters insurge outsurge nuclear plant operation"
+    "keywords": "system pressure control pressurizer pressurized water reactor subcooling margin reactor coolant system pressurizer spray pressurizer heaters insurge outsurge nuclear plant operation",
+    "publishedAt": "2026-10-24T06:32:32Z"
   },
   {
     "title": "Why Ice Cracks in Your Drink — Thermal Stress and Why Reactors Must Heat Up Slowly",
@@ -2181,7 +2362,8 @@ const posts = [
     "thumbnail": "assets/images/theory/242-thermal-stress-heatup-rate/thumbnail.webp",
     "thumbnailAlt": "A curved cutaway segment of a thick steel vessel wall, glowing orange near its inner water-wetted surface and shading to cool blue toward the insulated outer surface",
     "url": "posts/theory/242-thermal-stress-heatup-rate.html",
-    "keywords": "thermal stress reactor pressure vessel heat-up rate cool-down rate thermal expansion fatigue cumulative usage factor pressure-temperature limits pressurized thermal shock nuclear plant operation"
+    "keywords": "thermal stress reactor pressure vessel heat-up rate cool-down rate thermal expansion fatigue cumulative usage factor pressure-temperature limits pressurized thermal shock nuclear plant operation",
+    "publishedAt": "2026-10-24T06:32:32Z"
   },
   {
     "title": "Break In Your New Shoes First — Why Nuclear Plants Limit Their Power Ramp Rate",
@@ -2193,7 +2375,8 @@ const posts = [
     "thumbnail": "assets/images/theory/241-power-ramp-rate-limits/thumbnail.webp",
     "thumbnailAlt": "A glass display stand holding a cutaway fuel rod with glowing ceramic pellets inside a silver tube, resting on a transparent base shaped like a stepped, gently rising staircase",
     "url": "posts/theory/241-power-ramp-rate-limits.html",
-    "keywords": "power ramp rate limit pellet-cladding interaction PCI fuel conditioning fuel cladding stress corrosion cracking nuclear fuel reactor restart nuclear plant operation creep"
+    "keywords": "power ramp rate limit pellet-cladding interaction PCI fuel conditioning fuel cladding stress corrosion cracking nuclear fuel reactor restart nuclear plant operation creep",
+    "publishedAt": "2026-10-24T06:32:32Z"
   },
   {
     "title": "Three Brains in the Elevator Machine Room — Automatic Control, Manual Operation and Automatic Protection",
@@ -2205,7 +2388,8 @@ const posts = [
     "thumbnail": "assets/images/theory/240-automatic-vs-manual-control/thumbnail.webp",
     "thumbnailAlt": "A brushed blue metal control panel with a steel rotary selector switch and two indicator lamps, one glowing blue, floating against a soft light background",
     "url": "posts/theory/240-automatic-vs-manual-control.html",
-    "keywords": "automatic control manual operation reactor protection system feedback control control rods reactor trip operators human factors pressurized water reactor"
+    "keywords": "automatic control manual operation reactor protection system feedback control control rods reactor trip operators human factors pressurized water reactor",
+    "publishedAt": "2026-10-24T06:32:32Z"
   },
   {
     "title": "Balancing the Books — The Key Variables Control Room Operators Watch",
@@ -2217,7 +2401,8 @@ const posts = [
     "thumbnail": "assets/images/theory/239-control-room-key-variables/thumbnail.webp",
     "thumbnailAlt": "A white and brushed-steel instrument panel with three round analog gauges in front of a bright window overlooking a domed nuclear plant by the sea",
     "url": "posts/theory/239-control-room-key-variables.html",
-    "keywords": "control room operators key operating variables reactor power coolant temperature pressurizer pressure level steam generator heat balance calorimetric APR1400"
+    "keywords": "control room operators key operating variables reactor power coolant temperature pressurizer pressure level steam generator heat balance calorimetric APR1400",
+    "publishedAt": "2026-10-24T06:32:32Z"
   },
   {
     "title": "Close the Lid or Open the Back Panel? — Hot Standby and Cold Shutdown",
@@ -2229,7 +2414,8 @@ const posts = [
     "thumbnail": "assets/images/theory/238-hot-standby-vs-cold-shutdown/thumbnail.webp",
     "thumbnailAlt": "A polished steel reactor pressure vessel with its bolted head flange and control rod drive housings, standing on a white pedestal against a soft warm-to-blue background",
     "url": "posts/theory/238-hot-standby-vs-cold-shutdown.html",
-    "keywords": "hot standby cold shutdown hot shutdown operating modes technical specifications keff shutdown margin boron shutdown cooling pressurized water reactor APR1400"
+    "keywords": "hot standby cold shutdown hot shutdown operating modes technical specifications keff shutdown margin boron shutdown cooling pressurized water reactor APR1400",
+    "publishedAt": "2026-10-24T06:32:32Z"
   },
   {
     "title": "Not a Switch but a Landing — The Big Picture of Nuclear Plant Shutdown",
@@ -2241,7 +2427,8 @@ const posts = [
     "thumbnail": "assets/images/theory/237-plant-shutdown-process/thumbnail.webp",
     "thumbnailAlt": "A white airliner about to touch down on a runway that shifts from warm gold to cool blue, with a small model of a domed nuclear plant beside the runway",
     "url": "posts/theory/237-plant-shutdown-process.html",
-    "keywords": "nuclear plant shutdown pressurized water reactor cold shutdown hot standby shutdown cooling system decay heat boron reactivity steam dump subcooling reactor trip"
+    "keywords": "nuclear plant shutdown pressurized water reactor cold shutdown hot standby shutdown cooling system decay heat boron reactivity steam dump subcooling reactor trip",
+    "publishedAt": "2026-10-24T06:32:32Z"
   },
   {
     "title": "Tune Up Before the Concert — The Big Picture of Nuclear Plant Startup",
@@ -2253,7 +2440,8 @@ const posts = [
     "thumbnail": "assets/images/theory/236-plant-startup-process/thumbnail.webp",
     "thumbnailAlt": "A polished steel turbine rotor with rows of blades of increasing size resting on two supports, with a conductor's baton leaning against one end",
     "url": "posts/theory/236-plant-startup-process.html",
-    "keywords": "nuclear plant startup pressurized water reactor operating modes cold shutdown hot standby criticality grid synchronization synchronous speed power ascension reactor operation"
+    "keywords": "nuclear plant startup pressurized water reactor operating modes cold shutdown hot standby criticality grid synchronization synchronous speed power ascension reactor operation",
+    "publishedAt": "2026-10-24T06:32:32Z"
   },
   {
     "title": "1°C of Seawater, 6 MW of Electricity — How Cooling-Water Temperature Affects a Nuclear Plant's Efficiency",
@@ -2265,7 +2453,8 @@ const posts = [
     "thumbnail": "assets/images/theory/235-cooling-water-temperature/thumbnail.webp",
     "thumbnailAlt": "A glass thermometer with amber liquid floating upright in sparkling clear blue seawater on a sunny day, with a white coastal nuclear power plant on a headland in the background",
     "url": "posts/theory/235-cooling-water-temperature.html",
-    "keywords": "cooling water temperature seawater temperature generating efficiency electric output condenser thermal discharge ultimate heat sink summer derating Millstone Saeul"
+    "keywords": "cooling water temperature seawater temperature generating efficiency electric output condenser thermal discharge ultimate heat sink summer derating Millstone Saeul",
+    "publishedAt": "2026-10-24T06:27:49Z"
   },
   {
     "title": "Why an Empty Can Crumples with a Pop — The Secret of How a Condenser Keeps Its Vacuum",
@@ -2277,7 +2466,8 @@ const posts = [
     "thumbnail": "assets/images/theory/234-condenser-vacuum/thumbnail.webp",
     "thumbnailAlt": "A transparent condenser shell with a stainless-steel tube bundle, white steam entering through the top neck, droplets falling from the tubes into a pool of water at the bottom, and cooling water flowing through the end chambers",
     "url": "posts/theory/234-condenser-vacuum.html",
-    "keywords": "condenser vacuum back pressure saturation pressure condensation air ejector vacuum pump turbine trip loss of condenser vacuum steam turbine nuclear power plant"
+    "keywords": "condenser vacuum back pressure saturation pressure condensation air ejector vacuum pump turbine trip loss of condenser vacuum steam turbine nuclear power plant",
+    "publishedAt": "2026-10-24T06:27:49Z"
   },
   {
     "title": "A Pinwheel and a Bike Light on One Shaft — How a Turbine Generator Makes Electricity",
@@ -2289,7 +2479,8 @@ const posts = [
     "thumbnail": "assets/images/theory/233-turbine-generator/thumbnail.webp",
     "thumbnailAlt": "A gleaming steam turbine rotor with rows of blades that grow longer toward both ends, coupled on one shaft to a cutaway generator showing copper windings, against a bright pale-blue background",
     "url": "posts/theory/233-turbine-generator.html",
-    "keywords": "turbine generator steam turbine electromagnetic induction synchronous generator 1800 rpm 60 Hz excitation moisture separator reheater last-stage blade APR1400"
+    "keywords": "turbine generator steam turbine electromagnetic induction synchronous generator 1800 rpm 60 Hz excitation moisture separator reheater last-stage blade APR1400",
+    "publishedAt": "2026-10-24T06:27:49Z"
   },
   {
     "title": "Four Stops on a Round Trip for 1 kg of Water — The Rankine Cycle That Drives a Nuclear Plant's Steam",
@@ -2301,7 +2492,8 @@ const posts = [
     "thumbnail": "assets/images/theory/232-rankine-cycle/thumbnail.webp",
     "thumbnailAlt": "A transparent glass pipe loop with a glowing copper heater on the left turning water into white steam, a steel turbine on top, blue cooling fins on the right where steam condenses, and a pump on the bottom returning blue water",
     "url": "posts/theory/232-rankine-cycle.html",
-    "keywords": "Rankine cycle T-s diagram steam generator turbine condenser feedwater pump phase change pressurized water reactor secondary system thermodynamics"
+    "keywords": "Rankine cycle T-s diagram steam generator turbine condenser feedwater pump phase change pressurized water reactor secondary system thermodynamics",
+    "publishedAt": "2026-10-24T06:27:49Z"
   },
   {
     "title": "A Waterwheel Only Turns as Far as the Water Falls — Electric Output and Thermal Efficiency",
@@ -2313,7 +2505,8 @@ const posts = [
     "thumbnail": "assets/images/theory/231-thermal-efficiency/thumbnail.webp",
     "thumbnailAlt": "A polished stainless-steel waterwheel turned by warm golden water pouring from a channel, driving a white generator on the same shaft, with cooler water flowing out into a basin below",
     "url": "posts/theory/231-thermal-efficiency.html",
-    "keywords": "thermal efficiency electric output thermal output MWt MWe Carnot efficiency second law of thermodynamics APR1400 condenser pressurized water reactor"
+    "keywords": "thermal efficiency electric output thermal output MWt MWe Carnot efficiency second law of thermodynamics APR1400 condenser pressurized water reactor",
+    "publishedAt": "2026-10-24T06:27:49Z"
   },
   {
     "title": "You Can't See the Flame, but the Shower Knows — Why Reactor Power Means Thermal Power",
@@ -2325,7 +2518,8 @@ const posts = [
     "thumbnail": "assets/images/theory/230-reactor-power-is-thermal-power/thumbnail.webp",
     "thumbnailAlt": "A polished steel reactor vessel and a steam generator with a glowing U-tube window, linked by glass pipes, with a brass gauge between them",
     "url": "posts/theory/230-reactor-power-is-thermal-power.html",
-    "keywords": "reactor power thermal power electric power MWt MWe rated thermal power heat balance calorimetric neutron detectors APR1400 nuclear power plant"
+    "keywords": "reactor power thermal power electric power MWt MWe rated thermal power heat balance calorimetric neutron detectors APR1400 nuclear power plant",
+    "publishedAt": "2026-10-24T06:27:49Z"
   },
   {
     "title": "When the Waiters Grab Plates Faster, the Kitchen Speeds Up — Turbine Load Changes and Reactor Power",
@@ -2337,7 +2531,8 @@ const posts = [
     "thumbnail": "assets/images/theory/229-turbine-load-and-reactor-power/thumbnail.webp",
     "thumbnailAlt": "A polished steel steam control valve in cutaway on an insulated pipe, with steam flowing through the opened valve plug",
     "url": "posts/theory/229-turbine-load-and-reactor-power.html",
-    "keywords": "turbine load reactor power pressurized water reactor moderator temperature coefficient self-regulation average temperature program steam generator control rods steam dump"
+    "keywords": "turbine load reactor power pressurized water reactor moderator temperature coefficient self-regulation average temperature program steam generator control rods steam dump",
+    "publishedAt": "2026-10-24T06:27:49Z"
   },
   {
     "title": "The Soup Pot Doesn't Change Its Flame for Every Order — How Nuclear Plants Respond When Electricity Demand Changes",
@@ -2349,7 +2544,8 @@ const posts = [
     "thumbnail": "assets/images/theory/228-how-nuclear-responds-to-demand/thumbnail.webp",
     "thumbnailAlt": "A miniature coastal landscape on a round white plinth with a twin-dome nuclear plant, transmission towers, solar panels on a hill and a small town",
     "url": "posts/theory/228-how-nuclear-responds-to-demand.html",
-    "keywords": "electricity demand grid frequency inertia governor automatic generation control dispatch order output reduction light-load season Korea Power Exchange nuclear power"
+    "keywords": "electricity demand grid frequency inertia governor automatic generation control dispatch order output reduction light-load season Korea Power Exchange nuclear power",
+    "publishedAt": "2026-10-24T06:27:49Z"
   },
   {
     "title": "\"Please Run at Half Power Tonight\" — What Load-Following Operation Means for a Nuclear Plant",
@@ -2361,7 +2557,8 @@ const posts = [
     "thumbnail": "assets/images/theory/227-load-following-operation/thumbnail.webp",
     "thumbnailAlt": "Close-up of the polished steel top of a fuel assembly with a spider-shaped control rod cluster lowering its rods into the guide tubes",
     "url": "posts/theory/227-load-following-operation.html",
-    "keywords": "load following nuclear power plant reactor power control ramp rate xenon-135 control rods boron pressurized water reactor electricity demand"
+    "keywords": "load following nuclear power plant reactor power control ramp rate xenon-135 control rods boron pressurized water reactor electricity demand",
+    "publishedAt": "2026-10-24T06:27:49Z"
   },
   {
     "title": "Why the Rice Cooker Stays On All Day — How Nuclear Plants Came to Be Called Base-Load Generation",
@@ -2373,7 +2570,8 @@ const posts = [
     "thumbnail": "assets/images/theory/226-base-load-generation/thumbnail.webp",
     "thumbnailAlt": "A glass sculpture of a daily demand curve on a white plinth, with a deep-blue constant slab along the bottom, a lighter blue wave above it, a golden crest and a small model nuclear plant at one end",
     "url": "posts/theory/226-base-load-generation.html",
-    "keywords": "base load base-load generation nuclear power electricity demand peak load capacity factor generating cost merit order power grid load following"
+    "keywords": "base load base-load generation nuclear power electricity demand peak load capacity factor generating cost merit order power grid load following",
+    "publishedAt": "2026-10-24T06:27:49Z"
   },
   {
     "title": "When the GPS Goes Dark, Unfold the Map — The Role of Severe Accident Management Guidelines (SAMG)",
@@ -2385,7 +2583,8 @@ const posts = [
     "thumbnail": "assets/images/theory/225-severe-accident-management-guidelines/thumbnail.webp",
     "thumbnailAlt": "A clear glass containment dome on a marble pedestal enclosing a softly glowing teal reactor vessel model, with an open brass compass leaning against the pedestal in front",
     "url": "posts/theory/225-severe-accident-management-guidelines.html",
-    "keywords": "severe accident management guidelines SAMG severe accident emergency operating procedures core exit temperature containment building defense in depth decay heat hydrogen control filtered venting accident management plan"
+    "keywords": "severe accident management guidelines SAMG severe accident emergency operating procedures core exit temperature containment building defense in depth decay heat hydrogen control filtered venting accident management plan",
+    "publishedAt": "2026-10-24T06:27:49Z"
   },
   {
     "title": "Check the Pulse Before Naming the Disease — Symptom-Based Emergency Operating Procedures",
@@ -2397,7 +2596,8 @@ const posts = [
     "thumbnail": "assets/images/theory/224-symptom-based-procedures/thumbnail.webp",
     "thumbnailAlt": "A polished stainless steel pipe elbow with bolted flanges and a small instrument tap, with a doctor's stethoscope chest piece pressed against the bend and a soft teal glow around it",
     "url": "posts/theory/224-symptom-based-procedures.html",
-    "keywords": "emergency operating procedures symptom-based response event-based procedures critical safety functions status trees Three Mile Island subcooling margin core exit temperature nuclear plant operators nuclear safety"
+    "keywords": "emergency operating procedures symptom-based response event-based procedures critical safety functions status trees Three Mile Island subcooling margin core exit temperature nuclear plant operators nuclear safety",
+    "publishedAt": "2026-10-24T06:27:49Z"
   },
   {
     "title": "What Time Do You Leave for the Big Interview? — Conservative vs. Best-Estimate Safety Analysis",
@@ -2409,7 +2609,8 @@ const posts = [
     "thumbnail": "assets/images/theory/223-conservative-vs-best-estimate/thumbnail.webp",
     "thumbnailAlt": "A long clear acrylic tray on a bright white surface holding a cluster of dark gray fuel-pellet-like cylinders at one end, with a green glass divider standing well beyond the last pellet",
     "url": "posts/theory/223-conservative-vs-best-estimate.html",
-    "keywords": "conservative analysis best-estimate analysis BEPU uncertainty safety margin Appendix K Wilks formula 95/95 loss-of-coolant accident peak cladding temperature nuclear safety"
+    "keywords": "conservative analysis best-estimate analysis BEPU uncertainty safety margin Appendix K Wilks formula 95/95 loss-of-coolant accident peak cladding temperature nuclear safety",
+    "publishedAt": "2026-10-24T06:27:49Z"
   },
   {
     "title": "You Can't Crash-Test a Nuclear Plant — What Safety Analysis Codes Actually Calculate",
@@ -2421,7 +2622,8 @@ const posts = [
     "thumbnail": "assets/images/theory/222-safety-analysis-codes/thumbnail.webp",
     "thumbnailAlt": "A transparent glass reactor vessel on a white pedestal, its blue-lit interior divided by glowing horizontal rings into stacked sections around a bundle of fuel rods",
     "url": "posts/theory/222-safety-analysis-codes.html",
-    "keywords": "safety analysis code nuclear safety loss-of-coolant accident LOCA peak cladding temperature safety margin best estimate plus uncertainty Wilks formula 10 CFR 50.46 thermal hydraulics"
+    "keywords": "safety analysis code nuclear safety loss-of-coolant accident LOCA peak cladding temperature safety margin best estimate plus uncertainty Wilks formula 10 CFR 50.46 thermal hydraulics",
+    "publishedAt": "2026-10-24T06:27:49Z"
   },
   {
     "title": "Insurers Worry More About Fire Than Umbrellas — Accident Frequency vs. Risk",
@@ -2433,7 +2635,8 @@ const posts = [
     "thumbnail": "assets/images/theory/221-frequency-vs-risk/thumbnail.webp",
     "thumbnailAlt": "A brass balance scale holding a heap of small glass marbles on one pan and a single polished steel ball on the other, the pans level, with a white containment dome far in the background",
     "url": "posts/theory/221-frequency-vs-risk.html",
-    "keywords": "accident frequency risk risk versus frequency nuclear safety safety goals core damage frequency large release frequency reactor-year probabilistic safety assessment risk aversion"
+    "keywords": "accident frequency risk risk versus frequency nuclear safety safety goals core damage frequency large release frequency reactor-year probabilistic safety assessment risk aversion",
+    "publishedAt": "2026-10-24T06:27:49Z"
   },
   {
     "title": "The Arithmetic of Two Alarm Clocks — How Probabilistic Safety Assessment (PSA) Measures Nuclear Risk",
@@ -2445,7 +2648,8 @@ const posts = [
     "thumbnail": "assets/images/theory/220-probabilistic-safety-assessment/thumbnail.webp",
     "thumbnailAlt": "A clear glass tube runs from a small domed building and splits in two: the main branch pours many glass marbles into a wide bowl, while a thin side branch drops a single marble into a tiny cup",
     "url": "posts/theory/220-probabilistic-safety-assessment.html",
-    "keywords": "probabilistic safety assessment PSA PRA event tree fault tree core damage frequency common-cause failure WASH-1400 safety goals risk nuclear safety"
+    "keywords": "probabilistic safety assessment PSA PRA event tree fault tree core damage frequency common-cause failure WASH-1400 safety goals risk nuclear safety",
+    "publishedAt": "2026-10-24T06:21:38Z"
   },
   {
     "title": "64 Million Versus 20: Lessons from a Snow Globe — What Containment Does in an Accident",
@@ -2457,7 +2661,8 @@ const posts = [
     "thumbnail": "assets/images/theory/219-containment-role-in-accidents/thumbnail.webp",
     "thumbnailAlt": "A snow globe on a wood and brushed-steel base holding a miniature domed reactor building in snow, with flakes drifting inside the glass",
     "url": "posts/theory/219-containment-role-in-accidents.html",
-    "keywords": "containment building nuclear safety Three Mile Island loss-of-coolant accident design pressure leak rate containment spray isolation valve APR1400 multiple barriers"
+    "keywords": "containment building nuclear safety Three Mile Island loss-of-coolant accident design pressure leak rate containment spray isolation valve APR1400 multiple barriers",
+    "publishedAt": "2026-10-24T06:21:38Z"
   },
   {
     "title": "Watch Out When the Steam Clears — Why Hydrogen Explosions Can Happen at Nuclear Plants",
@@ -2469,7 +2674,8 @@ const posts = [
     "thumbnail": "assets/images/theory/218-hydrogen-explosion/thumbnail.webp",
     "thumbnailAlt": "Four brushed-metal catalyst plates beaded with water droplets inside a clear glass cube on a white pedestal, wisps of vapor rising between them",
     "url": "posts/theory/218-hydrogen-explosion.html",
-    "keywords": "hydrogen explosion severe accident flammability limits Shapiro diagram deflagration detonation passive autocatalytic recombiner igniter inerting Fukushima Daiichi nuclear safety"
+    "keywords": "hydrogen explosion severe accident flammability limits Shapiro diagram deflagration detonation passive autocatalytic recombiner igniter inerting Fukushima Daiichi nuclear safety",
+    "publishedAt": "2026-10-24T06:21:38Z"
   },
   {
     "title": "Like Cones Slumping in a Kiln — The Order in Which Core Damage Progresses",
@@ -2481,7 +2687,8 @@ const posts = [
     "thumbnail": "assets/images/theory/217-core-damage-progression/thumbnail.webp",
     "thumbnailAlt": "Five clay pyrometric cones on a glass and brushed-steel stand, each bent a little further than the last, against a soft blue-to-amber glow",
     "url": "posts/theory/217-core-damage-progression.html",
-    "keywords": "core damage core melt severe accident fuel cladding zirconium oxidation 1204 C limit core relocation TMI-2 Three Mile Island nuclear safety"
+    "keywords": "core damage core melt severe accident fuel cladding zirconium oxidation 1204 C limit core relocation TMI-2 Three Mile Island nuclear safety",
+    "publishedAt": "2026-10-24T06:21:38Z"
   },
   {
     "title": "A Pot on a Flame You Can't Turn Off — Why Losing Residual Heat Removal Is So Dangerous",
@@ -2493,7 +2700,8 @@ const posts = [
     "thumbnail": "assets/images/theory/216-residual-heat-removal-failure/thumbnail.webp",
     "thumbnailAlt": "A transparent cylindrical vessel full of blue water with a fuel assembly at its center glowing warm orange, heat ripples spreading into the water",
     "url": "posts/theory/216-residual-heat-removal-failure.html",
-    "keywords": "residual heat removal decay heat reactor shutdown Way-Wigner formula latent heat of vaporization energy balance loss of cooling spent fuel pool nuclear safety accident analysis"
+    "keywords": "residual heat removal decay heat reactor shutdown Way-Wigner formula latent heat of vaporization energy balance loss of cooling spent fuel pool nuclear safety accident analysis",
+    "publishedAt": "2026-10-24T06:21:38Z"
   },
   {
     "title": "Three Jobs Left After the Campfire Is Out — The Three Safety Functions After Reactor Shutdown",
@@ -2505,7 +2713,8 @@ const posts = [
     "thumbnail": "assets/images/theory/215-three-safety-functions-after-shutdown/thumbnail.webp",
     "thumbnailAlt": "A small fuel assembly model balanced on a glass tripod with three faintly glowing legs",
     "url": "posts/theory/215-three-safety-functions-after-shutdown.html",
-    "keywords": "reactor shutdown safety functions reactivity control decay heat residual heat removal confinement multiple barriers critical safety functions nuclear safety pressurized water reactor"
+    "keywords": "reactor shutdown safety functions reactivity control decay heat residual heat removal confinement multiple barriers critical safety functions nuclear safety pressurized water reactor",
+    "publishedAt": "2026-10-24T06:21:38Z"
   },
   {
     "title": "Like Switching On Low-Power Mode at 20% — Station Blackout (SBO) and the Time a Plant Must Hold Out",
@@ -2517,7 +2726,8 @@ const posts = [
     "thumbnail": "assets/images/theory/214-station-blackout-coping-time/thumbnail.webp",
     "thumbnailAlt": "A glass battery cell glowing teal with a blurred power module in the background and a faint stream of light between them",
     "url": "posts/theory/214-station-blackout-coping-time.html",
-    "keywords": "station blackout SBO coping time load shedding alternate AC power emergency diesel generator mobile generator FLEX Fukushima lessons nuclear safety"
+    "keywords": "station blackout SBO coping time load shedding alternate AC power emergency diesel generator mobile generator FLEX Fukushima lessons nuclear safety",
+    "publishedAt": "2026-10-24T06:21:38Z"
   },
   {
     "title": "49 Seconds After the Lights Go Out — Loss of Offsite Power and the Safety Systems That Take Over",
@@ -2529,7 +2739,8 @@ const posts = [
     "thumbnail": "assets/images/theory/213-loss-of-offsite-power-safety-systems/thumbnail.webp",
     "thumbnailAlt": "A glass and ceramic battery cell with a small instrument panel on top whose teal indicator lights stay lit",
     "url": "posts/theory/213-loss-of-offsite-power-safety-systems.html",
-    "keywords": "loss of offsite power LOOP decay heat emergency diesel generator load sequencing safety systems batteries UPS redundancy independence nuclear safety"
+    "keywords": "loss of offsite power LOOP decay heat emergency diesel generator load sequencing safety systems batteries UPS redundancy independence nuclear safety",
+    "publishedAt": "2026-10-24T06:21:38Z"
   },
   {
     "title": "Why Researchers Strike Fuel Rods with Lightning on Purpose — The Line Inside a Reactivity-Initiated Accident",
@@ -2541,7 +2752,8 @@ const posts = [
     "thumbnail": "assets/images/theory/212-reactivity-initiated-accident/thumbnail.webp",
     "thumbnailAlt": "A glass nucleus with golden light rays shooting outward and a small hourglass beside a teal point of light that appears a beat later",
     "url": "posts/theory/212-reactivity-initiated-accident.html",
-    "keywords": "reactivity-initiated accident reactivity prompt criticality delayed neutrons dollar unit Doppler feedback fuel enthalpy control rod ejection reactor safety nuclear safety"
+    "keywords": "reactivity-initiated accident reactivity prompt criticality delayed neutrons dollar unit Doppler feedback fuel enthalpy control rod ejection reactor safety nuclear safety",
+    "publishedAt": "2026-10-24T06:21:38Z"
   },
   {
     "title": "\"Put It In!\" — and It Came Out: The Control Rod Withdrawal Accident",
@@ -2553,7 +2765,8 @@ const posts = [
     "thumbnail": "assets/images/theory/211-control-rod-withdrawal-accident/thumbnail.webp",
     "thumbnailAlt": "A brushed-steel control rod cluster held slightly above a fuel assembly, its drive shaft wrapped by a translucent teal glass ring",
     "url": "posts/theory/211-control-rod-withdrawal-accident.html",
-    "keywords": "control rod withdrawal accident control rods reactivity rod worth reactor trip Doppler effect overtemperature delta-T safety analysis anticipated operational occurrence nuclear safety"
+    "keywords": "control rod withdrawal accident control rods reactivity rod worth reactor trip Doppler effect overtemperature delta-T safety analysis anticipated operational occurrence nuclear safety",
+    "publishedAt": "2026-10-24T06:21:38Z"
   },
   {
     "title": "Like a Reservoir Whose River Runs Dry — The Loss of Feedwater Accident",
@@ -2565,7 +2778,8 @@ const posts = [
     "thumbnail": "assets/images/theory/210-loss-of-feedwater/thumbnail.webp",
     "thumbnailAlt": "A cutaway horizontal steam generator with glowing orange tubes beneath a blue water surface, a capped feedwater pipe on the left and water-cooling units on the right",
     "url": "posts/theory/210-loss-of-feedwater.html",
-    "keywords": "loss of feedwater steam generator heat sink decay heat auxiliary feedwater reactor trip loss-of-coolant accident pressurized water reactor safety analysis reactor safety"
+    "keywords": "loss of feedwater steam generator heat sink decay heat auxiliary feedwater reactor trip loss-of-coolant accident pressurized water reactor safety analysis reactor safety",
+    "publishedAt": "2026-10-24T06:21:38Z"
   },
   {
     "title": "The Myth That Colder Is Always Safer — The Main Steam Line Break Accident",
@@ -2577,7 +2791,8 @@ const posts = [
     "thumbnail": "assets/images/theory/209-main-steam-line-break/thumbnail.webp",
     "thumbnailAlt": "A cutaway steam generator with blue coolant flowing through its tubes, connected to a large steam pipe whose broken end vents a white cloud of steam inside a bright plant hall",
     "url": "posts/theory/209-main-steam-line-break.html",
-    "keywords": "main steam line break MSLB overcooling moderator temperature coefficient positive reactivity main steam isolation valve borated water pressurized thermal shock pressurized water reactor reactor safety"
+    "keywords": "main steam line break MSLB overcooling moderator temperature coefficient positive reactivity main steam isolation valve borated water pressurized thermal shock pressurized water reactor reactor safety",
+    "publishedAt": "2026-10-24T06:21:38Z"
   },
   {
     "title": "A Slow Leak or a Sudden Burst? — Small-Break LOCA vs Large-Break LOCA",
@@ -2589,7 +2804,8 @@ const posts = [
     "thumbnail": "assets/images/theory/208-small-vs-large-break-loca/thumbnail.webp",
     "thumbnailAlt": "A polished steel pipe with a thin trickle of water from a pinhole on one side and a heavy gush from a large opening on the other, each falling into a glass tray",
     "url": "posts/theory/208-small-vs-large-break-loca.html",
-    "keywords": "small-break LOCA large-break LOCA loss-of-coolant accident break size depressurization accumulator high-pressure injection low-pressure injection ECCS reactor safety"
+    "keywords": "small-break LOCA large-break LOCA loss-of-coolant accident break size depressurization accumulator high-pressure injection low-pressure injection ECCS reactor safety",
+    "publishedAt": "2026-10-24T06:21:38Z"
   },
   {
     "title": "The Paychecks Stopped but the Autopay Didn't — The Basic Scenario of a LOCA",
@@ -2601,7 +2817,8 @@ const posts = [
     "thumbnail": "assets/images/theory/207-loca-basic-scenario/thumbnail.webp",
     "thumbnailAlt": "A transparent reactor pressure vessel with a glowing orange core, being refilled with blue water through several injection pipes while a small leak sprays from one side",
     "url": "posts/theory/207-loca-basic-scenario.html",
-    "keywords": "loss-of-coolant accident LOCA decay heat emergency core cooling system ECCS reflood long-term cooling large-break LOCA small-break LOCA reactor safety"
+    "keywords": "loss-of-coolant accident LOCA decay heat emergency core cooling system ECCS reflood long-term cooling large-break LOCA small-break LOCA reactor safety",
+    "publishedAt": "2026-10-24T06:21:38Z"
   },
   {
     "title": "Studying Past the Syllabus — What a Beyond-Design-Basis Accident Really Means",
@@ -2613,7 +2830,8 @@ const posts = [
     "thumbnail": "assets/images/theory/206-beyond-design-basis-accident/thumbnail.webp",
     "thumbnailAlt": "A coastal nuclear power plant enclosed by several nested transparent protective domes, each layer larger than the one inside it",
     "url": "posts/theory/206-beyond-design-basis-accident.html",
-    "keywords": "beyond-design-basis accident design-basis accident design basis severe accident defense in depth safety margin accident analysis nuclear safety reactor safety"
+    "keywords": "beyond-design-basis accident design-basis accident design basis severe accident defense in depth safety margin accident analysis nuclear safety reactor safety",
+    "publishedAt": "2026-10-24T06:21:38Z"
   },
   {
     "title": "Like a Frozen Frame at a Crash-Test Track — The Design Basis Accident a Nuclear Plant Plans For",
@@ -2625,7 +2843,8 @@ const posts = [
     "thumbnail": "assets/images/theory/205-design-basis-accident/thumbnail.webp",
     "thumbnailAlt": "A reactor vessel inside a transparent dome held by a steel test frame, with shield-shaped icons and a large circular gauge beside it",
     "url": "posts/theory/205-design-basis-accident.html",
-    "keywords": "design basis accident DBA nuclear safety analysis acceptance criteria safety margin conservative assumptions single failure criterion anticipated operational occurrence beyond design basis defense in depth"
+    "keywords": "design basis accident DBA nuclear safety analysis acceptance criteria safety margin conservative assumptions single failure criterion anticipated operational occurrence beyond design basis defense in depth",
+    "publishedAt": "2026-10-24T06:01:34Z"
   },
   {
     "title": "Lose a Player, Still Win the Match — The Single Failure Criterion in Nuclear Plants",
@@ -2637,7 +2856,8 @@ const posts = [
     "thumbnail": "assets/images/theory/204-single-failure-criterion/thumbnail.webp",
     "thumbnailAlt": "Two identical pumps feeding a cutaway reactor vessel; one shows a red light and an empty pipe while the other sends blue water through the core",
     "url": "posts/theory/204-single-failure-criterion.html",
-    "keywords": "single failure criterion redundancy safety trains N+1 common cause failure diversity independence reactor safety systems nuclear safety design"
+    "keywords": "single failure criterion redundancy safety trains N+1 common cause failure diversity independence reactor safety systems nuclear safety design",
+    "publishedAt": "2026-10-24T06:01:34Z"
   },
   {
     "title": "Never Trust a Single Bandage — Multiple Barriers That Lock Radioactive Material In, Layer by Layer",
@@ -2649,7 +2869,8 @@ const posts = [
     "thumbnail": "assets/images/theory/203-multiple-barriers/thumbnail.webp",
     "thumbnailAlt": "Cutaway of a cylindrical concrete structure with a domed steel vessel inside and a fuel rod tube with a ceramic pellet at its center",
     "url": "posts/theory/203-multiple-barriers.html",
-    "keywords": "multiple barriers nuclear safety fuel pellet fuel cladding reactor coolant pressure boundary containment building confinement defense in depth redundancy radioactive material"
+    "keywords": "multiple barriers nuclear safety fuel pellet fuel cladding reactor coolant pressure boundary containment building confinement defense in depth redundancy radioactive material",
+    "publishedAt": "2026-10-24T06:01:34Z"
   },
   {
     "title": "A Home That Doesn't Trust One Fire Extinguisher — Defense in Depth, the Layers That Guard a Nuclear Plant",
@@ -2661,7 +2882,8 @@ const posts = [
     "thumbnail": "assets/images/theory/202-defense-in-depth/thumbnail.webp",
     "thumbnailAlt": "Cutaway view of a home with a kitchen at the center surrounded by glowing concentric rings, a smoke alarm, a fire extinguisher, a fire door and a fire engine outside",
     "url": "posts/theory/202-defense-in-depth.html",
-    "keywords": "defense in depth nuclear safety levels of defense physical barriers redundancy diversity independence common cause failure INSAG-10 reactor safety"
+    "keywords": "defense in depth nuclear safety levels of defense physical barriers redundancy diversity independence common cause failure INSAG-10 reactor safety",
+    "publishedAt": "2026-10-24T06:01:34Z"
   },
   {
     "title": "Nuclear Safety Never Promises \"Zero Accidents\" — What the Nuclear Safety Objective Really Aims For",
@@ -2673,7 +2895,8 @@ const posts = [
     "thumbnail": "assets/images/theory/201-nuclear-safety-objective/thumbnail.webp",
     "thumbnailAlt": "A silver balance scale under a clear protective dome in front of a nuclear plant, with a brake disc on one pan and a cushioned cradle catching falling golden balls on the other",
     "url": "posts/theory/201-nuclear-safety-objective.html",
-    "keywords": "nuclear safety objective fundamental safety objective IAEA SF-1 radiation protection ALARA prevention mitigation risk frequency consequences reactor safety"
+    "keywords": "nuclear safety objective fundamental safety objective IAEA SF-1 radiation protection ALARA prevention mitigation risk frequency consequences reactor safety",
+    "publishedAt": "2026-10-24T06:01:34Z"
   },
   {
     "title": "Read It Like a Subway Map — First Steps in Reading a Nuclear Plant System Diagram",
@@ -2685,7 +2908,8 @@ const posts = [
     "thumbnail": "assets/images/theory/200-reading-plant-system-diagrams/thumbnail.webp",
     "thumbnailAlt": "A clear glass board holding a miniature plant layout with a glowing amber reactor loop joined at a cutaway steam generator to a glowing blue turbine and condenser loop",
     "url": "posts/theory/200-reading-plant-system-diagrams.html",
-    "keywords": "system diagram system flow diagram P&ID piping and instrumentation diagram symbols pump valve heat exchanger pressurized water reactor primary system secondary system steam generator nuclear plant systems"
+    "keywords": "system diagram system flow diagram P&ID piping and instrumentation diagram symbols pump valve heat exchanger pressurized water reactor primary system secondary system steam generator nuclear plant systems",
+    "publishedAt": "2026-10-24T06:01:34Z"
   },
   {
     "title": "A Warning Light Isn't a Crash — Normal Operation and Abnormal Operation in a Nuclear Plant",
@@ -2697,7 +2921,8 @@ const posts = [
     "thumbnail": "assets/images/theory/199-normal-and-abnormal-operation/thumbnail.webp",
     "thumbnailAlt": "A polished metal gauge with green, amber and red zones and its needle in the green, an amber beacon glowing beside it, and an operator at control room panels in the background with reactor domes visible through the window",
     "url": "posts/theory/199-normal-and-abnormal-operation.html",
-    "keywords": "normal operation abnormal operation anticipated operational occurrence AOO operational states accident conditions load following operating procedures abnormal operating procedure emergency operating procedure defense in depth reactor safety"
+    "keywords": "normal operation abnormal operation anticipated operational occurrence AOO operational states accident conditions load following operating procedures abnormal operating procedure emergency operating procedure defense in depth reactor safety",
+    "publishedAt": "2026-10-24T06:01:34Z"
   },
   {
     "title": "Turn the Knob or Press the Button? — Analog Control and Digital Control, Two Ways a Nuclear Plant Handles Signals",
@@ -2709,7 +2934,8 @@ const posts = [
     "thumbnail": "assets/images/theory/198-digital-vs-analog-control/thumbnail.webp",
     "thumbnailAlt": "A smooth glowing blue wave flows into a polished metal converter block and leaves as a row of evenly spaced square pulses, with a metal volume knob on one side, a microchip on the other and a nuclear plant in the background",
     "url": "posts/theory/198-digital-vs-analog-control.html",
-    "keywords": "analog control digital control instrumentation and control I&C 4-20 mA analog-to-digital converter sampling software common-cause failure diversity defense in depth nuclear plant systems"
+    "keywords": "analog control digital control instrumentation and control I&C 4-20 mA analog-to-digital converter sampling software common-cause failure diversity defense in depth nuclear plant systems",
+    "publishedAt": "2026-10-24T06:01:34Z"
   },
   {
     "title": "A Reactor Can't Cry Out in Pain — So Instrumentation and Control (I&C) Feels and Reacts for It",
@@ -2721,7 +2947,8 @@ const posts = [
     "thumbnail": "assets/images/theory/197-instrumentation-and-control/thumbnail.webp",
     "thumbnailAlt": "A transparent containment dome over a glowing reactor core, with glowing blue signal lines running from sensors on pipes and valves into a circular control room",
     "url": "posts/theory/197-instrumentation-and-control.html",
-    "keywords": "instrumentation and control I&C nuclear plant systems control system protection system feedback loop reactor trip sensors control room reactor safety"
+    "keywords": "instrumentation and control I&C nuclear plant systems control system protection system feedback loop reactor trip sensors control room reactor safety",
+    "publishedAt": "2026-10-24T06:01:34Z"
   },
   {
     "title": "The Power Seller Most Afraid of a Blackout — How a Nuclear Plant's Electrical System Is Layered",
@@ -2733,7 +2960,8 @@ const posts = [
     "thumbnail": "assets/images/theory/196-nuclear-plant-electrical-system/thumbnail.webp",
     "thumbnailAlt": "A nuclear plant where a golden stream of electricity flows from the generator out to transmission towers while a blue branch loops back into rooms holding pumps, a control room and electrical equipment",
     "url": "posts/theory/196-nuclear-plant-electrical-system.html",
-    "keywords": "nuclear plant electrical system onsite power offsite power in-house power emergency diesel generator station batteries loss of offsite power station blackout SBO reactor safety"
+    "keywords": "nuclear plant electrical system onsite power offsite power in-house power emergency diesel generator station batteries loss of offsite power station blackout SBO reactor safety",
+    "publishedAt": "2026-10-24T06:01:34Z"
   },
   {
     "title": "Quietly Turning an Invisible Gatecrasher Back Into Water — The Hydrogen Control System",
@@ -2745,7 +2973,8 @@ const posts = [
     "thumbnail": "assets/images/theory/195-hydrogen-control-system/thumbnail.webp",
     "thumbnailAlt": "Cutaway of a containment dome under a bright sky, with six glowing recombiner boxes mounted around the inner wall releasing wisps of vapor and water droplets above the reactor equipment",
     "url": "posts/theory/195-hydrogen-control-system.html",
-    "keywords": "hydrogen control passive autocatalytic recombiner PAR igniter containment severe accident zirconium steam reaction flammability limit defense in depth reactor safety"
+    "keywords": "hydrogen control passive autocatalytic recombiner PAR igniter containment severe accident zirconium steam reaction flammability limit defense in depth reactor safety",
+    "publishedAt": "2026-10-24T05:58:05Z"
   },
   {
     "title": "What If It Rained From the Ceiling? — The Containment Spray System",
@@ -2757,7 +2986,8 @@ const posts = [
     "thumbnail": "assets/images/theory/194-containment-spray-system/thumbnail.webp",
     "thumbnailAlt": "Cutaway of a white containment dome under a blue sky, with a glowing ring of spray nozzles raining water over the reactor equipment and a pool of water collecting below",
     "url": "posts/theory/194-containment-spray-system.html",
-    "keywords": "containment spray system containment building steam condensation radioactive iodine sump pH engineered safety features defense in depth final barrier reactor safety"
+    "keywords": "containment spray system containment building steam condensation radioactive iodine sump pH engineered safety features defense in depth final barrier reactor safety",
+    "publishedAt": "2026-10-24T05:58:05Z"
   },
   {
     "title": "The Water Arrives Before Anyone Presses a Button — The Safety Injection System",
@@ -2769,7 +2999,8 @@ const posts = [
     "thumbnail": "assets/images/theory/193-safety-injection-system/thumbnail.webp",
     "thumbnailAlt": "Cutaway of a reactor vessel with a glowing core, fed by blue water streams from a tall pressurized tank on the left and two pumps on either side",
     "url": "posts/theory/193-safety-injection-system.html",
-    "keywords": "safety injection system SIS ECCS emergency core cooling borated water loss-of-coolant accident LOCA accumulator passive safety defense in depth"
+    "keywords": "safety injection system SIS ECCS emergency core cooling borated water loss-of-coolant accident LOCA accumulator passive safety defense in depth",
+    "publishedAt": "2026-10-24T05:58:05Z"
   },
   {
     "title": "Not While It's Boiling — Residual Heat Removal (RHR)",
@@ -2781,7 +3012,8 @@ const posts = [
     "thumbnail": "assets/images/theory/192-residual-heat-removal-system/thumbnail.webp",
     "thumbnailAlt": "A reactor vessel glowing orange on the left sends a hot orange pipe that turns cool blue as it passes a blue pump and a heat exchanger, which pours water out toward a bright blue sea",
     "url": "posts/theory/192-residual-heat-removal-system.html",
-    "keywords": "residual heat removal RHR shutdown cooling decay heat cold shutdown ultimate heat sink component cooling water pressurized water reactor reactor systems"
+    "keywords": "residual heat removal RHR shutdown cooling decay heat cold shutdown ultimate heat sink component cooling water pressurized water reactor reactor systems",
+    "publishedAt": "2026-10-24T05:58:05Z"
   },
   {
     "title": "The Reactor's Quiet Housekeeper — The Chemical and Volume Control System (CVCS)",
@@ -2793,7 +3025,8 @@ const posts = [
     "thumbnail": "assets/images/theory/191-chemical-and-volume-control-system/thumbnail.webp",
     "thumbnailAlt": "A clear water droplet holding small gold dots, suspended inside the round sight glass of a stainless steel pipe fitting, with a bright industrial plant blurred in the background",
     "url": "posts/theory/191-chemical-and-volume-control-system.html",
-    "keywords": "CVCS chemical and volume control system boron reactivity control charging letdown reactor coolant pressurized water reactor water chemistry reactor coolant pump seal"
+    "keywords": "CVCS chemical and volume control system boron reactivity control charging letdown reactor coolant pressurized water reactor water chemistry reactor coolant pump seal",
+    "publishedAt": "2026-10-24T05:58:05Z"
   },
   {
     "title": "Before the Kettle Boils Dry — Why the Auxiliary Feedwater System Is Needed",
@@ -2805,7 +3038,8 @@ const posts = [
     "thumbnail": "assets/images/theory/190-auxiliary-feedwater-system/thumbnail.webp",
     "thumbnailAlt": "A white water storage tank on the left feeding a glowing stainless-steel pump through a clear pipe, which carries blue water into a silver steam-generator vessel on the right with steam rising from its top",
     "url": "posts/theory/190-auxiliary-feedwater-system.html",
-    "keywords": "auxiliary feedwater system AFW emergency feedwater steam generator decay heat turbine-driven pump station blackout defense in depth safety system pressurized water reactor"
+    "keywords": "auxiliary feedwater system AFW emergency feedwater steam generator decay heat turbine-driven pump station blackout defense in depth safety system pressurized water reactor",
+    "publishedAt": "2026-10-24T05:58:05Z"
   },
   {
     "title": "The Quiet Hand That Refills Whatever Leaves as Steam — What Does the Feedwater System Do?",
@@ -2817,7 +3051,8 @@ const posts = [
     "thumbnail": "assets/images/theory/189-feedwater-system/thumbnail.webp",
     "thumbnailAlt": "A steel steam generator connected to a turbine, a condenser below it, and blue glowing return pipes running through pumps and heater tanks back to the steam generator in a bright plant hall",
     "url": "posts/theory/189-feedwater-system.html",
-    "keywords": "feedwater system feedwater pump feedwater heater condenser condensate steam generator water level secondary system auxiliary feedwater pressurized water reactor"
+    "keywords": "feedwater system feedwater pump feedwater heater condenser condensate steam generator water level secondary system auxiliary feedwater pressurized water reactor",
+    "publishedAt": "2026-10-24T05:58:05Z"
   },
   {
     "title": "From a Kettle's Hot Breath to a Spinning Generator — The Main Steam System That Carries Steam to the Turbine",
@@ -2829,7 +3064,8 @@ const posts = [
     "thumbnail": "assets/images/theory/188-main-steam-system/thumbnail.webp",
     "thumbnailAlt": "A large steel steam generator sending steam through a thick pipe with valves into a turbine, with white steam rising in a bright plant hall",
     "url": "posts/theory/188-main-steam-system.html",
-    "keywords": "main steam system steam line MSIV main steam isolation valve safety valve turbine steam generator secondary system pressurized water reactor boiling water reactor"
+    "keywords": "main steam system steam line MSIV main steam isolation valve safety valve turbine steam generator secondary system pressurized water reactor boiling water reactor",
+    "publishedAt": "2026-10-24T05:58:05Z"
   },
   {
     "title": "A Delivery Route That Never Stops Hauling Heat — The Big Picture of the Reactor Coolant System (RCS)",
@@ -2841,7 +3077,8 @@ const posts = [
     "thumbnail": "assets/images/theory/187-reactor-coolant-system/thumbnail.webp",
     "thumbnailAlt": "A cutaway reactor vessel glowing amber, connected by a glowing hot pipe to a tall steam generator and by a blue return pipe through a coolant pump, with a pressurizer beside it in a plant hall",
     "url": "posts/theory/187-reactor-coolant-system.html",
-    "keywords": "reactor coolant system RCS primary system pressurized water reactor PWR hot leg cold leg steam generator reactor coolant pump pressurizer decay heat"
+    "keywords": "reactor coolant system RCS primary system pressurized water reactor PWR hot leg cold leg steam generator reactor coolant pump pressurizer decay heat",
+    "publishedAt": "2026-10-24T05:58:05Z"
   },
   {
     "title": "If What We Wanted from a Candle Was Light, Not Warmth — Why Research Reactors Matter Without Making Electricity",
@@ -2853,7 +3090,8 @@ const posts = [
     "thumbnail": "assets/images/theory/186-research-reactors/thumbnail.webp",
     "thumbnailAlt": "A pool-type research reactor in a bright laboratory hall, its glowing core sending neutron beams through transparent beam tubes to surrounding instruments such as a microscope, sample vials and an imaging scanner",
     "url": "posts/theory/186-research-reactors.html",
-    "keywords": "research reactor neutron neutron flux radioisotopes medical isotopes neutron beam neutron imaging activation analysis HANARO reactor types"
+    "keywords": "research reactor neutron neutron flux radioisotopes medical isotopes neutron beam neutron imaging activation analysis HANARO reactor types",
+    "publishedAt": "2026-10-24T05:58:05Z"
   },
   {
     "title": "What If You Put a Whole Power Plant on a Ship? — How Marine Reactors Differ from Land-Based Nuclear Plants",
@@ -2865,7 +3103,8 @@ const posts = [
     "thumbnail": "assets/images/theory/185-marine-vs-land-reactors/thumbnail.webp",
     "thumbnailAlt": "Cutaway of a white ship at sea showing decks of cabins above and a glowing reactor compartment low in the hull connected to propulsion machinery and a propeller, with clear blue water below",
     "url": "posts/theory/185-marine-vs-land-reactors.html",
-    "keywords": "marine reactor naval propulsion land-based nuclear plant floating nuclear power plant pressurized water reactor power density ultimate heat sink load following long-life core reactor design"
+    "keywords": "marine reactor naval propulsion land-based nuclear plant floating nuclear power plant pressurized water reactor power density ultimate heat sink load following long-life core reactor design",
+    "publishedAt": "2026-10-24T05:58:05Z"
   },
   {
     "title": "What If Reactors Were Built in a Factory and Shipped? — The Core Idea Behind Small Modular Reactors (SMRs)",
@@ -2877,7 +3116,8 @@ const posts = [
     "thumbnail": "assets/images/theory/184-small-modular-reactors/thumbnail.webp",
     "thumbnailAlt": "A large reactor module on a heavy-haul truck leaving a bright factory hall, while a crane lowers another module into a row of concrete bays at a construction site",
     "url": "posts/theory/184-small-modular-reactors.html",
-    "keywords": "small modular reactor SMR modular construction factory fabrication passive safety integral reactor natural circulation economies of scale microreactor reactor types"
+    "keywords": "small modular reactor SMR modular construction factory fabrication passive safety integral reactor natural circulation economies of scale microreactor reactor types",
+    "publishedAt": "2026-10-24T05:58:05Z"
   },
   {
     "title": "Too Hot to Waste on Electricity Alone — Why High-Temperature Gas Reactors (HTGRs) Are Eyeing Hydrogen Production",
@@ -2889,7 +3129,8 @@ const posts = [
     "thumbnail": "assets/images/theory/183-htgr-hydrogen-production/thumbnail.webp",
     "thumbnailAlt": "Cutaway of a glowing graphite reactor core with golden heat pipes branching out to a water vessel releasing bubbles, a coiled heat exchanger, an industrial plant and a generator, in a bright landscape with wind turbines",
     "url": "posts/theory/183-htgr-hydrogen-production.html",
-    "keywords": "high-temperature gas reactor HTGR hydrogen production helium coolant graphite moderator TRISO fuel process heat thermochemical cycle sulfur-iodine steam electrolysis low-carbon hydrogen"
+    "keywords": "high-temperature gas reactor HTGR hydrogen production helium coolant graphite moderator TRISO fuel process heat thermochemical cycle sulfur-iodine steam electrolysis low-carbon hydrogen",
+    "publishedAt": "2026-10-24T05:58:05Z"
   },
   {
     "title": "A Coolant That Never Boils? Gas-Cooled Reactors Trade Water for Wind",
@@ -2901,7 +3142,8 @@ const posts = [
     "thumbnail": "assets/images/theory/182-gas-cooled-reactors/thumbnail.webp",
     "thumbnailAlt": "Cutaway of a cylindrical reactor vessel with graphite blocks inside, cool blue gas streaming in at the lower left and glowing golden hot gas flowing out at the upper right, against a bright sky",
     "url": "posts/theory/182-gas-cooled-reactors.html",
-    "keywords": "gas-cooled reactor reactor coolant helium carbon dioxide high-temperature gas reactor HTGR Magnox AGR graphite moderator TRISO reactor types"
+    "keywords": "gas-cooled reactor reactor coolant helium carbon dioxide high-temperature gas reactor HTGR Magnox AGR graphite moderator TRISO reactor types",
+    "publishedAt": "2026-10-24T05:58:05Z"
   },
   {
     "title": "The Star Employee Who Can't Go Near Water — The Sodium-Cooled Fast Reactor (SFR)",
@@ -2913,7 +3155,8 @@ const posts = [
     "thumbnail": "assets/images/theory/181-sodium-cooled-fast-reactor/thumbnail.webp",
     "thumbnailAlt": "A shiny drop of liquid metal floating under a glass dome on a bright reactor platform, with a water droplet on one side and a small flame on the other kept outside the dome",
     "url": "posts/theory/181-sodium-cooled-fast-reactor.html",
-    "keywords": "sodium-cooled fast reactor SFR fast reactor liquid metal coolant sodium intermediate loop sodium-water reaction cover gas reactor types nuclear safety"
+    "keywords": "sodium-cooled fast reactor SFR fast reactor liquid metal coolant sodium intermediate loop sodium-water reaction cover gas reactor types nuclear safety",
+    "publishedAt": "2026-10-24T05:58:05Z"
   },
   {
     "title": "The Reactor That Refuses to Hit the Brakes — Why Fast Reactors Do Without a Moderator",
@@ -2925,7 +3168,8 @@ const posts = [
     "thumbnail": "assets/images/theory/180-why-fast-reactors-skip-the-moderator/thumbnail.webp",
     "thumbnailAlt": "A glowing blue neutron streaking past large silver nuclei toward a cluster of gold-and-teal nuclei that light up as they change",
     "url": "posts/theory/180-why-fast-reactors-skip-the-moderator.html",
-    "keywords": "fast reactor moderator fast breeder reactor fast neutrons breeding uranium-238 plutonium-239 sodium-cooled fast reactor neutron moderation reactor types"
+    "keywords": "fast reactor moderator fast breeder reactor fast neutrons breeding uranium-238 plutonium-239 sodium-cooled fast reactor neutron moderation reactor types",
+    "publishedAt": "2026-10-24T05:58:05Z"
   },
   {
     "title": "Your Pencil's Cousin in the Heart of a Reactor — How Graphite-Moderated Reactors Split Moderation from Cooling",
@@ -2937,7 +3181,8 @@ const posts = [
     "thumbnail": "assets/images/theory/179-graphite-moderated-reactor/thumbnail.webp",
     "thumbnailAlt": "A cutaway block core built from stacked dark graphite bricks pierced by vertical steel and blue coolant channels, with a glowing neutron path zigzagging through it from amber to green",
     "url": "posts/theory/179-graphite-moderated-reactor.html",
-    "keywords": "graphite-moderated reactor graphite moderator gas-cooled reactor high-temperature gas-cooled reactor neutron moderation Wigner energy void coefficient coolant reactor types"
+    "keywords": "graphite-moderated reactor graphite moderator gas-cooled reactor high-temperature gas-cooled reactor neutron moderation Wigner energy void coefficient coolant reactor types",
+    "publishedAt": "2026-10-24T05:58:05Z"
   },
   {
     "title": "Some Water Is Heavier Than Others — Why the CANDU Reactor Insists on Heavy Water",
@@ -2949,7 +3194,8 @@ const posts = [
     "thumbnail": "assets/images/theory/178-why-candu-uses-heavy-water/thumbnail.webp",
     "thumbnailAlt": "Cutaway of a horizontal cylindrical calandria tank filled with blue water, crossed by steel pressure tubes holding gold fuel bundles, with a fueling machine docked at one end",
     "url": "posts/theory/178-why-candu-uses-heavy-water.html",
-    "keywords": "CANDU heavy water reactor heavy water deuterium natural uranium neutron economy moderator pressure tube calandria on-power refueling PHWR"
+    "keywords": "CANDU heavy water reactor heavy water deuterium natural uranium neutron economy moderator pressure tube calandria on-power refueling PHWR",
+    "publishedAt": "2026-10-24T05:58:05Z"
   },
   {
     "title": "Steam Straight from the Kettle to the Turbine — How a Boiling Water Reactor (BWR) Skips the Steam Generator",
@@ -2961,7 +3207,8 @@ const posts = [
     "thumbnail": "assets/images/theory/177-boiling-water-reactor/thumbnail.webp",
     "thumbnailAlt": "Cutaway BWR pressure vessel with a blue water-filled core and rising steam, joined by one steam pipe to a turbine and generator, with a cooling tower and plant buildings behind",
     "url": "posts/theory/177-boiling-water-reactor.html",
-    "keywords": "boiling water reactor BWR direct cycle steam separator steam dryer light water reactor pressurized water reactor void feedback reactor types nuclear power plant"
+    "keywords": "boiling water reactor BWR direct cycle steam separator steam dryer light water reactor pressurized water reactor void feedback reactor types nuclear power plant",
+    "publishedAt": "2026-10-24T05:58:05Z"
   },
   {
     "title": "A Pot of Water Held Down So It Can't Boil — How a Pressurized Water Reactor (PWR) Is Built",
@@ -2973,7 +3220,8 @@ const posts = [
     "thumbnail": "assets/images/theory/176-pressurized-water-reactor/thumbnail.webp",
     "thumbnailAlt": "A cutaway reactor vessel glowing blue, joined by transparent piping and a pump to a tall steam generator with an amber tube bundle, with steam piping leading to a turbine on the right",
     "url": "posts/theory/176-pressurized-water-reactor.html",
-    "keywords": "pressurized water reactor PWR primary system secondary system steam generator pressurizer reactor coolant pump light water reactor reactor types nuclear power plant"
+    "keywords": "pressurized water reactor PWR primary system secondary system steam generator pressurizer reactor coolant pump light water reactor reactor types nuclear power plant",
+    "publishedAt": "2026-10-24T05:58:05Z"
   },
   {
     "title": "Used Up Doesn't Mean Over? — Seeing the Nuclear Fuel Cycle as a Circular Economy",
@@ -2985,7 +3233,8 @@ const posts = [
     "thumbnail": "assets/images/theory/175-fuel-cycle-circular-economy/thumbnail.webp",
     "thumbnailAlt": "Island-like platforms for a uranium mine, fuel assemblies, a reactor, spent fuel storage, a reprocessing plant and an underground repository, linked by blue, green and orange arrows around a central power plant",
     "url": "posts/theory/175-fuel-cycle-circular-economy.html",
-    "keywords": "nuclear fuel cycle circular economy spent nuclear fuel reprocessing direct disposal open fuel cycle closed fuel cycle enrichment MOX fuel high-level waste"
+    "keywords": "nuclear fuel cycle circular economy spent nuclear fuel reprocessing direct disposal open fuel cycle closed fuel cycle enrichment MOX fuel high-level waste",
+    "publishedAt": "2026-10-24T05:55:13Z"
   },
   {
     "title": "Burned-Out Ashes? There's Still Good Stuff Left — The Story of MOX Fuel",
@@ -2997,7 +3246,8 @@ const posts = [
     "thumbnail": "assets/images/theory/174-mox-fuel/thumbnail.webp",
     "thumbnailAlt": "Green and blue powders flowing from two glass hoppers into a stainless-steel mixer, with a single black cylindrical fuel pellet on a pedestal beside it",
     "url": "posts/theory/174-mox-fuel.html",
-    "keywords": "MOX fuel mixed oxide fuel plutonium reprocessing spent nuclear fuel delayed neutrons light water reactor fast reactor closed fuel cycle IAEA safeguards"
+    "keywords": "MOX fuel mixed oxide fuel plutonium reprocessing spent nuclear fuel delayed neutrons light water reactor fast reactor closed fuel cycle IAEA safeguards",
+    "publishedAt": "2026-10-24T05:55:13Z"
   },
   {
     "title": "Two Roads for Used Fuel — How Reprocessing and Direct Disposal Differ",
@@ -3009,7 +3259,8 @@ const posts = [
     "thumbnail": "assets/images/theory/173-reprocessing-vs-direct-disposal/thumbnail.webp",
     "thumbnailAlt": "A fuel assembly in a clear glass column on a path that splits toward a green-arrowed recycling plant on one side and a deep layered-rock repository tunnel on the other",
     "url": "posts/theory/173-reprocessing-vs-direct-disposal.html",
-    "keywords": "reprocessing direct disposal spent nuclear fuel closed fuel cycle open fuel cycle high-level waste deep geological repository plutonium safeguards MOX fuel"
+    "keywords": "reprocessing direct disposal spent nuclear fuel closed fuel cycle open fuel cycle high-level waste deep geological repository plutonium safeguards MOX fuel",
+    "publishedAt": "2026-10-24T05:55:13Z"
   },
   {
     "title": "The Fire Is Out, So Why Wait Years? — What the Cooling Period of Spent Fuel Means",
@@ -3021,7 +3272,8 @@ const posts = [
     "thumbnail": "assets/images/theory/172-cooling-period/thumbnail.webp",
     "thumbnailAlt": "A fuel assembly standing in a bright blue pool, surrounded by fading orange and violet rings, with an hourglass on the pool edge",
     "url": "posts/theory/172-cooling-period.html",
-    "keywords": "cooling period spent nuclear fuel decay heat radioactivity dry cask storage spent fuel pool half-life nuclear fuel cycle back end spent fuel management"
+    "keywords": "cooling period spent nuclear fuel decay heat radioactivity dry cask storage spent fuel pool half-life nuclear fuel cycle back end spent fuel management",
+    "publishedAt": "2026-10-24T05:55:13Z"
   },
   {
     "title": "Retired but Still Warm and Busy — The Heat and Radioactivity of Spent Fuel",
@@ -3033,7 +3285,8 @@ const posts = [
     "thumbnail": "assets/images/theory/171-spent-fuel-heat-and-radioactivity/thumbnail.webp",
     "thumbnailAlt": "Rows of fuel assemblies standing in racks at the bottom of a deep, brightly lit blue water pool, with a yellow fuel-handling bridge above",
     "url": "posts/theory/171-spent-fuel-heat-and-radioactivity.html",
-    "keywords": "spent nuclear fuel decay heat radioactivity fission products transuranic elements half-life spent fuel pool radiation shielding nuclear fuel cycle"
+    "keywords": "spent nuclear fuel decay heat radioactivity fission products transuranic elements half-life spent fuel pool radiation shielding nuclear fuel cycle",
+    "publishedAt": "2026-10-24T05:55:13Z"
   },
   {
     "title": "Still a Long Way from Melting — Fuel Temperature Limits, the Invisible Ceiling in a Reactor",
@@ -3045,7 +3298,8 @@ const posts = [
     "thumbnail": "assets/images/theory/170-fuel-temperature-limits/thumbnail.webp",
     "thumbnailAlt": "A cutaway metal fuel rod holding a stack of glowing orange pellets, with a red-rimmed ceiling disc far above them, in front of a softly blurred bright reactor hall",
     "url": "posts/theory/170-fuel-temperature-limits.html",
-    "keywords": "fuel temperature limit fuel centerline temperature linear heat rate UO2 melting point safety margin centerline melting thermal conductivity fuel integrity reactor design"
+    "keywords": "fuel temperature limit fuel centerline temperature linear heat rate UO2 melting point safety margin centerline melting thermal conductivity fuel integrity reactor design",
+    "publishedAt": "2026-10-24T05:55:13Z"
   },
   {
     "title": "A Trusty Shield That Turns Hydrogen Maker When Hot — Cladding Oxidation and Hydrogen Generation",
@@ -3057,7 +3311,8 @@ const posts = [
     "thumbnail": "assets/images/theory/169-cladding-oxidation-and-hydrogen/thumbnail.webp",
     "thumbnailAlt": "A cutaway fuel cladding tube with a textured oxide layer at its glowing orange end, water molecules streaming toward it and pairs of hydrogen atoms drifting away",
     "url": "posts/theory/169-cladding-oxidation-and-hydrogen.html",
-    "keywords": "cladding oxidation hydrogen generation zirconium Zircaloy zirconium-steam reaction oxide film hydriding hydrogen recombiner fuel integrity nuclear safety"
+    "keywords": "cladding oxidation hydrogen generation zirconium Zircaloy zirconium-steam reaction oxide film hydriding hydrogen recombiner fuel integrity nuclear safety",
+    "publishedAt": "2026-10-24T05:55:13Z"
   },
   {
     "title": "A Metal Skin Less Than a Millimeter Thick Is the First Barrier — Why Fuel Integrity Matters",
@@ -3069,7 +3324,8 @@ const posts = [
     "thumbnail": "assets/images/theory/168-why-fuel-integrity-matters/thumbnail.webp",
     "thumbnailAlt": "A cutaway metal fuel rod lying across the frame, showing dark ceramic pellets and glowing gas atoms gathered in the space at one end, in front of blue water and rows of rods",
     "url": "posts/theory/168-why-fuel-integrity-matters.html",
-    "keywords": "fuel integrity cladding fission products multiple barriers defense in depth fuel rod coolant radioactivity zirconium alloy nuclear safety fuel leak"
+    "keywords": "fuel integrity cladding fission products multiple barriers defense in depth fuel rod coolant radioactivity zirconium alloy nuclear safety fuel leak",
+    "publishedAt": "2026-10-24T05:55:13Z"
   },
   {
     "title": "The Busiest Floor Is in the Middle — Reading the Axial Power Distribution Up the Reactor Core",
@@ -3081,7 +3337,8 @@ const posts = [
     "thumbnail": "assets/images/theory/167-axial-power-distribution/thumbnail.webp",
     "thumbnailAlt": "A tall transparent reactor core glowing orange at mid-height and blue at both ends, beside a glowing bell-shaped curve, in a bright white plant interior",
     "url": "posts/theory/167-axial-power-distribution.html",
-    "keywords": "axial power distribution axial offset power distribution cosine shape control rods power flattening reactor physics xenon oscillation thermal margin core design"
+    "keywords": "axial power distribution axial offset power distribution cosine shape control rods power flattening reactor physics xenon oscillation thermal margin core design",
+    "publishedAt": "2026-10-24T05:55:13Z"
   },
   {
     "title": "Why One Spoonful Burns Your Mouth — The Power Peaking Factor That Rules the Reactor Core",
@@ -3093,7 +3350,8 @@ const posts = [
     "thumbnail": "assets/images/theory/166-power-peaking-factor/thumbnail.webp",
     "thumbnailAlt": "A glowing translucent power landscape of green hills with one tall amber peak rising over a ring of fuel assemblies, beneath a blue grid plane",
     "url": "posts/theory/166-power-peaking-factor.html",
-    "keywords": "power peaking factor hot spot power distribution core design thermal margin reactor physics fuel integrity nuclear safety local power flattening"
+    "keywords": "power peaking factor hot spot power distribution core design thermal margin reactor physics fuel integrity nuclear safety local power flattening",
+    "publishedAt": "2026-10-24T05:55:13Z"
   },
   {
     "title": "Like Running a Full Load of Laundry — Batch Operation and Campaign (Cycle) Length",
@@ -3105,7 +3363,8 @@ const posts = [
     "thumbnail": "assets/images/theory/165-batch-operation-and-cycle-length/thumbnail.webp",
     "thumbnailAlt": "A cutaway steel reactor vessel holding a cluster of fuel assemblies, encircled by large blue arrows forming a loop, with a refueling pool and a control room in the background",
     "url": "posts/theory/165-batch-operation-and-cycle-length.html",
-    "keywords": "batch operation operating cycle campaign length refueling fuel cycle capacity factor burnup online refueling core management reactor operation"
+    "keywords": "batch operation operating cycle campaign length refueling fuel cycle capacity factor burnup online refueling core management reactor operation",
+    "publishedAt": "2026-10-24T05:46:09Z"
   },
   {
     "title": "Not a Card Shuffle — Fuel Shuffling, the Art of Rearranging a Reactor Core",
@@ -3117,7 +3376,8 @@ const posts = [
     "thumbnail": "assets/images/theory/164-fuel-shuffling/thumbnail.webp",
     "thumbnailAlt": "Top-down view of a square-lattice reactor core where a few glowing fuel assemblies are lifted and moved along curved arrows to new positions, with one assembly sliding out on a track and another arriving",
     "url": "posts/theory/164-fuel-shuffling.html",
-    "keywords": "fuel shuffling refueling core design loading pattern burnup power flattening peaking factor equilibrium core fuel cycle nuclear fuel"
+    "keywords": "fuel shuffling refueling core design loading pattern burnup power flattening peaking factor equilibrium core fuel cycle nuclear fuel",
+    "publishedAt": "2026-10-24T05:46:09Z"
   },
   {
     "title": "By the Window or in the Middle of the Room? — The Fuel Loading Pattern Puzzle",
@@ -3129,7 +3389,8 @@ const posts = [
     "thumbnail": "assets/images/theory/163-fuel-loading-pattern/thumbnail.webp",
     "thumbnailAlt": "Looking down into a reactor core where square fuel assemblies in gold, bright blue and silver form a deliberate checkerboard inside a ring of steel machinery",
     "url": "posts/theory/163-fuel-loading-pattern.html",
-    "keywords": "loading pattern refueling core design fuel management low-leakage loading power flattening neutron leakage peaking factor burnable poison fuel cycle"
+    "keywords": "loading pattern refueling core design fuel management low-leakage loading power flattening neutron leakage peaking factor burnable poison fuel cycle",
+    "publishedAt": "2026-10-24T05:46:09Z"
   },
   {
     "title": "The Guest Who Won't Leave the Couch — Why Samarium-149 Lingers in the Core",
@@ -3141,7 +3402,8 @@ const posts = [
     "thumbnail": "assets/images/theory/162-why-samarium-149-lingers/thumbnail.webp",
     "thumbnailAlt": "A glossy amber disc holding a cluster of spheres rests on a soft cushion in a modern lounge, while small glowing blue spheres travel along a track toward a large round vault door",
     "url": "posts/theory/162-why-samarium-149-lingers.html",
-    "keywords": "samarium-149 neutron poison fission products promethium-149 xenon-135 stable nuclide permanent poison reactivity reactor shutdown fuel cycle"
+    "keywords": "samarium-149 neutron poison fission products promethium-149 xenon-135 stable nuclide permanent poison reactivity reactor shutdown fuel cycle",
+    "publishedAt": "2026-10-24T05:46:09Z"
   },
   {
     "title": "Born from Iodine, Erased by Neutrons — How Xenon-135 Is Made and Removed",
@@ -3153,7 +3415,8 @@ const posts = [
     "thumbnail": "assets/images/theory/161-xenon-135-production-and-removal/thumbnail.webp",
     "thumbnailAlt": "Purple nuclei on a conveyor flying into a glowing blue honeycomb layer of transparent spheres wrapped around a reactor core, with pale nuclei drifting away on the other side",
     "url": "posts/theory/161-xenon-135-production-and-removal.html",
-    "keywords": "xenon-135 iodine-135 fission products neutron absorption reactor poison half-life absorption cross section xenon equilibrium reactivity core behavior"
+    "keywords": "xenon-135 iodine-135 fission products neutron absorption reactor poison half-life absorption cross section xenon equilibrium reactivity core behavior",
+    "publishedAt": "2026-10-24T05:46:09Z"
   },
   {
     "title": "Brake Hard at First, Then Ease Off — Boron Dilution Operation, Taming the Core by Thinning the Boron",
@@ -3165,7 +3428,8 @@ const posts = [
     "thumbnail": "assets/images/theory/160-boron-dilution-operation/thumbnail.webp",
     "thumbnailAlt": "A horizontal glass pipe on a polished frame with turquoise water at one end fading to clear water at the other, droplets falling into a basin, and a nuclear plant with cooling towers in the background",
     "url": "posts/theory/160-boron-dilution-operation.html",
-    "keywords": "boron dilution boric acid boration reactivity control excess reactivity burnup pressurized water reactor chemical and volume control system control rods core management"
+    "keywords": "boron dilution boric acid boration reactivity control excess reactivity burnup pressurized water reactor chemical and volume control system control rods core management",
+    "publishedAt": "2026-10-24T05:46:09Z"
   },
   {
     "title": "A Brake That Peels Away Like an Onion — Gadolinium in Nuclear Fuel",
@@ -3177,7 +3441,8 @@ const posts = [
     "thumbnail": "assets/images/theory/159-gadolinium/thumbnail.webp",
     "thumbnailAlt": "Glowing cross-section of a cylindrical fuel pellet with a teal outer ring, an orange middle ring and a pale core, with blue neutrons streaming toward its edge against a dark blue background",
     "url": "posts/theory/159-gadolinium.html",
-    "keywords": "gadolinium gadolinia Gd-157 Gd-155 burnable poison absorption cross section self-shielding excess reactivity boric acid nuclear fuel reactor design"
+    "keywords": "gadolinium gadolinia Gd-157 Gd-155 burnable poison absorption cross section self-shielding excess reactivity boric acid nuclear fuel reactor design",
+    "publishedAt": "2026-10-24T05:46:09Z"
   },
   {
     "title": "Why Put a Neutron-Eater in a Machine Built to Make Neutrons? — Burnable Poisons Explained",
@@ -3189,7 +3454,8 @@ const posts = [
     "thumbnail": "assets/images/theory/158-burnable-poisons/thumbnail.webp",
     "thumbnailAlt": "Four fuel assemblies in a row wrapped in translucent turquoise ice jackets that get shorter from left to right, with arrows arcing above them against a bright sky",
     "url": "posts/theory/158-burnable-poisons.html",
-    "keywords": "burnable poison burnable absorber excess reactivity reactivity control gadolinium boron power flattening fuel cycle core design fission-product poison"
+    "keywords": "burnable poison burnable absorber excess reactivity reactivity control gadolinium boron power flattening fuel cycle core design fission-product poison",
+    "publishedAt": "2026-10-24T05:46:09Z"
   },
   {
     "title": "You Ate the Seed Potatoes and Ended Up with More? — The Conversion Ratio and the Breeding Ratio",
@@ -3201,7 +3467,8 @@ const posts = [
     "thumbnail": "assets/images/theory/157-conversion-and-breeding-ratio/thumbnail.webp",
     "thumbnailAlt": "A polished balance scale on a laboratory bench with gold pellets on one pan and amber pellets on the other, silver pellets pouring from a hopper above, fuel assemblies beside it and a nuclear plant in the background",
     "url": "posts/theory/157-conversion-and-breeding-ratio.html",
-    "keywords": "conversion ratio breeding ratio breeder reactor converter reactor plutonium-239 uranium-238 fissile fertile neutron economy fuel cycle reactor physics"
+    "keywords": "conversion ratio breeding ratio breeder reactor converter reactor plutonium-239 uranium-238 fissile fertile neutron economy fuel cycle reactor physics",
+    "publishedAt": "2026-10-24T05:46:09Z"
   },
   {
     "title": "The Star Tires, but the Show Goes On — How U-235 Fades and Pu-239 Rises in Nuclear Fuel",
@@ -3213,7 +3480,8 @@ const posts = [
     "thumbnail": "assets/images/theory/156-u235-down-pu239-up/thumbnail.webp",
     "thumbnailAlt": "Two glowing streams of atomic nuclei meeting between rows of metal fuel rods, a teal stream on the left handing over to an orange stream on the right",
     "url": "posts/theory/156-u235-down-pu239-up.html",
-    "keywords": "conversion plutonium-239 uranium-235 uranium-238 neptunium-239 neutron capture beta decay conversion ratio breeding fuel cycle reactor physics"
+    "keywords": "conversion plutonium-239 uranium-235 uranium-238 neptunium-239 neutron capture beta decay conversion ratio breeding fuel cycle reactor physics",
+    "publishedAt": "2026-10-24T05:46:09Z"
   },
   {
     "title": "Barely One Grain in a Handful — Natural Uranium vs Enriched Uranium",
@@ -3225,7 +3493,8 @@ const posts = [
     "thumbnail": "assets/images/theory/155-natural-vs-enriched-uranium/thumbnail.webp",
     "thumbnailAlt": "A magnifying glass over a pile of grey metallic pellets on a slab of ore, revealing a single gold pellet among them, with cooling towers blurred in the background",
     "url": "posts/theory/155-natural-vs-enriched-uranium.html",
-    "keywords": "natural uranium enriched uranium U-235 U-238 low-enriched uranium depleted uranium CANDU heavy water light-water reactor gas centrifuge"
+    "keywords": "natural uranium enriched uranium U-235 U-238 low-enriched uranium depleted uranium CANDU heavy water light-water reactor gas centrifuge",
+    "publishedAt": "2026-10-24T05:46:09Z"
   },
   {
     "title": "Not Boiled Down, Just Rebalanced — Why Power Reactors Need Uranium Enrichment",
@@ -3237,7 +3506,8 @@ const posts = [
     "thumbnail": "assets/images/theory/154-uranium-enrichment/thumbnail.webp",
     "thumbnailAlt": "A clear glass jar filled with silver-grey beads, with only a few gold beads scattered among them, against a bright pale-blue background",
     "url": "posts/theory/154-uranium-enrichment.html",
-    "keywords": "uranium enrichment enrichment U-235 U-238 low-enriched uranium natural uranium light-water reactor heavy-water reactor graphite moderator nuclear fuel"
+    "keywords": "uranium enrichment enrichment U-235 U-238 low-enriched uranium natural uranium light-water reactor heavy-water reactor graphite moderator nuclear fuel",
+    "publishedAt": "2026-10-24T05:46:09Z"
   },
   {
     "title": "A Brand-New School Has No Seniors — The First Core and the Equilibrium Core",
@@ -3249,7 +3519,8 @@ const posts = [
     "thumbnail": "assets/images/theory/153-first-core-and-equilibrium-core/thumbnail.webp",
     "thumbnailAlt": "Top-down view of a circular core loading pattern of hexagonal tiles in teal, silver and gold, scattered on the left half and arranged in a neat repeating pattern on the right half",
     "url": "posts/theory/153-first-core-and-equilibrium-core.html",
-    "keywords": "initial core first core equilibrium core refueling batch reload fuel shuffling excess reactivity burnable poison core design fuel cycle"
+    "keywords": "initial core first core equilibrium core refueling batch reload fuel shuffling excess reactivity burnable poison core design fuel cycle",
+    "publishedAt": "2026-10-24T05:46:09Z"
   },
   {
     "title": "Fuel Ages Like an Old Neighborhood — How Nuclear Fuel Composition Changes During Operation",
@@ -3261,7 +3532,8 @@ const posts = [
     "thumbnail": "assets/images/theory/152-how-fuel-changes-in-operation/thumbnail.webp",
     "thumbnailAlt": "A fuel assembly glowing teal at the top and orange at the bottom, with four translucent ribbons of particles streaming out to the right and the particles growing and clumping as they go",
     "url": "posts/theory/152-how-fuel-changes-in-operation.html",
-    "keywords": "nuclear fuel composition burnup uranium-235 plutonium-239 uranium-238 fission products neutron poisons refueling fuel cycle"
+    "keywords": "nuclear fuel composition burnup uranium-235 plutonium-239 uranium-238 fission products neutron poisons refueling fuel cycle",
+    "publishedAt": "2026-10-24T05:46:09Z"
   },
   {
     "title": "Not How Long, but How Far — Burnup, the Odometer of Nuclear Fuel",
@@ -3273,7 +3545,8 @@ const posts = [
     "thumbnail": "assets/images/theory/151-burnup/thumbnail.webp",
     "thumbnailAlt": "A metal fuel assembly floating inside a glowing ring whose amber arc fills most of the circle like a gauge, against a bright sky",
     "url": "posts/theory/151-burnup.html",
-    "keywords": "burnup nuclear fuel MWd/tU GWd/tU fuel cycle refueling plutonium-239 uranium-235 spent nuclear fuel reactor physics"
+    "keywords": "burnup nuclear fuel MWd/tU GWd/tU fuel cycle refueling plutonium-239 uranium-235 spent nuclear fuel reactor physics",
+    "publishedAt": "2026-10-24T05:46:09Z"
   },
   {
     "title": "Even in a Maze, One Door Must Always Lead Out — Core Coolability as a Safety Goal",
@@ -3285,7 +3558,8 @@ const posts = [
     "thumbnail": "assets/images/theory/150-core-coolability/thumbnail.webp",
     "thumbnailAlt": "Bird's-eye view of a large circular stone maze with a glowing hexagonal core at its center and a single bright blue channel winding out to the sea",
     "url": "posts/theory/150-core-coolability.html",
-    "keywords": "core coolability core cooling heat removal geometry cooling path fundamental safety functions decay heat thermal margin defense in depth reactor safety"
+    "keywords": "core coolability core cooling heat removal geometry cooling path fundamental safety functions decay heat thermal margin defense in depth reactor safety",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Why a Sauna Never Cools Itself Down — The Ultimate Heat Sink, Where Reactor Heat Must End Up",
@@ -3297,7 +3571,8 @@ const posts = [
     "thumbnail": "assets/images/theory/149-ultimate-heat-sink/thumbnail.webp",
     "thumbnailAlt": "A cutaway coastal nuclear plant at sunrise with a glowing orange stream of heat flowing from the reactor core through heat exchangers and turning blue as it pours into the sea",
     "url": "posts/theory/149-ultimate-heat-sink.html",
-    "keywords": "ultimate heat sink loss-of-coolant accident LOCA decay heat conservation of energy first law of thermodynamics heat exchanger cooling path nuclear safety Fukushima"
+    "keywords": "ultimate heat sink loss-of-coolant accident LOCA decay heat conservation of energy first law of thermodynamics heat exchanger cooling path nuclear safety Fukushima",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Why Your Straw Gurgles at the Bottom of the Cup — Thermal-Hydraulic Instability Made Simple",
@@ -3309,7 +3584,8 @@ const posts = [
     "thumbnail": "assets/images/theory/148-thermal-hydraulic-instability/thumbnail.webp",
     "thumbnailAlt": "A wavy transparent pipe between metal flanges carrying swirling gold and blue fluid with bubbles, one bubble wearing a small smiling face, in a bright industrial setting by the sea",
     "url": "posts/theory/148-thermal-hydraulic-instability.html",
-    "keywords": "thermal-hydraulic instability two-phase flow flow instability void fraction density wave thermal hydraulics coolant flow reactor safety steam generator"
+    "keywords": "thermal-hydraulic instability two-phase flow flow instability void fraction density wave thermal hydraulics coolant flow reactor safety steam generator",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "A Radiator Split into Thousands of Pieces — Heat Exchange in Steam Generator Tubes",
@@ -3321,7 +3597,8 @@ const posts = [
     "thumbnail": "assets/images/theory/147-steam-generator-tube-heat-exchange/thumbnail.webp",
     "thumbnailAlt": "A cutaway steam generator at a coastal power plant, its bundle of glowing orange U-tubes surrounded by bubbling blue water with steam rising at the top",
     "url": "posts/theory/147-steam-generator-tube-heat-exchange.html",
-    "keywords": "steam generator U-tube heat exchange forced convection conduction nucleate boiling overall heat transfer coefficient heat transfer area thermal hydraulics PWR"
+    "keywords": "steam generator U-tube heat exchange forced convection conduction nucleate boiling overall heat transfer coefficient heat transfer area thermal hydraulics PWR",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Passing Heat Without Shaking Hands — How a Heat Exchanger Works",
@@ -3333,7 +3610,8 @@ const posts = [
     "thumbnail": "assets/images/theory/146-heat-exchanger-basics/thumbnail.webp",
     "thumbnailAlt": "A cutaway metal heat exchanger with glowing orange hot tubes on one side and blue cold channels on the other, set against a bright sky and sea",
     "url": "posts/theory/146-heat-exchanger-basics.html",
-    "keywords": "heat exchanger heat transfer overall heat transfer coefficient heat transfer area conduction convection car radiator nuclear power plant thermal hydraulics"
+    "keywords": "heat exchanger heat transfer overall heat transfer coefficient heat transfer area conduction convection car radiator nuclear power plant thermal hydraulics",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Slamming the Brakes, Then Coasting to a Stop — An Intuitive Look at the Decay Heat Curve",
@@ -3345,7 +3623,8 @@ const posts = [
     "thumbnail": "assets/images/theory/145-decay-heat-curve-intuition/thumbnail.webp",
     "thumbnailAlt": "A runner checking his smartwatch beside a glowing curve that falls steeply and then flattens, with a coastal nuclear power plant at sunrise",
     "url": "posts/theory/145-decay-heat-curve-intuition.html",
-    "keywords": "decay heat decay heat curve residual heat Way-Wigner approximation fission products half-life reactor shutdown residual heat removal spent fuel pool thermal hydraulics"
+    "keywords": "decay heat decay heat curve residual heat Way-Wigner approximation fission products half-life reactor shutdown residual heat removal spent fuel pool thermal hydraulics",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Blow Out the Candle and the Wick Stays Hot — Why Decay Heat Remains After a Reactor Shuts Down",
@@ -3357,7 +3636,8 @@ const posts = [
     "thumbnail": "assets/images/theory/144-why-decay-heat-remains/thumbnail.webp",
     "thumbnailAlt": "Cutaway reactor building with a warm glow at the base of the core, with a lit candle and a wisp of smoke in the foreground",
     "url": "posts/theory/144-why-decay-heat-remains.html",
-    "keywords": "decay heat residual heat reactor shutdown fission products radioactive decay half-life core cooling control rods subcritical thermal hydraulics nuclear safety"
+    "keywords": "decay heat residual heat reactor shutdown fission products radioactive decay half-life core cooling control rods subcritical thermal hydraulics nuclear safety",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "A Fan Next to the Chimney — Forced vs. Natural Circulation in a Reactor",
@@ -3369,7 +3649,8 @@ const posts = [
     "thumbnail": "assets/images/theory/143-forced-vs-natural-circulation/thumbnail.webp",
     "thumbnailAlt": "Cutaway of a large motor-driven pump pushing a powerful stream of blue water through a pipe toward a tall concrete tower",
     "url": "posts/theory/143-forced-vs-natural-circulation.html",
-    "keywords": "forced circulation natural circulation reactor coolant pump decay heat loss of offsite power defense in depth small modular reactor thermal hydraulics reactor cooling"
+    "keywords": "forced circulation natural circulation reactor coolant pump decay heat loss of offsite power defense in depth small modular reactor thermal hydraulics reactor cooling",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "The Smoke That Climbs on Its Own — How Natural Circulation Cools a Reactor Without Pumps",
@@ -3381,7 +3662,8 @@ const posts = [
     "thumbnail": "assets/images/theory/142-natural-circulation/thumbnail.webp",
     "thumbnailAlt": "Cutaway of a reactor building with a glowing core, an orange riser pipe climbing to a heat exchanger and a blue downcomer returning to the core",
     "url": "posts/theory/142-natural-circulation.html",
-    "keywords": "natural circulation thermosiphon chimney effect natural convection forced circulation riser downcomer passive safety decay heat removal thermal hydraulics reactor cooling"
+    "keywords": "natural circulation thermosiphon chimney effect natural convection forced circulation riser downcomer passive safety decay heat removal thermal hydraulics reactor cooling",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Taking the Lid Off the Pressure Cooker — Why a Boiling Water Reactor Boils Inside the Core",
@@ -3393,7 +3675,8 @@ const posts = [
     "thumbnail": "assets/images/theory/141-why-bwrs-boil-in-the-core/thumbnail.webp",
     "thumbnailAlt": "Cutaway illustration of a boiling water reactor vessel with glowing fuel rods surrounded by rising bubbles and a steam pipe leading to a turbine",
     "url": "posts/theory/141-why-bwrs-boil-in-the-core.html",
-    "keywords": "boiling water reactor BWR direct cycle indirect cycle nucleate boiling steam separator steam dryer steam quality PWR vs BWR thermal hydraulics nitrogen-16"
+    "keywords": "boiling water reactor BWR direct cycle indirect cycle nucleate boiling steam separator steam dryer steam quality PWR vs BWR thermal hydraulics nitrogen-16",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Turning the Whole Reactor into a Pressure Cooker — Why PWRs Run at High Pressure",
@@ -3405,7 +3688,8 @@ const posts = [
     "thumbnail": "assets/images/theory/140-why-pwrs-use-high-pressure/thumbnail.webp",
     "thumbnailAlt": "Cutaway of a pressurized water reactor vessel full of blue water around a glowing core, linked to a turbine building and a cooling tower",
     "url": "posts/theory/140-why-pwrs-use-high-pressure.html",
-    "keywords": "pressurized water reactor PWR reactor pressure primary system coolant boiling point saturation temperature subcooling pressurizer BWR thermal hydraulics"
+    "keywords": "pressurized water reactor PWR reactor pressure primary system coolant boiling point saturation temperature subcooling pressurizer BWR thermal hydraulics",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "On a High Mountain, Water Boils Too Soon — Pressure and Boiling Point",
@@ -3417,7 +3701,8 @@ const posts = [
     "thumbnail": "assets/images/theory/139-pressure-and-boiling-point/thumbnail.webp",
     "thumbnailAlt": "A camping pot boiling on a snowy summit blending into a green valley where a pressure cooker sits quietly",
     "url": "posts/theory/139-pressure-and-boiling-point.html",
-    "keywords": "boiling point saturation temperature vapor pressure pressure cooker high altitude cooking saturation curve coolant pressure pressurized water reactor PWR pressurizer thermal hydraulics"
+    "keywords": "boiling point saturation temperature vapor pressure pressure cooker high altitude cooking saturation curve coolant pressure pressurized water reactor PWR pressurizer thermal hydraulics",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Good Drivers Don't Tailgate — Thermal Margin",
@@ -3429,7 +3714,8 @@ const posts = [
     "thumbnail": "assets/images/theory/138-thermal-margin/thumbnail.webp",
     "thumbnailAlt": "A car keeping a long glowing gap behind another on a night highway, beside a gauge around a glowing reactor core with the needle in the blue zone",
     "url": "posts/theory/138-thermal-margin.html",
-    "keywords": "thermal margin DNBR MDNBR minimum DNBR critical heat flux CHF DNB safety margin shutdown margin thermal hydraulics reactor safety core design"
+    "keywords": "thermal margin DNBR MDNBR minimum DNBR critical heat flux CHF DNB safety margin shutdown margin thermal hydraulics reactor safety core design",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "The Moment Your Tires Float — Why Reactors Must Avoid DNB",
@@ -3441,7 +3727,8 @@ const posts = [
     "thumbnail": "assets/images/theory/137-departure-from-nucleate-boiling/thumbnail.webp",
     "thumbnailAlt": "Macro close-up of a heated copper-colored cylinder at a water surface, bubbles on one side and a continuous vapor film on the other",
     "url": "posts/theory/137-departure-from-nucleate-boiling.html",
-    "keywords": "DNB departure from nucleate boiling critical heat flux CHF DNBR MDNBR boiling crisis fuel cladding thermal hydraulics reactor safety PWR"
+    "keywords": "DNB departure from nucleate boiling critical heat flux CHF DNBR MDNBR boiling crisis fuel cladding thermal hydraulics reactor safety PWR",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "When the Dam Gauge Creeps Toward the Red Line — Critical Heat Flux (CHF)",
@@ -3453,7 +3740,8 @@ const posts = [
     "thumbnail": "assets/images/theory/136-critical-heat-flux/thumbnail.webp",
     "thumbnailAlt": "A brass-rimmed pressure gauge with its needle at the edge of a red zone, beside a glass-walled channel of rising bubbles over a glowing heated surface",
     "url": "posts/theory/136-critical-heat-flux.html",
-    "keywords": "critical heat flux CHF departure from nucleate boiling DNB dryout DNBR MDNBR thermal margin boiling curve thermal hydraulics reactor safety"
+    "keywords": "critical heat flux CHF departure from nucleate boiling DNB dryout DNBR MDNBR thermal margin boiling curve thermal hydraulics reactor safety",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "The Water Drop That Should Have Fizzled but Dances Instead — Nucleate vs Film Boiling",
@@ -3465,7 +3753,8 @@ const posts = [
     "thumbnail": "assets/images/theory/135-nucleate-vs-film-boiling/thumbnail.webp",
     "thumbnailAlt": "A heated metal plate glowing orange beneath, with bubbles rising from its surface on the left and a single drop resting on a glowing vapor film on the right",
     "url": "posts/theory/135-nucleate-vs-film-boiling.html",
-    "keywords": "nucleate boiling film boiling Leidenfrost effect boiling heat transfer vapor film reactor cooling fuel cladding thermal hydraulics reactor safety"
+    "keywords": "nucleate boiling film boiling Leidenfrost effect boiling heat transfer vapor film reactor cooling fuel cladding thermal hydraulics reactor safety",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "While the Pressure Cooker Vents Politely — Is Boiling Good or Bad?",
@@ -3477,7 +3766,8 @@ const posts = [
     "thumbnail": "assets/images/theory/134-two-faces-of-boiling/thumbnail.webp",
     "thumbnailAlt": "A heated metal plate glowing orange underneath, with small clear bubbles on one half of its surface and a continuous blanket of white vapor on the other half",
     "url": "posts/theory/134-two-faces-of-boiling.html",
-    "keywords": "boiling heat transfer thermal hydraulics nucleate boiling film boiling critical heat flux CHF DNB MDNBR thermal margin reactor coolant"
+    "keywords": "boiling heat transfer thermal hydraulics nucleate boiling film boiling critical heat flux CHF DNB MDNBR thermal margin reactor coolant",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "What Is That Sticker on the Window Really Measuring? — The Heat Transfer Coefficient Explained",
@@ -3489,7 +3779,8 @@ const posts = [
     "thumbnail": "assets/images/theory/133-heat-transfer-coefficient/thumbnail.webp",
     "thumbnailAlt": "A glowing orange metal block whose heat streams across a bright boundary into swirling blue water",
     "url": "posts/theory/133-heat-transfer-coefficient.html",
-    "keywords": "heat transfer coefficient heat transfer thermal hydraulics convection boundary layer Newton's law of cooling fuel cladding reactor coolant heat flux"
+    "keywords": "heat transfer coefficient heat transfer thermal hydraulics convection boundary layer Newton's law of cooling fuel cladding reactor coolant heat flux",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Low Fan or High Fan? — Why Coolant Flow Rate Changes the Temperature",
@@ -3501,7 +3792,8 @@ const posts = [
     "thumbnail": "assets/images/theory/132-coolant-flow-rate-and-temperature/thumbnail.webp",
     "thumbnailAlt": "Cutaway of glowing orange fuel rods beside a channel where bright blue coolant surges past and carries the heat away",
     "url": "posts/theory/132-coolant-flow-rate-and-temperature.html",
-    "keywords": "coolant flow rate thermal hydraulics energy balance temperature rise reactor coolant pump heat transfer core cooling flow velocity thermal margin"
+    "keywords": "coolant flow rate thermal hydraulics energy balance temperature rise reactor coolant pump heat transfer core cooling flow velocity thermal margin",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "When Water Starts Spinning on Its Own — The Secret of Convection Heat Transfer",
@@ -3513,7 +3805,8 @@ const posts = [
     "thumbnail": "assets/images/theory/131-convection-heat-transfer/thumbnail.webp",
     "thumbnailAlt": "A clear glass pot of water on a gas burner, with orange warm water rising up the middle and blue cooler water curling down both sides in a convection loop",
     "url": "posts/theory/131-convection-heat-transfer.html",
-    "keywords": "convection heat transfer natural circulation forced circulation Newton's law of cooling heat transfer coefficient reactor coolant pump thermal hydraulics reactor cooling"
+    "keywords": "convection heat transfer natural circulation forced circulation Newton's law of cooling heat transfer coefficient reactor coolant pump thermal hydraulics reactor cooling",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "The More Layers You Wear, the Colder the Outside — Heat Flow Through the Gap and Cladding",
@@ -3525,7 +3818,8 @@ const posts = [
     "thumbnail": "assets/images/theory/130-heat-flow-through-gap-and-cladding/thumbnail.webp",
     "thumbnailAlt": "A cutaway fuel rod showing a glowing orange pellet inside a thin gap and a metal cladding tube, with heat arrows passing outward from warm orange to cool blue into surrounding water with bubbles",
     "url": "posts/theory/130-heat-flow-through-gap-and-cladding.html",
-    "keywords": "fuel cladding gas gap heat flux temperature drop thermal conductivity thermal resistance fuel pellet helium zirconium alloy heat transfer thermal hydraulics"
+    "keywords": "fuel cladding gas gap heat flux temperature drop thermal conductivity thermal resistance fuel pellet helium zirconium alloy heat transfer thermal hydraulics",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Wide Straw, Narrow Straw — Why Thermal Conductivity Sets Fuel Temperature",
@@ -3537,7 +3831,8 @@ const posts = [
     "thumbnail": "assets/images/theory/129-thermal-conductivity-and-fuel-temperature/thumbnail.webp",
     "thumbnailAlt": "Two cutaway fuel pellets side by side on a polished platform, one with a deep red-hot center and the other with a milder orange center, both fading to blue at the edges, with fuel assemblies and a reactor cutaway in the background",
     "url": "posts/theory/129-thermal-conductivity-and-fuel-temperature.html",
-    "keywords": "thermal conductivity fuel temperature centerline temperature uranium dioxide UO2 fuel pellet heat transfer linear heat rate thermal stress reactor design thermal hydraulics"
+    "keywords": "thermal conductivity fuel temperature centerline temperature uranium dioxide UO2 fuel pellet heat transfer linear heat rate thermal stress reactor design thermal hydraulics",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "The Bucket Moves, the People Don't — How Heat Conduction Carries Heat",
@@ -3549,7 +3844,8 @@ const posts = [
     "thumbnail": "assets/images/theory/128-how-heat-conduction-works/thumbnail.webp",
     "thumbnailAlt": "A three-dimensional lattice of metallic spheres joined by rods, glowing orange at the left end and shading through silver to blue at the right, with a soft wave of light running through it",
     "url": "posts/theory/128-how-heat-conduction-works.html",
-    "keywords": "heat conduction Fourier's law thermal conductivity heat flux temperature gradient phonon free electrons convection fuel pellet cladding thermal hydraulics"
+    "keywords": "heat conduction Fourier's law thermal conductivity heat flux temperature gradient phonon free electrons convection fuel pellet cladding thermal hydraulics",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Why a Campfire Ember Stays Hot Inside — The Temperature Profile of a Fuel Pellet",
@@ -3561,7 +3857,8 @@ const posts = [
     "thumbnail": "assets/images/theory/127-fuel-pellet-temperature-profile/thumbnail.webp",
     "thumbnailAlt": "A cutaway fuel pellet standing on a polished surface, its cut face shaded red at the center through orange and yellow to blue at the edges, with a fuel rod and a power plant with a cooling tower in the background",
     "url": "posts/theory/127-fuel-pellet-temperature-profile.html",
-    "keywords": "fuel pellet temperature distribution parabolic temperature profile heat conduction thermal conductivity uranium dioxide fuel centerline temperature linear heat rate heat transfer thermal hydraulics"
+    "keywords": "fuel pellet temperature distribution parabolic temperature profile heat conduction thermal conductivity uranium dioxide fuel centerline temperature linear heat rate heat transfer thermal hydraulics",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "More Microwave Than Oven — Where Fission Heat Is Born",
@@ -3573,7 +3870,8 @@ const posts = [
     "thumbnail": "assets/images/theory/126-where-fission-heat-is-born/thumbnail.webp",
     "thumbnailAlt": "A cut nuclear fuel pellet glowing orange from within, with small sparks of heat scattered through its grainy interior, beside a cutaway fuel rod stacked with pellets",
     "url": "posts/theory/126-where-fission-heat-is-born.html",
-    "keywords": "fission heat fission fragments heat transfer thermal hydraulics fuel pellet kinetic energy heat source reactor thermal design fuel temperature nuclear power basics"
+    "keywords": "fission heat fission fragments heat transfer thermal hydraulics fuel pellet kinetic energy heat source reactor thermal design fuel temperature nuclear power basics",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Push It Over and It Pops Right Back Up — When a Reactor Stabilizes Itself",
@@ -3585,7 +3883,8 @@ const posts = [
     "thumbnail": "assets/images/theory/125-when-a-reactor-stabilizes-itself/thumbnail.webp",
     "thumbnailAlt": "A cutaway reactor building with a glowing golden core at its center, wrapped in concentric blue and gold rings of arrows circling back inward, with a plant and green hills in the background",
     "url": "posts/theory/125-when-a-reactor-stabilizes-itself.html",
-    "keywords": "self-stabilization power coefficient negative feedback reactivity reactor kinetics Doppler feedback temperature feedback inherent safety reactor safety design"
+    "keywords": "self-stabilization power coefficient negative feedback reactivity reactor kinetics Doppler feedback temperature feedback inherent safety reactor safety design",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "When Orders Pour In, the Conveyor Speeds Up — Load-Following Operation and Reactivity Control",
@@ -3597,7 +3896,8 @@ const posts = [
     "thumbnail": "assets/images/theory/124-load-following-and-reactivity-control/thumbnail.webp",
     "thumbnailAlt": "A twin-dome nuclear plant by the water with a cutaway showing the reactor and turbine, a glowing daily demand curve arching across the sky, transmission towers leading to a city, and an inset of an operator at a control-room console",
     "url": "posts/theory/124-load-following-and-reactivity-control.html",
-    "keywords": "load following reactivity control reactor kinetics control rods boron concentration grey rods base-load operation demand curve xenon transient shutdown margin"
+    "keywords": "load following reactivity control reactor kinetics control rods boron concentration grey rods base-load operation demand curve xenon transient shutdown margin",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Why the Shower Keeps Swinging Hot and Cold — and Why Xenon Oscillations Happen in a Reactor",
@@ -3609,7 +3909,8 @@ const posts = [
     "thumbnail": "assets/images/theory/123-why-xenon-oscillations-happen/thumbnail.webp",
     "thumbnailAlt": "A cutaway reactor core whose fuel rods glow gold at the top and bottom and blue in the middle, beside a coastal nuclear plant and a modern control room",
     "url": "posts/theory/123-why-xenon-oscillations-happen.html",
-    "keywords": "xenon oscillation spatial xenon oscillation xenon-135 iodine-135 reactor kinetics reactivity feedback axial power distribution axial offset point kinetics reactor physics"
+    "keywords": "xenon oscillation spatial xenon oscillation xenon-135 iodine-135 reactor kinetics reactivity feedback axial power distribution axial offset point kinetics reactor physics",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "How You Feel Is a Sum, Not a Single Reading — The Power Coefficient and the Fuel Temperature Coefficient",
@@ -3621,7 +3922,8 @@ const posts = [
     "thumbnail": "assets/images/theory/122-power-coefficient/thumbnail.webp",
     "thumbnailAlt": "A cutaway reactor building with a glowing orange core, connected by glowing lines through four round inset lenses to a single gold-rimmed gauge, with a power plant beside a river in the background",
     "url": "posts/theory/122-power-coefficient.html",
-    "keywords": "power coefficient fuel temperature coefficient Doppler coefficient moderator temperature coefficient void coefficient reactivity feedback reactor kinetics reactor physics inherent safety"
+    "keywords": "power coefficient fuel temperature coefficient Doppler coefficient moderator temperature coefficient void coefficient reactivity feedback reactor kinetics reactor physics inherent safety",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "One Recipe Wants Foam, the Other Bans It — Why the Void Coefficient Differs by Reactor Type",
@@ -3633,7 +3935,8 @@ const posts = [
     "thumbnail": "assets/images/theory/121-void-coefficient-by-reactor-type/thumbnail.webp",
     "thumbnailAlt": "A tall glass column of water with bubbles rising past fuel rods, flanked by a golden balance scale holding blue and gold particle clusters, with a power plant in the background",
     "url": "posts/theory/121-void-coefficient-by-reactor-type.html",
-    "keywords": "void coefficient reactivity feedback reactor kinetics PWR BWR pressurized water reactor boiling water reactor under-moderation soluble boron recirculation flow"
+    "keywords": "void coefficient reactivity feedback reactor kinetics PWR BWR pressurized water reactor boiling water reactor under-moderation soluble boron recirculation flow",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Why a Shaken Soda Foams Up — How Coolant Density Changes Shake Reactivity",
@@ -3645,7 +3948,8 @@ const posts = [
     "thumbnail": "assets/images/theory/120-coolant-density-and-reactivity/thumbnail.webp",
     "thumbnailAlt": "A clear column of blue water full of rising bubbles beside a cutaway reactor core with glowing fuel assemblies and neutron trails",
     "url": "posts/theory/120-coolant-density-and-reactivity.html",
-    "keywords": "coolant density void void fraction boiling steam bubbles reactivity moderation neutron spectrum moderator temperature coefficient reactor kinetics negative feedback"
+    "keywords": "coolant density void void fraction boiling steam bubbles reactivity moderation neutron spectrum moderator temperature coefficient reactor kinetics negative feedback",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Water Swells Before the Kettle Boils — The Moderator Temperature Coefficient",
@@ -3657,7 +3961,8 @@ const posts = [
     "thumbnail": "assets/images/theory/119-moderator-temperature-coefficient/thumbnail.webp",
     "thumbnailAlt": "A clear cylinder of water beside a glowing reactor core, molecules packed tightly at the blue bottom and spread apart at the warm top",
     "url": "posts/theory/119-moderator-temperature-coefficient.html",
-    "keywords": "moderator temperature coefficient MTC reactivity coefficient light water reactor moderator density boron burnable absorber Doppler feedback reactor kinetics self-regulation"
+    "keywords": "moderator temperature coefficient MTC reactivity coefficient light water reactor moderator density boron burnable absorber Doppler feedback reactor kinetics self-regulation",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "The Instant Your Hand Jerks Off a Hot Handle — Why Doppler Feedback Is Immediate",
@@ -3669,7 +3974,8 @@ const posts = [
     "thumbnail": "assets/images/theory/118-why-doppler-feedback-is-immediate/thumbnail.webp",
     "thumbnailAlt": "A cutaway fuel rod with a glowing orange pellet and rippling orange waves inside a metal cladding tube, small blue neutron spheres streaming in",
     "url": "posts/theory/118-why-doppler-feedback-is-immediate.html",
-    "keywords": "Doppler feedback Doppler broadening fuel temperature coefficient resonance absorption uranium-238 reactivity feedback reactor kinetics inherent safety reactivity insertion accident"
+    "keywords": "Doppler feedback Doppler broadening fuel temperature coefficient resonance absorption uranium-238 reactivity feedback reactor kinetics inherent safety reactivity insertion accident",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Wobble on a Gym Ball — How Temperature Feedback Steadies a Reactor",
@@ -3681,7 +3987,8 @@ const posts = [
     "thumbnail": "assets/images/theory/117-temperature-feedback/thumbnail.webp",
     "thumbnailAlt": "A glowing reactor core inside a clear glass sphere, wrapped by a looping teal arrow between a blue water droplet and a gold droplet",
     "url": "posts/theory/117-temperature-feedback.html",
-    "keywords": "temperature feedback negative feedback temperature coefficient reactivity reactor kinetics inherent safety reactor safety scram reactivity control nuclear reactor"
+    "keywords": "temperature feedback negative feedback temperature coefficient reactivity reactor kinetics inherent safety reactor safety scram reactivity control nuclear reactor",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Your Pace Right Now, Your Steps All Day — Differential and Integral Rod Worth",
@@ -3693,7 +4000,8 @@ const posts = [
     "thumbnail": "assets/images/theory/116-differential-and-integral-rod-worth/thumbnail.webp",
     "thumbnailAlt": "A cutaway reactor vessel with control rods descending into a glowing blue core, linked by a beam of light to a translucent layered glass sculpture rising like an S-curve",
     "url": "posts/theory/116-differential-and-integral-rod-worth.html",
-    "keywords": "differential rod worth integral rod worth control rod worth reactivity reactor kinetics neutron flux reactor physics S-curve control rods reactivity insertion accident"
+    "keywords": "differential rod worth integral rod worth control rod worth reactivity reactor kinetics neutron flux reactor physics S-curve control rods reactivity insertion accident",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Why a Weight at the End of a Seesaw Tips It More — What Control Rod Worth Means",
@@ -3705,7 +4013,8 @@ const posts = [
     "thumbnail": "assets/images/theory/115-control-rod-worth/thumbnail.webp",
     "thumbnailAlt": "A steel control rod descending into the center of a round reactor core lattice glowing orange at the middle and blue at the edge",
     "url": "posts/theory/115-control-rod-worth.html",
-    "keywords": "control rod worth differential rod worth integral rod worth reactivity neutron flux S-curve reactor kinetics reactor physics core design"
+    "keywords": "control rod worth differential rod worth integral rod worth reactivity neutron flux S-curve reactor kinetics reactor physics core design",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "One More Brake on the Hill — Why Reactors Need a Shutdown Margin",
@@ -3717,7 +4026,8 @@ const posts = [
     "thumbnail": "assets/images/theory/114-shutdown-margin/thumbnail.webp",
     "thumbnailAlt": "A hand lifting one control rod out of a reactor core model on a balance scale that still outweighs a steel counterweight",
     "url": "posts/theory/114-shutdown-margin.html",
-    "keywords": "shutdown margin control rods stuck rod single failure criterion reactivity scram reactor safety core design defense in depth"
+    "keywords": "shutdown margin control rods stuck rod single failure criterion reactivity scram reactor safety core design defense in depth",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Just Let Go — How a Scram Stops a Nuclear Reactor",
@@ -3729,7 +4039,8 @@ const posts = [
     "thumbnail": "assets/images/theory/113-how-a-scram-works/thumbnail.webp",
     "thumbnailAlt": "Cutaway of a reactor vessel with latch mechanisms at the top and control rods sliding down into a glowing blue core",
     "url": "posts/theory/113-how-a-scram-works.html",
-    "keywords": "scram control rods reactor shutdown fail-safe design reactor protection system reactor safety reactivity reactor kinetics Chicago Pile-1"
+    "keywords": "scram control rods reactor shutdown fail-safe design reactor protection system reactor safety reactivity reactor kinetics Chicago Pile-1",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Elevator or Escalator? — Step and Ramp Changes in Reactivity",
@@ -3741,7 +4052,8 @@ const posts = [
     "thumbnail": "assets/images/theory/112-reactivity-step-and-ramp/thumbnail.webp",
     "thumbnailAlt": "A glass-and-steel desktop model with an orange-glowing sphere on glass stairs and a blue-glowing sphere on a smooth metal ramp",
     "url": "posts/theory/112-reactivity-step-and-ramp.html",
-    "keywords": "reactivity step change ramp change reactivity insertion prompt jump reactor kinetics reactor physics reactor power reactor operation"
+    "keywords": "reactivity step change ramp change reactivity insertion prompt jump reactor kinetics reactor physics reactor power reactor operation",
+    "publishedAt": "2026-10-24T05:40:46Z"
   },
   {
     "title": "Open the Curtains and the Room Lights Up — How Control Rod Withdrawal Raises Reactor Power",
@@ -3753,7 +4065,8 @@ const posts = [
     "thumbnail": "assets/images/theory/111-control-rod-withdrawal/thumbnail.webp",
     "thumbnailAlt": "A polished steel control rod drive column rising out of a glowing blue, glass-like reactor core lattice in a bright laboratory hall",
     "url": "posts/theory/111-control-rod-withdrawal.html",
-    "keywords": "control rod withdrawal reactivity reactor kinetics prompt jump delayed neutrons reactor power neutron flux reactor control reactor startup"
+    "keywords": "control rod withdrawal reactivity reactor kinetics prompt jump delayed neutrons reactor power neutron flux reactor control reactor startup",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "Like Drawing the Curtains — Control Rod Insertion",
@@ -3765,7 +4078,8 @@ const posts = [
     "thumbnail": "assets/images/theory/110-control-rod-insertion/thumbnail.webp",
     "thumbnailAlt": "A cutaway of a reactor core with a polished steel control rod descending into a glowing blue bundle of fuel rods, a translucent arrow pointing downward",
     "url": "posts/theory/110-control-rod-insertion.html",
-    "keywords": "control rod insertion reactivity negative reactivity neutron absorption neutron flux distribution reactor kinetics reactor power reactor control reactor operation reactor physics"
+    "keywords": "control rod insertion reactivity negative reactivity neutron absorption neutron flux distribution reactor kinetics reactor power reactor control reactor operation reactor physics",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "When the Conductor Changes the Tempo — The Prompt Jump",
@@ -3777,7 +4091,8 @@ const posts = [
     "thumbnail": "assets/images/theory/109-prompt-jump/thumbnail.webp",
     "thumbnailAlt": "A conductor's baton standing upright at the center, with a burst of orange particles flying from a nucleus on the left and a slower, wider stream of blue spheres drifting away on the right",
     "url": "posts/theory/109-prompt-jump.html",
-    "keywords": "prompt jump reactor kinetics reactivity delayed neutrons prompt neutrons point kinetics dollar unit prompt critical core power reactor safety analysis"
+    "keywords": "prompt jump reactor kinetics reactivity delayed neutrons prompt neutrons point kinetics dollar unit prompt critical core power reactor safety analysis",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "Express vs. Scheduled Delivery — Delayed Neutron Precursors",
@@ -3789,7 +4104,8 @@ const posts = [
     "thumbnail": "assets/images/theory/108-delayed-neutron-precursors/thumbnail.webp",
     "thumbnailAlt": "A reactor core of glowing fuel rods flanked by six transparent storage drawers, three on each side, each holding a cluster of blue spheres that stream toward the core",
     "url": "posts/theory/108-delayed-neutron-precursors.html",
-    "keywords": "delayed neutron precursors delayed neutrons beta decay fission fragments six-group model decay constant point kinetics reactor kinetics reactor physics reactor safety"
+    "keywords": "delayed neutron precursors delayed neutrons beta decay fission fragments six-group model decay constant point kinetics reactor kinetics reactor physics reactor safety",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "A Gearbox That Slips Near $1 — The Inhour Equation",
@@ -3801,7 +4117,8 @@ const posts = [
     "thumbnail": "assets/images/theory/107-inhour-equation/thumbnail.webp",
     "thumbnailAlt": "A precision brass-and-steel gear train linking a small knob on the left to a large transparent wheel on the right, with cooling towers and a containment dome blurred in the background",
     "url": "posts/theory/107-inhour-equation.html",
-    "keywords": "inhour equation reactivity reactor period reactor kinetics prompt critical delayed neutrons dollar unit pcm reactor physics reactor control"
+    "keywords": "inhour equation reactivity reactor period reactor kinetics prompt critical delayed neutrons dollar unit pcm reactor physics reactor control",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "Power That Grows Like Compound Interest — The Reactor Period",
@@ -3813,7 +4130,8 @@ const posts = [
     "thumbnail": "assets/images/theory/106-reactor-period/thumbnail.webp",
     "thumbnailAlt": "A glowing reactor core of golden fuel rods with clusters of blue and gold spheres streaming upward along a widening spiral of light against a bright blue sky",
     "url": "posts/theory/106-reactor-period.html",
-    "keywords": "reactor period reactivity reactor kinetics doubling time exponential growth delayed neutrons inhour equation startup rate reactor control reactor physics"
+    "keywords": "reactor period reactivity reactor kinetics doubling time exponential growth delayed neutrons inhour equation startup rate reactor control reactor physics",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "How Many Times in One Blink? — The Fleeting Instant Called the Neutron Generation Time",
@@ -3825,7 +4143,8 @@ const posts = [
     "thumbnail": "assets/images/theory/105-neutron-generation-time/thumbnail.webp",
     "thumbnailAlt": "A transparent skeleton stopwatch with streams of small blue spheres rushing through it and a softly focused closed eye in the corner",
     "url": "posts/theory/105-neutron-generation-time.html",
-    "keywords": "neutron generation time reactor kinetics point kinetics delayed neutrons prompt neutrons thermal reactor fast reactor reactivity reactor control reactor physics"
+    "keywords": "neutron generation time reactor kinetics point kinetics delayed neutrons prompt neutrons thermal reactor fast reactor reactivity reactor control reactor physics",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "One Thermometer for a Whole Building — What the Point Kinetics Equations Do",
@@ -3837,7 +4156,8 @@ const posts = [
     "thumbnail": "assets/images/theory/104-point-kinetics-equations/thumbnail.webp",
     "thumbnailAlt": "A cutaway reactor vessel full of glowing fuel rods whose light threads converge into a single round steel-rimmed gauge emitting one glowing wave line",
     "url": "posts/theory/104-point-kinetics-equations.html",
-    "keywords": "point kinetics reactor kinetics reactivity delayed neutron fraction neutron generation time precursors diffusion theory core analysis safety analysis reactor simulator"
+    "keywords": "point kinetics reactor kinetics reactivity delayed neutron fraction neutron generation time precursors diffusion theory core analysis safety analysis reactor simulator",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "Dominoes That Fall All the Way on Their Own — Why Prompt Criticality Is a Special Boundary",
@@ -3849,7 +4169,8 @@ const posts = [
     "thumbnail": "assets/images/theory/103-prompt-criticality/thumbnail.webp",
     "thumbnailAlt": "A row of glowing blue spheres travels along a rail through a clear glass frame and a golden arch into a dense cloud of glowing atomic clusters",
     "url": "posts/theory/103-prompt-criticality.html",
-    "keywords": "prompt criticality prompt critical reactivity dollar prompt neutrons delayed neutrons supercritical reactor kinetics reactor safety reactor control"
+    "keywords": "prompt criticality prompt critical reactivity dollar prompt neutrons delayed neutrons supercritical reactor kinetics reactor safety reactor control",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "Why a Thermometer Has Two Scales — Dollars and Cents, Another Ruler for Reactivity",
@@ -3861,7 +4182,8 @@ const posts = [
     "thumbnail": "assets/images/theory/102-dollars-and-cents-reactivity/thumbnail.webp",
     "thumbnailAlt": "A large stainless-steel analog dial on a white desk with an amber band near the top of its scale and a needle approaching it",
     "url": "posts/theory/102-dollars-and-cents-reactivity.html",
-    "keywords": "reactivity dollar cent pcm prompt critical delayed neutrons effective delayed neutron fraction control rod worth reactor kinetics reactor physics"
+    "keywords": "reactivity dollar cent pcm prompt critical delayed neutrons effective delayed neutron fraction control rod worth reactor kinetics reactor physics",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "Is It the Reactor's Gas Pedal? — What Reactivity Really Measures",
@@ -3873,7 +4195,8 @@ const posts = [
     "thumbnail": "assets/images/theory/101-reactivity/thumbnail.webp",
     "thumbnailAlt": "A polished metal balance scale in a bright, white reactor hall, with a glowing sphere of fuel-rod-like segments balanced over its center",
     "url": "posts/theory/101-reactivity.html",
-    "keywords": "reactivity reactor kinetics multiplication factor criticality control rods boron pcm reactor physics reactor safety scram"
+    "keywords": "reactivity reactor kinetics multiplication factor criticality control rods boron pcm reactor physics reactor safety scram",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "Like a City Planner Trimming a Jagged Skyline — What It Means to Flatten the Power Distribution",
@@ -3885,7 +4208,8 @@ const posts = [
     "thumbnail": "assets/images/theory/100-power-flattening/thumbnail.webp",
     "thumbnailAlt": "A translucent hand lowering the tallest of a row of glass blocks on a white pedestal so the row becomes more even, with a nuclear power plant and blossoming trees in the soft background",
     "url": "posts/theory/100-power-flattening.html",
-    "keywords": "power flattening peaking factor burnable poison gadolinia gadolinium borated water soluble boron chemical shim reload pattern low-leakage loading core design reactor physics"
+    "keywords": "power flattening peaking factor burnable poison gadolinia gadolinium borated water soluble boron chemical shim reload pattern low-leakage loading core design reactor physics",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "Why the Plants at the Edge of the Garden Grow Slower — Core Power Distribution and the Peaking Factor",
@@ -3897,7 +4221,8 @@ const posts = [
     "thumbnail": "assets/images/theory/099-core-edge-power-peaking-factor/thumbnail.webp",
     "thumbnailAlt": "A round glass dish filled with a lattice of tiny glass spheres that glows brightest at the center and fades toward the rim, on a pale lavender background",
     "url": "posts/theory/099-core-edge-power-peaking-factor.html",
-    "keywords": "peaking factor core power distribution relative power map fuel burnup hot spot thermal margin reload pattern refueling neutron flux reactor core design"
+    "keywords": "peaking factor core power distribution relative power map fuel burnup hot spot thermal margin reload pattern refueling neutron flux reactor core design",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "Turned It Down, So Why Is It Jammed? — How Xenon and Samarium Eat Neutrons",
@@ -3909,7 +4234,8 @@ const posts = [
     "thumbnail": "assets/images/theory/098-xenon-samarium-poisons/thumbnail.webp",
     "thumbnailAlt": "A tall transparent reactor-core capsule on a pale pedestal with its upper section glowing violet and its lower section glowing blue, linked by soft ribbons of light",
     "url": "posts/theory/098-xenon-samarium-poisons.html",
-    "keywords": "xenon-135 samarium-149 neutron poison fission products xenon transient iodine pit xenon oscillation axial power distribution absorption cross-section reactivity reactor physics"
+    "keywords": "xenon-135 samarium-149 neutron poison fission products xenon transient iodine pit xenon oscillation axial power distribution absorption cross-section reactivity reactor physics",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "Shout \"Hello!\" in a Canyon — Why a Reflector Changes the Critical Condition",
@@ -3921,7 +4247,8 @@ const posts = [
     "thumbnail": "assets/images/theory/097-reflector-critical-condition/thumbnail.webp",
     "thumbnailAlt": "A glowing blue nucleus inside a clear glass sphere, encircled by a translucent ring that bends beams of light back toward the center against a bright pale background",
     "url": "posts/theory/097-reflector-critical-condition.html",
-    "keywords": "neutron reflector reflector savings effective radius critical condition critical size geometric buckling material buckling neutron leakage non-leakage probability reactor design"
+    "keywords": "neutron reflector reflector savings effective radius critical condition critical size geometric buckling material buckling neutron leakage non-leakage probability reactor design",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "Assume a Spherical Cow — Why the Spherical Reactor Keeps Showing Up in Calculations",
@@ -3933,7 +4260,8 @@ const posts = [
     "thumbnail": "assets/images/theory/096-spherical-reactor-in-calculations/thumbnail.webp",
     "thumbnailAlt": "A glowing translucent sphere with a fine latitude and longitude grid floating above a pale circular platform in a bright, clean setting",
     "url": "posts/theory/096-spherical-reactor-in-calculations.html",
-    "keywords": "spherical reactor neutron flux sinc function geometric buckling isoperimetric neutron leakage peaking factor diffusion theory critical volume reactor physics"
+    "keywords": "spherical reactor neutron flux sinc function geometric buckling isoperimetric neutron leakage peaking factor diffusion theory critical volume reactor physics",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "Slice a Swiss Roll and See the Real Shape — Flux Distribution in a Cylindrical Reactor",
@@ -3945,7 +4273,8 @@ const posts = [
     "thumbnail": "assets/images/theory/095-cylindrical-reactor-flux-distribution/thumbnail.webp",
     "thumbnailAlt": "A clear glass cylinder floating over a pale lavender background, glowing warm orange along its middle",
     "url": "posts/theory/095-cylindrical-reactor-flux-distribution.html",
-    "keywords": "neutron flux flux distribution cylindrical core Bessel function buckling reactor physics diffusion theory core design peaking factor"
+    "keywords": "neutron flux flux distribution cylindrical core Bessel function buckling reactor physics diffusion theory core design peaking factor",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "Why Is a Heating Pad Warmest in the Middle? — The Cosine Flux Curve of a Slab Reactor",
@@ -3957,7 +4286,8 @@ const posts = [
     "thumbnail": "assets/images/theory/094-slab-reactor-flux-distribution/thumbnail.webp",
     "thumbnailAlt": "A thin frosted glass plate floating on a pale lavender background, glowing warm orange most strongly at its middle",
     "url": "posts/theory/094-slab-reactor-flux-distribution.html",
-    "keywords": "slab reactor flux distribution neutron flux cosine distribution reactor physics diffusion equation buckling core design peaking factor"
+    "keywords": "slab reactor flux distribution neutron flux cosine distribution reactor physics diffusion equation buckling core design peaking factor",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "Start With the Smallest Size That Fits — How a Reactor's Critical Size Is Decided",
@@ -3969,7 +4299,8 @@ const posts = [
     "thumbnail": "assets/images/theory/093-critical-size/thumbnail.webp",
     "thumbnailAlt": "A glowing blue bubbly sphere sitting inside a loop of steel measuring tape on a pale lavender background",
     "url": "posts/theory/093-critical-size.html",
-    "keywords": "critical size buckling material buckling geometric buckling neutron physics reactor design critical mass reactor core criticality safety"
+    "keywords": "critical size buckling material buckling geometric buckling neutron physics reactor design critical mass reactor core criticality safety",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "The Deal Closes Only When the Specs Match — Geometric Buckling Meets Material Buckling",
@@ -3981,7 +4312,8 @@ const posts = [
     "thumbnail": "assets/images/theory/092-geometric-and-material-buckling/thumbnail.webp",
     "thumbnailAlt": "A gold key floating toward a matching gold keyhole set in a pale lavender lattice sphere",
     "url": "posts/theory/092-geometric-and-material-buckling.html",
-    "keywords": "buckling geometric buckling material buckling critical condition neutron physics reactor physics core design diffusion equation effective multiplication factor"
+    "keywords": "buckling geometric buckling material buckling critical condition neutron physics reactor physics core design diffusion equation effective multiplication factor",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "Same Dough, Different Pan — Buckling, the Reactor's Language of Shape",
@@ -3993,7 +4325,8 @@ const posts = [
     "thumbnail": "assets/images/theory/091-buckling/thumbnail.webp",
     "thumbnailAlt": "A smooth white gridded surface rising from a flat rim into a single curved peak on a pale lavender background",
     "url": "posts/theory/091-buckling.html",
-    "keywords": "buckling neutron flux reactor physics diffusion equation core design flux distribution neutron physics reactor core criticality"
+    "keywords": "buckling neutron flux reactor physics diffusion equation core design flux distribution neutron physics reactor core criticality",
+    "publishedAt": "2026-10-24T05:26:11Z"
   },
   {
     "title": "Two Fences, Two Fractions — The Non-Leakage Probability",
@@ -4005,7 +4338,8 @@ const posts = [
     "thumbnail": "assets/images/theory/090-non-leakage-probability/thumbnail.webp",
     "thumbnailAlt": "A transparent glass shell around a steel ring holding a cluster of glowing violet particles, a few streaking out to the right",
     "url": "posts/theory/090-non-leakage-probability.html",
-    "keywords": "non-leakage probability fast non-leakage thermal non-leakage neutron leakage six-factor formula effective multiplication factor k-infinity reflector core size reactor physics"
+    "keywords": "non-leakage probability fast non-leakage thermal non-leakage neutron leakage six-factor formula effective multiplication factor k-infinity reflector core size reactor physics",
+    "publishedAt": "2026-10-24T05:13:50Z"
   },
   {
     "title": "A Neutron's Real Rate of Return — The Reproduction Factor (Eta)",
@@ -4017,7 +4351,8 @@ const posts = [
     "thumbnail": "assets/images/theory/089-reproduction-factor-eta/thumbnail.webp",
     "thumbnailAlt": "A cracked metallic seed with a glowing blue core in dark soil, with several translucent violet sprouts curling up out of it",
     "url": "posts/theory/089-reproduction-factor-eta.html",
-    "keywords": "reproduction factor eta nu fission cross section absorption cross section radiative capture six-factor formula four-factor formula neutron physics reactor physics fuel enrichment"
+    "keywords": "reproduction factor eta nu fission cross section absorption cross section radiative capture six-factor formula four-factor formula neutron physics reactor physics fuel enrichment",
+    "publishedAt": "2026-10-24T05:13:50Z"
   },
   {
     "title": "Bonus Riders Before Departure — The Fast Fission Factor",
@@ -4029,7 +4364,8 @@ const posts = [
     "thumbnail": "assets/images/theory/088-fast-fission-factor/thumbnail.webp",
     "thumbnailAlt": "Two glowing violet spheres with little running legs hurrying into the open door of a sleek white shuttle bus",
     "url": "posts/theory/088-fast-fission-factor.html",
-    "keywords": "fast fission factor six-factor formula four-factor formula multiplication factor uranium-238 threshold fission resonance escape probability neutron physics reactor physics core design"
+    "keywords": "fast fission factor six-factor formula four-factor formula multiplication factor uranium-238 threshold fission resonance escape probability neutron physics reactor physics core design",
+    "publishedAt": "2026-10-24T05:13:50Z"
   },
   {
     "title": "Clear the Hurdle to Escape — The Resonance Escape Probability",
@@ -4041,7 +4377,8 @@ const posts = [
     "thumbnail": "assets/images/theory/087-resonance-escape-probability/thumbnail.webp",
     "thumbnailAlt": "A glowing violet sphere arcing over a brushed-metal hurdle on a curved silver track",
     "url": "posts/theory/087-resonance-escape-probability.html",
-    "keywords": "resonance escape probability resonance absorption six-factor formula four-factor formula uranium-238 thermal neutrons moderation non-leakage probability reactor physics"
+    "keywords": "resonance escape probability resonance absorption six-factor formula four-factor formula uranium-238 thermal neutrons moderation non-leakage probability reactor physics",
+    "publishedAt": "2026-10-24T05:13:50Z"
   },
   {
     "title": "Five Straws in One Glass — The Thermal Utilization Factor Explained",
@@ -4053,7 +4390,8 @@ const posts = [
     "thumbnail": "assets/images/theory/086-thermal-utilization-factor/thumbnail.webp",
     "thumbnailAlt": "Five transparent glass tubes rising from a glowing reactor-core platform; only the center tube is filled with bright blue light",
     "url": "posts/theory/086-thermal-utilization-factor.html",
-    "keywords": "thermal utilization factor six-factor formula four-factor formula neutron absorption macroscopic cross section reactor physics control rods boron self-shielding flux depression"
+    "keywords": "thermal utilization factor six-factor formula four-factor formula neutron absorption macroscopic cross section reactor physics control rods boron self-shielding flux depression",
+    "publishedAt": "2026-10-24T05:13:50Z"
   },
   {
     "title": "Six Baton Passes to the Finish Line — The Big Picture of the Six-Factor Formula",
@@ -4065,7 +4403,8 @@ const posts = [
     "thumbnail": "assets/images/theory/085-six-factor-formula/thumbnail.webp",
     "thumbnailAlt": "A circular steel track with six different material blocks set around it like stations, such as fuel pellets, rods, a water cube and a metal block, with glowing violet spheres travelling between them",
     "url": "posts/theory/085-six-factor-formula.html",
-    "keywords": "six-factor formula multiplication factor k-effective k-infinity reproduction factor fast fission factor resonance escape probability thermal utilization factor non-leakage probability criticality reactor physics"
+    "keywords": "six-factor formula multiplication factor k-effective k-infinity reproduction factor fast fission factor resonance escape probability thermal utilization factor non-leakage probability criticality reactor physics",
+    "publishedAt": "2026-10-24T05:13:50Z"
   },
   {
     "title": "We Put Walls Around the Endless Room — What the Effective Multiplication Factor (k-effective) Really Tells Us",
@@ -4077,7 +4416,8 @@ const posts = [
     "thumbnail": "assets/images/theory/084-k-effective/thumbnail.webp",
     "thumbnailAlt": "A hexagonal glass-walled tray holding a glowing honeycomb lattice of spheres on a white platform, warm amber light at the center, with a few small golden particles streaming out past the wall",
     "url": "posts/theory/084-k-effective.html",
-    "keywords": "k-effective effective multiplication factor criticality subcritical supercritical non-leakage probability neutron leakage k-infinity reflector control rods reactor physics"
+    "keywords": "k-effective effective multiplication factor criticality subcritical supercritical non-leakage probability neutron leakage k-infinity reflector control rods reactor physics",
+    "publishedAt": "2026-10-24T05:13:50Z"
   },
   {
     "title": "How Fast Do Neutrons Multiply in a Room With No Exit? — The Infinite Multiplication Factor, k-infinity",
@@ -4089,7 +4429,8 @@ const posts = [
     "thumbnail": "assets/images/theory/083-k-infinity/thumbnail.webp",
     "thumbnailAlt": "An endless repeating lattice of glossy silver spheres and translucent blue spheres joined by glass rods, stretching to the horizon in every direction",
     "url": "posts/theory/083-k-infinity.html",
-    "keywords": "k-infinity infinite multiplication factor infinite medium neutron multiplication fuel enrichment moderator k-effective reactor design neutron physics reactor physics"
+    "keywords": "k-infinity infinite multiplication factor infinite medium neutron multiplication fuel enrichment moderator k-effective reactor design neutron physics reactor physics",
+    "publishedAt": "2026-10-24T05:13:50Z"
   },
   {
     "title": "Why Is the Window Seat Always Colder? — Why the Neutron Flux Distribution Isn't Flat",
@@ -4101,7 +4442,8 @@ const posts = [
     "thumbnail": "assets/images/theory/082-why-flux-is-not-flat/thumbnail.webp",
     "thumbnailAlt": "A circular reactor core viewed head-on through a bolted steel ring, glowing brightest white at the center and shading to soft blue toward the rim, in a bright clean plant hall",
     "url": "posts/theory/082-why-flux-is-not-flat.html",
-    "keywords": "neutron flux flux distribution neutron leakage reactor core flux flattening reflector extrapolated boundary buckling peaking factor reactor physics"
+    "keywords": "neutron flux flux distribution neutron leakage reactor core flux flattening reflector extrapolated boundary buckling peaking factor reactor physics",
+    "publishedAt": "2026-10-24T05:13:50Z"
   },
   {
     "title": "A Drop of Ink That Spreads on Its Own — Neutron Current and the Flux Gradient",
@@ -4113,7 +4455,8 @@ const posts = [
     "thumbnail": "assets/images/theory/081-neutron-current-and-gradient/thumbnail.webp",
     "thumbnailAlt": "A glossy blue ball rolling down a smooth silver hill with a hexagon-tiled surface, a glowing streak tracing its path from the crest into a hollow",
     "url": "posts/theory/081-neutron-current-and-gradient.html",
-    "keywords": "neutron current flux gradient Fick's law diffusion theory neutron flux diffusion coefficient reactor physics neutron leakage reflector control rod"
+    "keywords": "neutron current flux gradient Fick's law diffusion theory neutron flux diffusion coefficient reactor physics neutron leakage reflector control rod",
+    "publishedAt": "2026-10-24T05:13:50Z"
   },
   {
     "title": "The Forecast Doesn't Track Every Raindrop — Why Reactor Physics Needs Diffusion Theory",
@@ -4125,7 +4468,8 @@ const posts = [
     "thumbnail": "assets/images/theory/080-diffusion-theory/thumbnail.webp",
     "thumbnailAlt": "A clear glass sphere filled with tangled glowing paths and points of light under a smooth translucent purple bell-shaped sheet",
     "url": "posts/theory/080-diffusion-theory.html",
-    "keywords": "diffusion theory diffusion equation neutron flux distribution neutron transport equation Monte Carlo method diffusion coefficient extrapolation distance core design reactor physics"
+    "keywords": "diffusion theory diffusion equation neutron flux distribution neutron transport equation Monte Carlo method diffusion coefficient extrapolation distance core design reactor physics",
+    "publishedAt": "2026-10-24T05:13:50Z"
   },
   {
     "title": "Why You Bump Into Someone Every Few Steps — The Neutron's Mean Free Path",
@@ -4137,7 +4481,8 @@ const posts = [
     "thumbnail": "assets/images/theory/079-mean-free-path/thumbnail.webp",
     "thumbnailAlt": "A glowing neutron streaks along the inside of a long transparent glass tube past clusters of spheres representing nuclei",
     "url": "posts/theory/079-mean-free-path.html",
-    "keywords": "mean free path macroscopic cross section neutron collision number density microscopic cross section moderator radiation shielding reactor design reactor physics"
+    "keywords": "mean free path macroscopic cross section neutron collision number density microscopic cross section moderator radiation shielding reactor design reactor physics",
+    "publishedAt": "2026-10-24T05:13:50Z"
   },
   {
     "title": "One Dartboard vs. a Wall Full of Them — Microscopic and Macroscopic Cross Sections",
@@ -4149,7 +4494,8 @@ const posts = [
     "thumbnail": "assets/images/theory/078-cross-sections/thumbnail.webp",
     "thumbnailAlt": "A glass target with a glowing violet sphere at its center, surrounded by many smaller targets spread across a bright pastel background",
     "url": "posts/theory/078-cross-sections.html",
-    "keywords": "microscopic cross section macroscopic cross section barn number density reaction probability absorption cross section fission cross section xenon-135 reactor physics"
+    "keywords": "microscopic cross section macroscopic cross section barn number density reaction probability absorption cross section fission cross section xenon-135 reactor physics",
+    "publishedAt": "2026-10-24T05:13:50Z"
   },
   {
     "title": "Same Crowd, Busier Gate — What Neutron Flux Really Measures",
@@ -4161,7 +4507,8 @@ const posts = [
     "thumbnail": "assets/images/theory/077-neutron-flux/thumbnail.webp",
     "thumbnailAlt": "A brushed-steel cylindrical gate made of two rings joined by rods, with a stream of glowing blue-white particles flowing through it",
     "url": "posts/theory/077-neutron-flux.html",
-    "keywords": "neutron flux neutron density neutron speed reaction rate flux distribution reactor core flux flattening diffusion theory reactor physics"
+    "keywords": "neutron flux neutron density neutron speed reaction rate flux distribution reactor core flux flattening diffusion theory reactor physics",
+    "publishedAt": "2026-10-24T05:13:50Z"
   },
   {
     "title": "In the Red or in the Black? — The Neutron Balance Inside the Core",
@@ -4173,7 +4520,8 @@ const posts = [
     "thumbnail": "assets/images/theory/076-neutron-balance/thumbnail.webp",
     "thumbnailAlt": "A polished silver balance scale with a pile of teal glass spheres on the left pan and a pile of amber glass spheres on the right pan, the beam level",
     "url": "posts/theory/076-neutron-balance.html",
-    "keywords": "neutron balance neutron production neutron absorption neutron leakage criticality reactor physics reactor core nuclear fission control rods"
+    "keywords": "neutron balance neutron production neutron absorption neutron leakage criticality reactor physics reactor core nuclear fission control rods",
+    "publishedAt": "2026-10-24T05:13:50Z"
   },
   {
     "title": "Why Is a Nuclear Plant Spread Out? — The Safety Logic of Reactor Building Layout",
@@ -4185,7 +4533,8 @@ const posts = [
     "thumbnail": "assets/images/theory/075-reactor-building-layout/thumbnail.webp",
     "thumbnailAlt": "White architectural scale model of a nuclear plant site with a domed reactor building at the center and several separate boxy buildings, cooling ponds and tree-lined roads around it",
     "url": "posts/theory/075-reactor-building-layout.html",
-    "keywords": "reactor building plant layout containment building common cause failure redundancy independence physical separation safety design defense in depth"
+    "keywords": "reactor building plant layout containment building common cause failure redundancy independence physical separation safety design defense in depth",
+    "publishedAt": "2026-10-24T05:13:50Z"
   },
   {
     "title": "There's a Reason the Subway Map Looks So Busy — Why Nuclear Plants Have So Many Pipes and Valves",
@@ -4197,7 +4546,8 @@ const posts = [
     "thumbnail": "assets/images/theory/074-piping-and-valves/thumbnail.webp",
     "thumbnailAlt": "A large steel valve with a blue handwheel at the center of a bright plant hall, where a blue pipe, a teal pipe and an orange pipe meet at its flanges",
     "url": "posts/theory/074-piping-and-valves.html",
-    "keywords": "nuclear plant piping valves isolation valve check valve relief valve redundancy single failure criterion safety design reactor components"
+    "keywords": "nuclear plant piping valves isolation valve check valve relief valve redundancy single failure criterion safety design reactor components",
+    "publishedAt": "2026-10-24T05:13:50Z"
   },
   {
     "title": "Escape Four Times, Get Caught Four Times — The Multiple Barriers of a Nuclear Plant",
@@ -4209,7 +4559,8 @@ const posts = [
     "thumbnail": "assets/images/theory/073-multiple-barriers/thumbnail.webp",
     "thumbnailAlt": "Exploded nested view against a pale sky: a small ceramic fuel pellet, a metal cladding tube, a large steel pressure vessel section and a cutaway reinforced-concrete containment dome, lined up from small to large",
     "url": "posts/theory/073-multiple-barriers.html",
-    "keywords": "multiple barriers defense in depth fuel pellet fuel cladding reactor coolant pressure boundary containment building radioactive material reactor components nuclear safety"
+    "keywords": "multiple barriers defense in depth fuel pellet fuel cladding reactor coolant pressure boundary containment building radioactive material reactor components nuclear safety",
+    "publishedAt": "2026-10-24T05:13:50Z"
   },
   {
     "title": "Not a Dead Battery — Why a Spent Fuel Pool Keeps Used Fuel Underwater",
@@ -4221,7 +4572,8 @@ const posts = [
     "thumbnail": "assets/images/theory/072-spent-fuel-pool/thumbnail.webp",
     "thumbnailAlt": "Cutaway of a deep concrete pool full of clear blue water in a bright plant hall, with a rack of fuel assemblies at the bottom giving off a faint warm glow",
     "url": "posts/theory/072-spent-fuel-pool.html",
-    "keywords": "spent fuel pool spent nuclear fuel wet storage radiation shielding decay heat dry cask storage interim storage reactor components nuclear safety"
+    "keywords": "spent fuel pool spent nuclear fuel wet storage radiation shielding decay heat dry cask storage interim storage reactor components nuclear safety",
+    "publishedAt": "2026-10-24T05:13:50Z"
   },
   {
     "title": "What If the Cooling Water Suddenly Vanished? — The Emergency Core Cooling System",
@@ -4233,7 +4585,8 @@ const posts = [
     "thumbnail": "assets/images/theory/071-emergency-core-cooling-system/thumbnail.webp",
     "thumbnailAlt": "Cutaway of a reactor vessel in a bright plant hall, with blue injection pipes on both sides and from above pouring water onto the glowing fuel core",
     "url": "posts/theory/071-emergency-core-cooling-system.html",
-    "keywords": "emergency core cooling system ECCS loss-of-coolant accident LOCA accumulator decay heat reactor safety reactor protection system residual heat removal"
+    "keywords": "emergency core cooling system ECCS loss-of-coolant accident LOCA accumulator decay heat reactor safety reactor protection system residual heat removal",
+    "publishedAt": "2026-10-24T05:13:50Z"
   },
   {
     "title": "The Iron Stays Hot After You Switch It Off — Why Reactors Need Residual Heat Removal",
@@ -4245,7 +4598,8 @@ const posts = [
     "thumbnail": "assets/images/theory/070-residual-heat-removal/thumbnail.webp",
     "thumbnailAlt": "A cutaway reactor vessel with a glowing core wrapped in blue coolant flow, piped to a heat exchanger",
     "url": "posts/theory/070-residual-heat-removal.html",
-    "keywords": "residual heat removal decay heat reactor shutdown core cooling fission products steam generator spent fuel pool reactor protection system reactor components nuclear safety"
+    "keywords": "residual heat removal decay heat reactor shutdown core cooling fission products steam generator spent fuel pool reactor protection system reactor components nuclear safety",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Sense Danger, Stop at Once — How the Reactor Protection System Works",
@@ -4257,7 +4611,8 @@ const posts = [
     "thumbnail": "assets/images/theory/069-reactor-protection-system/thumbnail.webp",
     "thumbnailAlt": "A cutaway reactor vessel inside a translucent shield, with control rods driving down into the glowing core",
     "url": "posts/theory/069-reactor-protection-system.html",
-    "keywords": "reactor protection system reactor trip scram setpoint automatic shutdown control rods redundant channels voting logic instrumentation and control reactor components nuclear safety"
+    "keywords": "reactor protection system reactor trip scram setpoint automatic shutdown control rods redundant channels voting logic instrumentation and control reactor components nuclear safety",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "A Nuclear Plant Has Senses Too — The Instrumentation and Control System",
@@ -4269,7 +4624,8 @@ const posts = [
     "thumbnail": "assets/images/theory/068-instrumentation-and-control/thumbnail.webp",
     "thumbnailAlt": "A cutaway nuclear plant ringed by sensor icons, with glowing wires converging on a glass-domed brain",
     "url": "posts/theory/068-instrumentation-and-control.html",
-    "keywords": "instrumentation and control I&C main control room sensors neutron flux automatic control reactor protection system redundancy reactor components nuclear power plant"
+    "keywords": "instrumentation and control I&C main control room sensors neutron flux automatic control reactor protection system redundancy reactor components nuclear power plant",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Why the Lights Stay On in a Blackout — The Emergency Diesel Generator",
@@ -4281,7 +4637,8 @@ const posts = [
     "thumbnail": "assets/images/theory/067-emergency-diesel-generator/thumbnail.webp",
     "thumbnailAlt": "A large steel diesel generator set with a glowing cable running to switchgear and a pump, a nuclear plant in the background",
     "url": "posts/theory/067-emergency-diesel-generator.html",
-    "keywords": "emergency diesel generator loss of off-site power backup power redundancy safety equipment reactor cooling station blackout reactor components nuclear safety nuclear power plant"
+    "keywords": "emergency diesel generator loss of off-site power backup power redundancy safety equipment reactor cooling station blackout reactor components nuclear safety nuclear power plant",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Clearing the Steamy Window — How the Condenser and Cooling Tower Close the Loop",
@@ -4293,7 +4650,8 @@ const posts = [
     "thumbnail": "assets/images/theory/066-condenser-and-cooling-tower/thumbnail.webp",
     "thumbnailAlt": "A cutaway steel condenser with steam condensing into droplets over blue cooling-water tubes, a cooling tower releasing a white plume behind it",
     "url": "posts/theory/066-condenser-and-cooling-tower.html",
-    "keywords": "condenser cooling tower secondary loop condensation steam turbine waste heat cooling water steam generator reactor components nuclear power plant"
+    "keywords": "condenser cooling tower secondary loop condensation steam turbine waste heat cooling water steam generator reactor components nuclear power plant",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "All It Needs Is Steam — Why the Turbine Isn't Nuclear Technology",
@@ -4305,7 +4663,8 @@ const posts = [
     "thumbnail": "assets/images/theory/065-turbine/thumbnail.webp",
     "thumbnailAlt": "A cutaway steam turbine with rows of steel blades, blue steam streaming in from a pipe on the left and a warm golden glow around the shaft on the right",
     "url": "posts/theory/065-turbine.html",
-    "keywords": "steam turbine generator steam cycle electromagnetic induction fossil vs nuclear heat source pressurized water reactor reactor components power plant"
+    "keywords": "steam turbine generator steam cycle electromagnetic induction fossil vs nuclear heat source pressurized water reactor reactor components power plant",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "How Many Layers Do You Wrap a Gift In? — What the Containment Building Holds In",
@@ -4317,7 +4676,8 @@ const posts = [
     "thumbnail": "assets/images/theory/064-containment-building/thumbnail.webp",
     "thumbnailAlt": "A cutaway of nested arches, an outer concrete dome, a blue layer and inner translucent shells, enclosing a steel reactor vessel with a glowing core on a stepped platform, against a bright pale-blue background",
     "url": "posts/theory/064-containment-building.html",
-    "keywords": "containment building multiple barriers defense in depth reactor pressure vessel fuel cladding nuclear safety radioactive material confinement reactor components"
+    "keywords": "containment building multiple barriers defense in depth reactor pressure vessel fuel cladding nuclear safety radioactive material confinement reactor components",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "The Heartbeat of a Reactor — What the Reactor Coolant Pump Does",
@@ -4329,7 +4689,8 @@ const posts = [
     "thumbnail": "assets/images/theory/063-reactor-coolant-pump/thumbnail.webp",
     "thumbnailAlt": "A polished steel centrifugal pump with a visible impeller at the center of glass pipes filled with flowing blue water, the pipes curving around it in a heart shape",
     "url": "posts/theory/063-reactor-coolant-pump.html",
-    "keywords": "reactor coolant pump pressurized water reactor PWR primary system forced circulation natural circulation steam generator pressurizer flow reactor components"
+    "keywords": "reactor coolant pump pressurized water reactor PWR primary system forced circulation natural circulation steam generator pressurizer flow reactor components",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Pumping Up the Tires of a Nuclear Plant — How the Pressurizer Controls Pressure",
@@ -4341,7 +4702,8 @@ const posts = [
     "thumbnail": "assets/images/theory/062-pressurizer/thumbnail.webp",
     "thumbnailAlt": "A cutaway steel pressurizer vessel with steam in the upper half, water in the lower half, a spray nozzle at the top and glowing heater rods at the bottom, framed by a translucent orange-and-blue ring",
     "url": "posts/theory/062-pressurizer.html",
-    "keywords": "pressurizer pressurized water reactor PWR pressure control primary system heaters spray safety valve reactor pressure vessel reactor components"
+    "keywords": "pressurizer pressurized water reactor PWR pressure control primary system heaters spray safety valve reactor pressure vessel reactor components",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Why Your Boiler Heats Water Twice — The Steam Generator, Explained",
@@ -4353,7 +4715,8 @@ const posts = [
     "thumbnail": "assets/images/theory/061-steam-generator/thumbnail.webp",
     "thumbnailAlt": "A clear glass loop with an orange stream and a blue stream flowing side by side inside it without mixing, on a bright pale-blue background",
     "url": "posts/theory/061-steam-generator.html",
-    "keywords": "steam generator pressurized water reactor PWR heat exchanger U-tube primary system secondary system reactor components multiple barriers nuclear plant"
+    "keywords": "steam generator pressurized water reactor PWR heat exchanger U-tube primary system secondary system reactor components multiple barriers nuclear plant",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Built Like a Pressure Cooker — Why the Reactor Pressure Vessel Is So Thick",
@@ -4365,7 +4728,8 @@ const posts = [
     "thumbnail": "assets/images/theory/060-why-pressure-vessel-is-thick/thumbnail.webp",
     "thumbnailAlt": "A massive cutaway steel reactor pressure vessel with thick bolted walls and a glowing core inside, next to a small cutaway kettle of boiling water linked to it by dashed lines",
     "url": "posts/theory/060-why-pressure-vessel-is-thick.html",
-    "keywords": "reactor pressure vessel pressurized water reactor safety barrier reactor core reactor components defense in depth pressure design embrittlement"
+    "keywords": "reactor pressure vessel pressurized water reactor safety barrier reactor core reactor components defense in depth pressure design embrittlement",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "The Pool Table Cushion of the Core — How a Neutron Reflector Sends Neutrons Back",
@@ -4377,7 +4741,8 @@ const posts = [
     "thumbnail": "assets/images/theory/059-neutron-reflector/thumbnail.webp",
     "thumbnailAlt": "A cylindrical reactor core packed with fuel rods, ringed by a thick segmented wall, with glowing blue neutron paths arcing out to the wall and bouncing back inward, and a single dashed path escaping",
     "url": "posts/theory/059-neutron-reflector.html",
-    "keywords": "neutron reflector neutron leakage neutron economy core design beryllium graphite reactor components reactor physics neutron scattering"
+    "keywords": "neutron reflector neutron leakage neutron economy core design beryllium graphite reactor components reactor physics neutron scattering",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Like Bath Salts in the Tub — Is Borated Water Really a Liquid Control Rod?",
@@ -4389,7 +4754,8 @@ const posts = [
     "thumbnail": "assets/images/theory/058-borated-water-liquid-control-rod/thumbnail.webp",
     "thumbnailAlt": "A cutaway reactor vessel filled with glowing blue water and fuel rods, with a magnified circle showing violet particles pouring from a pipe and dispersing evenly through the water",
     "url": "posts/theory/058-borated-water-liquid-control-rod.html",
-    "keywords": "borated water boric acid soluble boron control rods reactivity control neutron absorption light water reactor reactor components"
+    "keywords": "borated water boric acid soluble boron control rods reactivity control neutron absorption light water reactor reactor components",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Brake or Gas Pedal? What Control Rods Really Do in a Reactor",
@@ -4401,7 +4767,8 @@ const posts = [
     "thumbnail": "assets/images/theory/057-control-rods-brake-or-pedal/thumbnail.webp",
     "thumbnailAlt": "Two views of a reactor core: on the left, control rods descending into a blue-lit core with downward arrows; on the right, rods partly raised above a core ringed by a glowing amber dial",
     "url": "posts/theory/057-control-rods-brake-or-pedal.html",
-    "keywords": "control rods scram reactivity control neutron absorption reactor safety reactor components reactor physics emergency shutdown"
+    "keywords": "control rods scram reactivity control neutron absorption reactor safety reactor components reactor physics emergency shutdown",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Like the Coolant in Your Car — What a Reactor Coolant Really Does",
@@ -4413,7 +4780,8 @@ const posts = [
     "thumbnail": "assets/images/theory/056-role-of-the-coolant/thumbnail.webp",
     "thumbnailAlt": "Glowing car engine and radiator joined by blue coolant hoses on the left, and a reactor vessel, steam generator and pump joined by coolant piping on the right",
     "url": "posts/theory/056-role-of-the-coolant.html",
-    "keywords": "reactor coolant moderator reactor cooling heat transfer steam generator reactor components light water reactor coolant pump"
+    "keywords": "reactor coolant moderator reactor cooling heat transfer steam generator reactor components light water reactor coolant pump",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Picking Packing Material for Neutrons — How a Reactor Moderator Is Chosen",
@@ -4425,7 +4793,8 @@ const posts = [
     "thumbnail": "assets/images/theory/055-moderator-role/thumbnail.webp",
     "thumbnailAlt": "A water sphere, a crystal drop and a graphite cube on pedestals with streams of blue neutrons passing through",
     "url": "posts/theory/055-moderator-role.html",
-    "keywords": "moderator light water heavy water graphite neutron moderation thermal neutrons low-enriched uranium natural uranium reactor components"
+    "keywords": "moderator light water heavy water graphite neutron moderation thermal neutrons low-enriched uranium natural uranium reactor components",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "One Straw Falls, a Bundle Stands — Why Fuel Rods Come Packed in a Fuel Assembly",
@@ -4437,7 +4806,8 @@ const posts = [
     "thumbnail": "assets/images/theory/054-fuel-assembly-structure/thumbnail.webp",
     "thumbnailAlt": "A square fuel assembly of metal rods with spacer grids being lowered into a glowing blue reactor core lattice",
     "url": "posts/theory/054-fuel-assembly-structure.html",
-    "keywords": "fuel assembly fuel rod spacer grid coolant channel reactor core refueling loading pattern reactor components"
+    "keywords": "fuel assembly fuel rod spacer grid coolant channel reactor core refueling loading pattern reactor components",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Filling and Casing — How Fuel Pellets and Cladding Split the Work",
@@ -4449,7 +4819,8 @@ const posts = [
     "thumbnail": "assets/images/theory/053-fuel-pellet-and-cladding/thumbnail.webp",
     "thumbnailAlt": "A cutaway cladding tube revealing glowing orange fuel pellets with blue coolant flowing past",
     "url": "posts/theory/053-fuel-pellet-and-cladding.html",
-    "keywords": "fuel pellet cladding zirconium alloy uranium dioxide first barrier defense in depth reactor components nuclear fuel rod"
+    "keywords": "fuel pellet cladding zirconium alloy uranium dioxide first barrier defense in depth reactor components nuclear fuel rod",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "A PEZ Dispenser in the Reactor Core? — What a Nuclear Fuel Rod Really Looks Like",
@@ -4461,7 +4832,8 @@ const posts = [
     "thumbnail": "assets/images/theory/052-fuel-rod-shape/thumbnail.webp",
     "thumbnailAlt": "A cutaway metal fuel rod showing a long column of grey ceramic fuel pellets stacked inside",
     "url": "posts/theory/052-fuel-rod-shape.html",
-    "keywords": "nuclear fuel rod fuel pellet cladding uranium dioxide helium reactor components reactor core nuclear fuel"
+    "keywords": "nuclear fuel rod fuel pellet cladding uranium dioxide helium reactor components reactor core nuclear fuel",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Is a Nuclear Reactor Just a Giant Kettle? — How a Reactor Really Heats Water",
@@ -4473,7 +4845,8 @@ const posts = [
     "thumbnail": "assets/images/theory/051-reactor-giant-kettle/thumbnail.webp",
     "thumbnailAlt": "A stainless-steel kettle on a gas flame with glowing heat ribbons flowing toward a cutaway nuclear reactor vessel",
     "url": "posts/theory/051-reactor-giant-kettle.html",
-    "keywords": "nuclear reactor kettle how nuclear power works pressurized water reactor coolant fission chain reaction control rods boric acid reactor components"
+    "keywords": "nuclear reactor kettle how nuclear power works pressurized water reactor coolant fission chain reaction control rods boric acid reactor components",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "One Moving Truck vs 120,000 — Feeling Nuclear Energy Density at Power-Plant Scale",
@@ -4485,7 +4858,8 @@ const posts = [
     "thumbnail": "assets/images/theory/050-nuclear-energy-density/thumbnail.webp",
     "thumbnailAlt": "A single dark fuel pellet on a white pedestal in front of an open, empty cardboard moving box",
     "url": "posts/theory/050-nuclear-energy-density.html",
-    "keywords": "energy density nuclear power uranium fuel coal LNG energy security spent fuel fuel transport fission energy capacity factor"
+    "keywords": "energy density nuclear power uranium fuel coal LNG energy security spent fuel fuel transport fission energy capacity factor",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "The Marathoner and the 100-Meter Sprinter — How a Reactor's Chain Reaction Differs from a Bomb's",
@@ -4497,7 +4871,8 @@ const posts = [
     "thumbnail": "assets/images/theory/049-reactor-vs-bomb/thumbnail.webp",
     "thumbnailAlt": "A nuclear fuel assembly standing in clear sunlit water with a red running track behind it",
     "url": "posts/theory/049-reactor-vs-bomb.html",
-    "keywords": "nuclear reactor atomic bomb fission chain reaction enriched uranium low-enriched uranium delayed neutrons Doppler effect negative feedback Chernobyl nuclear safety"
+    "keywords": "nuclear reactor atomic bomb fission chain reaction enriched uranium low-enriched uranium delayed neutrons Doppler effect negative feedback Chernobyl nuclear safety",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Two Slopes, One Valley — How Nuclear Fusion and Fission Are Alike and Different",
@@ -4509,7 +4884,8 @@ const posts = [
     "thumbnail": "assets/images/theory/048-fusion-vs-fission/thumbnail.webp",
     "thumbnailAlt": "A curved clear glass valley with blue glass spheres on the left slope and amber glass spheres on the right slope",
     "url": "posts/theory/048-fusion-vs-fission.html",
-    "keywords": "nuclear fusion nuclear fission fusion vs fission deuterium tritium uranium-235 binding energy plasma ITER chain reaction nuclear basics"
+    "keywords": "nuclear fusion nuclear fission fusion vs fission deuterium tritium uranium-235 binding energy plasma ITER chain reaction nuclear basics",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Downhill Gives, Uphill Takes — What a Nuclear Reaction's Q-Value Tells You",
@@ -4521,7 +4897,8 @@ const posts = [
     "thumbnail": "assets/images/theory/047-nuclear-reaction-q-value/thumbnail.webp",
     "thumbnailAlt": "A glass and steel terraced path stepping down in amber on one side and up in blue on the other, with a tiny backpack on the middle platform",
     "url": "posts/theory/047-nuclear-reaction-q-value.html",
-    "keywords": "Q-value nuclear reactions exothermic endothermic threshold energy Rutherford fission energy nitrogen-16 boron-10 reactor physics"
+    "keywords": "Q-value nuclear reactions exothermic endothermic threshold energy Rutherford fission energy nitrogen-16 boron-10 reactor physics",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Burrs on Your Trousers — How Neutron Capture Leads to Activation",
@@ -4533,7 +4910,8 @@ const posts = [
     "thumbnail": "assets/images/theory/046-neutron-capture-activation/thumbnail.webp",
     "thumbnailAlt": "A sheet of stainless steel wire mesh with a single spiky brown burr caught in its weave",
     "url": "posts/theory/046-neutron-capture-activation.html",
-    "keywords": "neutron capture activation cobalt-60 half-life saturation activity occupational dose decommissioning gamma rays nuclear basics"
+    "keywords": "neutron capture activation cobalt-60 half-life saturation activity occupational dose decommissioning gamma rays nuclear basics",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "The Strange Knife That Won't Cut Down the Middle — Reading the Fission Yield Curve",
@@ -4545,7 +4923,8 @@ const posts = [
     "thumbnail": "assets/images/theory/045-fission-yield-curve/thumbnail.webp",
     "thumbnailAlt": "A round glass cake split into one large amber piece and one smaller blue piece on a white marble board, with a steel kitchen knife lying beside it",
     "url": "posts/theory/045-fission-yield-curve.html",
-    "keywords": "fission yield curve fission products uranium-235 mass number double hump magic numbers strontium-90 cesium-137 iodine-131 xenon-135"
+    "keywords": "fission yield curve fission products uranium-235 mass number double hump magic numbers strontium-90 cesium-137 iodine-131 xenon-135",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Two Transfers and You've Arrived — How Plutonium-239 Is Made",
@@ -4557,7 +4936,8 @@ const posts = [
     "thumbnail": "assets/images/theory/044-making-plutonium-239/thumbnail.webp",
     "thumbnailAlt": "A ceramic fuel pellet split in two on a clear glass dish, its cut faces full of glowing golden specks, with a thin glowing stepped line rising above it",
     "url": "posts/theory/044-making-plutonium-239.html",
-    "keywords": "plutonium-239 uranium-238 uranium-239 neptunium-239 neutron capture beta decay half-life Bateman equations fissile spent fuel"
+    "keywords": "plutonium-239 uranium-238 uranium-239 neptunium-239 neutron capture beta decay half-life Bateman equations fissile spent fuel",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "The Supporting Actor Who Carries the Show — Why Uranium-238 Is Not Just Waste",
@@ -4569,7 +4949,8 @@ const posts = [
     "thumbnail": "assets/images/theory/043-value-of-uranium-238/thumbnail.webp",
     "thumbnailAlt": "A cut-away fuel rod showing a row of ceramic fuel pellets, lying center stage on a wooden floor under a soft spotlight with pale curtains at the sides",
     "url": "posts/theory/043-value-of-uranium-238.html",
-    "keywords": "uranium-238 uranium-235 plutonium-239 fast fission capture Doppler effect fuel temperature coefficient nuclear fuel light water reactor burnup"
+    "keywords": "uranium-238 uranium-235 plutonium-239 fast fission capture Doppler effect fuel temperature coefficient nuclear fuel light water reactor burnup",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Flyers Go to the Folks Who Walk Slowly — Why Moderation Makes Fission Easier",
@@ -4581,7 +4962,8 @@ const posts = [
     "thumbnail": "assets/images/theory/042-moderation-and-fission/thumbnail.webp",
     "thumbnailAlt": "A clear glass water tank with a dotted glowing neutron path that drifts down and slows to a small fuel pellet resting on the bottom",
     "url": "posts/theory/042-moderation-and-fission.html",
-    "keywords": "moderator neutron moderation thermal neutrons nuclear fission cross section 1/v law light water heavy water graphite low-enriched uranium"
+    "keywords": "moderator neutron moderation thermal neutrons nuclear fission cross section 1/v law light water heavy water graphite low-enriched uranium",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "A Stroll Versus a Rocket Launch — Thermal and Fast Neutrons",
@@ -4593,7 +4975,8 @@ const posts = [
     "thumbnail": "assets/images/theory/041-thermal-vs-fast-neutrons/thumbnail.webp",
     "thumbnailAlt": "A tiny walking figure at one end of a long glass ruler and a white rocket lifting off at the far end, on a bright pale-blue background",
     "url": "posts/theory/041-thermal-vs-fast-neutrons.html",
-    "keywords": "thermal neutrons fast neutrons neutron energy electronvolt thermal equilibrium thermal reactor fast reactor sodium-cooled fast reactor moderator nuclear fission"
+    "keywords": "thermal neutrons fast neutrons neutron energy electronvolt thermal equilibrium thermal reactor fast reactor sodium-cooled fast reactor moderator nuclear fission",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Locking On Like a Radio Dial — Resonance Absorption",
@@ -4605,7 +4988,8 @@ const posts = [
     "thumbnail": "assets/images/theory/040-resonance-absorption/thumbnail.webp",
     "thumbnailAlt": "A sleek wood-and-brushed-steel radio tuner with a long cream dial window, where a single sharp glowing spike rises from the tuning line at the exact point the needle locks on",
     "url": "posts/theory/040-resonance-absorption.html",
-    "keywords": "resonance absorption uranium-238 capture cross section compound nucleus resonance escape probability self-shielding Doppler broadening Doppler coefficient negative temperature coefficient reactor physics"
+    "keywords": "resonance absorption uranium-238 capture cross section compound nucleus resonance escape probability self-shielding Doppler broadening Doppler coefficient negative temperature coefficient reactor physics",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "The Magic Dartboard — Fission Cross Section Explained",
@@ -4617,7 +5001,8 @@ const posts = [
     "thumbnail": "assets/images/theory/039-fission-cross-section/thumbnail.webp",
     "thumbnailAlt": "A small woven dartboard in a brushed-steel ring set in the middle of a much larger translucent blue glass disc, with a single dart landing on the outer glass edge",
     "url": "posts/theory/039-fission-cross-section.html",
-    "keywords": "fission cross section cross section barn uranium-235 uranium-238 thermal neutrons fast neutrons 1/v law macroscopic cross section mean free path reactor physics"
+    "keywords": "fission cross section cross section barn uranium-235 uranium-238 thermal neutrons fast neutrons 1/v law macroscopic cross section mean free path reactor physics",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "A Cruise Ship, Not a Skateboard — Delayed Neutrons and Reactor Control",
@@ -4629,7 +5014,8 @@ const posts = [
     "thumbnail": "assets/images/theory/038-delayed-neutrons-reactor-control/thumbnail.webp",
     "thumbnailAlt": "Aerial view of a large white cruise ship carving a wide, gentle curving wake across a bright turquoise sea dotted with distant islands",
     "url": "posts/theory/038-delayed-neutrons-reactor-control.html",
-    "keywords": "delayed neutrons prompt neutrons reactor control neutron generation time prompt criticality reactivity reactor period point kinetics nuclear fission reactor physics"
+    "keywords": "delayed neutrons prompt neutrons reactor control neutron generation time prompt criticality reactivity reactor period point kinetics nuclear fission reactor physics",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Ships Now or Ships Later — Prompt and Delayed Neutrons",
@@ -4641,7 +5027,8 @@ const posts = [
     "thumbnail": "assets/images/theory/037-prompt-and-delayed-neutrons/thumbnail.webp",
     "thumbnailAlt": "A white conveyor belt carrying fast-moving blue boxes, ending at a glass-walled processing booth where a single glowing golden box waits beside an hourglass",
     "url": "posts/theory/037-prompt-and-delayed-neutrons.html",
-    "keywords": "prompt neutrons delayed neutrons precursor delayed neutron fraction beta decay bromine-87 six-group model Keepin nuclear fission reactor physics"
+    "keywords": "prompt neutrons delayed neutrons precursor delayed neutron fraction beta decay bromine-87 six-group model Keepin nuclear fission reactor physics",
+    "publishedAt": "2026-09-28T04:16:28Z"
   },
   {
     "title": "Bunched Up Like a Marathon Finish — The Energy Spectrum of Fission Neutrons",
@@ -4653,7 +5040,8 @@ const posts = [
     "thumbnail": "assets/images/theory/036-fission-neutron-energy-spectrum/thumbnail.webp",
     "thumbnailAlt": "A glossy translucent hump-shaped curve on a white pedestal, with a dense crowd of small silver runners at its tall left end thinning out to a few lone runners along its long right tail",
     "url": "posts/theory/036-fission-neutron-energy-spectrum.html",
-    "keywords": "fission neutrons neutron energy spectrum Watt spectrum fission spectrum prompt neutrons neutrons per fission nu-bar uranium-235 moderator reactor physics"
+    "keywords": "fission neutrons neutron energy spectrum Watt spectrum fission spectrum prompt neutrons neutrons per fission nu-bar uranium-235 moderator reactor physics",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "The Misunderstanding Behind \"Critical Mass\"",
@@ -4665,7 +5053,8 @@ const posts = [
     "thumbnail": "assets/images/theory/035-critical-mass-misconception/thumbnail.webp",
     "thumbnailAlt": "A white model stadium seen from above at an angle, with a green field in the middle and one curved band of blue spectators standing with arms raised in a stadium wave",
     "url": "posts/theory/035-critical-mass-misconception.html",
-    "keywords": "critical mass criticality nuclear fission chain reaction neutron leakage enrichment moderator reflector criticality safety Tokaimura"
+    "keywords": "critical mass criticality nuclear fission chain reaction neutron leakage enrichment moderator reflector criticality safety Tokaimura",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Critical, Subcritical and Supercritical — A Reactor's Three States",
@@ -4677,7 +5066,8 @@ const posts = [
     "thumbnail": "assets/images/theory/034-critical-subcritical-supercritical/thumbnail.webp",
     "thumbnailAlt": "A modern bicycle with fading ghost images behind it, riding on a flat glass plate that floats above a softly glowing bundle of fuel rods",
     "url": "posts/theory/034-critical-subcritical-supercritical.html",
-    "keywords": "criticality critical subcritical supercritical multiplication factor reactivity pcm control rods boron reactor operation"
+    "keywords": "criticality critical subcritical supercritical multiplication factor reactivity pcm control rods boron reactor operation",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "What a Chain Reaction Really Is — The Neutron Ledger and k",
@@ -4689,7 +5079,8 @@ const posts = [
     "thumbnail": "assets/images/theory/033-chain-reaction/thumbnail.webp",
     "thumbnailAlt": "A curved row of clear teal glass dominoes, each holding a glowing amber sphere, with the first domino tipping into the next",
     "url": "posts/theory/033-chain-reaction.html",
-    "keywords": "chain reaction nuclear fission multiplication factor neutron generation criticality exponential growth reactor basics nuclear power"
+    "keywords": "chain reaction nuclear fission multiplication factor neutron generation criticality exponential growth reactor basics nuclear power",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "One Grain of Sand, One Whole Desert — The Energy of a Single Fission",
@@ -4701,7 +5092,8 @@ const posts = [
     "thumbnail": "assets/images/theory/032-fission-energy-scale/thumbnail.webp",
     "thumbnailAlt": "A single clear quartz grain of sand resting on top of a brushed steel pedestal, with sunlit desert dunes stretching to the horizon behind it",
     "url": "posts/theory/032-fission-energy-scale.html",
-    "keywords": "fission energy 200 MeV fission rate nuclear power plant uranium-235 thermal power megawatt-day energy unit conversion nuclear basics"
+    "keywords": "fission energy 200 MeV fission rate nuclear power plant uranium-235 thermal power megawatt-day energy unit conversion nuclear basics",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "A Spring Snapping Loose — What Shape Fission Energy Takes",
@@ -4713,7 +5105,8 @@ const posts = [
     "thumbnail": "assets/images/theory/031-fission-energy-source/thumbnail.webp",
     "thumbnailAlt": "A clear glass tube holding a small copper marble and a larger blue marble on either side of a compressed steel spring, with motion blur showing the marbles moving apart",
     "url": "posts/theory/031-fission-energy-source.html",
-    "keywords": "nuclear fission fission energy 200 MeV Coulomb repulsion fission fragments binding energy antineutrino decay heat reactor thermal power"
+    "keywords": "nuclear fission fission energy 200 MeV Coulomb repulsion fission fragments binding energy antineutrino decay heat reactor thermal power",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Like an Overloaded Truck — Why Fission Products Are Radioactive",
@@ -4725,7 +5118,8 @@ const posts = [
     "thumbnail": "assets/images/theory/030-why-fission-products-are-radioactive/thumbnail.webp",
     "thumbnailAlt": "A white small pickup truck at a bright rest stop with glassy blue cubes stacked high in the rear of its bed and a few amber cubes near the cab",
     "url": "posts/theory/030-why-fission-products-are-radioactive.html",
-    "keywords": "fission products radioactive decay beta decay decay heat cesium-137 neutron excess decay chain half-life nuclear power nuclear basics"
+    "keywords": "fission products radioactive decay beta decay decay heat cesium-137 neutron excess decay chain half-life nuclear power nuclear basics",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Stretch, Stretch, Snap Like Mochi — The Sequence of Uranium-235 Fission",
@@ -4737,7 +5131,8 @@ const posts = [
     "thumbnail": "assets/images/theory/029-uranium-235-fission-sequence/thumbnail.webp",
     "thumbnailAlt": "A white powdered mochi stretched into two unequal lumps joined by a thin strand on a pale celadon plate, with a small blue glass bead beside it",
     "url": "posts/theory/029-uranium-235-fission-sequence.html",
-    "keywords": "uranium-235 nuclear fission compound nucleus prompt neutrons prompt gamma rays fission barrier neutron capture beta decay reactor physics"
+    "keywords": "uranium-235 nuclear fission compound nucleus prompt neutrons prompt gamma rays fission barrier neutron capture beta decay reactor physics",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "The Culprit Was Supposed to Be a Heavier Element — How Fission Was Discovered",
@@ -4749,7 +5144,8 @@ const posts = [
     "thumbnail": "assets/images/theory/028-discovery-of-fission/thumbnail.webp",
     "thumbnailAlt": "A glossy amber liquid drop pinching into two unequal drops under a brass magnifying glass, with small blue droplets floating nearby",
     "url": "posts/theory/028-discovery-of-fission.html",
-    "keywords": "nuclear fission discovery of fission Otto Hahn Lise Meitner Otto Frisch Enrico Fermi liquid drop model barium chain reaction nuclear history"
+    "keywords": "nuclear fission discovery of fission Otto Hahn Lise Meitner Otto Frisch Enrico Fermi liquid drop model barium chain reaction nuclear history",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "The Lock That Cuts You New Keys — Why the Neutron Is the Key",
@@ -4761,7 +5157,8 @@ const posts = [
     "thumbnail": "assets/images/theory/027-role-of-the-neutron/thumbnail.webp",
     "thumbnailAlt": "An open brass padlock engraved with an atom, a key in its keyhole, and three new silver keys flying out of it",
     "url": "posts/theory/027-role-of-the-neutron.html",
-    "keywords": "neutron Chadwick discovery of the neutron nuclear reaction nuclear fission neutron capture neutron scattering chain reaction nuclear basics"
+    "keywords": "neutron Chadwick discovery of the neutron nuclear reaction nuclear fission neutron capture neutron scattering chain reaction nuclear basics",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Rearrange the Furniture or Rebuild the Frame? — Nuclear vs Chemical Reactions",
@@ -4773,7 +5170,8 @@ const posts = [
     "thumbnail": "assets/images/theory/026-nuclear-vs-chemical-reactions/thumbnail.webp",
     "thumbnailAlt": "An isometric cut-away model of a house with furnished rooms while a crane lowers a steel beam into its structural frame",
     "url": "posts/theory/026-nuclear-vs-chemical-reactions.html",
-    "keywords": "nuclear reaction chemical reaction atomic nucleus electronvolt fission energy radioactive decay half-life mass number conservation nuclear basics"
+    "keywords": "nuclear reaction chemical reaction atomic nucleus electronvolt fission energy radioactive decay half-life mass number conservation nuclear basics",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "How to Interpret Everyday Radiation Numbers",
@@ -4785,7 +5183,8 @@ const posts = [
     "thumbnail": "assets/images/theory/025-reading-radiation-numbers/thumbnail.webp",
     "thumbnailAlt": "A yellow handheld radiation survey meter with a blank glowing screen, with a magnifying glass leaning against it",
     "url": "posts/theory/025-reading-radiation-numbers.html",
-    "keywords": "radiation numbers dose rate microsievert millisievert becquerel natural radiation background dose limit LNT medical radiation CT dose UNSCEAR"
+    "keywords": "radiation numbers dose rate microsievert millisievert becquerel natural radiation background dose limit LNT medical radiation CT dose UNSCEAR",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "How Radiation Detectors Count What You Can't See",
@@ -4797,7 +5196,8 @@ const posts = [
     "thumbnail": "assets/images/theory/024-radiation-detectors/thumbnail.webp",
     "thumbnailAlt": "A brushed-metal radiation detector probe with a coiled cable lying on a corrugated tin sheet, with water droplets splashing around it",
     "url": "posts/theory/024-radiation-detectors.html",
-    "keywords": "radiation detector Geiger counter GM tube ionization chamber proportional counter scintillation detector NaI HPGe germanium personal dosimeter TLD OSL cpm microsievert"
+    "keywords": "radiation detector Geiger counter GM tube ionization chamber proportional counter scintillation detector NaI HPGe germanium personal dosimeter TLD OSL cpm microsievert",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Why Lead, Water and Concrete Shield Different Kinds of Radiation",
@@ -4809,7 +5209,8 @@ const posts = [
     "thumbnail": "assets/images/theory/023-lead-water-concrete-shielding/thumbnail.webp",
     "thumbnailAlt": "A four-lane wooden obstacle course on artificial turf: a blue exercise ball before a paper curtain, a tennis ball caught in a net, steel marbles among metal posts, and a row of billiard balls",
     "url": "posts/theory/023-lead-water-concrete-shielding.html",
-    "keywords": "radiation shielding shielding materials lead concrete water gamma rays neutrons beta radiation bremsstrahlung half-value layer tenth-value layer spent fuel pool biological shield"
+    "keywords": "radiation shielding shielding materials lead concrete water gamma rays neutrons beta radiation bremsstrahlung half-value layer tenth-value layer spent fuel pool biological shield",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Time, Distance and Shielding: The Three Principles of Radiation Protection",
@@ -4821,7 +5222,8 @@ const posts = [
     "thumbnail": "assets/images/theory/022-time-distance-shielding/thumbnail.webp",
     "thumbnailAlt": "A thick, multi-layered green-tinted shielding window set in a white wall, with a remote manipulator arm reaching through to hold a small metal canister on a steel table",
     "url": "posts/theory/022-time-distance-shielding.html",
-    "keywords": "time distance shielding radiation protection external exposure dose rate inverse-square law half-value layer HVL ALARA nuclear plant workers"
+    "keywords": "time distance shielding radiation protection external exposure dose rate inverse-square law half-value layer HVL ALARA nuclear plant workers",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "How Radiation Interacts with Matter",
@@ -4833,7 +5235,8 @@ const posts = [
     "thumbnail": "assets/images/theory/021-radiation-matter-interaction/thumbnail.webp",
     "thumbnailAlt": "A clear glass block filled with sunlit water holding two white pearls, one sitting still in a ring of ripples and the other moving away with a streak of light",
     "url": "posts/theory/021-radiation-matter-interaction.html",
-    "keywords": "radiation interaction with matter ionization excitation Bragg peak alpha beta gamma neutron photoelectric effect Compton scattering pair production half-value layer neutron moderation activation"
+    "keywords": "radiation interaction with matter ionization excitation Bragg peak alpha beta gamma neutron photoelectric effect Compton scattering pair production half-value layer neutron moderation activation",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Why Radon Is an Indoor Air Problem",
@@ -4845,7 +5248,8 @@ const posts = [
     "thumbnail": "assets/images/theory/020-radon-indoor-air/thumbnail.webp",
     "thumbnailAlt": "A cutaway model of a small white house sitting on a block of layered soil and stones, with a lit basement below ground and an open upstairs window",
     "url": "posts/theory/020-radon-indoor-air.html",
-    "keywords": "radon indoor air quality radon testing ventilation stack effect radon progeny lung cancer risk natural radiation uranium decay chain alpha particles becquerel"
+    "keywords": "radon indoor air quality radon testing ventilation stack effect radon progeny lung cancer risk natural radiation uranium decay chain alpha particles becquerel",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "When the Sky's Blanket Wears Thin — Cosmic Rays and Radiation on Flights",
@@ -4857,7 +5261,8 @@ const posts = [
     "thumbnail": "assets/images/theory/019-cosmic-rays-flight-radiation/thumbnail.webp",
     "thumbnailAlt": "A white airliner flying above bright clouds beneath a translucent quilted blanket floating high in the sky, with thin streaks of light falling onto the blanket from above",
     "url": "posts/theory/019-cosmic-rays-flight-radiation.html",
-    "keywords": "cosmic rays cosmic radiation flight radiation air shower muons neutrons altitude dose rate aircrew natural radiation microsievert nuclear physics basics"
+    "keywords": "cosmic rays cosmic radiation flight radiation air shower muons neutrons altitude dose rate aircrew natural radiation microsievert nuclear physics basics",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Opening Your Yearly \"Dose Budget\" — Where Natural Radiation Comes From",
@@ -4869,7 +5274,8 @@ const posts = [
     "thumbnail": "assets/images/theory/018-natural-radiation/thumbnail.webp",
     "thumbnailAlt": "A small clear glass house standing on a block of pink granite placed on an open leather-bound notebook, in soft bright light",
     "url": "posts/theory/018-natural-radiation.html",
-    "keywords": "natural radiation background radiation UNSCEAR radon potassium-40 millisievert cosmic rays terrestrial gamma radiation dose Ramsar Kerala nuclear physics basics"
+    "keywords": "natural radiation background radiation UNSCEAR radon potassium-40 millisievert cosmic rays terrestrial gamma radiation dose Ramsar Kerala nuclear physics basics",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Raindrops, Soaked Clothes and the Chance of a Cold — Becquerel, Gray and Sievert",
@@ -4881,7 +5287,8 @@ const posts = [
     "thumbnail": "assets/images/theory/017-becquerel-gray-sievert/thumbnail.webp",
     "thumbnailAlt": "A small white cloud dripping raindrops into a clear glass half filled with turquoise water against a bright sky-blue background",
     "url": "posts/theory/017-becquerel-gray-sievert.html",
-    "keywords": "becquerel gray sievert radiation units absorbed dose equivalent dose effective dose radiation weighting factor tissue weighting factor ICRP radiation protection"
+    "keywords": "becquerel gray sievert radiation units absorbed dose equivalent dose effective dose radiation weighting factor tissue weighting factor ICRP radiation protection",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Firewood, Flame and Heat — How Radioactivity and Radiation Really Differ",
@@ -4893,7 +5300,8 @@ const posts = [
     "thumbnail": "assets/images/theory/016-radioactivity-vs-radiation/thumbnail.webp",
     "thumbnailAlt": "A ripe banana resting on a white pedestal with a round magnifying lens showing tightly packed pale spheres inside, and one glowing teal trail leaving a single sphere",
     "url": "posts/theory/016-radioactivity-vs-radiation.html",
-    "keywords": "radioactivity radiation radioactive material becquerel banana potassium-40 contamination exposure activation decay constant nuclear physics basics"
+    "keywords": "radioactivity radiation radioactive material becquerel banana potassium-40 contamination exposure activation decay constant nuclear physics basics",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Half-Life Explained with a Coin-Toss Elimination Game",
@@ -4905,7 +5313,8 @@ const posts = [
     "thumbnail": "assets/images/theory/015-half-life/thumbnail.webp",
     "thumbnailAlt": "Gold coin stacks on a white marble block, each stack about half the height of the one before, with a single coin flipping in the air above the tallest stack",
     "url": "posts/theory/015-half-life.html",
-    "keywords": "half-life radioactive decay exponential decay decay constant cesium-137 iodine-131 carbon-14 radiocarbon dating uranium-238 radioactivity nuclear physics basics"
+    "keywords": "half-life radioactive decay exponential decay decay constant cesium-137 iodine-131 carbon-14 radiocarbon dating uranium-238 radioactivity nuclear physics basics",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "If It's Light, Why Does It Click? — Gamma Rays: Particle or Light?",
@@ -4917,7 +5326,8 @@ const posts = [
     "thumbnail": "assets/images/theory/014-gamma-rays/thumbnail.webp",
     "thumbnailAlt": "A clear glass plate floating in soft blue light with concentric ripples spreading across its surface and a single bright point of light near the edge",
     "url": "posts/theory/014-gamma-rays.html",
-    "keywords": "gamma rays photon wave-particle duality electromagnetic spectrum cesium-137 barium-137m excited state gamma spectroscopy X-rays nuclear physics basics"
+    "keywords": "gamma rays photon wave-particle duality electromagnetic spectrum cesium-137 barium-137m excited state gamma spectroscopy X-rays nuclear physics basics",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "A Quick Change on Stage — How Beta Decay Turns a Neutron into a Proton",
@@ -4929,7 +5339,8 @@ const posts = [
     "thumbnail": "assets/images/theory/013-beta-decay/thumbnail.webp",
     "thumbnailAlt": "A miniature wooden theater stage with teal curtains and a frosted folding screen, a teal sphere on one side and an amber sphere on the other, and two small clear spheres arcing up and away above the screen",
     "url": "posts/theory/013-beta-decay.html",
-    "keywords": "beta decay neutron proton antineutrino neutrino carbon-14 beta spectrum decay heat radioactive decay nuclear basics"
+    "keywords": "beta decay neutron proton antineutrino neutrino carbon-14 beta spectrum decay heat radioactive decay nuclear basics",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "A Bead That Slips Through a Balloon's Skin — How Alpha Decay Lets a Helium Nucleus Escape",
@@ -4941,7 +5352,8 @@ const posts = [
     "thumbnail": "assets/images/theory/012-alpha-decay/thumbnail.webp",
     "thumbnailAlt": "A translucent blue balloon filled with gold and steel-gray spheres, with a small cluster of four spheres emerging through the balloon skin trailing a faint streak of light",
     "url": "posts/theory/012-alpha-decay.html",
-    "keywords": "alpha decay alpha particle helium nucleus uranium-238 quantum tunneling Coulomb barrier smoke detector americium-241 nuclear basics"
+    "keywords": "alpha decay alpha particle helium nucleus uranium-238 quantum tunneling Coulomb barrier smoke detector americium-241 nuclear basics",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "What a Popcorn Pot Teaches About Nuclei — Radioactive Decay Explained",
@@ -4953,7 +5365,8 @@ const posts = [
     "thumbnail": "assets/images/theory/011-radioactive-decay/thumbnail.webp",
     "thumbnailAlt": "A clear glass cooking pot holding many small orange-and-teal nucleus models like popcorn kernels, one of them glowing and sending out a small particle",
     "url": "posts/theory/011-radioactive-decay.html",
-    "keywords": "radioactive decay decay constant atomic nucleus radiation half-life decay chain uranium-238 decay heat nuclear basics"
+    "keywords": "radioactive decay decay constant atomic nucleus radiation half-life decay chain uranium-238 decay heat nuclear basics",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "A Tower Stands Only If the Block Mix Is Right — Stable and Unstable Nuclei",
@@ -4965,7 +5378,8 @@ const posts = [
     "thumbnail": "assets/images/theory/010-stable-and-unstable-nuclei/thumbnail.webp",
     "thumbnailAlt": "A tall Jenga-style tower of blue glass blocks and brushed-steel blocks standing on a white round pedestal against a bright pale-blue background",
     "url": "posts/theory/010-stable-and-unstable-nuclei.html",
-    "keywords": "stable nucleus unstable nucleus band of stability nuclide neutron-to-proton ratio beta decay alpha decay magic numbers radionuclide"
+    "keywords": "stable nucleus unstable nucleus band of stability nuclide neutron-to-proton ratio beta decay alpha decay magic numbers radionuclide",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "A Force That Only Works When Touching, Like Velcro — How the Nuclear Force Beats Electric Repulsion",
@@ -4977,7 +5391,8 @@ const posts = [
     "thumbnail": "assets/images/theory/009-nuclear-force-vs-repulsion/thumbnail.webp",
     "thumbnailAlt": "A small cluster of gold and steel-blue spheres hovering just above a white Velcro strip whose end is peeling up, showing the hooks and loops",
     "url": "posts/theory/009-nuclear-force-vs-repulsion.html",
-    "keywords": "nuclear force strong interaction Coulomb repulsion atomic nucleus proton neutron saturation femtometer nuclear physics basics"
+    "keywords": "nuclear force strong interaction Coulomb repulsion atomic nucleus proton neutron saturation femtometer nuclear physics basics",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "The Universe's Currency Exchange — What E=mc² Really Does in Nuclear Power",
@@ -4989,7 +5404,8 @@ const posts = [
     "thumbnail": "assets/images/theory/008-mass-energy-equivalence/thumbnail.webp",
     "thumbnailAlt": "A brushed-steel exchange counter behind glass, with a small 1 gram calibration weight on a metal tray and a blank paper receipt ribbon unrolling across the counter",
     "url": "posts/theory/008-mass-energy-equivalence.html",
-    "keywords": "E=mc2 mass-energy equivalence Einstein special relativity fission energy uranium-235 megawatt-day nuclear power basics"
+    "keywords": "E=mc2 mass-energy equivalence Einstein special relativity fission energy uranium-235 megawatt-day nuclear power basics",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Every Box on the Envelope Means Something — How to Read Nuclide Notation",
@@ -5001,7 +5417,8 @@ const posts = [
     "thumbnail": "assets/images/theory/007-nuclide-notation/thumbnail.webp",
     "thumbnailAlt": "A light wooden cubby shelf with a grid of frosted compartments, a few holding small red and blue nucleus models and one holding a white envelope",
     "url": "posts/theory/007-nuclide-notation.html",
-    "keywords": "nuclide notation mass number atomic number neutron number uranium-235 isotope technetium-99m nuclear reaction equation chart of nuclides nuclear basics"
+    "keywords": "nuclide notation mass number atomic number neutron number uranium-235 isotope technetium-99m nuclear reaction equation chart of nuclides nuclear basics",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "No Class Ever Earned a 3.75 — Atomic Weight vs Mass Number",
@@ -5013,7 +5430,8 @@ const posts = [
     "thumbnail": "assets/images/theory/006-atomic-weight-vs-mass-number/thumbnail.webp",
     "thumbnailAlt": "A brushed-steel seesaw on a triangular pivot with three green glass cylinders on the long left side and one on the right, balanced off-center",
     "url": "posts/theory/006-atomic-weight-vs-mass-number.html",
-    "keywords": "atomic weight mass number atomic mass isotope abundance weighted average unified atomic mass unit chlorine enriched uranium nuclear basics"
+    "keywords": "atomic weight mass number atomic mass isotope abundance weighted average unified atomic mass unit chlorine enriched uranium nuclear basics",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Same Face, Different Weight Class — Why Isotopes Behave Differently",
@@ -5025,7 +5443,8 @@ const posts = [
     "thumbnail": "assets/images/theory/005-isotopes/thumbnail.webp",
     "thumbnailAlt": "Three small groups of glossy spheres on a glass and brushed-steel platform: one blue sphere, one blue with one silver, and one blue with two silver",
     "url": "posts/theory/005-isotopes.html",
-    "keywords": "isotope uranium-235 uranium-238 enriched uranium deuterium tritium heavy water neutron proton nuclear basics"
+    "keywords": "isotope uranium-235 uranium-238 enriched uranium deuterium tritium heavy water neutron proton nuclear basics",
+    "publishedAt": "2026-09-28T03:39:07Z"
   },
   {
     "title": "One Names the Team, One Keeps the Ball Moving — Why Protons and Neutrons Matter",
@@ -5037,7 +5456,8 @@ const posts = [
     "thumbnail": "assets/images/theory/004-proton-neutron-roles/thumbnail.webp",
     "thumbnailAlt": "A cluster of glossy orange and blue spheres sitting inside a small white soccer goal on bright green grass, with a single blue sphere rolling toward it",
     "url": "posts/theory/004-proton-neutron-roles.html",
-    "keywords": "proton neutron atomic number isotope Coulomb barrier nuclear fission chain reaction uranium-235 enrichment nuclear basics"
+    "keywords": "proton neutron atomic number isotope Coulomb barrier nuclear fission chain reaction uranium-235 enrichment nuclear basics",
+    "publishedAt": "2026-10-24T05:04:00Z"
   },
   {
     "title": "Just Two Ingredients — Protons and Neutrons, the Building Blocks of the Nucleus",
@@ -5049,7 +5469,8 @@ const posts = [
     "thumbnail": "assets/images/theory/003-inside-the-nucleus/thumbnail.webp",
     "thumbnailAlt": "A clear glass measuring jug holding a tight cluster of glossy orange and silver spheres",
     "url": "posts/theory/003-inside-the-nucleus.html",
-    "keywords": "atomic nucleus proton neutron nucleon quark atomic number mass number atomic mass unit nuclear radius nuclear basics"
+    "keywords": "atomic nucleus proton neutron nucleon quark atomic number mass number atomic mass unit nuclear radius nuclear basics",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "A Pea Inside a Skyscraper — Why the Atom Is Mostly Empty Space",
@@ -5061,7 +5482,8 @@ const posts = [
     "thumbnail": "assets/images/theory/002-mostly-empty-atom/thumbnail.webp",
     "thumbnailAlt": "A small glossy green pea on a clear glass pillar in a bright city plaza, surrounded by a huge pale mint-colored misty sphere",
     "url": "posts/theory/002-mostly-empty-atom.html",
-    "keywords": "atomic structure atomic nucleus atom size Rutherford experiment alpha particles electron cloud Pauli exclusion principle nuclear basics"
+    "keywords": "atomic structure atomic nucleus atom size Rutherford experiment alpha particles electron cloud Pauli exclusion principle nuclear basics",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "The Nucleus Gets a Bulk Discount — Mass Defect and Binding Energy",
@@ -5073,7 +5495,8 @@ const posts = [
     "thumbnail": "assets/images/theory/001-mass-defect/thumbnail.webp",
     "thumbnailAlt": "A silver balance scale with four loose spheres on one pan and the same four spheres packed into a tight cluster on the other, the cluster side sitting slightly higher",
     "url": "posts/theory/001-mass-defect.html",
-    "keywords": "mass defect binding energy binding energy per nucleon atomic nucleus helium-4 atomic mass unit nuclear fission nuclear fusion nuclear physics basics"
+    "keywords": "mass defect binding energy binding energy per nucleon atomic nucleus helium-4 atomic mass unit nuclear fission nuclear fusion nuclear physics basics",
+    "publishedAt": "2026-10-24T03:48:57Z"
   },
   {
     "title": "Where a Port Fits in the SMR Supply Chain: Lessons from a Rotterdam Study",
@@ -5085,7 +5508,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-23-rotterdam-port-smr-supply-chain/thumbnail_01.webp",
     "thumbnailAlt": "A crane lifting a large cylindrical module from a cargo ship onto the quay of a major port at sunrise",
     "url": "posts/news/2026-10-23-rotterdam-port-smr-supply-chain.html",
-    "keywords": "SMR Small Modular Reactor Port Of Rotterdam Nuclear Supply Chain Module Transport ISO19443 Traceability Quality Management Nuclear Ships IMO SOLAS Tractebel Maritime Nuclear Netherlands Nuclear Energy"
+    "keywords": "SMR Small Modular Reactor Port Of Rotterdam Nuclear Supply Chain Module Transport ISO19443 Traceability Quality Management Nuclear Ships IMO SOLAS Tractebel Maritime Nuclear Netherlands Nuclear Energy",
+    "publishedAt": "2026-10-24T04:09:32Z"
   },
   {
     "title": "Finland Grants the World's First Operating Licence for a Spent Fuel Repository: What Comes Next for Posiva",
@@ -5097,7 +5521,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-23-posiva-spent-fuel-repository-licence/thumbnail_01.webp",
     "thumbnailAlt": "Repository buildings beside a tunnel entrance into coastal bedrock in a Nordic pine forest",
     "url": "posts/news/2026-10-23-posiva-spent-fuel-repository-licence.html",
-    "keywords": "Spent Fuel Final Disposal Repository Operating Licence Multi Barrier Engineered Barrier Encapsulation Posiva Olkiluoto STUK TVO Fortum Finland Radioactive Materials Nuclear Energy"
+    "keywords": "Spent Fuel Final Disposal Repository Operating Licence Multi Barrier Engineered Barrier Encapsulation Posiva Olkiluoto STUK TVO Fortum Finland Radioactive Materials Nuclear Energy",
+    "publishedAt": "2026-10-24T04:09:32Z"
   },
   {
     "title": "From Government Test Reactor to Commercial License: What the NRC's New Rule Changes",
@@ -5109,7 +5534,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-23-nrc-rule-demonstration-reactor-data/thumbnail_01.webp",
     "thumbnailAlt": "A compact test reactor module in a laboratory high bay, with review binders on a desk in the foreground",
     "url": "posts/news/2026-10-23-nrc-rule-demonstration-reactor-data.html",
-    "keywords": "NRC Reactor Licensing Demonstration Data Final Rule DOE Reactor Pilot Program Zero Power Criticality Documented Safety Analysis Antares Aalo Last Energy BWXT INL Nuclear Energy"
+    "keywords": "NRC Reactor Licensing Demonstration Data Final Rule DOE Reactor Pilot Program Zero Power Criticality Documented Safety Analysis Antares Aalo Last Energy BWXT INL Nuclear Energy",
+    "publishedAt": "2026-10-24T04:09:32Z"
   },
   {
     "title": "How Clean Is Clean Enough? Future Land Use and the Cleanup of U.S. Nuclear Sites",
@@ -5121,7 +5547,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-23-doe-cleanup-future-land-use/thumbnail_01.webp",
     "thumbnailAlt": "Wide restored land in the arid American West with old industrial buildings in the distance",
     "url": "posts/news/2026-10-23-doe-cleanup-future-land-use.html",
-    "keywords": "Nuclear Cleanup Future Land Use Cleanup Levels GAO DOE EPA Hanford Idaho Oak Ridge CERCLA Mixed Waste Exposure Pathways Residual Contamination Nuclear Energy"
+    "keywords": "Nuclear Cleanup Future Land Use Cleanup Levels GAO DOE EPA Hanford Idaho Oak Ridge CERCLA Mixed Waste Exposure Pathways Residual Contamination Nuclear Energy",
+    "publishedAt": "2026-10-24T04:09:32Z"
   },
   {
     "title": "Keeping Warm Through the Long Lunar Night: Canada's Nuclear Heat and Power Research for Space",
@@ -5133,7 +5560,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-23-canada-space-isotope-heat-power/thumbnail_01.webp",
     "thumbnailAlt": "A small rover on the lunar surface at night with a softly glowing equipment box and Earth above the horizon",
     "url": "posts/news/2026-10-23-canada-space-isotope-heat-power.html",
-    "keywords": "Space Nuclear Radioisotopes Tritium Radioisotope Heater Unit Isotope Power Lunar Exploration Lunar Night Canadian Space Agency CSA Canadensys CSMC CNL Canadian Centre For Space Isotopes Nuclear Energy"
+    "keywords": "Space Nuclear Radioisotopes Tritium Radioisotope Heater Unit Isotope Power Lunar Exploration Lunar Night Canadian Space Agency CSA Canadensys CSMC CNL Canadian Centre For Space Isotopes Nuclear Energy",
+    "publishedAt": "2026-10-24T04:09:32Z"
   },
   {
     "title": "Fuel Enriched Beyond 5%: What Changes Inside the Factory at Westinghouse's New LEU+ Plant",
@@ -5145,7 +5573,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-22-westinghouse-leu-plus-fuel-plant-columbia/thumbnail_01.webp",
     "thumbnailAlt": "Technicians inspecting upright nuclear fuel assemblies in a bright fuel fabrication plant",
     "url": "posts/news/2026-10-22-westinghouse-leu-plus-fuel-plant-columbia.html",
-    "keywords": "LEUPlus Westinghouse Nuclear Fuel Fuel Fabrication Enrichment Criticality Safety Subcriticality Integrated Safety Analysis IROFS NRC 10CFR70.61 AP1000 Power Uprate Nuclear Energy"
+    "keywords": "LEUPlus Westinghouse Nuclear Fuel Fuel Fabrication Enrichment Criticality Safety Subcriticality Integrated Safety Analysis IROFS NRC 10CFR70.61 AP1000 Power Uprate Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Germany and the US Build a \"Virtual\" Fusion Research Center: The Max Planck Columbia Center",
@@ -5157,7 +5586,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-22-max-planck-columbia-virtual-fusion-center/thumbnail_01.webp",
     "thumbnailAlt": "Researchers looking at a stellarator experimental device wrapped in twisted coils",
     "url": "posts/news/2026-10-22-max-planck-columbia-virtual-fusion-center.html",
-    "keywords": "Fusion Max Planck Columbia Center IPP Max Planck Institute For Plasma Physics Columbia University Stellarator Tokamak Wendelstein7-X ASDEXUpgrade Superconducting Magnets Plasma International Collaboration Nuclear Energy"
+    "keywords": "Fusion Max Planck Columbia Center IPP Max Planck Institute For Plasma Physics Columbia University Stellarator Tokamak Wendelstein7-X ASDEXUpgrade Superconducting Magnets Plasma International Collaboration Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "A 19-Point Checklist Before Going Nuclear: Inside Malaysia's 12-Month MyPOWER Assessment",
@@ -5169,7 +5599,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-22-malaysia-mypower-19-issue-nuclear-assessment/thumbnail_01.webp",
     "thumbnailAlt": "Southeast Asian city skyline at sunrise with tropical greenery and a river",
     "url": "posts/news/2026-10-22-malaysia-mypower-19-issue-nuclear-assessment.html",
-    "keywords": "Nuclear Newcomer Malaysia My POWER NEPIO IAEA Milestones Approach Nuclear Infrastructure Atom Malaysia TNBGenco ASEAN Pre Feasibility Study Nuclear Regulation Nuclear Energy"
+    "keywords": "Nuclear Newcomer Malaysia My POWER NEPIO IAEA Milestones Approach Nuclear Infrastructure Atom Malaysia TNBGenco ASEAN Pre Feasibility Study Nuclear Regulation Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Six AP1000s on a US River: Where Kentucky's Prosperity One Proposal Begins",
@@ -5181,7 +5612,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-22-kentucky-prosperity-one-ap1000-site/thumbnail_01.webp",
     "thumbnailAlt": "A misty autumn river bend with wooded hills and a survey team in a riverside field",
     "url": "posts/news/2026-10-22-kentucky-prosperity-one-ap1000-site.html",
-    "keywords": "Prosperity One AP1000 Kentucky Nuclear The Nuclear Company Ohio River Nuclear Site Geotechnical Investigation Environmental Assessment Power Grid NRC Nuclear Licensing Pressurized Water Reactor New Nuclear Nuclear Energy"
+    "keywords": "Prosperity One AP1000 Kentucky Nuclear The Nuclear Company Ohio River Nuclear Site Geotechnical Investigation Environmental Assessment Power Grid NRC Nuclear Licensing Pressurized Water Reactor New Nuclear Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Designing Chips That Keep Working in Radiation, with Help from AI: DOE's Genesis Mission and AXESS",
@@ -5193,7 +5625,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-22-ai-designed-radiation-tolerant-chips-axess/thumbnail_01.webp",
     "thumbnailAlt": "A glowing semiconductor wafer under cleanroom lighting with a particle detector in the background",
     "url": "posts/news/2026-10-22-ai-designed-radiation-tolerant-chips-axess.html",
-    "keywords": "Radiation Hardening AIChip Design Genesis Mission AXESS ASIC Fermilab DOE Total Ionizing Dose Single Event Effects Radiation Testing Environmental Qualification Fusion Nuclear Energy"
+    "keywords": "Radiation Hardening AIChip Design Genesis Mission AXESS ASIC Fermilab DOE Total Ionizing Dose Single Event Effects Radiation Testing Environmental Qualification Fusion Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "From Tank Liquid to Concrete: Savannah River Site Finishes Filling Saltstone Disposal Unit 6",
@@ -5205,7 +5638,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-21-srs-salt-waste-grout-disposal-unit/thumbnail_01.webp",
     "thumbnailAlt": "A massive cylindrical concrete disposal facility surrounded by pine forest",
     "url": "posts/news/2026-10-21-srs-salt-waste-grout-disposal-unit.html",
-    "keywords": "Radioactive Waste Salt Waste Grout Solidification Disposal Facility Savannah River Site SRS SDU6 Saltstone SWPF Department Of Energy DOE Radionuclides Long Term Monitoring Nuclear Energy"
+    "keywords": "Radioactive Waste Salt Waste Grout Solidification Disposal Facility Savannah River Site SRS SDU6 Saltstone SWPF Department Of Energy DOE Radionuclides Long Term Monitoring Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Where Does a Country Start with Its First Nuclear Plant? The Philippines and Its 1.2 GW Target for 2032",
@@ -5217,7 +5651,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-21-philippines-first-nuclear-plant-preparation/thumbnail_01.webp",
     "thumbnailAlt": "Survey team checking ground between survey stakes on a Philippine coastal plain at sunrise",
     "url": "posts/news/2026-10-21-philippines-first-nuclear-plant-preparation.html",
-    "keywords": "Philippines New Nuclear First Nuclear Plant Department Of Energy IAEA Milestones Approach SMR Small Modular Reactor Nuclear Regulator Site Selection Radioactive Waste Lifecycle Economics Nuclear Procurement Nuclear Power"
+    "keywords": "Philippines New Nuclear First Nuclear Plant Department Of Energy IAEA Milestones Approach SMR Small Modular Reactor Nuclear Regulator Site Selection Radioactive Waste Lifecycle Economics Nuclear Procurement Nuclear Power",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Dukovany on Schedule, an EU Bill in the Background: Inside the Korea–Czech Nuclear Steering Committee",
@@ -5229,7 +5664,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-21-dukovany-schedule-eu-industrial-accelerator-act/thumbnail_01.webp",
     "thumbnailAlt": "Southern Czech nuclear landscape with four cooling towers beyond autumn fields",
     "url": "posts/news/2026-10-21-dukovany-schedule-eu-industrial-accelerator-act.html",
-    "keywords": "Dukovany Czech Nuclear Industrial Accelerator Act EUIndustrial Policy Nuclear Steering Committee Implementation Review Temelin Licensing Application Localization Nuclear Supply Chain Nuclear Exports MOTIE WNN Nuclear Energy"
+    "keywords": "Dukovany Czech Nuclear Industrial Accelerator Act EUIndustrial Policy Nuclear Steering Committee Implementation Review Temelin Licensing Application Localization Nuclear Supply Chain Nuclear Exports MOTIE WNN Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "How a Canadian Heavy-Water Reactor Gets to the United States: Indiana's Eight-Unit CANDU Plan and the Quality Assurance Topical Report",
@@ -5241,7 +5677,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-21-candu-ec6-us-licensing-quality-assurance/thumbnail_01.webp",
     "thumbnailAlt": "A cylindrical concrete reactor building on a former power plant site in the Midwestern plains",
     "url": "posts/news/2026-10-21-candu-ec6-us-licensing-quality-assurance.html",
-    "keywords": "CANDU Heavy Water Reactor EC6 Quality Assurance Topical Report NRC Atkins Realis Indiana Hoosier Energy Natural Uranium NQA1 CNSC Nuclear Licensing Nuclear Energy"
+    "keywords": "CANDU Heavy Water Reactor EC6 Quality Assurance Topical Report NRC Atkins Realis Indiana Hoosier Energy Natural Uranium NQA1 CNSC Nuclear Licensing Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "How a Nuclear Plant Rides Out the Loss of Offsite Power: The IAEA's Review of Barakah Unit 3",
@@ -5253,7 +5690,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-21-barakah-unit-3-offsite-power-iaea/thumbnail_01.webp",
     "thumbnailAlt": "Domed reactor buildings on a desert coastline at dusk, with transmission lines running inland",
     "url": "posts/news/2026-10-21-barakah-unit-3-offsite-power-iaea.html",
-    "keywords": "Barakah Barakah Nuclear Plant Loss Of Offsite Power Emergency Diesel Generator Emergency Power Alternate Power IAEA FANR UAE ENEC Nuclear Safety Emergency Response Emergency Exercise Nuclear Energy"
+    "keywords": "Barakah Barakah Nuclear Plant Loss Of Offsite Power Emergency Diesel Generator Emergency Power Alternate Power IAEA FANR UAE ENEC Nuclear Safety Emergency Response Emergency Exercise Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Why Does the U.S. Send Nuclear Agreements to Congress? The Resolution of Disapproval on the U.S.–Saudi 123 Agreement",
@@ -5265,7 +5703,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-20-us-saudi-123-agreement-disapproval-resolution/thumbnail_01.webp",
     "thumbnailAlt": "A neoclassical domed capitol building in early golden light with a distant nuclear power plant silhouette",
     "url": "posts/news/2026-10-20-us-saudi-123-agreement-disapproval-resolution.html",
-    "keywords": "123Agreement USSaudi Nuclear Agreement Resolution Of Disapproval Nuclear Cooperation Agreement Atomic Energy Act USCongress Senate Uranium Enrichment Reprocessing Spent Fuel IAEAAdditional Protocol Safeguards Nonproliferation Saudi Arabia Nuclear Energy"
+    "keywords": "123Agreement USSaudi Nuclear Agreement Resolution Of Disapproval Nuclear Cooperation Agreement Atomic Energy Act USCongress Senate Uranium Enrichment Reprocessing Spent Fuel IAEAAdditional Protocol Safeguards Nonproliferation Saudi Arabia Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Microreactors Head to an Army Base and a University Campus: Fort Benning and Taiwan's National Tsing Hua University",
@@ -5277,7 +5716,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-20-microreactors-army-base-university-campus/thumbnail_01.webp",
     "thumbnailAlt": "Container-sized microreactor module on a concrete pad beside a pine forest",
     "url": "posts/news/2026-10-20-microreactors-army-base-university-campus.html",
-    "keywords": "Microreactor Research Reactor Fort Benning Radiant Kaleidos Janus National Tsing Hua University Nu Cube Nu Sun THOR TRISO Heat Pipe BNCT NEPA Nuclear Energy"
+    "keywords": "Microreactor Research Reactor Fort Benning Radiant Kaleidos Janus National Tsing Hua University Nu Cube Nu Sun THOR TRISO Heat Pipe BNCT NEPA Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Calculating a Plasma Disruption Before It Happens: ITER Highlights the Open-Source Release of the JOREK Code",
@@ -5289,7 +5729,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-20-jorek-open-source-plasma-disruption-code/thumbnail_01.webp",
     "thumbnailAlt": "A researcher looking at a glowing three-dimensional plasma ring visualization on a large screen",
     "url": "posts/news/2026-10-20-jorek-open-source-plasma-disruption-code.html",
-    "keywords": "JOREK Plasma Disruption Fusion ITER Magnetohydrodynamics MHD Shattered Pellet Injection SPI Runaway Electrons ASDEXUpgrade IPP EUROfusion Open Source Regression Testing Convergence Testing"
+    "keywords": "JOREK Plasma Disruption Fusion ITER Magnetohydrodynamics MHD Shattered Pellet Injection SPI Runaway Electrons ASDEXUpgrade IPP EUROfusion Open Source Regression Testing Convergence Testing",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "The Hottest Wall in a Fusion Reactor: ITER's First Series-Produced Divertor Inner Vertical Target",
@@ -5301,7 +5742,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-20-iter-divertor-inner-target-first-unit/thumbnail_01.webp",
     "thumbnailAlt": "A technician inspecting a curved divertor component lined with small tungsten blocks in a clean manufacturing hall",
     "url": "posts/news/2026-10-20-iter-divertor-inner-target-first-unit.html",
-    "keywords": "ITER Fusion Divertor Inner Vertical Target Plasma Facing Component Tungsten Brazing High Heat Flux Heat Flux F4E Research Instruments HELCZA Fusion Reactor Nuclear Energy"
+    "keywords": "ITER Fusion Divertor Inner Vertical Target Plasma Facing Component Tungsten Brazing High Heat Flux Heat Flux F4E Research Instruments HELCZA Fusion Reactor Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "A Cancer Isotope With a 7.2-Hour Half-Life: How Astatine-211 Reaches Patients",
@@ -5313,7 +5755,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-20-astatine-211-cancer-isotope-supply/thumbnail_01.webp",
     "thumbnailAlt": "A technician inspecting a compact cyclotron and beamline at a medical isotope production facility",
     "url": "posts/news/2026-10-20-astatine-211-cancer-isotope-supply.html",
-    "keywords": "Astatine211 At211 Targeted Alpha Therapy Radioisotopes Medical Isotopes Radiopharmaceuticals Half Life Ekalia Telix IBA Framatome Particle Accelerator Bismuth209 Nuclear"
+    "keywords": "Astatine211 At211 Targeted Alpha Therapy Radioisotopes Medical Isotopes Radiopharmaceuticals Half Life Ekalia Telix IBA Framatome Particle Accelerator Bismuth209 Nuclear",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "A Floating Nuclear Plant That Sells Power to an Island: The Rosatom–Indonesia Agreement",
@@ -5325,7 +5768,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-19-rosatom-indonesia-floating-nuclear-power/thumbnail_01.webp",
     "thumbnailAlt": "A floating power unit moored in a calm bay off a tropical island",
     "url": "posts/news/2026-10-19-rosatom-indonesia-floating-nuclear-power.html",
-    "keywords": "Floating Nuclear Plant Indonesia Nuclear Halmahera North Maluku Rosatom FPU100 PTPembangkit Listrik Nuklir Marine Nuclear Power Supply Contract Nuclear Liability Private Investment Russian Energy Week Nuclear Energy"
+    "keywords": "Floating Nuclear Plant Indonesia Nuclear Halmahera North Maluku Rosatom FPU100 PTPembangkit Listrik Nuklir Marine Nuclear Power Supply Contract Nuclear Liability Private Investment Russian Energy Week Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Why Norway Is Sending Its Spent Fuel to Sweden, Only to Take It Back",
@@ -5337,7 +5781,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-19-norway-spent-fuel-sweden-studsvik/thumbnail_01.webp",
     "thumbnailAlt": "A sealed transport cask on a cargo ship crossing a calm Nordic sea at sunrise",
     "url": "posts/news/2026-10-19-norway-spent-fuel-sweden-studsvik.html",
-    "keywords": "Spent Fuel Interim Storage Research Reactor Metallic Uranium Return Guarantee Export Licence Studsvik NND Halden Kjeller DSA SSM Norway Sweden Nuclear Energy"
+    "keywords": "Spent Fuel Interim Storage Research Reactor Metallic Uranium Return Guarantee Export Licence Studsvik NND Halden Kjeller DSA SSM Norway Sweden Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Who Makes HALEU, the Fuel for Next-Generation Reactors? Centrus Buys a Key Supplier and South Africa Forms a Joint Venture",
@@ -5349,7 +5794,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-19-haleu-fuel-supply-chain-centrus-south-africa/thumbnail_01.webp",
     "thumbnailAlt": "Long rows of tall centrifuges inside a bright enrichment facility",
     "url": "posts/news/2026-10-19-haleu-fuel-supply-chain-centrus-south-africa.html",
-    "keywords": "HALEU Uranium Enrichment Centrifuge Nuclear Fuel Supply Chain Centrus Westerman Piketon Oak Ridge Department Of Energy Necsa Pelindaba Terra Power SMR Nuclear Energy"
+    "keywords": "HALEU Uranium Enrichment Centrifuge Nuclear Fuel Supply Chain Centrus Westerman Piketon Oak Ridge Department Of Energy Necsa Pelindaba Terra Power SMR Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Why Amazon Is Funding Nuclear Development: Where the 960MW Indiana SMR Project Stands Today",
@@ -5361,7 +5807,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-19-amazon-indiana-xe100-smr-project/thumbnail_01.webp",
     "thumbnailAlt": "Survey crew marking out new reactor foundations at dawn on a cleared former coal plant site",
     "url": "posts/news/2026-10-19-amazon-indiana-xe100-smr-project.html",
-    "keywords": "Amazon Nuclear Indiana SMR Small Modular Reactor Xe100 XEnergy AEP Amazon High Temperature Gas Reactor TRISO Final Investment Decision Construction Permit Long Mott NRC Data Center Power Nuclear Energy"
+    "keywords": "Amazon Nuclear Indiana SMR Small Modular Reactor Xe100 XEnergy AEP Amazon High Temperature Gas Reactor TRISO Final Investment Decision Construction Permit Long Mott NRC Data Center Power Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "From Coal Plant to SMR Site: Reading Poland's Pątnów Joint Venture Agreement",
@@ -5373,7 +5820,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-16-patnow-coal-site-smr-joint-venture/thumbnail_01.webp",
     "thumbnailAlt": "Modern small modular reactor buildings in front of the chimney of a former coal-fired plant at sunrise",
     "url": "posts/news/2026-10-16-patnow-coal-site-smr-joint-venture.html",
-    "keywords": "Small Modular Reactor SMR Patnow Poland Nuclear Coal To Nuclear BWRX300 ZEPAK SGE Shareholders Agreement Joint Venture Put Option Nuclear Licensing PAA Nuclear Energy"
+    "keywords": "Small Modular Reactor SMR Patnow Poland Nuclear Coal To Nuclear BWRX300 ZEPAK SGE Shareholders Agreement Joint Venture Put Option Nuclear Licensing PAA Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "No Violations Found, Yet the NRC Asked for Improvements: Safety Culture at Palisades",
@@ -5385,7 +5833,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-16-palisades-safety-culture-nrc-review/thumbnail_01.webp",
     "thumbnailAlt": "A quality assurance inspector examines a large valve component in a bright warehouse while a colleague listens closely",
     "url": "posts/news/2026-10-16-palisades-safety-culture-nrc-review.html",
-    "keywords": "Palisades Safety Culture Chilled Work Environment SCWE Quality Assurance Independent Assessment Corrective Action Program Employee Concerns Program NRC Holtec 10CFR50Appendix B Nuclear Restart Nuclear Regulation Nuclear Energy"
+    "keywords": "Palisades Safety Culture Chilled Work Environment SCWE Quality Assurance Independent Assessment Corrective Action Program Employee Concerns Program NRC Holtec 10CFR50Appendix B Nuclear Restart Nuclear Regulation Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Tested, Certified, Delivered: How Nuclear Fuel Processes and Large Components Are Proven Before They Reach a Plant",
@@ -5397,7 +5846,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-16-newcleo-faster-mhi-steam-generators/thumbnail_01.webp",
     "thumbnailAlt": "A giant cylindrical steam generator on a heavy-haul trailer at a harbor quay at dusk",
     "url": "posts/news/2026-10-16-newcleo-faster-mhi-steam-generators.html",
-    "keywords": "Nuclear Verification MOXFuel Steam Generator Nuclear Fuel Newcleo FASTER MHI EDF Cruas ASNR Glovebox Conformity Certification Pressurized Water Reactor Nuclear Energy"
+    "keywords": "Nuclear Verification MOXFuel Steam Generator Nuclear Fuel Newcleo FASTER MHI EDF Cruas ASNR Glovebox Conformity Certification Pressurized Water Reactor Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "The Moment a Nuclear Plant First Joins the Grid: Mochovce Unit 4",
@@ -5409,7 +5859,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-16-mochovce-4-first-grid-connection/thumbnail_01.webp",
     "thumbnailAlt": "A nuclear power plant with cooling towers at dusk, with high-voltage transmission towers in the foreground",
     "url": "posts/news/2026-10-16-mochovce-4-first-grid-connection.html",
-    "keywords": "Mochovce4 Grid Connection Nuclear Commissioning Power Ascension Testing First Criticality Synchronization Turbine Generator Rated Power MWe MWh Slovenske Elektrarne Slovakia Nuclear Power Nuclear Energy"
+    "keywords": "Mochovce4 Grid Connection Nuclear Commissioning Power Ascension Testing First Criticality Synchronization Turbine Generator Rated Power MWe MWh Slovenske Elektrarne Slovakia Nuclear Power Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Running a Liquid-Fuel Reactor for Real: The U.S. Molten Chloride Reactor Experiment",
@@ -5421,7 +5872,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-16-mcre-molten-chloride-reactor-experiment/thumbnail_01.webp",
     "thumbnailAlt": "Researchers inspecting a small molten salt experimental reactor rig with glowing orange fuel piping in a laboratory hall",
     "url": "posts/news/2026-10-16-mcre-molten-chloride-reactor-experiment.html",
-    "keywords": "Molten Salt Reactor MCRE Liquid Fuel Fast Neutrons Criticality Reactor Kinetics INL Idaho National Laboratory DOE ARDP COREPOWER Nuclear Propulsion IMO Advanced Reactors Nuclear Energy"
+    "keywords": "Molten Salt Reactor MCRE Liquid Fuel Fast Neutrons Criticality Reactor Kinetics INL Idaho National Laboratory DOE ARDP COREPOWER Nuclear Propulsion IMO Advanced Reactors Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Robots Install 480 Reactor Tubes: Inside the Bruce Unit 4 Refurbishment",
@@ -5433,7 +5885,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-15-bruce-4-robotic-calandria-tube-installation/thumbnail_01.webp",
     "thumbnailAlt": "A six-axis robotic tool working at the face of a reactor drilled with a grid of tube openings",
     "url": "posts/news/2026-10-15-bruce-4-robotic-calandria-tube-installation.html",
-    "keywords": "Calandria Tubes Life Extension Major Component Replacement MCR Robotic Tooling Six Axis Robot Fuel Channels Bruce Power Bruce Nuclear CANDU PHWR Heavy Water Canada Nuclear Refurbishment Nuclear Energy"
+    "keywords": "Calandria Tubes Life Extension Major Component Replacement MCR Robotic Tooling Six Axis Robot Fuel Channels Bruce Power Bruce Nuclear CANDU PHWR Heavy Water Canada Nuclear Refurbishment Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Vogtle's Lessons, Written into the Blueprint: AP1000 Standard Design Rev.20",
@@ -5445,7 +5898,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-15-ap1000-rev20-vogtle-lessons-design/thumbnail_01.webp",
     "thumbnailAlt": "Two completed AP1000 units at dusk, with design drawings and a tablet on a desk in the foreground",
     "url": "posts/news/2026-10-15-ap1000-rev20-vogtle-lessons-design.html",
-    "keywords": "AP1000 Design Certification Design Control Document Vogtle DCD NRC Westinghouse ITAAC Core Makeup Tank Commissioning Sanmen Nuclear Construction Nuclear Energy"
+    "keywords": "AP1000 Design Certification Design Control Document Vogtle DCD NRC Westinghouse ITAAC Core Makeup Tank Commissioning Sanmen Nuclear Construction Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "3D-Printed Forms for Nuclear Concrete: Kairos Power's Shielding Demonstrations",
@@ -5457,7 +5911,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-15-3d-printed-forms-nuclear-shielding/thumbnail_01.webp",
     "thumbnailAlt": "A large 3D printer building a curved form layer by layer from carbon-fiber composite",
     "url": "posts/news/2026-10-15-3d-printed-forms-nuclear-shielding.html",
-    "keywords": "3DPrinting Formwork Composite Formwork Additive Manufacturing Nuclear Construction Biological Shield Precast Concrete Cast In Place CFABS ORNL Kairos Power Barnard Construction Hermes CAMX Nuclear Energy"
+    "keywords": "3DPrinting Formwork Composite Formwork Additive Manufacturing Nuclear Construction Biological Shield Precast Concrete Cast In Place CFABS ORNL Kairos Power Barnard Construction Hermes CAMX Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Prove It Before You Build It: Poland's \"Conditional\" AP1000 Module Orders",
@@ -5469,7 +5924,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-14-poland-ap1000-conditional-module-orders/thumbnail_01.webp",
     "thumbnailAlt": "Welders and an inspector working on steel plate wall modules in a fabrication plant",
     "url": "posts/news/2026-10-14-poland-ap1000-conditional-module-orders.html",
-    "keywords": "Conditional Order Poland Nuclear AP1000 Westinghouse NQA1 Qualification Mockup IRWST Design Control Document Quality Assurance Design Change Nonconformance Steel Plate Modules Supply Chain Nuclear Energy"
+    "keywords": "Conditional Order Poland Nuclear AP1000 Westinghouse NQA1 Qualification Mockup IRWST Design Control Document Quality Assurance Design Change Nonconformance Steel Plate Modules Supply Chain Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Making Cancer-Medicine Ingredients in a Reactor? Oklo's Groves-2 and Lutetium-177",
@@ -5481,7 +5937,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-14-oklo-groves-2-lutetium-177-isotopes/thumbnail_01.webp",
     "thumbnailAlt": "Radiopharmaceutical production lab where an operator handles small vials with remote manipulator arms behind a shielded window",
     "url": "posts/news/2026-10-14-oklo-groves-2-lutetium-177-isotopes.html",
-    "keywords": "Lutetium177 Lu177 Medical Isotopes Isotopes Hot Cell Targeted Cancer Therapy Ytterbium176 Oklo Groves2Forge Nuclear Energy Launch Pad DOE NRC INL IAEA Nuclear Energy"
+    "keywords": "Lutetium177 Lu177 Medical Isotopes Isotopes Hot Cell Targeted Cancer Therapy Ytterbium176 Oklo Groves2Forge Nuclear Energy Launch Pad DOE NRC INL IAEA Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "A Floating Nuclear Plant Buys Its Uranium: What That Purchase Really Covers",
@@ -5493,7 +5950,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-14-bluecore-floating-nuclear-fuel-purchase/thumbnail_01.webp",
     "thumbnailAlt": "Small reactor module building on a flat barge moored in a harbor at sunrise",
     "url": "posts/news/2026-10-14-bluecore-floating-nuclear-fuel-purchase.html",
-    "keywords": "Maritime Nuclear Floating Nuclear Plant Nuclear Fuel Low Enriched Uranium Uranium Hexafluoride Fuel Assembly Zero Power Criticality Bluecore BC12 Nautilus NRC USCoast Guard ABS DOE Nuclear Energy"
+    "keywords": "Maritime Nuclear Floating Nuclear Plant Nuclear Fuel Low Enriched Uranium Uranium Hexafluoride Fuel Assembly Zero Power Criticality Bluecore BC12 Nautilus NRC USCoast Guard ABS DOE Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Bangladesh's First Nuclear Reactor Reaches Criticality: What That Milestone Means",
@@ -5505,7 +5963,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-13-rooppur-1-first-criticality-bangladesh/thumbnail_01.webp",
     "thumbnailAlt": "Two nuclear units on a riverside plain in Bangladesh at early morning, with a small boat on the river",
     "url": "posts/news/2026-10-13-rooppur-1-first-criticality-bangladesh.html",
-    "keywords": "First Criticality Rooppur Rooppur NPP Bangladesh Criticality Nuclear Fission Chain Reaction Commissioning Grid Connection Commercial Operation Rosatom Bangladesh Atomic Energy Commission Nuclear Energy"
+    "keywords": "First Criticality Rooppur Rooppur NPP Bangladesh Criticality Nuclear Fission Chain Reaction Commissioning Grid Connection Commercial Operation Rosatom Bangladesh Atomic Energy Commission Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "A Nuclear Reactor on the Moon? What the New NASA–DOE Space Nuclear Agreement Settles, and What Is Still Open",
@@ -5517,7 +5976,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-13-nasa-doe-space-nuclear-power-agreement/thumbnail_01.webp",
     "thumbnailAlt": "A small reactor power unit with deployed radiator panels standing on the lunar surface near a crater rim, with Earth rising in the sky",
     "url": "posts/news/2026-10-13-nasa-doe-space-nuclear-power-agreement.html",
-    "keywords": "Lunar Reactor Space Nuclear Power NASA DOE LR1 SR1Freedom Fission Surface Power HALEU Brayton Power Conversion Nuclear Flight Safety Memorandum Of Understanding Dragonfly Radioisotope Power Nuclear Electric Propulsion Nuclear Energy"
+    "keywords": "Lunar Reactor Space Nuclear Power NASA DOE LR1 SR1Freedom Fission Surface Power HALEU Brayton Power Conversion Nuclear Flight Safety Memorandum Of Understanding Dragonfly Radioisotope Power Nuclear Electric Propulsion Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Drilling the Hole for Spent Fuel: Hyundai E&C Tests Deposition Hole Excavation in Bedrock",
@@ -5529,7 +5989,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-13-hyundai-ec-deposition-hole-excavation-test/thumbnail_01.webp",
     "thumbnailAlt": "Engineers watching excavation equipment above a circular deposition hole in the floor of a bright underground granite tunnel",
     "url": "posts/news/2026-10-13-hyundai-ec-deposition-hole-excavation-test.html",
-    "keywords": "Deposition Hole Spent Fuel Excavation Deep Geological Disposal Multi Barrier Disposal Canister Excavation Equipment Cutterhead Excavation Damage Li DAR AI KORADIS KORAD Hyundai EC Nuclear Energy"
+    "keywords": "Deposition Hole Spent Fuel Excavation Deep Geological Disposal Multi Barrier Disposal Canister Excavation Equipment Cutterhead Excavation Damage Li DAR AI KORADIS KORAD Hyundai EC Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "75% of What? Reading the Urenco USA Enrichment Expansion",
@@ -5541,7 +6002,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-12-urenco-usa-enrichment-expansion-progress/thumbnail_01.webp",
     "thumbnailAlt": "Inside an enrichment facility, a technician walks past endless rows of silver centrifuges",
     "url": "posts/news/2026-10-12-urenco-usa-enrichment-expansion-progress.html",
-    "keywords": "Uranium Enrichment Urenco Urenco USA Cascade Centrifuge SWU Separative Work Unit Enrichment Facility Uranium235 New Mexico Nuclear Fuel Nuclear Energy"
+    "keywords": "Uranium Enrichment Urenco Urenco USA Cascade Centrifuge SWU Separative Work Unit Enrichment Facility Uranium235 New Mexico Nuclear Fuel Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Where Does a Nuclear License Begin? Environmental Review and the Line Around \"Non-Nuclear\" Facilities",
@@ -5553,7 +6015,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-12-nuclear-licensing-boundaries-matador-imsr/thumbnail_01.webp",
     "thumbnailAlt": "Survey stakes marking a boundary line across a Texas plain at sunrise",
     "url": "posts/news/2026-10-12-nuclear-licensing-boundaries-matador-imsr.html",
-    "keywords": "Nuclear Licensing Environmental Impact Statement Safety Review Topical Report Non Nuclear Facility NRC Project Matador Fermi America AP1000 Terrestrial Energy IMSR TEF 10CFR50.10 Nuclear Energy"
+    "keywords": "Nuclear Licensing Environmental Impact Statement Safety Review Topical Report Non Nuclear Facility NRC Project Matador Fermi America AP1000 Terrestrial Energy IMSR TEF 10CFR50.10 Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "AI That Finds Cracks in Nuclear Plants? What It Takes to Trust AI-Assisted Inspection",
@@ -5565,7 +6028,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-12-ai-assisted-ultrasonic-inspection-qualification/thumbnail_01.webp",
     "thumbnailAlt": "An ultrasonic inspection device working on a reactor vessel head while an inspector watches the signal on a screen",
     "url": "posts/news/2026-10-12-ai-assisted-ultrasonic-inspection-qualification.html",
-    "keywords": "AIAssisted Inspection Non Destructive Testing Ultrasonic Testing Inspection Qualification Probability Of Detection False Calls Missed Flaws Frozen Model Ringhals EPRI Trueflaw SQC ENIQ DEEPAI Nuclear Energy"
+    "keywords": "AIAssisted Inspection Non Destructive Testing Ultrasonic Testing Inspection Qualification Probability Of Detection False Calls Missed Flaws Frozen Model Ringhals EPRI Trueflaw SQC ENIQ DEEPAI Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Keeping a 30-Year-Old Reactor Running to 2040: The Sizewell B Long-Term Maintenance Contract",
@@ -5577,7 +6041,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-09-sizewell-b-maintenance-contract-2040/thumbnail_01.webp",
     "thumbnailAlt": "A white domed pressurized water reactor building on a British shingle beach at sunrise",
     "url": "posts/news/2026-10-09-sizewell-b-maintenance-contract-2040.html",
-    "keywords": "Sizewell B Long Term Maintenance Continued Operation Preventive Maintenance Outage Non Destructive Testing Steam Generator Reactor Coolant Pump Framatome EDFUK Pressurized Water Reactor Supply Chain Plant Maintenance Nuclear Energy"
+    "keywords": "Sizewell B Long Term Maintenance Continued Operation Preventive Maintenance Outage Non Destructive Testing Steam Generator Reactor Coolant Pump Framatome EDFUK Pressurized Water Reactor Supply Chain Plant Maintenance Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Parts Before the Plant? Poland Starts Early Procurement of AP1000 Long-Lead Items",
@@ -5589,7 +6054,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-09-poland-ap1000-long-lead-items/thumbnail_01.webp",
     "thumbnailAlt": "Steel containment vessel rings being fabricated in a large factory hall",
     "url": "posts/news/2026-10-09-poland-ap1000-long-lead-items.html",
-    "keywords": "Long Lead Items Early Procurement Poland Nuclear Containment Vessel Reactor Pressure Vessel EPCContract Engineering Development Agreement Quality Assurance AP1000 Westinghouse Bechtel PEJ NQA1 Nuclear Energy"
+    "keywords": "Long Lead Items Early Procurement Poland Nuclear Containment Vessel Reactor Pressure Vessel EPCContract Engineering Development Agreement Quality Assurance AP1000 Westinghouse Bechtel PEJ NQA1 Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "How to Lift One Tilted Fuel Assembly: The Palisades \"DD41\" Recovery and Its Safety Analysis",
@@ -5601,7 +6067,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-09-palisades-dd41-tilted-fuel-assembly-recovery/thumbnail_01.webp",
     "thumbnailAlt": "A custom lifting device gripping a single fuel assembly in a blue spent fuel pool",
     "url": "posts/news/2026-10-09-palisades-dd41-tilted-fuel-assembly-recovery.html",
-    "keywords": "Palisades DD41 Fuel Assembly Fuel Recovery Spent Fuel Pool Safety Analysis Accident Dose Fuel Handling Accident NRC UFSAR TEDE License Amendment Nuclear Safety Nuclear Energy"
+    "keywords": "Palisades DD41 Fuel Assembly Fuel Recovery Spent Fuel Pool Safety Analysis Accident Dose Fuel Handling Accident NRC UFSAR TEDE License Amendment Nuclear Safety Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Safety Analysis Approved: The Next Gates for Last Energy's Pilot Reactor",
@@ -5613,7 +6080,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-09-last-energy-pilot-reactor-readiness-review/thumbnail_01.webp",
     "thumbnailAlt": "A small pilot reactor facility on a Texas university research campus under a sunrise sky",
     "url": "posts/news/2026-10-09-last-energy-pilot-reactor-readiness-review.html",
-    "keywords": "Safety Analysis Readiness Review Startup Approval Hold Points Pilot Reactor Last Energy DSA PWR20 DOE Texas AM RELLIS Small Reactor Nuclear Safety Nuclear Energy"
+    "keywords": "Safety Analysis Readiness Review Startup Approval Hold Points Pilot Reactor Last Energy DSA PWR20 DOE Texas AM RELLIS Small Reactor Nuclear Safety Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Hydrostatic Test, First Grid Power, Commercial Operation: The Milestones Before a New Reactor Truly Starts Up",
@@ -5625,7 +6093,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-09-akkuyu-tianwan-commissioning-milestones/thumbnail_01.webp",
     "thumbnailAlt": "A new nuclear power plant at dusk with its lights coming on one by one",
     "url": "posts/news/2026-10-09-akkuyu-tianwan-commissioning-milestones.html",
-    "keywords": "Commissioning Hydrostatic Test First Grid Connection Commercial Operation Power Ascension Akkuyu Tianwan VVER1200 Rosatom Atomstroyexport Primary Circuit Criticality Turkiye Nuclear China Nuclear Nuclear Energy"
+    "keywords": "Commissioning Hydrostatic Test First Grid Connection Commercial Operation Power Ascension Akkuyu Tianwan VVER1200 Rosatom Atomstroyexport Primary Circuit Criticality Turkiye Nuclear China Nuclear Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "What Does a Radioactive Materials License \"Exemption\" Actually Exempt? Reading the NRC's Direct Final Rule",
@@ -5637,7 +6106,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-08-nrc-materials-license-exemption-rule/thumbnail_01.webp",
     "thumbnailAlt": "A bright lab bench with shielded containers and a radiation survey meter neatly arranged",
     "url": "posts/news/2026-10-08-nrc-materials-license-exemption-rule.html",
-    "keywords": "NRC License Exemption Direct Final Rule Radioactive Materials Byproduct Material Exempt Quantities Schedule B DOE Agreement States 10CFR Microcurie Radiation Safety Nuclear Regulation Nuclear Energy"
+    "keywords": "NRC License Exemption Direct Final Rule Radioactive Materials Byproduct Material Exempt Quantities Schedule B DOE Agreement States 10CFR Microcurie Radiation Safety Nuclear Regulation Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "A Korean Builder in Dutch Nuclear Design: What the AP1000 \"FEED 1\" Contract Covers and What Comes Next",
@@ -5649,7 +6119,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-08-netherlands-ap1000-feed-hyundai-ec/thumbnail_01.webp",
     "thumbnailAlt": "Engineers reviewing design drawings at an open candidate site on the Dutch coastal plain",
     "url": "posts/news/2026-10-08-netherlands-ap1000-feed-hyundai-ec.html",
-    "keywords": "Netherlands Nuclear FEED Front End Engineering Hyundai EC Westinghouse AP1000 EDF NEONL ANVS PSAR EPC Nuclear Licensing Large Reactors Nuclear Energy"
+    "keywords": "Netherlands Nuclear FEED Front End Engineering Hyundai EC Westinghouse AP1000 EDF NEONL ANVS PSAR EPC Nuclear Licensing Large Reactors Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "How National Laboratory \"Vouchers\" Help Nuclear Startups",
@@ -5661,7 +6132,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-08-gain-vouchers-national-lab-support/thumbnail_01.webp",
     "thumbnailAlt": "Researchers and a startup team walking together across a national laboratory campus in morning sunlight",
     "url": "posts/news/2026-10-08-gain-vouchers-national-lab-support.html",
-    "keywords": "GAINVouchers Nuclear Technical Assistance Nuclear Startups National Laboratories GAIN DOE Oak Ridge National Laboratory Argonne National Laboratory BNNT Gasket Molten Salt Heat Pipe Microreactor Multiphysics Analysis Groundwater Remediation Nuclear Energy"
+    "keywords": "GAINVouchers Nuclear Technical Assistance Nuclear Startups National Laboratories GAIN DOE Oak Ridge National Laboratory Argonne National Laboratory BNNT Gasket Molten Salt Heat Pipe Microreactor Multiphysics Analysis Groundwater Remediation Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Where Does the Uranium Left Over From Enrichment Go? Storing Depleted Uranium and the Prospect of Reuse",
@@ -5673,7 +6145,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-08-depleted-uranium-storage-and-reuse/thumbnail_01.webp",
     "thumbnailAlt": "Grey containers lined up neatly inside a bright storage building",
     "url": "posts/news/2026-10-08-depleted-uranium-storage-and-reuse.html",
-    "keywords": "Depleted Uranium Uranium Enrichment Uranium Oxide Uranium Hexafluoride Deconversion Long Term Storage Nuclear Fuel Cycle Molten Salt Reactor Fuel Salt HALEU Urenco Gronau Thorizon Thorizon One Nuclear Energy"
+    "keywords": "Depleted Uranium Uranium Enrichment Uranium Oxide Uranium Hexafluoride Deconversion Long Term Storage Nuclear Fuel Cycle Molten Salt Reactor Fuel Salt HALEU Urenco Gronau Thorizon Thorizon One Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "AI Diagnostics for Nuclear Plant Equipment: What Should We Check Before Trusting It?",
@@ -5685,7 +6158,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-08-ai-equipment-diagnostics-nuclear-plants/thumbnail_01.webp",
     "thumbnailAlt": "An engineer at dawn in an engineering room examining a 3D hologram of a pump",
     "url": "posts/news/2026-10-08-ai-equipment-diagnostics-nuclear-plants.html",
-    "keywords": "Nuclear AI Equipment Diagnostics AIDiagnostics Equipment Alarms False Positive Rate Independent Verification Traceability Nuclearn Equipment AI ANS American Nuclear Society Webinar Plant Operations Nuclear Energy"
+    "keywords": "Nuclear AI Equipment Diagnostics AIDiagnostics Equipment Alarms False Positive Rate Independent Verification Traceability Nuclearn Equipment AI ANS American Nuclear Society Webinar Plant Operations Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Buying the Paperwork vs. Running the Plant: Where the US Uranium Fuel Supply Chain Stands",
@@ -5697,7 +6171,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-07-us-uranium-fuel-supply-chain-status/thumbnail_01.webp",
     "thumbnailAlt": "A stack of engineering drawings on a desk with a real chemical process plant rising behind it",
     "url": "posts/news/2026-10-07-us-uranium-fuel-supply-chain-status.html",
-    "keywords": "Nuclear Fuel Supply Chain Uranium Enrichment Deconversion Depleted Uranium HALEU NANONuclear General Matter Paducah NRC Decommissioning Gaseous Diffusion Uranium Nuclear Energy"
+    "keywords": "Nuclear Fuel Supply Chain Uranium Enrichment Deconversion Depleted Uranium HALEU NANONuclear General Matter Paducah NRC Decommissioning Gaseous Diffusion Uranium Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "Watching Tritium in Groundwater in \"Real Time\"",
@@ -5709,7 +6184,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-07-tritium-groundwater-continuous-monitoring/thumbnail_01.webp",
     "thumbnailAlt": "Cross-section of the ground with a softly glowing sensor inside a monitoring well that reaches down into the groundwater layer",
     "url": "posts/news/2026-10-07-tritium-groundwater-continuous-monitoring.html",
-    "keywords": "Tritium Groundwater Monitoring Radiation Monitoring Environmental Radiation Jefferson Lab Canary Instruments SCREM Scintillating Fiber Silicon Photomultiplier CRADA Fusion Radiation Detection Nuclear Safety Nuclear Energy"
+    "keywords": "Tritium Groundwater Monitoring Radiation Monitoring Environmental Radiation Jefferson Lab Canary Instruments SCREM Scintillating Fiber Silicon Photomultiplier CRADA Fusion Radiation Detection Nuclear Safety Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "How an AI Company Buys Nuclear Power: Reading Google's 890 MW Uprate Deal",
@@ -5721,7 +6197,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-07-google-constellation-nuclear-uprate-deal/thumbnail_01.webp",
     "thumbnailAlt": "Nuclear plant and data center linked by glowing transmission lines at dusk",
     "url": "posts/news/2026-10-07-google-constellation-nuclear-uprate-deal.html",
-    "keywords": "Google Constellation Nuclear Uprate Power Uprate Power Purchase Agreement PPA AIData Centers AIPower 890MW USNuclear PJM NRC Nuclear Energy"
+    "keywords": "Google Constellation Nuclear Uprate Power Uprate Power Purchase Agreement PPA AIData Centers AIPower 890MW USNuclear PJM NRC Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "A Nuclear Plant Delivered by Ship? The Steps Canada's Transportable Nuclear Plant Still Has to Clear",
@@ -5733,7 +6210,8 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-07-canada-transportable-nuclear-plant-banr/thumbnail_01.webp",
     "thumbnailAlt": "A reactor module on a heavy-lift vessel approaching a harbour at dawn",
     "url": "posts/news/2026-10-07-canada-transportable-nuclear-plant-banr.html",
-    "keywords": "Transportable Nuclear TNPP BANR BWXT Prodigy Clean Energy SMR HTGR TRISO HALEU Belledune New Brunswick Canada CNSC Nuclear Licensing Nuclear Energy"
+    "keywords": "Transportable Nuclear TNPP BANR BWXT Prodigy Clean Energy SMR HTGR TRISO HALEU Belledune New Brunswick Canada CNSC Nuclear Licensing Nuclear Energy",
+    "publishedAt": "2026-10-24T04:34:51Z"
   },
   {
     "title": "NRC Reform: What Changes Even When the Dose Limits Stay the Same",
@@ -5745,19 +6223,26 @@ const posts = [
     "thumbnail": "assets/images/news/2026-09-29-nrc-reform-safety-evidence/thumbnail_01.webp",
     "thumbnailAlt": "Dosimeter, papers and safety glasses on a desk with the text NRC Radiation Protection Proposed Rule: read the limits and the conditions together",
     "url": "posts/news/2026-09-29-nrc-reform-safety-evidence.html",
-    "keywords": "NRC radiation protection proposed rule 10 CFR Part 20 dose limits ALARA planned dose limit extension public dose regulatory analysis occupational exposure"
+    "keywords": "NRC radiation protection proposed rule 10 CFR Part 20 dose limits ALARA planned dose limit extension public dose regulatory analysis occupational exposure",
+    "publishedAt": "2026-09-29T20:50:44Z"
   }
 ];
 const view=document.body.dataset.section||"news";
 const ALL="All";
+const recentOrder=(a,b)=>b.date.localeCompare(a.date)||(b.publishedAt||"").localeCompare(a.publishedAt||"");
 const home=document.body.dataset.home==="true", size=home?5:10;
 const pagination=document.querySelector("#pagination");let page=1;
 const esc=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 const list=document.querySelector("#post-list"),empty=document.querySelector("#empty-state"),search=document.querySelector("#search"),filters=document.querySelector(".filters");let buttons=[...document.querySelectorAll("[data-filter]")],active=ALL;
 document.querySelectorAll("[data-view-link]").forEach(link=>link.classList.toggle("active",!home&&link.dataset.viewLink===view));
+const homeBoards=[...document.querySelectorAll("[data-view-link]")].map(a=>({section:a.dataset.viewLink,title:a.textContent.trim(),url:a.getAttribute("href")}));
+const boardName=section=>homeBoards.find(b=>b.section===section)?.title||section;
+if(home){filters.innerHTML=`<button class="selected" type="button" data-filter="${ALL}">All</button>${homeBoards.map(b=>`<button type="button" data-filter="${esc(b.section)}">${esc(b.title)}</button>`).join("")}`;buttons=[...filters.querySelectorAll("[data-filter]")];document.querySelector(".browse-all").innerHTML=homeBoards.map(b=>`<a href="${esc(b.url)}">${esc(b.title)} →</a>`).join("");}
 const BOARDS={theory:["NUCLEAR THEORY","Nuclear Theory","No nuclear theory posts in this category yet."],concepts:["CONCEPT DICTIONARY","Concept Dictionary","No concepts in this domain yet."],history:["NUCLEAR HISTORY","Nuclear History","No history articles in this era yet."]};
 if(!home&&BOARDS[view]){const [eb,ti,em]=BOARDS[view];document.querySelector("#board-eyebrow").textContent=eb;document.querySelector("#board-title").textContent=ti;empty.textContent=em;const categories=[...new Set(posts.filter(p=>p.section===view).map(p=>p.category))];if(view==="concepts")categories.sort();filters.innerHTML=`<button class="selected" type="button" data-filter="${ALL}">All posts</button>${categories.map(c=>`<button type="button" data-filter="${esc(c)}">${esc(c)}</button>`).join("")}`;buttons=[...filters.querySelectorAll("[data-filter]")]}
-function render(){const q=search.value.trim().toLowerCase();const filtered=posts.filter(p=>(home||p.section===view)&&(active===ALL||(home?p.section:p.category)===active)&&(`${p.title} ${p.summary} ${p.keywords}`.toLowerCase().includes(q))).sort((a,b)=>!home&&view==="concepts"?a.title.localeCompare(b.title):!home&&view==="history"?a.url.localeCompare(b.url):b.date.localeCompare(a.date));const total=Math.ceil(filtered.length/size);page=Math.max(1,Math.min(page,total));list.innerHTML=filtered.slice((page-1)*size,page*size).map(p=>`<a class="post" href="${p.url}"><img class="post-thumb" src="${p.thumbnail}" alt="${esc(p.thumbnailAlt)}"><div class="post-copy"><div class="post-meta"><strong>${esc(p.category)}</strong>${p.section==="news"?esc(p.displayDate):""}</div><h3>${esc(p.title)}</h3><p>${esc(p.summary)}</p></div><span class="arrow" aria-hidden="true">→</span></a>`).join("");empty.hidden=filtered.length!==0;
+function render(){const q=search.value.trim().toLowerCase();const filtered=posts.filter(p=>(home||p.section===view)&&(active===ALL||(home?p.section:p.category)===active)&&(`${p.title} ${p.summary} ${p.keywords}`.toLowerCase().includes(q))).sort((a,b)=>!home&&view==="concepts"?a.title.localeCompare(b.title):!home&&view==="history"?a.url.localeCompare(b.url):recentOrder(a,b));const total=Math.ceil(filtered.length/size);page=Math.max(1,Math.min(page,total));list.innerHTML=filtered.slice((page-1)*size,page*size).map(p=>`<a class="post" href="${p.url}"><img class="post-thumb" src="${p.thumbnail}" alt="${esc(p.thumbnailAlt)}"><div class="post-copy"><div class="post-meta"><strong>${home?esc(boardName(p.section))+" · ":""}${esc(p.category)}</strong>${p.section==="news"?esc(p.displayDate):""}</div><h3>${esc(p.title)}</h3><p>${esc(p.summary)}</p></div><span class="arrow" aria-hidden="true">→</span></a>`).join("");empty.hidden=filtered.length!==0;
+if(home){const more=document.querySelector("#selected-board-link"),board=homeBoards.find(b=>b.section===active);more.hidden=!board;if(board){more.href=board.url;more.textContent=`View all ${board.title} posts →`;}}
+
 if(pagination){pagination.hidden=total<=1;const control=(n,label,disabled=false)=>`<button type="button" data-page="${n}" ${disabled?'disabled':''} ${label===String(page)?'aria-current="page"':''} aria-label="${/^\d+$/.test(label)?'Page '+n:label}">${label}</button>`;
 const nums=[...new Set([1,page-1,page,page+1,total])].filter(n=>n>=1&&n<=total).sort((a,b)=>a-b);let prev=0;
 pagination.innerHTML=control(page-1,"Previous",page===1)+nums.map(n=>{const gap=prev&&n-prev>1?'<span aria-hidden="true">…</span>':'';prev=n;return gap+control(n,String(n))}).join('')+control(page+1,"Next",page===total)+`<span class="page-status">Page ${page} of ${total} · ${filtered.length} posts</span>`;}

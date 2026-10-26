@@ -26,14 +26,14 @@ def posts_from(root):
 
 
 def newest(posts):
-    return sorted(posts, key=lambda p: p["date"], reverse=True)
+    return sorted(posts, key=lambda p: (p["date"], p.get("publishedAt", "")), reverse=True)
 
 
-def cards(posts):
+def cards(posts, home=False):
     return "".join(
         f'<a class="post" href="{BASE}{ESC(p["url"])}">'
         f'<img class="post-thumb" src="{BASE}{ESC(p["thumbnail"])}" alt="{ESC(p["thumbnailAlt"])}">'
-        f'<div class="post-copy"><div class="post-meta"><strong>{ESC(p["category"])}</strong>'
+        f'<div class="post-copy"><div class="post-meta"><strong>{ESC(SECTIONS.get(p["section"], p["section"])) + " · " if home else ""}{ESC(p["category"])}</strong>'
         f'{ESC(p["displayDate"]) if p["section"] == "news" else ""}</div>'
         f'<h3>{ESC(p["title"])}</h3><p>{ESC(p["summary"])}</p></div>'
         '<span class="arrow" aria-hidden="true">→</span></a>' for p in posts)
@@ -132,9 +132,14 @@ def enrich(root, config):
     (archive / "index.html").write_text(archive_page("Article archive", "Browse all nuclear news, theory lessons, concept dictionary entries and nuclear history articles.", '<ul>' + ''.join(archive_links) + '</ul>'), encoding="utf-8")
     for name in ["index", *SECTIONS]:
         p = root / f"{name}.html"; text = p.read_text(encoding="utf-8")
+        if name == 'index':
+            board_links = ''.join(f'<a href="{section}.html">{ESC(label)} →</a>' for section, label in SECTIONS.items())
+            text = re.sub(r'<p class="browse-all">.*?</p>', '<p class="browse-all">' + board_links + '</p>', text, flags=re.S)
+            board_filters = '<button class="selected" type="button" data-filter="All">All</button>' + ''.join(f'<button type="button" data-filter="{section}">{ESC(label)}</button>' for section, label in SECTIONS.items())
+            text = re.sub(r'(<div class="filters"[^>]*>).*?(</div>)', lambda m: m[1] + board_filters + m[2], text, flags=re.S)
         selected = newest(posts)[:5] if name == "index" else [x for x in posts if x["section"] == name]
         if name != "index": selected = board_order(name, selected)[:10]
-        text = text.replace('<div id="post-list" class="post-list" aria-live="polite"></div>', '<div id="post-list" class="post-list" aria-live="polite">' + cards(selected) + '</div>')
+        text = text.replace('<div id="post-list" class="post-list" aria-live="polite"></div>', '<div id="post-list" class="post-list" aria-live="polite">' + cards(selected, home=name == 'index') + '</div>')
         if 'data-discovery-links' not in text:
             links = f'<span data-discovery-links><a href="{BASE}archive/index.html">Article archive</a> · <a href="{BASE}sitemap.xml">Sitemap</a> · <a href="{BASE}feed.xml">RSS</a></span>'
             text = text.replace('</footer>', links + '</footer>', 1)

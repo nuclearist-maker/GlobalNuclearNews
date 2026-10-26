@@ -35,6 +35,7 @@ import re
 import shutil
 import subprocess
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -168,17 +169,21 @@ def write_if_changed(path: Path, data: bytes) -> bool:
 
 
 def update_app_js(pkgs: list[dict]) -> bool:
+    app = ROOT / "assets" / "app.js"
+    src = app.read_text(encoding="utf-8")
+    previous = json.JSONDecoder().raw_decode(src.split("const posts = ", 1)[1])[0]
+    published = {p['url']: p.get('publishedAt', '') for p in previous}
+    published_now = datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')
     entries = []
     for p in sorted(pkgs, key=lambda p: (p["meta"]["date"], p["meta"]["slug"]), reverse=True):
         m = p["meta"]
         entries.append({
             "title": m["list_title"], "date": m["date"], "displayDate": m["date"],
+            "publishedAt": published.get(f"posts/{m['section']}/{m['slug']}.html", published_now),
             "section": m["section"], "category": m["category"], "summary": m["summary"],
             "thumbnail": f"assets/images/{m['section']}/{m['slug']}/{site_name(m['thumbnail'])}",
             "thumbnailAlt": m["thumbnailAlt"], "url": f"posts/{m['section']}/{m['slug']}.html",
             "keywords": m["keywords"]})
-    app = ROOT / "assets" / "app.js"
-    src = app.read_text(encoding="utf-8")
     head, sep, rest = src.partition("const posts = [")
     _, sep2, tail = rest.partition("\n];\n")
     if not sep or not sep2:
