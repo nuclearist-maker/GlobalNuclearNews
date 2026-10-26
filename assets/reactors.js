@@ -22,11 +22,30 @@
   const xy = ([lat,lon]) => [(lon+180)*1000/360,(84-lat)*440/144];
   let mapGroups = [], view = {x:0,y:0,w:1000,h:440};
   const mapSvg = () => $('reactor-map').querySelector('svg');
-  function closeInfo() { $('map-info').hidden = true; }
+  let activeSite = null;
+  function closeInfo() { $('map-info').hidden = true; activeSite = null; }
+  function positionInfo() {
+    const panel=$('map-info'); if(panel.hidden || activeSite===null)return;
+    const marker=$('map-points').querySelector(`[data-site="${activeSite}"]`);
+    if(!marker){closeInfo();return;}
+    const stage=mapSvg().parentElement.getBoundingClientRect(), svg=mapSvg().getBoundingClientRect(), point=marker.getBoundingClientRect();
+    const cx=(point.left+point.right)/2, cy=(point.top+point.bottom)/2;
+    if(cx<svg.left || cx>svg.right || cy<svg.top || cy>svg.bottom){closeInfo();return;}
+    const inset=12, gap=16, leftSpace=point.left-stage.left-inset-gap, rightSpace=stage.right-point.right-inset-gap;
+    panel.classList.remove('is-docked'); panel.style.cssText='';
+    if(window.innerWidth<=600 || Math.max(leftSpace,rightSpace)<240){panel.classList.add('is-docked');return;}
+    const onLeft=leftSpace>rightSpace;
+    panel.style.width=`${Math.min(320,onLeft?leftSpace:rightSpace)}px`;
+    panel.style.left=onLeft?`${inset}px`:'auto';panel.style.right=onLeft?'auto':`${inset}px`;
+    panel.style.maxHeight=`${Math.max(0,svg.height-inset*2)}px`;
+    const top=Math.max(inset,Math.min(cy-svg.top-40,svg.height-panel.getBoundingClientRect().height-inset));
+    panel.style.top=`${svg.top-stage.top+top}px`;
+  }
   function showInfo(index) {
     const group = mapGroups[index]; if(!group) return;
     $('map-info-body').innerHTML = `<h3>${group.length===1?'Reactor overview':`${group.length} records at this location`}</h3>` + group.map(r => `<section><strong>${esc(r.name)}</strong><p>${esc(r.country)} · ${esc(r.status)}${r.businessState && !['Active','Unknown'].includes(r.businessState)?' · '+esc(r.businessState):''}</p><p>${esc(r.model || r.type || 'Technology unknown')} · Net: ${capacity(r.netMWe)}</p><small>${r.verifiedOn?'Checked: '+esc(r.verifiedOn):'Baseline only · '+esc(r.baselineReviewed)}</small></section>`).join('');
     $('map-info').hidden = false;
+    activeSite=index; positionInfo();
   }
   function updateView() {
     view.x = Math.max(0,Math.min(1000-view.w,view.x)); view.y = Math.max(0,Math.min(440-view.h,view.y));
@@ -34,6 +53,7 @@
     $('map-zoom-level').textContent = `${(1000/view.w).toFixed(1)}×`;
     $('map-zoom-in').disabled = view.w<=125; $('map-zoom-out').disabled = view.w>=1000;
     for(const marker of $('map-points').children) marker.setAttribute('r',4.5*view.w/1000);
+    positionInfo();
   }
   function zoom(factor,center) {
     const w=Math.max(125,Math.min(1000,view.w/factor)), ratio=w/view.w;
@@ -67,7 +87,8 @@
     });
     const end=e=>{if(drag?.id===e.pointerId){if(svg.hasPointerCapture(e.pointerId))svg.releasePointerCapture(e.pointerId);drag=null;}};
     svg.addEventListener('pointerup',end);svg.addEventListener('pointercancel',end);
-    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeInfo();});updateView();
+    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeInfo();});
+    window.addEventListener('resize',positionInfo);updateView();
   }
   function map(rows) {
     const mapped = rows.filter(r => r.coordinates && r.coordinates[0] >= -60 && r.coordinates[0] <= 84);
