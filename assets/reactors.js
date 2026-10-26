@@ -1,4 +1,4 @@
-/* Progressive enhancement; the static first page and downloads work without JS. */
+/* Progressive enhancement; the static first page works without JS. */
 (() => {
   'use strict';
   const board = document.body.dataset.reactorBoard;
@@ -20,10 +20,60 @@
     return records.filter(r => (!country || r.country === country) && (!status || r.status === status) && (!evidence || (evidence === 'current' ? !!r.verifiedOn : !r.verifiedOn)) && (!query || [r.name,r.site,r.country,r.model,r.type,r.operator,r.id].join(' ').toLocaleLowerCase().includes(query)));
   }
   const xy = ([lat,lon]) => [(lon+180)*1000/360,(84-lat)*440/144];
+  let mapGroups = [], view = {x:0,y:0,w:1000,h:440};
+  const mapSvg = () => $('reactor-map').querySelector('svg');
+  function closeInfo() { $('map-info').hidden = true; }
+  function showInfo(index) {
+    const group = mapGroups[index]; if(!group) return;
+    $('map-info-body').innerHTML = `<h3>${group.length===1?'Reactor overview':`${group.length} records at this location`}</h3>` + group.map(r => `<section><strong>${esc(r.name)}</strong><p>${esc(r.country)} · ${esc(r.status)}${r.businessState && !['Active','Unknown'].includes(r.businessState)?' · '+esc(r.businessState):''}</p><p>${esc(r.model || r.type || 'Technology unknown')} · Net: ${capacity(r.netMWe)}</p><small>${r.verifiedOn?'Checked: '+esc(r.verifiedOn):'Baseline only · '+esc(r.baselineReviewed)}</small></section>`).join('');
+    $('map-info').hidden = false;
+  }
+  function updateView() {
+    view.x = Math.max(0,Math.min(1000-view.w,view.x)); view.y = Math.max(0,Math.min(440-view.h,view.y));
+    mapSvg().setAttribute('viewBox',`${view.x} ${view.y} ${view.w} ${view.h}`);
+    $('map-zoom-level').textContent = `${(1000/view.w).toFixed(1)}×`;
+    $('map-zoom-in').disabled = view.w<=125; $('map-zoom-out').disabled = view.w>=1000;
+    for(const marker of $('map-points').children) marker.setAttribute('r',4.5*view.w/1000);
+  }
+  function zoom(factor,center) {
+    const w=Math.max(125,Math.min(1000,view.w/factor)), ratio=w/view.w;
+    const c=center || {x:view.x+view.w/2,y:view.y+view.h/2};
+    view={x:c.x-(c.x-view.x)*ratio,y:c.y-(c.y-view.y)*ratio,w,h:w*.44};updateView();
+  }
+  function setupMap() {
+    const svg=mapSvg(); let drag=null, moved=false;
+    const position=e=>{const p=svg.createSVGPoint();p.x=e.clientX;p.y=e.clientY;return p.matrixTransform(svg.getScreenCTM().inverse());};
+    $('map-zoom-in').addEventListener('click',()=>zoom(1.5));
+    $('map-zoom-out').addEventListener('click',()=>zoom(1/1.5));
+    $('map-reset').addEventListener('click',()=>{view={x:0,y:0,w:1000,h:440};updateView();closeInfo();});
+    $('map-info-close').addEventListener('click',()=>{closeInfo();svg.focus({preventScroll:true});});
+    const reveal=e=>{const marker=e.target.closest('[data-site]');if(marker)showInfo(Number(marker.dataset.site));};
+    svg.addEventListener('pointerover',reveal);svg.addEventListener('focusin',reveal);
+    svg.addEventListener('click',e=>{if(!moved)reveal(e);});
+    svg.addEventListener('keydown',e=>{
+      if(e.key==='Escape'){closeInfo();return;}
+      if((e.key==='Enter'||e.key===' ') && e.target.matches('[data-site]')){e.preventDefault();reveal(e);return;}
+      if(e.key==='+'||e.key==='='){e.preventDefault();zoom(1.5);}
+      else if(e.key==='-'){e.preventDefault();zoom(1/1.5);}
+      else if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key)){e.preventDefault();view.x+=(e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0)*view.w*.1;view.y+=(e.key==='ArrowDown'?1:e.key==='ArrowUp'?-1:0)*view.h*.1;updateView();}
+    });
+    svg.addEventListener('wheel',e=>{if(!e.ctrlKey)return;e.preventDefault();zoom(e.deltaY<0?1.2:1/1.2,position(e));},{passive:false});
+    svg.addEventListener('pointerdown',e=>{if(e.button!==0)return;moved=false;drag={id:e.pointerId,x:e.clientX,y:e.clientY,start:position(e),view:{...view}};});
+    svg.addEventListener('pointermove',e=>{
+      if(!drag||drag.id!==e.pointerId)return;
+      if(!moved && Math.hypot(e.clientX-drag.x,e.clientY-drag.y)<5)return;
+      if(!moved){svg.setPointerCapture(e.pointerId);moved=true;closeInfo();}
+      const matrix=svg.getScreenCTM();view.x=drag.view.x-(e.clientX-drag.x)/matrix.a;view.y=drag.view.y-(e.clientY-drag.y)/matrix.d;updateView();
+    });
+    const end=e=>{if(drag?.id===e.pointerId){if(svg.hasPointerCapture(e.pointerId))svg.releasePointerCapture(e.pointerId);drag=null;}};
+    svg.addEventListener('pointerup',end);svg.addEventListener('pointercancel',end);
+    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeInfo();});updateView();
+  }
   function map(rows) {
     const mapped = rows.filter(r => r.coordinates && r.coordinates[0] >= -60 && r.coordinates[0] <= 84);
-    $('map-points').innerHTML = mapped.map(r => {const [x,y] = xy(r.coordinates);return `<circle cx="${x}" cy="${y}" r="2.8" class="${r.status==='Suspended Operation'?'suspended':''}"><title>${esc(r.name)} · ${esc(r.country)} · ${esc(r.status)}</title></circle>`;}).join('');
-    $('map-caption').textContent = `${mapped.length} of ${rows.length} selected records mapped · ${rows.length-mapped.length} without a plotted site location. Co-located units overlap. Site coordinates retain their baseline review date; no administrative centroids plotted. Natural Earth geographic context.`;
+    const groups=new Map();for(const r of mapped){const key=r.coordinates.join(',');if(!groups.has(key))groups.set(key,[]);groups.get(key).push(r);}mapGroups=[...groups.values()];closeInfo();
+    $('map-points').innerHTML = mapGroups.map((group,i) => {const r=group[0],[x,y] = xy(r.coordinates);return `<circle cx="${x}" cy="${y}" r="${4.5*view.w/1000}" data-site="${i}" tabindex="0" role="button" aria-label="${esc(r.name)}${group.length>1?' and '+(group.length-1)+' other records':''}: show site details" aria-controls="map-info" class="${group.every(r=>r.status==='Suspended Operation')?'suspended':''}"/>`;}).join('');
+    $('map-caption').textContent = `${mapped.length} of ${rows.length} selected records mapped at ${mapGroups.length} locations · ${rows.length-mapped.length} without a plotted site location. Shared markers show all co-located records. Site coordinates retain their baseline review date; no administrative centroids plotted. Natural Earth geographic context.`;
   }
   function render(scroll = false) {
     const result = selected(), totalPages = Math.max(1,Math.ceil(result.length/pageSize));
@@ -42,8 +92,8 @@
     if(scroll)$('reactor-result-count').scrollIntoView({block:'start',behavior:'auto'});
   }
   async function init() {
-    const response = await fetch('assets/data/reactors.json');if(!response.ok)throw new Error('Dataset unavailable');
-    const data = await response.json();records = data.records.filter(r=>r.board===board);
+    const data = window.REACTOR_DISPLAY.inventory;records = data.records.filter(r=>r.board===board);
+    setupMap();
     for(const country of [...new Set(records.map(r=>r.country))].sort())$('reactor-country').add(new Option(country,country));
     const label = board==='operating' ? 'All fleet records (including suspended)' : 'All project stages';
     $('reactor-status').add(new Option(label,''));
@@ -56,10 +106,10 @@
     $('reactor-pagination').addEventListener('click',e=>{const button=e.target.closest('button[data-page]');if(button&&!button.disabled){page=Number(button.dataset.page);render(true);$('reactor-pagination').querySelector('[aria-current="page"]')?.focus({preventScroll:true});}});
     render();
     try {
-      const response = await fetch('assets/data/world-outline.json');if(!response.ok)throw new Error('Map unavailable');const world=await response.json();
+      const world=window.REACTOR_DISPLAY.world;
       $('map-land').innerHTML = world.polygons.map(points => '<path d="'+points.map(([lon,lat],i)=>{const [x,y]=xy([lat,lon]);return (i?'L':'M')+x.toFixed(2)+','+y.toFixed(2);}).join(' ')+'Z"/>').join('');
       $('reactor-map').hidden=false;
     } catch { /* A map failure does not remove the independently usable register. */ }
   }
-  init().catch(()=>{$('data-error').textContent='The interactive dataset could not load. The first 10 records remain below; use the JSON download for the full register.';$('data-error').hidden=false;});
+  init().catch(()=>{$('data-error').textContent='The interactive dataset could not load. The first 10 records remain below; reload the page to try again.';$('data-error').hidden=false;});
 })();
