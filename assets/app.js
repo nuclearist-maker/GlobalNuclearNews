@@ -1,5 +1,44 @@
 const posts = [
   {
+    "title": "84 Research Reactor Fuel Elements, One Shared Repository: Slovenia's TRIGA Deep Borehole Disposal Cost Study",
+    "date": "2026.10.26",
+    "displayDate": "2026.10.26",
+    "publishedAt": "2026-10-26T22:09:33Z",
+    "section": "news",
+    "category": "Fuel Cycle",
+    "summary": "Disposing of 84 TRIGA fuel elements in a stand-alone deep borehole facility would cost €65.6 million, versus an increment of about €1.49 million when one canister is added to the Krško facility (2023 euros, excluding contingency and VAT).",
+    "thumbnail": "assets/images/news/2026-10-26-slovenia-triga-fuel-deep-borehole-disposal/thumbnail_01.webp",
+    "thumbnailAlt": "A drilling rig in a misty central European river valley with a long, slender metal canister beside it",
+    "url": "posts/news/2026-10-26-slovenia-triga-fuel-deep-borehole-disposal.html",
+    "keywords": "Spent Fuel Deep Borehole Disposal Research Reactor TRIGA Slovenia ARAO Deep Isolation Krsko JSI Radioactive Waste Disposal Cost SSR5 IAEA Nuclear Energy"
+  },
+  {
+    "title": "Restarting a Reactor Also Means Reopening the Road to the Grid: Interconnection at Crane, Palisades and Duane Arnold",
+    "date": "2026.10.26",
+    "displayDate": "2026.10.26",
+    "publishedAt": "2026-10-26T22:09:33Z",
+    "section": "news",
+    "category": "Policy & Regulation",
+    "summary": "FERC let Crane take over 760 MW of capacity interconnection rights from Eddystone on June 1, 2026, while Palisades extended its MISO interconnection deadline and Duane Arnold draws on a solar project's rights.",
+    "thumbnail": "assets/images/news/2026-10-26-restarted-reactors-grid-interconnection-rights/thumbnail_01.webp",
+    "thumbnailAlt": "A riverside nuclear plant at dawn with a line of transmission towers running from its switchyard to the horizon",
+    "url": "posts/news/2026-10-26-restarted-reactors-grid-interconnection-rights.html",
+    "keywords": "Nuclear Restart Grid Interconnection Capacity Interconnection Rights Transmission Grid FERC NRC PJM MISO Crane Palisades Duane Arnold Eddystone Data Centers Nuclear Power"
+  },
+  {
+    "title": "Namibia's Etango Uranium Mine: From Final Investment Decision to First Production in 2028",
+    "date": "2026.10.26",
+    "displayDate": "2026.10.26",
+    "publishedAt": "2026-10-26T22:09:33Z",
+    "section": "news",
+    "category": "Fuel Cycle",
+    "summary": "The Etango joint venture (Bannerman 55%, CNNC Overseas 45%) reached FID on October 23, 2026 for Etango-8, which plans about 3.5 million lb of U₃O₈ a year from 240 ppm ore at an 87.8% design processing yield.",
+    "thumbnail": "assets/images/news/2026-10-26-etango-uranium-heap-leach-2028/thumbnail_01.webp",
+    "thumbnailAlt": "Open-pit mine in the Namib Desert with wide heap leach pads, a processing plant and red mountains",
+    "url": "posts/news/2026-10-26-etango-uranium-heap-leach-2028.html",
+    "keywords": "Etango Heap Leaching Yellowcake Uranium Final Investment Decision Namibia Bannerman Energy Etango8 U3O8 Solvent Extraction Processing Yield Uranium Mining Nuclear Fuel Nuclear Energy"
+  },
+  {
     "title": "Hot spot factors and rod count — worked heat flux problem",
     "date": "2026.10.25",
     "displayDate": "2026.10.25",
