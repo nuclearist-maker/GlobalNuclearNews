@@ -12,6 +12,20 @@ SECTIONS = {"news": "Global Nuclear News", "theory": "Nuclear Theory", "concepts
 ESC = html.escape
 
 
+def content_html_files(root):
+    """Validate root ownership tokens; return only pages that need SEO metadata."""
+    pages = []
+    for p in sorted(root.rglob("*.html")):
+        if p.parent == root and re.fullmatch(r"google[0-9a-f]{16}\.html", p.name):
+            expected = ("google-site-verification: " + p.name).encode("ascii")
+            if p.read_bytes() not in (expected, expected + b"\n", expected + b"\r\n"):
+                raise ValueError("Invalid Google ownership file: " + p.name)
+            # Never rewrite these bytes or include the token in the sitemap.
+            continue
+        pages.append(p)
+    return pages
+
+
 def posts_from(root):
     text = (root / "assets/app.js").read_text(encoding="utf-8-sig")
     data, _ = json.JSONDecoder().raw_decode(text.split("const posts = ", 1)[1])
@@ -144,7 +158,7 @@ def enrich(root, config):
             links = f'<span data-discovery-links><a href="{BASE}archive/index.html">Article archive</a> · <a href="{BASE}sitemap.xml">Sitemap</a> · <a href="{BASE}feed.xml">RSS</a></span>'
             text = text.replace('</footer>', links + '</footer>', 1)
         p.write_text(text, encoding="utf-8")
-    html_files = sorted(root.rglob("*.html"))
+    html_files = content_html_files(root)
     for p in html_files:
         rel = p.relative_to(root).as_posix()
         p.write_text(metadata(p.read_text(encoding="utf-8"), rel, postmap.get(rel), verification), encoding="utf-8")

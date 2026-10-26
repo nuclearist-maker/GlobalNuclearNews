@@ -6,7 +6,7 @@ import sys
 from urllib.parse import urlsplit, urljoin, unquote
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
-from search_discovery import BASE, posts_from, newest
+from search_discovery import BASE, posts_from, newest, content_html_files
 
 
 class Page(HTMLParser):
@@ -22,7 +22,7 @@ class Page(HTMLParser):
 
 
 def check(root):
-    posts=posts_from(root); html_files=sorted(root.rglob('*.html')); urls=set(); parsed={}
+    posts=posts_from(root); html_files=content_html_files(root); urls=set(); parsed={}
     for p in html_files:
         rel=p.relative_to(root).as_posix(); url=BASE if rel=='index.html' else BASE+rel; urls.add(url)
         text=p.read_text(encoding='utf-8'); page=Page();page.feed(text);parsed[rel]=page
