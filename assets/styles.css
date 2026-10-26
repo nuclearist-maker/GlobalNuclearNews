@@ -5,3 +5,6 @@
 .pagination{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;margin-top:28px}.pagination[hidden]{display:none}.pagination button{min-width:44px;min-height:44px;padding:8px 12px;border:1px solid var(--line);background:#fff;color:var(--ink);font:inherit;cursor:pointer}.pagination button[aria-current="page"]{background:var(--blue);border-color:var(--blue);color:#fff}.pagination button:disabled{opacity:.45;cursor:default}.pagination button:focus-visible,.browse-all a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}.page-status{width:100%;text-align:center;color:var(--muted);font-size:.85rem}.browse-all{text-align:center;margin:28px 0 0}.browse-all a{color:var(--blue);font-weight:700}
 
 .browse-all{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 24px}.browse-all a,#selected-board-link{display:inline-block;padding:8px 4px}#selected-board-link{color:var(--blue);font-weight:700}#selected-board-link[hidden]{display:none}
+
+/* Reactor data navigation */
+.masthead{height:auto;min-height:84px;gap:20px}.masthead nav{gap:18px;flex-wrap:wrap;justify-content:flex-end}.masthead nav a{font-size:.9rem;white-space:nowrap}@media(max-width:1100px){.masthead{flex-wrap:wrap;padding-top:16px;padding-bottom:10px}.masthead nav{justify-content:flex-start}.masthead nav a{padding:10px 0}}

@@ -12,12 +12,14 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from public_files import collect
 from search_discovery import enrich
+from build_reactor_pages import main as build_reactor_pages
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "_site"
 
 
 def main():
+    build_reactor_pages()
     files = collect(ROOT)
     if OUT.is_symlink() or OUT.resolve() != ROOT.resolve() / "_site":
         raise ValueError("Unsafe output path")

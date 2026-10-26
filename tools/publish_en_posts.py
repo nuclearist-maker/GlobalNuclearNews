@@ -60,7 +60,7 @@ def nav(section: str) -> str:
     def a(s: str, label: str) -> str:
         cls = ' class="active"' if s == section else ""
         return f'<a{cls} href="../../{SECTIONS[s][0]}">{label}</a>'
-    return '<nav aria-label="Main menu">' + "".join(a(s, NAV_LABELS[s]) for s in SECTIONS) + '</nav>'
+    return '<nav aria-label="Main menu">' + "".join(a(s, NAV_LABELS[s]) for s in SECTIONS) + '<a href="../../reactors.html">Reactor Data</a></nav>'
 
 
 def load_packages(errors: list[str]) -> list[dict]:
