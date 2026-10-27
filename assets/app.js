@@ -1,5 +1,57 @@
 const posts = [
   {
+    "title": "Before the First Reactor, Money and People: The Philippines Talks Financing, Singapore Trains a Workforce",
+    "date": "2026.10.27",
+    "displayDate": "2026.10.27",
+    "publishedAt": "2026-10-27T11:52:08Z",
+    "section": "news",
+    "category": "Policy & Regulation",
+    "summary": "The Philippines discussed potential debt financing of up to $5 billion over up to 25 years with the US DFC, with no final agreement announced; Singapore's METI and EMA launched NMDP, NMDP-I and SFEF to prepare for a 2027 IAEA INIR.",
+    "thumbnail": "assets/images/news/2026-10-27-philippines-singapore-nuclear-finance-workforce/thumbnail_01.webp",
+    "thumbnailAlt": "Southeast Asian coastal city skyline at dusk with transmission towers along the shore",
+    "url": "posts/news/2026-10-27-philippines-singapore-nuclear-finance-workforce.html",
+    "keywords": "Nuclear Newcomers Nuclear Finance Nuclear Workforce Philippines Singapore INIR IAEA DFC EXIM ADB NMDP Credit Enhancement Advanced Nuclear Nuclear Energy"
+  },
+  {
+    "title": "Enriching Uranium with Lasers: What Comes After the Environmental Review at Paducah",
+    "date": "2026.10.27",
+    "displayDate": "2026.10.27",
+    "publishedAt": "2026-10-27T11:52:08Z",
+    "section": "news",
+    "category": "Fuel Cycle",
+    "summary": "NRC issued the FEIS for GLE's Paducah laser enrichment plant on Oct 23, 2026, recommending a license; the SER is expected by end-2026 (GLE) or January 2027 (NRC page), and Silex says Cameco signed an offtake agreement for all future output.",
+    "thumbnail": "assets/images/news/2026-10-27-paducah-laser-enrichment-licensing/thumbnail_01.webp",
+    "thumbnailAlt": "Isotope separation lab where a green laser beam passes through optics and a sealed process module",
+    "url": "posts/news/2026-10-27-paducah-laser-enrichment-licensing.html",
+    "keywords": "Laser Enrichment Uranium Enrichment Paducah Global Laser Enrichment SILEX NRC Environmental Impact Statement Safety Evaluation Report Integrated Safety Analysis LEUPlus HALEU Cameco Nuclear Fuel Nuclear Energy"
+  },
+  {
+    "title": "When a Nuclear Ship Comes into Port: UK Port Readiness and the Icebreaker Chukotka",
+    "date": "2026.10.27",
+    "displayDate": "2026.10.27",
+    "publishedAt": "2026-10-27T11:52:08Z",
+    "section": "news",
+    "category": "Marine Nuclear",
+    "summary": "UK rules require a nuclear ship's safety assessment at least 12 months before arrival, and LR and the BPA name regulation, liability, insurance, emergency response and workforce as the key conditions; separately, Chukotka's starboard RITM-200 reactor (175 MWth) reached minimum controllable power.",
+    "thumbnail": "assets/images/news/2026-10-27-nuclear-ships-uk-port-readiness/thumbnail_01.webp",
+    "thumbnailAlt": "A red and white nuclear icebreaker berthed at a modern port quay with container cranes at sunset",
+    "url": "posts/news/2026-10-27-nuclear-ships-uk-port-readiness.html",
+    "keywords": "Nuclear Ships Nuclear Propulsion Ports United Kingdom Lloyds Register British Ports Association MCA ONR Safety Assessment Nuclear Liability IMO Nuclear Icebreaker Chukotka RITM200 Nuclear Energy"
+  },
+  {
+    "title": "Shrinking Waste Inside the Drum: What the Fukushima inDRUM Demonstration Will Test",
+    "date": "2026.10.27",
+    "displayDate": "2026.10.27",
+    "publishedAt": "2026-10-27T11:52:08Z",
+    "section": "news",
+    "category": "Fuel Cycle",
+    "summary": "Studsvik's Japanese subsidiary and ReNu Industries signed a technical consulting agreement on October 21, 2026, targeting basic design conditions in FY2026 and, subject to contracts, a pilot in FY2028, with a subsidy of up to 700 million yen per Studsvik.",
+    "thumbnail": "assets/images/news/2026-10-27-fukushima-indrum-waste-treatment-demonstration/thumbnail_01.webp",
+    "thumbnailAlt": "Hot cell seen through a shielding window, with remote manipulator arms and a steel drum inside the treatment unit",
+    "url": "posts/news/2026-10-27-fukushima-indrum-waste-treatment-demonstration.html",
+    "keywords": "in DRUM Radioactive Waste Waste Treatment Fukushima Studsvik Re Nu Industries Material Balance Secondary Waste Waste Acceptance Criteria Safety Case IAEA Nuclear Regulation Authority Simulated Waste Demonstration Nuclear Energy"
+  },
+  {
     "title": "84 Research Reactor Fuel Elements, One Shared Repository: Slovenia's TRIGA Deep Borehole Disposal Cost Study",
     "date": "2026.10.26",
     "displayDate": "2026.10.26",
