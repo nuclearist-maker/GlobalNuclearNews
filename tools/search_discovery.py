@@ -6,6 +6,7 @@ from pathlib import Path
 import re
 from urllib.parse import urljoin
 import xml.etree.ElementTree as ET
+from site_information import PAGES, add_support_navigation
 
 BASE = "https://nuclearist-maker.github.io/GlobalNuclearNews/"
 SECTIONS = {"news": "Global Nuclear News", "theory": "Nuclear Theory", "concepts": "Concept Dictionary", "history": "Nuclear History"}
@@ -120,6 +121,9 @@ def board_order(section, posts):
 
 
 def enrich(root, config):
+    for path, _ in PAGES:
+        if not (root / path).is_file():
+            raise ValueError('Missing site information page: ' + path)
     posts = posts_from(root)
     postmap = {p["url"]: p for p in posts}
     verification = config.get("verification", {})
@@ -161,7 +165,8 @@ def enrich(root, config):
     html_files = content_html_files(root)
     for p in html_files:
         rel = p.relative_to(root).as_posix()
-        p.write_text(metadata(p.read_text(encoding="utf-8"), rel, postmap.get(rel), verification), encoding="utf-8")
+        text = add_support_navigation(p.read_text(encoding="utf-8"), BASE, rel)
+        p.write_text(metadata(text, rel, postmap.get(rel), verification), encoding="utf-8")
     ET.register_namespace('', 'http://www.sitemaps.org/schemas/sitemap/0.9')
     sitemap = ET.Element('{http://www.sitemaps.org/schemas/sitemap/0.9}urlset')
     for p in html_files:
