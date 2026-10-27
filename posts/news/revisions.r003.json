@@ -1,0 +1,747 @@
+{
+  "version": 1,
+  "scope": "Editorial source-link, event-status, unit-spacing and attribution revisions; not exhaustive scientific recertification",
+  "articles": [
+    {
+      "url": "posts/news/2026-10-26-slovenia-triga-fuel-deep-borehole-disposal.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.26",
+      "snapshot": "2026-10-26-slovenia-triga-fuel-deep-borehole-disposal.r001.html",
+      "original_snapshot": "2026-10-26-slovenia-triga-fuel-deep-borehole-disposal.r000.html",
+      "sha256": "07b3635e7df5004dddc0bb4d984c6006c617e380a6ba2ea2510c17ef97d28ae1",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-26-restarted-reactors-grid-interconnection-rights.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.26",
+      "snapshot": "2026-10-26-restarted-reactors-grid-interconnection-rights.r001.html",
+      "original_snapshot": "2026-10-26-restarted-reactors-grid-interconnection-rights.r000.html",
+      "sha256": "f5336f7fc530880ccc929c135f6046f943a3adbb8f273812bac7e7f1dbdcafd0",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-26-etango-uranium-heap-leach-2028.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.26",
+      "snapshot": "2026-10-26-etango-uranium-heap-leach-2028.r001.html",
+      "original_snapshot": "2026-10-26-etango-uranium-heap-leach-2028.r000.html",
+      "sha256": "9faaa9e46610616b0d0c369c7f7132cd7b2c6e23bf6615a44154e3b70867336e",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-23-rotterdam-port-smr-supply-chain.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.23",
+      "snapshot": "2026-10-23-rotterdam-port-smr-supply-chain.r001.html",
+      "original_snapshot": "2026-10-23-rotterdam-port-smr-supply-chain.r000.html",
+      "sha256": "929ab56de1ae4e224833ec6f7c7db825c79eb27da3fd0f4d56f311f2a53ea9d4",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-23-posiva-spent-fuel-repository-licence.html",
+      "revision": "r002",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.23",
+      "snapshot": "2026-10-23-posiva-spent-fuel-repository-licence.r002.html",
+      "original_snapshot": "2026-10-23-posiva-spent-fuel-repository-licence.r000.html",
+      "sha256": "1f0c7d5169458113692b242316889730d64ff4c6d862060c17029ad15753b602",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details.",
+        "Added a directly relevant source link; existing references retained.",
+        "Separated original report date from the later reference-update date."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-23-nrc-rule-demonstration-reactor-data.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.23",
+      "snapshot": "2026-10-23-nrc-rule-demonstration-reactor-data.r001.html",
+      "original_snapshot": "2026-10-23-nrc-rule-demonstration-reactor-data.r000.html",
+      "sha256": "ab8e28ee1c4fafa3600e7b6351cccca73160ccc61ff8766034af467de81c6120",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-23-doe-cleanup-future-land-use.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.23",
+      "snapshot": "2026-10-23-doe-cleanup-future-land-use.r001.html",
+      "original_snapshot": "2026-10-23-doe-cleanup-future-land-use.r000.html",
+      "sha256": "fff8fa631e00c26e88c9ff4d25206441a7adfba3b23e4c9c1c65e98b915812c7",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-23-canada-space-isotope-heat-power.html",
+      "revision": "r002",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.23",
+      "snapshot": "2026-10-23-canada-space-isotope-heat-power.r002.html",
+      "original_snapshot": "2026-10-23-canada-space-isotope-heat-power.r000.html",
+      "sha256": "267e4cdf8c2a24f40b33de3b112d9e2eb5f77245bc6cdae3ed65a76784eeda20",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details.",
+        "Added a directly relevant source link; existing references retained.",
+        "Separated original report date from the later reference-update date."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-22-westinghouse-leu-plus-fuel-plant-columbia.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.22",
+      "snapshot": "2026-10-22-westinghouse-leu-plus-fuel-plant-columbia.r001.html",
+      "original_snapshot": "2026-10-22-westinghouse-leu-plus-fuel-plant-columbia.r000.html",
+      "sha256": "048b770c378239268162b26080e91341803882c8ac99294c2a22190a2d74dd1f",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-22-max-planck-columbia-virtual-fusion-center.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.22",
+      "snapshot": "2026-10-22-max-planck-columbia-virtual-fusion-center.r001.html",
+      "original_snapshot": "2026-10-22-max-planck-columbia-virtual-fusion-center.r000.html",
+      "sha256": "00cb80ca5c9be6362950de48939d454f1f990365940ce75be290dcccddbb4a00",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-22-malaysia-mypower-19-issue-nuclear-assessment.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.22",
+      "snapshot": "2026-10-22-malaysia-mypower-19-issue-nuclear-assessment.r001.html",
+      "original_snapshot": "2026-10-22-malaysia-mypower-19-issue-nuclear-assessment.r000.html",
+      "sha256": "60e0c8d2ccb77b18b72dcaf5a1c18211b66c7259f883ec989dc8d7d8f675d013",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-22-kentucky-prosperity-one-ap1000-site.html",
+      "revision": "r002",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.22",
+      "snapshot": "2026-10-22-kentucky-prosperity-one-ap1000-site.r002.html",
+      "original_snapshot": "2026-10-22-kentucky-prosperity-one-ap1000-site.r000.html",
+      "sha256": "2e5b7666dc82782d627b9d3da02a8576c42996fce90a9a8df1bc39f8224dd683",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details.",
+        "Added a directly relevant source link; existing references retained.",
+        "Separated original report date from the later reference-update date."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-22-ai-designed-radiation-tolerant-chips-axess.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.22",
+      "snapshot": "2026-10-22-ai-designed-radiation-tolerant-chips-axess.r001.html",
+      "original_snapshot": "2026-10-22-ai-designed-radiation-tolerant-chips-axess.r000.html",
+      "sha256": "e37ad48d90749c668fcdfb17b91e0baf4150c16a173c0b0e352ae38031174a46",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-21-srs-salt-waste-grout-disposal-unit.html",
+      "revision": "r002",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.21",
+      "snapshot": "2026-10-21-srs-salt-waste-grout-disposal-unit.r002.html",
+      "original_snapshot": "2026-10-21-srs-salt-waste-grout-disposal-unit.r000.html",
+      "sha256": "2c2770acfd73c1e3f6376dd65ac952a9d7876a43f785023639240c02f12ee248",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details.",
+        "Added a directly relevant source link; existing references retained.",
+        "Separated original report date from the later reference-update date."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-21-philippines-first-nuclear-plant-preparation.html",
+      "revision": "r002",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.21",
+      "snapshot": "2026-10-21-philippines-first-nuclear-plant-preparation.r002.html",
+      "original_snapshot": "2026-10-21-philippines-first-nuclear-plant-preparation.r000.html",
+      "sha256": "61d5a4b1c530177f57545b2657e85500b6b108684515f99560a498bdbcd0f840",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details.",
+        "Added a directly relevant source link; existing references retained.",
+        "Separated original report date from the later reference-update date."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-21-dukovany-schedule-eu-industrial-accelerator-act.html",
+      "revision": "r002",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.21",
+      "snapshot": "2026-10-21-dukovany-schedule-eu-industrial-accelerator-act.r002.html",
+      "original_snapshot": "2026-10-21-dukovany-schedule-eu-industrial-accelerator-act.r000.html",
+      "sha256": "3a2542d4ee84e810178766f86a9ccaaacd38d2e196722fc90a3968c57ebf2d73",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details.",
+        "Added a directly relevant source link; existing references retained.",
+        "Separated original report date from the later reference-update date."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-21-candu-ec6-us-licensing-quality-assurance.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.21",
+      "snapshot": "2026-10-21-candu-ec6-us-licensing-quality-assurance.r001.html",
+      "original_snapshot": "2026-10-21-candu-ec6-us-licensing-quality-assurance.r000.html",
+      "sha256": "5e97c0d97eb10d2a33050ec5c51ec5c0ca4b5eec04f5f42a94e28ae7835437f9",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-21-barakah-unit-3-offsite-power-iaea.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.21",
+      "snapshot": "2026-10-21-barakah-unit-3-offsite-power-iaea.r001.html",
+      "original_snapshot": "2026-10-21-barakah-unit-3-offsite-power-iaea.r000.html",
+      "sha256": "94829b941f01260eb7449be5e7a801663506fcc16651c0bc0311547107a21c46",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-20-us-saudi-123-agreement-disapproval-resolution.html",
+      "revision": "r002",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.20",
+      "snapshot": "2026-10-20-us-saudi-123-agreement-disapproval-resolution.r002.html",
+      "original_snapshot": "2026-10-20-us-saudi-123-agreement-disapproval-resolution.r000.html",
+      "sha256": "ebf657aef65e9a08cebba79685d168dc833cd07a6393455cc6749b3bbd2160a9",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details.",
+        "Added a directly relevant source link; existing references retained.",
+        "Separated original report date from the later reference-update date."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-20-microreactors-army-base-university-campus.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.20",
+      "snapshot": "2026-10-20-microreactors-army-base-university-campus.r001.html",
+      "original_snapshot": "2026-10-20-microreactors-army-base-university-campus.r000.html",
+      "sha256": "cf3ae11e7600f97437b2dea4a4a040ac064a34fdbc71493f1d54721b0f1f7640",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-20-jorek-open-source-plasma-disruption-code.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.20",
+      "snapshot": "2026-10-20-jorek-open-source-plasma-disruption-code.r001.html",
+      "original_snapshot": "2026-10-20-jorek-open-source-plasma-disruption-code.r000.html",
+      "sha256": "d6554ebb3369ece35623222f3ee88fdbb86dd349df44cca3028cf4b89db9003a",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-20-iter-divertor-inner-target-first-unit.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.20",
+      "snapshot": "2026-10-20-iter-divertor-inner-target-first-unit.r001.html",
+      "original_snapshot": "2026-10-20-iter-divertor-inner-target-first-unit.r000.html",
+      "sha256": "f5ec3f1a8a91ad054644c1408bf442d2735242958ee41899c3ba2b37dd60f4fc",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-20-astatine-211-cancer-isotope-supply.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.20",
+      "snapshot": "2026-10-20-astatine-211-cancer-isotope-supply.r001.html",
+      "original_snapshot": "2026-10-20-astatine-211-cancer-isotope-supply.r000.html",
+      "sha256": "8edb927c7ce9616206a0ca31b9f4c28685b3f91d28f2c308c9aee3f366346b8a",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-19-rosatom-indonesia-floating-nuclear-power.html",
+      "revision": "r003",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.19",
+      "snapshot": "2026-10-19-rosatom-indonesia-floating-nuclear-power.r003.html",
+      "original_snapshot": "2026-10-19-rosatom-indonesia-floating-nuclear-power.r000.html",
+      "sha256": "6a7fe1f82ecac45707b07f4daf8bf840326ec37aa44dd62a7a339b5007bd9c6c",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details.",
+        "Added a directly relevant source link; existing references retained.",
+        "Separated original report date from the later reference-update date.",
+        "Separated numeric values from power units without changing values or units."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-19-norway-spent-fuel-sweden-studsvik.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.19",
+      "snapshot": "2026-10-19-norway-spent-fuel-sweden-studsvik.r001.html",
+      "original_snapshot": "2026-10-19-norway-spent-fuel-sweden-studsvik.r000.html",
+      "sha256": "3df587cf82d418c88f666e7a918a916c2caabc2f00641f842fd7f7e04ce1bfc8",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-19-haleu-fuel-supply-chain-centrus-south-africa.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.19",
+      "snapshot": "2026-10-19-haleu-fuel-supply-chain-centrus-south-africa.r001.html",
+      "original_snapshot": "2026-10-19-haleu-fuel-supply-chain-centrus-south-africa.r000.html",
+      "sha256": "f20c0392c7b7722dcf9fa44b26e499a7772edb23f4b2438ed5a3a40216053445",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-19-amazon-indiana-xe100-smr-project.html",
+      "revision": "r002",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.19",
+      "snapshot": "2026-10-19-amazon-indiana-xe100-smr-project.r002.html",
+      "original_snapshot": "2026-10-19-amazon-indiana-xe100-smr-project.r000.html",
+      "sha256": "ad6b60dacc7aa9e4b521f3cab9e4df6de132adee90127ba0cc9c1b653c77c2bf",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details.",
+        "Separated numeric values from power units without changing values or units."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-16-patnow-coal-site-smr-joint-venture.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.16",
+      "snapshot": "2026-10-16-patnow-coal-site-smr-joint-venture.r001.html",
+      "original_snapshot": "2026-10-16-patnow-coal-site-smr-joint-venture.r000.html",
+      "sha256": "c9956615ec72c871b1d6995f26aa8e63a35993764615c48cb38ed3df2ef68775",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-16-palisades-safety-culture-nrc-review.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.16",
+      "snapshot": "2026-10-16-palisades-safety-culture-nrc-review.r001.html",
+      "original_snapshot": "2026-10-16-palisades-safety-culture-nrc-review.r000.html",
+      "sha256": "570ec08bdfe06b0411341e9ecf6b6c4bac43029686d207a4c7735728b6b7a865",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-16-newcleo-faster-mhi-steam-generators.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.16",
+      "snapshot": "2026-10-16-newcleo-faster-mhi-steam-generators.r001.html",
+      "original_snapshot": "2026-10-16-newcleo-faster-mhi-steam-generators.r000.html",
+      "sha256": "633bd91306e1ca04109ddfc18b6ccd2b2d874888fdc5fe4407d7492801ea67d8",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-16-mochovce-4-first-grid-connection.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.16",
+      "snapshot": "2026-10-16-mochovce-4-first-grid-connection.r001.html",
+      "original_snapshot": "2026-10-16-mochovce-4-first-grid-connection.r000.html",
+      "sha256": "9c47172b4c1756fecaf544306f4b98a33619292b9ac89de1f70e324dc3c0b2a8",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-16-mcre-molten-chloride-reactor-experiment.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.16",
+      "snapshot": "2026-10-16-mcre-molten-chloride-reactor-experiment.r001.html",
+      "original_snapshot": "2026-10-16-mcre-molten-chloride-reactor-experiment.r000.html",
+      "sha256": "3bea128ffd4e8b2db05f27129c2176e494b201ca0a7c9c6cfe7b25a5c14a62f6",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-15-bruce-4-robotic-calandria-tube-installation.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.15",
+      "snapshot": "2026-10-15-bruce-4-robotic-calandria-tube-installation.r001.html",
+      "original_snapshot": "2026-10-15-bruce-4-robotic-calandria-tube-installation.r000.html",
+      "sha256": "c5895f0302406b4e8c991a28bb376ab547fa41ffd82bb5aa58f0523d3e38af6f",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-15-ap1000-rev20-vogtle-lessons-design.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.15",
+      "snapshot": "2026-10-15-ap1000-rev20-vogtle-lessons-design.r001.html",
+      "original_snapshot": "2026-10-15-ap1000-rev20-vogtle-lessons-design.r000.html",
+      "sha256": "121f75f4188bd4ca7e9aa21238489867eedf5547a7aa0f1826a98fe319ac4ad2",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-15-3d-printed-forms-nuclear-shielding.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.15",
+      "snapshot": "2026-10-15-3d-printed-forms-nuclear-shielding.r001.html",
+      "original_snapshot": "2026-10-15-3d-printed-forms-nuclear-shielding.r000.html",
+      "sha256": "70349f327315994410c05817c33bd3583a18524ff8b5d298cbece62e14b7e139",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-14-poland-ap1000-conditional-module-orders.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.14",
+      "snapshot": "2026-10-14-poland-ap1000-conditional-module-orders.r001.html",
+      "original_snapshot": "2026-10-14-poland-ap1000-conditional-module-orders.r000.html",
+      "sha256": "2da320c6f603f2b99925ef46299a172381fb3be90169a740abc193e73ded5b8b",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-14-oklo-groves-2-lutetium-177-isotopes.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.14",
+      "snapshot": "2026-10-14-oklo-groves-2-lutetium-177-isotopes.r001.html",
+      "original_snapshot": "2026-10-14-oklo-groves-2-lutetium-177-isotopes.r000.html",
+      "sha256": "8327fee38b3a5d27d5b927eeccc2c25a9d1801e4a333a41b955cd9f860404b15",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-14-bluecore-floating-nuclear-fuel-purchase.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.14",
+      "snapshot": "2026-10-14-bluecore-floating-nuclear-fuel-purchase.r001.html",
+      "original_snapshot": "2026-10-14-bluecore-floating-nuclear-fuel-purchase.r000.html",
+      "sha256": "af8801caf197ce0a206a1d3f20250dcb59fbd40c19c443b7dd536277ee7e76f9",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-13-rooppur-1-first-criticality-bangladesh.html",
+      "revision": "r002",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.13",
+      "snapshot": "2026-10-13-rooppur-1-first-criticality-bangladesh.r002.html",
+      "original_snapshot": "2026-10-13-rooppur-1-first-criticality-bangladesh.r000.html",
+      "sha256": "4d5fa33c8ba923addc648eb777dcb2a43084fc2f69bf1e90b5e29cee977e491c",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details.",
+        "Added a directly relevant source link; existing references retained.",
+        "Separated original report date from the later reference-update date."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-13-nasa-doe-space-nuclear-power-agreement.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.13",
+      "snapshot": "2026-10-13-nasa-doe-space-nuclear-power-agreement.r001.html",
+      "original_snapshot": "2026-10-13-nasa-doe-space-nuclear-power-agreement.r000.html",
+      "sha256": "3ad2b8d6b1ec101dce38d861ca667a29b87deaea37477d42c5ce545f6fe3398b",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-13-hyundai-ec-deposition-hole-excavation-test.html",
+      "revision": "r002",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.13",
+      "snapshot": "2026-10-13-hyundai-ec-deposition-hole-excavation-test.r002.html",
+      "original_snapshot": "2026-10-13-hyundai-ec-deposition-hole-excavation-test.r000.html",
+      "sha256": "e58706b12301a434b8a958fa160f80e7af8d8ee05e7cd482fdca3c4969330fdf",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details.",
+        "Added a directly relevant source link; existing references retained.",
+        "Separated original report date from the later reference-update date."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-12-urenco-usa-enrichment-expansion-progress.html",
+      "revision": "r002",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.12",
+      "snapshot": "2026-10-12-urenco-usa-enrichment-expansion-progress.r002.html",
+      "original_snapshot": "2026-10-12-urenco-usa-enrichment-expansion-progress.r000.html",
+      "sha256": "bf4566e37749543ba0498030fb30210dc57a04cb7ee99790719ae39853ed24d0",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details.",
+        "Added a directly relevant source link; existing references retained.",
+        "Separated original report date from the later reference-update date."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-12-nuclear-licensing-boundaries-matador-imsr.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.12",
+      "snapshot": "2026-10-12-nuclear-licensing-boundaries-matador-imsr.r001.html",
+      "original_snapshot": "2026-10-12-nuclear-licensing-boundaries-matador-imsr.r000.html",
+      "sha256": "d41c56280aa7b035a235982780f39aadd2b0349d242d57ce64d4d148fe917f77",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-12-ai-assisted-ultrasonic-inspection-qualification.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.12",
+      "snapshot": "2026-10-12-ai-assisted-ultrasonic-inspection-qualification.r001.html",
+      "original_snapshot": "2026-10-12-ai-assisted-ultrasonic-inspection-qualification.r000.html",
+      "sha256": "fb7540125f272929eb65e2f30d0f0659df4f300ffb31751702145ed0e8cc393a",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-09-sizewell-b-maintenance-contract-2040.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.09",
+      "snapshot": "2026-10-09-sizewell-b-maintenance-contract-2040.r001.html",
+      "original_snapshot": "2026-10-09-sizewell-b-maintenance-contract-2040.r000.html",
+      "sha256": "c130216bd128c0b0a53d29986c22931392110f59a5d9f6dc080a4cc92159f1ea",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-09-poland-ap1000-long-lead-items.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.09",
+      "snapshot": "2026-10-09-poland-ap1000-long-lead-items.r001.html",
+      "original_snapshot": "2026-10-09-poland-ap1000-long-lead-items.r000.html",
+      "sha256": "69b9616179d4f52375eb0e7e2688dbc8a8f63736ecef702ea2378bfb4671acc2",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-09-palisades-dd41-tilted-fuel-assembly-recovery.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.09",
+      "snapshot": "2026-10-09-palisades-dd41-tilted-fuel-assembly-recovery.r001.html",
+      "original_snapshot": "2026-10-09-palisades-dd41-tilted-fuel-assembly-recovery.r000.html",
+      "sha256": "fdae1da658904436c0d0d3fab0b5122b63b2e07250db422110de875434c4ccad",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-09-last-energy-pilot-reactor-readiness-review.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.09",
+      "snapshot": "2026-10-09-last-energy-pilot-reactor-readiness-review.r001.html",
+      "original_snapshot": "2026-10-09-last-energy-pilot-reactor-readiness-review.r000.html",
+      "sha256": "84eef95031263b192e321ce8b4eb09d4be5fe2d29f505fd5a6e1972b872f03d7",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-09-akkuyu-tianwan-commissioning-milestones.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.09",
+      "snapshot": "2026-10-09-akkuyu-tianwan-commissioning-milestones.r001.html",
+      "original_snapshot": "2026-10-09-akkuyu-tianwan-commissioning-milestones.r000.html",
+      "sha256": "0e9f7ecf8d5170731165afb3ca0f01923db85c700d52422b5c2e484d503d81d5",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-08-nrc-materials-license-exemption-rule.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.08",
+      "snapshot": "2026-10-08-nrc-materials-license-exemption-rule.r001.html",
+      "original_snapshot": "2026-10-08-nrc-materials-license-exemption-rule.r000.html",
+      "sha256": "2e413699d91558991bbc018402697f221989fe1d28ae7806dd213f318c3c609f",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-08-netherlands-ap1000-feed-hyundai-ec.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.08",
+      "snapshot": "2026-10-08-netherlands-ap1000-feed-hyundai-ec.r001.html",
+      "original_snapshot": "2026-10-08-netherlands-ap1000-feed-hyundai-ec.r000.html",
+      "sha256": "882bce7c87c53be7fa672b805d42dc531137b77a13c14d6eb67a080fb46d2122",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-08-gain-vouchers-national-lab-support.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.08",
+      "snapshot": "2026-10-08-gain-vouchers-national-lab-support.r001.html",
+      "original_snapshot": "2026-10-08-gain-vouchers-national-lab-support.r000.html",
+      "sha256": "4b7d9fa3e2554b17190cc6c86df439531231c0147a89be733341719b4aa21c92",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-08-depleted-uranium-storage-and-reuse.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.08",
+      "snapshot": "2026-10-08-depleted-uranium-storage-and-reuse.r001.html",
+      "original_snapshot": "2026-10-08-depleted-uranium-storage-and-reuse.r000.html",
+      "sha256": "e9156420f7aa5af4b3cffc816776b847c9b155dbbfcb93161720eadc126cadf7",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-08-ai-equipment-diagnostics-nuclear-plants.html",
+      "revision": "r003",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.08",
+      "snapshot": "2026-10-08-ai-equipment-diagnostics-nuclear-plants.r003.html",
+      "original_snapshot": "2026-10-08-ai-equipment-diagnostics-nuclear-plants.r000.html",
+      "sha256": "0dbb66a95421ff409e88e97ed434e88b0fe441f34c1610ff69ec950ad7278f8d",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details.",
+        "Added a directly relevant source link; existing references retained.",
+        "Updated the event status using the organizer’s October 15 follow-up; original publication date retained.",
+        "Separated original report date from the later reference-update date.",
+        "Removed remaining future-tense wording about the completed supplier demonstration."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-07-us-uranium-fuel-supply-chain-status.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.07",
+      "snapshot": "2026-10-07-us-uranium-fuel-supply-chain-status.r001.html",
+      "original_snapshot": "2026-10-07-us-uranium-fuel-supply-chain-status.r000.html",
+      "sha256": "b557ce0f72b54b48715f7e63fdec6f488be9669e42e96749f323ca47f190a714",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-07-tritium-groundwater-continuous-monitoring.html",
+      "revision": "r002",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.07",
+      "snapshot": "2026-10-07-tritium-groundwater-continuous-monitoring.r002.html",
+      "original_snapshot": "2026-10-07-tritium-groundwater-continuous-monitoring.r000.html",
+      "sha256": "1b2818830f673b019bb02c2d273a6dd597c45acc3ee56e2ee5b14b8a85d3e1f4",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details.",
+        "Added a directly relevant source link; existing references retained.",
+        "Separated original report date from the later reference-update date."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-07-google-constellation-nuclear-uprate-deal.html",
+      "revision": "r003",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.07",
+      "snapshot": "2026-10-07-google-constellation-nuclear-uprate-deal.r003.html",
+      "original_snapshot": "2026-10-07-google-constellation-nuclear-uprate-deal.r000.html",
+      "sha256": "7fc783e8248e6a7b8de2f08962432f81543da649f1bffb635a5ba1c4e3198cf7",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details.",
+        "Added a directly relevant source link; existing references retained.",
+        "Separated original report date from the later reference-update date.",
+        "Separated numeric values from power units without changing values or units."
+      ]
+    },
+    {
+      "url": "posts/news/2026-10-07-canada-transportable-nuclear-plant-banr.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.10.07",
+      "snapshot": "2026-10-07-canada-transportable-nuclear-plant-banr.r001.html",
+      "original_snapshot": "2026-10-07-canada-transportable-nuclear-plant-banr.r000.html",
+      "sha256": "a5d45c436e312340e3d5d2247d5483ce3cc7df880feb29e6b9770dfe011cf2ad",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    },
+    {
+      "url": "posts/news/2026-09-29-nrc-reform-safety-evidence.html",
+      "revision": "r001",
+      "revision_date": "2026-10-26",
+      "original_publication_date": "2026.09.29",
+      "snapshot": "2026-09-29-nrc-reform-safety-evidence.r001.html",
+      "original_snapshot": "2026-09-29-nrc-reform-safety-evidence.r000.html",
+      "sha256": "6f7f22f7cd6d1619dddcc52ef81f508712791d155097df7a2a82193d50eda21c",
+      "changes": [
+        "Added publication-level editorial responsibility without personal identity or contact details."
+      ]
+    }
+  ]
+}

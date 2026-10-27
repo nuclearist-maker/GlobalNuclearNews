@@ -4,6 +4,9 @@ from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
 import re
 
+def is_revision_snapshot(path):
+ return bool(re.search(r'\.r\d{3,}\.html$', Path(path).name))
+
 class References(HTMLParser):
  def __init__(self):super().__init__();self.refs=[]
  def handle_starttag(self,tag,attrs):
@@ -15,7 +18,7 @@ class References(HTMLParser):
 
 def collect(root):
  root=root.resolve()
- pending=list(root.glob('*.html'))+list((root/'posts').rglob('*.html'))
+ pending=[p for p in list(root.glob('*.html'))+list((root/'posts').rglob('*.html')) if not is_revision_snapshot(p)]
  for name in ('assets/app.js','CNAME','.nojekyll','robots.txt','sitemap.xml','favicon.ico'):
   if (root/name).is_file():pending.append(root/name)
  seen=set()
@@ -25,6 +28,7 @@ def collect(root):
   p=(root/unquote(u.path).lstrip('/') if u.path.startswith('/') else base.parent/unquote(u.path)).resolve()
   if not p.is_relative_to(root):raise ValueError('Dependency escapes site: '+value)
   if p.is_dir():p=p/'index.html'
+  if is_revision_snapshot(p):raise ValueError('Revision snapshot is not a public dependency: '+value)
   if not p.is_file():raise ValueError('Missing public dependency: '+str(p.relative_to(root)))
   pending.append(p)
  while pending:

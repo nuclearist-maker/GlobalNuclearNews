@@ -5999,7 +5999,7 @@ const posts = [
     "publishedAt": "2026-10-24T04:34:51Z",
     "section": "news",
     "category": "Marine Nuclear",
-    "summary": "Rosatom and PT Pembangkit Listrik Nuklir signed an agreement on October 16 to supply northern Halmahera with power from two FPU-100 floating units totalling 200MW, under a model where Rosatom owns and operates the units and the customer pays for the electricity.",
+    "summary": "Rosatom and PT Pembangkit Listrik Nuklir signed an agreement on October 16 to supply northern Halmahera with power from two FPU-100 floating units totalling 200 MW, under a model where Rosatom owns and operates the units and the customer pays for the electricity.",
     "thumbnail": "assets/images/news/2026-10-19-rosatom-indonesia-floating-nuclear-power/thumbnail_01.webp",
     "thumbnailAlt": "A floating power unit moored in a calm bay off a tropical island",
     "url": "posts/news/2026-10-19-rosatom-indonesia-floating-nuclear-power.html",
@@ -6032,13 +6032,13 @@ const posts = [
     "keywords": "HALEU Uranium Enrichment Centrifuge Nuclear Fuel Supply Chain Centrus Westerman Piketon Oak Ridge Department Of Energy Necsa Pelindaba Terra Power SMR Nuclear Energy"
   },
   {
-    "title": "Why Amazon Is Funding Nuclear Development: Where the 960MW Indiana SMR Project Stands Today",
+    "title": "Why Amazon Is Funding Nuclear Development: Where the 960 MW Indiana SMR Project Stands Today",
     "date": "2026.10.19",
     "displayDate": "2026.10.19",
     "publishedAt": "2026-10-24T04:34:51Z",
     "section": "news",
     "category": "SMR",
-    "summary": "AEP and X-energy signed a joint development agreement on 2026-10-19 to study 12 Xe-100 units (960MW) near the former Breed coal plant in Sullivan County, Indiana, with milestone-based development funding from Amazon.",
+    "summary": "AEP and X-energy signed a joint development agreement on 2026-10-19 to study 12 Xe-100 units (960 MW) near the former Breed coal plant in Sullivan County, Indiana, with milestone-based development funding from Amazon.",
     "thumbnail": "assets/images/news/2026-10-19-amazon-indiana-xe100-smr-project/thumbnail_01.webp",
     "thumbnailAlt": "Survey crew marking out new reactor foundations at dawn on a cleared former coal plant site",
     "url": "posts/news/2026-10-19-amazon-indiana-xe100-smr-project.html",
@@ -6389,7 +6389,7 @@ const posts = [
     "publishedAt": "2026-10-24T04:34:51Z",
     "section": "news",
     "category": "Policy & Regulation",
-    "summary": "ANS announced on October 8, 2026 a webinar with Nuclearn on October 13 (1–2 p.m. CDT) showing Equipment AI from data input to evidence-based recommendations; accuracy, false-positive rates and independent verification results were not included.",
+    "summary": "ANS published a post-event account on October 15 of its Nuclearn Equipment AI webinar. This article distinguishes the supplier demonstration from accuracy evidence, false-positive rates and independent verification.",
     "thumbnail": "assets/images/news/2026-10-08-ai-equipment-diagnostics-nuclear-plants/thumbnail_01.webp",
     "thumbnailAlt": "An engineer at dawn in an engineering room examining a 3D hologram of a pump",
     "url": "posts/news/2026-10-08-ai-equipment-diagnostics-nuclear-plants.html",
@@ -6432,7 +6432,7 @@ const posts = [
     "thumbnail": "assets/images/news/2026-10-07-google-constellation-nuclear-uprate-deal/thumbnail_01.webp",
     "thumbnailAlt": "Nuclear plant and data center linked by glowing transmission lines at dusk",
     "url": "posts/news/2026-10-07-google-constellation-nuclear-uprate-deal.html",
-    "keywords": "Google Constellation Nuclear Uprate Power Uprate Power Purchase Agreement PPA AIData Centers AIPower 890MW USNuclear PJM NRC Nuclear Energy"
+    "keywords": "Google Constellation Nuclear Uprate Power Uprate Power Purchase Agreement PPA AIData Centers AIPower 890 MW USNuclear PJM NRC Nuclear Energy"
   },
   {
     "title": "A Nuclear Plant Delivered by Ship? The Steps Canada's Transportable Nuclear Plant Still Has to Clear",

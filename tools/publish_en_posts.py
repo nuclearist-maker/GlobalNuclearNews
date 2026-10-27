@@ -37,6 +37,7 @@ import subprocess
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from public_files import is_revision_snapshot
 
 ROOT = Path(__file__).resolve().parents[1]
 SECTIONS = {"news": ("news.html", "← Global Nuclear News"),
@@ -292,7 +293,7 @@ def main() -> int:
 
     keep = {(p["meta"]["section"], p["meta"]["slug"]) for p in pkgs}
     orphans = [(sec, f.stem) for sec in SECTIONS for f in (ROOT / "posts" / sec).glob("*.html")
-               if (sec, f.stem) not in keep]
+               if not is_revision_snapshot(f) and (sec, f.stem) not in keep]
     for sec, slug in orphans:
         if args.prune:
             (ROOT / "posts" / sec / f"{slug}.html").unlink()

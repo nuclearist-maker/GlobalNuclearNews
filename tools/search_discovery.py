@@ -57,11 +57,14 @@ def cards(posts, home=False):
 class Head(HTMLParser):
     def __init__(self):
         super().__init__(); self.title = ""; self.description = ""; self.in_title = False
+        self.author = ""; self.modified = ""
 
     def handle_starttag(self, tag, attrs):
         d = dict(attrs)
         if tag == "title": self.in_title = True
         if tag == "meta" and d.get("name") == "description": self.description = d.get("content", "")
+        if tag == "meta" and d.get("name") == "author": self.author = d.get("content", "")
+        if tag == "meta" and d.get("name") == "gnn-modified": self.modified = d.get("content", "")
 
     def handle_endtag(self, tag):
         if tag == "title": self.in_title = False
@@ -91,6 +94,11 @@ def metadata(text, relative, post, verification):
                   "description": head.description, "mainEntityOfPage": url, "url": url, "image": picture,
                   "inLanguage": "en", "publisher": {"@type": "Organization", "name": "GlobalNuclearNews"}}
         if post["section"] == "news": schema["datePublished"] = post["date"].replace(".", "-")
+        if head.author == "GlobalNuclearNews":
+            schema["author"] = {"@type": "Organization", "name": head.author, "url": BASE + "about.html"}
+        if head.modified:
+            if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", head.modified): raise ValueError("Invalid revision date: " + relative)
+            schema["dateModified"] = head.modified
     elif relative == "index.html":
         schema = {"@context": "https://schema.org", "@type": "WebSite", "name": "GlobalNuclearNews", "url": BASE, "inLanguage": "en"}
         for name, token in verification.items():
