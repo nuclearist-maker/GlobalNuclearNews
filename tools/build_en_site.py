@@ -12,6 +12,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from public_files import collect
 from search_discovery import enrich
+from advertising import install as install_advertising
 from build_reactor_pages import main as build_reactor_pages
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -30,6 +31,7 @@ def main():
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(p, target)
     discovery = enrich(OUT, json.loads((ROOT / 'tools/search_config.json').read_text(encoding='utf-8')))
+    print('AdSense:', json.dumps(install_advertising(OUT)))
     print('Search discovery:', json.dumps(discovery))
     size = sum(p.stat().st_size for p in files) / 2**20
     print(f"Packaged {len(files)} public files, {size:.1f} MiB")
