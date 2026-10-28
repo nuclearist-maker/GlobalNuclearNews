@@ -124,7 +124,9 @@ def archive_page(title, description, content):
 
 def board_order(section, posts):
     if section == "concepts": return sorted(posts, key=lambda p: p["title"].casefold())
-    if section == "history": return sorted(posts, key=lambda p: p["url"])
+    if section == "history":
+        # Match historyOrder in app.js, including simultaneous publication batches.
+        return sorted(posts, key=lambda p: (p.get("publishedAt") or p["date"].replace(".", "-"), p["url"]), reverse=True)
     return newest(posts)
 
 
