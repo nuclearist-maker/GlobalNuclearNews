@@ -1,5 +1,44 @@
 const posts = [
   {
+    "title": "When a Large Battery Catches Fire Underground: Why WIPP Is Handing Real Batteries Over for Fire Research",
+    "date": "2026.10.29",
+    "displayDate": "2026.10.29",
+    "publishedAt": "2026-10-29T13:24:46Z",
+    "section": "news",
+    "category": "Fuel Cycle",
+    "summary": "DOE's Carlsbad Field Office and SIMCO signed an interagency agreement with NIOSH's Pittsburgh Mine Research Division, providing three large platform lithium-ion batteries from WIPP for full-scale fire research on thermal runaway, gases, ventilation and evacuation.",
+    "thumbnail": "assets/images/news/2026-10-29-wipp-large-battery-fire-research/thumbnail_01.webp",
+    "thumbnailAlt": "Large electric loader standing in a brightly lit drift of a deep salt mine",
+    "url": "posts/news/2026-10-29-wipp-large-battery-fire-research.html",
+    "keywords": "WIPP Battery Fire Thermal Runaway Lithium Ion Battery Radioactive Waste Disposal Deep Geologic Repository Transuranic Waste NIOSH DOE Underground Safety Ventilation SSCVS NFPA855 Nuclear Energy"
+  },
+  {
+    "title": "Hyundai Engineering Joins a U.S. University Reactor Project: Reading the KRONOS MMR Memorandum",
+    "date": "2026.10.29",
+    "displayDate": "2026.10.29",
+    "publishedAt": "2026-10-29T13:24:46Z",
+    "section": "news",
+    "category": "Advanced Reactors",
+    "summary": "An October 27, 2026 MOU sets Hyundai Engineering's initial scope on facilities, site, procurement and logistics for UIUC's KRONOS MMR (docket 50-618), with paid work set by definitive contracts and operation targeted by the university for 2030.",
+    "thumbnail": "assets/images/news/2026-10-29-kronos-mmr-hyundai-engineering-mou/thumbnail_01.webp",
+    "thumbnailAlt": "A low, modern research reactor building beside a university campus with autumn trees and brick buildings",
+    "url": "posts/news/2026-10-29-kronos-mmr-hyundai-engineering-mou.html",
+    "keywords": "KRONOSMMR Hyundai Engineering NANONuclear University Of Illinois Micro Modular Reactor HTGR TRISOFuel Helium Coolant Molten Salt Construction Permit NRC PSAR MOU Nuclear Energy"
+  },
+  {
+    "title": "$5 Billion for 1.1 GW Without a New Reactor: Where Constellation's Uprate Loan Stands",
+    "date": "2026.10.29",
+    "displayDate": "2026.10.29",
+    "publishedAt": "2026-10-29T13:24:46Z",
+    "section": "news",
+    "category": "Large Reactors",
+    "summary": "A conditional DOE loan commitment of up to $5 billion (October 27, 2026) for uprates at eight Constellation facilities in Illinois, Maryland and Pennsylvania, aiming at about 1.1 GW; 890 + 190 + 30 MW of contract-linked uprates add up to 1,110 MW.",
+    "thumbnail": "assets/images/news/2026-10-29-constellation-nuclear-uprate-doe-loan/thumbnail_01.webp",
+    "thumbnailAlt": "Existing nuclear plant with two cooling towers, turbine buildings and power lines beside farmland",
+    "url": "posts/news/2026-10-29-constellation-nuclear-uprate-doe-loan.html",
+    "keywords": "Power Uprate Nuclear Power Constellation DOE Conditional Loan Loan Commitment NRC MUR EPU Calvert Cliffs Clinton Google Amazon PJM Nuclear Finance"
+  },
+  {
     "title": "From Ore to Fuel: Wyoming's Conversion Plant Funding Review and a TRISO Fuel Manufacturing Deal",
     "date": "2026.10.28",
     "displayDate": "2026.10.28",
