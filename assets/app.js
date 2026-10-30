@@ -1,5 +1,44 @@
 const posts = [
   {
+    "title": "Dukovany Construction Talks End: Contract by Contract, What Continues and What Is Being Redrawn",
+    "date": "2026.10.30",
+    "displayDate": "2026.10.30",
+    "publishedAt": "2026-10-30T21:17:30Z",
+    "section": "news",
+    "category": "Large Reactors",
+    "summary": "Daewoo E&C and Doosan Enerbility disclosed on October 29 that KHNP intends to end construction contract negotiations for the two Dukovany units. The main equipment contract signed on December 16, 2025 continues, a separate cooling-tower tender is under way, and Daewoo E&C plans a follow-up disclosure by November 27.",
+    "thumbnail": "assets/images/news/2026-10-30-dukovany-construction-contract-talks/thumbnail_01.webp",
+    "thumbnailAlt": "Early-morning new nuclear construction site in Czech farmland with cranes and a drilling rig standing ready",
+    "url": "posts/news/2026-10-30-dukovany-construction-contract-talks.html",
+    "keywords": "Dukovany Czech Nuclear Construction Contract Lump Sum Contract KHNP Doosan Enerbility Daewoo EC CEZ Conceptual Design APR1000 Cooling Towers Critical Path Nuclear Exports Nuclear Energy"
+  },
+  {
+    "title": "The River Rose 10 cm, So Why Is the Reactor Still Off? Cernavoda's Conditions for Reconnecting to the Grid",
+    "date": "2026.10.30",
+    "displayDate": "2026.10.30",
+    "publishedAt": "2026-10-30T21:17:30Z",
+    "section": "news",
+    "category": "Large Reactors",
+    "summary": "Nuclearelectrica kept Cernavoda Units 1 and 2 in safe shutdown on October 29. Shut down since July 28 and August 13 as the Danube's flow and level fell, the units await three conditions: reaching the required intake level, holding it for several days and a rising trend.",
+    "thumbnail": "assets/images/news/2026-10-30-cernavoda-danube-water-level-restart/thumbnail_01.webp",
+    "thumbnailAlt": "Nuclear power station on a wide river with exposed sandbanks from low water",
+    "url": "posts/news/2026-10-30-cernavoda-danube-water-level-restart.html",
+    "keywords": "Cernavoda Danube River Nuclear Cooling Water Intake Water Level Safe Shutdown Grid Reconnection Drought Condenser Decay Heat Removal Nuclearelectrica CNCAN Romania Nuclear Nuclear Energy"
+  },
+  {
+    "title": "The First Blueprint of a Nuclear Project: What a FEED Study Decides for Slovakia's Bohunice AP1000",
+    "date": "2026.10.30",
+    "displayDate": "2026.10.30",
+    "publishedAt": "2026-10-30T21:17:30Z",
+    "section": "news",
+    "category": "Large Reactors",
+    "summary": "Westinghouse announced on October 28 a six-month front-end engineering and design study for JESS on one AP1000 at Jaslovské Bohunice, partly funded by a U.S. State Department FIRST grant. Its results will inform JESS's decision on the project's next steps.",
+    "thumbnail": "assets/images/news/2026-10-30-bohunice-ap1000-feed-study/thumbnail_01.webp",
+    "thumbnailAlt": "Engineers placing survey stakes in an open field at golden hour",
+    "url": "posts/news/2026-10-30-bohunice-ap1000-feed-study.html",
+    "keywords": "FEED Front End Engineering Design Slovakia Bohunice AP1000 Westinghouse JESS JAVYS Dukovany APR1000 Final Investment Decision Nuclear Licensing New Nuclear Nuclear Energy"
+  },
+  {
     "title": "When a Large Battery Catches Fire Underground: Why WIPP Is Handing Real Batteries Over for Fire Research",
     "date": "2026.10.29",
     "displayDate": "2026.10.29",
