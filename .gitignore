@@ -3,3 +3,9 @@ __pycache__/
 temp/
 _site/
 /local-source-archive/
+# Future QA screenshots and copied release sites belong in Actions artifacts.
+# Existing tracked evidence remains versioned.
+/qa/**/*.png
+/qa/**/*.jpg
+/qa/**/*.jpeg
+/qa/**/site/
