@@ -1,0 +1,40 @@
+name: Storage audit
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '17 12 * * 1'
+permissions:
+  contents: read
+jobs:
+  storage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: ${{ (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && '0' || '1' }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Audit tracked files and reachable Git history
+        run: |
+          if [ "${{ github.event_name }}" = schedule ] || [ "${{ github.event_name }}" = workflow_dispatch ]; then
+            python tools/storage_budget.py --history
+          else
+            python tools/storage_budget.py
+          fi
+      - name: Check new blob budget
+        if: github.event_name == 'pull_request' || github.event_name == 'push'
+        env:
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          if [ "$BASE" != '0000000000000000000000000000000000000000' ]; then
+            git fetch --no-tags --depth=1 origin "$BASE"
+            python tools/storage_budget.py --base "$BASE"
+          fi
+      - name: Test storage guardrails
+        run: python -m unittest discover -s tools -p test_storage_budget.py
+      - name: Build and enforce final Pages budget
+        run: python tools/build_en_site.py
