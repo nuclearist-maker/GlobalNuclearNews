@@ -2077,7 +2077,7 @@ const posts = [
     "thumbnail": "assets/images/concepts/c-sy-012-cvcs/thumbnail.webp",
     "thumbnailAlt": "A purification loop with a transparent resin demineralizer vessel, pump and dosing tank feeding a coolant circuit.",
     "url": "posts/concepts/c-sy-012-cvcs.html",
-    "keywords": "chemical and volume control system CVCS letdown charging regenerative heat exchanger volume control tank VCT seal injection auxiliary spray boration dilution boric acid concentrator ppm boron w/o boric acid water chemistry LiOH hydrogen hydrazine boron dilution SRP 15.4.6 APR1400 OPR1000"
+    "keywords": "chemical and volume control system CVCS letdown charging regenerative heat exchanger volume control tank VCT seal injection auxiliary spray boration dilution boric acid concentrator ppm boron w/o boric acid water chemistry LiOH hydrogen hydrazine boron dilution SRP 15.4.6 APR1400 Westinghouse CE"
   },
   {
     "title": "ESFAS actuation signals — inputs, setpoints, logic and accidents",
@@ -2853,7 +2853,7 @@ const posts = [
     "publishedAt": "2026-10-24T22:50:01Z",
     "section": "concepts",
     "category": "Reactor Physics & Kinetics",
-    "summary": "In the DOE teaching example 10,000 fast neutrons become 10,065 after six factors (k∞ = 1.251, keff ≈ 1.0065); η is about 2.07 for U-235, 1.79 at 2.5 % enrichment and 1.33 for natural uranium.",
+    "summary": "In the DOE handbook (DOE-HDBK-1019) example 10,000 fast neutrons become 10,065 after six factors (k∞ = 1.251, keff ≈ 1.0065); η is about 2.07 for U-235, 1.79 at 2.5 % enrichment and 1.33 for natural uranium.",
     "thumbnail": "assets/images/concepts/c-rx-003-multiplication-factor/thumbnail.webp",
     "thumbnailAlt": "A level balance scale with beads produced on one side and absorbed or leaked on the other.",
     "url": "posts/concepts/c-rx-003-multiplication-factor.html",
