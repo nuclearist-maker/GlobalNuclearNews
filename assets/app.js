@@ -1,5 +1,57 @@
 const posts = [
   {
+    "title": "Making Fusion Magnet Tape in Germany: The Proxima–Fujikura MOU and How Superconducting Wire Is Tested",
+    "date": "2026.11.04",
+    "displayDate": "2026.11.04",
+    "publishedAt": "2026-11-04T17:51:49Z",
+    "section": "news",
+    "category": "Advanced Reactors",
+    "summary": "On October 28, 2026 Proxima Fusion and Fujikura announced an MOU to assess the technical, commercial and economic requirements for HTS tape production in Germany. Fujikura's two 4 mm tapes swap rank between 77 K self-field and 20 K, 5 T reference values, and Proxima projects needs of about 20,000 km for Alpha and 40,000 km for Stellaris.",
+    "thumbnail": "assets/images/news/2026-11-04-proxima-fujikura-hts-tape-germany/thumbnail_01.webp",
+    "thumbnailAlt": "Concept image of a superconducting tape spool with a stellarator magnet coil behind it",
+    "url": "posts/news/2026-11-04-proxima-fujikura-hts-tape-germany.html",
+    "keywords": "Fusion HTSTape High Temperature Superconductor Superconducting Magnet REBCO Critical Current Proxima Fusion Fujikura Kyoto Fusioneering Stellarator Quench MIT Fusion Supply Chain Gyrotron"
+  },
+  {
+    "title": "When a Nuclear License Is Challenged: The NRC's New Contested Hearing Rule and the Timelines That Start December 3",
+    "date": "2026.11.04",
+    "displayDate": "2026.11.04",
+    "publishedAt": "2026-11-04T17:51:49Z",
+    "section": "news",
+    "category": "Policy & Regulation",
+    "summary": "The NRC published a final rule on November 3, 2026 that streamlines contested adjudications, effective December 3 for hearings noticed after that date. Hearing requests are due 60, 45 or 30 days after notice depending on the track, standard hearing completion dates run from 262 to 147 days, and disclosure follows 20 or 30 days after contentions are admitted.",
+    "thumbnail": "assets/images/news/2026-11-04-nrc-contested-hearing-rule-timelines/thumbnail_01.webp",
+    "thumbnailAlt": "Concept image of an empty hearing room with a nuclear plant visible through the window",
+    "url": "posts/news/2026-11-04-nrc-contested-hearing-rule-timelines.html",
+    "keywords": "NRC Contested Hearing Nuclear Licensing Licensing Process Nuclear Regulatory Commission Final Rule License Renewal Power Uprate New Reactors Subpart L Evidentiary Hearing ADVANCEAct Nuclear Regulation Nuclear Power"
+  },
+  {
+    "title": "The First Nuclear Carrier's Last Voyage: Enterprise Heads for Dismantling Nine Years After Defueling",
+    "date": "2026.11.04",
+    "displayDate": "2026.11.04",
+    "publishedAt": "2026-11-04T17:51:49Z",
+    "section": "news",
+    "category": "Marine Nuclear",
+    "summary": "The US Navy announced that ex-Enterprise (CVN-65) departed Newport News, Virginia, on November 2, 2026 for a dismantling site in Mobile, Alabama. Commissioned in 1961, the carrier was inactivated in December 2012 and defueled in 2017; arrival, site handover and dismantling are the next steps.",
+    "thumbnail": "assets/images/news/2026-11-04-enterprise-cvn65-final-voyage/thumbnail_01.webp",
+    "thumbnailAlt": "Concept image of two tugboats towing a decommissioned aircraft carrier at sea",
+    "url": "posts/news/2026-11-04-enterprise-cvn65-final-voyage.html",
+    "keywords": "Enterprise CVN65 Nuclear Aircraft Carrier Nuclear Propulsion Ship Dismantling Reactor Decommissioning Defueling Radioactive Waste Decommissioning USNavy Newport News Mobile Alabama Nuclear Ships Marine Nuclear Nuclear Power"
+  },
+  {
+    "title": "After Safety Analysis Approval Comes the Readiness Review: The Steps Radiant and Last Energy Demonstration Reactors Pass Before Startup",
+    "date": "2026.11.04",
+    "displayDate": "2026.11.04",
+    "publishedAt": "2026-11-04T17:51:49Z",
+    "section": "news",
+    "category": "Advanced Reactors",
+    "summary": "In October 2026 Antares announced NSDA approval for Mark-1, and Last Energy and Radiant announced DSA approvals for their demonstration reactors. Under DOE-STD-1271-2026 and NE O 425.1, a readiness review checks five areas on site before the startup approval authority authorizes startup, followed by hold-point testing toward Radiant's 60 EFPD and 150-hour targets.",
+    "thumbnail": "assets/images/news/2026-11-04-doe-demo-reactor-readiness-review/thumbnail_01.webp",
+    "thumbnailAlt": "Concept image of a compact demonstration reactor module inside a domed containment hall",
+    "url": "posts/news/2026-11-04-doe-demo-reactor-readiness-review.html",
+    "keywords": "Readiness Review Documented Safety Analysis DSA Demonstration Reactor Radiant Last Energy Antares Kaleidos DOE Idaho National Laboratory Hold Point EFPD Startup Authorization Nuclear Safety Nuclear Energy"
+  },
+  {
     "title": "130 Years of Nuclear History in One Day",
     "date": "2026.11.03",
     "displayDate": "2026.11.03",
