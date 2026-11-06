@@ -1,5 +1,57 @@
 const posts = [
   {
+    "title": "Giving a Used Processing Space a Job With Large Waste Boxes: Oak Ridge's CPE Upgrade and the Rules for Approving Changes",
+    "date": "2026.11.06",
+    "displayDate": "2026.11.06",
+    "publishedAt": "2026-11-06T18:22:10Z",
+    "section": "news",
+    "category": "Fuel Cycle",
+    "summary": "DOE announced on November 3, 2026 that OREM and UCOR upgraded the cask processing enclosure at the Transuranic Waste Processing Center for large waste boxes from ORNL and Y-12 decommissioning. Changes at DOE nuclear facilities run through the safety basis and USQ process under 10 CFR 830 and the worker protection requirements of 10 CFR 835.",
+    "thumbnail": "assets/images/news/2026-11-06-oak-ridge-cpe-large-waste-box-upgrade/thumbnail_01.webp",
+    "thumbnailAlt": "A large steel waste box on a roller conveyor inside a sealed processing enclosure",
+    "url": "posts/news/2026-11-06-oak-ridge-cpe-large-waste-box-upgrade.html",
+    "keywords": "Radioactive Waste Transuranic Waste Facility Modification Change Control Oak Ridge TWPC CPE UCOR Unreviewed Safety Question USQ Safety Analysis ALARA WIPP Radiation Protection Nuclear Energy"
+  },
+  {
+    "title": "When Does a Nuclear Component Become a Real Order? NuScale's Fabrication Contracts and IHI's Early Procurement for Poland",
+    "date": "2026.11.06",
+    "displayDate": "2026.11.06",
+    "publishedAt": "2026-11-06T18:22:10Z",
+    "section": "news",
+    "category": "SMR",
+    "summary": "NuScale reported $1.9 billion in cash and investments on November 5, 2026, along with a fabrication contract with Doosan Enerbility, while ENTRA1's TVA deployment remains in discussion. IHI announced on November 4 an engineering and long-lead procurement award for the containment vessel and CA01 module of Poland's AP1000 Unit 1. About 96% of NuScale's $7 million R&D increase went to component readiness.",
+    "thumbnail": "assets/images/news/2026-11-06-nuscale-ihi-component-contract-stages/thumbnail_01.webp",
+    "thumbnailAlt": "A containment vessel steel shell ring and reactor component in a large fabrication shop",
+    "url": "posts/news/2026-11-06-nuscale-ihi-component-contract-stages.html",
+    "keywords": "Nuclear Components Nuclear Supply Chain Long Lead Items Containment Vessel Nu Scale IHI Doosan Enerbility AP1000 Poland Nuclear PEJ TVA ENTRA1 SMR Nuclear Power"
+  },
+  {
+    "title": "Norway Signs Its Spent Fuel Storage Contract: NAC's 22-Month Silo Development and the Licensing Path Ahead",
+    "date": "2026.11.06",
+    "displayDate": "2026.11.06",
+    "publishedAt": "2026-11-06T18:22:10Z",
+    "section": "news",
+    "category": "Fuel Cycle",
+    "summary": "On November 4, 2026, Norway's NND, IFE and NAC International signed a three-party contract for spent fuel storage silos. NAC envisions a 22-month development period that starts once a security agreement is in place, followed by NND and IFE review and submission to DSA, with delivery as early as 2032 as the September target. Halden and Kjeller sit under different license holders while the Kjeller transfer is under review.",
+    "thumbnail": "assets/images/news/2026-11-06-norway-nac-spent-fuel-silo-contract/thumbnail_01.webp",
+    "thumbnailAlt": "Concrete spent fuel storage silos lined up on a snowy Nordic site",
+    "url": "posts/news/2026-11-06-norway-nac-spent-fuel-silo-contract.html",
+    "keywords": "Spent Nuclear Fuel Dry Storage Storage Silo Canister Norway NAC NND IFE DSA Studsvik Halden Kjeller Decommissioning Nuclear Power"
+  },
+  {
+    "title": "3D-Printed Tungsten Tiles Withstand Fusion Plasma: Reading the \"74 Discharges\" and \"4 Minutes\" of the DIII-D Test",
+    "date": "2026.11.06",
+    "displayDate": "2026.11.06",
+    "publishedAt": "2026-11-06T18:22:10Z",
+    "section": "news",
+    "category": "Advanced Reactors",
+    "summary": "ANS reported on November 5, 2026 that full-scale 3D-printed tungsten tiles made by NC State, ORNL and JEOL were tested in DIII-D's lower divertor in July. Over three days the tiles saw 74 medium- to high-power H-mode discharges and about 4 minutes of total plasma exposure, roughly 0.1% of the period, and finished in sound condition ahead of detailed analysis.",
+    "thumbnail": "assets/images/news/2026-11-06-diii-d-3d-printed-tungsten-tiles/thumbnail_01.webp",
+    "thumbnailAlt": "Divertor tiles lining the lower part of a tokamak vessel with a glowing plasma ring",
+    "url": "posts/news/2026-11-06-diii-d-3d-printed-tungsten-tiles.html",
+    "keywords": "Fusion Energy Tungsten Tiles 3DPrinting Additive Manufacturing Divertor DIII-D Tokamak HMode Electron Beam Powder Bed Fusion ORNL NCState JEOL Fusion Materials Plasma Nuclear Energy"
+  },
+  {
     "title": "Degradation Found in a Reactor's Thermal Shield: Salem Unit 1's Additional Inspection and a 200 MW Uprate Plan",
     "date": "2026.11.05",
     "displayDate": "2026.11.05",
