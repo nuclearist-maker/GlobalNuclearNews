@@ -1,0 +1,244 @@
+<figure class="article-image"><img alt="[개념 노트] 지발중성자(Delayed Neutron) — 0.65%가 원자로를 제어 가능하게 만드는 이유 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-001-delayed-neutrons/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>지발중성자</strong>는 핵분열생성물 중 선행핵(precursor)이 β⁻ 붕괴한 뒤, 그 딸핵이 중성자 결합에너지보다 높은 들뜬상태에서 곧바로 내놓는 중성자입니다. 방출 시점은 선행핵의 반감기(약 0.2~56초)가 정하며, U-235 열중성자 핵분열에서 전체 핵분열 중성자의 약 0.65%(β = 0.0065)를 차지합니다[1][2].</p>
+<p>답안 첫 줄에는 "핵분열 후 선행핵의 β⁻ 붕괴를 거쳐 수 초~수십 초 늦게 방출되는 중성자로, 원자로의 평균 세대시간을 늘려 출력 제어를 가능하게 함"이라고 쓰면 정의와 역할이 함께 들어갑니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>즉발중성자와 무엇이 다른가</h3>
+<p>핵분열 중성자의 99% 이상은 분열 후 약 10⁻¹⁴초 안에 나오는 <strong>즉발중성자</strong>입니다. 지발중성자는 분열로 생긴 중성자 과잉 핵종 일부에서 나옵니다. 대표가 1군 선행핵 <strong>Br-87</strong>입니다. Br-87(반감기 약 55.6초)이 β⁻ 붕괴하면 약 2.5%의 확률로 Kr-87의 높은 들뜬상태가 만들어지고, 이 상태는 즉시 중성자를 내놓고 Kr-86이 됩니다. 나머지는 Kr-87 바닥상태를 거쳐 Rb-87로 붕괴합니다. 즉 <strong>중성자 방출 자체는 즉시 일어나고, "지연"은 선행핵의 β 붕괴 반감기에서 생깁니다.</strong> 답안에서 이 구분을 분명히 하면 정의 문항의 감점을 피할 수 있습니다.</p>
+<p>에너지도 다릅니다. 즉발중성자는 평균 약 2 MeV이지만 지발중성자는 군별 약 0.25~0.6 MeV로 낮습니다. 이 차이가 βeff를 만드는 원인입니다.</p>
+<h3>6군 표현</h3>
+<p>선행핵은 수십 종이지만 반감기가 비슷한 것끼리 묶어 <strong>6군</strong>으로 다룹니다(Keepin 데이터, U-235 열핵분열)[1].</p>
+<table>
+<thead>
+<tr>
+<th>군</th>
+<th>반감기 (s)</th>
+<th>λᵢ (s⁻¹)</th>
+<th>βᵢ</th>
+<th>대표 선행핵</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>55.7</td>
+<td>0.0124</td>
+<td>0.000215</td>
+<td>Br-87</td>
+</tr>
+<tr>
+<td>2</td>
+<td>22.7</td>
+<td>0.0305</td>
+<td>0.001424</td>
+<td>I-137, Br-88</td>
+</tr>
+<tr>
+<td>3</td>
+<td>6.22</td>
+<td>0.111</td>
+<td>0.001274</td>
+<td>I-138, Br-89</td>
+</tr>
+<tr>
+<td>4</td>
+<td>2.30</td>
+<td>0.301</td>
+<td>0.002568</td>
+<td>I-139 등</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0.610</td>
+<td>1.14</td>
+<td>0.000748</td>
+<td>I-140 등</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0.230</td>
+<td>3.01</td>
+<td>0.000273</td>
+<td>단수명 핵종</td>
+</tr>
+</tbody>
+</table>
+<p>βᵢ의 합은 0.0065이고, 분율 가중 평균 선행핵 수명 τ̄ = Σ(βᵢ/λᵢ)/β는 약 13초입니다. 계산 문항에서 1군으로 근사할 때는 λ ≈ 0.08 s⁻¹(τ̄ ≈ 12.5초)를 주로 줍니다.</p>
+<h3>평균 세대시간과 원자로 주기</h3>
+<p>지발중성자의 핵심 효과는 <strong>평균 세대시간</strong>을 늘리는 것입니다. 즉발중성자 수명 ℓp(감속시간 + 확산시간)에, 비율 β만큼은 선행핵 평균수명 τ̄가 더해집니다.</p>
+<p>ℓ̄ = (1−β)·ℓp + β·(ℓp + τ̄) ≈ ℓp + β·τ̄</p>
+<p>2026년 1교시 5번 조건(감속 10⁻⁶초, 확산 2×10⁻⁵초, 모핵종 평균수명 12.5초)을 넣으면 ℓp = 2.1×10⁻⁵초, ℓ̄ ≈ 0.0813초로 약 3,900배가 됩니다. 0.65%의 중성자가 세대시간을 지배하는 이유는 비율이 아니라 <strong>β × τ̄라는 곱</strong>이 ℓp보다 압도적으로 크기 때문입니다.</p>
+<p>작은 반응도에서 원자로 주기는 T ≈ ℓ̄/ρ로 근사됩니다. 정확한 관계는 점동특성 방정식에서 나오는 역시간방정식 ρ = ωΛ + Σβᵢω/(ω+λᵢ) (ω = 1/T)로 구합니다. 아래 그림은 6군 데이터로 계산한 결과입니다. ρ = 0.001에서 지발중성자를 고려한 주기는 약 55초지만 즉발중성자만으로는 0.02초입니다.</p>
+<figure class="article-image"><img alt="투입 반응도에 따른 원자로 주기(지발 포함 6군 역시간방정식 vs 즉발중성자만)와 평균 세대시간 수식 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-001-delayed-neutrons/fig1_period_vs_reactivity.avif"/><figcaption>투입 반응도에 따른 원자로 주기(지발 포함 6군 역시간방정식 vs 즉발중성자만)와 평균 세대시간 수식 카드</figcaption></figure>
+<h3>β와 βeff (요약)</h3>
+<p>βeff는 지발중성자를 <strong>중요도(adjoint flux)로 가중</strong>한 분율입니다. 지발중성자는 에너지가 낮아 고속 누설이 적고(중요도↑), U-238 고속분열(문턱 약 1 MeV)은 일으키지 못합니다(중요도↓). 소형·고농축 노심은 누설 효과가 커서 βeff &gt; β이고, 원자로가 커질수록 누설 이점이 줄어 βeff는 β에 가까워집니다. 대형 저농축 상용 PWR에서는 중요도 인자가 약 0.97로 1보다 약간 작습니다[3]. 2001년(제65회) 2교시 3번이 바로 이 크기 의존성을 물었습니다.</p>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>제어 가능성</strong>: ρ &lt; β 영역(지발초임계)에서는 주기가 수 초~수천 초로 길어 제어봉·붕소 농도 조절이 사람과 제어계통의 응답 속도 안에 들어옵니다. 기동 시 기동률(SUR) 제한도 이 영역을 전제로 합니다(1 dpm ≈ 주기 26초). 기동률 운영 한계값은 발전소 절차서에 따릅니다.</li>
+<li><strong>즉발임계 경계</strong>: ρ = β(1달러)에 도달하면 즉발중성자만으로 임계가 되어 주기가 Λ/(ρ−β) 수준(ms)으로 떨어집니다. 이때 출력 상승을 막는 것은 도플러 같은 즉발 음의 궤환뿐이므로, 설계와 운전은 이 영역을 배제합니다.</li>
+<li><strong>연소에 따른 변화</strong>: Pu-239의 β는 약 0.0021로 U-235(0.0065)의 1/3 수준입니다[2][3]. 주기 진행에 따라 Pu 핵분열 비중이 늘어 βeff가 주기초 약 0.006~0.007에서 주기말 약 0.005 수준으로 줄어듭니다(노심별로 다르며 예시 범위). 같은 Δk라도 달러 값이 커지므로, 제어봉 이탈 같은 반응도 사고는 주기말 βeff를 보수적으로 적용해 해석합니다. U-238 고속분열의 β(약 0.0148)는 노심 평균 β를 약간 끌어올립니다.</li>
+<li><strong>정지 후 거동</strong>: 큰 음의 반응도가 들어가면 출력은 즉발강하 후 1군 선행핵 평균수명이 정하는 약 −80초 주기로 줄어듭니다. 이보다 빨리 줄일 방법은 없습니다. 2023년 3교시 6번(ω = 1/80 s⁻¹)이 이 성질을 이용한 계산 문항입니다.</li>
+<li><strong>노형별 차이</strong>: 중수로(CANDU, 국내 월성)는 고에너지 감마선과 중수소의 (γ,n) 반응으로 생기는 광중성자가 추가 지발군 역할을 합니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<ul>
+<li><strong>미국 10 CFR 50 부록 A</strong>[4]: GDC 11(원자로 고유보호, 즉발 궤환이 출력 급증을 억제하도록 설계), GDC 26(독립된 반응도 제어계통 2개), GDC 28(반응도 한계: 반응도 사고 시 원자로냉각재압력경계와 노심냉각 능력 손상 금지).</li>
+<li><strong>NUREG-0800 SRP 4.3(핵설계)</strong>[5]: βeff, 즉발중성자 수명 등 동특성 인자의 계산 방법과 불확도를 심사합니다. SRP 15.4.8(제어봉 이탈)은 이 인자들을 해석 입력으로 씁니다.</li>
+<li><strong>반응도 사고 판단기준의 개정</strong>: RG 1.77(1974)이 2020년 RG 1.236[6]으로 대체되어 연료 엔탈피·피복관 손상 기준이 강화되었습니다. 출제 당시(2001~2012년) 답안의 사고 기준 서술은 현행 기준으로 바꿔 써야 합니다. 지발중성자 물리 자체는 바뀐 것이 없습니다.</li>
+<li><strong>IAEA</strong>: SSR-2/1(Rev.1, 2016)의 노심 설계·반응도 제어 요건과 SSG-52(2019, 노심 설계)[7]가 동특성 인자를 설계 고려사항으로 다룹니다.</li>
+<li><strong>국내</strong>: 「원자로시설 등의 기술기준에 관한 규칙」 제18조(원자로의 고유보호)·제28조(반응도제어계통)[8]와 KINS 경수로형 안전심사지침 4.3절이 같은 구조를 따릅니다.<!-- 기술기준규칙 제18·28조: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 --></li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>즉발중성자</th>
+<th>지발중성자</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>방출 주체</td>
+<td>핵분열 직후의 분열편</td>
+<td>선행핵의 β⁻ 붕괴 딸핵</td>
+</tr>
+<tr>
+<td>방출 시점</td>
+<td>약 10⁻¹⁴초 이내</td>
+<td>0.2~56초(6군)</td>
+</tr>
+<tr>
+<td>분율(U-235 열)</td>
+<td>약 99.35%</td>
+<td>β = 0.0065</td>
+</tr>
+<tr>
+<td>평균 에너지</td>
+<td>약 2 MeV</td>
+<td>약 0.25~0.6 MeV</td>
+</tr>
+<tr>
+<td>세대시간 기여</td>
+<td>ℓp ≈ 10⁻⁵~10⁻⁴초</td>
+<td>β·τ̄ ≈ 0.08초</td>
+</tr>
+<tr>
+<td>제어상 의미</td>
+<td>ρ &gt; β이면 단독으로 출력 지배</td>
+<td>ρ &lt; β이면 주기를 지배해 제어 가능</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>β</th>
+<th>βeff</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정의</td>
+<td>핵분열당 지발중성자 수의 비율</td>
+<td>중요도로 가중한 유효 분율</td>
+</tr>
+<tr>
+<td>결정 요인</td>
+<td>핵분열 핵종</td>
+<td>핵종 + 에너지 스펙트럼 + 누설(노심 크기)</td>
+</tr>
+<tr>
+<td>대형 PWR</td>
+<td>U-235 0.0065</td>
+<td>중요도 인자 약 0.97</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 지발중성자의 정의와 원자로 제어에서의 역할</strong></p>
+<ol>
+<li><strong>정의</strong>: 핵분열생성물 중 <strong>선행핵</strong>(Br-87, I-137 등)이 β⁻ 붕괴 후 딸핵의 들뜬상태에서 방출하는 중성자임</li>
+<li><strong>지연 원인</strong>: 중성자 방출은 즉시, 지연은 <strong>선행핵 반감기(0.2~56 s)</strong> 에 기인함</li>
+<li><strong>분율</strong>: U-235 β = 0.0065, Pu-239 약 0.0021, U-238 약 0.0148</li>
+<li><strong>6군 표현</strong>: 반감기별 6군, 평균 선행핵 수명 약 13 s</li>
+<li><strong>βeff</strong>: 중요도 가중 분율, 에너지 낮아 누설↓·고속분열↓, 대형 PWR 약 0.97β</li>
+<li><strong>평균 세대시간</strong>: ℓ̄ = ℓp + β·τ̄ ≈ 2×10⁻⁵ s → 약 0.08 s로 증가함</li>
+<li><strong>주기</strong>: ρ = 0.001에서 지발 고려 약 55 s, 즉발만 0.02 s</li>
+<li><strong>제어 기여</strong>: ρ &lt; β 영역에서 주기가 길어 제어봉·붕소로 출력 제어 가능함</li>
+<li><strong>즉발임계</strong>: ρ ≥ β(1$)이면 즉발중성자만으로 증배, 주기 ms 수준이므로 설계상 배제함</li>
+<li><strong>운전 영향</strong>: 주기말 βeff 감소(Pu 축적) → 반응도 사고 해석에 보수적 적용, 정지 후 약 −80 s 주기</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: Br-87 선행핵의 β⁻ 붕괴와 지발중성자 방출 사슬" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-001-delayed-neutrons/sketch1_br87_precursor_chain.avif"/><figcaption>답안용 도식: Br-87 선행핵의 β⁻ 붕괴와 지발중성자 방출 사슬</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>연도-교시-번호</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2001(제65회)-2-3</td>
+<td>βeff가 β보다 큰 이유와 크기 의존성</td>
+</tr>
+<tr>
+<td>2002(제67회)-3-1</td>
+<td>지발 1군 영출력 전달함수 유도</td>
+</tr>
+<tr>
+<td>2012-4-6</td>
+<td>지발중성자 정의·분율·제어 역할</td>
+</tr>
+<tr>
+<td>2015-1-4</td>
+<td>지발중성자의 정의 및 역할</td>
+</tr>
+<tr>
+<td>2017-1-2</td>
+<td>역시간방정식과 인자의 물리적 의미</td>
+</tr>
+<tr>
+<td>2018-2-1</td>
+<td>ρ와 β에 따른 동적 상태 5구분</td>
+</tr>
+<tr>
+<td>2019-1-8</td>
+<td>정의와 원자로 제어에 미치는 영향</td>
+</tr>
+<tr>
+<td>2021-3-6</td>
+<td>0.002 반응도 삽입 시 주기(지발 고려·미고려)</td>
+</tr>
+<tr>
+<td>2022-1-4</td>
+<td>즉발중성자와 지발중성자</td>
+</tr>
+<tr>
+<td>2023-3-6</td>
+<td>10% 반응도 정지 후 주기와 출력</td>
+</tr>
+<tr>
+<td>2026-1-5</td>
+<td>U-235 평균 세대시간과 지발중성자 역할</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>G. R. Keepin, Physics of Nuclear Kinetics, Addison-Wesley (1965) — U-235 열중성자 핵분열 지발중성자 6군 상수.</li>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 7장(원자로 동특성).</li>
+<li>U.S. DOE, DOE-HDBK-1019/2-93 DOE Fundamentals Handbook: Nuclear Physics and Reactor Theory, Vol. 2 (1993), Reactor Theory 모듈(지발중성자·원자로 동특성).</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criteria 11·26·28.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.3 "Nuclear Design" 및 15.4.8 "Spectrum of Rod Ejection Accidents (PWR)".</li>
+<li>U.S. NRC, Regulatory Guide 1.236 "Pressurized-Water Reactor Control Rod Ejection and Boiling-Water Reactor Control Rod Drop Accidents" (2020).</li>
+<li>IAEA, SSR-2/1 (Rev. 1) Safety of Nuclear Power Plants: Design (2016); SSG-52 Design of the Reactor Core for Nuclear Power Plants (2019).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제18조·제28조. 국가법령정보센터.</li>
+</ol>

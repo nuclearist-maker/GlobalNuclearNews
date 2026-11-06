@@ -1,0 +1,288 @@
+<figure class="article-image"><img alt="[개념 노트] 거시단면적과 원자 수밀도 — N = ρN_A/M에서 Σ = Nσ, λ = 1/Σ까지 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-017-macroscopic-cross-section/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>원자 수밀도 N</strong>은 단위 체적당 원자(분자) 수 [cm⁻³]이고, <strong>거시단면적 Σ = Nσ</strong>는 중성자가 단위 이동거리당 그 반응을 일으킬 확률 [cm⁻¹]입니다. 그 역수가 <strong>평균자유행정 λ = 1/Σ</strong>입니다.</p>
+<p>답안 첫 줄은 "Σ = Nσ, 단위 길이당 반응 확률(cm⁻¹)이며 역수가 평균자유행정임"으로 쓰면 됩니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>수밀도: 단일 원소·화합물·혼합물</h3>
+<table>
+<thead>
+<tr>
+<th>대상</th>
+<th>식</th>
+<th>주의</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>단일 원소</td>
+<td>N = ρN_A/M</td>
+<td>ρ [g/cm³], M [g/mol]</td>
+</tr>
+<tr>
+<td>화합물</td>
+<td>N_i = n_i·ρN_A/M_mol</td>
+<td>n_i = 분자당 원자 수(UO₂의 O는 2)</td>
+</tr>
+<tr>
+<td>혼합물</td>
+<td>N_i = w_i·ρN_A/M_i</td>
+<td>w_i = 질량분율</td>
+</tr>
+<tr>
+<td>거시단면적</td>
+<td>Σ = Σ_i N_iσ_i</td>
+<td>1 b = 10⁻²⁴ cm²</td>
+</tr>
+</tbody>
+</table>
+<p>농축도는 보통 w/o(질량분율)입니다. 3 w/o UO₂면 우라늄 평균 원자량은 1/M_U = 0.03/235.04 + 0.97/238.05에서 M_U = 237.96, M_UO₂ = 269.96입니다. 우라늄 질량분율은 0.8815, U-235 원자분율은 0.0304입니다. 밀도 10 g/cm³이면 N_UO₂ = 2.231×10²²이고 N₂₅ = 6.78×10²⁰ cm⁻³입니다.</p>
+<p>물은 N = 1.0×6.022×10²³/18.015 = 3.343×10²² 분자/cm³이고, 수소 원자는 그 2배입니다. 2200 m/s에서 σ_a = 0.664 b/분자이므로 Σ_a = 0.0222 cm⁻¹, σ_s = 103 b/분자이므로 Σ_s = 3.44 cm⁻¹입니다(Lamarsh 표 II.3)[1]. 산란 λ_s는 0.29 cm, 흡수 λ_a는 45 cm입니다. 2200 m/s 값 기준으로 흡수 1회당 산란이 약 155회(Σ_s/Σ_a)라는 뜻입니다. 103 b는 자유 원자 합(약 44 b)보다 큰데, 열영역의 화학결합 효과 때문이므로 분자 단면적을 씁니다.</p>
+<h3>빔 감쇠에서 평균자유행정까지</h3>
+<figure class="article-image"><img alt="비충돌 빔 감쇠 곡선 I/I₀ = e^(−Σ_t x)와 1λ·2λ·3λ 지점(36.8/13.5/5.0 %), 첫 반응 확률 p(x)dx, 물·UO₂의 N→Σ→λ 단위 환산 사다리" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-017-macroscopic-cross-section/fig1_beam_attenuation_mfp.avif"/><figcaption>비충돌 빔 감쇠 곡선 I/I₀ = e^(−Σ_t x)와 1λ·2λ·3λ 지점(36.8/13.5/5.0 %), 첫 반응 확률 p(x)dx, 물·UO₂의 N→Σ→λ 단위 환산 사다리</figcaption></figure>
+<p>얇은 층 dx를 지나며 반응하는 비율은 Σ_t·dx입니다. 그래서 dI = −Σ_tI·dx이고, 비충돌 빔은 **I(x) = I₀e^(−Σ_t x)**로 줄어듭니다. 중성자가 x까지 반응 없이 도달할 확률은 e^(−Σ_t x)입니다. 그다음 dx 안에서 처음 반응할 확률은 <strong>p(x)dx = Σ_t e^(−Σ_t x)dx</strong>이고, 0~∞ 적분은 1입니다. 평균 이동거리는 <strong>λ = ∫x·p(x)dx = 1/Σ_t</strong>입니다. 한 λ를 지나면 비충돌 빔이 e⁻¹ = 36.8 %, 3λ이면 5.0 %로 줄어듭니다.</p>
+<p>산란이 전방으로 치우치면 실제 확산 거리는 λ_s보다 깁니다. 이를 반영한 것이 <strong>수송 평균자유행정 λ_tr = 1/Σ_tr</strong>입니다. Σ_tr = Σ_t − μ̄₀Σ_s, μ̄₀ = 2/(3A)이고 확산계수 D = λ_tr/3입니다. 수소는 μ̄₀ ≈ 0.67이라 차이가 큽니다.</p>
+<h3>반응률과 1/v·비-1/v 보정</h3>
+<p>반응률은 <strong>R = Σφ</strong>[반응/cm³·s]이고, 출력은 P = E_R·Σ_f·φ·V입니다. 열영역 흡수 단면적은 대부분 1/v에 비례합니다. 이때 흡수율은 F_a = Σ_a(E₀)·nv₀ = Σ_a(E₀)·φ₀가 되어 스펙트럼과 무관해집니다. 여기서 E₀ = 0.0253 eV, v₀ = 2,200 m/s이고, φ₀는 "2200 m/s 중성자속"입니다.</p>
+<p>1/v에서 벗어나는 핵종은 Westcott 비-1/v 인자 g를 곱해 <strong>F_a = g_a(T)·Σ_a(E₀)·φ₀</strong>로 씁니다.</p>
+<table>
+<thead>
+<tr>
+<th>핵종</th>
+<th>20 °C</th>
+<th>400 °C</th>
+<th>이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>U-235 g_f</td>
+<td>0.9759</td>
+<td>0.9208</td>
+<td>1/v보다 약간 빨리 감소</td>
+</tr>
+<tr>
+<td>U-238 g_a</td>
+<td>1.0017</td>
+<td>1.0085</td>
+<td>거의 1/v</td>
+</tr>
+<tr>
+<td>Pu-239 g_f</td>
+<td>1.0487</td>
+<td>1.6904</td>
+<td>0.3 eV 공명</td>
+</tr>
+<tr>
+<td>Sm-149 g_a</td>
+<td>1.6170</td>
+<td>2.1854</td>
+<td>0.1 eV 공명</td>
+</tr>
+<tr>
+<td>Cd g_a</td>
+<td>1.3203</td>
+<td>2.5589</td>
+<td>0.18 eV 공명</td>
+</tr>
+</tbody>
+</table>
+<p>(Lamarsh 표 3.2, Westcott AECL-1101)[1][2]</p>
+<p>1군 계산에서는 맥스웰 분포 전체를 적분한 열중성자속 φ_T를 씁니다. 이 경우 φ₀ = (√π/2)(T₀/T)^½·φ_T(T₀ = 293.61 K)이므로 평균 단면적은 다음과 같습니다.</p>
+<p><strong>Σ̄_a = (√π/2)·g_a(T)·(T₀/T)^½·Σ_a(E₀)</strong></p>
+<p>계수는 20 °C 0.887, 300 °C 0.634, 400 °C 0.585입니다. 물의 Σ_a 0.0222에 0.887을 곱하면 0.0197 cm⁻¹이 되어, Lamarsh 표 5.2의 열평균값과 일치합니다[1]. 다만 φ₀ 기준으로 반응률을 쓸 때는 g만 곱하고 이 계수를 붙이지 않습니다. 두 관례를 섞으면 0.886을 이중 적용하는 실수가 생깁니다. 또 T는 감속재 온도가 아니라 중성자 온도입니다. 흡수가 있으면 스펙트럼이 경화되어 중성자 온도가 감속재보다 높습니다.</p>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>노심 설계</strong>: 노심 해석 코드는 핵종별 N_i(연소에 따라 변함)와 군 단면적을 곱해 Σ를 만들고 확산·수송 계산을 합니다. 4인자의 η = νΣ_f^F/Σ_a^F, f = Σ_a^F/Σ_a는 모두 Σ의 비입니다.</li>
+<li><strong>감속재</strong>: 감속능 ξΣ_s와 감속비 ξΣ_s/Σ_a도 Σ로 정의합니다. 물은 Σ_s가 커서 감속길이가 짧습니다.</li>
+<li><strong>온도·밀도 궤환</strong>: 감속재 온도가 오르면 밀도가 줄어 N과 Σ가 함께 줄고, 스펙트럼 경화로 평균 단면적도 바뀝니다. 이것이 MTC의 출발점입니다.</li>
+<li><strong>선출력·연소</strong>: Σ_fφ가 핵분열률입니다.</li>
+</ul>
+<h3>기출 계산 복원 풀이</h3>
+<p><strong>제78회 2교시 1번</strong>(PWR: 전기 1,000 MW, 효율 33 %, UO₂ 100,000 kg, ρ 10 g/cm³, 3 w/o, 집합체 150 × 봉 200, 노심 높이 3.5 m, 200 MeV/핵분열, 연료 내 축적 3×10⁻¹¹ J, σ_f 400 b)</p>
+<table>
+<thead>
+<tr>
+<th>문항</th>
+<th>풀이</th>
+<th>답</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(1) 열출력</td>
+<td>1,000/0.33</td>
+<td>3,030 MWt</td>
+</tr>
+<tr>
+<td>(2) N₂₅</td>
+<td>0.0304 × 2.231×10²²</td>
+<td>6.78×10²⁰ cm⁻³</td>
+</tr>
+<tr>
+<td>(3) Σ_f</td>
+<td>6.78×10²⁰ × 400×10⁻²⁴</td>
+<td>0.271 cm⁻¹</td>
+</tr>
+<tr>
+<td>(4) U-235 질량</td>
+<td>100,000 × 0.8815 × 0.03</td>
+<td>약 2,644 kg</td>
+</tr>
+<tr>
+<td>(5) 평균 선출력</td>
+<td>9.46×10¹⁹ /s × 3×10⁻¹¹ J ÷ 105,000 m</td>
+<td>27.0 kW/m</td>
+</tr>
+</tbody>
+</table>
+<p>장전량은 UO₂ 질량으로 해석했습니다(U 질량이면 3,000 kg). (5)의 핵분열률은 3.03×10⁹ W ÷ 3.204×10⁻¹¹ J이며, 열출력 전부로 나누면 28.9 kW/m입니다.</p>
+<p><strong>제81회 2교시 1번</strong>(Na 고속로 3군, 원본 수식 복원). 군 3 자료는 σ_γ 0.001 b, φ₃ 3×10¹⁵입니다. 산란 이동은 σ_{1→3} 0.06 b(φ₁ 6×10¹⁴), σ_{2→3} 0.18 b(φ₂ 1×10¹⁵)입니다.</p>
+<ul>
+<li>N = 0.97×6.0×10²³/29 = 2.01×10²² cm⁻³. 실제 Na 원자량은 22.99라 N = 2.54×10²²이지만, 답안은 주어진 값으로 풉니다.</li>
+<li>F_a = Nσ_γφ₃ = 6.02×10¹⁰, F_out = 0(최저 군), F_in = N(σ_{1→3}φ₁ + σ_{2→3}φ₂) = 4.33×10¹² /cm³·s</li>
+<li>s₃ = 0이므로 F_diff = −D₃∇²φ₃ = F_in − F_a − F_out = 4.27×10¹² /cm³·s(순누설)</li>
+</ul>
+<p><strong>2014년 2교시 3번</strong>(천연 UO₂, ρ 10.6, σ_s: U-238 8.3, U-235 10, O 4.2 b): N_UO₂ = 10.6×6.022×10²³/270.03 = 2.364×10²²입니다. 분자당 σ_s = 0.0072×10 + 0.9928×8.3 + 2×4.2 = 16.71 b이므로 Σ_s = 0.395 cm⁻¹, <strong>λ_s = 2.53 cm</strong>입니다. 산소 기여(0.199)가 U-238(0.195)과 비슷합니다.</p>
+<h2>규제·기준 근거</h2>
+<ul>
+<li>단면적 자체는 규제값이 아니고, <strong>핵설계 방법론·핵데이터의 검증</strong>이 규제 대상입니다.</li>
+<li><strong>NUREG-0800 SRP 4.3(Nuclear Design)</strong>: 계산 방법·단면적 라이브러리의 검증과 불확도를 심사합니다[3].</li>
+<li><strong>10 CFR 50 부록 A GDC 10·11·26·28</strong>: 핵설계 결과에 대한 요건입니다[4].</li>
+<li><strong>ANSI/ANS-19.6.1</strong>: 재장전 기동 노물리 시험(임계붕소농도·제어봉가·온도계수)으로 예측을 확인합니다[5].</li>
+<li><strong>국내</strong>: 「원자로시설 등의 기술기준에 관한 규칙」 제18조(원자로의 고유보호)·제28조(반응도제어계통), KINS 안전심사지침 4.3절(노물리 설계)[6].<!-- 확인필요: KINS 안전심사지침 4.3절 문서번호·현행판 미대조 --></li>
+<li><strong>출제 당시 대비</strong>: 물리 정의는 그대로입니다. 평가 핵데이터는 ENDF/B-VI → VII.1(2011) → VIII.0(2018) → VIII.1(2024)로 갱신되어 U-235 σ_f 같은 열 단면적이 판본마다 수 b씩 다릅니다(약 582~587 b)[7].</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>미시단면적 σ</th>
+<th>거시단면적 Σ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>대상</td>
+<td>핵 1개</td>
+<td>물질(체적)</td>
+</tr>
+<tr>
+<td>단위</td>
+<td>b(10⁻²⁴ cm²)</td>
+<td>cm⁻¹</td>
+</tr>
+<tr>
+<td>의미</td>
+<td>유효 표적 면적</td>
+<td>길이당 반응 확률</td>
+</tr>
+<tr>
+<td>의존</td>
+<td>핵종·에너지</td>
+<td>+ 밀도·조성·온도</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>평균자유행정 λ = 1/Σ</th>
+<th>수송 평균자유행정 λ_tr = 1/Σ_tr</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>의미</td>
+<td>다음 반응까지 평균 이동거리</td>
+<td>산란 비등방성을 보정한 실효 거리</td>
+</tr>
+<tr>
+<td>관계</td>
+<td>—</td>
+<td>λ_tr = λ_s/(1−μ̄₀)(흡수 무시), D = λ_tr/3</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>2200 m/s 값 σ(E₀)</th>
+<th>맥스웰 평균 σ̄</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>짝이 되는 중성자속</td>
+<td>φ₀ = nv₀</td>
+<td>φ_T(맥스웰 전체 적분)</td>
+</tr>
+<tr>
+<td>보정</td>
+<td>g(T)만</td>
+<td>(√π/2)·g(T)·(T₀/T)^½</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 거시단면적과 평균자유행정</strong></p>
+<ol>
+<li><strong>원자 수밀도</strong>: N = ρN_A/M [cm⁻³], 화합물 N_i = n_i·ρN_A/M_mol임</li>
+<li><strong>거시단면적</strong>: Σ = Nσ [cm⁻¹], 혼합물 Σ = ΣN_iσ_i — 단위 길이당 반응 확률임</li>
+<li><strong>빔 감쇠</strong>: dI = −ΣI·dx → I(x) = I₀e^(−Σx)</li>
+<li><strong>첫 반응 확률</strong>: p(x)dx = Σe^(−Σx)dx</li>
+<li><strong>평균자유행정</strong>: λ = ∫x·p(x)dx = 1/Σ — 1λ에서 비충돌 36.8 % 남음</li>
+<li><strong>수송 평균자유행정</strong>: λ_tr = 1/(Σ_t − μ̄₀Σ_s), μ̄₀ = 2/3A, D = λ_tr/3</li>
+<li><strong>반응률</strong>: R = Σφ, 출력 P = E_R·Σ_fφV</li>
+<li><strong>열 보정</strong>: 1/v는 φ₀ = nv₀ 기준 그대로, 비-1/v는 Westcott g 곱함, φ_T 기준 평균은 ×(√π/2)(T₀/T)^½</li>
+<li><strong>예</strong>: H₂O Σ_s 3.44 cm⁻¹ → λ_s 0.29 cm, Σ_a 0.0222 → λ_a 45 cm</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: 감쇠 곡선과 λ(0.368) 표시, N→Σ→λ 3단 상자, λ_tr 식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-017-macroscopic-cross-section/sketch1_attenuation_mfp.avif"/><figcaption>답안용 도식: 감쇠 곡선과 λ(0.368) 표시, N→Σ→λ 3단 상자, λ_tr 식</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>연도-교시-번호</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>제73회-1-12</td>
+<td>평균자유행정(mean free path)</td>
+</tr>
+<tr>
+<td>제78회-2-1</td>
+<td>PWR 노심 기본 물리량(N₂₅, Σ_f, 선출력)</td>
+</tr>
+<tr>
+<td>제81회-2-1</td>
+<td>Na 고속로 3군 반응률</td>
+</tr>
+<tr>
+<td>제81회-3-1</td>
+<td>중성자 빔 감쇠와 평균자유행정</td>
+</tr>
+<tr>
+<td>2014-2-3</td>
+<td>UO₂ 거시 산란단면적과 평균자유행정</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 3장(중성자 반응·단면적), 부록 II 표 II.2·II.3, 표 3.2(Westcott 비-1/v 인자), 표 5.2.</li>
+<li>C. H. Westcott, "Effective Cross Section Values for Well-Moderated Thermal Reactor Spectra", AECL-1101, Atomic Energy of Canada Limited.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.3 "Nuclear Design".</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A "General Design Criteria for Nuclear Power Plants", Criterion 10·11·26·28. NRC 웹(eCFR).</li>
+<li>American Nuclear Society, ANSI/ANS-19.6.1 "Reload Startup Physics Tests for Pressurized Water Reactors".</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제18조·제28조. 국가법령정보센터.</li>
+<li>D. A. Brown et al., "ENDF/B-VIII.0: The 8th Major Release of the Nuclear Reaction Data Library", Nuclear Data Sheets 148, 1–142 (2018).</li>
+</ol>

@@ -17,7 +17,7 @@
   }
   function selected() {
     const query = $('reactor-search').value.trim().toLocaleLowerCase(), country = $('reactor-country').value, status = $('reactor-status').value, evidence = $('reactor-evidence').value;
-    return records.filter(r => (!country || r.country === country) && (!status || r.status === status) && (!evidence || (evidence === 'current' ? !!r.verifiedOn : !r.verifiedOn)) && (!query || [r.name,r.site,r.country,r.model,r.type,r.operator,r.id].join(' ').toLocaleLowerCase().includes(query)));
+    return records.filter(r => (!country || r.country === country) && (!status || r.status === status) && (!evidence || (evidence === 'current' ? !!r.verifiedOn : !r.verifiedOn)) && (!query || [r.name,r.site,r.country,r.model,r.type,r.operator,r.id,window.GNN_KO?.translate(r.country)].join(' ').toLocaleLowerCase().includes(query)));
   }
   const xy = ([lat,lon]) => [(lon+180)*1000/360,(84-lat)*440/144];
   let mapGroups = [], view = {x:0,y:0,w:1000,h:440};

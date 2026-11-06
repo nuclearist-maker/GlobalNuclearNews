@@ -1,0 +1,236 @@
+<figure class="article-image"><img alt="[개념 노트] 비등곡선(Boiling Curve) — 4영역 + CHF점의 상관식, 압력과 유동에 따른 변화 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-010-boiling-curve/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>비등곡선은 가열면의 벽 과열도 ΔTe = T벽 − T포화에 대한 열속 q″의 관계입니다. 자연대류·핵비등·천이비등·막비등의 4영역과 그 경계점(ONB, CHF, 최소막비등점 = Leidenfrost점)으로 이루어지며, 영역마다 지배 메커니즘과 상관식이 다릅니다.</strong></p>
+<p>이 노트는 곡선을 <strong>상관식으로 직접 계산하는 방법</strong>과 압력·유동이 곡선을 어떻게 바꾸는지에 집중합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>4영역 + CHF점, 영역마다 다른 식</h3>
+<table>
+<thead>
+<tr>
+<th>영역·점</th>
+<th>메커니즘</th>
+<th>대표 상관식</th>
+<th>경향</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 자연대류</td>
+<td>단상, 부력에 의한 대류</td>
+<td>Nu = C·Raⁿ</td>
+<td>q″ ∝ ΔTe^1.25(층류)</td>
+</tr>
+<tr>
+<td>ONB</td>
+<td>벽 공동에서 기포 생성 시작</td>
+<td>(유동) Bergles–Rohsenow</td>
+<td>압력·열속 의존</td>
+</tr>
+<tr>
+<td>② 핵비등</td>
+<td>기포 생성·이탈이 경계층을 휘저음, 잠열 수송</td>
+<td>Rohsenow</td>
+<td>q″ ∝ ΔTe³</td>
+</tr>
+<tr>
+<td>CHF점</td>
+<td>증기 기둥의 수력학적 불안정으로 액체 공급이 막힘</td>
+<td>Zuber형</td>
+<td>열속 최대</td>
+</tr>
+<tr>
+<td>③ 천이비등</td>
+<td>국부 증기막이 생겼다 깨졌다 반복, 열속 제어 시 불안정</td>
+<td>일반식 없음(실험 상관식)</td>
+<td>ΔTe↑에 q″↓</td>
+</tr>
+<tr>
+<td>MHF점(Leidenfrost)</td>
+<td>증기막이 겨우 유지되는 최저 조건</td>
+<td>Zuber q″min, Berenson ΔTmin</td>
+<td>열속 최소</td>
+</tr>
+<tr>
+<td>④ 막비등</td>
+<td>증기막 전도 + 고온에서 복사</td>
+<td>Bromley(원봉)</td>
+<td>다시 증가</td>
+</tr>
+</tbody>
+</table>
+<p>Rohsenow 식은 q″ = μl·hfg·[g(ρl − ρv)/σ]^1/2·[cpl·ΔTe/(Csf·hfg·Prlⁿ)]³입니다. 물은 n = 1.0이고, Csf는 표면과 액체 조합에 따른 상수(물–연마 스테인리스 0.013, 물–구리 0.0068 등)입니다[1]. 과열도가 Csf에 비례하므로 같은 열속에서도 표면 상태에 따라 과열도가 두 배 가까이 달라집니다. 그래서 Rohsenow 값은 "±100 % 수준 오차"를 전제로 읽어야 합니다.</p>
+<p>막비등의 Bromley 식은 수평 원봉에서 h = 0.62·[kv³·ρv(ρl − ρv)g·h′fg/(μv·D·ΔTe)]^1/4이며, h′fg = hfg + 0.8·cpv·ΔTe는 증기막의 현열을 더한 수정 잠열입니다. 벽이 수백 °C를 넘으면 복사가 커지므로 h^4/3 = hconv^4/3 + hrad·h^1/3으로 결합합니다(hrad가 작으면 h ≈ hconv + ¾·hrad)[1][2].</p>
+<figure class="article-image"><img alt="4영역 장면 2×2와 영역별 상관식 카드(Rohsenow·Zuber·Berenson·Bromley, 1기압 계산값)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-010-boiling-curve/fig1_regime_mechanisms_correlations.avif"/><figcaption>4영역 장면 2×2와 영역별 상관식 카드(Rohsenow·Zuber·Berenson·Bromley, 1기압 계산값)</figcaption></figure>
+<p>1기압 물에 넣어 보면 CHF 1.26 MW/m², Rohsenow 곡선과 CHF의 교점 ΔTe 20.8 K, q″min 0.019 MW/m², ΔTmin 73 K(벽 약 173 °C)입니다. 교재 개념도의 "CHF 때 약 30 K, Leidenfrost 약 120 K"와 크기 수준은 같지만 ΔTmin은 꽤 작게 나옵니다. Berenson 식은 매끈한 수평 평판 기준이라, 표면 거칠기·산화막·과냉도가 있는 실제 조건에서는 측정 Leidenfrost 온도가 더 높게 나오는 경우가 많습니다. 우연히도 ΔTmin에서 Bromley 값(0.019)은 Zuber q″min과 거의 같아, 두 식이 최소점에서 매끄럽게 이어집니다.</p>
+<h3>Leidenfrost 온도</h3>
+<p>Leidenfrost 온도는 **막비등을 유지할 수 있는 최저 벽온도(T_MFB, T_min)**입니다. 뜨거운 팬 위 물방울이 증기층에 떠서 오래 굴러다니는 현상이 이름의 유래이고, 액적 실험에서는 증발 수명이 최대가 되는 온도로 측정합니다. 물질 상수가 아니라 압력, 표면 거칠기·산화막, 액체 과냉도, 유속에 따라 크게 변합니다. 과냉도가 크거나 표면이 거칠수록 증기막이 쉽게 깨져 T_min이 올라갑니다.</p>
+<h3>비등 개시(ONB)와 과냉·포화 비등</h3>
+<p>유동 채널에서는 벌크 액체가 포화온도보다 낮아도 벽 온도가 포화온도를 조금 넘으면 벽 공동에서 기포가 생깁니다. 이것이 <strong>과냉비등</strong>입니다. 물의 ONB는 Bergles–Rohsenow 식 q″ = 1082·p^1.156·(1.8ΔTsat)^(2.16/p^0.0234)(p bar, q″ W/m²)로 구합니다[3]. q″ 0.5 MW/m²에서 ONB 과열도는 1기압 9.5 K, 7 MPa 1.0 K입니다. 고압일수록 작은 과열로도 비등이 시작됩니다.</p>
+<p>과냉비등은 두 단계로 나눕니다. ONB 직후에는 기포가 벽에 붙은 채 응축하는 <strong>부분 과냉비등</strong>이고, 과냉도가 더 줄면 기포가 벽을 떠나 순 증기 체적이 늘기 시작합니다. 이 점이 **OSV(순 증기 발생점, NVG)**입니다. Saha–Zuber 식은 Pe &gt; 70,000이면 St = q″/(G·cpl·ΔTsub) = 0.0065, 그 이하이면 Nu = q″D/(kl·ΔTsub) = 455로 그 과냉도를 줍니다[3]. 벌크가 포화에 이르면(xe ≥ 0) <strong>포화비등</strong>입니다.</p>
+<h3>압력이 바꾸는 비등곡선</h3>
+<p>상관식과 표면계수(Csf)를 고정하고 압력별 물성만 바꿔 넣으면 압력 효과가 바로 보입니다(물성은 iapws 패키지의 IF97 열역학 물성과 IAPWS 수송물성·표면장력식[7]). 15.5 MPa에서는 핵비등 과열도가 1 MW/m²에서 19.3 K → 4.5 K로 줄고, 풀비등 CHF는 1.26 → 3.17 MW/m²로 커집니다. 다만 CHF는 압력에 단조 증가하지 않습니다. Zuber 식으로 계산하면 약 7 MPa(4.5 MW/m²) 부근이 최대이고, 임계압력 쪽으로 가면 hfg와 σ가 0으로 줄어 다시 떨어집니다(20 MPa 1.5 MW/m²). 고압 막비등 쪽은 Berenson 식이 ΔTmin 약 420 K를 주지만 저압 수평면용 식이라 고압 신뢰성이 부족해 MHF를 표시하지 않았습니다. 천이비등은 두 압력 모두 일반 상관식이 없어 모델링하지 않았습니다.</p>
+<figure class="article-image"><img alt="0.101 MPa vs 15.5 MPa 상관식 계산 비등곡선과 계산값 비교표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-010-boiling-curve/fig2_boiling_curve_pressure_computed.avif"/><figcaption>0.101 MPa vs 15.5 MPa 상관식 계산 비등곡선과 계산값 비교표</figcaption></figure>
+<p>PWR 노심은 풀비등이 아니라 15.5 MPa 강제대류 과냉 조건입니다. 실제 핵비등 과열도는 Thom 식 ΔTsat = 22.65·q″^1/2·e^(−p/8.7)(q″ MW/m², p MPa)으로 1 MW/m²에서 3.8 K, Jens–Lottes 식으로 2.1 K입니다[3][4]. 피복관 표면은 포화온도보다 몇 K만 높은 상태로 묶여 있다는 뜻입니다.</p>
+<h3>가열 유로를 따라가면 — 유동비등 영역</h3>
+<p>균일 가열 원관을 따라가면 비등곡선의 영역이 공간적으로 펼쳐집니다. 7 MPa, 내경 10 mm, G 1,000 kg/m²s, 0.5 MW/m², 입구 220 °C 조건으로 계산하면 다음 순서로 진행합니다.</p>
+<ol>
+<li>단상 액체 대류: 벽온도가 유체온도와 나란히 오릅니다.</li>
+<li>ONB(0.63 m): 벽이 Tsat + 1.0 K에 이르면 부분 과냉비등이 시작됩니다.</li>
+<li>OSV(1.22 m, 과냉도 15.1 K): 완전 과냉비등으로 넘어갑니다.</li>
+<li>xe = 0(1.61 m): 포화 핵비등이 시작됩니다.</li>
+<li>대류항 우세(약 2.2 m 이후): 건도가 오르며 2상 유속이 빨라져 강제대류항이 핵비등항을 넘습니다. 벽 과열도는 오히려 조금 줄어듭니다(유동양식 판정과는 별개).</li>
+<li>dryout: 환상류 액막이 마르면 벽온도가 급상승합니다(예시는 임계건도 0.5 가정).</li>
+</ol>
+<figure class="article-image"><img alt="7 MPa 균일 가열 원관의 벽·유체·포화온도 분포와 유동비등 영역(계산 예)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-010-boiling-curve/fig3_flow_boiling_channel_wall_temperature.avif"/><figcaption>7 MPa 균일 가열 원관의 벽·유체·포화온도 분포와 유동비등 영역(계산 예)</figcaption></figure>
+<p>비등이 발달하면 벽 과열도가 이 예에서 최대 약 12 K에 머뭅니다. 열속이 변해도 벽온도가 크게 변하지 않는다는 것이 핵비등의 장점입니다. 위험은 벽이 액체와의 접촉을 잃는 순간, 곧 CHF(DNB·dryout)에서 시작됩니다.</p>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>설계</strong>: 경수로는 노심을 핵비등 이하 영역에 두도록 설계합니다. PWR은 고온 채널 상부에서 국부 과냉비등을 허용하지만 DNB는 허용하지 않습니다. BWR은 노심에서 포화비등이 정상이며 dryout(MCPR)이 한계입니다.</li>
+<li><strong>운전</strong>: 과냉비등 구간에서는 벽에서 증발이 일어나 CRUD 침착과 붕소 농축이 생기고, 축방향 출력 이상(AOA)의 원인이 됩니다.</li>
+<li><strong>사고</strong>: LOCA 블로다운 중 CHF가 나면 피복관은 천이·막비등으로 넘어갑니다. 재관수 때 피복관이 Leidenfrost 온도(T_min) 아래로 식어야 급랭(quench)과 재습윤이 일어납니다. 그래서 계통 코드에서 T_min은 막비등 판정의 핵심 변수입니다. TRACE는 Groeneveld–Stewart 값과 725 K 중 큰 값을 씁니다[8].</li>
+<li><strong>국내 노형 예</strong>: APR1400·OPR1000은 정상운전과 AOO에서 DNBR로 핵비등 영역 유지를 확인하고, LOCA는 ECCS 성능기준으로 post-CHF 거동을 평가합니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>「원자로시설 등의 기술기준에 관한 규칙」 제17조①</td>
+<td>정상운전·예상운전과도 시 핵연료허용손상한계 여유 확보[6]</td>
+</tr>
+<tr>
+<td>10 CFR 50 App. A GDC 10, SRP 4.4</td>
+<td>SAFDL 비초과, PWR 95/95 DNB 미발생[5]</td>
+</tr>
+<tr>
+<td>10 CFR 50 App. K I.C.4.e</td>
+<td>블로다운 중 CHF가 예측된 위치는 핵비등 상관식으로 복귀 금지(재관수 중 정당화 시 재습윤 허용)[5]</td>
+</tr>
+<tr>
+<td>10 CFR 50 App. K I.C.5</td>
+<td>post-CHF 상관식은 데이터 평균 이하 예측. Groeneveld 막비등, McDonough–Milich–King 천이비등 등. Dougall–Rohsenow는 비보수 조건 사용 금지[5]</td>
+</tr>
+<tr>
+<td>원안위고시 제2017-23호</td>
+<td>가압경수로 ECCS 성능 기준(PCT 1,204 °C 등)[6]</td>
+</tr>
+</tbody>
+</table>
+<p>제71회(2000년대 초) 첫 출제 이후 비등곡선의 물리는 바뀌지 않았습니다. 다만 LOCA 기준은 10 CFR 50.46c가 2024.4.11 SRM으로 반려되어 미제정이므로 현행 50.46(b)와 App. K를 인용합니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>핵비등</th>
+<th>막비등</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>벽–액체 접촉</td>
+<td>유지(기포가 점처럼 생겼다 떠남)</td>
+<td>증기막이 벽을 완전히 덮음</td>
+</tr>
+<tr>
+<td>열전달 경로</td>
+<td>잠열 + 경계층 교란</td>
+<td>증기막 전도 + 복사</td>
+</tr>
+<tr>
+<td>열속–과열도</td>
+<td>q″ ∝ ΔTe³, 작은 과열</td>
+<td>같은 열속에 수백 K</td>
+</tr>
+<tr>
+<td>대표식</td>
+<td>Rohsenow, Thom, Chen</td>
+<td>Bromley, Berenson, Groeneveld</td>
+</tr>
+<tr>
+<td>원전</td>
+<td>정상운전 허용 영역</td>
+<td>CHF 이후, 피하거나 사고 시 평가</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>ONB</th>
+<th>OSV</th>
+<th>CHF</th>
+<th>MHF(Leidenfrost)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>의미</td>
+<td>비등 시작</td>
+<td>순 증기 발생 시작</td>
+<td>핵비등 끝(최대 열속)</td>
+<td>막비등 끝(최소 열속)</td>
+</tr>
+</tbody>
+</table>
+<p>과냉비등과 포화비등은 <strong>벌크 유체</strong> 상태(xe &lt; 0 / xe ≥ 0)로 구분합니다. 벽은 두 경우 모두 포화온도보다 높습니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 비등곡선 = 벽 과열도 ΔTe에 대한 열속 q″ 관계, 4영역 + CHF점</li>
+<li><strong>자연대류</strong>: 단상, q″ ∝ ΔTe^1.25, ONB에서 끝남</li>
+<li><strong>핵비등</strong>: 기포 생성·이탈, q″ ∝ ΔTe³(Rohsenow), 작은 과열로 큰 열속</li>
+<li><strong>CHF</strong>: 수력학적 불안정(Zuber), 1기압 물 약 1.26 MW/m²</li>
+<li><strong>천이비등</strong>: 부분 증기막, ΔTe↑에 q″↓, 열속 제어면에서는 불안정</li>
+<li><strong>Leidenfrost(MHF)</strong>: 막비등 최저 벽온도, 1기압 물 ΔTe 약 70~120 K(식·표면 의존)</li>
+<li><strong>막비등</strong>: 증기막 전도 + 복사(Bromley), 큰 과열 필요</li>
+<li><strong>압력↑</strong>: 핵비등 과열도↓, 풀비등 CHF는 중압(Zuber 계산 약 7 MPa) 최대</li>
+<li><strong>유동비등</strong>: 단상 → ONB → 과냉비등(OSV) → 포화 핵비등 → 2상 강제대류(환상류) → dryout</li>
+<li><strong>원전</strong>: 핵비등 영역 유지(DNBR·MCPR), LOCA 재관수는 T_min 아래로 냉각돼야 급랭</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 비등곡선 4영역 + CHF점, 영역별 메커니즘·상관식 이름" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-010-boiling-curve/sketch1_boiling_curve_regimes.avif"/><figcaption>답안지용 비등곡선 4영역 + CHF점, 영역별 메커니즘·상관식 이름</figcaption></figure>
+<figure class="article-image"><img alt="답안지용 가열 유로 Tw·Tb·Tsat과 ONB·xe = 0·dryout" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-010-boiling-curve/sketch2_flow_boiling_wall_temperature.avif"/><figcaption>답안지용 가열 유로 Tw·Tb·Tsat과 ONB·xe = 0·dryout</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 2교시 1번</td>
+<td>풀비등 곡선 구간·점별 명칭과 특성</td>
+</tr>
+<tr>
+<td>2013년 1교시 7번</td>
+<td>핵비등과 막비등</td>
+</tr>
+<tr>
+<td>제71회 3교시 2번</td>
+<td>수조비등 곡선 영역별 열전달</td>
+</tr>
+<tr>
+<td>제71회 1교시 3번</td>
+<td>Leidenfrost Temperature</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>F. P. Incropera, D. P. DeWitt 외, Fundamentals of Heat and Mass Transfer, John Wiley &amp; Sons, 10장(비등과 응축, 표 10.1 Csf).</li>
+<li>J. H. Lienhard IV, J. H. Lienhard V, A Heat Transfer Textbook, Phlogiston Press, 9장(풀비등).</li>
+<li>N. E. Todreas, M. S. Kazimi, Nuclear Systems I: Thermal Hydraulic Fundamentals, 12~13장(Bergles–Rohsenow, Saha–Zuber, Thom, Jens–Lottes, Chen).</li>
+<li>J. G. Collier, J. R. Thome, Convective Boiling and Condensation, 3rd ed., Oxford University Press (1994).</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A GDC 10, Appendix K I.C.4.e·I.C.5; NUREG-0800 Standard Review Plan 4.4. NRC 웹(eCFR).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제17조제1항; 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」, 원안위고시 제2017-23호. 국가법령정보센터.</li>
+<li>IAPWS, Revised Release on the IAPWS Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam (IAPWS-IF97), 및 IAPWS 점성·열전도도·표면장력 릴리스.</li>
+<li>U.S. NRC, TRACE V5.0 Theory Manual: Field Equations, Solution Methods, and Physical Models (판·ML 번호 미기재).</li>
+</ol>

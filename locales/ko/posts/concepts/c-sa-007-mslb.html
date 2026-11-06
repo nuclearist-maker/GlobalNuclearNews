@@ -1,0 +1,215 @@
+<figure class="article-image"><img alt="[개념 노트] 주증기관파단(MSLB) — 과냉각이 부르는 재임계와 파단 위치별 거동 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-007-mslb/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>주증기관파단(MSLB, Main Steam Line Break)은 PWR 2차측 주증기 배관이 파단되어 증기가 대량 방출되고, 그 결과 1차측이 과냉각되어 음의 감속재온도계수(MTC)를 통해 양의 반응도가 삽입되는 설계기준사고입니다.</strong></p>
+<p>냉각재를 잃는 사고가 아니라 <strong>열제거가 과도하게 늘어나는 사고</strong>라는 점이 LOCA·SGTR과의 출발점 차이입니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>사고 진행 (전출력, 대형 파단)</h3>
+<ol>
+<li><strong>방출 급증</strong>: 파단 직후에는 SG 2기가 공통 헤더를 거쳐 모두 증기를 내보냅니다. 압력비가 충분하면 SG 출구 노즐의 유량제한기 목에서 임계유동이 형성되어 방출률이 제한됩니다.</li>
+<li><strong>과냉각</strong>: SG 압력·포화온도가 떨어져 1차→2차 열전달이 늘고, 저온관 온도가 내려갑니다. 냉각재가 수축해 가압기 수위·압력이 감소합니다.</li>
+<li><strong>트립 전 출력 상승</strong>: 차가운 냉각재가 노심에 도달하면(수 초 지연) 음의 MTC로 반응도가 들어와 출력이 오릅니다. APR1400 비교해석 예(MSIV 상류 양단 파단)에서는 약 10초에 가변과출력으로 원자로가 정지했습니다[3].</li>
+<li><strong>격리</strong>: 저 SG 압력이나 고 격납건물 압력으로 주증기격리신호(MSIS)가 나가 모든 MSIV가 닫히고 주급수가 격리됩니다(같은 해석에서 약 20초)[3].</li>
+<li><strong>안전주입</strong>: 저 가압기 압력으로 SIAS가 나가 붕산수가 주입됩니다. 배관 속 무붕소수가 먼저 들어가므로 붕산 도달에는 지연이 있습니다.</li>
+<li><strong>종결</strong>: 급수가 격리된 파단 SG가 비면(건조) 과냉이 끝나고, RCS는 재승온·재가압됩니다. 이후 건전 SG의 ADV·터빈우회로 붕괴열을 제거합니다.</li>
+</ol>
+<h3>파단 위치가 결과를 가른다</h3>
+<figure class="article-image"><img alt="SG 2기·주증기관 4개 2차측 구조도 위 파단 위치 A·B·C와 위치별 격납건물 영향·MSIV 폐쇄 후 거동 비교표, 출구 노즐 유량제한 원리 단면" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-007-mslb/fig1_mslb_break_locations.avif"/><figcaption>SG 2기·주증기관 4개 2차측 구조도 위 파단 위치 A·B·C와 위치별 격납건물 영향·MSIV 폐쇄 후 거동 비교표, 출구 노즐 유량제한 원리 단면</figcaption></figure>
+<table>
+<thead>
+<tr>
+<th>위치</th>
+<th>격납건물 영향</th>
+<th>MSIV 닫힌 뒤</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A 격납건물 안·MSIV 상류</td>
+<td>질량·에너지 유입 → 압력·온도 상승(살수 작동 조건 도달 가능)</td>
+<td>파단 SG 유출 지속 가능</td>
+</tr>
+<tr>
+<td>B 격납건물 밖·MSIV 상류</td>
+<td>직접 유입 없음, 밸브실 환경 악화</td>
+<td>파단 SG 유출 지속 가능</td>
+</tr>
+<tr>
+<td>C MSIV 하류</td>
+<td>직접 유입 없음</td>
+<td>SG 공급 차단, 하류 잔류 증기만 방출</td>
+</tr>
+</tbody>
+</table>
+<p>A·B·C는 각각 독립된 가정입니다. 상류 파단에서 파단 SG 유출이 얼마나 이어지는지는 급수 격리와 잔존 수량에 달려 있습니다.</p>
+<p>공통 거동은 다음과 같습니다. 원자로출력은 트립 전 상승 후 정지(재임계 가능), 가압기 수위·압력은 수축으로 감소 후 SI로 회복, 파단 SG 압력·수위는 급감합니다(수위는 초기 팽창으로 순간 증가할 수 있음). 건전 SG는 MSIV가 닫힌 뒤 압력이 회복되고, 수위는 보조급수로 회복합니다. 격납건물 안 파단은 과열증기 때문에 격납건물 대기 최고온도를 지배하는 경우가 많고, 최고압력은 노형에 따라 LOCA 또는 MSLB가 정합니다.</p>
+<h3>재임계: 왜 고온영출력·주기말인가</h3>
+<p>정지 후 반응도 수지는 다음과 같습니다.</p>
+<p>ρ = −SDM + α_M·ΔT_M + Δρ_D + Δρ_B</p>
+<p>과냉 반응도 α_M·ΔT_M(ΔT_M &lt; 0, α_M &lt; 0이므로 양)이 커져 도플러·붕산 항까지 더한 순반응도가 0에 닿으면 원자로가 다시 임계가 됩니다(return to power). 여기서 SDM은 최대가치 제어봉 1개 고착을 이미 반영한 값이고, ΔT_M은 노심 유효 감속재 온도 변화입니다. 예를 들어 α_M = −50 pcm/°C로 60 °C 냉각되면 +3,000 pcm입니다(설명용 가정값). 해석은 이 효과가 가장 커지는 조건을 가정합니다.</p>
+<ul>
+<li><strong>주기말(EOC)</strong>: 붕소가 거의 없어 MTC가 가장 음입니다.</li>
+<li><strong>고온영출력(HZP)</strong>: SG 보유수량이 가장 많아 냉각 에너지가 크고, 출력 운전에서 정지한 경우보다 상쇄할 저장열·붕괴열이 작습니다.</li>
+<li><strong>최대가치 제어봉 1개 완전 인출 고착</strong>: SDM을 줄이고, 고착봉 주변에 출력이 집중됩니다.</li>
+<li><strong>소외전원 유·무, 단일고장</strong>: 소외전원이 있으면 RCP 운전으로 냉각이 크고, 없으면 SI가 늦어집니다. 둘 다 계산해 불리한 쪽을 씁니다.</li>
+</ul>
+<p>다만 재임계가 실제로 일어나는지는 노형·SDM·주기 시점별 해석 결과로 정해지며, 일부 CE형 해석(예: Waterford 3 SER)은 SDM이 냉각 반응도보다 커서 트립 후 재임계가 없다고 평가했습니다[4]. 어느 쪽이든 제한 조건은 EOC 고온영출력입니다. 재임계 출력은 정격보다 훨씬 낮고 도플러 음의 궤환이 상승을 억제하지만, 파단 루프 쪽 섹터와 고착봉 주변에 국부 첨두가 생깁니다. 압력·유량이 낮은 상태라 DNB 여유가 줄어드는 것이 핵심 쟁점이며, 붕산이 도달해 순반응도가 음이 되면 끝납니다. 2025년 1교시의 "저출력 운전 중 MSLB"가 바로 이 상황을 묻습니다.</p>
+<figure class="article-image"><img alt="HZP·EOC·제어봉 고착 MSLB의 감속재 온도·반응도 성분·노심 출력(개념적 추세, 예시값)과 반응도 수지 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-007-mslb/fig2_return_to_power_trend.avif"/><figcaption>HZP·EOC·제어봉 고착 MSLB의 감속재 온도·반응도 성분·노심 출력(개념적 추세, 예시값)과 반응도 수지 카드</figcaption></figure>
+<h2>원전에서의 의미</h2>
+<h3>안전설계 요소</h3>
+<ul>
+<li><strong>MSIS·MSIV 빠른 폐쇄</strong>: 건전 SG 방출을 끊습니다. MSSV·ADV는 MSIV 상류에 있어 격리 후에도 SG 과압을 보호합니다.</li>
+<li><strong>유량제한기</strong>: 압력비가 충분할 때 목에서 형성되는 임계유동으로 방출률을 제한해 냉각률·반응도 삽입률·격납건물 가압률·배관 반력을 줄입니다.</li>
+<li><strong>급수 격리와 파단 SG 보조급수 차단</strong>: 물을 계속 넣으면 과냉이 길어집니다. CE형 보조급수작동신호는 SG 간 압력차로 파단 SG를 가려냅니다.</li>
+<li><strong>SIAS·붕산 주입</strong>: APR1400은 IRWST를 수원으로 직접용기주입합니다.</li>
+<li><strong>SDM·MTC 관리</strong>: 기술지침서 SDM과 COLR의 MTC 하한이 MSLB 해석 가정을 지킵니다.</li>
+<li><strong>구조·환경</strong>: 배관 휩 구속, 격납건물 설계압력·살수, 기기 환경검증.</li>
+</ul>
+<h3>운전 대응</h3>
+<p>CE형 비상운전지침 체계는 이를 과냉 사건(ESDE, Excess Steam Demand Event)으로 진단하고[5], 파단 SG를 식별·격리하며, 과냉각여유도와 냉각률 제한을 지키면서 SI를 조절·종료합니다. SI가 계속되어 RCS가 차가운 채 재가압되면 PTS 조건이 되므로 압력-온도 한계를 지킵니다.</p>
+<h3>APR1400 예와 DEC</h3>
+<p>APR1400은 SG 2기, 주증기관 4개(SG당 2개)이며 각 관에 MSIV·MSSV·ADV가 있습니다[6]. 설계확장조건(DEC-A) 분석에는 MSLB가 SGTR을 유발하는 경우도 포함되어, 이때는 2차측 방출이 격납건물 우회 경로가 됩니다.</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NUREG-0800 SRP 15.1.5 Rev.3(2007) [1]</td>
+<td>격납건물 안·밖 증기계통 파단, 재임계·연료손상·RCPB 압력 평가</td>
+</tr>
+<tr>
+<td>SRP 15.1.1~15.1.4</td>
+<td>SG 방출·안전밸브 오개방 등 소형 2차측 과냉은 AOO</td>
+</tr>
+<tr>
+<td>SRP 15.1.5.A / RG 1.183 [1][2]</td>
+<td>격납건물 밖 파단 방사선 영향, 사고 전·동반 옥소첨두</td>
+</tr>
+<tr>
+<td>10 CFR 50 App.A GDC 27·28·31·35 [7]</td>
+<td>반응도 제어, 반응도 사고 한계, RCPB 파괴 방지, ECCS</td>
+</tr>
+<tr>
+<td>ANSI/ANS-51.1</td>
+<td>대형 MSLB는 Condition IV(제한 고장)</td>
+</tr>
+<tr>
+<td>KINS 경수로형 안전심사지침 15.1.5</td>
+<td>국내 심사 기준(SRP 대응)</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: ANS-51.1 Condition 구분(대형 IV, 소형 III) 및 SRP 15.1.5 Rev.3 인용 GDC 목록 원문 직접 대조 미완(NRC PDF 접근 차단) -->
+<p>연료 허용기준은 가상사고이므로 연료손상을 일부 허용하되 손상 연료봉 수를 선량평가에 반영합니다. 판정은 DNBR과 첨두 선출력으로 합니다. 출제 당시 대비 선량 기준이 TID-14844에서 AST(TEDE)로 바뀌었고, 다중고장(MSLB+SGTR)은 사고관리계획서 범위가 되었습니다. 재임계·SDM·MSIV라는 설계기준 골격은 그대로입니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>MSLB</th>
+<th>LOCA</th>
+<th>SGTR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>손상 경계</td>
+<td>2차(주증기관)</td>
+<td>1차 압력경계</td>
+<td>1차-2차(전열관)</td>
+</tr>
+<tr>
+<td>RCS 온도</td>
+<td>급감(과냉)</td>
+<td>감소</td>
+<td>소폭 감소</td>
+</tr>
+<tr>
+<td>파단 SG</td>
+<td>압력·수위 급감</td>
+<td>—</td>
+<td>수위 증가</td>
+</tr>
+<tr>
+<td>격납건물</td>
+<td>안 파단 시 압력·온도↑</td>
+<td>압력·온도·방사선↑</td>
+<td>변화 없음</td>
+</tr>
+<tr>
+<td>방사선</td>
+<td>거의 변화 없음</td>
+<td>격납건물↑</td>
+<td>2차측↑</td>
+</tr>
+<tr>
+<td>주 위험</td>
+<td>재임계·DNB, PTS</td>
+<td>노심 냉각</td>
+<td>우회 방출</td>
+</tr>
+</tbody>
+</table>
+<p>공통 증상은 가압기 압력·수위 감소와 SIAS입니다. 같은 과냉 계열의 AOO인 SG 안전밸브 오개방은 MSLB의 소형판으로 보면 됩니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 2차측 주증기관 파단 → 증기 대량 방출 → 1차측 과냉각, 설계기준사고(SRP 15.1.5)임</li>
+<li><strong>핵심 위험</strong>: 음의 MTC로 양의 반응도 삽입 → 트립 전 출력 상승, <strong>트립 후 재임계</strong></li>
+<li><strong>제한 조건</strong>: HZP·EOC·최대가치 제어봉 1개 고착·소외전원 유/무·단일고장</li>
+<li><strong>진행</strong>: 방출↑ → T_c↓ → 가압기 수위·압력↓ → 트립 → MSIS·MSIV 닫힘 → SIAS·붕산 → 파단 SG 건조 후 재승온</li>
+<li><strong>위치별</strong>: 격납건물 안이면 격납건물 압력·온도↑, MSIV 상류면 파단 SG 건조까지 방출, 하류면 MSIV로 종결</li>
+<li><strong>설계 대책</strong>: 유량제한기(임계유동), MSIV, 급수·보조급수 격리, 붕산 주입, SDM·MTC 관리</li>
+<li><strong>판정</strong>: DNBR·첨두 선출력, RCPB 압력, 격납건물 압력·온도, 선량</li>
+<li><strong>연계</strong>: 과냉 후 재가압 시 PTS, DEC에서 MSLB 유발 SGTR</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 MSLB 파단 위치와 과냉각→재임계 인과 사슬 도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-007-mslb/sketch1_mslb_cause_chain.avif"/><figcaption>답안지용 MSLB 파단 위치와 과냉각→재임계 인과 사슬 도식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 1교시 6번</td>
+<td>저출력 MSLB 노심 현상·반응도 영향</td>
+</tr>
+<tr>
+<td>2023년 2교시 1번</td>
+<td>MSLB·SGTR·RCP 고착·제어봉 이탈 과도</td>
+</tr>
+<tr>
+<td>2022년 3교시 3번</td>
+<td>MSLB 파단 위치별 6개 변수 변화</td>
+</tr>
+<tr>
+<td>2022년 2교시 1번</td>
+<td>MSLB·LOCA·SGTR 공통·특징적 증상</td>
+</tr>
+<tr>
+<td>2008년 4교시 2번</td>
+<td>대형 MSLB 초기 진행과 안전설계 요소</td>
+</tr>
+<tr>
+<td>제81회 4교시 4번</td>
+<td>주증기 유량제한기 임계유동과 필요성</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 15.1.5 "Steam System Piping Failures Inside and Outside of Containment (PWR)", Rev. 3 (2007), 부록 A(방사선 영향).</li>
+<li>U.S. NRC, Regulatory Guide 1.183 "Alternative Radiological Source Terms for Evaluating Design Basis Accidents at Nuclear Power Reactors", 부록 E(MSLB).</li>
+<li>박종철(J. C. Park), 이철신, 손종주, "Comparative Analysis of SLB for APR1400 by using the SPACE code and CESEC-III", 한국원자력학회 학술발표회 논문(kns.org 공개).</li>
+<li>U.S. NRC, Safety Evaluation Report related to the operation of Waterford Steam Electric Station, Unit 3, NUREG-0787, 15장(MSLB).</li>
+<li>Combustion Engineering, System 80+ Emergency Operations Guidelines(ESDE 회복 지침), NRC ADAMS ML20067B052.</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Ch. 10.3 "Main Steam Supply System"·Ch. 15.1.5(NRC 설계인증 공개본).</li>
+<li>10 CFR Part 50 Appendix A, GDC 27·28·31·35.</li>
+</ol>

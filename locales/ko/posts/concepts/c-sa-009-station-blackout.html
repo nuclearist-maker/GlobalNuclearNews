@@ -1,0 +1,233 @@
+<figure class="article-image"><img alt="[개념 노트] 교류전원완전상실(SBO) — 정의, 대처시간, AAC와 후쿠시마 이후 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-009-station-blackout/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>교류전원완전상실(SBO, Station Blackout, 옛 표기 소내정전)은 소외전원 상실과 터빈 트립에 소내 비상교류전원(EDG)까지 쓸 수 없게 되어 원전의 안전·비안전 교류 모선이 모두 정전된 상태입니다. 축전지가 인버터로 공급하는 교류와 대체교류전원(AAC)이 공급하는 교류는 상실 대상에 넣지 않습니다.</strong></p>
+<p>이 정의는 10 CFR 50.2의 문구를 따른 것입니다[1]. 단일고장이나 설계기준사고가 동시에 일어난다고 가정하지 않는다는 점도 같은 조문에 들어 있습니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>소외·비상 교류가 끊기면 무엇이 멈추나</h3>
+<p>SBO가 시작되면 원자로와 터빈이 트립되고, 원자로냉각재펌프(RCP)는 관성으로 서서히 멈춥니다. 교류로 도는 기기는 모두 정지합니다. 전동기구동 보조급수펌프, 충전펌프, 안전주입펌프, 기기냉각수, 필수용수, 가압기 히터와 살수, 환기설비가 여기에 해당합니다. 남는 것은 세 가지입니다.</p>
+<ul>
+<li><strong>자연순환</strong>: 노심과 증기발생기(SG)의 높이차와 밀도차로 1차측이 계속 순환해 붕괴열을 SG로 옮깁니다.</li>
+<li><strong>증기 동력</strong>: 터빈구동 보조급수펌프(TDAFW)는 SG 증기로 돌기 때문에 교류가 없어도 급수할 수 있습니다. SG 증기는 주증기안전밸브(MSSV)나 대기방출밸브(ADV)로 내보냅니다.</li>
+<li><strong>직류</strong>: Class 1E 축전지가 계측과 제어, 인버터를 거친 필수 교류 모선을 공급합니다. TDAFW 제어도 직류에 기대는 설계가 많습니다. 불필요한 부하를 끊는 <strong>부하 차단</strong>으로 방전 시간을 늘립니다.</li>
+</ul>
+<h3>시간이 지나며 줄어드는 것</h3>
+<p>SBO 대처는 결국 "무엇이 먼저 바닥나는가"의 문제입니다. RG 1.155는 대처 능력 평가 항목으로 축전지 용량, 복수저장탱크(CST) 용량, 압축공기, 계측·제어를 꼽습니다. RCS 재고도 함께 평가합니다[2].</p>
+<ul>
+<li><strong>RCS 재고</strong>: 밀봉 주입과 냉각수가 끊기면 RCP 밀봉에서 누설이 생깁니다. 충전펌프가 없으니 보충할 수 없습니다. RG 1.155는 더 낮은 값을 정당화하지 못하면 펌프당 최소 20 gpm 누설을 가정하라고 합니다[2]. 냉각에 따른 수축까지 겹치면 가압기 수위가 떨어집니다.</li>
+<li><strong>2차측 수원</strong>: TDAFW가 퍼 올리는 CST나 보조급수저장탱크의 물이 붕괴열 제거 시간을 정합니다.</li>
+<li><strong>실내 온도</strong>: 환기가 멈추면 TDAFW실, 주제어실, 축전지실 온도가 올라 기기 성능이 떨어질 수 있습니다.</li>
+</ul>
+<p>대처가 끝내 실패하면 사고는 정해진 순서로 진행됩니다. 축전지가 고갈되면 TDAFW 제어와 계측을 잃고, 수원이 바닥나면 SG가 마릅니다. 그러면 RCS가 가열·가압되어 가압기 안전밸브로 냉각재가 빠져나갑니다. 밀봉 누설까지 더해져 노심이 노출되고, 피복재 산화로 수소가 생기며 노심용융과 원자로용기 파손으로 이어집니다. 각 단계의 시각은 노형과 해석 가정에 크게 좌우되므로 답안에는 순서와 지배 인자를 쓰는 편이 안전합니다.</p>
+<figure class="article-image"><img alt="SBO 대처 시간축(AAC 10분·1 h, 최소 대처시간 2·4·8·16 h, 부지 내 8 h, 축전지 설계 예)과 터빈구동 보조급수펌프" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-009-station-blackout/fig1_sbo_coping_timeline.avif"/><figcaption>SBO 대처 시간축(AAC 10분·1 h, 최소 대처시간 2·4·8·16 h, 부지 내 8 h, 축전지 설계 예)과 터빈구동 보조급수펌프</figcaption></figure>
+<h2>원전에서의 의미</h2>
+<h3>보조급수설비와 급수원 (2011년 출제)</h3>
+<p>한국표준형원전(OPR1000)을 포함한 PWR의 보조급수계통은 전동기구동 펌프와 터빈구동 펌프를 함께 갖춥니다. SBO에서는 전동기구동 펌프가 멈추므로 터빈구동 펌프가 SG 급수를 맡습니다. 급수원은 복수저장탱크 같은 정상 수원과, 정상 수원이 고갈될 때 연결하는 예비 수원으로 이루어집니다. 펌프 대수, 수원의 종류·용량과 연결 방식은 호기별 설계입니다. 공개 설계인증 문서가 있는 APR1400은 전동기구동 2대·터빈구동 2대 펌프와 안전등급 보조급수저장탱크 2기를 씁니다[5].</p>
+<h3>APR1400 예 — 호기를 밝힌다</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>국내 새울 3·4, 신한울 1·2</th>
+<th>미국 설계인증 APR1400(DC)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EDG</td>
+<td>호기당 2대(A·B 계열)[7]</td>
+<td>4계열 4대[6]</td>
+</tr>
+<tr>
+<td>AAC</td>
+<td>AAC-DG 7,200 kW, 비안전등급(새울 3·4는 내진 I·연료 72 h)</td>
+<td>비1E 가스터빈 AAC, 10분 이내 연결</td>
+</tr>
+<tr>
+<td>축전지</td>
+<td>새울 3·4(옛 신고리 5·6) 24 h 설계[8]</td>
+<td>24 h 설계[8]</td>
+</tr>
+<tr>
+<td>SBO 대처시간</td>
+<td>호기별 FSAR</td>
+<td>16 h[6]</td>
+</tr>
+</tbody>
+</table>
+<p>AAC는 운전원이 수동으로 기동·정렬해 안전모선에 연결합니다. 한 계열만으로 안전정지가 가능한 설계라면 한 계열 연결로 충분하며, RG 1.155는 필요에 따라 중복 안전모선 하나 또는 전부에 연결할 수 있도록 요구합니다[2]. <!-- 확인필요: APR1400 DC 대처시간 16 h는 NRC SER 8장 인용(2차), DCD 8.4 원문 미대조 --></p>
+<h3>운영 경험</h3>
+<ul>
+<li><strong>후쿠시마 제1(2011)</strong>: 지진으로 소외전원이 끊긴 뒤 EDG는 기동했습니다. 그러나 쓰나미로 EDG와 배전반이 침수되어 1~3호기가 SBO에 빠졌고, 1·2호기는 직류까지 잃었습니다. 1~3호기에서 노심이 손상되었고, 1·3·4호기 원자로건물에서 수소폭발이 일어났습니다. 6호기의 공랭식 EDG 1대가 살아남아 5·6호기 냉각을 유지했습니다(IAEA 2015 보고서)[9].</li>
+<li><strong>고리 1호기(2012.2.9)</strong>: 계획예방정비 중 시험 오조작으로 소외전원이 차단되었습니다. EDG 한 대는 정비 중이었고 다른 한 대는 기동공기 솔레노이드 밸브 고장으로 기동하지 못해 약 12분간 교류가 끊겼습니다. 이 동안 냉각재 온도가 36.9 °C에서 58.3 °C로 올랐습니다. 보고 지연이 함께 문제가 되었습니다[10].</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50.2</td>
+<td>SBO·AAC 정의[1]</td>
+</tr>
+<tr>
+<td>10 CFR 50.63(1988)</td>
+<td>지정 대처시간 동안 SBO를 견디고 복구, 대처분석 입증, AAC가 10분 이내 정지 모선 공급 가능함을 시험 입증하면 대처분석 불요[1]</td>
+</tr>
+<tr>
+<td>RG 1.155(1988)</td>
+<td>대처시간 2~16 h(Table 2), EDG 목표 신뢰도 0.95/0.975, AAC 1 h 이내 가용, 처음 8 h 장비 부지 내[2]</td>
+</tr>
+<tr>
+<td>10 CFR 50.155(2019)</td>
+<td>설계기준 초과 외부사건: 전 교류 상실 + 최종열제거원 접근 상실 동시 가정, 노심·격납·사용후연료저장조 냉각을 외부 지원으로 무기한 유지[3]</td>
+</tr>
+<tr>
+<td>「원자로시설 등의 기술기준에 관한 규칙」 제24조</td>
+<td>전력공급설비 — 소외·소내 전원, 대체교류전원 확보와 시험 입증[4]</td>
+</tr>
+</tbody>
+</table>
+<h3>대처시간은 어떻게 정하나</h3>
+<p>50.63은 대처시간을 네 인자로 정하라고 합니다. 소내 비상교류전원의 다중성과 신뢰도, LOOP 예상 빈도, 소외전원 복구 예상시간입니다. RG 1.155 Table 2가 이를 표로 만든 것이며, 표의 값은 발전소 특성으로 정해지는 최소 대처시간입니다. AAC로 대처 능력을 인정받으면 SBO 시작부터 AAC와 필요 설비가 정렬될 때까지만 대처를 입증하면 되고, 그 시간이 10분 이내로 시험 입증되면 대처분석이 필요 없습니다.</p>
+<table>
+<thead>
+<tr>
+<th>소외전원 그룹</th>
+<th>A(0.975/0.95)</th>
+<th>B(0.975/0.95)</th>
+<th>C(0.975/0.95)</th>
+<th>D(0.975)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P1</td>
+<td>2 / 2</td>
+<td>4 / 4</td>
+<td>4 / 4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>P2</td>
+<td>4 / 4</td>
+<td>4 / 4</td>
+<td>4 / 8</td>
+<td>8</td>
+</tr>
+<tr>
+<td>P3</td>
+<td>4 / 8</td>
+<td>4 / 8</td>
+<td>8 / 16</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<p>단위는 시간입니다. A~D는 비상교류전원 수 대비 필요 수로 정한 다중성 그룹이고, P1~P3는 부지 기후와 계통 구성으로 정한 소외전원 특성 그룹입니다. D 그룹이 신뢰도 기준에 못 미치면 한 단계 올립니다(4 → 8, 8 → 16 h).</p>
+<h3>출제 당시 대비 변경</h3>
+<p>2011~2013년 출제 당시에는 50.63과 RG 1.155가 중심이었습니다. 이후 미국은 Order EA-12-049(FLEX)를 거쳐 2019년 50.155를 신설했습니다. 국내는 2011년 후속조치 50개 과제에 따라 2012년부터 이동형발전차를 배치했고, 신규 호기 AAC-DG의 내진등급과 연료 용량을 올렸습니다(새울 3·4호기 내진 I·연료 72 h)[7]. 원자력안전법의 사고관리계획서 제도도 다수기·장기 교류전원 상실을 다룹니다. <!-- 확인필요: KINS 안전심사지침 8.4(SBO) 현행판 번호·개정 이력 원문 미대조 --></p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>LOOP</th>
+<th>SBO</th>
+<th>ELAP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>잃는 것</td>
+<td>소외전원</td>
+<td>소외 + EDG</td>
+<td>소외 + EDG + AAC</td>
+</tr>
+<tr>
+<td>남는 교류</td>
+<td>EDG가 안전모선 공급</td>
+<td>AAC 연결 전까지 없음(인버터 교류만)</td>
+<td>인버터 교류만, 장기</td>
+</tr>
+<tr>
+<td>성격</td>
+<td>설계기준 사건</td>
+<td>50.63 지정 대처시간 사건</td>
+<td>설계기준 초과(50.155)</td>
+</tr>
+<tr>
+<td>주 대처</td>
+<td>EDG 순차투입</td>
+<td>TDAFW·직류, AAC 10분</td>
+<td>설치설비 → 이동형 → 외부지원</td>
+</tr>
+</tbody>
+</table>
+<p>R076 기출의 "소내정전(SBO) 발생 시 EDG 요구 성능"은 현행 용어로 보면 LOOP 시 EDG 성능을 묻는 문항입니다. 답안 첫머리에서 용어를 정리하는 것이 좋습니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: LOOP + 터빈 트립 + 소내 비상교류(EDG) 상실로 전 교류 모선 정전(10 CFR 50.2), 인버터·AAC 모선 제외</li>
+<li><strong>원인</strong>: 송전망 불안정·태풍·해일 등 소외 상실 + EDG 공통원인 고장</li>
+<li><strong>거동</strong>: 원자로·터빈 트립, RCP 관성정지 → 자연순환</li>
+<li><strong>대처 수단</strong>: TDAFW → SG → MSSV/ADV, Class 1E 축전지(부하 차단)</li>
+<li><strong>위협 인자</strong>: 축전지 고갈, 급수원 고갈, RCP 밀봉 누설(20 gpm/RCP 가정), 실온 상승</li>
+<li><strong>대처시간</strong>: 50.63 4인자 → RG 1.155 Table 2(2·4·8·16 h 중 발전소 특성별)</li>
+<li><strong>AAC</strong>: 수동 연결, 10분 이내 시험 입증 시 대처분석 불요, 1 h 이내 가용</li>
+<li><strong>실패 시</strong>: SG 건조 → RCS 가압·방출 → 노심 노출·수소 → 용융</li>
+<li><strong>후속 기준</strong>: 50.155·FLEX 3단계, 국내 이동형발전차·사고관리계획서</li>
+<li><strong>국내 예</strong>: 새울 3호기 EDG 2대 + AAC-DG 7,200 kW</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 SBO 대처 흐름 도식(열제거 유지·복구·실패 경로)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-009-station-blackout/sketch1_sbo_coping_flow.avif"/><figcaption>답안지용 SBO 대처 흐름 도식(열제거 유지·복구·실패 경로)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021년 1교시 9번</td>
+<td>LOOP·SBO·ELAP의 차이</td>
+</tr>
+<tr>
+<td>2013년 3교시 6번</td>
+<td>외부전원·EDG(AAC 포함) 상실 시 사고 진행과 조치</td>
+</tr>
+<tr>
+<td>2012년 2교시 3번</td>
+<td>외부전원·EDG 동시 상실 시 증상·대처계통·조치</td>
+</tr>
+<tr>
+<td>2011년 3교시 3번</td>
+<td>OPR1000 SBO 시 SG 급수설비·급수원, SBO와 LOOP</td>
+</tr>
+<tr>
+<td>제76회 2교시 6번</td>
+<td>소내정전 시 EDG 요구 성능</td>
+</tr>
+<tr>
+<td>제65회 1교시 9번</td>
+<td>SBO(원문 표기 "Station Block Out")</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, 10 CFR 50.2 "Definitions"(Station blackout, Alternate ac source), 10 CFR 50.63 "Loss of all alternating current power". NRC 웹(eCFR).</li>
+<li>U.S. NRC, Regulatory Guide 1.155 "Station Blackout" (1988.8), Table 2·C.3.2·C.3.3.5, NRC ADAMS ML003740034.</li>
+<li>U.S. NRC, 10 CFR 50.155 "Mitigation of beyond-design-basis events", 84 FR 39718 (2019.8.9); Order EA-12-049 (2012).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제24조. 국가법령정보센터.</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Ch. 10.4.9 "Auxiliary Feedwater System", Rev. 3 (2018).</li>
+<li>U.S. NRC, Final Safety Evaluation Report for the APR1400 Design Certification, Ch. 8 "Electric Power", NRC ADAMS ML18197A219.</li>
+<li>원자력안전위원회, 제228회 회의(2025.12.30) 의안 「새울 3호기 운영허가(안)」.</li>
+<li>김웅배 외, "Extended SBO Analyses of an APR1400", 한국원자력학회 추계학술발표회 (2016).</li>
+<li>IAEA, The Fukushima Daiichi Accident — Report by the Director General, STI/PUB/1710 (2015).</li>
+<li>원자력안전위원회, 고리 1호기 정전사고 조사결과 발표(2012.3.21) — 언론 보도로 확인.</li>
+</ol>

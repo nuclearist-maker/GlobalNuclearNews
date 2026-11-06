@@ -1,0 +1,243 @@
+<figure class="article-image"><img alt="[개념 노트] 원자로정지불능 예상과도(ATWS) — 정지 실패를 다양성 설비와 음의 반응도 궤환으로 버티는 법 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-006-atws/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>ATWS(Anticipated Transient Without Scram)는 예상운전과도(AOO)가 일어났는데 보호계통의 원자로정지 기능이 실패해 제어봉이 들어가지 않는 사건이며, 다중고장·공통원인고장이 겹쳐야 하므로 설계기준을 넘는 사건으로 분류합니다(10 CFR 50.62(b))[1].</strong></p>
+<p>2013년 문제의 ATWT(Anticipated Transient Without Trip)도 같은 개념입니다. 이 노트는 ATWS 현상, 허용기준, 규제 요건, 노형별 대응의 큰 그림에 집중합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>왜 위험한가 — 출력과 열제거의 불균형</h3>
+<p>ATWS의 본질은 노심 출력과 2차측 열제거의 불균형입니다. 정지가 필요한 과도는 대개 열제거가 줄어드는 사건인데, 정지가 실패하면 출력이 그대로 남아 불균형이 AOO 자체보다 커집니다. 결과는 두 가지입니다.</p>
+<ol>
+<li><strong>RCS 과압</strong>: 냉각재 온도·체적 증가 → 가압기 만수 → 안전밸브 방출 → 압력 첨두. 원자로냉각재 압력경계 건전성이 주 쟁점입니다.</li>
+<li><strong>핵연료 열적 여유 감소</strong>: 출력이 유지된 채 유량·열전달이 나빠지면 DNB·피복재 온도가 문제됩니다.</li>
+</ol>
+<h3>대표 사건 — 정상급수상실(LONF)</h3>
+<p>과압 측면에서 가장 제한적인 사건은 <strong>터빈정지가 일어나지 않은 정상급수상실</strong>입니다. 진행은 다음과 같습니다.</p>
+<ol>
+<li>주급수 상실 → SG 수위 감소, 정지 신호는 나오지만 제어봉 미삽입</li>
+<li>터빈이 계속 증기를 빼 SG 재고가 빠르게 고갈 → 2차측 열제거 급감</li>
+<li>냉각재 온도 상승 → 체적 팽창 → 가압기 만수, 안전밸브(APR1400은 POSRV 4개) 방출</li>
+<li>감속재 온도 상승의 <strong>음의 반응도 궤환</strong>으로 출력이 떨어지며 압력 첨두 형성</li>
+<li>보조급수로 열제거 회복 → 붕산 주입으로 미임계 확보</li>
+</ol>
+<p>결국 첨두압력은 "MTC가 얼마나 음인가"와 "압력방출 용량, 보조급수·터빈정지 시점"으로 정해집니다. 터빈정지는 2차측 증기 인출을 끊어 초기에는 RCS를 가열하는 쪽으로 작용할 수 있습니다. 그러나 정상급수상실 ATWS에서는 SG 재고를 보존해 고갈을 늦추는 효과가 더 커서, APR1400 해석에서도 터빈정지가 있는 경우의 첨두압력이 더 낮았습니다[3].</p>
+<h3>허용기준과 UET</h3>
+<p>미국 SRP 15.8은 PWR ATWS의 첨두 RCS 압력을 <strong>ASME Service Level C 응력한계 약 3,200 psig(22.06 MPa(g))</strong> 이하로 봅니다(NUREG-0460 제안값)[2]. 국내도 KEPIC MN C급 22.06 MPa(g)를 씁니다.</p>
+<p>MTC는 연소가 진행될수록(붕소 희석) 더 음이 됩니다. 그래서 주기 초에는 같은 사건에서도 첨두압력이 기준을 넘을 수 있습니다. 이 기간을 **UET(Unfavorable Exposure Time)**라 하며, "발전소 상태와 가용 계통을 고려할 때 ATWS 시 RCS 압력이 3,200 psig를 넘게 하는 MTC를 갖는 기간(주기 중 비율)"으로 정의합니다. NRC는 이를 ATWS 규칙 근거 문서의 "불리한 MTC"와 같은 개념으로 봅니다[4].</p>
+<figure class="article-image"><img alt="주기 진행에 따른 ATWS 첨두 RCS 압력(터빈정지 유·무)과 22.06 MPa(g) 기준선, UET 구간, MTC 경향(개념적 추세)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-006-atws/fig1_atws_peak_pressure_uet.avif"/><figcaption>주기 진행에 따른 ATWS 첨두 RCS 압력(터빈정지 유·무)과 22.06 MPa(g) 기준선, UET 구간, MTC 경향(개념적 추세)</figcaption></figure>
+<p>W형 규칙 근거(SECY-83-293)의 일반 해석은 전출력 MTC −8 pcm/°F(주기의 95 %에서 이보다 음)를 썼습니다[4]. 즉 주기의 약 95 % 이상에서 MTC가 충분히 음이어야 한다는 것이 근거였습니다. 장주기 운전(12→18개월)이나 출력증강은 임계 붕소 농도를 높여 MTC를 양의 방향으로 옮기므로 UET를 늘립니다. 그래서 가연성 흡수체를 늘리거나 장전모형을 조정하는 노심 설계 제약으로 이어집니다.</p>
+<h2>영향인자</h2>
+<table>
+<thead>
+<tr>
+<th>인자</th>
+<th>첨두압력에 미치는 영향</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MTC</td>
+<td>가장 큼. 덜 음일수록(주기 초·초기노심) 첨두↑</td>
+</tr>
+<tr>
+<td>압력방출 용량</td>
+<td>가압기 안전밸브·POSRV 용량이 클수록 첨두↓</td>
+</tr>
+<tr>
+<td>보조급수 기동 시점</td>
+<td>빠를수록 열제거 회복</td>
+</tr>
+<tr>
+<td>터빈정지 시점</td>
+<td>빠를수록 SG 재고 보존</td>
+</tr>
+<tr>
+<td>2차측 방출</td>
+<td>터빈우회 불가(LOCV·LOOP)면 MSSV만 사용</td>
+</tr>
+<tr>
+<td>RCP 운전</td>
+<td>LOOP 시 유량 감소로 출력 저하 가속</td>
+</tr>
+</tbody>
+</table>
+<p>APR1400 ATWS 평가는 초기노심 MTC가 평형노심보다 덜 음이라 1주기를 제한 주기로 잡았고, 30분 동안 운전원 조치를 인정하지 않았습니다[3].</p>
+<h2>원전에서의 의미</h2>
+<h3>노형별 완화설비</h3>
+<figure class="article-image"><img alt="원자로보호계통과 독립된 다양성 경로 구조도와 AMSAC·DSS·DPS 기능 비교표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-006-atws/fig2_diverse_path_amsac_dss_dps.avif"/><figcaption>원자로보호계통과 독립된 다양성 경로 구조도와 AMSAC·DSS·DPS 기능 비교표</figcaption></figure>
+<table>
+<thead>
+<tr>
+<th>노형</th>
+<th>설비</th>
+<th>기능</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>W형(고리·한빛 1·2 등)</td>
+<td>AMSAC</td>
+<td>SG 저-저수위(또는 주급수 유량 저) 시 터빈정지 + 보조급수 기동. 원자로정지 기능 없음, 약 40 % 출력(C-20) 이상에서만 무장[5]</td>
+</tr>
+<tr>
+<td>CE형·OPR1000</td>
+<td>DSS + 다양성 터빈정지·보조급수</td>
+<td>가압기 고압력에서 제어봉 구동장치 전원 차단(다양성 정지)</td>
+</tr>
+<tr>
+<td>APR1400</td>
+<td>DPS</td>
+<td>원자로정지(가압기·격납건물 고압력), 터빈정지(PPS 또는 DPS 원자로정지 신호 후 3초 지연), 보조급수 작동(SG 저수위), 안전주입, 제어봉 인출 금지[6]</td>
+</tr>
+</tbody>
+</table>
+<p>국내 표준형(OPR1000) 원전의 DPS는 가압기·격납건물 압력으로 원자로정지(제어봉 구동장치 MG 세트 출력 차단)를 하는 DSS 기능과 다양성 터빈정지·보조급수 작동을 함께 갖춰, 문헌에서는 "DPS = AMSAC + DSS" 상당 설비로 정리합니다[7]. APR1400 DPS는 PPS·ESF-CCS와 하드웨어·소프트웨어·정지 메커니즘을 달리해, ATWS뿐 아니라 디지털 안전 I&amp;C의 소프트웨어 공통원인고장(CCF) 대응도 겸합니다. <!-- 확인필요: 최종 작동 장치는 OPR1000 = CEDM MG 세트 출력접점 개방(KAERI/TR-2569/2003 3.5.1), APR1400 DC = DPS가 RTSS 원자로정지 차단기의 분로 트립 코일을 여자해 개방(PPS는 부족전압 트립, DCD Tier 2 Rev.3 7.2.1.3·7.8.1.1)으로 확인. 국내 APR1400(새울·신한울)만 미확인 --></p>
+<h3>DPS가 고려하는 ATWS 사건(APR1400 예)</h3>
+<p>APR1400 ATWS 평가 보고서는 열제거 감소형 AOO <strong>6개</strong>를 정성 평가 대상으로 골랐습니다. ① 외부부하상실 ② 터빈정지 ③ 복수기진공상실 ④ MSIV 닫힘 ⑤ 소외전원상실(비상용 아닌 교류전원 상실) ⑥ 정상급수상실입니다[3]. 이 중 ②③⑤⑥(⑥은 터빈정지 유·무)을 정량 해석했고, 터빈정지 없는 정상급수상실이 가장 제한적이었습니다. 국내 사고관리계획서 심사에서 APR1400(새울 1·2, 신한울 1·2)의 ATWS RCS 최대압력은 17.59 MPa(g)로 기준 22.06 MPa(g) 이내였습니다[8].</p>
+<h3>운전 대응(EOP)</h3>
+<p>원자로정지 실패를 확인하면 즉시 수동 정지를 시도하고, 실패하면 제어봉 구동장치 전원(MG set)을 차단합니다. 이어 터빈정지, 보조급수 확보, <strong>비상 붕산 주입</strong>으로 미임계를 만듭니다. W형은 기능회복절차 FR-S.1(원자로 출력 발생/ATWS)에서, CE·표준형은 표준후속조치의 첫 안전기능 "반응도 제어"[9]에서 다룹니다. 구체 단계는 호기별 EOP를 따릅니다.</p>
+<h2>관련 사고·과도</h2>
+<ul>
+<li><strong>Salem 1호기(미국, 1983.2.25)</strong>: 자동 정지신호에도 원자로정지차단기 2개가 모두 열리지 않아, 운전원이 약 30초 뒤 수동으로 정지했습니다. 원인은 저전압 트립장치 고착(부적절한 정비에 따른 마모)이었고, 2월 22일에도 같은 실패가 있었음이 뒤늦게 확인되었습니다. 노심손상이나 방출은 없었습니다. 이후 NUREG-1000, Generic Letter 83-28(정지차단기 시험·정비, 션트 트립 자동화)로 이어졌고 ATWS 규칙 확정의 계기가 되었습니다[10].</li>
+<li><strong>Browns Ferry 3호기(미국 BWR, 1980)</strong>: 스크램 배출 용기에 물이 고여 제어봉 일부가 삽입되지 않았고 반복 수동 스크램으로 삽입을 마쳤습니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50.62(c)(1)</td>
+<td>모든 PWR: 센서 출력~최종 작동장치까지 원자로정지계통과 다양·독립한 설비로 보조급수 자동 기동 + 터빈정지</td>
+</tr>
+<tr>
+<td>10 CFR 50.62(c)(2)</td>
+<td>CE·B&amp;W PWR: 제어봉 전원 차단까지 독립된 다양성 스크램계통(DSS)</td>
+</tr>
+<tr>
+<td>10 CFR 50.62(c)(3)~(5)</td>
+<td>BWR: ARI, SLCS(86 gpm·13 wt% 등가), 재순환펌프 트립</td>
+</tr>
+<tr>
+<td>SRP 15.8</td>
+<td>첨두 RCS 압력 Level C(약 3,200 psig) 등 8개 수용기준 범주[2]</td>
+</tr>
+<tr>
+<td>기술기준규칙 제27조(다양성보호계통)[11]</td>
+<td>원자로정지·비상보조급수 작동·터빈정지 기능의 별도 보호계통, 감지장치 출력~최종 작동기 구동장치까지 원자로보호계통과 독립</td>
+</tr>
+<tr>
+<td>사고관리 고시(제2026-1호) 별표 1</td>
+<td>다중고장 필수 9종의 ① ATWS</td>
+</tr>
+</tbody>
+</table>
+<p>개정 이력은 NUREG-0460(1978) → Salem(1983.2) → SECY-83-293 → 10 CFR 50.62 공포(1984.6.26, 시행 7.26) 순입니다. 국내 규칙은 노형 구분 없이 원자로정지 기능까지 요구한다는 점이 미국 규칙과 다릅니다. <!-- 제27조 ①·② 문언은 원안위 제183회(2023.9.7) 안건 인용 조문으로 확인(C-SY-004) --> 출제 당시와 비교하면 두 가지가 달라졌습니다. 2016년 사고관리계획서 제도로 ATWS가 다중고장 필수 사고로 명시되었고[12], 국내 W형 원전에도 AMSAC이 설치되었습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>AMSAC</th>
+<th>DSS</th>
+<th>DPS(APR1400)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>근거</td>
+<td>50.62(c)(1)</td>
+<td>50.62(c)(2)</td>
+<td>50.62(c)(1)(2) + 규칙 제27조 + CCF 대응</td>
+</tr>
+<tr>
+<td>원자로정지</td>
+<td>없음</td>
+<td>있음</td>
+<td>있음</td>
+</tr>
+<tr>
+<td>터빈정지·보조급수</td>
+<td>있음</td>
+<td>없음(별도 설비)</td>
+<td>있음</td>
+</tr>
+<tr>
+<td>적용</td>
+<td>W형</td>
+<td>CE·B&amp;W형</td>
+<td>APR1400(OPR1000은 DSS+AMSAC 상당)</td>
+</tr>
+</tbody>
+</table>
+<p>ATWS와 SBO(교류전원 완전상실)는 둘 다 다중고장 필수 사고지만, ATWS는 <strong>반응도 제어 실패</strong>, SBO는 <strong>열제거 동력 상실</strong>이 핵심입니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: AOO + 원자로정지 기능 실패(제어봉 미삽입), 다중고장·CCF가 원인인 설계기준 초과 사건</li>
+<li><strong>현상</strong>: 출력-열제거 불균형 → 냉각재 팽창 → 가압기 만수 → 안전밸브 방출 → RCS 압력 첨두</li>
+<li><strong>최제한 사건</strong>: 터빈정지 없는 정상급수상실(LONF)</li>
+<li><strong>기준</strong>: 첨두압력 ASME Level C 약 3,200 psig(22.06 MPa(g))</li>
+<li><strong>영향인자</strong>: MTC(최대), 압력방출 용량, 보조급수·터빈정지 시점</li>
+<li><strong>UET</strong>: 압력 기준을 넘게 하는 MTC를 갖는 기간, 주기 초에 집중</li>
+<li><strong>규제</strong>: 10 CFR 50.62(1984) — PWR 다양성 터빈정지·보조급수, CE·B&amp;W는 DSS / 국내 기술기준규칙 제27조</li>
+<li><strong>설비</strong>: W형 AMSAC, CE형 DSS, APR1400 DPS</li>
+<li><strong>대응</strong>: 수동 정지 → MG set 차단 → 터빈정지·보조급수 → 비상 붕산 주입</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 ATWS 압력 첨두·UET와 대응 경로 도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-006-atws/sketch1_atws_uet_diverse_path.avif"/><figcaption>답안지용 ATWS 압력 첨두·UET와 대응 경로 도식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026년 2교시 4번</td>
+<td>APR1400 PPS·CPC, DPS가 고려하는 ATWS 6유형</td>
+</tr>
+<tr>
+<td>2025년 2교시 4번</td>
+<td>표준형 원전 DPS 목적·기능·출력신호</td>
+</tr>
+<tr>
+<td>2021년 4교시 1번</td>
+<td>ATWS 정의, WH형과 OPR/APR형 대응설비 차이</td>
+</tr>
+<tr>
+<td>2018년 4교시 3번</td>
+<td>ATWS 정의·경험 사례, 규제요건, 노형별 조치</td>
+</tr>
+<tr>
+<td>2013년 3교시 1번</td>
+<td>ATWT 정의·대상 사고·영향인자·UET·완화설비</td>
+</tr>
+<tr>
+<td>2012년 1교시 2번</td>
+<td>ATWS 완화계통</td>
+</tr>
+<tr>
+<td>제76회 4교시 6번</td>
+<td>ATWS 의미와 완화설비 기능·작동원리</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, 10 CFR 50.62 "Requirements for reduction of risk from anticipated transients without scram (ATWS) events for light-water-cooled nuclear power plants" (1984.6.26 공포).</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 15.8 "Anticipated Transients Without Scram"; NUREG-0460 "Anticipated Transients Without Scram for Light Water Reactors" (1978).</li>
+<li>KEPCO &amp; KHNP, "ATWS Evaluation", APR1400-Z-A-NR-14014-NP Rev. 1, NRC ADAMS ML18087A121.</li>
+<li>U.S. NRC, SECY-83-293 (ATWS 규칙 최종안과 근거 해석, 1983).</li>
+<li>Westinghouse, WCAP-10858-P-A(AMSAC 일반 설계) 및 NRC 안전성평가보고서(1986.7.7).</li>
+<li>KEPCO &amp; KHNP, "CCF Coping Analysis", APR1400-Z-A-NR-14019-NP Rev. 3, NRC ADAMS ML18225A340.</li>
+<li>정진호 외, 표준형 원전 다양성보호계통(DPS) 관련 발표, 한국원자력학회 학술발표회(2025).</li>
+<li>원자력안전위원회, 제206회 원자력안전위원회 회의 의안(새울 1·2호기, 신한울 1·2호기 사고관리계획서 심의, 2025.1.9). 원안위 누리집 공개.</li>
+<li>Combustion Engineering, CEN-152 "Emergency Procedure Guidelines", NRC ADAMS ML20008G208.</li>
+<li>U.S. NRC, NUREG-1000 "Generic Implications of ATWS Events at the Salem Nuclear Power Plant" (1983); Generic Letter 83-28 (1983).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」 제27조(다양성보호계통). 국가법령정보센터.</li>
+<li>원자력안전위원회, 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」, 원안위고시 제2026-1호, 별표 1. 국가법령정보센터.</li>
+</ol>

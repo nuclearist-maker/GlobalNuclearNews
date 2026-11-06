@@ -1,0 +1,259 @@
+<figure class="article-image"><img alt="[개념 노트] 사고 시 수소 생성원 — Zr-증기 반응의 수지·속도식과 기타 생성원 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-008-hydrogen-sources/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>사고 시 수소 생성원은 냉각재 상실·노심 과열 때 격납건물로 나오는 수소의 원천으로, 주 생성원은 고온 지르코늄 합금 피복재가 증기에 산화되는 Zr-물 반응(Zr + 2H₂O → ZrO₂ + 2H₂, 발열)이고, 물의 방사분해·Al·Zn 부식·1차계통 용존 수소·중대사고 시 강재 산화와 MCCI가 뒤따릅니다.</strong></p>
+<p>이 노트는 수소가 어디서, 얼마나, 어떤 속도로 생기는지에 집중합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>Zr-증기 반응의 화학양론과 반응열</h3>
+<p>피복재(지르칼로이·ZIRLO·M5 등, 질량의 약 98 %가 Zr)는 평상 운전 온도(약 350 °C)에서는 얇은 산화막으로 보호됩니다. 냉각재가 줄어 노심이 노출되면 피복재 온도가 오르고, 약 1,000 °C 이상에서 증기와의 산화가 빨라집니다.</p>
+<ul>
+<li>반응식: Zr + 2H₂O(g) → ZrO₂ + 2H₂ + 약 586 kJ/mol(Zr)</li>
+<li>수소 수율: 2 × 2.016 / 91.22 = <strong>0.0442 kg H₂/kg Zr</strong>, 표준상태 약 <strong>0.49 Nm³/kg Zr</strong></li>
+<li>반응열: 약 <strong>6.4 MJ/kg Zr</strong>(고온 증기 기준, 코드·온도에 따라 약 5.8~6.8 MJ/kg로 인용)</li>
+</ul>
+<p>반응은 바깥에서 안으로 진행합니다. 피복 표면에 ZrO₂ 산화막이 생기고, 산소가 이 막을 지나 금속 쪽으로 확산해 그 아래에 산소가 녹아든 α-Zr(O) 층을 만들며, 가장 안쪽에 β-Zr 금속이 남습니다. 산소가 산화막을 지나는 확산이 속도를 정하므로 산화량은 시간의 제곱근에 비례합니다(포물선 법칙). 생긴 수소는 대부분 냉각재 쪽으로 방출되고, 일부는 피복재에 흡수돼 수소화·취화를 일으킵니다.</p>
+<figure class="article-image"><img alt="연료봉 단면의 산화층 구조(ZrO₂·α-Zr(O)·β-Zr), Zr-증기 반응식과 1 kg Zr 기준 수지, 수소 생성원 비교표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-008-hydrogen-sources/fig1_zr_steam_reaction_sources.avif"/><figcaption>연료봉 단면의 산화층 구조(ZrO₂·α-Zr(O)·β-Zr), Zr-증기 반응식과 1 kg Zr 기준 수지, 수소 생성원 비교표</figcaption></figure>
+<h3>속도식과 열적 자기가속</h3>
+<p>등온 산화는 w² = K(T)·t, K = A·exp(−Q/RT)로 씁니다(w: 단위면적당 반응한 Zr 질량).</p>
+<table>
+<thead>
+<tr>
+<th>상관식</th>
+<th>원식</th>
+<th>SI 환산(kg Zr/m²)²/s</th>
+<th>용도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Baker-Just(1962)[3]</td>
+<td>w² = 33.3×10⁶·t·exp(−45,500/RT), mg Zr/cm²</td>
+<td>K = 3,330·exp(−22,900/T)</td>
+<td>10 CFR 50 부록 K 보수적 평가</td>
+</tr>
+<tr>
+<td>Cathcart-Pawel(1977)[4]</td>
+<td>산소 흡수 w_O² = 0.3622·t·exp(−39,940/RT), g/cm²</td>
+<td>K = 294·exp(−20,100/T)(Zr 환산 ×2.85²)</td>
+<td>최적평가(약 1,000~1,500 °C)</td>
+</tr>
+</tbody>
+</table>
+<p>R = 1.987 cal/mol·K입니다. 45,500 cal/mol(약 190 kJ/mol)은 <strong>활성화 에너지</strong>이지 반응열이 아니라는 점에 주의하십시오. 1,200 °C에서 같은 산화량일 때 반응률 비는 약 1.7(같은 시간 동안의 산화량 비로는 약 1.3)로, Baker-Just가 크게(보수적으로) 예측합니다.</p>
+<p>온도가 오르면 산화속도가 지수적으로 커지고, 냉각이 부족하면 산화열이 다시 온도를 올립니다. 이 열적 되먹임을 흔히 "autocatalytic(자기촉매)"이라 부르지만 화학적 촉매 작용이 아니라 <strong>열 폭주</strong>입니다. 평균봉 1 m당으로 비교하면, 산화량 ECR 3 % 시점 가정에서 산화 발열률이 정지 후 1,000 s~3 h의 붕괴열(0.25~0.14 kW/m)과 비슷해지는 구간이 약 1,090~1,180 °C입니다. 열수지는 C′·dT/dt = q′붕괴 + q′산화 − q′냉각이므로 이 교차가 곧 폭주를 뜻하지는 않지만, 냉각이 부족한 노출 노심에서는 이 부근부터 온도 상승이 급해집니다. 교과서가 "약 1,200 °C 이상에서 반응이 급가속한다"고 쓰는 근거이고, 1,204 °C 한계가 그 직전에 놓인 이유입니다.</p>
+<figure class="article-image"><img alt="Baker-Just·Cathcart-Pawel로 계산한 산화 발열률-온도 곡선과 붕괴열 띠, 17 % ECR 등온 시간표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-008-hydrogen-sources/fig2_oxidation_heat_vs_decay.avif"/><figcaption>Baker-Just·Cathcart-Pawel로 계산한 산화 발열률-온도 곡선과 붕괴열 띠, 17 % ECR 등온 시간표</figcaption></figure>
+<p>ECR(등가 피복 반응률)은 흡수한 산소를 모두 ZrO₂로 환산한 등가 금속 소모 두께를 산화 전 피복 두께로 나눈 값으로, 실제 산화막 두께와 다릅니다. 17 % ECR(피복 두께 0.57 mm 기준)에 도달하는 등온 시간은 1,204 °C에서 Baker-Just 약 11분, Cathcart-Pawel 약 19분이고, 1,300 °C에서는 약 4~8분으로 줄어듭니다(즉시 등온 도달·편면 산화 근사, 설명용 계산이며 사고 후 허용시간이 아닙니다). 약 1,500 °C를 넘으면 산화가 더 빨라지고, 약 1,850 °C 부근에서 Zr이 녹아 재배치됩니다. 증기가 부족하면(steam starvation) 생성 속도는 증기 공급량이 제한합니다. 과열된 노심에 물을 다시 넣는 재관수 때 산화막이 깨지며 수소가 급증할 수 있다는 점도 실험(QUENCH)과 TMI-2에서 확인됐습니다[10].</p>
+<h3>기타 생성원</h3>
+<table>
+<thead>
+<tr>
+<th>생성원</th>
+<th>반응식</th>
+<th>시기·특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1차계통 용존 수소</td>
+<td>용해 H₂(관리 범위 예 25~50 cc(STP)/kg[9])·가압기 기상부 방출</td>
+<td>LOCA 직후, 양은 작음</td>
+</tr>
+<tr>
+<td>물의 방사분해</td>
+<td>2H₂O → 2H₂ + O₂(총괄식)</td>
+<td>노심수·집수조, 장기·연속</td>
+</tr>
+<tr>
+<td>알루미늄 부식</td>
+<td>2Al + 6H₂O → 2Al(OH)₃ + 3H₂(대표식)</td>
+<td>알칼리 살수액에서 빠름</td>
+</tr>
+<tr>
+<td>아연 부식</td>
+<td>Zn + 2H₂O → Zn(OH)₂ + H₂(대표식)</td>
+<td>아연도금·무기아연 도료, 장기</td>
+</tr>
+<tr>
+<td>강재·B₄C 산화</td>
+<td>Fe + H₂O → FeO + H₂ 등</td>
+<td>노심 용융 진행 시</td>
+</tr>
+<tr>
+<td>MCCI(노외)</td>
+<td>콘크리트 분해 H₂O·CO₂ + 용융 금속 → H₂·CO</td>
+<td>원자로용기 파손 후, CO도 가연성</td>
+</tr>
+</tbody>
+</table>
+<h2>원전에서의 의미</h2>
+<p><strong>설계기준사고와 중대사고의 차이</strong>가 핵심입니다. 설계기준 LOCA에서는 ECCS 허용기준이 피복재 반응을 1 % 수준으로 묶기 때문에 Zr-물 반응 수소가 적고, 장기적으로는 방사분해·부식이 누적되는 완만한 생성이 문제였습니다. 그래서 과거 설계에 전기식 재결합기를 두었습니다. 중대사고에서는 노심이 장시간 노출되어 Zr-증기 반응이 지배적이 되고, 생성 속도와 총량이 재결합기 용량을 크게 넘습니다.</p>
+<ul>
+<li>APR1400 예: 활성 노심 Zr 전량 산화 시 H₂ 약 1,002 kg(노심 Zr 전체 기준으로는 약 1,203 kg)[7][8] → Zr 약 22.7 t·H₂ 약 497 kmol에 해당, 산화열 약 146 GJ(1 % 붕괴열의 약 1시간분)</li>
+<li>자유체적 약 8.9만 m³(설명용 가정), 초기 건공기 1 atm, 제거 없음 → 몰분율 0 °C 약 11.1 %, 25 °C 약 12.0 %</li>
+<li>10 CFR 50.46(b)(3)의 1 % 기준은 수소 약 10 kg에 해당</li>
+</ul>
+<p>TMI-2(1979)에서는 피복재의 40 % 이상이 산화해 수소 약 460 kg이 생긴 것으로 추정되며, 약 10시간 뒤 격납건물 수소 연소로 약 0.19 MPa(28 psig)의 압력 상승이 기록됐습니다[10].</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>수소 관련 요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50.46(b)(1)~(3)</td>
+<td>최고 피복재 온도 2,200 °F(1,204 °C), 총 산화량 피복 두께의 0.17배(17 % ECR), <strong>최대 수소 생성 = 피복 전체 반응 가상량의 0.01배</strong>[1]</td>
+</tr>
+<tr>
+<td>10 CFR 50 부록 K</td>
+<td>금속-물 반응률은 Baker-Just 식으로 계산[2]</td>
+</tr>
+<tr>
+<td>RG 1.157(1989)</td>
+<td>최적평가 고온 영역에서 Cathcart-Pawel 등 최적 상관식 사용[2]</td>
+</tr>
+<tr>
+<td>원안위고시 제2017-23호 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」</td>
+<td>10 CFR 50.46 기반 국내 ECCS 성능기준(2001년 과기부 고시로 제정)[6]</td>
+</tr>
+<tr>
+<td>기술기준규칙 제23조 제1항 제2호</td>
+<td>격납건물 내 가연성 기체 제어수단 구비[6]</td>
+</tr>
+<tr>
+<td>원안위 고시 제2026-1호 별표 3</td>
+<td>노심 손상 이후 위협요인 "가연성기체 연소 또는 폭발"</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: 고시 제2017-23호 이후 개정 여부·수소 1 % 조항 문구는 국가법령정보센터 원문 미대조 -->
+<p><strong>출제 당시 대비 달라진 점</strong></p>
+<ul>
+<li>미국은 수소 흡수량에 따라 산화 한계를 낮추는 50.46c(성능기반 ECCS 허용기준) 최종 규칙안을 준비했으나, 2024년 4월 위원회 SRM(SECY-16-0033)으로 직원에게 반려되어 현행 50.46(b)가 유지됩니다[11]. 2026.7.16 NRC 제안규칙(FR 2026-14341)은 50.46c의 성능기반 접근과 취화 연구결과를 새 자발적 대안 10 CFR 50.46a(기존 50.46a는 50.46b로 재지정)에 담고 FFRD를 함께 다루도록 제안했으며, 2026년 10월 현재 제안 단계입니다.</li>
+<li>2003년 50.44 개정으로 설계기준 LOCA 수소(방사분해 등) 대응 요건이 빠지고 중대사고 수소에 초점이 옮겨졌습니다[5]. 2000년대 기출이 "가상사고 후 재결합기 계통"을 전제로 한 것은 그 이전 개념입니다.</li>
+<li>위협요인 표는 현행 별표 3(출제 당시 별표 2)입니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>Baker-Just</th>
+<th>Cathcart-Pawel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>발표</td>
+<td>1962(ANL-6548)</td>
+<td>1977(ORNL/NUREG-17)</td>
+</tr>
+<tr>
+<td>측정량</td>
+<td>반응한 Zr</td>
+<td>산소 흡수량(Zr 환산 ×2.85)</td>
+</tr>
+<tr>
+<td>1,200 °C 속도</td>
+<td>약 1.7배 큼</td>
+<td>기준</td>
+</tr>
+<tr>
+<td>규제 용도</td>
+<td>부록 K 보수적 평가</td>
+<td>최적평가</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>17 % ECR</th>
+<th>1 % 수소 기준</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>대상</td>
+<td>가장 많이 산화된 국부 지점</td>
+<td>노심 전체 피복재</td>
+</tr>
+<tr>
+<td>정의</td>
+<td>등가 산화 두께 ÷ 산화 전 두께</td>
+<td>생성 수소 ÷ 피복 전량 반응 가상량</td>
+</tr>
+<tr>
+<td>의미</td>
+<td>피복 연성(급랭 시 파쇄 방지)</td>
+<td>노심 전체 반응량 제한</td>
+</tr>
+</tbody>
+</table>
+<p>"autocatalytic"은 촉매가 아니라 열 폭주이고, 17 % ECR은 "피복재 17 %가 수소로 바뀐다"는 뜻이 아닙니다. 1,204 °C는 반응 시작 온도가 아니라 급가속 직전의 설계 한계입니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 사고 시 격납건물로 방출되는 수소의 원천, 주 생성원은 고온 피복재 Zr-증기 반응</li>
+<li><strong>주 반응</strong>: Zr + 2H₂O → ZrO₂ + 2H₂ + 586 kJ/mol, <strong>0.0442 kg H₂/kg Zr</strong>, 약 6.4 MJ/kg</li>
+<li><strong>속도</strong>: 산화막 확산 지배 포물선 법칙 w² = K·t, Baker-Just(부록 K, 보수적)·Cathcart-Pawel(최적)</li>
+<li><strong>자기가속</strong>: 약 1,200 °C 이상에서 산화열 &gt; 붕괴열 → 열 폭주, 재관수 시 수소 급증 가능</li>
+<li><strong>용존 수소</strong>: RCS 산소 제어용 H₂, LOCA 직후 방출</li>
+<li><strong>방사분해</strong>: 2H₂O → 2H₂ + O₂, 장기 연속</li>
+<li><strong>금속 부식</strong>: 2Al + 6H₂O → 2Al(OH)₃ + 3H₂, Zn + 2H₂O → Zn(OH)₂ + H₂</li>
+<li><strong>중대사고 추가</strong>: 강재·B₄C 산화, MCCI(H₂·CO)</li>
+<li><strong>규제</strong>: 50.46(b) 1,204 °C·17 % ECR·수소 1 %, 50.44(c) 100 % 반응 수소 균일 시 10 vol% 미만</li>
+<li><strong>APR1400 예</strong>: 활성 노심 Zr 전량 산화 H₂ 약 1.0 t → 자유체적 8.9만 m³ 가정 시 평균 약 11~12 %(제거 전)</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 피복 단면 층 구조, 반응식, 온도-산화 속도 개형" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-008-hydrogen-sources/sketch1_zr_steam_answer.avif"/><figcaption>답안지용 피복 단면 층 구조, 반응식, 온도-산화 속도 개형</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024년 1교시 11번</td>
+<td>LOCA 시 주요 수소 발생원 3가지(반응식)</td>
+</tr>
+<tr>
+<td>2022년 2교시 2번</td>
+<td>사고 시 수소 발생 메커니즘과 수소제어 중요성</td>
+</tr>
+<tr>
+<td>2019년 4교시 5번</td>
+<td>APR1400 수소생성원과 가연성기체 제어</td>
+</tr>
+<tr>
+<td>2018년 2교시 3번</td>
+<td>PWR LOCA 시 원자로건물 수소생성원</td>
+</tr>
+<tr>
+<td>제81회 3교시 3번</td>
+<td>가상사고 후 격납용기 수소 생성과정</td>
+</tr>
+<tr>
+<td>제73회 4교시 5번</td>
+<td>LOCA 시 격납건물 수소 생성원</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, 10 CFR 50.46 "Acceptance criteria for emergency core cooling systems for light-water nuclear power reactors", (b)(1)~(3).</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix K "ECCS Evaluation Models"; Regulatory Guide 1.157 "Best-Estimate Calculations of Emergency Core Cooling System Performance" (1989).</li>
+<li>L. Baker, L. C. Just, "Studies of Metal-Water Reactions at High Temperatures III. Experimental and Theoretical Studies of the Zirconium-Water Reaction", ANL-6548 (1962).</li>
+<li>J. V. Cathcart, R. E. Pawel et al., "Zirconium Metal-Water Oxidation Kinetics IV. Reaction Rate Studies", ORNL/NUREG-17 (1977).</li>
+<li>U.S. NRC, 10 CFR 50.44 "Combustible gas control for nuclear power reactors"(2003.9.16 개정, 68 FR 54123).</li>
+<li>원자력안전위원회, 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」 원안위고시 제2017-23호; 「원자로시설 등의 기술기준에 관한 규칙」 원안위규칙 제37호(2026.3.30) 제23조. 국가법령정보센터.</li>
+<li>J. Kim, S.-W. Hong, "Hydrogen Behaviors Coupled with Thermal Hydraulics in APR1400 Containment during an SBLOCA", Transactions of the Korean Nuclear Society Autumn Meeting, Gyeongju (2016.10).</li>
+<li>J. Kim, S.-W. Hong, "Analysis of Hydrogen Concentration Distribution during an SBO Accident for Shin-Ulchin APR1400", Transactions of the Korean Nuclear Society Autumn Meeting, Gyeongju (2013).</li>
+<li>E. H. Lee, D. H. Lee, M. S. Choi, D. H. Hur, "Measurements of Henry's Law Constant for Hydrogen in Simulated PWR Primary Water", Transactions of the Korean Nuclear Society Spring Meeting, Gwangju (2013).</li>
+<li>"Lessons Learned from Hydrogen Generation and Burning during the TMI-2 Event", OSTI ID 6496769.</li>
+<li>U.S. NRC, Staff Requirements Memorandum SRM-SECY-16-0033 (2024.4).</li>
+</ol>

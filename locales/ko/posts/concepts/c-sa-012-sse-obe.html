@@ -1,0 +1,257 @@
+<figure class="article-image"><img alt="[개념 노트] 안전정지지진(SSE)과 운전기준지진(OBE) — 설계 지진 두 단계와 정지 판단 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-012-sse-obe/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>안전정지지진(SSE, Safe Shutdown Earthquake)은 안전에 중요한 구조물·계통·기기(SSC)가 기능을 유지하도록 설계하는 최대 설계 지반운동이고, 운전기준지진(OBE, Operating Basis Earthquake)은 공중 위해 없이 계속 운전하는 데 필요한 설비가 기능을 유지하는 지반운동으로, 현행 미국 기준에서는 주로 원전 정지·점검의 판단 기준으로 쓰입니다.</strong></p>
+<p>두 값 모두 부지 자유장의 수평·수직 <strong>설계응답스펙트럼</strong>으로 정의되며, 크기는 그 스펙트럼을 고정(anchor)한 최대지반가속도(PGA, g 단위)로 부릅니다. 기출의 "설계기준지진(DBE)"은 대개 SSE와 같은 뜻으로 쓰입니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>왜 두 단계인가</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>SSE</th>
+<th>OBE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>목표</td>
+<td>안전정지·냉각 유지, 방사성물질 방출 방지</td>
+<td>계속 운전 가능(정지 판단 기준)</td>
+</tr>
+<tr>
+<td>성격</td>
+<td>부지 최대 잠재 지진 기반</td>
+<td>수명 중 발생 가능성이 있는 지진</td>
+</tr>
+<tr>
+<td>허용 상태</td>
+<td>기능 유지(일부 비탄성 허용)</td>
+<td>탄성 범위·정상 운전 가능</td>
+</tr>
+<tr>
+<td>크기(현행 App. S)</td>
+<td>수평 PGA 최소 0.1 g</td>
+<td>SSE의 1/3 이하면 별도 해석 면제</td>
+</tr>
+<tr>
+<td>크기(구 Part 100 App. A)</td>
+<td>최소 0.1 g</td>
+<td>SSE 최대가속도의 1/2 이상[2]</td>
+</tr>
+</tbody>
+</table>
+<p>과거 구 기준(OBE ≥ SSE/2)에서는 OBE 하중조합의 허용응력이 엄격해 실제 설계를 SSE보다 OBE가 지배하는 경우가 많았습니다. 이 과도한 보수성 때문에 1997년 10 CFR 50 부록 S(App. S)가 OBE를 1/3 SSE 이하로 두면 OBE 설계해석을 생략할 수 있게 했습니다[1]. 이 경우에도 OBE는 <strong>정지·점검 판단 기준</strong>으로 남습니다.</p>
+<h3>설계응답스펙트럼(RG 1.60)</h3>
+<p>응답스펙트럼은 감쇠가 정해진 1자유도 진동자들이 지반운동에 보이는 최대 응답을 고유진동수별로 그린 곡선입니다. RG 1.60은 PGA 1.0 g·최대 변위 36 in로 정규화한 표준 형상을 제어점 증폭계수로 줍니다[3].</p>
+<table>
+<thead>
+<tr>
+<th>5 % 감쇠</th>
+<th>A 33 Hz</th>
+<th>B 9 Hz</th>
+<th>C</th>
+<th>D 0.25 Hz(변위)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>수평</td>
+<td>1.0</td>
+<td>2.61</td>
+<td>3.13 (2.5 Hz)</td>
+<td>2.05</td>
+</tr>
+<tr>
+<td>수직</td>
+<td>1.0</td>
+<td>2.61</td>
+<td>2.98 (3.5 Hz)</td>
+<td>1.37</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>33 Hz 이상은 ZPA(=PGA)이고, C→B→A는 가속도 구간, D→C는 속도 구간, D 이하는 변위 일정 구간(Sa ∝ f²)입니다.</li>
+<li>D점 변위계수를 가속도로 바꾸면 수평 Sa = (2π·0.25)²·(2.05×36 in)/g ≈ 0.47 g입니다.</li>
+<li>수직/수평 비는 0.25 Hz 이하 2/3, 3.5 Hz 이상 1입니다. 그래서 <strong>RG 1.60에서 수직 ZPA는 수평과 같습니다</strong>. "수직 = 수평의 2/3"은 저주파 구간에만 맞습니다.</li>
+<li>실제 스펙트럼은 부지 PGA로 선형 축척합니다(제어점 사이는 로그-로그 직선, 감쇠값 사이는 선형 보간). 0.3 g SSE면 수평 첨두(2.5 Hz)는 0.94 g, OBE = SSE/3이면 0.31 g입니다. 2.5~9 Hz의 스펙트럼 가속도가 PGA의 약 2.6~3.1배라는 뜻이며, 실제 구조물 하중은 구조물 응답해석으로 구합니다.</li>
+</ul>
+<figure class="article-image"><img alt="RG 1.60 제어점 증폭계수로 계산한 5 % 감쇠 수평·수직 SSE(0.3 g)와 OBE(SSE/3) 설계응답스펙트럼, 제어점 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-012-sse-obe/fig1_rg160_design_spectra.avif"/><figcaption>RG 1.60 제어점 증폭계수로 계산한 5 % 감쇠 수평·수직 SSE(0.3 g)와 OBE(SSE/3) 설계응답스펙트럼, 제어점 표</figcaption></figure>
+<p>현재 미국 신규 부지는 10 CFR 100.23과 RG 1.208의 확률론적 지진재해(PSHA) 기반 부지응답스펙트럼(GMRS)으로 SSE를 정합니다[4]. RG 1.60은 기존 원전 인허가 기준과 "0.1 g 고정 최소 입력"의 형상으로 남아 있습니다. APR1400 인증설계 스펙트럼(CSDRS)은 RG 1.60을 바탕으로 25 Hz 부근을 30 % 키운 고주파 보강 형상입니다[5].</p>
+<h2>원전에서의 의미</h2>
+<h3>설계: 내진범주와 하중조합</h3>
+<ul>
+<li><strong>내진범주 I</strong>: 안전성 품목입니다. SSE에서 안전기능을 유지하고, OBE를 설계 입력으로 쓰면 OBE+정상하중에서 허용응력 이내여야 합니다.</li>
+<li><strong>내진범주 II</strong>: 붕괴·낙하로 I급을 손상시킬 수 있는 품목입니다. SSE에서 구조 건전성만 요구됩니다.</li>
+<li><strong>내진범주 III</strong>: 일반 산업기준을 따릅니다[12].</li>
+</ul>
+<p>OBE를 배제한 설계(OBE ≤ 1/3 SSE)는 빠진 보수성을 대체 요건으로 메웁니다. 국내 KINS/RG-N04.29의 요건은 다음과 같습니다[6].</p>
+<ul>
+<li>지진 피로: SSE 2회 × 최대응력 10사이클</li>
+<li>기기 내진검증: 1/2 SSE 5회 + SSE 1회</li>
+<li>방사성폐기물 계통 등: 1/2 SSE로 설계</li>
+<li>PSA 기반 내진여유도분석(SMA): 노심손상 HCLPF ≥ 1.67 × SSE</li>
+</ul>
+<h3>국내 노형 값</h3>
+<ul>
+<li><strong>가동 원전(OPR1000/한국표준형 등)</strong>: SSE 0.2 g, OBE 0.1 g(= SSE/2, 구 체계)[7]</li>
+<li><strong>APR1400</strong>(새울 1~4, 신한울 1~4): SSE 0.3 g, OBE = SSE/3[5]</li>
+<li><strong>경주 지진(2016) 이후</strong>: 후쿠시마 후속조치로 시작한 가동 원전 안전정지유지계통 내진성능 0.3 g 상향 보강이 가속되었습니다. <!-- 확인필요: 0.3 g 보강 전 호기 완료 시점(2021 보도 기준 56건 중 54건 완료) 공식 자료 미확인 --></li>
+<li><strong>수직 설계값</strong>: RG 1.60을 쓰면 한국표준형의 수직 ZPA도 0.2 g입니다. <!-- 확인필요: 한국표준형 FSAR 3.7절 수직 PGA 원문 미대조 --></li>
+</ul>
+<h3>운전: OBE 초과 판정과 정지</h3>
+<p>App. S는 OBE 초과 진동이나 중대한 손상이 있으면 정지하고, <strong>재가동 전 계속 운전에 필요한 설비에 기능 손상이 없고 인허가 기준이 유지됨을 입증</strong>하도록 요구합니다[1]. 국내 부지 지진은 고주파 성분이 많아 PGA만으로는 손상 잠재력을 가늠하기 어렵습니다. 그래서 판정에는 응답스펙트럼과 CAV 같은 지표를 함께 씁니다.</p>
+<ul>
+<li><strong>미국 RG 1.166</strong>(EPRI NP-5930·NP-6695 기반, 2020 Rev.1에서 재가동 지침 RG 1.167 통합): 다음 두 검사를 <strong>모두</strong> 초과해야 OBE 초과입니다[8].
+<ul>
+<li>응답스펙트럼 검사: 자유장 3성분 중 하나의 5 % 감쇠 스펙트럼이 2~10 Hz에서 max(OBE Sa, 0.2 g)를 넘거나, 1~2 Hz에서 max(OBE Sv, 6 in/s)를 넘으면 초과입니다.</li>
+<li>CAV 검사: 표준화 누적절대속도 CAV &gt; 0.16 g·s. 1초 구간마다 |a| &gt; 0.025 g가 한 번이라도 있으면 그 구간의 ∫|a|dt를 더합니다.</li>
+</ul>
+</li>
+<li><strong>국내 KINS/RG-N04.18 Rev.2(2017)</strong>: PGA 검사(3성분 중 하나라도 OBE PGA 초과) <strong>또는</strong> 응답스펙트럼 검사(미국과 같은 조건) 중 하나라도 초과하면 정지합니다[6][10].</li>
+<li><strong>2016 경주 지진(M5.8)</strong>: 월성 1·2호기 지진감시설비의 본진 최대가속도는 0.1 g 미만(1호기 수평 약 0.098 g, 2호기 약 0.083 g)이었습니다. 그러나 응답스펙트럼이 OBE를 넘어(1호기 보조건물 기초 약 0.43 g, 7.3 Hz &gt; 0.3 g) 1~4호기를 수동정지했고, 점검 결과 손상은 없었습니다[9]. 부지 자유장 최대가속도로 약 0.12 g를 보고한 논문도 있어, 값은 계측 위치에 따라 다릅니다[10].</li>
+</ul>
+<figure class="article-image"><img alt="자유장 강진계 기록으로 OBE 초과를 판정하는 흐름(미국 스펙트럼 AND CAV, 국내 PGA OR 스펙트럼)과 정지·점검·재가동 단계" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-012-sse-obe/fig2_obe_exceedance_flow.avif"/><figcaption>자유장 강진계 기록으로 OBE 초과를 판정하는 흐름(미국 스펙트럼 AND CAV, 국내 PGA OR 스펙트럼)과 정지·점검·재가동 단계</figcaption></figure>
+<p>별도로 지진자동정지계통(ASTS)은 설정치(보도 기준 0.18 g) 이상에서 원자로를 자동정지합니다.</p>
+<h3>출제 사례 해석: 2004 울진 지진</h3>
+<p>규모 5.2, 진앙 80 km 해역 지진이었습니다. 울진 원전 계측은 당시 경보 설정치 0.02 g에도 못 미쳤습니다. 한국표준형 OBE 0.1 g, SSE 0.2 g보다 한참 낮아 안전 영향은 없었고, 이후 경보 설정치를 0.01 g로 낮췄습니다. 규모(에너지)와 부지 가속도는 거리·지반에 따라 달라 직접 환산할 수 없습니다.</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50 App. S(1997)</td>
+<td>SSE·OBE 정의, 최소 0.1 g, OBE 1/3 선택, OBE 초과 시 정지·재가동 전 입증, 지진계측[1]</td>
+</tr>
+<tr>
+<td>10 CFR 100 App. A(1973)</td>
+<td>1997년 이전 건설허가 원전: OBE ≥ SSE/2</td>
+</tr>
+<tr>
+<td>10 CFR 100.23, RG 1.208</td>
+<td>신규 부지 PSHA 기반 GMRS → SSE</td>
+</tr>
+<tr>
+<td>RG 1.60 Rev.2(2014)</td>
+<td>설계응답스펙트럼 형상·제어점 증폭계수</td>
+</tr>
+<tr>
+<td>RG 1.29</td>
+<td>내진범주 분류</td>
+</tr>
+<tr>
+<td>RG 1.166 Rev.1(2020)</td>
+<td>지진 전 계획, OBE 초과 판정, 정지·재가동(RG 1.167 통합)</td>
+</tr>
+<tr>
+<td>원자로시설 등의 기술기준에 관한 규칙 제13조</td>
+<td>외적 요인에 관한 설계기준(지진 등 자연현상)[11]</td>
+</tr>
+<tr>
+<td>KINS/RG-N04.29, N04.18</td>
+<td>OBE 하중 배제 대체설계, 지진 후 운영자 조치</td>
+</tr>
+</tbody>
+</table>
+<!-- 기술기준규칙 제13조: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 -->
+<!-- 확인필요: N04.18 현행 개정 차수 미확인 -->
+<p>출제 당시(2001~2009)는 OBE = SSE/2 체계가 국내 가동 원전의 표준이었습니다. 지금은 APR1400처럼 OBE를 배제한 설계와 PSA 기반 내진여유도 요건이 함께 쓰입니다. 경주 지진 이후에는 지진 후 정지 판정과 내진성능 보강이 강화되었습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>SSE/OBE</th>
+<th>HCLPF</th>
+<th>지진 규모</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>의미</td>
+<td>설계 입력 지반운동</td>
+<td>실제 내진 성능(95 % 신뢰도, 파손확률 5 % 이하 가속도)</td>
+<td>진원 에너지</td>
+</tr>
+<tr>
+<td>단위</td>
+<td>g(스펙트럼 고정점)</td>
+<td>g</td>
+<td>무차원(M)</td>
+</tr>
+<tr>
+<td>쓰임</td>
+<td>설계·정지 기준</td>
+<td>SMA·지진 PSA, 스트레스테스트</td>
+<td>지진 규모 표시</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>SSE</strong>: 부지 최대 잠재 지진 기반, 안전 중요 SSC가 기능 유지하도록 설계하는 지반운동, 수평 PGA 최소 0.1 g임</li>
+<li><strong>OBE</strong>: 수명 중 예상 지진, 계속 운전에 필요한 설비 기능 유지, 현행은 정지·점검 기준임</li>
+<li><strong>크기</strong>: 현행 OBE ≤ 1/3 SSE면 해석 면제(구 기준 ≥ 1/2 SSE)</li>
+<li><strong>스펙트럼</strong>: RG 1.60, 제어점 33·9·2.5·0.25 Hz, 수직/수평 비 2/3~1, PGA로 축척함</li>
+<li><strong>내진범주</strong>: I(SSE 기능 유지), II(구조 건전성), III(일반 기준)</li>
+<li><strong>국내</strong>: 가동 원전 SSE 0.2 g·OBE 0.1 g, APR1400 0.3 g, 경주 이후 0.3 g 보강</li>
+<li><strong>OBE 초과</strong>: 정지 → 점검 → 재가동 전 기능 손상 없음 입증, 미국은 스펙트럼 AND CAV 0.16 g·s, 국내는 PGA OR 스펙트럼</li>
+<li><strong>OBE 배제 보완</strong>: 피로 SSE 20사이클, HCLPF ≥ 1.67 SSE</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 SSE·OBE 응답스펙트럼과 제어점, 정지 판정 도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-012-sse-obe/sketch1_sse_obe_spectrum.avif"/><figcaption>답안지용 SSE·OBE 응답스펙트럼과 제어점, 정지 판정 도식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021년 1교시 7번</td>
+<td>운전기준지진과 안전정지지진 정의</td>
+</tr>
+<tr>
+<td>2017년 1교시 9번</td>
+<td>운전기준지진과 안전정지지진</td>
+</tr>
+<tr>
+<td>2009년 1교시 3번</td>
+<td>운전기준 지진, 안전정지 지진</td>
+</tr>
+<tr>
+<td>제73회 2교시 5번</td>
+<td>SSE·OBE 정의와 2004 울진 지진 영향</td>
+</tr>
+<tr>
+<td>제71회 1교시 9번</td>
+<td>DBE(설계기준지진)</td>
+</tr>
+<tr>
+<td>제65회 4교시 6번</td>
+<td>한국표준형 원전 수평·수직 내진설계 가속도</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, 10 CFR Part 50 Appendix S "Earthquake Engineering Criteria for Nuclear Power Plants" (1997).</li>
+<li>U.S. NRC, 10 CFR Part 100 Appendix A "Seismic and Geologic Siting Criteria for Nuclear Power Plants".</li>
+<li>U.S. NRC, Regulatory Guide 1.60 "Design Response Spectra for Seismic Design of Nuclear Power Plants", Rev. 2 (2014).</li>
+<li>U.S. NRC, 10 CFR 100.23; Regulatory Guide 1.208 "A Performance-Based Approach to Define the Site-Specific Earthquake Ground Motion" (2007).</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Rev. 3 (2018), Ch. 3.7 "Seismic Design". NRC ADAMS 공개.</li>
+<li>한국원자력안전기술원(KINS), 규제지침 KINS/RG-N04.18 Rev.2(2017) 「원전 운영자의 지진 후 조치」, KINS/RG-N04.29 「운전기준지진 하중 배제에 따른 대체설계 고려사항」, KINS 규제기준 공개본(N04.29 개정 차수 미기재).</li>
+<li>J. B. Jang, Y. Lee, Y. S. Jang, "Seismic Analysis Conditions of APR1000", Transactions of the Korean Nuclear Society Spring Meeting (2010).</li>
+<li>U.S. NRC, Regulatory Guide 1.166 "Pre-Earthquake Planning, Shutdown, and Restart of a Nuclear Power Plant Following an Earthquake", Rev. 1 (2020).</li>
+<li>Y.-S. Choun, T.-H. Kwon, "Risk-Based Approach for Determining Shutdown of Operating Nuclear Power Plants in an Earthquake", Korean Nuclear Society Spring Meeting 발표자료 21S-130 (2021.5), kns.org 공개 — 원자료: KINS 원전 사고·고장 조사보고서(2016.12).</li>
+<li>Y.-S. Choun, T.-H. Kwon, "Criteria for Exceedance of Operating Basis Earthquake Based on the Characteristics of Site-Specific Ground Motions", Transactions of the Korean Nuclear Society Autumn Meeting (2018).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제13조. 국가법령정보센터.</li>
+<li>U.S. NRC, Regulatory Guide 1.29 "Seismic Design Classification for Nuclear Power Plants".</li>
+</ol>

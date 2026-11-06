@@ -1,0 +1,234 @@
+<figure class="article-image"><img alt="[개념 노트] 이용률과 가동률 — 전력량의 비율과 시간의 비율 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-op-009-capacity-operating-factor/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p>**이용률(capacity factor)**은 일정 기간 실제 발전량을 정격출력으로 그 기간 내내 운전했을 때의 발전량으로 나눈 값입니다. **가동률(availability, 시간 기준)**은 같은 기간의 역시간 가운데 발전기가 계통에 병입되어 발전한 시간의 비율입니다. 이용률은 <strong>전력량의 비율</strong>, 가동률은 <strong>시간의 비율</strong>입니다.</p>
+<ul>
+<li>이용률 = 발전량(MWh) / [정격출력(MW) × 기간(h)] × 100 %</li>
+<li>가동률 = 발전 시간(h) / 기간 역시간(h) × 100 %</li>
+</ul>
+<h2>원리와 메커니즘</h2>
+<h3>국제 지표 체계</h3>
+<p>IAEA PRIS와 WANO는 기준 발전량 REG(정격으로 기간 내내 운전한 전력량)를 분모로 두고 손실을 원인별로 나눕니다[1].</p>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>식</th>
+<th>빼는 손실</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>이용률(PRIS 명칭 Load Factor)</td>
+<td>EG/REG</td>
+<td>모든 손실 + 수요 감발</td>
+</tr>
+<tr>
+<td>에너지 가용률 EAF</td>
+<td>(REG − PEL − UEL − XEL)/REG</td>
+<td>계획·비계획·외부</td>
+</tr>
+<tr>
+<td>설비 가용률 UCF</td>
+<td>(REG − PEL − UEL)/REG</td>
+<td>관리 범위 안 손실</td>
+</tr>
+<tr>
+<td>비계획 손실률 UCLF</td>
+<td>UEL/REG</td>
+<td>—</td>
+</tr>
+<tr>
+<td>강제 손실률 FLR</td>
+<td>FEL/(REG − PEL − OEL)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>가동률(PRIS OF)</td>
+<td>계통 병입 시간/역시간</td>
+<td>시간만</td>
+</tr>
+</tbody>
+</table>
+<p>PEL은 4주 이상 앞서 계획한 정지·감발 손실, UEL은 관리 범위 안의 계획되지 않은 정지·정비 연장·감발 손실, XEL은 관리 범위 밖 요인으로 가용성이 줄어든 손실입니다. IAEA PRIS 코딩은 주기말 감발도 XEL로 분류합니다[2]. FEL은 강제정지 손실, OEL은 계획정지의 비계획 연장 손실입니다. 설비가 가용한 상태에서 수요·급전 지시로 출력을 낮추는 부하추종은 가용성 손실이 아니므로 이용률만 낮춥니다.<!-- 확인필요: 주기말 감발을 PRIS는 XEL, 사업자·WANO 보고는 계획 손실로 다루기도 함 — WANO 지침서·PRIS-WEDAS 매뉴얼 원문 미대조(검색 요약 기준) --></p>
+<h3>왜 서로 다른가</h3>
+<p>정격 이상 운전이 없으면 <strong>이용률 ≤ 가동률</strong>이고 <strong>이용률 ≤ EAF ≤ UCF</strong>입니다. 계통에 붙어 있어도 다음 때문에 전력량이 정격보다 적습니다. 가용률과 가동률의 대소는 정해져 있지 않습니다. 가용하지만 급전되지 않은 예비 정지가 있으면 가용률이 더 클 수 있습니다.</p>
+<ul>
+<li>정비 후 기동·승출력 구간</li>
+<li>주기말 감발(coastdown): 연소에 따라 반응도 여유가 줄어 정격을 유지하지 못하고 출력이 서서히 낮아짐</li>
+<li>부하추종·계통 요청 출력 제한</li>
+<li>기기 결함에 따른 감발 운전</li>
+</ul>
+<p>반대로 냉각수 온도가 낮은 겨울철에 순출력이 정격을 넘거나 정격·설비용량 기준이 다르면 이용률이 가동률보다 커질 수 있습니다. 국내 2022년은 가동률 81.1 %, 이용률 81.6 %였습니다[5].<!-- 확인필요: 국내 이용률·가동률 산정 기준(발전단/송전단, 설비용량 정의)은 보도 인용 — 한수원 산정 기준 원문 미대조 --></p>
+<h3>종합 예제 (가정)</h3>
+<p>APR1400급 순출력 1,400 MWe, 1년(REG = 365 정격일)을 가정합니다.</p>
+<figure class="article-image"><img alt="설명용 가정 1년 출력 이력, 손실 폭포(정격일), 가동률·UCF·EAF·이용률 값" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-op-009-capacity-operating-factor/fig1_annual_power_history_losses.avif"/><figcaption>설명용 가정 1년 출력 이력, 손실 폭포(정격일), 가동률·UCF·EAF·이용률 값</figcaption></figure>
+<table>
+<thead>
+<tr>
+<th>사건</th>
+<th>기간·출력</th>
+<th>손실(정격일)</th>
+<th>분류</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>재장전·계획예방정비</td>
+<td>35일, 0 %</td>
+<td>35.0</td>
+<td>PEL</td>
+</tr>
+<tr>
+<td>정비 후 승출력</td>
+<td>3일, 평균 50 %</td>
+<td>1.5</td>
+<td>PEL</td>
+</tr>
+<tr>
+<td>불시정지 + 재기동</td>
+<td>5일 0 % + 2일 50 %</td>
+<td>6.0</td>
+<td>UEL(강제)</td>
+</tr>
+<tr>
+<td>주기말 감발</td>
+<td>40일, 평균 94 %</td>
+<td>2.4</td>
+<td>XEL(PRIS)</td>
+</tr>
+<tr>
+<td>급전 지시 출력 감소</td>
+<td>10일 80 % + 4일 75 %</td>
+<td>3.0</td>
+<td>가용성 손실 아님</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>발전량 EG = 365 − 36.5 − 6.0 − 2.4 − 3.0 = 317.1 정격일 ≈ 10.65 TWh</li>
+<li>이용률 = 317.1/365 = <strong>86.9 %</strong></li>
+<li>EAF = 320.1/365 = 87.7 %, UCF = 322.5/365 = 88.4 %</li>
+<li>가동률(병입시간) = (365 − 35 − 5)/365 = <strong>89.0 %</strong></li>
+<li>UCLF = 6.0/365 = 1.64 %, FLR = 6.0/(365 − 36.5) = 1.83 %(UEL 전부 강제, 정비 연장 없음), 시간 기준 강제정지율 FOR = 5/(5 + 325) = 1.52 %</li>
+</ol>
+<p>같은 1년인데 지표가 86.9~89.0 %로 갈립니다. 주기말 감발을 계획 손실로 보는 체계라면 UCF는 87.7 %가 됩니다. 답안에서는 <strong>어느 지표인지와 분모</strong>를 먼저 밝혀야 합니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>운전주기와 정비기간</h3>
+<p>정비만 고려한 장기 가동률은 1 − D/(30.44T)(T 주기 개월, D 정비 일수)로 근사합니다. 18개월 주기·40일 정비면 92.7 %, 12개월·30일이면 91.8 %입니다. 국내 OPR1000·APR1400은 약 18개월 주기로 운전하고, 계획예방정비는 대체로 30~60일입니다.<!-- 확인필요: 국내 주기·정비일수 범위는 보도 사례 기준 --> 원자력안전법에 따른 정기검사도 주로 이 기간에 받습니다. 미국은 재장전 정비 평균이 약 34일(2024년 7월 말 기준)이고, 이용률은 2010년대 이후 약 90 % 이상입니다[3].</p>
+<h3>국내 실적</h3>
+<figure class="article-image"><img alt="국내 원전 이용률 2015~2025와 2026 목표, 이용률에 따른 원자력 LCOE 모델 곡선, 재장전 정비 장면" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-op-009-capacity-operating-factor/fig2_fleet_cf_lcoe.avif"/><figcaption>국내 원전 이용률 2015~2025와 2026 목표, 이용률에 따른 원자력 LCOE 모델 곡선, 재장전 정비 장면</figcaption></figure>
+<p>한수원 발표 기준 국내 원전 이용률은 2015년 85.3 %, 2018년 65.9 %(안전점검 정비 증가로 전 호기 합산 정지일수 2,917일), 2022년 81.6 %, 2023년 81.8 %, 2024년 83.8 %, 2025년 84.6 %입니다[5][6]. 2026년 목표는 89 %입니다[6]. 2025년 봄 경부하기에는 계통 사정에 따른 원전 출력 제한이 잦아졌다는 보도가 있습니다. 이런 급전 감발이 늘면 가용률은 그대로여도 이용률은 낮아집니다.</p>
+<h3>경제성과의 연결</h3>
+<p>원자력은 고정비 비중이 커서 단가의 고정비 부분이 이용률에 반비례합니다. 이용률 70 %면 62.7, 85 %면 53.3, 95 %면 48.7입니다(한국 ALWR 입력값, 할인율 7 %)[4]. 85 %에서 1 %p 올리면 약 0.5 USD/MWh(약 1 %) 낮아집니다. 비용 입력을 고정한 민감도이며, 국내 연도별 실제 원가가 아닙니다.</p>
+<h3>향상 방법</h3>
+<ul>
+<li><strong>계획 손실 축소</strong>: 장주기 운전, 정비 임계경로 관리, 운전 중 정비·상시검사 확대(운영기술지침서 허용 범위 안)</li>
+<li><strong>비계획 손실 축소</strong>: 불시정지 유발 기기(급수·터빈·전기계통) 신뢰도 향상, 상태감시 정비, 인적오류 예방, 정비규정</li>
+<li><strong>출력 측면</strong>: 출력증강, 말기 감발 최적화, 송전 제약 해소</li>
+<li>전제는 안전입니다. 정비기간 단축은 필요한 점검을 생략하는 것이 아닙니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<ul>
+<li>이용률·가동률은 안전규제 요건이 아니라 운영 성과지표입니다. 정의 기준은 IAEA PRIS 성능지표와 WANO Performance Indicator(UCF·UCLF·FLR)입니다.</li>
+<li>규제기관은 불시정지 빈도를 안전성능지표로 감시합니다(NRC ROP "7,000 임계시간당 불시정지"[7], KINS 안전성능지표). 불시정지는 원안위 고시 「원자력이용시설의 사고·고장 발생 시 보고·공개 규정」에 따라 보고합니다.</li>
+<li><strong>출제 당시 대비</strong>: 2008년과 정의는 같습니다. 국내 실적은 열린원전운영정보와 공공데이터포털(호기별 발전량·이용률, 2026.9 갱신)로 공개됩니다[8].</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>이용률</th>
+<th>가동률</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>차원</td>
+<td>전력량 비율</td>
+<td>시간 비율</td>
+</tr>
+<tr>
+<td>분자</td>
+<td>실제 발전량</td>
+<td>발전 시간</td>
+</tr>
+<tr>
+<td>분모</td>
+<td>정격 × 역시간</td>
+<td>역시간</td>
+</tr>
+<tr>
+<td>낮추는 것</td>
+<td>정지 + 감발·승출력·감발운전</td>
+<td>정지만</td>
+</tr>
+<tr>
+<td>용도</td>
+<td>경제성·발전량</td>
+<td>설비 신뢰도</td>
+</tr>
+</tbody>
+</table>
+<p>UCF는 관리 범위 안 손실만 보므로 발전소 운영 능력 비교에, 이용률은 판매 전력량과 경제성에 씁니다.</p>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 이용률과 가동률의 정의 및 향상 방법</strong></p>
+<ol>
+<li><strong>이용률</strong>: 실제 발전량 / (정격출력 × 기간 시간) × 100 % — 전력량 기준임</li>
+<li><strong>가동률</strong>: 발전(계통 병입) 시간 / 기간 역시간 × 100 % — 시간 기준임</li>
+<li><strong>관계</strong>: 정격 초과가 없으면 이용률 ≤ 가동률. 차이는 승출력·주기말 감발·부하추종·감발운전</li>
+<li><strong>국제 지표</strong>: UCF = (REG − PEL − UEL)/REG, EAF는 외부 손실(XEL)까지 차감</li>
+<li><strong>저하 요인</strong>: 계획예방정비(재장전), 불시정지, 정비 연장, 계통 제약</li>
+<li><strong>향상</strong>: 장주기 운전, 정비 공정 최적화, 기기 신뢰도·예측정비, 인적오류 예방, 출력증강</li>
+<li><strong>의미</strong>: 고정비 비중 큰 원자력은 이용률 1 %p ↑ → 단가 약 1 % ↓(85 % 기준)</li>
+<li><strong>국내</strong>: 2025년 이용률 84.6 %(한수원), 2026년 목표 89 %</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: 출력–시간 면적으로 본 이용률과 시간 막대로 본 가동률" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-op-009-capacity-operating-factor/sketch1_output_time_area.avif"/><figcaption>답안용 도식: 출력–시간 면적으로 본 이용률과 시간 막대로 본 가동률</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h3>기출 계산 문항 풀이 요지</h3>
+<ul>
+<li><strong>2022-2-3</strong>: 이용률 = 355,000/(1,000 × 365) = <strong>97.3 %</strong>, 가동률 = (365 − 7 − 23)/365 = <strong>91.8 %</strong>. 검산하면 335일 정격 운전 최대 발전량이 335,000 MWd라 가동 중 평균 출력이 정격의 106 %여야 합니다. 정의대로 답하고 이 불일치를 한 줄 적으면 됩니다.</li>
+<li><strong>2025-4-5</strong>: 이용률 = 450,000/(1,350 × 365) = <strong>91.3 %</strong>, 가동률 = 330/365 = <strong>90.4 %</strong>. "가동 중 정격 운전" 가정이면 발전량은 445,500 MWd이고 이용률 = 가동률 = 90.4 %입니다. 주어진 발전량과 약 3.3 정격일 차이가 있으니 두 값을 함께 쓰는 것이 안전합니다.</li>
+</ul>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>연도-교시-번호</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2008-1-12</td>
+<td>가동율과 이용율</td>
+</tr>
+<tr>
+<td>2022-2-3</td>
+<td>발전소 이용률·가동률 계산</td>
+</tr>
+<tr>
+<td>2023-1-11</td>
+<td>이용률·가동률 정의 및 향상 방법</td>
+</tr>
+<tr>
+<td>2025-4-5</td>
+<td>이용률 및 가동률 계산</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>IAEA, Power Reactor Information System (PRIS), Glossary — Load Factor, Energy Availability Factor, Unit Capability Factor, Operating Factor 정의, pris.iaea.org.</li>
+<li>IAEA, PRIS-WEDAS User's Manual (IAEA CMS-23) — 출력 손실 원인 코드("Coast-down operation" 외부 손실 분류). 판·연도 미확인.</li>
+<li>U.S. Energy Information Administration, Today in Energy — 미국 원전 재장전 정비 기간(2024)과 이용률 추이.</li>
+<li>OECD/NEA·IEA, Projected Costs of Generating Electricity — 2020 Edition (2020), 한국 ALWR 비용 입력값.</li>
+<li>파이낸셜뉴스, 원전 이용률·가동률 보도(2024.1.29, 열린원전운영정보 인용); 에너지경제, 한수원 2024년 이용률 보도(2025.1.15).</li>
+<li>YTN, 한수원 업무보고 보도 — 2025년 이용률 84.6 %, 2026년 목표 89 %(2026.1.13).</li>
+<li>NEI 99-02, Regulatory Assessment Performance Indicator Guideline — "Unplanned Scrams per 7,000 Critical Hours"(U.S. NRC ROP 지표, NRC 승인 지침).</li>
+<li>공공데이터포털, 「한국수력원자력(주)_원자력발전소 호기별 발전량 및 이용률」(2026.9.21 수정).</li>
+</ol>

@@ -1,0 +1,215 @@
+<figure class="article-image"><img alt="[개념 노트] 핵연료봉 온도분포(반경·축방향) — 직렬 열저항과 세 개의 최고점 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-008-fuel-rod-temperature/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>핵연료봉 온도분포는 정상상태에서 펠릿 중심 → 펠릿 표면 → 간극 → 피복관 → 냉각재로 이어지는 반경방향 온도 강하(T_c − T_b = q′·ΣR′)와, 냉각재 온도 상승과 cosine형 선출력이 겹쳐 생기는 축방향 온도 변화를 말하며, 연료 중심 용융 방지(SAFDL)의 계산 근거입니다.</strong></p>
+<p>반경방향 크기는 선출력 q′(W/m)가 정하고, 축방향 모양은 q′(z)와 냉각재 엔탈피 상승이 정합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>반경방향: 네 개의 열저항이 직렬로</h3>
+<p>정상상태이고 축방향 열전도를 무시하면, 펠릿에서 생긴 열 q′는 반경방향으로 그대로 냉각재까지 갑니다. 그래서 단위길이당 열저항 R′(K·m/W)을 직렬로 더하면 됩니다[1][2].</p>
+<table>
+<thead>
+<tr>
+<th>구간</th>
+<th>온도 강하</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>펠릿(균일 발열)</td>
+<td>T_c − T_s = q′/(4πk_f)</td>
+<td>반경과 무관</td>
+</tr>
+<tr>
+<td>간극</td>
+<td>T_s − T_ci = q′/(2πr_g·h_g)</td>
+<td>h_g: 간극 열전달계수</td>
+</tr>
+<tr>
+<td>피복관(발열 없음)</td>
+<td>T_ci − T_co = q′·ln(r_co/r_ci)/(2πk_c)</td>
+<td>원통 전도</td>
+</tr>
+<tr>
+<td>막(냉각재)</td>
+<td>T_co − T_b = q′/(2πr_co·h) = q″/h</td>
+<td>h: Dittus–Boelter</td>
+</tr>
+</tbody>
+</table>
+<p>펠릿 안 분포는 T(r) = T_c − q‴r²/(4k_f)의 포물선입니다. r = R_f를 넣고 q‴πR_f² = q′를 쓰면 R_f가 사라집니다. <strong>균일 발열·같은 k(같은 표면온도)라면 q′가 같을 때 펠릿이 굵든 가늘든 중심–표면 온도차는 같습니다.</strong> 다만 반경이 바뀌면 간극·막 저항과 표면온도가 달라지므로 중심온도 자체는 달라질 수 있습니다. 그래서 중심 용융 한계는 kW/m(선출력)로 관리합니다.</p>
+<p>예시로 17×17급 형상(펠릿 8.19 mm, 피복 8.36/9.50 mm), 15.5 MPa, 국부 냉각재 310 °C, 신연료 간극 h_g = 5,700 W/m²·K를 가정해 계산했습니다(설명용 가정, 형상은 [1] 수준의 대표값). 결과는 다음과 같습니다.</p>
+<ul>
+<li><strong>q′ 17.9 kW/m(평균)</strong>: 막 16, 피복 22, 간극 122, 펠릿 389 °C → 중심 약 859 °C</li>
+<li><strong>q′ 40 kW/m(국부 고출력)</strong>: 막 35, 피복 48, 간극 273, 펠릿 1,260 °C → 중심 약 1,926 °C</li>
+</ul>
+<p>막 열전달계수는 Dittus–Boelter(Nu = 0.023Re^0.8Pr^0.4)로 약 38 kW/m²·K입니다. 강하의 70 % 이상이 펠릿 안에서, 그다음이 간극에서 생깁니다. 40 kW/m에서는 단상식으로 구한 피복 표면 온도(345.4 °C)가 포화온도(344.8 °C)에 근접합니다. 비등 개시는 별도 판정이 필요하며, 발달한 핵비등에서는 벽면 과열도가 수 °C(Jens–Lottes 식으로 약 2 °C)에 그칩니다.</p>
+<figure class="article-image"><img alt="반경방향 온도 곡선(q′ 17.9·40 kW/m, 중심 859·1,926 °C)과 펠릿·간극·피복·막 열저항별 ΔT 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-008-fuel-rod-temperature/fig1_radial_temperature_ladder.avif"/><figcaption>반경방향 온도 곡선(q′ 17.9·40 kW/m, 중심 859·1,926 °C)과 펠릿·간극·피복·막 열저항별 ΔT 표</figcaption></figure>
+<h3>UO₂ 열전도도와 열전도도 적분</h3>
+<p>UO₂ 열전도도 k는 상수가 아닙니다. 신연료 기준으로 300 K(27 °C)에서 약 8.4, 1,000 K(727 °C)에서 3.4 W/m·K이고, 약 1,770 °C에서 최소 약 2.1 W/m·K가 된 뒤 전자 기여로 다시 올라갑니다(수정 NFI 상관식, 95 %TD, NUREG/CR-7024)[3]. 그래서 일정 k 식 대신 다음 적분을 씁니다.</p>
+<ul>
+<li><strong>∫_{T_s}^{T_c} k(T) dT = q′/(4π)</strong></li>
+</ul>
+<p>F(T) = ∫₀ᵀ k dT를 표나 곡선으로 만들어 두면 계산이 쉽습니다. <strong>F(T_c) = F(T_s) + q′/4π</strong>이므로, 표면온도의 F값에 q′/4π를 더한 F값에 해당하는 온도가 중심온도입니다. 이 모델로 0 °C~2,800 °C 적분값은 약 90 W/cm입니다. 문헌에 흔히 나오는 "융점까지 약 93 W/cm"와 같은 수준입니다.</p>
+<p>연소가 진행되면 k가 떨어집니다. 원인은 고용 핵분열생성물과 조사 결함입니다. Halden 계측 경향은 <strong>10 GWd/t당 약 5~7 % 감소</strong>입니다(NRC IN 2009-23)[4]. 같은 q′·표면온도에서 k만 바꾼 민감도로는 50 GWd/tU에서 중심온도가 평균 출력 859 → 1,114 °C, 고출력 1,926 → 2,275 °C로 오릅니다. 실제 연소 이력에서는 펠릿 팽윤과 피복관 크립다운으로 간극이 닫혀 h_g가 커지는 상쇄 요인과, 핵분열기체 방출로 간극 기체 열전도가 나빠지는 악화 요인이 함께 작용합니다. 동시에 UO₂ 융점(미조사 약 2,840 °C)도 연소에 따라 내려갑니다.</p>
+<figure class="article-image"><img alt="UO₂ k(T)의 온도·연소 의존성과 F(T_c) = F(T_s) + q′/4π로 중심온도 읽기(연소 0: 1,926 °C, 연소 50: 2,275 °C)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-008-fuel-rod-temperature/fig3_uo2_conductivity_integral.avif"/><figcaption>UO₂ k(T)의 온도·연소 의존성과 F(T_c) = F(T_s) + q′/4π로 중심온도 읽기(연소 0: 1,926 °C, 연소 50: 2,275 °C)</figcaption></figure>
+<h3>축방향: 세 온도의 최고점은 서로 다른 곳</h3>
+<p>축방향 선출력이 절단 cosine q′(z) = q′₀cos(πz/H̃)이면(z: 노심 중앙 원점) 냉각재 에너지 수지에서 다음이 나옵니다.</p>
+<ul>
+<li>T_b(z) = T_in + (q′₀H̃/πṁc_p)·[sin(πz/H̃) + sin(πH/2H̃)] [1]</li>
+<li>어떤 반경 위치의 온도 T(z) = T_b(z) + q′(z)·R′ (R′: 냉각재부터 그 위치까지의 열저항)</li>
+</ul>
+<p>c_p와 R′를 일정하게 보고 축방향 열전도를 무시한 채 dT/dz = 0으로 두면 <em><em>tan(πz</em>/H̃) = H̃/(π·ṁ·c_p·R′)</em>* 입니다. 우변이 양수이므로 최고점은 항상 중앙보다 하류(위)에 있고, R′가 클수록 중앙에 가까워집니다. z<em>가 출구 밖으로 나오면 최고점은 출구입니다(z_max = min[H/2, z</em>]).</p>
+<ul>
+<li><strong>냉각재</strong>: R′ = 0 → 출구에서 최고</li>
+<li><strong>피복 표면</strong>: R′ = 막 저항뿐(작음) → 중앙과 출구 사이(유량이 작으면 출구)</li>
+<li><strong>연료 중심선</strong>: R′ = 막+피복+간극+펠릿(큼) → 중앙 바로 위</li>
+</ul>
+<p>평균 출력봉 예시(q′₀ = 25.8 kW/m, 입구 291 °C, 봉당 0.325 kg/s)로 물성 변화까지 넣어 계산하면 다음과 같습니다. 냉각재는 출구에서 327.3 °C, 피복 표면은 0.72H에서 338.6 °C, 중심선은 0.51H(중앙에서 약 3 cm 하류)에서 약 1,194 °C가 최고입니다. 중심선은 중앙값과 1 °C도 차이 나지 않습니다. 이 계산은 k(T)를 그대로 써서 R′가 위치마다 조금씩 다르지만, 일정 물성 해석식(0.74H, 중앙 위 약 3 cm)과 결론이 같습니다.</p>
+<figure class="article-image"><img alt="절단 cosine 출력에서 중심선(0.51H)·피복 표면(0.72H)·냉각재(출구) 온도 곡선과 최고점 조건 tan(πz*/H̃) = H̃/(πṁc_pR′)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-008-fuel-rod-temperature/fig2_axial_temperature_profiles.avif"/><figcaption>절단 cosine 출력에서 중심선(0.51H)·피복 표면(0.72H)·냉각재(출구) 온도 곡선과 최고점 조건 tan(πz*/H̃) = H̃/(πṁc_pR′)</figcaption></figure>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>설계</strong>: 노심 SL·SAFDL의 한 축이 "중심 용융 없음"입니다. 설계는 정상운전과 AOO의 첨두 선출력에서 연소도별 k·간극·융점을 반영해 중심온도를 계산합니다. CE형(OPR1000·APR1400)은 국부출력밀도(LPD, kW/ft)를 COLSS로 감시하고 CPC로 트립합니다.</li>
+<li><strong>운전</strong>: 중심온도는 직접 재지 않습니다. 노내 계측으로 구한 선출력을 한계와 비교합니다.</li>
+<li><strong>안전해석</strong>: 연료 저장열(평균 온도)은 LOCA 초기 PCT를 정하고, 연료 평균 온도는 도플러 반응도에 들어갑니다. 열전도도 열화를 빠뜨리면 두 결과 모두 비보수적이 됩니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50 부록 A GDC 10 [5]</td>
+<td>정상운전·AOO 중 SAFDL 비초과</td>
+</tr>
+<tr>
+<td>NUREG-0800 SRP 4.2 [5]</td>
+<td>연료봉 파손 기준: 펠릿 과열(중심 용융) 방지</td>
+</tr>
+<tr>
+<td>SRP 4.4</td>
+<td>연료 온도·DNB 열수력 설계</td>
+</tr>
+<tr>
+<td>NUREG-1432 SL 2.1.1.2 [6]</td>
+<td>중심선 최고온도 한계(예 5,080 °F, 10,000 MWd/MTU당 58 °F 감소)</td>
+</tr>
+<tr>
+<td>NRC IN 2009-23, IN 2011-21 [4]</td>
+<td>열전도도 연소 열화 미반영 코드 경고, ECCS 평가 PCT 영향</td>
+</tr>
+<tr>
+<td>「원자로시설 등의 기술기준에 관한 규칙」 제2조 제1항 제10호 [7]</td>
+<td>핵연료허용손상한계 = 핵비등이탈률과 핵연료중심선온도 설계제한치</td>
+</tr>
+</tbody>
+</table>
+<!-- 기술기준규칙 제2조 제1항 제10호: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 -->
+<p>온도분포 식 자체는 출제 당시와 같습니다. 바뀐 것은 해석 입력입니다. 1999년 이전에 승인된 연료 성능 코드는 열전도도 연소 열화를 반영하지 않았습니다. 2009년 IN 이후 이 효과를 넣은 모델(예: Westinghouse PAD5)로 바꾸는 흐름이 생겼습니다. 기출 계산은 대부분 "k 일정"을 가정하므로, 답안에는 실제 k가 온도·연소도 함수라는 단서를 한 줄 붙이면 좋습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>연료 중심선 온도</th>
+<th>피복 표면 온도</th>
+<th>냉각재 온도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>지배 인자</td>
+<td>q′, k(T, 연소도), h_g</td>
+<td>q″, h(비등 시 T_sat 근처 고정)</td>
+<td>누적 열량, ṁc_p</td>
+</tr>
+<tr>
+<td>축방향 최고 위치</td>
+<td>중앙 바로 위</td>
+<td>중앙~출구 사이(조건에 따라 출구)</td>
+<td>출구</td>
+</tr>
+<tr>
+<td>관련 한계</td>
+<td>중심 용융(SAFDL)</td>
+<td>DNB(MDNBR), 산화</td>
+<td>포화 여유, 출구 온도</td>
+</tr>
+<tr>
+<td>감시 변수</td>
+<td>선출력(LPD)</td>
+<td>DNBR</td>
+<td>노심 출구 온도</td>
+</tr>
+</tbody>
+</table>
+<p>열속 q″는 피복 표면·DNB를, 선출력 q′는 중심온도를 정합니다. 둘을 섞으면 "펠릿 직경을 키우면 중심온도가 오른다"는 오답이 나옵니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 정상상태 반경 온도 강하 = 펠릿 + 간극 + 피복 + 막의 직렬 열저항, 축방향은 q′(z)와 냉각재 승온이 결정</li>
+<li><strong>펠릿</strong>: T_c − T_s = q′/(4πk)(균일 발열·일정 k), 반경 무관 → 한계는 선출력(kW/m)</li>
+<li><strong>k 변화</strong>: ∫_{T_s}^{T_c} k dT = q′/4π, UO₂ k는 약 1,770 °C까지 온도와 함께 감소, 연소로 감소(10 GWd/t당 약 5~7 %)</li>
+<li><strong>간극</strong>: h_g 수천~수만 W/m²·K, 신연료에서 ΔT 큼, 연소로 간극 폐쇄 시 감소</li>
+<li><strong>막</strong>: Dittus–Boelter, 발달 핵비등 시 벽면 과열도 수 °C</li>
+<li><strong>예시</strong>: 40 kW/m → ΔT 막 35, 피복 48, 간극 273, 펠릿 1,260 °C, 중심 약 1,926 °C</li>
+<li><strong>축방향</strong>: tan(πz*/H̃) = H̃/(π·ṁ·c_p·R′)(일정 c_p·R′) → 냉각재 출구, 피복 표면 중앙~출구, 중심선 중앙 바로 위</li>
+<li><strong>안전</strong>: 중심 용융 방지(SAFDL, SL), 저장열 → LOCA PCT, 도플러</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 반경방향 온도분포 도식(T_c → T_s → T_ci → T_co → T_b)과 직렬 열저항 식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-008-fuel-rod-temperature/sketch1_radial_temperature.avif"/><figcaption>답안지용 반경방향 온도분포 도식(T_c → T_s → T_ci → T_co → T_b)과 직렬 열저항 식</figcaption></figure>
+<figure class="article-image"><img alt="답안지용 축방향 온도분포 도식(세 곡선과 최고점 위치)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-008-fuel-rod-temperature/sketch2_axial_temperature.avif"/><figcaption>답안지용 축방향 온도분포 도식(세 곡선과 최고점 위치)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+<th>핵심 결과(검산용)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021년 4교시 6번</td>
+<td>cosine 출력의 축방향 온도분포</td>
+<td>냉각재 출구, 피복 중앙~출구, 중심선 중앙 바로 위</td>
+</tr>
+<tr>
+<td>2018년 2교시 2번</td>
+<td>연료봉·피복관 온도분포 유도</td>
+<td>T = T_m − q‴r²/4k_f, 피복 T_c + (q‴a²/2k_c)ln((a+b)/r)</td>
+</tr>
+<tr>
+<td>2014년 1교시 12번</td>
+<td>중심~냉각재 온도구배</td>
+<td>4구간 직렬 열저항</td>
+</tr>
+<tr>
+<td>제78회 2교시 2번</td>
+<td>원통 연료 중심온도</td>
+<td>873 + 1,179 = 2,052 K</td>
+</tr>
+<tr>
+<td>제68회 4교시 4번</td>
+<td>평판형 연료 열생성 제한</td>
+<td>Q ≤ ΔT·A_c/[X_f/4k_f + X_c/k_c + 1/h_c]</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>2018년 문항은 원본 문제지에서 체적열생성률 q‴, 중심온도 T_m, 피복 외면 T_c 기호를 복원했습니다. 간극이 없고 피복관 열전도도 k_c를 도입한다고 가정합니다.</li>
+<li>제78회 문항은 k 일정 가정입니다. 같은 조건에서 온도의존 k(수정 NFI, 신연료)를 쓰면 약 2,082 K(1,809 °C)입니다.</li>
+<li>제68회 평판은 X_f를 전체 두께(양면 냉각, 반두께 X_f/2)로 해석했습니다. X_f를 반두께로 보면 X_f/2k_f로 바뀝니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>N. E. Todreas, M. S. Kazimi, Nuclear Systems I: Thermal Hydraulic Fundamentals, 2nd ed., CRC Press (2011), 8·10장(연료봉 전도, 축방향 온도분포).</li>
+<li>M. M. El-Wakil, Nuclear Heat Transport, American Nuclear Society (1978).</li>
+<li>U.S. NRC, NUREG/CR-7024 "Material Property Correlations: Comparisons between FRAPCON-3.4, FRAPTRAN 1.4, and MATPRO" (2011) — 수정 NFI UO₂ 열전도도.</li>
+<li>U.S. NRC, Information Notice 2009-23 "Nuclear Fuel Thermal Conductivity Degradation"; Information Notice 2011-21(열전도도 열화의 ECCS 평가 영향).</li>
+<li>10 CFR Part 50 Appendix A, GDC 10; U.S. NRC, NUREG-0800 Standard Review Plan 4.2 "Fuel System Design"·4.4 "Thermal and Hydraulic Design".</li>
+<li>U.S. NRC, NUREG-1432 Standard Technical Specifications — Combustion Engineering Plants, Vol. 1, SL 2.1.1.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제2조 제1항 제10호. 국가법령정보센터.</li>
+</ol>

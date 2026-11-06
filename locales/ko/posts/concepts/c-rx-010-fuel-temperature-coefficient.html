@@ -1,0 +1,187 @@
+<figure class="article-image"><img alt="[개념 노트] 핵연료온도계수(도플러 계수, FTC) — 공명 확장이 만드는 즉발 음의 궤환 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-010-fuel-temperature-coefficient/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p>**핵연료온도계수(FTC, Fuel Temperature Coefficient, α_F)**는 감속재 온도를 고정한 채 (유효) 연료 온도가 1도 변할 때의 반응도 변화 α_F = ∂ρ/∂T_F입니다. 단위는 pcm/K(= pcm/°C) 또는 pcm/°F(1 pcm/°F = 1.8 pcm/°C)입니다. 원인이 U-238 등 공명흡수 핵종의 **도플러 확장(Doppler broadening)**이라 도플러 계수라고도 부릅니다. 출력 변화에 지연 없이 따라오므로 교재(Lamarsh)는 **즉발온도계수(prompt temperature coefficient)**라고 합니다[1]. 기출의 "Doppler Effect", "Doppler broadening", "연료온도계수", "핵연료온도계수(FTC)"는 모두 이 노트 하나로 정리합니다.</p>
+<p>답안 첫 줄은 "연료 온도 상승 시 U-238 공명흡수가 증가해 반응도가 감소하는 즉발 음의 궤환 계수로, 원자로 고유 안전성의 1차 방어선임"이면 충분합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>열운동이 공명을 넓힌다</h3>
+<p>공명 단면적 σ(E)는 표적 핵이 정지해 있다고 보고 Breit-Wigner 식으로 그립니다. 실제 핵은 열운동을 하므로 중성자와 핵의 상대에너지가 퍼지고, 이를 평균하면 공명은 <strong>낮고 넓어집니다</strong>. 퍼짐의 척도는 도플러 폭 Δ = √(4E₀kT/A)이고, 형상은 Voigt 함수 ψ(ξ, x)(ξ = Γ/Δ)로 계산합니다[2]. 중요한 사실은 <strong>면적 ∫σ dE가 온도와 무관하게 거의 일정</strong>하다는 점입니다.</p>
+<h3>면적은 그대로, 흡수는 늘어난다</h3>
+<figure class="article-image"><img alt="U-238 6.67 eV 공명의 온도별 단면적(300·900·1,500 K Voigt 계산, 면적 일정), 자기차폐 유효 공명적분 증가(σd 50·100 b), 흡수 반응률 식, U.S. EPR 도플러 온도계수 예시" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-010-fuel-temperature-coefficient/fig1_doppler_broadening_self_shielding.avif"/><figcaption>U-238 6.67 eV 공명의 온도별 단면적(300·900·1,500 K Voigt 계산, 면적 일정), 자기차폐 유효 공명적분 증가(σd 50·100 b), 흡수 반응률 식, U.S. EPR 도플러 온도계수 예시</figcaption></figure>
+<p>U-238 6.67 eV 공명(Γ = 24.5 meV)을 직접 계산하면 포획 봉우리는 0 K 22,556 b → 300 K 7,160 b → 900 K 4,554 b로 낮아지고, 반치폭은 24 meV → 169 meV로 넓어집니다. 꼬리까지 포함해 적분한 면적은 온도 간 차이가 0.01 % 미만입니다.</p>
+<p>그런데 왜 흡수가 늘어날까요? 연료봉 속에서 공명 에너지의 중성자속은 큰 흡수 때문에 움푹 패여 있습니다(<strong>에너지 자기차폐</strong>). 2004년 제73회 2교시 1번이 바로 이 부분을 묻습니다. 흡수 반응률은 다음과 같습니다.</p>
+<ul>
+<li>F_a = ∫φ(E)Σ_a(E)dE = φ_av·∫Σ_a(E)dE</li>
+<li>∫Σ_a dE는 해당 공명의 면적이므로 온도와 거의 무관합니다.</li>
+<li>φ_av는 Σ_a로 가중한 공명 안 평균 중성자속입니다. 봉우리가 낮아지면 패임이 얕아져 φ_av가 커집니다.</li>
+<li>따라서 F_a가 커지고, 공명이탈확률 p가 줄어 <strong>α_F &lt; 0</strong>입니다.</li>
+</ul>
+<p>자기차폐가 없는 무한 희석 조건(이 모델)에서는 φ_av가 변하지 않아 도플러 효과도 사라집니다. 단일 공명 NR 근사 I = ∫σγσ_d/(σ_t + σ_d) dE/E로 계산하면 희석 단면적 σ_d = 50 b일 때 유효 공명적분이 300 → 900 K에서 5.2 % 늘었습니다(100 b이면 8.6 %).</p>
+<h3>교재 근사식과 온도 의존성</h3>
+<p>Lamarsh는 공명적분을 I(T) = I(300 K)[1 + β_I(√T − √300)]로 두고 다음 식을 유도합니다[1].</p>
+<ul>
+<li>α_F = −[β_I/(2√T)]·ln[1/p(300 K)]</li>
+<li>UO₂: β_I = 61×10⁻⁴ + 0.94×10⁻²/(a·ρ_f) (a 반경 cm, ρ_f 연료 밀도 g/cm³)</li>
+</ul>
+<p>PWR 펠릿(a = 0.41 cm, ρ_f = 10.4 g/cm³, p = 0.87)이면 900 K에서 약 −1.9 pcm/K입니다. 크기는 1/√T에 비례해 <strong>고온일수록 작아집니다</strong>(확장이 포화). 다만 부호는 항상 음입니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>대표 크기와 연소 의존성</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값(예시)</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>도플러 온도계수</td>
+<td>−1.8 ~ −1.3 pcm/°F</td>
+<td>U.S. EPR FSAR 표 4.3-2[3]</td>
+</tr>
+<tr>
+<td>도플러 출력계수</td>
+<td>−8.8 ~ −7.9 pcm/%power(하한)</td>
+<td>같은 표</td>
+</tr>
+<tr>
+<td>NRC 공개 W형 매뉴얼</td>
+<td>−1.9 ~ −1.2 pcm/°F 범위 그림</td>
+<td>NRC HRTD W형 매뉴얼 2.1[4]</td>
+</tr>
+</tbody>
+</table>
+<p>대형 PWR은 대략 −1 ~ −2 pcm/°F(−2 ~ −4 pcm/K) 범위로 기억하면 됩니다. 연소가 진행되면 1.06 eV 거대 공명을 가진 <strong>Pu-240</strong>이 쌓여 온도계수는 더 음이 됩니다. 반면 도플러 <strong>출력</strong>계수(pcm/%power)는 펠릿 팽윤과 피복관 크리프로 간극이 닫혀 같은 출력에서 연료 온도 상승폭이 줄어드는 효과(NRC 공개 W형 매뉴얼: 0→100 % 상승 BOL 약 1,000 °F, EOL 약 800 °F[4])가 커서 덜 음이 될 수 있습니다. 답안에서는 단위로 둘을 구분해야 합니다. MOX 노심은 Pu-240이 많아 일반적으로 더 음입니다.</p>
+<h3>즉발 궤환과 반응도 사고</h3>
+<p>발열은 연료 안에서 일어나므로 연료 온도는 출력과 동시에 오릅니다. 그래서 FTC는 제어봉 이탈 같은 반응도 사고에서 출력 첨두를 처음 꺾는 궤환입니다. 감속재 궤환은 열이 냉각재로 전달되는 수 초 뒤에야 작동합니다. 즉발임계를 넘는 과도에서는 FTC가 펄스 폭과 에너지를 제한하는 주된 궤환입니다.</p>
+<h3>출력 증가 시 반응도 변화(제71회 4교시 3번)</h3>
+<p>펠릿 발열이 균일하면 T(r) = T_s + q‴(a² − r²)/(4k_f), q′ = πa²q‴입니다.</p>
+<ul>
+<li>중심 − 표면: T_c − T_s = q′/(4πk_f)</li>
+<li>체적 평균 − 표면: T̄_F − T_s = q′/(8πk_f)</li>
+<li>100 → 110 %: Δq′ = 0.1q′ → ΔT̄_F = 0.1q′/(8πk_f)</li>
+<li><strong>Δρ = α_T·ΔT̄_F = α_T·0.1q′/(8πk_f)</strong></li>
+</ul>
+<p>예를 들어 q′ = 18 kW/m, k_f = 3 W/m·K, α_T = −2.5 pcm/K이면 ΔT̄_F ≈ 24 K, Δρ ≈ −60 pcm입니다. 펠릿 내부 전도분만 본 값이며 간극·피복 온도 상승은 따로 더합니다.</p>
+<h3>출력계수·출력결손과의 연결</h3>
+<p>ITC = MTC + FTC, 출력계수 = MTC·dT_M/dP + FTC·dT_F/dP입니다. 2020년 3교시 1번은 FTC = −12 − (−10) = −2 pcm/K, 2026년 3교시 2번은 −1 pcm/K로 구합니다. 0 → 100 % 출력의 도플러 몫 결손은 수백 ~ 약 1,000 pcm(NRC 공개 W형 매뉴얼 EOL 100 % 약 −1,025 pcm 예제[4])이고, 출력 감소·정지 때 양의 반응도로 돌아옵니다.</p>
+<h2>규제·기준 근거</h2>
+<ul>
+<li><strong>10 CFR 50 부록 A GDC 11(원자로 고유 보호)</strong>[5]: 출력운전 범위에서 즉발 고유 핵궤환의 순효과가 급격한 반응도 증가를 보상하는 경향을 가져야 합니다.</li>
+<li><strong>「원자로시설 등의 기술기준에 관한 규칙」 제18조(원자로의 고유보호)</strong>: "노심 및 관련 냉각계통은 출력운전범위 안에서 … 급격한 반응도 증가가 자연적으로 억제되도록 설계"해야 합니다(현행 원안위규칙 제37호 원문 확인)[6].<!-- 기술기준규칙 제18조: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 --></li>
+<li><strong>NUREG-0800 SRP 4.3</strong>[7]: 반응도계수 계산과 불확실도를 심사합니다. 안전해석은 가열·출력 증가 사건에 가장 덜 음인 값, 냉각 사건 재임계에 가장 음인 값을 씁니다.</li>
+<li><strong>반응도 사고 판정기준</strong>: RG 1.236(2020)[8]이 연료 엔탈피 상승 기준을 두며, 도플러 궤환이 그 크기를 제한합니다.</li>
+<li><strong>운영</strong>: FTC는 직접 측정하지 않고 계산값을 씁니다. 기동 노물리시험에서 ITC를 재고 MTC = ITC − FTC로 분리합니다. MTC와 달리 FTC 자체의 LCO는 없습니다.</li>
+<li><strong>IAEA</strong>: SSR-2/1(Rev.1, 2016) 노심 설계 요건, SSG-52(2019)[9].</li>
+<li><strong>출제 당시 대비</strong>: 제71·73·81회(2003~2007) 이후 개념·부호 판정은 같습니다. 국내 규칙은 2001년 전면 개정 체계(제18조)가 원자력안전위원회규칙으로 이어졌습니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>FTC(도플러)</th>
+<th>MTC</th>
+<th>공명흡수</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>변수</td>
+<td>연료 온도</td>
+<td>감속재 온도(밀도)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>메커니즘</td>
+<td>공명 확장 + 자기차폐</td>
+<td>감속 능력·흡수 변화</td>
+<td>공명 에너지 포획</td>
+</tr>
+<tr>
+<td>응답</td>
+<td>즉발</td>
+<td>수 초 지연</td>
+<td>—</td>
+</tr>
+<tr>
+<td>부호</td>
+<td>항상 음</td>
+<td>BOC 양 가능</td>
+<td>확률 1 − p</td>
+</tr>
+<tr>
+<td>크기(PWR 예)</td>
+<td>−1 ~ −2 pcm/°F</td>
+<td>+수 ~ −45 pcm/°F</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>도플러 "온도계수"(pcm/°F)와 도플러 "출력계수"(pcm/%power)도 짝으로 헷갈립니다. 후자는 dT_F/dP를 곱한 값이라 간극 열전도 변화에 좌우됩니다.</p>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] Doppler broadening(도플러 확장)과 핵연료온도계수</strong></p>
+<ol>
+<li><strong>정의</strong>: 연료 온도↑ → 핵 열운동 → 중성자-핵 상대에너지 분산 → <strong>공명 봉우리↓·폭↑</strong>, 면적 ∫σdE 일정</li>
+<li><strong>척도</strong>: 도플러 폭 Δ = √(4E₀kT/A), 형상 ψ(ξ, x), ξ = Γ/Δ</li>
+<li><strong>자기차폐 완화</strong>: 연료 내 공명 중성자속 패임 감소 → <strong>φ_av↑</strong></li>
+<li><strong>흡수 증가</strong>: F_a = φ_av∫Σ_a dE ↑ → <strong>p↓</strong> → 반응도↓</li>
+<li><strong>FTC</strong>: α_F = ∂ρ/∂T_F &lt; 0, PWR 약 −1 ~ −2 pcm/°F</li>
+<li><strong>즉발성</strong>: 발열 = 연료 → 지연 없음 → RIA 첫 첨두 종결</li>
+<li><strong>온도 의존</strong>: ∝ 1/√T, 고온일수록 작아짐</li>
+<li><strong>연소 의존</strong>: Pu-240 축적 → 온도계수 더 음 (출력계수는 간극 폐쇄로 덜 음 가능)</li>
+<li><strong>근거</strong>: GDC 11, 기술기준규칙 제18조(고유보호)</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: 저온·고온 공명 봉우리(높이↓·폭↑·면적 일정)와 T_F↑ → p↓ 인과 사슬" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-010-fuel-temperature-coefficient/sketch1_doppler_resonance_hand.avif"/><figcaption>답안용 도식: 저온·고온 공명 봉우리(높이↓·폭↑·면적 일정)와 T_F↑ → p↓ 인과 사슬</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>연도-교시-번호</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2003(제71회)-1-12</td>
+<td>Doppler Effect</td>
+</tr>
+<tr>
+<td>2003(제71회)-4-3</td>
+<td>출력 110 % 증가 시 반응도 변화(α_T, k_f, q′)</td>
+</tr>
+<tr>
+<td>2004(제73회)-2-1</td>
+<td>즉발온도계수 부호 판정(F_a = φ_av∫Σ_a dE)</td>
+</tr>
+<tr>
+<td>2007(제81회)-1-9</td>
+<td>Doppler broadening</td>
+</tr>
+<tr>
+<td>2020-3-1</td>
+<td>출력계수 계산(MTC·FTC)</td>
+</tr>
+<tr>
+<td>2026-3-2</td>
+<td>출력계수 계산(MTC·FTC)</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>J. R. Lamarsh, A. J. Baratta, <em>Introduction to Nuclear Engineering</em>, 3rd ed., Prentice Hall (2001), 7장(온도계수·도플러 효과).</li>
+<li>J. J. Duderstadt, L. J. Hamilton, <em>Nuclear Reactor Analysis</em>, Wiley (1976), 공명흡수·도플러 확장 장.</li>
+<li>AREVA NP, U.S. EPR Final Safety Analysis Report Tier 2, Rev. 5, Table 4.3-2, NRC ADAMS ML13220A678.</li>
+<li>U.S. NRC, HRTD Westinghouse Technology Systems Manual, Section 2.1, Rev. 1208, NRC ADAMS ML11223A207.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criterion 11 "Reactor inherent protection".</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제18조. 국가법령정보센터.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.3 "Nuclear Design".</li>
+<li>U.S. NRC, Regulatory Guide 1.236 "Pressurized-Water Reactor Control Rod Ejection and Boiling-Water Reactor Control Rod Drop Accidents" (2020).</li>
+<li>IAEA, SSR-2/1 (Rev. 1) <em>Safety of Nuclear Power Plants: Design</em> (2016); SSG-52 <em>Design of the Reactor Core for Nuclear Power Plants</em> (2019).</li>
+</ol>

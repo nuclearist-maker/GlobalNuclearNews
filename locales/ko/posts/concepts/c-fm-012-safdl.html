@@ -1,0 +1,204 @@
+<figure class="article-image"><img alt="[개념 노트] 허용핵연료설계제한치(SAFDL) — 정상운전·예상운전과도에서 연료봉이 깨지지 않게 긋는 설계 한계 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-012-safdl/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>허용핵연료설계제한치(SAFDL, Specified Acceptable Fuel Design Limits)는 정상운전과 예상운전과도(AOO) 동안 핵연료 손상을 방지하기 위해 DNBR, 연료 중심선 온도, 피복관 변형률·내압 등에 정한 설계 한계입니다. 노심·냉각·제어·보호계통은 이를 넘지 않도록 여유를 두고 설계해야 합니다(GDC 10, 기술기준규칙 제17조 제1항).</strong> [1][2]</p>
+<p>국내 규칙 용어는 "연료허용 손상한계"입니다. 「원자로시설 등의 기술기준에 관한 규칙」 제2조 제1항 제10호는 이를 "정상운전 및 예상운전과도 동안에 핵연료의 손상을 방지하기 위하여 핵비등이탈률과 핵연료중심선온도 등에 대하여 설정하는 설계제한치"로 정의합니다 [2]. 기출 표기는 연도마다 다르지만(SAFDL, 연료허용 손상한계, 핵연료봉 설계기준, 허용핵연료설계제한치) 모두 같은 대상입니다. 2023년 시험지의 "Specific"은 원어 "Specified"의 오기로 보시면 됩니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>무엇을 막는가 — 세 범주와 적용 상태</h3>
+<p>NRC SRP 4.2(Rev.3, 2007)는 연료계통 설계기준을 세 범주로 나눕니다 [3].</p>
+<table>
+<thead>
+<tr>
+<th>범주</th>
+<th>적용 상태</th>
+<th>요구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>연료계통 손상</td>
+<td>정상운전(AOO 포함)</td>
+<td>치수가 운전 공차 안, 기능이 안전해석 가정 아래로 떨어지지 않음</td>
+</tr>
+<tr>
+<td>연료봉 파손</td>
+<td>정상운전·AOO·가상사고</td>
+<td>정상·AOO에서는 특정 원인에 의한 파손 불허, 사고에서는 파손봉 수를 선량해석에 반영</td>
+</tr>
+<tr>
+<td>냉각성</td>
+<td>가상사고</td>
+<td>냉각 가능한 봉다발 형상, 제어봉 삽입성 유지</td>
+</tr>
+</tbody>
+</table>
+<p>GDC 10이 말하는 SAFDL은 앞의 두 범주 중 <strong>정상운전·AOO에 적용하는 손상·파손 한계</strong>입니다. 파손 범주의 사고 시 파손 평가는 SAFDL이 아니라 사고 허용기준 쪽입니다. 파손은 "연료봉 기밀성 상실"로 정의됩니다. SRP도 소수 누설봉은 피할 수 없고 정화계통이 처리한다고 인정하므로, "SAFDL 불초과"는 "해당 사건 때문에 연료가 손상·파손되지 않는다"는 뜻으로 쓰는 것이 정확합니다. 사고 시 냉각성 기준(PCT·산화량 등)은 가상사고 허용기준이므로 정상·AOO의 SAFDL과 구분합니다.</p>
+<h3>범주별 구체 기준</h3>
+<p><strong>연료계통 손상(설계 해석으로 확인)</strong></p>
+<ul>
+<li>응력·변형: 구조 부재는 ASME III 방식 응력한계. Westinghouse형(AP1000) 예로 피복관 체적평균 Von Mises 유효응력 &lt; 0.2 % 오프셋 항복응력(온도·조사 영향 반영) [4]</li>
+<li>피로: 누적 사용계수 &lt; 1. 설계 피로곡선은 응력진폭 안전계수 2와 사이클 수 안전계수 20 중 보수적인 쪽</li>
+<li>프레팅 마모: 그리드 스프링 이완을 고려해 허용 마모량 제한</li>
+<li>산화·수소화·크러드: 부품별 한계를 기계시험(강도·연성)과 조사 자료로 설정. 수치는 연료·호기별(예: 산화막 100 μm 제한을 둔 CE형 호기) <!-- 확인필요: 산화막·수소 한계의 국내 PLUS7 연료 수치 원문 미확인, 예시만 기재 --></li>
+<li>봉 내압: 정상운전 중 공칭 계통압력 미만. 넘는다면 최소한 피복관 바깥 크립으로 간극이 다시 열리는 lift-off가 없고, 수소화물이 반경방향으로 재배향되지 않고, 과압봉의 과도 DNB 추가 파손을 평가해야 함</li>
+<li>치수 변화(봉 휨·조사성장), 집합체 누름력, 제어봉 삽입성</li>
+</ul>
+<p><strong>연료봉 파손(정상·AOO에서 불허)</strong></p>
+<ul>
+<li><strong>피복관 과열</strong>: MDNBR ≥ CHF 상관식별 95/95 한계. SRP는 DNB 자체를 파손 메커니즘이 아니라 보수적 대리 기준으로 봅니다.</li>
+<li><strong>펠릿 과열</strong>: 중심선 용융 불허. 비조사 UO₂ 융점 5,080 °F(2,804 °C)에서 10 GWd/tU마다 58 °F(32 °C)씩 낮춰 적용합니다 [4]. 용융 연료가 이동해 피복관에 닿거나 국부 고온점을 만드는 것을 막으려는 것입니다.</li>
+<li><strong>과도 변형률</strong>: 피복관 균일 변형률(탄성+비탄성) ≤ 1 %. 과도로 생긴 변형만 세고 정상 크립다운·조사성장은 뺍니다.</li>
+<li><strong>피복관 붕괴</strong>: 고밀화로 생긴 축방향 간극에 피복관이 납작해지면 파손으로 간주합니다. 펠릿 고밀화·축방향 간극·피복관 크립을 평가해 배제하고, He 가압이 이를 돕습니다.</li>
+<li><strong>1차 수소화</strong>: 제조 시 연료 수분 ≤ 20 ppm.</li>
+</ul>
+<figure class="article-image"><img alt="SAFDL 대표 기준 매트릭스(연료계통 손상·연료봉 파손 범주별 기구·판정기준·확보 수단, 노심 SL·CPC 트립·LCO 대응)와 가상사고 냉각성 허용기준 구분, 지지격자·절개 연료봉 부위 대응" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-012-safdl/fig1_safdl_criteria_matrix.avif"/><figcaption>SAFDL 대표 기준 매트릭스(연료계통 손상·연료봉 파손 범주별 기구·판정기준·확보 수단, 노심 SL·CPC 트립·LCO 대응)와 가상사고 냉각성 허용기준 구분, 지지격자·절개 연료봉 부위 대응</figcaption></figure>
+<h2>원전에서의 의미</h2>
+<h3>SAFDL → 노심 SL → LSSS → LCO</h3>
+<p>SAFDL은 설계 단계의 한계이고, 운전 단계에서는 대표 두 축이 운영기술지침서로 옮겨집니다.</p>
+<ol>
+<li><strong>노심 안전제한치(SL)</strong>: MDNBR ≥ 95/95 한계(예: APR1400 KCE-1 1.29 [6]), 중심선 최고온도 &lt; 용융 한계.</li>
+<li><strong>LSSS(트립)</strong>: CE형(OPR1000·APR1400)은 CPC가 DNBR과 국부출력밀도(LPD)를 실시간 계산해 저 DNBR·고 LPD 트립을 냅니다. 설정치는 계산·측정 불확도와 응답시간을 반영해 SL보다 보수 쪽에 둡니다. 저 DNBR 트립은 SL보다 높은 DNBR에서, 고 LPD 트립은 한계보다 낮은 LPD에서 작동합니다.</li>
+<li><strong>LCO</strong>: 선출력(LHR), DNBR 여유, 축방향 출력분포(ASI), 방위각 기울기, 제어봉 삽입한계, RCS DNB 변수(압력·온도·유량) [5]. COLSS가 노내 계측기로 여유를 감시합니다.</li>
+</ol>
+<p>모든 SAFDL은 먼저 연료 설계·안전해석으로 입증합니다. FSAR 15장의 AOO 해석은 LCO 경계의 초기조건에서 출발해 해석한계에서 트립이 걸렸을 때 MDNBR과 첨두 선출력이 한계를 넘지 않음을 보입니다. 대표 열적 한계(DNB·중심 용융)는 여기에 더해 운전 중 SL·LSSS·LCO로 관리되고, 변형률·내압·피로·산화는 연료 설계 해석과 연소도 한계, 출력 상승률 제한으로 관리됩니다. LCO는 초기조건과 운전영역을 확보하고 LSSS는 한계 도달 전에 보호 작동하며, 둘이 함께 SL 준수를 뒷받침하는 관계입니다.</p>
+<h3>이웃 개념 요약</h3>
+<ul>
+<li><strong>DNBR</strong>: q″CHF/q″의 최소(MDNBR). 상관식 M/P 분포와 계통 불확도로 95/95 한계를 정합니다. 과거 1.30은 W-3 시대 값입니다.</li>
+<li><strong>선출력 기준선</strong>: 정상운전 첨두·LCO 약 42~45 kW/m와 용융 방지 SAFDL(설계별 약 59~69 kW/m, CE형 21 kW/ft = 68.9 kW/m)은 다른 선입니다.</li>
+<li><strong>ECCS 허용기준</strong>: PCT 1,204 °C, ECR 17 %, 수소 1 %, 냉각 가능 형상, 장기 냉각. 가상사고 냉각성 기준이며 SAFDL이 아닙니다.</li>
+<li><strong>온도분포·CPC</strong>: 펠릿 중심선 온도 계산과 CPC·COLSS의 내부 구성은 별도 개념이며, 여기서는 SAFDL과 연결되는 판정·보호 기능만 다룹니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50 App. A GDC 10</td>
+<td>정상운전·AOO에서 SAFDL 비초과, 적절한 여유</td>
+</tr>
+<tr>
+<td>GDC 20·25</td>
+<td>AOO 시 보호계통 자동 작동, 반응도제어 단일고장 시에도 SAFDL 비초과</td>
+</tr>
+<tr>
+<td>기술기준규칙(원안위규칙 제37호, 2026.3.30) 제2조 제1항 제10호, 제17조 제1항</td>
+<td>연료허용 손상한계 정의, 여유를 둔 노심·계통 설계</td>
+</tr>
+<tr>
+<td>NUREG-0800 SRP 4.2 Rev.3(2007) II.1.A~C</td>
+<td>손상·파손·냉각성 기준</td>
+</tr>
+<tr>
+<td>SRP 4.4</td>
+<td>DNBR·열수력 설계</td>
+</tr>
+<tr>
+<td>RG 1.236(2020)</td>
+<td>RIA 파손·냉각성 기준(2007 잠정 기준 대체) [7]</td>
+</tr>
+<tr>
+<td>KINS 안전심사지침 4.2·4.4</td>
+<td>국내 동등 심사 체계</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: KINS 안전심사지침 4.2 현행 판 조항 원문 미열람 -->
+<p>출제 당시(2008·2016·2017·2023)와 비교하면 정의와 GDC 10은 그대로입니다. 바뀐 것은 근거 법령(원자력법 → 2011년 원자력안전법 체계), RIA 기준의 정식화(2020 RG 1.236), DNBR 한계를 상관식별 값으로 쓰는 관행, 일부 CE형 호기의 첨두 선출력 SL → 연소 의존 중심온도 SL 전환입니다. 10 CFR 50.46c는 2024년 반려되어 현행 50.46(b)가 유지됩니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>SAFDL</th>
+<th>노심 SL</th>
+<th>LSSS</th>
+<th>사고 허용기준</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>단계</td>
+<td>설계</td>
+<td>운영기술지침서</td>
+<td>보호계통 설정치</td>
+<td>안전해석</td>
+</tr>
+<tr>
+<td>대상 상태</td>
+<td>정상·AOO</td>
+<td>모드 1·2</td>
+<td>모드 1·2 트립</td>
+<td>설계기준사고</td>
+</tr>
+<tr>
+<td>연료 상태</td>
+<td>파손 없음</td>
+<td>파손 없음</td>
+<td>SL 도달 전 정지</td>
+<td>일부 파손 허용, 냉각 가능</td>
+</tr>
+<tr>
+<td>예</td>
+<td>DNBR 95/95, 비용융, 변형률 1 %</td>
+<td>MDNBR ≥ 1.29</td>
+<td>저 DNBR 트립</td>
+<td>PCT 1,204 °C, RIA 엔탈피</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 정상운전·AOO 중 연료 손상 방지를 위해 DNBR·중심선 온도 등에 정한 설계 한계(규칙 제2조①10호)</li>
+<li><strong>근거</strong>: GDC 10·20·25, 기술기준규칙 제17조①(적절한 여유도), SRP 4.2·4.4</li>
+<li><strong>목적</strong>: 1차 방벽(피복관) 건전성 유지, AOO 후 운전 재개 가능</li>
+<li><strong>대표 기준</strong>: MDNBR ≥ 95/95 한계, 중심선 비용융(첨두 선출력 약 59~69 kW/m 설계별)</li>
+<li><strong>기타 기준</strong>: 피복관 응력 &lt; 항복, 균일 변형률 ≤ 1 %, 피로 사용계수 &lt; 1, 봉 내압(lift-off 없음), 산화·수소화·프레팅, 피복관 붕괴 없음</li>
+<li><strong>범주(SRP 4.2)</strong>: 손상(정상) / 파손(정상·AOO 불허, 사고 선량 반영) / 냉각성(사고)</li>
+<li><strong>도달 방지</strong>: 설계·안전해석으로 입증 + 운전 중 노심 SL, CPC 저 DNBR·고 LPD 트립(LSSS), LCO(LHR, DNBR 여유, ASI, 제어봉 삽입한계, DNB 변수), COLSS 감시</li>
+<li><strong>적용 모드</strong>: 노심 SL은 모드 1·2(임계·출력 운전, STS 예), 모드 3~6은 유의한 열출력 없음</li>
+<li><strong>구분</strong>: 사고(Cond III·IV)는 파손 허용 + 냉각성·선량 기준</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 도식: 정상운전·AOO는 SAFDL 불초과, 설계기준사고는 사건별 허용기준, LCO·LSSS가 노심 SL 준수를 지원" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-012-safdl/sketch1_safdl_plant_conditions.avif"/><figcaption>답안지용 도식: 정상운전·AOO는 SAFDL 불초과, 설계기준사고는 사건별 허용기준, LCO·LSSS가 노심 SL 준수를 지원</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023년 4교시 2번</td>
+<td>OPR1000 SAFDL 설정 목적·도달 방지 수단·적용 운전모드</td>
+</tr>
+<tr>
+<td>2017년 3교시 4번</td>
+<td>ANS Condition Ⅰ·Ⅱ에서 핵연료봉 설계기준</td>
+</tr>
+<tr>
+<td>2016년 1교시 4번</td>
+<td>연료허용 손상한계(SAFDL)</td>
+</tr>
+<tr>
+<td>2008년 1교시 1번</td>
+<td>SAFDL</td>
+</tr>
+</tbody>
+</table>
+<p>2023년 문항의 다항 "적용 운전모드 및 이유"는 노심 SL의 적용 모드로 답하면 됩니다 [5]. 원자로가 임계인 모드 1·2에서만 DNB·중심 용융이 문제가 되고 자동 보호기능도 이 모드에서 요구됩니다. 모드 3~6은 미임계로 붕괴열 수준이라 적용하지 않습니다. 2017년 문항은 Condition Ⅰ·Ⅱ가 국내 정상운전·AOO에 대응하므로 "범주별 구체 기준"의 손상·파손 항목을 쓰고, Condition Ⅲ·Ⅳ와의 차이(파손 허용·냉각성)를 결론에 붙이면 됩니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A "General Design Criteria for Nuclear Power Plants", Criterion 10·20·25. NRC 웹(eCFR).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제2조제1항제10호·제17조제1항. 국가법령정보센터.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.2 "Fuel System Design", Rev. 3 (2007.3), II.1.A~C, NRC ADAMS ML070740002.</li>
+<li>Westinghouse, AP1000 Design Control Document Tier 2, Rev. 18, Ch. 4.2 "Fuel System Design", NRC ADAMS ML103480531.</li>
+<li>U.S. NRC, NUREG-1432 Standard Technical Specifications — Combustion Engineering Plants, 2.1.1 Reactor Core SLs 및 Bases(판 미기재).</li>
+<li>KHNP·KEPCO NF, KCE-1 CHF 상관식 토픽 보고서 공개본, APR1400-F-C-NR-12001-NP (APR1400 설계인증 제출).</li>
+<li>U.S. NRC, Regulatory Guide 1.236 "Pressurized-Water Reactor Control Rod Ejection and Boiling-Water Reactor Control Rod Drop Accidents" (2020).</li>
+</ol>

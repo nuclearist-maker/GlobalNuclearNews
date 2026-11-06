@@ -314,6 +314,10 @@ def main() -> int:
         print(r.stdout, r.stderr)
         print("BLOCKED — the site build failed (missing linked file?). Nothing was pushed.")
         return 1
+    for checker in ('check_search_discovery.py', 'check_bilingual.py'):
+        if subprocess.run([sys.executable, str(ROOT/'tools'/checker)], cwd=ROOT).returncode:
+            print('BLOCKED — public bilingual validation failed. Nothing was pushed.')
+            return 1
     for line in r.stdout.splitlines():
         if not line.startswith("  "):
             print(line)
@@ -330,7 +334,7 @@ def main() -> int:
         return 0
 
     git = lambda *a: subprocess.run(["git", *a], cwd=ROOT, check=True)
-    git("add", "-A", "posts", "assets")
+    git("add", "-A", "posts", "assets", "locales")
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode == 0:
         print("Nothing to commit.")
         return 0

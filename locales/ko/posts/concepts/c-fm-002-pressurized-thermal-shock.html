@@ -1,0 +1,196 @@
+<figure class="article-image"><img alt="[개념 노트] 가압열충격(PTS) — 과냉각 뒤 재가압이 조사취화된 원자로용기를 위협하는 원리 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-002-pressurized-thermal-shock/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p>**가압열충격(PTS, Pressurized Thermal Shock)**은 가압경수로 원자로용기 내면이 급격히 과냉각되는 동시에, 또는 그 직후에 높은 계통 압력이 걸리는 사건입니다. 10 CFR 50.61(a)(2)는 이를 "원자로용기에 심한 과냉각(열충격)을 일으키고, 상당한 압력이 동시에 또는 뒤이어 걸리는 사건·과도"로 정의합니다[1]. 중성자 조사로 취화된 노심대(beltline) 재료에서는 이때 내면 결함이 불안정하게 성장할 수 있습니다. 조사취화는 정의 요소가 아니라 파괴 여유를 줄이는 재료 조건입니다.</p>
+<p>답안 첫 줄은 "과냉각 + 재가압(사건)에 조사취화(재료 조건)가 겹쳐 K_I가 K_IC를 넘을 수 있는 원자로용기 취성파괴 위험"이면 충분합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>세 요인의 결합(사건 요소 2 + 재료 조건 1)</h3>
+<ol>
+<li><strong>내면 급랭</strong>: 차가운 안전주입수나 2차측 과냉으로 내면 온도가 빠르게 떨어집니다. 내면은 수축하려 하지만 따뜻한 바깥 층이 붙잡아 <strong>내면에 인장 열응력</strong>, 외면에 압축응력이 생깁니다.</li>
+<li><strong>압력 유지·재가압</strong>: 고압안전주입펌프, 충전펌프, 가압기 히터, 개방 고착 밸브의 재닫힘으로 압력이 다시 오르면 원주응력이 더해집니다.</li>
+<li><strong>조사취화(재료 조건)</strong>: 노심대 재료는 고속중성자(E &gt; 1 MeV) 조사로 기준무연성천이온도 RTNDT가 올라 있습니다. 같은 온도에서도 파괴인성이 낮은 하부 선반(lower shelf) 쪽에 놓입니다.</li>
+</ol>
+<p>RTNDT는 낙하중시험(NDT)과 샤르피 시험으로 정한 재료의 기준온도이고, 조사 후에는 초기값에 이동량 ΔRTNDT(Cu·Ni 함량과 플루언스의 함수)와 여유 M을 더합니다.</p>
+<h3>파괴역학 판정: K_I와 K_IC의 경주</h3>
+<p>내면 표면 균열의 선단에서 구동력과 저항을 비교합니다.</p>
+<ul>
+<li>구동력 <strong>K_I = K_I(열응력) + K_I(압력)</strong>: 과냉 초반 열응력으로 커지고, 재가압 때 다시 뛰어오릅니다.</li>
+<li>저항 <strong>K_IC(T − RTNDT)</strong>: ASME Sec. XI 하한곡선 K_IC = 36.5 + 22.783·exp[0.036(T − RTNDT)] MPa√m(T, °C)[5]. 균열 선단 온도가 낮을수록, RTNDT가 높을수록 작아집니다.</li>
+<li><strong>K_I ≥ K_IC</strong>이면 균열이 개시되고, 더 깊은 따뜻한 층에서 정지인성 K_Ia를 넘지 못하면 정지합니다. 정지하지 못하면 관통 균열로 이어질 수 있습니다.</li>
+</ul>
+<p>같은 과냉 경로라도 재료 상태가 결과를 가릅니다. 균열 선단 100 °C에서 RTNDT = 0 °C인 초기 재료는 하한곡선 값이 그림에서 가정한 상한(220 MPa√m)을 넘을 만큼 여유가 크지만, RTNDT = 132 °C(선별기준 수준의 가정값)로 취화된 재료는 K_IC가 약 44 MPa√m로 떨어집니다. 교차는 가정한 결함에서 균열이 개시될 수 있다는 뜻이지, 곧바로 관통 파괴를 뜻하지는 않습니다.</p>
+<figure class="article-image"><img alt="균열 선단 온도-K 그래프: 같은 K_I 경로가 초기 재료(RTNDT 0 °C) K_IC와는 만나지 않고 예시 조사취화 재료(132 °C)와는 재가압 구간에서 교차, 과냉·재가압 시간 이력과 10 CFR 50.61 선별기준 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-002-pressurized-thermal-shock/fig1_pts_k_crossing.avif"/><figcaption>균열 선단 온도-K 그래프: 같은 K_I 경로가 초기 재료(RTNDT 0 °C) K_IC와는 만나지 않고 예시 조사취화 재료(132 °C)와는 재가압 구간에서 교차, 과냉·재가압 시간 이력과 10 CFR 50.61 선별기준 카드</figcaption></figure>
+<p>축방향 결함은 원주응력(축방향 응력의 약 2배)을 정면으로 받아 원주방향 결함보다 불리합니다. 선별기준이 축방향 용접 270 °F, 원주방향 용접 300 °F로 다른 이유입니다. 고온에서 먼저 하중을 받은 균열은 K_I가 줄어드는 동안 잘 개시되지 않는 웜 프리스트레스(WPS) 효과가 있어, <strong>재가압으로 K_I가 다시 오르는 순간</strong>이 특히 위험합니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>PTS를 유발하는 사고 유형</h3>
+<ol>
+<li><strong>주증기관 파단(MSLB)·2차측 증기 유출</strong>: 터빈우회·대기방출밸브나 주증기 안전밸브 개방 고착 포함. 1차측이 과냉되어 수축·감압 → 안전주입 → 재가압.</li>
+<li><strong>소형 냉각재상실사고(SBLOCA)</strong>: 차가운 주입수와 루프 유동 정체로 저온관·강수부에 냉수 플룸이 생깁니다.</li>
+<li><strong>가압기 안전밸브·PORV 개방 고착 후 재닫힘</strong>: 감압·과냉 뒤 밸브가 닫히면 재가압됩니다.</li>
+<li><strong>급수 과다·보조급수 과다</strong>: 증기발생기를 통한 1차측 과냉.</li>
+<li><strong>증기발생기 전열관 파단(SGTR)</strong>: 냉각·감압 조치와 재가압 가능성.</li>
+<li><strong>중형 LOCA</strong>: 냉수 대량 주입(50.61a 재평가에서 1차측 배관 파단, 재닫히는 1차측 밸브, 주증기관 파단이 지배 사건군[3]).</li>
+</ol>
+<h3>역효과를 내는 설비</h3>
+<table>
+<thead>
+<tr>
+<th>설비</th>
+<th>역효과 이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>고압안전주입·충전펌프</td>
+<td>체절수두가 높아 냉각 중 재가압</td>
+</tr>
+<tr>
+<td>RWST·IRWST·SIT</td>
+<td>저온 붕산수 주입으로 내면 급랭</td>
+</tr>
+<tr>
+<td>RCP 정지</td>
+<td>루프 유동 정체 → 국부 냉수 플룸</td>
+</tr>
+<tr>
+<td>가압기 히터·분무, PORV 재닫힘</td>
+<td>압력 재상승</td>
+</tr>
+<tr>
+<td>주·보조급수, 우회·대기방출밸브</td>
+<td>과급수·개방 고착으로 과냉</td>
+</tr>
+</tbody>
+</table>
+<h3>운전원 완화 조치</h3>
+<p>증상 기반 비상운전절차의 1차계통 건전성(PTS) 감시와 PTS 대응 절차가 기본 틀입니다. NRC의 PTS 재평가도 운전원 대응을 이 틀로 모델링했습니다[3][4]. 세부 단계와 설정값은 노형·호기별 절차서를 따릅니다.</p>
+<ol>
+<li>과냉 원인 격리: 파단 증기발생기 격리, 해당 증기발생기 급수 차단, 개방 고착 밸브 차단.</li>
+<li><strong>안전주입 조절·종료 기준</strong>(과냉각 여유도, 가압기 수위, 2차측 열제거, RCS 압력 안정·상승) 충족 시 주입 유량 감소 → 재가압 방지. 종료 뒤 과냉각 여유나 수위를 잃으면 다시 주입합니다.</li>
+<li>가압기 히터 정지, 보조분무·PORV로 압력을 낮춰 P-T 한계 안에 유지.</li>
+<li>추가 냉각을 멈추고 절차서에 정한 시간 동안 온도·압력을 유지(soak)해 벽 두께 방향 온도차를 줄입니다. 이후 냉각은 P-T 한계(운영기술지침서·PTLR)의 냉각률 제한 안에서 합니다[6].</li>
+<li><strong>SI를 끝낼 수 없으면</strong> 조건 충족 시 RCP 재기동으로 주입수를 혼합해 냉수 플룸을 해소합니다.</li>
+</ol>
+<h3>설계·운영 완화 대책</h3>
+<ul>
+<li><strong>중성자속 저감</strong>: 저누설 장전(연소된 연료를 노심 외곽에 배치), 임계 용접부 방위의 차폐 집합체로 플루언스 증가 속도를 늦춥니다.</li>
+<li><strong>열처리(annealing)</strong>: 노심대를 수백 °C로 가열해 조사결함을 회복합니다(10 CFR 50.66)[1]. VVER-440에 실적이 있습니다.</li>
+<li><strong>재료·설계</strong>: 저 Cu·Ni 사양, 링 단조로 축방향 용접부 제거(APR1400 등 신형로), 감시시편 실측 보정.</li>
+<li><strong>평가 정교화</strong>: 플랜트 고유 확률론적 파괴역학 평가, 50.61a 전환.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<ul>
+<li><strong>10 CFR 50.61</strong>(1985 제정, 1991 개정)[1]: RTPTS = RTNDT(U) + M + ΔRTPTS(EOL 플루언스, 내면 기준), M = 2√(σ_U² + σ_Δ²), σ_Δ = 28 °F(용접)/17 °F(모재).
+<ul>
+<li>선별기준: 판재·단조·축방향 용접 <strong>270 °F(132 °C)</strong>, 원주방향 용접 <strong>300 °F(149 °C)</strong>.</li>
+<li>초과 예상 시: 합리적으로 실행 가능한 중성자속 저감 → 그래도 초과가 예상되면 초과 예상 <strong>최소 3년 전</strong> 안전성 분석 제출 → 사안별 승인. §50.66 열처리는 선택할 수 있는 대안입니다.</li>
+</ul>
+</li>
+<li><strong>10 CFR 50.61a</strong>(2010, 선택 적용)[2]: 확률론적 재평가(NUREG-1806/1874)로 관통균열 빈도 1×10⁻⁶/원자로·년 수준을 근거로 만든 대체 선별기준(RTMAX-X)과 비파괴검사 요건[3]. 벽두께별 RTMAX 기준(예: 9.5 in 이하에서 축방향 용접 269 °F, 판재 356 °F, 원주방향 용접 312 °F).</li>
+<li><strong>RG 1.99 Rev.2(1988)</strong>: 조사취화 예측, <strong>RG 1.154(1987)</strong>: 플랜트 고유 PTS 분석[7], <strong>10 CFR 50 부록 G·H</strong>: P-T 한계·USE, 감시시험.</li>
+<li><strong>국내</strong>: 「원자로시설 등의 기술기준에 관한 규칙」 제21조 제3·4항의 위임에 따라 원안위고시 제2021-28호 「원자로압력용기 감시시험 기준」 제15조 제3·4항과 별표 5가 10 CFR 50.61을 준용해 RTPTS 132.2 °C(판재·단조·축방향 용접)·148.9 °C(원주방향 용접)를 정합니다[8][9]. 고리 2호기 계속운전 허가(2025.11) 심사는 용접시험편 RTPTS 27.1 °C(기준 132.2 °C 이하), 최대흡수에너지 86.1 J(기준 68 J 이상)로 만족을 확인했습니다[10].</li>
+<li><strong>고리 1호기 사례</strong>: 감시시험 기반 RTPTS가 선별기준을 넘는 것으로 평가되어 플랜트 고유 확률론적 PTS 평가가 수행된 국내 사례입니다[11]. 이후 2007년 계속운전 승인, 2017년 영구정지되었습니다.</li>
+<li><strong>출제 당시 대비</strong>: 2001·2012~2014년 출제 당시 기준은 50.61이고, 2010년 50.61a 대체 경로가 생겼습니다. 판정 원리는 그대로입니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>가압열충격(PTS)</th>
+<th>P-T 한계곡선</th>
+<th>저온과압보호(LTOP)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>상황</td>
+<td>사고성 과냉 + 재가압</td>
+<td>정상 가열·냉각 운전</td>
+<td>저온 정지 중 과압</td>
+</tr>
+<tr>
+<td>판정</td>
+<td>RTPTS 선별기준, K_I vs K_IC</td>
+<td>부록 G 여유(K_I ≤ K_IC/안전계수)</td>
+<td>설정압 &lt; P-T 한계</td>
+</tr>
+<tr>
+<td>대응</td>
+<td>플럭스 저감, SI 종료, 열처리</td>
+<td>승온·냉각률 제한</td>
+<td>릴리프밸브·PORV 저설정</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 가압열충격(PTS)</strong></p>
+<ol>
+<li><strong>정의</strong>: 원자로용기 내면 <strong>급격한 과냉각</strong>과 동시 또는 뒤이은 <strong>고압(재가압)</strong> 사건임(10 CFR 50.61(a)(2))</li>
+<li><strong>위험 요인</strong>: 과냉 + 압력(사건)에 **노심대 조사취화(RTNDT 상승, 재료 조건)**가 겹칠 때 균열 위험이 커짐</li>
+<li><strong>응력</strong>: 내면 수축 구속 → <strong>내면 인장 열응력</strong> + 압력 원주응력</li>
+<li><strong>판정</strong>: 균열 선단 <strong>K_I ≥ K_IC(T − RTNDT)</strong> → 균열 개시, K_Ia로 정지 판정</li>
+<li><strong>유발 사고</strong>: MSLB, SBLOCA, PORV·안전밸브 개방 고착 후 재닫힘, 급수 과다, SGTR</li>
+<li><strong>선별기준</strong>: RTPTS ≤ <strong>270 °F</strong>(판재·단조·축방향 용접), <strong>300 °F</strong>(원주방향 용접)</li>
+<li><strong>초과 예상 시</strong>: 중성자속 저감 → 그래도 초과면 3년 전 안전성 분석, <strong>열처리(50.66)</strong> 선택 가능, 50.61a(TWCF 10⁻⁶) 대체 경로</li>
+<li><strong>운전 조치</strong>: 과냉 원인 격리, <strong>SI 조절·종료</strong>, 압력 저감, 냉각 중지·온도 유지, RCP 재기동</li>
+<li><strong>설계</strong>: 저누설 장전, 저 Cu·Ni, 축방향 용접 없는 링 단조, 감시시편</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: 용기 벽 단면의 온도·원주방향 열응력 분포와 내면 균열, K_I ≥ K_IC 판정" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-002-pressurized-thermal-shock/sketch1_vessel_wall_crack.avif"/><figcaption>답안용 도식: 용기 벽 단면의 온도·원주방향 열응력 분포와 내면 균열, K_I ≥ K_IC 판정</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>연도-교시-번호</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2001(제63회)-2-4</td>
+<td>RTNDT 계산의 주요 인자</td>
+</tr>
+<tr>
+<td>2012-3-4</td>
+<td>조사취화: USE, RTPTS, P-T 제한곡선</td>
+</tr>
+<tr>
+<td>2013-2-2</td>
+<td>NDTT·RTNDT 결정과 선별기준 초과 시 조치</td>
+</tr>
+<tr>
+<td>2014-1-7</td>
+<td>가압 열충격(PTS)</td>
+</tr>
+<tr>
+<td>2022-3-1</td>
+<td>PTS 정의·유발 사고·운전원 조치</td>
+</tr>
+<tr>
+<td>2025-3-4</td>
+<td>PTS 역효과 설비와 완화 운전 조치</td>
+</tr>
+<tr>
+<td>2026-1-2</td>
+<td>PTS 유발 사고 유형 5가지</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, 10 CFR 50.61 "Fracture toughness requirements for protection against pressurized thermal shock events" 및 10 CFR 50.66 "Requirements for thermal annealing of the reactor pressure vessel".</li>
+<li>U.S. NRC, 10 CFR 50.61a "Alternate fracture toughness requirements for protection against pressurized thermal shock events" (75 FR 23, 2010).</li>
+<li>U.S. NRC, NUREG-1806, Technical Basis for Revision of the Pressurized Thermal Shock (PTS) Screening Limit in the PTS Rule (10 CFR 50.61) (2007).</li>
+<li>D. W. Whitehead, A. M. Kolaczkowski, PRA Procedures and Uncertainty for PTS Analysis, NUREG/CR-6859 (SAND2004-5032P), U.S. NRC (2010).</li>
+<li>ASME Boiler and Pressure Vessel Code, Section XI, Nonmandatory Appendix A·G (K_IC 하한곡선).</li>
+<li>U.S. NRC, NUREG-1431, Standard Technical Specifications — Westinghouse Plants, LCO 3.4.3 "RCS Pressure and Temperature (P/T) Limits".</li>
+<li>U.S. NRC, Regulatory Guide 1.99 Rev. 2 "Radiation Embrittlement of Reactor Vessel Materials" (1988); Regulatory Guide 1.154 "Format and Content of Plant-Specific Pressurized Thermal Shock Safety Analysis Reports for Pressurized Water Reactors" (1987).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제21조. 국가법령정보센터.</li>
+<li>원자력안전위원회, 「원자로압력용기 감시시험 기준」, 원안위고시 제2021-28호(2021.8.19), 제15조·별표 5. 국가법령정보센터.</li>
+<li>원자력안전위원회, 제224회 회의 의안 「고리 2호기 계속운전 허가(안)」(2025.11.13 의결). 원안위 회의자료 공개.</li>
+<li>오창식·정명조·최영인, 「가압열충격에 의한 OPR1000 원자로용기의 파손확률 민감도 해석」, 한국압력기기공학회 논문집(KPVP) 15(2) (2019) — 서론의 고리 1호기 평가 경위.</li>
+</ol>

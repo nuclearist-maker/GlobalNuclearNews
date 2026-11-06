@@ -1,0 +1,263 @@
+<figure class="article-image"><img alt="[개념 노트] ECCS 허용기준(10 CFR 50.46) — PCT 1,204 °C·ECR 17 %·수소 1 %와 냉각 가능 형상·장기 냉각 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-014-eccs-acceptance-criteria/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>ECCS 허용기준은 Zr 합금 피복 UO₂ 연료 경수로가 가상의 냉각재상실사고(LOCA) 전 범위에서, 승인된 평가모델로 계산한 비상노심냉각 성능이 ① 최고 피복재 온도 1,204 °C(2,200 °F) 이하 ② 국부 최대 산화 17 % 이하 ③ 노심 전체 수소 생성량이 피복 전량 반응 가상량의 1 % 이하 ④ 냉각 가능한 노심 형상 ⑤ 장기 냉각을 모두 만족해야 한다는 기준입니다(10 CFR 50.46(b), 원안위고시 제2017-23호 제3조)[1][4].</strong></p>
+<p>이 노트는 기준의 내용·근거·평가방법에 집중합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>다섯 기준과 각각이 막는 손상</h3>
+<table>
+<thead>
+<tr>
+<th>항</th>
+<th>기준</th>
+<th>막으려는 것</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(b)(1)</td>
+<td>최고 피복재 온도(PCT) ≤ 1,204 °C</td>
+<td>고온 산화 가속·피복 취화</td>
+</tr>
+<tr>
+<td>(b)(2)</td>
+<td>총 산화 ≤ 산화 전 피복 두께의 0.17배</td>
+<td>재관수 급랭 시 피복 파쇄(연성 상실)</td>
+</tr>
+<tr>
+<td>(b)(3)</td>
+<td>수소 ≤ 피복 전량 반응 가상량의 0.01배</td>
+<td>노심 전체 반응량·격납건물 수소 부담</td>
+</tr>
+<tr>
+<td>(b)(4)</td>
+<td>냉각 가능한 노심 형상</td>
+<td>부풀림·파열 등에 의한 유로 협착</td>
+</tr>
+<tr>
+<td>(b)(5)</td>
+<td>장기 냉각</td>
+<td>붕괴열의 지속적 제거 실패</td>
+</tr>
+</tbody>
+</table>
+<p>다섯 기준이 손상 하나씩만 막는 것은 아닙니다. ①②는 함께 피복의 연성을 지켜 결국 ④ 냉각 가능 형상을 떠받칩니다. 1,204 °C와 17 %는 1973년 미국 ECCS 공청회에서, 고온 산화 후 급랭된 피복의 링 압축 시험 결과를 근거로 "급랭 뒤에도 연성이 남는 경계"로 정해졌습니다. 1,204 °C는 Zircaloy 녹는점(약 1,850 °C)과 무관하며, 산화 속도가 온도에 지수적으로 커지는 영역에서 보수적으로 잡은 설계 한계입니다.</p>
+<p>(b)(2)의 "총 산화"는 피복이 흡수한 산소가 국부적으로 모두 화학양론 ZrO₂로 바뀐다고 할 때 소모되는 금속 두께, 즉 등가 피복 반응률(ECR)입니다. 실제 산화막 두께와 다르며, 계산상 피복이 파열되면 그 시점부터 내면 산화도 더합니다. 부풀어 얇아진 구간은 부풀림 이후·유의한 산화 이전의 두께를 분모로 쓰고, 사고 전 운전 중 생긴 부식층도 포함해 평가합니다. 최고 온도 지점과 최대 산화 지점이 반드시 같지는 않습니다.</p>
+<p>17 %는 <strong>가장 많이 산화된 국부 지점</strong>, 1 %는 <strong>노심 전체 피복재(플레넘 구간 제외) 평균</strong>이라는 점이 자주 혼동됩니다. 이후 연구에서 피복의 수소 흡수가 많을수록 같은 ECR에서도 연성이 떨어진다는 사실이 밝혀졌고, 이것이 아래 50.46c 논의의 출발점입니다.</p>
+<figure class="article-image"><img alt="원자로용기 절개 장면(재관수 상태) 위에 다섯 기준이 가리키는 부위를 번호로 대응시킨 기준 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-014-eccs-acceptance-criteria/fig1_eccs_criteria_map.avif"/><figcaption>원자로용기 절개 장면(재관수 상태) 위에 다섯 기준이 가리키는 부위를 번호로 대응시킨 기준 카드</figcaption></figure>
+<h3>LBLOCA 단계와 PCT 거동</h3>
+<p>대형 냉각재 배관 양단 파단(LBLOCA)에서 피복 온도는 세 단계로 움직입니다. 단계 경계는 고정된 시각이 아니라 사건으로 정의되며, 대형 PWR에서 전체가 대략 수백 초에 걸칩니다.</p>
+<ul>
+<li><strong>취출(blowdown)</strong>: 냉각재가 급속히 빠지며 노심 유량이 정체·역류하고 조기 CHF가 생깁니다. 연료에 저장된 열이 피복으로 재분배되어 수 초 안에 <strong>취출 피크</strong>가 나타납니다. 계통이 격납건물 압력과 평형에 가까워지면 끝납니다.</li>
+<li><strong>재충수(refill)</strong>: 안전주입탱크(SIT) 물이 하부 플레넘을 채우는 구간입니다(SIT 주입은 취출 중에 이미 시작). 노심 냉각이 약해 피복이 붕괴열로 다시 가열됩니다.</li>
+<li><strong>재관수(reflood)</strong>: 하부 플레넘이 차고 물이 노심 하단에 닿으면 시작합니다. 수위와 급랭 전선이 아래에서 올라오고, 증기 결합(steam binding)으로 재관수율이 떨어지면 <strong>재관수 피크</strong>가 생깁니다.</li>
+</ul>
+<p>어느 피크가 제한값이 되는지는 노형과 해석에 따라 다릅니다. 최적평가에서는 취출 중 급랭(blowdown quenching)이 얼마나 일어나느냐에 따라 제한 피크가 취출 쪽으로 옮겨가기도 합니다. 이후 장기 냉각((b)(5))은 집수조·IRWST 재순환으로 붕괴열을 계속 제거해 입증하며, 고온관 주입 전환으로 붕산 석출을 막는 것도 포함됩니다. 소형 LOCA는 보일오프로 노심이 천천히 노출되어 수백~수천 초 뒤 PCT가 나타납니다.</p>
+<figure class="article-image"><img alt="LBLOCA 고온점 피복재 온도 이력 개념 곡선(취출·재충수·재관수)과 부록 K·최적평가 95/95의 PCT 판정 도표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-014-eccs-acceptance-criteria/fig2_lbloca_pct_trend.avif"/><figcaption>LBLOCA 고온점 피복재 온도 이력 개념 곡선(취출·재충수·재관수)과 부록 K·최적평가 95/95의 PCT 판정 도표</figcaption></figure>
+<h3>평가방법: 부록 K와 최적평가</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>부록 K 보수적 평가</th>
+<th>최적평가(BE) + 불확실성</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>근거</td>
+<td>50.46(a)(1)(ii), 부록 K I절[2]</td>
+<td>50.46(a)(1)(i), RG 1.157·RG 1.203[6]</td>
+</tr>
+<tr>
+<td>출력</td>
+<td>허가출력 × 1.02</td>
+<td>공칭 + 불확실성 분포</td>
+</tr>
+<tr>
+<td>붕괴열</td>
+<td>ANS-1971 무한 운전 × 1.2</td>
+<td>ANS-5.1 최신판 + 불확실성</td>
+</tr>
+<tr>
+<td>금속-물 반응</td>
+<td>Baker-Just</td>
+<td>Cathcart-Pawel 등 최적식</td>
+</tr>
+<tr>
+<td>기타 주요 요구</td>
+<td>2상 방출 Moody 임계유량(방출계수 0.6~1.0 범위 검토), 취출 중 CHF 이후 핵비등 복귀 금지, 저온관 파단 시 ECC 우회, 재관수율 1 in/s 미만 시 증기 냉각만 인정, 최악 단일고장</td>
+<td>코드 불확실성 정량화(CSAU)[7], 실험 자료 비교</td>
+</tr>
+<tr>
+<td>판정값</td>
+<td>계산 PCT</td>
+<td>PCT 95/95 상한</td>
+</tr>
+</tbody>
+</table>
+<p>1974년에는 부록 K만 허용됐고, 1988년 개정으로 불확실성을 정량화해 "기준을 넘지 않을 높은 확률"을 보이는 최적평가가 허용됐습니다. 실무에서는 PCT의 95 % 확률·95 % 신뢰도 값으로 판정하며, 단일 출력변수(PCT)의 단측 상한이면 Wilks 순서통계로 1차 59회·3차 124회 계산이 필요합니다[8]. 95/95는 시간 이력이 아니라 PCT 분포의 통계 상한입니다.</p>
+<p>국내 예로 <strong>KREM</strong>(KEPRI 최적평가 방법론, CSAU 기반·Wilks 59회)이 개발되어 Westinghouse 3루프 원전에 적용되었고[9], 4.5 % 출력증강 인허가 LBLOCA 해석에 처음 쓰였습니다[10]. 미국 인증 APR1400(DC)은 CAREM 방법론(RELAP5/MOD3.3K)으로 LBLOCA를 평가했습니다[11]. 소형 LOCA는 보수적 평가모델을 쓰는 경우가 많지만, 최적평가도 허용됩니다.</p>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>설계</strong>: SIT 용량·압력, 안전주입 펌프 유량, 주입 위치(OPR1000 등 CE형 저온관 주입, APR1400 원자로용기 직접주입 DVI)는 다섯 기준을 만족하도록 정해집니다[12]. CE형(OPR1000 계열) ECCS는 SIT 4기, 2계열의 고압·저압 안전주입펌프, 재장전수탱크(RWT)와 격납건물 집수조 재순환으로 구성되며, 용량·설정치는 호기별 설계값입니다[12].</li>
+<li><strong>운전</strong>: 노심 출력분포 제한(FQ, 축방향 출력편차)과 운영기술지침서의 SIT·ECCS 운전제한조건이 LOCA 해석 가정을 지킵니다. PCT 여유도 = 1,204 °C − 계산 PCT로 관리하며, 출력 증강·연료 교체 때 다시 평가합니다.</li>
+<li><strong>안전</strong>: 기준은 설계기준 LOCA용이며, 노심 손상 이후의 중대사고 기준이 아닙니다. "ECCS 설계기준"을 묻는 문항(제76회 유형)이라면 다섯 허용기준에 더해 GDC 35의 단일고장·전원 가정(소내 전원만 또는 소외 전원만으로도 기능)과 다중성·독립성·주기 시험성을 함께 쓰면 됩니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50.46(b)(1)~(5)</td>
+<td>다섯 허용기준. 적용 대상은 zircaloy·ZIRLO 피복 UO₂ 연료 경수로</td>
+</tr>
+<tr>
+<td>10 CFR 50.46(a)(3)</td>
+<td>PCT 50 °F(약 28 °C) 초과 변화·오류(누적 포함)는 30일 내 보고, 그 밖에는 매년 보고[1]</td>
+</tr>
+<tr>
+<td>10 CFR 50 부록 K</td>
+<td>보수적 평가모델의 필수·허용 요구사항</td>
+</tr>
+<tr>
+<td>10 CFR 50 부록 A GDC 35·36·37</td>
+<td>ECCS 기능(단일고장 + 소내 또는 소외 전원만으로 기능), 검사·시험 가능성[3]</td>
+</tr>
+<tr>
+<td>RG 1.157(1989)·RG 1.203(2005)</td>
+<td>최적평가·평가모델 개발(EMDAP) 지침</td>
+</tr>
+<tr>
+<td>원안위고시 제2017-23호 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」</td>
+<td>제3조 허용기준(1,204 ℃·0.17배·0.01배·형상·장기냉각), 제4조 보수적/최적 평가, 제5조 매년 3월 정기 보고·PCT 30 ℃ 이상 변화 시 30일 내 보고[4]</td>
+</tr>
+</tbody>
+</table>
+<p>국내 고시 제1조는 「원자로시설 등의 기술기준에 관한 규칙」 제30조제1항을 근거로 듭니다[5]. 이 고시는 2001년 과학기술부 고시로 처음 정해진 뒤, 국가법령정보센터 부칙 연혁 기준으로 제2008-16호(2008.4.18)·제2009-37호·제2010-4호·제2011-15호·제2012-15호·제2013-9호·제2014-21호(2014.11.21)를 거쳐 제2017-23호(2017.12.26)로 개정되었습니다. 제2017-23호가 현행본이며 이후 개정은 없습니다(2026년 10월 기준).</p>
+<!-- 확인필요: KINS 규제지침(RG-N07.01·N07.02) 번호는 KINS 원문 미대조 -->
+<!-- 기술기준규칙 제30조: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 -->
+<p><strong>출제 당시 대비 달라진 점</strong></p>
+<ul>
+<li>제78회(2006) 문항의 "과기부고시"는 현행 <strong>원안위고시 제2017-23호</strong>입니다. 허용기준 수치는 그대로입니다.</li>
+<li>미국은 수소 흡수량에 따라 산화 한계를 낮추는 <strong>50.46c</strong> 최종 규칙안(2016, SECY-16-0033)을 마련했으나 <strong>2024.4.11 SRM으로 반려되어(직원에게 반환) 미제정</strong>입니다. 현행 50.46(b)를 인용하면 됩니다. 2026.7.16 NRC 제안규칙(FR 2026-14341)은 50.46c의 성능기반 접근과 취화 연구결과를 새 자발적 대안 10 CFR 50.46a(기존 50.46a는 50.46b로 재지정)에 담고 FFRD를 함께 다루도록 제안했으며, 2026년 10월 현재 제안 단계입니다[13].</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>17 % ECR (b)(2)</th>
+<th>수소 1 % (b)(3)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>대상</td>
+<td>가장 많이 산화된 국부 지점</td>
+<td>노심 전체 피복재</td>
+</tr>
+<tr>
+<td>정의</td>
+<td>등가 산화 두께 ÷ 산화 전 두께</td>
+<td>생성 수소 ÷ 전량 반응 가상량</td>
+</tr>
+<tr>
+<td>목적</td>
+<td>급랭 시 피복 연성 유지</td>
+<td>노심 전체 반응량 제한</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>ECCS 허용기준</th>
+<th>중대사고 수소 기준</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>조문</td>
+<td>50.46(b)</td>
+<td>50.44(c)</td>
+</tr>
+<tr>
+<td>상황</td>
+<td>설계기준 LOCA</td>
+<td>피복 100 % 반응 가정</td>
+</tr>
+<tr>
+<td>수치</td>
+<td>수소 1 % 이하</td>
+<td>격납건물 균일 분포 평균 10 vol% 미만[3]</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 가상 LOCA 전 범위에서 ECCS 성능이 만족해야 할 기준, 10 CFR 50.46(b)·원안위고시 제2017-23호 제3조</li>
+<li><strong>PCT</strong>: 계산된 최고 피복재 온도 <strong>≤ 1,204 °C(2,200 °F)</strong> — 고온 산화·피복 취화 제한</li>
+<li><strong>최대 산화</strong>: 국부 총 산화 <strong>≤ 산화 전 피복 두께 × 0.17(17 % ECR)</strong> — 급랭 시 연성 유지</li>
+<li><strong>수소 생성</strong>: 노심 전체 <strong>≤ 피복 전량 반응 가상량 × 0.01</strong></li>
+<li><strong>냉각 가능 형상</strong>: 부풀림·파열 후에도 냉각 유로 유지</li>
+<li><strong>장기 냉각</strong>: 재순환으로 장수명 방사능 붕괴열 장기 제거</li>
+<li><strong>평가방법</strong>: 부록 K 보수적(1.02 출력, 1.2×ANS-1971, Baker-Just) 또는 BE + 불확실성(95/95, CSAU, 국내 KREM)</li>
+<li><strong>LBLOCA PCT</strong>: 취출 피크 → 재충수 중 재가열 → 재관수 피크 → 급랭(제한 피크는 해석별)</li>
+<li><strong>보고</strong>: 국내 매년 3월 정기 보고, PCT 변화 국내 30 ℃ 이상·미국 50 °F 초과 시 30일 내 보고</li>
+<li><strong>동향</strong>: 50.46c는 2024년 반려, 현행 50.46(b) 유지</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 PCT-시간 개형, 1,204 °C 한계선, 다섯 기준 목록" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-014-eccs-acceptance-criteria/sketch1_pct_criteria_answer.avif"/><figcaption>답안지용 PCT-시간 개형, 1,204 °C 한계선, 다섯 기준 목록</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024년 2교시 4번</td>
+<td>PWR ECCS 성능 설계기준: 허용기준·평가방법·OPR1000 기기</td>
+</tr>
+<tr>
+<td>2017년 3교시 3번</td>
+<td>사고 후 자연순환 냉각(마. ECCS 허용기준)</td>
+</tr>
+<tr>
+<td>2012년 1교시 1번</td>
+<td>공학적안전설비 설계기준(10 CFR 50.46)</td>
+</tr>
+<tr>
+<td>제78회 2교시 6번</td>
+<td>ECCS 허용기준 3가지 이상 열거</td>
+</tr>
+<tr>
+<td>제76회 4교시 5번</td>
+<td>노심 손상완화용 ECCS의 설계기준</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, 10 CFR 50.46 "Acceptance criteria for emergency core cooling systems for light-water nuclear power reactors", (a)(1)·(a)(3)·(b).</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix K "ECCS Evaluation Models", I절.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criteria 35·36·37; 10 CFR 50.44(c).</li>
+<li>원자력안전위원회, 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」, 원안위고시 제2017-23호(2017.12.26), 제1조~제5조. 국가법령정보센터.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제30조. 국가법령정보센터.</li>
+<li>U.S. NRC, Regulatory Guide 1.157 "Best-Estimate Calculations of Emergency Core Cooling System Performance" (1989); Regulatory Guide 1.203 "Transient and Accident Analysis Methods" (2005).</li>
+<li>B. E. Boyack et al., "Quantifying Reactor Safety Margins: Application of Code Scaling, Applicability, and Uncertainty Evaluation Methodology to a Large-Break, Loss-of-Coolant Accident", NUREG/CR-5249 (1989).</li>
+<li>S. S. Wilks, "Determination of Sample Sizes for Setting Tolerance Limits", Annals of Mathematical Statistics 12 (1941).</li>
+<li>C.-H. Ban, S.-Y. Lee, C.-K. Sung, "Development and Application of KEPRI Realistic Evaluation Methodology (KREM) for LB-LOCA", Proc. BE-2004, Washington, DC (2004), pp. 90–95. IAEA INIS 수록.</li>
+<li>T. S. Choi, S. J. Lee, S. K. Chung, D. H. Ahn, "LBLOCA Analyses for 4.5% Power Uprating using KREM", Transactions of the Korean Nuclear Society Autumn Meeting, Busan (2005).</li>
+<li>KHNP, APR1400 LBLOCA 최적평가 방법론(CAREM) 토피컬 보고서 APR1400-F-A-TR-12004-NP, U.S. NRC 설계인증 공개 문서.</li>
+<li>U.S. NRC HRTD, Combustion Engineering Technology Cross Training Course Manual, Ch. 11.2 "Low Pressure Safety Injection System", NRC ADAMS ML11251A033; S.-S. Lee, S.-H. Kim, K.-Y. Suh, "The Design Features of the Advanced Power Reactor 1400", Nuclear Engineering and Technology 41(8), 995 (2009).</li>
+<li>U.S. NRC, SRM-SECY-16-0033 (2024.4.11); Federal Register 2026-14341, 제안규칙(NRC-2025-0975, 2026.7.16).</li>
+</ol>

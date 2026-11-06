@@ -1,0 +1,180 @@
+<figure class="article-image"><img alt="[개념 노트] 핵연료 건전성 감시(연료결함 진단) — 냉각재 방사능 지표, 요오드 동위원소비, 시핑·UT 검사 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-009-fuel-integrity-monitoring/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>핵연료 건전성 감시는 운전 중에는 원자로냉각재의 핵분열생성물 방사능(불활성기체·요오드)을 측정해 피복관 관통결함의 발생·규모를 판단하고, 핵연료 교체 중에는 시핑·초음파·육안 검사로 결함 집합체와 연료봉을 찾아 원인을 규명하는 활동입니다.</strong></p>
+<p>목적은 두 가지입니다. 하나는 제1·2방벽인 펠릿·피복관의 상태를 간접 확인해 냉각재 방사능을 운영기술지침서 한도 안에 두는 것이고, 다른 하나는 결함 원인을 찾아 재발을 막는 것입니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>결함봉에서 냉각재까지</h3>
+<p>피복관에 관통결함이 생기면 펠릿에서 간극으로 나온 핵분열기체와 휘발성 핵종이 결함을 통해 냉각재로 빠져나옵니다. 경로는 <strong>펠릿 내 확산 → 간극 체류 → 결함 통과 → 냉각재 희석·정화</strong>입니다. 간극에 머무는 동안 단수명 핵종은 상당 부분 붕괴하므로, 냉각재에 나타나는 핵종 구성 자체가 결함의 크기와 상태를 알려 줍니다.</p>
+<ul>
+<li><strong>불활성기체(Xe-133 5.25 d, Xe-135 9.14 h, Kr-85m 4.48 h, Kr-88 2.84 h)</strong>: 화학적으로 반응하지 않아 결함 발생을 가장 빨리, 가장 민감하게 보여 줍니다. 장수명 Xe-133이 결함 탐지의 주지표입니다.</li>
+<li><strong>요오드(I-131 8.02 d, I-133 20.8 h, I-134 52.5 min)</strong>: 간극에서 일부가 요오드화물로 붙잡혀 있다가 물이 들어오면 녹아 나옵니다. 선량 평가의 기준(DEI-131)이 되는 핵종군입니다.</li>
+<li><strong>세슘(Cs-134/Cs-137)</strong>: Cs-134는 Cs-133의 중성자 포획으로 생기므로 두 핵종의 비가 연소도에 따라 커집니다. 결함봉이 몇 주기째 연료인지 추정하는 데 씁니다.</li>
+</ul>
+<h3>방출-생성 비(R/B)와 기울기</h3>
+<p>핵종별 냉각재 방출률 R을 연료 내 생성률 B로 나눈 R/B를 붕괴상수 λ에 대해 로그-로그로 그리면 기울기로 방출 기구를 가를 수 있습니다[5].</p>
+<ul>
+<li><strong>기울기 ≈ 0</strong>: 반조 방출(recoil) 우세. 피복관 외면 등에 붙은 <strong>트램프 우라늄</strong>이 냉각재와 직접 접해 있을 때입니다. 결함이 없어도 이 바탕 방사능이 있습니다.</li>
+<li><strong>기울기 ≈ −0.5</strong>: 펠릿 내 확산(Booth 모델)입니다.</li>
+<li><strong>기울기 −0.5 ~ −1.5</strong>: 결함봉. 확산에 간극 체류가 더해져, 결함이 작아 체류가 길수록 단수명 핵종이 더 붕괴해 기울기가 가팔라집니다.</li>
+</ul>
+<p>세 범주는 −0.5에서 겹치므로 배타적이지 않고, 기울기 0이 결함 없음을 보증하지도 않습니다. 정상상태 자료를 정화·붕괴 보정한 뒤 불활성기체와 요오드를 따로 회귀해 봅니다.</p>
+<figure class="article-image"><img alt="핵종별 R/B를 붕괴상수에 대해 로그-로그로: 기울기 0 반조(트램프 우라늄), −0.5 확산, −0.5~−1.5 결함봉(간극 체류), 지표 핵종 λ 위치" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-009-fuel-integrity-monitoring/fig1_rb_slope_loglog.avif"/><figcaption>핵종별 R/B를 붕괴상수에 대해 로그-로그로: 기울기 0 반조(트램프 우라늄), −0.5 확산, −0.5~−1.5 결함봉(간극 체류), 지표 핵종 λ 위치</figcaption></figure>
+<h3>동위원소비로 읽는 정보</h3>
+<ul>
+<li><strong>I-131/I-133 비</strong>: 결함봉 방출이 늘면 장수명 I-131의 비중이 커집니다. 관행적으로 0.1 이상을 결함 징후로 보지만, CPR1000 운전자료 연구에서는 0.15가 오판을 줄인다는 보고도 있어[6] 발전소별 바탕값과 비교해 판단합니다.</li>
+<li><strong>Xe-133/Xe-135 비</strong>: 같은 운전·정화 조건이라면 결함이 작아 체류가 길수록 커집니다. 프랑스 PWR 판정 예는 Xe-133 &gt; 10⁶ Bq/kg, 또는 Xe-133/Xe-135 &gt; 0.9이면서 Xe-133 &gt; 1.85×10⁵ Bq/kg입니다[7].</li>
+<li><strong>단수명 핵종(I-134, Xe-138, Kr-87) 비중</strong>: 크면 트램프 기여나 결함 확대로 인한 연료물질 유출을 의심합니다.</li>
+<li><strong>결함봉 수 추정</strong>: 트램프 바탕을 뺀 Xe-133·I-131 방출률을 결함봉 1개의 기준 방출률로 나눠 추정합니다. 해석 코드로 하며 오차는 큽니다.</li>
+</ul>
+<h3>요오드 스파이크</h3>
+<p>정지·감압·출력 변화 때 결함봉 간극에 쌓인 요오드가 물 유입과 씻김으로 한꺼번에 나와 냉각재 요오드 농도가 수 배~수십 배로 뛰는 현상입니다. 새 결함이 생긴 것이 아니라 기존 결함봉의 축적분이 나오는 것이지만, 스파이크 크기는 결함 존재와 규모의 좋은 단서입니다. Cs 방출도 함께 커져 결함봉 연소도 추정에 쓰입니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>운전 중 감시</h3>
+<ul>
+<li><strong>연속 감시</strong>: 화학체적제어계통(CVCS) 유출수 라인의 방사선감시기(파손연료 감시)가 총감마 추세를 보여 주고 경보를 냅니다.</li>
+<li><strong>주기 시료 분석</strong>: 냉각재 시료를 감마분광해 핵종별 농도, DEI-131·DEX-133, 동위원소비를 구합니다. 결함 징후가 보이면 분석 빈도를 높입니다.</li>
+<li><strong>2차 손상 감시</strong>: 요오드·불활성기체가 계단식으로 늘거나 악티나이드(Np-239)·지발중성자 신호가 보이면 연료 물질이 씻겨 나오는 결함 확대입니다. 결함 뒤 내부 증기가 피복관을 수소화해 축방향 균열로 키우는 2차 수소화가 대표적입니다. 이때는 출력 변화율 제한 등 운전 대책을 검토합니다.</li>
+<li>BWR은 제어봉을 움직여 국부 출력을 바꾸며 반응을 보는 출력 억제 시험으로 결함 위치를 좁히기도 하지만, PWR에서는 적용이 제한됩니다.</li>
+</ul>
+<figure class="article-image"><img alt="운전 중 냉각재 지표 6종과 STS DEI-131 한도, 정지 중 시핑 → UT → 육안·와전류 → 조치의 결함봉 식별 순서" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-009-fuel-integrity-monitoring/fig2_diagnosis_map_operation_outage.avif"/><figcaption>운전 중 냉각재 지표 6종과 STS DEI-131 한도, 정지 중 시핑 → UT → 육안·와전류 → 조치의 결함봉 식별 순서</figcaption></figure>
+<h3>핵연료 교체 중 검사</h3>
+<ol>
+<li><strong>시핑(인-마스트)</strong>: 인출 중 집합체를 들어 올리는 동안 수압이 낮아지며 결함봉에서 나온 기체(Xe-133, Kr-85)를 마스트에서 포집해 결함 집합체를 선별합니다.</li>
+<li><strong>재확인 시핑(필요 시)</strong>: 의심 집합체를 캔·진공 시핑 장치에 격리하고 가열·감압해 기체·용존 핵종으로 확인합니다. 두 시핑이 필수 연속 절차는 아닙니다.</li>
+<li><strong>초음파검사(UT)</strong>: 연료봉 내부에 들어간 물을 초음파로 검출해 결함봉을 식별합니다. 결함 위치 자체는 육안 등으로 확인합니다.</li>
+<li><strong>와전류·육안 검사</strong>: 수중 카메라·보어스코프로 프레팅 마모, 이물질, 크러드, 산화막을 확인하고 와전류로 산화막·마모 깊이를 잽니다.</li>
+<li><strong>조치</strong>: 결함봉을 더미봉으로 바꾸는 재구성, 재장전 제외, 필요하면 핫셀 조사후시험으로 원인을 확정합니다.</li>
+</ol>
+<h3>파손 원인과 "무결함" 목표</h3>
+<p>IAEA 세계 연료파손 통계에서 PWR 파손 원인은 **그리드-연료봉 프레팅(GTRF)**이 가장 큰 비중을 차지하고[3], 이물질 프레팅, PCI, 크러드·부식(CILC 포함), 제조결함이 뒤따릅니다. 1970년대에는 1차 수소화와 고밀화에 의한 피복관 붕괴가 주원인이었습니다. 미국 업계는 2006년 INPO 주도로 2010년 말까지 연료 무결함 운전을 달성하자는 "Zero-by-Ten" 목표를 세우고, 사업자·EPRI·연료 공급사가 함께 감시·검사, 부식·크러드, PCI, GTRF 대책을 정비했습니다[8]. 국내도 이물질 관리(FME) 강화와 내프레팅 설계 개선을 추진해 왔습니다.</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NUREG-1431/1432 STS LCO 3.4.16 [1]</td>
+<td>DEI-131 ≤ 1.0 µCi/g(괄호값 예), DEX-133 ≤ 발전소별 값. 초과 시 4시간마다 ≤ 60 µCi/g 확인·48시간 내 복귀, 60 µCi/g 초과면 6시간 내 MODE 3·36시간 내 MODE 5</td>
+</tr>
+<tr>
+<td>TSTF-490(2006 승인) [2]</td>
+<td>구 총 비방사능 100/Ē 기준 삭제, DEX-133 신설</td>
+</tr>
+<tr>
+<td>RG 1.183 [4]</td>
+<td>선량평가 요오드 스파이크: 사고 전 60 µCi/g, 사고 동반 MSLB 500배·SGTR 335배</td>
+</tr>
+<tr>
+<td>10 CFR 50 App. A GDC 10, SRP 4.2 [9]</td>
+<td>정상운전·AOO에서 SAFDL 비초과, 연료계통 손상 방지</td>
+</tr>
+<tr>
+<td>IAEA NF-T-2.1(2010)·NF-T-2.5(2019) [3]</td>
+<td>세계 수냉각로 연료 파손 통계·원인·감시 기술</td>
+</tr>
+</tbody>
+</table>
+<p>국내 운영기술지침서도 STS 체계의 원자로냉각재 비방사능 LCO를 둡니다.</p>
+<!-- 확인필요: 국내 호기별 운영기술지침서의 DEI-131·DEX-133 수치와 조항 번호는 원문 미확인 — 본문은 STS 구조와 예시값만 서술 -->
+<p>출제 당시(제78회)에는 총 비방사능 100/Ē 기준이 쓰였고, TSTF-490 반영 발전소는 DEX-133으로 바뀌었습니다. 2015~2023년 문항 이후 기술적 변화는 작고, IAEA 통계가 2006~2015년으로 갱신됐습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>결함봉 방출</th>
+<th>트램프 우라늄</th>
+<th>부식생성물 방사화</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>대표 핵종</td>
+<td>Xe-133, I-131, Cs</td>
+<td>I-134, Xe-138 등 단수명</td>
+<td>Co-58, Co-60, Fe-59</td>
+</tr>
+<tr>
+<td>R/B 기울기</td>
+<td>−0.5 ~ −1.5</td>
+<td>≈ 0(반조)</td>
+<td>해당 없음</td>
+</tr>
+<tr>
+<td>의미</td>
+<td>피복관 관통결함</td>
+<td>바탕값(결함 아님)</td>
+<td>크러드·방사선 준위</td>
+</tr>
+<tr>
+<td>스파이크</td>
+<td>정지·감압 시 큼</td>
+<td>작음</td>
+<td>크러드 버스트(별개)</td>
+</tr>
+</tbody>
+</table>
+<p>요오드 스파이크와 결함 발생도 구분해야 합니다. 스파이크는 기존 결함봉의 축적분 방출이고, 결함 발생은 정상 출력에서 불활성기체가 계단식으로 오르는 것으로 봅니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 냉각재 핵분열생성물 방사능으로 피복관 관통결함 감시, 정지 중 검사로 결함봉 특정·원인 규명</li>
+<li><strong>불활성기체</strong>: Xe-133(5.25 d)·Kr-85m·Kr-88 → 결함 징후 조기 탐지</li>
+<li><strong>요오드</strong>: I-131/I-133 비(≥ 0.1 관행) → 결함봉 방출 기여, DEI-131</li>
+<li><strong>R/B 기울기</strong>: ≈ 0 반조(트램프), −0.5 확산, −0.5~−1.5 결함봉(체류 길수록 가파름)</li>
+<li><strong>트램프 우라늄</strong>: I-134 등 단수명 비중↑ → 바탕값 차감</li>
+<li><strong>요오드 스파이크</strong>: 정지·감압 시 수~수십 배, Cs-134/137 비로 연소도</li>
+<li><strong>2차 손상</strong>: 계단식 증가, Np-239 → 출력 변화 제한</li>
+<li><strong>T/S</strong>: DEI-131 1.0 µCi/g(STS 예), 60 µCi/g 초과 시 정지, DEX-133</li>
+<li><strong>정지 중</strong>: 시핑(필요 시 재확인) → UT(침수봉) → 육안·와전류 → 재구성·PIE</li>
+<li><strong>원인·목표</strong>: GTRF·이물질·PCI·크러드, 업계 무결함 목표(Zero-by-Ten)</li>
+</ol>
+<figure class="article-image"><img alt="답안지용: 결함봉 → 냉각재 지표 → 비 분석 → 정지 중 검사 → 조치, R/B 기울기 3선" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-009-fuel-integrity-monitoring/sketch1_monitoring_flow_sketch.avif"/><figcaption>답안지용: 결함봉 → 냉각재 지표 → 비 분석 → 정지 중 검사 → 조치, R/B 기울기 3선</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023년 1교시 12번</td>
+<td>경수로 운전 중 핵연료 건전성 진단 방법</td>
+</tr>
+<tr>
+<td>2022년 2교시 6번</td>
+<td>출력운전 중 핵연료 건전성 진단</td>
+</tr>
+<tr>
+<td>2019년 3교시 4번</td>
+<td>운전 중 진단 방법과 교체기간 중 검사방법</td>
+</tr>
+<tr>
+<td>2015년 2교시 3번</td>
+<td>운전 중 핵연료봉 건전성 진단</td>
+</tr>
+<tr>
+<td>제78회 2교시 5번</td>
+<td>손상정보를 유추하는 방사능 핵종 3가지와 관계</td>
+</tr>
+</tbody>
+</table>
+<p>제78회 문항은 핵종 3가지를 Xe-133(결함 발생), I-131/I-133(결함봉 방출 규모·스파이크), I-134 또는 Cs-134/Cs-137(트램프 구분·연소도)로 묶어 "어떤 정보를 주는가"까지 쓰면 됩니다. 2019년 문항은 운전 중과 교체기간 중을 절반씩 나눠 쓰는 구성이 좋습니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications — Westinghouse Plants, Vol. 1, LCO 3.4.16 "RCS Specific Activity"(TSTF-490 반영 구조); NUREG-1432(CE형) 같은 LCO.</li>
+<li>U.S. NRC, TSTF-490 "Deletion of E Bar Definition and Revision to RCS Specific Activity Tech Spec" 모델 안전성평가(2006.9) 및 CLIIP 이용 공고, Federal Register (2007.3.19).</li>
+<li>IAEA, Review of Fuel Failures in Water Cooled Reactors (2006–2015), IAEA Nuclear Energy Series No. NF-T-2.5 (2019); 이전판 No. NF-T-2.1 (2010).</li>
+<li>U.S. NRC, Regulatory Guide 1.183 "Alternative Radiological Source Terms for Evaluating Design Basis Accidents at Nuclear Power Reactors", 부록 E·F(MSLB·SGTR 요오드 스파이크 가정).</li>
+<li>B. J. Lewis, C. R. Phillips, M. J. F. Notley, "A Model for the Release of Radioactive Krypton, Xenon, and Iodine from Defective UO₂ Fuel Elements", Nuclear Technology 73(1) (1986).</li>
+<li>Fu 외, "Relationship Between Fuel Reliability and I-131/I-133 in the Primary Coolant of CPR1000 PWRs", Frontiers in Energy Research (2022), doi:10.3389/fenrg.2022.860480.</li>
+<li>Kalinichev, Evdokimov, Likhanskii, "A technique for detection of WWER fuel failures by activity of Xe radionuclides during reactor operation", Nuclear Energy and Technology (2018) — 프랑스 PWR 판정 기준을 IAEA 원자력에너지 시리즈에서 인용.</li>
+<li>J. Deshon, K. Pigler, R. Burnham, S. Goodchild, "Establishing and Sustaining a Technical Program to Achieve Zero Fuel Failures", 2016 International Conference on CANDU Fuel, Canadian Nuclear Society (2016).</li>
+<li>10 CFR Part 50 Appendix A, GDC 10 "Reactor design"; U.S. NRC, NUREG-0800 Standard Review Plan 4.2 "Fuel System Design".</li>
+</ol>

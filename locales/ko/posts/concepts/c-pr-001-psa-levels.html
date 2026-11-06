@@ -1,0 +1,235 @@
+<figure class="article-image"><img alt="[개념 노트] 확률론적 안전성평가(PSA) — Level 1·2·3의 범위, 수행단계와 결과물 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-pr-001-psa-levels/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>확률론적 안전성평가(PSA)는 원전에서 일어날 수 있는 사고 경위를 체계적으로 찾아 발생빈도와 결과를 정량화하고, 그 곱의 합으로 위험도를 평가하는 방법입니다.</strong></p>
+<p>"무엇이 잘못될 수 있는가, 얼마나 자주 일어나는가, 결과는 무엇인가"라는 세 질문에 답하는 방식이며, 보수적 가정과 단일고장기준을 쓰는 결정론적 안전해석을 대체하지 않고 보완합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>세 단계의 경계</h3>
+<p>PSA는 하나의 사고를 경계를 넓혀 가며 세 단계로 따라갑니다. NUREG/CR-2300(1983)이 정리한 구분이며[1] IAEA 안전지침도 같은 틀을 씁니다[2][3].</p>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>분석 범위</th>
+<th>주 결과물</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Level 1</td>
+<td>초기사건 → 노심손상</td>
+<td>노심손상빈도(CDF, /원자로·년), 지배 사고경위, 최소단절집합(MCS), 중요도</td>
+</tr>
+<tr>
+<td>Level 2</td>
+<td>노심손상 → 격납건물 거동(파손·격리 실패·우회) → 환경 방출</td>
+<td>파손모드별 빈도, 조건부 격납건물 파손확률, 선원항 방출군(STC)별 빈도·선원항, LRF·LERF</td>
+</tr>
+<tr>
+<td>Level 3</td>
+<td>환경 방출 → 소외 영향</td>
+<td>개인·집단 선량, 조기·암 사망 위험도, 토지 오염, 결과 초과빈도 곡선(CCDF)</td>
+</tr>
+</tbody>
+</table>
+<figure class="article-image"><img alt="발전소 조감 위 노심·격납건물·소외 지시점과 Level 1·2·3 단계 카드(범위·수행 항목·결과)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-pr-001-psa-levels/fig1_psa_three_levels.avif"/><figcaption>발전소 조감 위 노심·격납건물·소외 지시점과 Level 1·2·3 단계 카드(범위·수행 항목·결과)</figcaption></figure>
+<h3>Level 1 — 사건수목과 고장수목으로 CDF 구하기</h3>
+<ol>
+<li><strong>초기사건 분석</strong>: LOCA(크기별), 과도, SGTR, 소외전원상실, ISLOCA 등을 목록화하고 완화 요건이 같은 것끼리 묶어 빈도를 정합니다.</li>
+<li><strong>사건수목(ET)</strong>: 초기사건 뒤 필요한 완화 기능을 표제로 놓고 성공·실패 분기로 사고경위를 전개합니다. 성공기준은 열수력 해석으로 정합니다.</li>
+<li><strong>계통 고장수목(FT)</strong>: 표제의 실패를 정상사건으로 두고 기기 고장·시험정비 이용불능·지원계통 의존성까지 논리 게이트로 전개합니다.</li>
+<li><strong>인간신뢰도분석(HRA)·공통원인고장(CCF)</strong>: 운전원 조치 실패확률과 다중 기기의 동시 고장을 모델에 넣습니다.</li>
+<li><strong>신뢰도 자료 분석</strong>: 일반 자료에 발전소 운전경험을 베이지안으로 갱신해 고장률·이용불능도를 정합니다.</li>
+<li><strong>사고경위 정량화</strong>: ET와 FT를 결합해 MCS(초기사건 빈도 × 기본사건 확률의 곱)를 구하고, 희귀사건 근사로 MCS 빈도를 더해 CDF = Σ f_IE × P(노심손상 | IE)를 얻습니다. 분기확률은 지원계통·공유기기·HRA 의존성을 반영한 조건부확률입니다. 이어 중요도·민감도·불확실성(몬테카를로, 평균과 5·95 백분위)을 분석합니다.</li>
+</ol>
+<p>중요도는 활용의 핵심입니다. FV = [R − R(q=0)]/R은 그 기본사건이 들어간 경위가 위험도에서 차지하는 비율, RAW = R(q=1)/R은 그 기기가 확실히 고장 났을 때 위험도가 몇 배가 되는지를 뜻합니다. 위험도 중요 기기 선별(NEI 00-04 등)에서는 FV &gt; 0.005 또는 RAW &gt; 2를 후보 기준으로 흔히 씁니다[5].</p>
+<figure class="article-image"><img alt="설명용 가정 수치의 사건수목·고장수목과 CDF 기여·FV·RAW 계산" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-pr-001-psa-levels/fig2_level1_quantification.avif"/><figcaption>설명용 가정 수치의 사건수목·고장수목과 CDF 기여·FV·RAW 계산</figcaption></figure>
+<h3>Level 2 — 발전소손상군에서 방출범주까지</h3>
+<ol>
+<li><strong>발전소손상군(PDS) 분석</strong>: 노심손상 경위를 초기사건 유형, 용기 파손 시 RCS 압력, 안전주입·살수 상태, 격리·우회 여부로 묶어 1·2단계를 접속합니다.</li>
+<li><strong>중대사고 현상·격납건물 성능</strong>: MAAP 등으로 수소 연소, DCH, MCCI, 과압을 해석하고 격납건물 취약도 곡선과 비교합니다.</li>
+<li><strong>격납건물 사건수목(CET)</strong>: 우회, 격리, 조기·후기 파손, 기저부 관통을 표제로 분기확률을 정량화합니다. 구조 파손이 없어도 격리 실패·우회로 방출될 수 있습니다.</li>
+<li><strong>선원항 방출군(STC) 분석</strong>: 종단 상태를 방출 시점·크기·경로·세정 여부로 묶고(방출범주라고도 함) 대표 선원항을 정합니다.</li>
+<li><strong>민감도·불확실성 분석</strong>: 현상 불확실성이 크므로 분기확률 가정을 바꿔 결과의 견고성을 봅니다.</li>
+</ol>
+<p>여기서 나오는 LERF(대량조기방출빈도)는 주민 소개 전 대량 방출의 빈도입니다.</p>
+<h3>Level 3 — 소외 결과</h3>
+<p>Level 2의 방출범주별 선원항에 부지 기상, 인구 분포, 소개·옥내대피 같은 방호조치, 피폭경로를 결합해 대기확산과 선량, 건강영향을 계산합니다(MACCS 등). 결과는 개인 조기·암 사망 위험도와 결과 초과빈도 곡선(CCDF)으로 나옵니다. IAEA는 Level 1·2 안전지침(SSG-3·SSG-4)을 두었으나[2][3] Level 3 전용 안전지침은 아직 없습니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>분석 범위: 운전상태와 사건 원천</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>전출력 PSA</td>
+<td>정격출력 운전 중 초기사건</td>
+<td>가장 오래되고 정교한 모델</td>
+</tr>
+<tr>
+<td>정지·저출력 PSA</td>
+<td>계획예방정비 중 운전상태(POS)별 분석</td>
+<td>정지냉각 상실, 부분충수 운전, 격납건물 개방이 주요 쟁점</td>
+</tr>
+<tr>
+<td>내부사건 PSA</td>
+<td>기기 고장·운전원 오류 등 내부 초기사건</td>
+<td>화재·침수는 내부재해로 따로 분석하기도 함</td>
+</tr>
+<tr>
+<td>외부사건 PSA</td>
+<td>지진, 강풍, 해일·홍수 등</td>
+<td>재해도 × 취약도, 불확실성이 큼</td>
+</tr>
+</tbody>
+</table>
+<p>최근에는 사용후핵연료저장조와 다수기 PSA까지 범위가 넓어졌고, IAEA SSG-3 Rev.1(2024)에 다수기·피동계통·디지털계통 신뢰도가 들어갔습니다[2].</p>
+<h3>결과 예시와 활용</h3>
+<ul>
+<li>예시(APR1400 미국 설계인증 PRA): 전출력 내부사건 CDF 약 1.1×10⁻⁶/년, LRF 약 1.0×10⁻⁷/년, 정지·저출력 내부사건 CDF 약 1.8×10⁻⁶/년입니다[7]. <!-- 확인필요: DCD 19장·NRC SER 원표 미대조, 업계지·RAI 응답 기준 --></li>
+<li>국내 예(새울 1·2·신한울 1·2 사고관리계획서, 2025.1 원안위 의결): 전출력 1·2·3단계 내·외부사건과 정지·저출력 1단계를 제출했고, Cs-137 100 TBq 초과 빈도 합은 2.41×10⁻⁷/년, 5.56×10⁻⁷/년으로 목표 이내였습니다[8]. PSA에서 발전소 정전이 주요 초기사건으로 나와 이동형발전차 선배치 등 개선으로 이어졌습니다.</li>
+<li>활용: 설계 취약점 식별과 대안 비교, 위험도 감시기를 이용한 정비 위험도 관리, 운영기술지침서 허용정지시간·시험주기 최적화, 사고관리 전략 우선순위, 위험도정보활용 규제, 주기적안전성평가에 씁니다.</li>
+<li>한계: 모델 완전성, HRA·CCF·자료의 불확실성, 외부사건의 큰 불확실성 때문에 절대값보다 상대 비교와 통찰 위주로 씁니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>원자력안전법 제20조 제2항·제21조 제1항 제6호</td>
+<td>사고관리계획서(중대사고관리계획 포함) 제출과 허가기준</td>
+</tr>
+<tr>
+<td>기술기준규칙 제85조의22</td>
+<td>사고관리능력의 평가</td>
+</tr>
+<tr>
+<td>원안위 고시 제2026-1호 제9조[6]</td>
+<td>PSA의 기술적 적합성·상세성·분석범위, 초기사망·암사망 위험도가 각각 전체 위험도의 0.1 % 이하(또는 성능목표), Cs-137 100 TBq 초과 빈도 합 1.0×10⁻⁶/년 미만, 결과 활용</td>
+</tr>
+<tr>
+<td>NUREG/CR-2300, NUREG-1150</td>
+<td>PRA 절차 지침, 5개 원전 위험도 평가</td>
+</tr>
+<tr>
+<td>미국 RG 1.200, RG 1.174</td>
+<td>PRA 기술적 적합성, 위험도정보 변경 허용기준[4]</td>
+</tr>
+<tr>
+<td>IAEA SSR-2/1 Rev.1, SSG-3 Rev.1, SSG-4 Rev.1</td>
+<td>설계 시 PSA 요건, Level 1(2024)·Level 2(2025) 지침</td>
+</tr>
+</tbody>
+</table>
+<p>CDF 10⁻⁴/년(기존)·10⁻⁵/년(신규)은 INSAG-12의 목표입니다[9]. 대량 방출은 INSAG-12가 수치 대신 "기존 원전은 CDF보다 최소 10배 낮게, 신규 원전은 대량 조기방출의 실질적 배제"로 적습니다. LERF 10⁻⁵/년은 미국 RG 1.174의 가동원전 기준값이고[4], 신규 원전에 많이 인용되는 10⁻⁶/년은 LERF가 아니라 미국 NRC의 대량방출빈도(LRF) 지침입니다. 모두 0.1 % 건강목표를 판단하는 성능목표로 통용되는 값이며, 고시 제9조 본문에는 수치가 없습니다. <!-- 해소(2026-10-10): 고시 제2026-1호 제9조 원문에는 성능목표 수치가 없음(DRF 대조, Y2025-1-12). 수치는 학회 논문·통용값 --></p>
+<p><strong>출제 당시 대비 달라진 점</strong></p>
+<ul>
+<li>2004·2008·2012년 출제 당시 국내 PSA는 2001년 중대사고 정책에 따른 권고 성격이었으나, 2016.6부터 사고관리계획서의 위험도 평가로 법정화되었습니다.</li>
+<li>고시는 제2016-2호 → 제2017-34호 → 현행 제2026-1호이며 제9조 목표치는 바뀌지 않았습니다.</li>
+<li>IAEA 지침이 SSG-3 Rev.1(2024)·SSG-4 Rev.1(2025)로 개정되었습니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>결정론적 안전해석</th>
+<th>PSA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>질문</td>
+<td>설계기준사고에서 허용기준을 만족하나</td>
+<td>모든 사고경위의 빈도와 결과는 얼마인가</td>
+</tr>
+<tr>
+<td>가정</td>
+<td>보수적, 단일고장, 소외전원상실</td>
+<td>최적평가, 실제 고장률·인간오류</td>
+</tr>
+<tr>
+<td>결과</td>
+<td>합격·불합격</td>
+<td>CDF·LERF·위험도와 불확실성 분포</td>
+</tr>
+</tbody>
+</table>
+<p>Cs-137 100 TBq 초과 빈도 목표와 LERF는 정의가 다른 별개 지표입니다. LERF는 소개 전 조기·대량 방출의 빈도를, 고시 목표는 방출량 문턱(100 TBq)을 넘는 사고 빈도의 합을 봅니다. 0.1 %는 연간 사망확률 0.001이 아니라 다른 원인에 의한 전체 위험도 대비 비율입니다. CDF는 확률이 아니라 원자로·년당 빈도입니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 사고경위의 빈도 × 결과로 위험도 정량화, 결정론 보완</li>
+<li><strong>Level 1</strong>: 초기사건 → 노심손상, IE·ET·FT·HRA·CCF·자료 → MCS 정량화 → CDF</li>
+<li><strong>Level 2</strong>: PDS → 현상 해석·격납건물 취약도 → CET → STC → LRF·LERF·선원항</li>
+<li><strong>Level 3</strong>: 확산·피폭경로·방호조치 → 소외 건강위험도·CCDF</li>
+<li><strong>범위</strong>: 전출력 / 정지·저출력(POS), 내부 / 외부(지진·해일), SFP·다수기</li>
+<li><strong>활용</strong>: 설계 개선, 정비 위험도·AOT, 사고관리, RIR, PSR</li>
+<li><strong>중요도</strong>: FV·RAW(선별 예 FV &gt; 0.005, RAW &gt; 2)</li>
+<li><strong>국내 기준</strong>: 고시 제2026-1호 제9조 — 사망 위험도 각 전체의 0.1 %, Cs-137 100 TBq 초과 빈도 합 10⁻⁶/년 미만</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 초기사건→노심손상→환경 방출→소외 영향 3단계 사슬 도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-pr-001-psa-levels/sketch1_psa_level_chain.avif"/><figcaption>답안지용 초기사건→노심손상→환경 방출→소외 영향 3단계 사슬 도식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023년 2교시 5번</td>
+<td>2단계 PSA 주요 수행단계</td>
+</tr>
+<tr>
+<td>2022년 3교시 2번</td>
+<td>1단계 PSA 주요 수행단계</td>
+</tr>
+<tr>
+<td>2021년 1교시 8번</td>
+<td>Level-1·2·3 PSA 목적</td>
+</tr>
+<tr>
+<td>2016년 4교시 3번</td>
+<td>PSA 목적·활용처와 단계별 평가항목</td>
+</tr>
+<tr>
+<td>2015년 3교시 1번</td>
+<td>PSA 단계·운전상태·사건별 구분</td>
+</tr>
+<tr>
+<td>2012년 2교시 4번</td>
+<td>단계별 PSA 내용과 방법</td>
+</tr>
+<tr>
+<td>2008년 4교시 3번</td>
+<td>PSA의 3단계</td>
+</tr>
+<tr>
+<td>제73회 3교시 2번</td>
+<td>PSA 3단계의 내용과 목적</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, NUREG/CR-2300 "PRA Procedures Guide" (1983).</li>
+<li>IAEA, Specific Safety Guide SSG-3 (Rev. 1) "Development and Application of Level 1 Probabilistic Safety Assessment for Nuclear Power Plants" (2024).</li>
+<li>IAEA, Specific Safety Guide SSG-4 (Rev. 1) "Development and Application of Level 2 Probabilistic Safety Assessment for Nuclear Power Plants" (2025).</li>
+<li>U.S. NRC, Regulatory Guide 1.174 Rev. 3 "An Approach for Using Probabilistic Risk Assessment in Risk-Informed Decisions on Plant-Specific Changes to the Licensing Basis"; Regulatory Guide 1.200 "Acceptability of Probabilistic Risk Assessment Results for Risk-Informed Activities".</li>
+<li>Nuclear Energy Institute, NEI 00-04 "10 CFR 50.69 SSC Categorization Guideline". NRC ADAMS 공개.</li>
+<li>원자력안전위원회, 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」, 원안위고시 제2026-1호, 제9조. 국가법령정보센터.</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Chapter 19 "Probabilistic Risk Assessment and Severe Accident Evaluation" 및 관련 RAI 응답. NRC 설계인증 공개 문서.</li>
+<li>원자력안전위원회, 제206회 원자력안전위원회 회의 의안(새울 1·2호기, 신한울 1·2호기 사고관리계획서 심의, 2025.1.9). 원안위 누리집 공개.</li>
+<li>IAEA, INSAG-12 "Basic Safety Principles for Nuclear Power Plants, 75-INSAG-3 Rev. 1" (1999).</li>
+</ol>

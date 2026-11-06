@@ -1,0 +1,223 @@
+<figure class="article-image"><img alt="[개념 노트] 현가(Present Worth)와 공학경제 — 6대 이자계수로 푸는 폐로 적립금·건설중이자·균등화 비용 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-pe-004-present-worth/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p>**현가(Present Worth, PW)**는 미래 시점의 금액을 이자율(할인율) i로 할인해 기준 시점의 등가 금액으로 바꾼 값입니다. 식은 P = F/(1+i)ⁿ입니다.</p>
+<p>같은 금액이라도 시점이 다르면 가치가 다릅니다(<strong>화폐의 시간가치</strong>). 그래서 시점이 다른 현금흐름은 같은 기준 시점으로 옮긴 뒤에만 더하거나 비교할 수 있습니다. 이것이 **등가(equivalence)**입니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>현금흐름도와 6대 이자계수</h3>
+<figure class="article-image"><img alt="현금흐름도(P·A·F)와 6대 이자계수 식·5 %·30년 계수값, 기출 4문항 계산 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-pe-004-present-worth/fig1_cash_flow_interest_factors.avif"/><figcaption>현금흐름도(P·A·F)와 6대 이자계수 식·5 %·30년 계수값, 기출 4문항 계산 카드</figcaption></figure>
+<table>
+<thead>
+<tr>
+<th>계수</th>
+<th>기호</th>
+<th>식</th>
+<th>5 %, 30년</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>일시불 복리</td>
+<td>(F/P,i,n)</td>
+<td>(1+i)ⁿ</td>
+<td>4.3219</td>
+</tr>
+<tr>
+<td>일시불 현가</td>
+<td>(P/F,i,n)</td>
+<td>(1+i)^−n</td>
+<td>0.23138</td>
+</tr>
+<tr>
+<td>연금 현가</td>
+<td>(P/A,i,n)</td>
+<td>[(1+i)ⁿ−1]/[i(1+i)ⁿ]</td>
+<td>15.3725</td>
+</tr>
+<tr>
+<td>자본회수(CRF)</td>
+<td>(A/P,i,n)</td>
+<td>i(1+i)ⁿ/[(1+i)ⁿ−1]</td>
+<td>0.065051</td>
+</tr>
+<tr>
+<td>연금 종가</td>
+<td>(F/A,i,n)</td>
+<td>[(1+i)ⁿ−1]/i</td>
+<td>66.4388</td>
+</tr>
+<tr>
+<td>감채기금(SFF)</td>
+<td>(A/F,i,n)</td>
+<td>i/[(1+i)ⁿ−1]</td>
+<td>0.015051</td>
+</tr>
+</tbody>
+</table>
+<p>표의 식은 공학경제 교과서의 표준식이고, 계수값은 직접 계산했습니다[1].</p>
+<ul>
+<li><strong>관례</strong>: 연금 A는 각 기간 <strong>말</strong>에 생기고, P는 첫 A보다 한 기간 앞, F는 마지막 A와 같은 시점입니다. 기간 초에 생기면(기간초 연금) 같은 A의 P·F를 구할 때 ×(1+i)를 하고, 주어진 P·F에서 A를 구할 때는 ÷(1+i)를 합니다.</li>
+<li><strong>현금흐름도의 P·A·F는 서로 등가인 대안</strong>입니다. 한 사업이 셋을 모두 주고받는다는 뜻이 아닙니다.</li>
+<li><strong>관계식</strong>: (A/P) = (A/F) + i입니다. 자본을 회수하려면 원금 적립분(A/F)에 매년 이자(i)를 더 내야 한다는 뜻입니다. n→∞이면 (P/A)→1/i가 됩니다.</li>
+<li><strong>기준 시점은 문제가 정합니다.</strong> 시험지의 "준공시점 현가"는 엄밀히는 지출을 준공시점으로 <strong>복리로 밀어</strong> 올린 등가액(종가)입니다. 현가는 기준시점으로 할인한 값이므로, 시점을 어느 쪽으로 옮기는지 먼저 확인합니다.</li>
+</ul>
+<h3>할인 계수의 크기 감각</h3>
+<figure class="article-image"><img alt="할인율별 P/F 곡선(0~60년)과 건설비 준공시점 복리 환산 막대(IDC)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-pe-004-present-worth/fig2_discount_curves_idc.avif"/><figcaption>할인율별 P/F 곡선(0~60년)과 건설비 준공시점 복리 환산 막대(IDC)</figcaption></figure>
+<p>40년 뒤 1원의 현가는 3 %에서 0.307, 5 %에서 0.142, 7 %에서 0.067, 10 %에서 0.022입니다. 할인율이 높을수록 먼 미래의 비용과 편익(연료비 절감, 해체비)이 작아집니다. 반대로 지금 쓰는 건설비는 그대로 남습니다. 원자력처럼 초기 투자가 큰 전원이 할인율에 민감한 이유가 여기에 있습니다.</p>
+<h3>인플레이션: 명목과 실질</h3>
+<ul>
+<li><strong>Fisher 관계</strong>: (1+i_n) = (1+i_r)(1+f)입니다. 명목 7 %, 물가 2 %면 실질 i_r = 1.07/1.02 − 1 = **4.90 %**입니다. 단순히 빼서 5 %로 두면 안 됩니다.</li>
+<li><strong>일관성 원칙</strong>: 명목(경상가격) 현금흐름에는 명목 할인율을, 불변가격(실질) 현금흐름에는 실질 할인율을 씁니다. OECD/NEA·IEA 2020 LCOE는 2018 불변 USD와 실질 3·7·10 %를 씁니다[2].</li>
+<li><strong>비용 상승(escalation)의 균등화</strong>: 0년 가격 A₀가 매년 g씩 오르면 균등화 계수 = CRF(r,n) × Σ[(1+g)/(1+r)]ᵗ입니다. r = 7 %, g = 2 %, n = 60이면 1.371배입니다.</li>
+</ul>
+<h3>투자 판단 지표: NPV·IRR·회수기간</h3>
+<p>예시로 초기 6억 원을 투자하고 매년 말 1억 원을 10년간 받으며, 최소요구수익률(MARR)은 7 %라고 두겠습니다.</p>
+<ul>
+<li><strong>NPV</strong> = −6 + 1×7.0236 = <strong>+1.024억 원</strong>입니다. 0 이상이므로 채택합니다.</li>
+<li><strong>IRR</strong>: NPV = 0인 i를 구하면 (P/A,i,10) = 6에서 **10.56 %**입니다. MARR 7 %보다 크므로 채택합니다.</li>
+<li><strong>회수기간</strong>: 단순 회수기간은 6년입니다. 할인 회수기간은 누적 현가가 8년에 5.971, 9년에 6.515이므로 9년째에 회수됩니다.</li>
+<li>회수기간은 회수 뒤의 현금흐름을 무시합니다. IRR은 상호배타 대안끼리 비교할 때 순위가 뒤집힐 수 있습니다. 그래서 대안 선택은 NPV나 증분 분석이 기본입니다.</li>
+</ul>
+<h3>균등화 비용 유도</h3>
+<p>균등화 비용(levelized cost) LC는 "LC로 판 수입의 현가 = 비용의 현가"가 되는 일정 단가입니다.</p>
+<p>Σ LC·Eₜ(1+r)^−t = Σ Cₜ(1+r)^−t → LC = Σ Cₜ(1+r)^−t / Σ Eₜ(1+r)^−t</p>
+<p>Eₜ = E로 일정하고 투자비 I(IDC 포함)가 운전개시 시점에 있다고 보면, 자본비 단가는 I × CRF(r,n)/E가 됩니다. OECD/NEA·IEA 2020의 한국 원자력 입력(overnight 2,157 USD/kWe, 건설 7년, 실질 7 %, 이용률 85 %)으로 계산한 예(IDC 포함 2,758 USD/kWe × 0.0712 ÷ 7.446 MWh/kW = 26.4 USD/MWh)가 이 식입니다[2].</p>
+<h3>균등화 연료비와 선행·후행 시간</h3>
+<p>연료비는 장전 전에 미리 지출(<strong>lead</strong>: 정광·전환·농축·성형)하고, 전기는 장전 뒤 수년에 걸쳐 생산합니다. 후행 비용(저장·처분)은 방출 뒤 지연(<strong>lag</strong>)되어 지출됩니다. 각 지출을 실제 시점대로 할인하면 선행분은 (1+r)^lead배로 커지고(재고 carrying charge), 후행분은 (1+r)^−lag배로 작아집니다[3].</p>
+<p>예시 가정은 다음과 같습니다. 1 kgU 비용 1,663 USD(WNA 2021.9 가격 구성비: 우라늄 848·전환 116·농축 399·성형 300)[4]를 장전 2.0·1.5·1.0·0.5년 전에 지출하고, 연소도 45 GWd/tU, 열효율 33 %(356.4 MWh/kgU)로 4.5년간 균일 발전하며, r = 7 %로 둡니다.</p>
+<ul>
+<li>시간가치를 무시한 단가: 1,663 ÷ 356.4 = 4.67 USD/MWh</li>
+<li>장전시점 비용 등가: 848×1.07² + 116×1.07^1.5 + 399×1.07 + 300×1.07^0.5 = 1,836 USD</li>
+<li>발전량 현가: 356.4 × (1−e^−4.5·ln1.07)/(4.5·ln1.07) = 307.3 MWh</li>
+<li>균등화 연료비 = 1,836 ÷ 307.3 = <strong>5.98 USD/MWh</strong>(약 +28 %)</li>
+<li>후행 비용을 방출 5년 뒤 지급하면 현가는 1.07^−9.5 = 0.526배가 됩니다.</li>
+</ul>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>건설중이자(IDC)</strong>: 건설기간 지출을 운전개시 시점으로 복리 환산한 증가분입니다. 건설이 늦어지면 IDC가 늘고, 자본비 단가도 CRF를 거쳐 함께 오릅니다.</li>
+<li><strong>해체비 충당</strong>: 수십 년 뒤의 해체비를 운전 중 균등 적립합니다. 미래 필요액(감채기금 A/F)을 기준으로 할지, 현가(자본회수 A/P)를 기준으로 할지에 따라 연 적립액이 크게 다릅니다. 충당부채는 미래 지출의 현재가치로 계상합니다.</li>
+<li><strong>전원 선정</strong>: 할인율이 오르면 자본집약형인 원자력이 불리해집니다. 비용 현가(또는 LCOE)를 할인율의 함수로 그려 분기 할인율 r<em>를 찾습니다. 한국 OECD 2020 입력 모델에서 원자력–석탄 r</em>는 약 13.9 %입니다(그 가정에 한정한 설명용 계산)[2].</li>
+<li><strong>계속운전·설비투자 판단</strong>: 증기발생기 교체나 계속운전 투자도 남은 수명의 NPV로 판단합니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<ul>
+<li>OECD/NEA·IEA <em>Projected Costs of Generating Electricity 2020</em>: 실질 할인율 3·7·10 %, 할인 발전량을 분모로 하는 LCOE 식을 씁니다[2].</li>
+<li>국내 예비타당성조사 사회적 할인율: 2007~2017년 5.5 %에서 2017년 **4.5 %**로 인하됐습니다[6].<!-- 확인필요: 2026년 현행 예비타당성조사 수행 총괄지침의 할인율 문언 직접 미대조(2017 인하 보도·지방재정 연혁 자료로 확인) --></li>
+<li>해체비·사용후핵연료 관리부담금: 「방사성폐기물 관리법」과 관리비용 산정 규정(2026.1.27 시행분)으로 정합니다. 충당부채의 현재가치 평가는 K-IFRS 1037을 따릅니다[5].</li>
+<li><strong>출제 당시 대비</strong>: 계산 원리는 같습니다. 달라진 것은 할인율 수준(사회적 할인율 인하, 저금리 기조)과 사후처리비용 단가입니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>A</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A/P vs A/F</td>
+<td>현재 P를 n년간 회수(이자 포함)</td>
+<td>미래 F를 모으는 적립</td>
+</tr>
+<tr>
+<td>기간말 vs 기간초 연금</td>
+<td>첫 지급이 1기간 뒤</td>
+<td>첫 지급이 기준시점, ×(1+i)</td>
+</tr>
+<tr>
+<td>명목 vs 실질 할인율</td>
+<td>경상가격 현금흐름용</td>
+<td>불변가격 현금흐름용, Fisher로 환산</td>
+</tr>
+<tr>
+<td>NPV vs IRR</td>
+<td>금액 기준, 대안 비교의 기본</td>
+<td>비율 기준, 상호배타 비교 시 순위 역전 가능</td>
+</tr>
+<tr>
+<td>단순 vs 할인 회수기간</td>
+<td>시간가치 무시</td>
+<td>누적 현가로 판정, 더 김</td>
+</tr>
+</tbody>
+</table>
+<h2>기출 계산 정리</h2>
+<ol>
+<li><strong>10년 수익 현가(제63회 3교시 3번)</strong>: 매년 말 1억 원×10년, 7 %. P = 1×(P/A,7 %,10) = <strong>7.0236억 원</strong>입니다.</li>
+<li><strong>폐로 적립금 현가(제65회 3교시 2번)</strong>: 매년 말 300억 원×30년, 5 %, 금년말 기준.
+<ul>
+<li>첫 적립이 1년 뒤(표준 해석): P = 300×15.3725 = <strong>4,611.7억 원</strong></li>
+<li>첫 적립이 금년말 당일: 4,611.7×1.05 = 4,842.3억 원</li>
+<li>답안에는 해석을 먼저 밝힙니다. 30년 뒤 적립 총액은 300×66.4388 = 19,931.7억 원입니다.</li>
+</ul>
+</li>
+<li><strong>폐로 연간 적립액(제71회 2교시 2번)</strong>: 현가 5,000억 원, 40년, 5 %. A = 5,000×(A/P,5 %,40) = 5,000×0.058278 = <strong>291.4억 원/년</strong>입니다. 5,000억 원이 40년 뒤 필요액이라면 A/F로 41.4억 원/년이 되며, 차이 250억 원은 5,000×i입니다.</li>
+<li><strong>준공시점 건설비(제76회 2교시 5번)</strong>: 6 %, 매년 초 투입, 준공 = 5년 말.
+<ul>
+<li>3,000×1.06⁵ = 4,014.7, 5,000×1.06⁴ = 6,312.4, 5,000×1.06³ = 5,955.1, 4,000×1.06² = 4,494.4, 3,000×1.06 = 3,180.0</li>
+<li>합계 <strong>23,956.5억 원(약 2조 3,957억 원)</strong>, IDC 3,956.5억 원(19.8 %)</li>
+</ul>
+</li>
+</ol>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 현가(Present Worth)</strong></p>
+<ol>
+<li><strong>정의</strong>: 미래 금액을 할인율 i로 기준시점 등가액으로 환산한 값임, P = F/(1+i)ⁿ</li>
+<li><strong>근거</strong>: 화폐의 시간가치(이자·기회비용·위험) → 시점이 다른 금액은 같은 시점으로 옮긴 뒤 비교함</li>
+<li><strong>연금 현가</strong>: P = A·[(1+i)ⁿ−1]/[i(1+i)ⁿ], A는 기간말 지급 가정</li>
+<li><strong>역수 관계</strong>: CRF(A/P) = i(1+i)ⁿ/[(1+i)ⁿ−1] = SFF(A/F) + i</li>
+<li><strong>예</strong>: 매년 말 1억 원×10년, 7 % → 7.02억 원</li>
+<li><strong>적용</strong>: 건설중이자(준공시점 복리 환산), 해체비 적립, 균등화 발전원가, NPV·IRR</li>
+<li><strong>유의</strong>: 명목·실질 할인율 일치(Fisher), 기간말·기간초 구분, 할인율↑ → 자본집약형 원자력 불리</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: 현금흐름도 P·A·F와 계수 관계" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-pe-004-present-worth/sketch1_cash_flow_diagram.avif"/><figcaption>답안용 도식: 현금흐름도 P·A·F와 계수 관계</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>연도-교시-번호</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2001(제63회)-1-2</td>
+<td>현가(Present Worth)</td>
+</tr>
+<tr>
+<td>2001(제63회)-3-3</td>
+<td>10년간 수익의 현가 계산</td>
+</tr>
+<tr>
+<td>2001(제65회)-3-2</td>
+<td>폐로비용 적립금의 현가</td>
+</tr>
+<tr>
+<td>2002(제67회)-4-4</td>
+<td>할인율에 따른 전원설비 선정</td>
+</tr>
+<tr>
+<td>2003(제71회)-2-2</td>
+<td>폐로비용 연간 적립액</td>
+</tr>
+<tr>
+<td>2005(제76회)-2-5</td>
+<td>준공시점 건설비(건설중이자)</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>D. G. Newnan, T. G. Eschenbach, J. P. Lavelle, Engineering Economic Analysis, Oxford University Press — 이자계수·NPV·IRR 표준식.</li>
+<li>OECD/NEA·IEA, Projected Costs of Generating Electricity – 2020 Edition, OECD Publishing (2020).</li>
+<li>M. Benedict, T. H. Pigford, H. W. Levi, Nuclear Chemical Engineering, 2nd ed., McGraw-Hill (1981), 3장(연료주기 비용의 lead/lag).</li>
+<li>World Nuclear Association, "Economics of Nuclear Power"(공개 정보 페이지, 2021.9 기준 연료비 구성).</li>
+<li>「방사성폐기물 관리법」, 국가법령정보센터; 한국회계기준원, K-IFRS 제1037호 「충당부채, 우발부채, 우발자산」.</li>
+<li>뉴시스, 예비타당성조사 사회적 할인율 5.5 %→4.5 % 인하 보도 (2017.8.11).</li>
+</ol>

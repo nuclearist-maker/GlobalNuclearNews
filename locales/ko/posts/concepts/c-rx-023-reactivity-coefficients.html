@@ -1,0 +1,214 @@
+<figure class="article-image"><img alt="[개념 노트] 반응도계수(Reactivity Coefficients) — 부호·크기·시간척도·주기 경향을 한 장의 체계로 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-023-reactivity-coefficients/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p>**반응도계수(Reactivity Coefficient)**는 노심의 상태변수 x 하나가 단위량 변할 때(다른 변수는 고정) 반응도가 얼마나 변하는지를 나타내는 편미분 <strong>α_x = ∂ρ/∂x</strong>입니다. ρ = (k − 1)/k이고 단위는 pcm/°F, pcm/°C, pcm/ppm, pcm/%power처럼 "pcm/변수 단위"로 씁니다(1 pcm = 10⁻⁵ Δk/k, 1 pcm/°F = 1.8 pcm/°C).</p>
+<p>답안 첫 줄은 "노심 상태변수(연료·감속재 온도, 밀도·기포, 압력, 붕소, 출력)의 단위 변화당 반응도 변화로, 과도 시 원자로 거동을 지배하며 출력운전 영역에서 순효과가 음이 되도록 설계함"이면 충분합니다.</p>
+<p>이 노트는 체계만 정리합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>계수를 쓸 때의 두 가지 약속</h3>
+<ol>
+<li><strong>편미분이다.</strong> α_F는 감속재 온도를 고정한 채 연료 온도만 바꾼 값입니다. 실제 과도에서는 여러 변수가 함께 변하므로 궤환 반응도를 합으로 씁니다.
+<ul>
+<li>ρ_fb = α_F·ΔT_F + α_M·ΔT_M + α_V·Δv + α_p·Δp</li>
+<li>밀도 감소와 기포는 같은 물리 효과입니다. 고정 조건을 정해 두 번 세지 않습니다.</li>
+</ul>
+</li>
+<li><strong>계수(미분)와 결손(적분)은 다르다.</strong> 출력결손 PD = ∫α_P dP, 온도결손 = ∫ITC dT입니다. 계수는 기울기(pcm/단위), 결손은 누적량(pcm)입니다.</li>
+</ol>
+<p>반응도계수는 사고해석의 일점동특성 입력입니다. 사건마다 결과를 나쁘게 만드는 쪽 끝값(최대 또는 최소)을 보수적으로 고릅니다.</p>
+<h3>계수 일곱 가지</h3>
+<ul>
+<li><strong>핵연료온도계수(FTC, 도플러) α_F = ∂ρ/∂T_F</strong>: U-238 공명이 도플러 확장으로 넓어지고 자기차폐가 완화되어 공명흡수가 늘어납니다(p↓). 저농축 경수로에서 <strong>항상 음</strong>이고, 크기는 노심·연소도별 노심설계값입니다(MIT 공개 강의(OCW)의 PWR 범위 예 약 −1 ~ −4 pcm/K[5]).</li>
+<li><strong>감속재온도계수(MTC) α_M = ∂ρ/∂T_M</strong>: 주역은 물의 <strong>밀도</strong> 감소입니다. 감속 저하·누설 증가(음)와 물·용해 붕소의 흡수 감소(f↑, 양)가 경쟁합니다. 그래서 붕소 농도에 따라 부호가 바뀔 수 있습니다.</li>
+<li><strong>감속재 밀도계수 α_D = ∂ρ/∂ρ_w</strong>: MTC의 실체입니다. α_M ≈ α_D·(∂ρ_w/∂T)이고 ∂ρ_w/∂T &lt; 0입니다. 과소감속 설계라면 α_D &gt; 0입니다.</li>
+<li><strong>기포계수 α_V = ∂ρ/∂v</strong>: 기포는 국부적으로 밀도가 0인 상태라 과소감속 경수로에서 음입니다. PWR은 국부 비등 수준이라 영향이 작고, BWR에서는 주 궤환입니다.</li>
+<li><strong>압력계수 α_p = ∂ρ/∂p</strong>: PWR에서는 압력이 오르면 물 밀도와 감속이 늘어 <strong>작은 양</strong>입니다. 크기가 작아 실질 영향은 미미합니다. 같은 밀도 효과(α_p ≈ α_D·∂ρ_w/∂p)라 MTC가 더 음일수록 압력계수는 더 양이 되는 경향입니다.</li>
+<li><strong>붕소 반응도가 α_B = ∂ρ/∂C_B</strong>: 크기는 노심·연소도별 노심설계값이고(기출 계산 예 −10 pcm/ppm) 연소가 진행되면 절댓값이 커지는 경향입니다. 궤환 계수가 아니라 <strong>제어 수단의 미분 반응도가</strong>입니다. 다만 붕소 농도가 MTC 부호를 좌우하므로 함께 묶습니다.</li>
+<li><strong>출력계수 α_P = dρ/dP</strong>: PWR(기포 무시)은 <strong>α_P = MTC·dT_M/dP + FTC·dT_F/dP</strong>(pcm/%power)입니다. 개별 계수를 출력당 온도 변화로 가중한 종합 계수입니다.</li>
+</ul>
+<p>여기에 측정용 조합인 <strong>등온온도계수 ITC = MTC + FTC</strong>가 더해집니다. 연료와 감속재가 같은 ΔT로 변할 때의 계수로 대개 음입니다. 다만 BOC HZP에서 MTC가 양이고 FTC 절댓값보다 크면 ITC도 양일 수 있습니다. 출력계수와는 식의 모양으로 구분하세요.</p>
+<h3>즉발과 지연 — 시간척도가 역할을 나눈다</h3>
+<ul>
+<li><strong>FTC는 즉발</strong>입니다. 발열이 연료 안에서 일어나므로 연료 온도는 출력 변화에 지연 없이 따라 오르고, 도플러 궤환은 그 연료 온도에 즉각 반응합니다. 교재(Lamarsh)가 "즉발온도계수"라 부르는 이유이고[1], 반응도 사고의 첫 출력 첨두를 꺾습니다.</li>
+<li><strong>MTC·밀도·기포계수는 지연</strong>됩니다. 열이 펠릿 → 간극 → 피복관 → 냉각재로 전달된 뒤에 작동하므로 수 초 늦습니다(설명용 가정 연료 열응답 시정수 약 5 s).</li>
+<li><strong>붕소는 궤환이 아니라 제어</strong>입니다. 희석·주입 속도에 제한되어 분 ~ 시간 단위로 작동합니다.</li>
+</ul>
+<p>크기도 차이가 납니다. FTC의 계수 절댓값은 MTC보다 작을 수 있지만, 출력 과도 때 연료 온도 변동폭이 감속재보다 훨씬 커서 효과가 빠르고 큽니다. GDC 11과 기술기준규칙 제18조의 "즉발" 요건을 실질적으로 담당하는 것도 도플러입니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>한눈에 보는 주기 경향</h3>
+<figure class="article-image"><img alt="반응도계수 7개 비교 항목 매트릭스(정의·부호·대표값·응답·BOC→EOC), 연료봉 열전달 경로 장면, 응답 시간척도 로그축(도플러 즉시·감속재 수 초·붕소 분~시간)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-023-reactivity-coefficients/fig1_reactivity_coefficient_matrix.avif"/><figcaption>반응도계수 7개 비교 항목 매트릭스(정의·부호·대표값·응답·BOC→EOC), 연료봉 열전달 경로 장면, 응답 시간척도 로그축(도플러 즉시·감속재 수 초·붕소 분~시간)</figcaption></figure>
+<table>
+<thead>
+<tr>
+<th>계수</th>
+<th>BOC → EOC</th>
+<th>주원인</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FTC(온도계수, pcm/°F)</td>
+<td>더 음</td>
+<td>Pu-240(1.06 eV 공명) 축적</td>
+</tr>
+<tr>
+<td>도플러 출력계수(pcm/%)</td>
+<td>덜 음 가능</td>
+<td>간극 폐쇄로 dT_F/dP 감소</td>
+</tr>
+<tr>
+<td>MTC(전출력)</td>
+<td>0 근처 → 큰 음(COLR 하한 예 −44.6 pcm/°F)</td>
+<td>붕소 희석(주원인)</td>
+</tr>
+<tr>
+<td>붕소 반응도가</td>
+<td>절댓값 증가 경향</td>
+<td>붕소 농도 감소·스펙트럼</td>
+</tr>
+<tr>
+<td>출력계수</td>
+<td>약 −12 → −21 pcm/%</td>
+<td>주로 MTC 변화</td>
+</tr>
+<tr>
+<td>ITC</td>
+<td>더 음</td>
+<td>MTC 변화가 지배</td>
+</tr>
+</tbody>
+</table>
+<p>MTC는 BOC 고온영출력(HZP)에서 양이 될 수 있습니다(Ginna Cycle 39 COLR 상한 예 +5 pcm/°F[4]). 출력계수는 W형 예시(NRC 공개 W형 매뉴얼) 값입니다(100 % 출력결손 BOL 약 −1,200, EOL 약 −2,100 pcm)[3].</p>
+<h3>운전변수가 바뀔 때의 거동(2010년 2교시 6번)</h3>
+<ul>
+<li><strong>출력 증가</strong>: 연료 온도가 즉시 올라 도플러 음의 반응도가 먼저 들어오고, 수 초 뒤 냉각재 온도 상승으로 MTC 몫이 더해져 새 평형에 갑니다. 출력결손만큼 제어봉 인출이나 붕소 희석으로 보상합니다.</li>
+<li><strong>냉각재 온도 하강</strong>(주증기관파단, 급수온도 저하): MTC가 음이면 양의 반응도가 들어옵니다. MTC가 가장 음인 EOC가 가장 불리합니다.</li>
+<li><strong>붕소 농도 증가</strong>: MTC가 덜 음(양 가능)이 됩니다. 가연성 흡수체로 붕소 농도를 낮춰 대응합니다.</li>
+<li><strong>가압기 압력 상승</strong>: PWR에서는 작은 양의 반응도로 실질 영향이 미미합니다.</li>
+<li><strong>저온 임계</strong>: 저온일수록 MTC가 덜 음이라 최소임계온도를 둡니다.</li>
+</ul>
+<h3>안전해석은 양 끝을 모두 쓴다</h3>
+<ul>
+<li><strong>가장 덜 음(BOC·저출력)</strong>: 부하상실, 저출력 제어봉 인출 같은 가열·반응도 삽입 사건과 ATWS 압력 첨두에 보수적입니다.</li>
+<li><strong>가장 음(EOC)</strong>: 냉각 사건의 재임계·출력 복귀에 보수적입니다.</li>
+</ul>
+<h2>측정 — 기동 노물리시험의 ITC</h2>
+<p>재장전 후 기동 노물리시험의 필수 항목은 임계 붕소농도, 제어봉 반응도가, <strong>등온온도계수</strong>입니다(ANSI/ANS-19.6.1 "Reload Startup Physics Tests for PWRs", 현행 2019판)[7].</p>
+<ol>
+<li>고온영출력(HZP)에서 제어봉과 붕소를 고정합니다.</li>
+<li>증기덤프 등으로 Tavg를 몇 °F 올리고 내리며 반응도 계산기로 Δρ를 잽니다.</li>
+<li>출력이 0이라 연료와 감속재가 같은 온도로 변하므로 ITC = Δρ/ΔT입니다.</li>
+<li>**MTC = ITC − FTC(계산값)**으로 분리해 COLR 상한과 비교합니다.</li>
+</ol>
+<p>판정은 예측값 대비 허용폭으로 하며, 허용폭은 승인된 방법론·호기별로 다릅니다. FTC는 직접 재지 않고 계산값을 씁니다. EOC 근처에서는 MTC 하한 만족을 감시 측정이나 승인된 조건부 면제 방법으로 확인합니다.</p>
+<h2>규제·기준 근거</h2>
+<ul>
+<li><strong>「원자로시설 등의 기술기준에 관한 규칙」 제18조(원자로의 고유보호)</strong>: 노심과 관련 냉각계통은 출력운전범위에서 급격한 반응도 증가가 자연적으로 억제되도록 설계해야 합니다(현행 원안위규칙 제37호, 2026.3.30). 반응도계수 부호 요건의 국내 근거입니다[8].</li>
+<li><strong>10 CFR 50 부록 A GDC 11</strong>: 출력운전 범위에서 즉발 고유 핵궤환의 순효과가 급격한 반응도 증가를 보상하는 경향을 가져야 합니다. GDC 12는 출력 진동 억제입니다[2].</li>
+<li><strong>부호 요건의 실제 형태</strong>: 법규는 "각 계수가 모두 음"을 요구하지 않습니다. FTC는 항상 음이고, MTC는 COLR 상한 이하로 관리하며(BOC 저출력 양 허용), 출력운전 전 영역에서 출력계수가 음이 되도록 설계합니다.</li>
+<li><strong>NUREG-0800 SRP 4.3</strong>: 밀도 효과(온도·기포·밀도계수 형태), 도플러계수, 출력계수의 계산값과 불확도를 심사합니다[6].</li>
+<li><strong>STS NUREG-1431 Rev.5 LCO 3.1.3</strong>: MTC를 COLR 한계 이내로 유지합니다. 예시로 Ginna Cycle 39 COLR은 BOL HZP 상한 +5 pcm/°F(70 % RTP 미만), EOL 전출력 하한 −44.6 pcm/°F입니다. FTC와 출력계수 자체의 LCO는 없습니다[4][6].</li>
+<li><strong>IAEA</strong>: SSR-2/1(Rev.1, 2016), SSG-52(2019)[9].</li>
+<li><strong>출제 당시 대비</strong>: 2010년 출제 이후 GDC 11·제18조 취지는 같습니다. 국내 규칙 현행판은 원안위규칙 제37호이고 STS는 Rev.5(2021)입니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>짝</th>
+<th>앞</th>
+<th>뒤</th>
+<th>구분법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>계수 vs 결손</td>
+<td>α = ∂ρ/∂x (pcm/단위)</td>
+<td>∫α dx (pcm)</td>
+<td>단위</td>
+</tr>
+<tr>
+<td>ITC vs 출력계수</td>
+<td>MTC + FTC</td>
+<td>Σα·dT/dP</td>
+<td>가중치 유무</td>
+</tr>
+<tr>
+<td>밀도계수 vs 기포계수</td>
+<td>단상 밀도 변화</td>
+<td>기포율 변화</td>
+<td>같은 효과 — 중복 계산 금지</td>
+</tr>
+<tr>
+<td>궤환 계수 vs 반응도가</td>
+<td>상태 변화가 스스로 만듦</td>
+<td>제어 수단(붕소·제어봉)</td>
+<td>운전원 조작 여부</td>
+</tr>
+<tr>
+<td>도플러 온도계수 vs 도플러 출력계수</td>
+<td>EOC 더 음</td>
+<td>EOC 덜 음 가능</td>
+<td>pcm/°F vs pcm/%</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 노심 반응도계수의 종류와 거동</strong></p>
+<ol>
+<li><strong>정의</strong>: α_x = ∂ρ/∂x, 상태변수 단위 변화당 반응도 변화(편미분)임</li>
+<li><strong>FTC(도플러)</strong>: U-238 공명 확장 → 항상 음, <strong>즉발</strong>, 크기는 노심설계값(수 pcm/K 수준), 연소 시 더 음(Pu-240)</li>
+<li><strong>MTC</strong>: 물 밀도 효과, <strong>붕소 의존</strong>, BOC 양 가능 → EOC 큰 음(COLR 하한 예 −44.6 pcm/°F)</li>
+<li><strong>밀도·기포계수</strong>: 과소감속 → 음, PWR 작음 / BWR 주 궤환</li>
+<li><strong>압력계수</strong>: PWR 작은 양, 영향 미미</li>
+<li><strong>붕소 반응도가</strong>: 음(노심설계값, 계산 예 −10 pcm/ppm), 제어 수단</li>
+<li><strong>조합</strong>: ITC = MTC + FTC(HZP 측정), α_P = MTC·dT_M/dP + FTC·dT_F/dP</li>
+<li><strong>거동</strong>: 출력↑ → 도플러 즉시 −ρ → MTC 지연 −ρ → 새 평형, 냉각 사건 EOC 불리</li>
+<li><strong>요건</strong>: 출력계수 음(GDC 11, 기술기준규칙 제18조), MTC는 COLR 한계</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: 정의 → FTC·MTC·밀도 관련·붕소 → ITC(같은 ΔT)·출력계수(출력에 따른 ΔT로 가중) → 출력결손" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-023-reactivity-coefficients/sketch1_reactivity_coefficient_tree.avif"/><figcaption>답안용 도식: 정의 → FTC·MTC·밀도 관련·붕소 → ITC(같은 ΔT)·출력계수(출력에 따른 ΔT로 가중) → 출력결손</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>연도-교시-번호</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2010-2-6</td>
+<td>노심 반응도계수의 종류와 거동</td>
+</tr>
+<tr>
+<td>2021-4-3</td>
+<td>반응도계수·출력계수·제어봉/붕소 계산</td>
+</tr>
+<tr>
+<td>2022-1-2</td>
+<td>고유안전성과 4가지 반응도계수</td>
+</tr>
+<tr>
+<td>2024-3-6</td>
+<td>고유 안전성 정의와 노심 특성</td>
+</tr>
+</tbody>
+</table>
+<p>2021년 4교시 3번은 −1,100 pcm, −11 pcm/%power, 110 step, 110 ppm으로 풀립니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 7장(반응도계수·즉발온도계수).</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criteria 11·12.</li>
+<li>U.S. NRC, HRTD Westinghouse Technology Systems Manual, Sec. 2.1 "Reactor Physics Review", NRC ADAMS ML11223A207.</li>
+<li>R. E. Ginna Nuclear Power Plant, Core Operating Limits Report (COLR) Cycle 39, NRC ADAMS ML15308A102.</li>
+<li>MIT OpenCourseWare 22.39 "Integration of Reactor Design, Operations, and Safety" (Fall 2006), Lecture 5.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.3 "Nuclear Design"; NUREG-1431 Rev. 5 (2021) Standard Technical Specifications — Westinghouse Plants, LCO 3.1.3.</li>
+<li>ANSI/ANS-19.6.1-2019, "Reload Startup Physics Tests for Pressurized Water Reactors", American Nuclear Society.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제18조, 국가법령정보센터.</li>
+<li>IAEA, SSR-2/1 (Rev. 1) Safety of Nuclear Power Plants: Design (2016); SSG-52 Design of the Reactor Core for Nuclear Power Plants (2019).</li>
+</ol>

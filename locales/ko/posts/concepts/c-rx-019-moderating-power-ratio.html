@@ -1,0 +1,248 @@
+<figure class="article-image"><img alt="[개념 노트] 감속능과 감속비(Moderating Power/Ratio) — ξ 유도부터 중수 순도 민감도까지 계산으로 보기 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-019-moderating-power-ratio/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>감속능(moderating power)</strong> ξΣs [cm⁻¹]는 중성자가 단위 길이를 이동하는 동안 얻는 평균 레싸지 증가량, 곧 "얼마나 짧은 거리에서 감속시키는가"입니다. <strong>감속비(moderating ratio)</strong> ξΣs/Σa는 감속능을 흡수 거시단면적으로 나눈 무차원 값으로, "흡수로 잃는 만큼에 비해 얼마나 잘 감속시키는가"를 나타내는 감속재의 종합 성능 지표입니다.</p>
+<p>답안 첫 줄은 "감속능 ξΣs는 감속 속도, 감속비 ξΣs/Σa는 흡수 대비 감속 효율이며, 경수는 감속능, 중수는 감속비가 가장 큼"으로 쓰면 정의와 결론이 함께 들어갑니다. 이 노트는 두 지표의 <strong>유도와 계산</strong>, 그리고 <strong>중수 순도 민감도</strong>에 집중합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>1단계 — 충돌 한 번의 에너지 분포와 α</h3>
+<p>정지한 질량수 A의 핵과 탄성산란하고 질량중심계에서 등방이라고 가정합니다. 그러면 산란 후 에너지 E′는 αE와 E 사이에 <strong>균일하게</strong> 분포합니다.</p>
+<ul>
+<li>α = [(A−1)/(A+1)]² : 정면충돌 때의 최소 에너지 비(E′min = αE)</li>
+<li>평균 산란 후 에너지 ⟨E′⟩ = (1+α)E/2, 평균 손실 ⟨ΔE⟩ = (1−α)E/2</li>
+</ul>
+<p>수소는 α = 0이라 한 번에 에너지를 전부 잃을 수도 있고 평균 절반을 잃습니다. 탄소는 α = 0.716이라 최대로 잃어도 28 %, 평균 14 %만 잃습니다.</p>
+<h3>2단계 — ξ의 유도</h3>
+<p>ξ는 충돌당 에너지 로그 감소량의 평균입니다.</p>
+<p>ξ = ⟨ln(E/E′)⟩ = ∫ ln(E/E′) · dE′/[(1−α)E] (적분 구간 αE → E) = 1 + α·lnα/(1−α) [2]</p>
+<p>정지 자유핵·등방 산란 모형에서 ξ에는 E가 남지 않고 A만의 함수가 됩니다. 그래서 충돌마다 레싸지가 평균적으로 같은 양만큼 늘고, 충돌수는 n ≈ ln(E₀/E)/ξ로 추정합니다. 2 MeV → 0.025 eV이면 ln(8×10⁷) = 18.2이므로 n = 18.2/ξ입니다. A가 클 때는 ξ ≈ 2/(A + 2/3)로 근사합니다(A ≥ 10에서 오차 1 % 미만, 수소에는 쓰지 않음).</p>
+<figure class="article-image"><img alt="충돌 한 번 뒤 에너지 균일 분포(H·D·C)와 ξ–질량수 계산 곡선, 열화 충돌수" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-019-moderating-power-ratio/fig1_xi_vs_mass_number.avif"/><figcaption>충돌 한 번 뒤 에너지 균일 분포(H·D·C)와 ξ–질량수 계산 곡선, 열화 충돌수</figcaption></figure>
+<table>
+<thead>
+<tr>
+<th>핵</th>
+<th>α</th>
+<th>ξ</th>
+<th>평균 손실분율 (1−α)/2</th>
+<th>열화 충돌수 18.2/ξ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H</td>
+<td>0</td>
+<td>1.000</td>
+<td>0.500</td>
+<td>18</td>
+</tr>
+<tr>
+<td>D</td>
+<td>0.111</td>
+<td>0.725</td>
+<td>0.444</td>
+<td>25</td>
+</tr>
+<tr>
+<td>C</td>
+<td>0.716</td>
+<td>0.158</td>
+<td>0.142</td>
+<td>115</td>
+</tr>
+<tr>
+<td>O</td>
+<td>0.779</td>
+<td>0.120</td>
+<td>0.111</td>
+<td>152</td>
+</tr>
+<tr>
+<td>U-238</td>
+<td>0.983</td>
+<td>0.0084</td>
+<td>0.0083</td>
+<td>약 2,170</td>
+</tr>
+</tbody>
+</table>
+<p>"평균 손실분율"과 ξ는 다른 양입니다. 수소는 손실분율이 0.5인데 ξ는 1입니다. 로그 평균은 큰 손실이 일어나는 충돌을 더 크게 셉니다.</p>
+<h3>3단계 — 화합물의 ξ와 감속능</h3>
+<p>분자 감속재의 ξ는 원소별 ξ를 <strong>산란 단면적으로 가중</strong>해 평균합니다.</p>
+<p>ξ̄ = Σ ξᵢΣsᵢ / Σ Σsᵢ</p>
+<p>H₂O는 σs(H) = 20.4 b 두 개와 σs(O) = 3.76 b로 (40.8×1 + 3.76×0.120)/44.56 = 0.926입니다(D&amp;H 표 8-1 값 0.920)[1]. 원소 ξ를 단순 평균해 (1+1+0.12)/3 = 0.71로 쓰면 틀립니다. D₂O는 (6.78×0.725 + 3.76×0.120)/10.54 = 0.509입니다.</p>
+<p>감속능은 여기에 Σs를 곱한 값입니다. 분자 수밀도 3.34×10²²(H₂O)와 3.32×10²² cm⁻³(D₂O)로 계산하면 ξΣs는 각각 1.38, 0.178 cm⁻¹입니다. Duderstadt &amp; Hamilton 표 8-1 값 1.35, 0.176과 맞습니다[1].</p>
+<h3>4단계 — 감속비가 왜 "흡수 대 감속"인가</h3>
+<p>1/E 감속 스펙트럼에서 감속 밀도는 q = ξΣs·φ(E)·E이고, 단위 레싸지당 흡수율은 Σa·φ(E)·E입니다. 둘의 비는</p>
+<p>(레싸지당 흡수) / (레싸지당 감속 통과) = Σa / ξΣs = 1 / 감속비</p>
+<p>입니다. 감속비 5,670은 레싸지 한 칸을 지나는 동안 감속되어 내려가는 중성자 5,670개당 흡수가 1개라는 뜻입니다. 공명이탈확률도 같은 분모를 씁니다. 균질 NR 근사에서 p = exp[−N_F·I_eff/(ξΣs)]이므로 감속능이 클수록 p가 커집니다.</p>
+<h3>5단계 — 성적표(D&amp;H 표 8-1 한 표의 값)</h3>
+<table>
+<thead>
+<tr>
+<th>감속재</th>
+<th>ξ</th>
+<th>감속능 ξΣs [cm⁻¹]</th>
+<th>감속비 ξΣs/Σa</th>
+<th>18.2/ξ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H₂O</td>
+<td>0.920</td>
+<td>1.35</td>
+<td>71</td>
+<td>약 20</td>
+</tr>
+<tr>
+<td>D₂O</td>
+<td>0.509</td>
+<td>0.176</td>
+<td>5,670</td>
+<td>약 36</td>
+</tr>
+<tr>
+<td>Be</td>
+<td>0.209</td>
+<td>0.158</td>
+<td>143</td>
+<td>약 87</td>
+</tr>
+<tr>
+<td>흑연</td>
+<td>0.158</td>
+<td>0.060</td>
+<td>192</td>
+<td>약 115</td>
+</tr>
+</tbody>
+</table>
+<p>2200 m/s 흡수 단면적(H 0.332 b, D 0.000519 b, O 0.00019 b)[2]으로 직접 계산하면 감속비는 경수 62, 순수 중수 약 4,400입니다. 차이는 단면적 자료판과 평균 방법(2200 m/s 값인지 맥스웰 평균인지 등)이 다르기 때문으로 보이므로, <strong>비교는 한 표 안에서만</strong> 합니다.<!-- 확인필요: D&H 표 8-1의 Σa 평가 기준(원표 각주) 미대조 --></p>
+<h2>원전에서의 의미</h2>
+<h3>중수는 왜 감속비 최고인데 노심이 큰가</h3>
+<p>감속능 비가 0.176/1.35 = 0.13입니다. 같은 레싸지를 얻으려면 경수보다 약 7.7배 먼 거리를 이동해야 합니다. D의 σs(3.4 b)가 H(20.4 b)의 1/6이고 ξ도 0.725로 작기 때문입니다. 페르미 연령 τ = ∫D/(ξΣs)du도 커져 감속길이 √τ는 경수 5.2 cm, 중수 11.4 cm입니다[2]. 대표 노심의 감속재/연료 체적비는 PWR 1.95, PHWR 17이고 출력밀도는 102 대 7.7 MW/m³입니다(Lewis 표 4.1)[3]. 그래서 CANDU는 칼란드리아가 크고 중수 재고가 많습니다. 대신 흡수가 매우 작아 천연우라늄을 쓸 수 있습니다. 경수로는 반대로 감속능이 커서 조밀한 격자가 가능하지만, 흡수가 커서 농축이 필요하고 과소감속 쪽에 설계합니다.</p>
+<h3>중수에 경수가 섞이면 — 순도 민감도</h3>
+<figure class="article-image"><img alt="경수소 비율에 따른 중수 감속비 계산 곡선, 반감점 0.19 at%, 1 at% 원인 분해" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-019-moderating-power-ratio/fig2_d2o_purity_ratio.avif"/><figcaption>경수소 비율에 따른 중수 감속비 계산 곡선, 반감점 0.19 at%, 1 at% 원인 분해</figcaption></figure>
+<p>경수소 비율을 x = N_H/(N_H + N_D)라 하면(산소 제외, D 순도를 at%로 쓰면 100 − 순도) 혼합 감속비는</p>
+<p>MR(x)/MR(0) ≈ (1 + 6.68x)/(1 + 540x)</p>
+<p>입니다. 물 분자 1개당 흡수 기여는 H₂O가 D₂O의 약 540배, 감속 기여(Σξσs)는 약 7.7배입니다. x = 1 at%이면 감속 기여는 1.067배로 조금 늘지만 흡수 기여가 6.4배가 되어 감속비는 0.167배가 됩니다. 2200 m/s 기준 계산값은 순수 약 4,370 → 0.1 at% 2,860 → 0.25 at% 1,890 → 1 at% 730 → 10 at% 133입니다. <strong>H 약 0.19 at%에서 감속비가 반으로</strong> 떨어집니다. 0.25 wt% 경수는 몰분율로 0.278 %입니다.</p>
+<p>그래서 CANDU 감속재는 원자로급 순도(약 99.8 wt% D₂O 수준)로 관리합니다[4]. 그림의 99.75 wt% 띠는 교과서 중수 물성표가 가정한 경수 0.25 wt% 함유 조건을 예시로 표시한 것입니다[2]. 순도 저하는 음의 반응도이고 그 크기는 격자·연소 상태에 따라 다릅니다. 이는 제어 측면에서는 보수적이지만, 연료 경제성을 직접 깎습니다. 운전에서는 동위원소 순도를 주기적으로 분석하고, 재농축 설비와 누설 감시(열교환기 등)로 관리합니다.</p>
+<h2>규제·기준 근거</h2>
+<ul>
+<li><strong>10 CFR 50 부록 A GDC 11·26·28</strong>: 고유 반응도 궤환과 반응도 제어를 요구합니다[6]. 감속재 선택과 감속재/연료비 설계(과소감속)가 이 요건으로 이어집니다.</li>
+<li><strong>「원자로시설 등의 기술기준에 관한 규칙」</strong> 제18조(원자로의 고유보호)·제28조(반응도제어계통)가 같은 구조입니다(현행 원안위규칙 제37호, 2026.3.30)[7].</li>
+<li><strong>핵공급국그룹 지침 INFCIRC/254 Part 1</strong>: D/H 원자비 1:5,000을 넘는 중수소·중수를 원자로용 비핵물질 트리거 품목으로 통제합니다[5]. 감속비가 큰 중수가 천연우라늄 원자로를 가능하게 하기 때문입니다. 국내 수출입 통제 조문은 원문 대조 전이라 인용하지 않습니다.<!-- 확인필요: 원자력안전법·대외무역법 전략물자 고시상 중수 품목 조문 미대조 --></li>
+<li><strong>출제 당시 대비</strong>: 감속 물리는 바뀐 것이 없습니다. 법체계는 원자력법에서 원자력안전법(2011)으로 바뀌었습니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>감속능 ξΣs</th>
+<th>감속비 ξΣs/Σa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>차원</td>
+<td>cm⁻¹</td>
+<td>무차원</td>
+</tr>
+<tr>
+<td>묻는 것</td>
+<td>이동 거리당 감속</td>
+<td>흡수 대비 감속</td>
+</tr>
+<tr>
+<td>1위</td>
+<td>경수 1.35</td>
+<td>중수 5,670</td>
+</tr>
+<tr>
+<td>설계 결과</td>
+<td>감속길이·노심 크기</td>
+<td>연료 농축도·중성자 경제</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>ξ (로그 평균)</th>
+<th>평균 손실분율 (1−α)/2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H</td>
+<td>1.000</td>
+<td>0.500</td>
+</tr>
+<tr>
+<td>C</td>
+<td>0.158</td>
+<td>0.142</td>
+</tr>
+<tr>
+<td>쓰임</td>
+<td>충돌수 n = ln(E₀/E)/ξ</td>
+<td>한 번 충돌의 평균 에너지</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 감속능과 감속비의 정의·공식, 경수와 중수 비교</strong></p>
+<ol>
+<li><strong>α</strong> = [(A−1)/(A+1)]², 산란 후 E′는 αE~E 균일 분포 → 평균 손실 (1−α)E/2</li>
+<li><strong>ξ</strong> = ⟨ln(E/E′)⟩ = 1 + α lnα/(1−α) ≈ 2/(A+2/3), H = 1, D 0.725, C 0.158</li>
+<li><strong>충돌수</strong> n = ln(E₀/E)/ξ = 18.2/ξ (2 MeV→0.025 eV): H₂O 약 20회, D₂O 약 36회, 흑연 약 115회</li>
+<li><strong>감속능</strong> ξΣs [cm⁻¹]: 단위 거리당 레싸지 증가 → 경수 1.35 &gt; 중수 0.176 &gt; 흑연 0.060</li>
+<li><strong>감속비</strong> ξΣs/Σa: Σa/ξΣs = 레싸지당 흡수/감속 → 중수 5,670 &gt; 흑연 192 &gt; 경수 71</li>
+<li><strong>화합물 ξ</strong>: 산란 단면적 가중평균(H₂O 0.92)</li>
+<li><strong>경수</strong>: 감속능 최대 → 조밀 노심, 흡수 커서 농축 필요</li>
+<li><strong>중수</strong>: 감속비 최대 → 천연우라늄 가능, 감속능 작아 노심·중수 재고 큼</li>
+<li><strong>순도</strong>: H 0.19 at% 혼입에 감속비 반감 → 원자로급 순도 관리</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: 충돌 후 에너지 범위 αE~E와 감속능·감속비 정의" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-019-moderating-power-ratio/sketch1_collision_energy_range.avif"/><figcaption>답안용 도식: 충돌 후 에너지 범위 αE~E와 감속능·감속비 정의</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>연도-교시-번호</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>제78회-3-3</td>
+<td>경수·중수의 감속능과 감속비 비교</td>
+</tr>
+<tr>
+<td>2019-1-9</td>
+<td>중성자 감속비(Moderating ratio)</td>
+</tr>
+<tr>
+<td>2022-1-1</td>
+<td>감속재 핵적 특성, 감속능·감속비 정의와 공식</td>
+</tr>
+<tr>
+<td>2026-1-4</td>
+<td>경수가 다른 감속재보다 좋은 이유 5가지</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, John Wiley &amp; Sons (1976), 8장, 표 8-1.</li>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 3장(탄성산란·ξ), 5장 표 5.2(열중성자 확산 상수), 6장(페르미 연령).</li>
+<li>E. E. Lewis, Fundamentals of Nuclear Reactor Physics, Academic Press (2008), 4장, 표 4.1.</li>
+<li>CANTEACH(AECL·COG 공개 웹 문서, nuceng.ca), "CANDU Fundamentals", 12장(중수 감속재·순도).</li>
+<li>IAEA, INFCIRC/254/Part 1, "Guidelines for Nuclear Transfers"(핵공급국그룹 지침), Annex B 2.2 "Deuterium and heavy water".</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criteria 11, 26, 28.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제18조·제28조. 국가법령정보센터.</li>
+</ol>

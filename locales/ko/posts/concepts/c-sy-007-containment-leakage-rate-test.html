@@ -1,0 +1,206 @@
+<figure class="article-image"><img alt="[개념 노트] 격납건물 누설률시험(ILRT/LLRT) — Pa에서 잰 누설률을 La의 75 %·60 % 안에 묶는 기밀시험 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-007-containment-leakage-rate-test/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>격납건물 누설률시험(기밀시험)은 설계기준사고 때 계산된 최대압력(기준시험압력 Pa)에서 격납건물이 새는 양을 측정해, 운영기술지침서의 허용누설률(La) 안에 여유를 두고 있는지 확인하는 시험입니다. 건물 전체를 가압하는 종합 누설률시험(ILRT, Type A)과 관통부·격리밸브를 따로 가압하는 국부 누설률시험(LLRT, Type B·C)으로 나눕니다.</strong></p>
+<p>격납건물은 다중방벽의 마지막 방벽입니다. 이 시험은 그 방벽의 "새는 정도"를 숫자로 보증하는 절차이고, 그 숫자 La는 사고 선량해석의 입력값이기도 합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>Pa와 La — 두 기준값</h3>
+<ul>
+<li><strong>Pa(기준시험압력)</strong>: 설계기준사고(LOCA·MSLB) 조건에서 계산된 격납건물 최대압력입니다. 설계압력이 아닙니다. 예를 들어 APR1400 미국 설계인증(DC)은 Pa 51.09 psig(약 0.352 MPa(g)), 설계압력 60 psig(0.414 MPa(g), 절대 약 0.515 MPa)입니다[5].</li>
+<li><strong>La(허용누설률)</strong>: Pa에서 허용되는 최대 누설률로, **격납건물 내 공기 질량의 %/day(wt%/day)**로 씁니다. 부피 기준이 아닙니다. APR1400은 0.1 %/day입니다[5].</li>
+</ul>
+<!-- 확인필요: APR1400 DC Pa 51.09 psig는 DCD 표 6.2.1-2 값(공개 RAI 6.2.6-1 답변에서 GTS 5.5.16의 51.77 psig를 이 값으로 고친다고 함, 검색 요지). 최종 DCD 개정본 표 원문 직접 미대조 -->
+<h3>Type A·B·C — 어느 누설 경계를 검증하는가</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>국내 고시 명칭</th>
+<th>검증하는 누설 경계</th>
+<th>시험압력</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Type A</td>
+<td>종합 누설률시험</td>
+<td>격납건물 전체(격리 상태)</td>
+<td>설계압력 이하, 시험 중 Pa의 96 % 이상 유지[1]</td>
+</tr>
+<tr>
+<td>Type B</td>
+<td>관통부 누설률시험</td>
+<td>전기관통부 밀봉, 에어록(몸체 가압·문 씰), 핵연료이송관·장비반입구 개스킷</td>
+<td>Pa 이상 1.1 Pa 이하</td>
+</tr>
+<tr>
+<td>Type C</td>
+<td>격리밸브 누설률시험</td>
+<td>격리밸브 시트(내측·외측 밸브 사이 공간 가압이 대표 구성)</td>
+<td>Pa 이상 1.1 Pa 이하</td>
+</tr>
+</tbody>
+</table>
+<p>Type A는 B·C 경로를 포함한 "전체"를 한 번에 보지만, 어디서 새는지는 알려주지 않습니다. 그래서 정비 때마다 개별 경로를 B·C로 찾아 보수하고, 몇 년에 한 번 A로 전체를 확인합니다. 국부 시험에서 격리밸브는 격리가 필요한 방향으로 가압하고, 미리 조정하지 않은 정상 닫힘 상태 그대로 시험합니다(보수전 값 확보).</p>
+<h3>절대법과 질량점법</h3>
+<p>Type A는 <strong>절대법</strong>으로 측정합니다. 격납건물을 가압·격리해 안정시킨 뒤 일정 간격으로 절대압력 P, 이슬점에서 구한 수증기 분압 Pv, 부피가중 평균 절대온도 T를 측정해 건공기 질량을 구합니다. 실제로는 구획별 온도·이슬점 센서 수십 개의 측정값을 구획 체적에 반영해 건공기 질량을 산정합니다.</p>
+<ul>
+<li>W = (P − Pv)·V / (R·T) — V는 자유체적, R은 건공기 기체상수</li>
+<li><strong>질량점법</strong>: 측정점 (tᵢ, Wᵢ)를 최소제곱 직선 W = A + B·t에 맞추고, <strong>L(%/day) = −2400·B/A</strong>(t는 시간 단위)로 누설률을 구합니다. 판정에는 95 % 상한신뢰한계(UCL)를 씁니다(ANSI/ANS-56.8)[4].</li>
+<li>국내 고시는 내부 대기가 안정된 뒤 측정을 시작해 24시간 이상의 안정적 추이 자료로 계산하도록 합니다. 이어서 알려진 양의 인위 누설을 더한 <strong>확인시험</strong>(최소 4시간 자료)으로 측정계의 응답이 맞는지 봅니다. 오차는 0.25 La 이하여야 합니다[1].</li>
+</ul>
+<figure class="article-image"><img alt="격납건물 개념 절개도 위 Type A·B·C 검증 경계와 시험압력·국내 허용기준 카드, Pa·La 정의" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-007-containment-leakage-rate-test/fig1_test_boundaries_cutaway.avif"/><figcaption>격납건물 개념 절개도 위 Type A·B·C 검증 경계와 시험압력·국내 허용기준 카드, Pa·La 정의</figcaption></figure>
+<h2>원전에서의 의미</h2>
+<h3>허용기준 — 왜 0.75와 0.60인가</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>국내 고시 제2018-5호</th>
+<th>미국 App.J Option A</th>
+<th>Option B 프로그램(T/S 5.5.x)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Type A</td>
+<td>종합 누설률 ≤ 0.75 La[1]</td>
+<td>Lam &lt; 0.75 La[2]</td>
+<td>as-found &lt; 1.0 La(성능기준), 복귀 전 as-left &lt; 0.75 La(T/S 프로그램)</td>
+</tr>
+<tr>
+<td>Type B+C 합</td>
+<td>최대경로 합 ≤ 0.60 La[1]</td>
+<td>&lt; 0.60 La[2]</td>
+<td>복귀 전 최대경로 합 &lt; 0.60 La</td>
+</tr>
+</tbody>
+</table>
+<p>0.75는 다음 시험까지 생길 열화에 25 %의 여유를 남기는 값입니다. 0.60은 B·C 경로에 La의 60 %만 배정해 콘크리트·라이너 등 나머지 경로와 열화 여유를 남깁니다. <strong>최대경로 누설률</strong>은 한 경로의 두 격리방벽 중 큰 값이며, 이를 경로별로 합산합니다(모든 밸브 중 최댓값이나 두 방벽 값의 합이 아님). 단일고장으로 성능이 좋은 쪽 방벽을 잃어도 기준이 성립하도록 보수적으로 합산하는 것입니다. 실제 새는 양(작은 값)은 미국 실무에서 최소경로 누설률로 따로 기록합니다.</p>
+<p>국내 실적 예로, 신고리 4호기(현 새울 2호기) 운영허가(원안위 제96회, 2019)에서는 기준 0.075 wt%/24 h(= 0.75 La) 대비 0.0328 wt%/24 h(약 0.33 La)였습니다[6]. 같은 안건에서 구조건전성시험은 설계압력의 115 %로 따로 수행했습니다.</p>
+<figure class="article-image"><img alt="질량점법 24시간 회귀(예시 데이터)로 구한 누설률과 0.60·0.75·1.0 La 기준 비교 눈금" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-007-containment-leakage-rate-test/fig2_mass_point_leak_budget.avif"/><figcaption>질량점법 24시간 회귀(예시 데이터)로 구한 누설률과 0.60·0.75·1.0 La 기준 비교 눈금</figcaption></figure>
+<h3>운영기술지침서와 선량해석</h3>
+<ul>
+<li>격납건물 LCO(STS 3.6.1)는 누설률시험 프로그램(T/S 5.5.x)의 시험을 점검요건으로 삼습니다. as-found가 1.0 La를 넘으면 격납건물 불능으로 보고, 1시간 안에 복구하지 못하면 6시간 내 모드 3, 36시간 내 모드 5로 갑니다[7].</li>
+<li>La는 사고 방사선 영향평가의 <strong>누설 입력값</strong>입니다. PWR은 처음 24시간 La로, 이후 0.5 La로 누설한다고 가정합니다(RG 1.183)[8]. 방출량이 La에 비례하므로, 시험으로 La를 지키는 것은 제한구역 경계(EAB) 2시간 250 mSv 같은 위치제한 선량 판단의 전제를 지키는 일입니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>「원자로시설 등의 기술기준에 관한 규칙」 제23조[9]</td>
+<td>격납건물 누설밀봉 방호벽 기능, 기밀시험</td>
+</tr>
+<tr>
+<td>원안위고시 제2018-5호 「원자로격납건물 기밀시험에 관한 기준」[1]</td>
+<td>제2조 정의(Pa·La·최대경로), 제3조 주기, 제5·6조 종합 시험 방법·허용기준, 제9·10조 국부 시험 방법·허용기준</td>
+</tr>
+<tr>
+<td>10 CFR 50.54(o), App.A GDC 52·53[10]</td>
+<td>App.J 준수 의무, ILRT 가능 설계, 관통부 주기 시험</td>
+</tr>
+<tr>
+<td>10 CFR 50 App.J Option A(1973) / Option B(1995)[2]</td>
+<td>처방형 주기 / 성능기반 주기</td>
+</tr>
+<tr>
+<td>RG 1.163 Rev.1(2023.7), NEI 94-01 Rev.3-A(2012)[3]</td>
+<td>Type A 최대 15년, Type B 120개월, Type C 75개월</td>
+</tr>
+<tr>
+<td>ANSI/ANS-56.8-1994[4]</td>
+<td>절대법, 질량점법, 95 % UCL, 확인시험</td>
+</tr>
+</tbody>
+</table>
+<p><strong>주기(국내 제3조)</strong>: 사용전(최초 장전 전) → 첫 가동중 3년 이내 → 이후 5년 이내 → 안전성 영향평가와 최근 2회 이상 결과 등을 제출해 인정받으면 <strong>10년</strong>입니다. 10년 인정 후 보수전 누설률이 기준을 넘으면 5년 이내 주기로 최소 2회 시험합니다. 보수전 결과가 연속 2회 불만족이면 연속 2회 만족할 때까지 매 계획예방정비마다 시험합니다(제3조⑤). 격납건물 운전가능성이 요구되지 않는 기간에 주기가 끝나면 요구 시점까지 연기할 수 있습니다(제3조⑥)[1]. 미국은 Option B로 과거 성능에 따라 주기를 늘려 Type A 최대 <strong>15년</strong>까지 허용합니다. 국내 상한(10년)과 섞어 쓰면 안 됩니다.</p>
+<p><strong>개정 흐름</strong>: 국내 고시는 2008년 제정 뒤 2018-5호(2018.11.27)가 현행입니다. 2018·2019·2021·2025년 출제 모두 핵심 기준(0.75 La, 0.60 La, 10년 연장)이 같습니다. 미국은 2023년 RG 1.163 Rev.1로 15년·75개월 주기를 지침 차원에서 승인했습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>종합 누설률시험(ILRT)</th>
+<th>구조건전성시험(SIT)</th>
+<th>중대사고 압력 평가</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>목적</td>
+<td>기밀성(누설률)</td>
+<td>구조 탄성 거동</td>
+<td>DEC 건전성</td>
+</tr>
+<tr>
+<td>압력</td>
+<td>Pa 근처(≤ 설계압력)</td>
+<td>설계압력 × 1.15</td>
+<td>APR1400 최대 0.60 / 허용 0.85 MPa</td>
+</tr>
+<tr>
+<td>시기</td>
+<td>사용전·가동중 주기</td>
+<td>사용전(필요 시 대규모 변경 후)</td>
+<td>해석</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 격납건물 기밀성능 확인용 누설률 측정시험(고시 제2018-5호)</li>
+<li><strong>Pa</strong>: 설계기준사고 시 계산된 격납건물 최대압력(설계압력 아님)</li>
+<li><strong>La</strong>: Pa에서의 누설률 제한치, 공기 질량 %/day, T/S에서 정함(APR1400 0.1 %/day)</li>
+<li><strong>종합(Type A)</strong>: 격납건물 전체, Pa의 96 % 이상 유지·안정 후 24 h 이상, 절대법·질량점법 L = −2400·B/A, <strong>≤ 0.75 La</strong>, 확인시험 오차 ≤ 0.25 La</li>
+<li><strong>국부(Type B)</strong>: 전기관통부·에어록·이송관 / <strong>Type C</strong>: 격리밸브, 시험압력 Pa~1.1 Pa</li>
+<li><strong>국부 기준</strong>: 최대경로 누설률 합 <strong>≤ 0.60 La</strong>, 개별 관통부 기준치</li>
+<li><strong>주기</strong>: 사용전 → 3년 → 5년 → 인정 시 10년(국내), 미국 Option B 최대 15년</li>
+<li><strong>의미</strong>: La = 사고 선량해석 누설 입력, 제23조 누설밀봉 방호벽 입증</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 Type A·B·C 가압 경계와 기준값 도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-007-containment-leakage-rate-test/sketch1_ilrt_llrt_boundaries.avif"/><figcaption>답안지용 Type A·B·C 가압 경계와 기준값 도식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 3교시 1번</td>
+<td>기밀시험 — Pa, 종합 누설률·최대경로 누설률 기준, 국부 시험 종류</td>
+</tr>
+<tr>
+<td>2021년 1교시 10번</td>
+<td>격납용기 관통부 누설시험 Type A·B·C</td>
+</tr>
+<tr>
+<td>2019년 1교시 5번</td>
+<td>격납건물 최대허용누설률(La)과 허용기준</td>
+</tr>
+<tr>
+<td>2018년 4교시 2번</td>
+<td>누설률시험의 목적, 2가지 시험유형, 허용기준</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로격납건물 기밀시험에 관한 기준」, 원안위고시 제2018-5호(2018.11.27), 제2·3·5·6·9·10조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix J "Primary Reactor Containment Leakage Testing for Water-Cooled Power Reactors", Option A(III.A.5(b), III.B.3(a))·Option B (60 FR 49495, 1995).</li>
+<li>U.S. NRC, Regulatory Guide 1.163 Rev. 1 "Performance-Based Containment Leak-Test Program" (2023); NEI 94-01 Rev. 3-A "Industry Guideline for Implementing Performance-Based Option of 10 CFR Part 50, Appendix J" (2012).</li>
+<li>ANSI/ANS-56.8-1994 "Containment System Leakage Testing Requirements", American Nuclear Society.</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Rev. 3 (2018), 6.2.1(격납건물 설계압력·표 6.2.1-2)·6.2.6(격납건물 누설률시험). NRC ADAMS 공개.</li>
+<li>원자력안전위원회, 제96회 원자력안전위원회 회의 안건(2019.2.1) — 신고리 4호기 운영허가(안).</li>
+<li>U.S. NRC, NUREG-1431(Westinghouse)·NUREG-1432(Combustion Engineering) Standard Technical Specifications, Rev. 5 (2021), LCO 3.6.1 "Containment" 및 5.5 "Containment Leakage Rate Testing Program".</li>
+<li>U.S. NRC, Regulatory Guide 1.183 Rev. 1 "Alternative Radiological Source Terms for Evaluating Design Basis Accidents at Nuclear Power Reactors" (2023).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제23조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR 50.54(o); 10 CFR Part 50 Appendix A, General Design Criteria 52·53.</li>
+</ol>

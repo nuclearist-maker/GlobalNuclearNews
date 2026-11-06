@@ -1,0 +1,189 @@
+<figure class="article-image"><img alt="[개념 노트] 피복관 수소화와 수소취화(Hydriding) — 부식 수소 흡수, TSS, 수소화물 재배향과 RIA·LOCA·건식저장 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-005-cladding-hydriding/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>피복관 수소화(hydriding)는 지르코늄 합금 피복관에 흡수된 수소가 고용한도(TSS)를 넘어 취성 δ-수소화물로 석출하는 현상이며, 그 결과 피복관의 연성·인성이 떨어지는 것이 피복관 수소취화입니다.</strong></p>
+<p>수소취화는 원래 금속 일반의 용어입니다. 강에서는 고용 수소 자체가 결합력을 약화시키지만, 지르코늄은 수소화물이라는 별도 상을 만든다는 점이 다릅니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>수소는 어디서 들어오는가</h3>
+<ul>
+<li><strong>외면 부식 수소(정상운전 주경로)</strong>: Zr + 2H₂O → ZrO₂ + 2H₂. Zr 1몰이 산화될 때 수소 원자 4몰이 생기고, 그중 일부가 산화막을 지나 금속으로 흡수됩니다. 이 비율이 수소 흡수 분율(PUF)이며 Zircaloy-4는 약 15~20 %입니다.</li>
+<li><strong>1차(내부) 수소화</strong>: 펠릿의 수분·유기 불순물이 내면에서 수소를 공급해 국부 수소화물(sunburst·blister)이 생기는 경우입니다. 1960~70년대 주요 파손 원인이었으나 제조 수분 관리로 지금은 드뭅니다.</li>
+<li><strong>2차 수소화</strong>: 프레팅 등 1차 결함으로 들어온 물이 내부에서 증기로 내면을 산화시키고, 수소분압이 높아진 먼 위치에 블리스터를 만들어 축방향 균열로 키웁니다.</li>
+</ul>
+<p>산화막 두께와 평균 수소량은 거의 비례합니다. ZrO₂ 밀도 5.68 g/cm³, 벽두께 0.57 mm, PUF 15 %로 계산하면 <strong>산화막 1 µm당 약 7.5 wppm</strong>, 산화막 100 µm면 약 750 wppm입니다. 초기 수소·금속 소모를 무시한 벽 평균값이므로 국부 림 농도와는 다릅니다.</p>
+<figure class="article-image"><img alt="피복관 벽 횡단면: 외면 부식 수소의 일부 흡수(PUF), 저온 외면 쪽 수소화물 림, 원주→반경 재배향, 산화막 1 µm당 평균 수소 증가 7.5 wppm 계산" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-005-cladding-hydriding/fig1_hydrogen_path_wall_section.avif"/><figcaption>피복관 벽 횡단면: 외면 부식 수소의 일부 흡수(PUF), 저온 외면 쪽 수소화물 림, 원주→반경 재배향, 산화막 1 µm당 평균 수소 증가 7.5 wppm 계산</figcaption></figure>
+<h3>고용한도(TSS)와 이력</h3>
+<p>α-Zr의 수소 고용한도는 온도에 따라 지수적으로 커집니다. Kearns(1967)의 용해 한도 최적곡선은 다음과 같습니다[1].</p>
+<ul>
+<li><strong>TSSd = 1.2×10⁵ exp(−8,550/RT) wppm</strong> (R = 1.987 cal/mol·K)</li>
+<li>계산값: 300 °C 66, 350 °C 120, 400 °C 201 wppm</li>
+</ul>
+<p>냉각할 때의 석출 한도 TSSp는 TSSd보다 높습니다. 석출에 과포화가 필요하기 때문입니다(이력 현상). KAERI의 DSC 측정(Zircaloy-4, 같은 연구의 쌍, KNS 2006 추계 발표)은 TSSd = 4.93×10⁵ exp(−45,087/RT), TSSp = 1.47×10⁵ exp(−34,117/RT) wppm(R = 8.314 J/mol·K, T는 K)입니다[2]. 이 식으로 150 wppm 시편을 보면 가열 때 약 397 °C에서 다 녹고, 냉각 때는 약 323 °C에서야 석출이 시작됩니다. 문헌 간 산포가 크고 저합금 원소의 영향은 작습니다.</p>
+<p>총수소가 충분하면 운전 중 피복관(약 300~350 °C)에는 백 ppm 안팎만 녹아 있고 나머지는 수소화물로 있습니다. 상온으로 식으면 거의 전부가 석출합니다.</p>
+<figure class="article-image"><img alt="TSSd·TSSp 이력 곡선(150 wppm: 가열 397 °C 용해, 냉각 323 °C 석출), Kearns 참고선, 운전 온도대, ISG-11 400 °C·열주기 기준과 재배향 조건" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-005-cladding-hydriding/fig2_tss_hysteresis_reorientation.avif"/><figcaption>TSSd·TSSp 이력 곡선(150 wppm: 가열 397 °C 용해, 냉각 323 °C 석출), Kearns 참고선, 운전 온도대, ISG-11 400 °C·열주기 기준과 재배향 조건</figcaption></figure>
+<h3>수소의 재분포 — 림과 블리스터</h3>
+<p>수소는 농도 구배뿐 아니라 <strong>온도 구배를 따라 저온 쪽으로</strong>, 인장응력 쪽으로 이동합니다. 피복관 외면이 내면보다 차갑기 때문에 외면 아래에 수소화물이 밀집한 **림(rim)**이 생기고, 산화막이 떨어져 나간 냉점에는 렌즈 모양 <strong>블리스터</strong>가 자랍니다. 림과 블리스터는 RIA에서 균열 개시점이 됩니다.</p>
+<h3>방향이 연성을 좌우한다 — 재배향</h3>
+<p>냉간가공·응력제거 피복관의 집합조직 때문에 수소화물은 보통 <strong>원주방향</strong>으로 늘어섭니다. 이 배열은 원주 인장하중에 대해 벽을 관통하는 균열 경로가 되지 않아 상대적으로 덜 해롭습니다. 다만 양이 많거나 림에 몰리거나 저온이면 이것도 취화에 기여합니다. 문제는 재배향입니다. 고온에서 녹은 수소가 <strong>임계값 이상의 원주 인장응력</strong>(봉 내·외압차) 아래에서 냉각되며 다시 석출하면 <strong>반경방향</strong>으로 늘어섭니다. 판이 회전하는 것이 아니라 용해 후 다른 방향으로 재석출하는 것입니다. 반경방향 수소화물은 벽 두께 방향 균열 경로가 되어 연성을 크게 떨어뜨립니다. 건식저장 건조 과정(고온 + 높은 내압)이 대표 조건입니다.</p>
+<h3>지연수소균열(DHC)</h3>
+<p>균열 선단 인장응력장으로 수소가 확산·석출 → 수소화물 파괴 → 균열 전진을 반복하는 시간 의존 균열입니다. 중수로 Zr-2.5Nb 압력관의 핵심 열화 기구이고, 사용후핵연료 피복관 장기 저장 평가 항목이기도 합니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>출력운전·고연소도</h3>
+<p>연소도가 오르면 산화막이 두꺼워지고 수소가 수백 wppm까지 늘어납니다. 그래서 2017년·2023년 기출처럼 "연소도 증가에 따른 연료봉 증상"에 산화·수소화가 들어갑니다. 국내 PWR은 Zircaloy-4에서 ZIRLO 계열·M5 같은 Nb 첨가 합금으로 바뀌어 왔고, KAERI는 HANA 합금(예 HANA-4 Zr-1.5Nb-0.4Sn-0.2Fe-0.1Cr, HANA-6 Zr-1.1Nb-0.05Cu)을 개발했습니다. 이 합금들은 부식 속도와 PUF가 낮아 같은 연소도에서 수소가 적습니다.</p>
+<!-- 확인필요: HANA 합금의 국내 상용 장전 범위·연도는 공개 원문으로 확인하지 못함 — 본문은 개발 사실만 서술 -->
+<h3>사고 시 — RIA와 LOCA</h3>
+<ul>
+<li><strong>RIA</strong>: 수소화물 림이 있는 피복관은 PCMI 하중에 더 낮은 엔탈피에서 파손됩니다. 그래서 파손 문턱이 피복관 수소량의 함수가 되었습니다.</li>
+<li><strong>LOCA</strong>: 운전 중 흡수된 수소는 고온에서 β상의 산소 고용량을 늘려, 같은 산화량에서도 급냉 후 연성(PQD)을 떨어뜨립니다. 현행 17 %·1,204 °C 기준이 미조사 피복관 시험에 근거하므로 수소 의존 한계가 논의되고 있습니다.</li>
+</ul>
+<h3>사용후핵연료 건식저장</h3>
+<p>건조·이송 때 피복관 온도가 올라 수소화물이 녹고, 고연소도 봉의 높은 내압이 원주응력을 만들면 냉각 중 반경방향 수소화물이 생길 수 있습니다. NRC ISG-11 Rev.3은 반경방향 수소화물이 약 90 MPa에서도 생긴다는 자료를 근거로 다음을 정했습니다[6].</p>
+<ul>
+<li>정상 저장·단기 장전 작업(진공건조·불활성가스 충전·이송)의 피복관 최고온도 <strong>400 °C</strong>(모든 연소도)</li>
+<li>장전 중 반복 열주기 <strong>10회 미만, 각 온도 변화 65 °C 미만</strong></li>
+<li>비정상·사고 조건 570 °C</li>
+<li>저연소도 연료는 원주응력 90 MPa 이하를 입증하면 더 높은 단기 한도 허용</li>
+</ul>
+<p>NUREG-2224(2020)는 지침 가정보다 낮은 온도·응력에서도 재배향이 가능하다고 보고, 재배향을 가정한 평가 경로를 제시했습니다[8].</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NUREG-0800 SRP 4.2 Rev.3(2007)[3]</td>
+<td>연료계통 손상 기준에 산화·수소화, 파손 기준에 내부 수소화(펠릿 수분 제한), 부록 B에 RIA 잠정 문턱</td>
+</tr>
+<tr>
+<td>RG 1.236(2020)[4]</td>
+<td>제어봉 이탈·낙하 사고 PCMI 파손 문턱을 피복관 초과수소 함수로 정의</td>
+</tr>
+<tr>
+<td>10 CFR 50.46(b)[5]</td>
+<td>1,204 °C, 국부산화 17 %, 수소 생성 1 % — 미조사 피복관 기반</td>
+</tr>
+<tr>
+<td>10 CFR 50.46c</td>
+<td>2014 제안 규칙(수소 의존 산화 한계), 2016 초안 최종규칙 → 2024.4 위원회 반려 — 미제정. 취화 연구결과는 2026.7 제안규칙의 자발적 대안 50.46a로 이관 제안(2026.10 현재 제안 단계)</td>
+</tr>
+<tr>
+<td>ISG-11 Rev.3(2003) → NUREG-2215(2020)[6][7]</td>
+<td>건식저장 정상·단기 작업 피복관 최고온도 400 °C, 열주기 10회 미만·각 65 °C 미만, 사고 570 °C</td>
+</tr>
+<tr>
+<td>NUREG-2224(2020)[8]</td>
+<td>고연소도 피복관 수소화물 재배향 기술 근거</td>
+</tr>
+<tr>
+<td>ASTM C776</td>
+<td>UO₂ 펠릿 총수소(수분 포함) 상한</td>
+</tr>
+</tbody>
+</table>
+<p>국내는 원안위고시 제2017-23호 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」[9]이 50.46과 같은 틀을 따르고, 연료 설계 심사는 SRP 4.2 체계를 준용합니다.</p>
+<!-- 확인필요: 국내 고시(제2017-23호)에 수소 의존 RIA·LOCA 기준이 도입됐는지는 원문 미확인 -->
+<p>출제 당시(2012·2015년)에는 RIA 기준이 SRP 4.2 부록 B 잠정 기준뿐이었고 50.46c는 제안 전이거나 진행 중이었습니다. 지금은 RG 1.236이 있고, 50.46c는 여전히 최종 규칙이 아닙니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>일반 수소취화(강 등)</th>
+<th>피복관 수소화(Zr)</th>
+<th>고온 수소침식(강)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>수소 상태</td>
+<td>고용 원자·트랩</td>
+<td>δ-수소화물 석출</td>
+<td>CH₄ 기공</td>
+</tr>
+<tr>
+<td>지배 인자</td>
+<td>강도, 응력, 수소 농도</td>
+<td>TSS, 온도 이력, 방향</td>
+<td>온도, 수소분압</td>
+</tr>
+<tr>
+<td>회복</td>
+<td>탈수소 열처리</td>
+<td>가열 시 용해(재석출)</td>
+<td>비가역</td>
+</tr>
+<tr>
+<td>대표 사례</td>
+<td>고강도 볼트·용접부</td>
+<td>피복관 림·재배향, 압력관 DHC</td>
+<td>수소 설비 배관</td>
+</tr>
+</tbody>
+</table>
+<p>1차 수소화와 2차 수소화도 자주 섞입니다. 1차는 내부 불순물이 원인인 최초 파손, 2차는 이미 생긴 결함 뒤에 오는 손상 확대입니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: Zr 피복관 흡수 수소가 TSS 초과 시 δ-수소화물 석출 → 연성·인성 저하</li>
+<li><strong>수소원</strong>: 외면 부식 Zr + 2H₂O → ZrO₂ + 2H₂, PUF(Zr-4 약 15~20 %) / 1차(펠릿 수분) / 2차(결함 후 내부 증기)</li>
+<li><strong>정량</strong>: 산화막 1 µm당 약 7.5 wppm(PUF 15 %)</li>
+<li><strong>TSS</strong>: TSSd(Kearns) 300 °C 66, 400 °C 201 wppm, 냉각 시 석출 한도 TSSp가 더 높음(이력)</li>
+<li><strong>재분포</strong>: 저온 외면으로 이동 → 림, 냉점 블리스터</li>
+<li><strong>재배향</strong>: 원주방향(상대적으로 덜 해로움) → 고온 용해 + 원주응력(약 90 MPa) 하 냉각 → 반경방향 재석출 → 연성 급감</li>
+<li><strong>DHC</strong>: 균열 선단 수소 집적·석출 반복, 압력관</li>
+<li><strong>영향</strong>: RIA PCMI 문턱 저하(RG 1.236), LOCA PQD 저하(50.46c 미제정), 건식저장 400 °C·열주기 10회 미만</li>
+<li><strong>제조 대책</strong>: 펠릿 수분·총수소 관리, 내면 세정, He 분위기 용접, Nb 합금</li>
+<li><strong>운전 대책</strong>: 수화학(Li·pH), 크러드·과냉 비등 억제, 산화막·연소도 한도, 결함 연료 조기 감시</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 벽 단면: 산화막, H 흡수, 외면 림, 원주방향→반경방향 재배향" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-005-cladding-hydriding/sketch1_wall_hydride_sketch.avif"/><figcaption>답안지용 벽 단면: 산화막, H 흡수, 외면 림, 원주방향→반경방향 재배향</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023년 3교시 2번</td>
+<td>연소도 증가에 따른 연료봉 증상(다. 피복관 산화 및 수소화)</td>
+</tr>
+<tr>
+<td>2017년 2교시 3번</td>
+<td>출력운전 중 연료봉 현상(다. 피복관 산화 및 수소화)</td>
+</tr>
+<tr>
+<td>2015년 1교시 3번</td>
+<td>수소취화(Hydrogen Embrittlement)</td>
+</tr>
+<tr>
+<td>2012년 2교시 5번</td>
+<td>피복재 수소화: 현상, 제조 시·운전 중 예방조치</td>
+</tr>
+<tr>
+<td>2010년 1교시 8번</td>
+<td>수소취화(Hydrogen Embrittlement)</td>
+</tr>
+<tr>
+<td>제63회 1교시 8번</td>
+<td>피복관 수소화</td>
+</tr>
+</tbody>
+</table>
+<p>2012년 2교시 5번의 예방조치는 제조(펠릿 수분 관리, 피복관 내면 세정, 불활성 분위기 봉단 용접, 이물 필터)와 운전(수화학, 크러드 억제, 산화막·연소도 한도, 결함 연료 인출)으로 나눠 쓰면 됩니다. 2010·2015년 단답은 일반 수소취화 정의와 메커니즘(HEDE·HELP·수소화물)을 먼저 쓰고 원전 사례로 피복관을 덧붙이는 구성이 좋습니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>J. J. Kearns, "Terminal Solubility and Partitioning of Hydrogen in the Alpha Phase of Zirconium, Zircaloy-2 and Zircaloy-4", Journal of Nuclear Materials 22 (1967) 292–303.</li>
+<li>김현숙·백종혁·정용환(한국원자력연구원), Zircaloy-4 등 Zr 합금의 수소 고용한도(TSSd·TSSp) DSC 측정 논문, 한국원자력학회 2006 추계학술발표회.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.2 "Fuel System Design", Rev. 3 (2007).</li>
+<li>U.S. NRC, Regulatory Guide 1.236 "Pressurized-Water Reactor Control Rod Ejection and Boiling-Water Reactor Control Rod Drop Accidents" (2020).</li>
+<li>U.S. NRC, 10 CFR 50.46 "Acceptance criteria for emergency core cooling systems for light-water nuclear power reactors".</li>
+<li>U.S. NRC, Interim Staff Guidance ISG-11, Rev. 3 "Cladding Considerations for the Transportation and Storage of Spent Fuel" (2003).</li>
+<li>U.S. NRC, NUREG-2215 "Standard Review Plan for Spent Fuel Dry Storage Systems and Facilities" (2020).</li>
+<li>U.S. NRC, NUREG-2224 "Dry Storage and Transportation of High Burnup Spent Nuclear Fuel" (2020).</li>
+<li>원자력안전위원회, 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」, 원안위고시 제2017-23호. 국가법령정보센터.</li>
+</ol>

@@ -1,0 +1,256 @@
+<figure class="article-image"><img alt="[개념 노트] 사고분류(ANS Condition I~IV) — 빈도와 결과로 나눈 설계기준 사건과 허용기준 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-025-ans-condition-classification/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>ANS 사고분류는 원전 설계기준 사건을 예상 발생 빈도와 방사선 결과에 따라 Condition I(정상운전·운전과도), II(보통 빈도 사건), III(드문 사건), IV(제한 고장)로 나누고, 빈도가 높은 사건일수록 엄격한 허용기준을 적용하는 체계입니다(ANSI N18.2-1973 → ANS-51.1-1983)[1].</strong></p>
+<p>이 노트는 분류 체계와 Condition별 허용기준을 다룹니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>분류 원리 — 위험도를 고르게</h3>
+<p>SRP 15.0은 위험도를 "빈도 × 결과"로 보고, AOO와 가상사고의 위험도가 대략 같은 수준이 되도록 설계하라고 설명합니다[2]. 잦은 사건은 결과를 거의 허용하지 않고 드문 사건에는 더 큰 결과를 허용합니다. Condition 번호가 커질수록 빈도는 낮아지고 허용 결과는 커집니다.</p>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>명칭</th>
+<th>빈도(정성)</th>
+<th>정량 개략값(/원자로·년)</th>
+<th>대표 사건(W형·CE형 FSAR 통상 분류)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I</td>
+<td>정상운전·운전과도</td>
+<td>상시·계획 운전</td>
+<td>—</td>
+<td>기동·정지, 재장전, T/S 이내 편차, 부하변화</td>
+</tr>
+<tr>
+<td>II</td>
+<td>보통 빈도 사건</td>
+<td>1년 중 일어날 수 있음</td>
+<td>≥ 10⁻¹</td>
+<td>제어봉군 인출, 붕소 희석, 터빈 정지, 복수기 진공 상실, 정상급수·소외전원 상실</td>
+</tr>
+<tr>
+<td>III</td>
+<td>드문 사건</td>
+<td>수명 중 드물게 일어날 수 있음</td>
+<td>10⁻¹~10⁻²</td>
+<td>소형 LOCA, 소형 2차측 배관 파단, 연료집합체 오장전, 강제유량 완전 상실</td>
+</tr>
+<tr>
+<td>IV</td>
+<td>제한 고장</td>
+<td>일어날 것으로 예상되지 않으나 가정</td>
+<td>10⁻²~10⁻⁶</td>
+<td>대형 LOCA, 대형 MSLB·급수관 파단, RCP 회전자 고착, 제어봉 이탈, 연료취급사고</td>
+</tr>
+</tbody>
+</table>
+<p>N18.2의 원래 정의는 정성적입니다. 정량값은 ANS-51.1을 인용한 학회 논문(이민석 외, KNS 2014)의 값으로[5], 규정 경계가 아니라 개략 범위입니다. <!-- 확인필요: ANS-51.1-1983 원문 표(PC-1~PC-5) 미대조. 제한 고장 10⁻²~10⁻⁶을 PC-4·PC-5로 나누는 경계는 미확인 --></p>
+<p>MSLB는 분류가 크기에 따라 갈리는 대표 예입니다. 대형 파단은 IV, 소형 2차측 배관 파단은 III, SG 안전밸브 오개방은 II입니다. LOCA도 같은 방식으로 대형은 IV, 소형은 III으로 분류합니다. SGTR은 노형·인허가에 따라 III 또는 IV로 다르게 분류됩니다(W형 FSAR은 IV).</p>
+<h3>Condition별 허용기준</h3>
+<p>SRP 15.0 Rev.3(2007) II.2는 ANS 분류를 인허가 기준으로 가진 사업자에게 다음 기준을 적용합니다[2].</p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>연료</th>
+<th>압력(RCS·주증기)</th>
+<th>장외 선량</th>
+<th>확대 금지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I</td>
+<td>LCO·설계한계 이내</td>
+<td>설계조건 이내</td>
+<td>정상 배출 기준 이내</td>
+<td>—</td>
+</tr>
+<tr>
+<td>II</td>
+<td>손상 없음: MDNBR ≥ 95/95 한계, 중심선 비용융(SAFDL)</td>
+<td>설계압력 110 % 미만</td>
+<td>10 CFR 20 이내, 정지 후 운전 재개 가능</td>
+<td>단독으로 III·IV 유발 금지</td>
+</tr>
+<tr>
+<td>III</td>
+<td>소수(small fraction) 연료봉 손상 허용</td>
+<td>110 % 미만(SRP AOO 기준)</td>
+<td>PWR: 10 CFR 20 초과 가능, 제한구역 밖 공공 이용 제한 없음</td>
+<td>단독으로 IV 유발 금지</td>
+</tr>
+<tr>
+<td>IV</td>
+<td>냉각 가능 형상 유지, 한계 미달 봉은 파손 가정, LOCA는 50.46(b) 5기준</td>
+<td>취성·연성 파손을 고려한 사건별 허용 설계한계</td>
+<td>10 CFR 100 지침 이내</td>
+<td>대처 계통·격납 기능의 연쇄 상실 금지</td>
+</tr>
+</tbody>
+</table>
+<p><strong>확대 금지</strong> 조건은 Condition마다 다릅니다. II는 다른 독립 고장 없이 III·IV를, III은 IV를 단독으로 유발해서는 안 됩니다. IV는 그 사고에 대처할 계통 기능을 연쇄적으로 잃게 해서는 안 됩니다. 예를 들어 II 과압 과도가 가압기 안전밸브 고착 개방으로 LOCA가 되면 이 원칙 위반입니다.</p>
+<figure class="article-image"><img alt="로그 빈도축의 Condition I~IV 대역과 연료·압력·장외 선량 허용기준 표, Condition별 확대 금지 조건" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-025-ans-condition-classification/fig1_condition_ladder.avif"/><figcaption>로그 빈도축의 Condition I~IV 대역과 연료·압력·장외 선량 허용기준 표, Condition별 확대 금지 조건</figcaption></figure>
+<p>IV의 압력 한계는 사건별 SRP 절이 정합니다. 구 SRP 15.2.8(급수관 파단)의 120 %(Service Level C)가 그 예입니다. 일반 원칙으로 쓰지는 않습니다. <!-- 확인필요: SRP 15.4.8 등 현행판 사건별 압력 기준 문구 원문 미대조 --></p>
+<h2>원전에서의 의미</h2>
+<h3>10 CFR·SRP·ASME·IAEA와의 대응</h3>
+<p>10 CFR 50 부록 A는 AOO를 "수명 중 한 번 이상 일어날 것으로 예상되는 정상운전 상태"로 정의하고, 터빈발전기 정지·주복수기 격리·소외전원 완전 상실을 예로 듭니다[3]. SRP 15.0 Rev.3은 <strong>AOO = Condition II + III, 가상사고(PA) = Condition IV</strong>로 정리했습니다. 신규 신청은 AOO·PA 2분류로 심사하고, ANS 분류로 인허가를 받은 기존 사업자는 종전 기준을 계속 쓸 수 있습니다. ANS 규격은 1998년에 철회되어 SRP는 이를 "비공식 ANS 규격"이라 부릅니다[2].</p>
+<figure class="article-image"><img alt="제65회 3교시 5번 빈칸표(A~L) 복원: 10 CFR·ASME 서비스 수준·RG 1.70·ANS-51.1 대조와 IAEA 발전소 상태 참고 패널" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-025-ans-condition-classification/fig2_categorization_crosswalk.avif"/><figcaption>제65회 3교시 5번 빈칸표(A~L) 복원: 10 CFR·ASME 서비스 수준·RG 1.70·ANS-51.1 대조와 IAEA 발전소 상태 참고 패널</figcaption></figure>
+<p>ASME III 서비스 수준(A Normal, B Upset, C Emergency, D Faulted)은 기기 하중 조합 등급이며, 빈도 대역이 겹쳐 기출 표에 함께 나옵니다. IAEA SSR-2/1 Rev.1(2016)은 운전 상태(NO·AOO)와 사고 조건(DBA·DEC)으로 나눕니다[6]. II는 AOO와 대응하지만, III은 체계에 따라 위치가 다릅니다. SRP는 III을 AOO로 묶지만 소형 LOCA는 50.46 LOCA 스펙트럼 해석에도 포함되어 실무에서는 DBA처럼 다뤄집니다. IV는 DBA에 해당하고, DEC(다중고장·노심용융)는 ANS 분류 바깥입니다. ATWS도 "AOO + 원자로정지 실패"로 설계기준을 넘는 사건이라 Condition IV가 아니며 SRP 15.8에서 따로 다룹니다.</p>
+<h3>국내 적용</h3>
+<ul>
+<li><strong>법령 용어</strong>: 「원자로시설 등의 기술기준에 관한 규칙」(원안위규칙 제37호, 2026.3.30) 제2조 제1항 제6호 정상운전, 제7호 예상운전과도, 제9호 설계기준사고를 정의합니다. 제17조 제1항은 정상운전·AOO에서 연료허용손상한계(제10호)를 넘지 않을 여유를 요구합니다. 제42조는 설계기준사고 선량을 원안위 기준 이하로 유지하고 결정론적·보수적으로 평가하도록 합니다[8].</li>
+<li><strong>SAR 15장</strong>: APR1400 DCD 15장은 사건을 보통빈도·저빈도·제한사고로 나누고[7], 국내 non-LOCA 해석 논문도 같은 3분류(MF·IF·LF)를 씁니다[5]. 이 셋은 ANS II·III·IV에 해당합니다.</li>
+<li><strong>선량 기준</strong>: 설계기준사고는 원안위고시 제2026-7호(위치제한)의 유효선량 기준을 적용합니다. 제한구역 경계(EAB) 2시간 250 mSv, 저인구지대(LPZ) 250 mSv입니다[9].</li>
+</ul>
+<h3>사례 — 복수기 진공 상실은 Condition II</h3>
+<p>복수기 진공 상실은 RG 1.70 체계 SAR 15.2.3 사건이고[4], SRP 15.2.1~15.2.5 묶음의 AOO입니다. APR1400 DCD 15.2.3도 이를 보통빈도(Condition II 상당)로 분류합니다[7]. 저진공으로 터빈이 정지하고 복수기 연동으로 증기우회가 막히며, 설계에 따라 주급수펌프도 정지합니다. 2차측 열제거가 급감해 RCS 온도·압력이 오르면 원자로가 정지합니다. 이후 주증기안전밸브·대기방출밸브로 열을 버리고 보조급수가 SG 수위를 회복합니다. 가압기 안전밸브가 열려도 방출은 격납건물 내 방출탱크로 갑니다. 판정은 압력 110 % 미만과 MDNBR ≥ 한계이며, 연료 손상은 없고 격납건물 영향은 미미합니다. <!-- 확인필요: 원자로정지 신호(가압기 고압 또는 터빈정지 연계)와 주급수펌프 정지 여부는 노형·호기별로 다름 — APR1400 DCD 15.2.3 원문 미대조 --></p>
+<h3>Condition I·II의 연료봉 설계기준</h3>
+<p>I·II에서는 연료봉 파손을 허용하지 않으므로 MDNBR, 중심선 비용융, 피복관 변형률·피로, 내압 등 SAFDL 전 항목을 만족해야 합니다. III부터는 소수 파손을 허용하고 그 수를 선량 해석에 반영합니다.</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ANSI N18.2-1973 → ANS-51.1-1983(R1988)</td>
+<td>Condition I~IV 정의, 1983판은 PC-1~PC-5 세분, 1998 철회</td>
+</tr>
+<tr>
+<td>NUREG-0800 SRP 15.0 Rev.3(2007.3)</td>
+<td>AOO = II + III, PA = IV, II.2 허용기준, ATWS는 15.8</td>
+</tr>
+<tr>
+<td>10 CFR 50 부록 A(정의·GDC 10·15·20)</td>
+<td>AOO 정의, AOO에서 SAFDL·RCPB 설계조건 비초과</td>
+</tr>
+<tr>
+<td>10 CFR 50.46(b), 10 CFR 100(현행 50.67)</td>
+<td>LOCA 5기준, 가상사고 장외 선량</td>
+</tr>
+<tr>
+<td>RG 1.70 Rev.3(1978) 15장</td>
+<td>보통 빈도·드문 사건·제한 고장, 사건 유형별 절</td>
+</tr>
+<tr>
+<td>기술기준규칙 제2조 제1항 제6·7·9·10호, 제17조, 제42조</td>
+<td>국내 정의·SAFDL 여유·DBA 선량</td>
+</tr>
+<tr>
+<td>원안위고시 제2026-7호</td>
+<td>EAB 2 h·LPZ 250 mSv(유효선량)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>출제 당시 대비 달라진 점</strong></p>
+<ul>
+<li>2001년(제65회)·2013년 문제는 "ANSI N18.2"를 썼지만, 2015·2017년 문제는 "ANSI/ANS-51.1"을 씁니다. 같은 계보이며, 규격은 1998년에 철회되었습니다.</li>
+<li>SRP 15.0이 2007년 Rev.3에서 AOO·PA 2분류로 바뀌었고, IAEA는 2012·2016년에 DEC를 공식화했습니다.</li>
+<li>국내 위치제한 선량은 2026.1.20 고시 제정으로 전신 250 mSv·갑상선 3 Sv에서 유효선량 단일 기준 250 mSv로 바뀌었습니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>ANS Condition</th>
+<th>10 CFR·SRP</th>
+<th>ASME 서비스 수준</th>
+<th>IAEA 발전소 상태</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기준</td>
+<td>빈도 + 결과</td>
+<td>빈도(수명 중 예상 여부)</td>
+<td>기기 하중 조합</td>
+<td>빈도 + 결과 + 설계 범위</td>
+</tr>
+<tr>
+<td>구분</td>
+<td>I·II·III·IV</td>
+<td>정상·AOO·PA</td>
+<td>A·B·C·D</td>
+<td>NO·AOO·DBA·DEC</td>
+</tr>
+<tr>
+<td>III의 위치</td>
+<td>드문 사건</td>
+<td>AOO</td>
+<td>대체로 B~C</td>
+<td>사건별 AOO 또는 DBA</td>
+</tr>
+<tr>
+<td>설계기준 밖</td>
+<td>다루지 않음</td>
+<td>ATWS(15.8)·SBO 별도</td>
+<td>—</td>
+<td>DEC</td>
+</tr>
+</tbody>
+</table>
+<p>심층방어 단계와도 일대일이 아닙니다. II는 2단계, IV는 3단계이고 III은 체계에 따라 2·3단계에 걸칩니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 설계기준 사건을 빈도·결과로 4분류, 빈번할수록 엄격한 기준(N18.2-1973 → ANS-51.1-1983)</li>
+<li><strong>I 정상운전·운전과도</strong>: 기동·정지·부하변화, 운전한계 이내</li>
+<li><strong>II 보통 빈도(≥10⁻¹/년)</strong>: 터빈 정지, 복수기 진공 상실 등 — 연료 손상 없음, 압력 &lt; 110 %, 운전 재개 가능</li>
+<li><strong>III 드문 사건(10⁻¹~10⁻²)</strong>: 소형 LOCA 등 — 소수 연료 손상 허용, 10 CFR 20 초과 가능</li>
+<li><strong>IV 제한 고장(&lt;10⁻²)</strong>: 대형 LOCA·MSLB·제어봉 이탈 — 냉각 형상 유지, 10 CFR 100 이내</li>
+<li><strong>확대 금지</strong>: II→III·IV, III→IV 단독 유발 금지, IV는 대처 계통 연쇄 상실 금지</li>
+<li><strong>대응</strong>: SRP 15.0 Rev.3 AOO = II + III, PA = IV / IAEA NO·AOO·DBA·DEC</li>
+<li><strong>국내</strong>: SAR 15장 MF·IF·LF, 기술기준규칙 제2조 제7·9호, 제42조, EAB 250 mSv</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 Condition I~IV 4칸 도식(빈도·허용기준·확대 금지)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-025-ans-condition-classification/sketch1_condition_ladder_answer.avif"/><figcaption>답안지용 Condition I~IV 4칸 도식(빈도·허용기준·확대 금지)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2017년 3교시 4번</td>
+<td>ANS Condition Ⅰ·Ⅱ에서 핵연료봉 설계기준</td>
+</tr>
+<tr>
+<td>2016년 1교시 3번</td>
+<td>예상운전과도(AOO)</td>
+</tr>
+<tr>
+<td>2015년 4교시 5번</td>
+<td>복수기 진공 유지와 진공상실 사고의 Condition·거동</td>
+</tr>
+<tr>
+<td>2013년 1교시 8번</td>
+<td>ANSI N18.2 Condition Ⅳ 사고 유형</td>
+</tr>
+<tr>
+<td>2001년(제65회) 3교시 5번</td>
+<td>사고 빈도별 분류표 빈칸 채우기</td>
+</tr>
+</tbody>
+</table>
+<p>제65회 문항의 표는 그림이라 판독본에서 빠져 있어 원본 문제지로 복원했습니다. 빈도축(10⁻¹~10⁻⁶/원자로·년)과 네 열(10 CFR / RG 1.48·ASME Code / RG 1.70 Rev.2·3 / ANS 51.1(N18.2))의 빈칸 A~L 12개이며, 정답은 fig2에 넣었습니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>American Nuclear Society, ANSI N18.2-1973 "Nuclear Safety Criteria for the Design of Stationary Pressurized Water Reactor Plants"; ANSI/ANS-51.1-1983 (R1988), 1998 철회.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 15.0 "Introduction — Transient and Accident Analysis Methods", Rev. 3 (2007.3), NRC ADAMS ML070710376.</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix A (Definitions, GDC 10·15·20); 10 CFR 50.46(b); 10 CFR Part 100.</li>
+<li>U.S. NRC, Regulatory Guide 1.70 Rev. 3 "Standard Format and Content of Safety Analysis Reports for Nuclear Power Plants — LWR Edition" (1978), 15장.</li>
+<li>이민석 외, "A Study of Time Response for Safety-Related Operator Actions in Non-LOCA Safety Analysis", 한국원자력학회 추계학술발표회(2014), 표 I.</li>
+<li>IAEA, Specific Safety Requirements SSR-2/1 (Rev. 1) "Safety of Nuclear Power Plants: Design" (2016).</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Chapter 15 "Transient and Accident Analyses"(15.0 사건 분류, 15.2.3). NRC 설계인증 공개 문서.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제2조·제17조·제42조. 국가법령정보센터.</li>
+<li>원자력안전위원회, 원안위고시 제2026-7호(원자로시설의 위치 관련 선량 기준). 국가법령정보센터.</li>
+</ol>

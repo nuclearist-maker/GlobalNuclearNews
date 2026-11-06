@@ -1,0 +1,238 @@
+<figure class="article-image"><img alt="[개념 노트] 무연성천이온도(NDTT·RTNDT·DBTT) — 낙하중·샤르피 시험에서 조사취화 ART와 P-T 곡선까지 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-003-rtndt-dbtt/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>무연성천이온도(NDTT, TNDT)는 낙하중시험에서 시편이 취성 파단하는 최고 온도이고, 기준무연성천이온도(RTNDT)는 ASME III NB-2331에 따라 낙하중시험과 샤르피 충격시험을 조합해 정한 원자로용기 재료의 파괴인성 기준온도이며[1], 연성-취성 천이온도(DBTT)는 샤르피 곡선에서 파괴 양식이 연성에서 취성으로 바뀌는 천이구역의 대표온도를 통칭합니다.</strong></p>
+<p>세 용어는 페라이트강이 저온에서 취성으로 바뀌는 같은 현상을 서로 다른 시험으로 잡은 것입니다. 원자로용기 규제는 RTNDT를 파괴인성 곡선의 기준점으로 쓰고, 조사로 오르는 양(ΔRTNDT)을 수명 내내 추적합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>연성-취성 천이와 DBTT</h3>
+<p>체심입방(BCC) 페라이트강은 저온에서 항복강도가 급증해 소성변형보다 벽개 파괴가 먼저 일어납니다. 샤르피 흡수에너지를 온도에 대해 그리면 S자 곡선이 되고, 다음 세 구역으로 나뉩니다.</p>
+<ul>
+<li><strong>하부 선반(취성)</strong>: 벽개 파면, 흡수에너지 수 J~수십 J</li>
+<li><strong>천이구역</strong>: 연성·취성 혼합 파면, 온도에 따라 에너지가 급변</li>
+<li><strong>상부 선반(연성)</strong>: 섬유상 파면, 이 구역의 흡수에너지가 상부흡수에너지(USE)</li>
+</ul>
+<p>DBTT는 천이구역을 대표하는 온도인데, 정의 기준이 여러 가지입니다. 41 J(30 ft-lb) 온도 T41J, 68 J(50 ft-lb) 온도, 횡팽창 0.89 mm(35 mils) 온도, 연성파면율 50 % 온도(FATT) 등이 쓰이므로 답안에는 어떤 기준인지 함께 적어야 합니다. 샤르피 시편은 10×10×55 mm 막대에 깊이 2 mm 45° V노치를 낸 것으로, 진자 해머로 파단해 흡수에너지·횡팽창·연성파면율을 잽니다(ASTM E23)[2].</p>
+<h3>NDTT — 낙하중시험</h3>
+<p>낙하중시험(ASTM E208)은 판형 시편 표면에 취성 용접비드를 올리고 노치를 낸 뒤, 정해진 온도에서 추를 떨어뜨려 비드에서 시작된 균열이 시편을 가로질러 파단시키는지를 봅니다. **시편이 파단되는 최고 온도가 TNDT(NDTT)**이며[2], 그보다 5 °C(10 °F) 높은 온도에서는 파단되지 않아야 합니다. 날카로운 균열의 정지(arrest)를 보므로 무딘 노치의 샤르피보다 실제 균열 거동에 가깝습니다.</p>
+<h3>RTNDT — NB-2331 결정 절차</h3>
+<p>TNDT만으로는 천이구역 위쪽 인성을 보증할 수 없어 NB-2331은 두 시험을 묶습니다.</p>
+<ol>
+<li>낙하중시험 결과로 NDT 이상인 온도를 TNDT로 정합니다.</li>
+<li>TNDT + 33 °C(60 °F) 이하 온도에서 샤르피 3개가 <strong>모두 68 J(50 ft-lb) 이상, 횡팽창 0.89 mm(35 mils) 이상</strong>이면 RTNDT = TNDT입니다.</li>
+<li>만족하지 못하면 3개 1조로 온도를 올려 가며 시험해, 조건을 만족하는 온도 TCv를 찾고 RTNDT = TCv − 33 °C(60 °F)로 합니다[1].</li>
+</ol>
+<p>즉 **RTNDT = max(TNDT, TCv − 33 °C)**이며, RTNDT는 항상 TNDT 이상입니다. 60 °F는 온도 "차이"이므로 33 °C로 환산합니다(절대온도 환산값 15.6 °C와 혼동하지 않아야 합니다). 10 CFR 50 Appendix G와 50.61은 조사 전 RTNDT를 이 절차로 정하도록 인용합니다.</p>
+<figure class="article-image"><img alt="샤르피 천이곡선 조사 전·후(41 J 지수온도 이동 ΔRTNDT ≈ 86 °C, USE 감소)와 NB-2331 초기 RTNDT 결정 절차" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-003-rtndt-dbtt/fig1_charpy_transition_shift.avif"/><figcaption>샤르피 천이곡선 조사 전·후(41 J 지수온도 이동 ΔRTNDT ≈ 86 °C, USE 감소)와 NB-2331 초기 RTNDT 결정 절차</figcaption></figure>
+<h3>조사취화 — ΔRTNDT와 USE 감소</h3>
+<p>노심영역(beltline) 용기 재료가 고속중성자(E &gt; 1 MeV)를 받으면 원자 변위로 점결함·전위루프가 생기고, 구리 풍부 석출물과 Ni-Mn-Si 클러스터가 형성돼 재료가 경화됩니다. 그 결과 샤르피 곡선은 <strong>오른쪽(고온)으로 이동하고 상부 선반은 내려갑니다</strong>. 천이온도 상승과 USE 감소가 동시에 일어나는 것이 핵심입니다.</p>
+<p>규제상 ΔRTNDT는 낙하중시험을 다시 하지 않고 <strong>조사 전후 평균 샤르피 곡선의 41 J(30 ft-lb) 지수온도 차이</strong>로 정의하며(10 CFR 50 App. G II.E)[3], 감시시편이 이 값을 잽니다.</p>
+<h3>ART — RG 1.99 Rev.2 예측식</h3>
+<p>조사 후의 RTNDT를 조정기준온도(ART)라 하며, RG 1.99 Rev.2(1988)와 10 CFR 50.61이 예측식·CF 표를 공유합니다[4][5].</p>
+<ul>
+<li><strong>ART = 초기 RTNDT + ΔRTNDT + Margin</strong></li>
+<li><strong>ΔRTNDT = CF × f^(0.28 − 0.10 log f)</strong> (f: 10¹⁹ n/cm², E &gt; 1 MeV)</li>
+<li>CF(화학인자, °F): 용접부·모재별로 Cu·Ni 함량(wt%)의 표 값. 성분을 모르면 Cu 0.35 %, Ni 1.0 %를 가정합니다.</li>
+<li>벽 깊이 감쇠: f(x) = f_내면 × e^(−0.24x) (x: 클래딩–모재 경계에서 깊이, inch)</li>
+<li><strong>Margin = 2√(σU² + σΔ²)</strong>: σΔ = 28 °F(용접), 17 °F(모재), ΔRTNDT의 1/2을 넘지 않음. 초기값을 실측했으면 σU는 시험 정밀도로 정함</li>
+<li>신뢰성 있는 감시시험 자료가 2세트 이상이면 실측 ΔRTNDT로 재료 고유 CF를 다시 구하고, σΔ를 절반(14 °F·8.5 °F)으로 줄일 수 있습니다.</li>
+</ul>
+<p><strong>계산 예(예시 조건)</strong>: 원주 용접부 Cu 0.10 %·Ni 0.80 %(CF = 133 °F), 초기 RTNDT = −20 °F(σU = 0 가정), 수명말 내면 fluence 3.0×10¹⁹ n/cm², 벽두께 8 in</p>
+<table>
+<thead>
+<tr>
+<th>위치</th>
+<th>f (10¹⁹)</th>
+<th>FF</th>
+<th>ΔRTNDT</th>
+<th>ART</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1/4T (2 in)</td>
+<td>1.86</td>
+<td>1.170</td>
+<td>155.5 °F</td>
+<td>191.5 °F(약 89 °C)</td>
+</tr>
+<tr>
+<td>3/4T (6 in)</td>
+<td>0.71</td>
+<td>0.904</td>
+<td>120.3 °F</td>
+<td>156.3 °F(약 69 °C)</td>
+</tr>
+<tr>
+<td>내면</td>
+<td>3.0</td>
+<td>1.291</td>
+<td>171.7 °F</td>
+<td>RTPTS 207.7 °F</td>
+</tr>
+</tbody>
+</table>
+<p>Margin은 2 × 28 = 56 °F입니다. USE 감소는 RG 1.99 Rev.2 그림 2(Cu·fluence 함수)로 따로 예측합니다.</p>
+<figure class="article-image"><img alt="RG 1.99 Rev.2 fluence–ΔRTNDT 곡선(용접부·모재)과 1/4T ART 워터폴 계산 예" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-003-rtndt-dbtt/fig2_art_fluence_calc.avif"/><figcaption>RG 1.99 Rev.2 fluence–ΔRTNDT 곡선(용접부·모재)과 1/4T ART 워터폴 계산 예</figcaption></figure>
+<h2>원전에서의 의미</h2>
+<h3>감시시험 — 실측으로 예측을 검증</h3>
+<p>예측식은 통계 평균이므로 실제 용기 재료 시편을 노심 가까이 넣고 주기적으로 꺼내 시험합니다.</p>
+<ul>
+<li><strong>시편</strong>: 수명 중 취화가 가장 클 모재·용접부·열영향부의 샤르피·인장·파괴인성 시편, 중성자 선량 감시자, 온도 감시자(용융선)</li>
+<li><strong>위치</strong>: 노심영역 용기 내벽 가까이(노형별 캡슐 홀더). 시편이 용기보다 먼저 조사되도록 <strong>선배율(lead factor) 1~3</strong>[7]으로 배치합니다. 선배율 = 시편 위치 중성자속 / 용기 내벽 최대 중성자속입니다.</li>
+<li><strong>인출</strong>: 예상 ΔRTNDT가 클수록 캡슐을 많이(3·4·5개) 계획하고, 첫 시험은 선배율이 가장 큰 캡슐로 합니다.</li>
+</ul>
+<!-- 해소(2026-10-10): 캡슐 수 구분 경계 ≤56 / 56~111 / >111 °C는 고시 제2021-28호 별표 2·3과 일치(Y2025-4-03 대조) -->
+<ul>
+<li><strong>평가</strong>: 41 J 이동량(ΔRTNDT)과 USE 감소를 예측과 비교해 P-T 곡선·PTS 평가에 반영합니다.</li>
+</ul>
+<h3>P-T 한계곡선과 운전</h3>
+<p>RTNDT가 쓰이는 이유는 ASME XI 부록의 파괴인성 기준곡선이 (T − RTNDT)의 함수이기 때문입니다. 예: K_Ic = 33.2 + 20.734 exp[0.02(T − RTNDT)] (ksi√in, °F)입니다[6]. 1/4T 깊이 기준결함을 가정해 가열·냉각 시 2K_Im + K_It &lt; K_Ic를 만족하는 압력-온도 영역을 구한 것이 P-T 한계곡선입니다.</p>
+<ul>
+<li>ART가 오르면 곡선이 고온 쪽으로 이동해 저온에서 허용되는 압력이 줄어듭니다.</li>
+<li>냉각 시에는 내면 인장응력 때문에 1/4T, 가열 시에는 3/4T 위치 ART가 지배합니다.</li>
+<li>노심 임계 시에는 App. G 한계에 40 °F를 더하고[3], 저온과압보호(LTOP) 설정도 이 곡선에 연동됩니다.</li>
+</ul>
+<h3>PTS와의 관계</h3>
+<p>가압열충격(PTS)은 과냉각 중 재가압이 겹치는 조건으로, 내면 fluence로 구한 RTPTS를 선별기준 270 °F(판재·단조·축방향 용접)·300 °F(원주방향 용접)와 비교합니다[5]. 초과가 예상되면 중성자속 저감, 정밀 파괴역학 평가, 회복 열처리로 대응합니다.</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ASME III NB-2331</td>
+<td>조사 전 RTNDT 결정(낙하중 + 샤르피 68 J·0.89 mm, TNDT + 33 °C)</td>
+</tr>
+<tr>
+<td>10 CFR 50 App. G</td>
+<td>ΔRTNDT = 41 J 지수온도 차, USE 초기 ≥ 102 J·수명 중 ≥ 68 J, P-T 한계·최소온도(Table 1)</td>
+</tr>
+<tr>
+<td>10 CFR 50 App. H</td>
+<td>수명말 fluence &gt; 10¹⁷ n/cm²이면 ASTM E185 감시시험, 인출 후 18개월 내 보고, 2020년 개정으로 일부 시편 선택화</td>
+</tr>
+<tr>
+<td>RG 1.99 Rev.2(1988)</td>
+<td>ART·CF 표·fluence factor·Margin·USE 감소 예측</td>
+</tr>
+<tr>
+<td>10 CFR 50.61 / 50.61a / 50.66</td>
+<td>PTS 선별기준·대체 규칙·회복 열처리</td>
+</tr>
+<tr>
+<td>원안위 고시 「원자로압력용기 감시시험 기준」</td>
+<td>선배율 1~3, 인출 1년 내 보고, App. G IV 불만족 시 운전 불가, USE 68 J 이하·RTNDT 약 93 °C 이상 예상 시 열처리 가능 설계</td>
+</tr>
+</tbody>
+</table>
+<!-- 해소(2026-10-10): 현행판은 원안위고시 제2021-28호(2021.8.19). 선배율 1~3·1년 내 보고는 현행판에도 동일(Y2026-4-01 대조) -->
+<p>출제 당시와 비교하면 예측식은 여전히 RG 1.99 Rev.2이고, 2010년 50.61a가 추가됐으며, 2020년 App. H 개정으로 열영향부·상관감시재·온도감시자 시편이 선택사항이 됐습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>NDTT(TNDT)</th>
+<th>RTNDT</th>
+<th>DBTT</th>
+<th>ART</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>시험</td>
+<td>낙하중(E208)</td>
+<td>낙하중 + 샤르피</td>
+<td>샤르피 등</td>
+<td>계산(초기 + Δ + M)</td>
+</tr>
+<tr>
+<td>기준</td>
+<td>파단 최고 온도</td>
+<td>NB-2331</td>
+<td>41 J·FATT 등 다양</td>
+<td>RG 1.99 Rev.2</td>
+</tr>
+<tr>
+<td>쓰임</td>
+<td>RTNDT 입력</td>
+<td>파괴인성 곡선 기준점</td>
+<td>재료 일반 비교</td>
+<td>P-T 곡선·PTS 평가</td>
+</tr>
+<tr>
+<td>조사 영향</td>
+<td>직접 재측정 안 함</td>
+<td>ΔRTNDT로 갱신</td>
+<td>곡선 이동</td>
+<td>조사 반영값</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>NDTT</strong>: 낙하중시험(ASTM E208)에서 시편이 파단되는 최고 온도</li>
+<li><strong>RTNDT</strong>: NB-2331, TNDT + 33 °C 이하에서 샤르피 3개 ≥ 68 J·≥ 0.89 mm면 RTNDT = TNDT, 아니면 TCv − 33 °C → RTNDT = max(TNDT, TCv − 33 °C)</li>
+<li><strong>DBTT</strong>: 샤르피 S곡선 천이구역 대표온도, 41 J·50 % FATT 등 기준 명시</li>
+<li><strong>조사 영향</strong>: 고속중성자 → 경화 → 곡선 우측 이동(ΔRTNDT) + USE 감소, Cu·Ni·P 민감</li>
+<li><strong>ΔRTNDT 측정</strong>: 조사 전후 41 J(30 ft-lb) 온도 차(App. G)</li>
+<li><strong>ART</strong> = 초기 RTNDT + CF·f^(0.28−0.10 log f) + 2√(σU² + σΔ²), 감쇠 e^(−0.24x)</li>
+<li><strong>감시시험</strong>: 선배율 1~3, 3~5개 캡슐, 시편·선량·온도 감시자, 인출 후 보고</li>
+<li><strong>요건</strong>: USE ≥ 102 J(초기)·≥ 68 J(수명 중), P-T 곡선(ASME XI App. G), RTPTS 270/300 °F</li>
+<li><strong>초과 대응</strong>: 중성자속 저감, 정밀 평가·추가 파괴인성 시험, 회복 열처리</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 조사 전·후 샤르피 곡선, 41 J 선의 ΔRTNDT와 USE 감소" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-003-rtndt-dbtt/sketch1_charpy_shift.avif"/><figcaption>답안지용 조사 전·후 샤르피 곡선, 41 J 선의 ΔRTNDT와 USE 감소</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024년 1교시 5번</td>
+<td>원자로용기 재료의 NDTT와 RTNDT</td>
+</tr>
+<tr>
+<td>2019년 4교시 6번</td>
+<td>감시시편: USE·RTNDT 영향, 선별기준, 선배율, P-T 곡선, 설치 위치</td>
+</tr>
+<tr>
+<td>2013년 2교시 2번</td>
+<td>NDTT, 조사 전 RTNDT 결정, 선별기준 초과 시 조치</td>
+</tr>
+<tr>
+<td>2008년 1교시 10번</td>
+<td>NDTT 혹은 DBTT</td>
+</tr>
+<tr>
+<td>제71회 1교시 11번</td>
+<td>DBTT</td>
+</tr>
+<tr>
+<td>제67회 1교시 10번</td>
+<td>Charpy V-Notch Test</td>
+</tr>
+<tr>
+<td>제63회 2교시 4번</td>
+<td>RTNDT 계산의 주요 인자</td>
+</tr>
+</tbody>
+</table>
+<p>2019년 4교시 6번 "나" 항의 추가 정밀시험은 국내 고시의 100 % 체적 비파괴검사·추가 파괴인성 시험·파괴역학 해석으로 답합니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>ASME, Boiler and Pressure Vessel Code, Section III, Division 1, Subsection NB, NB-2331. ASME(구입 공개).</li>
+<li>ASTM International, ASTM E23 "Standard Test Methods for Notched Bar Impact Testing of Metallic Materials"; ASTM E208 "Standard Test Method for Conducting Drop-Weight Test to Determine Nil-Ductility Transition Temperature of Ferritic Steels".</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix G "Fracture Toughness Requirements" 및 Appendix H "Reactor Vessel Material Surveillance Program Requirements"(85 FR 62207, 2020 개정 반영). eCFR.</li>
+<li>U.S. NRC, Regulatory Guide 1.99 Rev. 2 "Radiation Embrittlement of Reactor Vessel Materials" (1988).</li>
+<li>U.S. NRC, 10 CFR 50.61 "Fracture toughness requirements for protection against pressurized thermal shock events"; 10 CFR 50.61a, 50.66. eCFR.</li>
+<li>ASME, Boiler and Pressure Vessel Code, Section XI, Nonmandatory Appendix A·G(파괴인성 기준곡선, P-T 한계 평가).</li>
+<li>원자력안전위원회, 「원자로압력용기 감시시험 기준」, 원안위고시 제2021-28호(2021.8.19), 제8·12·13·15조, 별표 2·3. 국가법령정보센터.</li>
+</ol>

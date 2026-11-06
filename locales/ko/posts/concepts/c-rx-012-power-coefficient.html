@@ -1,0 +1,209 @@
+<figure class="article-image"><img alt="[개념 노트] 출력계수(Power Coefficient) — 출력 1 %당 반응도와 그 적분인 출력결손 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-012-power-coefficient/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p>**출력계수(Power Coefficient, α_P)**는 원자로 출력이 정격의 1 % 변할 때 노심 반응도가 얼마나 변하는지를 나타내는 계수 α_P = dρ/dP입니다. 단위는 pcm/%power이고, 문헌에 따라 %Δk/k per %power(−0.012 = −12 pcm/%)로도 씁니다. 출력이 바뀌면 연료 온도, 감속재 온도(밀도), 기포가 함께 바뀌므로 출력계수는 개별 계수들을 온도 변화율로 가중해 더한 <strong>종합 계수</strong>입니다.</p>
+<p>답안 첫 줄은 "출력 변화에 따른 반응도 변화율로, 연료온도계수와 감속재온도계수를 출력당 온도 변화로 가중해 합한 값이며, 출력운전 전 영역에서 음이 되도록 설계함"이면 충분합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>계수 × 온도 변화율</h3>
+<p>PWR에서는 기포·압력 항을 무시하고 다음 식을 씁니다.</p>
+<ul>
+<li><strong>α_P = MTC·(dT_M/dP) + FTC·(dT_F/dP)</strong></li>
+<li>MTC, FTC: pcm/K(또는 pcm/°F) 단위의 온도계수</li>
+<li>dT_M/dP: 출력당 평균 감속재 온도 변화(K/%). 가변 Tavg 운전 프로그램이 정합니다.</li>
+<li>dT_F/dP: 출력당 평균 연료 온도 변화(K/%). 펠릿 열전도도와 간극 컨덕턴스, 즉 연료봉 열저항이 정합니다.</li>
+</ul>
+<p>계수와 변화율의 곱이므로 "출력계수 = MTC + FTC"가 아닙니다. 그 합은 등온온도계수 <strong>ITC = MTC + FTC</strong>입니다. 이 노트는 두 계수를 출력이라는 하나의 변수로 묶는 쪽에 집중합니다.</p>
+<h3>미분은 출력계수, 적분은 출력결손</h3>
+<p>출력계수를 0 %에서 P까지 적분한 값이 **출력결손(Power Defect)**입니다.</p>
+<ul>
+<li>PD(P) = ∫₀ᴾ α_P dP′ (단위 pcm)</li>
+</ul>
+<p>출력계수는 기울기, 출력결손은 누적량입니다. 출력을 올리면 출력결손만큼 음의 반응도가 들어오므로 제어봉 인출이나 붕소 희석으로 보상해야 합니다. 반대로 출력이 내려가 연료·감속재 온도가 떨어지면 그만큼 양의 반응도 궤환이 생깁니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>주기초와 주기말</h3>
+<p>NRC 공개 W형 매뉴얼(NRC HRTD, W형 예시 노심)의 그림을 판독하면 값은 다음과 같습니다[1].</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>주기초(BOL)</th>
+<th>주기말(EOL)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>총 출력계수(0 → 100 %)</td>
+<td>−13.5 → −11.9 pcm/%</td>
+<td>−22.0 → −20.8 pcm/%</td>
+</tr>
+<tr>
+<td>100 % 출력결손</td>
+<td>약 −1,210 pcm</td>
+<td>약 −2,130 pcm</td>
+</tr>
+<tr>
+<td>그중 도플러 몫</td>
+<td>약 −1,180 pcm</td>
+<td>약 −1,030 pcm</td>
+</tr>
+<tr>
+<td>그중 감속재 몫(총량 − 도플러, 차감 추정)</td>
+<td>약 −30 pcm</td>
+<td>약 −1,100 pcm</td>
+</tr>
+<tr>
+<td>연료 온도 상승(0 → 100 %)</td>
+<td>약 1,000 °F</td>
+<td>약 800 °F</td>
+</tr>
+</tbody>
+</table>
+<figure class="article-image"><img alt="출력계수 곡선(BOL·EOL, NRC 공개 W형 매뉴얼 판독)과 그 적분인 출력결손 곡선, 80→100 % 구간 −416 pcm 대응, 100 % 출력결손의 도플러·감속재 구성 막대, 보상 수단(제어봉·붕소), 출력계수 식 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-012-power-coefficient/fig1_power_coefficient_defect_boc_eoc.avif"/><figcaption>출력계수 곡선(BOL·EOL, NRC 공개 W형 매뉴얼 판독)과 그 적분인 출력결손 곡선, 80→100 % 구간 −416 pcm 대응, 100 % 출력결손의 도플러·감속재 구성 막대, 보상 수단(제어봉·붕소), 출력계수 식 카드</figcaption></figure>
+<p>핵심은 세 가지입니다.</p>
+<ol>
+<li><strong>주기말이 더 음입니다.</strong> 원 자료도 그 원인을 "주로 MTC 변화"라고 씁니다. 붕소가 희석되어 MTC가 −30 ~ −45 pcm/°F 수준까지 커지기 때문입니다.</li>
+<li><strong>도플러 몫은 주기말에 오히려 조금 줄어듭니다.</strong> 펠릿 팽윤과 피복관 크리프로 간극이 닫혀 같은 출력에서 연료 온도 상승폭이 줄기 때문입니다(dT_F/dP 감소).</li>
+<li><strong>주기초 출력결손은 거의 도플러 몫</strong>이고, 주기말에는 도플러와 감속재가 비슷하게 나눕니다.</li>
+</ol>
+<p>출력계수 판독 곡선을 직접 적분하면 100 % 결손은 BOL −1,254 pcm, EOL −2,110 pcm으로 원 자료의 결손 그림과 몇 % 안에서 맞고, 주기말 결손은 약 1.7배입니다. 곡선 모양을 보면 출력계수는 출력이 높을수록 조금 덜 음입니다. 고온일수록 도플러 확장이 포화되어 FTC 크기가 줄기 때문입니다. 그래서 출력결손은 거의 직선이지만 엄밀히는 약간 위로 볼록합니다.</p>
+<h3>자기제어와 부하 변화</h3>
+<p>음의 출력계수는 원자로가 스스로 출력을 붙잡는 성질(자기제어)의 실체입니다. 같은 매뉴얼의 예제가 이를 잘 보여 줍니다[1]. MTC −20 pcm/°F, 도플러 출력계수 −10 pcm/%에서 터빈 부하를 60 %에서 50 %로 줄이면 제어봉을 움직이지 않아도 다음과 같이 됩니다.</p>
+<ul>
+<li>1차측 열 제거가 줄어 Tavg가 오름 → 음의 반응도</li>
+<li>출력이 내려가 연료 온도가 낮아짐 → 양의 반응도</li>
+<li>결국 Tavg 5 °F 상승(−100 pcm)과 출력 10 % 감소(+100 pcm)가 맞서는 지점에서 새 평형</li>
+</ul>
+<p>평형 조건은 α_M·ΔT_avg + α_D,P·ΔP = 0입니다. 실제 운전에서는 가변 Tavg 프로그램이 출력에 따라 Tavg를 올리도록 정해져 있습니다. 그래서 출력을 올릴 때 들어오는 출력결손을 제어봉·붕소로 보상합니다. 이 조작은 출력을 따라가게 하려는 것이 아니라 Tavg를 프로그램값에 맞추기 위한 것입니다.</p>
+<p><strong>부하추종</strong> 운전에서는 출력 변동마다 출력결손만큼 반응도를 넣고 빼야 합니다. 주기말에는 결손이 커지는데 붕소 농도는 낮습니다. 같은 반응도를 붕소로 맞추려면 희석수가 더 많이 들고 시간도 걸립니다. 그래서 제어봉 의존도가 커지고, 축방향 출력분포와 제논 진동 관리 부담도 커집니다.</p>
+<h3>안정성과 안전해석</h3>
+<ul>
+<li><strong>양의 출력계수는 불안정</strong>합니다. 출력 섭동이 반응도를 키워 다시 출력을 키웁니다. 체르노빌 RBMK는 저출력에서 큰 양의 기포계수 때문에 출력계수가 양이었습니다(INSAG-7)[6].<!-- 확인필요: INSAG-7 원문 수치(저출력 출력계수 부호·크기) 미대조, 요약 수준 확인 --></li>
+<li><strong>너무 큰 음도 부담</strong>입니다. 출력 감소·트립 때 되돌아오는 양의 반응도가 크고, 주증기관파단처럼 냉각되는 사건에서 재임계 측면이 불리합니다.</li>
+<li>그래서 안전해석은 <strong>양 끝을 모두</strong> 씁니다. 가열·반응도 삽입 사건에는 가장 덜 음인 BOC 값, 냉각 사건에는 가장 음인 EOC 값을 씁니다.</li>
+<li>정지 후 출력·온도가 내려가며 생기는 양의 반응도를 이기고 미임계를 유지하도록, 출력이 높을수록 제어군 삽입한계(최소 봉 높이)가 올라갑니다.</li>
+</ul>
+<h3>계산 기출 3문항</h3>
+<ul>
+<li><strong>2020년 3교시 1번</strong>: FTC = ITC − MTC = −12 − (−10) = −2 pcm/K. α_P = (−10)(2) + (−2)(10) = <strong>−40 pcm/%power</strong>입니다. 실제 PWR 값(−12 ~ −22 pcm/%)보다 큰 문제 가정값입니다.</li>
+<li><strong>2026년 3교시 2번</strong>: FTC = −6 − (−5) = −1 pcm/K. α_P = (−5)(1) + (−1)(5) = <strong>−10 pcm/%power</strong>이고, 감속재와 연료 몫이 각 −5입니다.</li>
+<li><strong>2021년 4교시 3번</strong>: 0 → 100 %에서 연료 300 → 800 °C, 감속재 300 → 320 °C입니다.
+<ul>
+<li>가. Δρ = (−2.0)(500) + (−5.0)(20) = −1,000 − 100 = <strong>−1,100 pcm</strong></li>
+<li>나. α_P = −1,100/100 = <strong>−11 pcm/%power</strong>(0 ~ 100 % 평균)</li>
+<li>다. 붕소 고정 시 +1,100 pcm 필요 → 1,100/10 = <strong>110 step 인출</strong></li>
+<li>라. 제어봉 고정 시 1,100/10 = <strong>110 ppm 희석</strong></li>
+<li>도플러 몫이 91 %라 주기초 구성과 비슷합니다.</li>
+</ul>
+</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<ul>
+<li><strong>10 CFR 50 부록 A GDC 11(원자로 고유 보호)</strong>[2]: 출력운전 범위에서 즉발 고유 핵궤환의 순효과가 급격한 반응도 증가를 보상하는 경향을 가져야 합니다. 음의 출력계수가 이 요건의 운전 지표입니다.</li>
+<li><strong>「원자로시설 등의 기술기준에 관한 규칙」 제18조(원자로의 고유보호)</strong>[3]: GDC 11과 같은 취지입니다.<!-- 기술기준규칙 제18조: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 --></li>
+<li><strong>NUREG-0800 SRP 4.3(노심 설계)</strong>[4]: 출력계수를 포함한 반응도계수의 계산 방법과 불확실도, 과도해석에 쓰는 계수 범위를 심사합니다.</li>
+<li><strong>운영기술지침서(STS NUREG-1431 Rev.5)</strong>[5]: 출력계수 자체의 LCO는 없습니다. MTC(LCO 3.1.3), 정지여유도(3.1.1), 제어군 삽입한계(3.1.6)로 간접 관리합니다. 수치는 호기별 COLR에 있습니다.</li>
+<li><strong>IAEA</strong>: SSR-2/1(Rev.1, 2016) 노심 설계 요건, SSG-52(2019) 노심 설계 지침[7].</li>
+<li><strong>출제 당시 대비</strong>: 제76회(2005)와 2011년 단답 이후 개념은 같습니다. STS는 현행 Rev.5(2021)입니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>출력계수</th>
+<th>출력결손</th>
+<th>등온온도계수(ITC)</th>
+<th>온도결손</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정의</td>
+<td>dρ/dP</td>
+<td>∫α_P dP</td>
+<td>MTC + FTC</td>
+<td>∫ITC dT</td>
+</tr>
+<tr>
+<td>단위</td>
+<td>pcm/%</td>
+<td>pcm</td>
+<td>pcm/K</td>
+<td>pcm</td>
+</tr>
+<tr>
+<td>변수</td>
+<td>출력</td>
+<td>출력 구간</td>
+<td>균일 온도</td>
+<td>온도 구간(냉간 → 고온영출력)</td>
+</tr>
+<tr>
+<td>쓰임</td>
+<td>자기제어·과도해석</td>
+<td>보상량·정지여유도</td>
+<td>HZP 측정</td>
+<td>냉각 정지여유도</td>
+</tr>
+</tbody>
+</table>
+<p>출력계수와 출력결손은 미분과 적분, ITC와 온도결손도 미분과 적분 관계입니다. 계산 문제에서 단위만 확인해도 대부분의 혼동이 걸러집니다.</p>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 출력계수와 출력결손(Power Coefficient &amp; Power Defect)</strong></p>
+<ol>
+<li><strong>정의</strong>: α_P = dρ/dP, 출력 1 %당 반응도 변화(pcm/%power)임</li>
+<li><strong>구성</strong>: α_P = <strong>MTC·dT_M/dP + FTC·dT_F/dP</strong> (PWR, 기포 무시)</li>
+<li><strong>출력결손</strong>: PD = ∫₀ᴾ α_P dP, 0 → 100 % 누적 반응도(pcm)</li>
+<li><strong>보상</strong>: 출력↑ 시 제어봉 인출·붕소 희석, 출력↓ 시 온도 하강으로 +ρ 궤환 → 제어군 삽입한계로 정지여유도 확보</li>
+<li><strong>주기 의존</strong>: EOC가 더 음(주원인 <strong>MTC</strong>), 도플러 몫은 간극 폐쇄로 약간 감소</li>
+<li><strong>대표값(W형 예시, NRC HRTD)</strong>: BOL 약 −12 pcm/%, 결손 약 −1,200 pcm / EOL 약 −21 pcm/%, 약 −2,100 pcm</li>
+<li><strong>자기제어</strong>: 음의 출력계수 → 부하 변화 시 Tavg·출력이 스스로 새 평형</li>
+<li><strong>안전해석</strong>: BOC(덜 음) → 가열·반응도 사건, EOC(더 음) → 냉각 사건</li>
+<li><strong>근거</strong>: GDC 11, 기술기준규칙 제18조(고유보호), SRP 4.3</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: 출력결손 직선 근사(BOL ≈ −1,200, EOL ≈ −2,100 pcm), 기울기 ΔPD/ΔP ≈ α_P, PD = ∫α_P dP" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-012-power-coefficient/sketch1_power_defect_slope.avif"/><figcaption>답안용 도식: 출력결손 직선 근사(BOL ≈ −1,200, EOL ≈ −2,100 pcm), 기울기 ΔPD/ΔP ≈ α_P, PD = ∫α_P dP</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>연도-교시-번호</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2005(제76회)-1-4</td>
+<td>Power Defect</td>
+</tr>
+<tr>
+<td>2011-1-9</td>
+<td>출력계수와 출력결손</td>
+</tr>
+<tr>
+<td>2020-3-1</td>
+<td>출력계수 계산(MTC·ITC)</td>
+</tr>
+<tr>
+<td>2021-4-3</td>
+<td>반응도계수·출력계수·제어봉/붕소 계산</td>
+</tr>
+<tr>
+<td>2026-3-2</td>
+<td>출력계수 계산(MTC·ITC)</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, HRTD Westinghouse Technology Systems Manual, Sec. 2.1 "Reactor Physics Review", Rev. 1208, NRC ADAMS ML11223A207 — Fig. 2.1-7·2.1-9·2.1-10, 부하 변화 예제.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criterion 11 "Reactor inherent protection".</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제18조. 국가법령정보센터.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.3 "Nuclear Design".</li>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications — Westinghouse Plants, Rev. 5 (2021), LCO 3.1.1·3.1.3·3.1.6.</li>
+<li>IAEA, INSAG-7 "The Chernobyl Accident: Updating of INSAG-1", Safety Series No. 75-INSAG-7 (1992).</li>
+<li>IAEA, SSR-2/1 (Rev. 1) "Safety of Nuclear Power Plants: Design" (2016); SSG-52 "Design of the Reactor Core for Nuclear Power Plants" (2019).</li>
+</ol>

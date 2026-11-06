@@ -1,0 +1,268 @@
+<figure class="article-image"><img alt="[개념 노트] APR1400 주요 설계특징 — OPR1000 대비 무엇이 바뀌었나(출력·수명·내진·안전주입·MMIS·중대사고) 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-pe-002-apr1400-design-features/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>APR1400은 OPR1000(한국표준형) 운전 경험과 미국 System 80+ 설계를 바탕으로 한국형 사업자 요건(KURD)에 맞춰 개발한 1,400 MWe급 진화형 가압경수로입니다. 2루프 기본 구성은 그대로 두고 출력·설계수명·내진·안전주입·계측제어·중대사고 대처를 한 단계씩 끌어올렸습니다.</strong>[1]</p>
+<p>개발은 1992년에 시작해 2002년 5월 국내 표준설계인가를 받았습니다. 첫 호기 신고리 3호기(현 새울 1호기)가 2015년 10월 운영허가를 받았고, 미국에서는 2019년 설계인증(10 CFR Part 52 부록 F)을 받았습니다[4]. 피동형이 아니라 능동 안전계통을 기반으로 한 진화형이라는 점을 먼저 짚어 두십시오.</p>
+<h2>원리와 메커니즘</h2>
+<h3>요건이 설계를 정한다 — KURD 목표치</h3>
+<p>APR1400의 설계특징은 개발 초기에 정한 사업자 요건에서 나옵니다. 미국 EPRI ALWR 요건을 참조해 만든 KURD의 주요 값은 다음과 같습니다.</p>
+<ul>
+<li>열출력 4,000 MWt(NSSS), 설계수명 60년, SSE 0.3 g</li>
+<li>노심손상빈도(CDF) 10⁻⁵/RY 미만, 격납건물 파손빈도(CFF) 10⁻⁶/RY 미만</li>
+<li>노심 열적여유도 10 % 이상, 운전원 조치 여유 30분 이상, SBO 대처 8시간 이상</li>
+<li>가동률 90 %, 직업피폭 1 man-Sv/RY 미만, 불시정지 연 0.8회 미만[1]</li>
+</ul>
+<p>CDF·CFF 목표는 사업자 성능목표이며 원안위 고시의 안전목표와 다른 층위입니다.</p>
+<h3>1차계통 — 같은 2루프, 더 큰 여유</h3>
+<p>배관 구성은 OPR1000과 같습니다(고온관 1, 저온관 2, SG 1, RCP 2인 루프 2개). 바뀐 점은 여유입니다.</p>
+<ul>
+<li>고온관 온도 621 °F → 615 °F: 운전 여유를 늘리고 SG 전열관 응력부식을 줄임</li>
+<li>가압기 대형화: 조건 III 과도까지 원자로정지 없이 흡수</li>
+<li>SG: Alloy 690TT 전열관(SG당 13,102개), 관막음 여유 8 → 10 %, 2차측 보유수 증가로 건조 시간 연장</li>
+<li>노심 241다발(16×16 PLUS7), CEA 93개, 주기 18개월 이상, 열적여유도 10 % 이상</li>
+<li>가압기 상부의 스프링 안전밸브와 별도 SDS 밸브를 POSRV 4개로 통합(설정압 2,470 psia, 개당 244.9 t/h)[2].</li>
+</ul>
+<h3>안전주입 — 2계열 저온관 주입에서 4계열 직접용기주입으로</h3>
+<p>OPR1000은 격납건물 밖 RWT의 물을 HPSI 2대·LPSI 2대로 저온관에 넣습니다. RWT가 비면 격납건물 집수조로 흡입을 바꾸는 재순환 전환(RAS)이 필요합니다. APR1400은 다음처럼 바꿨습니다.</p>
+<ul>
+<li><strong>4계열 기계 독립</strong>: 계열마다 SIP 1대 + SIT 1기, 계열 간 연결 배관(공통 헤더) 제거. 전기는 2계열(EDG 2대가 SIP 2대씩 공급)</li>
+<li><strong>직접용기주입(DVI)</strong>: 원자로용기 상부 강수부로 바로 넣어 저온관 파단 시 주입수가 파단부로 새는 경로를 줄임</li>
+<li><strong>SIT 유량조절기(Fluidic Device)</strong>: 수위가 스탠드파이프 위면 대유량, 아래면 와류 저항으로 소유량을 오래(약 200초) 공급 → 대용량 LPSI 펌프 제거</li>
+<li><strong>IRWST</strong>: 재장전수를 격납건물 안 환형 탱크에 두어 안전주입·살수·정지냉각의 단일 수원으로 사용[2]. 유출수가 다시 IRWST로 돌아오므로 재순환 전환이 없고, POSRV 방출 증기의 응축조와 원자로공동 충수 수원을 겸함</li>
+</ul>
+<p>정지냉각계통은 안전주입과 분리하고 설계압력을 900 psig로 올려 계통간 LOCA에 대비했습니다[2].</p>
+<figure class="article-image"><img alt="OPR1000(RWT·HPSI/LPSI 2계열·저온관 주입·RAS)과 APR1400(IRWST·SIP 4계열·DVI·SIT 유량조절기) 안전주입 물 경로 비교" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-pe-002-apr1400-design-features/fig1_eccs_water_path_comparison.avif"/><figcaption>OPR1000(RWT·HPSI/LPSI 2계열·저온관 주입·RAS)과 APR1400(IRWST·SIP 4계열·DVI·SIT 유량조절기) 안전주입 물 경로 비교</figcaption></figure>
+<h3>보조급수·전원</h3>
+<p>보조급수는 2계열이며 계열마다 전동펌프 100 % 1대, 터빈구동펌프 100 % 1대, 전용 보조급수저장탱크를 둡니다. 비상전원은 국내 APR1400이 EDG 2대(새울 1·2 기준 8,000 kW) + 호기별 AAC-DG 7,200 kW, 미국 DC는 EDG 4대 + 가스터빈 AAC입니다[2][4]. 2010년 2교시 1번 지문의 "AAC 설치 등 요건 강화"가 이것입니다.</p>
+<h3>계측제어 — 완전 디지털 MMIS</h3>
+<p>주제어실은 대형정보표시반(LDP), 운전원 작업대, 소프트 제어, 컴퓨터 기반 절차서, 필수 안전기능용 안전 콘솔로 구성됩니다. 안전 I&amp;C(PPS·CPCS·ESF-CCS)는 4채널 PLC 플랫폼이고, 소프트웨어 공통원인고장에 대비해 다른 플랫폼의 DPS를 둡니다(국내 2채널 2/2, 미국 DC는 FPGA 4채널 2/4).</p>
+<h3>중대사고 대처</h3>
+<p>2001년 중대사고 정책과 SECY-93-087을 반영해 전용 설비를 갖췄습니다. POSRV 급속감압(250 psia 이하), PAR 30기 + 점화기 10개, 원자로공동 충수계통(IRWST → HVT → 공동), 넓은 공동(0.02 m²/MWt), 비상원자로건물 살수보조계통(ECSBS)입니다[2][5].</p>
+<h2>원전에서의 의미</h2>
+<h3>숫자로 보는 차이</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>OPR1000(신고리 1·2 등)</th>
+<th>APR1400(새울 1·2 등)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>노심 열출력 / 전기출력</td>
+<td>2,815 MWt / 1,000 MWe급</td>
+<td>3,983 MWt(NSSS 4,000) / 1,400 MWe급</td>
+</tr>
+<tr>
+<td>설계수명</td>
+<td>40년</td>
+<td>60년</td>
+</tr>
+<tr>
+<td>내진(SSE)</td>
+<td>0.2 g</td>
+<td>0.3 g</td>
+</tr>
+<tr>
+<td>CDF / CFF 목표</td>
+<td>10⁻⁴ / 10⁻⁵</td>
+<td>10⁻⁵ / 10⁻⁶</td>
+</tr>
+<tr>
+<td>안전주입</td>
+<td>2계열(HPSI·LPSI), 저온관, RWT(밖)</td>
+<td>4계열 SIP, DVI, IRWST(안), SIT+FD</td>
+</tr>
+<tr>
+<td>가압기 과압보호</td>
+<td>안전밸브 + 별도 SDS</td>
+<td>POSRV 4개 겸용</td>
+</tr>
+<tr>
+<td>주제어실</td>
+<td>아날로그 중심</td>
+<td>완전 디지털 MMIS</td>
+</tr>
+<tr>
+<td>중대사고 전용 설비</td>
+<td>없음(후속 보강)</td>
+<td>SDVS·PAR·CFS·ECSBS</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: 3,983 MWt(노심)와 4,000 MWt(RCP 열 포함 NSSS)의 관계 — MDEP 표 1.1은 4,000을 "펌프 열 포함"으로 표기, DCD Tier 2 4장 원문 미대조. 미국 DC 문서가 4,000 MWt로 소개되는 것은 이 정의 차이로 판단 -->
+<!-- 확인필요: OPR1000 CFF 목표 10⁻⁵는 2차 자료 기준, KSNP 요건 원문 미대조 -->
+<figure class="article-image"><img alt="열출력·설계수명·SSE·안전주입 계열·CDF/CFF 목표의 OPR1000→APR1400 변화(지표별 눈금, 위험도는 로그 눈금)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-pe-002-apr1400-design-features/fig2_opr1000_apr1400_dumbbell.avif"/><figcaption>열출력·설계수명·SSE·안전주입 계열·CDF/CFF 목표의 OPR1000→APR1400 변화(지표별 눈금, 위험도는 로그 눈금)</figcaption></figure>
+<h3>같은 APR1400 안의 차이 — 새울 3·4(옛 신고리 5·6)</h3>
+<p>2019년 2교시 3번은 신고리 5·6의 설계개선을 물었습니다. 신고리 3·4는 2022년 11월 새울 1·2로, 신고리 5·6은 새울 3·4로 이름이 바뀌었습니다.</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>새울 1·2</th>
+<th>새울 3·4</th>
+<th>목적</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>항공기 충돌 평가</td>
+<td>미적용(2009.7 이전 착수)</td>
+<td>격납건물·보조건물 벽 4.0 → 4.5 ft</td>
+<td>대형 항공기 충돌 시 관통 방지[2][5]</td>
+</tr>
+<tr>
+<td>중대사고 감압</td>
+<td>POSRV + 3방향 밸브 수동 전환</td>
+<td>전용 ERDV 2계열 추가</td>
+<td>수동 전환 제거, IRWST 수소 축적 방지</td>
+</tr>
+<tr>
+<td>원자로공동 콘크리트</td>
+<td>현무암질 + 석회석 1 ft</td>
+<td>석회석(LCS)만</td>
+<td>MCCI 시 냉각성 개선</td>
+</tr>
+<tr>
+<td>축전지</td>
+<td>기존 용량</td>
+<td>24 h 설계</td>
+<td>장기 SBO 대처</td>
+</tr>
+<tr>
+<td>침수 대비</td>
+<td>—</td>
+<td>EDG 방수문·방수형 배수펌프</td>
+<td>외부 침수</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: 새울 1·2 축전지 설계 대처시간(8 h 여부)과 새울 3·4 내진 재평가(규모 6.9 수준)·지진 자동정지설비는 보도 자료 기준, FSAR 미대조 -->
+<p>이 밖에 새울 3·4는 신한울 1·2를 참조 설계로 삼아 국산화한 MMIS 등을 적용했습니다. 미국 DC는 EDG 4대·가스터빈 AAC·FPGA DPS·단일 호기 배치·냉각탑이 다릅니다.</p>
+<h3>건물 배치(제73회 3교시 6번)</h3>
+<p>APR1400은 쌍둥이 호기를 나란히 놓고(slide-along) 사이에 공용 건물을 둡니다. 원자로건물과 보조건물을 공통 기초판에 올려 내진 저항을 높이고 건물 사이 벽을 줄였습니다. 보조건물이 원자로건물을 둘러싸고 SIP 4대를 사분면에 하나씩 둬 화재·침수·사보타주가 번지지 않게 했고, EDG 2대도 반대편 구획에 분리했습니다. 터빈건물은 터빈 축의 연장선 위에 원자로건물이 오도록 배치해 터빈 미사일 위험을 줄였습니다. 장비 반입구(내경 7.8 m)는 SG 일체 교체를 고려한 크기입니다[3].</p>
+<!-- 확인필요: KSNP·KSNP+ 건물 배치 세부(보조건물·연료건물 구획)는 1차 자료 미대조 -->
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>원자력안전법 표준설계인가 제도</td>
+<td>APR1400 표준설계인가 2002.5(당시 원자력법)</td>
+</tr>
+<tr>
+<td>원자력발전소 중대사고 정책(2001.8)</td>
+<td>중대사고 대처 능력, 2016.6 사고관리 법제화로 계승</td>
+</tr>
+<tr>
+<td>기술기준규칙(원안위규칙 제37호) 제24·26·27조</td>
+<td>전력공급설비, 보호계통, 다양성보호계통</td>
+</tr>
+<tr>
+<td>원안위 고시 제2026-1호 별표 3</td>
+<td>중대사고 위협요인(출제 당시 제2017-34호 별표 2)</td>
+</tr>
+<tr>
+<td>SECY-93-087, 10 CFR 52.47(a)(23)</td>
+<td>진화형 경수로 중대사고 설계</td>
+</tr>
+<tr>
+<td>10 CFR 50.150</td>
+<td>항공기 충돌 평가(2009.7.13 이후 신규 설계)</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: 표준설계인가 근거 조 번호(원자력안전법 제12조로 알려짐)는 법령 원문 미대조 -->
+<p><strong>출제 당시 대비 달라진 점</strong>: 2010·2013년 출제 때 APR1400은 건설 중이었습니다. 현행은 새울 1·2·신한울 1·2가 운전 중이고 새울 3이 2025년 12월 운영허가를 받았습니다. 2025년 1월에는 새울 1·2·신한울 1·2 사고관리계획서가 처음 승인되었습니다. 2013년 문항의 "신고리 3·4"는 새울 1·2로 읽으면 됩니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>APR1400</th>
+<th>APR+</th>
+<th>EU-APR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>성격</td>
+<td>진화형, 능동 안전계통</td>
+<td>APR1400 후속, 피동 보조급수 등 피동 요소 확대</td>
+<td>유럽 요건(EUR) 수정형</td>
+</tr>
+<tr>
+<td>전기 계열</td>
+<td>2계열(EDG 2)</td>
+<td>4계열</td>
+<td>4계열</td>
+</tr>
+<tr>
+<td>노외 용융물</td>
+<td>CFS + 넓은 공동</td>
+<td>—</td>
+<td>코어캐처</td>
+</tr>
+</tbody>
+</table>
+<p>"기계 4계열 = EDG 4대"는 국내 APR1400에 맞지 않습니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: OPR1000·System 80+ 기반, KURD 요건의 1,400 MWe급 <strong>진화형 PWR</strong>(2루프, RCP 4)</li>
+<li><strong>요건</strong>: 60년, <strong>SSE 0.3 g</strong>, <strong>CDF &lt; 10⁻⁵</strong>, <strong>CFF &lt; 10⁻⁶</strong>/RY, 열적여유도 ≥ 10 %, SBO 8 h</li>
+<li><strong>1차계통</strong>: 615 °F, 대형 가압기·SG, Alloy 690TT, <strong>POSRV 4</strong>(안전밸브 + 감압 겸용)</li>
+<li><strong>안전주입</strong>: <strong>기계 4계열·DVI</strong>, <strong>SIT 유량조절기</strong>(LPSI 제거), <strong>IRWST</strong>(재순환 전환 불요)</li>
+<li><strong>전원</strong>: EDG 2 + <strong>AAC-DG</strong>(미국 DC는 EDG 4 + GTG)</li>
+<li><strong>I&amp;C</strong>: 완전 디지털 MMIS(LDP·소프트 제어·CPS), PPS 4채널 + DPS</li>
+<li><strong>중대사고</strong>: POSRV 감압, PAR·점화기, CFS, ECSBS</li>
+<li><strong>배치</strong>: 공통 기초판, SI 사분면 분리, 터빈 축선 배치</li>
+<li><strong>새울 3·4</strong>: AIA 4.5 ft, ERDV, LCS 공동, 축전지 24 h</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 APR1400 건물 배치 평면 개념도(공통 기초판·SI 사분면·EDG 2구획·터빈 축선)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-pe-002-apr1400-design-features/sketch1_apr1400_plot_plan.avif"/><figcaption>답안지용 APR1400 건물 배치 평면 개념도(공통 기초판·SI 사분면·EDG 2구획·터빈 축선)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2019년 2교시 3번</td>
+<td>신고리 5·6 설계개선(신고리 3·4 대비)과 목적</td>
+</tr>
+<tr>
+<td>2013년 2교시 4번</td>
+<td>OPR1000 대비 APR1400 재장전수 탱크 위치·기능, 중대사고 대처설계</td>
+</tr>
+<tr>
+<td>2010년 2교시 1번</td>
+<td>중대사고 정책과 APR1400 주요 설계특징</td>
+</tr>
+<tr>
+<td>제73회 3교시 6번</td>
+<td>KSNP·KSNP+·APR1400 건물 배치 비교</td>
+</tr>
+<tr>
+<td>제65회 1교시 6번</td>
+<td>APR1400(Advanced Power Reactor 1400)</td>
+</tr>
+</tbody>
+</table>
+<p>2019년 문항은 원문 띄어쓰기가 소실된 상태로 수집되어 띄어쓰기만 복원해 읽었습니다. 1교시 단답은 위 요약 1·2·4·6번이면 충분하고, 2013년 문항 "가"는 IRWST의 네 가지 기능(단일 수원, POSRV 방출 응축, 공동 충수 수원, 외부 재해로부터 보호)을 중심으로 씁니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>S. S. Lee, S. H. Kim, K. Y. Suh, "The Design Features of the Advanced Power Reactor 1400", Nuclear Engineering and Technology 41(8), 995–1004 (2009).</li>
+<li>OECD/NEA MDEP APR1400 Working Group, Technical Report TR-APR1400-01 (2018), 표 1.1·1.2, 2~4장.</li>
+<li>Kim 외, IAEA-CN-164-3S09, IAEA International Conference on Opportunities and Challenges for Water Cooled Reactors in the 21st Century, Vienna (2009).</li>
+<li>U.S. NRC, NUREG-2215 "Final Safety Evaluation Report Related to the Certification of the APR1400 Standard Design" (2018); 10 CFR Part 52 Appendix F "Design Certification Rule for the APR1400 Design".</li>
+<li>U.S. NRC, SECY-93-087 "Policy, Technical, and Licensing Issues Pertaining to Evolutionary and Advanced Light-Water Reactor (ALWR) Designs" (1993); 10 CFR 50.150 "Aircraft impact assessment". eCFR.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제24·26·27조; 원안위고시 제2026-1호(2026.1.16) 별표 3. 국가법령정보센터.</li>
+</ol>

@@ -1,0 +1,257 @@
+<figure class="article-image"><img alt="[개념 노트] 필수안전기능(CSF) — 6개 기능의 감시변수·상태수목·우선순위와 SPDS 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-020-critical-safety-functions/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>필수안전기능(CSF)은 사고 원인과 관계없이 유지되면 핵연료·RCPB·격납건물 방벽이 지켜지는 기능의 묶음입니다. 운전원은 측정 변수로 각 기능의 상태를 판정하고, 위협받는 기능부터 회복합니다.</strong></p>
+<p>웨스팅하우스형(W) 비상운전지침(ERG)은 미임계·노심냉각·열제거원·1차계통 건전성·격납·재고량의 6개를 둡니다. 이 노트는 기능별 감시변수, 판정값, 수목 논리를 다룹니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>기원 — "기능을 지키면 원인을 몰라도 된다"</h3>
+<p>Corcoran 등(1981, Nuclear Technology 55권)[1]은 노심 용융을 막고 방출을 줄이는 운전원 행위를 "안전기능"으로 묶었습니다. 이들이 제시한 기능은 10개입니다. 반응도, RCS 재고량·압력, 노심·RCS 열제거, 격납 격리·온도압력·가연성 가스, 필수 보조계통 유지, 간접 방출 제어가 여기에 들어갑니다. TMI-2 이후 NUREG-0737 I.C.1과 NUREG-0899(1982)가 징후기반 EOP를 요구했습니다[2][3]. 노형별 소유자그룹은 이 개념을 절차에 넣었습니다. W는 6개 CSF와 **상태수목(CSFST)**으로, CE형은 기능별 **안전기능 상태점검(SFSC)**으로 구현했습니다[5].</p>
+<h3>6개 CSF — 지키는 방벽과 감시변수</h3>
+<table>
+<thead>
+<tr>
+<th>CSF(우선순위)</th>
+<th>지키는 방벽</th>
+<th>주 감시변수</th>
+<th>빨강·주황 판정 예</th>
+<th>회복 절차 요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 미임계 S</td>
+<td>연료·피복</td>
+<td>출력영역 출력, 중간·선원영역 SUR</td>
+<td>출력 ≥ 5 % 빨강, 중간영역 SUR 양 주황</td>
+<td>FR-S.1 수동 정지·비상 붕산</td>
+</tr>
+<tr>
+<td>② 노심냉각 C</td>
+<td>연료·피복</td>
+<td>CET, 과냉각도, RVLIS</td>
+<td>CET &gt; 1,200 °F 빨강</td>
+<td>FR-C.1 SI 최대·SG 감압·RCP 기동</td>
+</tr>
+<tr>
+<td>③ 열제거원 H</td>
+<td>RCPB(간접 노심)</td>
+<td>SG 협역 수위, 총 급수유량, SG 압력</td>
+<td>수위·급수 모두 부족 시 빨강</td>
+<td>FR-H.1 급수 복구, 실패 시 주입·방출</td>
+</tr>
+<tr>
+<td>④ 1차계통 건전성 P</td>
+<td>원자로용기</td>
+<td>저온관 냉각률·온도, RCS 압력(P-T)</td>
+<td>60분 100 °F 초과 냉각 + Limit A 초과 빨강</td>
+<td>FR-P.1 냉각 중지·감압·온도 유지</td>
+</tr>
+<tr>
+<td>⑤ 격납 Z</td>
+<td>격납건물</td>
+<td>격납 압력, 집수조 수위, 방사선</td>
+<td>설계압력 초과 빨강</td>
+<td>FR-Z.1 살수·팬냉각기·격리 확인</td>
+</tr>
+<tr>
+<td>⑥ 재고량 I</td>
+<td>RCS 재고(지표)</td>
+<td>가압기 수위, RVLIS 상부</td>
+<td>노랑만 있음</td>
+<td>FR-I.1~3 충전·유출 조정, 기포 배기</td>
+</tr>
+</tbody>
+</table>
+<p>판정값은 W 4루프 플랜트(Salem 2호기 CSFST, NRC ADAMS 공개본) 예이며[4], 호기마다 다릅니다. 열제거원 수목에는 주황 경로가 없습니다. 재고량 수목의 비만족 경로는 노랑뿐입니다. 재고량은 다른 기능의 조기 지표이기 때문입니다. Salem 절차서는 주황을 PURPLE로 표기하며, 절차 번호는 ERG 표기(FR-x.y)로 통일했습니다.</p>
+<figure class="article-image"><img alt="W형 노심냉각 상태수목(CET 1,200/700 °F, 과냉각도, RCP 운전 여부, RVLIS 39 %·동적범위)과 원자로용기 상부 절단 장면" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-020-critical-safety-functions/fig1_core_cooling_status_tree.avif"/><figcaption>W형 노심냉각 상태수목(CET 1,200/700 °F, 과냉각도, RCP 운전 여부, RVLIS 39 %·동적범위)과 원자로용기 상부 절단 장면</figcaption></figure>
+<h3>상태수목 읽기 — 노심냉각 예</h3>
+<p>수목은 위에서부터 예/아니오로 내려가는 이진 판정입니다.</p>
+<ol>
+<li><strong>CET 5개 이상 &gt; 1,200 °F(649 °C)</strong>: 냉각재 대부분이 노출되어 증기가 과열되는 상태입니다. 빨강이며 FR-C.1로 갑니다. 이 값에는 계측 불확도(약 200 °F)가 이미 반영되어 있습니다.</li>
+<li><strong>과냉각도 &gt; 0</strong>: 만족하면 초록입니다.</li>
+<li><strong>RCP 운전 중</strong>: RVLIS 동적범위가 기포율 50 % 해당값(4대 운전 44 %)보다 작으면 주황 FR-C.2, 크면 노랑 FR-C.3입니다.</li>
+<li><strong>RCP 정지</strong>: CET 700 °F(371 °C) 초과와 RVLIS 전범위 39 %를 조합합니다. 39 %는 노심 하단에서 3.5 ft 붕괴수위에 불확도를 더한 값입니다. 둘 다 나쁘면 빨강, 하나만 나쁘면 주황, 둘 다 괜찮으면 노랑입니다.</li>
+</ol>
+<p>고온관 온도는 판정에 쓰지 않습니다. 일부 노심 노출 시나리오에서 CET보다 늦게 반응하기 때문입니다. "5개 이상"은 고장 난 열전대를 걸러내려는 해당 플랜트의 조건입니다.</p>
+<h3>색과 우선순위</h3>
+<table>
+<thead>
+<tr>
+<th>색</th>
+<th>의미</th>
+<th>운전원 조치</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>빨강</td>
+<td>극심한 위협</td>
+<td>하던 절차를 멈추고 즉시 해당 FR</td>
+</tr>
+<tr>
+<td>주황</td>
+<td>심각한 위협</td>
+<td>빨강이 없을 때 진입</td>
+</tr>
+<tr>
+<td>노랑</td>
+<td>비만족</td>
+<td>빨강·주황이 없을 때 운전원 판단</td>
+</tr>
+<tr>
+<td>초록</td>
+<td>만족</td>
+<td>계속 감시</td>
+</tr>
+</tbody>
+</table>
+<p>우선순위 S → C → H → P → Z → I는 같은 색끼리 동시에 나타났을 때의 처리 순서입니다. 다른 수목의 빨강은 어느 주황보다 앞섭니다. FR 조치를 마치고 원래 절차로 돌아온 뒤에도 같은 색이 남을 수 있습니다(예: 격납 수목). 이때 재수행 여부는 해당 FR의 복귀 지시를 따릅니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>감시 시점과 주기 (2024년 4교시 5번)</h3>
+<ul>
+<li><strong>시작</strong>: E-0(원자로 정지 또는 안전주입)이 지시할 때, 또는 E-0에서 다른 EOP로 전환할 때부터 감시합니다. 트립 직후에는 E-0 즉시조치가 먼저입니다. 다만 E-0 1단계에서 원자로 정지 확인에 실패하면(ATWS) FR-S.1로 바로 갑니다. 일부 플랜트는 E-0 진단 단계와 병행해 수목 감시를 시작하도록 구현하므로(NRC 공개 플랜트 문서), 시작 시점은 "호기 절차서에 따름"으로 덧붙입니다.</li>
+<li><strong>방식</strong>: 6개 수목을 처음에 한꺼번에 점검·기록하고, 이후 연속 감시합니다. Salem 예에서는 모두 초록·노랑이고 안정되면 CRS 지시로 15분 간격까지 완화할 수 있습니다.</li>
+<li><strong>종료</strong>: EOP 네트워크를 벗어나면 CSFST 감시가 끝납니다. ECA-0.0(전교류 상실) 수행 중에는 감시만 하고 FR로 전환하지 않습니다.</li>
+</ul>
+<figure class="article-image"><img alt="CSF 감시 시점 시간축과 수목별 색 경로·FR 행렬(처리 순서)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-020-critical-safety-functions/fig2_monitoring_timing_priority.avif"/><figcaption>CSF 감시 시점 시간축과 수목별 색 경로·FR 행렬(처리 순서)</figcaption></figure>
+<h3>국내 표준형 — 수단 중심 판정</h3>
+<p>OPR1000·APR1400은 CE형 비상절차지침(CEN-152)의 안전기능 체계를 따릅니다[5][6]. 판정 대상은 기능별 수행경로(지금 쓰는 설비)의 성공 여부입니다. 예컨대 RCS 열제거 기능은 안전주입 없는 SG 냉각 → 안전주입 중 SG 냉각 → 일방관류냉각(feed &amp; bleed) 순으로 수행경로가 준비되어 있습니다. 각 경로의 판정기준은 SG 수위·급수 가용성, RCS 고온관–저온관 온도차, 과냉각도, 원자로 상부헤드 수위 같은 변수로 구성되며, 수치는 호기별 절차서에 정합니다.</p>
+<p>불만족이면 자원수목도의 다음 경로로 갑니다. W는 기능 상태를 진단해 FR 절차를 정하는 데, CE형은 어느 수단으로 기능을 지키는지 판정하는 데 강조점이 있습니다.</p>
+<h3>SPDS — CSF를 한 화면에</h3>
+<p>NUREG-0696(1981)은 비상대응시설 기능기준으로 SPDS를 정의했습니다[7]. NUREG-0737 Supplement 1(1982)은 최소 표시 정보를 반응도 제어, 노심 냉각·1차계통 열제거, RCS 건전성, 방사능 제어, 격납건물 상태의 5개로 정했습니다[8]. 이행이 미흡하자 NRC는 GL 89-06과 NUREG-1342로 보완했습니다. SPDS는 보조 표시입니다. 판정은 안전등급 지시계로 확인합니다(Salem은 CET 표시만 예외). APR1400은 SPADES+가 CSF 화면과 경보를 주제어실 설계에 통합해 제공합니다. <!-- 확인필요: APR1400 DCD 7.7.1.4 SPADES+ CSF 목록 원문 미대조, NRC RAI 응답 기준 --></p>
+<h3>SAMG와의 경계</h3>
+<p>FR-C.1의 감압·RCP 기동이 효과가 없을 수 있습니다. 이때 CET가 1,200 °F 이상에서 계속 오르면 SAMG로 넘어갑니다. 노심냉각 빨강 자체가 SAMG 진입은 아닙니다. 국내 사고관리계획서는 CET 649 °C 이상을 중대사고 발생 기준으로 보고, EOP의 노심냉각 회복조치로 해소되지 않으면 SAMG로 넘어갑니다[10]. 세부 판정 논리는 호기별 지침을 따릅니다. WOG SAMG의 진단 흐름도와 중대위협 상태수목은 CSF 수목 개념을 노심 손상 이후로 이어받은 것입니다.</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NUREG-0737 I.C.1(1980) / NUREG-0899(1982.8)</td>
+<td>징후기반 EOP 개선·작성지침</td>
+</tr>
+<tr>
+<td>NUREG-0737 Supp.1(GL 82-33, 1982.12)</td>
+<td>SPDS 최소 정보 5개 기능</td>
+</tr>
+<tr>
+<td>NUREG-0696(1981.2)</td>
+<td>비상대응시설·SPDS 기능기준</td>
+</tr>
+<tr>
+<td>10 CFR 50.34(f)(2)(iv), NUREG-0700 5절</td>
+<td>SPDS 요건·설계지침</td>
+</tr>
+<tr>
+<td>IAEA SSR-2/1 Rev.1 요건 4[9]</td>
+<td>기본안전기능 3개</td>
+</tr>
+<tr>
+<td>원자력안전법 제20조②, 기술기준규칙 제85조의19~23, 원안위 고시 제2026-1호[11]</td>
+<td>사고관리계획서(EOP·SAMG 포함)</td>
+</tr>
+</tbody>
+</table>
+<p>2009·2013년 출제 당시에는 CSF가 설계기준사고 EOP의 틀이었습니다. 현행 국내 체계에서는 같은 틀이 사고관리계획서의 다중고장 대응(EOP)과 SAMG 진입 판정으로 이어집니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>W CSF(CSFST)</th>
+<th>CE형 안전기능(SFSC)</th>
+<th>SPDS 5개 기능</th>
+<th>IAEA 기본안전기능</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>개수</td>
+<td>6</td>
+<td>9(표준형 SPTA)</td>
+<td>5</td>
+<td>3</td>
+</tr>
+<tr>
+<td>판정 대상</td>
+<td>변수 상태</td>
+<td>수행경로 성공 여부</td>
+<td>표시 범위</td>
+<td>설계 요건</td>
+</tr>
+<tr>
+<td>등급</td>
+<td>빨강·주황·노랑·초록</td>
+<td>만족·위협·위험</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>출구</td>
+<td>FR 절차 지정</td>
+<td>회복절차·다음 경로</td>
+<td>운전원 판단 보조</td>
+<td>설계 입증</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 원인과 무관하게 유지되면 방벽이 지켜지는 기능, 징후기반 EOP의 판정 기준</li>
+<li><strong>기원</strong>: Corcoran 등(1981) 10개 기능 → TMI 후 NUREG-0737·0899</li>
+<li><strong>6개(우선순위)</strong>: 미임계 S → 노심냉각 C → 열제거원 H → 건전성 P → 격납 Z → 재고량 I</li>
+<li><strong>감시변수</strong>: SUR·출력 / CET·과냉각도·RVLIS / SG 수위·급수 / 냉각률·P-T / 격납 압력·수위·방사선 / 가압기 수위</li>
+<li><strong>색</strong>: 빨강 즉시 FR, 주황은 빨강 없을 때, 노랑 판단, 초록 만족</li>
+<li><strong>노심냉각 예</strong>: CET &gt; 1,200 °F 빨강, 700 °F·RVLIS 39 % 조합(W 플랜트 예)</li>
+<li><strong>감시 시점</strong>: E-0 지시·전환 시부터 연속, 안정 시 주기 완화, ECA-0.0 중 감시만</li>
+<li><strong>국내 표준형</strong>: 9개 기능, SFSC 만족·위협·위험, 수행경로 판정</li>
+<li><strong>SPDS</strong>: NUREG-0696, Supp.1 5개 기능, APR1400 SPADES+</li>
+<li><strong>SAMG</strong>: FR-C.1 실패 + CET 상승 → SAMG(국내 공통 CET ≥ 649 °C)</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 노심냉각 상태수목(RCP 정지 경로 단순화)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-020-critical-safety-functions/sketch1_core_cooling_tree_answer.avif"/><figcaption>답안지용 노심냉각 상태수목(RCP 정지 경로 단순화)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024년 4교시 5번</td>
+<td>CSF 6가지 인자·감시 시점·우선순위</td>
+</tr>
+<tr>
+<td>2021년 1교시 12번</td>
+<td>OPR·APR EOG 안전기능 개요·종류</td>
+</tr>
+<tr>
+<td>2013년 2교시 6번</td>
+<td>징후지향절차서, CSF 목적·종류(W·OPR)</td>
+</tr>
+<tr>
+<td>2009년 3교시 1번</td>
+<td>필수 안전기능의 목표·연계성·대응 운전</td>
+</tr>
+</tbody>
+</table>
+<p>2009년 문항의 "연계성"은 방벽 기준으로 쓰면 됩니다. S·C·H는 연료·피복을, H·P·I는 RCPB를, Z는 격납건물을 지킵니다. 열제거원(H)을 잃으면 노심냉각(C)과 건전성(P)이 차례로 위협받습니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>J. A. Corcoran et al., "The Critical Safety Functions and Plant Operation", Nuclear Technology 55(3), 690–712 (1981).</li>
+<li>U.S. NRC, NUREG-0737 "Clarification of TMI Action Plan Requirements" (1980.11), I.C.1.</li>
+<li>U.S. NRC, NUREG-0899 "Guidelines for the Preparation of Emergency Operating Procedures" (1982.8).</li>
+<li>PSEG Nuclear, Salem Unit 2 Emergency Operating Procedure 2-EOP-CFST-1 "Critical Safety Function Status Trees", Rev. 25, NRC ADAMS ML110060295(공개본).</li>
+<li>Combustion Engineering Owners Group, Emergency Procedure Guidelines, CEN-152, NRC ADAMS ML20008G208.</li>
+<li>ABB-Combustion Engineering, System 80+ Emergency Operations Guidelines, NRC ADAMS ML20067B052.</li>
+<li>U.S. NRC, NUREG-0696 "Functional Criteria for Emergency Response Facilities" (1981.2).</li>
+<li>U.S. NRC, NUREG-0737 Supplement 1 (Generic Letter 82-33) (1982.12), SPDS.</li>
+<li>IAEA, Safety of Nuclear Power Plants: Design, Specific Safety Requirements No. SSR-2/1 (Rev. 1) (2016), Requirement 4.</li>
+<li>원자력안전위원회, 제206회 원자력안전위원회 회의 의안 제2호(2025.1.9) — 새울 1·2, 신한울 1·2호기 사고관리계획서 승인, nssc.go.kr 공개.</li>
+<li>원자력안전위원회, 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」, 원안위고시 제2026-1호(2026.1.16); 「원자로시설 등의 기술기준에 관한 규칙」 제85조의19~23. 국가법령정보센터.</li>
+</ol>

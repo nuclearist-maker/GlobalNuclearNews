@@ -34,6 +34,7 @@ def check(root):
             full=urljoin(url,link)
             if full.startswith(BASE):
                 path=unquote(urlsplit(full).path[len(urlsplit(BASE).path):]) or 'index.html'
+                if path.endswith('/'):path+='index.html'
                 assert (root/path).is_file(),(rel,path)
     ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
     sitemap=[n.text for n in ET.parse(root/'sitemap.xml').findall('s:url/s:loc',ns)]
@@ -52,6 +53,7 @@ def check(root):
             full=urljoin(url,link)
             if full.startswith(BASE):
                 child=unquote(urlsplit(full).path[len(urlsplit(BASE).path):]) or 'index.html'
+                if child.endswith('/'):child+='index.html'
                 if child in parsed:pending.append(child)
     assert {p['url'] for p in posts}<=seen, 'Some posts cannot be found without JS'
     for rel,page in parsed.items():

@@ -1,0 +1,292 @@
+<figure class="article-image"><img alt="[개념 노트] 비상디젤발전기(EDG) — 자동기동 신호, 부하 순차투입, 유효시험과 신뢰도 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-003-emergency-diesel-generator/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>비상디젤발전기(EDG)는 소외전원이 상실되었을 때 Class 1E 교류 안전모선에 전력을 공급하는 소내 비상(대기) 교류전원입니다. 정해진 시간 안에 자동 기동해 안전정지·사고 완화 부하를 순차적으로 받아야 하며, 계열마다 독립적으로 설치됩니다.</strong></p>
+<p>근거는 10 CFR 50 부록 A의 GDC 17, 「원자로시설 등의 기술기준에 관한 규칙」 제24조(전력공급설비), RG 1.9 Rev.4(IEEE Std 387-1995 승인)입니다[1][2][3].</p>
+<h2>원리와 메커니즘</h2>
+<h3>대기 상태 — 데워 두고 기름을 돌려 둔다</h3>
+<p>EDG는 평소 정지해 있다가 수 초 만에 정격까지 올라가야 합니다. 그래서 대기 중에도 재킷 냉각수를 전열기로 데우며 순환시키고, 윤활유도 가열해 예윤활합니다. 이렇게 하면 "건조 기동"으로 베어링과 라이너가 상하는 것을 막을 수 있습니다. 기동은 압축공기로 하며, 계열마다 독립된 공기저장조가 압축기 없이 최소 5회 기동할 양을 저장합니다[6]. 비상 기동 신호가 오면 속도와 전압이 등시성(isochronous) 모드로 자동 조정됩니다. 보호 트립은 엔진 과속도와 발전기 차동전류만 남기고 우회하며, 우회 상태는 주제어실에 경보로 표시됩니다[3].</p>
+<h3>자동기동 신호와 신호별 응답</h3>
+<p>APR1400 설계인증 심사(NRC SER 8장)에 정리된 EDG 자동기동 신호는 다음과 같습니다[6].</p>
+<ul>
+<li><strong>소외전원 상실(LOOP)</strong>: 4.16 kV 안전모선의 1단계 저전압(LOV) 계전기 동작</li>
+<li><strong>저하전압</strong>: 2단계 저전압(DVR) 계전기. 전동기 기동보다 긴 지속 저전압을 시간지연 후 판정</li>
+<li><strong>공학적안전설비 작동신호</strong>: 안전주입(SIAS), 격납건물살수(CSAS), 보조급수(AFAS)</li>
+<li>수동: 주제어실 비상기동 버튼, 현장</li>
+</ul>
+<p>APR1400은 모선마다 LOV·DVR 계전기를 4개씩 두고 4중 2 동시 논리로 판정합니다[6]. 신호가 같아도 소외전원 상태에 따라 응답이 달라지며, RG 1.9 Rev.4의 정기 시험도 ESF 신호 단독, LOOP, 둘의 복합으로 나눠 이 응답을 확인합니다[3].</p>
+<table>
+<thead>
+<tr>
+<th>상황</th>
+<th>EDG 응답</th>
+<th>안전모선</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESF 신호 단독(소외전원 정상)</td>
+<td>기동·정격 도달 후 <strong>무부하 대기운전</strong></td>
+<td>소외전원이 공급, 안전부하는 소외전원으로 기동</td>
+</tr>
+<tr>
+<td>LOOP 단독</td>
+<td>기동 → 차단기 투입 → 순차투입</td>
+<td>인입차단기 개방·부하 차단 후 EDG가 가압, 안전정지 부하 투입</td>
+</tr>
+<tr>
+<td>LOCA + LOOP(순서 무관)</td>
+<td>위와 같음</td>
+<td>순차투입기가 안전주입펌프 등 사고 부하 순서로 투입</td>
+</tr>
+</tbody>
+</table>
+<p>소외전원이 돌아오면 안전모선을 소외전원과 동기·병렬 운전해 부하를 넘긴 뒤 EDG를 수동으로 정지합니다.</p>
+<h3>부하 순차투입 — 한꺼번에 걸면 안 되는 이유</h3>
+<p>비상부하 대부분은 대형 유도전동기이고, 기동전류가 정격의 5~8배입니다. 디젤처럼 용량이 제한된 전원에 동시에 걸면 전압이 크게 떨어져 전동기가 기동하지 못하거나 접촉기가 떨어집니다. 그래서 순차투입기가 일정 간격으로 나눠 투입합니다. RG 1.9 Rev.4 C.1.4의 기준은 다음과 같습니다[3].</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>기준</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>투입 중 최저값</td>
+<td>주파수 ≥ 정격의 95 %, 전압 ≥ 정격의 75 %</td>
+</tr>
+<tr>
+<td>회복</td>
+<td>각 순차 간격의 60 % 안에 전압 ±10 % 이내(주파수 ±2 %는 60 % 미만)</td>
+</tr>
+<tr>
+<td>최대 단일부하 차단</td>
+<td>주파수 회복은 간격의 80 % 안, 속도 ≤ 정격+(과속도 트립 설정−정격)×75 % 또는 115 % 중 낮은 값</td>
+</tr>
+<tr>
+<td>전부하 차단</td>
+<td>과속도 트립 설정에 도달하지 않음</td>
+</tr>
+</tbody>
+</table>
+<p>APR1400 설계 인증 문서에서는 EDG가 17 s 안에 정격에 도달해 차단기를 투입한 뒤, 그 시점부터 순차투입 단계가 5~30 s에 걸쳐 진행됩니다[6].</p>
+<figure class="article-image"><img alt="LOCA+LOOP 시 EDG 기동·차단기 투입 후 순차투입 시간축과 안전모선 전압·주파수 과도 기준(RG 1.9 Rev.4 C.1.4)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-003-emergency-diesel-generator/fig1_edg_load_sequence_transient.avif"/><figcaption>LOCA+LOOP 시 EDG 기동·차단기 투입 후 순차투입 시간축과 안전모선 전압·주파수 과도 기준(RG 1.9 Rev.4 C.1.4)</figcaption></figure>
+<h2>원전에서의 의미</h2>
+<h3>설계기준 — 무엇을 갖춰야 하나</h3>
+<ul>
+<li><strong>용량</strong>: 초기 설계 시 연속정격 = 보수적 연결부하 합 + 10~15 % 여유, 운영허가 단계에서 최대 설계기준 부하 대비 5 % 이상 여유[3]</li>
+<li><strong>기동시간</strong>: RG 1.9는 숫자를 고정하지 않고 "T/S 시간 안에" 도달하라고 요구합니다. 값은 ECCS 주입 시점 같은 사고해석 가정에서 나옵니다. CE형 표준기술지침서(NUREG-1432) SR 3.8.1.7의 괄호값은 10 s[7], APR1400은 17 s입니다[6].</li>
+<li><strong>연료</strong>: 설계기준사고와 LOOP 후 7일간 ESF 부하를 공급할 소내 저장량을 갖춥니다. 일일탱크는 별도입니다[8].</li>
+<li><strong>독립성·다중성</strong>: 단일고장을 가정해도 안전기능을 수행해야 합니다. 계열별 독립 실, 독립 순차투입기·제어를 갖추고 계열 간 연결은 두지 않습니다.</li>
+<li><strong>시험성</strong>: 운전 중 계열별 시험이 가능하고, 주제어실에 시험 중·대기·록아웃 상태와 최초 동작 트립을 표시합니다.</li>
+</ul>
+<h3>국내 APR1400 예</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>국내 호기(새울 3·4, 신한울 1·2)</th>
+<th>미국 인증 APR1400 설계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EDG</td>
+<td>호기당 2대(A·B 계열), 7,500 kW[9]</td>
+<td>4계열 4대(A·B 9,100 kW, C·D 7,500 kW)[6]</td>
+</tr>
+<tr>
+<td>기동</td>
+<td>실측 12~12.6 s, 허용 17 s[9][10]</td>
+<td>17 s[6]</td>
+</tr>
+<tr>
+<td>연료(새울 3·4)</td>
+<td>탱크 372,171 L ≥ 7일분+10 % 여유(369,509 L)[11]</td>
+<td>7일</td>
+</tr>
+<tr>
+<td>SBO 대비</td>
+<td>AAC-DG 7,200 kW(새울 3·4: 호기당 1대·내진 I·72 h 연료)</td>
+<td>비1E 가스터빈 AAC, 10분 이내 연결</td>
+</tr>
+</tbody>
+</table>
+<p>국내 호기와 미국 인증 설계는 계열 수가 다르므로 답안에는 호기를 밝힙니다.</p>
+<h2>시험과 신뢰도</h2>
+<h3>시험 주기 (RG 1.9 Rev.4 Table 1)</h3>
+<table>
+<thead>
+<tr>
+<th>주기</th>
+<th>시험</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>31일</td>
+<td>기동(완속 허용) + 연속정격 90~100 % 부하로 1시간 이상 운전</td>
+</tr>
+<tr>
+<td>184일</td>
+<td>대기 상태에서 급속기동(T/S 시간 내) 후 부하운전</td>
+</tr>
+<tr>
+<td>계획예방정비(24개월 이내)</td>
+<td>LOOP 모의, SIAS, SIAS+LOOP 복합, 최대 단일부하 차단, 설계부하 차단, 24시간 내구(2 h 105~110 % + 22 h 90~100 %), 고온 재기동, 동기화, 트립 우회, 시험모드 우선</td>
+</tr>
+<tr>
+<td>10년</td>
+<td>중복 EDG 동시 기동(공통원인 고장 확인)[3]</td>
+</tr>
+</tbody>
+</table>
+<p>계획예방정비 기간에는 이 시험에 더해 제작사 권고에 따른 분해점검(실린더 헤드·라이너·베어링·과급기·조속기)과 연료유·윤활유 분석, 공기저장조 배수, 발전기 절연저항 측정, 보호계전기 교정을 함께 수행합니다. 목적은 사고 조건 응답을 실부하로 확인하고 열화를 찾는 것입니다.</p>
+<h3>유효시험과 실패의 계수</h3>
+<p>RG 1.9는 실제 요구와 시험을 합쳐 기동 요구와 부하운전 요구를 계수합니다. 규정 시간 안에 전압·주파수에 도달하지 못하면 <strong>기동 실패</strong>, 기동 후 부하를 받아 운전하지 못하면 <strong>부하운전 실패</strong>입니다. 정비 중 발견했더라도 요구가 있었다면 확실히 실패했을 상태는 유효 요구 1회·실패 1회로 셉니다. 다음은 실패로 세지 않습니다[3].</p>
+<ol>
+<li>비상 모드에서 우회되는 트립(예: 냉각수 고온)의 동작</li>
+<li>비상 운전에 필요 없는 장비(예: 동기화 회로)의 고장</li>
+<li>큰 손상으로 이어지지 않았을 소량 누설 등으로 시험을 의도적으로 중단한 경우</li>
+<li>정비 없이 5분 안에 재기동·부하 가능했던 오작동·운전 오류</li>
+<li>시험을 위해 기동계통 일부를 무력화해 생긴 실패(정상 배열에서 곧바로 성공한 경우)</li>
+</ol>
+<p>과거 표준기술지침서 기반 운영기술지침서에는 최근 유효시험의 실패 횟수가 정해진 값을 넘으면 31일 주기를 7일 주기로 줄이고, 연속 무실패 기동이 확인될 때까지 단축 주기를 유지하는 가속 시험 일정표가 있었습니다. 기준 횟수와 주기는 호기와 판에 따라 다르므로 답안에는 해당 운영기술지침서 값을 씁니다. <!-- 확인필요: 국내 현행 T/S의 가속 시험표 존치 여부와 기준 횟수(공개 원문 미확인) --> 그보다 앞선 RG 1.108은 실패 누적에 따라 시험 주기를 최저 3일까지 단축했으나, 잦은 급속기동이 오히려 엔진 열화를 키운다는 지적이 나왔고, 1993년 RG 1.9 Rev.3부터 완속 기동을 허용하고 신뢰도 프로그램을 도입했습니다[4]. 신뢰도 프로그램은 점검, 성능감시, 정비, 근본원인 조사, 데이터 관리, 문제 종결의 6요소로 이루어집니다. 목표 신뢰도는 RG 1.155에 따라 요구당 0.95 또는 0.975이며, SBO 대처시간 산정의 입력이 됩니다[5].</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50 부록 A GDC 17·18</td>
+<td>소내·소외 전원, 단일고장 시 독립성·다중성·시험성, 시험·검사 가능[1]</td>
+</tr>
+<tr>
+<td>「원자로시설 등의 기술기준에 관한 규칙」 제24조(전력공급설비)</td>
+<td>소내외 전력계통 용량·능력, 소외 2회로, 단일고장 시 독립성·다중성·시험성, 주기 시험, 대체교류전원 확보·시험 입증[2]</td>
+</tr>
+<tr>
+<td>RG 1.9 Rev.4(2007)</td>
+<td>IEEE 387-1995 승인, 부하 기준, 트립 우회, 유효시험 정의, 시험표[3]</td>
+</tr>
+<tr>
+<td>RG 1.155 / 10 CFR 50.63</td>
+<td>SBO 대처, 목표 신뢰도 0.95·0.975, AAC 10분[5]</td>
+</tr>
+<tr>
+<td>SRP 9.5.4~9.5.8, RG 1.137</td>
+<td>연료 7일, 지원계통[8]</td>
+</tr>
+<tr>
+<td>운영기술지침서 3.8.1~3.8.3</td>
+<td>교류전원 LCO, EDG 점검요구사항, 연료유·윤활유·기동공기[7]</td>
+</tr>
+</tbody>
+</table>
+<p>출제 당시(2005~2019)와 비교하면 RG 1.9가 Rev.4(2007)로 바뀌며 RG 1.108의 정기시험 요건을 흡수했습니다. 국내 신규 호기는 후쿠시마 후속조치로 AAC-DG의 용량과 내진등급을 높였고, 이동형발전차를 확보했습니다. IEEE 387은 이후 2017년판과 IEC/IEEE 63332-387:2024 공동표준으로 개정되었습니다. <!-- 확인필요: 국내 인허가에서 IEEE 387 후속판 적용 여부 --></p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>EDG</th>
+<th>대체교류디젤발전기(AAC DG)</th>
+<th>이동형발전차</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>대비 사건</td>
+<td>LOOP(사고 동반 포함)</td>
+<td>SBO(EDG까지 상실)</td>
+<td>ELAP 등 설계기준 초과</td>
+</tr>
+<tr>
+<td>등급</td>
+<td>Class 1E</td>
+<td>비안전등급(신규 호기 내진 I 상향)</td>
+<td>비안전등급</td>
+</tr>
+<tr>
+<td>기동·연결</td>
+<td>자동기동·자동 투입</td>
+<td>수동 연결, 10분 이내</td>
+<td>수동 접속, 시간 단위</td>
+</tr>
+<tr>
+<td>공급 모선</td>
+<td>자기 계열 4.16 kV 안전모선</td>
+<td>AAC 모선 경유 안전모선 A 또는 B</td>
+<td>안전모선 또는 480 V 부하센터 접속점(호기별)</td>
+</tr>
+</tbody>
+</table>
+<p>2005년 기출의 "소내정전(SBO) 발생 시 부하를 담당하는 EDG"는 현행 용어로 보면 소외전원 상실로 안전모선이 정전된 상황입니다. 현행 SBO는 EDG까지 모두 잃은 상태를 뜻하므로 답안 첫머리에서 용어를 정리하는 것이 좋습니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: LOOP 시 Class 1E 안전모선에 전원을 공급하는 소내 비상 교류전원(GDC 17, 기술기준규칙 제24조)</li>
+<li><strong>기능</strong>: 안전정지 유지·잔열 제거·사고 완화(ESF) 부하 공급</li>
+<li><strong>자동기동 신호</strong>: 안전모선 저전압(LOV)·저하전압(DVR), SIAS·CSAS·AFAS, 수동</li>
+<li><strong>신호별 응답</strong>: ESF 단독 → 무부하 대기, LOOP → 부하 차단·차단기 투입·순차투입</li>
+<li><strong>기동시간</strong>: T/S 값(사고해석 가정), 예: 10 s(CE형), 17 s(APR1400)</li>
+<li><strong>부하 기준</strong>: 주파수 ≥95 %·전압 ≥75 %, 간격 60 % 내 ±2 %·±10 % 회복</li>
+<li><strong>설계</strong>: 연속정격 여유, 공기기동 5회, 연료 7일, 트립 우회(과속도·차동 유지), 계열 독립</li>
+<li><strong>시험</strong>: 31일 부하운전, 184일 급속기동, 정비기간 LOOP·SIAS 복합·부하차단·24 h, 10년 동시기동</li>
+<li><strong>신뢰도</strong>: 유효시험 계수·예외, 실패 누적 시 주기 단축, 목표 0.95/0.975, 신뢰도 프로그램</li>
+<li><strong>국내 예</strong>: 새울 3호기 EDG 2대 7,500 kW + AAC-DG 7,200 kW</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 비상 교류전원 단선도(소외 2회로·안전모선 A/B·EDG·AAC·이동형발전차)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-003-emergency-diesel-generator/sketch1_emergency_power_one_line.avif"/><figcaption>답안지용 비상 교류전원 단선도(소외 2회로·안전모선 A/B·EDG·AAC·이동형발전차)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 3교시 6번</td>
+<td>표준형 원전 EDG 기능·설계기준·자동기동 신호</td>
+</tr>
+<tr>
+<td>2019년 3교시 6번</td>
+<td>비상전원 공급 모선·EDG 자동기동조건·교류전원 LCO</td>
+</tr>
+<tr>
+<td>2018년 1교시 8번</td>
+<td>EDG·AAC DG·이동형발전기</td>
+</tr>
+<tr>
+<td>2014년 3교시 2번</td>
+<td>계획예방정비 중 EDG 점검 항목·방법·목적</td>
+</tr>
+<tr>
+<td>2013년 3교시 5번</td>
+<td>유효시험·실패 정의, 실패 횟수별 시험 계획</td>
+</tr>
+<tr>
+<td>제76회 2교시 6번</td>
+<td>소내정전 시 EDG 요구 성능</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, GDC 17·18. NRC 웹(eCFR).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제24조. 국가법령정보센터.</li>
+<li>U.S. NRC, Regulatory Guide 1.9 "Application and Testing of Safety-Related Diesel Generators in Nuclear Power Plants", Rev. 4 (2007.3), NRC ADAMS ML070380553.</li>
+<li>U.S. NRC, Regulatory Guide 1.108 "Periodic Testing of Diesel Generator Units Used as Onsite Electric Power Systems at Nuclear Power Plants", Rev. 1 (1977).</li>
+<li>U.S. NRC, Regulatory Guide 1.155 "Station Blackout" (1988.8), NRC ADAMS ML003740034; 10 CFR 50.63.</li>
+<li>U.S. NRC, Final Safety Evaluation Report for the APR1400 Design Certification, Ch. 8 "Electric Power", NRC ADAMS ML18197A219; KHNP, APR1400 DC RAI 응답(SR 3.8.1.7), NRC ADAMS ML15266A519.</li>
+<li>U.S. NRC, NUREG-1432 Standard Technical Specifications — Combustion Engineering Plants, 3.8.1 "AC Sources — Operating", SR 3.8.1.7(판 미기재).</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 9.5.4 "Emergency Diesel Engine Fuel Oil Storage and Transfer System"; Regulatory Guide 1.137 "Fuel Oil Systems for Emergency Power Supplies".</li>
+<li>원자력안전위원회, 제228회 회의(2025.12.30) 의안 「새울 3호기 운영허가(안)」.</li>
+<li>원자력안전위원회, 제182회 회의(2023.8.28) 보고안건(신한울 2호기 운영허가 심사 결과).</li>
+<li>원자력안전위원회, 제215회 회의(2025.6.16) 의안(새울 3·4호기 건설·운영 변경허가안).</li>
+</ol>

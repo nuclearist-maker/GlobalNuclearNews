@@ -1,0 +1,233 @@
+<figure class="article-image"><img alt="[개념 노트] 잉여반응도(Excess Reactivity) — 제어 흡수체를 모두 뺐을 때 노심에 남는 반응도 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-011-excess-reactivity/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>잉여반응도(ρex)는 지정한 노심 상태(온도·제논·연소도)에서 조절 가능한 제어 흡수체를 모두 제거했다고 가정할 때 노심이 갖는 반응도이며, ρex = (k_max − 1)/k_max로 나타냅니다.</strong> 연소·핵분열생성물·온도 궤환으로 잃을 반응도를 미리 넣어 둔 "주기 반응도 예산"입니다.</p>
+<p>같은 뜻으로 built-in reactivity, reactivity reserve라고도 하며, 제67회 1교시의 "Reserve Reactivity"도 이 개념으로 답하면 됩니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>정의식과 기준 상태</h3>
+<ul>
+<li>ρex = (k_max − 1)/k_max, k_max = 제어 흡수체를 뺀 keff</li>
+<li>단위: Δk/k, %Δk/k, pcm(10⁻⁵), 달러($ = ρ/β)</li>
+<li>k_max − 1로 쓰면 큰 값에서 틀립니다. k_max = 1.41이면 k − 1 = 0.41이지만 ρex = 0.291입니다.</li>
+</ul>
+<p>운전 중인 노심은 임계(ρ = 0)입니다. 잉여반응도는 실제로 존재하는 반응도가 아니라, 제어봉·붕소 등이 붙잡고 있는 양을 "뺐다고 가정한" 값입니다. 그래서 답안에는 기준 상태를 반드시 적습니다. 가연성 흡수체를 제어 요소에 넣는지도 문헌마다 다릅니다. Duderstadt &amp; Hamilton은 가연성 흡수체를 포함한 모든 제어 요소를 뺀 값으로, Lewis는 "가동 제어 독물질(movable control poisons)"을 뺀 값으로 정의합니다[1][3].</p>
+<h3>상태마다 다른 잉여반응도</h3>
+<p>Duderstadt &amp; Hamilton 표 14-1의 PWR 초기노심 값(Δk/k)은 다음과 같습니다[1].</p>
+<table>
+<thead>
+<tr>
+<th>상태</th>
+<th>잉여반응도</th>
+<th>차이</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>냉간·청정(68 °F, Xe·Sm 없음)</td>
+<td>0.293</td>
+<td>—</td>
+</tr>
+<tr>
+<td>운전온도(Xe·Sm 없음)</td>
+<td>0.248</td>
+<td>온도결손 0.045</td>
+</tr>
+<tr>
+<td>운전온도·평형 Xe·Sm</td>
+<td>0.181</td>
+<td>Xe·Sm 등 0.067</td>
+</tr>
+</tbody>
+</table>
+<p>냉간에서 가장 크고, 가열·출력 상승·독물질 축적으로 줄어듭니다. 제어계통은 가장 큰 값(냉간·청정)을 기준으로 설계해야 합니다. Lamarsh 3판 표 7.7도 3,000 MWt PWR의 20 °C 잉여반응도를 $45(k = 1.41)로 제시해 같은 크기입니다[2].</p>
+<figure class="article-image"><img alt="상태별 잉여반응도(D&amp;H 표 14-1 PWR 초기노심 BOC 값 29.3·24.8·18.1 %)와 주기 개념 추세, 총 제어능 32 %·정지여유도 3 %, 정의·관계식 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-011-excess-reactivity/fig1_excess_reactivity_cycle.avif"/><figcaption>상태별 잉여반응도(D&amp;H 표 14-1 PWR 초기노심 BOC 값 29.3·24.8·18.1 %)와 주기 개념 추세, 총 제어능 32 %·정지여유도 3 %, 정의·관계식 카드</figcaption></figure>
+<h3>연소에 따른 반응도 변화</h3>
+<p>제76회 3교시 6번이 묻는 "출력운전 중 연소에 따른 반응도 변화"는 다음 요인의 합입니다.</p>
+<ol>
+<li><strong>U-235 감소(−)</strong>: 핵분열성 물질이 줄어 η·f가 감소합니다.</li>
+<li><strong>핵분열생성물 축적(−)</strong>: Xe·Sm 외에도 장반감기 FP가 계속 쌓입니다.</li>
+<li><strong>Pu-239·Pu-241 생성(+)</strong>: U-238 포획으로 생겨 감소를 일부 상쇄합니다.</li>
+<li><strong>가연성 흡수체 소모(+)</strong>: 주기초에 반응도를 올려 붕소 곡선이 평탄하거나 약간 올라갑니다.</li>
+<li><strong>감속재온도계수 음의 증가(−)</strong>: 붕소가 줄면서 MTC가 더 음이 되어 출력결손이 커집니다.</li>
+</ol>
+<p>결과적으로 고온 전출력 잉여반응도는 연소에 따라 거의 직선으로 줄고, 이것을 붕소 희석으로 따라가는 것이 붕소 강하곡선입니다. 고온 전출력·평형 제논 상태의 잉여반응도가 0이 되면 더 이상 전출력 임계를 유지할 수 없으므로 주기말(EOC)입니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>주기초에 잉여반응도를 넣는 이유</h3>
+<p>2017년 1교시 1번과 2023년 1교시 10번이 같은 질문입니다. 초기노심도 재장전 노심도 keff &gt; 1이 되도록(제어 흡수체가 없을 때 기준) 핵연료를 장전합니다.</p>
+<ul>
+<li><strong>연소 보상</strong>: 주기 길이(예: 18개월) 동안 잃을 반응도를 미리 넣어야 끝까지 임계를 유지합니다. 가장 큰 몫입니다.</li>
+<li><strong>핵분열생성물 독</strong>: 평형 Xe(실제 PWR 약 −2,500~−3,000 pcm)와 Sm을 이겨야 합니다.</li>
+<li><strong>온도·출력결손</strong>: 냉간 → 고온 → 전출력으로 갈 때 음의 궤환이 반응도를 빼앗습니다.</li>
+<li><strong>운전 여유</strong>: 출력 조절, 정지 후 제논 정점을 넘는 재기동 여유입니다.</li>
+<li><strong>출력 상승</strong>: 임계를 넘겨 출력을 올리려면 양의 반응도를 낼 여력이 필요합니다.</li>
+</ul>
+<p>온라인 재장전을 하는 CANDU는 잉여반응도를 거의 0 근처로 유지하므로 경수로처럼 큰 주기초 잉여반응도가 필요 없습니다[3].</p>
+<h3>잉여반응도를 누르는 수단</h3>
+<p>PWR은 세 수단으로 나눠 맡깁니다.</p>
+<ul>
+<li><strong>제어봉</strong>: 빠른 출력 조절과 정지. D&amp;H 표 14-1 초기노심 기준 약 7 %[1]</li>
+<li><strong>용해 붕소</strong>: 연소·제논·온도의 느린 변화. 약 17 %</li>
+<li><strong>가연성 흡수체</strong>(Gd₂O₃, IFBA 등): 주기초 몫을 맡고 연소로 사라짐. 약 8 %</li>
+</ul>
+<p>재장전 노심은 BOC 고온 전출력 임계 붕소가 대개 1,000 ppm대이므로(노심설계에 따라 다름), 붕소 반응도가를 약 −7~−11 pcm/ppm으로 잡으면 붕소가 대략 1만 pcm 안팎을 쥐고 있는 셈입니다(설명용 크기 추정).</p>
+<h3>너무 크면 생기는 문제</h3>
+<ul>
+<li>독물질을 많이 넣어야 해 중성자 경제가 나빠집니다.</li>
+<li>제어봉 이탈·인출, 붕소 희석 사고 때 들어올 수 있는 반응도가 커집니다.</li>
+<li>고붕소 농도는 감속재온도계수를 양으로 만들 수 있습니다.</li>
+<li>제어봉 수·뱅크가 늘어 비용이 커집니다.</li>
+</ul>
+<h3>계산 예 — 최소 붕소 농도(제73회 3교시 1번)</h3>
+<p>조건: 붕소 반응도가 ρw ≈ Σ̄aB/(Σ̄aF + Σ̄aM), Σ̄aB/Σ̄aM = 2.0C×10⁻³, f = 0.930, 총 잉여반응도 22 %, 제어봉 8 %.</p>
+<ol>
+<li>ppm당 반응도가 = 2.0×10⁻³ × (1 − 0.930) = 1.4×10⁻⁴</li>
+<li>붕소 몫 = 22 − 8 = 14 %</li>
+<li>C = 0.14/1.4×10⁻⁴ = <strong>1,000 ppm</strong></li>
+</ol>
+<h2>정지여유도와의 관계</h2>
+<p>2025년 2교시 6번 다항의 핵심은 한 줄입니다. <strong>같은 기준 상태에서 총 제어능 = 잉여반응도 + 정지여유도</strong>입니다(Duderstadt &amp; Hamilton 식 14-2)[1]. 이 D&amp;H 식의 정지여유도는 모든 제어 요소를 삽입한 기준입니다. 표 14-1 값으로 검산하면 냉간·청정 0.293 + 0.03 ≈ 0.32, 운전온도·평형 Xe·Sm 0.181 + 0.14 ≈ 0.32로 총 제어능 0.32와 맞습니다.</p>
+<ul>
+<li>잉여반응도가 커지면 같은 제어능에서 정지여유도가 줄어듭니다. 그래서 장전량을 늘리면 제어능도 함께 늘려야 합니다.</li>
+<li>운영기술지침서의 정지여유도는 반응도가가 가장 큰 제어봉 집합체 1개가 완전히 인출된 채 고착됐다고 가정합니다[5]. 이 정의로 쓰면 관계식은 <strong>(총 제어능 − 고착봉 제어능) = 잉여반응도 + 정지여유도</strong>가 됩니다.</li>
+<li>정지 후 냉각되면 잉여반응도가 다시 커지므로, 냉간 정지는 붕소 농도로 미임계를 확보합니다.</li>
+<li>정지여유도 요구값은 주증기관 파단 같은 냉각 과도가 주된 근거이며, 감속재온도계수가 가장 음인 주기말 고온 무출력에서 제한적입니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50 App. A GDC 26[4]</td>
+<td>원리가 다른 독립 반응도 제어계통 2개. 제어봉은 고착봉 같은 오동작 여유를 두고 연료 설계한계 유지, 하나는 냉간 미임계 유지</td>
+</tr>
+<tr>
+<td>GDC 27·28</td>
+<td>ECCS 붕소 주입과 결합한 미임계 유지, 반응도 사고 투입량·속도 제한</td>
+</tr>
+<tr>
+<td>NUREG-1431·1432 STS LCO 3.1.1[5]</td>
+<td>정지여유도 LCO, 호기별 값은 COLR</td>
+</tr>
+<tr>
+<td>NUREG-0800 SRP 4.3[6]</td>
+<td>잉여반응도·제어 반응도가·정지여유도 평가</td>
+</tr>
+<tr>
+<td>RG 1.236(2020)[7]</td>
+<td>반응도 사고 판단기준(RG 1.77 대체)</td>
+</tr>
+<tr>
+<td>「원자로시설 등의 기술기준에 관한 규칙」 제28조(반응도제어계통)[8]</td>
+<td>반응도 제어계통 요건(GDC 26~28 상응)<!-- 기술기준규칙 제28조: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 --></td>
+</tr>
+</tbody>
+</table>
+<p>출제 당시(2002~2025년)와 비교해 잉여반응도 개념과 GDC는 바뀌지 않았습니다. 새 논점은 무붕산 SMR입니다. 원안위 제2026-2회 보고안건(2026.2.12)은 i-SMR이 무붕산 운전으로 제2 반응도 제어를 감속재온도계수 궤환으로 설계한다고 정리하고, 이에 맞춰 "노심 잉여반응도 검증평가" 방법론을 개발하겠다고 밝혔습니다[9]. 붕소가 없으면 잉여반응도를 제어봉·가연성 흡수체·궤환으로 감당해야 하므로 잉여반응도 관리가 곧 설계 쟁점입니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>잉여반응도</th>
+<th>정지여유도</th>
+<th>총 제어능</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정의</td>
+<td>제어 흡수체를 뺐을 때 반응도(+)</td>
+<td>D&amp;H: 전 제어요소 삽입 시 미임계 정도 / T/S: 최대가 봉 1개 고착, 나머지 삽입</td>
+<td>제어 요소 전체의 반응도가</td>
+</tr>
+<tr>
+<td>부호</td>
+<td>양</td>
+<td>음의 반응도 크기</td>
+<td>양</td>
+</tr>
+<tr>
+<td>최대 시점</td>
+<td>BOC 냉간·청정</td>
+<td>상태별로 다름</td>
+<td>연소·BA 소모로 변화</td>
+</tr>
+<tr>
+<td>답안 관계</td>
+<td>D&amp;H: Δρ = ρex + ρSDM</td>
+<td>T/S: ρSDM = (Δρ − ρ고착봉) − ρex</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 주기초 잉여반응도 확보 이유</strong></p>
+<ol>
+<li><strong>정의</strong>: 제어 흡수체를 모두 뺐다고 가정한 반응도, <strong>ρex = (k_max − 1)/k_max</strong>, 기준 상태(온도·Xe·연소도) 명시</li>
+<li><strong>연소 보상</strong>: 주기 동안 U-235 감소·FP 축적으로 잃을 반응도를 미리 장전 → 주기 길이 결정</li>
+<li><strong>독물질</strong>: 평형 Xe(약 −2,500~−3,000 pcm)·Sm 보상</li>
+<li><strong>온도·출력결손</strong>: 냉간 → 고온 → 전출력 음의 궤환 보상</li>
+<li><strong>운전 여유</strong>: 출력 상승·부하 조절·제논 정점 후 재기동</li>
+<li><strong>억제 수단</strong>: 제어봉(빠름) · 용해 붕소(느림) · <strong>가연성 흡수체</strong>(자동 소모)</li>
+<li><strong>크기 예</strong>: PWR 초기노심 냉간·청정 약 0.29 Δk/k(D&amp;H 표 14-1)</li>
+<li><strong>과대 시 단점</strong>: 중성자 경제 악화, 반응도 사고 투입량 증가, 고붕소 <strong>양의 MTC</strong></li>
+<li><strong>정지여유도 관계</strong>: 전 제어요소 삽입 기준 <strong>총 제어능 = ρex + 정지여유도</strong>, T/S(최대가 봉 1개 고착) 기준 <strong>(총 제어능 − 고착봉) = ρex + 정지여유도</strong></li>
+<li><strong>주기말</strong>: 고온 전출력 ρex = 0(붕소 희석 여력 소진)</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: 반응도 사다리(+ρex, 0, −ρSDM)와 총 제어능 = 잉여반응도 + 정지여유도(전 제어요소 삽입 기준), T/S 고착봉 기준식 병기" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-011-excess-reactivity/sketch1_reactivity_ladder.avif"/><figcaption>답안용 도식: 반응도 사다리(+ρex, 0, −ρSDM)와 총 제어능 = 잉여반응도 + 정지여유도(전 제어요소 삽입 기준), T/S 고착봉 기준식 병기</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 2교시 6번</td>
+<td>잉여반응도 정의·필요 이유·정지여유도와의 관계</td>
+</tr>
+<tr>
+<td>2023년 1교시 10번</td>
+<td>초기노심을 keff &gt; 1로 장전하는 이유</td>
+</tr>
+<tr>
+<td>2017년 1교시 1번</td>
+<td>주기초 잉여반응도 확보 이유</td>
+</tr>
+<tr>
+<td>제76회 3교시 6번</td>
+<td>연소에 따른 반응도 변화와 정지여유도</td>
+</tr>
+<tr>
+<td>제73회 3교시 1번</td>
+<td>잉여반응도·제어봉가로 최소 붕소 농도 계산</td>
+</tr>
+<tr>
+<td>제67회 1교시 9번</td>
+<td>Reserve Reactivity</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, John Wiley &amp; Sons (1976), 14장(표 14-1, 식 14-2).</li>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 7장(표 7.7, 식 7.68, 예제 7.12).</li>
+<li>E. E. Lewis, Fundamentals of Nuclear Reactor Physics, Academic Press (2008), 9.4절.</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix A, GDC 26·27·28.</li>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications — Westinghouse Plants 및 NUREG-1432 — Combustion Engineering Plants, LCO 3.1.1 SHUTDOWN MARGIN.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.3 "Nuclear Design".</li>
+<li>U.S. NRC, Regulatory Guide 1.236 "Pressurized-Water Reactor Control Rod Ejection and Boiling-Water Reactor Control Rod Drop Accidents" (2020).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제28조. 국가법령정보센터.</li>
+<li>원자력안전위원회, 제2026-2회 회의 보고안건 「SMR 규제체계 구축 로드맵(안)」 (2026.2.12).</li>
+</ol>

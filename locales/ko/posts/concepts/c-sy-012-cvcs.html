@@ -1,0 +1,202 @@
+<figure class="article-image"><img alt="[개념 노트] 화학 및 체적제어계통(CVCS) — 유출·충전으로 재고량, 붕소, 수화학을 함께 다루는 RCS 보조계통 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-012-cvcs/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>화학 및 체적제어계통(CVCS)은 RCS 냉각재 일부를 계속 빼내고(유출) 정화·조정한 뒤 다시 넣어(충전) 재고량(가압기 수위), 붕소 농도, 1차측 수화학을 관리하는 보조계통입니다. RCP 밀봉수 주입과 가압기 보조살수도 맡습니다.</strong></p>
+<h2>원리와 메커니즘</h2>
+<h3>기능과 하위계통</h3>
+<p>NRC가 공개한 웨스팅하우스형 훈련 매뉴얼은 CVCS의 목적을 다음과 같이 정리합니다[1].</p>
+<ol>
+<li><strong>붕소 농도 조절</strong>: 연소·제논·온도 변화 보상, 정지여유도 확보(붕산 주입·희석)</li>
+<li><strong>재고량 유지</strong>: 가압기 수위 제어계통과 함께 충전량을 조절. 기동·출력 증가 때 잉여 냉각재 유출, 정지·감발 때 충전, 정상 누설 보충</li>
+<li><strong>RCP 밀봉수 주입</strong></li>
+<li><strong>부식 억제 화학제 주입</strong>: pH 조절(LiOH), 산소 제어(저온 하이드라진, 출력운전 수소)</li>
+<li><strong>정화</strong>: 여과·이온교환으로 냉각재 방사능을 설계 한도 안에 유지</li>
+<li><strong>비상노심냉각용 붕산수 공급</strong>(충전펌프가 고압안전주입을 겸하는 설계)</li>
+<li><strong>붕소회수계통 처리</strong>: 붕산과 보충수 재사용</li>
+<li><strong>탈기</strong>: VCT 배기로 수소·핵분열 기체 제거</li>
+<li><strong>비상 붕산 주입</strong> 경로 제공</li>
+</ol>
+<p>하위계통 수는 구분 기준에 따라 달라집니다. 같은 매뉴얼은 계통 설명을 유출, 체적제어탱크(VCT), 보충·화학첨가, 충전(밀봉주입 포함), 과잉유출, 붕소회수의 6묶음으로 나눕니다[1]. 답안에는 구분 기준을 밝혀 쓰면 됩니다.</p>
+<h3>유로와 압력·온도 변화</h3>
+<figure class="article-image"><img alt="웨스팅하우스형 4루프 예(NRC 공개 매뉴얼) CVCS 유출·충전 유로와 상태점 ①~⑤, 정상 유량 수지, VCT 기능, CE형·APR1400 비교 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-012-cvcs/fig1_cvcs_flow_path.avif"/><figcaption>웨스팅하우스형 4루프 예(NRC 공개 매뉴얼) CVCS 유출·충전 유로와 상태점 ①~⑤, 정상 유량 수지, VCT 기능, CE형·APR1400 비교 카드</figcaption></figure>
+<p>유출계통의 일은 운전압력(2,235 psig)의 고온 냉각재를 이온교환 수지가 견디는 저압·저온으로 낮추는 것입니다. 웨스팅하우스형 4루프 예는 다음 순서입니다[1].</p>
+<ol>
+<li>RCS 루프 중간관(crossover leg)에서 인출 → 유출 격리밸브 2개(가압기 저수위 17 %에서 닫힘)</li>
+<li><strong>재생 열교환기</strong>(동체측 유출): 충전수에 열을 주고 550 °F에서 290 °F로 냉각. 충전수는 130 °F에서 500 °F로 예열되어 충전 노즐 열응력을 줄임</li>
+<li><strong>유출 오리피스</strong>: 2,235 psig에서 75 gpm 2개, 45 gpm 1개. 보통 75 gpm 1개 운전. 유량을 정하고 1차 감압</li>
+<li><strong>유출 열교환기</strong>(기기냉각수): 출구 120 °F 제어</li>
+<li><strong>유출 압력제어밸브(배압밸브)</strong>: 상류를 약 340 psig로 유지해 유출 열교환기 앞 플래싱 방지</li>
+<li>온도전환밸브(137 °F 이상이면 이온교환기 우회) → 혼상 이온교환기(필요 시 양이온 이온교환기로 Li·Cs 제거) → 여과기 → <strong>VCT</strong> 살수 노즐</li>
+<li>충전펌프 → 재생 열교환기(관측) → 충전 노즐, 분기: 밀봉주입·보조살수</li>
+</ol>
+<p>정상 수지는 충전 87 gpm 중 55 gpm이 정상 충전관으로, 32 gpm이 RCP 밀봉으로 갑니다. 펌프당 5 gpm(4대 20 gpm)은 열차단 열교환기 쪽으로 RCS에 들어가고, 3 gpm은 밀봉 회수로 돌아옵니다. RCS 기준으로 들어가는 55 + 20 = 75 gpm이 유출 75 gpm과 같습니다[1].</p>
+<p>CE 계열은 조절 방식이 반대입니다. 유출 유량제어밸브가 가압기 수위 오차로 유출량을 연속 조절하고(수위 설정점에서 40 gpm, 29~128 gpm), 44 gpm 용적형 충전펌프 3대는 운전 대수로 단계 조절합니다(정상 1대 운전)[2].</p>
+<h3>체적제어탱크(VCT)</h3>
+<p>VCT는 유출수를 받는 서지 탱크입니다[1].</p>
+<ul>
+<li><strong>수위 완충</strong>: 가압기 수위 변화로 생긴 RCS 체적 변화를 받아 줌. 고수위면 3방향 밸브가 유출수 일부를 붕소회수계통으로 전환</li>
+<li><strong>수위 연동</strong>: 저수위에서 자동 보충, 더 낮아지거나 ESFAS 신호가 오면 VCT 출구를 닫고 충전 흡입을 재장전수저장탱크(RWST)로 전환</li>
+<li><strong>기체 제어</strong>: 운전 중 수소 상층기체로 냉각재에 수소를 녹여 방사선분해 산소를 없앰. 정지·정비 때 질소로 퍼지하되 출력운전 중에는 질산 생성 우려로 질소를 넣지 않음. 배기는 기체폐기물계통</li>
+<li><strong>충전펌프 흡입수두</strong>: 배기 중 압력이 15 psig로 떨어지면 배기 밸브를 닫아 NPSH 확보. 방출밸브 75 psig</li>
+</ul>
+<p>냉각재 용존 수소 범위는 노형별 운전값입니다. 예로 APR1400 정상 범위는 25~50 cc/kg입니다[6].</p>
+<h3>붕소 농도 조절과 붕산 증발기</h3>
+<p>보충 계통은 붕산탱크의 농축 붕산과 순수를 혼합기에서 섞어 VCT나 충전펌프 흡입으로 보냅니다. 운전 모드는 붕산주입·희석·대체희석·자동·수동 다섯 가지입니다[1]. 주기말에는 붕소가 0에 가까워 희석수 양이 매우 커지므로, 일부 발전소는 탈붕소 이온교환기로 붕소를 직접 제거합니다[1].</p>
+<p>붕산 증발기는 회수한 붕산수에서 먼저 용존기체를 벗겨 내고, 증발부에서 물은 증기로, 비휘발성인 붕산은 농축액으로 나눕니다. 응축수는 정화 후 순수로 재사용하고 농축액은 붕산탱크로 보냅니다[1].</p>
+<p>붕산탱크 농도는 설계마다 다릅니다. 매뉴얼의 기준 발전소는 약 4 wt % 붕산(7,000 ppm B)을 실온 65 °F 이상에서 저장하고, 12 wt % 계통을 쓰는 발전소는 전기 보온(heat tracing)이 필요하다고 설명합니다[1].</p>
+<p>21,000 ppm(ppm B, 용액 질량 기준)은 2.1 w/o B이고, 붕산으로는 2.1 × 5.72 ≈ <strong>12.0 w/o H₃BO₃</strong>입니다. 붕산 용해도는 20 °C에서 약 4.5 wt %라서 12 wt % 용액은 약 60 °C 이상으로 보온해야 석출되지 않습니다. <!-- 확인필요: 붕산 용해도 수치는 일반 화학편람 값(20 °C 4.7 g/100 g 물, 60 °C 14.8 g/100 g 물) 기준 --></p>
+<figure class="article-image"><img alt="붕소 희석 지수 곡선(설명용 가정 V 300 m³·Q 132 gpm, t ≈ 63분)과 SRP 15.4.6 조치 시간, 21,000 ppm B → 12.0 w/o H₃BO₃ 환산 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-012-cvcs/fig2_boron_dilution_curve.avif"/><figcaption>붕소 희석 지수 곡선(설명용 가정 V 300 m³·Q 132 gpm, t ≈ 63분)과 SRP 15.4.6 조치 시간, 21,000 ppm B → 12.0 w/o H₃BO₃ 환산 카드</figcaption></figure>
+<h2>원전에서의 의미</h2>
+<h3>노형별 설계 차이</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>웨스팅하우스형 4루프</th>
+<th>CE 계열(OPR1000 등)</th>
+<th>APR1400</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>유출 조절</td>
+<td>오리피스(75·75·45 gpm) 선택</td>
+<td>유량제어밸브로 연속 조절</td>
+<td>오리피스 + 배압 제어(400 psig)</td>
+</tr>
+<tr>
+<td>충전 조절</td>
+<td>원심 충전펌프 + 유량제어밸브</td>
+<td>용적형 44 gpm × 운전 대수</td>
+<td>충전펌프, 수위 제어로 충전량 조절</td>
+</tr>
+<tr>
+<td>안전주입 관계</td>
+<td>원심 충전펌프가 고압안전주입 겸용</td>
+<td>별도 HPSI 계통</td>
+<td>HPSI와 분리, 충전계통은 ESF 아님</td>
+</tr>
+</tbody>
+</table>
+<p>APR1400 정상조건 해석 예는 RCS 2,250 psia·585 °F, 유출 80 gpm, 충전 93 gpm, 밀봉주입 6.6 gpm/RCP입니다[3]. 밀봉주입은 충전펌프 2대 중 1대나 보조충전펌프가 공급하고, 보조충전펌프는 기기냉각수 상실의 영향을 받지 않아 다양한 밀봉주입 수단이 됩니다[4]. 보조충전펌프는 SBO 때 대체교류전원으로 돌릴 수 있습니다[5].</p>
+<h3>운전과 안전</h3>
+<ul>
+<li><strong>기동(저온)</strong>: 냉각 정지 상태에서 하이드라진으로 산소 제거[1] → 가압기 기포 형성 → VCT 수소 상층으로 전환 → 임계 전 희석</li>
+<li><strong>정지</strong>: VCT 질소 퍼지, 저온정지 농도까지 붕산 주입, RCP 정지 뒤 보조살수로 감압</li>
+<li><strong>리튬 관리</strong>: B-10(n,α)Li-7로 Li가 늘어나 양이온 이온교환기로 제거[1]. 붕소 감소에 맞춰 Li를 낮추는 협조 B-Li 운전으로 고온 pH를 일정하게 유지</li>
+<li><strong>수질 제한(구형 기술지침서 3/4.4.7 체계, 예: Vogtle 1호기)</strong>: 용존산소 정상 0.10·과도 1.00 ppm(Tavg 250 °F 이하에서는 적용 제외), 염소·불소 각 0.15·1.50 ppm[9]. 배경은 스테인리스강 응력부식균열(염소·불소, 산소 공존 시 가속)입니다. 개선형 STS는 수질을 지침서 밖 관리 프로그램으로 옮겼습니다.</li>
+</ul>
+<h3>붕소 희석 사고</h3>
+<p>보충 제어 오조작이나 밸브 고장으로 순수가 최대 유량으로 들어가는 사건입니다. 완전 혼합·유입 = 유출을 가정하면 C(t) = C₀·exp(−Qt/V)이고, 정지여유도 상실 농도까지 걸리는 시간은 t = (V/Q)·ln(C₀/C_crit)입니다. 설명용 가정(무붕소수 유입·일정 체적·완전 혼합·밀도 일정) V = 300 m³, 유효 희석유량 Q = 132 gpm(0.500 m³/min), C₀ = 1,000 ppm, C_crit = 900 ppm이면 t = 600 × 0.105 ≈ 63분입니다. 경보가 t = 0에 울린다고 보면 SRP 기준 15분을 넉넉히 넘습니다[7]. 운전원은 경보(예: 중성자속 증가 경보)와 보충 유량 적산값으로 희석을 알아챕니다.</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기술기준규칙 제22조④·제28조·제32조</td>
+<td>연계계통 역류 방지·격리, 반응도제어, 방사성폐기물 처리</td>
+</tr>
+<tr>
+<td>GDC 14·29·33·35, SRP 9.3.4</td>
+<td>압력경계 부식 방지(수질), AOO 반응도 제어, 소형 누설 보충, ECCS 고압 주입(겸용 설계)[8]</td>
+</tr>
+<tr>
+<td>10 CFR 50.63, NUREG-0737 III.D.1.1</td>
+<td>SBO 대처(밀봉주입·보충), 격납건물 밖 누설 저감</td>
+</tr>
+<tr>
+<td>SRP 15.4.6</td>
+<td>붕소 희석: 경보 후 정지여유도 상실까지 재장전 30분, 그 외 15분 이상[7]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>출제 당시 대비</strong>: 기술기준규칙은 원안위규칙 제37호(2026.3.30)가 현행이며 CVCS 관련 요건의 실질 변화는 없습니다. APR1400에서는 충전계통을 안전주입과 분리했고, 보조충전펌프를 다양한 밀봉 냉각 수단으로 두었습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>CVCS 충전</th>
+<th>고압안전주입(HPSI)</th>
+<th>정지냉각(SCS)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>목적</td>
+<td>재고량·붕소·수화학</td>
+<td>LOCA 노심냉각</td>
+<td>저온·저압 붕괴열 제거</td>
+</tr>
+<tr>
+<td>운전</td>
+<td>상시</td>
+<td>사고 시(SIAS)</td>
+<td>냉각 2단계</td>
+</tr>
+<tr>
+<td>등급</td>
+<td>대부분 비안전</td>
+<td>안전등급</td>
+<td>안전등급</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 유출·충전으로 RCS <strong>재고량·붕소 농도·수화학</strong>을 관리하는 보조계통</li>
+<li><strong>기능</strong>: 가압기 수위 유지, 붕산 주입·희석, pH(LiOH)·산소(H₂·N₂H₄) 제어, 정화, <strong>RCP 밀봉주입</strong>, <strong>보조살수</strong></li>
+<li><strong>유출(W형 예)</strong>: 중간관 → 재생 HX(→ 290 °F) → 오리피스(감압) → 유출 HX(120 °F) → 배압밸브(약 340 psig) → 이온교환기·여과기 → VCT</li>
+<li><strong>충전</strong>: VCT → 충전펌프 → 재생 HX(→ 500 °F) → RCS, 밀봉주입 분기</li>
+<li><strong>수지 예</strong>: 충전 87 = 55 + 밀봉 32, RCS 유입 55 + 20 = 유출 75 gpm</li>
+<li><strong>VCT</strong>: H₂ 상층, 정지 시 N₂ 퍼지, 저수위 자동 보충, 고수위 전환, 저저수위 RWST 흡입, 충전 NPSH</li>
+<li><strong>붕산</strong>: 5.72 환산, 21,000 ppm B = <strong>12.0 w/o H₃BO₃</strong>, 증발기 = 증발로 물/붕산 분리</li>
+<li><strong>노형 차이</strong>: W 오리피스·원심(HHSI 겸용), CE 유량제어밸브·용적형, APR1400 충전 비ESF·보조충전펌프</li>
+<li><strong>안전</strong>: 붕소 희석 15/30분, 유출 격리(가압기 저수위·격납 격리)</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 CVCS 유출·충전 루프 흑백 도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-012-cvcs/sketch1_cvcs_loop.avif"/><figcaption>답안지용 CVCS 유출·충전 루프 흑백 도식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020년 1교시 2번</td>
+<td>화학 및 체적제어탱크(VCT) 설계기준</td>
+</tr>
+<tr>
+<td>2013년 2교시 3번</td>
+<td>원자로냉각재 수질제한과 CVCS pH·용존산소 제어</td>
+</tr>
+<tr>
+<td>2011년 4교시 2번</td>
+<td>붕산농축기 원리와 21,000 ppm의 w/o 환산</td>
+</tr>
+<tr>
+<td>제67회 2교시 6번</td>
+<td>CVCS 하위계통 수와 기능 다섯 가지</td>
+</tr>
+</tbody>
+</table>
+<p>2020년 VCT 설계기준은 "VCT" 절 네 항목을 그대로 쓰면 됩니다. 2013년 문항의 기동·정상운전 구분은 "운전과 안전"의 기동(하이드라진)과 정상운전(수소·LiOH) 대비가 뼈대입니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, Westinghouse Technology Systems Manual, Section 4.1 "Chemical and Volume Control System", Rev 0101, NRC ADAMS ML023030495.</li>
+<li>U.S. NRC HRTD, CE형 공개 매뉴얼 Section 6.2 "Pressurizer Level Control System", Rev 10/08, NRC ADAMS ML11251A022.</li>
+<li>H. S. Park, D. H. Kim, J. S. Park, S. J. Baik (KEPCO E&amp;C), "Transient Analysis in the APR1400 CVCS Using the CARD1400 Code", Transactions of the Korean Nuclear Society Autumn Meeting, Jeju (2010), 3.2절.</li>
+<li>KEPCO/KHNP, APR1400 DC Response to RAI 307-7835, Question 05.04-1 (SRP 5.4.1), NRC ADAMS ML16007A684.</li>
+<li>KEPCO/KHNP, APR1400 DC Supplemental Response to RAI 160-8174, Question 09.03.04-2 (SRP 9.3.4), NRC ADAMS ML16113A457.</li>
+<li>Y. H. Cheon et al., "Primary Coolant pH Control for Soluble Boron-Free PWRs", Transactions of the Korean Nuclear Society Autumn Meeting, Gyeongju (2015), Table I.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 15.4.6 "Inadvertent Decrease in Boron Concentration in the Reactor Coolant System (PWR)".</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 9.3.4 "Chemical and Volume Control System (PWR) (Including Boron Recovery System)", Rev. 3 (2007).</li>
+<li>Georgia Power, Vogtle Electric Generating Plant 화학 절차서 VEGP 35110-C "Chemistry Control of the Reactor Coolant System"(Unit 1 기술지침서 3/4.4.7 Chemistry LCO 인용), Docket 50-424, NRC ADAMS ML20091L882.</li>
+</ol>

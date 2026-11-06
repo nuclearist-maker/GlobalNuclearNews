@@ -1,0 +1,276 @@
+<figure class="article-image"><img alt="[개념 노트] 격납건물 수소제어 전략 — 혼합·재결합·점화·불활성화 비교와 10 % 기준 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-003-hydrogen-control/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>격납건물 수소제어는 사고 시 격납건물로 방출되는 수소가 연소·폭굉으로 격납건물과 필수 기기를 손상시키지 않도록, 혼합·감시·제거(재결합, 의도적 점화)·불활성화로 수소 농도와 연소 형태를 관리하는 설계·운전 전략입니다.</strong></p>
+<h2>원리와 메커니즘</h2>
+<h3>수소 생성원 요약</h3>
+<p>주 생성원은 피복재 산화(Zr + 2H₂O → ZrO₂ + 2H₂, 발열)입니다. Zr 1 kg이 모두 반응하면 H₂ 0.0442 kg(표준상태 약 0.49 m³)이 생깁니다. 이 밖에 물의 방사분해, 격납건물 내 Al·Zn 부식, 노심용융물-콘크리트 반응(MCCI, H₂·CO)이 있습니다. 설계기준사고에서는 방사분해처럼 완만한 생성이 문제였지만, 중대사고에서는 생성 속도가 크게 빨라져 DBA용 재결합기 용량을 넘습니다[2].</p>
+<h3>연소 형태를 가르는 농도 기준</h3>
+<p>수소 위험은 "있느냐"보다 <strong>어떤 형태로 타느냐</strong>로 판단합니다. 아래는 상온·상압 건공기의 대표값이며 온도·증기·난류·장애물에 따라 달라집니다.</p>
+<table>
+<thead>
+<tr>
+<th>수소 농도(vol%)</th>
+<th>연소 형태</th>
+<th>격납건물 영향</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>약 4 미만</td>
+<td>화염전파 어려움(촉매 재결합은 가능)</td>
+<td>없음</td>
+</tr>
+<tr>
+<td>4~9</td>
+<td>상향(약 4)→수평(약 6)→하향(약 9) 순으로 전파, 연소분율 증가</td>
+<td>압력 상승 작음~중간</td>
+</tr>
+<tr>
+<td>약 10 이상</td>
+<td>전방위 폭연, 장애물·밀폐 시 화염가속·폭연→폭굉 천이(DDT) 가능</td>
+<td>준정적(AICC)~동적 하중</td>
+</tr>
+<tr>
+<td>18.3~59</td>
+<td>고전적 폭굉 한계(실험 조건값)</td>
+<td>가장 큰 충격 하중</td>
+</tr>
+</tbody>
+</table>
+<p>표의 농도는 IAEA-TECDOC-1661 등 문헌의 대표 실험값입니다[7].</p>
+<p>10 %는 규제 설계 기준이지 DDT의 보편적 시작점이 아닙니다. 평균이 10 % 미만이어도 국부 축적과 연소하중은 따로 평가합니다.</p>
+<figure class="article-image"><img alt="격납건물 단면의 PAR·점화기 배치, 수소 농도별 연소 특성 사다리, 네 가지 제어 원리와 10 % 규제 기준" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-003-hydrogen-control/fig1_h2_combustion_ladder.avif"/><figcaption>격납건물 단면의 PAR·점화기 배치, 수소 농도별 연소 특성 사다리, 네 가지 제어 원리와 10 % 규제 기준</figcaption></figure>
+<p>농도 하나만 보면 안 됩니다. 수소-공기-증기 3원 선도(Shapiro 선도)의 대표 조건에서 <strong>증기가 약 55 vol% 이상이면 가연 영역이 없습니다</strong>(증기 불활성, 온도·압력 의존)[8]. 그런데 살수나 열침원으로 증기가 응축되면 같은 수소량이 갑자기 가연·폭굉 영역으로 들어갑니다(de-inerting). 산소 농도를 제한해도 연소가 억제되며, 이것이 불활성화 전략의 근거입니다. 현대 평가는 단순 농도 대신 팽창비 σ 기준(화염가속)과 7λ 기준(DDT)으로 판정합니다[7].</p>
+<h3>네 가지 제어 접근</h3>
+<ol>
+<li><strong>혼합</strong>: 살수·자연대류·팬쿨러로 국부 축적을 막습니다(총량은 그대로). 다만 살수는 증기를 응축시켜 불활성 상태를 해제할 수도 있습니다.</li>
+<li><strong>재결합(무화염 제거)</strong>: 전기식 열 재결합기(수백 °C 전기 가열) 또는 PAR(Pt/Pd 촉매, 대표적으로 1~2 vol% 수준에서 자기 개시, 촉매 상태·습도 의존)로 H₂ + ½O₂ → H₂O로 바꿉니다.</li>
+<li><strong>의도적 점화</strong>: 글로우 플러그 점화기(표면 약 900 °C)를 절차에 따라 <strong>조기 통전</strong>해, 가연 혼합물이 되는 즉시 저농도에서 조금씩 태웁니다. 축적된 뒤 늦게 점화하면 하중이 커집니다.</li>
+<li><strong>불활성화</strong>: 운전 전 질소 치환(BWR Mark I·II, 미국 규제상 O₂ 4 vol% 미만) 또는 사고 후 CO₂·N₂ 주입으로 연소 자체를 배제합니다.</li>
+</ol>
+<p>희석·배기는 방사성물질 방출이 따르므로 여과배기 같은 감압 수단과 함께 판단합니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>설비 3종 비교 (2015년 2교시 2번 표 양식)</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>전기식 재결합기</th>
+<th>수소 점화기</th>
+<th>PAR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>작동방법</td>
+<td>운전원 수동 기동, 전기 가열</td>
+<td>운전원 수동 기동, 전기 가열</td>
+<td>피동(전원·신호 불필요)</td>
+</tr>
+<tr>
+<td>작동시점</td>
+<td>DBA 후 농도 상승 시 운전원 기동(가연 하한 약 4 % 아래 유지가 목표)</td>
+<td>노심 손상 징후 시 절차에 따라 조기</td>
+<td>수소 도달 즉시 자동</td>
+</tr>
+<tr>
+<td>설치장소</td>
+<td>격납건물 내부 또는 외부(보조건물, 배관 순환)</td>
+<td>격납건물 내 방출원 근처(SG 격실, IRWST 주변)</td>
+<td>격납건물 돔·방출원 상부, 자유체적 비례 분산</td>
+</tr>
+<tr>
+<td>원리</td>
+<td>열 재결합</td>
+<td>저농도 연속 연소</td>
+<td>촉매 표면 재결합, 반응열 대류로 흡입</td>
+</tr>
+<tr>
+<td>장점</td>
+<td>무화염, 운전 경험</td>
+<td>제거 속도 가장 빠름, 국부 고농도 억제</td>
+<td>무전원·무조작, SBO에도 작동, 혼합 촉진</td>
+</tr>
+<tr>
+<td>단점</td>
+<td>용량 작음, 전원·조작 필요</td>
+<td>전원 상실 시 불능, 지연 점화·de-inerting 시 하중 증가, 압력·온도 스파이크</td>
+<td>제거율 유한(급속 방출 추종 한계), 고농도에서 점화원 가능, 산소 결핍·촉매 피독 시 성능 저하</td>
+</tr>
+</tbody>
+</table>
+<h3>노형별 선택</h3>
+<ul>
+<li><strong>대형 건식 PWR(국내 다수)</strong>: 자유체적이 커서 평균 농도가 낮아집니다. 혼합 + 재결합(PAR)이 기본이고, APR1400은 점화기를 병용합니다.</li>
+<li><strong>BWR Mark I·II</strong>: 격납용기가 작아 운전 중 질소 불활성화가 의무입니다(50.44(b)(2)(i))[1].</li>
+<li><strong>빙응축기·Mark III</strong>: 미국은 점화기 계통을 요구합니다.</li>
+</ul>
+<p>후쿠시마 제1원전(2011.3)에서는 불활성화된 Mark I 격납용기에서 새어 나온 수소가 불활성화되지 않은 원자로건물 상부에 쌓여 1·3·4호기 건물에서 폭발했습니다. 불활성화가 격납용기 안만 보호한다는 점을 보여 준 사례입니다[9].</p>
+<h3>APR1400 수소제거계통(예시, OECD/NEA MDEP 2021 기준[2])</h3>
+<ul>
+<li>설계 기준: <strong>100 % 핵연료 피복재 금속-물 반응</strong> 수소를 수용하고 <strong>평균 농도 10 vol% 이하</strong> 유지</li>
+<li>PAR <strong>30기</strong>: 설계기준사고용 12기(돔 상부 대용량 8, IRWST·벤트 게이트 중용량 4, 한국·UAE는 안전등급 3) + 중대사고용 18기(비안전등급), 전부 내진 I등급. PAR 25 % 불가용도 가정합니다(한국 안전해석은 기동 실패, 미국은 정지 PRA).</li>
+<li>점화기 <strong>10개</strong>(미국 인증 설계는 8개): 급속 방출 시 PAR 보조, 방출원 근처 배치</li>
+<li>수소 감시(한국): 센서 2개로 4곳(상부 2·하부 2) 측정, 지시범위 0~15 vol%</li>
+<li>기존 전기식 재결합기를 PAR로 대체했습니다.</li>
+</ul>
+<p>개략 규모는 이렇습니다. 공개 학회 논문의 계산으로 APR1400 활성 노심 피복재가 모두 반응하면 H₂ 약 1,002 kg(약 497 kmol)이 생깁니다[3]. 자유체적 약 8.9만 m³(가정), 초기 건공기 1 atm, 제거 없음으로 몰분율을 구하면 0 °C 기준 약 11 %, 25 °C 기준 약 12 %입니다. 10 % 기준이 왜 수소제어 설비를 요구하는지 보여 주는 설명용 규모 계산이며, 설비 수량을 정하는 계산은 아닙니다.</p>
+<figure class="article-image"><img alt="APR1400 설명용 수소 수지 추정(활성 노심 피복재 전량 반응 → H₂ 약 1,002 kg → 몰분율 11.1~12.0 %)과 수소제거계통 구성(PAR 30·점화기 10)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-003-hydrogen-control/fig2_apr1400_hydrogen_budget.avif"/><figcaption>APR1400 설명용 수소 수지 추정(활성 노심 피복재 전량 반응 → H₂ 약 1,002 kg → 몰분율 11.1~12.0 %)과 수소제거계통 구성(PAR 30·점화기 10)</figcaption></figure>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50.44(b)[1]</td>
+<td>기존 원전: 혼합 능력, Mark I·II 불활성화, Mark III·빙응축기 75 % 금속-물 반응 수소 제어, 수소 감시</td>
+</tr>
+<tr>
+<td>10 CFR 50.44(c)[1]</td>
+<td>신규 수냉각로: 100 % 피복재-냉각재 반응, 균일 분포 시 10 vol% 미만 또는 불활성화, 구조 건전성</td>
+</tr>
+<tr>
+<td>기술기준규칙 제23조 제1항 제2호[4]</td>
+<td>원자로격납건물 내 가연성 기체 제어수단과 핵분열생성물 농도 저감 수단 구비</td>
+</tr>
+<tr>
+<td>GDC 41~43</td>
+<td>격납건물 대기 정화(수소·산소 제어) 설계·검사·시험</td>
+</tr>
+<tr>
+<td>국내 중대사고 규제지침(MDEP 2021 인용)[2]</td>
+<td>100 % 반응 수소 균일 시 10 % 이하, 격실별 화염가속·DDT 방지, 연소·불활성화 후 압력에서 구조 건전성</td>
+</tr>
+<tr>
+<td>원안위 고시 제2026-1호 별표 3[5]</td>
+<td>노심 현저한 손상 이후 필수 위협요인 ① 가연성기체 연소 또는 폭발</td>
+</tr>
+<tr>
+<td>IAEA SSR-2/1 Rev.1[6]</td>
+<td>격납건물 내 가연성기체 제어 요건</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: 국내 규제지침 "16.1 II.2"는 OECD/NEA MDEP 보고서(TR-APR1400WG-04)의 영문 인용으로 확인. 문서 정식 명칭·발행 주체·현행판 번호는 원문 재확인 필요 -->
+<p><strong>출제 당시 대비 달라진 점</strong></p>
+<ul>
+<li>미국은 2003년 50.44 개정으로 설계기준 LOCA 수소 요건(재결합기·퍼지)을 없애고 중대사고 수소로 초점을 옮겼습니다. 2010~2015년 기출의 "전기식 재결합기"는 이 이전 설계 개념입니다.</li>
+<li>국내는 후쿠시마 후속조치로 가동 원전에 PAR을 설치했고, 2021년 공익신고 이후 성능 재검증(원안위 제173·194회 보고)을 거쳐 2025년 8월 18기의 PAR 교체 운영변경허가가 의결됐습니다[10]. <!-- 확인필요: 18기 전체 교체 완료 시점(2026년 정기검사 중 이행) --></li>
+<li>가연성기체 연소·폭발은 사고관리계획서 위협요인으로 평가해야 합니다(위협요인 표는 현행 별표 3, 출제 당시 별표 2).</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>재결합(PAR)</th>
+<th>의도적 점화</th>
+<th>불활성화</th>
+<th>배기(벤팅)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>수소 처리</td>
+<td>물로 전환</td>
+<td>연소로 소모</td>
+<td>그대로 둠(연소 차단)</td>
+<td>격납 밖으로 배출</td>
+</tr>
+<tr>
+<td>속도</td>
+<td>느림·연속</td>
+<td>빠름</td>
+<td>해당 없음</td>
+<td>빠름</td>
+</tr>
+<tr>
+<td>전원</td>
+<td>불필요</td>
+<td>필요</td>
+<td>사전 치환 시 불필요</td>
+<td>피동 가능</td>
+</tr>
+<tr>
+<td>부작용</td>
+<td>고농도 점화원</td>
+<td>압력 스파이크</td>
+<td>출입 제약</td>
+<td>방사성물질 방출</td>
+</tr>
+</tbody>
+</table>
+<p>"4 %면 폭발"은 틀린 표현입니다. 4 %는 상향 가연 하한이고, 폭굉은 훨씬 높은 농도와 형상 조건이 필요합니다. 점화기를 늦게 켜는 것은 오히려 위험합니다. 혼합은 농도 분포를 고르게 할 뿐 총량을 줄이지 않는다는 점도 구분하십시오.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 사고 시 수소 연소·폭굉으로부터 격납건물·필수 기기를 보호하는 혼합·감시·제거·불활성화 전략</li>
+<li><strong>생성원</strong>: Zr-증기 반응(주), 방사분해, Al·Zn 부식, MCCI(H₂·CO)</li>
+<li><strong>판단 기준</strong>: 상향 가연 하한 약 4 vol%(조건 의존), 고전 폭굉 한계 18.3~59 %, 국부 FA·DDT는 별도 평가, 증기 다량 시 불활성(대표 55 %)</li>
+<li><strong>설계 기준</strong>: 100 % 피복재 반응 수소 균일 시 <strong>평균 10 vol% 미만</strong>(50.44(c), 국내 규제지침), 근거 규칙 제23조①2호</li>
+<li><strong>재결합</strong>: 전기식(DBA, 전원 필요), <strong>PAR</strong>(피동, 제거율 유한)</li>
+<li><strong>점화기</strong>: 조기 통전 → 저농도 연속 연소, 전원 필요, 지연 점화 시 하중 증가</li>
+<li><strong>불활성화</strong>: BWR Mark I·II 질소 치환(O₂ &lt; 4 %), 후쿠시마는 건물 누설 수소가 폭발</li>
+<li><strong>APR1400</strong>: PAR 30(DBA 12 + 중대사고 18), 점화기 10, 수소 감시 0~15 %(MDEP 2021 기준)</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 농도 축(4 %·10 % 기준선)과 네 가지 제어 원리 도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-003-hydrogen-control/sketch1_h2_control_window.avif"/><figcaption>답안지용 농도 축(4 %·10 % 기준선)과 네 가지 제어 원리 도식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026년 3교시 4번</td>
+<td>APR1400 중대사고 대처설비(수소제거계통)</td>
+</tr>
+<tr>
+<td>2022년 2교시 2번</td>
+<td>수소 발생 메커니즘과 수소제어 중요성</td>
+</tr>
+<tr>
+<td>2019년 4교시 5번</td>
+<td>APR1400 수소생성원과 가연성기체 제어</td>
+</tr>
+<tr>
+<td>2015년 2교시 2번</td>
+<td>전기식 재결합기·점화기·PAR 비교표</td>
+</tr>
+<tr>
+<td>2011년 3교시 2번</td>
+<td>수소 생성원과 제거설비</td>
+</tr>
+<tr>
+<td>2010년 3교시 2번</td>
+<td>점화기와 PAR의 운전시기·장단점</td>
+</tr>
+<tr>
+<td>제81회 3교시 3번</td>
+<td>격납용기 수소 생성과정</td>
+</tr>
+<tr>
+<td>제73회 4교시 5번</td>
+<td>LOCA 시 수소 생성원</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, 10 CFR 50.44 "Combustible gas control for nuclear power reactors"(2003 개정, 68 FR 54123).</li>
+<li>OECD/NEA MDEP, TR-APR1400WG-04 Rev.4 "Hydrogen Recombiner Survey Report" (2021.3.9), OECD/NEA 웹 공개.</li>
+<li>Kim·Hong, APR1400 노심 지르코늄 산화 수소량 계산, 한국원자력학회 2016 추계학술발표회.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제23조. 국가법령정보센터.</li>
+<li>원자력안전위원회 고시 제2026-1호 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」, 별표 3.</li>
+<li>IAEA, Safety Standards Series No. SSR-2/1 (Rev. 1) "Safety of Nuclear Power Plants: Design" (2016).</li>
+<li>IAEA, IAEA-TECDOC-1661 "Mitigation of Hydrogen Hazards in Severe Accidents in Nuclear Power Plants" (2011).</li>
+<li>Z. M. Shapiro, T. R. Moffette, "Hydrogen Flammability Data and Application to PWR Loss-of-Coolant Accident", WAPD-SC-545 (1957).</li>
+<li>IAEA, The Fukushima Daiichi Accident — Report by the Director General (2015).</li>
+<li>원자력안전위원회 회의 안건(가동 원전 PAR 성능 재검증 보고, 제173·194회; PAR 교체 운영변경허가, 2025.8).</li>
+</ol>

@@ -1,0 +1,231 @@
+<figure class="article-image"><img alt="[개념 노트] 노외핵계측계통(ENFMS)과 중성자검출기 — 10 decade를 영역 겹침으로 잇는 출력 감시와 보호 신호 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-010-excore-neutron-flux-monitoring/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>노외핵계측계통(ENFMS, WH형 명칭 NIS)은 원자로용기 밖 계기 우물에 둔 중성자검출기로 노심 누설 중성자를 재어, 정지 상태의 선원 준위부터 정격의 약 200 %까지 약 10~12 decade에 걸쳐 출력 준위·기동률·축방향 분포를 연속 제공하고, 그 신호로 원자로보호계통·노심보호연산기·제어계통을 구동하는 계측 계통(보호용 안전채널 4개 중심)입니다.</strong></p>
+<p>한 검출기와 한 신호처리 방식으로는 이 범위를 덮을 수 없습니다. 그래서 영역을 나누되 <strong>서로 겹치게</strong> 구성하고, 다음 영역이 지시하는 것을 확인한 뒤에 하위 영역의 트립을 차단합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>중성자를 하전입자로 바꾸는 반응</h3>
+<p>중성자는 전하가 없으므로 검출기 안에서 반응을 일으켜 하전입자를 만들어야 셀 수 있습니다.</p>
+<ul>
+<li><strong>BF₃ 비례계수관</strong>: ¹⁰B(n,α)⁷Li(σth 3,840 b, Q 2.79 MeV)[6]. 비례영역의 기체증폭으로 중성자 펄스가 커서 <strong>파고 변별</strong>로 감마 펄스를 버립니다. 감도가 높아 선원영역에 씁니다. ³He(n,p)(5,330 b) 계수관도 같은 원리입니다.</li>
+<li><strong>핵분열함</strong>: 고농축 U-235를 입힌 전리함입니다. 핵분열편의 전리량이 매우 커서 감마 변별이 가장 쉽습니다. 저준위에서는 펄스를 세고, 펄스가 겹치면 **Campbelling(평균제곱전압, MSV)**으로, 더 높으면 직류 전류로 이어 한 검출기로 광역을 덮습니다.</li>
+<li><strong>보상형 전리함(CIC)</strong>: B-10 피복 챔버(중성자+감마)와 무피복 챔버(감마)의 전류를 서로 빼서 감마를 상쇄합니다. WH형 중간영역에 씁니다.</li>
+<li><strong>비보상 전리함(UIC)</strong>: 출력영역에서는 중성자 전류가 감마보다 훨씬 크고 감마도 출력에 비례하므로 보상이 필요 없습니다.</li>
+</ul>
+<p>Campbell 정리에 따르면 사건률 n인 펄스 열의 평균 전류는 n·q, 요동의 평균제곱(분산)은 n·q²에 비례합니다. 펄스를 셀 수 없어도 MSV는 사건률에 비례하고, 전하의 제곱으로 가중되므로 감마 대 중성자 기여비가 (n_γ/n_n)·(q_γ/q_n)²로 눌립니다(같은 펄스 형상 가정)[6].</p>
+<figure class="article-image"><img alt="검출기 3종 절개 장면, 노외 4종·노내 로듐 SPND의 반응·신호 방식·감마 처리 비교표, Campbell 정리와 보상형 전리함 식 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-010-excore-neutron-flux-monitoring/fig2_detector_types_gamma_rejection.avif"/><figcaption>검출기 3종 절개 장면, 노외 4종·노내 로듐 SPND의 반응·신호 방식·감마 처리 비교표, Campbell 정리와 보상형 전리함 식 카드</figcaption></figure>
+<h3>영역 구분과 겹침</h3>
+<p><strong>Westinghouse형(NRC 공개 W형 매뉴얼 기준)[2]</strong></p>
+<table>
+<thead>
+<tr>
+<th>영역</th>
+<th>검출기</th>
+<th>범위</th>
+<th>주요 연동</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>선원(SR) 2채널</td>
+<td>BF₃</td>
+<td>10⁰~10⁶ cps</td>
+<td>트립 10⁵ cps, SUR −0.5~+5 dpm</td>
+</tr>
+<tr>
+<td>중간(IR) 2채널</td>
+<td>CIC</td>
+<td>10⁻¹¹~10⁻³ A(8 decade)</td>
+<td>P-6 10⁻¹⁰ A, 인출저지 20 %·트립 25 % 상당</td>
+</tr>
+<tr>
+<td>출력(PR) 4채널</td>
+<td>UIC 상·하 2단</td>
+<td>0~120 % 선형</td>
+<td>상·하 신호차 ΔI(AFD)</td>
+</tr>
+</tbody>
+</table>
+<p>SR 상단과 IR 하단은 막대 전체로 보면 2 decade 넘게 겹치며, IR이 10⁻¹⁰ A에 올라 SR과 최소 1 decade 겹쳤음을 확인한 시점에 P-6가 성립합니다. 운전원은 P-6 뒤 SR 트립을 수동 차단하고 SR 고전압을 끕니다. 차단하지 않으면 약 3/5 decade 위에서 SR 트립이 납니다. 출력을 낮추면 하위 영역 트립은 자동 복귀합니다. 기동률은 SR·IR 채널에서 각각 산출합니다.</p>
+<p><strong>CE·한국형</strong>: 안전채널 4개가 광역 대수출력과 선형출력을 모두 냅니다. NRC 공개 CE형 매뉴얼의 구형 설계는 광역용(B-10 계수관 + 핵분열함)과 선형용(비보상 전리함 상·하 2단) 검출기를 따로 두고, 비안전 제어채널(1~125 %)을 별도로 둡니다[1]. 표준형 초기 호기는 안전채널 핵분열함, 기동채널 BF₃, 제어채널 비보상 전리함을 따로 썼습니다[4]. APR1400은 <strong>핵분열함 기반 안전채널 4개</strong>가 기동 근처 중성자속부터 정격 200 %까지 10 decade(하한 환산 약 2×10⁻⁸ %)를 감시하고, 축방향 3단 신호를 CPC에 보냅니다[3][10]. 저준위는 펄스 계수, 고준위는 MSV를 이어 대수출력을 만들고, 같은 검출기 신호로 선형출력을 냅니다. 비안전 기동·제어채널은 보호채널과 격리해 둡니다[7].</p>
+<figure class="article-image"><img alt="출력 로그축(10⁻¹⁰~10³ %) 위 WH 선원·중간·출력영역과 한국형 광역 대수·선형·제어채널 범위의 겹침, P-6·P-10·트립 표식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-010-excore-neutron-flux-monitoring/fig1_range_overlap_chart.avif"/><figcaption>출력 로그축(10⁻¹⁰~10³ %) 위 WH 선원·중간·출력영역과 한국형 광역 대수·선형·제어채널 범위의 겹침, P-6·P-10·트립 표식</figcaption></figure>
+<h3>선형출력과 대수출력(2024년 1교시 6번)</h3>
+<ul>
+<li><strong>대수출력</strong>: 10 decade를 대수 눈금으로 보여 줍니다. 정지·기동·저출력 감시, <strong>고대수출력 트립</strong>(정지 중 붕소 희석·CEA 인출에 의한 비계획 임계 방호, 출력 운전 중에는 운전 우회), 대수 신호를 미분한 **기동률(SUR)**에 씁니다. SUR(dpm) = 26.06/T(s)입니다. NRC 공개 CE형 매뉴얼의 구형 설계 예는 10⁻⁴~15 % 구간에 2.6 dpm 고기동률 트립과 1.5 dpm CWP를 둡니다[1].</li>
+<li><strong>선형출력</strong>: 0~200 %를 선형 눈금으로 보이며 2차측 열평형으로 교정합니다. 3단 합은 출력이고, 3단 신호를 보정해 재구성한 축방향 분포에서 ASI를 구하며, **가변과출력 트립(VOPT)**과 CPC의 DNBR·LPD 계산 입력이 됩니다.</li>
+<li>대수는 범위가 넓지만 고출력 정밀도가 낮고, 선형은 정밀하지만 범위가 2 decade 남짓이라 둘 다 필요합니다.</li>
+</ul>
+<h3>감마 보상: 과보상과 저보상(제67회 4교시 1번)</h3>
+<p>CIC 순전류는 I_net = (I_n + I_γ) − k·I_γ′입니다. 보상 전압으로 k를 맞추며, 감마를 정확히 지우는 값 k₀ = I_γ/I_γ′보다 작으면 저보상, 크면 과보상입니다.</p>
+<ul>
+<li><strong>저보상</strong>: 감마가 남아 지시가 실제보다 높습니다. 고중성자속 트립·인출저지가 일찍 작동해 보수적이므로 "약간 저보상"이 설계 기준입니다. 대신 정지 후 핵분열생성물 감마 때문에 IR 지시가 늦게 떨어져 P-6 해제와 SR 복귀가 늦어집니다. 기동 때는 P-6가 실제보다 일찍 성립해 SR–IR 실제 겹침이 줄고, 감마 바탕 때문에 저준위 기동률이 작게 보입니다.</li>
+<li><strong>과보상</strong>: 지시가 실제보다 낮습니다. 정지 후 SR 복귀는 빠르지만, 기동 때 IR 온스케일과 P-6가 늦어지고 IR 트립·인출저지가 비보수적이 됩니다. 저준위 지시도 불안정합니다.</li>
+<li>두 효과 모두 저출력과 정지 직후에 크고, 출력영역에서는 무시할 만합니다.</li>
+</ul>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>보호</strong>: APR1400 ENFMS는 4개 안전채널이 기동 근처부터 200 %(10 decade)를 감시하고 PPS에 VOPT·고대수출력 트립을, CPCS에 출력과 3단 축방향 분포를 보냅니다(NRC APR1400 FSER 7장)[3]. 3단 신호는 CPC에서 형상 소멸 행렬·그림자 보정을 거쳐 노심 축분포가 됩니다.</li>
+<li><strong>기동</strong>: 임계 접근 중 기동채널 계수율로 역증배(1/M)를 그리고 가청계수율을 씁니다. 재장전 후 첫 기동은 계수율 확보가 관건입니다. 핵분열함 단일화 설계는 BF₃보다 감도가 낮아 초기 노심의 기동영역 계수율이 쟁점으로 연구되었습니다(KEPRI, KNS 2010)[4].</li>
+<li><strong>교정</strong>: 선형출력은 2차측 열평형으로, 축분포는 노내 계측으로 주기적으로 맞춥니다. 계기 우물 위치가 바뀌면 검출기-노심 기하가 달라져 지시가 틀어집니다.</li>
+<li><strong>디지털화</strong>: APR1400 MMIS 중에서도 ENFMS 신호처리는 아날로그로 남아 있습니다. 노후화 대응을 위한 디지털화 연구가 진행 중입니다(NET 53권 7호, 2021)[5].</li>
+</ul>
+<h3>노외 vs 고정식 노내 검출기(2018년 2교시 5번)</h3>
+<p>CE형 고정식 노내계측(ICI)은 여러 연료집합체의 계측관에 로듐 자기출력검출기(SPND)를 축방향 여러 단으로 넣습니다. ¹⁰³Rh(n,γ)¹⁰⁴Rh의 β 붕괴(T½ 42초) 전류를 쓰므로[6] 응답이 늦어 동적 보상이 필요하고, 로듐이 소모되어 감도가 줄어듭니다. 그래서 보호가 아니라 COLSS의 3차원 출력분포·ASI·여유 감시와 노외 교정에 씁니다. WH형은 이동식 소형 핵분열함으로 주기적 출력분포를 측정합니다. <!-- 확인필요: APR1400 기동·제어 채널이 안전채널 핵분열함 신호를 격리 분배받는지, 별도 검출기를 쓰는지 공개 1차 문서(DCD 7.7절)로 미확인 --></p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기술기준규칙 제20조(계측 및 제어장치)·제26조(원자로보호계통)·제44조(신뢰성) [9]</td>
+<td>현행 원안위규칙 제37호(2026.3.30). 보호용 채널의 다중성·독립성</td>
+</tr>
+<tr>
+<td>10 CFR 50 App. A GDC 13·20~24 [7]</td>
+<td>운전 범위 전체의 계측, 보호계통 기능·독립성·제어계통과의 분리</td>
+</tr>
+<tr>
+<td>10 CFR 50.55a(h) [7]</td>
+<td>IEEE 603-1991(안전계통 채널 요건)</td>
+</tr>
+<tr>
+<td>RG 1.97 [8]</td>
+<td>사고 후 감시 변수 중성자속(Rev.3: 범주 1, 10⁻⁶~100 %), 현행 Rev.5는 성능기반</td>
+</tr>
+<tr>
+<td>운영기술지침서(CE STS 계열)</td>
+<td>RPS 계측(선형·대수출력 채널) LCO, 정지 중 기동영역 감시</td>
+</tr>
+</tbody>
+</table>
+<p>출제 당시(2001~2024)와 비교하면 근거 법령이 「원자력법」에서 「원자력안전법」으로 바뀌고 기술기준 규칙이 개정되었지만, ENFMS의 영역 구성과 보호 기능은 같습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>노외(ENFMS)</th>
+<th>고정식 노내(ICI)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>위치</td>
+<td>용기 밖 계기 우물 4방위</td>
+<td>연료집합체 계측관</td>
+</tr>
+<tr>
+<td>검출기</td>
+<td>핵분열함·전리함·BF₃</td>
+<td>로듐 SPND</td>
+</tr>
+<tr>
+<td>응답</td>
+<td>즉시</td>
+<td>지연 응답(¹⁰⁴Rh 반감기 약 42초, 동적 보상)</td>
+</tr>
+<tr>
+<td>측정</td>
+<td>주변부 누설 중성자</td>
+<td>국부 3차원 분포</td>
+</tr>
+<tr>
+<td>기능</td>
+<td>트립·CPC·제어·기동 감시</td>
+<td>COLSS 감시·노외 교정</td>
+</tr>
+<tr>
+<td>등급</td>
+<td>안전(4채널)</td>
+<td>비안전</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>WH형</th>
+<th>CE·한국형</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>영역</td>
+<td>SR·IR·PR 검출기 분리</td>
+<td>안전채널이 광역+선형 겸용</td>
+</tr>
+<tr>
+<td>출력 분포</td>
+<td>PR 상·하 2단 → ΔI</td>
+<td>3단 → CPC 축분포·ASI</td>
+</tr>
+<tr>
+<td>기동률</td>
+<td>SR·IR</td>
+<td>광역 대수채널</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 용기 밖 중성자검출기로 누설 중성자 측정, 선원 준위~200 %(10~12 decade) 출력·SUR·축분포 → 보호·제어·감시</li>
+<li><strong>영역 겹침</strong>: WH SR(BF₃)·IR(CIC)·PR(UIC 2단), SR–IR 1 decade 겹침 → P-6, P-10</li>
+<li><strong>한국형(APR1400 예)</strong>: 핵분열함 기반 안전채널 4개, 축방향 3단, 기동 근처~200 %(10 decade)</li>
+<li><strong>신호 방식</strong>: 계수(파고 변별) → MSV(Campbelling) → (설계에 따라) 직류 전류</li>
+<li><strong>대수출력</strong>: 고대수출력 트립(비계획 임계), SUR = d(log₁₀P)/dt(t: 분, dpm)</li>
+<li><strong>선형출력</strong>: 0~200 %, 열평형 교정, 3단 합 → 출력, 3단 보정·재구성 → 축분포·ASI → VOPT·CPC(DNBR·LPD)</li>
+<li><strong>감마 보상</strong>: 저보상 → 지시↑(보수적, 정지 후 SR 복귀 지연), 과보상 → 지시↓(비보수적)</li>
+<li><strong>비안전 채널</strong>: 기동(대수·가청계수율), 제어(선형 0~125 %), 격리기로 분리</li>
+<li><strong>노내 대비</strong>: Rh SPND, ¹⁰⁴Rh 반감기 42초 → 지연 응답, COLSS 감시·노외 교정</li>
+<li><strong>근거</strong>: 기술기준규칙 제20·26·44조, GDC 13·20~24, IEEE 603, RG 1.97</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 배치 개념도(평면 4채널 90°, 측면 용기 밖 3단 → 대수출력·선형출력)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-010-excore-neutron-flux-monitoring/sketch1_enfms_layout.avif"/><figcaption>답안지용 배치 개념도(평면 4채널 90°, 측면 용기 밖 3단 → 대수출력·선형출력)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024년 1교시 6번</td>
+<td>노외중성자감시계통 선형출력과 대수출력</td>
+</tr>
+<tr>
+<td>2018년 2교시 5번</td>
+<td>표준형 노외·고정형 노내 중성자검출기 기능</td>
+</tr>
+<tr>
+<td>2014년 2교시 2번</td>
+<td>신고리 1·2·신월성 1·2 ENFMS 검출기 구조·동작원리</td>
+</tr>
+<tr>
+<td>제67회 4교시 1번</td>
+<td>중간영역 검출기 과보상·저보상 운전상 장단점</td>
+</tr>
+<tr>
+<td>제63회 1교시 11번</td>
+<td>Excore Detector</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, HRTD CE Technology Manual, Ch. 9.1 "Excore Neutron Monitoring System" (Rev. 11/08), NRC ADAMS ML11251A025.</li>
+<li>U.S. NRC, HRTD Westinghouse Technology Systems Manual, Sec. 9.0~9.2 "Excore Nuclear Instrumentation", NRC ADAMS ML023040050.</li>
+<li>U.S. NRC, Final Safety Evaluation Report for the APR1400 Design Certification, Ch. 7 "Instrumentation and Controls", NRC ADAMS ML18215A241.</li>
+<li>이환수·신호철·이은기, "A New Approach to ENFMS by using Variable Moderator Equipment", 한국원자력학회 추계학술발표회 (2010).</li>
+<li>Kim, Vista, Chong, Nuclear Engineering and Technology, Vol. 53, No. 7, pp. 2237–2250 (2021).</li>
+<li>G. F. Knoll, Radiation Detection and Measurement, 4th ed., Wiley (2010) — 중성자 검출 반응, Campbelling, 자기출력검출기.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A GDC 13·20~24; 10 CFR 50.55a(h)(IEEE Std 603-1991).</li>
+<li>U.S. NRC, Regulatory Guide 1.97 "Criteria for Accident Monitoring Instrumentation for Nuclear Power Plants", Rev. 3 (1983)·Rev. 5 (2019).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제20·26·44조, 국가법령정보센터.</li>
+<li>김정호 외, APR1400 ENFMS 핵분열함 검출기 신호 검증용 신호발생기 개발 발표, 한국원자력학회 추계학술발표회 (2023).</li>
+</ol>

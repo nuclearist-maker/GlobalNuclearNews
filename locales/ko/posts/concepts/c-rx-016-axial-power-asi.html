@@ -1,0 +1,218 @@
+<figure class="article-image"><img alt="[개념 노트] 축방향 출력분포와 ASI(AO) — 위아래 기울기를 숫자 하나로 관리하는 법 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-016-axial-power-asi/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>축방향 출력분포는 노심 높이 방향의 출력 모양이며, 이를 상·하 절반 출력의 차를 합으로 나눈 지표로 요약해 관리합니다. Westinghouse형은 AO = (P_T − P_B)/(P_T + P_B)와 ΔI = AO × P/P_RTP, CE형은 ASI = (P_B − P_T)/(P_B + P_T)를 쓰며, 같은 분포에서 두 값의 부호는 반대입니다.</strong>[1][2]</p>
+<p>P_T는 노심 상부 절반, P_B는 하부 절반의 적분출력(곡선 아래 면적)입니다. AO가 양이면 상부 편중이고, ASI가 양이면 하부 편중입니다. 답안에서 가장 많이 틀리는 곳이 이 부호입니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>절단 cosine에서 출발</h3>
+<p>균질 원통 노심의 축방향 중성자속은 cosine입니다. 외삽 경계가 가열길이 밖에 있으므로 연료 구간 안에서는 절단 cosine이 됩니다[9]. 실제 노심에서는 여러 인자가 이 모양을 위아래로 기울입니다.</p>
+<h3>분포를 바꾸는 4가지 인자</h3>
+<ol>
+<li><strong>제어봉 삽입</strong>: PWR 제어봉은 위에서 들어가므로 상부 흡수가 늘어 출력이 하부로 이동합니다(ASI +, AO −).</li>
+<li><strong>감속재 온도·밀도</strong>: 냉각재는 아래에서 위로 가열되어 상부 밀도가 낮습니다. MTC가 음이면 상부 반응도가 낮아 출력이 하부로 기웁니다. 출력이 높을수록, MTC가 더 음일수록 강해집니다.</li>
+<li><strong>연소도 분포</strong>: 출력이 큰 곳이 먼저 연소해 반응도가 줄어 분포가 스스로 평탄해집니다.</li>
+<li><strong>제논 분포</strong>: 출력이나 제어봉이 바뀌면 제논이 수 시간 지연되어 재분포하면서 출력을 다시 옮깁니다.</li>
+</ol>
+<p>이 밖에 도플러 되먹임, 축방향 블랭킷, 가연성흡수체의 상·하단 절삭(cutback)도 영향을 줍니다.</p>
+<h3>기울기와 첨두의 관계 (계산 예)</h3>
+<p>절단 cosine에 선형 기울기 [1 + c·(z − H/2)/(H/2)]를 곱하고, ASI가 원하는 값이 되도록 c를 맞춰 계산했습니다.</p>
+<table>
+<thead>
+<tr>
+<th>ASI(CE)</th>
+<th>AO(W)</th>
+<th>F_Z</th>
+<th>첨두 높이</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+0.30</td>
+<td>−30 %</td>
+<td>1.61</td>
+<td>1.35 m</td>
+</tr>
+<tr>
+<td>+0.15</td>
+<td>−15 %</td>
+<td>1.49</td>
+<td>1.58 m</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0 %</td>
+<td>1.44</td>
+<td>1.91 m</td>
+</tr>
+<tr>
+<td>−0.15</td>
+<td>+15 %</td>
+<td>1.49</td>
+<td>2.23 m</td>
+</tr>
+<tr>
+<td>−0.30</td>
+<td>+30 %</td>
+<td>1.61</td>
+<td>2.46 m</td>
+</tr>
+</tbody>
+</table>
+<p>이 모델에서는 |ASI|가 커지면 F_Z가 커지고, 분리 근사(FQ ≈ F_R × F_Z)로 보면 FQ도 커집니다. 다만 실제 노심에서는 ASI만으로 첨두가 정해지지 않습니다. ASI가 0이어도 이중 첨두가 클 수 있습니다. DNBR 영향은 첨두 위치와 냉각재 상태에 따라 다르며, 냉각재 엔탈피가 높은 상부에 첨두가 오면 대체로 불리합니다.</p>
+<figure class="article-image"><img alt="ASI −0.30~+0.30 다섯 가지 축방향 분포와 F_Z, ASI·AO 부호 대응 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-016-axial-power-asi/fig1_axial_shape_vs_asi.avif"/><figcaption>ASI −0.30~+0.30 다섯 가지 축방향 분포와 F_Z, ASI·AO 부호 대응 카드</figcaption></figure>
+<h3>연소에 따른 변화와 제논 안정성</h3>
+<p>주기초에는 감속재 온도 효과와 조절군 일부 삽입으로 하부 편중(ASI +)입니다. 연소가 진행되면 하부가 먼저 타서 출력이 위로 올라가고 분포가 평탄해집니다. 주기말에는 평탄하거나 이중 첨두(말안장)형이 됩니다. 분포가 평탄해질수록 기본 모드와 1차 축방향 모드의 결합이 약해집니다. 그래서 일반적으로 주기말로 갈수록 축방향 제논 진동에 대한 안정성이 낮아집니다. 주기말 MTC가 더 음이 되는 것은 감쇠 쪽으로 작용하지만, 평탄화 효과가 더 크다고 봅니다.</p>
+<h3>제논 진동 요약</h3>
+<p>출력이 상부로 쏠리면 상부의 제논 연소가 늘어 반응도가 더 오르고(양의 되먹임), 수 시간 뒤 늘어난 아이오딘이 제논으로 붕괴하며 출력을 다시 하부로 밀어냅니다. 총출력은 거의 일정하고 공간 분포만 대략 하루 안팎의 주기로 진동합니다[9].</p>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>설계·안전</strong>: 축방향 기울기는 F_Z를 통해 FQ와 선출력(LHR) 여유를 줄입니다. LOCA 첨두피복재온도와 연료 중심 용융 한계에 걸리고, 상부 편중은 DNBR 여유도 줄입니다.</li>
+<li><strong>Westinghouse형(고리 2~4, 한빛 1·2)</strong>: 노외계측기 4채널의 상·하부 이온함 신호 차로 ΔI를 얻습니다. 운전 중 AFD를 허용 영역 안에 유지합니다. 과온 ΔT 트립에는 f(ΔI) 벌점이 붙습니다(예: Wolf Creek, ΔI &lt; −23 % 또는 &gt; +5 %에서 설정값 감소)[5].</li>
+<li><strong>CE형(OPR1000, APR1400)</strong>: CPC가 노외계측기 3단 신호를 형상 변환 행렬로 축방향 분포로 합성해 LPD·DNBR 트립을 계산합니다. COLSS는 고정형 노내계측기로 LHR·DNBR 여유와 ASI를 감시합니다[2].</li>
+<li><strong>교정</strong>: 노외계측기는 노심 주변부만 보므로 노내계측(flux map, 고정형 로듐)으로 주기적으로 교정합니다.</li>
+</ul>
+<h2>제어기구와 운전 방법</h2>
+<ul>
+<li><strong>부분강도 제어봉(PSCEA)</strong>: CE형의 약한 흡수체(인코넬) 봉입니다. 반응도는 거의 바꾸지 않고 축방향 분포만 조절해 제논 진동을 억제합니다. APR1400은 전강도 조절군으로도 분포를 제어합니다.</li>
+<li><strong>Westinghouse 부분길이봉</strong>: 초기 설계에 있었으나 운전에서 빠졌고, 그 대신 아래의 운전 절차로 관리합니다.</li>
+<li><strong>CAOC</strong>: 일정한 목표 AO를 따르는 ΔI 대역(±5 %p)에 묶습니다. 대역 이탈 시간에 제한을 둡니다. 같은 AO −10 %라도 100 % 출력에서는 ΔI −10 %, 50 %에서는 −5 %입니다.</li>
+<li><strong>RAOC</strong>: 해석으로 정한 사다리꼴 허용 영역이며 출력이 낮을수록 넓어집니다. 예: Wolf Creek Cycle 17은 100 %에서 −15 ~ +5 %, 50 %에서 −29 ~ +24 %입니다[5].</li>
+<li><strong>CE형 ASI 대역</strong>: 사례로 San Onofre 2호기는 COLSS 운전 시 ±0.28, COLSS 비가용 시 ±0.20입니다(20 % 출력 초과)[6].</li>
+<li><strong>조작 원칙</strong>: 반응도는 붕소로, 분포는 제어봉으로 맞춥니다. 진동이 보이면 반주기에 맞춰 역방향으로 봉을 조작합니다.</li>
+</ul>
+<figure class="article-image"><img alt="W형 RAOC AFD 허용 영역과 CAOC 목표 대역, CE형 ASI 운전 대역(COLSS ±0.28·CPC ±0.20) 비교" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-016-axial-power-asi/fig2_asi_operating_band.avif"/><figcaption>W형 RAOC AFD 허용 영역과 CAOC 목표 대역, CE형 ASI 운전 대역(COLSS ±0.28·CPC ±0.20) 비교</figcaption></figure>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50 App. A GDC 12</td>
+<td>SAFDL을 넘는 출력진동이 없거나 확실히 탐지·억제[3]</td>
+</tr>
+<tr>
+<td>GDC 10·20</td>
+<td>정상·AOO 중 SAFDL 비초과, 보호계통 자동 작동</td>
+</tr>
+<tr>
+<td>NUREG-1431 LCO 3.2.3A/B</td>
+<td>AFD(CAOC/RAOC)[1]</td>
+</tr>
+<tr>
+<td>NUREG-1432 LCO 3.2.5</td>
+<td>ASI(COLR 한계)[2]</td>
+</tr>
+<tr>
+<td>NUREG-0800 SRP 4.3</td>
+<td>출력분포·제논 안정성 심사[4]</td>
+</tr>
+<tr>
+<td>「원자로시설 등의 기술기준에 관한 규칙」 제18조·제19조</td>
+<td>원자로의 고유보호(고유 되먹임), 원자로출력 및 출력분포 진동 제어[7]</td>
+</tr>
+<tr>
+<td>운영기술지침서·COLR</td>
+<td>호기·주기별 AFD·ASI 한계[8]</td>
+</tr>
+</tbody>
+</table>
+<!-- 기술기준규칙 제18·19조: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 -->
+<!-- 확인필요: 국내 OPR1000·APR1400 운영기술지침서의 ASI 한계값은 원문 미확인이라 미국 사례값만 기재 -->
+<p>개정 흐름은 부분길이봉 제거 → CAOC(1970년대) → RAOC(1980년대, WCAP-10216) 순입니다. 1980년대 말 이후 한계값은 COLR로 옮겨졌습니다. 출제 당시(2002~2011년)와 원리는 같습니다. 현행 답안에는 "한계는 COLR에 호기·주기별로 정함"을 적습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>AO</th>
+<th>ΔI(AFD)</th>
+<th>ASI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정의</td>
+<td>(P_T − P_B)/(P_T + P_B)</td>
+<td>P_T − P_B (%RTP)</td>
+<td>(P_B − P_T)/(P_B + P_T)</td>
+</tr>
+<tr>
+<td>사용 노형</td>
+<td>W·프랑스형</td>
+<td>W형 LCO</td>
+<td>CE형(OPR1000·APR1400)</td>
+</tr>
+<tr>
+<td>양(+)의 의미</td>
+<td>상부 편중</td>
+<td>상부 편중</td>
+<td>하부 편중</td>
+</tr>
+<tr>
+<td>출력 의존</td>
+<td>없음</td>
+<td>AO × P/P_RTP</td>
+<td>없음</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 축방향 출력분포 = 노심 높이 방향 출력 모양(절단 cosine 기준)</li>
+<li><strong>AO</strong> = (P_T − P_B)/(P_T + P_B), <strong>ΔI</strong> = AO × P/P_RTP(W형)</li>
+<li><strong>ASI</strong> = (P_B − P_T)/(P_B + P_T)(CE형) = −AO, 양이면 하부 편중</li>
+<li><strong>4인자</strong>: 제어봉(하부 이동), 감속재 온도(하부 편중), 연소(평탄화), 제논(재분포·진동)</li>
+<li><strong>연소 영향</strong>: 주기초 하부 편중 → 주기말 평탄, 제논 안정성 감소</li>
+<li><strong>영향</strong>: |ASI|↑ → F_Z·FQ↑ → LHR·DNBR 여유↓</li>
+<li><strong>측정</strong>: 노외계측기 상·하부(W 2단·CE 3단), 노내계측으로 교정</li>
+<li><strong>제어</strong>: 부분강도봉, CAOC ±5 %, RAOC 영역, CE ASI 대역, 붕소+봉 병용</li>
+<li><strong>근거</strong>: GDC 12, LCO 3.2.3/3.2.5, COLR</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 상·하 절반 분할 축방향 분포 3가지와 AO·ASI 식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-016-axial-power-asi/sketch1_axial_offset_asi.avif"/><figcaption>답안지용 상·하 절반 분할 축방향 분포 3가지와 AO·ASI 식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023년 1교시 9번</td>
+<td>축방향 중성자분포 변화 4가지 인자</td>
+</tr>
+<tr>
+<td>2011년 1교시 11번</td>
+<td>AO &amp; ASI</td>
+</tr>
+<tr>
+<td>제78회 3교시 5번</td>
+<td>연소에 따른 축방향 출력·제논 안정성</td>
+</tr>
+<tr>
+<td>제76회 2교시 3번</td>
+<td>Xe 국부출력진동 억제 제어</td>
+</tr>
+<tr>
+<td>제68회 2교시 1번</td>
+<td>제논의 공간적 진동현상</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications — Westinghouse Plants, 1.1 정의(AFD)·LCO 3.2.3 및 Bases(판 미기재).</li>
+<li>U.S. NRC, NUREG-1432 Standard Technical Specifications — Combustion Engineering Plants, LCO 3.2.5 "Axial Shape Index" 및 Bases(판 미기재).</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, GDC 10·12·20. NRC 웹(eCFR).</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.3 "Nuclear Design".</li>
+<li>Wolf Creek Nuclear Operating Corp., Wolf Creek Cycle 17 Core Operating Limits Report, Rev. 1, Figure 2.5·2.8절, NRC ADAMS ML090220220.</li>
+<li>Southern California Edison, San Onofre Nuclear Generating Station Unit 2 Technical Specifications, 3.2.7 (NRC 공개 운영허가 문서, ML 번호 미확인).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제18조·제19조. 국가법령정보센터.</li>
+<li>U.S. NRC, Generic Letter 88-16 "Removal of Cycle-Specific Parameter Limits from Technical Specifications" (1988).</li>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, John Wiley &amp; Sons (1976).</li>
+</ol>

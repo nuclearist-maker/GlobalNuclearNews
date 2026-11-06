@@ -21,15 +21,20 @@ def collect(root):
  pending=[p for p in list(root.glob('*.html'))+list((root/'posts').rglob('*.html')) if not is_revision_snapshot(p)]
  for name in ('assets/app.js','CNAME','.nojekyll','robots.txt','sitemap.xml','favicon.ico'):
   if (root/name).is_file():pending.append(root/name)
- seen=set()
+ seen=set();scheduled=set(p.resolve() for p in pending);resolved_refs=set()
  def add(base,value):
   u=urlsplit(value)
   if not u.path or u.scheme or u.netloc:return
+  key=(base.parent,u.path)
+  if key in resolved_refs:return
   p=(root/unquote(u.path).lstrip('/') if u.path.startswith('/') else base.parent/unquote(u.path)).resolve()
   if not p.is_relative_to(root):raise ValueError('Dependency escapes site: '+value)
+  if p in scheduled:
+   resolved_refs.add(key);return
   if p.is_dir():p=p/'index.html'
   if is_revision_snapshot(p):raise ValueError('Revision snapshot is not a public dependency: '+value)
   if not p.is_file():raise ValueError('Missing public dependency: '+str(p.relative_to(root)))
+  scheduled.add(p);resolved_refs.add(key)
   pending.append(p)
  while pending:
   p=pending.pop().resolve()

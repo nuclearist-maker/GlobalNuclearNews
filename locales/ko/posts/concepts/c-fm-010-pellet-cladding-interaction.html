@@ -1,0 +1,185 @@
+<figure class="article-image"><img alt="[개념 노트] 펠릿-피복관 상호작용(PCI) — 간극이 닫힌 뒤 출력을 올릴 때 생기는 요오드 응력부식균열 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-010-pellet-cladding-interaction/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>펠릿-피복관 상호작용(PCI, Pellet-Cladding Interaction)은 펠릿-피복관 간극이 닫힌 연료봉에서 출력이 오를 때, 펠릿 열팽창이 피복관에 국부 인장응력을 걸고 펠릿에서 나온 요오드 등 부식성 핵분열생성물(FP)이 그 자리에 작용해 피복관 내면에서 응력부식균열(SCC)이 생기는 현상입니다.</strong></p>
+<p>넓은 뜻으로는 순수 기계적 하중에 의한 파손(PCMI, Pellet-Cladding Mechanical Interaction)까지 포함해 부릅니다. 답안에서는 둘을 나눠 쓰는 것이 좋습니다. NRC SRP 4.2도 "PCI는 대개 요오드에 의한 응력부식균열, PCMI는 주로 응력 지배 파손이며 겉보기로 구분하기 어렵다"고 정리합니다[1].</p>
+<h2>원리와 메커니즘</h2>
+<h3>간극 폐쇄 — 상호작용의 전제 조건</h3>
+<p>새 연료봉에는 직경 기준 약 0.17 mm(17×17 예시)의 간극이 있어 펠릿이 피복관을 밀지 못합니다. 이 간극은 다음 요인으로 줄어듭니다.</p>
+<ul>
+<li><strong>펠릿 쪽</strong>: 기동 시 열팽창, 첫 출력 상승 때 균열 조각이 바깥으로 이동하는 재배치(relocation), 연소에 따른 팽윤(약 0.091 %ΔV/(GWd/tU))</li>
+<li><strong>피복관 쪽</strong>: 냉각재 압력(PWR 15.5 MPa)이 봉 내압보다 커서 생기는 압축 원주응력으로 피복관이 안쪽으로 크립하는 <strong>크립다운(creep-down)</strong></li>
+<li><strong>반대 방향</strong>: 초기 고밀화는 펠릿을 줄여 간극을 잠시 넓힙니다.</li>
+</ul>
+<p>이 요인들이 쌓여 열간 간극이 닫히는 시점은 설계와 출력 이력에 따라 달라 대략 수십 GWd/tU 범위로 봅니다. 간극이 닫힌 뒤에는 피복관이 펠릿과 함께 바깥으로 밀리고(크립아웃), 이때부터 출력 변화가 곧 피복관 응력 변화가 됩니다.</p>
+<h3>모래시계화와 대나무 마디 — 응력이 몰리는 자리</h3>
+<ul>
+<li>펠릿 내부 온도는 중심이 높고 표면이 낮은 포물선형입니다. 중심이 더 팽창하므로 표면에는 인장 원주응력이 걸려 <strong>방사상 균열</strong>이 생깁니다.</li>
+<li>펠릿 끝단은 축방향 구속이 약해 반경 방향으로 더 벌어집니다. 펠릿은 끝이 굵은 <strong>모래시계(hourglass)</strong> 모양이 됩니다.</li>
+<li>그 결과 피복관에는 펠릿-펠릿 경계 높이마다 원주 방향 돌출, 즉 **대나무 마디(ridging)**가 생깁니다. 응력은 이 높이와 방사상 균열 끝 맞은편에 집중됩니다.</li>
+<li>펠릿 표면이 떨어져 나간 결함(MPS, missing pellet surface)은 국부 과변형을 일으켜 작은 출력 변화에서도 파손을 부릅니다.</li>
+</ul>
+<h3>PCI-SCC 조건</h3>
+<ol>
+<li><strong>임계 이상의 인장응력</strong>: 출력 상승으로 펠릿이 피복관을 미는 접촉하중(PCMI 하중)</li>
+<li><strong>부식 환경</strong>: 출력 상승 시 고온 펠릿에서 방출되어 균열을 따라 공급되는 요오드(Cs·Cd도 거론)</li>
+<li><strong>감수성 재료</strong>: Zr 합금</li>
+</ol>
+<p>세 조건이 겹치면 SCC가 생겨 자랄 수 있고, 균열이 시작·성장할 시간 동안 조건이 유지되면 관통합니다. 파손 연료봉은 내면에서 시작한 짧은 축방향 균열과 의벽개(pseudo-cleavage) 취성 파면을 보입니다. 일부 램프 시험에서는 목표 출력 도달 후 수 분~수십 분 안에 파손됐습니다. 큰 변형 없이 낮은 변형률에서도 일어난다는 점이 PCMI에 의한 기계적 파손과 다릅니다. 방사상 균열은 횡단면에서 보아야 하며, 응력과 요오드가 겹치는 자리는 균열이 펠릿 외주면에 열린 개구부의 맞은편입니다.</p>
+<figure class="article-image"><img alt="간극이 닫힌 연료봉 축방향 단면(모래시계화·대나무 마디·모따기)과 A–A 횡단면(방사상 균열 개구부·요오드 이동·원주 인장응력·내면 균열), PCI-SCC 조건 카드와 파손 유형 비교" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-010-pellet-cladding-interaction/fig1_pci_mechanism_cutaway.avif"/><figcaption>간극이 닫힌 연료봉 축방향 단면(모래시계화·대나무 마디·모따기)과 A–A 횡단면(방사상 균열 개구부·요오드 이동·원주 인장응력·내면 균열), PCI-SCC 조건 카드와 파손 유형 비교</figcaption></figure>
+<h2>원전에서의 의미</h2>
+<h3>언제 위험한가 — 출력 이력이 핵심</h3>
+<p>파손 여부는 <strong>램프 최종 출력(RTL)</strong>, <strong>선출력 증가폭(ΔP)</strong>, <strong>직전 출력 이력</strong>에 가장 크게 좌우됩니다[5]. 일정 출력에서 오래 운전하면 피복관 크립이 응력을 풀어 그 출력에 "컨디셔닝"됩니다. 그보다 낮은 범위의 출력 변화는 비교적 자유롭고, 더 높은 출력으로 새로 올라갈 때만 새 응력이 생깁니다. 장기간 저출력으로 운전하면 컨디셔닝 수준이 내려가므로(탈컨디셔닝) 정격 복귀 때 다시 제한이 걸립니다.</p>
+<p>위험이 큰 상황은 재장전 후 기동, 장기 저출력 뒤 복귀, 제어봉 이동에 따른 국부 출력 상승, 부하추종입니다. BWR은 제어봉이 노심 안에서 움직여 국부 램프가 잦아 1970년대 PCI 파손이 많았습니다. CANDU는 운전 중 연료 교체로 다발이 고출력 위치로 이동할 때 램프를 겪습니다. 새 연료는 간극이 열려 있어 오히려 덜 취약합니다.</p>
+<h3>설계 대책</h3>
+<ul>
+<li><strong>장벽(barrier) 피복관</strong>: BWR에서 Zircaloy-2 안쪽에 순수 Zr 라이너(약 75~100 μm, 벽 두께의 약 10 %)를 야금 접합합니다. 연한 Zr이 응력 집중을 완화하고 요오드 SCC 감수성이 낮습니다. 1980년대 초 도입됐고, 라이너가 관통되면 내식성이 낮아 2차 수소화가 커지는 한계가 있습니다.</li>
+<li><strong>도핑 펠릿</strong>: Cr₂O₃(또는 Cr₂O₃+Al₂O₃)를 첨가해 결정립을 키우고 고온 크립을 높입니다. 펠릿이 스스로 변형해 피복관 응력을 덜고 핵분열기체 방출도 줄입니다.</li>
+<li><strong>펠릿 형상</strong>: 끝 모따기(chamfer)·디싱(dish), 길이/직경비 축소로 모래시계화를 줄입니다.</li>
+<li><strong>CANDU</strong>: 피복관 내면 흑연 코팅(CANLUB)</li>
+<li><strong>제조 품질</strong>: 펠릿 칩·MPS 검사</li>
+</ul>
+<h3>운전 — 상승률 제한과 Soak 운전</h3>
+<ul>
+<li><strong>출력 상승률 제한</strong>: 1970년대 말 연료공급사가 도입했습니다. EPRI 공개 보고서(1000847)에 따르면[3] 재장전 후 PWR 기동의 문턱 출력은 발전소별로 노심 정격의 20~50 %(대부분 약 20 %)이고, 문턱 이하 상승률은 10~30 %/h, 문턱 이상은 정격 기준 3 %/h가 가장 흔합니다. 문턱 20 %에서 100 %까지 3 %p/h로 올리면 80 ÷ 3 ≈ 26.7시간이 걸리고 유지 시간은 별도입니다. 같은 보고서는 문턱 50~60 %·5 %/h로 완화해도 PCI 파손 가능성이 크게 늘지 않는다는 해석도 제시했습니다.</li>
+<li><strong>Soak 운전</strong>: 중간 출력에서 몇 시간 머물러 피복관 크립이 응력을 이완할 시간을 주는 운전입니다. 램프 시험에서 목표 출력에 머무는 시간도 soak라고 부릅니다.</li>
+<li><strong>BWR PCIOMR</strong>: GE의 예조건화 운전 권고로, 컨디셔닝 영역 위에서 선출력 증가율을 제한합니다. <!-- 확인필요: PCIOMR 정식 명칭(Preconditioning Interim Operating Management Recommendations) 원문 미열람 --> 장벽 피복관 도입 뒤에는 이 제한 없이 운전한 사례가 보고됐습니다.</li>
+<li><strong>노심 감시</strong>: 노심 감시 계통으로 PCI 여유와 축방향 출력분포를 관리합니다.</li>
+</ul>
+<figure class="article-image"><img alt="재장전 후 PWR 기동 예시(문턱 20 %, 3 %p/h, 50·75 %에서 4 h 유지, 약 34.7 h에 100 %)와 램프 시험의 주요 출력 인자(램프 전 선출력·ΔP·RTL) 개념도" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-010-pellet-cladding-interaction/fig2_power_ramp_conditioning.avif"/><figcaption>재장전 후 PWR 기동 예시(문턱 20 %, 3 %p/h, 50·75 %에서 4 h 유지, 약 34.7 h에 100 %)와 램프 시험의 주요 출력 인자(램프 전 선출력·ΔP·RTL) 개념도</figcaption></figure>
+<p>PCI 파손이 일어나면 냉각재 요오드·핵분열기체 방사능이 올라갑니다.</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50 App. A GDC 10</td>
+<td>정상운전·예상운전과도(AOO)에서 SAFDL 초과 금지[2]</td>
+</tr>
+<tr>
+<td>NUREG-0800 SRP 4.2 Rev.3(2007) II.1.B.vi</td>
+<td>PCI·PCMI 파손 기준은 현재 없음[1]. 관련 기준 ① 피복관 균일 변형률 ≤ 1 % ② 연료 용융 방지. 둘 다 PCI 방지에 불충분</td>
+</tr>
+<tr>
+<td>같은 절</td>
+<td>공급사가 출력 조정·상승률 설계 제한을 둠. AOO 변형률 해석에 열팽창·기체 팽윤 모델 적용</td>
+</tr>
+<tr>
+<td>RG 1.236(2020)</td>
+<td>RIA PCMI 파손 문턱을 피복관 초과수소 함수로 정의[4]</td>
+</tr>
+<tr>
+<td>KINS 안전심사지침 4.2</td>
+<td>국내 핵연료 설계 심사의 동등 체계</td>
+</tr>
+</tbody>
+</table>
+<p>1 % 기준의 "균일 변형률"은 과도로 생긴 탄성+비탄성 변형이며, 정상 운전 크립다운과 조사성장은 빼고 셉니다. SRP는 이 기준이 낮은 변형률의 부식 보조 파손과 펠릿 칩에 의한 국부 과변형을 막지 못한다고 명시합니다. 그래서 PCI는 인허가 기준보다 공급사 운전지침과 설계 개선으로 관리됩니다. <!-- 확인필요: KINS 안전심사지침 4.2 현행 판 조항 원문 미열람 --></p>
+<p>출제 당시(2002·2007·2010년)와 비교하면 SRP 4.2가 2007년 Rev.3으로 개정되며 이 문구가 정리됐고, RIA PCMI 기준은 2020년 RG 1.236으로 확정됐습니다. 도핑 펠릿 상용화와 부하추종 수요 증가도 현행 답안에 반영할 변화입니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>PCI-SCC</th>
+<th>PCMI</th>
+<th>피복관 크립다운</th>
+<th>피복관 붕괴</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>하중</td>
+<td>인장응력 + 요오드</td>
+<td>접촉하중·변형(요오드 SCC 없이도)</td>
+<td>외압에 의한 압축</td>
+<td>외압</td>
+</tr>
+<tr>
+<td>시기</td>
+<td>간극 폐쇄 후 출력 상승</td>
+<td>고연소도 RIA·큰 과출력</td>
+<td>간극 폐쇄 전 정상 운전</td>
+<td>초기, 축방향 간극(고밀화)</td>
+</tr>
+<tr>
+<td>변형률</td>
+<td>낮은 변형률에서도</td>
+<td>큼</td>
+<td>정상 크립</td>
+<td>국부 납작해짐</td>
+</tr>
+<tr>
+<td>시간</td>
+<td>수 분~수십 분</td>
+<td>수 ms~과도 기간</td>
+<td>연 단위</td>
+<td>장기</td>
+</tr>
+<tr>
+<td>대책</td>
+<td>라이너·도핑·상승률 제한</td>
+<td>엔탈피 제한, 수소 관리</td>
+<td>설계 반영(He 가압)</td>
+<td>He 가압, 안정 펠릿</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 간극 폐쇄 연료봉의 출력 상승 시 펠릿 팽창 응력 + 요오드에 의한 피복관 내면 SCC(PCI-SCC), 순수 기계적 파손은 PCMI</li>
+<li><strong>전제</strong>: 간극 폐쇄 — 열팽창·재배치·팽윤(펠릿) + 크립다운(피복관)</li>
+<li><strong>응력 집중</strong>: 모래시계화 → 펠릿 경계의 대나무 마디, 방사상 균열 끝, MPS</li>
+<li><strong>SCC 조건</strong>: 인장응력 + 요오드 환경 + 감수성 Zr 합금, 지속 시 관통</li>
+<li><strong>지배 변수</strong>: 램프 최종 출력, 증가폭, 출력 이력(컨디셔닝·탈컨디셔닝)</li>
+<li><strong>설계 대책</strong>: Zr 라이너 장벽 피복관(BWR), Cr₂O₃ 도핑 펠릿, 모따기·디싱, CANLUB(CANDU), MPS 검사</li>
+<li><strong>운전 대책</strong>: 문턱 출력(20~50 %) 이상 약 3 %/h 상승률 제한, Soak 운전(중간 유지), BWR PCIOMR, 노심 감시</li>
+<li><strong>규제</strong>: GDC 10, SRP 4.2 — PCI 기준 없음, 균일 변형률 1 %·연료 비용융은 불충분</li>
+<li><strong>Soak 운전</strong>: 일정 출력 유지로 피복관 크립 이완 → 컨디셔닝</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 연소도-직경 개략도(피복관 내경 크립다운, 펠릿 외경 고밀화 후 팽윤, 간극 폐쇄 후 함께 증가)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-010-pellet-cladding-interaction/sketch1_diameter_vs_burnup.avif"/><figcaption>답안지용 연소도-직경 개략도(피복관 내경 크립다운, 펠릿 외경 고밀화 후 팽윤, 간극 폐쇄 후 함께 증가)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020년 1교시 11번</td>
+<td>PCI 핵연료 손상 억제대책</td>
+</tr>
+<tr>
+<td>2019년 2교시 5번</td>
+<td>연소에 따른 피복관·소결체 직경변화와 개략도</td>
+</tr>
+<tr>
+<td>2010년 1교시 12번</td>
+<td>Soak Operation</td>
+</tr>
+<tr>
+<td>제81회 3교시 2번</td>
+<td>소결체-피복관 상호작용(PCI)</td>
+</tr>
+<tr>
+<td>제68회 1교시 7번</td>
+<td>PCI(Pellet-Clad Interaction)</td>
+</tr>
+</tbody>
+</table>
+<p>2019년 2교시 5번은 "가. 피복관 직경변화, 나. 소결체 직경변화, 다. 개략도"를 묻습니다. 피복관은 크립다운으로 줄다가 간극 폐쇄 뒤 펠릿에 밀려 늘고, 외면 산화막이 외경을 조금 키웁니다. 펠릿은 기동 시 열팽창·재배치로 커지고 고밀화로 잠시 줄었다가 팽윤으로 다시 커집니다. 위 답안용 도식이 다항의 개략도입니다(두 선 모두 열간 기준, 선 사이 거리 = 직경 간극).</p>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.2 "Fuel System Design", Rev. 3 (2007.3), II.1.B.vi, NRC ADAMS ML070740002.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criterion 10 "Reactor design".</li>
+<li>EPRI, "Relaxation of Power Ramp Rate Restrictions for ZIRLO Clad Fuel Rods", Report 1000847, EPRI 공개 다운로드.</li>
+<li>U.S. NRC, Regulatory Guide 1.236 "Pressurized-Water Reactor Control Rod Ejection and Boiling-Water Reactor Control Rod Drop Accidents" (2020).</li>
+<li>OECD/NEA, "Pellet-clad Interaction in Water Reactor Fuels", Seminar Proceedings, Aix-en-Provence (2005).</li>
+</ol>

@@ -1,0 +1,276 @@
+<figure class="article-image"><img alt="[개념 노트] 운전제한조건(LCO) — 선정기준 4가지와 조치·제한시간을 읽는 규칙 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-op-002-lco/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>운전제한조건(LCO)은 원자로시설이 안전한 상태를 유지하는 데 필요한 설비의 최소 기능·성능 수준입니다. 선정기준 4가지 중 하나 이상에 해당하는 항목을 운영기술지침서에 두며, 충족하지 못하면 정해진 조치요구사항을 제한시간 안에 수행하거나 원자로를 정지해야 합니다.</strong></p>
+<p>근거는 원안위 고시 「운영기술지침서의 작성에 관한 기준」 제5조[1], 미국 10 CFR 50.36(c)(2)[2]입니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>선정기준 4가지 — 안전해석의 어느 부분을 지키는가</h3>
+<p>선정기준은 "무엇을 운영기술지침서에 남길 것인가"를 거르는 기준입니다. 안전해석과의 관계로 보면 외우기 쉽습니다.</p>
+<table>
+<thead>
+<tr>
+<th>기준</th>
+<th>고시 제5조② 요지</th>
+<th>해석과의 관계</th>
+<th>대상</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>주제어실에서 원자로냉각재압력경계(RCPB)의 현저한 성능저하를 감시·지시하는 계기</td>
+<td>사고 전 조기 탐지</td>
+<td>계기</td>
+</tr>
+<tr>
+<td>2</td>
+<td>핵분열생성물 방벽의 결함·위협을 가정하는 설계기준사고·과도상태 해석의 <strong>초기조건</strong>인 공정변수·설비·운전제한사항</td>
+<td>해석의 출발점</td>
+<td>변수·설계특성·운전제한</td>
+</tr>
+<tr>
+<td>3</td>
+<td>그 사고·과도를 완화하는 **주성공경로(primary success path)**의 일부인 구조물·계통·기기</td>
+<td>해석의 완화 수단</td>
+<td>SSC</td>
+</tr>
+<tr>
+<td>4</td>
+<td>운전경험 또는 PSA 결과 공중의 건강·안전에 중요한 구조물·계통·기기</td>
+<td>해석 밖의 위험 중요도</td>
+<td>SSC</td>
+</tr>
+</tbody>
+</table>
+<p>10 CFR 50.36은 "하나 이상(one or more)"에 해당하면 LCO를 두라고 정합니다[2]. 기준 1~3은 1987년 잠정 정책성명부터 있었고, 기준 4는 그때 "RHR·RCIC·SLC·RPT는 유지한다"는 별도 문구였다가 1993년 최종 정책성명에서 기준으로 정리되었습니다. 1995년 50.36 개정으로 규칙이 되었습니다[5][6]. 어느 기준에도 들지 않는 항목은 FSAR·계획서 같은 사업자 관리 문서로 **이관(relocation)**했습니다. 예를 들어 PWR 붕산 주입 계통의 LCO가 이렇게 옮겨졌습니다[5].</p>
+<h3>LCO 조항은 네 칸으로 읽는다</h3>
+<ul>
+<li><strong>LCO 문장</strong>: 무엇이 운전가능하거나 범위 안에 있어야 하는가</li>
+<li><strong>적용(Applicability)</strong>: 어느 운전모드·조건에서 요구되는가. 예를 들어 ECCS(운전중)는 모드 1·2·3, SIT는 모드 1·2와 가압기 압력이 일정 값 이상인 모드 3에 적용됩니다.</li>
+<li><strong>조치(Actions)</strong>: 불만족상태 – 조치요구사항 – 제한시간. 마지막 불만족상태는 대개 "조치·제한시간을 지키지 못하면 모드 3 → 모드 4 또는 5"인 정지 조치입니다.</li>
+<li><strong>점검요구사항(SR) + 점검주기</strong>: LCO 충족을 시험·교정·검사로 확인합니다.</li>
+</ul>
+<p>기술배경서(Bases)에는 그 조항이 몇 번 기준에 해당하는지가 적혀 있습니다(예: "기준 2와 3을 만족").</p>
+<h3>제한시간은 언제부터 흐르나</h3>
+<p>제한시간은 별도 기산 규정이 없으면 운전불능이나 변수 이탈을 <strong>발견한 시점</strong>부터 셉니다[3]. 제한시간 안에 복구하면 남은 조치는 하지 않아도 되고(LCO 3.0.2), 조치를 이행하지 못해 다음 불만족상태로 넘어가면 새 시계는 그 상태에 들어간 시점부터 시작합니다. "계열별 별도 진입 허용" 주석이 있으면 계열마다 시계가 따로 돕니다. 그림의 미복구 예시처럼 정지 조치의 6시간·36시간은 모두 다음 불만족상태에 들어간 시점부터 계산하며, 6시간 뒤에 36시간을 더하는 구조가 아닙니다.</p>
+<figure class="article-image"><img alt="교류전원 LCO(NUREG-1432 3.8.1 구조) 조항 해부와 EDG 1대 운전불능 발견 시 조치·제한시간 간트 차트" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-op-002-lco/fig1_lco_completion_time_gantt.avif"/><figcaption>교류전원 LCO(NUREG-1432 3.8.1 구조) 조항 해부와 EDG 1대 운전불능 발견 시 조치·제한시간 간트 차트</figcaption></figure>
+<h3>일반 규칙 LCO 3.0.x와 SR 3.0.x</h3>
+<table>
+<thead>
+<tr>
+<th>규칙</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LCO 3.0.1</td>
+<td>적용 모드에서는 LCO를 만족해야 함</td>
+</tr>
+<tr>
+<td>LCO 3.0.2</td>
+<td>불만족 발견 시 해당 조치 수행, 제한시간 안에 복구하면 조치 종료</td>
+</tr>
+<tr>
+<td>LCO 3.0.3</td>
+<td>해당 조치가 없거나 이행 불가 시 단계적 정지(1시간 안에 착수, 7시간 모드 3·13시간 모드 4·37시간 모드 5)[3]</td>
+</tr>
+<tr>
+<td>LCO 3.0.4</td>
+<td>LCO 불만족 상태에서 적용 모드로 올라가는 진입 제한. 조치가 무기한 운전을 허용하거나, 위험평가 후 허용(일부 계통 제외)하는 경우만 가능. 정지 방향 모드 변경은 막지 않음</td>
+</tr>
+<tr>
+<td>LCO 3.0.5</td>
+<td>운전가능성 입증 시험만을 위한 일시 복귀 허용</td>
+</tr>
+<tr>
+<td>LCO 3.0.6</td>
+<td>지원계통 불만족 때는 지원계통 조치만 수행. 단 안전기능 결정지침서로 안전기능 상실을 평가</td>
+</tr>
+<tr>
+<td>LCO 3.0.7</td>
+<td>물리시험 등 특수시험 예외</td>
+</tr>
+<tr>
+<td>SR 3.0.1</td>
+<td>SR 불만족 또는 주기 내 미수행 = LCO 불만족</td>
+</tr>
+<tr>
+<td>SR 3.0.2</td>
+<td>점검주기 1.25배까지 허용(누적 연장 불가)</td>
+</tr>
+<tr>
+<td>SR 3.0.3</td>
+<td>점검 누락 발견 시 24시간 또는 점검주기 중 긴 시간까지 LCO 불만족 선언 유예(24시간 초과분은 위험평가)[7]</td>
+</tr>
+<tr>
+<td>SR 3.0.4</td>
+<td>적용 모드 진입 전 해당 SR 충족 필요</td>
+</tr>
+</tbody>
+</table>
+<p>LCO 3.0.8(완충기)과 3.0.9(비 T/S 방벽)은 판에 따라 추가된 규칙입니다. <!-- 확인필요: LCO 3.0.8·3.0.9 번호와 국내 호기 T/S 반영 여부는 NUREG-1432 원문·국내 T/S로 재확인 필요(NRC 원문 다운로드 차단) --></p>
+<h2>원전에서의 의미</h2>
+<p>선정기준별 예시(CE형 표준기술지침서 NUREG-1432 기반 APR1400 T/S 구조)는 다음과 같습니다.</p>
+<table>
+<thead>
+<tr>
+<th>기준</th>
+<th>LCO 예</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>RCS 누설감지 계측(격납건물 집수조 수위·유량, 격납건물 대기 방사능 감시)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>DNB 변수(가압기 압력·저온관 온도·RCS 유량), 정지여유도, 출력분포 한계, RCS 비방사능</td>
+</tr>
+<tr>
+<td>3</td>
+<td>원자로보호계통·ESFAS 계측, ECCS, SIT, 보조급수, 격납건물 살수, 교류전원(소외전원 2회로 + EDG 2대)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>모드 4·5 정지냉각(RCS 루프) 요건, 원격정지계통</td>
+</tr>
+</tbody>
+</table>
+<p>WH형·OPR형·APR형의 선정기준은 같습니다. 차이는 조항 명칭(W형 축압기·RHR, CE·APR형 SIT·SDC)과 APR1400 고유 설비(POSRV, IRWST, 직접주입) 반영에 있습니다.</p>
+<ul>
+<li><strong>SIT 압력·수위의 상·하한</strong>: 하한은 대형 LOCA 해석이 가정한 주입 시점과 재충수 수량을, 상한은 질소 공간과 탱크 설계 여유를 지켜 해석 가정 범위를 벗어나지 않게 합니다. 해석 범위의 양 끝을 모두 지키는 것이 이 LCO의 취지입니다. 그래도 기술배경서는 SIT를 해석의 완화 설비로 보아 기준 3으로만 분류합니다(W형 축압기도 같음)[3][4]. <!-- 확인필요: APR1400 SIT 압력·수량 수치는 공개 확정 자료 미확보로 본문에 기재하지 않음 --></li>
+<li><strong>교류전원</strong>: 기준 3의 대표 예이고 그림의 시간축이 이 구조입니다.</li>
+<li><strong>기준 4의 재평가</strong>: 2020년 미국 업계(TSTF)는 최신 PSA·운전경험으로 원격정지계통·RHR이 기준 4를 여전히 만족하는지 재평가를 제안했습니다. 결론은 아직 정해지지 않았습니다[5].</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>원안위 고시 「운영기술지침서의 작성에 관한 기준」 제5조(현행 제2024-13호)</td>
+<td>① LCO 정의와 불충족 시 조치 ② 선정기준 1~4 [1]</td>
+</tr>
+<tr>
+<td>같은 고시 제3조·제6조</td>
+<td>논리연결자·제한시간·점검주기, 점검요구사항</td>
+</tr>
+<tr>
+<td>10 CFR 50.36(c)(2)(i)·(ii)·(iii)</td>
+<td>LCO 정의, 기준 1~4, 1995-08-18 이전 허가는 개정 제안 의무 없음 [2]</td>
+</tr>
+<tr>
+<td>NUREG-1431(W)·1432(CE) 1.3절·3.0절</td>
+<td>제한시간 규칙, LCO 3.0.x·SR 3.0.x [3][4]</td>
+</tr>
+<tr>
+<td>TSTF-359·358</td>
+<td>LCO 3.0.4 위험평가 진입, SR 3.0.3 유예 확대 [7]</td>
+</tr>
+</tbody>
+</table>
+<p>출제 당시(2009·2012)와 비교하면 근거 법령이 「원자력법」에서 「원자력안전법」(2011)으로 바뀌었고, 선정기준 4가지는 그대로입니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>안전제한치(SL)</th>
+<th>운전제한조건(LCO)</th>
+<th>점검요구사항(SR)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>대상</td>
+<td>방벽 보호 공정변수 한계</td>
+<td>설비 최소 기능·성능</td>
+<td>LCO 충족 확인 시험</td>
+</tr>
+<tr>
+<td>벗어나면</td>
+<td>정지·보고·승인 후 재가동</td>
+<td>조치·제한시간, 못 하면 정지</td>
+<td>LCO 불만족으로 간주</td>
+</tr>
+<tr>
+<td>성격</td>
+<td>넘으면 안 되는 선</td>
+<td>관리되는 허용 상태</td>
+<td>확인 수단</td>
+</tr>
+</tbody>
+</table>
+<p>선정기준과 <strong>안전등급</strong>도 다릅니다. 안전등급은 설계·품질 요건의 분류이고, 선정기준은 운영기술지침서에 남길 항목을 고르는 기준입니다. 원격정지계통처럼 기준 4로 LCO가 되는 설비도 있습니다. LCO 3.0.3과 개별 조항의 정지 조치도 구별해야 합니다. 개별 조항에 정지 조치가 있으면 그 시간이 우선합니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 안전 상태 유지를 위한 설비의 최소 기능·성능 수준(고시 제5조①, 10 CFR 50.36(c)(2)(i))</li>
+<li><strong>불충족 시</strong>: 조치요구사항을 제한시간 안에 수행, 못 하면 단계적 정지</li>
+<li><strong>기준 1</strong>: 주제어실 RCPB 현저한 성능저하 감시·지시 계기 — 예: 누설감지 계측</li>
+<li><strong>기준 2</strong>: 설계기준사고·과도 해석의 초기조건 — 예: DNB 변수, 정지여유도</li>
+<li><strong>기준 3</strong>: 사고 완화 주성공경로 SSC — 예: ECCS, SIT, 교류전원</li>
+<li><strong>기준 4</strong>: 운전경험·PSA상 중요 SSC — 예: 모드 4·5 정지냉각, 원격정지</li>
+<li><strong>판정</strong>: 하나 이상 해당 시 LCO, 비해당 항목은 FSAR·계획서로 이관</li>
+<li><strong>조항 구성</strong>: LCO + 적용 모드 + 조치(불만족상태·조치·제한시간) + SR</li>
+<li><strong>일반 규칙</strong>: 발견 시점 기산, LCO 3.0.2(복구 시 종료)·3.0.3·3.0.4(진입 제한), SR 1.25배</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 LCO 선정기준 4가지 판정 흐름도" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-op-002-lco/sketch1_lco_criteria_flow.avif"/><figcaption>답안지용 LCO 선정기준 4가지 판정 흐름도</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026년 1교시 13번</td>
+<td>LCO 선정기준 4가지</td>
+</tr>
+<tr>
+<td>2025년 4교시 4번</td>
+<td>고시의 LCO 선정기준</td>
+</tr>
+<tr>
+<td>2022년 4교시 6번</td>
+<td>안전제한치·LCO 및 선정기준·점검요구사항</td>
+</tr>
+<tr>
+<td>2021년 3교시 4번</td>
+<td>WH·OPR·APR형 선정기준과 기준별 예</td>
+</tr>
+<tr>
+<td>2019년 3교시 6번</td>
+<td>비상전원 모선·EDG 기동조건·교류전원 LCO</td>
+</tr>
+<tr>
+<td>2016년 2교시 6번</td>
+<td>SL·LSSS·LCO·SR·설계특성</td>
+</tr>
+<tr>
+<td>2012년 3교시 3번</td>
+<td>운영기술지침서 구성·LCO·보고요구사항</td>
+</tr>
+<tr>
+<td>2009년 4교시 3번</td>
+<td>가압기 전열기, SIT 압력·수위 상·하한 근거</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「운영기술지침서의 작성에 관한 기준」, 원안위고시 제2024-13호(2024.12.31 시행), 제3·5·6조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR 50.36 "Technical specifications", (c)(2)(i)–(iii).</li>
+<li>U.S. NRC, NUREG-1432 "Standard Technical Specifications — Combustion Engineering Plants", Rev. 4, Sec. 1.3 "Completion Times", 3.0, 3.5.1·B 3.5.1, 3.8.1.</li>
+<li>U.S. NRC, NUREG-1431 "Standard Technical Specifications — Westinghouse Plants", Rev. 4, Sec. 3.0, B 3.5.1.</li>
+<li>Technical Specifications Task Force(TSTF), "Proposal to Reevaluate Application of 10 CFR 50.36(c)(2)(ii) Criterion 4" (2020.10.30), NRC ADAMS ML20276A135.</li>
+<li>U.S. NRC, "Final Policy Statement on Technical Specifications Improvements for Nuclear Power Reactors", 58 FR 39132 (1993); 10 CFR 50.36 개정 최종규칙, 60 FR 36953 (1995).</li>
+<li>TSTF-358(SR 3.0.3 유예)·TSTF-359(LCO 3.0.4 위험평가 진입) 승인 Traveler, NRC 공개 문서(판 미기재).</li>
+</ol>

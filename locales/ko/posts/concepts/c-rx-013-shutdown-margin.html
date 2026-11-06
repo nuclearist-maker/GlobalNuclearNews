@@ -1,0 +1,249 @@
+<figure class="article-image"><img alt="[개념 노트] 정지여유도(Shutdown Margin) — 반응도가 가장 큰 제어봉 1개가 걸려도 남는 미임계 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-013-shutdown-margin/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>정지여유도(SDM)는 원자로가 현재 미임계인 정도, 또는 현재 상태에서 "반응도가가 가장 큰 제어봉 1개는 완전 인출, 나머지 제어봉은 완전 삽입, (모드 1·2이면) 연료·감속재 온도는 영출력 준위"라는 조건에서 평가한 원자로의 미임계 정도(반응도량)입니다.</strong> 반응도로 쓰면 ρ = −SDM이고, 크기는 %Δk/k나 pcm으로 표기합니다.</p>
+<p>제67회·제78회 1교시의 "(Reactor) Shutdown Margin"은 이 정의와 가정조건, 요구값, 감시 방법을 쓰면 됩니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>T/S 정의의 세 가정</h3>
+<p>CE형 표준기술지침서(STS, NUREG-1432) 1.1 정의는 다음 세 가정을 둡니다[1]. 웨스팅하우스형 STS(NUREG-1431)는 ①·②만 둡니다[2].</p>
+<ol>
+<li><strong>최대가 제어봉 1개 고착</strong>: 반응도가가 가장 큰 제어봉 1개가 완전 인출된 채 남고, 나머지 전강 제어봉(정지·조절)은 완전 삽입된다고 봅니다. 두 가지 독립적인 방법으로 모든 제어봉의 완전 삽입이 확인되면 고착봉을 고려하지 않아도 됩니다. 반대로 삽입이 불가능한 다른 제어봉이 있으면 그 반응도가도 빼야 합니다.</li>
+<li><strong>영출력 온도</strong>: 모드 1·2에서는 연료·감속재 온도가 공칭 영출력 설계 준위로 바뀐다고 봅니다. 출력결손만큼이 정지 시 되돌아오기 때문입니다.</li>
+<li><strong>부분강 제어봉 위치 불변</strong>: CE형에만 있는 항목입니다.</li>
+</ol>
+<p>"순간(instantaneous)" 반응도량이므로 제논은 현재 값을 씁니다. 감시 계산에는 붕소 농도, 제어봉 위치, RCS 평균온도, 연소도, 제논·사마륨 농도, 온도계수가 들어갑니다. "제논-무(xenon free), 68 °F" 가정은 BWR STS(NUREG-1433/1434)의 정의이므로 PWR 답안과 섞지 않습니다. 교재(Duderstadt &amp; Hamilton 표 14-1)의 정지여유도는 전 제어요소 삽입 기준이라 T/S 정의와 다릅니다[6].</p>
+<h3>정의식과 계산 함정</h3>
+<ul>
+<li>SDM = −ρ(N−1) = (1 − k_N−1)/k_N−1, k_N−1은 최대가 1개 인출 상태의 keff입니다.</li>
+<li>k = 0.987이면 1 − k = 0.0130이지만 SDM = 0.0130/0.987 = 0.01317(1,317 pcm)입니다.</li>
+<li>1.3 %Δk/k = 1,300 pcm ≈ $2.0(β = 0.0065 가정)입니다.</li>
+</ul>
+<h3>운전 중 정지여유도는 어떻게 계산하나</h3>
+<p>출력운전 중에는 노심이 임계이므로 SDM을 "제어봉이 낼 수 있는 음의 반응도 − 정지하면서 되돌아올 양의 반응도"로 셉니다. 웨스팅하우스형 FSAR의 제어봉 반응도 요구 표가 이 구조입니다.</p>
+<p>가용 SDM = (전 제어봉 제어능 − 최대가 고착봉) × (1 − 불확도) − (출력결손 + 제어봉 삽입허용)</p>
+<p>계산 순서는 고착봉 제외 → 불확도 감액 → 출력결손·삽입허용 차감입니다. 고착봉 손실은 같은 상태에서 전 제어봉 삽입과 N−1 삽입의 반응도 차이입니다. 출력결손에는 도플러·감속재 효과와 공극·출력분포 재분포 효과가 들어가고, 삽입허용(RIA)은 운전 중 허용된 제어봉 선삽입으로 이미 써 버린 제어능입니다. 불확도 10 %도 보편 상수가 아니라 설계 방법론의 값입니다.</p>
+<p>설명용 가정값(자체 설정, 특정 호기 값 아님)으로 계산하면 다음과 같습니다(%Δk/k).</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>BOC</th>
+<th>EOC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>전 제어봉 삽입 제어능</td>
+<td>7.60</td>
+<td>7.40</td>
+</tr>
+<tr>
+<td>최대가 고착봉</td>
+<td>0.90</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>불확도 10 %</td>
+<td>0.67</td>
+<td>0.64</td>
+</tr>
+<tr>
+<td>출력결손(전출력 → 영출력)</td>
+<td>1.60</td>
+<td>2.90</td>
+</tr>
+<tr>
+<td>제어봉 삽입허용</td>
+<td>0.50</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>가용 SDM</td>
+<td>3.93</td>
+<td>2.36</td>
+</tr>
+<tr>
+<td>요구값 초과분(1.3 기준)</td>
+<td>2.63</td>
+<td>1.06</td>
+</tr>
+</tbody>
+</table>
+<p>주기말에는 붕소가 낮아 감속재온도계수(MTC)가 더 음이 되고, 전출력에서 영출력으로 식을 때 들어오는 양의 반응도(출력결손)가 커집니다. 이 예에서는 EOC의 출력결손 증가가 가용 SDM 감소를 주도합니다. 다만 제어봉 제어능과 고착봉 제어능도 연소에 따라 변하므로 최소 시점은 노심설계 계산으로 확인합니다.</p>
+<figure class="article-image"><img alt="전출력 설계용 SDM 수지(설명용 가정값) BOC 7.60 → 가용 3.93, EOC 7.40 → 가용 2.36, 요구값 1.3 %Δk/k 점선, T/S 정의 요약 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-013-shutdown-margin/fig1_sdm_budget_bar.avif"/><figcaption>전출력 설계용 SDM 수지(설명용 가정값) BOC 7.60 → 가용 3.93, EOC 7.40 → 가용 2.36, 요구값 1.3 %Δk/k 점선, T/S 정의 요약 카드</figcaption></figure>
+<h3>연소와 정지 과정에서의 변화</h3>
+<p>제76회 3교시 6번은 연소 반응도 변화와 정지 시 SDM을 함께 묻습니다. 정지 직후에는 제어봉이 들어가 SDM이 크지만, 냉각(음의 MTC → 양의 반응도)과 제논 붕괴(양의 반응도)가 SDM을 갉아먹습니다. 그래서 냉각을 시작하기 전에 붕소를 냉간 정지 농도까지 올립니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>무엇을 보장하나 — 안전해석의 초기조건</h3>
+<p>2018년 4교시 6번 나)의 답입니다. STS Bases는 SDM 요건이 다음 세 가지를 보장한다고 정리합니다.</p>
+<ol>
+<li>모든 운전 상태·과도·설계기준사고에서 원자로를 <strong>미임계로 만들 수 있음</strong></li>
+<li>가상사고의 반응도 과도가 <strong>허용 한계 안에서 제어 가능</strong>함</li>
+<li>정지 상태에서 <strong>비의도적 임계를 막을</strong> 만큼 충분히 미임계를 유지함</li>
+</ol>
+<p>SDM은 사고해석이 가정하는 초기조건이므로 10 CFR 50.36(c)(2)(ii) 기준 2에 따라 LCO가 됩니다[3].</p>
+<h3>크기를 정하는 사고 — 주기말 영출력 MSLB</h3>
+<p>모드 1~4에서 요구값을 정하는 사고는 대개 주증기관 파단(MSLB)입니다. 재임계 판정은 다음 순반응도로 합니다.</p>
+<p>ρ(t) = −SDM_HZP + Δρ_감속재(t) + Δρ_연료(t) + Δρ_붕소(t) (HZP 기준 개념 수지, 기타 효과 생략)</p>
+<p>ρ = 0이면 임계, ρ &gt; 0이면 초임계(재임계)입니다. 감속재 항은 과냉각, 연료 항은 도플러, 붕소 항은 안전주입 붕산(음)입니다.</p>
+<ul>
+<li><strong>EOC</strong>: MTC가 가장 음이어서 과냉각 반응도가 가장 큽니다.</li>
+<li><strong>HZP</strong>: 출력결손이 없어 초기 SDM이 T/S 최소값 그대로이고, 도플러 완충도 작습니다.</li>
+<li><strong>중복 차감 금지</strong>: SDM에는 고착봉이 이미 반영되어 있으므로 고착봉 제어능을 수지에서 또 빼지 않습니다. 같은 이유로 SDM에 넣은 전출력 → 영출력 출력결손도 다시 더하지 않습니다. 고착봉은 출력분포(국부 첨두) 평가에만 다시 쓰입니다.</li>
+<li>예: α_M = −50 pcm/°C로 60 °C 냉각되면 +3,000 pcm이어서 1,300 pcm을 넘습니다. 붕산 주입과 도플러가 재임계 출력을 제한합니다.</li>
+</ul>
+<p>모드 5처럼 저온에서는 붕소 희석 사고가 요구값을 정합니다. SRP 15.4.6은 경보 후 SDM 상실까지 운전원 조치시간을 재장전 모드 30분, 그 밖의 모드 15분 이상 요구합니다[5].</p>
+<h3>요구값 예</h3>
+<ul>
+<li>웨스팅하우스형 COLR 예(Callaway): 모드 1~4 <strong>1.3 %Δk/k</strong>, 모드 5 <strong>1.0 %Δk/k</strong>[7]</li>
+<li>CE형 COLR 예(Waterford 3, Cycle 23): CEA 인출 가능 상태 Tavg &gt; 200 °F <strong>5.15 %Δk/k</strong>, 이하 <strong>2.0 %Δk/k</strong>[7]</li>
+<li>CE형이 큰 것은 MSLB 과냉각 반응도가 크기 때문입니다. 국내 OPR1000·APR1400 값은 호기별 COLR을 따릅니다.<!-- 확인필요: 국내 호기 SDM 요구값(COLR) 미확인 — 수치 단정 금지 --></li>
+</ul>
+<h3>감시와 검증</h3>
+<ul>
+<li><strong>적용 모드</strong>: 웨스팅하우스형 STS LCO 3.1.1은 모드 2(keff &lt; 1)·3·4·5에 적용합니다. 모드 1·2(임계)는 정지·조절 제어봉 <strong>삽입한계</strong>(LCO 3.1.5·3.1.6)가 SDM을 보장합니다.</li>
+<li><strong>감시 주기</strong>: SR 3.1.1.1에 따라 24시간마다 COLR 한계 이내인지 계산으로 확인합니다[2].</li>
+<li><strong>미충족 시</strong>: 15분 이내 붕산 주입을 시작해 회복합니다.</li>
+<li><strong>예상임계조건(ECC/ECP)</strong>: 기동 전 임계 붕소·제어봉 위치를 예측하고, 실제 임계점과 비교해 노심 반응도 수지를 검증합니다(SR 3.1.2, 측정값이 예측 ±1 %Δk/k 이내). 예측이 맞아야 그 노심 모델로 계산한 SDM도 믿을 수 있습니다.<!-- 확인필요: 기동 시 ECP 허용 범위(예 ±500 pcm)는 호기 절차값으로 재확인 --></li>
+<li><strong>낙하 불능 제어봉</strong>: 그 봉의 제어능을 추가로 빼고 다시 계산합니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>운영기술지침서 1.1 정의, LCO 3.1.1(APR1400 DC는 Tcold 99 °C 기준 3.1.1·3.1.2로 분할)</td>
+<td>정의·LCO, 수치는 COLR</td>
+</tr>
+<tr>
+<td>「원자로시설 등의 기술기준에 관한 규칙」 제28조(반응도제어계통)</td>
+<td>GDC 26~28 상응 요건<!-- 기술기준규칙 제28조: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 --></td>
+</tr>
+<tr>
+<td>10 CFR 50 App. A GDC 26·27·28</td>
+<td>고착봉 같은 오동작 여유, 냉간 미임계, 반응도 사고 제한[3]</td>
+</tr>
+<tr>
+<td>10 CFR 50.36(c)(2)(ii) 기준 2</td>
+<td>해석 초기조건 → LCO</td>
+</tr>
+<tr>
+<td>Generic Letter 88-16</td>
+<td>SDM 등 주기별 노심 제한값을 COLR로 이관[4]</td>
+</tr>
+<tr>
+<td>NUREG-0800 SRP 4.3, 15.1.5, 15.4.6</td>
+<td>노심 설계, MSLB, 붕소 희석 평가</td>
+</tr>
+</tbody>
+</table>
+<p>출제 당시(2002~2025년)와 비교해 정의와 GDC는 바뀌지 않았습니다. 수치는 T/S 본문에서 COLR로 옮겨졌고, APR1400 DC는 냉각재 온도에 따라 LCO를 둘로 나눴습니다[8]. BWR은 TSTF-535로 기준 온도를 "68 °F 또는 더 반응도가 큰 온도"로 바꿨습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>정지여유도(T/S)</th>
+<th>교재 정지여유도</th>
+<th>잉여반응도</th>
+<th>미임계도(keff 기준)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>제어봉 가정</td>
+<td>최대가 1개 인출</td>
+<td>전 제어요소 삽입</td>
+<td>전부 인출</td>
+<td>실제 위치</td>
+</tr>
+<tr>
+<td>온도</td>
+<td>현재(모드 1·2는 영출력)</td>
+<td>지정 상태</td>
+<td>지정 상태</td>
+<td>실제</td>
+</tr>
+<tr>
+<td>부호</td>
+<td>미임계 크기(+)</td>
+<td>+</td>
+<td>+</td>
+<td>keff &lt; 1</td>
+</tr>
+<tr>
+<td>쓰임</td>
+<td>LCO, 사고해석 초기조건</td>
+<td>총 제어능 = ρex + SDM</td>
+<td>주기 예산</td>
+<td>재장전 keff ≤ 0.95</td>
+</tr>
+</tbody>
+</table>
+<p>같은 기준 상태에서 <strong>총 제어능 = 잉여반응도 + 정지여유도</strong>입니다(교재식, 전 제어요소 삽입 기준[6]; 2025년 2교시 6번 다항).</p>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] Shutdown Margin</strong></p>
+<ol>
+<li><strong>정의</strong>: 현재 미임계 정도, 또는 규정된 가정 상태에서 평가한 <strong>순간 반응도량</strong>(미임계 정도), ρ = −SDM</li>
+<li><strong>가정①</strong>: 반응도가 <strong>최대인 제어봉 1개 완전 인출(고착)</strong>, 나머지 완전 삽입</li>
+<li><strong>가정②</strong>: 모드 1·2는 연료·감속재 온도를 <strong>영출력 준위</strong>로, 제논은 현재 값</li>
+<li><strong>식</strong>: SDM = (1 − k_N−1)/k_N−1</li>
+<li><strong>운전 중</strong>: (전 제어능 − 고착봉) × 0.9 − (출력결손 + 삽입허용)</li>
+<li><strong>요구값 근거</strong>: 호기별 안전해석 — 대개 <strong>EOC·HZP MSLB</strong>(MTC 최대 음), 저온은 붕소 희석</li>
+<li><strong>보장 사항</strong>: 미임계 달성, 사고 반응도 과도 제어, 비의도적 임계 방지</li>
+<li><strong>요구값 예</strong>: W형 1.3 %Δk/k(모드 5 1.0), 값은 <strong>COLR</strong></li>
+<li><strong>감시</strong>: 24시간 계산, 모드 1·2는 <strong>삽입한계</strong>, 기동 전 ECC로 노심 모델 검증</li>
+<li><strong>관계</strong>: 총 제어능 = 잉여반응도 + SDM, MSLB 수지에서 고착봉 <strong>중복 차감 금지</strong></li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: 노심 배치 개념도에 최대가 제어봉 1개만 인출, 반응도 수직선 0과 −SDM" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-013-shutdown-margin/sketch1_sdm_definition.avif"/><figcaption>답안용 도식: 노심 배치 개념도에 최대가 제어봉 1개만 인출, 반응도 수직선 0과 −SDM</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 2교시 6번</td>
+<td>잉여반응도와 정지여유도의 관계</td>
+</tr>
+<tr>
+<td>2018년 4교시 6번</td>
+<td>운영기술지침서 정지여유도 정의·안전해석 보장 사항</td>
+</tr>
+<tr>
+<td>제78회 1교시 8번</td>
+<td>Shutdown Margin</td>
+</tr>
+<tr>
+<td>제76회 3교시 6번</td>
+<td>연소 반응도 변화와 정지 시 정지여유도</td>
+</tr>
+<tr>
+<td>제67회 1교시 6번</td>
+<td>Reactor Shutdown Margin</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, NUREG-1432 "Standard Technical Specifications — Combustion Engineering Plants", Vol. 1 Specifications(1.1 Definitions "Shutdown Margin", LCO 3.1.1) 및 Vol. 2 Bases(B 3.1.1). NRC 웹 공개.</li>
+<li>U.S. NRC, NUREG-1431 "Standard Technical Specifications — Westinghouse Plants", 1.1 Definitions, LCO 3.1.1·SR 3.1.1.1, LCO 3.1.5·3.1.6, SR 3.1.2. NRC 웹 공개.</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix A General Design Criteria 26·27·28; 10 CFR 50.36(c)(2)(ii) Criterion 2.</li>
+<li>U.S. NRC, Generic Letter 88-16 "Removal of Cycle-Specific Parameter Limits from Technical Specifications" (1988).</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.3 "Nuclear Design", 15.1.5 "Steam System Piping Failures", 15.4.6 "Inadvertent Decrease in Boron Concentration in the Reactor Coolant System".</li>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, John Wiley &amp; Sons (1976), 14장(표 14-1, 총 제어능 관계식).</li>
+<li>Callaway Plant Core Operating Limits Report; Waterford 3 Core Operating Limits Report (Cycle 23). NRC ADAMS 공개.</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Chapter 16 "Technical Specifications"(LCO 3.1.1·3.1.2 SDM 분할). NRC 설계인증 공개 문서.</li>
+</ol>

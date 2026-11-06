@@ -1,0 +1,205 @@
+<figure class="article-image"><img alt="[개념 노트] 안전등급(Safety Class) — 안전기능으로 매기는 등급과 규격·내진·품질의 연결 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-op-005-safety-class/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>안전등급은 원자로시설의 설비가 수행하는 안전기능(원자로냉각재압력경계 건전성, 안전정지·정지상태 유지, 소외 피폭을 일으킬 사고의 예방·완화)에 따라 부여하는 등급으로, 국내는 원안위 고시에 따라 안전등급 1·2·3과 비안전등급으로 나누고 등급마다 설계·제작·검사 규격을 정합니다.</strong></p>
+<p>핵심은 "기능 → 등급 → 규격"의 순서입니다. 설비가 무엇을 하느냐로 등급을 정하고, 그 등급이 적용 규격(ASME III Class 1·2·3, KEPIC MNB·MNC·MND)과 품질보증 수준을 끌고 옵니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>등급을 나누는 기준: 기능 실패의 결과</h3>
+<p>모든 설비에 최고 규격을 적용하면 비용만 커지고 안전은 더 나아지지 않습니다. 그래서 GDC 1(10 CFR 50 App. A)[3]과 원자로규칙 제12조[1]는 "안전기능의 중요도에 상응하는" 등급과 규격을 요구합니다. 등급을 가르는 질문은 하나입니다. <strong>그 설비가 고장 나면 어떤 방벽이나 안전기능이 무너지는가?</strong></p>
+<table>
+<thead>
+<tr>
+<th>등급</th>
+<th>고시 조항</th>
+<th>부여 대상(요지)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>안전등급 1</td>
+<td>제5조[2]</td>
+<td>RCPB 설비 중 고장 시 <strong>원자로냉각재 보충능력을 초과하는</strong> 냉각재 상실을 일으킬 수 있는 설비의 내압부분·지지물</td>
+</tr>
+<tr>
+<td>안전등급 2</td>
+<td>제6조</td>
+<td>격납건물 내압부분·지지물 + 등급 1 외에 핵분열생성물 격리, 비상 열·방사성물질 제거(살수), 비상 미임계 확보(부반응도 증가 또는 압력경계설비를 통한 정반응도 증가 억제, 예: 붕산주입), 비상 노심냉각(잔열제거·ECCS), 비상 냉각재 공급·유지(재장전수탱크)</td>
+</tr>
+<tr>
+<td>안전등급 3</td>
+<td>제7조</td>
+<td>등급 1·2 외에 수소 제어, 붕산·냉각재 보충, 노심 기하구조 유지, 차폐, 사용후핵연료 냉각, 안전설비 지원(냉각수·윤활·디젤 연료·동력·전원·신호·제어·연동·환경조건) 등 15개 기능</td>
+</tr>
+<tr>
+<td>비안전등급</td>
+<td>제8조</td>
+<td>위 기능이 없는 설비. 방사성폐기물 처리·유출물 감시 등은 특정 요건 부여 가능</td>
+</tr>
+</tbody>
+</table>
+<h3>세 가지 운용 원칙</h3>
+<ul>
+<li><strong>엄격한 등급 우선</strong>: 한 설비가 두 등급의 기능을 가지면 높은 쪽을 따릅니다(제4조)[2].</li>
+<li><strong>경계(class break)는 보통 격리밸브 구간</strong>: 서로 다른 등급의 공유영역은 상위 등급으로 보되, 상호영향 분석으로 입증하면 하위 등급이 됩니다. 밸브 하류의 등급은 자동으로 정해지지 않고 그 구간의 기능으로 다시 판정합니다. RCPB의 끝은 격납건물 관통 배관이면 바깥쪽 격납 격리밸브, 관통하지 않는 배관이면 정상운전 중 닫힌 두 밸브 중 두 번째 밸브이고, RCS 안전·방출밸브도 포함합니다(10 CFR 50.2)[3].</li>
+<li><strong>보충능력 조건</strong>: 고장 나도 냉각재 상실이 원자로냉각재 보충능력(충전펌프) 이내여서 정상 정지·냉각할 수 있는 배관(주로 소구경 배관·계측관)은 RCPB에 있어도 1등급이 아닙니다. 크기 자체가 아니라 이 조건이 기준입니다. 고시 문언은 "원자로냉각재 보충능력"이고, "정상운전 중 보충계통"이라는 표현은 10 CFR 50.55a(c)(2)의 Class 1 예외에서 온 것입니다.</li>
+</ul>
+<h3>다른 분류체계와의 대응</h3>
+<p>안전등급은 품질그룹·규격·내진범주·전기등급·품질보증과 통상 함께 대응합니다. 다만 각 분류는 별도 기준으로 판정하므로 자동으로 같아지지는 않습니다.</p>
+<figure class="article-image"><img alt="국내 안전등급과 ANS 51.1·품질그룹·ASME/KEPIC 규격의 통용 대응, 내진범주·전기등급·품질보증의 별도 판정을 정리한 매트릭스" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-op-005-safety-class/fig1_safety_class_mapping_matrix.avif"/><figcaption>국내 안전등급과 ANS 51.1·품질그룹·ASME/KEPIC 규격의 통용 대응, 내진범주·전기등급·품질보증의 별도 판정을 정리한 매트릭스</figcaption></figure>
+<ul>
+<li><strong>ANSI/ANS-51.1(PWR)</strong>: SC-1·SC-2·SC-3·NNS로, 국내 1·2·3·비안전과 같은 뼈대이며 FSAR 등급표에서 함께 쓰입니다.</li>
+<li><strong>RG 1.26 품질그룹 A~D</strong>[4]: A = RCPB(ASME III Class 1, 10 CFR 50.55a로 직접 규율), B = Class 2, C = Class 3, D = B31.1·Sec. VIII 등 일반 규격입니다.</li>
+<li><strong>RG 1.29 내진범주</strong>: 안전등급 설비는 통상 내진범주 I입니다. 비안전이라도 붕괴해 I급 설비를 손상시킬 수 있으면 내진범주 II로 구조 건전성을 확보합니다.</li>
+<li><strong>IEEE 308 Class 1E</strong>[5]: 비상정지·격납 격리·노심냉각·열제거·방출 방지에 필수인 전기설비입니다. 국내 고시는 안전 전기·계측 품목을 안전등급 3 기능(동력·전원·신호·제어)으로 묶습니다. 설계 문서에서는 전기 품목을 전기등급(1E/Non-1E) 칸으로 따로 표시합니다.</li>
+<li><strong>품질보증</strong>: 안전등급 1·2·3 품목에는 10 CFR 50 App. B와 KEPIC QAP 전면 적용(사업자 품질등급 Q)입니다.</li>
+</ul>
+<h2>원전에서의 의미</h2>
+<h3>한 기기 안에서도 등급이 갈린다</h3>
+<p>등급은 안전기능에 따라 SSC마다 매기며, <strong>같은 기기라도 부위(내압 경계)마다 등급이 다를 수 있습니다</strong>. APR1400 DCD 표 3.2-1 같은 공개 분류표 기준의 대표 예는 다음과 같습니다[6]. 실제 경계는 호기별 설계문서(FSAR 분류표)가 정합니다.</p>
+<ul>
+<li><strong>안전등급 1</strong>: 원자로용기(MNB), 가압기, 증기발생기 1차측(수실·전열관), 원자로냉각재펌프 케이싱, 고온관·저온관, 가압기 밀림관, 제어봉구동장치 압력하우징, 원자로용기 지지대(MNF)</li>
+<li><strong>안전등급 2</strong>: 격납건물 내압부, 증기발생기 2차측 동체, 안전주입펌프·안전주입탱크, 격납건물살수계통, 정지냉각계통, 재장전수탱크(IRWST), 주증기·주급수 격리밸브까지의 배관, 연료이송관 플랜지(MNE)</li>
+<li><strong>안전등급 3</strong>: 기기냉각수계통(CCW), 필수용수계통(ESW), 사용후핵연료저장조 냉각계통, 노심지지구조물(MNG), 비상디젤발전기 연료유·지원계통, 1E 전원·보호계통, 주제어실 공조, 수소 제어 설비</li>
+<li><strong>비안전</strong>: 터빈·발전기, 복수기, 주급수펌프, 순환수계통, 방사성폐기물 처리계통</li>
+</ul>
+<p>같은 증기발생기라도 전열관 안쪽과 수실(1차측)은 1등급, 전열관 바깥의 동체(2차측)는 2등급입니다. 제어봉구동장치도 압력하우징은 1등급이고, 나머지 부위는 2·3등급이나 비안전으로 나뉩니다.</p>
+<figure class="article-image"><img alt="PWR 계통 위에 안전등급 1·2·3·비안전 경계를 표시한 지도와 RCPB 연결 가지 배관의 격리밸브 구간" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-op-005-safety-class/fig2_pwr_class_boundary_map.avif"/><figcaption>PWR 계통 위에 안전등급 1·2·3·비안전 경계를 표시한 지도와 RCPB 연결 가지 배관의 격리밸브 구간</figcaption></figure>
+<h3>설계·운영에서의 쓰임</h3>
+<ul>
+<li><strong>설계</strong>: 등급이 재료 인증, 설계 응력해석(Class 1은 피로해석 포함), 비파괴검사, 내압시험 압력을 정합니다. 2018년 개정(제2018-6호)에서 별도의 내압시험 기준 고시(제2017-22호)를 흡수·폐지해, 지금은 이 고시가 내압시험 요건도 함께 규정합니다.</li>
+<li><strong>운영</strong>: 가동중검사 범위·주기, 정비 부품의 등급 유지(동등품·상용품 품질검증), 운영기술지침서 설비 범위가 등급을 따릅니다.</li>
+<li><strong>사고 대응</strong>: 안전등급 1은 첫 방벽 손상(LOCA)을 막고, 2는 그 사고를 완화하며, 3은 2가 일하도록 받쳐 줍니다. 등급 숫자가 크다고 덜 중요한 것이 아닙니다. CCW나 ESW를 잃으면 ECCS도 결국 열을 버리지 못합니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>원자로시설 등의 기술기준에 관한 규칙 제12조</td>
+<td>안전에 중요한 SSC는 안전기능 중요도에 상응하는 안전등급·규격으로 설계·제작·설치·시험·검사</td>
+</tr>
+<tr>
+<td>원안위 고시 「원자로시설의 안전등급과 등급별 규격에 관한 고시」(제2026-13호)</td>
+<td>제3조 정의, 제4조 일반요건, 제5~8조 등급, 제9조 등급별 규격(KEPIC MN/ASME III, 전기 KEPIC E/IEEE 603·279, 구조 KEPIC SN/ACI 349·AISC N690), 가압중수로는 CSA N285</td>
+</tr>
+<tr>
+<td>10 CFR 50 App. A GDC 1, 50.2, 50.55a</td>
+<td>품질기준 상응, 안전관련 정의, RCPB Class 1과 예외</td>
+</tr>
+<tr>
+<td>RG 1.26 Rev.6(2021), RG 1.29 Rev.6(2021)</td>
+<td>품질그룹 A~D, 내진범주 I·II</td>
+</tr>
+<tr>
+<td>ANSI/ANS-51.1, IEEE 308·603</td>
+<td>SC-1~3·NNS, Class 1E</td>
+</tr>
+<tr>
+<td>10 CFR 50 App. B, 원자로시설의 품질보증 세부요건에 관한 기준</td>
+<td>안전관련 품목 품질보증</td>
+</tr>
+<tr>
+<td>IAEA SSR-2/1 Rev.1 요건 22, SSG-30(2014)</td>
+<td>안전범주 1~3(기능), 안전등급 1~3(SSC)[7]</td>
+</tr>
+</tbody>
+</table>
+<p>현행 고시는 원안위고시 제2026-13호(2026.8.26)이고, 이때 제명이 "…에 관한 규정"에서 "…에 관한 고시"로 바뀌었습니다. 제5·6조 문언은 직전 제2024-3호(2024.3.14)와 같습니다. 바뀐 것은 제9조 적용년판(KEPIC MN 2020년판, ASME III 2019년판까지)과 별표의 Code Case 준용 기준(RG 1.84 개정39판) 신설, 제9조① 단서(규격 일부 적용 시 원안위 기술 검토) 삭제와 제10조 대체적용 신설입니다[2]. 그 앞의 제2026-7호(2026.1.20)는 부지 기준 고시 제정에 따른 부칙 개정으로, 제3조4호의 인용 고시명만 바꿨습니다. 등급 정의의 골격(1 = RCPB, 2 = 격납·비상냉각, 3 = 지원)은 2009·2022·2025년 출제 당시와 같습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>안전등급</th>
+<th>품질그룹(RG 1.26)</th>
+<th>내진범주(RG 1.29)</th>
+<th>품질등급(사업자)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기준</td>
+<td>안전기능</td>
+<td>압력 기기의 규격 수준</td>
+<td>지진 시 요구 성능</td>
+<td>품질보증 적용 수준</td>
+</tr>
+<tr>
+<td>구분</td>
+<td>1·2·3·비안전</td>
+<td>A·B·C·D</td>
+<td>I·II·비내진</td>
+<td>Q·A·S(구 Q·T·R·S)</td>
+</tr>
+<tr>
+<td>결정하는 것</td>
+<td>규격·검사·QA 전반</td>
+<td>ASME III Class·B31.1</td>
+<td>SSE 기능 유지/구조 건전성</td>
+<td>App. B 전면/증강/일반</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>안전관련(safety-related)과 안전에 중요한(important to safety)</strong>: 안전관련은 10 CFR 50.2의 세 기능을 수행하는 SSC로, 국내 안전등급 1·2·3 설비와 같습니다. 안전에 중요한 SSC는 이보다 넓어 내진범주 II, 화재방호, ATWS·SBO 대응 설비 같은 비안전 품목을 포함합니다.</li>
+<li><strong>품질등급 Q·T·R·S(2002년 출제)</strong>: Q는 안전관련 품목(App. B 전면), S는 일반 산업 품질입니다. T는 비안전이지만 품질요건을 높여 적용하는 품목(예: 내진범주 II 설비), R은 방사성폐기물 처리 계통(RG 1.143)입니다. 이후 T·R을 A(증강 품질)로 묶은 Q·A·S 체계로 바뀌었습니다. <!-- 확인필요: 구 품질등급 T·R의 공식 정의 문서 미확인(연구로 인허가 안건의 T·S 사례, 조달문서의 T/A/R 명칭으로 추정) --></li>
+<li><strong>10 CFR 50.69 RISC-1~4</strong>: 결정론적 등급에 위험도 중요도를 겹쳐 특별 처리 범위를 조정하는 미국 제도입니다. 국내 고시 등급을 대체하지 않습니다.</li>
+</ul>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 안전기능(RCPB 건전성, 안전정지·유지, 소외 피폭 사고 예방·완화)에 따라 설비에 부여하는 등급임 — 원자로규칙 제12조, 원안위 고시</li>
+<li><strong>안전등급 1</strong>: RCPB 중 고장 시 원자로냉각재 보충능력 초과 냉각재 상실 설비(원자로용기, 가압기, SG 1차측, RCP 케이싱, 주배관)임</li>
+<li><strong>안전등급 2</strong>: 격납건물 내압부 + 격리·살수·붕산주입·ECCS·잔열제거·IRWST임</li>
+<li><strong>안전등급 3</strong>: 지원기능 — CCW, ESW, 사용후핵연료 냉각, 노심지지구조물, EDG 연료유, 안전 전기·계측(1E)임</li>
+<li><strong>비안전</strong>: 터빈·복수기·주급수펌프, 방폐계통은 특정 요건 부여함</li>
+<li><strong>원칙</strong>: 엄격한 등급 우선, 공유영역 상위 등급, 보충능력 조건 충족 배관은 1등급 제외</li>
+<li><strong>규격</strong>: 1·2·3 ↔ ASME III Class 1·2·3(KEPIC MNB·MNC·MND) ↔ 품질그룹 A·B·C, 비안전 ↔ D(B31.1)</li>
+<li><strong>연계(별도 판정)</strong>: 안전등급 설비는 통상 내진범주 I, 전기·계측 품목은 Class 1E, QA는 App. B(사업자 품질등급 Q)임</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 PWR 안전등급 경계 도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-op-005-safety-class/sketch1_pwr_class_boundary.avif"/><figcaption>답안지용 PWR 안전등급 경계 도식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 3교시 2번</td>
+<td>고시의 안전등급 1·2</td>
+</tr>
+<tr>
+<td>2022년 3교시 4번</td>
+<td>안전등급 1·2·3 구분과 예</td>
+</tr>
+<tr>
+<td>2016년 1교시 2번</td>
+<td>안전관련설비</td>
+</tr>
+<tr>
+<td>2009년 1교시 7번</td>
+<td>안전등급 1, 2, 3</td>
+</tr>
+<tr>
+<td>제67회 3교시 6번</td>
+<td>품질등급 Q·T·R·S 부여기준</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제12조. 국가법령정보센터.</li>
+<li>원자력안전위원회, 「원자로시설의 안전등급과 등급별 규격에 관한 고시」, 원안위고시 제2026-13호(2026.8.26), 제2~11조 및 별표(직전판 제2024-3호). 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR 50.2 "Definitions", 10 CFR 50.55a(c), 10 CFR 50.69, 10 CFR Part 50 Appendix A(GDC 1)·Appendix B.</li>
+<li>U.S. NRC, Regulatory Guide 1.26 Rev. 6 "Quality Group Classifications and Standards for Water-, Steam-, and Radioactive-Waste-Containing Components of Nuclear Power Plants" (2021); Regulatory Guide 1.29 Rev. 6 "Seismic Design Classification for Nuclear Power Plants" (2021).</li>
+<li>ANSI/ANS-51.1-1983 "Nuclear Safety Criteria for the Design of Stationary Pressurized Water Reactor Plants"(철회); IEEE Std 308 "Criteria for Class 1E Power Systems for Nuclear Power Generating Stations"; IEEE Std 603-2009.</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Chapter 3, Section 3.2 "Classification of Structures, Systems, and Components", Table 3.2-1. U.S. NRC APR1400 설계인증 공개본.</li>
+<li>IAEA, Safety of Nuclear Power Plants: Design, SSR-2/1 (Rev. 1) (2016), Requirement 22; IAEA, Safety Classification of Structures, Systems and Components in Nuclear Power Plants, SSG-30 (2014).</li>
+</ol>

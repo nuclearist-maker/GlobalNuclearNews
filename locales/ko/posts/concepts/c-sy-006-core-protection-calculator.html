@@ -1,0 +1,207 @@
+<figure class="article-image"><img alt="[개념 노트] 노심보호연산기(CPC) — 노외계측 3단 신호로 DNBR·LPD를 직접 계산해 트립하는 CE형 보호 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-006-core-protection-calculator/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>노심보호연산기(CPC)는 CE형 PWR(OPR1000·APR1400)의 안전등급 4채널 디지털 연산기로, 노외 핵계측기·RCS 온도·압력·RCP 속도·CEA 위치를 받아 최소 DNBR과 최대 국부출력밀도(LPD)를 실시간 계산하고, 설정치에 도달하면 저 DNBR·고 LPD 원자로정지 신호를 발전소보호계통(PPS)에 보내 예상운전과도(AOO) 중 SAFDL을 지키는 계통입니다.</strong>[3][7]</p>
+<p>여기서 LPD는 체적 출력밀도가 아니라 kW/ft 단위의 <strong>국부 선출력</strong>입니다. DNBR은 두 곡선 사이의 거리가 아니라 비 q″CHF/q″의 최소값입니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>입력 다섯 갈래</h3>
+<table>
+<thead>
+<tr>
+<th>입력</th>
+<th>센서</th>
+<th>계산에 쓰는 곳</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>노외 중성자속</td>
+<td>채널당 검출기 1개, 상·중·하 3단 부검출기</td>
+<td>출력 준위·축방향 출력분포[7]</td>
+</tr>
+<tr>
+<td>냉각재 온도</td>
+<td>고온관·저온관 RTD</td>
+<td>열출력(ΔT), 입구 엔탈피, 온도 그림자 보정</td>
+</tr>
+<tr>
+<td>압력</td>
+<td>가압기 압력</td>
+<td>DNBR 계산</td>
+</tr>
+<tr>
+<td>유량</td>
+<td>RCP 4대 속도</td>
+<td>노심 유량(FLOW)</td>
+</tr>
+<tr>
+<td>CEA 위치</td>
+<td>위치전송기(RSPT) + CEAC 편차 페널티</td>
+<td>반경방향 첨두계수, CEA 그림자 보정</td>
+</tr>
+</tbody>
+</table>
+<h3>계산 사슬</h3>
+<ol>
+<li><strong>노외 신호 보정</strong>: 3단 검출기 응답에 형상 소멸 행렬(SAM)의 역을 적용해 노심 주변부 등가 응답(하·중·상)으로 바꾸고, 구간별 CEA 그림자 보정 승수를 곱합니다. 여기서 두 갈래로 나뉩니다. 세 구간을 합산해 온도 그림자 보정 승수와 열출력 교정상수를 곱하면 교정 중성자출력이 되고, 합으로 나눠 정규화하면 축방향 분포가 됩니다[8].</li>
+<li><strong>LPD 계산</strong>: 평균 선출력에 축방향 분포·CEA 배치별 평면 첨두계수(Fxy)·페널티를 곱한 값의 최대를 취해 첨두 선출력(LPD)을 구합니다.</li>
+<li><strong>DNBR 계산</strong>: 출력·축분포·저온관 온도·압력·유량으로 노심 최소 DNBR을 계산합니다. 빠른 주기(UPDATE)와 정밀 주기(STATIC)를 나눠 돌립니다.</li>
+<li><strong>동적 보상</strong>: 저온관 온도·가압기 압력은 측정값에, 열출력·중성자속 출력·LPD는 계산값에 정적 오프셋과 디지털 필터를 적용해 계기 지연을 메웁니다. 그래서 과도 중 CPC가 쓰는 열속은 실제보다 높고, 계산 DNBR은 보수적입니다(KHNP APR1400 DC RAI 15.04.02-1 답변)[3].</li>
+<li><strong>비교·출력(TRIPSEQ)</strong>: 예비트립과 트립 설정치에 비교해 접점 출력을 냅니다.</li>
+</ol>
+<figure class="article-image"><img alt="CPC 한 채널의 계산 사슬: 노외 검출기 3단 장면, 입력 4갈래, SAM·CEA·온도 그림자 보정 식 카드, LPD·DNBR 계산과 PPS 2/4 트립" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-006-core-protection-calculator/fig1_cpc_calculation_chain.avif"/><figcaption>CPC 한 채널의 계산 사슬: 노외 검출기 3단 장면, 입력 4갈래, SAM·CEA·온도 그림자 보정 식 카드, LPD·DNBR 계산과 PPS 2/4 트립</figcaption></figure>
+<h3>그림자 계수 두 가지(2014년 4교시 6번)</h3>
+<ul>
+<li><strong>CEA 그림자 계수</strong>: CEA가 주변부에 삽입되면 그 근처 중성자속이 눌려 노외 검출기 응답이 노심 평균 출력과 다르게 줄어듭니다. CEA 위치(검출기 구간 안 부분 삽입 포함)에 따른 구간별 보정 승수로 응답을 노심 평균에 맞춥니다. 축방향 분포 합성 정확도에 가장 크게 영향을 줍니다.</li>
+<li><strong>온도 그림자 계수</strong>: 노심과 검출기 사이 강수부 냉각재 밀도가 저온관 온도에 따라 바뀝니다. 입구 온도가 낮아지면 물이 무거워져 감쇠가 커지고, 같은 출력에서도 검출기 응답이 작아집니다. 저온관 온도 변화에 비례하는 계수로 보정합니다. 주변부 출력분포와는 무관한 효과입니다.</li>
+<li>두 계수와 SAM은 주기마다 노심설계 계산과 기동시험으로 정하고, 정상운전 중에는 노외 출력을 2차측 열평형 출력에 맞춰 주기적으로 교정합니다.</li>
+</ul>
+<h3>CEAC와 페널티</h3>
+<p>CEAC는 CEA 부그룹 안의 위치 편차(낙하·불일치)를 검출해 DNBR·LPD 페널티 계수를 각 CPC로 보냅니다. GDC 25(반응도 제어계통 단일 오동작에도 SAFDL 유지)를 만족시키는 장치입니다[2]. APR1400 초기 설계 연구에서는 고출력 12-핑거 CEA 낙하 시 약 1.3의 페널티로 즉시 트립될 수 있어, 출력감발계통(RPCS)을 작동시키고 페널티를 최대 40초 유예하는 알고리즘을 검토했습니다(KNS 2008)[6].</p>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>출력 기능(2026년 2교시 4번 나)</strong>: ① 저 DNBR·고 LPD 트립(PPS 2/4) ② DNBR·LPD 예비트립 경보 ③ CEA 인출금지(CWP: 예비트립, 부그룹 편차, CEA 순서 이탈) ④ 운전원 모듈의 DNBR·LPD 여유 표시 ⑤ CEA 위치 표시 ⑥ 보조 트립. APR1400 미국 설계인증(DC) 문서는 빠른 출력 상승을 CPCS 가변과출력 트립이, 느린 상승을 DNBR 트립이 막는다고 설명합니다[3].</li>
+<li><strong>설정치</strong>: 저 DNBR·고 LPD 트립 설정치는 호기·주기·DNB 상관식(APR1400 PLUS7은 KCE-1)마다 달라 호기별 설정치 해석과 운영기술지침서로 정하며, 안전한계 값 자체가 아닙니다. CE형 표준기술지침서는 열출력 10⁻⁴ % RTP 미만에서 두 트립의 운전 우회를 허용합니다[5].</li>
+<li><strong>디지털화</strong>: 초기 CPC는 미니컴퓨터 기반 프로그램이었고, 이후 하드웨어 단종에 따라 PLC 등 디지털 플랫폼으로 교체되었습니다. 그래서 소프트웨어 확인·검증과 공통원인고장 대비가 규제 쟁점이 되었습니다[9].</li>
+</ul>
+<h3>COLSS: 감시는 COLSS, 보호는 CPC (제67회 4교시 2번)</h3>
+<p>노심운전제한치감시계통(COLSS)은 발전소 컴퓨터에서 도는 비안전등급 감시 계통입니다. 알고리즘은 네 단계입니다.</p>
+<ol>
+<li>노심 열출력: 2차측 열평형 우선, ΔT 출력·터빈 1단 압력 출력 백업</li>
+<li>고정식 노내 계측기(로듐 검출기 5단)로 3차원 출력분포·ASI·방위각 경사 합성</li>
+<li>DNBR 기반·LHR 기반 출력운전한계(POL) 계산</li>
+<li>실제 노심출력이 POL을 넘으면 여유 경보</li>
+</ol>
+<p>APR1400 DC 운영기술지침서 기준으로, COLSS가 불능이면 정지하지 않고 <strong>가동 중인 CPC 채널의 LPD·DNBR 값으로 COLR 허용영역 안인지 감시</strong>합니다(SR 3.2.1.1·3.2.4.1, 2시간 주기)[4]. 허용영역을 벗어나면 15분마다 추세를 보면서 악화 추세면 1시간, 아니면 4시간 안에 복구합니다. 복구하지 못하면 6시간 안에 열출력을 낮춥니다[4]. <!-- 확인필요: APR1400 DC T/S C.1 감발 목표 숫자 판독 불가 — NUREG-1432 기준 20 % RTP 이하로 추정 --> CPC 감시는 불확실도가 커서 허용 영역이 좁습니다. 예를 들어 San Onofre 2호기 ASI 대역은 COLSS ±0.28, CPC ±0.20이었습니다[10].</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기술기준규칙 제26조</td>
+<td>AOO에서 SAFDL 비초과 자동 작동, 디지털 설비 심층방어·다양성[1]</td>
+</tr>
+<tr>
+<td>GDC 10·20·25</td>
+<td>SAFDL 여유, 보호계통 자동 작동, 반응도 제어 단일 오동작 시 SAFDL[2]</td>
+</tr>
+<tr>
+<td>10 CFR 50.55a(h)</td>
+<td>IEEE 603-1991, 디지털은 IEEE 7-4.3.2·RG 1.152[9]</td>
+</tr>
+<tr>
+<td>NUREG-1432(CE STS)</td>
+<td>LCO 3.2.1 LHR, 3.2.4 DNBR(COLSS 불능 시 CPC 감시), 3.3.1 RPS 계측(CPC 채널)[5]</td>
+</tr>
+<tr>
+<td>APR1400 설계 문서</td>
+<td>APR1400-F-C-NR-14003-P(CPCS 기능설계요건), 기반 CENPD-170 계열[3]</td>
+</tr>
+</tbody>
+</table>
+<p>출제 당시(2002·2014)와 비교하면 근거 법령이 「원자력법」에서 「원자력안전법」으로 바뀌었고 CPC 플랫폼이 디지털 PLC로 교체되었지만, DNBR·LPD 계산 트립이라는 기능은 같습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>CPC</th>
+<th>COLSS</th>
+<th>WH OTΔT·OPΔT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>목적</td>
+<td>AOO 보호(트립)</td>
+<td>LCO 감시(경보)</td>
+<td>AOO 보호(트립)</td>
+</tr>
+<tr>
+<td>등급</td>
+<td>안전, 4채널</td>
+<td>비안전</td>
+<td>안전, 루프별 채널(3~4)</td>
+</tr>
+<tr>
+<td>검출기</td>
+<td>노외 3단</td>
+<td>고정식 노내</td>
+<td>루프 ΔT·Tavg·노외 ΔI</td>
+</tr>
+<tr>
+<td>DNBR</td>
+<td>직접 계산</td>
+<td>직접 계산(여유)</td>
+<td>계산 없이 ΔT 가변 설정치</td>
+</tr>
+<tr>
+<td>응답</td>
+<td>빠름·보수적</td>
+<td>느림·정확</td>
+<td>빠름</td>
+</tr>
+</tbody>
+</table>
+<p>웨스팅하우스형은 DNBR을 직접 계산하지 않습니다. OTΔT 설정치를 Tavg·가압기 압력·축방향 출력편차 f1(ΔI)로 깎아 DNB를 막고, OPΔT 설정치를 Tavg와 그 변화율·f2(ΔI)로 깎아 선출력 과다를 막습니다[11]. CANDU(월성)는 DNB 대신 압력관 연료다발의 드라이아웃(임계채널출력)을 기준으로 삼습니다. 정지계통 SDS1·SDS2가 각자 노내 검출기로 지역 과출력(ROP) 트립을 냅니다(제67회 3교시 2번).</p>
+<figure class="article-image"><img alt="WH·CE·CANDU의 연료 열적 한계 보호 방식 비교 매트릭스와 WH OTΔT·OPΔT 설정치 개념식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-006-core-protection-calculator/fig2_reactor_type_protection_compare.avif"/><figcaption>WH·CE·CANDU의 연료 열적 한계 보호 방식 비교 매트릭스와 WH OTΔT·OPΔT 설정치 개념식</figcaption></figure>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: CE형 안전등급 4채널 연산기, DNBR·LPD 실시간 계산 → 저 DNBR·고 LPD 트립(AOO 중 SAFDL 보호)</li>
+<li><strong>입력</strong>: 노외 3단, Th·Tc RTD, 가압기 압력, RCP 속도, CEA 위치(RSPT)·CEAC 페널티</li>
+<li><strong>노외 보정</strong>: SAM → CEA 그림자 계수 → 온도 그림자 계수 → 열출력 교정</li>
+<li><strong>계산</strong>: 축분포 합성 × Fxy → LPD(kW/ft), 상관식 DNBR, 동적 보상(필터·오프셋)</li>
+<li><strong>CEAC</strong>: 부그룹 편차 → DNBR·LPD 페널티(GDC 25)</li>
+<li><strong>출력</strong>: 트립(PPS 2/4), 예비트립, CWP, 여유 표시, CEA 위치 표시</li>
+<li><strong>COLSS</strong>: 비안전 감시(노내 계측기, POL, 여유 경보) ↔ CPC 보호</li>
+<li><strong>COLSS 불능</strong>: CPC 채널로 COLR 허용영역 감시, 이탈 시 복구 또는 출력 감소</li>
+<li><strong>WH 대비</strong>: OTΔT(DNB)·OPΔT(kW/ft) 가변 설정치, DNBR 직접 계산 없음</li>
+<li><strong>설정치</strong>: 호기·주기·상관식별 값(SL 아님), 10⁻⁴ % RTP 미만 운전 우회</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 CPC 1채널 블록도(입력 → 노외 보정 → 계산 → 설정치 비교 → PPS 2/4, CEAC·COLSS 곁가지)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-006-core-protection-calculator/sketch1_cpc_block_diagram.avif"/><figcaption>답안지용 CPC 1채널 블록도(입력 → 노외 보정 → 계산 → 설정치 비교 → PPS 2/4, CEAC·COLSS 곁가지)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026년 2교시 4번</td>
+<td>APR1400 PPS 구성·CPC 주요 기능·DPS ATWS 유형</td>
+</tr>
+<tr>
+<td>2014년 4교시 6번</td>
+<td>CPC 노외계측 보정: CEA·온도 그림자계수</td>
+</tr>
+<tr>
+<td>제67회 4교시 2번</td>
+<td>COLSS 알고리즘과 고장 시 운전조치</td>
+</tr>
+<tr>
+<td>제67회 3교시 2번</td>
+<td>노형별(WH·CE·CANDU) DNBR·LPD 보호 메커니즘</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제26조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criteria 10, 20, 25.</li>
+<li>KHNP, APR1400 Design Certification, Response to RAI 15.04.02-1, Rev. 1, NRC ADAMS ML16124B201.</li>
+<li>KHNP, APR1400 Design Certification Technical Specifications(RAI 16-125 응답 첨부), LCO 3.2.1·3.2.4, SR 3.2.1.1·3.2.4.1 및 Bases, NRC ADAMS ML16194A331.</li>
+<li>U.S. NRC, NUREG-1432 "Standard Technical Specifications — Combustion Engineering Plants", Rev. 4, LCO 3.2.1, 3.2.4, 3.3.1(표 3.3.1-1).</li>
+<li>J. D. Choi 외, "The Development and Evaluation of Inherent RPCS for the APR1400", Transactions of the Korean Nuclear Society Autumn Meeting, PyeongChang (2008).</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Rev. 3 (2018), Ch. 7.2 "Reactor Trip System". NRC ADAMS 공개.</li>
+<li>Combustion Engineering, U.S. Patent 4,080,251(노외 검출기 신호의 형상 소멸·그림자 보정 개념).</li>
+<li>U.S. NRC, 10 CFR 50.55a(h)(IEEE Std 603-1991); Regulatory Guide 1.152 "Criteria for Use of Computers in Safety Systems of Nuclear Power Plants"(IEEE Std 7-4.3.2 승인).</li>
+<li>Southern California Edison, San Onofre Nuclear Generating Station Unit 2 Technical Specifications, 3.2.7 (NRC 공개 운영허가 문서, ML 번호 미확인).</li>
+<li>U.S. NRC, NUREG-1431 "Standard Technical Specifications — Westinghouse Plants", Rev. 4, 표 3.3.1-1 주석(OTΔT·OPΔT).</li>
+</ol>

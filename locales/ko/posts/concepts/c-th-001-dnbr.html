@@ -1,0 +1,263 @@
+<figure class="article-image"><img alt="[개념 노트] DNBR(핵비등이탈률) — 임계열속 ÷ 국부 열속의 최소로 읽는 열적 여유 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-001-dnbr/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>DNBR(Departure from Nucleate Boiling Ratio, 핵비등이탈률)은 같은 위치에서 예측한 임계열속(q″CHF)을 실제 국부 열속(q″)으로 나눈 값이며, 노심 전체의 최솟값(MDNBR)이 CHF 상관식별 설계한계 이상이면 핵연료봉에서 DNB가 일어나지 않음을 95/95 수준으로 보장합니다.</strong></p>
+<p>이 노트는 그 현상에 대한 여유를 비(ratio)로 관리하는 방법에 집중합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>비등곡선에서 DNB는 어디인가</h3>
+<p>벽 과열도(ΔTe = T벽 − T포화)를 늘리면 열속은 단상 대류 → 핵비등 → <strong>CHF 정점</strong> → 천이비등 → 최소막비등점(Leidenfrost) → 막비등 순으로 변합니다. 1기압 포화 물의 풀비등 대표값은 CHF 약 1.26 MW/m²(ΔTe 약 30 °C), Leidenfrost점 ΔTe 약 120 °C입니다[1](Leidenfrost점은 식·표면에 따라 약 70~120 K).</p>
+<p>핵연료봉은 온도가 아니라 <strong>열속이 정해지는 가열면</strong>입니다. 그래서 열속이 CHF를 넘는 순간 천이비등 구간을 건너뛰고 같은 열속의 막비등 구간으로 수평 이동하며, 벽 과열도가 수십 °C에서 1,000 °C 수준으로 뜁니다. PWR처럼 과냉~저건도 영역에서 일어나는 이 천이를 DNB, BWR처럼 고건도 환상류에서 액막이 마르는 천이를 dryout이라고 부릅니다.</p>
+<figure class="article-image"><img alt="비등곡선 위 DNB(CHF) 지점과 축방향 국부 열속·임계열속 곡선, MDNBR 위치(예시 계산)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-001-dnbr/fig1_dnbr_boiling_axial.avif"/><figcaption>비등곡선 위 DNB(CHF) 지점과 축방향 국부 열속·임계열속 곡선, MDNBR 위치(예시 계산)</figcaption></figure>
+<h3>계산식</h3>
+<ul>
+<li>국부 DNBR: DNBR(z) = q″CHF(z) / q″(z)</li>
+<li>최소값: MDNBR = 모든 부수로·축방향 위치에서의 DNBR 최솟값</li>
+<li>q″CHF는 이론식이 아니라 <strong>실험 상관식</strong>으로 구합니다. 입력은 국부 압력, 질량속 G, 국부 평형건도(엔탈피), 수력직경, 입구 엔탈피, 축방향 열속 형상, 지지격자·혼합날개 형상입니다.</li>
+</ul>
+<p>대표 상관식은 다음과 같습니다.</p>
+<ul>
+<li><strong>W-3</strong>(Tong, Westinghouse): 균일열속 실험식에 비균일 열속 보정인자(F-factor)를 곱해 씁니다. 전통적 한계 DNBR 1.30으로 널리 알려져 있습니다[2].</li>
+<li><strong>WRB-1, WRB-2(M)</strong>: 혼합날개 격자 연료 집합체 시험 기반 Westinghouse 상관식입니다.</li>
+<li><strong>CE-1</strong>: CE형 연료용, <strong>KCE-1</strong>: PLUS7 연료용으로 APR1400 노심 열설계에 쓰입니다.</li>
+</ul>
+<h3>MDNBR은 왜 첨두 열속 위치보다 위에 생기나</h3>
+<p>냉각재는 아래에서 위로 흐르며 엔탈피가 계속 올라갑니다. 그래서 q″CHF는 하부에서 상부로 단조 감소하고, 국부 열속은 cosine 형태로 중앙에서 최대가 됩니다. 두 곡선의 비가 가장 작아지는 곳은 첨두보다 <strong>하류(위쪽)</strong> 입니다.</p>
+<p>이 노트의 예시 계산(15.5 MPa, G = 3,500 kg/m²s, 입구 290.6 °C, 가열길이 3.81 m, hot rod 첨두 열속 1.60 MW/m², W-3 균일열속형, 설계값 아님)에서는 다음과 같이 나옵니다.</p>
+<ul>
+<li>첨두 위치 z = 1.91 m: DNBR 2.27</li>
+<li><strong>MDNBR 1.93</strong>: z = 2.62 m(높이의 69 %), q″ = 1.38 MW/m², q″CHF = 2.66 MW/m²</li>
+</ul>
+<p>축방향 출력이 위로 치우치면(top-skewed) 첨두가 고건도 영역과 겹쳐 MDNBR이 크게 떨어집니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>설계: SAFDL과 95/95</h3>
+<p>DNBR 한계는 <strong>SAFDL(허용핵연료설계제한치)</strong> 의 한 축입니다. 다른 한 축은 핵연료 중심선 온도(선출력 LPD로 관리)입니다. 한계값은 상관식의 실측/예측 비(M/P) 분포에서 정하므로 1보다 큽니다. MDNBR이 한계 이상이면 <strong>hot rod가 DNB를 겪지 않을 확률이 95 %, 신뢰수준 95 %</strong> 라는 뜻입니다.</p>
+<p>계통변수 불확실성(압력·온도·유량·출력·FΔH)은 통계적 열설계(Westinghouse ITDP, CE·KEPCO SCU)로 한계에 합쳐 넣습니다. 그래서 한계 숫자는 상관식과 방법론마다 다릅니다. 예를 들어 APR1400(KCE-1, SCU)은 <strong>1.29</strong>입니다(μ + 1.645σ, rod bow 페널티 포함)[3].</p>
+<h3>DNBR 여유도</h3>
+<p>DNBR 여유도는 열적여유도 가운데 DNB 쪽 여유를 비로 나타낸 값입니다. 이 시리즈는 다음 정의를 기본으로 씁니다.</p>
+<ul>
+<li><strong>여유도(%) = (MDNBR − 한계) / MDNBR × 100</strong>: 현재 DNBR이 몇 % 줄어도 한계에 닿지 않는지</li>
+<li>다른 정의 (MDNBR/한계 − 1) × 100도 쓰이므로 답안에는 정의를 적어 둡니다.</li>
+<li>예시 계산 MDNBR 1.93, 한계 1.29라면 여유도는 33.2 %(다른 정의로는 49.6 %)입니다.</li>
+</ul>
+<h3>영향인자 (변수 증가 시)</h3>
+<table>
+<thead>
+<tr>
+<th>변수 증가</th>
+<th>DNBR</th>
+<th>이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>출력·국부 열속</td>
+<td>감소</td>
+<td>분모 증가, 엔탈피 상승으로 CHF 감소</td>
+</tr>
+<tr>
+<td>RCS 압력(운전대역)</td>
+<td>증가</td>
+<td>포화온도 상승 → 국부 과냉도 증가</td>
+</tr>
+<tr>
+<td>유량(질량속)</td>
+<td>증가</td>
+<td>기포 제거·재습윤 촉진, 엔탈피 상승 감소</td>
+</tr>
+<tr>
+<td>입구 온도</td>
+<td>감소</td>
+<td>과냉도 감소, 건도 증가</td>
+</tr>
+<tr>
+<td>입구 과냉각여유도</td>
+<td>증가</td>
+<td>입구 온도의 반대</td>
+</tr>
+<tr>
+<td>FΔH, 상부 치우침</td>
+<td>감소</td>
+<td>hot channel 엔탈피 상승, 고건도 영역 첨두</td>
+</tr>
+<tr>
+<td>표면조도</td>
+<td>영향 작음</td>
+<td>대체로 소폭 증가 보고, 조건 의존</td>
+</tr>
+<tr>
+<td>비응축성 기체 분율</td>
+<td>감소</td>
+<td>벽면 기체막·기포 생성 촉진</td>
+</tr>
+<tr>
+<td>피복관 직경·길이(같은 출력)</td>
+<td>증가</td>
+<td>전열면적 증가로 열속 감소</td>
+</tr>
+<tr>
+<td>혼합날개 격자 / rod bow</td>
+<td>증가 / 감소</td>
+<td>혼합 촉진 / 부수로 협소화</td>
+</tr>
+</tbody>
+</table>
+<p>압력은 단서가 필요합니다. 건도를 고정하면 10 MPa 이상 고압에서 CHF는 오히려 줄어듭니다. 다만 PWR 운전대역에서 압력이 떨어지면 과냉도가 줄어 DNBR이 떨어지므로 가압기 저압력 트립과 운영기술지침서 압력 하한을 둡니다.</p>
+<h3>운전 감시와 보호 (국내 노형 예)</h3>
+<ul>
+<li><strong>CE형(OPR1000, APR1400)</strong>: <strong>COLSS</strong>가 노내 계측기로 3차원 출력분포를 합성해 DNBR·LPD 여유를 출력 여유로 감시합니다(경보). <strong>CPC</strong>(APR1400은 디지털 CPCS)는 노외 계측기, RCS 온도·압력, RCP 속도로 DNBR과 LPD를 실시간 계산해 <strong>DNBR 저 트립, LPD 고 트립</strong>을 냅니다[6].</li>
+<li><strong>Westinghouse형(고리 2~4호기, 한빛 1·2호기 등)</strong>: DNB 보호는 <strong>과온도 ΔT(OTΔT) 트립</strong>과 가압기 저압력·RCS 저유량 트립이 맡고, 선출력 보호는 과출력 ΔT(OPΔT) 트립이 맡습니다[6]. 운전 중에는 축방향출력편차(AFD), FQ·FΔH 한계, T/S의 "RCS 압력·온도·유량 DNB 한계"로 관리합니다.</li>
+<li><strong>CANDU(월성)</strong>: DNBR 대신 임계채널출력(dryout) 기준과 지역과출력보호(ROP) 트립을 씁니다. BWR은 MCPR을 씁니다.</li>
+</ul>
+<h3>관련 사고</h3>
+<p><strong>완전 유량상실(전 RCP 정지)</strong> 은 DNB 측면의 대표 제한 사건입니다. 유량은 관성 coastdown으로 줄어드는데 출력은 트립 지연 동안 유지되므로, 수 초 안에 MDNBR 최저점이 생깁니다. AOO이므로 MDNBR ≥ 한계를 입증해야 합니다. <strong>RCP 축 고착</strong>은 설계기준사고로, 한계 미만 연료봉 수를 파손으로 보고 선량을 평가합니다. 이 밖에 제어봉 인출·낙하, 주증기관 파단 후 출력 복귀, 붕소 희석이 DNB 제한 사건입니다.</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>「원자로시설 등의 기술기준에 관한 규칙」 제2조 제1항 제10호(정의)</td>
+<td>핵연료허용손상한계 = 핵비등이탈률과 핵연료중심선온도에 대한 설계제한치[7]</td>
+</tr>
+<tr>
+<td>같은 규칙 제17조①(원자로의 설계)</td>
+<td>정상운전·예상운전과도 시 핵연료허용손상한계를 넘지 않도록 적절한 여유</td>
+</tr>
+<tr>
+<td>10 CFR 50 App. A GDC 10, GDC 20</td>
+<td>정상운전·AOO 중 SAFDL 비초과, 보호계통 자동 동작[4]</td>
+</tr>
+<tr>
+<td>NUREG-0800 SRP 4.4 Rev.2(2007)</td>
+<td>95/95 DNBR 한계(Acceptance Criterion 1)[5]</td>
+</tr>
+<tr>
+<td>KINS 경수로형 원전 안전심사지침 4.4</td>
+<td>SRP 4.4와 같은 열수력 설계 심사 기준</td>
+</tr>
+</tbody>
+</table>
+<!-- 기술기준규칙 제2조 제1항 제10호·제17조①: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 -->
+<p>개정 흐름도 함께 기억해 두시면 좋습니다. 1960~70년대에는 결정론적 한계(W-3 1.30)를 썼습니다. 이후 통계적 열설계로 불확실성을 한계에 통합했고, 지금은 연료별 전용 상관식을 씁니다. 과거 답안의 "한계 1.30"은 현행 기준에서는 "상관식별 한계(예: APR1400 1.29)"로 고쳐 써야 합니다. 95/95 기준과 GDC 10·20은 그대로입니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>DNBR</th>
+<th>CPR(MCPR)</th>
+<th>LPD(kW/ft)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>노형</td>
+<td>PWR</td>
+<td>BWR</td>
+<td>PWR·BWR</td>
+</tr>
+<tr>
+<td>기준 현상</td>
+<td>DNB(과냉·저건도 CHF)</td>
+<td>dryout(고건도 액막 고갈)</td>
+<td>펠릿 중심 용융</td>
+</tr>
+<tr>
+<td>정의</td>
+<td>q″CHF/q″ (국부 비)</td>
+<td>임계출력/실제 봉출력</td>
+<td>국부 선출력</td>
+</tr>
+<tr>
+<td>관련 첨두계수</td>
+<td>FΔH(엔탈피 상승)</td>
+<td>국부 출력·건도</td>
+<td>FQ(국부 첨두)</td>
+</tr>
+<tr>
+<td>CE형 보호</td>
+<td>CPC DNBR 저 트립</td>
+<td>—</td>
+<td>CPC LPD 고 트립</td>
+</tr>
+</tbody>
+</table>
+<p>CHF는 현상(열속 값)이고 DNBR은 그 값과 국부 열속의 비입니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: DNBR = q″CHF(z)/q″actual(z), 노심 최솟값 = MDNBR</li>
+<li><strong>DNB</strong>: 핵비등 → 증기막 형성 → 열전달계수 급감 → 열속 제어면 피복관 온도 급상승(비등곡선 CHF 정점)</li>
+<li><strong>CHF 계산</strong>: 실험 상관식(W-3, WRB, CE-1, KCE-1), 압력·질량속·건도·형상 함수</li>
+<li><strong>설계한계</strong>: SAFDL, MDNBR ≥ 한계면 DNB 미발생 95 % 확률·95 % 신뢰(예: APR1400 1.29)</li>
+<li><strong>위치</strong>: 엔탈피 상승으로 CHF 감소 → MDNBR은 첨두 열속보다 하류(상부)</li>
+<li><strong>여유도</strong>: (MDNBR − 한계)/MDNBR × 100 %</li>
+<li><strong>영향인자</strong>: 출력·입구온도·FΔH↑ → 감소, 압력·유량↑ → 증가</li>
+<li><strong>감시·보호</strong>: CE형 COLSS(감시)·CPC(DNBR 저 트립), WH형 OTΔT 트립</li>
+<li><strong>제한 사건</strong>: 완전 유량상실, RCP 축 고착, 제어봉 인출</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 축방향 q″·q″CHF 곡선과 MDNBR 위치 도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-001-dnbr/sketch1_axial_chf_mdnbr.avif"/><figcaption>답안지용 축방향 q″·q″CHF 곡선과 MDNBR 위치 도식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026년 2교시 2번</td>
+<td>평균 열속과 DNBR 여유도 계산</td>
+</tr>
+<tr>
+<td>2023년 1교시 3번</td>
+<td>DNB 발생 과정과 설계 고려 이유</td>
+</tr>
+<tr>
+<td>2022년 4교시 4번</td>
+<td>DNBR 정의와 변수별 변화</td>
+</tr>
+<tr>
+<td>2017년 2교시 5번</td>
+<td>축방향 출력분포와 열속·열출력 계산</td>
+</tr>
+<tr>
+<td>2014년 1교시 6번</td>
+<td>DNBR 및 DNBR 여유도</td>
+</tr>
+<tr>
+<td>2012년 4교시 5번</td>
+<td>핵비등이탈률 정의와 영향인자</td>
+</tr>
+<tr>
+<td>2008년 1교시 2번</td>
+<td>MDNBR</td>
+</tr>
+<tr>
+<td>제76회 1교시 6번</td>
+<td>DNBR</td>
+</tr>
+<tr>
+<td>제67회 3교시 2번</td>
+<td>노형별 DNBR·LPD 보호 메커니즘</td>
+</tr>
+<tr>
+<td>제67회 1교시 3번</td>
+<td>열적여유도</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>F. P. Incropera, D. P. DeWitt, T. L. Bergman, A. S. Lavine, Fundamentals of Heat and Mass Transfer, John Wiley &amp; Sons, 10장(1기압 포화 물 풀비등 곡선).</li>
+<li>L. S. Tong, "Prediction of Departure from Nucleate Boiling for an Axially Non-uniform Heat Flux Distribution", Journal of Nuclear Energy 21 (1967) — W-3 상관식과 F-factor; L. S. Tong, Y. S. Tang, Boiling Heat Transfer and Two-Phase Flow, 2nd ed., Taylor &amp; Francis (1997).</li>
+<li>KEPCO/KHNP, "DNBR Limit Determination Methodology for APR1400", APR1400-F-C-EC-15001-NP, NRC 사전신청 회의 자료(2015.4.28), NRC ADAMS ML15128A321 — KCE-1·SCU, DNBR 한계 1.29.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A "General Design Criteria for Nuclear Power Plants", Criterion 10·20.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.4 "Thermal and Hydraulic Design", Rev. 2 (2007).</li>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications — Westinghouse Plants, 3.3.1 Reactor Trip System Instrumentation(OTΔT·OPΔT); NUREG-1432 Standard Technical Specifications — Combustion Engineering Plants, 3.3.1(CPC DNBR 저·LPD 고).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제2조 제1항 제10호·제17조. 국가법령정보센터.</li>
+</ol>

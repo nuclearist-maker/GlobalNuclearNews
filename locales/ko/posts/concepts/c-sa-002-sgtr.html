@@ -1,0 +1,255 @@
+<figure class="article-image"><img alt="[개념 노트] 증기발생기 전열관 파단(SGTR) — 격납건물을 우회하는 냉각재상실과 압력 평형 전략 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-002-sgtr/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>SGTR(Steam Generator Tube Rupture)은 PWR 증기발생기 U-튜브가 파단되어 고압 1차 냉각재가 저압 2차 계통으로 유출되는 사고이며, 1차 압력경계가 깨진 냉각재상실사고이면서 방출 경로가 격납건물을 우회한다는 점이 핵심입니다.</strong></p>
+<p>이 노트는 파단 이후의 과도 현상, 감지, 운전 전략, 안전해석 기준에 집중합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>무엇이 어디로 새는가</h3>
+<p>증기발생기에서 1차 냉각재는 튜브 <strong>안</strong>을, 2차 급수는 튜브 <strong>밖</strong>(쉘측)을 흐릅니다. 두 유체를 나누는 벽은 두께 약 1 mm 수준의 니켈합금 전열관이며, 1차 압력경계 면적의 대부분을 차지합니다. 정격 운전 시 압력차는 약 8.5 MPa(1차 15.5 MPa, 2차 약 7 MPa)입니다.</p>
+<p>설계기준 사고는 <strong>전열관 1개의 양단(double-ended) 파단</strong>, 즉 한 곳이 원주 방향으로 완전히 끊어져 두 파단면이 모두 열린 상태를 가정합니다(SRP 15.6.3)[1]. 정상 충전(charging)으로 보충할 수 있는 1차-2차 누설은 "누설"로, 충전 능력을 넘어 가압기 수위·압력이 계속 떨어지면 "파단"으로 구분해 대응합니다.</p>
+<p>파단과 유입 자체는 격납건물 안의 SG에서 일어납니다. 그러나 2차측은 주증기관·급수관으로 격납건물을 관통해 밖으로 이어집니다. 그래서 파열 SG의 증기는 MSIV <strong>상류</strong>에 있는 대기방출밸브(ADV)나 주증기안전밸브(MSSV)가 열리면 격납건물을 거치지 않고 대기로 나갈 수 있습니다. 이것이 SGTR을 "격납건물 우회(bypass)" 사고로 분류하는 이유입니다.</p>
+<figure class="article-image"><img alt="PWR 1·2차 계통도 위 SGTR 유출·격납건물 우회 방출 경로와 감지 지점(R1~R3)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-002-sgtr/fig1_sgtr_bypass_path.avif"/><figcaption>PWR 1·2차 계통도 위 SGTR 유출·격납건물 우회 방출 경로와 감지 지점(R1~R3)</figcaption></figure>
+<h3>과도 진행</h3>
+<ol>
+<li>파단 → 1차→2차 유출 → 가압기 압력·수위 감소, 충전유량 증가, 체적제어탱크 수위 감소</li>
+<li>2차측: 파열 SG 수위 증가, 급수유량 &lt; 증기유량, 2차측 방사선 감시기 경보</li>
+<li>원자로 정지(가압기 저압력, WH형은 OTΔT 등) → 터빈 정지 → 안전주입작동신호(SIAS)</li>
+<li>안전주입 유량과 파단유량이 균형을 이루는 압력에서 RCS 압력이 정체됨</li>
+<li>소외전원상실을 가정하면 복수기를 쓸 수 없어 2차측 압력이 올라가고, ADV·MSSV로 대기 방출이 일어남</li>
+</ol>
+<h3>특징적 증상 — LOCA·MSLB와 구분</h3>
+<table>
+<thead>
+<tr>
+<th>변수</th>
+<th>SGTR</th>
+<th>LOCA</th>
+<th>MSLB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>가압기 압력·수위</td>
+<td>감소</td>
+<td>급감</td>
+<td>감소(냉각 수축)</td>
+</tr>
+<tr>
+<td>격납건물 압력·온도·방사선</td>
+<td>변화 없음</td>
+<td>증가</td>
+<td>압력·온도 증가(격납 내 파단)</td>
+</tr>
+<tr>
+<td>2차측 방사선</td>
+<td><strong>증가</strong></td>
+<td>변화 없음</td>
+<td>변화 없음</td>
+</tr>
+<tr>
+<td>해당 SG 수위·압력</td>
+<td>수위 <strong>증가</strong></td>
+<td>—</td>
+<td>수위·압력 급감</td>
+</tr>
+<tr>
+<td>RCS 온도</td>
+<td>소폭 감소</td>
+<td>감소</td>
+<td><strong>급감</strong>(과냉각)</td>
+</tr>
+</tbody>
+</table>
+<p>세 사고 모두 가압기 압력·수위가 떨어지므로, 격납건물 변수 상승(LOCA·MSLB)과 2차측 방사선 상승(SGTR)으로 가릅니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>감지 설비</h3>
+<ol>
+<li><strong>복수기 공기추출기(진공펌프) 배기 방사선 감시기</strong>: 비응축성 기체(Xe·Kr)를 검출하며 가장 민감한 조기 지표입니다.</li>
+<li><strong>SG 취출수(blowdown) 방사선 감시기</strong>: SG별로 설치되어 파열 SG를 식별하는 데 씁니다.</li>
+<li><strong>주증기관 방사선 감시기(N-16·고준위 감마)</strong>: 출력 운전 중 N-16(반감기 7.1초)으로 실시간 누설률을 추정합니다. 원자로 정지 후에는 N-16이 빠르게 줄어 사고 후 감시는 다른 지표와 함께 봅니다.</li>
+<li>가압기 압력·수위 감소, 충전·유출 유량 불일치(RCS 재고량 수지)</li>
+<li>파열 SG 수위 증가, 급수/증기 유량 불일치</li>
+<li>2차측 시료의 방사화학 분석(요오드, 삼중수소 등)</li>
+</ol>
+<p>감시기 구성과 명칭은 노형마다 다릅니다. 하나의 경보만으로 판정하지 않고 방사선, SG 수위, 가압기 지표를 함께 봅니다.</p>
+<p>출력 10 % 이하 저출력에서는 N-16 생성이 적어 주증기관 감시기의 감도가 떨어집니다. 이때는 공기추출기 배기·취출수 감시기와 2차측 시료 분석 빈도, 충전-유출 수지 감시를 강화해 조기 탐지합니다.</p>
+<h3>운전 전략 — 확인·격리, 냉각, 감압, SI 종료</h3>
+<p>목표는 세 가지입니다. ① 1차→2차 유출을 정지하고, ② 대기 방출을 최소화하며, ③ 노심 냉각을 유지한 채 정지냉각계통(SCS) 진입 조건까지 가는 것입니다. 공개 문헌(Ginna 사고 보고서, NRC에 제출된 W형 SGTR 절차 목록)의 일반 전략을 기능 단위 4단계로 정리하면 다음과 같습니다[4][5].</p>
+<ol>
+<li><strong>파열 SG 확인·격리</strong>: 방사선 감시기와 수위 증가로 식별하고, MSIV 닫힘, 보조급수 차단, ADV 설정치 조정을 합니다.</li>
+<li><strong>RCS 냉각</strong>: 건전 SG의 터빈우회밸브(불가 시 ADV)로 RCS를 파열 SG 압력의 포화온도보다 충분히 낮게 냉각해 과냉도를 확보합니다.</li>
+<li><strong>RCS 감압</strong>: 가압기 주살수, 보조살수, PORV로 RCS 압력을 파열 SG 압력까지 낮춥니다. ΔP가 0이 되면 파단유량도 0이 됩니다.</li>
+<li><strong>SI 종료·조절 후 냉각</strong>: 과냉도, 가압기 수위, 2차 열제거원 조건을 확인하고 SI를 종료한 뒤 SCS 진입 조건까지 냉각합니다.</li>
+</ol>
+<p>위 번호는 기능 단위의 정리이며 실제 단계 순서와 진입 조건은 호기별 EOP를 따릅니다. SI 종료도 압력이 맞았다는 것만으로 정하지 않고 종료 조건 전체를 확인합니다. 특히 격리 시점에 주의해야 합니다. 너무 일찍 격리하면 1차측에서 계속 들어오는 냉각재와 열 때문에 파열 SG 압력이 MSSV 설정압에 닿습니다. 그래서 먼저 RCS를 어느 정도 냉각해 파열 SG의 포화압력이 MSSV 설정압보다 충분히 낮아지게 한 뒤 격리하는 것이 일반적입니다. 반대로 SI를 너무 늦게 종료하면 RCS 압력이 파열 SG보다 높게 유지되어 재유입이 일어나고, <strong>SG 과충수(overfill)</strong> 로 주증기관이 침수되거나 MSSV가 물을 방출하다 개방 고착될 수 있습니다.</p>
+<figure class="article-image"><img alt="RCS·파열 SG·건전 SG 압력과 1차→2차 유출 지표의 단계별 변화(개념적 추세)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-002-sgtr/fig2_pressure_equalization.avif"/><figcaption>RCS·파열 SG·건전 SG 압력과 1차→2차 유출 지표의 단계별 변화(개념적 추세)</figcaption></figure>
+<h3>파열 SG 루프 RCP 정지</h3>
+<p>파열 SG 루프 RCP를 정지하면 RCS가 아직 뜨거운 초기에 격리 SG로 들어가는 강제순환 열유입이 줄어 격리 SG의 압력 상승(MSSV 개방)을 완화할 수 있습니다. 그러나 RCP 정지는 누설을 멈추지 못합니다. 유출량은 파단 면적과 1차–2차 압력차가 정하고, 그 압력차는 가압기가 지배하는 RCS 압력과 파열 SG 압력의 차이입니다(RCP는 SG 하류 저온관에 있음). 유출은 냉각·감압으로 RCS 압력을 파열 SG 압력에 맞춰야 멈춥니다. 오히려 RCP를 모두 세우면 정상 주살수를 잃어 감압이 어려워집니다. Ginna(1982)에서도 RCP를 정지한 뒤 PORV로 감압해야 했습니다. 그래서 미국 NRC는 SGTR 동안 강제순환을 유지할 수 있는 RCP 정지 기준을 요구했습니다(일반현안 67.4.1 → NUREG-0737 II.K.3(5))[6]. 열유입 억제와 주살수·후속냉각 유지를 함께 보고 호기별 EOP를 따릅니다. <!-- 확인필요: 표준형(OPR1000/APR1400) EOP의 파열 SG 루프 RCP 정지 단계와 근거 문구 원문 미확인 --></p>
+<h3>격리된 SG의 냉각</h3>
+<p>격리된 SG에는 뜨거운 물이 남아 압력이 유지됩니다. RCS만 냉각·감압하면 2차→1차 역류가 생기고 RCS 전체를 SCS 진입 조건까지 낮출 수 없으며, MSSV 개방 위험도 남습니다. 그래서 다음 순서로 냉각합니다.</p>
+<ul>
+<li><strong>역충수(backfill)</strong>: RCS 압력을 격리 SG보다 낮춰 SG 물을 1차측으로 되돌려 냉각합니다. 대기 방출이 없지만 붕소 희석을 감시해야 합니다.</li>
+<li><strong>취출(blowdown)</strong>: 취출 계통이나 복수기로 배수하며 냉각합니다.</li>
+<li><strong>증기 방출</strong>: 터빈우회밸브(복수기)를 우선 쓰고, 불가할 때만 ADV를 씁니다(대기 방출, 최후 수단). 공개된 W형 절차 목록도 역충수·취출·증기 방출 세 갈래(ES-3.1~3.3)로 나눕니다[5].</li>
+</ul>
+<h3>관련 사고 사례</h3>
+<ul>
+<li><strong>Ginna(미국, 1982)</strong>: 출력 운전 중 2차측 이물질에 의한 전열관 1개 파단이 일어났습니다. 감압 중 가압기 PORV가 개방 고착되어 차단밸브로 격리했고, 사이트 비상이 발령되었습니다. 대기 방출량은 비활성기체 약 485 Ci, I-131 약 1.15 mCi였습니다(NUREG-0909)[4].</li>
+<li><strong>미하마 2호기(일본, 1991)</strong>: 진동방지봉 미삽입에 따른 고주기 피로 파단이었습니다.</li>
+<li><strong>울진 4호기(현 한울 4호기, 2002)</strong>: 전열관 파단으로 냉각재 약 45 t이 유출되어 백색비상이 발령되었습니다(보도 기준). <!-- 확인필요: 울진 4호기 2002년 SGTR의 정확한 일시·누설 지속시간(보도 10~13분 상이)·원인은 KINS/원안위 공식 보고서로 재확인 필요 --></li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NUREG-0800 SRP 15.6.3[1]</td>
+<td>SGTR 방사선 영향 심사. 사고 전 옥소 첨두와 사고 동반 옥소 첨두 두 경우 평가</td>
+</tr>
+<tr>
+<td>RG 1.183(AST)[2]</td>
+<td>EAB·LPZ TEDE: 사고 전 첨두 0.25 Sv(25 rem), 사고 동반 첨두 25 mSv(2.5 rem), 주제어실 50 mSv</td>
+</tr>
+<tr>
+<td>10 CFR 50 App. A GDC 14·31·32</td>
+<td>원자로냉각재 압력경계의 누설·파손 방지, 검사 가능성</td>
+</tr>
+<tr>
+<td>STS 3.4.13 / 5.5.9[7]</td>
+<td>1차-2차 누설 LCO(SG당 150 gpd 체계), SG 프로그램(NEI 97-06)</td>
+</tr>
+<tr>
+<td>KINS 경수로형 안전심사지침 15.6.3[8]</td>
+<td>SRP 15.6.3과 같은 체계의 국내 심사 기준</td>
+</tr>
+<tr>
+<td>원안위고시 제2026-7호(위치제한, 2026.1.20 구 위치 기술기준 대체)</td>
+<td>제한구역 경계 등 사고 시 선량 기준</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: RG 1.183 Table 6 SGTR 항목 원문(Rev.1, 2023) 직접 대조 미완. 국내 운영기술지침서의 1차-2차 누설 제한값은 호기별 확인 필요 -->
+<p>해석 쟁점은 파열 위치(관판 부근 고온관측이 불리), 소외전원상실, ADV·MSSV 개방 고착 단일고장, 과충수 여유, 운전원 조치 시간입니다. APR1400 설계인증 심사에서는 30분 운전원 조치 이후 MSSV 방출 종료까지 해석을 연장하라는 요구가 있었습니다[3].</p>
+<p>출제 당시 대비 달라진 점은 세 가지입니다. 선량 기준이 TID-14844(전신·갑상선)에서 AST(TEDE)로 바뀌었고, 전열관 재질이 Alloy 690TT로 바뀌며 국내 다수 원전이 SG를 교체했습니다. 2016년 원자력안전법 개정 이후 다중 SGTR 같은 다중고장 사고는 사고관리계획서 대상입니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>SGTR</th>
+<th>ISLOCA</th>
+<th>MSLB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>손상 경계</td>
+<td>1차-2차(전열관)</td>
+<td>1차-저압 계통(격납 밖 배관)</td>
+<td>2차(주증기관)</td>
+</tr>
+<tr>
+<td>냉각재 손실</td>
+<td>있음</td>
+<td>있음</td>
+<td>없음(2차 증기)</td>
+</tr>
+<tr>
+<td>격납건물 우회</td>
+<td>예</td>
+<td>예</td>
+<td>해당 없음</td>
+</tr>
+<tr>
+<td>주 위험</td>
+<td>우회 방출·과충수</td>
+<td>우회 방출·노심손상</td>
+<td>과냉각 → 반응도 삽입·재임계</td>
+</tr>
+<tr>
+<td>핵심 대응</td>
+<td>압력 평형으로 유출 정지</td>
+<td>계통 격리</td>
+<td>파단 SG 격리, 붕소 주입</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: SG 전열관 파단으로 1차 냉각재가 2차측으로 유출되는 사고, 설계기준은 전열관 1개 양단 파단</li>
+<li><strong>특징</strong>: 1차 압력경계 손상(LOCA의 일종) + <strong>격납건물 우회</strong> 방출 경로(ADV·MSSV)</li>
+<li><strong>증상</strong>: 가압기 압력·수위↓, 파열 SG 수위↑, 급수&lt;증기 유량, 2차측 방사선↑, 격납건물 변수 변화 없음</li>
+<li><strong>감지</strong>: 공기추출기 배기, SG 취출수, 주증기관 N-16 감시기, RCS 재고량 수지</li>
+<li><strong>전략</strong>: 파열 SG 확인·격리 → 건전 SG로 냉각 → 감압으로 <strong>압력 평형(ΔP=0)</strong> → SI 종료 → SCS 진입</li>
+<li><strong>주의</strong>: 조기 격리 시 MSSV 개방, SI 지연 시 과충수</li>
+<li><strong>격리 SG 냉각</strong>: 역충수 → 취출 → 증기 방출(TBV 우선, ADV 최후)</li>
+<li><strong>기준</strong>: SRP 15.6.3, 사고 전·동반 옥소 첨두 두 경우 선량 평가</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 SGTR 계통·감지 도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-002-sgtr/sketch1_sgtr_detection_loop.avif"/><figcaption>답안지용 SGTR 계통·감지 도식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024년 2교시 1번</td>
+<td>증기유량제한기·전열관 손상·파열 시 과도현상</td>
+</tr>
+<tr>
+<td>2023년 2교시 1번</td>
+<td>MSLB·SGTR·RCP 고착·제어봉 이탈 과도</td>
+</tr>
+<tr>
+<td>2022년 2교시 4번</td>
+<td>비상등급별 SG 세관 누설 발령상황</td>
+</tr>
+<tr>
+<td>2022년 2교시 1번</td>
+<td>MSLB·LOCA·SGTR 공통·특징적 증상</td>
+</tr>
+<tr>
+<td>2021년 2교시 6번</td>
+<td>격리된 SG 냉각 이유와 방법</td>
+</tr>
+<tr>
+<td>2020년 4교시 5번</td>
+<td>SGTR 증상·후속냉각·RCP 정지 필요성</td>
+</tr>
+<tr>
+<td>2015년 2교시 1번</td>
+<td>SGTR 증상과 운전원 조치</td>
+</tr>
+<tr>
+<td>2011년 4교시 1번</td>
+<td>표준형 원전 SGTR 4단계 조치와 누설 증상</td>
+</tr>
+<tr>
+<td>2009년 2교시 3번</td>
+<td>저출력 SGTR 조기 탐지와 운전대응</td>
+</tr>
+<tr>
+<td>제76회 2교시 4번</td>
+<td>SGTR 감지설비와 3단계 운전전략</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 15.6.3 "Radiological Consequences of Steam Generator Tube Failure (PWR)".</li>
+<li>U.S. NRC, Regulatory Guide 1.183 "Alternative Radiological Source Terms for Evaluating Design Basis Accidents at Nuclear Power Reactors", Rev. 1 (2023).</li>
+<li>KHNP, APR1400 Design Certification RAI 응답(SRP 15.6.3 SGTR 방사선 영향), Docket No. 52-046, NRC ADAMS ML16139A905.</li>
+<li>U.S. NRC, NUREG-0909 "NRC Report on the January 25, 1982 Steam Generator Tube Rupture at R. E. Ginna Nuclear Power Plant" (1982).</li>
+<li>U.S. NRC ADAMS ML20126B698, "Forwards discussion of unscheduled SG insp activities &amp; procedures re SG tube rupture" (1992.12) — 첨부 절차 E-3·ES-3.1·ES-3.2·ES-3.3 목록.</li>
+<li>U.S. NRC, NUREG-0933 "Resolution of Generic Safety Issues", Issue 67.4.1(RCP Trip); NUREG-0737 "Clarification of TMI Action Plan Requirements", II.K.3(5).</li>
+<li>U.S. NRC, NUREG-1431 "Standard Technical Specifications — Westinghouse Plants", LCO 3.4.13·5.5.9.</li>
+<li>한국원자력안전기술원(KINS), 경수로형 원전 안전심사지침 15.6.3(증기발생기 전열관 파단 사고의 방사선적 영향). KINS 공개 규제지침.</li>
+</ol>

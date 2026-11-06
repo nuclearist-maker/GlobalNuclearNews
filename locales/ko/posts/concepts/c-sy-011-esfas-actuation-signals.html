@@ -1,0 +1,225 @@
+<figure class="article-image"><img alt="[개념 노트] 공학적안전설비작동신호(ESFAS) — 어떤 변수가 어떤 안전설비를 깨우는가 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-011-esfas-actuation-signals/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>공학적안전설비작동계통(ESFAS, Engineered Safety Features Actuation System)은 선정된 공정변수가 설정치에 도달하면 안전주입·격납건물 격리·살수·주증기 격리·보조급수 같은 공학적안전설비(ESF)를 자동으로 작동시키는 안전등급 계측제어 기능입니다. 목적은 설계기준사고(DBA)의 결과를 허용기준 안에 묶어 두는 것입니다. 그 출력이 공학적안전설비작동신호입니다.</strong></p>
+<p>CE형(OPR1000·APR1400)은 ESFAS 개시 기능을 원자로정지 기능과 함께 4채널 발전소보호계통(PPS)에 둡니다[1][2]. 이 노트는 <strong>신호의 종류, 입력, 작동 대상, 논리, 사고와의 관계</strong>에 집중합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>신호 사슬과 논리</h3>
+<p>변수마다 4채널을 측정하고, 바이스테이블이 설정치와 비교합니다. 같은 기능의 4채널 중 2채널이 트립되면(2/4) 개시 신호가 나옵니다. 그 신호가 Train A·B 작동 논리를 거쳐 펌프·밸브·차단기를 움직입니다[2].</p>
+<ul>
+<li><strong>선택적 2/4</strong>: 아날로그 CE형은 센서 계통의 바이스테이블 출력을 두 작동 계통이 각각 받아 계전기 논리로 2/4를 판별합니다[2]. APR1400은 ESF-CCS 그룹제어기가 4개 PPS 디비전 신호에 선택적 2/4를 다시 적용합니다[1].</li>
+<li><strong>보호동작 완결(seal-in·래치)</strong>: 일단 개시되면 변수가 회복돼도 수동 리셋 전까지 작동 상태를 유지합니다. 리셋은 개시 변수가 정상 쪽으로 돌아온 뒤에만 됩니다[2]. 예외는 <strong>AFAS</strong>입니다. APR1400은 SG 수위에 따라 보조급수 공급을 반복하는 AFAS의 순환(cycling) 부분을 래치에서 뺍니다[1].</li>
+<li><strong>수동 개시</strong>: 주제어실 안전 콘솔의 계통 수준 스위치로 모든 신호를 낼 수 있습니다. APR1400은 MSIS 스위치를 원격정지실에도 둡니다[1].</li>
+<li><strong>운전 바이패스</strong>: 정상 냉각·감압 중 SIAS·CIAS가 불필요하게 나가지 않도록 가압기 저압력 입력만 우회합니다. 압력이 다시 오르면 우회가 자동으로 풀리는 것이 CE형 공통 구조입니다[2]. APR1400은 가압기 압력 400 psia 이하에서만 우회를 걸 수 있고, 500 psia 이상이 되면 자동으로 풀립니다. 그 사이 구간에서는 이미 건 우회가 유지됩니다[1]. 격납건물 고압력 입력은 우회되지 않습니다.</li>
+<li><strong>채널 바이패스</strong>: 정비·시험 중 한 채널을 빼면 2/4가 2/3이 됩니다. APR1400은 두 채널을 동시에 우회하지 못하도록 인터록을 둡니다[1].</li>
+<li>APR1400의 가압기 저압력과 SG 저압력은 <strong>가변 설정치</strong>입니다[1]. 냉각 중 운전원이 설정치를 따라 낮출 수 있고, 압력이 오르면 자동으로 올라갑니다.</li>
+</ul>
+<h3>NSSS-ESFAS 신호와 입력</h3>
+<p>표준형(OPR1000)은 AFAS-1·2를 한 기능군으로 묶어 6종(SIAS·CIAS·CSAS·MSIS·AFAS·RAS)으로 정리합니다. 각 신호의 입력 변수끼리는 OR입니다. 같은 변수의 4채널 중 2채널이 트립되면 그 변수로 신호가 나갑니다[2]. 아래 설정치는 공개된 APR1400 DCD의 공칭값이며[1], 표준형의 설정치는 호기별 설계값이라 여기서 쓰지 않습니다.</p>
+<table>
+<thead>
+<tr>
+<th>신호</th>
+<th>입력 변수(APR1400 공칭 설정치)</th>
+<th>작동 대상</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SIAS 안전주입</td>
+<td>가압기 저압력(1,810 psia), 격납건물 고압력(1.9 psig)</td>
+<td>안전주입펌프, SI 밸브, 붕산 주입, EDG 기동, 냉각수 계통 정렬</td>
+</tr>
+<tr>
+<td>CIAS 격납건물 격리</td>
+<td>SIAS와 같은 두 변수</td>
+<td>격납건물 관통 배관 격리밸브</td>
+</tr>
+<tr>
+<td>CSAS 격납건물 살수</td>
+<td>격납건물 고-고압력(20.03 psig)</td>
+<td>살수 헤더 밸브 개방, 살수 개시</td>
+</tr>
+<tr>
+<td>MSIS 주증기 격리</td>
+<td>SG 저압력(855 psia), SG 고수위(90 % NR), 격납건물 고압력</td>
+<td>양쪽 SG 주증기·주급수 격리밸브</td>
+</tr>
+<tr>
+<td>AFAS-1/-2 보조급수</td>
+<td>SG별 저수위(25 % WR)</td>
+<td>건전 SG로 보조급수펌프 기동·밸브 개방</td>
+</tr>
+<tr>
+<td>RAS 재순환</td>
+<td>RWT 저-저수위(표준형 등 RWT를 쓰는 CE형)</td>
+<td>집수조 흡입 밸브 개방, 저압 안전주입펌프 정지</td>
+</tr>
+</tbody>
+</table>
+<p>작동 대상은 CE형 공개 매뉴얼과 APR1400 DCD의 서술을 요약한 것이며[1][2], 세부 기기 목록은 호기마다 다릅니다.</p>
+<figure class="article-image"><img alt="NSSS-ESFAS 신호의 입력 변수·APR1400 DCD 공칭 설정치·작동 대상 매트릭스와 구동기기(펌프·전동 밸브) 장면" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-011-esfas-actuation-signals/fig1_esfas_signal_matrix.avif"/><figcaption>NSSS-ESFAS 신호의 입력 변수·APR1400 DCD 공칭 설정치·작동 대상 매트릭스와 구동기기(펌프·전동 밸브) 장면</figcaption></figure>
+<p>SIAS·CIAS 입력은 원자로정지 신호와 같은 변수를 씁니다[2]. 그래서 LOCA에서는 원자로정지·안전주입·격리가 거의 동시에 나옵니다. AFAS는 건전한 SG에만 급수하는 것이 목표입니다. 파단 SG에 물을 넣으면 1차측 과냉각이 계속되고 파단부로 질량·에너지가 계속 빠져나가기 때문입니다. 파단 SG를 가려내는 판정 논리와 그 설정은 노형·호기별 설계에 따릅니다.</p>
+<p>BOP-ESFAS는 방사선 감시기 입력으로 작동합니다. 주제어실 비상환기·여과, 연료(취급)건물 비상배기, 격납건물 퍼지 격리가 그 예입니다[1].</p>
+<h2>원전에서의 의미</h2>
+<h3>APR1400 — PPS는 개시, ESF-CCS는 작동</h3>
+<p>APR1400 DCD(Rev.0) 7.3절에서[1] NSSS-ESFAS는 SIAS·CSAS·CIAS·MSIS·AFAS-1·AFAS-2의 6개입니다. 신호 이름은 표준형과 거의 같지만 설정치·작동 대상·구현 방식이 다르고, <strong>RAS가 없습니다.</strong> 수원인 IRWST가 격납건물 안에 있어 흡입을 바꿀 필요가 없기 때문입니다. BOP-ESFAS는 FHEVAS·CPIAS·CREVAS입니다.</p>
+<ul>
+<li>공칭 설정치는 SIAS·CIAS 가압기 저압력 1,810 psia, 격납건물 고압력 1.9 psig, CSAS 20.03 psig, MSIS SG 저압력 855 psia·SG 고수위 90 % NR, AFAS SG 저수위 25 % WR입니다(표 7.3-5A)[1].</li>
+<li>SIAS가 살수펌프를 미리 기동하고, CSAS가 살수 헤더를 엽니다.</li>
+<li>PPS 2개 디비전이 전원을 잃어도 모든 NSSS-ESFAS가 개시됩니다(고장 시 안전 방향).</li>
+<li>응답시간 요건은 안전주입 40 s 이하, MSIV 닫힘 6.35 s 이하입니다(표 7.3-7)[1].</li>
+</ul>
+<p>신호는 PPS의 LCL(2/4)에서 안전등급 데이터링크로 <strong>ESF-CCS</strong>에 갑니다. ESF-CCS는 PPS와 별개의 4디비전 디지털 계통입니다. 그룹제어기(GC)가 선택적 2/4와 래치를, 루프제어기(LC)가 기기별 제어 논리를, CIM이 수동·자동 명령의 우선순위를 처리합니다.</p>
+<figure class="article-image"><img alt="APR1400 PPS 개시 → ESF-CCS 작동 신호 사슬(EDG 순차투입 포함)과 가압기 압력축 위 SIAS·CIAS 설정치 1,810 psia·운전 바이패스 구간(400/500 psia)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-011-esfas-actuation-signals/fig2_esf_ccs_chain_bypass.avif"/><figcaption>APR1400 PPS 개시 → ESF-CCS 작동 신호 사슬(EDG 순차투입 포함)과 가압기 압력축 위 SIAS·CIAS 설정치 1,810 psia·운전 바이패스 구간(400/500 psia)</figcaption></figure>
+<h3>LOOP와 부하 순차투입</h3>
+<p>ESF는 대부분 대형 전동기라 소외전원 상실(LOOP)과 겹치면 비상디젤발전기(EDG)에 나눠 걸어야 합니다. APR1400은 이 순차투입기를 ESF-CCS 각 디비전에 넣었습니다. 1E 모선 저전압 계전기 4개 중 2개가 동작하면 EDG를 기동하고 대형 부하를 떼어 냅니다(load shed). EDG 차단기를 넣은 뒤 8단계 카운터로 부하 그룹을 하나씩 투입합니다[1]. SIAS·AFAS·CSAS도 EDG를 기동합니다. 소외전원이 살아 있으면 EDG는 무부하로 대기하고, 부하는 소외전원으로 순차 기동합니다. 사고가 LOOP 전·동시·후 어느 때 와도 사고 부하가 다음 단계에 들어가도록 설계합니다.</p>
+<h3>디지털 공통원인고장 대비</h3>
+<p>PPS와 ESF-CCS가 소프트웨어 공통원인고장으로 함께 실패하면 자동 ESF 작동이 사라집니다. 그래서 다양성보호계통(DPS)과 다양한 수동 작동 수단이 일부 ESF 기능을 보완합니다[1].</p>
+<h2>신호와 설계기준사고의 관계</h2>
+<p>사고별 대표 신호입니다. 실제 개시 여부와 순서는 각 변수가 설정치에 도달하느냐에 달려 있습니다.</p>
+<table>
+<thead>
+<tr>
+<th>설계기준사고</th>
+<th>주로 나오는 신호</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>대형·소형 LOCA</td>
+<td>SIAS·CIAS, 대형은 CSAS, 표준형은 이후 RAS</td>
+</tr>
+<tr>
+<td>주증기관 파단(MSLB)</td>
+<td>MSIS(SG 저압력·격납건물 고압력), SIAS, 건전 SG AFAS, 격납건물 내부면 CSAS 가능</td>
+</tr>
+<tr>
+<td>SG 전열관 파단(SGTR)</td>
+<td>SIAS(가압기 저압력), AFAS, 파단 SG 격리는 고수위 MSIS 또는 수동</td>
+</tr>
+<tr>
+<td>급수상실·급수관 파단</td>
+<td>AFAS</td>
+</tr>
+<tr>
+<td>연료취급사고</td>
+<td>FHEVAS·CPIAS</td>
+</tr>
+</tbody>
+</table>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기술기준규칙 제26조(원자로보호계통)① 2호[4]</td>
+<td>사고 조건을 감지해 안전상 중요한 계통의 작동을 개시</td>
+</tr>
+<tr>
+<td>같은 조② · 제44조</td>
+<td>다중성·독립성·운전 중 시험·고장 시 안전, 단일고장</td>
+</tr>
+<tr>
+<td>제30조·제23조</td>
+<td>작동 대상인 비상노심냉각장치·격납건물</td>
+</tr>
+<tr>
+<td>10 CFR 50 App. A GDC 20~24[5]</td>
+<td>보호계통 기능·신뢰성·독립성</td>
+</tr>
+<tr>
+<td>50.55a(h)(3) → IEEE 603-1991[5][6]</td>
+<td>보호동작 완결(5.2), 수동 개시(6.2), 운전·정비 바이패스(6.6·6.7)</td>
+</tr>
+</tbody>
+</table>
+<p>현행판은 원안위규칙 제37호(2026.3.30)입니다. 제73회(2003)는 「원자력법」 체계에서 아날로그 계전기 매트릭스 ESFAS를 전제로 했습니다. 지금은 원자력안전법 체계이고, APR1400은 디지털 PPS와 ESF-CCS로 바뀌었으며, RAS가 없어지고 다양성 보완 기능이 더해졌습니다. 2017년 이후 조문 번호는 바뀌지 않았습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>RPS(원자로정지)</th>
+<th>ESFAS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>목적</td>
+<td>AOO에서 SAFDL 보호</td>
+<td>DBA 결과 완화</td>
+</tr>
+<tr>
+<td>출력</td>
+<td>정지차단기 개방(한 가지 동작)</td>
+<td>신호별로 다른 ESF 작동</td>
+</tr>
+<tr>
+<td>계열</td>
+<td>4채널 → 정지차단기</td>
+<td>4채널 → Train A·B(또는 4디비전)</td>
+</tr>
+<tr>
+<td>유지</td>
+<td>차단기 개방 자체로 유지</td>
+<td>lockout·래치(AFAS 제외)</td>
+</tr>
+</tbody>
+</table>
+<p>웨스팅하우스형은 이름이 다릅니다. NRC 공개 W형 매뉴얼 기준으로[3], 안전주입(SI) 작동이 원자로정지·비상노심냉각·Phase A 격리·보조급수·비상디젤 기동을 함께 일으킵니다. 격납건물 고-고 압력은 살수와 Phase B 격리(RCP 기기냉각수 배관 격리)를 냅니다. 증기관 격리는 격납건물 고-고 압력, 또는 증기유량 고와 Tavg 저-저·증기압력 저의 조합으로 나갑니다. 급수격리는 별도 기능입니다. 가압기 압력 허용신호(P-11) 아래에서는 저압력 SI를 수동으로 차단할 수 있습니다. 설정치와 논리 세부는 호기마다 다릅니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 공정변수 설정치 도달 시 ESF를 자동 작동해 DBA 결과를 허용치 안에 유지하는 안전등급 계통</li>
+<li><strong>구성</strong>: 4채널 측정 → 바이스테이블 → 선택적 2/4 → Train A/B 작동 논리 → 기기</li>
+<li><strong>SIAS</strong>: 가압기 저압력·격납건물 고압력 → 안전주입펌프·EDG</li>
+<li><strong>CIAS</strong>: 같은 입력 → 격납건물 관통 배관 격리</li>
+<li><strong>CSAS</strong>: 격납건물 고-고압력 → 살수</li>
+<li><strong>MSIS</strong>: SG 저압력·SG 고수위·격납건물 고압력 → 주증기·주급수 격리</li>
+<li><strong>AFAS-1/2</strong>: SG별 저수위 → 건전 SG 보조급수(lockout 없음, 밸브 자동 개폐)</li>
+<li><strong>RAS</strong>: RWT 저-저수위 → 집수조 재순환(APR1400은 IRWST로 없음)</li>
+<li><strong>특성</strong>: lockout·수동 리셋, 수동 개시, 운전 바이패스(400 psia 이하), 채널 바이패스 시 2/3</li>
+<li><strong>APR1400</strong>: PPS 개시 → ESF-CCS(GC 선택적 2/4·LC·CIM) 작동, EDG 순차투입 포함</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 ESFAS 블록도(입력 변수 → 변수별 2/4 → 6개 신호와 작동)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-011-esfas-actuation-signals/sketch1_esfas_answer_block.avif"/><figcaption>답안지용 ESFAS 블록도(입력 변수 → 변수별 2/4 → 6개 신호와 작동)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023년 2교시 2번</td>
+<td>RPS·ESFAS·DPS 보호계통</td>
+</tr>
+<tr>
+<td>2021년 4교시 5번</td>
+<td>공학적안전설비 기능·구성·작동신호</td>
+</tr>
+<tr>
+<td>2017년 4교시 2번</td>
+<td>표준형 ESFAS 신호·신호원·기능과 설계기준사고</td>
+</tr>
+<tr>
+<td>제73회 2교시 4번</td>
+<td>NSSS ESFAS 주요 신호</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>KHNP, APR1400 Design Control Document Tier 2, Ch. 7 "Instrumentation and Controls", Rev. 0 (2014), 7.3절, 표 7.3-1·7.3-5A·7.3-7, NRC ADAMS ML15006A046.</li>
+<li>U.S. NRC HRTD, CE Technology Cross Training Course Manual, Ch. 10.3 "Engineered Safety Features Actuation System", Rev 10/08, NRC ADAMS ML11251A030.</li>
+<li>U.S. NRC HRTD, Westinghouse Technology Systems Manual, Sec. 12.3 "Reactor Protection System – Engineered Safety Features Actuation Signals", Rev 0706, NRC ADAMS ML11223A310.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제23·26·30·44조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criteria 20~24; 10 CFR 50.55a(h)(3).</li>
+<li>IEEE Std 603-1991, "IEEE Standard Criteria for Safety Systems for Nuclear Power Generating Stations".</li>
+</ol>

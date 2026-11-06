@@ -1,0 +1,243 @@
+<figure class="article-image"><img alt="[개념 노트] 등가선량과 유효선량 — 흡수선량에 wR과 wT를 곱해 만든 방호량 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rp-002-equivalent-effective-dose/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>등가선량</strong> HT는 조직·장기 T의 평균 흡수선량에 방사선가중치 wR을 곱해 합한 양입니다(HT = ΣR wR·DT,R). <strong>유효선량</strong> E는 각 조직의 등가선량에 조직가중치 wT를 곱해 전 조직에 대해 합한 양입니다(E = ΣT wT·HT, ΣwT = 1). 단위는 둘 다 Sv(= J/kg)입니다.</p>
+<p>답안 첫 줄에는 "확률적 영향(암·유전) 관리를 위해 흡수선량을 방사선 종류(wR)와 조직 감수성(wT)으로 가중한 방호량이며, 인체 내 양이라 직접 측정할 수 없고 실용량 H*(10)·Hp(10)로 추정함"이라고 쓰면 정의와 성격이 함께 들어갑니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>흡수선량에서 출발하는 이유</h3>
+<p>선량 체계의 물리적 기반은 <strong>흡수선량</strong> D(Gy = J/kg)입니다. 모든 방사선·모든 물질에 정의되고 측정할 수 있습니다. 반면 <strong>조사선량</strong> X(C/kg)는 광자가 공기에서 만든 전하량이라 광자·공기에만 쓰입니다(1 R = 2.58×10⁻⁴ C/kg).</p>
+<p>같은 1 mGy라도 알파선은 감마선보다 암 유발 효율이 높고, 같은 등가선량이라도 조직마다 위험 기여가 다릅니다. 그래서 ICRP는 <strong>조직 평균 흡수선량</strong> DT,R에 방사선 종류·에너지(wR)와 조직 감수성(wT)으로 <strong>두 번 가중</strong>합니다.</p>
+<h3>방사선가중치 wR</h3>
+<table>
+<thead>
+<tr>
+<th>방사선</th>
+<th>ICRP 60 (1990)</th>
+<th>ICRP 103 (2007)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>광자·전자·뮤온</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>양성자</td>
+<td>5 (2 MeV 초과)</td>
+<td>2 (하전 파이온 포함)</td>
+</tr>
+<tr>
+<td>알파·핵분열파편·중이온</td>
+<td>20</td>
+<td>20</td>
+</tr>
+<tr>
+<td>중성자</td>
+<td>계단함수 5·10·20·10·5(경계 0.01·0.1·2·20 MeV)[2]</td>
+<td>에너지 연속함수[1]</td>
+</tr>
+</tbody>
+</table>
+<p>ICRP 103의 중성자 wR은 1 MeV 미만에서 2.5 + 18.2·exp[−(ln En)²/6]입니다. 1~50 MeV에서는 5.0 + 17.0·exp[−(ln 2En)²/6], 50 MeV 초과에서는 2.5 + 3.25·exp[−(ln 0.04En)²/6]입니다(En 단위 MeV)[1]. 최대값은 약 1 MeV에서 20.7이고, 열중성자 영역은 2.5로 ICRP 60(5)의 절반입니다. 저에너지 중성자는 인체 내 수소 포획 (n,γ)의 2차 광자가 선량의 큰 몫을 차지해 평균 효과가 낮다는 점과 계단의 불연속 제거가 반영됐습니다.</p>
+<figure class="article-image"><img alt="중성자 방사선가중치 wR: ICRP 60 계단함수와 ICRP 103 연속함수(최대 약 20.7, 1 MeV), 중성자 외 방사선 wR 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rp-002-equivalent-effective-dose/fig1_neutron_wr_curve.avif"/><figcaption>중성자 방사선가중치 wR: ICRP 60 계단함수와 ICRP 103 연속함수(최대 약 20.7, 1 MeV), 중성자 외 방사선 wR 표</figcaption></figure>
+<h3>조직가중치 wT와 유효선량</h3>
+<table>
+<thead>
+<tr>
+<th>조직</th>
+<th>ICRP 60</th>
+<th>ICRP 103</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>적색골수·결장·폐·위</td>
+<td>각 0.12</td>
+<td>각 0.12</td>
+</tr>
+<tr>
+<td>유방</td>
+<td>0.05</td>
+<td>0.12</td>
+</tr>
+<tr>
+<td>생식선</td>
+<td>0.20</td>
+<td>0.08</td>
+</tr>
+<tr>
+<td>방광·간·식도·갑상선</td>
+<td>각 0.05</td>
+<td>각 0.04</td>
+</tr>
+<tr>
+<td>뼈표면·피부</td>
+<td>각 0.01</td>
+<td>각 0.01</td>
+</tr>
+<tr>
+<td>뇌·침샘</td>
+<td>잔여에 포함</td>
+<td>각 0.01</td>
+</tr>
+<tr>
+<td>잔여조직</td>
+<td>0.05</td>
+<td>0.12(13개 + 성별 1개)</td>
+</tr>
+</tbody>
+</table>
+<p>wT는 조직별 <strong>방사선 위해</strong>(detriment)의 상대 기여입니다. 위해에는 치명암·비치명암·수명 단축·유전영향이 가중돼 들어갑니다. ICRP 103의 위해조정 명목위험계수는 전체 인구 5.7 %/Sv, 성인 종사자 4.2 %/Sv입니다(ICRP 60은 7.3 %/Sv, 5.6 %/Sv)[1][2]. 유전영향 위험을 낮게 재평가한 결과가 생식선 0.20 → 0.08입니다. ICRP 103은 남·여 기준 팬텀의 등가선량을 평균해 E를 계산합니다. 그래서 E는 실제 개인이 아니라 <strong>기준인</strong>(reference person)의 값입니다.</p>
+<p><strong>계산 예</strong>(설명용 가정, 성인 종사자 1년, 표시한 조직 외 기여 무시)</p>
+<ol>
+<li>외부 감마 전신 균일 흡수선량 1.0 mGy → 모든 조직 HT = 1 × 1.0 = 1.0 mSv → ΣwT = 1이므로 E₁ = 1.00 mSv</li>
+<li>알파 방출 에어로졸 흡입, 폐 예탁흡수선량 D폐(50) = 0.10 mGy → H폐 = 20 × 0.10 = 2.0 mSv → E₂ = 0.12 × 2.0 = 0.24 mSv</li>
+<li>I-131 흡입, 갑상선 예탁등가선량 H갑상선(50) = 10 mSv → E₃ = 0.04 × 10 = 0.40 mSv(ICRP 60 가중치면 0.05 × 10 = 0.50 mSv)</li>
+<li>합계 E = 1.64 mSv = 그해 외부피폭 + 그해 섭취분의 50년 예탁 기여. 1.74 mSv는 같은 조직선량에 ICRP 60 가중치만 바꿔 적용한 비교값입니다.</li>
+</ol>
+<p>국부 피폭에서는 E가 HT보다 훨씬 작습니다. 갑상선 10 mSv가 E로는 0.4 mSv입니다. 그래서 수정체·피부처럼 조직 반응이 문제 되는 조직은 등가선량 한도를 따로 둡니다.</p>
+<figure class="article-image"><img alt="흡수선량→등가선량→유효선량 흐름, 조직가중치 wT ICRP 60 대 103 구성비, 계산 예 E = 1.64 mSv" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rp-002-equivalent-effective-dose/fig2_dose_chain_tissue_weights.avif"/><figcaption>흡수선량→등가선량→유효선량 흐름, 조직가중치 wT ICRP 60 대 103 구성비, 계산 예 E = 1.64 mSv</figcaption></figure>
+<h3>예탁선량과 집단선량</h3>
+<ul>
+<li><strong>예탁선량</strong>: 체내 섭취 후 선량률을 적분한 값입니다. 적분 기간은 고시 문언으로 성인 50년, 아동 70년입니다(ICRP 표현으로는 어린이는 70세까지). 예탁등가선량 HT(50), 예탁유효선량 E(50)으로 쓰며, 미래에 받을 선량 전부를 <strong>섭취한 연도</strong>에 계상합니다.</li>
+<li><strong>집단유효선량</strong> ICRP 103은 극미량 선량을 큰 인구에 곱해 암 사망자 수를 계산하는 데 쓰지 말라고 명시합니다. 원전에서는 계획예방정비의 호기당 집단선량이 대표 지표입니다.</li>
+</ul>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>측정과 평가의 연결</strong>: E와 HT는 인체 내부의 양이라 측정할 수 없습니다. 현장에서는 ICRU <strong>실용량</strong>을 측정합니다. 지역 감시에는 주위선량당량 H*(10)과 방향선량당량 H′(0.07, Ω)을 씁니다. 개인 감시에는 개인선량당량 Hp(10)·Hp(0.07)·Hp(3)을 씁니다. 실용량은 광자의 일반적 조사 조건에서 E를 대체로 보수적으로 근사하므로 Hp(10)을 E의 추정치로 기록합니다. 다만 모든 조건에서 E 이상이 보장되지는 않습니다(ICRP 116)[3]. 증기발생기 수실처럼 불균일한 피폭장에서는 두 선량계 판독값을 가중 합산하는 2선량계 알고리즘을 씁니다.</li>
+<li><strong>피폭방사선량 = 외부 + 내부</strong>: 원자력안전법 시행령 제2조제4호는 선량한도를 "외부에 피폭하는 방사선량과 내부에 피폭하는 방사선량을 합한 피폭방사선량의 상한값"으로 정의합니다[5]. 즉 개인 피폭방사선량은 외부피폭 Hp(10) 기반 유효선량과 내부피폭 예탁유효선량 E(50)의 합입니다. 내부피폭은 전신계수기(WBC) 측정과 섭취 평가로 구합니다.</li>
+<li><strong>중성자 피폭 관리</strong>: 출력운전 중 격납건물 출입이나 중수로 원자로건물 작업에서는 중성자 기여를 따로 평가합니다. 렘카운터(감속재 구)는 중성자 플루언스→H*(10) 환산계수에 맞춘 응답을 지향하므로 환산계수 기준이 평가값에 영향을 줍니다.</li>
+<li><strong>설계와 소외 평가</strong>: 차폐 설계 기준선량률과 부지경계 소외 선량평가도 결과를 유효선량으로 표현합니다. 선량환산인자의 기반 권고(ICRP 26/30·60·103)에 따라 값이 달라집니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<ul>
+<li><strong>ICRP 26(1977) → 60(1990) → 103(2007)</strong>: 품질인자 Q 기반 선량당량·유효선량당량 HE가 ICRP 60에서 wR 기반 등가선량·유효선량으로 바뀌었고, ICRP 103에서 가중치 개정·성별 평균·새 기준 팬텀(ICRP 110)이 도입됐습니다. 수정체 한도는 ICRP 118(2012)에서 5년 평균 20 mSv(연 50 mSv 이하)로 낮아졌고 IAEA GSR Part 3(2014)이 반영했습니다[4][11].</li>
+<li><strong>원자력안전법 시행령</strong> 제2조제4호와 [별표 1] 선량한도: 방사선작업종사자 유효선량은 연간 50 mSv를 넘지 않는 범위에서 5년간 100 mSv입니다. 수정체 등가선량은 연간 150 mSv, 손·발 및 피부는 연간 500 mSv입니다. 일반인은 유효선량 연간 1 mSv, 수정체 15 mSv, 피부 50 mSv입니다[5].</li>
+<li><strong>원안위 고시 「방사선방호 등에 관한 기준」</strong>(현행 제2026-12호) 제2조: 흡수·등가·유효·예탁·집단선량을 정의하고, 방사선가중치는 별표 1, 조직가중치는 별표 2에 둡니다. 두 별표의 값은 위 표의 ICRP 60 열과 같습니다(중성자 5·10·20·10·5, 생식선 0.20, 잔여조직 0.05)[6]. 국내 관계법령은 ICRP 60 권고 기반이며, 원안위는 2016년 ICRP 103 도입 연구를 수행했습니다(방사선산업학회지, 2024)[10].</li>
+<li><strong>개정 동향(2026)</strong>: 원안위는 2026년 6월 25일 회의에서 하위법령 개정안을 의결하고, 9월 18일 원자력안전법 시행령 일부개정령안을 입법예고했습니다(원안위 공고 제2026-89호, 의견 마감 10월 28일)[7]. 별표 1의 방사선작업종사자 수정체 등가선량 한도를 "연간 150"에서 "연간 50을 넘지 않는 범위에서 5년간 100"(mSv)으로 바꾸는 내용이며, 부칙상 2027년 1월 1일 시행 예정입니다. 2026년 10월 현재는 입법예고 단계라 현행 한도는 연 150 mSv입니다.</li>
+<li><strong>미국 10 CFR 20</strong>: TEDE 연 50 mSv(5 rem), 수정체 150 mSv로 ICRP 26/30 체계(품질인자, wT 생식선 0.25)를 유지합니다. NRC는 2016년 ICRP 103 반영 개정을 중단했습니다[8].</li>
+<li><strong>출제 당시 대비</strong>: 2011~2023년 기출 시점과 현행 모두 ICRP 60 기반이며, 바뀔 수 있는 점은 수정체 한도(2027 시행 예정)입니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>등가선량 HT</th>
+<th>유효선량 E</th>
+<th>선량당량 H(실용량)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>대상</td>
+<td>조직·장기 1개</td>
+<td>전신(기준인)</td>
+<td>점(ICRU 구·인체 깊이 d)</td>
+</tr>
+<tr>
+<td>가중</td>
+<td>wR</td>
+<td>wR·wT</td>
+<td>품질인자 Q(L)</td>
+</tr>
+<tr>
+<td>용도</td>
+<td>조직 반응 방지 한도(수정체·피부)</td>
+<td>확률적 영향 한도·최적화</td>
+<td>측정·입증</td>
+</tr>
+<tr>
+<td>측정</td>
+<td>불가</td>
+<td>불가</td>
+<td>가능(H*(10)·Hp(10))</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>흡수선량 D</th>
+<th>유효선량 E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>성격</td>
+<td>물리량</td>
+<td>방호량</td>
+</tr>
+<tr>
+<td>단위</td>
+<td>Gy</td>
+<td>Sv</td>
+</tr>
+</tbody>
+</table>
+<p>유효선량은 개인의 암 위험 계산에 바로 쓰는 양이 아닙니다. 개인 위험이나 역학 연구에는 장기 흡수선량과 개인 특성을 씁니다(ICRP 147, 2021)[9].</p>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 등가선량과 유효선량</strong></p>
+<ol>
+<li><strong>흡수선량 D</strong>: 단위 질량당 흡수에너지, <strong>Gy(J/kg)</strong>, 물리량</li>
+<li><strong>등가선량</strong> HT = ΣR <strong>wR</strong>·DT,R, 단위 <strong>Sv</strong> — 조직 평균 흡수선량에 방사선 종류 가중</li>
+<li><strong>wR(ICRP 103)</strong>: 광자·전자 1, 양성자 2, 알파 20, 중성자 2.5~20.7 연속함수(1 MeV 최대)</li>
+<li><strong>유효선량</strong> E = Σ <strong>wT</strong>·HT, <strong>ΣwT = 1</strong>, 단위 Sv — 확률적 영향 위험을 전신 균일 피폭 기준으로 환산</li>
+<li><strong>wT(ICRP 103)</strong>: 골수·결장·폐·위·유방·잔여 0.12, 생식선 0.08, 방광·간·식도·갑상선 0.04, 뼈표면·피부·뇌·침샘 0.01</li>
+<li><strong>성격</strong>: 기준인·성별 평균 <strong>방호량</strong>, 측정 불가 → 실용량 *<em>H</em>(10)·Hp(10)**로 추정(대체로 보수적)</li>
+<li><strong>예탁선량</strong>: 섭취 후 <strong>50년(어린이 70세)</strong> 적분, 섭취 연도에 계상 / <strong>집단선량</strong>: Σ E·N, man·Sv</li>
+<li><strong>국내 한도</strong>: 종사자 연 50 mSv·5년 100 mSv, 일반인 연 1 mSv, 수정체 150 mSv(개정안 5년 100 mSv)</li>
+<li><strong>한계</strong>: 결정적 영향·개인 위험 평가에는 사용하지 않음(Gy 사용)</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: D → HT → E 선량 체계와 실용량 추정 관계" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rp-002-equivalent-effective-dose/sketch1_dose_chain.avif"/><figcaption>답안용 도식: D → HT → E 선량 체계와 실용량 추정 관계</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>연도-교시-번호</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2011-1-7</td>
+<td>등가선량과 유효선량</td>
+</tr>
+<tr>
+<td>2015-1-13</td>
+<td>유효선량(Effective Dose)</td>
+</tr>
+<tr>
+<td>2016-1-12</td>
+<td>피폭방사선량</td>
+</tr>
+<tr>
+<td>2018-2-6</td>
+<td>조사·흡수·등가·유효·예탁선량</td>
+</tr>
+<tr>
+<td>2023-1-8</td>
+<td>조사·흡수·등가·유효·집단선량</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>ICRP, Publication 103 "The 2007 Recommendations of the International Commission on Radiological Protection", Ann. ICRP 37(2-4) (2007), Annex A·B.</li>
+<li>ICRP, Publication 60 "1990 Recommendations of the International Commission on Radiological Protection", Ann. ICRP 21(1-3) (1991).</li>
+<li>ICRP, Publication 116 "Conversion Coefficients for Radiological Protection Quantities for External Radiation Exposures", Ann. ICRP 40(2-5) (2010).</li>
+<li>ICRP, Publication 118 "ICRP Statement on Tissue Reactions", Ann. ICRP 41(1-2) (2012).</li>
+<li>「원자력안전법 시행령」(대통령령 제36664호), 제2조제4호·별표 1. 국가법령정보센터.</li>
+<li>원자력안전위원회, 「방사선방호 등에 관한 기준」, 원안위고시 제2026-12호(2026.7.9 시행), 제2조·별표 1·별표 2. 국가법령정보센터.</li>
+<li>원자력안전위원회, 원자력안전법 시행령 일부개정령안 입법예고, 원안위 공고 제2026-89호(2026.9.18).</li>
+<li>U.S. NRC, 10 CFR Part 20 "Standards for Protection Against Radiation". NRC 웹(eCFR).</li>
+<li>ICRP, Publication 147 "Use of Dose Quantities in Radiological Protection", Ann. ICRP 50(1) (2021).</li>
+<li>김시영 외, 「수정체 방사선 방호에 관한 규제기준 및 기술기준 검토」, 방사선산업학회지 18(1) (2024).</li>
+<li>IAEA, General Safety Requirements Part 3 "Radiation Protection and Safety of Radiation Sources: International Basic Safety Standards" (2014).</li>
+</ol>

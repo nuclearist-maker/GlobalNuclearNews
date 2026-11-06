@@ -1,0 +1,244 @@
+<figure class="article-image"><img alt="[개념 노트] 제논-135 독작용(Xenon Poisoning) — 평형제논, 정지 후 정점, 출력 변화 거동 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-008-xenon-poisoning/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>제논-135 독작용은 핵분열생성물 ¹³⁵Xe(열중성자 흡수단면적 약 2.65×10⁶ b)가 주로 ¹³⁵I 붕괴로 생성되어 열중성자를 흡수함으로써 열중성자 이용률 f를 낮추고 음의 반응도를 주는 현상이며, 생성과 소멸(붕괴·연소)의 시간차 때문에 출력 변화와 정지 후 수십 시간에 걸친 반응도 변화를 일으킵니다.</strong></p>
+<h2>원리와 메커니즘</h2>
+<h3>생성과 소멸 경로</h3>
+<p>¹³⁵Te —β⁻(약 11 s)→ ¹³⁵I —β⁻(6.7 h)→ ¹³⁵Xe —β⁻(9.2 h)→ ¹³⁵Cs 순서로 붕괴합니다. ¹³⁵Te는 금방 붕괴하므로 ¹³⁵I가 핵분열에서 직접 생긴다고 봅니다. ²³⁵U 열핵분열의 유효 수율은 γI = 0.0639, γXe = 0.00237이므로(Lamarsh 3판 Table 7.5)[1] <strong>¹³⁵Xe의 약 96 %는 ¹³⁵I 붕괴로</strong> 생깁니다. 소멸은 자체 β 붕괴(λXe)와 중성자 흡수(σa^Xe φ, "연소")의 두 경로이고, 흡수 후 생긴 ¹³⁶Xe는 독성이 거의 없습니다.</p>
+<ul>
+<li>dI/dt = γI Σf φ − λI I</li>
+<li>dX/dt = γXe Σf φ + λI I − λXe X − σa^Xe φ X</li>
+<li>반응도(누설 무시, f 변화만): ρXe = −σa^Xe X/(ν p ε Σf)</li>
+</ul>
+<p>상수는 λI = 2.87×10⁻⁵ s⁻¹, λXe = 2.09×10⁻⁵ s⁻¹(Lamarsh Table 7.6), σa^Xe = 2.65×10⁶ b(2,200 m/s)입니다[1]. 전출력 φ = 5×10¹³ n/cm²·s에서 연소 항 σφ = 1.3×10⁻⁴ s⁻¹은 붕괴상수의 약 6배이므로, <strong>운전 중 제논은 주로 연소로 사라지고 정지하면 붕괴로만 사라집니다.</strong> 이 비대칭이 아래 거동을 모두 설명합니다.</p>
+<h3>평형제논 — 출력에 비례하지 않는다</h3>
+<p>시간 미분을 0으로 두면 평형값이 나옵니다.</p>
+<ul>
+<li>I∞ = γI Σf φ/λI, X∞ = (γI + γXe) Σf φ/(λXe + σa^Xe φ)</li>
+<li>ρ∞ = −[(γI + γXe)/(ν p ε)] × φ/(φX + φ),  φX = λXe/σa^Xe ≈ 7.9×10¹² n/cm²·s</li>
+</ul>
+<p>φ ≪ φX이면 출력에 비례하고, φ = φX에서 포화값의 절반, φ ≫ φX이면 최대 −(γI + γXe)/ν = −0.066/2.42 ≈ <strong>−2.73 %(약 −2,740 pcm)</strong> 에 다가갑니다. 출력용 PWR은 φ가 φX보다 몇 배 커 포화 영역에 있으므로, 50 % 출력에서도 평형제논은 100 %의 약 88 %입니다(아래 표, 교과서 1군 모델 계산값[1][2]). 실제 PWR 값은 노형·연소도·스펙트럼 평균 단면적에 따라 달라 이 계산값과 같지 않습니다.</p>
+<table>
+<thead>
+<tr>
+<th>열중성자속 φ</th>
+<th>1×10¹³</th>
+<th>2.5×10¹³</th>
+<th>5×10¹³</th>
+<th>1×10¹⁴</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>평형 ρ (pcm)</td>
+<td>−1,531</td>
+<td>−2,082</td>
+<td>−2,365</td>
+<td>−2,538</td>
+</tr>
+<tr>
+<td>정지 후 정점 시각</td>
+<td>5.7 h</td>
+<td>—</td>
+<td>9.5 h</td>
+<td>10.3 h</td>
+</tr>
+<tr>
+<td>정지 후 정점 ρ (pcm)</td>
+<td>−1,861</td>
+<td>—</td>
+<td>−6,296</td>
+<td>−11,550</td>
+</tr>
+</tbody>
+</table>
+<p>무제논 상태에서 기동하면 ¹³⁵I(6.7 h)를 거치므로 평형까지 시간이 걸립니다. φ = 5×10¹³에서 24시간 후 90 %, 48시간 후 99 %이므로 <strong>약 40~50시간이면 평형</strong>입니다.</p>
+<!-- 확인필요: 실제 PWR 전출력 평형제논 반응도 대표값은 공개 서지로 확인하지 못함 — 본문은 1군 계산값만 씀 -->
+<h3>정지 후 제논 정점</h3>
+<p>정지하면 φ = 0이 되어 연소가 멈춥니다. 남은 ¹³⁵I는 계속 붕괴해 제논을 만들고, λI &gt; λXe이므로 한동안 생성이 소멸보다 큽니다.</p>
+<ul>
+<li>X(t) = X0 e^(−λXe t) + [λI I0/(λI − λXe)] (e^(−λXe t) − e^(−λI t))</li>
+<li>정점 시각 t_max = ln{(λI/λXe) · λI I0/[λI I0 + (λI − λXe) X0]}/(λI − λXe)</li>
+</ul>
+<p>정점은 <strong>약 10시간 전후</strong>이고, 정지 전 중성자속이 클수록 더 높고 늦습니다. φ = 5×10¹³에서 정점은 정지 9.5시간 후 평형값의 약 2.7배이며, 정지 약 34시간 후 평형값 아래로 내려가며, 이후 수일에 걸쳐 줄어듭니다(정지 48시간 후에도 평형값의 약 40 %).</p>
+<figure class="article-image"><img alt="무제논 기동 → 전출력 72 h → 정지 후 9.5 h 정점과 재기동불능 구간(계산 곡선), I·Xe 지배식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-008-xenon-poisoning/fig1_xenon_shutdown_peak.avif"/><figcaption>무제논 기동 → 전출력 72 h → 정지 후 9.5 h 정점과 재기동불능 구간(계산 곡선), I·Xe 지배식</figcaption></figure>
+<p>이 정점 동안 가용 반응도 여유보다 제논 반응도가 크면 재기동할 수 없습니다(재기동불능시간). 예를 들어 무제논 기준으로 제논 보상에 쓸 수 있는 여유가 4,000 pcm(가상)이면, 위 모델에서 정지 후 약 1.8~24.0시간 사이가 해당합니다.</p>
+<h3>출력 단계 변화 — 순간과 최종이 반대 방향</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>직후(수 시간)</th>
+<th>극값</th>
+<th>최종(약 2일, 48 h)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100 → 50 %</td>
+<td>연소 감소 → 제논 증가</td>
+<td>4.8 h 후 −3,303 pcm</td>
+<td>새 평형 −2,082 pcm(감소)</td>
+</tr>
+<tr>
+<td>50 → 100 %</td>
+<td>연소 증가 → 제논 감소</td>
+<td>3.2 h 후 −1,549 pcm</td>
+<td>새 평형 −2,365 pcm(증가)</td>
+</tr>
+</tbody>
+</table>
+<p>직후 방향은 연소 항의 변화가, 최종 방향은 평형값 차이가 정합니다(φ100 = 5×10¹³ 기준 계산).</p>
+<figure class="article-image"><img alt="출력 100↔50 % 단계 변화 후 제논 반응도와 평형제논–중성자속 포화 곡선" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-008-xenon-poisoning/fig2_xenon_power_step.avif"/><figcaption>출력 100↔50 % 단계 변화 후 제논 반응도와 평형제논–중성자속 포화 곡선</figcaption></figure>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>운전 보상</strong>: 정지 후 재기동 시에는 제논 정점·감소 시점을 예측해 임계 붕소농도(ECC)를 계산합니다.</li>
+<li><strong>주기말 제약</strong>: 주기말에는 붕소 농도가 낮아 희석 여유가 작으므로 제논 정점을 보상(override)하지 못해 재기동불능시간이 생기기 쉽습니다.</li>
+<li><strong>부하추종</strong>: 출력을 내리면 제논이 먼저 늘어 출력 회복을 방해합니다.</li>
+<li><strong>안전 해석</strong>: 정지여유도와 잉여반응도 평가에서 제논 상태(평형·무제논·정점)를 조건으로 명시합니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50 App. A GDC 26[3]</td>
+<td>원리가 다른 독립 반응도 제어계통 2개. 둘째 계통은 계획된 정상 출력변화(제논 연소 포함)에 따른 반응도 변화율을 제어</td>
+</tr>
+<tr>
+<td>GDC 12</td>
+<td>출력진동은 생기지 않거나 확실히 탐지·억제되도록 설계(제논 진동 근거)</td>
+</tr>
+<tr>
+<td>NRC SRP 4.3 핵설계[4]</td>
+<td>반응도 제어 능력, 제논 공간 안정성 평가</td>
+</tr>
+<tr>
+<td>원안위 「원자로시설 등의 기술기준에 관한 규칙」 제28조(반응도제어계통)[5]</td>
+<td>반응도 제어·노심 설계 요건(GDC 상응)</td>
+</tr>
+<tr>
+<td>같은 규칙 제19조(원자로출력 및 출력분포 진동 제어)</td>
+<td>연료허용손상한계를 넘게 할 출력·출력분포 진동 방지 또는 탐지·제어(GDC 12 상응)</td>
+</tr>
+<tr>
+<td>운영기술지침서(T/S)</td>
+<td>정지여유도, 축방향 출력편차 LCO로 제논 영향을 간접 관리(표준기술지침서 예[6])</td>
+</tr>
+</tbody>
+</table>
+<!-- 기술기준규칙 제19·28조: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 -->
+<p>출제 당시(2009~2025년)와 비교해 제논 물리와 위 GDC는 바뀐 것이 없습니다. 국내 법 체계가 원자력법에서 원자력안전법(2011)으로 바뀐 점만 유의하면 됩니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>¹³⁵Xe</th>
+<th>¹⁴⁹Sm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>생성</td>
+<td>¹³⁵I(6.7 h) 붕괴 + 직접</td>
+<td>¹⁴⁹Pm(53 h) 붕괴</td>
+</tr>
+<tr>
+<td>σa(2,200 m/s)</td>
+<td>2.65×10⁶ b</td>
+<td>4.1×10⁴ b</td>
+</tr>
+<tr>
+<td>소멸</td>
+<td>붕괴(9.2 h) + 연소</td>
+<td>연소만(안정핵)</td>
+</tr>
+<tr>
+<td>평형 반응도</td>
+<td>출력 의존, 최대 약 −2.7 %</td>
+<td>출력 무관, 약 −0.44 %[1]</td>
+</tr>
+<tr>
+<td>정지 후</td>
+<td>약 10 h 정점 후 소멸</td>
+<td>증가 후 그대로 유지</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 핵분열생성물 ¹³⁵Xe(σa ≈ 2.65×10⁶ b)의 열중성자 흡수로 f 감소 → 음의 반응도</li>
+<li><strong>생성</strong>: ¹³⁵I(T½ 6.7 h) 붕괴 약 96 % + 직접 수율 γXe</li>
+<li><strong>소멸</strong>: 붕괴(T½ 9.2 h) + 중성자 흡수(연소, 전출력에서 지배적)</li>
+<li><strong>평형제논</strong>: ρ∞ = −[(γI + γXe)/ν]·φ/(φX + φ), φX ≈ 7.9×10¹² → 고출력 포화, 최대 약 −2.7 %</li>
+<li><strong>도달 시간</strong>: 무제논 기동 후 약 40~50 h</li>
+<li><strong>정지 후</strong>: 연소 정지 + ¹³⁵I 계속 붕괴 → 약 10 h 후 정점, 이후 수일에 걸쳐 감소</li>
+<li><strong>재기동불능시간</strong>: 제논 반응도 &gt; 가용 여유 구간, 주기말에 문제</li>
+<li><strong>출력 변화</strong>: 감소 시 일시 증가 후 낮은 평형, 증가 시 일시 감소 후 높은 평형</li>
+<li><strong>대응</strong>: 붕소·제어봉 보상, 축방향 제논 진동 감시(ASI)</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 정지 후 제논 곡선과 재기동불능시간" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-008-xenon-poisoning/sketch1_xenon_after_shutdown.avif"/><figcaption>답안지용 정지 후 제논 곡선과 재기동불능시간</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>계산 예 — 출력 50 → 100 % 평형제논 반응도(2020년 4교시 2번)</h2>
+<p>주어진 값: φ50 = 2.5×10¹³, φ100 = 5.0×10¹³, γI 0.06, γXe 0.002, Σf 0.18 cm⁻¹, Σa,F 0.58, Σa,M 0.10 cm⁻¹, σa^Xe 2.7×10⁶ b, T½ 9.2 h. 나머지 5인자 = 1이므로 k = f입니다.</p>
+<ol>
+<li>λXe = 0.693/(9.2×3,600) = 2.093×10⁻⁵ s⁻¹, φX = λXe/σ = 7.75×10¹²</li>
+<li>Σa^Xe = (γI + γXe)Σf φ/(φX + φ) → 50 %: 0.008519 cm⁻¹, 100 %: 0.009662 cm⁻¹</li>
+<li>f50 = 0.58/0.688519 = 0.84239, f100 = 0.58/0.689662 = 0.84099</li>
+<li>Δρ = 1/k50 − 1/k100 = (0.688519 − 0.689662)/0.58 = <strong>−1.97×10⁻³ ≈ −197 pcm</strong></li>
+</ol>
+<p>Δk/k 근사로 쓰면 약 −166 pcm이므로, 어느 정의를 썼는지 답안에 밝혀 두는 것이 좋습니다. 출력이 두 배인데 평형제논 반응도 변화가 이렇게 작은 것이 포화의 결과입니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 2교시 2번</td>
+<td>재기동 불능시간 정의와 존재 이유</td>
+</tr>
+<tr>
+<td>2025년 1교시 7번</td>
+<td>출력 단계변화 시 제논 농도 거동</td>
+</tr>
+<tr>
+<td>2020년 4교시 2번</td>
+<td>출력 50→100 % 평형제논 반응도 계산</td>
+</tr>
+<tr>
+<td>2019년 3교시 1번</td>
+<td>Xe 생성·소멸, 평형, 기동 3일 후 정지, 재기동불능시간</td>
+</tr>
+<tr>
+<td>2015년 1교시 5번</td>
+<td>원자로 재기동불능시간</td>
+</tr>
+<tr>
+<td>2009년 3교시 2번</td>
+<td>제논 평형농도 식과 생성·소멸</td>
+</tr>
+<tr>
+<td>제65회 2교시 1번</td>
+<td>정지 후 A·B 원소 잔류량 유도</td>
+</tr>
+</tbody>
+</table>
+<p>제65회 문제의 "다음 그림"은 원본에서 복원했습니다. A원소(생산 ηA Σf Φ0)가 λA로 B원소에 붕괴 유입되고, B원소는 생산 ηB Σf Φ0, 흡수 σB NB Φ0, 붕괴 λB로 소멸하는 구조로, A = ¹³⁵I, B = ¹³⁵Xe를 일반화한 문제입니다. 초기조건은 위 평형식, 정지 후 잔류량은 정점 식과 같습니다. 2019년 3교시 1번 다항(무제논 기동 → 3일 운전 → 정지)은 fig1 곡선이 그대로 답이 됩니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 7장(Table 7.5 핵분열 수율, Table 7.6 붕괴상수, 제논·사마륨 독작용).</li>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, John Wiley &amp; Sons (1976), 핵분열생성물 독작용 장.</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix A, GDC 12 "Suppression of reactor power oscillations", GDC 26 "Reactivity control system redundancy and capability".</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.3 "Nuclear Design".</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제19조·제28조. 국가법령정보센터.</li>
+<li>U.S. NRC, NUREG-1431, Standard Technical Specifications — Westinghouse Plants, LCO 3.1.1 "Shutdown Margin"·LCO 3.2.3 "Axial Flux Difference".</li>
+</ol>

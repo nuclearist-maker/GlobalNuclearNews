@@ -1,0 +1,258 @@
+<figure class="article-image"><img alt="[개념 노트] 삼중수소(Tritium) — 붕소·리튬과 중수에서 생기고 처리로 걸러지지 않는 저에너지 β 핵종 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rp-005-tritium/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>삼중수소</strong>(³H, T)는 양성자 1개와 중성자 2개로 된 수소의 방사성 동위원소입니다. 반감기 12.3년으로 β⁻ 붕괴해 ³He가 되며, 감마선은 내지 않습니다. 원전에서는 냉각재 속 붕소·리튬·중수소의 중성자 반응과 삼중핵분열로 생기고, 대부분 물 분자(HTO)로 존재해 일반 처리공정으로는 걸러지지 않습니다.</p>
+<p>답안 첫 줄에는 "β⁻ 최대 18.6 keV의 저에너지 순수 β 방출체라 외부피폭은 무시되고 HTO 섭취·흡입에 의한 내부피폭만 관리 대상이며, 중수로가 경수로보다 수십 배 많이 생성함"이라고 쓰면 핵심이 다 들어갑니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>핵적·화학적 특성</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+<th>답안 포인트</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>반감기</td>
+<td>12.32년(λ = 0.0563/년)[1]</td>
+<td>축적형 핵종</td>
+</tr>
+<tr>
+<td>β 에너지</td>
+<td>최대 18.6 keV, 평균 5.7 keV</td>
+<td>물속 비정 최대 약 6 μm, 피부 각질층 통과 못 함</td>
+</tr>
+<tr>
+<td>비방사능</td>
+<td>3.56×10¹⁴ Bq/g</td>
+<td>λN으로 직접 계산</td>
+</tr>
+<tr>
+<td>화학형</td>
+<td>HT·T₂(기체), HTO(삼중수소수), OBT(유기결합)</td>
+<td>형태별 선량계수가 다름</td>
+</tr>
+<tr>
+<td>측정</td>
+<td>액체섬광계수기(LSC)</td>
+<td>GM 계수관으로는 사실상 검출 불가</td>
+</tr>
+</tbody>
+</table>
+<p><strong>ICRP 선량계수</strong>(성인)는 HTO 섭취 1.8×10⁻¹¹ Sv/Bq, OBT 섭취 4.2×10⁻¹¹ Sv/Bq입니다(ICRP 72)[2]. HT 기체 흡입은 1.8×10⁻¹⁵ Sv/Bq로 HTO의 약 1만분의 1입니다. 기체는 폐에서 거의 흡수되지 않고 체내 산화도 일부뿐이기 때문입니다. HTO 증기는 피부로도 흡수되므로 작업자 평가는 흡입량에 약 1.5배를 적용합니다.</p>
+<p>HTO는 체수분과 섞여 <strong>전신에 균일 분포</strong>하고, 생물학적 반감기는 약 10일입니다(3 %는 OBT로 약 40일 성분). 특정 장기에 모이지 않고 빨리 빠져나간다는 점이 선량계수가 작은 이유입니다.</p>
+<h3>생성원 — 경수로와 중수로</h3>
+<table>
+<thead>
+<tr>
+<th>반응</th>
+<th>노형</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>삼중핵분열</td>
+<td>공통</td>
+<td>삼중수소 생성수율 핵분열당 약 10⁻⁴, 연료 안에서 생성</td>
+</tr>
+<tr>
+<td>¹⁰B(n,2α)³H</td>
+<td>PWR</td>
+<td>붕산수 속 B-10의 고속중성자 반응(유효 문턱 약 1 MeV), 냉각재 삼중수소의 주 생성원</td>
+</tr>
+<tr>
+<td>⁷Li(n,n′α)³H</td>
+<td>PWR</td>
+<td>문턱 약 2.8 MeV. Li-7은 pH 제어제와 B-10(n,α) 반응에서 옴</td>
+</tr>
+<tr>
+<td>⁶Li(n,α)³H</td>
+<td>PWR</td>
+<td>열중성자 단면적 약 940 b → LiOH는 Li-7 99.9 % 이상 농축품 사용</td>
+</tr>
+<tr>
+<td>²H(n,γ)³H</td>
+<td>PHWR(경수로는 미미)</td>
+<td>열중성자 단면적 0.52 mb로 작지만 감속재·냉각재 D₂O가 수백 t</td>
+</tr>
+</tbody>
+</table>
+<p>표의 반응은 가압경수로(PWR) 기준이며, 붕소가 주요 기여원이고 리튬·핵분열이 그다음입니다. 중수로는 단면적이 작아도 중수소 원자 수와 열중성자속이 커서 생성량이 압도적입니다. 초기 농도 0, 일정 생성률, 제거·교체 없음으로 이상화하면 감속재 농도는 C(t) = C_eq(1 − e^(−λt))로 쌓입니다. λ = 0.0563/년이면 10년에 평형값의 43 %, 20년 68 %, 30년 82 %입니다. 노심 체류가 긴 감속재가 냉각재보다 훨씬 진합니다. UNSCEAR 2000(표 37)은 1995~1997년 삼중수소 정규화 방출량을 PWR 21.4 TBq/GWe·년(기체 2.4 + 액체 19), 중수로 670 TBq/GWe·년(기체 330 + 액체 340)으로 집계했습니다(약 31배)[3]. 방출량 비교이며 생성량 비율 그 자체는 아닙니다.</p>
+<figure class="article-image"><img alt="경수로와 중수로의 삼중수소 생성 반응, 감속재 축적 곡선, 정규화 방출량 21.4 대 670 TBq/GWe·년" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rp-005-tritium/fig1_tritium_production_paths.avif"/><figcaption>경수로와 중수로의 삼중수소 생성 반응, 감속재 축적 곡선, 정규화 방출량 21.4 대 670 TBq/GWe·년</figcaption></figure>
+<h3>핵분열 삼중수소가 1차계통으로 나오는 경로</h3>
+<ol>
+<li><strong>건전 피복관 투과</strong>: 지르칼로이는 수소를 수소화물로 붙잡아 투과 분율이 작습니다(스테인리스 피복은 큼).</li>
+<li><strong>결함 연료</strong>: 핀홀·균열로 간극의 HT·HTO가 냉각재로 직접 나옵니다.</li>
+<li><strong>피복 표면 우라늄 오염</strong>(tramp uranium): 표면 우라늄의 핵분열 생성물이 반조로 냉각재에 직접 들어갑니다.</li>
+</ol>
+<p>냉각재에 들어온 삼중수소는 HTO가 되어 CVCS 유출·배수, 격납건물·사용후연료 저장조 표면 증발, 1차→2차 누설을 거쳐 액체·기체로 방출됩니다. 액체 처리계통의 H-3 제염계수는 1입니다.</p>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>작업자 방호</strong>: 중수로 원자로건물·중수 취급 구역은 공기 중 HTO가 주 피폭원입니다. 건조기(증기 회수), 국소 배기, 공기공급식 보호복으로 막고 소변 시료 LSC로 내부피폭을 감시합니다(소변 농도 ≈ 체수분 농도). 섭취 후에는 수분 섭취를 늘려 배출을 앞당깁니다.</li>
+<li><strong>저감 대책(PWR)</strong>: Li-7 고농축 LiOH, 연료 무결함 관리, tramp U 관리, 일체형 가연성 흡수체(과거 스테인리스 피복 붕규산유리 BP봉은 투과 사례)를 씁니다. 냉각재 재순환은 방출량을 줄이지만 계통 농도가 올라 작업자 피폭 관리와 맞바꿉니다.</li>
+<li><strong>제거(PHWR)</strong>: 월성 **삼중수소제거설비(WTRF)**가 2007년 가동을 시작했습니다. 설계 용량은 중수 100 kg/h, 삼중수소 추출효율 97 % 이상입니다. 액상촉매교환(LPCE, DTO + D₂ ⇄ D₂O + DT)으로 기체에 옮긴 뒤 초저온 증류로 농축하고, 티타늄 금속 수소화물로 고정 저장합니다. 사업자 발표에 따르면 가동 뒤 기체 삼중수소 방출은 약 80 % 줄었습니다[4].</li>
+<li><strong>환경 감시</strong>: 원전 주변의 공기 중 수분, 빗물, 지하수, 해수, 농수산물(OBT)을 정기 분석합니다. 저농도 시료는 증류 후 LSC, 더 낮으면 전해농축을 씁니다.</li>
+<li><strong>방출 실적</strong>: 부지별 연간 액체·기체 삼중수소 방출량은 사업자가 해마다 공개하는 원전 주변 환경방사선 조사·평가 보고서로 확인합니다. 중수로 부지가 경수로 부지보다 많은 경향은 위 UNSCEAR 정규화 방출량과 같습니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<ul>
+<li><strong>원자력안전법 시행령 별표 1</strong>: 일반인 유효선량한도 연 1 mSv입니다[5].</li>
+<li><strong>원안위 고시 「방사선방호 등에 관한 기준」(현행 제2026-12호) 배출관리기준</strong>: 별표 3의 H-3(삼중수소수) 값은 배수 중 4×10⁴ Bq/L(제8란 4×10⁷ Bq/m³), 배기 중 3×10³ Bq/m³(제5란)입니다(배출구 농도)[5].</li>
+<li><strong>설계 선량기준</strong>: 원자로 1기·제한구역 경계에서 H-3를 포함한 기체 입자·옥소는 장기 등가선량 연 0.15 mSv, 액체는 유효선량 연 0.03 mSv입니다(C-WD-005와 같은 고시 조항).</li>
+<li><strong>비교 기준</strong>: 미국 10 CFR 20 부록 B 표 2는 물 37,000 Bq/L·공기 3,700 Bq/m³[6], 일본 고시 농도 한도는 60,000 Bq/L입니다. 음용수는 WHO 10,000 Bq/L[7], 미국 EPA 740 Bq/L(20,000 pCi/L), EU 100 Bq/L(조사 지표)[8], 호주 76,103 Bq/L입니다. 값이 다른 것은 위해 차이가 아니라 기준 선량과 적용 지점이 달라서입니다.</li>
+<li><strong>후쿠시마 ALPS 처리수</strong>: ALPS는 삼중수소를 제외한 62개 핵종을 제거 대상으로 합니다. 2023년 8월 24일부터 해수로 희석해 H-3 1,500 Bq/L 미만, 연간 22 TBq 미만으로 방류하고 있습니다. IAEA 종합보고서(2023.7.4)는 "국제 안전기준에 부합하며 사람과 환경에 대한 방사선 영향은 무시할 수준"이라 결론지었고, 방류 기간 중 지속 검토를 명시했습니다[9]. 중국 등 일부 주변국은 반대 입장과 수산물 수입 규제를 유지했습니다.<!-- 확인필요: 연간 22 TBq 상한의 현행 운영 계획 원문 --></li>
+<li><strong>출제 당시 대비</strong>: R063·R067(2001~2004년) 당시는 WTRF 이전이고, 2023년 출제 시점에는 ALPS 방류 직전이었습니다. 배출관리기준 체계 자체의 변경은 확인되지 않았습니다.</li>
+</ul>
+<h3>선량 비교 계산(설명용)</h3>
+<p>1년간 섭취에 따른 예탁유효선량을 E = C × V × e, 성인 음용수 V = 730 L/년(2 L/일), e = 1.8×10⁻¹¹ Sv/Bq(HTO)로 계산합니다. 예: 10,000 × 730 × 1.8×10⁻¹¹ = 1.31×10⁻⁴ Sv = 0.131 mSv. WHO 기준선량 0.1 mSv와의 차이는 지침 농도의 반올림 때문입니다.</p>
+<table>
+<thead>
+<tr>
+<th>농도</th>
+<th>의미</th>
+<th>1년 섭취 예탁유효선량</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1,500 Bq/L</td>
+<td>ALPS 희석 후 운영목표</td>
+<td>0.020 mSv</td>
+</tr>
+<tr>
+<td>10,000 Bq/L</td>
+<td>WHO 지침(0.1 mSv 기준)</td>
+<td>0.13 mSv</td>
+</tr>
+<tr>
+<td>40,000 Bq/L</td>
+<td>국내 배수 배출관리기준(음용 기준 아님)</td>
+<td>0.53 mSv</td>
+</tr>
+<tr>
+<td>76,103 Bq/L</td>
+<td>1 mSv/년 역산 참고값</td>
+<td>1.0 mSv</td>
+</tr>
+</tbody>
+</table>
+<p>같은 계수로 다시 계산한 가상 음용 환산값이며 실제 주민 선량이 아닙니다. 미국 EPA 기준처럼 제정 당시 선량모델이 다른 기준도 있어, 농도 숫자만으로 위해를 비교할 수 없습니다. 세계 평균 자연방사선(연 약 3.0 mSv, UNSCEAR 2024)[10]은 비교용 평균이고, 실제 주민 선량은 희석·식품(OBT) 경로를 포함한 부지경계 평가로 구합니다.</p>
+<figure class="article-image"><img alt="1년 음용 가정 예탁유효선량 계산식과 농도별 선량 비교(로그 점 도표), 기준별 적용 지점" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rp-005-tritium/fig2_tritium_dose_comparison.avif"/><figcaption>1년 음용 가정 예탁유효선량 계산식과 농도별 선량 비교(로그 점 도표), 기준별 적용 지점</figcaption></figure>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>HTO</th>
+<th>OBT</th>
+<th>HT(기체)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>형태</td>
+<td>물 분자</td>
+<td>유기물 결합</td>
+<td>수소 기체</td>
+</tr>
+<tr>
+<td>섭취 선량계수</td>
+<td>1.8×10⁻¹¹</td>
+<td>4.2×10⁻¹¹</td>
+<td>흡입 1.8×10⁻¹⁵</td>
+</tr>
+<tr>
+<td>체내 체류</td>
+<td>약 10일</td>
+<td>10일·40일 각 50 %</td>
+<td>대부분 호기 배출</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>경수로(PWR)</th>
+<th>중수로(PHWR)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>주 생성원</td>
+<td>B-10(n,2α), Li, 삼중핵분열</td>
+<td>D(n,γ)T</td>
+</tr>
+<tr>
+<td>정규화 방출량</td>
+<td>21.4 TBq/GWe·년</td>
+<td>670 TBq/GWe·년</td>
+</tr>
+<tr>
+<td>제거</td>
+<td>실질적 수단 없음(희석·관리)</td>
+<td>WTRF(LPCE + 초저온 증류)</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 삼중수소의 특성·생성·대책</strong></p>
+<ol>
+<li><strong>특성</strong>: ³H, <strong>T½ 12.3년</strong>, 순수 <strong>β⁻(최대 18.6 keV, 평균 5.7 keV)</strong>, 감마 없음 → 외부피폭 무시, <strong>내부피폭 관리</strong></li>
+<li><strong>화학형</strong>: HTO·OBT·HT, 성인 섭취 선량계수 <strong>HTO 1.8×10⁻¹¹, OBT 4.2×10⁻¹¹ Sv/Bq</strong>, 생물학적 반감기 <strong>약 10일</strong>, 전신 균일</li>
+<li><strong>PWR 생성원</strong>: <strong>B-10(n,2α)T</strong>(주), Li-7(n,n′α)T·Li-6(n,α)T, <strong>삼중핵분열</strong>(수율 약 10⁻⁴), D(n,γ)T 미미</li>
+<li><strong>PHWR 생성원</strong>: 감속재·냉각재 <strong>D(n,γ)T</strong> → 정규화 방출량 PWR의 <strong>약 30배</strong>(UNSCEAR)</li>
+<li><strong>1차계통 누출 경로</strong>: 피복관 투과, 결함 연료, 피복 표면 우라늄(tramp U)</li>
+<li><strong>저감</strong>: <strong>Li-7 농축 LiOH</strong>, 연료 무결함, 일체형 가연성 흡수체, 중수 누설·증기 회수</li>
+<li><strong>제거</strong>: 월성 <strong>WTRF</strong>(2007, 100 kg/h, 97 %) — LPCE + 초저온 증류, 금속 수소화물 저장</li>
+<li><strong>방호·감시</strong>: 소변 <strong>LSC</strong> 분석, 보호복·건조기, 수분 섭취로 배출 촉진, 환경 시료 분석</li>
+<li><strong>기준</strong>: 국내 배수 배출관리기준 <strong>4×10⁴ Bq/L</strong>, WHO 음용수 10,000 Bq/L(≈0.13 mSv/년)</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: PWR·PHWR 생성 반응과 냉각재 → 액체·기체 방출 경로" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rp-005-tritium/sketch1_tritium_sources_paths.avif"/><figcaption>답안용 도식: PWR·PHWR 생성 반응과 냉각재 → 액체·기체 방출 경로</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>연도-교시-번호</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>제63회 4교시 1번</td>
+<td>삼중수소의 특성·발생·인체 장애·대책</td>
+</tr>
+<tr>
+<td>제67회 3교시 5번</td>
+<td>삼중수소의 생성원·특징 각 3가지</td>
+</tr>
+<tr>
+<td>2018-1-5</td>
+<td>중수로 삼중수소 생성기구와 제거방법</td>
+</tr>
+<tr>
+<td>2023-4-5</td>
+<td>원전 삼중수소 특징·누출 경로·저감 대책</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>National Nuclear Data Center(BNL), ENSDF/NuDat 3, ³H 평가 핵자료(반감기 12.32년, β⁻ 최대 18.6 keV).</li>
+<li>ICRP, Publication 72 "Age-dependent Doses to Members of the Public from Intake of Radionuclides: Part 5" (1996); Publication 68 "Dose Coefficients for Intakes of Radionuclides by Workers" (1994).</li>
+<li>UNSCEAR, Sources and Effects of Ionizing Radiation, UNSCEAR 2000 Report, Vol. I, Annex C, Table 37.</li>
+<li>Y. Han, I. Lee, H. Lee, K. Song, J. Park, "Long-term Operation of Wolsong Tritium Removal Facility (WTRF)", Transactions of the Korean Nuclear Society Autumn Meeting, Changwon (2025).</li>
+<li>원자력안전위원회, 「방사선방호 등에 관한 기준」, 원안위고시 제2026-12호, 별표 3(배출관리기준); 「원자력안전법 시행령」 별표 1. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 20 Appendix B, Table 2 "Effluent Concentrations".</li>
+<li>WHO, Guidelines for Drinking-water Quality, 4th ed. incorporating the 1st and 2nd addenda (2022), Ch. 9.</li>
+<li>U.S. EPA, 40 CFR 141.66(d)(β·광자 방출체 4 mrem/년 기준); Council Directive 2013/51/Euratom, Annex I.</li>
+<li>IAEA, Comprehensive Report on the Safety Review of the ALPS-Treated Water at the Fukushima Daiichi Nuclear Power Station (2023.7.4).</li>
+<li>UNSCEAR, UNSCEAR 2024 Report(자연방사선 세계 평균 피폭).</li>
+</ol>

@@ -1,0 +1,230 @@
+<figure class="article-image"><img alt="[개념 노트] 비상발령기준(EAL) — 초기조건과 임계값으로 비상 등급을 정하는 판정표 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rp-003-emergency-action-levels/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p>**비상발령기준(EAL, Emergency Action Level)**은 발전소 상태를 방사선비상 등급으로 분류하기 위해 미리 정해 둔 <strong>관측 가능한 임계값과 조건</strong>입니다. 계측값, 방사선감시기 지시, 운전 상태, 비상운전절차서 진입 여부 등이 여기에 해당합니다. 등급의 정의는 방사능방재법 제17조와 시행령 [별표 3]이 정합니다. 발전소별 EAL은 사업자 방사선비상계획서의 비상발령기준에 정하고 원안위 승인을 받습니다(법 제20조)[1].</p>
+<p>답안 첫 줄에는 "사고 상황을 비상 등급으로 신속·일관되게 분류하기 위해 사업자 방사선비상계획서에 정한 발전소별 관측 가능한 판정 임계값임"이라고 쓰면 됩니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>3층 구조: 등급 ← 초기조건 ← 임계값</h3>
+<p>EAL 체계는 세 층으로 이루어집니다.</p>
+<ul>
+<li><strong>비상 등급</strong>: 국내 백색·청색·적색(미국 UE·Alert·SAE·GE)</li>
+<li><strong>초기조건(IC, Initiating Condition)</strong>: 등급에 해당하는 사건·상태(예: "방벽 3개 중 2개 손상 + 나머지 1개 손상 우려")</li>
+<li><strong>EAL</strong>: 초기조건을 알아보는 구체적 지시값(예: "노심출구온도(CET) 649 °C 이상"). 초기조건 하나에 여러 EAL이 OR로 붙습니다.</li>
+</ul>
+<p>운전원은 표에서 찾아 등급을 정합니다. 미국은 지시가 가용해진 뒤 15분 안에 분류하도록 요구합니다(10 CFR 50 부록 E IV.C.2)[6].</p>
+<h3>인지범주(NEI 99-01)</h3>
+<p>미국 NEI 99-01은 초기조건을 **무엇으로 알아보는가(인지범주)**에 따라 묶습니다. Rev.6(2012.11)의 범주는 다음과 같습니다[5].</p>
+<table>
+<thead>
+<tr>
+<th>범주</th>
+<th>내용</th>
+<th>대표 초기조건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A (R 표기 허용)</td>
+<td>비정상 방사선준위·방사성 유출물</td>
+<td>소외선량 0.1/1/10 mSv TEDE → Alert/SAE/GE</td>
+</tr>
+<tr>
+<td>C</td>
+<td>냉온정지·핵연료 재장전 중 계통 이상</td>
+<td>정지 중 RCS 수위 상실</td>
+</tr>
+<tr>
+<td>E</td>
+<td>독립 사용후핵연료 저장시설(ISFSI)</td>
+<td>저장용기 손상</td>
+</tr>
+<tr>
+<td>F</td>
+<td>핵분열생성물 방벽</td>
+<td>FA1·FS1·FG1</td>
+</tr>
+<tr>
+<td>H</td>
+<td>위해요인(보안·지진·화재·주제어실 탈출)</td>
+<td>OBE 초과 지진(UE)</td>
+</tr>
+<tr>
+<td>S</td>
+<td>계통 고장(출력운전 중)</td>
+<td>교류전원 상실 15분 초과(SAE)</td>
+</tr>
+</tbody>
+</table>
+<p>Rev.6도 A 대신 R 표기를 허용하며, Rev.7(2024.9, NRC RG 1.101 Rev.7로 2025.9 승인) 기반 사업자 자료는 R을 씁니다.</p>
+<h3>방벽 판정표(범주 F)</h3>
+<p>EAL은 직접 감시할 수 있는 **3방벽(연료 피복재, 원자로냉각재계통 RCS, 격납건물)**으로 판정합니다. 방벽마다 **손상(Loss)**과 <strong>손상 우려(Potential Loss)</strong> 임계값을 둡니다.</p>
+<ul>
+<li><strong>FA1(Alert)</strong>: 피복재 또는 RCS 중 어느 하나라도 손상 또는 손상 우려</li>
+<li><strong>FS1(SAE)</strong>: 임의 2개 방벽 손상 또는 손상 우려</li>
+<li><strong>FG1(GE)</strong>: 임의 2개 손상 + 나머지 방벽 손상 또는 손상 우려</li>
+</ul>
+<p>같은 방벽은 손상이 우려를 포함하므로 한 번만 셉니다. 피복재·RCS에 가중을 두어 격납건물 단독 손상·우려는 FA1이 아니며, 다른 범주 EAL로 판정합니다.</p>
+<figure class="article-image"><img alt="3방벽 절개도, 방벽별 손상·손상 우려 지시값 예(NEI 99-01 Rev.6 PWR 방벽 표, 실제는 부지별 값), GE → SAE → Alert 판정 순서" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rp-003-emergency-action-levels/fig1_barrier_matrix.avif"/><figcaption>3방벽 절개도, 방벽별 손상·손상 우려 지시값 예(NEI 99-01 Rev.6 PWR 방벽 표, 실제는 부지별 값), GE → SAE → Alert 판정 순서</figcaption></figure>
+<p>출제 당시 국내 목록형 계획서도 같은 논리를 썼습니다. 이 계획서들이 참고한 NUREG-0654 부록 1[4]의 General Emergency 예시 2가 "방벽 3개 중 2개 손상 + 3번째 방벽 손상 우려"입니다[3]. 지시값의 공개 예는 NEI 99-01 Rev.6 PWR 방벽 표입니다(실제 값은 부지별)[5].</p>
+<ul>
+<li>피복재: 손상은 냉각재 방사능이 부지별 값(I-131 등가 약 300 µCi/g에 해당) 초과 또는 CET 1,200 °F(649 °C) 초과, 우려는 CET 700 °F(371 °C) 초과</li>
+<li>RCS: 손상은 격리 불가 누설이나 SG 세관 파열로 ECCS(SI) 작동이 필요한 경우, 우려는 대기 충전펌프가 필요한 경우</li>
+<li>격납건물: 손상은 격리 실패나 우회 경로(격납건물 밖 FAULTED SG 등), 우려는 격납건물 압력 부지별 값 초과·폭발성 혼합기</li>
+</ul>
+<h2>원전에서의 의미</h2>
+<h3>"환경으로 다량의 방사성물질이 방출된 경우"의 판단</h3>
+<p>기출의 "환경으로 다량의 방사성물질이 방출된 경우"는 방출량으로 판정하는 적색 발령상황입니다. 그 원형인 NUREG-0654 부록 1의 General Emergency 예시 1은 두 경로를 둡니다[3].</p>
+<ul>
+<li><strong>1.a 감시기 경로</strong>: 방출감시기 지시가 실제 기상조건에서 **부지경계 전신 1 rem/h(10 mSv/h) 또는 갑상선 5 rem/h(50 mSv/h)**에 해당하는 경우입니다.</li>
+<li><strong>1.b 예측·실측 경로</strong>: 같은 선량률을 다른 발전소 변수로 예측하거나(격납건물 방사선준위와 격납건물 압력에 맞는 누설률, 방출감시기로 일부 확인) 주변 환경에서 실측한 경우입니다.</li>
+</ul>
+<p>같은 수치가 방재법의 방사능재난 선포 기준에도 있습니다[1].</p>
+<p>NEI 99-01의 방사선 범주는 선량률이 아니라 <strong>예상 적산선량</strong>으로 단계를 나눕니다. AA1·AS1·AG1이 각각 TEDE 0.1·1·10 mSv(갑상선 0.5·5·50 mSv)로 EPA PAG의 1 %·10 %·100 %입니다. 판단 경로는 감시기 지시(15분 지속), 실제 기상 선량평가, 현장 측정(선량률 1,000 mR/h가 60분 이상 지속 예상) 세 가지입니다. NUREG-0654 예시·국내 기준(mSv/h)과 숫자가 같아 보여도 초기조건의 차원이 다릅니다[5].</p>
+<figure class="article-image"><img alt="NEI 방출 초기조건의 예상선량 임계선(로그 축)과 NUREG-0654 GE 예시 1.a·1.b 판단 경로" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rp-003-emergency-action-levels/fig2_release_dose_ladder.avif"/><figcaption>NEI 방출 초기조건의 예상선량 임계선(로그 축)과 NUREG-0654 GE 예시 1.a·1.b 판단 경로</figcaption></figure>
+<h3>노심용융과 심각한 누출이 우려되는 사건</h3>
+<p>방벽 손상 전이라도 <strong>완화 기능이 겹쳐 상실되면</strong> 적색입니다. NUREG-0654 부록 1의 General Emergency 예시 4(단시간 대량 방출이 가능한 조건, 예: 노심용융)의 PWR 사고경위 5가지가 출제 문구의 원형입니다[3].</p>
+<ul>
+<li><strong>a</strong>: LOCA + ECCS 기능 실패 → 수 분~수 시간 안에 노심 손상·용융</li>
+<li><strong>b</strong>: 급수·복수계통 상실 + 비상(보조)급수 장시간 고장 → 수 시간 안에 노심용융 가능</li>
+<li><strong>c</strong>: 정지가 필요한 과도 + 원자로 정지 실패 → 노심 손상</li>
+<li><strong>d</strong>: 소외·소내 전원 모두 상실 + 비상급수 수 시간 상실 → 노심용융</li>
+<li><strong>e</strong>: 소형 LOCA, ECCS 초기 성공 → 이후 격납건물 열제거 상실 → 노심용융·격납 파손 가능</li>
+</ul>
+<p>같은 사건도 시간에 따라 격상됩니다. NEI 99-01 Rev.6에서 출력운전 중 교류전원 상실이 15분을 넘으면 SAE입니다[5].</p>
+<h3>지진·해일 EAL과 단계별 조직</h3>
+<p>NUREG-0654 부록 1의 자연재해 예시는 다음과 같습니다[3]. 국내 목록형 계획서도 이 골격을 따랐습니다[4].</p>
+<ul>
+<li><strong>Alert(≈백색)</strong>: 운전기준지진(OBE) 초과 지진, 설계 수준에 근접한 홍수·해일, 시설을 강타한 토네이도</li>
+<li><strong>SAE(≈청색, 냉온정지 아님)</strong>: 안전정지지진(SSE) 초과 지진, 설계 수준을 넘는 홍수·해일·풍속</li>
+<li><strong>GE(≈적색)</strong>: 설계기준을 크게 넘는 내·외부 사건이 계통에 대규모 공통 손상을 일으킨 경우</li>
+</ul>
+<p>OBE·SSE 값은 호기별 설계값입니다(예: APR1400 표준설계 SSE 0.3 g[7]). NEI 99-01 Rev.6에서는 OBE 초과 지진이 UE(HU2)입니다[5]. 경보만으로 발령하지 않고 실제 지진인지 확인합니다.</p>
+<p>조직은 백색에서 사업자 응급조치·비상대응시설 운영, 청색부터 사업자 비상대책본부와 원안위 중앙본부·현장방사능방재지휘센터 설치, 적색에서 주민보호조치가 더해집니다(시행령 별표 3)[1]. TSC·OSC·EOF 요건은 사업자 방사선비상대책 고시가 정합니다[2].</p>
+<h2>규제·기준 근거</h2>
+<ul>
+<li><strong>방사능방재법</strong> 제17조(종류), 제20조(방사선비상계획 승인), 제23조(방사능재난 선포), 시행령 제19조 [별표 3](등급 정의·대응절차)[1].</li>
+<li><strong>원안위 고시</strong> 「원자력사업자의 방사선비상대책에 관한 고시」 제2026-11호(비상대응시설 등)[2]</li>
+<li><strong>사업자 방사선비상계획서</strong>: 호기별 발령상황·발령기준표(원안위 승인).</li>
+<li><strong>미국</strong>: 10 CFR 50.47(b)(4)(표준 등급·EAL 체계), 부록 E IV.B(EAL은 발전소 내 계측 조건 기반, 체계 전체 변경은 사전 승인), IV.C.2(15분 분류)를 둡니다[6]. NEI 99-01 Rev.6(2012)은 NRC가 2013년 승인했고, Rev.7(2024.9)은 RG 1.101 Rev.7로 승인했습니다. 피동형 노형은 NEI 07-01을 씁니다[5].</li>
+<li><strong>IAEA GSR Part 7(2015)</strong>: 사전 설정 판단기준에 따른 비상 등급 분류 체계를 요구합니다[8].</li>
+<li><strong>출제 당시 대비 변경</strong>: 2009~2012년 문항은 NUREG-0654 부록 1식 발령상황 목록형 계획서 시절에 출제되었습니다[4]. 목록형에서도 방벽 판정은 "2개 손상 + 1개 우려" 논리를 썼습니다. 이후 NEI 99-01형 매트릭스로 개편되었는지는 공개 자료로 확인하지 못했습니다.<!-- 확인필요: 국내 비상계획서의 NEI 99-01형 인지범주 매트릭스 도입 여부·시점 — 공개 자료 미확인 --> 출제 당시의 교육과학기술부는 현재 원자력안전위원회입니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>비상 등급 정의</th>
+<th>비상발령기준(EAL)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>근거</td>
+<td>법 제17조, 시행령 별표 3</td>
+<td>사업자 방사선비상계획서(원안위 승인)</td>
+</tr>
+<tr>
+<td>내용</td>
+<td>시설 상태 + 예상 영향 범위(건물 내/부지 내/부지 밖)</td>
+<td>계측값·감시기·절차서 진입 등 관측 임계값</td>
+</tr>
+<tr>
+<td>범위</td>
+<td>모든 원자력시설 공통</td>
+<td>발전소·호기별(지진값·감시기 번호가 다름)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>국내 목록형(NUREG-0654 부록 1식)</th>
+<th>미국 NEI 99-01</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>등급</td>
+<td>백색·청색·적색(3)</td>
+<td>UE·Alert·SAE·GE(4)</td>
+</tr>
+<tr>
+<td>형식</td>
+<td>등급별 발령상황 목록 + 지시값 표</td>
+<td>인지범주 × 등급 매트릭스</td>
+</tr>
+<tr>
+<td>방출 기준</td>
+<td>부지경계 선량률(mSv/h)</td>
+<td>소외 예상 적산선량(PAG 1·10·100 %)</td>
+</tr>
+<tr>
+<td>방벽</td>
+<td>적색: 2손상 + 1우려</td>
+<td>FA1·FS1·FG1 단계 판정</td>
+</tr>
+</tbody>
+</table>
+<p>대응은 근사 관계입니다(백색 ≈ Alert, 청색 ≈ SAE, 적색 ≈ GE). NUREG-0654 예시는 냉각재 누설 50 gpm 초과를 Alert로 두고[3] NEI는 SI 필요 여부로 RCS 손상을 판정하는 것처럼[5], 같은 사건도 체계에 따라 배정이 다를 수 있습니다. EOP는 사고를 <strong>완화</strong>하는 절차이고 EAL은 사고를 <strong>분류</strong>하는 기준입니다. EOP 진입이 EAL 지시값으로 쓰이기도 합니다.</p>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 비상발령기준(EAL)</strong></p>
+<ol>
+<li><strong>정의</strong>: 발전소 상태를 비상 등급으로 분류하는 <strong>관측 가능한 임계값</strong>(계측·감시기·절차서 진입)</li>
+<li><strong>근거</strong>: 방사능방재법 제17조·시행령 <strong>별표 3</strong>(등급 정의) → 사업자 <strong>방사선비상계획서</strong>에 EAL 수록, 원안위 승인(법 제20조)</li>
+<li><strong>구조</strong>: 등급 ← <strong>초기조건(IC)</strong> ← EAL(OR 결합), <strong>15분</strong> 내 분류·발령</li>
+<li><strong>인지범주</strong>(NEI 99-01): 방사선(A, R 표기 허용)·냉온정지(C)·ISFSI(E)·<strong>방벽(F)</strong>·위해요인(H)·계통(S)</li>
+<li><strong>방벽 판정</strong>: 피복재·RCS·격납건물 손상/우려 → 1개(피복재·RCS) Alert, 2개 SAE, <strong>2손상 + 나머지 손상·우려 GE(≈국내 적색)</strong></li>
+<li><strong>방출 기준(NUREG-0654 GE 예시)</strong>: 부지경계 전신 <strong>10 mSv/h</strong>·갑상선 <strong>50 mSv/h</strong>(감시기·변수 예측·실측, 방재법 재난 선포 기준과 같은 값)</li>
+<li><strong>노심용융 우려(적색 예)</strong>: LOCA + ECCS 실패, 급수 상실 + 비상급수 장시간 불능, 정지 실패(ATWS), SBO + 비상급수 상실, 소형 LOCA 후 격납 열제거 상실</li>
+<li><strong>자연재해(NUREG-0654 예)</strong>: OBE 초과 → Alert(≈백색), SSE 초과 → SAE(≈청색) 이상</li>
+<li><strong>유의</strong>: 경보만으로 발령 안 함(실제 확인), 가장 높은 등급 우선, 해제는 발령 조건 해소·안정 확인 후</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: 3방벽 손상/우려 체크와 등급 판정 순서" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rp-003-emergency-action-levels/sketch1_barrier_logic.avif"/><figcaption>답안용 도식: 3방벽 손상/우려 체크와 등급 판정 순서</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>연도-교시-번호</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2009-2-1</td>
+<td>방사선비상 종류 기준과 종류별 발령조건 5가지</td>
+</tr>
+<tr>
+<td>2010-2-2</td>
+<td>다량 방출 표현과 적색 노심용융 우려 사건 4가지</td>
+</tr>
+<tr>
+<td>2011-2-3</td>
+<td>노심용융·심각한 누출 우려 사건 예</td>
+</tr>
+<tr>
+<td>2011-2-4</td>
+<td>다량 방사성물질 방출 판단방법과 기준</td>
+</tr>
+<tr>
+<td>2012-3-2</td>
+<td>지진·해일 시 발령조건과 단계별 비상대응조직</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>「원자력시설 등의 방호 및 방사능 방재 대책법」 제17조·제20조·제23조, 같은 법 시행령 제19조 [별표 3](2021.12.23 개정)·제25조. 국가법령정보센터.</li>
+<li>원자력안전위원회, 「원자력사업자의 방사선비상대책에 관한 고시」, 원안위고시 제2026-11호(2026.7.1). 국가법령정보센터.</li>
+<li>U.S. NRC/FEMA, NUREG-0654/FEMA-REP-1, Rev. 1, Criteria for Preparation and Evaluation of Radiological Emergency Response Plans and Preparedness in Support of Nuclear Power Plants (1980.11), Appendix 1 "Emergency Action Level Guidelines for Nuclear Power Plants", NRC ADAMS ML040420012.</li>
+<li>성기방, 남용재, 김일기, 이재성, "Review of Radiological Emergency Initiation Criteria and Notification Method in Domestic PWR Plants", 한국원자력학회 2005 추계학술발표회 논문집(부산, 2005.10).</li>
+<li>Nuclear Energy Institute, NEI 99-01 Rev. 6, Development of Emergency Action Levels for Non-Passive Reactors (2012.11), NRC ADAMS ML12326A805.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix E "Emergency Planning and Preparedness for Production and Utilization Facilities", IV.B·IV.C.2; 10 CFR 50.47(b)(4). NRC 웹(eCFR).</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Ch. 3.7 "Seismic Design"(SSE 0.3 g). NRC 설계인증 공개 문서.</li>
+<li>IAEA, Preparedness and Response for a Nuclear or Radiological Emergency, General Safety Requirements No. GSR Part 7 (2015).</li>
+</ol>

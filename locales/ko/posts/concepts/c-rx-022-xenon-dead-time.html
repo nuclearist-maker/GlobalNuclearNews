@@ -1,0 +1,220 @@
+<figure class="article-image"><img alt="[개념 노트] 재기동불능시간(Xe Dead Time) — 정지 후 제논이 가용 잉여반응도를 넘는 구간 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-022-xenon-dead-time/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>재기동불능시간(xenon dead time)은 원자로 정지 후 ¹³⁵Xe가 늘어 제논 반응도 손실이 재기동에 쓸 수 있는 가용 잉여반응도(제어봉 전 인출·붕소 최소 희석 기준)를 넘는 동안, 가정한 운전 조건 범위에서는 임계에 도달할 수 없는 시간 구간입니다.</strong> 영어로는 xenon-precluded startup 기간이라고도 합니다[2].</p>
+<p>이 노트는 두 개념이 만나는 지점, 즉 "언제부터 언제까지 재기동이 막히고 그 길이는 무엇이 정하는가"만 다룹니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>왜 생기는가 — 세 가지 조건</h3>
+<ol>
+<li><strong>연소 경로가 사라짐</strong>: 운전 중 제논은 주로 중성자 흡수(σa φ X)로 사라집니다. 정지하면 φ = 0이 되어 이 경로가 없어집니다.</li>
+<li><strong>¹³⁵I가 더 빨리 붕괴함</strong>: ¹³⁵I(T½ 6.7 h)가 ¹³⁵Xe(T½ 9.2 h)보다 빨리 붕괴하므로, 정지 후 한동안 생성(λI I)이 붕괴 소멸(λXe X)보다 큽니다. 그래서 제논은 약 10시간 전후에 정점을 찍습니다.</li>
+<li><strong>가용 여유가 유한함</strong>: 재기동에 쓸 수 있는 반응도 M은 연소에 따라 줄어듭니다.</li>
+</ol>
+<p>판정식은 간단합니다. 제논 반응도 손실을 L(t) = −ρXe(t)라 하면 <strong>L(t) &gt; M인 구간이 재기동불능시간</strong>이고, 시작 t₁과 끝 t₂는 L(t) = M의 두 근입니다. M은 재기동 조건(고온 영출력)에서 제어봉을 모두 빼고 붕소를 최소로 낮췄을 때의 무제논 잉여반응도이며, 연소도와 다른 독물질은 고정한 값입니다. 출력결손 회복분은 이미 이 M 안에 들어 있으므로 따로 더하지 않습니다.</p>
+<p>정지 후 제논은 해석해 X(t) = X₀e^(−λXe t) + λI I₀/(λI − λXe)·(e^(−λXe t) − e^(−λI t))로 구합니다. I₀, X₀는 정지 전 평형값입니다[1].</p>
+<h3>가용 여유에 따라 창이 열리고 닫힌다</h3>
+<p>C-RX-008과 같은 교과서 1군 모델(Lamarsh 상수)로, 평형 운전 φ = 5×10¹³ n/cm²·s에서 정지한 경우를 계산했습니다. 평형 손실은 2,365 pcm, 정지 후 정점은 9.5시간 뒤 6,296 pcm입니다(설명용 계산).</p>
+<table>
+<thead>
+<tr>
+<th>가용 여유 M</th>
+<th>시작 t₁</th>
+<th>끝 t₂</th>
+<th>길이</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3,000 pcm</td>
+<td>0.6 h</td>
+<td>29.5 h</td>
+<td>28.9 h</td>
+</tr>
+<tr>
+<td>4,000 pcm</td>
+<td>1.8 h</td>
+<td>24.0 h</td>
+<td>22.2 h</td>
+</tr>
+<tr>
+<td>5,000 pcm</td>
+<td>3.4 h</td>
+<td>19.0 h</td>
+<td>15.6 h</td>
+</tr>
+<tr>
+<td>6,000 pcm</td>
+<td>6.3 h</td>
+<td>13.4 h</td>
+<td>7.1 h</td>
+</tr>
+<tr>
+<td>≥ 정점 6,296 pcm</td>
+<td>—</td>
+<td>—</td>
+<td>없음</td>
+</tr>
+</tbody>
+</table>
+<figure class="article-image"><img alt="가용 잉여반응도 M에 따른 재기동불능 구간(t₁~t₂) 지도, φ = 2.5×10¹³·5×10¹³·1×10¹⁴ 비교와 M별 구간 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-022-xenon-dead-time/fig1_dead_time_window_map.avif"/><figcaption>가용 잉여반응도 M에 따른 재기동불능 구간(t₁~t₂) 지도, φ = 2.5×10¹³·5×10¹³·1×10¹⁴ 비교와 M별 구간 표</figcaption></figure>
+<p>세 가지를 읽을 수 있습니다.</p>
+<ul>
+<li>M이 커질수록 구간은 늦게 시작하고 일찍 끝납니다. M이 정점에 도달하면 구간이 사라집니다.</li>
+<li>M이 평형 손실 이하이면 정지 직후부터 불능입니다. 정상 운전이 가능했던 노심에서는 출력결손 회복분 때문에 보통 M이 평형값보다 큽니다.</li>
+<li>t₁ 이전에는 재기동할 수 있습니다. 정지 원인이 금방 해소되면 신속 재기동으로 제논 정점을 피하는 것이 이 때문입니다.</li>
+</ul>
+<h3>정지 전 중성자속이 클수록 길어진다</h3>
+<p>평형제논은 φ가 φX(≈ 7.9×10¹²)를 넘으면 포화하지만, 정지 후 정점은 정지 순간의 ¹³⁵I 재고에 비례하므로 φ에 거의 비례해 커집니다. 정점/평형 비는 φ = 1×10¹³에서 1.22, 5×10¹³에서 2.66, 1×10¹⁴에서 4.55입니다. 따라서 정점이 M과 같아지는 <strong>문턱 중성자속</strong>(M 3,000 → 1.95×10¹³, 4,000 → 2.85×10¹³, 5,000 → 3.78×10¹³) 아래에서는 재기동불능시간이 없고, 그 위에서는 φ가 클수록 길어집니다.</p>
+<figure class="article-image"><img alt="정지 전 중성자속에 따른 정점·평형 제논과 문턱, M = 3,000·4,000·5,000 pcm의 재기동불능시간 길이" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-022-xenon-dead-time/fig2_dead_time_vs_flux.avif"/><figcaption>정지 전 중성자속에 따른 정점·평형 제논과 문턱, M = 3,000·4,000·5,000 pcm의 재기동불능시간 길이</figcaption></figure>
+<p>이 결과를 지배하는 것은 σa φ/λXe = φ/φX입니다. 실제 고온 PWR에서는 스펙트럼 평균 유효 흡수단면적이 2,200 m/s 값보다 작으므로, 노형 간 비교는 같은 σa φ/λXe 기준으로 해야 합니다.<!-- 참고: 본문 수치는 교과서 1군 모델 설명용 계산값. 실제 PWR의 정지 후 제논 정점/평형 비와 재기동불능시간은 노심설계 고유값이라 공개 자료로 확인하지 못해 쓰지 않음 --></p>
+<p>계획 정지라면 정지 전 출력을 낮춰 두는 것도 효과가 있습니다. 50 % 출력(φ = 2.5×10¹³)에서 평형을 이룬 뒤 정지하면 정점은 3,612 pcm으로, 100 %에서 정지할 때(6,296 pcm)의 약 57 %입니다. 다만 감발 직후에는 제논이 일시적으로 늘므로 감발 뒤 수십 시간이 지나야 효과가 납니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>PWR — 주기초는 대개 여유, 주기말은 제약</h3>
+<ul>
+<li><strong>주기초(BOC)</strong>: 고온 전출력 임계 붕소농도가 높아(재장전 노심 약 1,000~1,500 ppm 예시) 희석으로 얻을 반응도가 제논 정점 증가분보다 일반적으로 큽니다. 그래서 정지 후에도 대개 재기동할 수 있습니다.</li>
+<li><strong>주기말(EOC)</strong>: 전출력 임계 붕소가 수십 ppm 이하로 내려가 희석 여력이 거의 없습니다. 재기동 조건의 가용 여유는 대략 "평형 제논 + 출력결손 회복분(W형 예시(NRC HRTD)로 EOL 약 2,100 pcm)[3] + 잔여 붕소분"에 그칩니다. 제논 정점 증가분이 이를 넘으면 불능 구간이 생기고, 주기말로 갈수록 길어집니다.</li>
+<li><strong>저붕소 희석의 비효율</strong>: 급수·배수 희석은 C(t) = C₀e^(−Qt/V)로 진행되어 농도가 낮을수록 ppm 감소 속도가 느립니다. 그래서 주기말에는 탈붕소 이온교환기를 쓰기도 합니다.</li>
+</ul>
+<h3>CANDU — 수십 분의 창</h3>
+<p>중수로(CANDU)는 온라인 재장전으로 잉여반응도를 작게 유지합니다. 그래서 조정봉(adjuster rods)을 빼 제논을 극복(xenon override)할 수 있는 시간이 정지 후 짧은 시간(수십 분)에 그칩니다. 이를 놓치면 독물질 정지(poison out) 상태가 되어 제논이 충분히 줄 때까지 장시간 기다려야 합니다.<!-- 참고: CANDU override 가능 시간·poison out 후 대기시간의 구체 수치는 공개 1차 서지를 확정하지 못해 일반화함(2026-11-03) --></p>
+<h3>운전 대응</h3>
+<ol>
+<li><strong>신속 재기동</strong>: 원인이 바로 해소되면 t₁ 이전에 임계 도달</li>
+<li><strong>감발 후 계획 정지</strong>: 정지 전 출력을 낮춰 정점 저감</li>
+<li><strong>감쇠 대기</strong>: t₂ 이후 재기동. 정지 후 경과시간별 제논을 넣어 예상 임계 위치(ECP)를 다시 계산</li>
+<li><strong>재기동 후 감시</strong>: 제논이 줄어드는 중이면 양의 반응도가 계속 들어옵니다. 출력을 올리면 제논 연소가 커져 붕소 보충·제어봉 삽입이 필요하고, 축방향 제논 분포가 비대칭이면 제논 진동을 감시합니다.</li>
+</ol>
+<p>재기동불능시간은 안전 문제가 아니라 <strong>운전 가용성(이용률) 문제</strong>입니다. 제논이 많은 동안 노심은 더 깊은 미임계에 있습니다. 반대로 제논이 줄어드는 시기에 재기동하면 반응도가 계속 들어오므로 정지여유도와 삽입한계 관리가 중요합니다.</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50 App. A GDC 26 [4]</td>
+<td>원리가 다른 독립 반응도 제어계통 2개, 하나는 계획된 정상 출력변화(제논 연소 포함)의 반응도 변화율 제어</td>
+</tr>
+<tr>
+<td>「원자로시설 등의 기술기준에 관한 규칙」 제28조(반응도제어계통) [5]</td>
+<td>반응도 제어 요건(GDC 26 상응)</td>
+</tr>
+<tr>
+<td>같은 규칙 제61조(노심관리 및 핵연료 취급)</td>
+<td>운전 중 노심관리</td>
+</tr>
+<tr>
+<td>NUREG-0800 SRP 4.3 [6]</td>
+<td>반응도 제어 능력, 제논 영향 평가</td>
+</tr>
+<tr>
+<td>NUREG-1431 STS LCO 3.1.1, 3.1.6 [7]</td>
+<td>정지여유도, 제어군 삽입한계. SR 3.1.6.1은 임계 도달 전 추정 임계 위치가 삽입한계 안인지 확인</td>
+</tr>
+</tbody>
+</table>
+<!-- 기술기준규칙 제28·61조: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인. STS SR 3.1.6.1 문구는 요지 -->
+<p>재기동불능시간을 직접 규정한 조항은 없습니다. 운전 가용성 문제이기 때문이며, 안전 측면은 정지여유도와 삽입한계로 관리합니다. 출제 당시(2007~2025년)와 비교해 물리와 GDC는 바뀐 것이 없고, 국내 법 체계가 원자력법에서 원자력안전법(2011)으로 바뀐 점만 유의하면 됩니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>재기동불능시간</th>
+<th>제논 정점</th>
+<th>정지여유도</th>
+<th>계수기 불감시간</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정의</td>
+<td>L(t) &gt; M인 시간 구간</td>
+<td>정지 후 L(t)의 최대</td>
+<td>정지 상태의 미임계 깊이</td>
+<td>펄스를 구분하지 못하는 시간 τ</td>
+</tr>
+<tr>
+<td>단위</td>
+<td>h</td>
+<td>pcm(시각 약 10 h)</td>
+<td>pcm, %Δk/k</td>
+<td>μs</td>
+</tr>
+<tr>
+<td>결정 요인</td>
+<td>정지 전 φ, M</td>
+<td>정지 전 φ</td>
+<td>제어능, 고착봉 가정</td>
+<td>검출기·회로</td>
+</tr>
+<tr>
+<td>성격</td>
+<td>운전 가용성</td>
+<td>물리 현상</td>
+<td>안전 제한</td>
+<td>계측 보정</td>
+</tr>
+</tbody>
+</table>
+<p>정점 시각은 구간의 시작이 아니라 중간에 있습니다. 시작은 제논이 여유선을 처음 넘는 시각입니다. 계수기 불감시간은 참계수율 n = m/(1 − mτ) 보정에 쓰는 전혀 다른 개념입니다.</p>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 원자로 재기동불능시간(Reactor Dead Time)</strong></p>
+<ol>
+<li><strong>정의</strong>: 정지 후 Xe-135 반응도 손실 &gt; 가용 잉여반응도(제어봉 전 인출·붕소 최소)인 구간 → 임계 불가</li>
+<li><strong>원인 ①</strong>: 정지로 φ = 0 → <strong>제논 연소 소멸 경로 제거</strong></li>
+<li><strong>원인 ②</strong>: ¹³⁵I(6.7 h)가 ¹³⁵Xe(9.2 h)보다 빨리 붕괴 → 정지 후 약 <strong>10 h 정점</strong></li>
+<li><strong>원인 ③</strong>: 가용 여유 유한, 연소에 따라 감소</li>
+<li><strong>판정</strong>: L(t) = M의 두 근 t₁~t₂, 정점 &lt; M이면 없음</li>
+<li><strong>영향인자</strong>: 정지 전 φ↑ → 정점↑·구간↑, M↑ → 구간↓</li>
+<li><strong>PWR</strong>: BOC는 붕소 희석 여력이 커 대개 재기동 가능, <strong>EOC 저붕소</strong>에서 발생·장기화</li>
+<li><strong>CANDU</strong>: 정지 후 짧은 시간(수십 분) 내 미재기동 시 poison out(장시간 대기)</li>
+<li><strong>대응</strong>: t₁ 이전 신속 재기동, 감발 정지, 감쇠 대기 후 ECP 재계산, 재기동 후 제논 진동 감시</li>
+<li><strong>구별</strong>: 안전 제한이 아닌 이용률 문제, 계수기 불감시간과 다름</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: 정지 후 제논 곡선과 BOC·EOC 가용 여유선, t₁~t₂ 재기동불능시간" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-022-xenon-dead-time/sketch1_dead_time_boc_eoc.avif"/><figcaption>답안용 도식: 정지 후 제논 곡선과 BOC·EOC 가용 여유선, t₁~t₂ 재기동불능시간</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 2교시 2번</td>
+<td>재기동 불능시간의 정의와 존재 이유</td>
+</tr>
+<tr>
+<td>2019년 3교시 1번</td>
+<td>Xe 거동(생성·소멸, 평형, 3일 운전 후 정지)과 재기동불능시간</td>
+</tr>
+<tr>
+<td>2015년 1교시 5번</td>
+<td>원자로 재기동불능시간(Reactor Dead Time)</td>
+</tr>
+<tr>
+<td>제81회 1교시 12번</td>
+<td>Reactor deadtime</td>
+</tr>
+</tbody>
+</table>
+<p>제81회 문항은 "Reactor deadtime" 한 단어뿐입니다. 원자로 단위의 용어로 보아 이 노트의 개념으로 답하고, 계수기 불감시간과 다르다는 점을 한 줄 덧붙이는 것이 안전합니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 7.5절(제논-135, 정지 후 제논·xenon override).</li>
+<li>U.S. DOE, DOE Fundamentals Handbook: Nuclear Physics and Reactor Theory, DOE-HDBK-1019/2-93 (1993), Vol. 2, Module 3 "Reactor Theory (Nuclear Parameters)" — Xenon(xenon precluded startup).</li>
+<li>U.S. NRC, HRTD Westinghouse Technology Systems Manual, Sec. 2.1 "Reactor Physics Review", Rev. 1208, NRC ADAMS ML11223A207.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, Criterion 26 "Reactivity control system redundancy and capability".</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제28조·제61조. 국가법령정보센터.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.3 "Nuclear Design".</li>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications, Westinghouse Plants, LCO 3.1.1, 3.1.6(SR 3.1.6.1).</li>
+</ol>

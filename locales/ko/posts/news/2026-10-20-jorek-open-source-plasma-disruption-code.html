@@ -1,0 +1,35 @@
+<figure class="article-image"><img alt="플라즈마 붕괴를 미리 계산한다: ITER가 소개한 JOREK 코드 공개 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/news/2026-10-20-jorek-open-source-plasma-disruption-code/thumbnail_01.thumb.avif"/></figure>
+<p>핵융합로 안의 플라즈마가 갑자기 무너진다는 말을 들으면 걱정부터 앞서실 수 있습니다. 그 순간 장치 안에서 어떤 일이 벌어지는지, 그리고 그 순간을 컴퓨터로 미리 계산한다는 것이 어떤 의미인지 차근차근 풀어 보겠습니다.</p>
+<p>2026년 10월 19일, 국제 공동 핵융합 사업 ITER의 과학부는 EUROfusion 발표를 인용해 <strong>JOREK 자기유체역학 해석코드를 전 세계 연구자가 공개 저장소에서 이용할 수 있게 되었다</strong>고 소개했습니다. JOREK는 ITER 조직도 개발에 기여해 온 도구입니다. 소스코드를 공개해 누구나 사용·수정·기여할 수 있게 하는 오픈소스 방식으로 문이 열린 것입니다.</p>
+<h2>플라즈마 붕괴와 벽에 걸리는 하중</h2>
+<p>핵융합로의 플라즈마는 자기장이라는 보이지 않는 그릇에 담긴 아주 뜨거운 기체입니다. 플라즈마 붕괴는 이 그릇 속 균형이 갑자기 흐트러지면서 담겨 있던 에너지가 밖으로 쏟아지는 현상입니다. 그 에너지를 받아내는 곳이 진공용기 내부 부품이므로, ITER는 JOREK를 붕괴와 그에 따른 <strong>열·전자기 하중</strong> 평가에 활용합니다.</p>
+<p>이 현상을 다루는 해석 틀이 자기유체역학(MHD)입니다. 플라즈마를 물처럼 흐르는 유체로 보고, 그 흐름과 자기장이 서로 밀고 당기는 관계를 함께 계산합니다. 강물 위에 고무줄 그물이 얽혀 있어 물이 움직이면 그물이 늘어나고, 그물이 당기면 물길이 바뀌는 모습을 떠올리시면 됩니다. JOREK는 이 계산을 비선형 3차원 형상에 적용하고, 유체 계산에 입자 운동의 효과를 더하는 유체–운동론 혼합 확장도 제공합니다. 도넛 모양 장치의 단면은 작은 조각(유한요소)으로 나누고, 도넛을 따라 도는 방향은 여러 파동의 합으로 표현하는 구조입니다.</p>
+<h2>깨진 얼음 조각으로 붕괴를 다스리는 SPI</h2>
+<p>붕괴가 일어날 때 그 충격을 누그러뜨리는 수단으로 ITER가 연구하는 것이 파편 펠릿 주입(SPI)입니다. 극저온으로 얼린 펠릿을 입구에서 깨뜨려 산탄처럼 플라즈마에 뿌려 넣는 방식입니다. 파편 크기, 침투 속도, 수소와 네온의 조성을 조절해 <strong>붕괴 중 에너지 방출과 물질 유입</strong>을 제어합니다.</p>
+<p><figure class="article-image"><img alt="토카막 내부 플라즈마 고리에 얼음 펠릿 파편이 뿌려지는 장면 아래 펠릿 파쇄, 투입, 에너지·물질 제어, JOREK 해석으로 이어지는 흐름도" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/news/2026-10-20-jorek-open-source-plasma-disruption-code/body_01.avif"/></figure>
+<em>파편 펠릿 주입(SPI)으로 붕괴를 완화하는 흐름</em></p>
+<p>독일 ASDEX Upgrade(AUG) 실험기관은 2023년 보고에서 네온 함량에 따라 복사 에너지 비율과 공간 비대칭이 달라졌다고 밝혔습니다. 물질 유입에는 큰 파편과 높은 침투 속도가 유리한 경향도 보고했습니다. JOREK는 이런 SPI에 따른 자기장의 3차원 변화와 에너지·입자 침적을 모사해, 붕괴 시 하중과 완화 효과를 분석하는 연구에 쓰입니다.</p>
+<p>붕괴에서 함께 살펴야 할 대상이 도주전자(RE)입니다. 붕괴 순간 상대론적 에너지, 즉 빛의 속도에 가까운 영역까지 가속될 수 있는 전자 집단입니다. 내리막에서 브레이크가 풀린 자전거처럼 점점 빨라지는 전자들이라고 보시면 됩니다. 독일 막스플랑크 플라즈마물리연구소(IPP)는 도주전자를 유체로 다루는 모델이 전자들의 속도 분포를 표현하는 데 한계가 있다고 설명하고, 입자 모델과 결합하는 개발을 보고했습니다.</p>
+<h2>공개 코드를 믿고 쓰기 위한 세 가지 확인</h2>
+<p>코드가 공개되면 더 많은 연구자가 기여하고 실험과 대조할 수 있습니다. 그 결과를 믿고 쓰기 위해서는 세 가지 확인을 차례로 거칩니다.</p>
+<p>첫째는 <strong>회귀검사</strong>입니다. 저장해 둔 계산 상태에서 한 시간단계를 계산한 뒤 기준값과 비교합니다. 레시피를 손본 뒤 같은 재료로 다시 요리해 맛이 바뀌었는지 보는 일과 같아서, 코드 변경으로 결과가 달라졌는지를 잡아냅니다.</p>
+<p>둘째는 <strong>수렴시험</strong>입니다. 격자 해상도, 시간간격, 수치 안정화 계수를 바꿔 가며 성장률과 수렴 상태를 살핍니다. 사진의 화소 수를 늘려도 그림이 그대로라면 계산이 안정되었다는 신호입니다.</p>
+<p>셋째는 <strong>실험 검증</strong>입니다. 계산 결과를 실제 실험 진단값과 그 불확실도에 견주어 봅니다. 앞의 두 확인이 '계산을 제대로 했는가'를 묻는다면, 이 단계는 '현실을 제대로 그렸는가'를 묻습니다.</p>
+<p><figure class="article-image"><img alt="고성능 컴퓨터 서버 통로 장면 옆에 회귀검사, 수렴시험, 실험 검증의 세 단계를 정리한 그림" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/news/2026-10-20-jorek-open-source-plasma-disruption-code/body_02.avif"/></figure>
+<em>공개 해석코드를 믿고 쓰기 위한 세 가지 확인 (출처: ITER JOREK 문서)</em></p>
+<h2>다음 단계: 기준 사례 재현과 실험 대조</h2>
+<p>IPP의 2023–2025 과학보고서는 AUG의 3차원 SPI 해석과 정량 실험 비교가 진행 중이라고 설명합니다. 장치별 정량 검증자료는 지금 추가로 확보해 가는 단계입니다. 사용 문서도 정비되고 있습니다. 2026년 10월 20일 기준 SPI 실행 안내 문서는 본문 작성 중이고, 회귀시험 문서에는 GitHub 작업흐름에 맞춘 갱신 예정이 표시되어 있습니다.</p>
+<p>코드는 <strong>LGPLv3.0-or-later</strong> 라이선스로 공개되었고, 기여할 때는 DCO 1.1 서명 절차를 거칩니다. 논문 인용·공저 같은 커뮤니티 규칙도 따로 마련되어 있습니다. 공개된 코드가 신뢰를 쌓는 길은 같은 기준 사례를 여러 연구자가 재현하고, 장치마다 실험 자료와 대조한 결과를 모아 가는 과정으로 이어집니다.</p>
+<p>플라즈마 붕괴는 핵융합로가 풀어 가야 할 숙제이고, 그 순간을 미리 계산해 보는 도구가 이제 더 많은 연구자의 손에 놓였습니다. 계산과 실험이 서로를 확인하며 쌓아 가는 신뢰가 핵융합을 현실로 한 걸음 더 가까이 데려옵니다.</p>
+<h2>참고 자료</h2>
+<ul>
+<li>ITER, "JOREK 플라스마 해석코드 공개 소개", 2026-10-19 — https://www.iter.org/node/20687/jorek-magneto-hydro-dynamic-simulation-code-now-available-open-source</li>
+<li>ITER, "JOREK Base Fluid Models" — https://iterorganization.github.io/JOREK/physics/base_fluid_models/base_fluid_models.html</li>
+<li>JOREK Team, "JOREK non-linear MHD Code" — https://www.jorek.eu/</li>
+<li>Max Planck Institute for Plasma Physics, "ASDEX Upgrade Letter No 25", 2023-12 — https://www.ipp.mpg.de/5392372/No_25_aug_letter_12_2023.pdf</li>
+<li>Max Planck Institute for Plasma Physics, "Scientific Report 2023–2025" — https://pure.mpg.de/rest/items/item_3664313_1/component/file_3664319/content</li>
+<li>ITER, "Regression Testing" — https://iterorganization.github.io/JOREK/code_development/nrt.html</li>
+<li>ITER, "Get Started with JOREK" — https://iterorganization.github.io/JOREK/howto/running_jorek_for_the_first_time.html</li>
+<li>ITER, "Run an SPI Simulation" — https://iterorganization.github.io/JOREK/howto/spi_tutorial.html</li>
+<li>ITER, "JOREK official repository" — https://github.com/iterorganization/JOREK</li>
+</ul>

@@ -1,0 +1,230 @@
+<figure class="article-image"><img alt="[개념 노트] 열속(Heat Flux) — 노심 열출력을 피복관 표면 1 m²의 언어로 바꾸기 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-006-heat-flux/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>열속(heat flux, q″)은 단위 시간에 단위 전열면적을 통과하는 열량(W/m²)이며, 원자로 열설계에서는 피복관 외표면 기준 국부값을 쓰고, 노심 평균은 q″avg = γ·P / (N·π·D·H), 국부 최대는 q″max = FQ·q″avg로 구합니다.</strong></p>
+<p>열속은 체적 열발생률 q‴(W/m³), 선출력 q′(W/m)과 한 묶음입니다. 셋은 같은 열을 체적·길이·면적 중 무엇으로 나눴느냐만 다릅니다. 이 노트는 세 양의 환산과 평균·최대 열속 계산에 집중합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>같은 열, 세 가지 잣대</h3>
+<p>연료봉 한 토막을 생각하겠습니다. 펠릿 반경을 R_f, 피복관 외반경을 R_co라고 하면 다음이 성립합니다.</p>
+<ul>
+<li><strong>q′ = q‴·πR_f² = q″·2πR_co</strong></li>
+<li>q‴ = Ef·Σf·φ (Ef 핵분열당 회수 에너지, Σf 거시 핵분열 단면적, φ 중성자속)</li>
+</ul>
+<p>간극과 피복관에서는 열이 거의 생기지 않습니다. 그래서 정상상태에서 축방향 열전도를 무시하면 q′는 반경방향으로 보존되고, q″는 반경에 반비례합니다. 피복관 내면 열속이 외면보다 큰 이유입니다. 설계 표의 "열속"은 관례상 <strong>외표면 기준</strong>입니다[1][2].</p>
+<p>세 양이 각각 걸리는 한계도 다릅니다.</p>
+<ul>
+<li>q″는 피복관 표면 온도(q″ = h·(T_w − T_b))와 DNB를 정합니다. 국부 DNBR = q″CHF/q″이고, 그 최솟값이 MDNBR입니다.</li>
+<li>q′는 연료 중심온도를 정합니다. 균일 발열·일정 열전도도에서 펠릿 중심–표면 온도차 ΔT = q′/(4πk)는 펠릿 크기와 무관하므로, 연료 용융 한계는 kW/m로 관리합니다.</li>
+<li>q‴는 노물리(중성자속)와 열수력을 잇는 고리입니다.</li>
+</ul>
+<figure class="article-image"><img alt="q‴·q′·q″ 환산 사슬과 노심 열출력 3,411 MWt → γ 0.974 → 평균 열속 0.597 MW/m² → × FQ 2.50 → 최대 1.49 MW/m² 계산 사다리(설계 표 검산 예시)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-006-heat-flux/fig1_heat_flux_unit_ladder.avif"/><figcaption>q‴·q′·q″ 환산 사슬과 노심 열출력 3,411 MWt → γ 0.974 → 평균 열속 0.597 MW/m² → × FQ 2.50 → 최대 1.49 MW/m² 계산 사다리(설계 표 검산 예시)</figcaption></figure>
+<h3>노심 열출력에서 평균 열속으로</h3>
+<p>노심 평균 열속은 연료봉 표면을 통해 냉각재로 나가야 하는 열을 전체 전열면적으로 나눈 값입니다.</p>
+<ul>
+<li><strong>q″avg = γ·P / (N·π·D·H)</strong>, q′avg = γ·P / (N·H)</li>
+<li>γ는 연료 내 열발생 분율입니다. 핵분열 에너지 대부분(파편 운동에너지 등)은 펠릿 안에서 열이 됩니다. 그러나 즉발 감마선과 중성자 감속 에너지 일부는 냉각재·구조재에서 직접 열이 됩니다. Westinghouse형 설계 표는 이를 "연료 내 발생 열 97.4 %"로 둡니다[3]. 2026년 기출의 "0.974"도 이 값입니다.</li>
+</ul>
+<p>예시로 Catawba 2호기(Westinghouse 4루프)의 FSAR 설계 표를 직접 검산해 보겠습니다[3].</p>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>노심 열출력 P</td>
+<td>3,411 MWt</td>
+</tr>
+<tr>
+<td>× γ 0.974</td>
+<td>3,322 MW</td>
+</tr>
+<tr>
+<td>전열면적 N·π·D·H</td>
+<td>50,952봉 × π × 9.50 mm × 3.658 m ≈ 5,562 m²</td>
+</tr>
+<tr>
+<td>평균 열속</td>
+<td>0.597 MW/m² (표 값 189,360 Btu/hr·ft²)</td>
+</tr>
+<tr>
+<td>평균 선출력</td>
+<td>17.8 kW/m (표 값 5.44 kW/ft)</td>
+</tr>
+<tr>
+<td>정상운전 최대 열속</td>
+<td>1.49 MW/m² (표 값 473,399, 비 2.50 = FQ)</td>
+</tr>
+</tbody>
+</table>
+<p>APR1400도 3,983 MWt, 56,876봉, 외경 9.5 mm, 유효길이 3.81 m로 직접 계산하면 평균 열속 약 0.60 MW/m², 평균 선출력 약 17.9 kW/m입니다. 이는 설계서 값이 아니라 추정치입니다. <!-- 확인필요: APR1400 DCD Table 4.4-1의 평균 열속·평균 선출력 원문 미확인(NRC ADAMS 접근 차단) — 본문은 직접 계산 추정치로만 제시 --></p>
+<h3>축방향 분포: 평균과 첨두의 관계</h3>
+<p>균질 원통 노심의 축방향 중성자속은 cosine입니다. 노심 중앙을 원점으로 하면 q″(z) = q″0·cos(πz/H̃)이고, H̃는 외삽거리를 포함한 높이입니다.</p>
+<ul>
+<li><strong>완전 cosine(H̃ = H)</strong>: 끝에서 0, 첨두/평균 = π/2 = 1.571. 2017년 기출의 q″(z) = q″MAX·cos(πz/144)는 z가 노심 중앙 원점 −72~72 in(노심 12 ft = 144 in)일 때 이 경우입니다.</li>
+<li><strong>절단 cosine(H̃ &gt; H)</strong>: x = πH/(2H̃)라 하면 첨두/평균 = x / sin x입니다. H = 3.81 m, H̃ = 4.2 m이면 1.44, 양 끝은 평균의 0.21입니다.</li>
+<li>그래프의 평균은 한 봉의 축방향 평균 (1/H)∫q″(z)dz입니다. 첨두/평균 비는 축방향 첨두계수 F_Z이며, 노심 전체 평균과는 기준이 다릅니다. 2017년 기출의 F = 2.80은 노심 평균 기준 총 인자이므로 π/2와 섞지 않습니다.</li>
+</ul>
+<figure class="article-image"><img alt="완전 cosine(첨두 1.571)과 절단 cosine(H̃ = 4.2 m, 첨두 1.440·끝 0.209)의 축방향 상대 열속, 첨두/평균 = x/sin x 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-006-heat-flux/fig2_axial_cosine_peak_average.avif"/><figcaption>완전 cosine(첨두 1.571)과 절단 cosine(H̃ = 4.2 m, 첨두 1.440·끝 0.209)의 축방향 상대 열속, 첨두/평균 = x/sin x 표</figcaption></figure>
+<p>실제 PWR은 연소에 따라 분포가 상·하부로 치우치거나 말기에 평탄해집니다. 그래서 축방향 첨두는 축방향출력편차(AFD)나 ASI로 감시합니다. 노심 전체의 최대 열속은 축방향 첨두에 반경방향 첨두와 공학적 인자까지 곱한 FQ로 구합니다.</p>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>설계</strong>: 같은 열출력이라도 봉 수를 늘리거나 직경을 줄이면 전열면적이 커져 평균 열속이 내려갑니다. 17×17 집합체가 14×14보다 가는 봉을 촘촘히 써서 선출력을 낮춘 것도 같은 흐름입니다. 반대로 봉 수와 길이가 정해지면 출력 증강 여유는 최대 열속과 최대 선출력 한계에서 정해집니다.</li>
+<li><strong>열적 여유와의 연결</strong>: PWR 평균 열속은 약 0.6 MW/m², 국부 최대는 약 1.3~1.5 MW/m² 수준입니다. 국부 CHF와의 비의 최소가 MDNBR입니다(Catawba 공칭 2.9).</li>
+<li><strong>운전</strong>: 열속을 직접 재지는 않습니다. 노내 계측기 출력분포와 열출력 측정에서 FQ·선출력을 계산해 COLR 한계와 비교합니다. CE형(OPR1000·APR1400)은 COLSS가 선출력 여유를 감시하고, CPC가 국부출력밀도(LPD)·DNBR 트립을 냅니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50 부록 A GDC 10 [4]</td>
+<td>정상운전·AOO 중 허용 핵연료 설계한계(SAFDL) 비초과</td>
+</tr>
+<tr>
+<td>NUREG-0800 SRP 4.4 [5]</td>
+<td>열수력 설계 심사: DNB 95/95, 연료 중심 용융 방지, 평균·최대 열속·선출력 설계 표</td>
+</tr>
+<tr>
+<td>NUREG-1431 LCO 3.2.1~3.2.3 [6]</td>
+<td>WH형: FQ(Z), FΔH^N, AFD</td>
+</tr>
+<tr>
+<td>NUREG-1432 LCO 3.2.1·3.2.4·3.2.5 [6]</td>
+<td>CE형: 선출력(LHR), DNBR, ASI</td>
+</tr>
+<tr>
+<td>「원자로시설 등의 기술기준에 관한 규칙」 제2조 제1항 제10호·제17조① [8], KINS 안전심사지침 4.4</td>
+<td>핵연료허용손상한계, 열수력 설계 심사</td>
+</tr>
+<tr>
+<td>운영기술지침서·COLR</td>
+<td>호기·주기별 한계값 수록</td>
+</tr>
+</tbody>
+</table>
+<!-- 기술기준규칙 제2조 제1항 제10호·제17조①: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 -->
+<p>열속의 정의와 환산은 출제 당시와 같습니다. 바뀐 것은 세 가지입니다. 첫째, 공학적 인자를 결정론으로 곱하던 방식이 통계적 열설계로 옮겨 갔습니다. 둘째, 한계값이 운영기술지침서 본문에서 COLR로 이관됐습니다(GL 88-16)[7]. 셋째, Btu/hr·ft²·kW/ft 단위에 SI를 병기합니다. 영국 단위 기출은 1 Btu/hr·ft² = 3.1546 W/m²로 환산해 감을 잡으면 좋습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>열속 q″</th>
+<th>선출력 q′</th>
+<th>체적 열발생률 q‴</th>
+<th>임계열속 q″CHF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>단위</td>
+<td>W/m²</td>
+<td>W/m(kW/m)</td>
+<td>W/m³</td>
+<td>W/m²</td>
+</tr>
+<tr>
+<td>기준</td>
+<td>피복관 외표면적</td>
+<td>봉 길이</td>
+<td>펠릿 체적</td>
+<td>같은 위치 표면적</td>
+</tr>
+<tr>
+<td>성격</td>
+<td>운전 상태량</td>
+<td>운전 상태량</td>
+<td>운전 상태량</td>
+<td>냉각 조건이 정하는 한계</td>
+</tr>
+<tr>
+<td>주요 한계</td>
+<td>DNB(MDNBR), 표면 온도</td>
+<td>연료 중심 용융, LOCA PCT</td>
+<td>중성자속 연결</td>
+<td>DNBR의 분자</td>
+</tr>
+<tr>
+<td>PWR 평균 예</td>
+<td>약 0.6 MW/m²</td>
+<td>약 18 kW/m</td>
+<td>펠릿 약 340 W/cm³</td>
+<td>국부 조건 의존</td>
+</tr>
+</tbody>
+</table>
+<p>노심 출력밀도(Catawba 104.5 kW/L)는 노심 전체 체적 기준이라 펠릿 기준 q‴보다 약 3배 작습니다. 기준 체적을 밝혀 쓰십시오.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 열속 q″ = 단위 시간·단위 전열면적당 열량(W/m²), 피복관 외표면 기준</li>
+<li><strong>환산</strong>: q′ = q‴·πR_f² = q″·2πR_co, q‴ = Ef·Σf·φ</li>
+<li><strong>평균</strong>: q″avg = γ·P/(N·π·D·H), γ ≈ 0.974(연료 내 발생 분율)</li>
+<li><strong>최대</strong>: q″max = FQ·q″avg, FQ = 핵적 × 공학적</li>
+<li><strong>축방향</strong>: 완전 cosine 첨두/평균 π/2, 절단 cosine x/sin x(예 1.44)</li>
+<li><strong>예시(WH 4루프)</strong>: 평균 0.597 MW/m², 최대 1.49 MW/m², 평균 선출력 17.8 kW/m</li>
+<li><strong>한계</strong>: q″ → DNB(MDNBR ≥ 한계, 95/95), q′ → 연료 중심 용융·LOCA PCT</li>
+<li><strong>구분</strong>: 열속(상태량) ≠ 임계열속(한계), 열속 ≠ 출력밀도</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 연료봉 토막 도식: 펠릿 안 q‴, 단위길이당 q′, 외표면 q″와 환산식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-006-heat-flux/sketch1_heat_flux_rod_segment.avif"/><figcaption>답안지용 연료봉 토막 도식: 펠릿 안 q‴, 단위길이당 q′, 외표면 q″와 환산식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+<th>핵심 결과(검산용)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026년 2교시 2번</td>
+<td>평균 열속과 DNBR 여유도</td>
+<td>86.1 W/cm²</td>
+</tr>
+<tr>
+<td>2017년 2교시 5번</td>
+<td>축방향 출력분포와 열속·열출력</td>
+<td>q″max 5.24×10⁵ Btu/hr·ft², 274 MWt</td>
+</tr>
+<tr>
+<td>2015년 2교시 6번</td>
+<td>고온점 인자로 면적·연료봉 수</td>
+<td>5,250 m², 약 34,815봉</td>
+</tr>
+<tr>
+<td>2010년 4교시 5번</td>
+<td>PWR 최대 열속</td>
+<td>8.60×10⁵ Btu/hr·ft²</td>
+</tr>
+<tr>
+<td>2008년 4교시 6번</td>
+<td>선출력밀도·열속·중성자속</td>
+<td>191 W/cm³, 47.7 W/cm²</td>
+</tr>
+<tr>
+<td>제68회 2교시 4번</td>
+<td>고온관 인자로 면적·연료봉 수</td>
+<td>5,800 m², 5.13×10⁴봉</td>
+</tr>
+</tbody>
+</table>
+<p>계산형은 모두 "P → (γ) → 면적 → 평균 → × FQ → 최대" 사다리의 어느 칸을 묻는지만 다릅니다. 2008년 문항의 열중성자속은 q‴ = Ef·Σf·φ에서 약 7.0×10¹² n/cm²·s(Ef 200 MeV 가정)입니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>N. E. Todreas, M. S. Kazimi, Nuclear Systems Volume I: Thermal Hydraulic Fundamentals, CRC Press — 열속·선출력·체적 열발생률, 축방향 분포.</li>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001) — 원자로 열제거.</li>
+<li>Duke Energy, Catawba Nuclear Station UFSAR, Table 4-1 (Reactor Design Comparison), NRC ADAMS ML18305A292.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criterion 10 "Reactor design".</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.4 "Thermal and Hydraulic Design".</li>
+<li>U.S. NRC, NUREG-1431(Westinghouse)·NUREG-1432(Combustion Engineering) Standard Technical Specifications, Rev. 5 (2021), 3.2절.</li>
+<li>U.S. NRC, Generic Letter 88-16 "Removal of Cycle-Specific Parameter Limits from Technical Specifications" (1988).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제2조①10호·제17조. 국가법령정보센터.</li>
+</ol>

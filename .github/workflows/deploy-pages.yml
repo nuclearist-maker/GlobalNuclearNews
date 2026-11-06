@@ -1,4 +1,4 @@
-name: Deploy GlobalNuclearNews (English) to Pages
+name: Deploy GlobalNuclearNews (EN and KR) to Pages
 
 on:
   push:
@@ -25,10 +25,16 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
+      - name: Install HTML parser
+        run: python -m pip install beautifulsoup4==4.14.3
       - name: Package public site files (fails on any missing linked file)
         run: python tools/build_en_site.py
       - name: Validate search metadata and crawlable links
         run: python tools/check_search_discovery.py
+      - name: Validate both language editions
+        run: python tools/check_bilingual.py
+      - name: Validate declared deployment scope
+        run: python tools/check_deployment_scope.py --manifest qa/deployments/current.json --site _site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:

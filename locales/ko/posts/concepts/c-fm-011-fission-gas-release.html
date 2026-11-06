@@ -1,0 +1,192 @@
+<figure class="article-image"><img alt="[개념 노트] 핵분열기체 방출(FGR) — 결정립계를 건너 간극으로 새는 Xe·Kr 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-011-fission-gas-release/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>핵분열기체 방출(Fission Gas Release, FGR)은 UO₂ 펠릿 안에서 생성된 불활성 기체(Xe·Kr)가 확산과 결정립계 기포 연결을 거쳐 펠릿 밖의 간극·플레넘으로 빠져나오는 현상이며, 방출률은 방출량/생성량(%)으로 나타냅니다.</strong></p>
+<p>FGR은 봉 내부에서 일어나는 현상입니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>얼마나 생기나</h3>
+<p>U-235 열중성자 핵분열에서 안정·장수명 Xe(131·132·134·136)과 Kr(83~86) 수율을 합하면 핵분열 1회당 약 0.25개입니다(문헌 0.25~0.31, Pu 핵분열 비중이 커지면 약간 증가)[2]. 200 MeV/핵분열로 환산하면 1 MWd는 2.70×10²¹ 핵분열이고, 기체는 약 <strong>25 cm³(STP: 0 °C·1 atm)/MWd</strong>가 생깁니다(생성량이며 방출량이 아님). 17×17 표준형 봉 1개(우라늄 약 1.77 kg, 예시)가 50 GWd/tU까지 타면 약 2.2 L(STP)가 생성됩니다. 방출률 1 %면 약 22 cm³, 5 %면 약 110 cm³가 좁은 플레넘에 쌓이는 셈입니다.</p>
+<h3>주경로 네 단계와 보조 기작 두 가지</h3>
+<p>열적 주경로는 순서대로 진행합니다.</p>
+<ol>
+<li><strong>입내 확산</strong>: 결정립 안에 녹은 단일 Xe·Kr 원자가 결정립계로 확산합니다. 확산계수는 D = D₀·exp(−Q/RT)(T는 K) 꼴이라 온도에 지수적으로 민감합니다(Turnbull식은 열적·조사강화·비열적 3항)[4]. 입내 기포의 포획(trapping)과 핵분열 파편에 의한 재용해(re-solution)가 경쟁하며 실효 이동 속도를 정합니다.</li>
+<li><strong>결정립계 축적·기포 성장</strong>: 결정립계에 도달한 원자가 렌즈형 기포로 모여 자랍니다. 이 단계까지는 기체가 펠릿 안에 남아 기체 팽윤으로 나타납니다.</li>
+<li><strong>모서리 기포 연결</strong>: 결정립계 면적 피복률이 포화되면 결정립 모서리(세 결정립이 만나는 선)의 기포가 터널로 이어집니다.</li>
+<li><strong>열린 통로로 방출</strong>: 터널이 균열면·펠릿 표면에 닿으면 기체가 간극·플레넘으로 빠져나갑니다. 3~4단계가 열리는 순간 방출이 급증하므로 FGR은 문턱 거동을 보입니다.</li>
+</ol>
+<p>보조 기작은 두 가지입니다.</p>
+<ul>
+<li><strong>반조·녹아웃(비열적 방출)</strong>: 펠릿 표면에서 핵분열 파편 비정(수~10 μm) 안에서 생긴 원자가 직접 튀어나오거나, 파편에 맞은 표면 원자가 밀려 나옵니다. 열활성화 의존성이 작고 양도 작아(정상 운전 PWR에서 대략 1 % 미만 수준) 저온 운전에서 상대적 비중이 큽니다.</li>
+<li><strong>버스트 방출</strong>: 출력 상승(ramp) 때는 온도 상승으로, 출력 감소·정지 냉각 때는 결정립계 미세균열로 결정립계에 쌓인 기체가 한꺼번에 나옵니다.</li>
+</ul>
+<p>1단계의 크기 효과는 특성시간 a²/D(a: 결정립 반경)로 요약됩니다. 일정 생성률·일정 D 조건의 Booth 등가구 모델은 단시간 근사로 결정립 표면 도달 분율 f ≈ 4√(D′t/π) − (3/2)D′t(D′ = D/a²)를 줍니다(초기 재고만 있는 사후 가열 시험은 6√(D′t/π) − 3D′t)[3]. 결정립 표면 도달이 곧 봉 내부 방출은 아니지만, 같은 확산 조건이면 결정립이 클수록 방출이 줄어드는 것이 대립자 펠릿의 근거입니다.</p>
+<figure class="article-image"><img alt="UO₂ 미세조직 장면 위 열적 주경로 4단계(입내 확산 → 결정립계 기포 → 모서리 연결 → 간극 방출), 보조 기작(반조·녹아웃, 버스트), 생성량 25 cm³(STP)/MWd 계산 사슬" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-011-fission-gas-release/fig1_fgr_mechanism_pathway.avif"/><figcaption>UO₂ 미세조직 장면 위 열적 주경로 4단계(입내 확산 → 결정립계 기포 → 모서리 연결 → 간극 방출), 보조 기작(반조·녹아웃, 버스트), 생성량 25 cm³(STP)/MWd 계산 사슬</figcaption></figure>
+<p>같은 기체가 펠릿 안에 붙잡혀 있으면 기체 팽윤, 빠져나가면 FGR입니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>문턱 온도는 연소도가 오르면 내려간다</h3>
+<p>Halden 원자로의 중심 열전대·내압 계측봉 자료로 얻은 경험식(Vitanza 외, 1979)은 FGR 1 %를 가르는 문턱을 **Bu = 0.005·exp(9800/T_c)**로 줍니다[1](Bu: MWd/kgUO₂, T_c: 중심선 온도 °C). Bu(MWd/kgUO₂) = 0.8815 × Bu(GWd/tU)로 바꿔 계산하면 다음과 같습니다.</p>
+<table>
+<thead>
+<tr>
+<th>연소도 (GWd/tU)</th>
+<th>5</th>
+<th>10</th>
+<th>20</th>
+<th>30</th>
+<th>50</th>
+<th>70</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 % 문턱 중심선 온도 (°C)</td>
+<td>1,445</td>
+<td>1,311</td>
+<td>1,200</td>
+<td>1,143</td>
+<td>1,079</td>
+<td>1,040</td>
+</tr>
+</tbody>
+</table>
+<p>흔히 "약 1,200 °C 이상에서 FGR"이라고 외우지만 이는 20 GWd/tU 안팎까지의 값입니다. 고연소도에서는 문턱이 약 1,050 °C 근처로 내려가고, 연소에 따른 UO₂ 열전도도 저하로 같은 선출력에서 중심온도 자체도 오릅니다. 고연소도 연료에서 FGR이 늘어나는 이유가 이 두 효과의 겹침입니다. 다만 이 식은 비교적 저연소도 봉에서 유도한 경험식이므로 설계에는 연료성능 코드의 검증된 모델을 씁니다.</p>
+<figure class="article-image"><img alt="Halden 1 % FGR 문턱 중심선 온도-연소도 계산 곡선(10·30·50·70 GWd/tU 앵커), He·Kr·Xe 열전도도 막대, 간극 열전달·내압(lift-off) 되먹임 도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-011-fission-gas-release/fig2_vitanza_threshold_feedback.avif"/><figcaption>Halden 1 % FGR 문턱 중심선 온도-연소도 계산 곡선(10·30·50·70 GWd/tU 앵커), He·Kr·Xe 열전도도 막대, 간극 열전달·내압(lift-off) 되먹임 도식</figcaption></figure>
+<h3>방출 기체가 만드는 두 되먹임</h3>
+<ul>
+<li><strong>간극 열전도 저하</strong>: 충전 He에 Xe·Kr이 섞이면 기체 열전도도가 크게 떨어집니다. 600 K에서 순수 기체 값은 He 약 0.245, Kr 약 0.017, Xe 약 0.011 W/m·K로 He가 Xe의 약 22배입니다(MATPRO형 상관식 계산)[5]. 실제 간극 기체는 He·Xe·Kr 혼합기체이고 h_gap은 조성·간극 폭·접촉 상태에 함께 좌우되지만, 간극이 열려 있으면 h_gap↓ → 연료 온도↑ → FGR↑의 양의 되먹임이 생깁니다. 간극이 닫혀 접촉 전도가 지배하면 영향이 줄어듭니다.</li>
+<li><strong>내압과 lift-off</strong>: 방출 기체로 내압이 냉각재 압력(PWR 15.5 MPa)을 넘으면 피복관이 바깥으로 크립할 수 있습니다. 피복관 내면의 반경 증가율(외향 크립)이 펠릿 외면의 반경 증가율(팽윤)보다 크면 닫혔던 간극이 다시 열리고(clad lift-off), 열전도 저하 → 온도↑ → FGR↑ → 내압↑의 불안정 고리가 됩니다. 그래서 설계기준은 내압 자체보다 "정상운전 중 lift-off 없음(크립에 의한 피복관 내면 반경 증가율 ≤ 펠릿 팽윤에 의한 외면 반경 증가율)"을 봅니다[6].</li>
+</ul>
+<h3>사고·과도와 고연소도 림</h3>
+<p>간극·플레넘에 모인 기체와 휘발성 핵종(간극 재고량)은 LOCA·연료취급 사고에서 첫 방출원입니다. 고연소도 펠릿 외곽 림(HBS)은 μm급 기공에 기체를 붙잡아 정상 운전 중 추가 방출 기여는 작다는 견해가 많지만, RIA·LOCA 과도에서 미세 파쇄와 함께 과도 방출의 원천이 됩니다. 출력 상승률 제한은 PCI와 함께 버스트 방출도 억제합니다.</p>
+<h3>대책</h3>
+<ul>
+<li>온도 관리: 첨두 선출력 제한, 출력 상승률 제한</li>
+<li>펠릿: 대립자·Cr₂O₃ 도핑 펠릿(확산 거리 a 증가)</li>
+<li>봉 설계: 플레넘 부피, He 충전압 최적화, 부식 저감 피복관으로 내압 여유 확보</li>
+<li>해석: FGR 모델을 포함한 연료성능 코드로 연소 말 내압·lift-off·저장에너지 평가</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50 App. A GDC 10 / 기술기준규칙 제17조 ①</td>
+<td>정상운전·예상운전과도 시 연료허용손상한계(SAFDL) 여유 확보[7]</td>
+</tr>
+<tr>
+<td>NUREG-0800 SRP 4.2(Rev.3, 2007)</td>
+<td>봉 내압: 정상운전 중 피복관 lift-off 없음, 수소화물 반경방향 재배열 없음, 과압에 의한 DNB 전파 평가[6]</td>
+</tr>
+<tr>
+<td>10 CFR 50 App. K</td>
+<td>LOCA 전 저장에너지·온도 계산(FGR이 간극 기체 조성에 반영)</td>
+</tr>
+<tr>
+<td>NRC RG 1.236(2020)</td>
+<td>제어봉 이탈 사고 피복관 파손 기준, 과도 FGR을 내압 계산에 반영[8]</td>
+</tr>
+<tr>
+<td>NUREG-2121(2012)</td>
+<td>고연소도 LOCA 시 연료 파쇄·재배치·분산과 과도 FGR[9]</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: SRP 4.2 Rev.3 봉 내압 기준 문구는 2차 인용(NRC SER·사업자 보고서)으로 확인, 원문 미열람. 구판은 "정상운전 중 계통 압력 이하, 달리 정당화되지 않는 한". KINS 안전심사지침 4.2 현행 판 조항 미열람 -->
+<p>출제 당시(2003·2006·2017·2023년)와 비교해 문턱식과 메커니즘은 그대로입니다. 달라진 점은 고연소도 RIA 기준(RG 1.236, 2020)과 LOCA 파쇄 연구로 과도 FGR·내압의 규제적 비중이 커진 것입니다. 2017년 이전 답안이라면 "내압 &lt; 계통 압력"보다 "lift-off 없음"으로 쓰는 편이 현행 체계에 맞습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>핵분열기체 방출(FGR)</th>
+<th>기체 FP 팽윤</th>
+<th>결함봉 누설</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기체 위치</td>
+<td>펠릿 → 간극·플레넘</td>
+<td>펠릿 안(입내·입계 기포)</td>
+<td>간극 → 냉각재</td>
+</tr>
+<tr>
+<td>전제</td>
+<td>정상 봉에서도 발생</td>
+<td>정상 봉</td>
+<td>피복관 관통결함</td>
+</tr>
+<tr>
+<td>지배 인자</td>
+<td>온도·연소도·과도</td>
+<td>온도·연소도</td>
+<td>결함 크기·간극 체류</td>
+</tr>
+<tr>
+<td>결과</td>
+<td>내압↑, h_gap↓, 사고 선원항</td>
+<td>펠릿 부피↑, PCMI</td>
+<td>냉각재 방사능↑(I·Xe)</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: PWR 정상 운전 봉의 FGR 대표 범위(대부분 수 % 이하)는 설계·출력 이력 의존이라 본문에 단정하지 않음 -->
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: UO₂ 펠릿에서 생성된 Xe·Kr이 펠릿 밖(간극·플레넘)으로 방출, 방출률 = 방출량/생성량</li>
+<li><strong>생성량</strong>: Xe+Kr 약 0.25개/핵분열 ≈ 25 cm³(STP)/MWd</li>
+<li><strong>열적 주경로</strong>: 입내 확산(D ∝ exp(−Q/RT), Booth 모델) → 결정립계 축적·기포 성장 → 모서리 기포 연결 → 열린 통로로 방출(문턱 거동)</li>
+<li><strong>비열적</strong>: 반조·녹아웃, 표면층, 열활성화 의존성 작음, 양 작음(저온에서 비중↑)</li>
+<li><strong>과도</strong>: 출력 상승·감소·정지 냉각 시 버스트 방출(결정립계 미세균열)</li>
+<li><strong>문턱</strong>: Halden 1 % Bu = 0.005·exp(9800/T_c), 10 GWd/tU 약 1,310 °C → 50 GWd/tU 약 1,080 °C</li>
+<li><strong>영향</strong>: 내압↑, 간극 기체 열전도↓(순수 기체 He/Xe 약 22배) → 온도↑ 되먹임, lift-off, 사고 선원항</li>
+<li><strong>고연소도</strong>: 열전도도 저하로 온도↑, 림(HBS) 기공 기체 → RIA·LOCA 과도 방출</li>
+<li><strong>대책</strong>: 선출력·상승률 제한, 대립자·도핑 펠릿, 플레넘·He 충전압 최적화</li>
+<li><strong>규제</strong>: GDC 10(SAFDL), SRP 4.2 봉 내압(lift-off 없음: 피복관 반경 증가율 ≤ 펠릿 반경 증가율), RG 1.236</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 문턱 곡선(1 % 초과/미만 예상 영역)과 주경로 4칸 사슬" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-011-fission-gas-release/sketch1_fgr_threshold_sketch.avif"/><figcaption>답안지용 문턱 곡선(1 % 초과/미만 예상 영역)과 주경로 4칸 사슬</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023년 3교시 2번</td>
+<td>연소도 증가에 따른 연료봉 증상(나. 핵분열 기체 방출)</td>
+</tr>
+<tr>
+<td>2017년 2교시 3번</td>
+<td>출력운전 중 연료봉 현상(나. 핵분열기체 방출)</td>
+</tr>
+<tr>
+<td>제76회 3교시 5번</td>
+<td>고연소도 연료의 문제점과 대책</td>
+</tr>
+<tr>
+<td>제71회 3교시 5번</td>
+<td>UO₂ 연소 중 치수·미세구조 변화</td>
+</tr>
+</tbody>
+</table>
+<p>2017년·2023년 문항은 소문항 "나"가 이 노트의 범위입니다. 생성량 → 주경로 4단계·보조 기작 → 문턱 → 영향 순으로 쓰면 25점 배점의 1/4 분량이 됩니다. 제76회는 FGR·내압 증가를 고연소도 문제점의 한 축으로, 부식·수소화와 묶어 대책까지 쓰면 됩니다. 제71회는 미세구조 변화의 하나로 결정립계 기포·터널과 FGR을 쓰면 됩니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>C. Vitanza, E. Kolstad, U. Graziani, "Fission Gas Release from UO₂ Pellet Fuel at High Burn-up", Proc. ANS Topical Meeting on Light Water Reactor Fuel Performance, Portland (1979).</li>
+<li>D. R. Olander, Fundamental Aspects of Nuclear Reactor Fuel Elements, TID-26711-P1, U.S. ERDA (1976).</li>
+<li>A. H. Booth, "A Method of Calculating Fission Gas Diffusion from UO₂ Fuel and Its Application to the X-2-f Loop Test", AECL-496 (1957).</li>
+<li>J. A. Turnbull 외, "The Diffusion Coefficients of Gaseous and Volatile Species during the Irradiation of Uranium Dioxide", Journal of Nuclear Materials 107 (1982).</li>
+<li>U.S. NRC, NUREG/CR-7022 Vol. 1 "FRAPCON-3.4: A Computer Code for the Calculation of Steady-State Thermal-Mechanical Behavior of Oxide Fuel Rods for High Burnup" (2011) — 간극 기체 열전도도 상관식(MATPRO 계열).</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.2 "Fuel System Design", Rev. 3 (2007.3), NRC ADAMS ML070740002.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, GDC 10; 원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제17조제1항. 국가법령정보센터.</li>
+<li>U.S. NRC, Regulatory Guide 1.236 "Pressurized-Water Reactor Control Rod Ejection and Boiling-Water Reactor Control Rod Drop Accidents" (2020).</li>
+<li>U.S. NRC, NUREG-2121 "Fuel Fragmentation, Relocation, and Dispersal During the Loss-of-Coolant Accident" (2012).</li>
+</ol>

@@ -1,0 +1,213 @@
+<figure class="article-image"><img alt="[개념 노트] 1군 중성자 확산방정식 — 중성자 수지에 픽의 법칙을 넣으면 분포는 확산거리 L로 정해진다 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-018-one-group-diffusion/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>1군 중성자 확산방정식</strong>은 중성자 수지(생성 − 흡수 − 누설 = 시간 변화)에 픽의 법칙 J = −D∇φ를 대입해, 모든 중성자를 하나의 에너지군으로 묶어 중성자속 φ의 공간·시간 분포를 구하는 식입니다.</p>
+<p>(1/v)·∂φ/∂t = D∇²φ − Σaφ + S</p>
+<p>정상상태에서는 ∇²φ − φ/L² = −S/D, L² = D/Σa가 되고, 핵분열원 νΣfφ/k를 넣으면 ∇²φ + B²φ = 0이 되어 임계계산의 출발점이 됩니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>유도 — 수지식 한 줄, 픽의 법칙 한 줄</h3>
+<p>임의의 체적 V에서 중성자 수 변화율 = 생성률 − 흡수율 − 누설률입니다. 누설은 표면 순유출 ∮J·n dA이고, 발산 정리로 ∫∇·J dV가 됩니다. 미분형은 ∂n/∂t = S − Σaφ − ∇·J, n = φ/v입니다.</p>
+<p>여기에 픽의 법칙 J = −D∇φ를 넣고 D가 균일하다고 보면 위의 확산방정식이 됩니다. 확산계수는 D = λtr/3 = 1/(3Σtr), Σtr = Σs(1 − μ̄), μ̄ = 2/(3A)입니다[1]. 단위가 cm라는 점이 화학의 확산계수(cm²/s)와 다릅니다.</p>
+<h3>각 항의 물리적 의미 (제71회·제78회 출제)</h3>
+<table>
+<thead>
+<tr>
+<th>항</th>
+<th>의미</th>
+<th>단위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(1/v)∂φ/∂t</td>
+<td>단위 체적 중성자 수의 시간 변화율</td>
+<td>n/cm³·s</td>
+</tr>
+<tr>
+<td>D∇²φ = −∇·J</td>
+<td>순유입(누설의 음수). φ가 많이 휠수록 누설이 큼</td>
+<td>n/cm³·s</td>
+</tr>
+<tr>
+<td>−Σaφ</td>
+<td>흡수 반응률(포획 + 핵분열)</td>
+<td>n/cm³·s</td>
+</tr>
+<tr>
+<td>S</td>
+<td>생성률. 외부 선원 또는 핵분열원 νΣfφ(임계계산은 νΣfφ/k)</td>
+<td>n/cm³·s</td>
+</tr>
+</tbody>
+</table>
+<p><strong>자연붕괴 항이 없는 이유</strong>: 자유 중성자 평균수명은 약 878 s(반감기 약 10분)입니다[8]. 붕괴 손실률 φ/(vτn)의 계수는 2,200 m/s 기준 1/(2.2×10⁵ × 878) = 5.2×10⁻⁹ cm⁻¹입니다. 경수 Σa = 0.0197 cm⁻¹의 2.6×10⁻⁷배이고, 흡수가 가장 작은 흑연(2.4×10⁻⁴ cm⁻¹)과 비교해도 2×10⁻⁵배입니다. 열중성자는 10⁻⁴ s 남짓 사는 동안 붕괴할 틈이 거의 없습니다.</p>
+<p><strong>매질 이동 항이 없는 이유</strong>: 노심 냉각재 유속은 수 m/s(대표 약 5 m/s)로 열중성자 속도 2,200 m/s의 약 0.2 %입니다. 중성자 이동은 비행과 산란이 지배하므로 이류 항 ∇·(uφ/v)를 무시합니다. 다만 용융염로처럼 연료가 흐르는 계에서는 지발중성자 <strong>선행핵</strong>이 매질과 함께 움직여 선행핵 방정식에 이류 항이 들어갑니다. 중성자 방정식의 이야기가 아니라는 점을 구분해 쓰면 좋습니다.</p>
+<h3>타당성 한계</h3>
+<p>픽의 법칙은 산란이 거의 등방이고 φ가 평균자유행로 규모에서 완만하게 변한다는 P1 근사입니다. 따라서 다음에서 부정확합니다.</p>
+<ul>
+<li>강흡수 매질(Σa가 Σs에 비해 작지 않은 곳, 제어봉 내부 등)</li>
+<li>선원·표면·계면에서 약 3 평균자유행로 이내(경수 λtr = 3D ≈ 0.48 cm, 흑연 약 2.5 cm)</li>
+<li>산란 비등방성이 강한 경우(Σtr로 일부 보정)</li>
+</ul>
+<p>1군은 여기에 에너지 의존성까지 하나로 묶습니다. 경수로는 페르미 연령 τ ≈ 27 cm²가 L² = 8.1 cm²보다 커서 고속 누설을 빼면 누설을 과소평가합니다.</p>
+<h3>경계조건</h3>
+<ul>
+<li><strong>물리 조건</strong>: φ는 실수·비음수·유한(선원 특이점 제외), 대칭면에서 dφ/dx = 0</li>
+<li><strong>자유 표면</strong>: 실제 표면이 아니라 <strong>외삽 경계</strong>에서 φ = 0. d = 0.71λtr = 2.13D(경수 0.34 cm, 흑연 1.79 cm). Marshak 조건(유입 부분류 J⁻ = 0)으로 근사하면 2D입니다[1][2].</li>
+<li><strong>계면</strong>: φ 연속, 법선 중성자류 연속(D_A·dφ_A/dx = D_B·dφ_B/dx). D가 다르면 φ의 기울기가 꺾입니다.</li>
+<li><strong>선원 조건</strong>: 평면 선원 lim J(x→0⁺) = S/2, 점 선원 lim 4πr²J(r→0) = S</li>
+</ul>
+<h3>무한 매질 선원 해와 확산거리</h3>
+<p>선원 밖에서 ∇²φ − φ/L² = 0을 풀고 r→∞ 유한 조건으로 지수 증가항을 지우면 다음 해가 나옵니다.</p>
+<ul>
+<li>평면 선원 S(n/cm²·s): φ(x) = (SL/2D)·e^(−|x|/L)</li>
+<li>점 선원 S(n/s): φ(r) = S·e^(−r/L)/(4πDr)</li>
+</ul>
+<p>점 선원 해로 흡수 지점까지 직선거리 제곱평균을 구하면 ⟨r²⟩ = 6L²입니다. <strong>L²는 중성자가 생성 지점에서 흡수 지점까지 날아간 직선거리 제곱평균의 1/6</strong>이며, 실제 지그재그 경로 길이가 아닙니다. Lamarsh 표 5.2(20 °C) 기준 L은 경수 2.85 cm, Be 21 cm, 흑연 59 cm, 중수 97 cm입니다[1]. 경수 점 선원 S = 10⁶ n/s이면 r = 10 cm에서 φ = 10⁶·e^(−3.51)/(4π×0.16×10) ≈ 1.5×10³ n/cm²·s입니다.</p>
+<figure class="article-image"><img alt="평면·점 선원 해를 감속재별 L(경수 2.85, Be 21, 흑연 59 cm)로 계산한 반대수 그래프와 정상 확산방정식 항별 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-018-one-group-diffusion/fig1_source_solutions_diffusion_length.avif"/><figcaption>평면·점 선원 해를 감속재별 L(경수 2.85, Be 21, 흑연 59 cm)로 계산한 반대수 그래프와 정상 확산방정식 항별 카드</figcaption></figure>
+<p>반대수 그래프에서 평면 선원은 직선(ln φ 기준 기울기 −1/L)이고, 1/e로 줄어드는 거리가 바로 L입니다. 점 선원은 기하학적 퍼짐 1/r이 더해져 더 빨리 떨어집니다. 경수에서는 26 cm만 떨어져도 평면 선원 φ가 약 10⁻⁴배로 줄지만, 흑연은 60 cm에서도 0.36배입니다.</p>
+<h3>임계형 — keff 유도 (제67회 2교시 1번)</h3>
+<p>선원을 핵분열원으로 바꾸면 D∇²φ − Σaφ + (1/k)νΣfφ = 0입니다. 무반사로의 기본 모드는 ∇²φ = −B_g²φ를 만족하므로 대입하면 다음과 같습니다.</p>
+<ul>
+<li>−DB_g² − Σa + νΣf/k = 0 → <strong>k = k∞/(1 + L²B_g²)</strong>, k∞ = νΣf/Σa</li>
+<li>1/(1 + L²B_g²)가 열 비누설확률</li>
+</ul>
+<p>열중성자 원천을 "감속을 마친 고속중성자"로 두는 열군 확산방정식(나이이론)에서는 k = k∞·e^(−τB²)/(1 + L²B²)이고, 수정 1군은 k ≈ k∞/(1 + M²B²), M² = L² + τ, 2군은 k = k∞/[(1 + L²B²)(1 + τB²)]입니다[1][2].</p>
+<p><strong>형상 해 두 개</strong>: 평판(제67회 3교시 3번)은 대칭 조건과 x = X₀/2에서 φ = 0으로 φ = A cos(πx/X₀)입니다. 구(제73회 4교시 2번)는 φ = A sin(πr/R)/r이고, 출력 P = E_RΣf∫φ4πr²dr = 4AR²E_RΣf로 규격화하면 φ(r) = [P/(4R²E_RΣf)]·sin(πr/R)/r입니다. 이 문항은 "Fick 법칙이 경계에서도 유효"라고 두어 외삽거리를 무시하라는 뜻입니다.</p>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>노심 설계</strong>: 실제 설계는 1군이 아니라 격자 수송계산으로 집합체를 균질화한 2군 상수 → 3차원 2군 노달 확산계산(임계붕소, 출력분포, 제어봉가) → 봉출력 재구성 순서입니다(예: Westinghouse ANC, Studsvik SIMULATE, 국내 KAERI MASTER). 1군 해는 손계산 추정과 결과의 물리적 점검에 씁니다.</li>
+<li><strong>경수로의 특성</strong>: L이 2.85 cm로 짧아 중성자는 생성 지점 가까이에서 흡수됩니다. 그래서 국부 출력은 주변 몇 cm의 조성(제어봉, 가연성 흡수봉, 수구멍)에 민감하고, 노달 계산 뒤 봉출력 재구성이 필요합니다.</li>
+<li><strong>계측·차폐</strong>: 노외 검출기 응답, 반사체 절약, 차폐 근사에도 같은 지수 감쇠 해가 쓰입니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<ul>
+<li><strong>NUREG-0800 SRP 4.3(Nuclear Design)</strong>: 핵설계 계산 방법(수송·확산 코드, 군상수 생성)과 불확도를 심사합니다[3].</li>
+<li><strong>RG 1.203(2005)</strong>: 해석 방법론 개발·평가 절차(EMDAP)로 코드 검증·확인 체계를 요구합니다[4].</li>
+<li><strong>10 CFR 50 App. A GDC 10·11·12·26·28</strong>: 핵연료 설계한계, 고유보호, 출력진동 억제, 반응도 제어 요건을 핵설계 계산으로 입증합니다[5].</li>
+<li><strong>국내</strong>: 「원자로시설 등의 기술기준에 관한 규칙」(현행 원안위규칙 제37호, 2026.3.30) 제18조(원자로의 고유보호)·제28조(반응도제어계통) 적합성을 핵설계 계산으로 보입니다[6]. 심사는 SRP 4.3에 대응하는 국내 안전심사지침의 핵설계 절을 따릅니다.<!-- 확인필요: 국내 경수로 안전심사지침 핵설계 절의 문서번호·현행판 미확인 --></li>
+<li><strong>기동시험</strong>: ANSI/ANS-19.6.1 재장전 기동 물리시험에서 임계붕소·제어봉가·온도계수 측정값을 설계 예측과 비교합니다[7].</li>
+<li><strong>출제 당시 대비</strong>: 확산 물리는 변화가 없습니다. 바뀐 것은 도구로, 2000년대 초 2D·조대격자 계산에서 현재는 3D 노달 + 봉출력 재구성이 표준입니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>1군</th>
+<th>수정 1군</th>
+<th>2군</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>에너지 처리</td>
+<td>단일 평균군</td>
+<td>1군 + 고속 이동거리 보정</td>
+<td>고속·열 2군, 감속으로 연결</td>
+</tr>
+<tr>
+<td>이동 면적</td>
+<td>L² = D/Σa</td>
+<td>M² = L² + τ</td>
+<td>τ(= D₁/Σ₁₂)와 L² 따로</td>
+</tr>
+<tr>
+<td>keff</td>
+<td>k∞/(1 + L²B²)</td>
+<td>k∞/(1 + M²B²)</td>
+<td>k∞/[(1 + L²B²)(1 + τB²)]</td>
+</tr>
+<tr>
+<td>쓰임</td>
+<td>해석적 이해</td>
+<td>대형 열로 손계산</td>
+<td>노달 설계 코드의 기본</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>확산이론</th>
+<th>수송이론</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>변수</td>
+<td>φ(r) 스칼라</td>
+<td>ψ(r, Ω) 방향 의존</td>
+</tr>
+<tr>
+<td>근사</td>
+<td>P1(등방에 가까움)</td>
+<td>정확(이산화 오차만)</td>
+</tr>
+<tr>
+<td>약점</td>
+<td>경계·강흡수체 3 mfp 이내</td>
+<td>계산량</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 1군 중성자 확산방정식</strong></p>
+<ol>
+<li><strong>정의</strong>: 중성자 수지 + 픽의 법칙, 에너지 1군으로 묶은 φ의 시공간 방정식임</li>
+<li><strong>식</strong>: (1/v)∂φ/∂t = D∇²φ − Σaφ + S, J = −D∇φ, D = 1/(3Σtr)</li>
+<li><strong>항 의미</strong>: 시간 변화율 = 순유입(누설의 음수) − 흡수 + 생성</li>
+<li><strong>무시 항</strong>: 중성자 붕괴(τn ≈ 878 s ≫ 수명 ~10⁻⁴ s), 매질 이동(유속 ≪ 2,200 m/s)</li>
+<li><strong>한계</strong>: P1 근사, 강흡수체·경계·선원 3 mfp 이내 부정확</li>
+<li><strong>경계조건</strong>: 외삽 경계 φ = 0(d = 2.13D), 계면 φ·J 연속, 선원 조건</li>
+<li><strong>선원 해</strong>: 평면 (SL/2D)e^(−|x|/L), 점 Se^(−r/L)/(4πDr), L² = D/Σa = ⟨r²⟩/6</li>
+<li><strong>임계형</strong>: ∇²φ + B²φ = 0 → keff = k∞/(1 + L²B²), 수정 1군 M² = L² + τ</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: 체적 요소 수지(유입·유출·흡수·생성)와 평면 선원 지수 감쇠(x = ±L에서 φ₀/e)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-018-one-group-diffusion/sketch1_balance_and_plane_source.avif"/><figcaption>답안용 도식: 체적 요소 수지(유입·유출·흡수·생성)와 평면 선원 지수 감쇠(x = ±L에서 φ₀/e)</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>연도-교시-번호</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2002(제67회)-2-1</td>
+<td>열중성자 확산방정식으로 keff 유도</td>
+</tr>
+<tr>
+<td>2002(제67회)-3-3</td>
+<td>평판 원자로 1군 확산 중성자속 분포</td>
+</tr>
+<tr>
+<td>2003(제71회)-3-4</td>
+<td>확산방정식 각 항의 의미, 붕괴·이류 항이 없는 이유</td>
+</tr>
+<tr>
+<td>2004(제73회)-4-2</td>
+<td>구형 고속로 1군 중성자속 분포</td>
+</tr>
+<tr>
+<td>제78회-2-3</td>
+<td>1군 확산방정식과 각 항의 의미</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 5.2~5.7절(표 5.2), 6.1~6.3절.</li>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, Wiley (1976), 4~7장.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.3 "Nuclear Design".</li>
+<li>U.S. NRC, Regulatory Guide 1.203 "Transient and Accident Analysis Methods" (2005).</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criteria 10·11·12·26·28.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제18조·제28조. 국가법령정보센터.</li>
+<li>ANSI/ANS-19.6.1 "Reload Startup Physics Tests for Pressurized Water Reactors", American Nuclear Society.</li>
+<li>Particle Data Group, Review of Particle Physics, neutron mean life(약 878 s).</li>
+</ol>

@@ -1,0 +1,205 @@
+<figure class="article-image"><img alt="[개념 노트] 원자로냉각재압력경계(RCPB) — 정의·외곽 한계 3목과 경계를 지키는 설계·검사 요건 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-009-rcpb/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>원자로냉각재압력경계(RCPB)는 1차 냉각재의 압력을 받는 압력용기·배관·펌프·밸브로, 원자로냉각재계통 자체와 여기에 연결된 배관을 ① 격납건물 관통 배관은 최외곽 격납 격리밸브까지, ② 비관통 배관은 정상운전시 항상 닫혀 있는 두 밸브 중 두 번째 밸브까지 포함하고, ③ 1차계통 안전·방출밸브를 포함하는 경계입니다.</strong></p>
+<p>국내 근거는 「원자로시설 등의 기술기준에 관한 규칙」 제2조 제1항 제4호, 미국 근거는 10 CFR 50.2입니다[1][2]. 두 정의는 같은 3목 구조입니다. 방벽으로는 펠릿·피복관 다음의 세 번째 방벽입니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>경계를 밸브에서 끊는 이유</h3>
+<p>RCS에 붙은 배관은 밸브가 닫히기 전까지 RCS와 같은 고압·고온 냉각재를 받습니다. 그래서 "어디까지가 RCS 압력을 받는가"를 밸브로 정합니다.</p>
+<ul>
+<li><strong>관통 배관 → 최외곽 격납 격리밸브까지</strong>: 격납건물 바깥 구간이 파단되면 냉각재가 격납 방벽까지 우회해 나갑니다. 그래서 격납 바깥쪽 격리밸브까지 압력경계와 같은 품질로 만듭니다.</li>
+<li><strong>비관통 배관 → 닫힌 두 밸브 중 두 번째</strong>: 정상운전 중 닫힌 밸브 하나만으로는 그 밸브의 시트 누설이나 오개방에 대비할 수 없습니다. 두 번째 닫힌 밸브에서 비로소 RCS 압력이 확실히 끊긴다고 봅니다. 안전주입탱크 주입관의 직렬 체크밸브가 대표 예입니다.</li>
+<li><strong>안전·방출밸브 포함</strong>: 밸브 몸체와 디스크가 RCS 압력을 직접 받고, 열린 채 고착되면 그 자체가 소형 LOCA가 됩니다(TMI-2 PORV).</li>
+<li><strong>직접 사이클 BWR</strong>: 주증기·주급수 배관의 최외곽 격납 격리밸브까지 포함합니다. PWR의 주증기·급수는 2차계통이라 RCPB가 아닙니다.</li>
+</ul>
+<figure class="article-image"><img alt="외곽 한계 판정 흐름(RCS 구성품 → 연결 구성품 → 관통·비관통·안전방출밸브)과 격납 관통부·비관통 배관·POSRV 밸브 사례, RCPB 범위와 Class 1 적용 범위의 구분" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-009-rcpb/fig1_rcpb_boundary_decision_flow.avif"/><figcaption>외곽 한계 판정 흐름(RCS 구성품 → 연결 구성품 → 관통·비관통·안전방출밸브)과 격납 관통부·비관통 배관·POSRV 밸브 사례, RCPB 범위와 Class 1 적용 범위의 구분</figcaption></figure>
+<h3>RCPB와 안전등급 1은 같지 않다</h3>
+<p>RCPB는 원칙적으로 ASME III Class 1(KEPIC MNB, 안전등급 1)로 만듭니다(10 CFR 50.55a(c)(1)). 다만 RCS에 연결된 RCPB 기기는 두 조건 중 하나를 만족하면 Class 1 요건을 면제받습니다(50.55a(c)(2))[2].</p>
+<ul>
+<li><strong>정상 보충능력 조건</strong>: 정상운전 중 그 기기가 파손돼도 정상 보충계통(충전펌프)만으로 원자로를 질서 있게 정지·냉각할 수 있음. 주로 소구경 배관·계측관이 해당합니다.</li>
+<li><strong>격리 조건</strong>: 직렬 밸브 2개로 격리돼 있거나 격리할 수 있음. 열린 밸브는 자동으로 작동해야 하고, 닫힘 시간이 위 정지·냉각 조건을 만족해야 합니다.</li>
+</ul>
+<p>그래서 RCPB 범위는 10 CFR 50.2 정의로 쓰고, 안전등급 1 범위와 구분해야 합니다. 국내 등급 고시 제5조의 "정상 보충능력을 초과하는 냉각재 상실" 조건과 같은 논리입니다[9].</p>
+<h2>원전에서의 의미</h2>
+<h3>구성 (PWR 예)</h3>
+<p>원자로용기와 상부헤드 관통부(제어봉구동장치 압력하우징·계측 관통부), 고온관·저온관, 증기발생기 1차측(수실·관판·전열관), 원자로냉각재펌프 케이싱, 가압기와 밀림관, 가압기 살수관과 안전밸브(APR1400은 POSRV), 연결 배관(충전·유출·안전주입·정지냉각 흡입·배수·계측관)의 외곽 한계 밸브까지입니다. 증기발생기 전열관은 1차와 2차를 동시에 가르는 경계이고, 2차측 동체는 RCPB가 아닙니다.</p>
+<h3>설계 요건: 압력·하중 사다리</h3>
+<table>
+<thead>
+<tr>
+<th>기준선</th>
+<th>의미</th>
+<th>APR1400 예</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정상운전 압력</td>
+<td>운전 상태(Service Level A 조건)</td>
+<td>2,250 psia(15.51 MPa)[8]</td>
+</tr>
+<tr>
+<td>설계압력</td>
+<td>설계 한계, POSRV 설정은 그 바로 아래</td>
+<td>2,500 psia(17.24 MPa), POSRV 2,470 psia</td>
+</tr>
+<tr>
+<td>과압 한계</td>
+<td>설계압력 × 110 %(ASME III 과압보호 한계), RCS 압력 안전한계</td>
+<td>2,750 psia(18.96 MPa)</td>
+</tr>
+<tr>
+<td>수압시험(참고)</td>
+<td>설계압력 × 1.25 이상(ASME III NB-6221)[5]</td>
+<td>약 3,106 psig(계산 예)</td>
+</tr>
+<tr>
+<td>ATWS 첨두(참고)</td>
+<td>ASME Service Level C 판정 기준</td>
+<td>약 3,200 psig(22.06 MPa(g))</td>
+</tr>
+</tbody>
+</table>
+<p>사용 수준(Service Level A~D)은 압력 눈금이 아니라 하중 조건별 평가 기준입니다. 수압시험과 ATWS 값은 운전 상태와 조건이 다른 참고 기준으로 읽어야 합니다.</p>
+<p>GDC 15는 RCS와 보조·제어·보호계통이 예상운전과도에서도 RCPB 설계조건을 넘지 않을 여유를 갖도록 요구합니다[3].</p>
+<figure class="article-image"><img alt="APR1400 예 압력 기준선(정상 15.51·POSRV 17.03·설계 17.24·110 % 18.96 MPa, 참고 수압시험·ATWS)과 설계·제작·운전·검사 단계별 GDC·제21조 확인사항, LBB 조건" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-009-rcpb/fig2_rcpb_pressure_ladder_requirements.avif"/><figcaption>APR1400 예 압력 기준선(정상 15.51·POSRV 17.03·설계 17.24·110 % 18.96 MPa, 참고 수압시험·ATWS)과 설계·제작·운전·검사 단계별 GDC·제21조 확인사항, LBB 조건</figcaption></figure>
+<h3>재료와 파괴 방지</h3>
+<ul>
+<li><strong>원자로용기</strong>: SA-508 Gr.3 저합금강에 스테인리스 육성 클래딩을 입힙니다. 노심대는 중성자 조사로 RTNDT가 오르고 상부 흡수에너지(USE)가 떨어집니다. 이를 App. G의 P-T 한계(USE 초기 ≥ 102 J, 수명 중 ≥ 68 J)와 App. H 감시시험으로 관리하고, PTS 선별기준 270/300 °F(132/149 °C)로 확인합니다[4].</li>
+<li><strong>페라이트 재료</strong>: ASME III NB-2300에 따라 샤르피·낙하중시험으로 파괴인성을 확인합니다. GDC 31이 요구하는 "비취성 거동"의 근거입니다.</li>
+<li><strong>니켈합금·스테인리스</strong>: Alloy 600/82/182의 PWSCC 때문에 관통부·이종금속용접부를 Alloy 690/52/152로 바꾸는 추세입니다. 오스테나이트 스테인리스는 예민화를 관리합니다.</li>
+</ul>
+<h3>운전 중 감시: 누설·검사·LBB</h3>
+<ul>
+<li><strong>누설탐지</strong>: 제21조 ②와 GDC 30에 따라 누설을 빨리 탐지하고 가능한 한 위치를 찾습니다. RG 1.45 Rev.1은 독립·다양한 방법 2가지 이상으로 1 gpm을 1시간 이내에 감지하도록 요구합니다[6].</li>
+<li><strong>가동중검사(ISI)</strong>: ASME XI IWB(국내 KEPIC MI)로 10년 검사 주기마다 원자로용기·노즐·배관 용접부·볼트를 체적·표면·육안 검사하고, 재장전 주기마다 계통 누설시험을 합니다.</li>
+</ul>
+<!-- 가동중검사 적용판·추가 조건: 원안위고시 제2026-14호 「원자로시설의 가동중 검사에 관한 고시」(2026.8.26, 위임 근거 기술기준규칙 제63조) 제6조로 확인(C-OP-010) -->
+<ul>
+<li><strong>LBB(파단전누설)</strong>: 배관이 파단 전에 탐지 가능한 누설을 먼저 보인다는 것을 입증하면 GDC 4에 따라 배관 휘핑·분사 같은 동적 영향을 설계에서 뺄 수 있습니다. SRP 3.6.3은 누설률 여유 10배, 균열 크기 여유 2배를 요구합니다[7]. ECCS·격납 설계 기준 파단은 그대로 둡니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기술기준규칙 제2조 제1항 제4호</td>
+<td>RCPB 정의와 외곽한계 3목</td>
+</tr>
+<tr>
+<td>같은 규칙 제21조</td>
+<td>① 비정상 누설·급속 진전 파손·대규모 파단 확률 극히 낮게 설계·제작·설치·시험 ② 누설 신속 탐지·위치 파악 ③ 조사 영향 감시시험계획·감시시험편 ④ 세부는 원안위 고시</td>
+</tr>
+<tr>
+<td>같은 규칙 제22조 ①·④, 제37조, 제41조 ③</td>
+<td>과도 중 설계조건 여유, 연계계통 역류 방지·격리, 과압방지, 내압시험 누설기준</td>
+</tr>
+<tr>
+<td>10 CFR 50.2, 50.55a(c)·(g)</td>
+<td>정의, Class 1과 면제 조건, ISI(ASME XI)</td>
+</tr>
+<tr>
+<td>GDC 14·15·30·31·32 (App. A)</td>
+<td>파손 확률, 설계 여유, 품질·누설탐지, 파괴 방지, 검사·감시</td>
+</tr>
+<tr>
+<td>10 CFR 50 App. G·H, 50.61</td>
+<td>파괴인성·P-T 한계, 감시시험, PTS</td>
+</tr>
+<tr>
+<td>RG 1.45, SRP 3.6.3·5.2.5</td>
+<td>누설탐지, LBB</td>
+</tr>
+</tbody>
+</table>
+<p>국내 규칙은 현행 원안위규칙 제37호(2026.3.30)입니다. 2013·2017·2025년 출제 당시에도 정의 3목 구조는 같았고, 바뀐 것은 주로 누설탐지 지침(RG 1.45 Rev.1)과 ISI·규격 적용판입니다.</p>
+<!-- 확인필요: 2013·2017년 당시 규칙 판의 정의 조문 번호(제2조 각 호 배열)는 원문 미대조 -->
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>RCPB</th>
+<th>안전등급 1</th>
+<th>RCS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기준</td>
+<td>압력을 받는 범위(10 CFR 50.2, 규칙 제2조)</td>
+<td>안전기능·파손 결과(고시 제5조)</td>
+<td>기능 계통</td>
+</tr>
+<tr>
+<td>범위</td>
+<td>RCS + 연결 배관의 외곽 한계 밸브까지</td>
+<td>RCPB 중 정상 보충능력을 넘는 냉각재 상실을 일으킬 수 있는 부분</td>
+<td>용기·루프·가압기</td>
+</tr>
+<tr>
+<td>소구경 연결관</td>
+<td>포함</td>
+<td>면제 가능(통상 2등급)</td>
+<td>아님</td>
+</tr>
+</tbody>
+</table>
+<p>격납건물 격리밸브와의 관계도 자주 헷갈립니다. 격리밸브는 격납 방벽의 일부이면서, 관통 배관에서는 최외곽 밸브가 RCPB의 끝이기도 합니다. 고압 RCS와 저압 계통 사이의 압력격리밸브(PIV)는 제22조 ④의 역류 방지·격리 요건으로, 직렬 2밸브와 누설시험으로 관리합니다(STS 3.4.14 공칭 1인치당 0.5 gpm, 최대 5 gpm)[10]. 이 경계가 뚫리면 계통간 LOCA가 됩니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 1차 냉각재 압력을 받는 압력용기·배관·펌프·밸브임(규칙 제2조 제1항 제4호, 10 CFR 50.2)</li>
+<li><strong>외곽한계 ①</strong>: 격납건물 관통 배관 → <strong>최외곽 격납 격리밸브</strong>까지</li>
+<li><strong>외곽한계 ②</strong>: 비관통 배관 → <strong>정상운전시 항상 닫혀 있는 두 밸브 중 두 번째 밸브</strong>까지</li>
+<li><strong>외곽한계 ③</strong>: 1차계통 <strong>안전밸브·방출밸브</strong> 포함(BWR 직접 사이클은 주증기·주급수 최외곽 격리밸브까지)</li>
+<li><strong>밸브 기준</strong>: 경계 밸브 3목 + Class 1 면제는 정상 보충능력 이내 또는 직렬 2밸브 격리(열린 밸브 자동 작동) + 고압/저압 경계는 PIV 2중·누설시험</li>
+<li><strong>설계</strong>: GDC 14·15·30·31·32, 제21조, ASME III Class 1(KEPIC MNB), 과압 110 % 이하</li>
+<li><strong>재료·검사</strong>: 파괴인성(App. G·H, PTS), ISI(ASME XI 10년), 누설탐지 2가지 이상(1 gpm/1 h), LBB</li>
+<li><strong>의미</strong>: 세 번째 방벽, 파손 = LOCA, 안전등급 1과 범위가 다름</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 RCPB 외곽 한계 3목 도식(굵은 선 = RCPB)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-009-rcpb/sketch1_rcpb_outer_limits.avif"/><figcaption>답안지용 RCPB 외곽 한계 3목 도식(굵은 선 = RCPB)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 1교시 4번</td>
+<td>냉각재 압력경계 정의 및 외곽한계</td>
+</tr>
+<tr>
+<td>2017년 1교시 6번</td>
+<td>정의와 압력경계 밸브 선정 기준</td>
+</tr>
+<tr>
+<td>2016년 3교시 1번</td>
+<td>완전파단 방지를 위한 누설탐지계통</td>
+</tr>
+<tr>
+<td>2013년 1교시 2번</td>
+<td>원자로냉각재 압력경계의 정의와 외곽 한계</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제2조 제1항 제4호, 제21·22·37·41조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR 50.2 "Definitions"(Reactor coolant pressure boundary), 10 CFR 50.55a(c)·(g).</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criteria 4, 14, 15, 30, 31, 32.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix G "Fracture Toughness Requirements", Appendix H "Reactor Vessel Material Surveillance Program Requirements", 10 CFR 50.61.</li>
+<li>ASME, Boiler and Pressure Vessel Code, Section III Division 1 Subsection NB(NB-2300, NB-6221), Section XI(IWB).</li>
+<li>U.S. NRC, Regulatory Guide 1.45 "Guidance on Monitoring and Responding to Reactor Coolant System Leakage", Rev. 1 (2008).</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 3.6.3 "Leak-Before-Break Evaluation Procedures", Rev. 1.</li>
+<li>KEPCO·KHNP, APR1400 Design Control Document Tier 2, 5.2.2 "Overpressure Protection"(NRC 설계인증 공개본).</li>
+<li>원자력안전위원회, 「원자로시설의 안전등급과 등급별 규격에 관한 고시」, 원안위고시 제2026-13호(2026.8.26), 제5조. 국가법령정보센터.</li>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications, Westinghouse Plants, LCO 3.4.14 "RCS Pressure Isolation Valve (PIV) Leakage".</li>
+</ol>

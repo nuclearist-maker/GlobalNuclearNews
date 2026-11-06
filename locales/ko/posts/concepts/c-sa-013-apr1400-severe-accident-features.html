@@ -1,0 +1,269 @@
+<figure class="article-image"><img alt="[개념 노트] 중대사고 대처설비 — APR1400 예방설비와 완화설비(감압·수소·공동 충수·살수보조) 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-013-apr1400-severe-accident-features/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>중대사고 대처설비는 설계기준사고를 넘어 노심손상으로 진행하는 것을 막는 예방설비와, 노심이 손상된 뒤 격납건물 건전성을 지켜 방사성물질의 조기·대량 방출을 막는 완화설비를 합친 것입니다. APR1400은 위협요인별로 전용 설비를 갖췄습니다.</strong></p>
+<h2>원리와 메커니즘</h2>
+<h3>예방과 완화를 나누는 기준</h3>
+<p>기준은 노심손상입니다. 예방설비는 설계기준을 넘는 다중고장(ATWS, SBO, 급수완전상실 등)에서도 노심 냉각을 유지합니다. 완화설비는 노심이 녹은 뒤 격납건물을 위협하는 현상을 하나씩 막습니다. 국내에서는 원안위 고시 제2026-1호 별표 3의 위협요인 7종(가연성기체 연소·폭발, 고온·과압, MCCI, HPME, DCH, FCI, 격리경계 우회)이 완화설비를 묶는 기준입니다[2].</p>
+<h3>예방설비 — 시나리오별 대응(APR1400)</h3>
+<table>
+<thead>
+<tr>
+<th>중대사고로 갈 수 있는 시나리오</th>
+<th>예방설비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ATWS(보호계통 공통원인 고장)</td>
+<td>다양성보호계통(DPS): 가압기·격납건물 고압력으로 다양성 원자로정지, SG 저수위로 보조급수 작동</td>
+</tr>
+<tr>
+<td>SBO(소외전원 + EDG 상실)</td>
+<td>AAC-DG, 터빈구동 보조급수펌프, 축전지</td>
+</tr>
+<tr>
+<td>급수완전상실</td>
+<td>POSRV 수동 개방으로 급수·배출 운전, 안전주입 4계열</td>
+</tr>
+<tr>
+<td>LOCA</td>
+<td>4계열 직접용기주입(DVI), 유량조절기 내장 SIT, IRWST(재순환 전환 불요)</td>
+</tr>
+<tr>
+<td>계통간 LOCA(ISLOCA)</td>
+<td>정지냉각계통 설계압력 상향(900 psig)[7], 저압계통 격리 연동</td>
+</tr>
+</tbody>
+</table>
+<p>전원 구성의 호기별 차이는 아래 표에 정리했습니다.</p>
+<h3>완화설비 — 위협요인별 대응</h3>
+<p>2026년 3교시 4번이 물은 네 계통이 핵심입니다.</p>
+<table>
+<thead>
+<tr>
+<th>설비</th>
+<th>주요 대응 위협</th>
+<th>작동 방식</th>
+<th>대표 수치·조건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>안전감압배기계통(SDVS)</td>
+<td>HPME·DCH</td>
+<td>POSRV 4개 설치, 운전원 원격 개방</td>
+<td>용기 파손 전 RCS 250 psia(약 1.72 MPa) 이하[4]</td>
+</tr>
+<tr>
+<td>수소제거계통(HMS)</td>
+<td>가연성기체 연소·폭발</td>
+<td>PAR 30기(피동) + 점화기 10개[5]</td>
+<td>100 % 피복재 반응 수소 균일 시 평균 10 vol% 미만</td>
+</tr>
+<tr>
+<td>원자로공동 충수계통(CFS)</td>
+<td>MCCI</td>
+<td>전동밸브 원격 개방 → IRWST → HVT → 공동, 수두차로 충수</td>
+<td>공동 바닥 기준 최대 약 6.4 m 침수[9]</td>
+</tr>
+<tr>
+<td>비상원자로건물 살수보조계통(ECSBS)</td>
+<td>고온·과압</td>
+<td>외부 수원 + 소방펌프차 → 전용 살수 헤더</td>
+<td>1E 전원·IRWST에 의존하지 않음</td>
+</tr>
+</tbody>
+</table>
+<figure class="article-image"><img alt="APR1400 격납건물 반단면 위 완화설비 4종(안전감압배기·수소제거·원자로공동 충수·살수보조) 위치와 대응 위협·대표 수치 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-013-apr1400-severe-accident-features/fig1_apr1400_sa_features_cutaway.avif"/><figcaption>APR1400 격납건물 반단면 위 완화설비 4종(안전감압배기·수소제거·원자로공동 충수·살수보조) 위치와 대응 위협·대표 수치 표</figcaption></figure>
+<h3>안전감압배기계통 — 왜 용기 파손 전에 낮춰야 하나</h3>
+<p>SBO처럼 2차측 열제거를 잃으면 RCS 압력은 POSRV 개방압 부근(약 17 MPa)에 머문 채 노심이 녹습니다. 이때 용기 하부가 뚫리면 용융물이 고압으로 분출되고(HPME), 미세 입자가 격납건물 대기를 급격히 가열·가압합니다(DCH). 그래서 노심출구온도 649 °C(중대사고 판정 기준)[4]로 SAMG에 들어가면 운전원이 POSRV를 열어 용기 파손 전에 RCS를 250 psia 이하로 낮춥니다. 감압이 용기 파손 자체를 막는 것은 아니고, 파손 시 HPME·DCH 위험을 줄이는 것입니다. 2025.1 원안위 사고관리계획서 심사(새울 1·2·신한울 1·2)는 POSRV로 17.25 MPa에서 1.72 MPa 이하로 감압해 HPME·DCH를 막는 것으로 평가했습니다[4].</p>
+<p>새울 3·4(옛 신고리 5·6)에는 중대사고 전용 전동 비상급속감압밸브(ERDV) 2계열이 더해졌습니다(계열당 449.1 t/h, POSRV는 개당 244.9 t/h). KINS의 MELCOR 평가(SBO)에서는 ERDV 1계열을 첫 POSRV 개방 1시간 뒤에 열어도 용기 파손 시 압력이 1.46 MPa로 DCH 판정 기준 1.78 MPa보다 낮았습니다[8]. 설계기준 과압 방출은 IRWST 스파저에서 응축하지만, 중대사고 감압 때는 수소가 IRWST에 쌓이지 않도록 증기발생기 격실 쪽으로(3방향 밸브) 방출하는 설계가 공개 문헌에 기술되어 있습니다[7]. 이 방출은 격납건물 열제거가 없으면 격납건물 압력을 올리므로 살수·ECSBS와 함께 판단합니다.</p>
+<figure class="article-image"><img alt="고압 노심손상 시 RCS 압력 개념 추세와 250 psia(1.72 MPa) 감압 목표, POSRV·ERDV 설계 방출용량과 평가값" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-013-apr1400-severe-accident-features/fig2_rcs_depressurization_window.avif"/><figcaption>고압 노심손상 시 RCS 압력 개념 추세와 250 psia(1.72 MPa) 감압 목표, POSRV·ERDV 설계 방출용량과 평가값</figcaption></figure>
+<h3>수소제거계통</h3>
+<p>PAR는 전원 없이 완만한 방출을 처리하고, 점화기는 급속 방출 때 국부 고농도를 낮은 농도에서 태웁니다.</p>
+<h3>원자로공동 충수계통과 공동 형상</h3>
+<p>CFS는 IRWST와 유수탱크(HVT) 사이, HVT와 원자로공동 사이의 전동밸브를 운전원이 열면 수두차로 IRWST 물이 공동에 차는 방식입니다. 펌프는 없지만 밸브 조작은 필요하며, 밸브는 평상시 잠기고 전원이 분리되어 있습니다. 공동 바닥 기준 최대 약 6.4 m까지 침수해 퍼진 용융물을 냉각하고 핵분열생성물을 수중 세정합니다. 공동은 장애물 없는 넓은 바닥(기본 설계 80.36 m², 0.0201 m²/MWt로 KURD 0.02 충족)[6]으로 용융물을 얇게 펴고, 굴곡 유로의 용융물 포획실로 파편이 격납건물 상부로 날아오르는 것을 줄입니다. 신고리 3·4(현 새울 1·2) 심사에서는 공동 집수조로의 용융물 유입을 막는 차단벽 추가로 바닥이 72 m²(해석 70 m²)로 줄었고, 라이너 위 콘크리트는 1.22 m입니다[6]. 다만 상부 침수만으로 냉각이 보장되지는 않는다는 불확실성은 남아 있습니다.</p>
+<p>CFS에 펌프 주입을 더해 공동 수위를 고온관 아래까지 올리는 원자로용기 외벽냉각(IVR-ERVC)은 중대사고관리 전략으로 학회 문헌에 소개되어 있습니다. 인허가 설계기준으로 크레딧하지는 않으며, 감압이 선결 조건입니다.</p>
+<h3>비상원자로건물 살수보조계통</h3>
+<p>설계기준 살수(정지냉각펌프와 상호 대체 가능)를 모두 잃거나 IRWST를 쓸 수 없을 때, 원수조 같은 외부 수원의 물을 소방펌프차 같은 외부 펌프로 전용 살수 헤더·노즐에 넣는 설비입니다. 1E급 전원과 IRWST에 의존하지 않습니다[9]. 증기를 응축시켜 장기 과압·과온을 막고 에어로졸을 씻어 냅니다. 여과배기(CFVS)처럼 격납건물 기체를 밖으로 내보내 감압하는 방식과 달리, 물질을 밖으로 내보내지 않고 격납건물 안에서 증기를 응축해 감압합니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>호기별 차이</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>새울 1·2(옛 신고리 3·4)</th>
+<th>새울 3·4(옛 신고리 5·6)</th>
+<th>미국 DC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RCS 급속감압</td>
+<td>POSRV 4</td>
+<td>POSRV 4 + ERDV 2계열</td>
+<td>POSRV(SDVS)</td>
+</tr>
+<tr>
+<td>수소[5]</td>
+<td>PAR 30 + 점화기 10</td>
+<td>같음</td>
+<td>PAR 30 + 점화기 8</td>
+</tr>
+<tr>
+<td>노외 용융물</td>
+<td>CFS + 넓은 공동</td>
+<td>같음</td>
+<td>CFS + 넓은 공동</td>
+</tr>
+<tr>
+<td>과압</td>
+<td>살수 + ECSBS</td>
+<td>같음</td>
+<td>살수 + ECSBS</td>
+</tr>
+<tr>
+<td>교류전원</td>
+<td>EDG 2 + AAC-DG[12]</td>
+<td>EDG 2 + AAC-DG[12]</td>
+<td>EDG 4계열 + 가스터빈 AAC[13]</td>
+</tr>
+</tbody>
+</table>
+<p>유럽 수출형 EU-APR은 유럽사업자요건(EUR)에 맞춰 노외 코어캐처를 채택했습니다. 국내 APR1400과 미국 DC에는 코어캐처가 없습니다.</p>
+<p>2015년 3교시 5번의 "신고리 3호기"는 현재 새울 1호기입니다. 후쿠시마 이후에는 비상냉각수 외부주입 유로(RCS·SG·사용후핵연료저장조)와 이동형 발전차·펌프차가 더해졌습니다.</p>
+<h3>한국표준형원전(OPR1000) 대비</h3>
+<p>제65회 4교시 2번은 OPR1000을 물었습니다. OPR1000은 중대사고 전용 설비가 적은 상태로 설계되어, 격납건물 살수계통과 공동 형상을 바탕으로 수소 제어설비(점화기, 후쿠시마 후속조치로 PAR 추가)와 격납건물 "배기 또는 감압설비" 같은 후속 대책으로 보강해 왔습니다. 설비 수량은 호기별로 다릅니다. APR1400과의 큰 차이는 격납건물 내 IRWST가 설계기준 방출 응축과 공동 충수 수원을 겸한다는 점입니다.</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>원자력발전소 중대사고 정책(2001.8.17)[10]</td>
+<td>안전목표(주민 위험 증가 0.1 %), PSA·취약점 보완, 노심손상 방지·격납 완화 능력, 중대사고관리계획 — 사업자 자율 이행</td>
+</tr>
+<tr>
+<td>원자력안전법 제20조②·제21조①6호[3]</td>
+<td>사고관리계획서 제출과 허가 기준(2016.6 시행)</td>
+</tr>
+<tr>
+<td>기술기준규칙 제85조의19~23, 제23조[1]</td>
+<td>사고관리 요건, 격납건물 가연성기체 제어</td>
+</tr>
+<tr>
+<td>원안위 고시 제2026-1호 별표 3[2]</td>
+<td>위협요인 7종(출제 당시 제2017-34호 별표 2)</td>
+</tr>
+<tr>
+<td>SECY-93-087, 10 CFR 52.47(a)(23)[11]</td>
+<td>진화형 경수로 중대사고 설계(감압, 공동 0.02 m²/MWt, 24 h 격납 유지), DC 신청서의 중대사고 설계 특성</td>
+</tr>
+<tr>
+<td>10 CFR 50.44(c), IAEA SSR-2/1 Rev.1 요건 20[11][14]</td>
+<td>수소 10 %, 설계확장조건과 조기·대량 방출 실질적 배제</td>
+</tr>
+</tbody>
+</table>
+<p><strong>출제 당시 대비 달라진 점</strong>: 2013~2016년 출제 때는 중대사고 대처가 정책에 따른 자율 이행이었습니다. 현행은 위협요인별 대처 능력을 사고관리계획서로 입증하며, 2025.1.9 새울 1·2·신한울 1·2 계획서가 처음 승인되었습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>ECSBS</th>
+<th>CFVS</th>
+<th>CFS</th>
+<th>코어캐처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>목적</td>
+<td>살수로 감압·세정</td>
+<td>여과 배기로 감압</td>
+<td>공동 침수로 용융물 냉각</td>
+<td>전용 구조물에 용융물 포집·냉각</td>
+</tr>
+<tr>
+<td>물질 방출</td>
+<td>없음</td>
+<td>여과 후 대기 방출</td>
+<td>없음</td>
+<td>없음</td>
+</tr>
+<tr>
+<td>적용</td>
+<td>APR1400</td>
+<td>가동 원전 후속조치(예: 월성 1호기)</td>
+<td>APR1400(IVR-ERVC와 별개)</td>
+<td>EU-APR, EPR, VVER</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 노심손상 예방설비 + 격납건물 건전성 유지·대량 방출 방지 완화설비</li>
+<li><strong>예방</strong>: ATWS → DPS, SBO → AAC-DG·TDAFW, 급수완전상실 → POSRV 급수·배출, LOCA → DVI 4계열·SIT·IRWST, ISLOCA → 정지냉각계통 고설계압</li>
+<li><strong>안전감압배기</strong>: POSRV(4개) 운전원 원격 개방, 용기 파손 전 <strong>250 psia(1.72 MPa) 이하</strong> → HPME·DCH 방지, 새울 3·4는 ERDV 2계열 추가</li>
+<li><strong>수소제거</strong>: <strong>PAR 30 + 점화기 10</strong>, 평균 10 vol% 미만</li>
+<li><strong>공동 충수(CFS)</strong>: 전동밸브 개방 → IRWST → HVT → 공동 <strong>수두차 충수</strong>(최대 약 6.4 m), 넓은 바닥(<strong>0.02 m²/MWt</strong> 개념), 용융물 포획실, MCCI 완화</li>
+<li><strong>ECSBS</strong>: 외부 수원·소방차 → 전용 살수 헤더, 1E 전원·IRWST 비의존, 장기 과압 방지</li>
+<li><strong>차이</strong>: ECSBS는 배기 없이 살수 응축으로 감압(CFVS와 구분), 코어캐처는 EU-APR만</li>
+<li><strong>기준</strong>: 고시 제2026-1호 별표 3 위협요인 7종, 2025.1 심사 최대압력 0.60 / 허용 0.85 MPa</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 격납건물 단면과 완화설비 ①~④ 표시" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-013-apr1400-severe-accident-features/sketch1_sa_features_answer.avif"/><figcaption>답안지용 격납건물 단면과 완화설비 ①~④ 표시</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026년 3교시 4번</td>
+<td>APR1400 중대사고 대처설비 4계통 기능</td>
+</tr>
+<tr>
+<td>2016년 4교시 2번</td>
+<td>중대사고 대처 수단 9가지</td>
+</tr>
+<tr>
+<td>2015년 3교시 5번</td>
+<td>중대사고 정책과 APR1400(신고리 3호기) 완화 설계</td>
+</tr>
+<tr>
+<td>2013년 4교시 4번</td>
+<td>APR1400 중대사고 예방 시나리오와 예방설비</td>
+</tr>
+<tr>
+<td>제65회 4교시 2번</td>
+<td>한국표준형원전 중대사고 대처설비(격납건물 연계)</td>
+</tr>
+</tbody>
+</table>
+<p>2016년 4교시 2번은 노형 일반 문항이라 감압, AAC, 이동형 설비, 외부주입 유로, 수소제어, 공동 충수, IVR-ERVC, 코어캐처, 여과배기 등을 예방/완화로 묶어 답합니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제23조·제85조의19~제85조의23. 국가법령정보센터.</li>
+<li>원자력안전위원회 고시 제2026-1호(2026.1.16) 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」, 별표 3(중대사고 위협요인). 국가법령정보센터.</li>
+<li>「원자력안전법」 제20조·제21조(사고관리계획서, 2016.6.23 시행). 국가법령정보센터.</li>
+<li>원자력안전위원회, 제206회 원자력안전위원회 회의 안건(2025.1.9) — 새울 1·2호기·신한울 1·2호기 사고관리계획서 승인.</li>
+<li>OECD/NEA MDEP APR1400 Working Group, TR-APR1400WG-04 Rev.4 "Hydrogen Recombiner Survey Report" (2021.3.9). OECD/NEA 웹(oecd-nea.org/mdep).</li>
+<li>OECD/NEA MDEP APR1400 Working Group, Technical Report TR-APR1400-03 (2017) — 원자로공동 바닥 면적 80.36 m²(0.0201 m²/MWt), 차단벽 추가 후 72 m², 라이너 위 콘크리트 1.22 m.</li>
+<li>OECD/NEA MDEP APR1400 Working Group, Technical Report TR-APR1400-01 — 정지냉각계통 설계압력(2.2절), 중대사고 시 안전감압 방출 경로.</li>
+<li>조용진 외, 한국원자력학회 추계학술발표회 (2014) — APR1400 비상급속감압밸브(ERDV) MELCOR 평가(계열당 449.1 t/h, DCH 판정 압력 1.78 MPa). 서지(제목) 미대조.</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Rev. 3 (2018), 6.8(원자로공동 충수)·19장(중대사고 완화설비). NRC ADAMS 공개.</li>
+<li>원자력안전위원회, 「원자력발전소 중대사고 정책」(2001.8.17, 제17차 원자력안전위원회 의결).</li>
+<li>U.S. NRC, SECY-93-087 "Policy, Technical, and Licensing Issues Pertaining to Evolutionary and Advanced Light-Water Reactor (ALWR) Designs" (1993); 10 CFR 52.47(a)(23); 10 CFR 50.44(c).</li>
+<li>원자력안전위원회, 제228회 원자력안전위원회 회의 안건 — 새울 3호기 비상디젤발전기 2대·AAC-DG 구성.</li>
+<li>U.S. NRC, Safety Evaluation Report for the APR1400 Design Certification, Ch. 8 "Electric Power", NRC ADAMS ML18197A219.</li>
+<li>IAEA, SSR-2/1 (Rev. 1) Safety of Nuclear Power Plants: Design (2016), Requirement 20.</li>
+</ol>

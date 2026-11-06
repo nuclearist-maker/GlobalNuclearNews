@@ -1,0 +1,259 @@
+<figure class="article-image"><img alt="[개념 노트] 미임계 증배와 역증배곡선(1/M) — 계수율이 두 배가 될 때마다 임계까지 거리는 절반 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-027-subcritical-multiplication-1m/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p>**미임계 증배(subcritical multiplication)**는 k &lt; 1인 노심에서 선원 중성자가 핵분열 연쇄로 불어나 정상 계수율 **CR = ε·S/(1−k)**에 이르는 현상입니다. 증배계수는 **M = 1/(1−k)**입니다. **역증배곡선(1/M)**은 1/M = CR₀/CR을 붕소 농도·제어봉 위치·장전 집합체 수에 대해 그린 곡선입니다. 0으로 직선 외삽한 점이 예측 임계점입니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>세대마다 k배씩 더해지는 급수</h3>
+<p>선원이 매 세대 S개를 넣으면 다음 세대에는 Sk, 그다음에는 Sk²가 남습니다. 정상상태 총량은 S(1 + k + k² + …) = S/(1−k)입니다. 검출기 효율(위치·기하 포함)을 ε로 두면 계수율은 CR = εS/(1−k)입니다. 선원과 검출기가 그대로라면 두 상태 사이에 **CR₁(1−k₁) = CR₂(1−k₂)**가 성립합니다[1][2]. 그래서 기준 계수율로 정규화한 1/M = CR₀/CR = (1−k)/(1−k₀)는 임계에서 0이 됩니다.</p>
+<ul>
+<li>1/M은 엄밀히 (1−k)에 비례합니다. ρ = (k−1)/k이므로 1−k = −ρ/(1−ρ) ≈ −ρ입니다.</li>
+<li>선원 세기는 계수율 수준만 바꾸고 임계 조건(k = 1)은 바꾸지 않습니다.</li>
+<li>깊은 미임계에서는 고차 모드가 섞여 측정되는 "선원 증배계수"가 keff와 다를 수 있고, 임계에 가까울수록 일치합니다.</li>
+</ul>
+<h3>계수율 배가 규칙</h3>
+<p>선원 세기와 검출 효율이 일정하고 평형 계수율이면, CR이 2배가 될 때 (1−k)는 절반이 됩니다. k₀ = 0.95, CR₀ = 30 cps로 계산하면 다음과 같습니다.</p>
+<table>
+<thead>
+<tr>
+<th>CR (cps)</th>
+<th>k</th>
+<th>1−k</th>
+<th>ρ (pcm)</th>
+<th>1/M</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30</td>
+<td>0.9500</td>
+<td>0.0500</td>
+<td>−5,263</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>60</td>
+<td>0.9750</td>
+<td>0.0250</td>
+<td>−2,564</td>
+<td>0.500</td>
+</tr>
+<tr>
+<td>120</td>
+<td>0.9875</td>
+<td>0.0125</td>
+<td>−1,266</td>
+<td>0.250</td>
+</tr>
+<tr>
+<td>240</td>
+<td>0.9938</td>
+<td>0.00625</td>
+<td>−629</td>
+<td>0.125</td>
+</tr>
+<tr>
+<td>480</td>
+<td>0.9969</td>
+<td>0.003125</td>
+<td>−313</td>
+<td>0.063</td>
+</tr>
+</tbody>
+</table>
+<p>배가 1회마다 들어간 반응도는 2,699 → 1,298 → 637 → 316 pcm으로, 남은 여유의 약 절반씩입니다. 임계에 가까울수록 같은 반응도에 계수율이 크게 뛰므로 단계를 줄입니다. "배가하면 여유가 1/4"이라는 보기는 틀린 것입니다.</p>
+<h3>1/M 외삽 계산 예</h3>
+<p>설명용 가상 조건입니다. 임계 붕소 1,000 ppm, 붕소 반응도가 −10 pcm/ppm 일정, 1,500 ppm에서 30 cps로 두고 희석으로 접근합니다.</p>
+<table>
+<thead>
+<tr>
+<th>붕소 (ppm)</th>
+<th>ρ (pcm)</th>
+<th>CR (cps)</th>
+<th>1/M</th>
+<th>직전 점과의 외삽</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1,500</td>
+<td>−5,000</td>
+<td>30.0</td>
+<td>1.000</td>
+<td>—</td>
+</tr>
+<tr>
+<td>1,400</td>
+<td>−4,000</td>
+<td>37.1</td>
+<td>0.808</td>
+<td>980 ppm</td>
+</tr>
+<tr>
+<td>1,300</td>
+<td>−3,000</td>
+<td>49.0</td>
+<td>0.612</td>
+<td>988 ppm</td>
+</tr>
+<tr>
+<td>1,200</td>
+<td>−2,000</td>
+<td>72.9</td>
+<td>0.412</td>
+<td>994 ppm</td>
+</tr>
+<tr>
+<td>1,100</td>
+<td>−1,000</td>
+<td>144.3</td>
+<td>0.208</td>
+<td>998 ppm</td>
+</tr>
+<tr>
+<td>1,050</td>
+<td>−500</td>
+<td>287.1</td>
+<td>0.104</td>
+<td>999.5 ppm</td>
+</tr>
+</tbody>
+</table>
+<p>점모델에서도 1/M은 ρ에 정확히 비례하지 않아 조금 휩니다. 초기 외삽은 실제보다 낮은 농도를 예측하지만(약간 비보수적), 접근할수록 1,000 ppm으로 수렴합니다.</p>
+<figure class="article-image"><img alt="붕소 희석 접근의 1/M 계산 곡선과 단계별 직선 외삽점(980→999.5 ppm), 계수율 배가 사다리(30→480 cps, 1−k 절반씩)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-027-subcritical-multiplication-1m/fig1_inverse_multiplication_extrapolation.avif"/><figcaption>붕소 희석 접근의 1/M 계산 곡선과 단계별 직선 외삽점(980→999.5 ppm), 계수율 배가 사다리(30→480 cps, 1−k 절반씩)</figcaption></figure>
+<h3>곡선이 휘는 이유</h3>
+<ul>
+<li><strong>검출기 위치(공간 효과)</strong>: 검출기 가까이에서 연료를 넣거나 제어봉을 빼면 국부 중성자속이 먼저 커져 1/M이 초기에 빨리 떨어집니다(아래로 볼록). 외삽이 임계를 일찍 예측하므로 <strong>보수적</strong>입니다. 먼 쪽이면 위로 볼록해 늦게 예측하므로 <strong>비보수적</strong>입니다. 다만 곡률은 선원·연료·검출기의 상대 배치와 중성자속 분포가 함께 정하므로 위치만으로 단정하지 않습니다.</li>
+<li><strong>제어변수의 비선형</strong>: 제어봉 적분 반응도가는 S자 곡선이고, 집합체는 위치마다 반응도가가 다릅니다.</li>
+<li><strong>평형 대기 부족</strong>: 1군 근사 평형 시정수는 τ ≈ (β−ρ)/(λ|ρ|)입니다. −5,000 pcm에서 14 s, −200 pcm에서 53 s, −50 pcm에서 175 s입니다(β = 0.0065, λ = 0.08 s⁻¹). 덜 기다리고 계수하면 1/M을 크게 읽어 비보수적이 됩니다.</li>
+</ul>
+<p>그래서 SR 2채널 이상을 함께 그리고, 가장 보수적인 예측을 따릅니다[2]. 다음 단계 크기는 절차서에 따라 남은 예측량의 일부로 제한합니다.</p>
+<h3>2008년 2교시 5번: 선원이 있는 1군 점동특성</h3>
+<p>원본 수식 개체로 복원한 기호는 C(선행핵), S(선원), n₀, ρ₀, δρ, n입니다.</p>
+<ul>
+<li>방정식: dn/dt = [(ρ−β)/Λ]n + λC + S, dC/dt = (β/Λ)n − λC</li>
+<li>정상상태(ρ₀ &lt; 0): λC₀ = βn₀/Λ를 넣으면 <strong>S = −ρ₀n₀/Λ</strong></li>
+<li>δρ 투입 후 새 정상상태(ρ₀+δρ &lt; 0): <strong>n = n₀·ρ₀/(ρ₀+δρ)</strong>, δρ ≪ |ρ₀|이면 n ≈ n₀(1 + δρ/|ρ₀|)</li>
+<li>예: ρ₀ = −0.02, δρ = +0.005 → n = 1.33n₀. Λ = ℓ/k를 넣으면 n = Sℓ/(1−k), 곧 M과 같은 식입니다.</li>
+</ul>
+<h2>원전에서의 의미</h2>
+<h3>핵연료 장전 중 임계 안전성 확인(2018년 3교시 5번)</h3>
+<ul>
+<li><strong>사전 조건</strong>: 장전 붕소 농도를 확인해 keff ≤ 0.95를 보장합니다(W STS LCO 3.9.1). 미붕산수 유입 경로를 격리합니다(3.9.2). SR 2채널을 운전 가능 상태로 두고, 한 채널은 제어실에서 들리는 가청 계수율로 둡니다(3.9.3)[4]. 장전 전 8~12시간 이내에 SR 선원 응답을 점검하고, 비상 붕산 수단과 상시 통신을 확보합니다[3].</li>
+<li><strong>진행</strong>: 노심이 커질수록 추가 집합체 반응도가가 작아지는 순서로 장전합니다. 단계마다 정해진 계수 시간으로 1/M을 그리고, 붕소 농도는 최악 희석 능력에 맞는 빈도로 측정합니다. 초기노심은 집합체마다 1/M을 그립니다. 재장전은 keff ≤ 0.95 유지가 목적이므로 계수율 급증 감시와 노심 배치 검증이 중심입니다.</li>
+<li><strong>중지 기준</strong>: 예상과 다른 증배 거동(계수율 급증), 통신 상실, SR 검출기 운전 불능, 비상 붕산 불능 중 하나라도 생기면 멈춥니다.</li>
+</ul>
+<h3>기동 시 ECP와 조기임계(2009년 2교시 2번)</h3>
+<p>ECP(예상임계위치)는 직전 임계 조건에 제논·사마륨, 온도, 출력결손, 연소, 붕소 변화를 반영해 구합니다. 제어봉을 정해진 순서로 단계 인출하며 1/M 예측점을 ECP와 비교합니다. 측정 노심 반응도는 예측의 ±1 %Δk/k 이내여야 합니다(SR 3.1.2)[4].</p>
+<ul>
+<li><strong>조기임계 원인</strong>: ECP 입력 오류(제논·붕소·출력이력), 붕소 시료 오차나 의도치 않은 희석, 희석과 인출 동시 수행, 1/M 미도시나 해석 오류, 과도한 인출 단계, 감독·절차 미준수입니다. 예컨대 Wolf Creek 1호기(1995.3) 기동에서는 ECP가 제어봉군 C 72 step을 예측했으나 56 step에서 임계에 도달했고(약 1,000 pcm 차이), 운전원은 1/M 도시로 이를 미리 알아챘습니다[5].</li>
+<li><strong>설계 대책</strong>: SR 고중성자속 트립, 기동률 경보·인출 저지, 인출 속도·군 순서 연동, 붕소 희석 경보, 삽입한계 경보입니다.</li>
+<li><strong>운영 대책</strong>: ECP 독립 검증, 희석·인출 동시 금지, 단계별 1/M 정지점, 대역 이탈 시 제어봉 삽입과 원인 평가, 기동률 1 dpm 이하, 반응도 관리 프로그램을 운영합니다.</li>
+</ul>
+<h3>중성자 선원봉(2006년 제78회 3교시 6번)</h3>
+<ul>
+<li><strong>기능</strong>: SR이 읽을 수 있는 계수율을 확보해 맹목 기동을 막고, 증배 관측과 채널 응답 확인을 가능하게 합니다.</li>
+<li><strong>1차 선원</strong>: 스스로 중성자를 냅니다. Cf-252(자발핵분열, T½ 2.65년)[1], Pu-Be·Am-Be((α,n))이며 초기노심에 필수입니다.</li>
+<li><strong>2차 선원</strong>: Sb–Be입니다. Sb-123이 노내에서 Sb-124(T½ 60.2일)가 되고, 1.69 MeV 감마가 Be-9(γ,n, 문턱 약 1.67 MeV)를 일으킵니다. 운전 중 재충전됩니다.</li>
+<li><strong>선원봉 없이 운전</strong>: 조사된 연료의 고유 선원(Cm-242·Cm-244 자발핵분열 등)으로 최소 계수율을 확보할 수 있으면 가능합니다. RG 1.68은 기동 전 1/2 cps 이상, 신호대잡음비 2 초과를 제시합니다[3]. 이를 해석·실측으로 입증해야 하며, 초기노심이나 장기 정지 뒤에는 불리합니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<ul>
+<li><strong>RG 1.68 Rev.4(2013)</strong>[3]: 부록 A-3(초기 임계)은 SR 1/2 cps 이상, S/N &gt; 2, 희석 전 제어봉 인출, 30 s 미만 주기 금지를 요구합니다. 부록 C-2(장전 절차)는 위 장전 조건과 중지 기준의 출처입니다.</li>
+<li><strong>W STS(NUREG-1431)</strong>[4]: LCO 3.9.1 붕소 농도, 3.9.2 미붕산수 격리, 3.9.3 핵계측, SR 3.1.2 노심 반응도입니다. 10 CFR 50 부록 A GDC 26~28과 10 CFR 50.68(취급·저장 임계 방지)도 관련됩니다.</li>
+<li><strong>국내</strong>: 「원자로시설 등의 기술기준에 관한 규칙」(원안위규칙 제37호, 2026.3.30) 제28조(반응도제어계통), 제33조(연료취급장치 및 저장설비), 제61조(노심관리 및 핵연료 취급)와 운영기술지침서의 재장전 모드 LCO가 근거입니다[6].</li>
+<li><strong>출제 당시 대비</strong>: 물리와 절차 원칙은 그대로입니다. RG 1.68은 2013년 Rev.4가 현행이고, 국내 규칙은 2026년 현행판으로 인용합니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>미임계 증배 M</th>
+<th>역증배 1/M</th>
+<th>정지여유도 SDM</th>
+<th>기동률 SUR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>식</td>
+<td>1/(1−k)</td>
+<td>CR₀/CR</td>
+<td>임계까지 반응도</td>
+<td>26.06/T (dpm)</td>
+</tr>
+<tr>
+<td>측정</td>
+<td>계수율 비</td>
+<td>계수율 비</td>
+<td>계산(+ECC 검증)</td>
+<td>계수율 변화율</td>
+</tr>
+<tr>
+<td>쓰임</td>
+<td>미임계 수준</td>
+<td>임계점 예측</td>
+<td>정지 안전 여유</td>
+<td>임계 후 상승 속도</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 미임계 증배와 역증배곡선(1/M)</strong></p>
+<ol>
+<li><strong>정의</strong>: k &lt; 1 노심에서 선원 중성자가 연쇄로 증배되어 정상 계수율에 이르는 현상</li>
+<li><strong>식</strong>: M = 1/(1−k), CR = εS/(1−k), CR₁(1−k₁) = CR₂(1−k₂)</li>
+<li><strong>1/M</strong>: CR₀/CR = (1−k)/(1−k₀) → 임계에서 0</li>
+<li><strong>외삽</strong>: 붕소·제어봉·장전량에 대해 도시, 직선 외삽 0점 = 예측 임계점</li>
+<li><strong>배가 규칙</strong>: CR 2배 → (1−k) 절반, 단계 크기 축소</li>
+<li><strong>휨</strong>: 검출기 근접(아래로 볼록) 보수적, 원거리(위로 볼록) 비보수적</li>
+<li><strong>평형 대기</strong>: τ ≈ (β−ρ)/(λ|ρ|), 임계 근처일수록 길게</li>
+<li><strong>장전</strong>: 붕소 keff ≤ 0.95, SR 2채널·가청, 이상 증배 시 중지</li>
+<li><strong>기동</strong>: ECP 비교, ±1 %Δk/k, 기동률 제한, 조기임계 방지</li>
+<li><strong>선원</strong>: 1차 Cf-252, 2차 Sb–Be, 최소 계수율 확보</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: 1/M–임계 접근 변수 그래프(선형 기준, 보수적·비보수적 외삽형 곡선, 외삽점과 실제 임계점)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-027-subcritical-multiplication-1m/sketch1_inverse_m_curve_shapes.avif"/><figcaption>답안용 도식: 1/M–임계 접근 변수 그래프(선형 기준, 보수적·비보수적 외삽형 곡선, 외삽점과 실제 임계점)</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>연도-교시-번호</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2002(제67회)-1-8</td>
+<td>Subcritical Multiplication Factor(1/M)</td>
+</tr>
+<tr>
+<td>2006(제78회)-3-6</td>
+<td>중성자 선원봉의 기능·종류·선원 없는 운전</td>
+</tr>
+<tr>
+<td>2008-2-5</td>
+<td>선원 포함 1군 미임계 점동특성과 정상 중성자 밀도</td>
+</tr>
+<tr>
+<td>2009-2-2</td>
+<td>조기임계도달사고의 원인과 설계·운영 대책</td>
+</tr>
+<tr>
+<td>2018-3-5</td>
+<td>핵연료 장전 중 노심 임계 안전성 확인 방법</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 7장(미임계 증배·선원).</li>
+<li>U.S. DOE, DOE Fundamentals Handbook: Nuclear Physics and Reactor Theory, DOE-HDBK-1019/2-93, Vol. 2, Module 4 (1993) — 미임계 증배, 1/M 도시.</li>
+<li>U.S. NRC, Regulatory Guide 1.68 Rev. 4 "Initial Test Programs for Water-Cooled Nuclear Power Plants" (2013.6), 부록 A-3, C-2.</li>
+<li>U.S. NRC, NUREG-1431, Standard Technical Specifications — Westinghouse Plants, LCO 3.9.1~3.9.3, SR 3.1.2.</li>
+<li>U.S. NRC, Wolf Creek 1995.3.12 기동 시 ECP 대비 조기 임계 보고(Region IV, NRC 공개 보고서 1995065), nrc.gov.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제28·33·61조. 국가법령정보센터.</li>
+</ol>

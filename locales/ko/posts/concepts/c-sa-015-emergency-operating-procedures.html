@@ -1,0 +1,208 @@
+<figure class="article-image"><img alt="[개념 노트] 비상운전절차서(EOP, 징후기반) — 사건기반·징후기반 이중 구조와 SPTA·ORP·FRP 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-015-emergency-operating-procedures/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>비상운전절차서(EOP)는 원자로 정지나 안전주입 이후 설계기준사고와 노심 손상 이전의 다중고장 상황에서 주제어실 운전원이 안전기능을 확인·회복하여 발전소를 안정 상태로 이끄는 절차서입니다. 현행 EOP는 사고 원인을 진단해 대응하는 사건기반 절차와, 측정된 징후로 안전기능을 판정해 위협받는 기능부터 회복하는 징후기반 절차를 함께 씁니다.</strong></p>
+<p>국내에서는 공급사 일반 지침을 "비상운전지침서(EOG)", 이를 호기별로 만든 것을 "비상운전절차서"라 부릅니다[5].</p>
+<h2>원리와 메커니즘</h2>
+<h3>사건기반에서 징후기반으로 — TMI의 교훈</h3>
+<p>1979년 TMI-2 사고에서 가압기 방출밸브(PORV)가 열린 채 고착되었습니다. 운전원은 가압기 수위가 높다는 이유로 계통이 물로 찼다고 보고 고압안전주입을 줄였습니다. 실제로는 냉각재가 계속 빠져나가 노심 약 절반이 녹았습니다. 사고 이름을 먼저 맞히고 그 사고 절차를 따르는 방식은 오진하거나 고장이 겹치면 무너진다는 것이 드러났습니다.</p>
+<p>NRC는 NUREG-0737(1980) I.C.1 항목으로 사고 재해석과 EOP 개선을 요구했고, NUREG-0899(1982.8)로 작성 방법을 정했습니다[1]. 순서는 기술지침 → 절차서 작성 패키지(PGP) → 작성자 지침 → 검증·확인(V&amp;V) → 훈련입니다. 노형별 소유자그룹이 기술지침을 만들었습니다. 웨스팅하우스형은 ERG, CE형은 CEN-152 EPG입니다. NRC는 CEN-152 Rev.1을 1983년(GL 83-23)에 수용하면서 "단순 사건은 최적복구지침, 그 밖은 기능회복지침"으로 나눈 구조가 징후기반 대응 요건을 충족한다고 보았습니다[2][3].</p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>사건기반(ORP)</th>
+<th>징후기반(SPTA·SFSC·FRP)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>출발점</td>
+<td>사고 진단 결과</td>
+<td>측정된 공정변수</td>
+</tr>
+<tr>
+<td>강점</td>
+<td>진단이 맞으면 가장 빠른 최적 복구</td>
+<td>오진·다중고장·예상 밖 조합에도 작동</td>
+</tr>
+<tr>
+<td>약점</td>
+<td>오진·다중고장에 취약</td>
+<td>사고 고유 조치보다 덜 세밀</td>
+</tr>
+</tbody>
+</table>
+<h3>표준형(CE형 계열) EOP의 흐름</h3>
+<p>국내 OPR1000·APR1400 비상운전지침서(EOG)는 CE형 EPG(CEN-152) 구조를 따릅니다[5]. CE형 비상운전지침 체계의 흐름은 다음과 같습니다[3][4].</p>
+<ol>
+<li><strong>원자로 트립후 조치(SPTA)</strong>: 트립 직후 안전기능 9개를 확인하고 초기 회복조치를 합니다. 모두 만족하면 원자로 트립 회복 절차로 가고, 하나라도 불만족이면 사고 진단으로 갑니다.</li>
+<li><strong>사고 진단(DA)</strong>: 진단 흐름도로 사건을 식별합니다. 단일사고로 식별되어 ORP가 적용 가능하면 해당 비상절차로 갑니다. 다중사고이거나 진단이 불가능하면 회복절차로 갑니다.</li>
+<li><strong>최적복구절차(ORP) 7개</strong>: 원자로 트립, LOCA, SGTR, 증기 과잉방출(ESDE), 급수 완전상실, 소외전원·강제순환 상실, 교류전원 완전상실(SBO)입니다. ORP 수행 중에도 **안전기능 상태점검(SFSC)**을 반복합니다. 불만족이면 재진단하고 필요하면 회복절차로 넘어갑니다.</li>
+<li><strong>기능회복절차(FRP)</strong>: 안전기능별로 <strong>자원수목도</strong>를 두고, 기능을 달성하는 수단을 <strong>수행경로</strong>로 나열합니다. 반응도 제어의 수행경로는 제어봉 삽입 → CVCS 붕산 주입 → SIS 순이고, 열제거는 SG 냉각 → 일방관류냉각(주입방출) 순입니다. SFSC 판정은 만족·위협·위험이며, 위험한 기능부터 회복을 수행합니다[3][4].</li>
+<li><strong>안정화 후 장기조치</strong>로 넘어가거나, 진입조건이 충족되면 SAMG로 이관합니다.</li>
+</ol>
+<figure class="article-image"><img alt="표준형 EOP 흐름(SPTA → 진단 → ORP/FRP, SFSC 재진단 루프, 장기조치, SAMG 조건부 이관)과 디지털 주제어실 콘솔" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-015-emergency-operating-procedures/fig1_eop_structure_flow.avif"/><figcaption>표준형 EOP 흐름(SPTA → 진단 → ORP/FRP, SFSC 재진단 루프, 장기조치, SAMG 조건부 이관)과 디지털 주제어실 콘솔</figcaption></figure>
+<h3>웨스팅하우스 ERG</h3>
+<p>E-0(원자로 정지 또는 안전주입)에서 진단해 E-1(냉각재 상실), E-2(고장 SG 격리), E-3(SGTR), ECA-0.0(전교류 상실) 등으로 갑니다. 이와 별도로 <strong>임계안전기능 상태수목(CSFST)</strong> 6개를 감시합니다[6]. 우선순위는 미임계(S) → 노심냉각(C) → 열제거원(H) → 1차계통 건전성(P) → 격납(Z) → 재고량(I)입니다. 빨강 경로는 극심한 위협이라 하던 절차를 멈추고 해당 FR 절차로 갑니다. 주황은 빨강이 없을 때 진입합니다. 공개된 W 4루프 플랜트 예(Salem 2호기)에서는 노심출구온도(CET)가 1,200 °F(649 °C)를 넘으면 노심냉각 빨강으로 FR-C.1에 진입하며, 판정값은 호기마다 다릅니다[6]. 전교류 상실 절차(ECA-0.0) 수행 중의 FR 전환은 그 절차의 지시를 따릅니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>안전기능 목록 — 노형별 차이</h3>
+<figure class="article-image"><img alt="표준형 안전기능 9개와 웨스팅하우스 CSF 6개 대응표, 상태 판정 체계 비교" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-015-emergency-operating-procedures/fig2_safety_function_map.avif"/><figcaption>표준형 안전기능 9개와 웨스팅하우스 CSF 6개 대응표, 상태 판정 체계 비교</figcaption></figure>
+<p>2013년 기출처럼 노형을 구분해 묻는 문항이 나옵니다. 표준형 9개는 반응도 제어, 필수전원 확보, RCS 재고량, RCS 압력, 노심 열제거, RCS 열제거, 격납건물 격리, 격납건물 온도·압력, 격납건물 가연성 가스 제어입니다[3][4]. CE형 기능회복지침은 노심 열제거와 RCS 열제거를 한 열제거 지침으로 묶어 8개로 운영합니다[4]. 묶음 방식은 노형별로 다를 수 있습니다. W에는 전원 CSF가 없습니다. 전원은 여러 기능의 공통 지원조건으로 보고 ECA-0.0 같은 사건 절차로 다룹니다.</p>
+<h3>후쿠시마 이후 개선과 전산화</h3>
+<p>2016년 원자력안전법 개정으로 사고관리계획서 제도가 생기면서 표준형·APR1400 EOG가 다중고장·극한재해를 반영하도록 개선되었습니다. EOG 6개를 고쳤고, MACST 운영지침서(MOG)와 정지비상운전지침서 1개를 새로 만들었습니다[5]. MOG는 개발 당시 13개로 소개되었고, 현재 한수원 목록은 정지 중 RCS 보충을 포함한 14개입니다[7]. 급수 완전상실 지침에 주입방출 운전을 넣어 기능회복 진입 없이 바로 수행할 수 있게 했습니다. SBO 지침에는 ELAP 3단계 MACST 전략을 연계했습니다[5].</p>
+<p>APR1400(새울 1·2호기부터)은 운전원 워크스테이션의 **전산화 절차서 시스템(CPS)**으로 EOP를 수행합니다[13]. CPS는 절차 단계와 관련 변수를 함께 보여주고 제어 화면으로 연결해 줍니다. 워크스테이션을 쓸 수 없을 때는 안전콘솔의 최소 지시·제어로 안전정지를 이어갑니다. <!-- 확인필요: CPS 상실 시 백업 절차서의 형태·범위는 DCD 18장 원문 미대조라 쓰지 않음 --></p>
+<h3>SGTR·MSLB와의 연결</h3>
+<p>사건별 전략은 각 ORP의 몫입니다. SGTR은 파열 SG 확인·격리 → 건전 SG로 냉각 → 감압으로 압력 평형 → SI 종료의 3~4단계 전략이 핵심이며, 제76회 기출의 "3단계 운전전략"이 여기에 해당합니다. ESDE는 파단 SG 격리와 과냉 중 PTS 관리가 핵심입니다.</p>
+<h3>LOCA 중 상부헤드 기포 (2013년 2교시 1번)</h3>
+<p>자연순환이나 RCP 정지 상태에서 원자로용기 상부헤드는 유동이 정체되어 고온으로 남습니다. 이때 RCS를 감압하면 헤드 유체가 포화압 아래로 내려가 증발합니다. 증상은 감압·살수 중 가압기 수위의 비정상 급상승과 상부헤드 수위계(RVLIS) 지시 저하입니다. 1980년 St. Lucie 1호기 자연순환 냉각 중 상부헤드 기포가 생긴 뒤 NRC는 자연순환 냉각·감압 절차를 점검하게 했습니다[8]. 대응은 재가압, 조건 충족 시 RCP 재기동, 냉각·감압률 조절, 원자로냉각재 기체배기계통(RCGVS) 배기입니다. 배기를 멈추는 조건과 수치는 호기별 절차서가 정하므로 일반 원리(상부헤드 수위 회복, 과냉각도 유지, 격납건물 수소 관리)만 답안에 씁니다.</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NUREG-0737 I.C.1(1980) [1]</td>
+<td>TMI 후속, 과도·사고 재해석과 EOP 개선</td>
+</tr>
+<tr>
+<td>NUREG-0899(1982.8)</td>
+<td>EOP 작성 지침: 기술지침·PGP·작성자 지침·V&amp;V·훈련</td>
+</tr>
+<tr>
+<td>10 CFR 50.34(b)(6)(ii), SRP 13.5.2.1</td>
+<td>운영 절차서 요건과 심사</td>
+</tr>
+<tr>
+<td>CEN-152 / GL 83-23(1983.7.29) [2][3]</td>
+<td>CE형 EPG, ORG·FRG 구조 수용</td>
+</tr>
+<tr>
+<td>NUREG-1358(1989) [14]</td>
+<td>EOP 점검 교훈(기술지침-절차서 정합성, V&amp;V)</td>
+</tr>
+<tr>
+<td>원자력안전법 제20조②, 기술기준규칙 제85조의19~23 [9]</td>
+<td>사고관리계획서에 EOP·SAMG 포함</td>
+</tr>
+<tr>
+<td>원안위 고시 제2026-1호</td>
+<td>다중고장(별표 1)·외부재해·위협요인(별표 3)</td>
+</tr>
+<tr>
+<td>IAEA SSG-54(2019) [12]</td>
+<td>EOP = DBA·노심 손상 없는 DEC, SAMG = 중대사고</td>
+</tr>
+</tbody>
+</table>
+<p>출제 당시(2013년)에는 EOP가 설계기준사고 중심이었습니다. 현행 EOP는 사고관리계획서의 다중고장 9종 일부를 포함하고 MOG와 연계됩니다. SAMG도 법정 사고관리계획서의 구성 요소가 되었습니다. <!-- 확인필요: KINS 안전심사지침 13.5(절차서) 현행판 번호·개정 이력 원문 미대조 --></p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>비정상운전절차서(AOP)</th>
+<th>비상운전절차서(EOP)</th>
+<th>SAMG</th>
+<th>사고관리계획서</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>시점</td>
+<td>트립 전 이상</td>
+<td>트립·SI 이후</td>
+<td>노심 손상 이후</td>
+<td>전 단계(상위 계획)</td>
+</tr>
+<tr>
+<td>접근</td>
+<td>사건기반</td>
+<td>사건기반 + 징후기반</td>
+<td>징후·전략 평가</td>
+<td>범위·전략·평가</td>
+</tr>
+<tr>
+<td>목표</td>
+<td>트립 회피·이상 복구</td>
+<td>노심 손상 방지</td>
+<td>방벽 유지·방출 저감</td>
+<td>위험도 목표 입증</td>
+</tr>
+<tr>
+<td>사용자</td>
+<td>운전원</td>
+<td>운전원</td>
+<td>기술지원실·비상조직</td>
+<td>사업자·규제기관</td>
+</tr>
+</tbody>
+</table>
+<p>SAMG 이관은 EOP의 정상 종료가 아니라 조건부 분기입니다. 국내는 CET 649 °C(1,200 °F)를 중대사고 발생 판정 기준으로 쓰고[10], EOP 노심냉각 회복조치로 해소되지 않으면 SAMG로 이관합니다. CET를 EOP→SAMG 전환 신호로 쓰는 근거는 NRC 문서에도 있습니다[11].</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 트립·SI 이후 DBA와 노심 손상 이전 다중고장에서 안전기능을 회복·유지하는 운전원 절차서</li>
+<li><strong>배경</strong>: TMI-2 오진 → NUREG-0737 I.C.1, NUREG-0899(1982)</li>
+<li><strong>이중 구조</strong>: 사건기반 ORP + 징후기반 SPTA·SFSC·FRP</li>
+<li><strong>흐름</strong>: 트립 → SPTA(안전기능 9개) → DA → ORP 7개 / FRP → 장기조치</li>
+<li><strong>SFSC</strong>: 만족·위협·위험, 위험부터 회복, ORP 중에도 반복</li>
+<li><strong>FRP</strong>: 자원수목도·수행경로(예: CEA → CVCS → SIS)</li>
+<li><strong>W ERG</strong>: E-0 → E-1~3·ECA-0.0, CSFST 6개 S·C·H·P·Z·I, 빨강·주황</li>
+<li><strong>경계</strong>: CET ≥ 649 °C(중대사고 판정), EOP 회복조치로 해소되지 않으면 SAMG 이관</li>
+<li><strong>개선</strong>: 다중고장·극한재해 반영, MOG(현재 14개), 주입방출 추가</li>
+<li><strong>전산화</strong>: APR1400 CPS, 상실 시 안전콘솔</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 EOP 흐름 도식(SPTA → 진단 → ORP/FRP → 장기조치, 조건부 SAMG)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-015-emergency-operating-procedures/sketch1_eop_answer_flow.avif"/><figcaption>답안지용 EOP 흐름 도식(SPTA → 진단 → ORP/FRP → 장기조치, 조건부 SAMG)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021년 1교시 13번</td>
+<td>EOP·SAMG·사고관리계획서 정의</td>
+</tr>
+<tr>
+<td>2021년 1교시 12번</td>
+<td>OPR·APR EOG 안전기능 개요·종류</td>
+</tr>
+<tr>
+<td>2013년 2교시 6번</td>
+<td>징후지향절차서, CSF 목적·종류(W·OPR), 고유항목</td>
+</tr>
+<tr>
+<td>2013년 2교시 1번</td>
+<td>LOCA EOP 수행 중 상부헤드 기포</td>
+</tr>
+<tr>
+<td>제76회 2교시 4번</td>
+<td>SGTR 감지설비와 3단계 운전전략</td>
+</tr>
+</tbody>
+</table>
+<p>2013년 2교시 6번의 "고유항목(Generic Issues)"은 여러 사고 절차에 공통으로 걸리는 운전 판단 쟁점을 가리킵니다. 국내 지침의 공식 항목 목록은 공개 자료로 확인하지 못했으므로, 답안에는 TMI 이후 공개 문헌에서 공통 쟁점으로 다뤄진 예를 씁니다. LOCA 시 RCP 정지 기준(NUREG-0737 II.K.3.5)[1], 자연순환 냉각과 상부헤드 기포(GL 81-21)[8], SI 종료·조절 기준, 냉각률과 PTS 한계, 주입방출 개시 등이 그 예입니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, Clarification of TMI Action Plan Requirements, NUREG-0737 (1980.11), I.C.1·II.K.3.5; Guidelines for the Preparation of Emergency Operating Procedures, NUREG-0899 (1982.8).</li>
+<li>U.S. NRC, Generic Letter 83-23 (1983.7.29) — CEN-152 Rev.1 비상절차지침 안전성평가.</li>
+<li>Combustion Engineering Owners Group, Emergency Procedure Guidelines, CEN-152 (1981~1982년 판), NRC ADAMS ML20008G208.</li>
+<li>ABB-Combustion Engineering, System 80+ Emergency Operations Guidelines, NRC ADAMS ML20067B052.</li>
+<li>박재민 외(KEPCO E&amp;C), "The Improvement of OPR1000 and APR1400 Emergency Operating Guidelines to Cope with the Multiple Failure Accidents and Beyond Design Basis External Event", Transactions of the Korean Nuclear Society Autumn Meeting (2020).</li>
+<li>PSEG Nuclear, Salem Unit 2 Emergency Operating Procedure 2-EOP-CFST-1 "Critical Safety Function Status Trees", Rev. 25, NRC ADAMS ML110060295(공개본).</li>
+<li>OECD Nuclear Energy Agency, NEA No. 7578 (2023), 표 3(한수원 MACST 운영지침 목록).</li>
+<li>U.S. NRC, Generic Letter 81-21 "Natural Circulation Cooldown" (1981).</li>
+<li>「원자력안전법」 제20조 제2항; 원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」 제85조의19~23; 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」, 원안위고시 제2026-1호(2026.1.16). 국가법령정보센터.</li>
+<li>원자력안전위원회, 제206회 원자력안전위원회 회의 의안 제2호(2025.1.9) — 새울 1·2, 신한울 1·2호기 사고관리계획서 승인, nssc.go.kr 공개.</li>
+<li>U.S. NRC, PRM-50-105 청원 거부 결정, Federal Register 78 FR 56174 (2013.9.12).</li>
+<li>IAEA, Accident Management Programmes for Nuclear Power Plants, Specific Safety Guide SSG-54 (2019).</li>
+<li>KEPCO·KHNP, APR1400 Design Control Document Tier 2, Ch. 18 "Human Factors Engineering", NRC 설계인증 신청 공개본.</li>
+<li>U.S. NRC, NUREG-1358 (1989) — 비상운전절차서 특별점검 교훈.</li>
+</ol>

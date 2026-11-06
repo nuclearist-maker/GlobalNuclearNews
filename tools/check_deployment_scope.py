@@ -35,10 +35,19 @@ def errors(manifest,first,last,report=None,http=None):
     return found
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--manifest',type=Path,required=True);p.add_argument('--first',type=int,required=True);p.add_argument('--last',type=int,required=True);p.add_argument('--report',type=Path);p.add_argument('--http',type=Path);p.add_argument('--out',type=Path);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--manifest',type=Path,required=True);p.add_argument('--first',type=int);p.add_argument('--last',type=int);p.add_argument('--site',type=Path);p.add_argument('--report',type=Path);p.add_argument('--http',type=Path);p.add_argument('--out',type=Path);a=p.parse_args()
     read=lambda x:json.loads(x.read_text(encoding='utf-8-sig'))
-    problems=errors(read(a.manifest),a.first,a.last,read(a.report) if a.report else None,read(a.http) if a.http else None)
-    result={'status':'FAIL' if problems else 'PASS','errors':problems,'scope':list(range(a.first,a.last+1))}
+    manifest=read(a.manifest)
+    if manifest.get('kind')=='language-edition':
+        if not a.site or not (a.site/'ko/index.html').is_file():p.error('language-edition requires --site with built Korean edition')
+        actual=sorted(x.relative_to(a.site).as_posix() for x in (a.site/'ko').rglob('*.html'))
+        problems=[]
+        if manifest.get('new_posts')!=[] or manifest.get('new_localized_pages')!=actual:problems.append('DEPLOYMENT-01: localized pages must exactly match built scope')
+        if not manifest.get('changed_features') or any(not all(x.get(k) for k in ['path','reason','feature']) for x in manifest['changed_features']):problems.append('DEPLOYMENT-02: missing feature/reason')
+    else:
+        if a.first is None or a.last is None:p.error('article deployment requires --first and --last')
+        problems=errors(manifest,a.first,a.last,read(a.report) if a.report else None,read(a.http) if a.http else None)
+    result={'status':'FAIL' if problems else 'PASS','errors':problems,'scope':manifest.get('new_localized_pages') if manifest.get('kind')=='language-edition' else list(range(a.first,a.last+1))}
     if a.out:a.out.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
     print(json.dumps(result));return bool(problems)
 

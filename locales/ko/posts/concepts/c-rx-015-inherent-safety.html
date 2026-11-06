@@ -1,0 +1,203 @@
+<figure class="article-image"><img alt="[개념 노트] 고유안전성(Inherent Safety) — 위험요소를 설계 선택으로 없애는 안전, 피동안전과의 경계 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-015-inherent-safety/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>고유안전성(Inherent Safety)은 기본 설계 개념과 재료의 선택으로 내재 위험요소 자체를 제거하거나 배제해 얻는 안전입니다(IAEA-TECDOC-626).</strong>[1] 원자로 노심에서는 신호·동력·운전원 조치 없이 물리 법칙만으로 출력 폭주를 억제하는 <strong>즉발 음의 반응도 궤환</strong>이 대표 특성입니다.</p>
+<p>TECDOC-626은 위험요소로 ① 핵분열생성물과 붕괴열 ② 잉여반응도와 출력 폭주 ③ 고온·고압·발열 화학반응의 에너지를 듭니다. 이 셋을 모두 없애야 플랜트 전체를 "inherently safe"라 부를 수 있습니다. 그래서 실제 원전에는 "음의 출력계수라는 고유안전 <strong>특성</strong>"처럼 위험요소 단위로 쓰는 것이 바른 용법입니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>고유안전에 기여하는 노심 특성</h3>
+<p><strong>① 4가지 반응도계수.</strong> 궤환 반응도의 순효과는 다음 식으로 씁니다.</p>
+<ul>
+<li><strong>ρ_fb = α_F·ΔT_F + α_M·ΔT_M + α_V·Δv + α_p·Δp</strong></li>
+<li>α_F 핵연료온도계수(FTC, 도플러): 저농축 경수로에서 음이고, 연료 가열에 바로 응답하는 즉발 궤환입니다. 크기는 노심·연소도별 노심설계값입니다.</li>
+<li>α_M 감속재온도계수(MTC): 붕소 농도·연소도·운전상태에 따라 달라 주기초 0 근처(양일 수도 있음)에서 주기말 크게 음으로 변합니다(COLR 하한 예: Ginna Cycle 39 주기말 전출력 −44.6 pcm/°F)[4]. 연료→냉각재 열전달만큼 늦습니다.</li>
+<li>α_V 기포계수(v는 기포율): 과소감속 경수로에서는 음입니다. PWR은 국부 비등 수준이라 작고, BWR에서는 주 궤환입니다.</li>
+<li>α_p 압력계수: PWR에서는 압력이 오르면 밀도와 감속이 늘어 작은 양이고 실질 영향은 미미합니다. BWR은 압력 상승이 기포를 줄이는 경로가 커서 따로 봐야 합니다. 계수끼리는 기포 붕괴처럼 같은 효과를 두 번 세지 않도록 고정 조건을 정해 씁니다.</li>
+</ul>
+<p>출력 기준으로 묶은 출력계수가 출력운전 전 영역에서 음이 되도록 설계합니다.</p>
+<p><strong>② 과소감속 설계.</strong> 감속재 대 연료 비를 최적점보다 작게 잡습니다. 그러면 냉각재가 데워지거나 끓어 밀도가 줄 때 감속이 부족해져 k가 내려갑니다.</p>
+<p><strong>③ 열적 관성과 낮은 출력밀도.</strong> 냉각재 재고와 열용량이 크면 과도 때 온도 상승이 느려지고 운전원 유예시간(grace time)이 생깁니다. PWR 노심 평균 출력밀도는 약 100 kW/L이고, 모듈형 고온가스로는 수 kW/L로 낮춰 붕괴열을 전도·복사만으로 빼도록 설계합니다.</p>
+<p><strong>④ 자연순환이 가능한 배치.</strong> 열침원(증기발생기)을 열원(노심)보다 높게 두면 펌프를 잃어도 붕괴열이 빠집니다. 배치 선택은 고유 특성이고, 그것을 이용하는 계통은 피동계통입니다.</p>
+<h3>궤환이 출력을 붙잡는 과정</h3>
+<p>전체 반응도는 ρ_total = ρ_ext + ρ_fb이고, 출력이 오르면 ρ_fb &lt; 0이 되어 외란을 깎습니다. 정격 운전 중 +100 pcm(약 0.15 $)을 계단 삽입한 설명용 1군 점동특성 계산입니다(가정값 β = 0.0065, λ = 0.08 s⁻¹, Λ = 2×10⁻⁵ s, 식은 교과서 1군 근사[9]).</p>
+<ul>
+<li><strong>궤환 없음</strong>: 즉발 도약으로 1.19배가 된 뒤 점근 원자로주기 T = (β − ρ)/(λρ) ≈ 69 s로 계속 증가해 60 s 후 약 2.83배가 됩니다.</li>
+<li><strong>연료 궤환만 고려(유효 출력궤환 −10 pcm/%, 연료 열응답 시정수 5 s의 1차 지연)</strong>: 0.5 s에 약 1.16배로 정점을 찍고 약 1.10배로 수렴합니다. 이 모델에서 새 평형은 궤환 반응도가 삽입 반응도를 상쇄하는 ΔP = 100/10 = 10 %입니다.</li>
+<li>−10 pcm/%는 FTC 자체가 아니라 FTC에 연료 온도 상승률을 곱해 묶은 유효 이득입니다. 실제 과도에서는 지연과 열제거 조건에 따라 진동하거나 다른 경로로 갈 수 있으므로, "음의 궤환이면 언제나 평형"이 아니라 "급격한 반응도 증가를 억제하는 경향"으로 서술합니다.</li>
+</ul>
+<figure class="article-image"><img alt="4가지 반응도계수가 만드는 궤환 루프(ρ_total = ρ_ext + ρ_fb), +100 pcm 계단 삽입 시 궤환 유무에 따른 출력 응답(설명용 1군 점동특성: 2.83배 대 1.10배 수렴), 궤환 시간척도" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-015-inherent-safety/fig1_feedback_loop_point_kinetics.avif"/><figcaption>4가지 반응도계수가 만드는 궤환 루프(ρ_total = ρ_ext + ρ_fb), +100 pcm 계단 삽입 시 궤환 유무에 따른 출력 응답(설명용 1군 점동특성: 2.83배 대 1.10배 수렴), 궤환 시간척도</figcaption></figure>
+<p>지발중성자는 궤환이 작동할 시간을 벌어 주는 전제입니다. 다만 고유안전 "특성"보다는 제어 가능성의 물리적 기반으로 분류하는 편이 정확합니다.</p>
+<h2>피동안전과의 경계 (TECDOC-626 범주)</h2>
+<p>피동계통은 전부 피동 기기·구조물로 구성되거나, 능동 기기를 후속 피동 작동의 개시에만 제한적으로 쓰는 계통입니다. 중력·자연순환·축압 같은 자연현상과 내부 저장에너지로 기능을 수행합니다. 범주는 네 가지이며, A → D는 안전성 순위가 아니라 피동성의 정도입니다[1]. 판정은 계통 경계와 개시 방식까지 포함해서 합니다.</p>
+<table>
+<thead>
+<tr>
+<th>범주</th>
+<th>신호 입력</th>
+<th>외부 동력</th>
+<th>움직이는 기계부품</th>
+<th>움직이는 작동유체</th>
+<th>예</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>없음</td>
+<td>없음</td>
+<td>없음</td>
+<td>없음</td>
+<td>피복관·압력경계, 전도·복사 열제거</td>
+</tr>
+<tr>
+<td>B</td>
+<td>없음</td>
+<td>없음</td>
+<td>없음</td>
+<td>있음</td>
+<td>자연순환 열제거, 격납건물 자연대류 냉각</td>
+</tr>
+<tr>
+<td>C</td>
+<td>없음</td>
+<td>없음</td>
+<td>있음</td>
+<td>있거나 없음</td>
+<td>안전밸브·파열판, 체크밸브 달린 축압기</td>
+</tr>
+<tr>
+<td>D</td>
+<td>개시에만 사용</td>
+<td>없음(개시용 내부 저장에너지, 배터리 등)</td>
+<td>구성에 따름</td>
+<td>구성에 따름</td>
+<td>신호로 밸브 개방 후 중력 주입, 전자석 해제 제어봉 낙하</td>
+</tr>
+</tbody>
+</table>
+<figure class="article-image"><img alt="고유안전(위험 제거·영향 완화)과 TECDOC-626 피동 범주 A~D 판정 표(신호·외부 동력·기계부품 운동·작동유체 운동), 노형 예 배치" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-015-inherent-safety/fig2_inherent_vs_passive_categories.avif"/><figcaption>고유안전(위험 제거·영향 완화)과 TECDOC-626 피동 범주 A~D 판정 표(신호·외부 동력·기계부품 운동·작동유체 운동), 노형 예 배치</figcaption></figure>
+<p>고유안전은 이 표의 "계통"이 아니라 <strong>위험요소가 애초에 생기지 않게 하는 설계 성질</strong>입니다. 피동계통도 체크밸브 고착이나 비응축성 기체로 기능을 잃을 수 있습니다. 반대로 고유 특성은 붕괴열을 없애지 못합니다. 두 축은 서로를 대신하지 못하고, 심층방어 1~3단계를 함께 강화합니다.</p>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>APR1400(새울 1·2, 신한울 1·2 등)</strong>
+<ul>
+<li>고유: 출력운전 영역 음의 출력계수, 과소감속, 열적여유도, 대용량 가압기·증기발생기 2차측 재고로 과도 완화</li>
+<li>피동: 체크밸브 개방으로 주입하는 SIT(범주 C, 내장 유량조절기는 움직이는 부품 없이 고유량→저유량을 전환), 피동 촉매 수소재결합기 PAR, 격납건물 내 IRWST 수원</li>
+</ul>
+</li>
+<li><strong>APR+</strong>: 피동보조급수계통(PAFS)이 핵심입니다. 증기발생기 증기를 피동응축탱크 속 열교환기에서 응축하고 중력·자연순환으로 되돌립니다. 개시 신호와 격리밸브를 포함한 계통 전체는 범주 D, 개시 이후 자연순환 과정만 떼어 보면 B입니다.</li>
+<li><strong>NuScale</strong>: 정상운전부터 1차 계통이 자연순환으로 돌아 원자로냉각재펌프가 없습니다. 모듈은 대형 수조에 잠겨 있습니다. NRC는 US600 설계인증(2023)에 이어 US460(모듈 77 MWe) 표준설계승인을 2025년 5월 발급했습니다[8].</li>
+<li><strong>i-SMR</strong>: 모듈 170 MWe 일체형 PWR이며 <strong>무붕산 노심</strong>입니다. 붕소로 MTC가 양 쪽으로 밀리는 요인을 없애 주기 전체에서 MTC를 크게 음으로 유지합니다.</li>
+<li><strong>Walk-away safety</strong>: 사고 후 운전원 조치·외부 전원 없이 일정 기간 안전 상태를 유지하는 성능 표현입니다. AP1000 등은 72시간을 설계 목표로 제시하고, NuScale은 무기한을 주장합니다. 고유 특성과 피동계통이 결합한 결과이며 공식 규제 용어는 아닙니다.</li>
+</ul>
+<h2>관련 사고 — RBMK와의 대비</h2>
+<p>체르노빌 4호기(1986)의 RBMK는 흑연이 감속하고 물은 주로 흡수체 역할을 했습니다. 그래서 냉각재가 끓으면 흡수가 줄어 기포계수가 크게 양이었고, 저출력에서는 출력계수까지 양이었습니다. 저출력 운전, 운전 반응도 여유 부족, 스크램 초기에 제어봉 하단 흑연 변위체가 양의 반응도를 넣은 효과가 겹쳤습니다(INSAG-7, 1992)[6]. 경수로의 과소감속·음의 기포계수와 정반대 방향이며, 고유안전 특성이 설계 개념 선택에서 결정된다는 점을 보여 줍니다. 사고 후 RBMK는 추가 흡수체와 농축도 상향으로 기포계수를 낮췄습니다.</p>
+<h2>규제·기준 근거</h2>
+<ul>
+<li><strong>10 CFR 50 부록 A GDC 11(Reactor inherent protection)</strong>: 출력운전 범위에서 즉발 고유 핵궤환의 순효과가 급격한 반응도 증가를 보상하는 경향을 가지도록 설계해야 합니다. "즉발"이므로 실질 담당은 도플러입니다. 그래서 주기초 약간 양의 MTC가 허용되는 노형도 출력계수가 음이면 충족합니다[2].</li>
+<li><strong>「원자로시설 등의 기술기준에 관한 규칙」 제18조(원자로의 고유보호)</strong>: 노심과 관련 냉각계통은 출력운전범위에서 급격한 반응도 증가가 자연적으로 억제되도록 설계해야 합니다[3].<!-- 기술기준규칙 제18조: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 --></li>
+<li><strong>NUREG-0800 SRP 4.3</strong>: 반응도계수 계산·불확도와 출력계수 부호를 심사합니다. <strong>운영기술지침서</strong>(STS NUREG-1431 Rev.5 LCO 3.1.3)는 MTC 상한·하한을 관리합니다[5].</li>
+<li><strong>IAEA</strong>: TECDOC-626(1991)이 용어 정의의 출발점이고 TECDOC-936(1997)이 후속 용어집입니다. SSR-2/1(Rev.1, 2016)은 고유 특성과 피동 특성의 우선 활용을 요구합니다[7].<!-- 확인필요: SSR-2/1 해당 요건 번호·문구 원문 미대조 --></li>
+<li><strong>출제 당시 대비</strong>: 제67회(2002)와 제81회(2007) 이후 GDC 11·제18조 취지는 같습니다. 달라진 것은 SMR·무붕산 노심·피동계통의 인허가 실적이 생겼다는 점입니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>고유안전성</th>
+<th>피동안전성</th>
+<th>페일세이프</th>
+<th>Walk-away safety</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>본질</td>
+<td>위험요소 제거(물리 특성)</td>
+<td>외부 동력 없는 기능 수행(계통)</td>
+<td>고장 시 안전 상태로</td>
+<td>무조치 유지 기간</td>
+</tr>
+<tr>
+<td>예</td>
+<td>음의 FTC, 과소감속</td>
+<td>자연순환, 중력 주입</td>
+<td>전원 상실 시 제어봉 낙하</td>
+<td>72 h 목표</td>
+</tr>
+<tr>
+<td>고장 가능성</td>
+<td>설계 범위 밖 조건</td>
+<td>기기 고착, 비응축성 기체</td>
+<td>논리 오류</td>
+<td>가정 초과</td>
+</tr>
+<tr>
+<td>근거</td>
+<td>GDC 11, 제18조</td>
+<td>TECDOC-626 범주 A~D</td>
+<td>설계 원칙</td>
+<td>성능 목표</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 고유안전성(Inherent Safety)</strong></p>
+<ol>
+<li><strong>정의</strong>: 설계 개념·재료 선택으로 <strong>내재 위험요소를 제거·배제</strong>해 얻는 안전임(IAEA-TECDOC-626)</li>
+<li><strong>위험요소</strong>: 핵분열생성물·붕괴열, 잉여반응도·출력 폭주, 고온·고압·화학 에너지</li>
+<li><strong>노심 특성</strong>: <strong>즉발 음의 반응도 궤환</strong> — FTC(음·즉발), MTC(주기 의존), 기포계수(음), 압력계수(PWR 작은 양)</li>
+<li><strong>궤환식</strong>: ρ_fb = α_F·ΔT_F + α_M·ΔT_M + α_V·Δv + α_p·Δp, 출력 증가 시 ρ_fb &lt; 0(출력계수 전 출력 영역 음)</li>
+<li><strong>설계</strong>: 과소감속, 낮은 출력밀도·큰 냉각재 재고(grace time), 자연순환 가능 배치</li>
+<li><strong>피동과 구분</strong>: 피동 = 자연현상·저장에너지로 기능 수행(범주 A~D), 고유 = 위험요소 자체 제거</li>
+<li><strong>대비</strong>: RBMK 양의 기포계수 ↔ 경수로 음의 기포계수</li>
+<li><strong>근거</strong>: GDC 11, 기술기준규칙 제18조(원자로의 고유보호), SRP 4.3</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: Σ → 원자로 → P → 열수력 상태 변화(T_F·T_M·기포·압력) → ρ_fb 귀환, 궤환식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-015-inherent-safety/sketch1_feedback_loop_hand.avif"/><figcaption>답안용 도식: Σ → 원자로 → P → 열수력 상태 변화(T_F·T_M·기포·압력) → ρ_fb 귀환, 궤환식</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>연도-교시-번호</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2002(제67회)-1-4</td>
+<td>Walk Away Safety</td>
+</tr>
+<tr>
+<td>2007(제81회)-4-1</td>
+<td>원자로 설계에 적용되는 고유안전성</td>
+</tr>
+<tr>
+<td>2017-4-4</td>
+<td>APR1400·APR+의 고유안전성과 피동안전성</td>
+</tr>
+<tr>
+<td>2022-1-2</td>
+<td>고유안전성과 4가지 반응도계수</td>
+</tr>
+<tr>
+<td>2024-3-6</td>
+<td>고유 안전성 정의와 기여하는 노심 특성</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>IAEA, "Safety Related Terms for Advanced Nuclear Plants", IAEA-TECDOC-626 (1991).</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criterion 11 "Reactor inherent protection".</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제18조. 국가법령정보센터.</li>
+<li>R. E. Ginna Nuclear Power Plant, Core Operating Limits Report (COLR) Cycle 39, NRC ADAMS ML15308A102.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.3 "Nuclear Design"; NUREG-1431 Rev. 5 (2021) Standard Technical Specifications — Westinghouse Plants, LCO 3.1.3.</li>
+<li>IAEA, INSAG-7 "The Chernobyl Accident: Updating of INSAG-1", Safety Series No. 75-INSAG-7 (1992).</li>
+<li>IAEA, SSR-2/1 (Rev. 1) "Safety of Nuclear Power Plants: Design" (2016).</li>
+<li>U.S. NRC, NuScale US460 Standard Design Approval (2025.5).</li>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 7장(1군 지발중성자 점동특성·원자로주기).</li>
+</ol>

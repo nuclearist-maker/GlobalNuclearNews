@@ -1,0 +1,226 @@
+<figure class="article-image"><img alt="[개념 노트] 다중방벽 — 펠릿·피복관·압력경계·격납건물과 각 방벽을 지키는 설계한계 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-010-multiple-barriers/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>다중방벽은 핵분열생성물이 환경으로 나가려면 재질과 원리가 서로 다른 물리적 방벽을 직렬로 모두 통과해야 하도록 설계한 것으로, 경수로에서는 연료펠릿·피복관·원자로냉각재압력경계(RCPB)·격납건물이 이를 이룹니다.</strong></p>
+<p>IAEA SSR-2/1 Rev.1 요건 7(심층방어의 적용)은 설계가 "방사성물질 방출에 대한 다중의 물리적 방벽"을 제공해야 한다고 규정합니다[1]. 심층방어는 이 방벽들과, 방벽을 지키는 다단계 조치(예방 → 제어 → 사고 대처 → 중대사고 완화 → 비상대응)를 묶은 상위 전략입니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>방벽을 몇 개로 세는가</h3>
+<p>기출에서 "4가지 물리적방벽"(2021)과 "5중 물리적 방호벽"(2017)이 모두 나왔습니다. 세는 방식이 다를 뿐 내용은 같습니다.</p>
+<table>
+<thead>
+<tr>
+<th>관례</th>
+<th>구성</th>
+<th>쓰이는 곳</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3방벽</td>
+<td>피복관, RCPB, 격납건물</td>
+<td>미국 NEI 99-01 비상등급(EAL) 판정 — 펠릿은 직접 감시할 수 없어 제외</td>
+</tr>
+<tr>
+<td>4방벽(기본)</td>
+<td>펠릿(연료기지), 피복관, RCPB, 격납건물</td>
+<td>IAEA 안전보고서 SRS-46[3], 캐나다 REGDOC-2.5.2[4]</td>
+</tr>
+<tr>
+<td>5방벽(국내 관례)</td>
+<td>펠릿, 피복관, 원자로용기(RCPB), 격납건물 내벽 강판(라이너 약 6 mm), 외벽 철근콘크리트(약 1.2 m)</td>
+<td>국내 홍보 자료·언론 보도</td>
+</tr>
+</tbody>
+</table>
+<p>이 노트는 <strong>기능 기준 4방벽</strong>을 기본으로 씁니다. 국내 5중 관례는 격납건물을 기밀을 맡는 라이너와 구조·차폐를 맡는 콘크리트로 나눈 것입니다. 일부 자료는 제한구역(배제구역)을 다섯 번째로 꼽지만, 이는 거리로 피폭을 줄이는 부지 요건이지 물질을 가두는 물리적 방벽이 아닙니다. 답안에서는 문제의 표현에 맞추고, 어떤 관례인지 한 줄 밝히면 됩니다.</p>
+<h3>방벽별로 무엇을 붙잡는가</h3>
+<ol>
+<li><strong>펠릿(UO₂ 세라믹)</strong>: 고체 핵분열생성물 대부분을 결정격자 안에 붙잡습니다. 비활성기체·요오드·세슘 같은 기체·휘발성 핵종 일부는 확산해 펠릿-피복관 간극으로 나옵니다.</li>
+<li><strong>피복관(지르코늄 합금)</strong>: 간극에 모인 기체·휘발성 핵종(간극 재고)을 가둡니다. 미국 RG 1.183 Rev.0의 LOCA 원천항은 간극방출 단계에서 비활성기체·할로젠·알칼리금속 노심재고의 5 %가 나온다고 가정합니다[5].</li>
+<li><strong>RCPB(원자로용기·배관·가압기·SG 전열관 등 1차측 경계)</strong>: 파손 연료에서 나온 핵종과 냉각재 방사화 생성물을 포함한 1차 냉각재를 담습니다. 원자로용기만이 아니라는 점에 유의하십시오.</li>
+<li><strong>격납건물(강판 라이너 + 프리스트레스트 콘크리트)</strong>: RCPB 밖으로 나온 물질을 붙잡고 침적·살수로 줄인 뒤 설계 누설률 이하로만 내보냅니다.</li>
+</ol>
+<figure class="article-image"><img alt="PWR 격납건물 개념 절개도 위 4방벽 번호와 방벽별 붙잡는 것·지키는 한계·도전 사건 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-010-multiple-barriers/fig1_barrier_cutaway_table.avif"/><figcaption>PWR 격납건물 개념 절개도 위 4방벽 번호와 방벽별 붙잡는 것·지키는 한계·도전 사건 표</figcaption></figure>
+<h3>직렬이지만 독립은 아니다</h3>
+<p>방벽이 서로 독립이라면 동시 상실 확률은 각 상실 확률의 곱이 됩니다. 그러나 실제 방벽은 공통원인으로 함께 도전받습니다. 냉각을 잃으면 피복관이 손상되고, 그 열과 수소가 다시 격납건물을 위협합니다. LOCA처럼 RCPB가 깨지면 그 순간 피복관(노심 냉각)과 격납건물(압력·온도)이 동시에 하중을 받습니다. 그래서 방벽만 쌓는 것이 아니라, 반응도 제어·노심 냉각·방사성물질 격리라는 기본 안전기능을 다중·다양한 수단으로 보장해 <strong>방벽의 유효성</strong>을 지키도록 요구합니다(SSR-2/1 요건 7)[1].</p>
+<h2>원전에서의 의미</h2>
+<h3>방벽마다 지키는 설계한계</h3>
+<table>
+<thead>
+<tr>
+<th>방벽</th>
+<th>정상·AOO 한계</th>
+<th>사고 한계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>펠릿·피복관</td>
+<td>SAFDL: MDNBR ≥ 95/95 DNBR 한계, 연료 중심 용융 방지, 피복관 변형률 약 1 %</td>
+<td>10 CFR 50.46: PCT 1,204 °C, ECR 17 %, 수소 1 %, 냉각 가능 형상, 장기냉각[6]</td>
+</tr>
+<tr>
+<td>RCPB</td>
+<td>가장 가혹한 AOO에서 설계압력의 110 % 미만(SRP 5.2.2, ASME NB-7000)[7]</td>
+<td>극히 드문 사고 120 %(구 SRP 15.2.8: Service Level C), ATWS는 별도 기준 약 3,200 psig</td>
+</tr>
+<tr>
+<td>격납건물</td>
+<td>설계 누설률 La 이하(App. J 시험), 격리 기능</td>
+<td>설계압력·온도, 중대사고 시 24시간 방벽 유지</td>
+</tr>
+</tbody>
+</table>
+<p>예시(APR1400): RCS 설계압력 2,500 psia(17.24 MPa 절대), 110 % = 18.96 MPa, 120 % = 20.68 MPa입니다[8]. 격납건물 설계압력은 60 psig(절대 약 0.515 MPa)이며, 사고관리계획서 심사(새울 1·2·신한울 1·2)에서 중대사고 최대압력 0.60 MPa, 허용압력 0.85 MPa로 평가되었습니다[10]. 설계압력도 허용압력도 극한 파손압력은 아닙니다.</p>
+<figure class="article-image"><img alt="피복관 온도·RCS 압력·격납건물 압력 눈금자 위 정상값·설계값·사고별 허용기준(미국 기준·APR1400 예시)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-010-multiple-barriers/fig2_barrier_limit_rulers.avif"/><figcaption>피복관 온도·RCS 압력·격납건물 압력 눈금자 위 정상값·설계값·사고별 허용기준(미국 기준·APR1400 예시)</figcaption></figure>
+<h3>방벽을 지키는 설비(ESF)</h3>
+<p>공학적안전설비는 방벽이 아니라 <strong>방벽을 지키고 사고를 완화하는 수단</strong>입니다(2013년 1교시 12번의 요지).</p>
+<ul>
+<li><strong>피복관</strong>: 원자로보호계통 정지, 안전주입(APR1400 예: SIT 4기 + 안전주입펌프 4계열 직접주입, IRWST 수원), 보조급수(2차측 붕괴열 제거)</li>
+<li><strong>RCPB</strong>: 가압기 안전밸브·POSRV(과압보호), 저온과압보호, 누설탐지, 가동중검사, PTS 관리</li>
+<li><strong>격납건물</strong>: 살수계통(감압·요오드 제거), 격리계통, 수소제어(PAR), 원자로공동 충수, 비상살수 보조계통</li>
+</ul>
+<h3>방벽 도전 사례</h3>
+<ul>
+<li><strong>LOCA</strong>: RCPB 상실 → ECCS가 피복관을, 살수·격리가 격납건물을 지킵니다.</li>
+<li><strong>SGTR</strong>: RCPB(전열관) 상실이 2차측 주증기관을 거쳐 격납건물을 <strong>우회</strong>합니다. 방벽 넷 중 하나만 깨져도 방출 경로가 생기는 대표 사례입니다.</li>
+<li><strong>ISLOCA</strong>: 고압·저압 계통 경계가 격납건물 밖에서 깨지는 우회 경로입니다.</li>
+<li><strong>격리 실패</strong>: 격납건물에 처음부터 열린 관통부가 남는 경우입니다.</li>
+<li><strong>중대사고</strong>: 노심용융으로 ①②가 함께 상실되고 ③(용기 파손)을 거쳐 ④가 과압·수소·DCH·MCCI에 노출됩니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IAEA SF-1 원칙 8, SSR-2/1 Rev.1(2016) 요건 7[1][2]</td>
+<td>심층방어 적용, 다중 물리적 방벽, 안전기능 다중 수단으로 방벽 유효성 보장</td>
+</tr>
+<tr>
+<td>INSAG-10(1996), INSAG-12(1999)</td>
+<td>심층방어 단계와 방벽 보호의 결합</td>
+</tr>
+<tr>
+<td>10 CFR 50 App. A GDC 10·14·15·16·50</td>
+<td>SAFDL, RCPB 누설·파손 방지, RCS 설계 여유, 격납건물 누설 밀봉·설계기준</td>
+</tr>
+<tr>
+<td>10 CFR 50.46, App. J</td>
+<td>ECCS 허용기준, 격납건물 누설률 시험</td>
+</tr>
+<tr>
+<td>기술기준규칙 제17조①·제21조·제23조[9]</td>
+<td>원자로의 설계(연료허용손상한계 여유), 원자로냉각재압력경계, 원자로격납건물 등</td>
+</tr>
+<tr>
+<td>원안위 고시 제2026-1호</td>
+<td>중대사고 위협요인(별표 3)에 대해 방호벽 기능 유지</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: SSR-2/1 Rev.1 요건 7 하위 항목의 문단 번호(4.11로 알려짐)는 IAEA 원문 PDF 직접 대조 미완 -->
+<!-- 기술기준규칙 제17조: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 -->
+<p><strong>출제 당시 대비 달라진 점</strong></p>
+<ul>
+<li>2001·2003년(제63·65회)과 2013년 출제 당시에는 설계기준사고 범위에서 방벽 유지가 중심이었습니다. 2011년 후쿠시마 사고로 냉각 상실이 여러 방벽을 동시에 무너뜨릴 수 있음이 확인된 뒤, 설계확장조건(DEC)과 사고관리계획서 제도(2016.6~)가 도입되어 <strong>노심손상 이후에도 격납건물 방벽 기능 유지</strong>가 법정 요건이 되었습니다.</li>
+<li>SSR-2/1 Rev.1(2016)은 조기·대량 방출의 실질적 배제를 강조합니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>다중방벽</th>
+<th>심층방어</th>
+<th>다중성(Redundancy)</th>
+<th>차폐</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>대상</td>
+<td>방사성물질</td>
+<td>안전 전략 전체</td>
+<td>같은 기능 기기</td>
+<td>방사선</td>
+</tr>
+<tr>
+<td>형태</td>
+<td>서로 다른 물리적 벽의 직렬 배치</td>
+<td>다단계 조치 + 방벽</td>
+<td>동일 계열 여러 개</td>
+<td>콘크리트·물 등</td>
+</tr>
+<tr>
+<td>예</td>
+<td>펠릿·피복관·RCPB·격납건물</td>
+<td>5단계</td>
+<td>안전주입 4계열</td>
+<td>생체차폐벽</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 핵분열생성물 방출 경로에 서로 다른 물리적 방벽을 직렬 배치 — 심층방어의 물리적 요소</li>
+<li><strong>4방벽</strong>: 펠릿(고체 FP) → 피복관(간극 기체·휘발성) → RCPB(냉각재 방사능) → 격납건물(최후 방벽)</li>
+<li><strong>5중 관례</strong>: 격납건물을 라이너(6 mm)와 콘크리트(약 1.2 m)로 구분</li>
+<li><strong>설계한계</strong>: SAFDL(DNB 방지 95/95), 50.46(PCT 1,204 °C·ECR 17 %), RCPB 과압 110 %(AOO 공통)·사건별 한계(예: 구 SRP 15.2.8의 120 %), 격납건물 설계압력·누설률</li>
+<li><strong>보호설비</strong>: 정지·ECCS·보조급수 / POSRV·LTOP / 살수·격리·PAR</li>
+<li><strong>도전</strong>: LOCA(동시 도전), SGTR·ISLOCA(우회), 격리 실패, 중대사고</li>
+<li><strong>핵심</strong>: 다층 억류·재질 다양성, 완전 독립은 아님(공통원인) → 안전기능 다중 보장으로 방벽 유효성 유지</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 동심 4방벽과 우회 가능 경로 도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-010-multiple-barriers/sketch1_barrier_rings.avif"/><figcaption>답안지용 동심 4방벽과 우회 가능 경로 도식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021년 3교시 3번</td>
+<td>심층방어 5단계와 4가지 물리적방벽</td>
+</tr>
+<tr>
+<td>2017년 4교시 3번</td>
+<td>5중 물리적 방호벽과 기능적 5단계</td>
+</tr>
+<tr>
+<td>2016년 2교시 1번</td>
+<td>심층방호 설계개념과 다중방호설비</td>
+</tr>
+<tr>
+<td>2013년 1교시 12번</td>
+<td>물리적방벽과 이를 유지하는 공학적안전설비</td>
+</tr>
+<tr>
+<td>제65회 1교시 12번</td>
+<td>Multiple Barrier(안전성 원리)</td>
+</tr>
+<tr>
+<td>제63회 1교시 13번</td>
+<td>핵분열생성물 장벽</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>IAEA, Safety of Nuclear Power Plants: Design, Specific Safety Requirements No. SSR-2/1 (Rev. 1) (2016), Requirement 7 "Application of defence in depth".</li>
+<li>IAEA, Fundamental Safety Principles, Safety Fundamentals No. SF-1 (2006), Principle 8; INSAG-10 "Defence in Depth in Nuclear Safety" (1996); INSAG-12 (75-INSAG-3 Rev. 1, 1999).</li>
+<li>IAEA, Assessment of Defence in Depth for Nuclear Power Plants, Safety Reports Series No. 46 (2005).</li>
+<li>CNSC, REGDOC-2.5.2 "Design of Reactor Facilities: Nuclear Power Plants" (2014).</li>
+<li>U.S. NRC, Regulatory Guide 1.183 Rev. 0 "Alternative Radiological Source Terms for Evaluating Design Basis Accidents at Nuclear Power Reactors" (2000), 표 2(PWR LOCA 방출 단계).</li>
+<li>U.S. NRC, 10 CFR 50.46 및 10 CFR Part 50 Appendix A(GDC 10·14·15·16·50)·Appendix J. NRC 웹(eCFR).</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 5.2.2 "Overpressure Protection" 및 15.0·15.2.8.</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Ch. 3.8·5.2·6.2(RCS 설계압력 2,500 psia, 격납건물 설계압력 60 psig, 라이너 1/4 in). NRC 설계인증 공개 문서.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제17조·제21조·제23조; 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」, 원안위고시 제2026-1호. 국가법령정보센터.</li>
+<li>원자력안전위원회 회의 안건, 새울 1·2호기·신한울 1·2호기 사고관리계획서 승인(안) — 중대사고 격납건물 최대압력·허용압력 평가(회차 미기재).</li>
+</ol>

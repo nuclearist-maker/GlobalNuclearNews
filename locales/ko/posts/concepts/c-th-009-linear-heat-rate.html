@@ -1,0 +1,229 @@
+<figure class="article-image"><img alt="[개념 노트] 선출력밀도와 출력밀도(LHGR) — 같은 출력을 길이·체적·질량으로 나누는 법 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-009-linear-heat-rate/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>선출력밀도(선출력, Linear Heat Generation Rate, LHGR, q′)는 연료봉 단위 길이당 열발생률(kW/m)이며, 노심 평균은 q′avg = γ·P/(N·H), 국부 최대는 q′max = FQ·q′avg로 구합니다. 연료 중심 용융과 피복관 변형을 막는 핵연료 한계는 이 q′로 설정·감시합니다.</strong></p>
+<p>출력밀도는 같은 열출력을 무엇으로 나누느냐에 따라 이름이 달라집니다. 연료 체적으로 나누면 체적 열발생률 q‴(W/cm³), 노심 체적으로 나누면 노심 출력밀도(kW/L), 중금속 질량으로 나누면 비출력(kW/kgU)입니다. 기출은 이 분모를 섞어 묻는 계산형이 대부분입니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>하나의 출력, 네 개의 분모</h3>
+<p>Westinghouse 4루프 Catawba 2호기의 FSAR 설계 표(3,411 MWt)로 네 양을 한꺼번에 보겠습니다[1][2].</p>
+<table>
+<thead>
+<tr>
+<th>양</th>
+<th>정의(분모)</th>
+<th>단위</th>
+<th>예시 값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>선출력 q′</td>
+<td>연료봉 총 길이 N·H</td>
+<td>kW/m</td>
+<td>평균 17.8 (5.44 kW/ft)</td>
+</tr>
+<tr>
+<td>연료 체적 열발생률 q‴</td>
+<td>펠릿 총 체적</td>
+<td>W/cm³</td>
+<td>평균 약 338 (펠릿 직경 가정)</td>
+</tr>
+<tr>
+<td>노심 출력밀도</td>
+<td>노심 원통 체적</td>
+<td>kW/L</td>
+<td>104.5</td>
+</tr>
+<tr>
+<td>비출력</td>
+<td>장전 우라늄 질량</td>
+<td>kW/kgU</td>
+<td>약 38.7</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: Catawba UFSAR Table 4-1 추출본의 비출력 39.4 kW/kgU는 열 배정이 불확실함. Unit 1(3,469 MWt) 값으로 보고 3,411 MWt로 환산한 38.7(ORNL/TM-1999/255 Table 1의 38.7 kW/kgHM과 일치)을 썼음. 원문 직접 열람 불가(NRC 접근 차단) -->
+<p>네 양은 다음 관계로 묶입니다.</p>
+<ul>
+<li><strong>q′ = q‴·πR_f²</strong>: 펠릿 단면적을 곱하면 길이당 값이 됩니다(정상상태·축방향 열전도 무시). 여기서 q′와 q‴는 연료에서 나는 열 γP 기준입니다.</li>
+<li><strong>노심 출력밀도 = P/V_core = q‴·f_V/γ</strong>: 펠릿 총 체적 9.82 m³ ÷ 노심 체적 32.6 m³ = 0.30, 곧 노심 체적의 약 30 %만 연료입니다. 나머지는 냉각재·피복관·구조재이므로 노심 출력밀도는 연료 q‴의 약 1/3입니다.</li>
+<li><strong>비출력 = P/M_U</strong>: 3,411 MW ÷ 약 88.1 tU입니다. 비출력이 일정하다면 운전일수를 곱한 값이 연소도(MWd/tU)입니다.</li>
+<li><strong>q′avg = γ·P/(N·H)</strong>: γ는 연료 내 열발생 분율로, Westinghouse형 설계 표 값은 0.974입니다. 0.974 × 3,411 MW ÷ (50,952봉 × 3.658 m) = 17.8 kW/m로 표 값과 일치합니다[1].</li>
+</ul>
+<figure class="article-image"><img alt="노심 열출력 3,411 MWt를 봉 길이·펠릿 체적·노심 체적·우라늄 질량으로 나눈 선출력 17.8 kW/m·q‴ 338 W/cm³·노심 출력밀도 104.5 kW/L·비출력 38.7 kW/kgU와 관계식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-009-linear-heat-rate/fig1_power_density_four_denominators.avif"/><figcaption>노심 열출력 3,411 MWt를 봉 길이·펠릿 체적·노심 체적·우라늄 질량으로 나눈 선출력 17.8 kW/m·q‴ 338 W/cm³·노심 출력밀도 104.5 kW/L·비출력 38.7 kW/kgU와 관계식</figcaption></figure>
+<p>APR1400(노심 열출력 3,983 MWt, 241다발 × 236봉, 유효길이 3.81 m)을 같은 식으로 계산하면 평균 선출력은 약 17.9 kW/m입니다. 노심 출력밀도는 등가 직경 3.647 m 원통 기준 약 100 kW/L입니다. 둘 다 설계 문서 값이 아니라 직접 계산한 추정치입니다.</p>
+<h3>왜 한계는 kW/m로 거는가</h3>
+<p>균일 발열·일정 열전도도 k인 원통 펠릿의 중심–표면 온도차는 **ΔT = q′/(4πk)**입니다[3]. 이 식에는 반경이 없습니다. 펠릿을 굵게 만들어도 같은 q′에서는 중심온도가 그대로이므로, 연료 용융 한계는 체적 출력밀도가 아닌 선출력으로 거는 것이 자연스럽습니다.</p>
+<p>교과서 상수 k = 2.7 W/m·K, 표면 873 K로 보면 UO₂ 융점(약 3,113 K)에 닿는 q′는 4π × 2.7 × 2,240 ≈ 76 kW/m입니다. 실제 설계의 용융 방지 선출력이 이보다 낮은 이유는 세 가지입니다. 고온·고연소에서 k가 떨어지고, 연소에 따라 융점도 내려가며, 측정·제조 불확실성 여유를 둡니다. "반경 무관"도 균일 발열·일정 k·같은 표면온도라는 조건에서만 성립합니다.</p>
+<h3>평균과 첨두: FQ로 잇는다</h3>
+<p>봉 지름이 같으면 열속비와 선출력비가 같습니다. 따라서 <strong>q′max = FQ·q′avg</strong>입니다. Catawba 표의 정상운전 첨두 선출력 13.58 kW/ft(44.6 kW/m)를 평균 5.44 kW/ft로 나누면 약 2.50(2.496)으로, 이 설계의 FQ입니다[1]. 2008년 기출처럼 1차원 문제라면 축방향 첨두계수 F_Z만으로 평균과 최대를 잇습니다.</p>
+<h2>원전에서의 의미</h2>
+<p>선출력에는 성격이 다른 기준선이 여러 개 있습니다. 숫자가 비슷해 섞기 쉬우니 근거와 함께 구분해야 합니다.</p>
+<figure class="article-image"><img alt="kW/m 눈금 위 운전값(평균 17.8, 정상운전 첨두 44.6)·과도 해석값(59.1)·설계 한계(Catawba &gt; 59.1, CE형 68.9)·교과서 계산(76.0) 구분 그래프" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-009-linear-heat-rate/fig2_lhgr_limit_ruler.avif"/><figcaption>kW/m 눈금 위 운전값(평균 17.8, 정상운전 첨두 44.6)·과도 해석값(59.1)·설계 한계(Catawba &gt; 59.1, CE형 68.9)·교과서 계산(76.0) 구분 그래프</figcaption></figure>
+<ul>
+<li><strong>정상운전 첨두(약 43~45 kW/m)</strong>: LOCA 해석의 초기 저장에너지와 첨두피복재온도(PCT)를 정하는 수준입니다. 운전 한계는 Westinghouse형은 FQ(Z), CE형은 선출력(LHR)으로 둡니다. 예를 들어 Palo Verde COLR은 13.0 kW/ft(42.7 kW/m)이고[7], NRC의 APR1400 심사 자료는 LCO 한계 13.6 kW/ft(44.6 kW/m)를 인용합니다[8]. <!-- 확인필요: APR1400 LCO 13.6 kW/ft, 제어봉 인출 사건 첨두 19.27 kW/ft는 NRC SER 15장 검색 추출본 기준, 원문 직접 대조 못 함 --></li>
+<li><strong>연료 중심 용융 방지</strong>: 정상운전과 예상운전과도(AOO) 중 넘으면 안 되는 SAFDL이며 값은 설계마다 다릅니다. Catawba 표는 118 % 과출력 과도의 첨두를 18 kW/ft(59.1 kW/m)로 해석하고, 용융 방지 선출력을 그보다 큰 "&gt; 18 kW/ft"로 둡니다. 59.1은 단순 118 % 비례값(44.6 × 1.18 = 52.6)과 다르므로, 과도 해석의 출력분포·첨두 조건이 정상운전과 다르다고 보면 됩니다. CE형은 정상상태 첨두 선출력 안전한계 21 kW/ft(68.9 kW/m)를 써 왔습니다[6][7].</li>
+<li><strong>피복관 변형</strong>: 과도 중 출력이 오르면 펠릿 열팽창으로 피복관이 늘어납니다. SRP 4.2는 균일 변형률(탄성+소성) 1 % 이하를 요구합니다[5].</li>
+<li><strong>설계·경제성</strong>: 같은 첨두 한계에서 허용 평균 출력은 한계 ÷ FQ입니다. 출력 증강은 봉 수·길이를 늘려 평균을 낮추거나, 출력 평탄화로 FQ를 낮춰야 합니다. APR1400의 평균 선출력이 OPR1000(직접 계산 약 17.2 kW/m)보다 약 4 % 높은 것도 이 균형의 결과입니다[8].</li>
+</ul>
+<h2>운전 감시: 노형별 방식</h2>
+<ul>
+<li><strong>Westinghouse형(고리·한빛 1·2호기 등)</strong>: 선출력을 직접 감시하지 않고 FQ(Z) ≤ CFQ/P × K(Z)를 노내 이동형 검출기 측정으로 확인합니다. 평균 선출력이 출력 준위로 정해지므로 FQ 한계는 곧 첨두 선출력 한계입니다. 과도 중 연료 용융은 과출력 ΔT(OPΔT) 트립이, DNB는 과온도 ΔT(OTΔT) 트립이 막습니다.</li>
+<li><strong>CE형(OPR1000·APR1400)</strong>: NUREG-1432 LCO 3.2.1이 선출력(LHR)을 직접 제한합니다[6]. COLSS는 고정식 노내 계측기 신호로 3차원 출력분포를 합성해 "LHR 기반 출력운전한계"를 계산하고, 실제 노심출력이 그 아래인지 감시합니다. COLSS가 불능이면 CPC 채널 값으로 허용영역 도표 안에서 운전합니다. CPC는 노외 계측기와 제어봉 위치로 국부 선출력을 계산해 국부출력밀도(LPD) 트립을 냅니다. 여기서 LPD는 체적 출력밀도가 아니라 <strong>국부 선출력</strong>에 해당하는 양입니다. 고 LPD 트립 설정치는 계산·측정 불확실성과 응답시간을 반영해 안전한계보다 낮게(보수 쪽) 두므로 안전한계와 같지 않습니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50 부록 A GDC 10</td>
+<td>정상운전·AOO 중 SAFDL 비초과[4]</td>
+</tr>
+<tr>
+<td>NUREG-0800 SRP 4.2 / 4.4</td>
+<td>연료 중심 용융 금지, 피복관 변형률 1 %, 열수력 설계 표(평균·첨두 선출력)</td>
+</tr>
+<tr>
+<td>10 CFR 50.46(b)</td>
+<td>LOCA PCT 1,204 ℃ 등 — 초기 첨두 선출력이 입력[4]</td>
+</tr>
+<tr>
+<td>NUREG-1431 LCO 3.2.1</td>
+<td>WH형 FQ(Z)</td>
+</tr>
+<tr>
+<td>NUREG-1432 LCO 3.2.1, SL 2.1.1</td>
+<td>CE형 LHR, 연료 중심 용융 관련 안전한계</td>
+</tr>
+<tr>
+<td>「원자로시설 등의 기술기준에 관한 규칙」 제2조 제1항 제10호·제17조①, KINS 안전심사지침 4.2·4.4</td>
+<td>핵연료허용손상한계, 핵연료·열수력 설계 심사[10]</td>
+</tr>
+<tr>
+<td>운영기술지침서·COLR</td>
+<td>호기·주기별 한계값[9]</td>
+</tr>
+</tbody>
+</table>
+<!-- 기술기준규칙 제2조 제1항 제10호·제17조①: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 -->
+<p>정의와 환산식은 출제 당시(2002~2008년)와 같습니다. 바뀐 점은 세 가지입니다. 첫째, 한계값이 운영기술지침서 본문에서 COLR로 옮겨졌습니다(GL 88-16)[9]. 둘째, CE형 일부 호기는 "첨두 선출력 21 kW/ft" 안전한계를 연소에 따라 낮아지는 "연료 중심온도" 안전한계로 바꿨습니다(예 5,080 °F에서 10 GWd/tU당 58 °F 감소, 호기별)[6][7]. 셋째, 연소에 따른 열전도도 저하를 연료 성능 코드에 반영하도록 요구가 강화됐습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>선출력 q′</th>
+<th>연료 q‴</th>
+<th>노심 출력밀도</th>
+<th>비출력</th>
+<th>열속 q″</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>분모</td>
+<td>봉 길이</td>
+<td>펠릿 체적</td>
+<td>노심 체적</td>
+<td>중금속 질량</td>
+<td>피복관 외표면적</td>
+</tr>
+<tr>
+<td>단위</td>
+<td>kW/m</td>
+<td>W/cm³</td>
+<td>kW/L</td>
+<td>kW/kgU</td>
+<td>W/m²</td>
+</tr>
+<tr>
+<td>PWR 예</td>
+<td>평균 17.8</td>
+<td>약 338</td>
+<td>약 100</td>
+<td>약 39</td>
+<td>평균 0.6 MW/m²</td>
+</tr>
+<tr>
+<td>주로 묶이는 것</td>
+<td>중심 용융, LOCA PCT</td>
+<td>중성자속(Ef·Σf·φ)</td>
+<td>노심 크기·경제성</td>
+<td>연소도 증가율</td>
+<td>DNB, 표면 온도</td>
+</tr>
+</tbody>
+</table>
+<p>노심 출력밀도와 연료 q‴는 약 3배 차이가 납니다. 답안에는 기준 체적을 꼭 밝혀 쓰십시오.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 선출력 q′ = 연료봉 단위 길이당 열발생률(kW/m, kW/ft)</li>
+<li><strong>평균</strong>: q′avg = γ·P/(N·H), γ ≈ 0.974(연료 내 발생 분율)</li>
+<li><strong>최대</strong>: q′max = FQ·q′avg (1차원이면 F_Z)</li>
+<li><strong>환산</strong>: q′ = q‴·πR_f² = q″·2πR_co</li>
+<li><strong>출력밀도</strong>: 노심 기준 kW/L(약 100), 연료 기준 W/cm³(약 340), 비출력 kW/kgU(약 39)</li>
+<li><strong>한계 근거</strong>: ΔT = q′/(4πk) → 반경 무관 → 용융 한계는 kW/m</li>
+<li><strong>기준선</strong>: 정상운전 첨두 약 44 kW/m(LOCA 초기조건) &lt; 용융 방지 한계(설계별, 예 &gt; 59 kW/m)</li>
+<li><strong>감시</strong>: WH FQ(Z)·OPΔT, CE COLSS(LHR)·CPC LPD 트립</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 선출력 기준선 도식: 평균 → ×FQ → 첨두 ≤ 운전 한계 &lt; 용융 방지 한계와 관계식 3줄" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-009-linear-heat-rate/sketch1_lhgr_baselines.avif"/><figcaption>답안지용 선출력 기준선 도식: 평균 → ×FQ → 첨두 ≤ 운전 한계 &lt; 용융 방지 한계와 관계식 3줄</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+<th>핵심 결과(검산용)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2008년 4교시 6번</td>
+<td>최대 LPD → 출력밀도·열속·중성자속</td>
+<td>191 W/cm³, 47.7 W/cm², 7.0×10¹² n/cm²·s</td>
+</tr>
+<tr>
+<td>제78회 2교시 1번</td>
+<td>노심 기본량과 평균 선출력</td>
+<td>3,030 MWt, Σf 0.271 cm⁻¹, 27.0 kW/m</td>
+</tr>
+<tr>
+<td>제78회 2교시 2번</td>
+<td>원통 펠릿 중심온도</td>
+<td>ΔT 1,179 K, 중심 2,052 K</td>
+</tr>
+<tr>
+<td>제73회 4교시 3번</td>
+<td>대류 조건으로 선출력</td>
+<td>29.5 kW/m</td>
+</tr>
+<tr>
+<td>제68회 4교시 6번</td>
+<td>연료 평균 열출력밀도</td>
+<td>364 W/cm³</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>제68회</strong>: 1,200 MWe ÷ 0.33 = 3,636 MWt, 연료 체적 100,000 kg ÷ 10 g/cm³ = 1.0×10⁷ cm³이므로 364 W/cm³입니다. "부족한 데이터"는 γ = 1(전 출력이 연료에서 발생) 가정으로 처리하고, γ = 0.974이면 354 W/cm³라고 덧붙이면 됩니다.</li>
+<li><strong>제73회</strong>: 원문의 "W/m-℃"는 W/m²·℃의 오기로 봅니다. q″ = 21,803 × 50 = 1.09 MW/m², q′ = q″·πD = 29.5 kW/m입니다.</li>
+<li><strong>제78회 2교시 1번</strong>: 30,000봉 × 3.5 m = 105 km입니다. 전 출력 기준 28.9 kW/m에 연료 내 축적 분율 3×10⁻¹¹/3.204×10⁻¹¹ = 0.936을 곱해 27.0 kW/m입니다. 장전량 100,000 kg을 UO₂로 보면 U-235는 2,644 kg입니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>Duke Energy, Catawba Nuclear Station UFSAR, Table 4-1(2016.10 개정본), NRC ADAMS ML18305A292.</li>
+<li>Oak Ridge National Laboratory, ORNL/TM-1999/255, Table 1(Catawba 기준 노심).</li>
+<li>N. E. Todreas, M. S. Kazimi, Nuclear Systems Volume I: Thermal Hydraulic Fundamentals, 2nd ed., CRC Press, 연료봉 온도분포 장.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A GDC 10; 10 CFR 50.46(b).</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.2 "Fuel System Design" Rev. 3 (2007), 4.4 "Thermal and Hydraulic Design".</li>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications — Westinghouse Plants, LCO 3.2.1; NUREG-1432 Standard Technical Specifications — Combustion Engineering Plants, LCO 3.2.1·SL 2.1.1.</li>
+<li>Arizona Public Service, Palo Verde Nuclear Generating Station Core Operating Limits Report 및 2002년 운영허가 변경신청(연료 중심온도 안전한계), NRC ADAMS 공개본.</li>
+<li>U.S. NRC, Safety Evaluation Report for the APR1400 Design Certification, Ch. 15 (NUREG-2215).</li>
+<li>U.S. NRC, Generic Letter 88-16 "Removal of Cycle-Specific Parameter Limits from Technical Specifications" (1988).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제2조·제17조. 국가법령정보센터.</li>
+</ol>

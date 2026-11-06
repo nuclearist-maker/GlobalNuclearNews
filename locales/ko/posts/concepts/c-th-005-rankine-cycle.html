@@ -1,0 +1,326 @@
+<figure class="article-image"><img alt="[개념 노트] 랭킨 사이클과 열효율(Rankine Cycle) — PWR 2차측 T-s 선도, 재열·재생까지 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-005-rankine-cycle/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>랭킨 사이클은 물을 작동유체로 펌프 단열압축 → 증기발생기 등압가열·증발 → 터빈 단열팽창 → 복수기 등압응축을 반복하는 증기 동력 사이클이며, 열효율은 η = W_net/Q_in = 1 − Q_out/Q_in 입니다.</strong></p>
+<p>원전 2차측(동력변환계통)은 재열(습분분리재열기, MSR)과 재생(급수가열기)을 더한 재생-재열 랭킨 사이클로 운전됩니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>4과정과 효율식</h3>
+<p>번호는 제81회 4교시 3번 원본 그림의 표기(① 복수기 출구, ② 펌프 출구, ③ 보일러 출구, ④ 터빈 출구)를 따릅니다.</p>
+<table>
+<thead>
+<tr>
+<th>과정</th>
+<th>기기</th>
+<th>이상 과정</th>
+<th>에너지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①→②</td>
+<td>급수펌프</td>
+<td>등엔트로피 압축(압축수)</td>
+<td>w_p = h2 − h1 ≈ v1(P_H − P_L)</td>
+</tr>
+<tr>
+<td>②→③</td>
+<td>증기발생기</td>
+<td>등압 가열 → 증발</td>
+<td>q_in = h3 − h2</td>
+</tr>
+<tr>
+<td>③→④</td>
+<td>터빈</td>
+<td>등엔트로피 팽창(습증기 진입)</td>
+<td>w_t = h3 − h4</td>
+</tr>
+<tr>
+<td>④→①</td>
+<td>복수기</td>
+<td>등압·등온 응축</td>
+<td>q_out = h4 − h1</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>η = [(h3 − h4) − (h2 − h1)] / (h3 − h2)</li>
+<li>카르노와 달리 증기를 완전히 응축시킨 뒤 액체를 압축하므로 펌프 일이 터빈 일의 1 % 미만입니다. 대신 차가운 급수를 데우는 저온 흡열 구간이 생깁니다.</li>
+<li>효율 비교는 <strong>평균 흡열온도</strong> T̄_H = q_in/Δs로 하면 깔끔합니다. η = 1 − T_L/T̄_H 이고, 모든 효율 향상책은 "T̄_H를 올리거나 T_L을 내리는 것"으로 설명됩니다[2].</li>
+</ul>
+<h3>PWR 2차측 수치 (IAPWS-IF97 계산)</h3>
+<p>예시 조건: 증기발생기 출구 6.9 MPa 포화증기(284.9 °C), 복수기 5 kPa(32.9 °C), 펌프·터빈 등엔트로피.</p>
+<ul>
+<li>h3 = 2,773.9, h4 = 1,773.7(x4 = 0.675), h1 = 137.8, h2 = 144.7 kJ/kg</li>
+<li>w_t = 1,000.2, w_p = 6.9, q_in = 2,629.2 kJ/kg → <strong>η = 37.8 %</strong>(IAPWS-IF97 물성으로 직접 계산)[1]</li>
+<li>같은 온도 사이의 카르노 효율 45.2 %, 평균 흡열온도 218.7 °C</li>
+</ul>
+<p>PWR은 1차 냉각재 온도(약 300 °C대) 때문에 증기 조건이 낮아, 화력(예: 24 MPa·538 °C, 이상 효율 약 44.7 %)보다 효율이 낮습니다. 더 큰 문제는 기본 사이클의 터빈 배기 습분이 32 %를 넘는다는 점이고, 이것이 MSR이 필요한 이유입니다.</p>
+<h3>효율 향상 3가지와 원전의 특수성</h3>
+<table>
+<thead>
+<tr>
+<th>방법</th>
+<th>T-s 선도상 원리</th>
+<th>PWR 2차측 적용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>과열(Superheating)</td>
+<td>증기를 포화온도 이상으로 가열 → T̄_H↑, 배기 건도↑</td>
+<td>U자관 증기발생기는 포화증기. 관류형(OTSG)은 소폭 과열</td>
+</tr>
+<tr>
+<td>재열(Reheating)</td>
+<td>팽창 도중 재가열 → 배기 건도↑, 재열 온도가 높으면 T̄_H↑</td>
+<td>MSR: 고압터빈 배기의 습분 제거 + 주증기로 재열. 재열 온도가 주증기 포화온도를 넘지 못해 효율 이득은 작고 <strong>습분 제어</strong>가 주목적</td>
+</tr>
+<tr>
+<td>재생(Regeneration)</td>
+<td>터빈 추기로 급수 예열 → 저온 흡열 구간 제거 → T̄_H↑</td>
+<td>저압·고압 급수가열기와 탈기기, 대형 PWR은 보통 6~7단(예: APR1400 7단)[4]</td>
+</tr>
+</tbody>
+</table>
+<p>계산 모델(고압 추기 2.8 MPa, 1.0 MPa에서 습분분리 후 260 °C로 재열, 저압 추기 0.15 MPa, 최종 급수 230.9 °C)로 비교하면 다음과 같습니다.</p>
+<ul>
+<li>기본 37.8 % → 재생 3단 42.6 % → 재생 + MSR 42.5 %(배기 건도 0.675 → 0.820, 습분 32.5 % → 18.0 %)</li>
+<li>이 계산 조건에서는 재생이 효율을, MSR이 습분을 맡습니다. MSR의 효율 효과는 재열 조건과 실제 터빈 손실에 따라 달라지므로 일반화하지 않습니다.</li>
+<li>터빈 내부효율 85 %를 넣으면 재생 + MSR 36.8 %, 여기에 습분 손실·발전기·소내부하가 더해져 실제 순 효율은 약 33~35 %입니다(예시 APR1400: 3,983 MWt → 순 약 1,400 MWe, 약 35 %)[5].</li>
+</ul>
+<figure class="article-image"><img alt="PWR 2차측 재생-재열 랭킨 사이클 T-s 선도(실제 증기 물성), 상태점 1~9와 효율 비교" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-005-rankine-cycle/fig1_rankine_ts_pwr.avif"/><figcaption>PWR 2차측 재생-재열 랭킨 사이클 T-s 선도(실제 증기 물성), 상태점 1~9와 효율 비교</figcaption></figure>
+<h3>T-s 선도 상태점 (재생-재열, 2022·2026 기출 유형)</h3>
+<table>
+<thead>
+<tr>
+<th>번호</th>
+<th>위치·기기</th>
+<th>상태</th>
+<th>현상</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>복수기 출구</td>
+<td>5 kPa 포화수 32.9 °C</td>
+<td>응축 완료</td>
+</tr>
+<tr>
+<td>1→2</td>
+<td>복수펌프·주급수펌프</td>
+<td>압축수</td>
+<td>승압, T-s에선 1과 거의 겹침</td>
+</tr>
+<tr>
+<td>2→3</td>
+<td>저압·고압 급수가열기, 탈기기</td>
+<td>33 → 230.9 °C</td>
+<td>추기 증기로 급수 예열(재생)</td>
+</tr>
+<tr>
+<td>3→4</td>
+<td>증기발생기 예열부</td>
+<td>6.9 MPa 압축수 → 포화수</td>
+<td>현열 가열</td>
+</tr>
+<tr>
+<td>4→5</td>
+<td>증기발생기 비등부</td>
+<td>284.9 °C 등온</td>
+<td>증발, 출구 포화증기</td>
+</tr>
+<tr>
+<td>5→6</td>
+<td>고압터빈</td>
+<td>1.0 MPa, x = 0.828</td>
+<td>팽창, 2.8 MPa에서 추기</td>
+</tr>
+<tr>
+<td>6→7</td>
+<td>습분분리기</td>
+<td>1.0 MPa 포화증기</td>
+<td>습분 제거(배수는 급수계통으로, 유량 감소)</td>
+</tr>
+<tr>
+<td>7→8</td>
+<td>재열기</td>
+<td>260 °C 과열</td>
+<td>주증기(5)로 재열</td>
+</tr>
+<tr>
+<td>8→9</td>
+<td>저압터빈</td>
+<td>5 kPa, x = 0.820</td>
+<td>팽창, 저압 추기</td>
+</tr>
+<tr>
+<td>9→1</td>
+<td>복수기</td>
+<td>등압·등온</td>
+<td>응축, 해수로 방열</td>
+</tr>
+</tbody>
+</table>
+<p>추기와 습분 분리로 구간마다 유량이 달라지므로, 이 선도의 둘러싸인 면적을 그대로 순일로 읽으면 안 됩니다. 2→3도 실제로는 가열기 단마다 승압·혼합 가열이 이어지는 과정을 하나의 선으로 나타낸 것입니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>설계 — 효율과 습분</h3>
+<ul>
+<li>2차측 증기 조건은 1차측 고온관 온도와 증기발생기 전열 온도차로 정해집니다. 출력증강 시 증기 압력이 내려가는 이유도 같습니다.</li>
+<li>습증기 영역에서 팽창하므로 저압터빈 마지막 단 습분 침식과 습분 손실이 설계 변수입니다. 습분 1 %당 단 효율이 약 1 % 떨어진다는 Baumann 경험칙이 쓰입니다[3].</li>
+<li>습증기·고온수 배관은 유동가속부식(FAC)에 취약합니다.</li>
+</ul>
+<h3>운전 — 복수기 진공과 해수온</h3>
+<p>복수기 압력은 냉각 해수 온도로 정해집니다. 해수온이 6~7 °C 높은 중동 부지(2013년 4교시 5번)를 이상 기본 사이클로 계산하면(복수 온도도 같은 폭으로 오른다고 가정), 복수기 5 kPa(32.9 °C) → 7.4 kPa(40.0 °C)에서 효율이 37.8 → 36.8 %로 약 1 %p 떨어집니다. 1차측 용량과 주증기·주급수 배관이 고정이면 전기출력이 줄어듭니다. 이를 보완하려면 복수기 전열면적·순환수 유량을 키우고 저압터빈 마지막 단을 높은 배압에 맞게 바꿔야 합니다.</p>
+<h3>계산 예 (2008년 3교시 5번)</h3>
+<p>원문 단위는 HWP 수식 객체에서 복원했습니다(유량 kg/sec, 비열 kJ/kg℃, 나 문항 MWt).</p>
+<ul>
+<li>Q_in = 18,640 × 6.1 × (315 − 295) = 2,274,080 kW ≈ <strong>2,274 MWt</strong> (2차측에 가용한 총 열에너지)</li>
+<li>Q_out = 28,230 × 4.3 × (31 − 17) = 1,699,446 kW ≈ 1,699 MW</li>
+<li>η = 1 − 1,699.4/2,274.1 = <strong>25.3 %</strong> (순일 약 575 MW)</li>
+</ul>
+<p>2022년 3교시 5번도 같은 구조입니다(Q_in = 16,491 × 5.862 × 31 ≈ 2,997 MWt). 다만 배기 엔탈피를 h = hf + x(hg − hf)로 읽으면 η ≈ 40.5 %, 2,093.84를 증발잠열로 읽으면 η ≈ 33.7 %가 되어 해석에 따라 답이 갈리므로, 답안에는 해석을 먼저 밝혀 둡니다.</p>
+<!-- 확인필요: 2022-3-5의 주어진 엔탈피 2,093.84/232.96 kJ/kg는 증기표상 같은 압력의 hg·hf로 일관되지 않음(hf 232.96 → 약 55.7 °C, hg ≈ 2,600). 출제 의도(hg 또는 hfg) 미확인 -->
+<h2>규제·기준 근거</h2>
+<p>열역학 사이클 자체는 안전규제 항목이 아니며, 2차측 설비 심사 기준으로 연결됩니다.</p>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NUREG-0800 SRP 10장 "Steam and Power Conversion System"[6]</td>
+<td>10.2 터빈발전기, 10.3 주증기, 10.4.1 주복수기, 10.4.7 복수·급수계통 심사</td>
+</tr>
+<tr>
+<td>KINS 경수로형 안전심사지침 10장</td>
+<td>SRP 10장 체계 준용</td>
+</tr>
+<tr>
+<td>10 CFR 50 App. A GDC 4[7]</td>
+<td>터빈 미사일 등 동적 영향 방호</td>
+</tr>
+<tr>
+<td>NRC GL 89-08(1989)[8]</td>
+<td>2차측 배관 감육(FAC) 관리 — Surry 2호기(1986) 급수배관 파열 계기</td>
+</tr>
+<tr>
+<td>IAPWS-IF97[1]</td>
+<td>산업용 증기 물성 표준(1997, IFC-67 대체)</td>
+</tr>
+<tr>
+<td>ASME PTC 6[9]</td>
+<td>증기터빈 성능시험</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: KINS 안전심사지침 현행판 명칭과 개정 연도 -->
+<p>출제 당시(2006~2026)와 비교해 원리 변화는 없습니다. 과거 IFC-67 기반 증기표와 IF97 값의 차이는 계산 결과에 영향을 주지 않는 수준입니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>랭킨</th>
+<th>카르노</th>
+<th>재열</th>
+<th>재생</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>핵심</td>
+<td>액체 압축, 실용 사이클</td>
+<td>등온 흡·방열, 이론 상한</td>
+<td>팽창 도중 재가열</td>
+<td>추기로 급수 예열</td>
+</tr>
+<tr>
+<td>효율 근거</td>
+<td>T̄_H &lt; T_H</td>
+<td>T_H 그대로</td>
+<td>T̄_H↑(고온 재열 시)</td>
+<td>저온 흡열 제거</td>
+</tr>
+<tr>
+<td>PWR 의미</td>
+<td>기본 37.8 %</td>
+<td>45.2 %</td>
+<td>습분 제어(MSR)</td>
+<td>효율 향상 주수단</td>
+</tr>
+</tbody>
+</table>
+<p>열효율과 열소비율도 구분합니다. 열소비율 HR = 3,600/η kJ/kWh이며, η 35 %면 약 10,286 kJ/kWh입니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 펌프 압축 → SG 등압가열 → 터빈 등엔트로피 팽창 → 복수기 등압응축의 증기 동력 사이클</li>
+<li><strong>효율</strong>: η = (w_t − w_p)/q_in = 1 − q_out/q_in, w_p ≈ v(P_H − P_L)</li>
+<li><strong>평균 흡열온도</strong>: η = 1 − T_L/T̄_H, 향상책은 T̄_H↑ 또는 T_L↓</li>
+<li><strong>PWR 예</strong>: 6.9 MPa 포화증기, 5 kPa → 이상 37.8 %, 카르노 45.2 %, 실제 순 약 33~35 %</li>
+<li><strong>과열</strong>: T̄_H↑, PWR U자관 SG는 포화증기</li>
+<li><strong>재열(MSR)</strong>: 배기 건도 0.675 → 0.820, 습분 침식·손실 저감이 주목적</li>
+<li><strong>재생</strong>: 추기 급수 예열, 이상 37.8 → 42.6 %, 6~7단</li>
+<li><strong>복수기</strong>: 해수온↑ → 배압↑ → 효율↓(5 → 7.4 kPa에서 약 1 %p)</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 재생-재열 랭킨 T-s 선도(포화 돔, 상태점 1~9)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-005-rankine-cycle/sketch1_rankine_ts_simple.avif"/><figcaption>답안지용 재생-재열 랭킨 T-s 선도(포화 돔, 상태점 1~9)</figcaption></figure>
+<figure class="article-image"><img alt="답안지용 2차계통 개략도(기기와 상태점 번호 대응)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-005-rankine-cycle/sketch2_secondary_loop_numbers.avif"/><figcaption>답안지용 2차계통 개략도(기기와 상태점 번호 대응)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026년 3교시 3번</td>
+<td>재생-재열 랭킨 T-S 선도와 기기</td>
+</tr>
+<tr>
+<td>2022년 3교시 6번</td>
+<td>재생-재열 T-S 선도에 1~13 표시</td>
+</tr>
+<tr>
+<td>2022년 3교시 5번</td>
+<td>2차계통 열효율 계산</td>
+</tr>
+<tr>
+<td>2016년 2교시 3번</td>
+<td>과열·재열·재생 효율 증진</td>
+</tr>
+<tr>
+<td>2013년 4교시 5번</td>
+<td>고해수온 부지의 BOP 설계변경</td>
+</tr>
+<tr>
+<td>2008년 3교시 5번</td>
+<td>2차 계통 열효율 계산</td>
+</tr>
+<tr>
+<td>제81회 4교시 3번</td>
+<td>기본 랭킨 T-s 선도와 4과정</td>
+</tr>
+<tr>
+<td>제78회 4교시 2번</td>
+<td>2차계통 랭킨 주기와 복수기 열량</td>
+</tr>
+</tbody>
+</table>
+<p>제78회 문항의 "열효율 η" 기호는 정리본에서 빠져 원본으로 복원했습니다. 복수기 열량은 Q_L = Pout(1/η − 1) = ṁ(h4 − h1)이고, 필요한 물성은 hg·sg(PH), hf·hfg·sf·sfg·vf(PL)입니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>IAPWS, R7-97(2012) "Revised Release on the IAPWS Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam" (IAPWS-IF97).</li>
+<li>Y. A. Çengel, M. A. Boles, Thermodynamics: An Engineering Approach, McGraw-Hill — 증기 동력 사이클(랭킨·재열·재생) 장.</li>
+<li>M. M. El-Wakil, Powerplant Technology, McGraw-Hill (1984) — 증기터빈 습분 손실(Baumann 경험칙).</li>
+<li>Power Engineering, "Cogeneration Considerations for the APR 1400 Turbine Cycle"(공개 기사) — 고압 1대·저압 3대, MSR 2단 재열, 7단 급수가열.</li>
+<li>OECD/NEA MDEP, TR-APR1400-01, 표 1.1 — APR1400 노심 열출력 3,983 MWt.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan Chapter 10 "Steam and Power Conversion System".</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix A, GDC 4.</li>
+<li>U.S. NRC, Generic Letter 89-08 "Erosion/Corrosion-Induced Pipe Wall Thinning" (1989).</li>
+<li>ASME, PTC 6 "Steam Turbines" Performance Test Code.</li>
+</ol>

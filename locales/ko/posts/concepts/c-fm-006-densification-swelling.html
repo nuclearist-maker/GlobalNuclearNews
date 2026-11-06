@@ -1,0 +1,218 @@
+<figure class="article-image"><img alt="[개념 노트] 핵연료 고밀화와 팽윤(Densification/Swelling) — 초기에 줄고 연소하며 부푸는 펠릿 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-006-densification-swelling/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>고밀화(densification)는 조사 초기에 UO₂ 펠릿의 미세 기공이 소멸해 밀도가 커지고 치수가 줄어드는 현상이고, 팽윤(swelling)은 핵분열로 생긴 고체·기체 핵분열생성물(FP)이 격자와 기포에 쌓여 펠릿 부피가 연소도에 따라 늘어나는 현상입니다.</strong></p>
+<p>두 현상은 방향이 반대라서, 펠릿 부피는 초기 수 GWd/tU까지 줄었다가 이후 연소도에 거의 비례해 다시 커집니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>고밀화 — 조사가 다시 소결한다</h3>
+<ul>
+<li>소결 펠릿은 이론밀도(TD)의 약 95 % 수준으로 만들며, 나머지 약 5 %가 기공입니다.</li>
+<li>조사 중 핵분열 파편 궤적(fission spike)이 지나가며 미세 기공(약 1 μm 내외) 주변의 공공을 격자로 녹여 내 기공이 사라집니다. 이를 노내 재소결이라고도 하며, 고온부에서는 열적 소결도 더해집니다.</li>
+<li>큰 기공(수 μm 이상)은 잘 사라지지 않습니다. 그래서 제조 단계에서 기공 크기 분포를 조절하면 고밀화를 억제할 수 있습니다.</li>
+<li>NRC RG 1.126 Rev.2는 노내 최대 밀도 증가를 <strong>노외 재소결 시험(1,700 °C, 24시간)의 밀도 증가 Δρ_sntr</strong>와 같다고 봅니다. 최대치는 일반적으로 10,000 MWd/t 미만에서 도달하고, 모델 동역학은 Δρ_sntr &lt; 4 %TD일 때 20 MWd/t까지 0, 20~2,000 MWd/t에서 log(BU)에 비례 증가, 2,000 MWd/t 이후 포화입니다[1].</li>
+<li>치수 환산은 직경 ΔD/D = Δρ/3ρ(등방), 길이 ΔL/L = Δρ/2ρ(보수적 비등방)로 둡니다[1].</li>
+</ul>
+<h3>팽윤 — U 원자 1개가 FP 원자 2개로</h3>
+<ul>
+<li><strong>고체 FP 팽윤</strong>: Zr·Mo·희토류·Cs 등이 격자에 녹거나 석출해 부피를 키웁니다. 온도와 무관하고 연소도에 거의 비례합니다.</li>
+<li><strong>기체 FP 팽윤</strong>: Xe·Kr이 입내·입계 기포로 성장·합체하며 부피를 키웁니다. 약 1,200 °C 이상 고온에서 중요하며, 출력 상승 과도 때 급증할 수 있습니다[7].</li>
+<li>국내 PWR 조사후시험(17개 봉, 49개 시료)에서 측정한 팽윤율은 **0.091 %/(GWd/tU)**로, 고체 FP만 고려한 이론치 0.088 %/(GWd/tU)와 거의 같았습니다[2]. 정상 운전 PWR 펠릿의 팽윤은 주로 고체 FP 몫이라는 뜻이며, 흔히 "10 GWd/tU당 약 0.7~1 %ΔV"로 기억합니다.</li>
+<li>같은 시험에서 누적 고밀화와 누적 팽윤이 상쇄되는(펠릿이 초기 부피를 회복하는) 연소도는 분말 제조 특성에 따라 5~20 GWd/tU로 보고되었습니다[2].</li>
+</ul>
+<h3>순 부피변화 — 두 곡선의 합</h3>
+<p>초기 밀도 95 %TD, Δρ_sntr = 1 %TD를 가정하고 RG 1.126 동역학에 팽윤율 0.091 %/(GWd/tU)를 일정 기울기로 외삽해 더하면 다음과 같습니다(예시 계산, 기체 팽윤·림 기공 미반영).</p>
+<table>
+<thead>
+<tr>
+<th>연소도 (GWd/tU)</th>
+<th>0</th>
+<th>2</th>
+<th>11.4</th>
+<th>20</th>
+<th>40</th>
+<th>60</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>순 ΔV/V (%)</td>
+<td>0</td>
+<td>−0.86</td>
+<td>0</td>
+<td>+0.78</td>
+<td>+2.60</td>
+<td>+4.42</td>
+</tr>
+</tbody>
+</table>
+<p>고밀화 최대 부피 감소는 −Δρ/(ρ₀+Δρ) = −1/96 ≈ −1.04 %이고, 직경으로는 약 −0.35 %입니다. 8.19 mm 펠릿이면 약 0.03 mm로, 초기 직경 간극(약 0.17 mm, 17×17 표준 예시)을 냉간 기하로 약 17 % 넓히는 크기입니다. 다만 부피 최저점이 곧 열간 간극 최대점은 아닙니다. 실제 간극은 열팽창·균열 재배치·피복관 크립다운이 함께 정합니다.</p>
+<figure class="article-image"><img alt="연소도 0~70 GWd/tU의 펠릿 순 부피변화(고밀화 성분·팽윤 성분·합) 예시 계산 곡선, RG 1.126 동역학 로그 삽입도, 간극에 작용하는 요인, RG 1.126 모델 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-006-densification-swelling/fig1_net_volume_vs_burnup.avif"/><figcaption>연소도 0~70 GWd/tU의 펠릿 순 부피변화(고밀화 성분·팽윤 성분·합) 예시 계산 곡선, RG 1.126 동역학 로그 삽입도, 간극에 작용하는 요인, RG 1.126 모델 카드</figcaption></figure>
+<h2>원전에서의 의미</h2>
+<h3>고밀화 — 초기 수명의 열적·기계적 문제</h3>
+<p>RG 1.126은 고밀화의 영향을 셋으로 정리합니다[1].</p>
+<ol>
+<li>직경 감소로 간극이 넓어져 간극 열전달계수 h_gap이 낮아지고, 연료 온도와 저장에너지가 올라갑니다. 10 CFR 50 Appendix K가 LOCA 전 저장에너지 계산에 고밀화를 반영하라고 요구하는 이유입니다[3].</li>
+<li>펠릿 길이 감소로 같은 출력에서 선출력이 커집니다.</li>
+<li>연료주(column)에 축방향 간극이 생기면 그 위치에서 국부 출력첨두(power spike)가 생기고, 피복관이 간극 속으로 주저앉을 수 있습니다.</li>
+</ol>
+<p>3번은 실제로 일어났습니다. 1972년 R.E. Ginna 재장전 점검에서 짧게 납작해진 연료봉 구간이 발견됐고, 원인은 고밀화로 생긴 축방향 간극에 냉각재 압력으로 피복관이 크립 붕괴(creep collapse)한 것이었습니다. 붕괴한 봉은 모두 <strong>무가압 봉</strong>이었고, Point Beach 1·Robinson 중성자속 측정에서도 간극 위치의 국부 첨두가 확인됐습니다. AEC는 같은 해 11월 고밀화 기술보고서를 내고 인허가 해석에 고밀화를 반영하게 했습니다[4]. 이후 헬륨 사전가압, 안정 펠릿(큰 결정립·기공 분포 관리), 플레넘 스프링, 재소결 시험 품질관리가 표준이 됐습니다.</p>
+<h3>팽윤 — 간극을 닫고 피복관을 민다</h3>
+<ul>
+<li>간극은 펠릿 균열 재배치·열팽창·팽윤(펠릿 쪽)과 피복관 크립다운(냉각재 압력 15.5 MPa가 내압보다 큼)으로 줄어들어, 설계에 따라 대략 수십 GWd/tU에서 열간 상태 간극이 닫힙니다. <!-- 확인필요: 간극 폐쇄 연소도는 설계·출력 이력 의존. 20~40 GWd/tU는 일반 범위로만 서술 --></li>
+<li>간극이 닫힌 뒤에는 팽윤과 열팽창이 피복관을 직접 밀어 펠릿-피복관 기계적 상호작용(PCMI)이 생기고, 출력 상승 과도 때 요오드 응력부식균열(PCI-SCC)로 이어질 수 있습니다.</li>
+<li>간극 폐쇄 뒤에는 접촉 열전도로 h_gap이 다시 커져 연료 온도가 내려갑니다. 연료온도계수가 연소에 따라 달라지는 이유 중 하나입니다.</li>
+</ul>
+<h3>고연소도 — 림(rim) 조직(HBS)</h3>
+<p>펠릿 외곽은 U-238 공명포획으로 Pu-239가 쌓여 국부 연소도가 평균보다 높습니다. 국부 연소도 약 60~80 GWd/t 이상, 온도 약 1,000~1,200 °C 이하 조건에서 결정립이 0.1~0.3 μm 수준으로 미세화되고 μm급 기공이 늘어납니다(고연소도 조직, HBS). 펠릿 평균 약 40~45 GWd/t 이상에서 외곽 100~200 μm 두께로 나타납니다[6]. 림은 기공에 기체를 붙잡아 국부 팽윤을 키우고 열전도를 낮추며, RIA나 LOCA 때 미세 파쇄와 기체 급방출의 원천이 됩니다.</p>
+<figure class="article-image"><img alt="고연소도 펠릿 단면의 반경 3구역(중심 기체 팽윤·FGR, 중간 고체 팽윤, 외곽 림)과 반경별 온도·국부 연소도 개념 곡선" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-006-densification-swelling/fig2_pellet_radial_zones.avif"/><figcaption>고연소도 펠릿 단면의 반경 3구역(중심 기체 팽윤·FGR, 중간 고체 팽윤, 외곽 림)과 반경별 온도·국부 연소도 개념 곡선</figcaption></figure>
+<p>1 %FIMA ≈ 9.4 GWd/tHM이므로 팽윤 0.091 %/(GWd/tU)는 약 0.86 %/%FIMA입니다.</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50 App. A GDC 10</td>
+<td>정상운전·예상운전과도에서 허용핵연료설계제한치(SAFDL) 초과 금지[3]</td>
+</tr>
+<tr>
+<td>10 CFR 50 App. K</td>
+<td>LOCA 전 정상상태 온도분포·저장에너지 계산에 고밀화 고려[3]</td>
+</tr>
+<tr>
+<td>NRC RG 1.126 Rev.2(2010)</td>
+<td>고밀화 모델: 재소결 1,700 °C·24 h, 동역학, 95/95 통계, 등방성 가정. 기술 근거 NUREG-0085(1976). 2015 검토에서 변경 불요[1]</td>
+</tr>
+<tr>
+<td>NUREG-0800 SRP 4.2</td>
+<td>피복관 붕괴 방지, 피복관 변형률, 내압, 연료 온도 등 설계기준 평가에 고밀화·팽윤 반영[5]</td>
+</tr>
+<tr>
+<td>KINS 안전심사지침 4.2(핵연료계통 설계)</td>
+<td>국내 핵연료계통 설계 심사의 동등 체계</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: SRP 4.2 현행 판 원문과 피복관 균일 변형률 1 % 기준 문구, KINS 안전심사지침 4.2 현행 판 조항은 원문 미열람(다수 문헌 일치) -->
+<p>출제 당시(2003~2006년, 제71·76·78회)와 비교해 고밀화 모델은 1970년대 RG 1.126 초판 이후 2010년 Rev.2로 개정됐지만 재소결 시험 기반 골격은 같습니다. 현행 답안이라면 고연소도 림 조직과 연소도 의존 RIA·LOCA 기준 강화를 한 줄 덧붙이는 것이 좋습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>고밀화</th>
+<th>고체 FP 팽윤</th>
+<th>기체 FP 팽윤</th>
+<th>피복관 조사성장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>대상</td>
+<td>펠릿</td>
+<td>펠릿</td>
+<td>펠릿</td>
+<td>피복관(Zr 합금)</td>
+</tr>
+<tr>
+<td>부피 방향</td>
+<td>감소</td>
+<td>증가</td>
+<td>증가</td>
+<td>부피 거의 불변, 축방향 신장</td>
+</tr>
+<tr>
+<td>원인</td>
+<td>미세 기공 소멸</td>
+<td>FP 원자 격자 축적</td>
+<td>Xe·Kr 기포 성장</td>
+<td>조사로 인한 비등방 결정 변형</td>
+</tr>
+<tr>
+<td>시기·조건</td>
+<td>초기(수 GWd/t 내 포화)</td>
+<td>연소 내내, 온도 무관</td>
+<td>고온(약 1,200 °C 이상), 과도</td>
+<td>연소 내내(고속중성자 조사량)</td>
+</tr>
+<tr>
+<td>크기</td>
+<td>약 −0.5~−1.5 %ΔV(펠릿 의존)</td>
+<td>약 0.9 %ΔV/10 GWd/tU</td>
+<td>온도 이력 의존</td>
+<td>집합체 길이·휨 문제</td>
+</tr>
+<tr>
+<td>결과</td>
+<td>간극 확대, power spike, 피복관 붕괴</td>
+<td>간극 폐쇄, PCMI</td>
+<td>PCMI 하중 증가, FGR 연계</td>
+<td>상하단 노즐 간섭, 집합체 휨</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: 고밀화 크기 −0.5~−1.5 %ΔV는 현대 펠릿의 일반 범위(재소결 Δρ_sntr 의존), 1970년대 불안정 펠릿은 더 큼 -->
+<p>2017년 2교시 3번, 2023년 3교시 2번은 이 표의 네 현상과 핵분열기체 방출, 피복관 산화·수소화를 함께 묻습니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>고밀화 정의</strong>: 조사 초기 UO₂ 펠릿 미세 기공(약 1 μm)이 핵분열 파편에 의해 소멸 → 밀도 증가, 직경·길이 감소(노내 재소결)</li>
+<li><strong>고밀화 특성</strong>: 수 GWd/tU 내 포화, 크기 = 재소결 시험(1,700 °C·24 h) Δρ (RG 1.126)</li>
+<li><strong>고밀화 영향</strong>: 간극 확대 → h_gap↓·연료온도·저장에너지↑, 선출력↑, 축방향 간극 → power spike·피복관 붕괴(1972 Ginna 무가압봉)</li>
+<li><strong>고밀화 대책</strong>: He 사전가압, 기공 분포·결정립 관리, 플레넘 스프링, 설계해석 반영</li>
+<li><strong>팽윤 정의</strong>: FP 생성(U 1개 → FP 2개)에 따른 부피 증가</li>
+<li><strong>팽윤 구분</strong>: 고체 FP(온도 무관, 약 0.9 %ΔV/10 GWd/tU), 기체 FP(약 1,200 °C 이상, 기포 성장·합체)</li>
+<li><strong>팽윤 영향</strong>: 간극 폐쇄 → PCMI·PCI, 내압·FGR 연계, 고연소도 림(HBS) 기공·미세화</li>
+<li><strong>순 거동</strong>: 초기 감소(고밀화 우세) → 5~20 GWd/tU에서 누적 상쇄(초기 부피 회복) → 이후 선형 증가(팽윤 우세)</li>
+<li><strong>규제</strong>: GDC 10(SAFDL), App. K(저장에너지), RG 1.126, SRP 4.2</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 순 부피변화 곡선(고밀화 파선·팽윤 점선·순 변화 실선)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-fm-006-densification-swelling/sketch1_net_volume_curve.avif"/><figcaption>답안지용 순 부피변화 곡선(고밀화 파선·팽윤 점선·순 변화 실선)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023년 3교시 2번</td>
+<td>연소도 증가에 따른 연료봉 증상(팽윤·고밀화, FGR, 산화·수소화, 조사성장)</td>
+</tr>
+<tr>
+<td>2017년 2교시 3번</td>
+<td>출력운전 중 연료봉 현상(팽윤·고밀화, FGR, 산화·수소화, 조사성장)</td>
+</tr>
+<tr>
+<td>제78회 1교시 7번</td>
+<td>Fuel Swelling</td>
+</tr>
+<tr>
+<td>제76회 1교시 1번</td>
+<td>핵연료 고밀화(Densification of Fuel Pellet)</td>
+</tr>
+<tr>
+<td>제71회 3교시 5번</td>
+<td>UO₂ 연소 중 치수·미세구조 변화</td>
+</tr>
+<tr>
+<td>제71회 1교시 7번</td>
+<td>핵연료의 팽윤</td>
+</tr>
+</tbody>
+</table>
+<p>제71회 3교시 5번은 "치수와 미세구조"를 함께 묻습니다. 치수는 이 노트의 순 부피변화 곡선으로, 미세구조는 반경 방향 3구역(중심 기포·결정립 성장, 중간, 외곽 림)과 FGR로 답하면 됩니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, Regulatory Guide 1.126 "An Acceptable Model and Related Statistical Methods for the Analysis of Fuel Densification", Rev. 2 (2010), NRC ADAMS ML093360318.</li>
+<li>민덕기 외, "가압경수로 핵연료의 조사후시험 — Swelling 거동", 한국원자력학회 2003 추계학술발표회.</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix A (GDC 10) 및 Appendix K "ECCS Evaluation Models".</li>
+<li>U.S. AEC Regulatory Staff, "Technical Report on Densification of Light Water Reactor Fuels", WASH-1236 (1972.11).</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.2 "Fuel System Design".</li>
+<li>V. V. Rondinella, T. Wiss, "The high burn-up structure in nuclear fuel", Materials Today 13(12), 24–32 (2010).</li>
+<li>D. R. Olander, Fundamental Aspects of Nuclear Reactor Fuel Elements, TID-26711-P1, U.S. ERDA (1976).</li>
+</ol>

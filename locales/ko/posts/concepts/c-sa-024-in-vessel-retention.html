@@ -1,0 +1,236 @@
+<figure class="article-image"><img alt="[개념 노트] 노내 노심용융물 억류(IVR) — 외벽냉각으로 하부헤드를 지키는 조건과 한계 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-024-in-vessel-retention/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>노내 노심용융물 억류(IVR, In-Vessel Retention)는 노심이 녹아 원자로용기 하부헤드에 고인 뒤에도 원자로공동을 물로 채워 용기 외벽을 냉각(ERVC)함으로써 용기 파손을 막고 용융물을 용기 안에 가두는 중대사고 완화 전략입니다.</strong></p>
+<p>기출의 "노내보존", "노내억제", "노내억류"는 모두 같은 개념입니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>왜 용기 안에 가두려 하나</h3>
+<p>용기가 뚫리면 격납건물에서 노외 증기폭발(FCI), 용융물–콘크리트 상호작용(MCCI), 고압 분출·격납건물 직접가열(HPME·DCH)이 차례로 문제가 됩니다. 이 현상들은 불확실성이 큽니다. IVR은 용기 파손 자체를 막아 이 현상들이 생길 여지를 없앱니다. 이것이 노외에서 용융물을 받아 식히는 코어캐처와 다른 점입니다. AP1000 DCD 19.39절도 같은 취지로 IVR을 설명합니다[1].</p>
+<h3>하부헤드 용융풀의 구조 — 성층화</h3>
+<p>하부 플레넘에 모인 용융물은 밀도 차로 층을 이룹니다.</p>
+<table>
+<thead>
+<tr>
+<th>층</th>
+<th>구성</th>
+<th>열원</th>
+<th>벽에 주는 열속</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>경금속층(위, 산화물보다 저밀도)</td>
+<td>용융 스테인리스강 등 철계 합금 + 미산화 Zr</td>
+<td>붕괴열 거의 없음</td>
+<td>산화물풀 윗면 열을 받아 측벽 좁은 띠로 전달 → 국부 최대</td>
+</tr>
+<tr>
+<td>산화물 용융풀(아래)</td>
+<td>UO₂·ZrO₂</td>
+<td>붕괴열 대부분</td>
+<td>자연대류로 바닥에서 작고 위로 갈수록 증가</td>
+</tr>
+<tr>
+<td>크러스트</td>
+<td>고화 산화물</td>
+<td>—</td>
+<td>벽과 용융풀 사이 얇은 막</td>
+</tr>
+</tbody>
+</table>
+<p><strong>집속 효과(focusing effect)</strong> 가 핵심입니다. 산화물풀 윗면으로 올라간 열이 금속층으로 들어가는데, 금속층 윗면은 복사로만 열을 잃습니다. 그래서 열이 금속층이 닿는 좁은 측벽 띠로 몰립니다. 금속층이 <strong>얇을수록</strong> 열을 받는 벽 면적이 작아 측벽 열속이 커집니다.</p>
+<p>미산화 Zr이 많으면 우라늄 일부가 금속상으로 옮겨 <strong>무거운 금속층</strong>이 산화물풀 아래로 가라앉는 3층 구조(역성층)가 될 수 있습니다(OECD MASCA)[3]. 그러면 위 경금속층이 더 얇아져 집속 효과가 심해집니다. AP1000 DCD는 이 바닥 금속층의 형성 가능성을 작다고 평가했습니다.</p>
+<h3>외벽냉각과 하향면 임계열속</h3>
+<p>공동을 채우면 하부헤드 외벽에서 핵비등이 일어납니다. 용기와 보온재 사이 간극은 굴뚝처럼 작동해 2상 자연순환을 만듭니다. 물은 아래로 들어오고 증기는 위로 빠집니다. 외벽이 받아낼 수 있는 최대 열속이 하향면 CHF입니다. 바닥 정점(θ = 0°)은 기포가 빠지기 어려워 CHF가 가장 작고, 적도(θ = 90°) 쪽으로 갈수록 커집니다.</p>
+<p>평판 배플을 쓴 ULPU-III 실험의 상관식은 각도만의 함수입니다.</p>
+<p>q″CHF(θ) = 490 + 30.2θ − 0.888θ² + 1.35×10⁻²θ³ − 6.65×10⁻⁵θ⁴ [kW/m², θ는 도][2][4]</p>
+<p>이 식으로 계산하면 θ = 0°에서 0.49, 30°에서 0.91, 60°에서 1.16, 90°에서 1.49 MW/m²입니다. AP1000은 하부헤드 둘레에 반구형 배플을 두고 수위를 충분히 확보해 CHF를 높였습니다. 시험(ULPU-2000 구성 IV, 이후 ULPU-2400)에서는 적도 부근 약 2 MW/m²가 보고되었습니다[3].</p>
+<h3>성공 판정 — 열속 대 임계열속</h3>
+<p>열적 판정은 <strong>모든 각도에서 외벽 열속 q″(θ)/q″CHF(θ) &lt; 1</strong>입니다. 정상 상태에서는 외벽 열속이 용융풀이 내벽에 주는 열속과 같지만, 과도 상태에서는 벽 내 열저장 때문에 다를 수 있습니다. 감압, 잔존 벽의 구조 건전성, 지속 냉각은 별도 조건입니다. 열속이 CHF를 넘으면 막비등으로 벽 온도가 치솟고 강도를 잃어 파손됩니다. AP1000 DCD는 RCS가 감압된 상태라면 구조 파손보다 이 열적 파손이 한계라고 정리했습니다. 평균 열속이 아니라 <strong>금속층 높이의 국부 최대 열속</strong>이 여유를 좌우합니다.</p>
+<figure class="article-image"><img alt="물에 잠긴 하부헤드 단면(산화물풀·상부 금속층·보온재 배플)과 θ별 ULPU-III CHF 곡선 대 얇은·두꺼운 금속층 외벽 열속 형상 예시" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-024-in-vessel-retention/fig1_lower_head_heat_flux_vs_chf.avif"/><figcaption>물에 잠긴 하부헤드 단면(산화물풀·상부 금속층·보온재 배플)과 θ별 ULPU-III CHF 곡선 대 얇은·두꺼운 금속층 외벽 열속 형상 예시</figcaption></figure>
+<!-- 확인필요: 열속 곡선은 문헌 대표값(Loviisa 금속층 최대 0.68, AP1000 최대 추정 1.3 MW/m²)을 참고한 형상 예시이며 특정 노형 해석값이 아님 -->
+<p>대표값을 보면 저출력 노형에서는 여유가 큽니다. Loviisa는 금속층 최대 열속 약 680 kW/m²에 ULPU CHF 1,200 kW/m² 이상으로 평가되었습니다. AP600은 열부하비가 대부분 0.6 미만이었습니다[2][3]. AP1000은 최대 열부하 추정 약 1.3 MW/m²로, 향상된 CHF 약 2 MW/m²와 비교합니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>성공 조건 네 가지 (AP600 ROAAM → AP1000 DCD 19.39)</h3>
+<ol>
+<li><strong>RCS 감압</strong>: 저압이어야 벽 응력이 작아 크리프 파손을 피합니다. 감압은 HPME·DCH 방지와도 겹칩니다.</li>
+<li><strong>충분한 침수</strong>: 하부헤드가 잠기고 2상 자연순환이 가능한 수위가 필요합니다.</li>
+<li><strong>보온재 유로</strong>: 반사형 보온재가 물 유입구, 증기 배출구, 배플 역할을 하며 비등 하중에 견뎌야 합니다.</li>
+<li><strong>외표면 상태</strong>: 도장·코팅이 젖음을 방해하지 않아야 합니다. AP1000 하부헤드 외면은 무도장 금속입니다.</li>
+</ol>
+<h3>노형별 적용</h3>
+<table>
+<thead>
+<tr>
+<th>노형</th>
+<th>적용 방식</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loviisa 1·2 (VVER-440, 핀란드)</td>
+<td>IVR의 출발점, 후행 보강</td>
+<td>저출력밀도, 하부 관통부 없음, 얼음응축기 격납건물이 공동 침수 보장, 보온재 간극 확대 개조. STUK 1995년 승인</td>
+</tr>
+<tr>
+<td>AP600</td>
+<td>ROAAM으로 용기 파손 확률 0 처리</td>
+<td>저출력, 여유 큼</td>
+</tr>
+<tr>
+<td>AP1000</td>
+<td>PRA에서 IVR 크레딧</td>
+<td>운전원이 IRWST–재순환 집수조 배관의 전동밸브·스퀴브밸브 개방(CET 1,200 °F = 649 °C, AFR-C.1 진입 시). 증기 배출구 높이(98 ft)까지 70분 안에 침수 가정. 하부헤드 관통부 없음</td>
+</tr>
+<tr>
+<td>APR1400</td>
+<td>중대사고관리(SAMG) 전략</td>
+<td>설계 설비는 공동 충수계통(CFS)이고, 공개 해석은 붕산수보충펌프 등으로 공동 수위를 보충하는 IVR-ERVC를 가정[4]. 인허가 설계기준 크레딧은 없음</td>
+</tr>
+<tr>
+<td>HPR1000·CAP1400(중국), i-SMR(국내)</td>
+<td>설계에 IVR-ERVC 채택</td>
+<td>i-SMR은 예비 해석 단계</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: Loviisa STUK 승인 연도(1995.12)는 Ma et al. 2016 리뷰 2차 인용, STUK 원문 미대조 -->
+<!-- 확인필요: i-SMR의 IVR-ERVC 채택은 KAERI 학회 논문(KNS 2024~2026) 기준, 표준설계 인가 문서 미대조 -->
+<p>출력이 클수록 붕괴열이 커지므로 여유가 줄어듭니다. 1,000 MWe급 이상(AP1000, APR1400)은 보온재 개선(CHF 약 +20 %), 미세다공 코팅(약 +80 %, 병용 시 약 2.2배) 같은 CHF 향상 연구가 이어졌습니다. APR1400 대상 연구에서는 향상 수단 없이 시나리오별 평균 열부하 0.15~1.64 MW/m², 적도 CHF 1.3~1.45 MW/m²로 여유가 충분하지 않은 경우가 보고되었습니다[3].</p>
+<h3>불확실성</h3>
+<ul>
+<li><strong>열부하</strong>: 2층/3층 구성, 금속층 두께(Zr 산화 분율, 강재 용융량), 정상 상태에 이르기 전 재배치 과도</li>
+<li><strong>CHF</strong>: 유로 형상·간극, 표면 상태, 코팅 내구성, 2상 유량 진동. APR1400 ERVC 해석에서 ULPU-III·SULTAN 상관식은 DNB 이후 영역을, Toshiba 상관식은 핵비등 유지를 예측해 상관식 선택만으로 결론이 갈렸습니다[4].</li>
+<li><strong>벽</strong>: 내면 용삭으로 잔여 두께 감소, 잔류 압력에 의한 크리프</li>
+<li><strong>실증</strong>: 실험 Rayleigh 수가 원형보다 작고, 실제 노심 용융 참고 사례는 TMI-2뿐</li>
+<li><strong>트레이드오프</strong>: 공동을 미리 채운 상태에서 IVR이 실패하면 용융물이 물속으로 떨어져 노외 증기폭발 하중이 생길 수 있습니다. 격납건물 파손모드 평가에서 함께 따집니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>원자력안전법 제20조②·제21조①6호, 기술기준규칙 제85조의19~23</td>
+<td>사고관리계획서 제출과 사고관리 요건(2016.6 시행)</td>
+</tr>
+<tr>
+<td>원안위 고시 제2026-1호 별표 3 [5]</td>
+<td>위협요인 7종(MCCI, FCI, HPME, DCH 등). IVR은 대처 수단의 하나이며 특정 수단으로 의무화되지 않음</td>
+</tr>
+<tr>
+<td>SECY-93-087, 10 CFR 52.47(a)(23) [6]</td>
+<td>진화형 경수로 중대사고 설계(공동 면적 0.02 m²/MWt 등), DC 신청서의 중대사고 설계 특성</td>
+</tr>
+<tr>
+<td>AP1000 DCD Rev.19 19.39 [1][2]</td>
+<td>IVR 성공 조건과 PRA 반영 근거(DOE/ID-10460 ROAAM, ULPU·ACOPO 시험)</td>
+</tr>
+<tr>
+<td>IAEA SSR-2/1 Rev.1 요건 20 [8]</td>
+<td>설계확장조건(노심용융 포함) 고려</td>
+</tr>
+</tbody>
+</table>
+<p><strong>출제 당시 대비 달라진 점</strong>: 제68회(2003)·제78회(2005)는 AP600·Loviisa 중심의 신개념이었습니다. 2016·2018년 출제 때는 중대사고 대처가 정책에 따른 자율 이행이었습니다. 현행은 위협요인별 대처능력을 사고관리계획서로 입증합니다. 2025.1 새울 1·2·신한울 1·2 계획서가 처음 승인되었습니다[7]. 위협요인 별표는 출제 당시 고시 제2017-34호 별표 2에서 현행 제2026-1호 별표 3으로 바뀌었습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>IVR-ERVC</th>
+<th>원자로공동 충수(CFS)</th>
+<th>코어캐처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>용기 파손</td>
+<td>막는다(파손 불허)</td>
+<td>파손 후 대응</td>
+<td>파손 후 대응</td>
+</tr>
+<tr>
+<td>냉각 대상</td>
+<td>하부헤드 외벽</td>
+<td>공동 바닥에 퍼진 용융물(상부 침수)</td>
+<td>전용 구조물에 받은 용융물</td>
+</tr>
+<tr>
+<td>주 대응 위협</td>
+<td>FCI·MCCI·DCH를 원천 차단</td>
+<td>MCCI 완화, 세정</td>
+<td>MCCI 방지, 장기 냉각</td>
+</tr>
+<tr>
+<td>핵심 한계</td>
+<td>국부 열속 &lt; CHF</td>
+<td>상부 침수만으로 냉각 보장 안 됨</td>
+<td>희생재·구조물 설계, 노외 FCI</td>
+</tr>
+<tr>
+<td>예</td>
+<td>Loviisa, AP1000, APR1400(SAMG)</td>
+<td>APR1400</td>
+<td>EPR, VVER-1000/1200, EU-APR</td>
+</tr>
+</tbody>
+</table>
+<p>같은 IRWST 물을 써도 IVR은 용기 파손 <strong>전에</strong> 하부헤드를 잠기게 하는 것이고, CFS의 1차 목적은 파손 <strong>후</strong> 용융물 냉각입니다.</p>
+<p>2016년 4교시 4번(노내·노외 전략)은 노내 = 감압·재관수·IVR-ERVC, 노외 = 공동 충수·넓은 공동 바닥·코어캐처·살수/여과배기로 나눠 답합니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 하부헤드로 재배치된 용융물을 <strong>용기 안에 가두는</strong> 중대사고 완화 전략, 수단 = <strong>외벽냉각(ERVC, 공동 침수)</strong></li>
+<li><strong>목적</strong>: 용기 파손 방지 → 노외 FCI·MCCI·HPME/DCH 원천 차단</li>
+<li><strong>용융풀</strong>: 산화물풀(붕괴열) + 위 <strong>경금속층</strong> 2층 성층, 3층 역성층 가능</li>
+<li><strong>집속 효과</strong>: 얇은 금속층 → 측벽 국부 열속 최대</li>
+<li><strong>열적 판정</strong>: 모든 θ에서 외벽 <strong>q″(θ) &lt; q″CHF(θ)</strong>, CHF는 바닥(θ = 0°) 최소, 적도 쪽 증가(ULPU-III 0.49 → 1.49 MW/m²)</li>
+<li><strong>성공 조건</strong>: RCS 감압, 충분한 침수, 보온재 유로(유입·배출·배플), 외표면 젖음</li>
+<li><strong>적용</strong>: Loviisa(VVER-440), AP600·AP1000(PRA 크레딧), APR1400(SAMG 전략, 인허가 크레딧 없음)</li>
+<li><strong>불확실성</strong>: 금속층 두께, CHF 상관식, 벽 용삭, 실패 시 노외 증기폭발</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 하부헤드 단면, 성층 용융풀, 외벽 물·증기 흐름, θ와 판정식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-024-in-vessel-retention/sketch1_ivr_ervc_answer.avif"/><figcaption>답안지용 하부헤드 단면, 성층 용융풀, 외벽 물·증기 흐름, θ와 판정식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2018년 3교시 4번</td>
+<td>노내억류(IVR) 설비와 노외냉각설비(코어캐처)</td>
+</tr>
+<tr>
+<td>2016년 4교시 4번</td>
+<td>노심용융물 억제·냉각의 노내 전략과 노외 전략</td>
+</tr>
+<tr>
+<td>제78회 1교시 9번</td>
+<td>In-Vessel Retention</td>
+</tr>
+<tr>
+<td>제68회 1교시 12번</td>
+<td>노심용융물 노내보존(IVR)</td>
+</tr>
+</tbody>
+</table>
+<p>2018년 3교시 4번 원문은 띄어쓰기가 빠져 있어 띄어쓰기만 복원했습니다. 문항은 "중대사고 대응설비 중 노심용융물 노내억류(In-Vessel Retention) 설비와 노심용융물 노외냉각설비(Core Catcher)에 대하여 기술하시오."입니다. IVR 설비(감압, 공동 침수 유로, 보온재 배플)와 코어캐처를 위 비교표 순서로 대비하면 됩니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>Westinghouse, AP1000 Design Control Document, Rev. 19 (2011), Tier 2 Ch. 19, Sec. 19.39 "In-Vessel Retention of Molten Core Debris". NRC ADAMS 공개.</li>
+<li>T. G. Theofanous 외, "In-Vessel Coolability and Retention of a Core Melt", DOE/ID-10460, U.S. DOE (1995) — ROAAM, ULPU·ACOPO.</li>
+<li>W. Ma 외, "In-Vessel Melt Retention of Pressurized Water Reactors: Historical Review and Future Research Needs", Engineering 2 (2016) 103–111.</li>
+<li>박일웅·이연건·김응수, 한국원자력학회 2021 춘계학술발표회 발표 논문(ULPU-III 상관식 인용, APR1400 ERVC MARS-KS 해석 — 논문 제목 미기재).</li>
+<li>원자력안전위원회 고시 제2026-1호 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」(2026.1.16), 별표 3. 국가법령정보센터.</li>
+<li>U.S. NRC, SECY-93-087 (1993); 10 CFR 52.47(a)(23).</li>
+<li>원자력안전위원회, 제206회 회의(2025.1.9) 의안 — 새울 1·2호기, 신한울 1·2호기 사고관리계획서 심사 결과.</li>
+<li>IAEA, SSR-2/1 (Rev. 1) "Safety of Nuclear Power Plants: Design" (2016), Requirement 20.</li>
+</ol>

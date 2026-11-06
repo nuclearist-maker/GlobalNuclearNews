@@ -1,0 +1,268 @@
+<figure class="article-image"><img alt="[개념 노트] 비상노심냉각계통(ECCS) — 피동 SIT와 능동 HPSI·LPSI가 시간대별로 나눠 맡는 노심 냉각 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-008-emergency-core-cooling-system/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>비상노심냉각계통(ECCS)은 냉각재상실사고(LOCA) 등 설계기준사고에서 원자로냉각재계통(RCS)에 붕산수를 넣어 노심을 냉각하고 부반응도를 더하며, 사고 후 재순환으로 붕괴열을 장기간 제거하는 공학적 안전설비입니다. 가압경수로에서는 피동 안전주입탱크(SIT)와 능동 고압·저압 안전주입펌프(HPSI·LPSI), 수원(재장전수탱크·집수조), 작동 신호(SIAS·RAS)를 묶어 하나의 계통으로 봅니다.</strong></p>
+<h2>원리와 메커니즘</h2>
+<h3>기능 — LOCA만을 위한 계통이 아니다</h3>
+<ol>
+<li><strong>재고량 보충·노심 냉각</strong>: LOCA로 잃은 냉각재를 보충해 노심을 다시 덮고 피복재 온도를 낮춥니다.</li>
+<li><strong>부반응도 주입</strong>: 고농도 붕산수(예: APR1400 IRWST 4,000~4,400 ppm[5])로 주증기관 파단 같은 과냉각 사고의 재임계를 막고 정지여유를 확보합니다. 부반응도 요건은 주로 2차측 냉각재 상실을 기준으로 정합니다[6].</li>
+<li><strong>장기 냉각</strong>: 수원이 바닥나면 격납건물 집수조의 물을 다시 넣는 재순환으로 붕괴열을 계속 제거합니다.</li>
+<li><strong>붕산 석출 방지</strong>: 장기 냉각 중 고온관·저온관 동시 주입으로 노심의 붕산 농축을 씻어 냅니다.</li>
+</ol>
+<p>CE형 표준기술지침서(NUREG-1432)의 기술배경은 대상 사고를 LOCA, 제어봉 집합체 이탈, 2차측 냉각재 상실, 증기발생기 전열관 파단(SGTR)으로 듭니다[6].</p>
+<h3>CE형(OPR1000 계열)의 구성 — 피동부와 능동부</h3>
+<table>
+<thead>
+<tr>
+<th>기기</th>
+<th>수량·배치(CE형 예)</th>
+<th>기능</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>안전주입탱크(SIT)</td>
+<td>4기, 저온관마다 1기, 질소 가압(초기 압력은 호기별 설계값 — 예: APR1400 578~624 psig[5])</td>
+<td>RCS 압력이 탱크 압력 아래로 떨어지면 압력차로 자동 주입(피동). 격리밸브는 운전 중 열림 유지·구동부 전원 차단[6]</td>
+</tr>
+<tr>
+<td>고압안전주입펌프(HPSI)</td>
+<td>계열당 1대(2계열)</td>
+<td>소형 LOCA 보충, RAS 뒤 집수조 재순환, 고온관 주입</td>
+</tr>
+<tr>
+<td>저압안전주입펌프(LPSI)</td>
+<td>2대</td>
+<td>대형 LOCA 대유량 주입, RAS 시 자동 정지, 정지냉각 겸용[7]</td>
+</tr>
+<tr>
+<td>재장전수탱크(RWT)</td>
+<td>격납건물 밖, 고농도 붕산수</td>
+<td>주입 단계 수원</td>
+</tr>
+<tr>
+<td>재순환 집수조</td>
+<td>격납건물 최저점, 스크린 설치</td>
+<td>재순환 단계 수원</td>
+</tr>
+<tr>
+<td>삼인산나트륨(TSP)</td>
+<td>격납건물 바닥 바스켓</td>
+<td>재순환수 pH 7 이상 유지 → 요오드 휘발·응력부식균열 억제[8]</td>
+</tr>
+</tbody>
+</table>
+<p>용량·설정치(펌프 유량·양정, 탱크 체적)는 호기별 설계값이라 이 노트에서는 쓰지 않습니다.</p>
+<p>SIT 4기 중 1기는 파단부로 그대로 빠져나간다고 가정합니다. 나머지 3기로 기능하도록 질소량·수량·배관 크기를 정합니다[6].</p>
+<h3>작동 신호</h3>
+<ul>
+<li><strong>SIAS(안전주입작동신호)</strong>: 가압기 저압력 또는 격납건물 고압력. HPSI·LPSI가 자동 기동하고 주입 모관 격리밸브가 열립니다. 설정치는 노형별이며, 예로 APR1400은 가압기 저압력 1,810 psia·격납건물 고압력 1.9 psig(공칭)입니다[9].</li>
+<li><strong>RAS(재순환작동신호)</strong>: RWT 저수위. LPSI가 자동 정지하고 집수조 쪽 흡입 밸브가 열려 흡입이 집수조로 바뀝니다. 이후 HPSI와 격납건물 살수펌프가 집수조 물을 씁니다[7].</li>
+</ul>
+<h3>압력으로 나눈 역할 분담</h3>
+<p>세 수단은 담당 압력대가 다릅니다. HPSI는 고압에서도 들어가 소형 LOCA를 맡고, SIT는 RCS 압력이 탱크의 질소 압력(예: APR1400 578~624 psig[5]) 아래로 내려가면 압력차로 대량 주입합니다. LPSI는 저압에서 대유량을 냅니다. 대형 LOCA에서는 세 수단이 겹쳐 들어갑니다. 원심펌프라 RCS 압력이 낮을수록 주입 유량이 늘어납니다. 펌프 곡선의 체절양정(유량 0일 때 양정)은 펌프 차압이므로 RCS 절대압력의 주입 상한으로 그대로 읽으면 안 됩니다. 실제 주입 개시 압력과 유량은 흡입 수두·배관 손실까지 반영한 호기 설계 펌프 곡선과 해석이 정합니다.</p>
+<figure class="article-image"><img alt="정상운전 압력 대비 HPSI(고압)·SIT(초기 N₂ 압력 예: APR1400 578~624 psig)·LPSI(저압)의 담당 압력대와 원심펌프 주입 특성 개념 곡선" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-008-emergency-core-cooling-system/fig2_injection_pressure_ladder.avif"/><figcaption>정상운전 압력 대비 HPSI(고압)·SIT(초기 N₂ 압력 예: APR1400 578~624 psig)·LPSI(저압)의 담당 압력대와 원심펌프 주입 특성 개념 곡선</figcaption></figure>
+<h3>대형 LOCA에서 ECCS가 일하는 순서</h3>
+<ol>
+<li>압력 급강하 → 원자로정지·SIAS(수 초 안)</li>
+<li>취출 중 RCS가 SIT 질소 압력 아래 → SIT 주입, 재충수 지원(방출할수록 질소가 팽창해 탱크 압력도 내려감)</li>
+<li>HPSI·LPSI가 RWT 물을 저온관 4개로 주입(소외전원 상실 가정 시 비상디젤발전기 기동·부하 투입 뒤)</li>
+<li>재관수 → 노심 급랭</li>
+<li>RWT 저수위 도달 → RAS → 집수조 재순환(HPSI 계속, LPSI 정지). RAS 시각은 RWT 용량과 펌프 유량으로 정해지는 노형·사고별 해석값입니다</li>
+<li>운전원이 HPSI 토출 경로를 바꿔 고온관·저온관 동시 주입(시점은 노형별 붕산 석출 해석으로 정함)</li>
+<li>장기 냉각 → 정지냉각 전환</li>
+</ol>
+<figure class="article-image"><img alt="CE형(OPR1000 계열) 격납건물 절개 장면과 대형 LOCA 이후 로그 시간축 위 SIT·HPSI·LPSI 중첩 작동, RAS 흡입 전환, 고온관 동시 주입" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-008-emergency-core-cooling-system/fig1_lbloca_eccs_timeline.avif"/><figcaption>CE형(OPR1000 계열) 격납건물 절개 장면과 대형 LOCA 이후 로그 시간축 위 SIT·HPSI·LPSI 중첩 작동, RAS 흡입 전환, 고온관 동시 주입</figcaption></figure>
+<h3>고온관 동시 주입(고온관 재순환)을 하는 이유</h3>
+<p>저온관 파단이면 저온관으로 넣은 물이 노심에서 끓어 증기로 나갑니다. 붕산은 증발하지 않아 노심과 하부 플레넘에 쌓입니다. 농도가 용해도 한계를 넘으면 붕산이 석출해 유로를 막고 열전달을 떨어뜨립니다. 그러면 장기 냉각 기준(50.46(b)(5))이 위협받습니다[3]. 고온관으로도 넣으면 노심을 관통하는 순유량이 생겨 농축수를 파단부로 씻어 냅니다. 고온관 파단이면 저온관 주입만으로도 노심이 씻기지만, 파단 위치를 미리 알 수 없어 양쪽에 동시에 넣습니다. CE형에서는 운전원이 HPSI 토출 일부를 고온관 쪽 주입 경로로 돌려 고온관과 저온관에 동시에 넣습니다.</p>
+<p>전환 시점은 노형별 붕산 석출 해석과 절차로 정합니다. 하부 플레넘에서 섞이는 체적을 작게 볼수록 농축이 빨라 더 일찍 바꿔야 합니다. 제73회 문항의 "약 24시간"은 문제의 전제로 읽으면 됩니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>OPR1000과 APR1400[7][10]</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>OPR1000</th>
+<th>APR1400</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>능동 주입</td>
+<td>HPSI 2 + LPSI 2(기계 2계열)</td>
+<td>SIP 4(기계 4계열, 전기 2구분)</td>
+</tr>
+<tr>
+<td>주입 위치</td>
+<td>저온관</td>
+<td>원자로용기 직접주입(DVI)</td>
+</tr>
+<tr>
+<td>저압 대유량</td>
+<td>LPSI</td>
+<td>SIT 유량조절기(대유량 → 소유량 자동 전환)</td>
+</tr>
+<tr>
+<td>수원</td>
+<td>RWT(밖) → 집수조(RAS)</td>
+<td>IRWST(안) 단일 수원, RAS 없음</td>
+</tr>
+<tr>
+<td>고온관 측 주입</td>
+<td>HPSI 고온관 주입</td>
+<td>고온측 동시 주입(시점은 해석·절차)</td>
+</tr>
+</tbody>
+</table>
+<h3>운전 중 감시</h3>
+<p>CE형 표준기술지침서(NUREG-1432) 기준으로 SIT 4기는 모드 1·2와 모드 3(가압기 압력 700 psia 이상)에서 운전 가능해야 하고, ECCS 2계열은 모드 1·2와 모드 3(1,700 psia 이상)에서 운전 가능해야 합니다. 1계열 이상 불가 시 허용 시간은 72시간입니다. SIT 수위·압력은 12시간, 붕소 농도는 31일 주기로 확인합니다[6]. 이 값들은 STS의 예시값(대괄호 값)이며 실제 값은 호기별 운영기술지침서가 정합니다.</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기술기준규칙(원안위규칙 제37호) 제30조①[1]</td>
+<td>잔열제거기능 상실이나 LOCA 때에도 노심 열제거 능력. "원자력안전위원회가 정하여 고시하는 허용기준에 적합하여야 한다" — 피복재 온도, 산화·수소 제한, 핵연료·내부구조물 변형이 냉각을 방해하지 않음, 붕괴열 제거 기간 동안 냉각</td>
+</tr>
+<tr>
+<td>같은 조②</td>
+<td>단일전력·단일고장을 가정해도 안전 유지 — 다중성, 누설 탐지, 격리, 격납 기능</td>
+</tr>
+<tr>
+<td>원안위고시 제2017-23호</td>
+<td>다섯 허용기준(제3조), 평가방법(제4조)[2]</td>
+</tr>
+<tr>
+<td>10 CFR 50.46, 부록 K</td>
+<td>미국 허용기준·보수적 평가모델[3]</td>
+</tr>
+<tr>
+<td>10 CFR 50 부록 A GDC 35·36·37</td>
+<td>ECCS 기능(단일고장 + 소내 또는 소외 전원만으로 기능), 검사, 시험[4]</td>
+</tr>
+<tr>
+<td>GDC 2·4·5·17·27</td>
+<td>자연현상, 동적 영향, 호기 간 공유 제한, 전원, 반응도 제어 결합</td>
+</tr>
+</tbody>
+</table>
+<p>국내 허용기준 고시 제1조는 제30조 제1항을 근거 조문으로 듭니다. 단일고장은 "가정한 단일고장 + 그 결과로 생기는 고장"이며, ECCS 해석에서는 비상디젤발전기 1대 상실(1계열 상실)이 대표적인 최악 단일고장입니다.</p>
+<p><strong>출제 당시 대비 달라진 점</strong>: 제73·76회(2004~2005년 무렵) 출제 당시 국내 고시는 과학기술부 고시였고 현행은 원안위고시 제2017-23호입니다. 허용기준 수치는 같습니다. 기술기준규칙은 원안위규칙 제37호(2026.3.30)가 현행이며 비상노심냉각장치는 여전히 제30조입니다. 미국 50.46c는 2024년 반려되어 현행 50.46(b)를 씁니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>ECCS</th>
+<th>잔열제거(정지냉각)계통</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>상황</td>
+<td>사고(LOCA·MSLB 등)</td>
+<td>정상 냉각·정지</td>
+</tr>
+<tr>
+<td>압력</td>
+<td>고압~저압, 사고 중</td>
+<td>저압(예: APR1400 350 °F 이하 개시, 최대 운전압력 450 psia[11])</td>
+</tr>
+<tr>
+<td>근거 조문</td>
+<td>기술기준규칙 제30조</td>
+<td>같은 규칙 제29조</td>
+</tr>
+<tr>
+<td>기기</td>
+<td>SIT, HPSI, LPSI</td>
+<td>정지냉각펌프(CE형 OPR1000은 LPSI 겸용[7])</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>주입 단계</th>
+<th>재순환 단계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>수원</td>
+<td>RWT</td>
+<td>격납건물 집수조</td>
+</tr>
+<tr>
+<td>운전 펌프</td>
+<td>HPSI·LPSI</td>
+<td>HPSI(+살수펌프)</td>
+</tr>
+<tr>
+<td>전환</td>
+<td>SIAS로 시작</td>
+<td>RAS(RWT 저수위)</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: LOCA 등에서 RCS에 붕산수를 주입해 노심 냉각·부반응도·장기 냉각을 제공하는 공학적 안전설비</li>
+<li><strong>기능</strong>: ① 재고량 보충·노심 냉각 ② 붕산 부반응도(MSLB) ③ 재순환 장기 냉각 ④ 고온관 동시 주입으로 붕산 석출 방지</li>
+<li><strong>피동부</strong>: <strong>SIT 4기</strong>(N₂ 가압·압력차 주입, 저온관, 1기 유실 가정)</li>
+<li><strong>능동부</strong>: <strong>HPSI 2</strong>(고압·소형 LOCA·재순환), <strong>LPSI 2</strong>(저압 대유량, RAS 시 정지)</li>
+<li><strong>수원</strong>: <strong>RWT</strong>(밖) → <strong>RAS</strong> → <strong>집수조</strong>(TSP pH ≥ 7)</li>
+<li><strong>신호</strong>: <strong>SIAS</strong> = 가압기 저압력 또는 격납건물 고압력</li>
+<li><strong>설계기준</strong>: 기술기준규칙 <strong>제30조</strong>①(고시 허용기준) ②(단일고장·다중성·격리), GDC 35~37, 50.46</li>
+<li><strong>APR1400</strong>: SIP 4·<strong>DVI</strong>·SIT 유량조절기(LPSI 없음)·<strong>IRWST</strong>(RAS 없음)</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 CE형(OPR1000 계열) ECCS 계통도(RWT·집수조 흡입 전환, HPSI·LPSI, SIT, 저온관·고온관 분기)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-008-emergency-core-cooling-system/sketch1_opr1000_eccs_answer.avif"/><figcaption>답안지용 CE형(OPR1000 계열) ECCS 계통도(RWT·집수조 흡입 전환, HPSI·LPSI, SIT, 저온관·고온관 분기)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 1교시 1번</td>
+<td>가압경수로 ECCS의 기능</td>
+</tr>
+<tr>
+<td>2024년 2교시 4번</td>
+<td>ECCS 성능 설계기준: 허용기준·평가방법·OPR1000 주요 기기와 기능</td>
+</tr>
+<tr>
+<td>제76회 4교시 5번</td>
+<td>노심 손상완화용 ECCS의 설계기준</td>
+</tr>
+<tr>
+<td>제73회 4교시 4번</td>
+<td>안전주입 약 24시간 뒤 고온관 재순환으로 전환하는 이유</td>
+</tr>
+</tbody>
+</table>
+<p>2025년 단답은 요약 1·2·3·4번이면 충분합니다. 2024년 문항의 "다"는 위 구성표를 그대로 쓰면 됩니다. 제76회는 허용기준만 쓰지 말고 제30조②와 GDC 35의 단일고장·전원 가정까지 함께 쓰십시오.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제29조·제30조. 국가법령정보센터.</li>
+<li>원자력안전위원회, 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」, 원안위고시 제2017-23호(2017.12.26), 제1조·제3조·제4조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR 50.46 "Acceptance criteria for emergency core cooling systems for light-water nuclear power reactors" 및 10 CFR Part 50 Appendix K.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criteria 2·4·5·17·27·35·36·37.</li>
+<li>KEPCO/KHNP, APR1400 Design Certification, Revised Response to RAI No. 496-8630, Question 06.03-10 Rev.1 (SIT 질소 압력·붕소 농도, IRWST 붕소 농도), NRC ADAMS ML17180A455.</li>
+<li>U.S. NRC, NUREG-1432 "Standard Technical Specifications — Combustion Engineering Plants", LCO 3.5.1 "Safety Injection Tanks"·LCO 3.5.2 "ECCS — Operating" 및 Bases B 3.5.1·B 3.5.2.</li>
+<li>U.S. NRC HRTD, Combustion Engineering Technology Cross Training Course Manual, Ch. 11.2 "Low Pressure Safety Injection System", NRC ADAMS ML11251A033.</li>
+<li>U.S. NRC, Regulatory Guide 1.183 "Alternative Radiological Source Terms for Evaluating Design Basis Accidents at Nuclear Power Reactors", Rev. 0 (2000), 3.5절(집수조 pH).</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Rev. 0, Table 7.3-5A(ESFAS 설정치), NRC ADAMS ML15006A046.</li>
+<li>U.S. NRC, NUREG-2215 "Final Safety Evaluation Report Related to the Certification of the APR1400 Standard Design", Ch. 6.3 (2018); S.-S. Lee, S.-H. Kim, K.-Y. Suh, "The Design Features of the Advanced Power Reactor 1400", Nuclear Engineering and Technology 41(8), 995 (2009).</li>
+<li>KEPCO/KHNP, APR1400 Design Certification, Response to RAI No. 233-8244(정지냉각 개시 온도·최대 운전압력), NRC ADAMS ML15348A085.</li>
+</ol>

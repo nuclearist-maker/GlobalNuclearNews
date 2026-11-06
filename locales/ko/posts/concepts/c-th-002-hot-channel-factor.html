@@ -1,0 +1,224 @@
+<figure class="article-image"><img alt="[개념 노트] 열수로계수(Hot Channel Factor, FQ·FΔH) — 평균 출력과 가장 뜨거운 곳을 잇는 배수 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-002-hot-channel-factor/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>열수로계수(Hot Channel Factor)는 노심에서 가장 가혹한 지점 또는 유로의 열적 변수를 노심 평균값으로 나눈 비이며, 국부 열속 기준의 FQ(열속 열수로계수)와 봉 적분출력 기준의 FΔH(엔탈피 상승 열수로계수)로 나누고, 각각 핵적 인자와 공학적 인자의 곱으로 구성합니다.</strong></p>
+<p>용어부터 정리하겠습니다. 기출에는 고온관 인자, 열수로계수, 고온유로계수, Hot Channel Factor가 섞여 나오는데 모두 같은 말입니다. 이 시리즈는 <strong>열수로계수</strong>로 통일합니다. 한 지점을 볼 때는 고온점(hot spot), 한 유로 전체를 볼 때는 고온유로(hot channel)라고 구분합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>왜 평균과 최대를 잇는 배수가 필요한가</h3>
+<p>노심 열설계는 평균 출력으로 시작합니다. 열출력 P와 전열면적으로 평균 열속이 정해지고, 연료봉 수와 길이로 평균 선출력이 정해집니다. 그러나 핵연료 손상 한계는 노심 평균이 아니라 가장 뜨거운 곳에서 먼저 닿습니다. 그래서 다음 관계를 씁니다.</p>
+<ul>
+<li>q″max = FQ × q″avg, q′max = FQ × q′avg</li>
+<li>Δh(고온유로) = FΔH × Δh(평균 유로)</li>
+</ul>
+<h3>핵적 인자와 공학적 인자</h3>
+<ul>
+<li><strong>핵적 인자(F^N)</strong>: 중성자속, 곧 출력분포가 고르지 않아 생기는 첨두입니다. 분리 가정을 쓰면 FQ^N ≈ F_R^N(반경 또는 평면 F_xy) × F_Z^N(축방향)입니다.</li>
+<li><strong>공학적 인자(F^E)</strong>: 제조 공차와 유동 편차 때문에 공칭 설계보다 국부값이 더 커질 수 있는 여유입니다. 중성자속 분포와는 무관합니다.</li>
+<li>총 인자는 두 효과의 곱입니다. FQ = FQ^N × FQ^E, FΔH = FΔH^N × FΔH^E.</li>
+</ul>
+<p>균질한 원통 나노심이라면 반경 J0 분포의 F_R = 2.32, 축방향 cosine의 F_Z = π/2 = 1.57이므로 FQ^N은 약 3.64입니다[1][2]. 실제 노심은 다영역 농축도, 저누설 장전, 가연성흡수체, 반사체로 출력을 평탄화해 FQ를 대략 2~2.5 수준으로 낮춥니다.</p>
+<h3>FQ와 FΔH는 무엇을 재나</h3>
+<ul>
+<li><strong>FQ(열속 열수로계수)</strong>: 노심 최대 국부 열속 ÷ 노심 평균 열속입니다. 곡선의 <strong>한 점의 높이</strong>를 비교합니다. 봉 직경이 같으면 선출력 비와 같습니다.</li>
+<li><strong>FΔH(엔탈피 상승 열수로계수)</strong>: 적분출력이 가장 큰 연료봉의 축방향 적분출력 ÷ 평균 연료봉 적분출력입니다. 곡선 아래 <strong>넓이</strong>를 비교합니다. 그 봉 옆 유로의 냉각재 엔탈피 상승에 직접 영향을 줍니다.</li>
+</ul>
+<p>예시로 평균봉이 절단 cosine(첨두 1.44)이고 가장 센 봉의 적분출력이 1.55배라면 FQ^N = 1.55 × 1.44 = 2.23입니다. 여기에 공학적 인자 1.03을 곱하면 2.30, 측정 불확실성 1.05까지 곱하면 2.41입니다. 이 값이 한계(예: 2.50) 아래인지를 봅니다.</p>
+<figure class="article-image"><img alt="평균봉·최대 적분출력 봉의 축방향 선출력, FQ는 첨두 높이 비·FΔH는 면적 비, 보정 계단 2.23→2.30→2.41과 한계 예 2.50" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-002-hot-channel-factor/fig1_fq_fdh_axial_profile.avif"/><figcaption>평균봉·최대 적분출력 봉의 축방향 선출력, FQ는 첨두 높이 비·FΔH는 면적 비, 보정 계단 2.23→2.30→2.41과 한계 예 2.50</figcaption></figure>
+<h3>공학적 인자의 영향인자</h3>
+<p>공학적 인자는 2023년 1교시에 "영향인자"로 출제됐습니다. 다음처럼 나눠 쓰면 정리가 쉽습니다.</p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>영향인자</th>
+<th>작용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FQ^E (국부 열속)</td>
+<td>펠릿 직경·밀도·농축도 편차, 피복관 외경 편차</td>
+<td>한 지점의 발열량·전열면적 변동</td>
+</tr>
+<tr>
+<td>FΔH^E (유로 엔탈피)</td>
+<td>봉별 우라늄 양 편차, 입구 유량 불균일, 유로 간 유량 재분배, 연료봉 피치·휨(rod bow)</td>
+<td>고온유로의 유량 감소·열입력 증가</td>
+</tr>
+<tr>
+<td>FΔH^E 완화 요인</td>
+<td>유로 간 난류 혼합, 혼합날개 지지격자</td>
+<td>고온유로 엔탈피를 이웃 유로로 분산(1보다 작게 작용)</td>
+</tr>
+</tbody>
+</table>
+<p>과거에는 부인자를 모두 곱하는 결정론적 방식이어서 공학적 인자가 컸습니다. 2015년 기출의 FE = 1.75가 그런 교과서식 값입니다. 현행 Westinghouse형 운영 한계에서는 FQ^E = 1.03 수준이고[3][4], 유동 관련 불확실성은 통계적 열설계(ITDP·RTDP, CE·KEPCO의 SCU)로 DNBR 한계에 결합합니다.</p>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>설계</strong>: 같은 안전 한계에서 허용 평균 출력은 대략 한계 선출력 ÷ FQ입니다. 열수로계수를 낮추는 것, 곧 출력 평탄화가 출력 증강과 연료 경제성의 열쇠입니다.</li>
+<li><strong>FQ가 지키는 것</strong>: LOCA 시 첨두피복재온도(1,204 ℃)와 정상·AOO 중 연료 중심 용융(선출력 한계)입니다. 초기 선출력이 클수록 LOCA PCT가 올라갑니다.</li>
+<li><strong>FΔH가 지키는 것</strong>: DNB 설계기준(MDNBR ≥ 한계, 95/95)입니다. 다만 DNB는 축방향 분포에도 영향을 받으므로 두 인자의 역할을 완전히 배타적으로 보지는 않습니다.</li>
+<li><strong>Westinghouse형 운전</strong>: FQ(Z)와 FΔH^N을 노내 중성자속 지도(flux map)로 측정해 노심운영제한보고서(COLR) 한계와 비교합니다. 재장전 후 75 % 출력 초과 전, 이후 31 EFPD마다 측정합니다[3]. 측정 사이에는 축방향출력편차(AFD)와 사분면출력경사비(QPTR)로 간접 관리합니다.</li>
+<li><strong>CE형(OPR1000, APR1400) 운전</strong>: FQ 자체보다 선출력(LHR)과 평면 반경방향 첨두계수 Fxy, 방위각 출력경사, ASI를 제한합니다. COLSS가 노내 계측기로 여유를 감시하고, CPC가 LPD·DNBR 트립을 냅니다[5].</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NUREG-1431(WH형 STS) LCO 3.2.1[3]</td>
+<td>FQ(Z) ≤ CFQ/P × K(Z) (P &gt; 0.5), CFQ/0.5 × K(Z) (P ≤ 0.5). 예: CFQ 2.40(Watts Bar 1호기 초기 주기 COLR[4])</td>
+</tr>
+<tr>
+<td>NUREG-1431 LCO 3.2.2</td>
+<td>FΔH^N ≤ FΔH^RTP × [1 + PFΔH(1 − P)]. 예: FΔH^RTP 1.55~1.65, PFΔH 0.3</td>
+</tr>
+<tr>
+<td>COLR 측정 보정</td>
+<td>측정 FQ × 1.03(제조 공차) × 1.05(이동형 검출기 측정) = × 1.0815, FΔH 측정 4 %(공개 COLR 예[4])</td>
+</tr>
+<tr>
+<td>NUREG-1432(CE형 STS) 3.2.1~3.2.5[5]</td>
+<td>LHR, Fxy, 방위각 출력경사, DNBR, ASI</td>
+</tr>
+<tr>
+<td>10 CFR 50.46 / GDC 10[6]</td>
+<td>ECCS 허용기준(PCT 1,204 ℃) / 정상·AOO 중 SAFDL 비초과</td>
+</tr>
+<tr>
+<td>NUREG-0800 SRP 4.3·4.4[7]</td>
+<td>출력분포·첨두계수와 열수력 설계 심사</td>
+</tr>
+<tr>
+<td>「원자로시설 등의 기술기준에 관한 규칙」 제2조 제1항 제10호·제17조①[8]</td>
+<td>핵연료허용손상한계 정의, 적절한 설계 여유</td>
+</tr>
+<tr>
+<td>운영기술지침서·COLR</td>
+<td>호기·주기별 한계값 관리</td>
+</tr>
+</tbody>
+</table>
+<!-- 기술기준규칙 제2조 제1항 제10호·제17조①: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 -->
+<!-- 확인필요: 국내 CE계열 운영기술지침서의 LHR·Fxy 조항 번호와 APR1400 DCD Table 4.4-1의 FQ·첨두 선출력 설계값은 원문 미확인(NRC 접근 차단) -->
+<p>개정 흐름도 함께 기억해 두시면 좋습니다. 과거에는 단일 총 인자(예: 고온관 인자 2.4~2.8)로 계산했습니다. 1980년대 말 Generic Letter 88-16[9] 이후 주기별 한계값이 운영기술지침서 본문에서 COLR로 옮겨졌습니다. 지금은 축방향 함수 K(Z)와 출력 의존 한계로 관리합니다. 국내에서도 출제 당시 대비 계산 원리는 같지만, 답안에는 "한계는 COLR에 호기·주기별로 정함"을 적는 것이 현행 기준입니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>FQ</th>
+<th>FΔH</th>
+<th>축방향 첨두 F_Z</th>
+<th>반경 첨두 F_R(Fxy)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>비교 대상</td>
+<td>최대 국부 열속</td>
+<td>최대 봉 적분출력</td>
+<td>축방향 최대/평균</td>
+<td>평면 최대/평균</td>
+</tr>
+<tr>
+<td>성격</td>
+<td>3차원 한 점</td>
+<td>봉 길이 적분</td>
+<td>1차원</td>
+<td>2차원(평면)</td>
+</tr>
+<tr>
+<td>주요 관련 한계</td>
+<td>LOCA PCT, 연료 용융</td>
+<td>DNB</td>
+<td>AFD·ASI로 관리</td>
+<td>CE형 LCO</td>
+</tr>
+<tr>
+<td>공학적 인자</td>
+<td>1.03 수준</td>
+<td>통계적 결합</td>
+<td>없음</td>
+<td>없음</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 열수로계수 = 노심 최대 열적 변수 ÷ 평균값(고온관 인자·고온유로계수와 동의어)</li>
+<li><strong>FQ</strong>: q″max/q″avg, 3차원 한 점, FQ = FQ^N × FQ^E</li>
+<li><strong>FΔH</strong>: 최대 봉 적분출력/평균 봉 적분출력, 고온유로 엔탈피 상승</li>
+<li><strong>핵적 인자</strong>: 출력분포 불균일, F_R × F_Z(분리 가정), 균질 나노심 3.64 → 평탄화로 약 2~2.5</li>
+<li><strong>공학적 인자</strong>: 펠릿 직경·밀도·농축도, 피복관 외경, 유량 불균일·재분배·혼합, rod bow</li>
+<li><strong>한계 근거</strong>: FQ → LOCA PCT·연료 중심 용융, FΔH → DNB(95/95)</li>
+<li><strong>WH형</strong>: FQ(Z) ≤ CFQ/P·K(Z), FΔH^N ≤ FΔH^RTP[1 + 0.3(1 − P)], flux map·AFD·QPTR</li>
+<li><strong>CE형</strong>: LHR·Fxy·ASI, COLSS 감시, CPC 트립</li>
+<li><strong>저감</strong>: 저누설 장전, 가연성흡수체, 제어봉·붕소 운용</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 평균봉·고온봉 축방향 곡선과 FQ·FΔH 정의 도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-002-hot-channel-factor/sketch1_hot_channel_factor.avif"/><figcaption>답안지용 평균봉·고온봉 축방향 곡선과 FQ·FΔH 정의 도식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026년 1교시 6번</td>
+<td>열속 열수로계수 정의와 구성요소</td>
+</tr>
+<tr>
+<td>2023년 1교시 2번</td>
+<td>공학적 고온유로계수 정의·영향인자</td>
+</tr>
+<tr>
+<td>2017년 2교시 5번</td>
+<td>축방향 출력분포와 열속·열출력 계산</td>
+</tr>
+<tr>
+<td>2015년 2교시 6번</td>
+<td>고온점 인자로 면적·연료봉 수 계산</td>
+</tr>
+<tr>
+<td>2010년 4교시 5번</td>
+<td>PWR 최대 열속 계산</td>
+</tr>
+<tr>
+<td>2008년 4교시 6번</td>
+<td>축방향 첨두계수와 선출력·열속</td>
+</tr>
+<tr>
+<td>제76회 1교시 5번</td>
+<td>Hot Channel Factor</td>
+</tr>
+<tr>
+<td>제73회 1교시 9번</td>
+<td>열속열수로계수(FQ)</td>
+</tr>
+<tr>
+<td>제68회 2교시 4번</td>
+<td>고온관 인자로 면적·연료봉 수 계산</td>
+</tr>
+</tbody>
+</table>
+<p>계산형 기출은 모두 "최대 = 평균 × 열수로계수" 한 줄이 핵심입니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 8장(hot channel factor).</li>
+<li>N. E. Todreas, M. S. Kazimi, Nuclear Systems I: Thermal Hydraulic Fundamentals, Taylor &amp; Francis; L. S. Tong, J. Weisman, Thermal Analysis of Pressurized Water Reactors, ANS.</li>
+<li>U.S. NRC, NUREG-1431, Standard Technical Specifications — Westinghouse Plants, LCO 3.2.1 "Heat Flux Hot Channel Factor (FQ(Z))", LCO 3.2.2 "Nuclear Enthalpy Rise Hot Channel Factor" 및 Bases.</li>
+<li>Watts Bar Unit 1·Wolf Creek·Diablo Canyon Core Operating Limits Report(COLR), NRC ADAMS 공개본 — CFQ, FΔH^RTP, 측정 불확실성 계수.</li>
+<li>U.S. NRC, NUREG-1432, Standard Technical Specifications — Combustion Engineering Plants, LCO 3.2.1~3.2.5.</li>
+<li>U.S. NRC, 10 CFR 50.46; 10 CFR Part 50, Appendix A, GDC 10.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.3 "Nuclear Design", 4.4 "Thermal and Hydraulic Design".</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제2조·제17조. 국가법령정보센터.</li>
+<li>U.S. NRC, Generic Letter 88-16 "Removal of Cycle-Specific Parameter Limits from Technical Specifications" (1988).</li>
+</ol>

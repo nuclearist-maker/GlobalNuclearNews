@@ -1,0 +1,210 @@
+<figure class="article-image"><img alt="[개념 노트] 단일고장기준(Single Failure Criterion) — 최악의 고장 하나를 가정해도 안전기능을 지키는 설계 원칙 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-pr-002-single-failure-criterion/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>단일고장기준은 안전계통이 임의의 단일고장(그 고장이 일으킨 연쇄 고장 포함)을 가정해도 안전기능을 잃지 않도록 설계해야 한다는 결정론적 설계·해석 기준입니다.</strong></p>
+<p>여기서 단일고장은 "기기가 의도된 안전기능을 수행할 능력을 잃게 하는 하나의 사건"입니다. 하나의 사건으로 여러 기기가 함께 고장 나도 단일고장 하나로 셉니다(10 CFR 50 부록 A 정의)[1]. 국내 「원자로시설 등의 기술기준에 관한 규칙」(이하 기술기준규칙)의 정의(제2조 제1항 제11호)도 같은 뜻입니다[2].</p>
+<h2>원리와 메커니즘</h2>
+<h3>무엇을 견뎌야 하나</h3>
+<p>IEEE 603의 5.1절(단일고장기준)은 안전계통이 다음 고장이 모두 겹쳐도 보호동작을 해야 한다고 정합니다[3].</p>
+<ol>
+<li>안전계통 안에서 검출 가능한 임의의 단일고장 1개</li>
+<li>그와 함께 이미 존재하는, 식별은 되지만 검출할 수 없는 고장 전부</li>
+<li>그 단일고장이 일으킨 고장 전부</li>
+<li>그 안전기능을 요구하는 설계기준사건이 일으킨 고장·오동작 전부</li>
+</ol>
+<p>적용 방법은 IEEE 379가 정합니다. 미국 RG 1.53 Rev.2(2003)는 IEEE 379-2000을 승인했고, 현행판 IEEE 379-2014는 아직 승인하지 않았습니다[3][4]. 기원은 보호계통 기준 IEEE 279-1971 4.2절입니다.</p>
+<h3>능동고장과 수동고장</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>정의</th>
+<th>예</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>능동고장</td>
+<td>기계적 동작이나 외부 작동(전원·신호)에 의존하는 기기가 요구 시 동작하지 않거나 의도치 않게 동작</td>
+<td>펌프 기동 실패, 전동밸브 개폐 실패, 밸브 오개방</td>
+</tr>
+<tr>
+<td>수동고장</td>
+<td>유체 압력경계의 손상이나 유로의 기계적 손상</td>
+<td>배관·밸브 패킹·펌프 실 누설, 유로 막힘, 체크밸브 착좌 불량</td>
+</tr>
+</tbody>
+</table>
+<p>부록 A는 유체계통·전기계통이 능동기기 단일고장(수동기기는 정상 가정)과 수동기기 단일고장(능동기기는 정상 가정) 중 어느 쪽에도 기능을 잃지 않아야 한다고 정의합니다. 전기계통은 수동기기 고장도 가정해야 합니다. 유체계통 수동고장의 적용 조건은 각주에서 "개발 중"으로 남겼습니다. 실무 해석은 SECY-77-439와 ANSI/ANS-58.9를 따릅니다[5]. 미국 관행에서 유체계통 수동고장은 주로 ECCS 재순환 같은 <strong>장기 냉각 단계</strong>에서 가정하고, 단기 주입 단계에서는 능동고장을 가정합니다. IAEA SSR-2/1은 수동기기 고장도 고려하되, 고장 가능성이 매우 낮고 초기사건의 영향을 받지 않음을 높은 신뢰도로 입증한 경우에만 제외하도록 합니다[6]. <!-- 확인필요: 장기 단계 시작 '사고 후 24시간'은 인허가 관행·사례 기준, 원 규정 문구 미대조 --> 잠겨 열린 전동밸브처럼 위치를 바꿀 필요가 없는 기기는 수동기기로 취급할 수 있습니다. 체크밸브처럼 같은 기기라도 요구되는 개폐 기능과 고장모드에 따라 분류가 달라지므로, 기기 이름만으로 나누지 않습니다.</p>
+<h3>다중성 N+1</h3>
+<p>안전기능에 필요한 최소 계열 수를 N이라 하면, 단일고장을 견디려면 N+1 계열이 필요합니다. 2×100 %(N = 1)이 가장 흔한 구성입니다. 운전 중 정비로 한 계열이 빠진 상태에서도 단일고장을 견디려면 N+2가 필요합니다. 계열이 많아도 전원·냉각수·공조 같은 지원계통을 공유하면 의미가 없으므로, 계열별 전기 분리와 물리적 분리(독립성)를 함께 요구합니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>설계기준사고 해석의 표준 가정</h3>
+<p>FSAR 15장 해석은 다음을 함께 가정합니다.</p>
+<ul>
+<li>초기사건(예: 대형 LOCA)</li>
+<li>소외전원상실(LOOP)</li>
+<li><strong>결과를 가장 나쁘게 하는 단일고장 1개</strong>(worst single failure)</li>
+<li>보수적 초기조건과 모델</li>
+</ul>
+<p>초기사건과 그 사건이 직접 일으킨 손상(배관 휩 등)은 사건 조건이고, 단일고장은 그 대응 계통에 따로 더하는 고장입니다. 최악 단일고장은 허용기준마다 다릅니다. LOCA 첨두 피복재 온도는 보통 비상디젤발전기(EDG) 1대 고장으로 ECCS 1계열을 잃는 경우를 검토합니다. 그런데 부록 K의 최소 격납건물 압력 가정에서는 격납건물 열제거 설비가 모두 작동하는 쪽이 더 불리할 수 있습니다. 그래서 후보 고장을 모두 계산해 가장 불리한 경우를 택합니다.</p>
+<h3>2트레인 ECCS로 보는 적용</h3>
+<p>설명용으로 고압·저압 안전주입펌프 각 2대(각 100 %), 안전주입탱크(SIT) 4기, EDG 2대로 이루어진 2트레인 구성을 생각해 보겠습니다(실제 기기 수는 노형·호기별 설계에 따름). 저온관 대형 LOCA + LOOP + EDG A 기동 실패를 가정하면 계열 A 펌프가 모두 정지합니다. 이때 남은 계열 B(100 %)와 SIT의 기여로 ECCS 허용기준을 만족하는지 해석으로 확인합니다. 파단 루프로 넘치는 주입량은 손실로 처리합니다. 100 % 용량이 남았다는 사실만으로 허용기준 만족이 입증되지는 않으며, 압력·시간·주입 위치에 따른 실제 유량을 계산해야 합니다.</p>
+<p>APR1400은 4트레인 직접용기주입(DVI)입니다. 비상전원은 국내 새울 3·4·신한울 1·2가 EDG 2대, 미국 인증 APR1400(DC)이 EDG 4계열이어서 EDG 1대 고장이 멈추는 트레인 수가 호기마다 다릅니다. 트레인 용량은 DVI 배관보다 큰 파단에서 최소 주입유량의 50 %, 그 이하 파단에서 100 %입니다[7]. 여기서는 단일고장으로 잃는 트레인 수와 해석에서 인정하는 가용 트레인 수를 구분해야 합니다. 펌프·밸브 고장이면 1트레인을 잃지만, LOCA 해석은 보수적으로 대각선 위치의 2트레인만 가용하다고 가정합니다[7]. <!-- 확인필요: APR1400 트레인 용량·해석 가정은 NRC 설계인증 공개 문서(DCD·RAI 응답) 기준, DCD 6·15장 원표 미대조 --></p>
+<figure class="article-image"><img alt="분리된 두 펌프실 장면, LOCA + LOOP + EDG A 단일고장 가정 사슬, 전 계열/단일고장 후 설계 주입용량 막대" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-pr-002-single-failure-criterion/fig1_two_train_eccs_sfc.avif"/><figcaption>분리된 두 펌프실 장면, LOCA + LOOP + EDG A 단일고장 가정 사슬, 전 계열/단일고장 후 설계 주입용량 막대</figcaption></figure>
+<h3>보호계통·운전에서</h3>
+<p>보호계통은 4채널 2/4 동시논리로 단일고장에도 정지하고, 단일 오신호로는 불시정지하지 않습니다. 1채널을 바이패스하면 2/3로 바뀌어 단일고장 내성을 유지합니다. 운영기술지침서는 한 계열이 운전불능이 되어 단일고장 내성이 일시적으로 사라진 상태를 허용정지시간과 조치로 관리합니다.</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50 부록 A [1]</td>
+<td>단일고장 정의, GDC 17(전력)·21(보호계통)·34(잔열제거)·35(ECCS)·38·44 등에서 단일고장 가정</td>
+</tr>
+<tr>
+<td>기술기준규칙(현행 원안위규칙 제37호) 제24조 [2]</td>
+<td>축전지 포함 소내 전력·배전계통은 단일고장 가정 시에도 독립성·다중성·시험성</td>
+</tr>
+<tr>
+<td>같은 규칙 제26조</td>
+<td>보호계통은 단일고장으로 보호기능을 잃지 않고, 1채널 사용정지 시에도 최소 다중성 유지</td>
+</tr>
+<tr>
+<td>같은 규칙 제28조</td>
+<td>제어봉 1개 고착 상태에서도 핵연료 설계한계 여유</td>
+</tr>
+<tr>
+<td>같은 규칙 제29·30·31·44조</td>
+<td>잔열제거·비상노심냉각·최종열제거는 소내·외 전원상실-단일고장 가정에서 안전 유지, 제44조(신뢰성)는 다중성·다양성·기능적 독립성·물리적 분리 원칙과 같은 가정에서의 안전기능 달성을 요구</td>
+</tr>
+<tr>
+<td>IEEE 603-1991 5.1, IEEE 379-2014, RG 1.53 Rev.2 [3][4]</td>
+<td>안전계통 단일고장기준과 적용 방법</td>
+</tr>
+<tr>
+<td>SECY-77-439, ANSI/ANS-58.9-2002 [5]</td>
+<td>능동·수동고장 해석, 유체계통 적용</td>
+</tr>
+<tr>
+<td>IAEA SSR-2/1 Rev.1 요건 25 [6]</td>
+<td>각 안전그룹에 단일고장기준 적용, 오동작도 고장 모드, 수동기기는 정당화 시 제외</td>
+</tr>
+</tbody>
+</table>
+<!-- 기술기준규칙 제29·30·31·44조: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 -->
+<p><strong>출제 당시 대비 달라진 점</strong></p>
+<ul>
+<li>제78회(2006)·2010·2013년 출제 당시에는 「원자력법」과 교육과학기술부령 체계였습니다. 2011.11 기술기준규칙이 원안위규칙으로 이관되었고 조 번호는 유지되었습니다. 단일고장 요건의 골격은 바뀌지 않았습니다.</li>
+<li>IAEA 요건이 NS-R-1(2000)에서 SSR-2/1(2012)·Rev.1(2016)로 바뀌었고, IEEE 379는 2014년판이 나왔습니다.</li>
+<li>새로 생긴 쟁점은 두 가지입니다. 하나는 설계확장조건(DEC)으로 단일고장을 넘는 다중고장을 별도 범주로 다루게 된 점입니다. 다른 하나는 피동계통·SMR에 단일고장기준을 어떻게 적용하고 어디까지 면제할지에 대한 검토입니다.</li>
+</ul>
+<h3>면제와 한계</h3>
+<ul>
+<li>상상 가능한 모든 고장이 아니라 신뢰할 만한(credible) 고장만 가정합니다. 원자로용기처럼 고장 확률이 충분히 낮은 기기는 단일고장으로 가정하지 않습니다(SECY-77-439).</li>
+<li>SBO(10 CFR 50.2 정의상 동시 단일고장·DBA를 가정하지 않음), ATWS(10 CFR 50.62)[8], DEC 해석은 단일고장기준을 적용하지 않는 것이 일반적입니다.</li>
+<li>단일고장기준은 가정한 단일고장과 그 결과적 고장만 다루고 확률을 보지 않습니다. 그래서 기준을 만족해도 공통원인고장(CCF), 독립 고장 2개 이상의 조합, 인적 오류 조합에 대한 내성이 보장되지 않습니다. 이 부분은 다양성과 PSA로 보완합니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>단일고장</th>
+<th>공통원인고장(CCF)</th>
+<th>초기사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정의</td>
+<td>가정한 고장 1개 + 그 결과적 고장</td>
+<td>공통 원인(설계 결함·소프트웨어·환경·정비)으로 여러 계열이 동시 고장</td>
+<td>정상운전을 교란해 안전기능을 요구하는 사건</td>
+</tr>
+<tr>
+<td>설계 대응</td>
+<td>다중성 N+1, 독립성</td>
+<td>다양성, 분리, 시차 시험·품질</td>
+<td>안전계통 자체(AOO·DBA로 분류)</td>
+</tr>
+<tr>
+<td>해석에서</td>
+<td>최악 1개를 가정</td>
+<td>결정론적 D3 평가·PSA 모델</td>
+<td>해석의 출발 조건</td>
+</tr>
+<tr>
+<td>국내 근거 예</td>
+<td>기술기준규칙 제24·26조</td>
+<td>같은 규칙 제27조(DPS)</td>
+<td>안전해석 범위(FSAR 15장)</td>
+</tr>
+</tbody>
+</table>
+<p>다중성은 같은 것을 여러 개 두어 단일고장에 대비하고, 다양성은 다른 원리의 것을 두어 CCF에 대비합니다. β인자 모형으로 보면, n개 중 1개만 성공하면 되는 계통에서 트레인을 늘릴 때 독립 고장 확률은 qⁿ로 계속 줄지만 계통 이용불능도는 βq 부근에서 멈춥니다[9]. 이 한계를 줄이는 수단이 독립성 강화와 DPS 같은 다양한 설비입니다. 심층방어 체계에서 단일고장기준은 3단계(설계기준사고) 안의 설계 기준입니다.</p>
+<figure class="article-image"><img alt="트레인 수에 따른 계통 이용불능도(독립 가정 vs β인자 CCF 포함, βq 하한) 로그 그래프와 단일고장기준·CCF 대응 비교표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-pr-002-single-failure-criterion/fig2_redundancy_vs_ccf.avif"/><figcaption>트레인 수에 따른 계통 이용불능도(독립 가정 vs β인자 CCF 포함, βq 하한) 로그 그래프와 단일고장기준·CCF 대응 비교표</figcaption></figure>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 기기의 안전기능 상실을 일으키는 하나의 사건(연쇄 고장 포함), 이를 가정해도 안전기능 유지 = 단일고장기준(10 CFR 50 부록 A, 기술기준규칙 제2조 제11호)</li>
+<li><strong>범위</strong>: 검출 가능 단일고장 + 검출 불가 기존 고장 + 연쇄 고장 + DBE 유발 고장(IEEE 603 5.1, IEEE 379)</li>
+<li><strong>능동/수동</strong>: 능동 = 동작 실패·오동작, 수동 = 압력경계·유로 손상, 유체계통 수동고장은 장기 냉각 단계에서 가정</li>
+<li><strong>설계 수단</strong>: 다중성 N+1(정비 고려 N+2), 계열 간 전기·물리 독립</li>
+<li><strong>해석 적용</strong>: 초기사건 + LOOP + 최악 단일고장 1개 → 남은 계열로 허용기준 만족</li>
+<li><strong>예</strong>: 2×100 % ECCS, LOCA + LOOP + EDG A 고장 → 계열 B 100 %</li>
+<li><strong>면제·한계</strong>: credible 고장만, 수동기기 정당화 제외, SBO·ATWS·DEC 비적용, CCF 미포함 → 다양성·PSA로 보완</li>
+<li><strong>근거</strong>: GDC 17·21·35, 기술기준규칙 제24·26·28조, SSR-2/1 요건 25</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 2×100 % ECCS에 LOCA + LOOP + EDG A 단일고장을 적용한 흑백 도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-pr-002-single-failure-criterion/sketch1_sfc_two_train.avif"/><figcaption>답안지용 2×100 % ECCS에 LOCA + LOOP + EDG A 단일고장을 적용한 흑백 도식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2018년 1교시 6번</td>
+<td>초기사건 및 단일고장의 정의</td>
+</tr>
+<tr>
+<td>2017년 2교시 1번</td>
+<td>원자로 보호계통·안전계통 설계원칙</td>
+</tr>
+<tr>
+<td>2016년 1교시 5번</td>
+<td>단일고장(Single Failure)</td>
+</tr>
+<tr>
+<td>2013년 1교시 9번</td>
+<td>능동고장과 수동고장</td>
+</tr>
+<tr>
+<td>2010년 2교시 5번</td>
+<td>단일고장기준과 공통원인고장</td>
+</tr>
+<tr>
+<td>제78회 4교시 4번</td>
+<td>보호계통·안전계통 설계 안전원칙</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>10 CFR Part 50 Appendix A "General Design Criteria for Nuclear Power Plants", Definitions and Explanations(Single failure) 및 GDC 17·21·34·35·38·44.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제2조·제24조·제26~31조·제44조. 국가법령정보센터.</li>
+<li>IEEE Std 603-1991, Criteria for Safety Systems for Nuclear Power Generating Stations, 5.1절; IEEE Std 379-2014, Application of the Single-Failure Criterion to Nuclear Power Generating Station Safety Systems.</li>
+<li>U.S. NRC, Regulatory Guide 1.53 Rev. 2 "Application of the Single-Failure Criterion to Safety Systems" (2003).</li>
+<li>U.S. NRC, SECY-77-439 "Single Failure Criterion" (1977); ANSI/ANS-58.9-2002 "Single Failure Criteria for Light Water Reactor Safety-Related Fluid Systems".</li>
+<li>IAEA, Safety of Nuclear Power Plants: Design, Specific Safety Requirements No. SSR-2/1 (Rev. 1) (2016), Requirements 24·25.</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Ch. 6.3 "Emergency Core Cooling System"(NRC 설계인증 공개본); U.S. NRC, NUREG-2215 APR1400 최종안전성평가보고서(FSER).</li>
+<li>10 CFR 50.2(Station blackout 정의), 10 CFR 50.62(ATWS 규칙).</li>
+<li>U.S. NRC, NUREG/CR-5485 "Guidelines on Modeling Common-Cause Failures in Probabilistic Risk Assessment" (1998).</li>
+</ol>

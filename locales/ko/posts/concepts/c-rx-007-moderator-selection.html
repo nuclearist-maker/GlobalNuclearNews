@@ -1,0 +1,318 @@
+<figure class="article-image"><img alt="[개념 노트] 감속재(Moderator) 선정조건 — 경수·중수·흑연을 ξ·감속능·감속비로 비교하기 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-007-moderator-selection/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>감속재</strong>는 핵분열로 생긴 고속중성자(평균 약 2 MeV)를 주로 탄성산란으로 열에너지(약 0.025 eV)까지 낮추는 저질량수 물질입니다. 좋은 감속재는 <strong>충돌당 에너지 손실이 크고(ξ↑), 산란이 잦으며(Σs↑), 흡수는 적어야(Σa↓)</strong> 합니다.</p>
+<p>답안 첫 줄은 "고속중성자를 적은 충돌로, 흡수 없이 열중성자로 감속시키는 물질로, 감속능 ξΣs와 감속비 ξΣs/Σa가 클수록 우수함"이라고 쓰면 정의와 판정 지표가 함께 들어갑니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>왜 감속이 필요한가</h3>
+<p>U-235의 핵분열 단면적은 열영역에서 약 585 b로, 고속영역(1~2 b)보다 수백 배 큽니다. 그래서 중성자를 열에너지까지 낮추면 저농축 우라늄(PWR 약 4~5 %)이나 천연우라늄(CANDU)으로도 임계를 만들 수 있습니다. 감속 도중에는 U-238의 주요 공명흡수 구간(개략 6~200 eV)을 지나야 합니다. 이 구간을 적은 충돌로 빨리 통과할수록 공명흡수 손실이 줄어 공명이탈확률 p가 커집니다. 반대로 고속로(LMFBR)는 저질량 물질을 일부러 배제하므로 감속재가 없습니다.</p>
+<h3>선정조건 세 가지 — ξ, 감속능, 감속비</h3>
+<table>
+<thead>
+<tr>
+<th>조건</th>
+<th>지표</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>충돌당 에너지 손실이 클 것</td>
+<td>ξ = 1 + α·lnα/(1−α), α = [(A−1)/(A+1)]²</td>
+<td>질량수 A가 작을수록 큼</td>
+</tr>
+<tr>
+<td>충돌이 잦을 것</td>
+<td>감속능 ξΣs [cm⁻¹]</td>
+<td>밀도가 작은 기체는 부적합</td>
+</tr>
+<tr>
+<td>흡수가 적을 것</td>
+<td>감속비 ξΣs/Σa</td>
+<td>감속재의 종합 성능 지표</td>
+</tr>
+<tr>
+<td>감속 거리가 짧을 것</td>
+<td>감속길이 √τ</td>
+<td>노심 크기·출력밀도와 연결</td>
+</tr>
+</tbody>
+</table>
+<p>ξ는 충돌 한 번에 얻는 평균 레싸지 증가량입니다. 열화까지의 충돌 수는 n = ln(E₀/E)/ξ로 셉니다. 2 MeV → 0.025 eV이면 ln(8×10⁷) = 18.2입니다. 수소는 α = 0이라 한 번 충돌에 평균 절반의 에너지를 잃고, 탄소는 약 14 %만 잃습니다.</p>
+<h3>경수·중수·흑연 성적표</h3>
+<figure class="article-image"><img alt="감속능(가로)·감속비(세로) 로그 성능 지도, 중수 감속비 참고값, 열화 충돌수·감속길이 성적표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-007-moderator-selection/fig1_moderator_performance_map.avif"/><figcaption>감속능(가로)·감속비(세로) 로그 성능 지도, 중수 감속비 참고값, 열화 충돌수·감속길이 성적표</figcaption></figure>
+<table>
+<thead>
+<tr>
+<th>감속재</th>
+<th>ξ</th>
+<th>2 MeV→0.025 eV 충돌수</th>
+<th>감속능 ξΣs [cm⁻¹]</th>
+<th>감속비 ξΣs/Σa</th>
+<th>감속길이 √τ [cm]</th>
+<th>열확산길이 L [cm]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H₂O</td>
+<td>0.920</td>
+<td>약 20</td>
+<td>1.35</td>
+<td>71</td>
+<td>5.2</td>
+<td>2.85</td>
+</tr>
+<tr>
+<td>D₂O</td>
+<td>0.509</td>
+<td>약 36</td>
+<td>0.176</td>
+<td>5,670</td>
+<td>11.4</td>
+<td>97</td>
+</tr>
+<tr>
+<td>Be</td>
+<td>0.209</td>
+<td>약 87</td>
+<td>0.158</td>
+<td>143</td>
+<td>10.1</td>
+<td>21</td>
+</tr>
+<tr>
+<td>흑연(C)</td>
+<td>0.158</td>
+<td>약 115</td>
+<td>0.060</td>
+<td>192</td>
+<td>19.2</td>
+<td>59</td>
+</tr>
+</tbody>
+</table>
+<p>ξ·ξΣs·감속비는 Duderstadt &amp; Hamilton 표 8-1의 값이고[1], L과 τ는 Lamarsh 표 5.2·5.3(20 °C)의 값입니다[2]. 감속길이 √τ는 열화까지의 거리 척도이고, 열중성자가 흡수될 때까지의 열확산길이 L과는 다른 양입니다. 0.025 eV까지의 충돌수는 위 식으로 다시 계산했습니다. 같은 표의 2 MeV→1 eV 충돌수(16/29/69/91)와 ln(2×10⁶)/ξ의 계산값(15.8/28.5/69.4/91.8)이 일치합니다. 분자의 ξ는 원소별 ξ를 산란 단면적으로 가중 평균한 값입니다. H₂O는 (2×20×1 + 3.8×0.120)/43.8 ≈ 0.92로 검산됩니다.</p>
+<p>감속비는 문헌마다 차이가 큽니다. 경수는 58~71, 흑연은 192~200, 중수는 5,670~21,000으로 보고됩니다[1][3]. 평가 에너지와 Σa의 기준, 그리고 무엇보다 <strong>중수 순도</strong>가 다르기 때문입니다. 같은 감속능 0.176을 H₂O가 0.25 wt% 섞인 중수의 Σa(9.3×10⁻⁵ cm⁻¹, Lamarsh 표 5.2)로 나누면 약 1,900이 나옵니다. 경수가 조금만 섞여도 감속비가 몇 분의 1로 떨어집니다.</p>
+<p>읽는 법은 이렇습니다. <strong>감속능은 경수가 1위, 감속비는 중수가 1위</strong>입니다. 흑연은 감속능이 꼴찌지만 흡수가 작아 감속비가 경수의 약 2.7배입니다. 그래서 적절한 격자 설계로 천연우라늄을 쓸 수 있는 것은 중수로와 흑연로이고, 경수로는 농축이 필요합니다. 감속비 하나가 임계를 보장하지는 않지만, 연료 선택의 폭을 정합니다.</p>
+<h2>원전에서의 의미</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>PWR(경수)</th>
+<th>PHWR/CANDU(중수)</th>
+<th>HTGR(흑연)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>감속재/연료 체적비</td>
+<td>1.95</td>
+<td>17</td>
+<td>135</td>
+</tr>
+<tr>
+<td>평균 출력밀도 [MW/m³]</td>
+<td>102</td>
+<td>7.7</td>
+<td>6.6</td>
+</tr>
+<tr>
+<td>농축도</td>
+<td>약 4.2 %</td>
+<td>0.7 %(천연)</td>
+<td>약 15 %</td>
+</tr>
+</tbody>
+</table>
+<p>위 값은 Lewis 교과서 표 4.1의 대표값입니다(3,000 MWt 노심 기준)[3]. 경수는 감속능이 커서 감속재가 적어도 되고 감속길이가 짧습니다. 그래서 격자가 가장 조밀하고 출력밀도가 가장 높습니다. 대신 흡수가 커서 감속재/연료비를 늘리면 오히려 k∞가 떨어집니다. 이 때문에 경수로는 k∞ 최대점보다 감속재가 적은 <strong>과소감속</strong> 쪽에 설계합니다. 그 결과 감속재 온도가 오르거나 기포가 생기면 감속이 줄어 음의 반응도 궤환이 생깁니다.</p>
+<h3>노형별 감속재·냉각재</h3>
+<table>
+<thead>
+<tr>
+<th>노형</th>
+<th>감속재</th>
+<th>냉각재</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PWR</td>
+<td>H₂O</td>
+<td>H₂O(가압, 비등 억제)</td>
+<td>감속재=냉각재, 붕산 용해</td>
+</tr>
+<tr>
+<td>BWR</td>
+<td>H₂O</td>
+<td>H₂O(노심 내 비등)</td>
+<td>기포가 감속 감소 → 음의 기포계수</td>
+</tr>
+<tr>
+<td>PHWR(CANDU)</td>
+<td>D₂O(칼란드리아, 저온·저압)</td>
+<td>D₂O(압력관, 고온·고압)</td>
+<td>감속재·냉각재 분리, 천연우라늄, 운전 중 재장전</td>
+</tr>
+<tr>
+<td>HTGR</td>
+<td>흑연</td>
+<td>He</td>
+<td>고온 운전, 흑연이 구조재 겸용</td>
+</tr>
+<tr>
+<td>LMFBR</td>
+<td>없음</td>
+<td>Na</td>
+<td>고속 스펙트럼</td>
+</tr>
+<tr>
+<td>(참고) RBMK</td>
+<td>흑연</td>
+<td>H₂O(비등)</td>
+<td>물이 주로 흡수체 → 양의 기포계수</td>
+</tr>
+</tbody>
+</table>
+<h3>핵적 성능 외의 조건</h3>
+<ul>
+<li><strong>열적·구조</strong>: 냉각재 겸용 시 비열과 열전달이 중요합니다. 흑연은 고온 강도가 유지되어 HTGR 감속재 겸 구조재로 씁니다.</li>
+<li><strong>화학·재료</strong>: 물은 방사선 분해로 수소·산소가 생기므로 수화학으로 관리합니다. 흑연은 공기·수증기 유입 시 산화되고, 조사 변형과 저온 조사 시 <strong>위그너 에너지</strong> 축적이 문제입니다(1957년 윈드스케일 화재의 배경).</li>
+<li><strong>방사선 관리</strong>: 중수는 중성자 포획 D(n,γ)T로 삼중수소가 쌓입니다.</li>
+<li><strong>경제성</strong>: 경수는 싸고 풍부합니다. 중수는 동위원소 분리 비용이 크고, 흑연은 붕소 등 불순물을 뺀 원자로급 고순도가 필요합니다.</li>
+</ul>
+<h3>CANDU 감속재에 경수가 들어가면</h3>
+<p>CANDU 격자는 순수 중수 기준으로 감속이 넉넉한 쪽(체적비 약 17)에 있어 흡수 변화에 민감합니다. H₂O의 Σa는 D₂O의 약 200배입니다(0.0197 대 9.3×10⁻⁵ cm⁻¹). 경수가 섞이면 감속은 조금 빨라지지만 열중성자 흡수 증가가 지배해 f가 줄고 <strong>음의 반응도</strong>가 들어갑니다. 열확산길이도 짧아져 중성자속 분포가 바뀝니다. 그래서 중수 동위원소 순도를 상시 감시하고 재농축 설비로 관리하며, 유입 경로(열교환기 누설 등)를 차단합니다. 반응도 민감도의 정량값은 노심 해석 대상이라 여기서는 방향만 씁니다.</p>
+<h2>규제·기준 근거</h2>
+<ul>
+<li><strong>10 CFR 50 부록 A GDC 11(원자로 고유보호)</strong>: 운전 범위에서 즉발 고유 궤환의 순효과가 급격한 반응도 증가를 상쇄하는 경향이어야 합니다. 감속재 선택과 과소감속 격자 설계의 직접 근거입니다[4]. GDC 26·28은 반응도 제어와 반응도 한계를 다룹니다.</li>
+<li><strong>NUREG-0800 SRP 4.3(Nuclear Design)</strong>: 감속재 온도·기포계수의 계산 방법과 불확도를 심사합니다[5].</li>
+<li><strong>표준기술지침서 NUREG-1431 LCO 3.1.3 Moderator Temperature Coefficient</strong>: 주기초 상한과 주기말 하한을 두며, 수치는 호기별 노심운영제한보고서(COLR)로 관리합니다[6].</li>
+<li><strong>IAEA SSR-2/1 Rev.1(2016)</strong>: 노심 설계가 고유 궤환으로 안정성을 확보하도록 요구합니다[7].</li>
+<li><strong>국내</strong>: 「원자로시설 등의 기술기준에 관한 규칙」 제18조(원자로의 고유보호)·제28조(반응도제어계통)와 호기별 운영기술지침서의 MTC 제한조건이 같은 구조입니다[8].<!-- 기술기준규칙 제18·28조: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 --></li>
+<li><strong>출제 당시 대비</strong>: 감속 물리는 바뀐 것이 없습니다. 법체계가 원자력법에서 원자력안전법(2011)으로 바뀌었지만 규칙의 요건 구조는 같습니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>감속능 ξΣs</th>
+<th>감속비 ξΣs/Σa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>묻는 것</td>
+<td>단위 길이당 감속 능력</td>
+<td>흡수 대비 감속 능력</td>
+</tr>
+<tr>
+<td>1위</td>
+<td>경수(1.35 cm⁻¹)</td>
+<td>중수(5,670 이상)</td>
+</tr>
+<tr>
+<td>경수 순위</td>
+<td>최상</td>
+<td>최하(약 70)</td>
+</tr>
+<tr>
+<td>설계 결과</td>
+<td>조밀 노심·짧은 감속길이</td>
+<td>천연우라늄 임계 가능 여부</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>감속(moderation)</th>
+<th>흡수(absorption)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>결과</td>
+<td>중성자 에너지 감소, 개수 유지</td>
+<td>중성자 소멸</td>
+</tr>
+<tr>
+<td>감속재에 원하는 것</td>
+<td>크게(ξΣs↑)</td>
+<td>작게(Σa↓)</td>
+</tr>
+</tbody>
+</table>
+<p>"중수가 가장 좋은 감속재"라고만 쓰면 감점 요인입니다. 어떤 지표로 비교했는지를 반드시 밝혀야 합니다.</p>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 감속재의 필요성과 선정조건, 경수를 쓰는 이유</strong></p>
+<ol>
+<li><strong>정의</strong>: 고속중성자(약 2 MeV)를 탄성산란으로 열중성자(약 0.025 eV)까지 감속시키는 저질량수 물질임</li>
+<li><strong>필요성</strong>: U-235 열핵분열 단면적(약 585 b)이 고속보다 수백 배 큼 → 저농축·천연우라늄 사용, 공명영역 빠른 통과로 공명흡수 감소</li>
+<li><strong>조건 ①</strong>: ξ 큼(질량수 작음) → 열화 충돌수 적음(H₂O 약 20회, 흑연 약 115회)</li>
+<li><strong>조건 ②</strong>: 감속능 ξΣs 큼(밀도 큼, 기체 부적합)</li>
+<li><strong>조건 ③</strong>: 감속비 ξΣs/Σa 큼 → 중수 &gt; 흑연 &gt; 경수</li>
+<li><strong>비핵적 조건</strong>: 열적·화학적 안정, 방사선 손상 작음, 저렴, 냉각재 겸용성, 음의 반응도 궤환</li>
+<li><strong>경수 장점</strong>: ξ·감속능 최대 → 감속길이 약 5 cm, 조밀 노심 / 냉각재 겸용 / 저렴·안정 / 과소감속 설계로 음의 MTC·기포계수</li>
+<li><strong>경수 단점</strong>: 흡수 큼(감속비 최소) → 농축 필요, 고온 시 고압 필요</li>
+<li><strong>비교</strong>: 중수는 감속비 최대이나 고가·삼중수소, 흑연은 고온 구조재 겸용이나 산화·위그너 에너지</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: 감속 에너지 축과 감속재별 열화 충돌수, 핵적 선정조건 3가지" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-007-moderator-selection/sketch1_moderator_collisions.avif"/><figcaption>답안용 도식: 감속 에너지 축과 감속재별 열화 충돌수, 핵적 선정조건 3가지</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>연도-교시-번호</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2001(제65회)-4-1</td>
+<td>노형별 감속재·냉각재 표 채우기</td>
+</tr>
+<tr>
+<td>제76회-4-3</td>
+<td>CANDU 노심에 경수 주입 시 거동</td>
+</tr>
+<tr>
+<td>제78회-3-3</td>
+<td>경수·중수의 감속능과 감속비 비교</td>
+</tr>
+<tr>
+<td>제81회-1-11</td>
+<td>감속재(Moderator)</td>
+</tr>
+<tr>
+<td>2020-2-1</td>
+<td>감속재 필요 이유·선정조건·물을 쓰는 이유</td>
+</tr>
+<tr>
+<td>2023-1-4</td>
+<td>경수로·중수로 냉각재 및 감속재 특성</td>
+</tr>
+<tr>
+<td>2026-1-4</td>
+<td>경수가 다른 감속재보다 좋은 이유 5가지</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, John Wiley &amp; Sons (1976), 8장 표 8-1.</li>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 표 3.1·5.2·5.3.</li>
+<li>E. E. Lewis, Fundamentals of Nuclear Reactor Physics, Academic Press (2008), 표 3.1·4.1.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A "General Design Criteria for Nuclear Power Plants", Criterion 11·26·28.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.3 "Nuclear Design".</li>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications — Westinghouse Plants, LCO 3.1.3 "Moderator Temperature Coefficient".</li>
+<li>IAEA, Safety of Nuclear Power Plants: Design, Specific Safety Requirements No. SSR-2/1 (Rev. 1), IAEA (2016).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제18·28조. 국가법령정보센터.</li>
+</ol>

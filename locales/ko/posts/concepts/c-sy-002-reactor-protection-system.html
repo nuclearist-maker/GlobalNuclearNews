@@ -1,0 +1,229 @@
+<figure class="article-image"><img alt="[개념 노트] 원자로보호계통(RPS)·발전소보호계통(PPS) — 4채널 2/4 동시논리와 설계기준 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-002-reactor-protection-system/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>원자로보호계통(RPS)은 공정변수가 트립 설정치에 도달하면 원자로정지차단기를 열어 제어봉집합체를 중력으로 낙하시켜, 예상운전과도 중 핵연료 허용손상한계(SAFDL)와 냉각재 압력경계 한계를 지키는 안전등급 계측제어계통입니다. CE형(OPR1000·APR1400)은 RPS와 공학적안전설비작동계통(ESFAS)의 개시 기능을 4채널 발전소보호계통(PPS)으로 묶습니다.</strong></p>
+<p>근거는 「원자로시설 등의 기술기준에 관한 규칙」 제26조[1], 10 CFR 50 부록 A GDC 20~25[2], 10 CFR 50.55a(h)(IEEE 603-1991)[3]입니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>신호 사슬: 보고 → 비교하고 → 맞춰 보고 → 끊는다</h3>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>하는 일</th>
+<th>CE형 아날로그(예)[4]</th>
+<th>APR1400 디지털 PPS[5]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>측정 채널</td>
+<td>같은 변수를 4채널(A~D)이 독립 측정</td>
+<td>전송기·신호조절</td>
+<td>전송기 → 채널별 캐비닛</td>
+</tr>
+<tr>
+<td>바이스테이블</td>
+<td>측정값을 설정치와 비교, 초과 시 트립 출력</td>
+<td>전압비교기 + 트립계전기(비여자)</td>
+<td>BP(Bistable Processor)</td>
+</tr>
+<tr>
+<td>동시논리</td>
+<td>2/4 일치 판정</td>
+<td>AB·AC·AD·BC·BD·CD 6개 매트릭스</td>
+<td>LCL 프로세서(기능별 2/4)</td>
+</tr>
+<tr>
+<td>개시</td>
+<td>최종 작동 명령</td>
+<td>개시계전기(4개) 비여자</td>
+<td>개시 논리 출력</td>
+</tr>
+<tr>
+<td>실행</td>
+<td>정지차단기 개방 → CEDM 전원 상실</td>
+<td>차단기 4대(부족전압·분로 트립코일)</td>
+<td>RTSS(설계·호기별 구성 차이)</td>
+</tr>
+</tbody>
+</table>
+<p>아날로그 CE형에서는 어느 매트릭스든 2/4가 성립하면 매트릭스 계전기 접점이 개시계전기 4개를 모두 비여자시키고, 이 계전기들이 정지차단기를 엽니다[4]. MG 세트에서 오는 CEDM 전원이 끊기면 제어봉이 중력으로 떨어집니다. ESFAS 기능은 같은 바이스테이블·2/4 출력을 받아 계열(Train A/B)별 작동 논리로 펌프·밸브를 움직입니다. APR1400에서는 LCL의 ESFAS 개시 신호가 안전등급 고속 링크로 ESF-CCS에 가고, ESF-CCS 그룹 제어기가 선택적 2/4를 다시 적용합니다.</p>
+<figure class="article-image"><img alt="APR1400 PPS 예시 4채널 신호 사슬(BP → LCL 2/4 → RPS·ESFAS 개시)과 동시논리별 허용 오트립·미트립 입력 수 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-002-reactor-protection-system/fig1_pps_four_channel_logic.avif"/><figcaption>APR1400 PPS 예시 4채널 신호 사슬(BP → LCL 2/4 → RPS·ESFAS 개시)과 동시논리별 허용 오트립·미트립 입력 수 표</figcaption></figure>
+<p>RTSS 구성은 설계마다 다릅니다. 학회 보고에 따르면 신한울 1·2호기는 정지 스위치기어 4대에 선택적 2/4를, APR1400 표준설계(미국 설계인증)는 4대 2세트(8대)에 완전 2/4를 적용했습니다[6]. PPS는 차단기의 부족전압 트립 코일을, DPS는 같은 차단기의 분로 트립 코일을 씁니다(DCD Tier 2 Rev.3 7.2.1.3)[5].</p>
+<h3>바이패스 두 종류</h3>
+<ul>
+<li><strong>채널(정비·시험) 바이패스</strong>: 바이패스된 채널은 논리에서 빠져 2/4가 <strong>2/3</strong>으로 바뀝니다. 두 채널 동시 바이패스는 인터록으로 막습니다. 바이패스 상태에서도 남은 3채널 중 1채널이 더 동작하지 않아도 정지할 수 있습니다.</li>
+<li><strong>운전 바이패스</strong>: 기동·저출력처럼 트립이 운전을 방해하는 구간에서 의도적으로 해제합니다(예: 가압기 저압력, 고 로그출력). 허용 조건을 벗어나면 자동으로 해제되어야 합니다.</li>
+</ul>
+<h3>트립 변수 예(APR1400)</h3>
+<p>APR1400(신고리 3·4호기 디지털 보호계통) 기준으로 수동 트립 외에 다음 11개 기능(증기발생기별 중복 포함 15개)이 있습니다[5][7].</p>
+<table>
+<thead>
+<tr>
+<th>분류</th>
+<th>트립 기능</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>출력·노심</td>
+<td>가변과출력(VOPT), 고 로그출력, 고 국부출력밀도(LPD, CPC), 저 DNBR(CPC)</td>
+</tr>
+<tr>
+<td>1차측</td>
+<td>가압기 고압력, 가압기 저압력, 원자로냉각재 저유량(증기발생기 차압)</td>
+</tr>
+<tr>
+<td>2차측</td>
+<td>증기발생기 저압력, 증기발생기 고수위, 증기발생기 저수위</td>
+</tr>
+<tr>
+<td>격납</td>
+<td>격납건물 고압력</td>
+</tr>
+</tbody>
+</table>
+<p>CPC는 노외핵계측, RCS 온도·압력, RCP 속도, CEAC의 CEA 위치 편차를 받아 DNBR과 LPD를 직접 계산하고 트립 신호를 PPS 바이스테이블에 넣습니다.</p>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>WH형과의 차이</strong>: 웨스팅하우스형은 공정 보호 채널(2~4개) 출력을 SSPS 2개 계열이 2/3 또는 2/4로 판정하고, 직렬 정지차단기 RTA·RTB(시험용 바이패스 차단기 BYA·BYB)를 엽니다. DNB와 과출력은 CPC 대신 **과온도 ΔT(OTΔT)**와 <strong>과출력 ΔT(OPΔT)</strong> 가변 설정치로 막습니다[8]. OTΔT는 Tavg·가압기 압력·축방향 출력편차로 보정해 DNB를, OPΔT는 Tavg와 그 변화율·출력편차로 보정해 핵연료 과출력(kW/ft)을 막습니다.</li>
+<li><strong>정지차단기 다양성</strong>: 차단기마다 부족전압 트립과 분로 트립을 둡니다. 1983년 Salem 1호기에서 부족전압 트립 장치 고장으로 자동 정지가 실패한 뒤 NRC GL 83-28로 분로 트립 자동 작동이 보강되었습니다[9].</li>
+<li><strong>디지털화의 새 쟁점</strong>: 소프트웨어 공통원인고장이 4채널을 동시에 무력화할 수 있으므로 다양성보호계통(DPS)과 수동 기능으로 대비합니다.</li>
+<li><strong>운전 연계</strong>: 트립 설정치는 안전제한설정치(LSSS)로 운영기술지침서에 들어가고, 보호계통 채널 운전가능성은 LCO 대상입니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기술기준규칙 제26조①</td>
+<td>AOO에서 SAFDL 비초과를 위한 자동 작동, 사고 감지 시 안전계통 작동 개시[1]</td>
+</tr>
+<tr>
+<td>같은 조② 1~8호</td>
+<td>다중성·독립성(단일고장, 1채널 사용정지 시 최소 다중성), 채널별 운전 중 시험, 공통 영향 배제, 고장시 안전, 제어계통 분리, 반응도제어 단일 오동작 시 SAFDL, 설정치 조정, 디지털 설비의 심층방어·다양성</td>
+</tr>
+<tr>
+<td>같은 규칙 제27조</td>
+<td>다양성보호계통: 정지·비상보조급수·터빈 트립, 보호계통과 분리</td>
+</tr>
+<tr>
+<td>GDC 20~25</td>
+<td>기능, 신뢰성·시험성, 독립성, 고장 모드, 보호·제어 분리, 반응도 제어 오동작[2]</td>
+</tr>
+<tr>
+<td>10 CFR 50.55a(h)</td>
+<td>(h)(2) 1971~1999 건설허가: IEEE 279 또는 603-1991, (h)(3) 1999.5.13 이후 신청: IEEE 603-1991[3]</td>
+</tr>
+<tr>
+<td>IEEE 603-1991</td>
+<td>5절 단일고장·보호동작 완결·품질·기기검증·독립성·시험·정보표시·접근통제, 6절 운전·정비 바이패스·설정치</td>
+</tr>
+</tbody>
+</table>
+<!-- 기술기준규칙 제26·27조: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 -->
+<p>출제 당시(2011)와 비교하면 근거 법령이 「원자력법」에서 「원자력안전법」으로 바뀌었고 기술기준규칙은 원안위규칙이 되었지만, 제26조의 요건 구조는 같습니다. 신규 원전은 아날로그 매트릭스에서 디지털 PPS로 바뀌었고, 이에 맞춰 소프트웨어 공통원인고장 대비 요건(제26조②8)과 DPS가 핵심 쟁점이 되었습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>RPS</th>
+<th>ESFAS</th>
+<th>DPS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>목적</td>
+<td>AOO에서 SAFDL·압력 보호</td>
+<td>사고 시 공학적안전설비 작동</td>
+<td>공통원인고장에 의한 ATWS 대비</td>
+</tr>
+<tr>
+<td>최종 동작</td>
+<td>정지차단기 개방 → CEA 낙하</td>
+<td>안전주입·격납격리·살수·주증기격리·보조급수</td>
+<td>정지·터빈 트립·보조급수</td>
+</tr>
+<tr>
+<td>논리</td>
+<td>2/4</td>
+<td>2/4 → 계열별 작동</td>
+<td>별도 플랫폼(보호계통과 분리)</td>
+</tr>
+<tr>
+<td>등급</td>
+<td>안전등급</td>
+<td>안전등급</td>
+<td>비안전등급(다양성)</td>
+</tr>
+</tbody>
+</table>
+<p>동시논리도 헷갈리기 쉽습니다. **2/4는 "두 채널이 고장 나야 트립"이 아니라 "같은 보호기능의 4채널 중 2채널 이상이 트립 조건일 때 트립"**입니다. 서로 다른 변수의 트립을 합산하는 것도 아닙니다. 1/4는 오신호 1개로도 불시정지가 나고, 4/4는 채널 하나만 고장 나도 정지에 실패합니다. 2/4는 오신호 1개를 무시하면서 동작실패 2채널까지 견딥니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 공정변수가 설정치 도달 시 자동 원자로 정지, AOO 중 SAFDL·RCS 압력 한계 보호(제26조①, GDC 20)</li>
+<li><strong>구성</strong>: 측정 채널 4개 → 바이스테이블 → 2/4 동시논리 → 개시 → 정지차단기 → CEA 중력 낙하</li>
+<li><strong>APR1400 PPS</strong>: RPS + ESFAS 개시, BP·LCL 프로세서, ESF-CCS로 ESF 작동, CPC가 DNBR·LPD 트립 입력</li>
+<li><strong>다중성(중첩성)</strong>: 4채널, 1채널 사용정지에도 최소 다중성 유지</li>
+<li><strong>독립성</strong>: 채널 간 물리·전기 분리, 안전·비안전 격리</li>
+<li><strong>다양성</strong>: 다른 변수로 같은 사고 감지, 부족전압 + 분로 트립, DPS</li>
+<li><strong>동시성</strong>: 2/4 — 단일 오신호 불시정지 방지, 단일고장에도 동작</li>
+<li><strong>시험성</strong>: 채널 바이패스(2/3) 상태로 운전 중 중첩 시험</li>
+<li><strong>고장시 안전</strong>: 부족전압(UV) 경로는 비여자 시 트립 → 전원 상실 = 정지(분로 트립은 여자 작동)</li>
+<li><strong>기타</strong>: 제어계통 분리, 보호동작 완결, 운전 바이패스 자동 해제, 기준 IEEE 603-1991·50.55a(h)</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 4채널 2/4 원자로보호계통 블록도와 설계기준 꼬리표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sy-002-reactor-protection-system/sketch1_rps_block_2oo4.avif"/><figcaption>답안지용 4채널 2/4 원자로보호계통 블록도와 설계기준 꼬리표</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026년 2교시 4번</td>
+<td>APR1400 PPS 구성·CPC 기능·DPS ATWS 유형</td>
+</tr>
+<tr>
+<td>2023년 2교시 2번</td>
+<td>RPS·ESFAS·DPS</td>
+</tr>
+<tr>
+<td>2021년 3교시 1번</td>
+<td>중첩성·다양성·동시성·시험성과 예</td>
+</tr>
+<tr>
+<td>2020년 1교시 8번</td>
+<td>보호계통 설계기준(신뢰성 향상)</td>
+</tr>
+<tr>
+<td>2017년 2교시 1번</td>
+<td>보호계통·안전계통 설계원칙</td>
+</tr>
+<tr>
+<td>2011년 1교시 1번</td>
+<td>원자로 보호계통 설계기준</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제26조·제27조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criteria 20~25.</li>
+<li>U.S. NRC, 10 CFR 50.55a(h); IEEE Std 603-1991 "IEEE Standard Criteria for Safety Systems for Nuclear Power Generating Stations".</li>
+<li>T. E. Wierman et al., Reliability Study: Combustion Engineering Reactor Protection System, 1984–1998, NUREG/CR-5500 Vol. 10, INEEL (2001), NRC ADAMS ML022050271.</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Ch. 7.2 "Reactor Trip System", Rev. 3 (2018), NRC 설계인증 공개본.</li>
+<li>김한규 외, APR1400 원자로정지 스위치기어계통(RTSS) 구성 개선 논문, 한국원자력학회 2016 추계학술발표회(논문번호 16A-592).</li>
+<li>S. C. Jang et al., "Model and Estimation of ATWS Frequency for the APR-1400 Reactor", Transactions of the Korean Nuclear Society Spring Meeting (2020).</li>
+<li>U.S. NRC, HRTD Westinghouse Technology Systems Manual, Sec. 12.1 "Reactor Protection System", NRC ADAMS ML11223A300.</li>
+<li>U.S. NRC, Generic Letter 83-28 "Required Actions Based on Generic Implications of Salem ATWS Events" (1983).</li>
+</ol>

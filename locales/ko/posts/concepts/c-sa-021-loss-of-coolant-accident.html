@@ -1,0 +1,188 @@
+<figure class="article-image"><img alt="[개념 노트] 냉각재상실사고(LOCA) — 파단 크기·위치에 따라 달라지는 현상과 ECCS 대응 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-021-loss-of-coolant-accident/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>냉각재상실사고(LOCA)는 원자로냉각재압력경계(RCPB)가 파손되어 냉각재가 정상 보충(충전) 능력을 넘는 속도로 빠져나가는 가상 사고로, 아주 작은 파단부터 최대 배관의 양단 파단(DEG)까지 전 범위를 설계기준사고로 해석합니다(10 CFR 50.46(c)(1)).</strong>[1]</p>
+<p>이 노트는 LOCA 총론입니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>크기 분류 — 규제 정의가 하나가 아니다</h3>
+<table>
+<thead>
+<tr>
+<th>기준</th>
+<th>구분</th>
+<th>근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>결정론 해석</td>
+<td>대형 / (중형) / 소형 — 지배 현상과 해석 코드가 달라 따로 평가</td>
+<td>경계는 방법론·노형별로 다름</td>
+</tr>
+<tr>
+<td>PSA 초기사건</td>
+<td>대형 등가 직경 6 in 초과 / 중형 약 2~6 in / 소형 약 0.5~2 in / 매우 소형 10~100 gpm</td>
+<td>NUREG/CR-5750[2]</td>
+</tr>
+<tr>
+<td>누설</td>
+<td>충전 능력 이내</td>
+<td>운영기술지침서 RCS 누설 LCO</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: NUREG/CR-5750 소형·중형 경계(0.5·2 in)는 원문 표 미대조. 6 in 초과 대형 구분은 2005 연방관보로 확인. 결정론 경계 수치(1 ft²·0.5 ft²)는 공개 근거 미확인으로 2026-11-03 삭제 -->
+<p>분류의 목적은 크기마다 지배 현상, 주력 ECCS, 운전원의 시간 여유가 다르다는 데 있습니다.</p>
+<h3>크기별 지배 현상</h3>
+<ul>
+<li><strong>대형(LBLOCA)</strong>: 수십 초 안에 격납건물 압력 부근까지 감압합니다. 취출(조기 CHF·저장열 재분배) → 재충수(SIT가 하부 플레넘 충수) → 재관수(급랭 전선 상승·증기 결합) → 장기 냉각 순입니다. 연료 저장열과 재관수율이 PCT를 정합니다.</li>
+<li><strong>중형(MBLOCA)</strong>: 감압이 저압주입 영역까지 빨리 내려가지 않고 HPSI만으로는 부족합니다. SIT가 언제 들어가느냐가 관건이며 두 특성이 섞입니다.</li>
+<li><strong>소형(SBLOCA)</strong>: 과냉 감압 뒤 가압기가 비고 계통이 포화되면, RCS 압력은 SG 2차측 압력 수준 근처에서 오래 머뭅니다. 이때 SG가 열침원이고 붕괴열은 단상 → 이상 자연순환 → 리플럭스 응축으로 빠집니다. 사건은 수백~수천 초에 걸칩니다.</li>
+</ul>
+<p>저온관 소형 파단에서는 <strong>루프 씰</strong>이 중요합니다. RCP 흡입 쪽 U자 교차배관에 고인 물이 노심 증기의 탈출 경로(고온관 → SG → 교차배관 → 파단)를 막습니다. 해소 전에는 압력 균형 때문에 노심 쪽 수위가 눌려 일시 노출될 수 있습니다. 해소되면 증기가 빠지며 수위가 회복됩니다. 이후 HPSI 유량이 보일오프와 방출량을 못 따라가면 노심 수위가 다시 내려갑니다(보일오프). 2차측 냉각 등으로 더 감압되어 SIT가 들어가거나 HPSI가 따라잡으면 회복으로 돌아섭니다. 다만 이 순서와 시점은 파단 크기·위치와 주입 조건에 따라 달라지는 대표 경로입니다. 고온관 파단은 증기가 바로 빠지므로 루프 씰의 영향이 작습니다.</p>
+<figure class="article-image"><img alt="대형·중형·소형 LOCA RCS 압력-시간 개념 곡선(로그 시간축), SIT 충전압 예(APR1400)[8" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-021-loss-of-coolant-accident/fig1_break_spectrum_pressure.avif"/><figcaption>대형·중형·소형 LOCA RCS 압력-시간 개념 곡선(로그 시간축), SIT 충전압 예(APR1400)[8</figcaption></figure>
+<p>, 소형의 조건부 감압 경로와 크기별 비교표]</p>
+<h3>파단 위치 효과</h3>
+<p>저온관 주입형 PWR의 LBLOCA는 보통 <strong>저온관(RCP 토출) 파단</strong>이 제한적입니다. 취출 중 다른 저온관에 넣은 물 일부가 강수부를 돌아 파단으로 빠집니다(ECC 우회). 재관수 단계에서는 노심 증기가 고온관 → SG → RCP를 거쳐야 빠지므로 배압이 생깁니다(증기 결합). 고온관 파단은 상부 플레넘 증기가 파단으로 바로 빠져 재관수 배압과 ECC 유로가 달라지며 보통 덜 제한적입니다. APR1400은 SIT 4기와 안전주입펌프 4대가 모두 원자로용기 직접주입(DVI)이고, IRWST가 격납건물 안 수원이라 재순환 전환이 없습니다. 대신 강수부 상부에서 주입수가 증기에 쓸려 나가는 직접 우회가 쟁점이고, <strong>DVI 배관 파단</strong>은 파단 위치에 따라 그 경로의 주입수가 상실·우회되는 고유 사례라 따로 해석합니다. 가압기 상부 파단(PORV 고착)에서는 RCS 안 기포 형성과 냉각재 재분포로 가압기 수위가 높아도 노심의 냉각재는 부족할 수 있습니다.</p>
+<figure class="article-image"><img alt="PWR 1차 루프 측면 절개 장면 위 파단·관찰 위치 5곳(저온관·고온관·루프 씰·가압기 상부·DVI)과 위치별 영향 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-021-loss-of-coolant-accident/fig2_break_location_map.avif"/><figcaption>PWR 1차 루프 측면 절개 장면 위 파단·관찰 위치 5곳(저온관·고온관·루프 씰·가압기 상부·DVI)과 위치별 영향 표</figcaption></figure>
+<h2>원전에서의 의미</h2>
+<h3>운전원 조치 — RCP 정지 기준(TMI 이후)</h3>
+<p>SBLOCA에서 RCP를 계속 돌리다가 재고량이 가장 적을 때 정지되면(소외전원 상실 등) 섞여 돌던 기액이 분리되어 노심 수위가 급락하고 PCT가 크게 오릅니다. 그래서 NUREG-0737 II.K.3.5와 GL 83-10(1983)이 RCP 정지 기준을 요구했습니다[3][4]. Westinghouse형은 WOG 방법론의 RCS 저압력 등 증상 기반 기준(GL 85-12)을 씁니다. CE형(국내 OPR1000 계열)은 <strong>Trip-2/Leave-2</strong>입니다[4]. 저압에서 2대를 먼저 정지하고, LOCA로 진단되면 나머지 2대도 정지합니다. 비 LOCA 감압이면 남은 2대로 강제순환을 유지합니다. 정지 설정점은 발전소별입니다.</p>
+<p>그 밖의 조치는 다음과 같습니다. SIAS를 확인하고, 격납건물 압력·방사선·집수조 수위 상승과 2차측 방사선 무변화로 LOCA를 진단합니다. 이 증상이 MSLB·SGTR과의 구분 근거입니다. 소형이면 2차측 급속냉각으로 감압해 HPSI·SIT 주입을 돕습니다. 이후 재순환과 고온관 동시 주입으로 장기 냉각합니다.</p>
+<h3>LOCA 중 상부헤드 기포</h3>
+<p>RCP 정지·자연순환 중 원자로용기 상부헤드는 주 유로 밖이라 고온수가 정체합니다. 이 상태에서 냉각·감압하면 헤드 유체가 포화압 아래로 내려가 증발합니다. 증상은 감압·살수 중 가압기 수위의 비정상 급상승, 압력 제어 둔화, 원자로용기 수위계(RVLMS) 상부헤드 수위 저하입니다. 대응은 감압 중지·재가압으로 과냉각을 회복하고, 조건이 되면 RCP를 재기동하며, 원자로냉각재 기체배기계통(RCGVS, NUREG-0737 II.B.1)으로 배기하는 것입니다[3][5]. 배기는 헤드 수위가 회복되면 멈추고, 격납건물 수소 농도가 한계를 넘지 않게 관리합니다. 세부 정지 조건과 수치는 발전소 절차서를 따릅니다.</p>
+<h3>그 밖의 연결 주제</h3>
+<ul>
+<li><strong>수소</strong>: 설계기준 LOCA의 수소원은 Zr-증기 반응, 물의 방사분해, Al·Zn 부식, 용존 수소입니다.</li>
+<li><strong>ISLOCA</strong>: 고압 RCS와 저압 연계계통 경계 밸브가 실패하면 격납건물 밖 저압 배관이 파손되는 우회 사고가 됩니다.</li>
+<li><strong>LBB·집수조</strong>: LBB는 배관 휘핑 등 동적 영향만 설계에서 빼 줄 뿐 ECCS 설계용 LOCA는 남습니다. GSI-191은 파편이 재순환 집수조 여과기를 막는 문제입니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50.46(c)(1)·(b), 부록 K[1]</td>
+<td>LOCA 정의, ECCS 허용기준·평가모델</td>
+</tr>
+<tr>
+<td>기술기준규칙 제2조 제1항 제9호·제30조, 원안위고시 제2017-23호[7]</td>
+<td>설계기준사고, ECCS 요건, 성능기준</td>
+</tr>
+<tr>
+<td>SRP 15.6.5[6]</td>
+<td>파단 크기·위치 스펙트럼 해석 심사</td>
+</tr>
+<tr>
+<td>NUREG-0737(1980)</td>
+<td>II.K.3.5 RCP 정지, II.K.3.30·31 SBLOCA 평가모델, II.B.1 기체배기</td>
+</tr>
+<tr>
+<td>GL 83-10·85-12·86-06, GL 81-21[4][5]</td>
+<td>RCP 정지 기준, 자연순환 냉각·상부헤드 기포</td>
+</tr>
+<tr>
+<td>GDC 4·SRP 3.6.3, GL 2004-02</td>
+<td>LBB 동적 영향 배제, 집수조 여과기</td>
+</tr>
+</tbody>
+</table>
+<p><strong>출제 당시 대비</strong>: 제78회의 "과기부고시"는 현행 원안위고시 제2017-23호입니다. 미국 50.46c는 2024.4.11 반려되어 미제정입니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>LBLOCA</th>
+<th>SBLOCA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>감압</td>
+<td>수십 초에 격납건물 압력 부근</td>
+<td>SG 2차측 압력 수준 근처에서 장시간 정체</td>
+</tr>
+<tr>
+<td>노심 노출</td>
+<td>취출 직후 전면 노출</td>
+<td>루프 씰·보일오프로 서서히</td>
+</tr>
+<tr>
+<td>주력 ECCS</td>
+<td>SIT·LPSI</td>
+<td>HPSI·2차측 냉각, 뒤에 SIT</td>
+</tr>
+<tr>
+<td>열제거</td>
+<td>파단 방출·재관수</td>
+<td>SG 자연순환·리플럭스</td>
+</tr>
+<tr>
+<td>운전원</td>
+<td>시간 여유 거의 없음</td>
+<td>RCP 정지·감압 조치가 결과 좌우</td>
+</tr>
+</tbody>
+</table>
+<p>LBLOCA가 늘 가장 위험한 것은 아닙니다. PSA에서는 빈도와 운전원 조치 때문에 SBLOCA 기여가 큰 경우가 많습니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: RCPB 파손으로 충전 능력 초과 냉각재 상실, 최대 배관 양단 파단까지(50.46(c)(1))</li>
+<li><strong>분류</strong>: 대형·중형·소형(결정론 경계 방법론별, PSA 대형 &gt; 6 in)</li>
+<li><strong>LBLOCA</strong>: 취출 → 재충수 → 재관수 → 장기 냉각, SIT·LPSI 주력, 수십 초 급감압</li>
+<li><strong>SBLOCA</strong>: SG 압력 수준 근처 정체, 자연순환·리플럭스, 루프 씰 해소, 보일오프, HPSI·2차측 냉각 주력</li>
+<li><strong>위치</strong>: 저온관 파단이 ECC 우회·증기 결합으로 제한적, APR1400 DVI 파단 별도</li>
+<li><strong>RCP 정지</strong>: 지연 정지 시 수위 급락 → TMI 후 기준(CE Trip-2/Leave-2)</li>
+<li><strong>상부헤드 기포</strong>: 정체 고온수 증발 → 재가압·RCGVS 배기</li>
+<li><strong>판정</strong>: PCT 1,204 °C 등 5기준(원안위고시 제2017-23호)</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 RCS 압력-시간 LB·SB 개형과 주입 압력선" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-021-loss-of-coolant-accident/sketch1_lb_sb_pressure_answer.avif"/><figcaption>답안지용 RCS 압력-시간 LB·SB 개형과 주입 압력선</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022년 2교시 1번</td>
+<td>MSLB·LOCA·SGTR 공통·특징적 증상</td>
+</tr>
+<tr>
+<td>2018년 2교시 3번</td>
+<td>LOCA 시 격납건물 내 수소 생성원</td>
+</tr>
+<tr>
+<td>2013년 2교시 1번</td>
+<td>LOCA 중 상부헤드 기포(원인·증상·제거·배기 정지)</td>
+</tr>
+<tr>
+<td>제78회 2교시 6번</td>
+<td>ECCS 허용기준 3가지 이상</td>
+</tr>
+<tr>
+<td>제68회 4교시 5번</td>
+<td>LOCA 사건수목 최악 경위와 확률</td>
+</tr>
+</tbody>
+</table>
+<p>제68회 문항의 사건수목은 원본 그림을 확인했습니다. 표제는 배관 파열 → 비상 노심냉각(실패 P_E) → 핵분열생성물 제거(실패 P_F) → 격납건물 건전성(실패 P_C)입니다. 가장 심각한 경위는 Ⅳ(생성물 제거 실패 + 격납건물 실패)이고, P_Ⅳ = P_I(1 − P_E)·P_F·P_C ≈ P_I·P_F·P_C입니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, 10 CFR 50.46 "Acceptance criteria for emergency core cooling systems for light-water nuclear power reactors" 및 Appendix K "ECCS Evaluation Models". eCFR.</li>
+<li>U.S. NRC, NUREG/CR-5750 "Rates of Initiating Events at U.S. Nuclear Power Plants: 1987–1995" (1999).</li>
+<li>U.S. NRC, NUREG-0737 "Clarification of TMI Action Plan Requirements" (1980), II.B.1·II.K.3.5·II.K.3.30·31.</li>
+<li>U.S. NRC, Generic Letter 83-10, GL 85-12(Westinghouse형), GL 86-06(CE형) — TMI Action Item II.K.3.5 "Automatic Trip of Reactor Coolant Pumps" 이행.</li>
+<li>U.S. NRC, Generic Letter 81-21 "Natural Circulation Cooldown" (1981).</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 15.6.5, 3.6.3; Generic Letter 2004-02.</li>
+<li>원자력안전위원회, 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」, 원안위고시 제2017-23호; 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제2조·제30조. 국가법령정보센터.</li>
+<li>KHNP, APR1400 Design Certification RAI 496-8630 응답(SIT 질소 충전압 578~624 psig), NRC ADAMS ML17180A455.</li>
+</ol>

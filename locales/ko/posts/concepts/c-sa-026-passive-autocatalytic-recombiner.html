@@ -1,0 +1,247 @@
+<figure class="article-image"><img alt="[개념 노트] 피동촉매형 수소재결합기(PAR) — 촉매 원리, 제거율 상관식, 점화 위험과 국내 교체 경과 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-026-passive-autocatalytic-recombiner/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>피동촉매형 수소재결합기(PAR, Passive Autocatalytic Recombiner)는 격납건물 안에서 백금·팔라듐 촉매 표면으로 수소와 산소를 화염 없이 증기로 재결합시키는 설비입니다. 전원·신호·조작 없이 수소가 닿으면 스스로 기동하고, 반응열이 만든 굴뚝 자연대류로 주변 기체를 계속 빨아들입니다.</strong></p>
+<p>이 노트는 PAR 설비 하나에 집중합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>촉매 재결합과 굴뚝 효과</h3>
+<p>상용 PAR는 위아래가 열린 수직 상자입니다. 하부에 촉매(판형: AREVA·AECL, 펠릿형: NIS)를 두고 상부는 굴뚝으로 비워 둡니다.</p>
+<ol>
+<li>수소-공기(-증기) 혼합기체가 하부 유입구로 들어와 촉매 표면에 닿습니다.</li>
+<li>촉매 표면에서 2H₂ + O₂ → 2H₂O 반응이 일어나고, 수소 1 mol당 약 242 kJ의 열이 납니다.</li>
+<li>뜨겁고 수소가 줄어든 기체가 굴뚝을 따라 올라가 상부로 나가고, 그 자리를 새 기체가 채웁니다.</li>
+</ol>
+<p>이 자기 공급(self-feeding) 흐름 덕분에 팬이나 전원이 필요 없고, 외부전원·비상전원이 모두 끊긴 SBO에서도 작동합니다. 배출 기류는 격납건물 혼합도 돕습니다. 배출 기체는 순수 증기가 아니라 수소·산소가 줄고 증기가 늘어난 고온 혼합기체입니다. 혼합기체 1 mol 중 수소 0.01 mol이 반응하면 기체 단열 온도상승은 약 80 K입니다(241.8 kJ/mol × 0.01 ÷ 29.5 J/mol·K, 일정 비열 근사의 설명용 계산). 촉매 표면 온도는 이 값으로 환산하지 않습니다.</p>
+<figure class="article-image"><img alt="판형 PAR 단면(유입구·촉매판·굴뚝·배출구)과 반응식, 기동·운전 조건, THAI 점화 관측값, 성능 저해 요인" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-026-passive-autocatalytic-recombiner/fig1_par_cutaway_principle.avif"/><figcaption>판형 PAR 단면(유입구·촉매판·굴뚝·배출구)과 반응식, 기동·운전 조건, THAI 점화 관측값, 성능 저해 요인</figcaption></figure>
+<h3>기동·정지와 성능 지표</h3>
+<ul>
+<li><strong>기동</strong>: 통상 약 1~2 vol%로 알려져 있으나 제품·조건에 따라 다릅니다. OECD/NEA THAI 시험(2007~2009)에서는 0.2~4.4 vol%로 조건에 따라 달랐습니다[3][4]. 건조·고압·고온이면 빨리, 증기 포화(응축)면 늦게 기동했습니다. 한번 가열되면 약 0.3 vol%까지 계속 운전합니다.</li>
+<li><strong>제거효율</strong> γ = (C_in − C_out)/C_in: 40~70 %(THAI, 산소 충분, 설계별). 한 번 통과할 때의 농도 감소율이며, 격납건물 전체 제거효율이 아닙니다.</li>
+<li><strong>산소 잉여비</strong> Φ = 2·C_O₂/C_H₂: Φ ≥ 2~3이어야 성능이 유지되고, Φ = 1이면 설계 용량의 50 % 미만으로 떨어집니다.</li>
+</ul>
+<h3>제거율 상관식</h3>
+<p>제거율은 입구 수소 농도에 거의 비례하고 압력이 높을수록 커지며, 증기·온도 영향은 작습니다(THAI). 해석 코드는 제작사 실험식을 씁니다. AREVA(현 Framatome) 판형 식은 다음과 같습니다(KAERI의 MELCOR 구현 논문, 2019 정리)[5].</p>
+<ul>
+<li>R[kg/s] = η · x_min · (A·P + B) · tanh(100·x_min,lim) × 10⁻³</li>
+<li>x_min = min(x_H₂, 2x_O₂, 0.08), x_min,lim = max(x_min − 0.005, 0), P[bar], η = 1(x_H₂ ≤ x_O₂) 또는 0.6</li>
+<li>FR1-380T: A 3.1·B 3.7, FR1-1500T: A 13.7·B 16.7</li>
+</ul>
+<p>건공기·산소 충분 조건에서 대형 FR1-1500T는 4 vol%일 때 1.0 bar 약 1.21 g/s, 1.5 bar 약 1.49 g/s(5.4 kg/h)입니다. 압력과는 A·P + B의 선형 관계입니다. 0.5 vol% 이하의 0과 8 vol% 이상의 일정값은 모델 처리이며 실제 기동 농도나 용량 한계가 아닙니다. NIS 식(Fischer 1995)은 R ∝ x^1.307·P/T 형태로 MELCOR 기본 모델이고, 국내 CERACOM 식은 k·x^1.1·P^1.2·(273/T)^1.5 형태입니다. 상관식은 이미 기동한 PAR의 준정상 제거율이며 기동 지연·피독은 따로 반영합니다.</p>
+<figure class="article-image"><img alt="AREVA 상관식으로 계산한 PAR 1대당 제거율 곡선(FR1-1500T 1.0·1.5 bar, FR1-380T 1.0 bar)과 국내 소형 PAR 4 % 제거율 비교" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-026-passive-autocatalytic-recombiner/fig2_removal_rate_curve.avif"/><figcaption>AREVA 상관식으로 계산한 PAR 1대당 제거율 곡선(FR1-1500T 1.0·1.5 bar, FR1-380T 1.0 bar)과 국내 소형 PAR 4 % 제거율 비교</figcaption></figure>
+<h3>점화 위험</h3>
+<p>농도가 높아지면 촉매 온도도 거의 선형으로 오릅니다. 산소가 충분한 THAI 시험에서 PAR는 다음 조건에서 주변 혼합기체의 점화원이 됐습니다. 특정 시험의 입구 농도·촉매 최고 온도이므로 보편 임계값으로 쓰지 않습니다[3].</p>
+<table>
+<thead>
+<tr>
+<th>조건</th>
+<th>입구 수소 농도</th>
+<th>촉매 최고 온도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>건조(증기 없음)</td>
+<td>5.5~7.5 vol%(설계 의존)</td>
+<td>890~920 °C</td>
+</tr>
+<tr>
+<td>습윤(응축 증기 45 %)</td>
+<td>8~9 vol%</td>
+<td>960~1,005 °C</td>
+</tr>
+</tbody>
+</table>
+<p>시험에서 화염은 PAR 출구에서 위로 퍼졌고 화염가속은 없었습니다. 국내 평가(한울 1·2, 2024)에서도 PAR 유발점화를 반영한 화염가속지수 최댓값은 0.891에서 0.793으로 1 미만이었습니다[2]. 산소가 부족하면(Φ &lt; 2.2) 촉매가 덜 달궈져 점화가 억제됩니다. 반대로 증기 불활성 상태에서 살수로 증기가 급감하면 고농도에서 점화될 수 있습니다. PAR는 "무화염 설비"지만 고농도에서는 의도치 않은 점화기가 될 수 있다는 점을 답안에 적으십시오.</p>
+<h3>저해·피독</h3>
+<ul>
+<li><strong>먼지·휘발성 유기화합물(VOC)</strong>: 정비 기간에 촉매에 쌓여 기동 성능을 떨어뜨립니다(MDEP 조사에 보고된 운전경험)[1].</li>
+<li><strong>수막(응축수)</strong>: 초기 가열을 늦춰 기동이 지연됩니다.</li>
+<li><strong>요오드·에어로졸</strong>: 잠재 피독물질이지만 THAI 에어로졸+요오드 시험에서는 효율 50~70 %로 큰 저하가 없었습니다. 오히려 PAR가 CsI 에어로졸 일부를 휘발성 I₂로 바꿀 수 있어 선원항 쟁점이 됩니다.</li>
+<li><strong>CO</strong>: MCCI 단계에서 생기며 PAR가 CO₂로 산화합니다. 저온 기동 억제 가능성이 거론되나 정량값은 설계별입니다. CO가 섞이면 폭굉 민감도도 커집니다.</li>
+</ul>
+<h2>원전에서의 의미</h2>
+<h3>배치 원칙 (MDEP 2021)</h3>
+<ul>
+<li>국부 자유체적에 비례해 분산하고, 수소 방출원 위 높은 곳에 둡니다.</li>
+<li>PAR 대류가 격실 경계를 넘도록 배치하고, 벽에서 떨어뜨립니다.</li>
+<li>비산물·배관 휩 위치를 피하고, 촉매 인서트를 쉽게 빼서 점검할 수 있게 합니다.</li>
+<li>위치는 격실 노드 수소 농도 해석(한국: MAAP 약 40개 격실)으로 정합니다.</li>
+<li>수량은 총량만이 아니라 dM_H₂/dt = ṁ_발생 − ΣR_PAR − 기타 제거로 발생 속도·기동 지연·국부 축적·불가용성을 함께 봅니다.</li>
+</ul>
+<h3>APR1400 구성 (예시, MDEP TR-APR1400WG-04 Rev.4)[1]</h3>
+<ul>
+<li><strong>PAR 30기</strong>: 설계기준사고용 12기(돔 상부 대용량 8, IRWST 벤트 스택 중용량 4) + 중대사고용 18기</li>
+<li>한국 DBA 해석은 12기 중 6기만 크레딧(용량 200 %), DBA용은 안전등급 3, 중대사고용은 비안전등급, 전부 내진 I등급</li>
+<li>촉매 성능 불확실성 → 설계 계산에 <strong>25 % 기동 실패</strong> 가정(성능 25 % 저감과는 다른 가정)</li>
+<li>운영기술지침서 감시: 계획예방정비 때 각 PAR 촉매의 25 %를 시료로 시험</li>
+<li>점화기 10개가 급속 방출을 보완하고, PAR 점화는 현재 설계기준 해석에 고려하지 않음</li>
+</ul>
+<h3>국내 PAR 성능 논란과 교체 경과</h3>
+<table>
+<thead>
+<tr>
+<th>시점</th>
+<th>경과(원안위 안건·보도 기준[2][6])</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2012~</td>
+<td>후쿠시마 후속조치로 가동원전에 PAR 순차 설치</td>
+</tr>
+<tr>
+<td>2021.1</td>
+<td>공익신고: 한 제작사 PAR의 제거율이 사업자 구매규격(4 %에서 0.2 g/s) 미달</td>
+</tr>
+<tr>
+<td>2023.3</td>
+<td>제173회: 원자력연 SPARC 4 % 시험 0.131~0.137 g/s(제작사 상관식값 0.251), 설계기준사고 기준(평균 4 % 미만)은 만족</td>
+</tr>
+<tr>
+<td>2024.5</td>
+<td>제194회: 8 % 시험 평균 0.320 g/s(해석 상관식값 0.6146의 52 %) → 인허가 가정 그대로 재해석 시 18기 중 14기가 평균 10 % 초과(최대 13.61 %) → 성능 복구 요구</td>
+</tr>
+<tr>
+<td>2025.8</td>
+<td>제220회: 18기의 해당 PAR 50대를 다른 제작사 제품으로 교체하는 운영변경허가(FSAR·운영기술지침서)</td>
+</tr>
+<tr>
+<td>2026</td>
+<td>호기별 정기검사 기간에 교체 진행</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: 호기별 교체 완료 시점은 원안위 보도자료 원문으로 재확인 필요 -->
+<p>원인은 촉매체 격자 구조의 유동저항으로 자연대류 유속이 느렸던 것(약 0.4 m/s, 비교 제품 약 0.6 m/s)입니다. 원안위는 10 % 초과 사고경위 빈도가 10⁻¹²~10⁻¹³/년이고 노외 고온 용융물에 의한 자연연소를 고려하면 10 % 이내라는 점에서 원자로 정지 같은 긴급조치는 필요 없다고 보고, 여유도 복원을 요구했습니다. 교훈은 <strong>제작사 상관식 값을 독립 시험으로 검증해야 한다</strong>는 점입니다. 해석 단계에서도 제작사식보다 낮춘 해석용 상관식, 25 % 성능저하, "3 % 도달 15분 후 기동" 같은 보수 가정을 둡니다.</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기술기준규칙 제23조 제1항 제2호 [7]</td>
+<td>격납건물 내 가연성 기체 제어수단 구비</td>
+</tr>
+<tr>
+<td>기술기준규칙 제12조 / 제85조의20</td>
+<td>안전등급 PAR 기기·내진검증 / 중대사고 대처설비 생존성</td>
+</tr>
+<tr>
+<td>KINS 규제지침 7.8(RG 1.7 준용) [2]</td>
+<td>설계기준사고: 격납건물 평균 수소 4 % 미만</td>
+</tr>
+<tr>
+<td>KINS 경수로 안전심사지침 19.2</td>
+<td>중대사고: 평균 10 % 미만, 격실별 FA·DDT 미발생, 연소 압력에도 구조 건전성</td>
+</tr>
+<tr>
+<td>원안위 고시 제2026-1호 별표 3 [7]</td>
+<td>위협요인 ① 가연성기체 연소 또는 폭발</td>
+</tr>
+<tr>
+<td>10 CFR 50.44(c), GDC 41~43, RG 1.7 [8]</td>
+<td>미국 신규로 수소 제어·감시·시험</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: 규제지침 7.8·안전심사지침 19.2는 제194회 원안위 안건(2024.5.9) 인용. MDEP가 인용한 "Regulatory Guideline 16.1 II.2"와의 관계·현행판 번호는 원문 미대조 -->
+<p>출제 당시(2010~2015)는 전기식 재결합기에서 PAR로 바꾸고 후쿠시마 후속 설치가 진행되던 때입니다. 현행은 사고관리 고시 체계에서 가연성기체를 필수 위협요인으로 평가하고, 성능 논란 이후 교체가 운영변경허가로 처리됐습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>전기식 재결합기</th>
+<th>수소 점화기</th>
+<th>PAR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>작동</td>
+<td>운전원 수동, 전원 필요</td>
+<td>절차에 따라 조기 통전, 전원 필요</td>
+<td>피동, 수소 도달 시 자동</td>
+</tr>
+<tr>
+<td>원리</td>
+<td>전기 가열 열 재결합</td>
+<td>저농도 연속 연소</td>
+<td>촉매 무화염 재결합</td>
+</tr>
+<tr>
+<td>설치</td>
+<td>격납건물 내부 또는 외부(배관 순환)</td>
+<td>방출원 근처</td>
+<td>격납건물 내, 방출원 위·돔, 체적 비례</td>
+</tr>
+<tr>
+<td>강점</td>
+<td>무화염</td>
+<td>제거 빠름</td>
+<td>무전원·무조작, 혼합 촉진</td>
+</tr>
+<tr>
+<td>약점</td>
+<td>용량 작음</td>
+<td>전원 상실 시 불능, 지연 점화 시 하중 증가</td>
+<td>제거율 유한, 고농도 점화원, 피독·산소 결핍</td>
+</tr>
+</tbody>
+</table>
+<p>"재결합기는 수소를 밖으로 내보낸다"는 틀린 표현입니다. 격납건물 안에서 증기로 바꿉니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: Pt/Pd 촉매로 H₂ + ½O₂ → H₂O 무화염 재결합, 전원·조작 불필요한 피동 설비</li>
+<li><strong>원리</strong>: 촉매 반응열(242 kJ/mol H₂) → 굴뚝 자연대류 → 자기 공급, 혼합 촉진</li>
+<li><strong>기동</strong>: 대표 약 1~2 vol%(조건 의존 0.2~4.4 %), 약 0.3 %까지 운전</li>
+<li><strong>성능</strong>: 제거율 ∝ 수소 농도·압력(AREVA 상관식), 효율 40~70 %, Φ ≥ 2 필요</li>
+<li><strong>점화 위험</strong>: 건조 5.5~7.5 %, 습윤 8~9 %에서 촉매 고온으로 점화원 가능</li>
+<li><strong>저해</strong>: 먼지·VOC, 수막, 요오드·에어로졸, CO, 산소 결핍</li>
+<li><strong>배치</strong>: 자유체적 비례, 방출원 위 높은 곳, 격실 간 대류</li>
+<li><strong>APR1400</strong>: PAR 30기(DBA 12 + 중대사고 18), 25 % 기동 실패 가정, 점화기 10개 보완</li>
+<li><strong>국내</strong>: 성능 미달 확인 → 2025 교체 허가, 독립 성능 검증의 교훈</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 PAR 단면 도식(촉매판·굴뚝·유입·배출, 반응식과 부력 인과)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-026-passive-autocatalytic-recombiner/sketch1_par_answer.avif"/><figcaption>답안지용 PAR 단면 도식(촉매판·굴뚝·유입·배출, 반응식과 부력 인과)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2015년 2교시 2번</td>
+<td>전기식 재결합기·점화기·PAR 비교표</td>
+</tr>
+<tr>
+<td>2012년 1교시 8번</td>
+<td>PAR 기능 및 동작원리</td>
+</tr>
+<tr>
+<td>2010년 3교시 2번</td>
+<td>점화기와 PAR의 운전시기·장단점</td>
+</tr>
+<tr>
+<td>제81회 3교시 3번</td>
+<td>격납용기 수소 생성과정(재결합기 계통)</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>OECD/NEA MDEP, APR1400 Working Group Technical Report TR-APR1400WG-04 Rev.4(수소재결합기 조사 보고서), 2021.3.9, oecd-nea.org/mdep.</li>
+<li>원자력안전위원회, 제194회 원자력안전위원회 보고안건 제2호 「공익신고에 따른 PAR 수소제거율 실험 결과 검토」(KINS, 2024.5.9), nssc.go.kr.</li>
+<li>S. Gupta, T. Kanzleiter, G. Poss, "PAR induced ignition and the resulting hydrogen deflagration behaviour in LWR containments", NURETH-16 (2015).</li>
+<li>E.-A. Reinecke, G. Poss, "Operational behaviour of passive auto-catalytic hydrogen recombiners", Nuclear Engineering International (2012.9.3).</li>
+<li>H. T. Kim, J. Kim, W. Choi, S. J. Kim, "Implementation of PAR correlations to the MELCOR Code", 한국원자력학회 추계학술발표회 (2019.10).</li>
+<li>제173회(2023.3.23)·제220회(2025.8.28) 원자력안전위원회 회의 결과 보도 — 투데이에너지(2023.3.24), 한국일보(2025.8.28).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제12·23조·제85조의20; 원안위고시 제2026-1호 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」 별표 3. 국가법령정보센터.</li>
+<li>10 CFR 50.44 "Combustible gas control for nuclear power reactors"; U.S. NRC, Regulatory Guide 1.7 Rev. 3 "Control of Combustible Gas Concentrations in Containment" (2007).</li>
+</ol>

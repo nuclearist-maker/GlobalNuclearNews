@@ -1,0 +1,31 @@
+<figure class="article-image"><img alt="방사선 속에서도 작동하는 칩을 AI로 설계한다: DOE Genesis와 AXESS 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/news/2026-10-22-ai-designed-radiation-tolerant-chips-axess/thumbnail_01.thumb.avif"/></figure>
+<p>원자로나 핵융합 장치처럼 방사선이 강한 곳에도 신호를 읽고 처리하는 전자회로가 들어갑니다. 반도체는 방사선을 받으면 성능이 서서히 떨어지거나 순간적으로 동작이 바뀔 수 있습니다. 그렇다면 이런 극한환경용 칩은 어떻게 만들고, 제대로 작동한다는 것은 어떻게 확인할까요? 최근 미국 에너지부가 지원을 결정한 연구 하나를 따라가며 그 과정을 함께 짚어 보겠습니다.</p>
+<h2>Genesis 2차 선정과 AXESS</h2>
+<p>미국 에너지부(DOE)는 2026년 10월 8일 Genesis Mission의 신규 Phase II 과제 12개에 총 <strong>1억 5,900만 달러</strong>를 지원한다고 발표하고, Phase I 과제 6건도 추가했습니다. 미국원자력학회(ANS)는 10월 21일 이 소식을 핵융합·고방사선 환경 적용 중심으로 보도했습니다. 이 금액은 과학 전 분야 12개 과제의 합계이며, 원자력 관련 과제만의 예산은 공개되지 않았습니다. 기존 GridFM 2.0과 Prometheus를 더하면 Phase II 과제는 모두 14건입니다.</p>
+<p>ANS 보도에서 원자력·핵융합과 맞닿은 과제는 세 가지입니다. Commonwealth Fusion Systems(CFS)는 핵융합 장치 SPARC의 운전을 모사하고 최적화하는 AI 디지털 트윈(실제 장치를 컴퓨터 속에 옮겨 놓은 가상 모델)을 구축할 계획입니다. Northeastern University 주도 과제는 희귀동위원소 빔 시설 FRIB의 입자 분리기 운전·조정을 돕는 AI 보조체계를 개발합니다. 미국 페르미국립연구소(Fermilab)가 이끄는 <strong>AXESS</strong>는 강한 방사선이나 극저온 환경에서 작동할 반도체의 설계 과정을 단축하려는 연구입니다. 세 과제 모두 현재는 개발 자금을 받은 단계이며, 정확도와 적용 범위는 앞으로 시험과 실증 결과로 확인됩니다. AXESS의 개별 지원액과 상용 적용 일정은 공개되지 않았습니다.</p>
+<h2>AI가 칩 설계에서 하는 일</h2>
+<p>AXESS가 다루는 칩은 ASIC, 즉 특정 용도를 위해 맞춤 설계한 집적회로입니다. 범용 칩이 여러 일을 두루 해내는 만능 도구라면, ASIC은 한 가지 작업에 꼭 맞춰 만든 전용 공구에 가깝습니다. 참여기관이 제시한 응용처는 입자 검출기, 양자장치의 판독·제어, 가속기와 핵융합 관련 하드웨어입니다.</p>
+<p>미국 퍼듀대학교(Purdue)는 연구 참여자인 Mia Liu 팀이 과학기기의 요구에서 전자회로 구현까지 걸리는 시간을 줄이는 것을 목표로 한다고 소개했습니다. AI가 칩 성능을 <strong>밀리초 단위로 예측</strong>해 수 시간이 걸리던 평가를 대체할 잠재력이 있다는 설명입니다. 이 시간 단축은 성능 예측 단계에 해당하며, 전체 개발 기간은 설계 검증·제작·측정·재설계 결과를 거쳐 평가됩니다. 같은 발표에 소개된 Smart Pixel은 검출기 안에 작은 신경망을 넣어 현장에서 데이터를 처리하고 전송량을 줄이는 접근입니다.</p>
+<p>미국 오크리지국립연구소(ORNL)는 소재·소자·회로·아키텍처를 실험자료, 물리모델, 설계 에이전트로 연결하는 방향을 공개했습니다. 설계안을 평가하는 AI와 칩 안에서 데이터를 처리하는 AI는 각각 입력·출력과 성능지표를 정해 검증하게 됩니다.</p>
+<p><figure class="article-image"><img alt="칩 설계 화면을 보는 연구자 장면 아래 요구 정의, 설계안 탐색, AI 성능 예측, 제작, 방사선 환경시험으로 이어지는 흐름도" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/news/2026-10-22-ai-designed-radiation-tolerant-chips-axess/body_01.avif"/></figure>
+<em>AI 설계 지원과 방사선 시험의 흐름 (출처: Purdue·ORNL 발표 재구성)</em></p>
+<h2>방사선은 칩에 어떻게 영향을 주나: 누적 선량과 단일사건</h2>
+<p>미국 항공우주국(NASA)은 전자부품의 방사선 영향을 총이온화선량(TID), 총비이온화선량(TNID), 단일사건효과(SEE) 등으로 설명합니다. 미국 제트추진연구소(JPL)는 이를 두 갈래로 정리합니다. 하나는 방사선이 오래 쌓이면서 성능이 점진적으로 떨어지는 누적 영향이고, 다른 하나는 입자 하나가 회로를 지나는 순간 동작이 바뀌는 개별 입자 영향입니다. 앞의 것이 햇볕 아래 오래 둔 플라스틱이 조금씩 바래는 모습이라면, 뒤의 것은 작은 돌멩이 하나가 유리창을 때리는 순간에 가깝습니다.</p>
+<p><figure class="article-image"><img alt="이온빔 시험 장치 장면 위에 총이온화선량과 단일사건효과의 차이와 시험 방법을 비교한 그림" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/news/2026-10-22-ai-designed-radiation-tolerant-chips-axess/body_02.avif"/></figure>
+<em>방사선이 반도체에 주는 두 가지 영향과 시험 방법 (출처: NASA·JPL 자료)</em></p>
+<p>시험 방법도 영향에 맞춰 달라집니다. JPL은 동위원소를 이용한 TID 시험과 중이온 가속기를 이용한 SEE 시험을 설명합니다. 레이저 시험은 칩에서 민감한 위치를 찾고 현상을 분석하는 데 쓰입니다. NASA의 방사선 내성 확보(RHA) 접근은 환경 정의에서 출발해 부품 선정·시험, 배치와 내방사선 설계로 이어지며, 임무·환경·적용·수명을 함께 보는 MEAL 개념으로 시험 수치를 실제 사용 조건에 연결합니다. 이 방법론은 우주전자 분야에서 쓰여 온 것입니다.</p>
+<h2>원전에 쓰려면: 방사선 시험과 기기 환경검증</h2>
+<p>미국 원전에 들어가는 전기기기에는 별도의 검증 관문이 있습니다. 미국 원자력규제위원회(NRC)의 10 CFR 50.49 환경검증은 안전 관련 전기기기, 일부 비안전 기기, 사고 후 감시기기 등에 적용됩니다. 이 규정은 온도·압력·습도·화학환경·방사선·노화·침수·상승작용과 여유를 다루며, 방사선 조건에는 설치 수명 동안의 정상 환경과 사고 환경, 선량률 효과가 들어갑니다. 입증은 시험과 분석의 조합으로 하고, 이를 <strong>감사 가능한 기록</strong>으로 유지해야 합니다.</p>
+<p>현재 공개된 참여기관 자료는 연구 목표와 설계 지원 방법을 설명하고 있습니다. 특정 칩의 방사선 시험 성적과 특정 원전 기기의 적격성은 해당 결과자료가 나온 뒤 평가할 수 있습니다. 앞으로 지켜볼 대목은 예측모델의 기준 성능과 오차, 극한환경 시험의 조건과 결과, 그리고 설계를 바꾼 뒤의 재검증 자료입니다.</p>
+<p>AI는 설계안을 빠르게 걸러 내는 역할을 맡고, 방사선 시험과 환경검증은 그 결과를 실제 조건에서 확인하는 역할을 맡습니다. 빠른 예측과 꼼꼼한 시험이 맞물릴 때, 방사선 속에서도 믿고 쓸 수 있는 칩에 한 걸음 더 다가가게 됩니다.</p>
+<h2>참고 자료</h2>
+<ul>
+<li>US DOE, "Energy Department Announces New Genesis Mission Awards to Advance Super Intelligence for Science", 2026-10-08 — https://www.energy.gov/articles/energy-department-announces-new-genesis-mission-awards-advance-super-intelligence-science</li>
+<li>ANS(미국원자력학회), Genesis Mission 2차 선정 관련 보도, 2026-10-21 — https://www.ans.org/news/2026-10-21/article-8506/second-round-of-genesis-mission-selections-includes-12-phase-ii-awards/</li>
+<li>Purdue University, "Purdue physicist Mia Liu helps advance AI-powered chip design through DOE Genesis Mission", 2026-10-16 — https://www.physics.purdue.edu/news/2026/purdue-physicist-mia-liu-helps-advance-ai-powered-chip-design-through-doe-genesis-mission.html</li>
+<li>ORNL, "ORNL selected for six Phase II Genesis Mission awards" — https://www.ornl.gov/news/ornl-selected-for-six-phase-ii-genesis-mission-awards/</li>
+<li>NASA, "Radiation" — https://www.nasa.gov/reference/jsc-radiation/</li>
+<li>NASA, "Avionics Radiation Hardness Assurance for Safe Exploration", 2022-03-03 — https://www.nasa.gov/centers-and-facilities/nesc/avionics-radiation-hardness-assurance-for-safe-exploration-beyond-low-earth-orbit/</li>
+<li>NASA JPL, "Radiation Effects Facilities" — https://parts.jpl.nasa.gov/radiation-effects/facilities/</li>
+<li>US NRC, "10 CFR 50.49 Environmental qualification" — https://www.nrc.gov/reading-rm/doc-collections/cfr/part050/part050-0049</li>
+</ul>

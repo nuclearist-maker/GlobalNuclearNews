@@ -1,0 +1,219 @@
+<figure class="article-image"><img alt="[개념 노트] 운영기술지침서(Technical Specifications) — 안전해석의 가정을 운전 현장의 약속으로 바꾸는 허가 문서 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-op-001-technical-specifications/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>운영기술지침서(T/S)는 운영허가 신청 시 제출하는 허가 조건 문서로, 안전성분석이 가정한 공정변수 한계와 설비 가용성이 운전 중에도 유지되도록 안전제한치·안전제한설정치·운전제한조건·점검요구사항·설계특성과 운영관리 사항을 규정하며, 사업자와 종업원이 반드시 지켜야 합니다.</strong></p>
+<p>미국에서는 10 CFR 50.36의 Technical Specifications, IAEA에서는 운영제한 및 조건(OLCs, SSR-2/2 Requirement 6)이 같은 역할을 합니다[3][8].</p>
+<h2>원리와 메커니즘</h2>
+<h3>왜 필요한가 — 안전해석과 운전을 잇는 다리</h3>
+<p>최종안전성분석보고서(FSAR)의 사고해석은 "사고 직전 발전소가 어떤 상태였는가"(초기조건)와 "어떤 설비가 작동하는가"(가용 설비)를 가정하고 결과를 냅니다. 이 가정이 운전 중 하나라도 깨지면 해석 결과는 더 이상 발전소를 대표하지 못합니다. 운영기술지침서는 그 가정을 <strong>운전원이 지켜야 할 조건</strong>으로 바꿔 적은 문서입니다. 그래서 각 조항에는 반드시 "왜 이 값인가"를 설명하는 **기술배경서(Bases)**가 따라붙습니다.</p>
+<h3>세 겹의 선: 안전제한치·LSSS·LCO</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>의미</th>
+<th>넘거나 못 지키면</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>안전제한치(SL)</td>
+<td>방사성물질 누출 방벽의 건전성 확보에 필요한 주요 공정변수 한계</td>
+<td>원자로 정지, 원안위 보고, <strong>승인 후 재가동</strong></td>
+</tr>
+<tr>
+<td>안전제한설정치(LSSS)</td>
+<td>SL 도달 전에 보호동작이 일어나도록 둔 자동 보호장치 설정치</td>
+<td>원자로 트립·공학적안전설비 자동 작동</td>
+</tr>
+<tr>
+<td>운전제한조건(LCO)</td>
+<td>안전운전에 필요한 설비의 최소 기능·성능 수준</td>
+<td>조치요구사항을 제한시간 안에 수행, 못 하면 단계적 정지</td>
+</tr>
+</tbody>
+</table>
+<p>RCS 압력을 예로 들면 정상운전 15.51 MPa(2,250 psia), 설계압력 17.24 MPa(2,500 psia)이고, 안전제한치는 설계압력의 110 %인 18.96 MPa(2,750 psia)입니다(APR1400, CE형 표준 구조)[4][5]. 가압기 압력 고 트립은 계측 불확도와 응답지연을 빼고도 SL 전에 압력이 꺾이도록 그 사이에 설정합니다. 노심 쪽 SL은 DNBR 설계한계(예: APR1400 1.29[6])와 핵연료 중심선 최고온도입니다.</p>
+<figure class="article-image"><img alt="RCS 압력 눈금 위 안전제한치·LSSS·LCO의 위치(APR1400 예)와 LCO 3.0.3 모드별 최대 도달 기한" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-op-001-technical-specifications/fig1_ts_limit_ladder_shutdown_clock.avif"/><figcaption>RCS 압력 눈금 위 안전제한치·LSSS·LCO의 위치(APR1400 예)와 LCO 3.0.3 모드별 최대 도달 기한</figcaption></figure>
+<h3>LCO 한 조항을 읽는 법</h3>
+<p>개선형 T/S의 LCO 조항은 같은 틀로 쓰입니다.</p>
+<ul>
+<li><strong>LCO 문장 + 적용 운전모드</strong>: 어떤 모드에서 무엇이 운전가능해야 하는가</li>
+<li><strong>조치(ACTIONS)</strong>: 조건 – 요구 조치 – <strong>제한시간(Completion Time)</strong>. 논리연결자 AND/OR로 묶습니다.</li>
+<li><strong>점검요구사항(SR) + 점검주기</strong>: LCO 충족을 시험·교정·검사로 확인합니다. 점검을 안 했거나 불만족이면 LCO 불만족으로 봅니다(SR 3.0.1). 주기는 1.25배까지 연장할 수 있습니다(SR 3.0.2)[4].</li>
+</ul>
+<p>어떤 조치에도 해당하지 않거나 조치를 이행하지 못하면 <strong>LCO 3.0.3</strong>이 적용됩니다. 진입 시점부터 1시간 안에 정지 조치를 시작해 7시간 안에 모드 3, 13시간 안에 모드 4, 37시간 안에 모드 5에 도달해야 합니다[4]. 이 시간은 누적이 아니라 진입 시점 기준 기한입니다. 도중에 LCO가 복구되면 정지 진행을 멈출 수 있습니다.</p>
+<h3>운전가능성(Operability)</h3>
+<p>T/S의 모든 판단은 "운전가능한가"에서 출발합니다. 계통·계열·기기가 고유의 안전기능을 수행할 수 있고, 그 기능에 필요한 계측·제어, 정상 또는 1E급 전원, 냉각수·밀봉수, 윤활 같은 <strong>지원기능까지</strong> 갖추었을 때 운전가능하다고 합니다[4]. 결함을 발견하면 가용 정보로 지체 없이 <strong>즉시 판단</strong>하고, 필요하면 분석을 더해 <strong>신속 판단</strong>합니다[9]. 운전가능하지만 성능이 떨어진 상태는 시정조치로 추적합니다. 지원계통이 운전불능이면 피지원계통도 운전불능으로 보는 연계는 안전기능 결정지침서가 정합니다.</p>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>운전</strong>: 운전모드(1 출력운전 ~ 6 핵연료재장전)별로 적용 LCO가 바뀝니다. APR1400 예시(DCD 기술지침서 표 1.1-1)로 모드 3은 Tcold ≥ 177 °C(350 °F), 모드 5는 Tcold ≤ 99 °C(210 °F)입니다[5].</li>
+<li><strong>정비</strong>: 제한시간은 고장 발견 시 복구 여유입니다. 계획정비로 일부러 운전불능에 들어갈 때는 위험평가와 함께 관리합니다.</li>
+<li><strong>설계·인허가</strong>: 안전해석이 초기조건으로 쓰는 값(정지여유도, SIT 압력·수위, 출력분포 한계)은 그대로 LCO가 됩니다. 정지여유도는 반응도가가 가장 큰 제어봉 1개가 고착됐다고 가정해 정의합니다.</li>
+<li><strong>누설 관리</strong>: 냉각재 누설은 확인누설·미확인누설·압력경계누설로 나누고 종류별로 제한합니다. 압력경계누설은 허용하지 않습니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>「원자력안전법」 제20조제2항</td>
+<td>운영허가 신청 시 운영기술지침서 첨부[1]</td>
+</tr>
+<tr>
+<td>같은 법 시행규칙 제16조제2항(2023-08-01 시행본)</td>
+<td>기재사항: ① 원자로시설의 운전(사용 및 적용, 안전제한치, LCO 및 점검요구사항, 설계특성) ② 방사선 및 환경 ③ 운영관리(조직, 순시점검, 비상시 운전원 조치, 계획서 및 지침서)[1]</td>
+</tr>
+<tr>
+<td>원안위 고시 「운영기술지침서의 작성에 관한 기준」(현행 제2024-13호)</td>
+<td>제4조 안전제한치, 제5조 LCO와 선정기준 4가지, 제6조 점검요구사항, 제7조 설계특성, 제14조 계획서·지침서, 제15조 보고요구사항[2]</td>
+</tr>
+<tr>
+<td>10 CFR 50.36(c)</td>
+<td>(1) SL·LSSS (2) LCO와 선정기준 (3) SR (4) 설계특성 (5) 행정관리[3]</td>
+</tr>
+<tr>
+<td>NUREG-1431(W)·1432(CE)</td>
+<td>개선형 표준기술지침서(ISTS). APR1400 기술지침서는 NUREG-1432 기반[4][5]</td>
+</tr>
+<tr>
+<td>IAEA SSR-2/2 Rev.1, SSG-70</td>
+<td>운영제한 및 조건(OLCs)[8]</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: 고시 조문 내용은 제2014-9호(국가법령정보센터 연혁본)로 확인함. 현행 제2024-13호(2024.12.31, 제5조 문언은 동일 확인)에서 다른 조문(특히 제14조 계획서 목록, 제15조 보고요구사항)이 바뀌었는지 국가법령정보센터 본문으로 재확인 필요 -->
+<p>LCO 선정기준 4가지는 다음과 같습니다(고시 제5조제2항)[2][3].</p>
+<ol>
+<li>주제어실에서 원자로냉각재압력경계의 현저한 성능저하를 감시·지시하는 계기</li>
+<li>핵분열생성물 방벽을 위협하는 설계기준사고·과도상태 해석의 초기조건인 공정변수·설비·운전제한사항</li>
+<li>그 사고·과도를 완화하는 주성공경로(primary success path)의 구조물·계통·기기</li>
+<li>운전경험 또는 PSA로 공중의 건강·안전에 중요하다고 확인된 구조물·계통·기기</li>
+</ol>
+<p><strong>개정 흐름</strong>: 미국은 1993년 정책성명과 1995년 10 CFR 50.36 개정으로 이 4기준을 성문화했고[7], 이를 반영한 개선형 표준기술지침서(ISTS, NUREG-1430~1434)를 냈습니다. 기준에 들지 않는 항목은 FSAR·계획서 같은 사업자 관리 문서로 옮겼고(이관), 기술배경서와 LCO 3.0/SR 3.0 일반 규칙을 정비했습니다. 국내는 같은 4기준을 고시에 채택했습니다. 근거 법령은 2011년 「원자력법」에서 「원자력안전법」으로 바뀌었고, 사고관리계획서(2016)·배출계획서(2017)는 운영기술지침서와 별도 첨부서류로 신설됐습니다[1].</p>
+<!-- 확인필요: 국내 개선형(ISTS 기반) 운영기술지침서의 호기별 전환 시점은 공식 자료 미확보 -->
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>운영기술지침서(T/S)</th>
+<th>운전절차서</th>
+<th>기술배경서(Bases)</th>
+<th>FSAR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>성격</td>
+<td>허가 조건(무엇을 지키나)</td>
+<td>수행 방법(어떻게)</td>
+<td>T/S 조항의 근거</td>
+<td>설계·안전해석 전체</td>
+</tr>
+<tr>
+<td>변경</td>
+<td>변경허가(경미한 사항은 신고)</td>
+<td>사업자 내부 관리</td>
+<td>T/S와 함께 관리</td>
+<td>변경허가·신고</td>
+</tr>
+<tr>
+<td>위반 시</td>
+<td>법령 위반, 정지·보고</td>
+<td>내부 조치</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>SL과 LCO도 자주 섞입니다. SL 초과는 정지·보고·승인 재가동 대상이고, LCO 불만족은 조치요구사항으로 관리되는 <strong>허용된 상태</strong>입니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 안전해석 가정(초기조건·가용 설비)을 운전 중 유지하도록 정한 운영허가 조건 문서, 사업자 준수 의무</li>
+<li><strong>근거</strong>: 원자력안전법 제20조②, 시행규칙 제16조②, 원안위 고시 「운영기술지침서의 작성에 관한 기준」, 미국 10 CFR 50.36</li>
+<li><strong>구성</strong>: 제1편 원자로시설의 운전 / 제2편 방사선 및 환경관리 / 제3편 운영관리 + 기술배경서</li>
+<li><strong>제1편 핵심</strong>: 안전제한치 → LSSS → LCO·점검요구사항 → 설계특성</li>
+<li><strong>SL</strong>: 방벽 보호 공정변수 한계, 초과 시 정지·보고·승인 재가동(예: RCS 압력 18.96 MPa)</li>
+<li><strong>LCO</strong>: 최소 기능·성능, 적용 모드 + 조치요구사항 + 제한시간</li>
+<li><strong>선정기준</strong>: ① RCPB 성능저하 감시 계기 ② 사고해석 초기조건 ③ 주성공경로 SSC ④ PSA·운전경험</li>
+<li><strong>공통 규칙</strong>: 운전가능성(지원기능 포함), LCO 3.0.3(1·7·13·37 h), SR 주기 1.25배</li>
+<li><strong>ISTS</strong>: 4기준으로 LCO 정리, 비대상 항목 이관, Bases 확충</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 운영기술지침서 3편 구성과 LCO 조항 구조 도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-op-001-technical-specifications/sketch1_ts_structure_tree.avif"/><figcaption>답안지용 운영기술지침서 3편 구성과 LCO 조항 구조 도식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026년 3교시 6번</td>
+<td>APR1400 RCS 운전누설 제한치와 조치</td>
+</tr>
+<tr>
+<td>2026년 1교시 13번</td>
+<td>LCO 선정기준 4가지</td>
+</tr>
+<tr>
+<td>2025년 4교시 4번</td>
+<td>고시의 LCO 선정기준</td>
+</tr>
+<tr>
+<td>2022년 4교시 6번</td>
+<td>OPR/APR 안전제한치·LCO·점검요구사항</td>
+</tr>
+<tr>
+<td>2021년 3교시 4번</td>
+<td>노형별 LCO 선정기준과 예</td>
+</tr>
+<tr>
+<td>2018년 4교시 6번</td>
+<td>T/S의 정지여유도</td>
+</tr>
+<tr>
+<td>2016년 2교시 6번</td>
+<td>SL·LSSS·LCO·SR·설계특성</td>
+</tr>
+<tr>
+<td>2015년 4교시 1번</td>
+<td>확인·압력경계·미확인 누설</td>
+</tr>
+<tr>
+<td>2014년 2교시 1번</td>
+<td>운전가능성 정의와 평가방법</td>
+</tr>
+<tr>
+<td>2012년 3교시 3번</td>
+<td>구성·LCO·보고요구사항</td>
+</tr>
+<tr>
+<td>2008년 3교시 2번</td>
+<td>원자로·RCS 안전한계</td>
+</tr>
+<tr>
+<td>제65회 1교시 13번</td>
+<td>ISTS</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>「원자력안전법」 제20조, 「원자력안전법 시행규칙」 제16조·제18조(총리령 제1892호, 2023.8.1 시행). 국가법령정보센터.</li>
+<li>원자력안전위원회, 「운영기술지침서의 작성에 관한 기준」, 원안위고시 제2024-13호(2024.12.31), 제3~7조·제14~15조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR 50.36 "Technical specifications", (c)(1)~(c)(5).</li>
+<li>U.S. NRC, NUREG-1432 Standard Technical Specifications — Combustion Engineering Plants, Vol. 1, Rev. 5 (2021), Section 1.1 Definitions, 2.0 Safety Limits, 3.0 LCO·SR Applicability.</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Chapter 16 Generic Technical Specifications(표 1.1-1 운전모드, 2.1 안전제한치). NRC 웹(APR1400 Design Certification) 공개.</li>
+<li>KHNP, APR1400 Thermal Design Methodology, Technical Report APR1400-F-C-NR-12001-NP. NRC ADAMS.</li>
+<li>U.S. NRC, Final Policy Statement on Technical Specifications Improvements for Nuclear Power Reactors, 58 FR 39132 (1993); 10 CFR 50.36 개정 최종규칙, 60 FR 36953 (1995).</li>
+<li>IAEA, Safety of Nuclear Power Plants: Commissioning and Operation, SSR-2/2 (Rev. 1) (2016), Requirement 6; IAEA, Operational Limits and Conditions and Operating Procedures for Nuclear Power Plants, SSG-70 (2022).</li>
+<li>U.S. NRC, Inspection Manual Chapter 0326 "Operability Determinations &amp; Functionality Assessments for Conditions Adverse to Quality or Safety".</li>
+</ol>

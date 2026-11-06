@@ -9,6 +9,7 @@ import xml.etree.ElementTree as ET
 from site_information import PAGES, add_support_navigation
 
 BASE = "https://nuclearist-maker.github.io/GlobalNuclearNews/"
+LANGUAGE = "en"
 SECTIONS = {"news": "Global Nuclear News", "theory": "Nuclear Theory", "concepts": "Concept Dictionary", "history": "Nuclear History"}
 ESC = html.escape
 
@@ -47,7 +48,7 @@ def newest(posts):
 def cards(posts, home=False):
     return "".join(
         f'<a class="post" href="{BASE}{ESC(p["url"])}">'
-        f'<img class="post-thumb" src="{BASE}{ESC(p["thumbnail"])}" alt="{ESC(p["thumbnailAlt"])}">'
+        f'<img class="post-thumb" src="{ESC(urljoin(BASE,p["thumbnail"]))}" alt="{ESC(p["thumbnailAlt"])}">'
         f'<div class="post-copy"><div class="post-meta"><strong>{ESC(SECTIONS.get(p["section"], p["section"])) + " · " if home else ""}{ESC(p["category"])}</strong>'
         f'{ESC(p["displayDate"]) if p["section"] == "news" else ""}</div>'
         f'<h3>{ESC(p["title"])}</h3><p>{ESC(p["summary"])}</p></div>'
@@ -80,19 +81,19 @@ def metadata(text, relative, post, verification):
     if not head.title or not head.description:
         raise ValueError("Missing title/description: " + relative)
     url = BASE if relative == "index.html" else BASE + relative
-    picture = BASE + (post["thumbnail"] if post else "assets/images/global-nuclear-future-hero-v2.png")
+    picture = urljoin(BASE, post["thumbnail"] if post else "/GlobalNuclearNews/assets/images/global-nuclear-future-hero-v2.png")
     tags = [f'<link rel="canonical" href="{ESC(url)}">',
             f'<link rel="alternate" type="application/rss+xml" title="GlobalNuclearNews" href="{BASE}feed.xml">']
     for name, content in {"og:title": head.title, "og:description": head.description, "og:url": url,
                           "og:site_name": "GlobalNuclearNews", "og:type": "article" if post else "website",
-                          "og:image": picture, "og:locale": "en_US"}.items():
+                          "og:image": picture, "og:locale": "ko_KR" if LANGUAGE == "ko" else "en_US"}.items():
         tags.append(f'<meta property="{name}" content="{ESC(content)}">')
     tags.append('<meta name="twitter:card" content="summary_large_image">')
     schema = None
     if post:
         schema = {"@context": "https://schema.org", "@type": "Article", "headline": post["title"],
                   "description": head.description, "mainEntityOfPage": url, "url": url, "image": picture,
-                  "inLanguage": "en", "publisher": {"@type": "Organization", "name": "GlobalNuclearNews"}}
+                  "inLanguage": LANGUAGE, "publisher": {"@type": "Organization", "name": "GlobalNuclearNews"}}
         if post["section"] == "news": schema["datePublished"] = post["date"].replace(".", "-")
         if head.author == "GlobalNuclearNews":
             schema["author"] = {"@type": "Organization", "name": head.author, "url": BASE + "about.html"}
@@ -100,7 +101,7 @@ def metadata(text, relative, post, verification):
             if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", head.modified): raise ValueError("Invalid revision date: " + relative)
             schema["dateModified"] = head.modified
     elif relative == "index.html":
-        schema = {"@context": "https://schema.org", "@type": "WebSite", "name": "GlobalNuclearNews", "url": BASE, "inLanguage": "en"}
+        schema = {"@context": "https://schema.org", "@type": "WebSite", "name": "GlobalNuclearNews", "url": BASE, "inLanguage": LANGUAGE}
         for name, token in verification.items():
             if name not in {"google-site-verification", "naver-site-verification", "msvalidate.01"} or not token:
                 raise ValueError("Unsupported or empty verification token")
@@ -114,9 +115,9 @@ def metadata(text, relative, post, verification):
 
 def archive_page(title, description, content):
     menu = " · ".join(f'<a href="{BASE}{s}.html">{label}</a>' for s, label in SECTIONS.items())
-    return (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+    return (f'<!doctype html><html lang="{LANGUAGE}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>{ESC(title)} | GlobalNuclearNews</title><meta name="description" content="{ESC(description)}">'
-            f'<link rel="stylesheet" href="{BASE}assets/styles.css"></head><body>'
+            f'<link rel="stylesheet" href="/GlobalNuclearNews/assets/styles.css"></head><body>'
             f'<header class="masthead"><a class="brand" href="{BASE}">GlobalNuclearNews</a></header>'
             f'<main><section class="board"><nav aria-label="Sections">{menu}</nav><h1>{ESC(title)}</h1>{content}</section></main>'
             f'<footer><a href="{BASE}archive/index.html">Article archive</a><a href="{BASE}">Home</a></footer></body></html>')
@@ -130,7 +131,17 @@ def board_order(section, posts):
     return newest(posts)
 
 
-def enrich(root, config):
+def enrich(root, config, *, base=None, language="en", sections=None):
+    global BASE, LANGUAGE, SECTIONS
+    previous = BASE, LANGUAGE, SECTIONS
+    BASE, LANGUAGE, SECTIONS = base or BASE, language, sections or SECTIONS
+    try:
+        return _enrich(root, config)
+    finally:
+        BASE, LANGUAGE, SECTIONS = previous
+
+
+def _enrich(root, config):
     for path, _ in PAGES:
         if not (root / path).is_file():
             raise ValueError('Missing site information page: ' + path)
@@ -185,7 +196,7 @@ def enrich(root, config):
     ET.indent(sitemap, space='  ')
     ET.ElementTree(sitemap).write(root / 'sitemap.xml', encoding='utf-8', xml_declaration=True)
     rss = ET.Element('rss', version='2.0'); channel = ET.SubElement(rss, 'channel')
-    for tag, val in {'title': 'GlobalNuclearNews', 'link': BASE, 'description': 'Nuclear news, theory and concepts.', 'language': 'en'}.items(): ET.SubElement(channel, tag).text = val
+    for tag, val in {'title': 'GlobalNuclearNews', 'link': BASE, 'description': '원자력 뉴스, 이론 및 개념.' if LANGUAGE == 'ko' else 'Nuclear news, theory and concepts.', 'language': LANGUAGE}.items(): ET.SubElement(channel, tag).text = val
     for p in newest(posts)[:50]:
         item = ET.SubElement(channel, 'item')
         for tag, val in {'title': p['title'], 'link': BASE + p['url'], 'description': p['summary'], 'guid': BASE + p['url']}.items(): ET.SubElement(item, tag).text = val

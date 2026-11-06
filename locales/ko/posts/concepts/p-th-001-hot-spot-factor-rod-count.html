@@ -1,0 +1,114 @@
+<figure class="article-image"><img alt="[연습문제] 고온점 인자와 연료봉 수 — 최대 열속에서 총 열전달 면적과 연료봉 개수 구하기 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/p-th-001-hot-spot-factor-rod-count/thumbnail_01.thumb.avif"/></figure>
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2015년 원자력발전기술사 필기 2교시 6번 (원문 그대로 수록, 기호 1개 복원)</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>노심의 높이가 4.0 m이고 반경이 6 mm인 연료봉들로 이루어진 가압경수형 원자로를 설계하고자 한다. 총 출력(P)이 3,000 MWth이고 계산된 최대열유속(q″max)이 1.6 MW/m²이며, 핵적고온점인자(Neutronic Hot Spot Factor, F_N)가 1.60, 공학적고온점인자(Engineering Hot Spot Factor, F_E)가 1.75라고 할 때, 총 열전달 면적과 연료봉의 수를 구하시오. (풀이과정을 제시하시오)</p>
+</blockquote>
+<p>괄호 안의 q″max는 공개 문제지의 수식 개체가 텍스트로 옮겨지지 않아 문맥에 맞게 복원한 기호입니다. 풀이 수치에는 영향이 없습니다.</p>
+<h2>주어진 값 정리</h2>
+<table>
+<thead>
+<tr>
+<th>기호</th>
+<th>의미</th>
+<th>값</th>
+<th>SI 변환</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P</td>
+<td>노심 열출력</td>
+<td>3,000 MWth</td>
+<td>3.0×10⁹ W</td>
+</tr>
+<tr>
+<td>H</td>
+<td>노심 높이(발열 길이)</td>
+<td>4.0 m</td>
+<td>4.0 m</td>
+</tr>
+<tr>
+<td>r</td>
+<td>연료봉 반경</td>
+<td>6 mm</td>
+<td>0.006 m</td>
+</tr>
+<tr>
+<td>q″max</td>
+<td>최대 열속</td>
+<td>1.6 MW/m²</td>
+<td>1.6×10⁶ W/m²</td>
+</tr>
+<tr>
+<td>F_N</td>
+<td>핵적 고온점 인자</td>
+<td>1.60</td>
+<td>–</td>
+</tr>
+<tr>
+<td>F_E</td>
+<td>공학적 고온점 인자</td>
+<td>1.75</td>
+<td>–</td>
+</tr>
+</tbody>
+</table>
+<p>구하는 값은 <strong>총 열전달 면적 A</strong>와 <strong>연료봉 수 N</strong>입니다.</p>
+<h2>풀이 전략</h2>
+<p>이 문제의 핵심은 "최대 열속에서 평균 열속으로 거꾸로 내려오는 것"입니다. 노심 전체의 면적을 정하는 것은 평균 열속이고, 설계 제한값으로 주어지는 것은 최대 열속입니다. 두 값을 잇는 다리가 고온점 인자입니다.</p>
+<ul>
+<li>핵적 인자 F_N은 중성자속 분포(반경·축방향 첨두) 때문에 가장 뜨거운 지점의 열속이 평균보다 몇 배 큰지를 나타냅니다.</li>
+<li>공학적 인자 F_E는 펠릿 밀도·농축도·직경, 피복관 외경 같은 제조 공차 때문에 국부 열속이 공칭값보다 더 커질 수 있는 여유를 반영합니다.</li>
+<li>두 효과는 서로 독립적으로 겹치므로 곱해서 총 인자 F_Q = F_N × F_E를 만듭니다[1][2].</li>
+</ul>
+<p>따라서 풀이 순서는 <strong>① F_Q 계산 → ② 평균 열속 → ③ 총 면적 → ④ 봉 1개 면적 → ⑤ 봉 수</strong>입니다.</p>
+<figure class="article-image"><img alt="평균 열속 0.571에 F_N 1.60, F_E 1.75를 곱해 최대 열속 1.6 MW/m²가 되는 관계와 면적·봉 수 결과" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/p-th-001-hot-spot-factor-rod-count/fig1_heat_flux_factor_ladder.avif"/><figcaption>평균 열속 0.571에 F_N 1.60, F_E 1.75를 곱해 최대 열속 1.6 MW/m²가 되는 관계와 면적·봉 수 결과</figcaption></figure>
+<h2>단계별 풀이</h2>
+<p><strong>① 총 고온점 인자</strong></p>
+<p>F_Q = F_N × F_E = 1.60 × 1.75 = <strong>2.80</strong></p>
+<p><strong>② 평균 열속</strong></p>
+<p>q″max = F_Q × q″avg 이므로</p>
+<p>q″avg = q″max / F_Q = 1.6 MW/m² / 2.80 = <strong>0.571 MW/m²</strong> (571 kW/m²)</p>
+<p><strong>③ 총 열전달 면적</strong></p>
+<p>노심에서 발생한 열이 모두 피복관 외표면을 통해 냉각재로 전달된다고 가정하면</p>
+<p>A = P / q″avg = 3,000 MW / 0.5714 MW/m² = <strong>5,250 m²</strong></p>
+<p>검산 형태로 한 줄에 쓰면 A = P·F_N·F_E / q″max = 3,000 × 2.8 / 1.6 = 5,250 m²입니다.</p>
+<p><strong>④ 연료봉 1개의 전열 면적</strong></p>
+<p>봉 끝단 면적은 무시하고 원통 옆면만 셉니다.</p>
+<p>a = 2πrH = 2 × π × 0.006 m × 4.0 m = <strong>0.1508 m²</strong></p>
+<p><strong>⑤ 연료봉 수</strong></p>
+<p>N = A / a = 5,250 / 0.1508 = 34,815.1</p>
+<p><strong>답: 총 열전달 면적 약 5,250 m², 연료봉 수 약 3.48×10⁴개(34,815개, 필요 면적을 확보하려면 올림해 34,816개)</strong></p>
+<figure class="article-image"><img alt="답안지용 계산 흐름 도식(최대 열속 → 평균 열속 → 총 면적 → 연료봉 수)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/p-th-001-hot-spot-factor-rod-count/sketch1_rod_count_flow.avif"/><figcaption>답안지용 계산 흐름 도식(최대 열속 → 평균 열속 → 총 면적 → 연료봉 수)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>검산과 물리적 타당성</h2>
+<ul>
+<li><strong>차원 확인</strong>: MW ÷ (MW/m²) = m², m² ÷ m² = 개수(무차원)로 맞습니다.</li>
+<li><strong>선출력 교차 검산</strong>: 평균 선출력은 3,000 MW ÷ (34,815 × 4.0 m) ≈ 21.5 kW/m이고, 여기에 2.8을 곱한 최대 선출력 60.3 kW/m는 q″max × 2πr = 1.6 MW/m² × 0.0377 m ≈ 60.3 kW/m와 정확히 일치합니다.</li>
+<li><strong>실제 노형과 비교</strong>: 예시(APR1400 기준)로 노심 열출력 3,983 MWt, 241다발 × 236봉 = 56,876봉, 활성 길이 3.81 m, 봉 외경 9.5 mm[3]를 넣어 직접 추정하면 평균 열속은 약 0.6 MW/m²입니다. 문제의 0.57 MW/m²와 같은 크기이므로 결과는 현실적입니다. 봉 수가 APR1400보다 적은 것은 출력이 작고 봉 직경(12 mm)이 커서 봉 1개 면적이 넓기 때문입니다.</li>
+<li><strong>가정의 한계</strong>: 실제로는 핵분열 에너지의 약 2.5% 안팎이 감마선·중성자 감속으로 냉각재와 구조재에서 직접 발생합니다. 연료 내 발생분 97.4%[1]를 적용하면 A ≈ 5,114 m², N ≈ 33,910개가 됩니다. 문제에 언급이 없으면 100% 가정으로 풀되, 답안에 가정을 한 줄 적어 두면 좋습니다.</li>
+<li><strong>인자 크기</strong>: 현행 PWR 설계에서는 공학적 인자가 1.03 수준(W형 표준기술지침서의 제조 공차 3 % 가산)이고 첨두 제한은 운영기술지침서의 F_Q 한계나 선출력 한계로 관리합니다[4]. 1.75는 여러 부인자를 보수적으로 곱하던 교과서식 예제값으로 보는 것이 맞습니다.</li>
+</ul>
+<h2>자주 하는 실수</h2>
+<ol>
+<li><strong>방향 착오</strong>: 최대 열속에 인자를 곱해 1.6 × 2.8 = 4.48 MW/m²를 평균으로 쓰는 경우입니다. 최대 = 평균 × 인자이므로 나눠야 합니다.</li>
+<li><strong>F_E 누락</strong>: F_N만 적용하면 A = 3,000 m², N ≈ 19,894개로 크게 틀어집니다.</li>
+<li><strong>반경·직경 혼동</strong>: 옆면적을 πrH로 쓰면 봉 수가 약 69,630개로 두 배가 됩니다.</li>
+<li><strong>단위 변환</strong>: 6 mm를 0.006 m로 바꾸지 않거나 MW와 W를 섞는 실수가 잦습니다.</li>
+<li><strong>인자 종류 혼동</strong>: 엔탈피 상승 열수로계수 F_ΔH는 유로 출구 엔탈피(DNBR)에 쓰는 인자이고, 국부 열속에는 F_Q를 씁니다.</li>
+</ol>
+<h2>변형 문제</h2>
+<p>같은 조건에서 공학적 고온점 인자만 1.50으로 낮추면 총 열전달 면적과 연료봉 수는? (답만)</p>
+<ul>
+<li>답: F_Q = 2.40, q″avg = 0.667 MW/m², A = 4,500 m², N ≈ 29,842개</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 8장(열 제거, 고온점 인자).</li>
+<li>N. E. Todreas, M. S. Kazimi, Nuclear Systems I: Thermal Hydraulic Fundamentals, Taylor &amp; Francis — 출력 첨두·고온 수로 인자.</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Ch. 4 "Reactor"(노심·핵연료 설계 제원). NRC 설계인증 공개 문서.</li>
+<li>U.S. NRC, NUREG-1431 "Standard Technical Specifications, Westinghouse Plants", B 3.2.1 "Heat Flux Hot Channel Factor (F_Q(Z))".</li>
+</ol>

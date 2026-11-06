@@ -1,0 +1,214 @@
+<figure class="article-image"><img alt="[개념 노트] TMI-2 사고 — PORV 개방고착 소형 LOCA와 가압기 수위의 함정 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-022-tmi2-accident/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>TMI-2 사고는 1979년 3월 28일 미국 Three Mile Island 2호기(B&amp;W형 PWR, 2,772 MWt)에서 급수 상실 과도 중 가압기 PORV가 열린 채 고착되어 기상부 소형 LOCA가 진행되고, 운전원이 가압기 수위를 근거로 고압안전주입(HPI)을 줄여 노심의 약 45 %가 용융된 사고입니다(INES 5등급).</strong>[1][4]</p>
+<p>이 노트는 사고 자체(경위·결과·교훈)를 다룹니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>사고 경위 — 시각은 터빈 정지(04:00:37경) 기준</h3>
+<ol>
+<li><strong>0 s</strong>: 복수 탈염기 정비 중 복수·주급수펌프가 정지했고(계측 공기 계통 수분 유입 추정), 터빈이 정지했습니다.</li>
+<li><strong>약 3 s</strong>: 1차측 열제거가 줄어 RCS 압력이 올랐고, PORV가 설정압 2,255 psig에서 열렸습니다[1].</li>
+<li><strong>약 8 s</strong>: 원자로가 고압력(2,355 psig)으로 정지했습니다.</li>
+<li><strong>약 13 s</strong>: 압력이 닫힘 설정 2,205 psig 아래로 내려갔지만 PORV는 닫히지 않았습니다. 제어실 표시등은 솔레노이드 <strong>닫힘 지령</strong>만 보여 주었고, 운전원은 밸브가 닫혔다고 판단했습니다.</li>
+<li><strong>0~8 min</strong>: 보조급수펌프는 기동했지만 이틀 전 시험 뒤 닫아 둔 차단밸브 때문에 증기발생기에 물이 들어가지 않았습니다. 8분에 발견해 열었습니다.</li>
+<li><strong>약 2 min</strong>: RCS 저압력으로 HPI가 자동 작동했습니다.</li>
+<li><strong>4 min 38 s</strong>: 가압기 수위가 빠르게 올라(약 6분 지시 상한 초과, 약 11분 범위 복귀 후에도 높게 유지) 운전원은 "가압기 만수(solid)"를 막으려고 HPI를 줄이고 유출을 늘렸습니다.</li>
+<li><strong>약 15 min</strong>: 방출탱크 파열판이 터져 냉각재가 격납건물 바닥으로 나갔습니다.</li>
+<li><strong>약 74·100 min</strong>: 기포 혼입으로 진동이 커져 RCP 4대를 모두 세웠습니다. 강제순환이 끊기자 기액이 분리되었습니다.</li>
+<li><strong>약 100~110 min</strong>: 노심 상부가 드러나기 시작했고, 피복재 Zr-증기 반응으로 수소가 생겼습니다.</li>
+<li><strong>약 142 min(06:22경)</strong>: PORV 차단밸브를 닫아 방출이 멈췄습니다.</li>
+<li><strong>약 174 min</strong>: RCP 2B를 잠깐 돌리자 계통 안의 물이 용기로 재분배되면서 과열 노심이 급랭·파쇄되었습니다(총재고량 증가는 아님).</li>
+<li><strong>약 200 min</strong>: HPI를 대유량으로 주입해 약 207분경 원자로용기를 다시 채웠습니다.</li>
+<li><strong>약 224 min</strong>: 용융물 약 19 t이 하부 헤드로 흘러내렸습니다[4].</li>
+<li><strong>약 9 h 50 min</strong>: 격납건물 안 수소가 연소해 압력이 순간 최고 약 28 psig(0.19 MPa(g))에 이르렀습니다(격납 경계 건전성 유지)[2].</li>
+<li><strong>약 15 h 50 min</strong>: RCP 1대를 재기동해 강제순환을 회복했습니다.</li>
+</ol>
+<!-- 확인필요: B루프 RCP 정지 74분은 2차 문헌 기준(100분 A루프 정지는 INEL 1986과 일치). 각 시각은 문헌별 수십 초~수 분 차이 -->
+<figure class="article-image"><img alt="사고 초기 240분 2단 타임라인: 가압기 수위 지시와 RCS 재고량(개념적 재구성), 사건 11개" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-022-tmi2-accident/fig1_tmi2_timeline_level_vs_inventory.avif"/><figcaption>사고 초기 240분 2단 타임라인: 가압기 수위 지시와 RCS 재고량(개념적 재구성), 사건 11개</figcaption></figure>
+<h3>왜 오판했나 — 가압기 수위의 함정</h3>
+<p>PORV는 가압기 **꼭대기(기상부)**에 차단밸브 하류로 붙어 있습니다. 열린 채 고착되면 가압기 기상부에 접속된 소형 LOCA가 됩니다(유출 상태는 증기에서 기액 혼합으로 바뀔 수 있음). 압력이 포화압까지 내려가면 고온관·노심에 기포가 생깁니다. 그 부피만큼 냉각재가 가압기로 밀려 올라가고, PORV로 나가는 흐름도 물을 위로 끌어올립니다. 그래서 <strong>가압기에는 물이 높게 차 있지만 그 수위가 RCS 전체 재고량을 대표하지 못하는</strong> 괴리가 생깁니다.</p>
+<p>당시 훈련은 "가압기를 만수시키지 말라"를 강조했습니다. 반면 과냉각도·노심 수위를 직접 보여 주는 계측은 없었습니다. PORV 방출관 온도가 높았지만 기존 누설 탓으로 보았습니다. 1977년 Davis-Besse에서도 PORV 고착 중 HPI를 줄인 비슷한 사건이 있었으나, 그 경고가 업계에 공유되지 않았습니다. B&amp;W 관류형 증기발생기는 2차측 보유수가 적어 급수 상실 시 수 분 안에 건조됩니다. 그래서 RCS 압력이 빨리 오르고 PORV가 자주 열리는 설계 특성도 있었습니다.</p>
+<figure class="article-image"><img alt="B&amp;W형 1차계통 일부 절개도 위 PORV 방출 경로 다섯 지점과 표시·해석 vs 실제 상태 대조표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-022-tmi2-accident/fig2_porv_path_seen_vs_actual.avif"/><figcaption>B&amp;W형 1차계통 일부 절개도 위 PORV 방출 경로 다섯 지점과 표시·해석 vs 실제 상태 대조표</figcaption></figure>
+<h2>원전에서의 의미</h2>
+<h3>결과</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>노심</td>
+<td>최소 45 %(약 62 t) 용융, 약 19 t 하부 헤드 재배치[4]</td>
+</tr>
+<tr>
+<td>원자로용기</td>
+<td>관통 없음(하부 헤드 일부 고온 후 냉각)</td>
+</tr>
+<tr>
+<td>격납건물</td>
+<td>격납 경계 건전성 유지, 수소 연소 최고 약 28 psig</td>
+</tr>
+<tr>
+<td>방출</td>
+<td>비활성기체 약 2.5~10 MCi(약 90~370 PBq, 주로 Xe-133), I-131 약 15 Ci(약 0.55 TBq)[2][3]</td>
+</tr>
+<tr>
+<td>선량</td>
+<td>주변 약 200만 명 평균 약 0.01 mSv, 부지 경계 최대 1 mSv 미만, 80 km 집단선량 약 20~35 man·Sv</td>
+</tr>
+<tr>
+<td>건강 영향</td>
+<td>방사선에 의한 검출 가능한 영향 없음(NRC·주 역학조사)[3]</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: 비활성기체 방출량은 기관별 추정 폭이 큼(Kemeny 최대 약 13 MCi). I-131은 상한 < 30 Ci 추정도 있음 -->
+<p>INES 5등급은 사후 평가입니다. 근거는 방출량이 아니라 <strong>방사선 방벽·관리 기준의 노심 중대 손상</strong>입니다[6]. 방출량만 보면 5등급에 크게 못 미칩니다. 3.30에는 주지사가 5마일 이내 임신부·학령전 아동의 대피를 권고했습니다. 용기 상부 수소 기포의 폭발 우려도 있었으나, 산소가 없어 용기 안 연소 가능성은 사실상 없었습니다. 기포는 4.1까지 배기로 제거했습니다.</p>
+<h3>교훈 — 설계와 운전</h3>
+<ul>
+<li><strong>설계</strong>: 방출·안전밸브의 실제 위치를 직접 지시하고, 과냉각도 감시·노심출구온도·원자로용기 수위로 부적절 노심냉각을 감시합니다. PORV 자동 격리를 검토하고, 보조급수를 자동 기동하며 유량을 지시합니다. RCS 기체 배기와 사고 후 시료채취도 갖춥니다.</li>
+<li><strong>운전</strong>: 사건이 아니라 증상(필수안전기능)을 보는 징후기반 EOP를 씁니다. SBLOCA 시 RCP 정지 기준을 둡니다. 교대근무 기술자문(STA)과 SPDS를 두고, 제어실 인간공학 검토와 시뮬레이터 훈련을 강화합니다.</li>
+<li><strong>조직·비상</strong>: 소외 비상계획과 비상계획구역을 마련하고, INPO가 운전경험을 공유합니다. Kemeny 위원회는 근본 원인을 장비보다 사람·조직·"사고방식"에서 찾았습니다.</li>
+</ul>
+<p>국내 원전도 TMI 후속조치(SPDS, 노심냉각 감시, 비상계획 등)를 반영했습니다. 현행 징후기반 EOP·SAMG와 사고관리 체계는 이 교훈의 연장선에 있습니다.</p>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kemeny 보고서(1979.10), Rogovin 보고서(1980.1)[1][2]</td>
+<td>대통령위원회·NRC 특별조사단의 원인 분석</td>
+</tr>
+<tr>
+<td>NUREG-0660(1980.5) → NUREG-0737(1980.11), Supp.1(1982)[5]</td>
+<td>TMI 행동계획과 요건 명확화</td>
+</tr>
+<tr>
+<td>NUREG-0737 주요 항목</td>
+<td>I.A.1.1 STA, I.C.1 EOP 개선, I.D.1 제어실 설계 검토, I.D.2 SPDS, II.B.1 RCS 배기, II.D.3 밸브 위치 지시, II.E.1.2 보조급수 자동 기동, II.F.2 ICC 계측, II.K.3.1 PORV 자동 격리, II.K.3.5 RCP 정지</td>
+</tr>
+<tr>
+<td>10 CFR 50.47·부록 E(1980), NUREG-0654[7]</td>
+<td>비상계획, EPZ(약 10마일·50마일)</td>
+</tr>
+<tr>
+<td>10 CFR 50.44</td>
+<td>수소 제어 요건 강화</td>
+</tr>
+<tr>
+<td>국내</td>
+<td>기술기준규칙 제85조의19~23(사고관리), 사고관리 고시 제2026-1호, 방사능방재법(2003)[8]</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: NUREG-0737 항목 번호·표제는 원문 PDF 미대조(타 노트 인용과 일치) -->
+<p><strong>출제 당시 대비</strong>: 제68·78회(2000년대) 당시에는 국내 사고관리 제도가 없었습니다. 현행은 2016년 법제화된 사고관리계획서와 고시 제2026-1호입니다. 비상계획구역도 2014년 PAZ·UPZ로 개편되었습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>TMI-2(1979)</th>
+<th>체르노빌 4호기(1986)</th>
+<th>후쿠시마 제1 1~3호기(2011)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>노형</td>
+<td>B&amp;W PWR</td>
+<td>RBMK-1000(흑연감속 비등경수)</td>
+<td>GE BWR(Mark I)</td>
+</tr>
+<tr>
+<td>기점</td>
+<td>급수 상실 + PORV 고착 + 오판</td>
+<td>저출력 시험 중 반응도 폭주</td>
+<td>지진·쓰나미 → 장기 SBO</td>
+</tr>
+<tr>
+<td>노심</td>
+<td>약 45 % 용융</td>
+<td>노심 파괴·흑연 화재</td>
+<td>1~3호기 용융</td>
+</tr>
+<tr>
+<td>용기·격납</td>
+<td>용기 관통 없음, 격납 유지</td>
+<td>전면 격납건물 없음, 노심 노출</td>
+<td>용기 손상, 격납 손상·누설</td>
+</tr>
+<tr>
+<td>INES</td>
+<td>5(방벽)</td>
+<td>7</td>
+<td>7(1~3호기 통합 잠정)</td>
+</tr>
+<tr>
+<td>방출</td>
+<td>비활성기체 위주, 요오드 극소</td>
+<td>대량</td>
+<td>대량(체르노빌보다 작음)</td>
+</tr>
+</tbody>
+</table>
+<p>또 <strong>가압기 수위 ≠ RCS 재고량</strong>입니다. 수위는 포화 상태에서 재고량을 대표하지 못하므로 과냉각도·원자로용기 수위로 확인합니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>개요</strong>: 1979.3.28, TMI-2(B&amp;W PWR, 2,772 MWt), 급수 상실 과도</li>
+<li><strong>기점</strong>: 주급수 상실 → 터빈·원자로 정지 → PORV 개방고착(기상부 SBLOCA)</li>
+<li><strong>오판</strong>: 표시등은 닫힘 지령만 표시, 가압기 수위 상승을 만수로 오인 → HPI 축소</li>
+<li><strong>진행</strong>: 유출 + HPI 축소 → 재고량 감소 → RCP 정지·기액 분리 → 노심 노출(약 100분~) → 142분 차단밸브 닫음 → 200분 HPI 대유량</li>
+<li><strong>결과</strong>: 약 45 %(62 t) 용융, 약 19 t 하부 헤드, 용기 관통 없음, 격납 유지, 수소 연소 최고 28 psig</li>
+<li><strong>방출·선량</strong>: 비활성기체 위주, 평균 약 0.01 mSv, 최대 1 mSv 미만</li>
+<li><strong>INES 5</strong>: 방벽(노심 손상) 근거</li>
+<li><strong>교훈</strong>: 밸브 위치 직접 지시, ICC 계측, 징후기반 EOP, RCP 정지 기준, STA·SPDS, 비상계획, INPO(NUREG-0737)</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 사고 인과 도식(PORV 고착 유출과 수위 오인·HPI 축소가 재고량 감소로 합류)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-sa-022-tmi2-accident/sketch1_tmi2_causal_chain.avif"/><figcaption>답안지용 사고 인과 도식(PORV 고착 유출과 수위 오인·HPI 축소가 재고량 감소로 합류)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021년 2교시 1번</td>
+<td>TMI-2·체르노빌·후쿠시마 노형·원인·INES·방출·용기·격납 비교</td>
+</tr>
+<tr>
+<td>2013년 1교시 5번</td>
+<td>3대 사고 노형·원인·INES·환경 누출량 비교</td>
+</tr>
+<tr>
+<td>제78회 3교시 1번</td>
+<td>잔열 방출에 필요한 PORV 개수</td>
+</tr>
+<tr>
+<td>제68회 3교시 5번</td>
+<td>사고 경위와 설계·운전 개선 각 1개</td>
+</tr>
+</tbody>
+</table>
+<p>제78회 문항은 4,000 MWt, 정지 후 100 s 잔열 3 %, 밸브 1개 유동면적 0.002 m², 증기 방출 12,000 MW/m²입니다. 잔열 4,000 × 0.03 = 120 MW, 밸브 1개 0.002 × 12,000 = 24 MW이므로 120/24 = <strong>5개</strong>입니다. 실제 PORV는 잔열 제거용 설계가 아니며, feed-and-bleed는 HPI 용량과 함께 평가합니다. 제68회 문항의 개선 사항은 설계로 "밸브 위치 직접 지시·ICC 계측", 운전으로 "징후기반 EOP·HPI 유지 기준"을 들 수 있습니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>J. G. Kemeny et al., <em>Report of the President's Commission on the Accident at Three Mile Island</em> (1979.10).</li>
+<li>M. Rogovin, G. T. Frampton, <em>Three Mile Island: A Report to the Commissioners and to the Public</em>, NUREG/CR-1250 (1980.1).</li>
+<li>U.S. NRC, "Backgrounder on the Three Mile Island Accident" (공개 웹페이지).</li>
+<li>J. M. Broughton, P. Kuan, D. A. Petti, E. L. Tolman, "A Scenario of the Three Mile Island Unit 2 Accident", <em>Nuclear Technology</em> 87 (1989) 34–53.</li>
+<li>U.S. NRC, NUREG-0660 "NRC Action Plan Developed as a Result of the TMI-2 Accident" (1980); NUREG-0737 "Clarification of TMI Action Plan Requirements" (1980), Supplement 1 (1982).</li>
+<li>IAEA, <em>INES — The International Nuclear and Radiological Event Scale User's Manual</em>, 2008 Edition (2013).</li>
+<li>U.S. NRC, 10 CFR 50.47 및 10 CFR Part 50 Appendix E; NUREG-0654/FEMA-REP-1 "Criteria for Preparation and Evaluation of Radiological Emergency Response Plans".</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」 제85조의19~23 및 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」, 원안위고시 제2026-1호. 국가법령정보센터.</li>
+</ol>

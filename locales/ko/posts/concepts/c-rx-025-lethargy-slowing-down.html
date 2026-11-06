@@ -1,0 +1,209 @@
+<figure class="article-image"><img alt="[개념 노트] 중성자 감속과 레싸지(Lethargy, ξ) — 충돌마다 같은 만큼 쌓이는 로그 에너지 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-025-lethargy-slowing-down/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>레싸지(lethargy, 대수에너지감쇄)</strong> u = ln(E₀/E)는 기준 에너지 E₀에서 중성자 에너지가 로그 척도로 얼마나 내려왔는지를 나타내는 무차원 변수입니다(du = −dE/E). **ξ(평균 대수 에너지 감소)**는 충돌 한 번에 레싸지가 평균 얼마나 늘어나는지, 곧 ⟨ln(E/E′)⟩입니다.</p>
+<p>답안 첫 줄은 "레싸지 u = ln(E₀/E)는 감속의 진행도를 나타내는 무차원 변수이며, 탄성충돌 1회당 평균 증가량이 ξ로 에너지와 무관하므로 열화 충돌수는 n = ln(E₀/E)/ξ"로 쓰면 됩니다. 기준 E₀는 교과서마다 10 MeV나 2 MeV로 다르지만 물리적 의미는 차이 Δu에만 있습니다. 기출 표기는 레사지·레싸지·대수에너지감쇄가 섞여 있고, 2009년 문제는 기호를 μ로 썼습니다. 이 글은 표준 기호 u를 씁니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>ξ까지는 한 줄 요약</h3>
+<p>정지한 질량수 A의 핵과 탄성산란하고 질량중심계에서 등방이면, 산란 후 에너지 E′는 αE와 E 사이에 균일하게 분포합니다. α = [(A−1)/(A+1)]²이고, 로그 평균을 내면 ξ = 1 + α·lnα/(1−α)입니다[1][2].</p>
+<h3>레싸지 공간에서는 충돌이 같은 주사위</h3>
+<p>에너지 비 r = E′/E가 α~1에서 균일하면, 레싸지 증가 Δu = −ln r의 분포는</p>
+<p>f(Δu) = e^(−Δu)/(1−α), 0 ≤ Δu ≤ ln(1/α)</p>
+<p>입니다. 이 식에는 E가 없습니다. 2 MeV에서 부딪히든 1 keV에서 부딪히든, 레싸지 축 위에서는 똑같은 주사위를 던지는 셈입니다. 에너지 축에서는 고에너지일수록 한 번에 잃는 양(eV)이 크지만, 로그 축에서는 걸음 폭의 분포가 일정합니다. 그래서 레싸지는 충돌 횟수에 비례해 평균 ξ씩 직선으로 쌓이고, 열화 충돌수는 n ≈ Δu/ξ가 됩니다. 이것이 레싸지가 감속의 "자연 변수"인 이유입니다.</p>
+<p>2 MeV → 0.025 eV이면 Δu = ln(8×10⁷) = 18.2이므로 n = 18.2/ξ입니다. 수소 18회, 탄소 115회, 산소 152회입니다[1].</p>
+<figure class="article-image"><img alt="충돌 횟수에 따른 레싸지 계단(H·C·O 평균선, 정면충돌 최소선, 탄소 표본 경로), Δu 분포" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-025-lethargy-slowing-down/fig1_lethargy_staircase.avif"/><figcaption>충돌 횟수에 따른 레싸지 계단(H·C·O 평균선, 정면충돌 최소선, 탄소 표본 경로), Δu 분포</figcaption></figure>
+<p>두 가지를 덧붙입니다. 첫째, 18.2/ξ는 평균의 근사입니다. 수소는 Δu가 평균 1인 지수분포라 정확한 평균은 1 + 18.2 = 19.2회입니다. 2만 개 표본 계산에서 탄소는 평균 116회, 중앙 90 % 범위 106~127회, 산소는 평균 152회, 141~165회였습니다. 둘째, <strong>"최소" 충돌수는 다른 양</strong>입니다. 매번 정면충돌하면 한 번에 ln(1/α)씩 늘어나므로 탄소 18.2/0.334 = 54.5 → 55회, 산소 18.2/0.250 = 72.7 → 73회입니다.</p>
+<h3>O-16 계산 (2018년 3교시 1번)</h3>
+<p>α = (15/17)² = 0.7785, E₀ = 2 MeV입니다.</p>
+<table>
+<thead>
+<tr>
+<th>소문항</th>
+<th>식</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>가) 최소 에너지</td>
+<td>αE₀</td>
+<td>1.557 MeV</td>
+</tr>
+<tr>
+<td>나) 평균 산란 후 에너지</td>
+<td>(1+α)E₀/2</td>
+<td>1.779 MeV</td>
+</tr>
+<tr>
+<td>다) 충돌당 평균 손실</td>
+<td>(1−α)E₀/2</td>
+<td>0.221 MeV(현재 에너지의 11.1 %)</td>
+</tr>
+<tr>
+<td>라) ξ</td>
+<td>1 + α lnα/(1−α)</td>
+<td>0.120</td>
+</tr>
+<tr>
+<td>마) 평균 충돌수</td>
+<td>18.2/ξ</td>
+<td>약 152회</td>
+</tr>
+</tbody>
+</table>
+<p>다)는 첫 충돌 기준 절대값입니다. 이후 충돌에서는 그때 에너지의 11.1 %씩 줄어든다고 함께 쓰면 오해가 없습니다.</p>
+<h3>탄소 계산 (2021년 4교시 2번)</h3>
+<p>α = (11/13)² = 0.716, ξ = 0.158입니다. 문제의 "평균대수 에너지감쇄(Lethargy)"는 충돌당 값 ξ를 묻는 표현입니다. 답안에는 "ξ = 0.158(충돌당 평균 레싸지 증가), 필요한 총 레싸지 Δu = 18.2"를 함께 씁니다. "최소 충돌 횟수"는 통상 평균 충돌수 18.2/0.158 ≈ 115회를 뜻합니다. 다만 문자 그대로의 최소(매번 정면충돌)는 55회이므로, 해석을 한 줄 밝히고 둘 다 제시하는 것이 안전합니다.</p>
+<h3>감속 밀도 q와 1/E 중성자속</h3>
+<p><strong>감속 밀도</strong> q(E)는 단위 시간·단위 체적당 에너지 E를 지나 아래로 내려가는 중성자 수입니다. 흡수·누설이 없고 그 구간에 선원이 없는 정상상태에서는 들어온 만큼 내려가므로 q가 일정합니다. 여기에 ξΣs가 거의 일정하면</p>
+<p>q ≈ ξΣs·E·φ(E) → φ(E) = q/(ξΣs·E) ∝ 1/E</p>
+<p>가 됩니다. 레싸지당 중성자속 Eφ(E) = q/(ξΣs)는 평평합니다. 그래서 스펙트럼은 로그 에너지 축에 Eφ(E)로 그립니다. 이상적인 무흡수 수소 매질에서는 선원 아래 모든 에너지에서 정확하고, A &gt; 1이면 선원 근처의 진동(Placzek 진동)이 잦아든 점근 영역에서 성립합니다[3]. 날카로운 공명 내부에서는 이 국소 관계를 그대로 쓰지 않습니다.</p>
+<p>흡수가 약하게 있으면 q(u) = q₀·exp[−∫Σa/(ξΣt)du]로 줄어듭니다. U-238의 6.67 · 20.9 · 36.7 eV 공명을 지날 때마다 q가 계단식으로 줄고, 살아남는 비율이 <strong>공명이탈확률</strong> p입니다. 균질 NR 근사로 p = exp[−N_F·I_eff/(ξΣs)]이므로 분모의 감속능이 클수록 공명을 빨리 건너뛰어 p가 커집니다[2].</p>
+<figure class="article-image"><img alt="레싸지당 중성자속 Eφ(E)의 개념적 스펙트럼, 감속 영역 평탄부와 공명 함몰, 감속 밀도 q 식 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-025-lethargy-slowing-down/fig2_lethargy_spectrum.avif"/><figcaption>레싸지당 중성자속 Eφ(E)의 개념적 스펙트럼, 감속 영역 평탄부와 공명 함몰, 감속 밀도 q 식 카드</figcaption></figure>
+<h3>페르미 연령으로 이어지는 길</h3>
+<p>같은 변수로 공간 분포도 셉니다. 페르미 연령 τ = ∫D/(ξΣs)du [cm²]이고(흡수가 작아 Σt ≈ Σs일 때), 점선원에서 열화까지 직선 거리의 평균 제곱은 6τ입니다. 감속길이 √τ는 H₂O 5.2, D₂O 11.4, 흑연 19.2 cm입니다[1]. 수소는 한 번에 큰 레싸지 도약이 가능해 연속 감속을 가정한 연령 이론이 부정확하므로 경수의 τ는 측정값을 씁니다.</p>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>노심 설계 계산</strong>: 다군 단면적 라이브러리는 열외 영역의 군 경계를 레싸지 간격(Δu)으로 정의하는 것이 보통입니다. 공명 자기차폐와 감속 계산도 레싸지 변수로 수행합니다.</li>
+<li><strong>경수로</strong>: 수소의 ξ = 1 덕분에 약 19회 충돌로 열화되고 √τ가 약 5 cm로 짧습니다. 그래서 연료봉 간격이 1 cm 남짓한 조밀한 격자가 가능합니다. 감속재/연료비는 과소감속 쪽으로 설계합니다.</li>
+<li><strong>감속재 온도계수</strong>: 온도가 오르면 물 밀도가 줄고 Σs, 곧 ξΣs가 감소합니다. p가 작아지고 τ가 커져(누설 증가) MTC가 음이 됩니다.</li>
+<li><strong>흑연로·중수로</strong>: ξ가 작아 충돌수가 많고 √τ가 길어 노심과 감속재 체적이 큽니다.</li>
+<li><strong>적용 한계</strong>: 수 eV 이하 열 영역은 표적 열운동과 화학 결합 때문에 상향 산란이 생겨 "ξ 일정" 모형이 맞지 않습니다. 수 MeV 이상에서는 비탄성·비등방 산란이 섞입니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<p>레싸지 자체를 정의하는 규제 조항은 없습니다. 감속·스펙트럼 계산은 노심 핵설계의 기반이라 다음 요건으로 이어집니다.</p>
+<ul>
+<li><strong>10 CFR 50 부록 A GDC 10·11</strong>과 <strong>NUREG-0800 SRP 4.3(Nuclear Design)</strong>: 핵설계 방법과 코드 검증을 심사합니다[4].</li>
+<li><strong>「원자로시설 등의 기술기준에 관한 규칙」</strong> 제17조(원자로의 설계)·제18조(원자로의 고유보호), 현행 원안위규칙 제37호(2026.3.30)입니다[6].</li>
+<li><strong>RG 1.190(2001)</strong>: 압력용기 중성자 조사량(E &gt; 1 MeV) 계산·측정 방법입니다[5]. 감속 스펙트럼의 고에너지 꼬리를 다군 수송계산으로 구합니다.</li>
+<li><strong>출제 당시 대비</strong>: 감속 물리는 바뀐 것이 없습니다. 법체계는 원자력법에서 원자력안전법(2011)으로 바뀌었습니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>레싸지 u</th>
+<th>ξ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>성격</td>
+<td>누적 상태 변수</td>
+<td>충돌 1회당 평균 증가량</td>
+</tr>
+<tr>
+<td>정의</td>
+<td>ln(E₀/E)</td>
+<td>⟨ln(E/E′)⟩</td>
+</tr>
+<tr>
+<td>2 MeV→0.025 eV 탄소</td>
+<td>18.2</td>
+<td>0.158</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>평균 충돌수</th>
+<th>최소 충돌수</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>식</td>
+<td>Δu/ξ</td>
+<td>Δu/ln(1/α)</td>
+</tr>
+<tr>
+<td>탄소 / 산소</td>
+<td>115 / 152</td>
+<td>55 / 73</td>
+</tr>
+<tr>
+<td>가정</td>
+<td>무작위 산란각 평균</td>
+<td>매번 정면충돌</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>감속 밀도 q</th>
+<th>중성자속 φ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>의미</td>
+<td>E를 지나 내려가는 율</td>
+<td>단위 에너지당 경로 밀도</td>
+</tr>
+<tr>
+<td>감속 영역(무흡수)</td>
+<td>일정</td>
+<td>1/E</td>
+</tr>
+</tbody>
+</table>
+<p>평균 에너지 ⟨Eₙ⟩ = E₀[(1+α)/2]ⁿ과 기하평균 E₀e^(−nξ)도 다릅니다. 충돌수 계산은 로그 평균인 ξ로 합니다.</p>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 레싸지(Lethargy)와 ξ</strong></p>
+<ol>
+<li><strong>레싸지</strong> u = ln(E₀/E), du = −dE/E, 무차원 — 에너지가 내려갈수록 증가, 기준 E₀는 임의(차이만 의미)</li>
+<li><strong>α</strong> = [(A−1)/(A+1)]², 산란 후 E′는 αE~E 균일 분포</li>
+<li><strong>ξ</strong> = ⟨ln(E/E′)⟩ = 1 + α lnα/(1−α) — 충돌당 평균 레싸지 증가, E와 무관</li>
+<li><strong>Δu 분포</strong> f(Δu) = e^(−Δu)/(1−α) → 레싸지 공간에서 충돌이 등가 → 감속의 자연 변수</li>
+<li><strong>충돌수</strong> n = ln(E₀/E)/ξ = 18.2/ξ (2 MeV→0.025 eV): H 18, C 115, O 152회</li>
+<li><strong>최소 충돌수</strong>(매번 정면충돌) = 18.2/ln(1/α): C 55, O 73회</li>
+<li><strong>혼합물</strong> ξ̄ = ΣξᵢΣsᵢ/ΣΣsᵢ (H₂O 0.92)</li>
+<li><strong>감속 밀도</strong> q = ξΣsEφ(E) 일정 → φ ∝ 1/E, Eφ 평탄</li>
+<li><strong>연결</strong>: 공명이탈 p = exp[−N_F I_eff/(ξΣs)], 페르미 연령 τ = ∫D/(ξΣs)du</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: 레싸지 축과 충돌 계단, 핵심 식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-025-lethargy-slowing-down/sketch1_lethargy_definition.avif"/><figcaption>답안용 도식: 레싸지 축과 충돌 계단, 핵심 식</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>연도-교시-번호</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>제78회-1-4</td>
+<td>Lethargy</td>
+</tr>
+<tr>
+<td>2009-1-9</td>
+<td>크사이(ξ)와 레사지(Lethargy)</td>
+</tr>
+<tr>
+<td>2018-3-1</td>
+<td>산소 충돌 중성자 감속 계산</td>
+</tr>
+<tr>
+<td>2021-4-2</td>
+<td>탄소 감속재 레싸지·충돌횟수 계산</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 6장, 표 5.3.</li>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, Wiley (1976), 8장, 표 8-1.</li>
+<li>W. M. Stacey, Nuclear Reactor Physics, 2nd ed., Wiley-VCH (2007), 4장.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, GDC 10·11; NUREG-0800 SRP 4.3 "Nuclear Design".</li>
+<li>U.S. NRC, Regulatory Guide 1.190 "Calculational and Dosimetry Methods for Determining Pressure Vessel Neutron Fluence" (2001).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제17조·제18조. 국가법령정보센터.</li>
+</ol>

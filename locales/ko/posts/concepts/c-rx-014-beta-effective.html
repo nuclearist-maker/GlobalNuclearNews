@@ -1,0 +1,206 @@
+<figure class="article-image"><img alt="[개념 노트] 지발중성자분율과 유효지발중성자분율(β·βeff) — 핵종이 정하는 β, 중요도가 정하는 βeff, 연소가 줄이는 1달러 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-014-beta-effective/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>지발중성자분율 β</strong>는 핵분열로 나오는 전체 중성자 중 지발중성자의 비율(β = ν_d/ν)로, 핵분열 핵종과 입사 에너지가 정하는 핵자료 값입니다. <strong>유효지발중성자분율 βeff</strong>는 이 지발중성자를 <strong>중요도(수반 중성자속)로 가중</strong>한 값으로, 점동특성 방정식·역시간방정식·달러 단위(1$ = βeff)에 실제로 들어가는 동특성 인자입니다.</p>
+<p>답안 첫 줄에는 "β는 핵종 고유의 물리적 분율, βeff는 지발중성자의 낮은 방출 에너지에 따른 중요도 차이를 반영한 유효 분율로 1$의 크기를 정함"이라고 쓰면 두 개념의 차이가 한 번에 드러납니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>β — 핵종마다 다른 이유</h3>
+<p>여기서는 분율의 크기만 봅니다. Keepin 데이터의 대표값은 다음과 같습니다[1][2].</p>
+<table>
+<thead>
+<tr>
+<th>핵종</th>
+<th>핵분열 조건</th>
+<th>β</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Th-232</td>
+<td>고속</td>
+<td>0.0203</td>
+</tr>
+<tr>
+<td>U-238</td>
+<td>고속</td>
+<td>0.0148</td>
+</tr>
+<tr>
+<td>U-235</td>
+<td>열(고속 0.0064)</td>
+<td>0.0065</td>
+</tr>
+<tr>
+<td>Pu-241</td>
+<td>열</td>
+<td>약 0.0054</td>
+</tr>
+<tr>
+<td>U-233</td>
+<td>열·고속</td>
+<td>0.0026</td>
+</tr>
+<tr>
+<td>Pu-239</td>
+<td>열(고속 0.0020)</td>
+<td>0.0021</td>
+</tr>
+</tbody>
+</table>
+<p>분열하는 핵의 중성자 과잉(N/Z)이 클수록 분열편도 중성자 과잉이 되어 Br-87, I-137 같은 지발 선행핵 수율이 커지는 경향이 있습니다. 또 β = ν_d/ν이므로 ν가 큰 Pu는 분모 효과로 더 작아집니다. 2009년 1교시 13번(속분열 조건)의 답은 <strong>Th-232 &gt; U-238 &gt; U-235 &gt; U-233 &gt; Pu-239</strong> 입니다.</p>
+<p>여러 핵종이 함께 분열하는 노심의 <strong>평균 지발중성자분율 β̄</strong>는 단순 합이 아니라 중성자 생성 기준 가중평균입니다[2].</p>
+<p>β̄ = Σ Fᵢ·νᵢ·βᵢ / Σ Fᵢ·νᵢ (Fᵢ: 핵종 i의 핵분열 횟수 분율, νᵢ: 즉발+지발 전체 중성자 수)</p>
+<p>U-235만 분열하는 것으로 보면 0.0065지만, 실제 노심에서는 U-238 고속분열(β 0.0148)이 약 7~8 % 섞여 β̄를 끌어올리고, 연소가 진행되면 Pu-239가 끌어내립니다.</p>
+<h3>βeff — 중요도가 만드는 차이</h3>
+<p>점동특성 방정식은 중성자 "개수"가 아니라 연쇄반응에 대한 "기여"를 셉니다. 그래서 각 중성자를 그 자리·그 에너지의 중요도 φ†(수반 중성자속)로 가중합니다.</p>
+<p>βeff = ⟨φ†, χ_d·ν_d·Σf·φ⟩ / ⟨φ†, χ·ν·Σf·φ⟩ = I·β̄ [4]</p>
+<p>I는 지발중성자의 평균 중요도를 전체 핵분열중성자의 평균 중요도로 나눈 비입니다. 지발중성자는 군별 약 0.25~0.6 MeV로, 즉발중성자(평균 약 2 MeV)보다 낮은 에너지로 태어납니다. 이 차이가 두 방향으로 작용합니다.</p>
+<ul>
+<li><strong>I를 키우는 효과 — 누설 감소</strong>: 감속 거리(페르미 연령)가 짧아 열중성자가 되기 전에 노심 밖으로 새어 나갈 확률이 작습니다. 누설이 큰 소형·고농축 열중성자로에서는 이 효과가 지배해 <strong>βeff &gt; β</strong>가 됩니다.</li>
+<li><strong>I를 줄이는 효과 — 고속분열 기여 감소</strong>: U-238 고속분열 문턱(약 1 MeV)보다 낮게 태어나므로 고속분열(ε)에 대한 기여가 매우 작습니다.</li>
+</ul>
+<p>원자로가 커지면 누설 자체가 줄어 첫째 효과의 이점이 사라지고 βeff는 β에 가까워집니다. 누설이 작은 대형 저농축 PWR에서는 둘째 효과가 비슷하거나 조금 커서 <strong>I ≈ 0.97 내외</strong>(예시)로 1보다 약간 작습니다. 2001년(제65회) 2교시 3번이 전제한 "βeff &gt; β"는 소형·고누설 노심의 설명이므로, 답안에는 크기에 따른 수렴까지 써야 합니다. 고속로에서는 지발중성자가 문턱 핵분열을 거의 못 일으켜 I &lt; 1입니다.</p>
+<h3>연소에 따른 변화</h3>
+<p>Pu-239가 쌓이며 핵분열을 나눠 맡으면 β̄가 줄고 βeff도 함께 줄어듭니다. Daya Bay 연구진이 보고한 평형노심(1/3 신연료) 자료에서 Pu-239 핵분열 분율은 주기초 약 0.15, 주기말 약 0.40이고, 평균 조성은 U-235 : U-238 : Pu-239 : Pu-241 = 0.564 : 0.076 : 0.304 : 0.056입니다[3]. 이 평균 조성에 맞춘 근사(F238 고정, F241 ∝ F239)로 계산하면 β̄는 <strong>주기초 642 pcm → 주기말 519 pcm</strong>(약 19 % 감소), βeff(I = 0.97 가정)는 <strong>623 → 503 pcm</strong>입니다. 연소계산이 아닌 설명용 근사이며 노심별로 값이 다릅니다.<!-- 확인필요: 국내 APR1400·OPR1000 핵설계보고서의 주기별 βeff 설계값(BOC/EOC)을 공개 1차 문서로 대조하지 못함 --></p>
+<figure class="article-image"><img alt="Pu-239 핵분열 분율에 따른 노심 평균 β의 핵종별 기여(누적 면적)와 βeff 예시선, 주기초·주기말 값과 달러 환산 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-014-beta-effective/fig1_beta_burnup.avif"/><figcaption>Pu-239 핵분열 분율에 따른 노심 평균 β의 핵종별 기여(누적 면적)와 βeff 예시선, 주기초·주기말 값과 달러 환산 카드</figcaption></figure>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>1달러가 작아진다</strong>: 같은 양의 반응도 ρ라도 달러 값은 ρ/βeff이므로 주기말에 커집니다. 100 pcm은 주기초 약 0.16$, 주기말 약 0.20$입니다.</li>
+<li><strong>동특성이 빨라진다</strong>: 1군 근사 T ≈ (βeff − ρ)/(λρ)에서 βeff가 작아지면 같은 ρ에서도 주기가 짧아집니다. 즉발도약 크기 βeff/(βeff − ρ)도 커집니다.</li>
+<li><strong>반응도 사고 해석</strong>: 제어봉 이탈처럼 양의 반응도가 들어가는 사건에서는 낮은 βeff가 보수적일 수 있어, 주기 중 βeff 범위를 해석 입력으로 확인합니다. 어느 시점이 제한적인지는 반응도계수와 함께 사건별로 판단합니다.</li>
+<li><strong>노물리 시험</strong>: 재장전 후 제어봉가 측정 등에 쓰는 반응도 측정기는 해당 주기의 설계 βeff·λᵢ를 입력해야 합니다. 값이 틀리면 측정 제어봉가가 βeff 오차만큼 비례해 틀어집니다.</li>
+<li><strong>노형 차이</strong>: MOX 장전 노심은 Pu 비중이 커 βeff가 더 작고, 중수로는 광중성자가 추가 지발군 역할을 합니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<ul>
+<li><strong>NUREG-0800 SRP 4.3(핵설계)</strong>[5]: βeff, 즉발중성자 수명 등 동특성 인자의 계산 방법과 불확도를 심사합니다. **SRP 15.4.8(제어봉 이탈)**은 이 인자를 해석 입력으로 씁니다.</li>
+<li><strong>반응도 사고 판단기준</strong>: RG 1.77(1974)이 2020년 RG 1.236으로 대체되었습니다[5].</li>
+<li><strong>10 CFR 50 부록 A</strong>: GDC 11(원자로 고유보호), GDC 28(반응도 한계)[6].</li>
+<li><strong>노물리 시험</strong>: ANSI/ANS-19.6.1(PWR 재장전 기동 노물리 시험)이 반응도 측정 기반 시험을 규정합니다.<!-- 확인필요: ANSI/ANS-19.6.1 현행판 연도 미대조 --></li>
+<li><strong>국내</strong>: 「원자로시설 등의 기술기준에 관한 규칙」 제18조(원자로의 고유보호)·제28조(반응도제어계통)와 KINS 안전심사지침 4.3절이 같은 구조를 따릅니다.<!-- 기술기준규칙 제18·28조: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 --></li>
+<li><strong>IAEA</strong>: SSR-2/1(Rev.1, 2016), SSG-52(2019)[7].</li>
+<li><strong>출제 당시 대비 변경</strong>: β·βeff의 물리와 정의는 바뀐 것이 없습니다. 반응도 사고 판단기준만 RG 1.236으로 개정되었습니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>β (지발중성자분율)</th>
+<th>β̄ (평균)</th>
+<th>βeff (유효)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정의</td>
+<td>ν_d/ν, 핵종별</td>
+<td>핵분열 분율·ν 가중평균</td>
+<td>중요도 가중 분율</td>
+</tr>
+<tr>
+<td>결정 요인</td>
+<td>핵종·입사 에너지</td>
+<td>노심 핵종 구성(연소)</td>
+<td>구성 + 스펙트럼 + 누설</td>
+</tr>
+<tr>
+<td>대표값</td>
+<td>U-235 0.0065</td>
+<td>신연료 약 0.0072</td>
+<td>대형 PWR 약 0.97β̄</td>
+</tr>
+<tr>
+<td>쓰임</td>
+<td>핵자료</td>
+<td>중간값</td>
+<td>동특성·달러 단위</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>주기초(BOC)</th>
+<th>주기말(EOC)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pu-239 핵분열 분율</td>
+<td>약 0.15</td>
+<td>약 0.40</td>
+</tr>
+<tr>
+<td>β̄ / βeff</td>
+<td>642 / 623 pcm</td>
+<td>519 / 503 pcm</td>
+</tr>
+<tr>
+<td>100 pcm의 달러 값</td>
+<td>0.16$</td>
+<td>0.20$</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 지발중성자분율(β)과 유효지발중성자분율(βeff)</strong></p>
+<ol>
+<li><strong>β</strong>: 핵분열 중성자 중 지발중성자 비율, β = ν_d/ν, 핵종 고유(U-235 0.0065)</li>
+<li><strong>핵종 순서(속분열)</strong>: Th-232 0.0203 &gt; U-238 0.0148 &gt; U-235 0.0064 &gt; U-233 0.0026 &gt; Pu-239 0.0020</li>
+<li><strong>β̄</strong>: 노심 평균, β̄ = ΣFᵢνᵢβᵢ/ΣFᵢνᵢ</li>
+<li><strong>βeff</strong>: 중요도(수반 중성자속) 가중 분율, βeff = I·β̄</li>
+<li><strong>원인</strong>: 지발중성자 저에너지(약 0.4 MeV, 즉발 약 2 MeV)</li>
+<li><strong>I↑</strong>: 감속 거리 짧아 누설↓ → 소형·고누설 노심 βeff &gt; β</li>
+<li><strong>I↓</strong>: U-238 고속분열 기여 매우 작음 → 대형 PWR I ≈ 0.97</li>
+<li><strong>크기</strong>: 노심이 클수록 βeff → β(약간 아래)</li>
+<li><strong>연소</strong>: Pu-239(0.0021) 축적 → βeff 감소(예 623 → 503 pcm)</li>
+<li><strong>영향</strong>: 1$ = βeff 감소 → 같은 ρ의 달러 값↑, 즉발임계 여유↓, 주기 단축 → 반응도 사고 해석 반영</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: 노심 크기에 따른 βeff/β와 연소에 따른 βeff 감소" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-014-beta-effective/sketch1_beta_eff_size_burnup.avif"/><figcaption>답안용 도식: 노심 크기에 따른 βeff/β와 연소에 따른 βeff 감소</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>연도-교시-번호</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2001(제65회)-2-3</td>
+<td>βeff가 β보다 큰 이유와 원자로 크기에 따른 변화</td>
+</tr>
+<tr>
+<td>2009-1-13</td>
+<td>핵종별 총 지발중성자분율 순서(속분열)</td>
+</tr>
+<tr>
+<td>2011-1-12</td>
+<td>유효 지발중성자 분율과 평균 지발중성자 분율</td>
+</tr>
+<tr>
+<td>2024-1-1</td>
+<td>지발중성자분율(β)과 유효 지발중성자분율(βeff)</td>
+</tr>
+<tr>
+<td>2025-1-13</td>
+<td>핵연료 연소가 βeff에 미치는 영향</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>G. R. Keepin, Physics of Nuclear Kinetics, Addison-Wesley (1965) — 핵종별 지발중성자 자료.</li>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001) — 핵종별 β 표, 지발중성자.</li>
+<li>F. P. An et al.(Daya Bay Collaboration), "Evolution of the Reactor Antineutrino Flux and Spectrum at Daya Bay", Physical Review Letters 118, 251801 (2017) — 평형노심 핵분열 분율.</li>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, Wiley (1976) — 점동특성 방정식, 수반 중성자속 가중.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.3 "Nuclear Design"·15.4.8 "Spectrum of Rod Ejection Accidents (PWR)"; Regulatory Guide 1.236 (2020)(RG 1.77 대체).</li>
+<li>10 CFR Part 50 Appendix A, GDC 11·28; 원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제18·28조. 국가법령정보센터.</li>
+<li>IAEA, SSR-2/1 (Rev. 1) (2016); IAEA, Design of the Reactor Core for Nuclear Power Plants, Specific Safety Guide No. SSG-52 (2019).</li>
+</ol>

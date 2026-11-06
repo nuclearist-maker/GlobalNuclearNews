@@ -1,0 +1,283 @@
+<figure class="article-image"><img alt="[개념 노트] 임계열속과 핵비등이탈(CHF·DNB) — 핵비등이 끝나는 열속 한계와 벽온도 급상승 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-007-chf-dnb/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>임계열속(CHF, Critical Heat Flux)은 가열면이 액체와의 지속 접촉을 잃어 비등 열전달이 급격히 나빠지기 시작하는 열속, 곧 핵비등이 유지될 수 있는 최대 열속입니다. 과냉~저건도·고열속 조건에서 벽 근처 기포가 몰려 증기막이 생기는 형태를 핵비등이탈(DNB), 고건도 환상류에서 벽 액막이 말라 버리는 형태를 dryout이라고 합니다.</strong></p>
+<p>이 노트는 현상과 그 값(CHF)을 다룹니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>비등곡선에서 CHF의 자리</h3>
+<p>1기압 포화 물에 잠긴 가열면의 벽 과열도 ΔTe = T벽 − T포화를 올려 가면 다음 순서로 변합니다. 교재 대표값(평판·Zuber 계열)[1][2]과 2025년 문제 그림 판독값을 나란히 적었습니다. 문제 그림은 가로축이 표면온도라 ΔTe = T − 100 °C로 환산했고, 가는 가열선 실험 곡선으로 보여 대표값과 차이가 납니다. 값은 표면·형상에 따라 달라집니다.</p>
+<table>
+<thead>
+<tr>
+<th>구간·점 (2025년 문제 기호)</th>
+<th>명칭</th>
+<th>특성</th>
+<th>교재 대표값</th>
+<th>2025 문제 그림 판독값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A–B</td>
+<td>자연대류</td>
+<td>단상, 열전달계수 작음</td>
+<td>ΔTe 약 5 °C 이하</td>
+<td>B까지 ΔTe 약 19 K</td>
+</tr>
+<tr>
+<td>B</td>
+<td>핵비등 개시(ONB)</td>
+<td>벽 공동에서 기포 생성 시작. 개시 순간 과열이 풀리며 벽온도가 B′로 내려가는 이력이 있음</td>
+<td>ΔTe 약 5 °C</td>
+<td>ΔTe 약 19 K, 약 7 W/cm²(B′ 약 10 K)</td>
+</tr>
+<tr>
+<td>B′–C</td>
+<td>핵비등(고립 기포)</td>
+<td>기포가 벽에서 떨어져 액체를 휘저음, q″ ∝ ΔTe³ 수준으로 급증</td>
+<td>ΔTe 약 5~10 °C</td>
+<td>ΔTe 약 10~31 K</td>
+</tr>
+<tr>
+<td>C–D</td>
+<td>핵비등(기포 기둥·덩어리)</td>
+<td>기포가 합쳐 기둥을 이루고 액체 재공급이 점점 방해됨</td>
+<td>ΔTe 약 10~30 °C</td>
+<td>ΔTe 약 31~36 K</td>
+</tr>
+<tr>
+<td>D</td>
+<td>임계열속(CHF)</td>
+<td>열속 최대</td>
+<td>약 1.26 MW/m², ΔTe 약 30 °C</td>
+<td>약 100 W/cm²(1.0 MW/m²), ΔTe 약 36 K</td>
+</tr>
+<tr>
+<td>D–E</td>
+<td>천이비등</td>
+<td>부분 증기막, ΔTe가 커지는데 열속은 감소. 열속 제어에서는 불안정</td>
+<td>ΔTe 약 30~120 °C</td>
+<td>ΔTe 약 36~172 K</td>
+</tr>
+<tr>
+<td>E</td>
+<td>최소막비등점(Leidenfrost)</td>
+<td>막비등 최소 열속</td>
+<td>약 0.02 MW/m², ΔTe 약 120 °C</td>
+<td>약 20 W/cm²(0.2 MW/m²), ΔTe 약 172 K</td>
+</tr>
+<tr>
+<td>E–F</td>
+<td>막비등</td>
+<td>안정한 증기막을 통한 전도 + 고온에서 복사 증가</td>
+<td>—</td>
+<td>F 약 145 W/cm², ΔTe 약 1,900 K</td>
+</tr>
+</tbody>
+</table>
+<p>제71회 3교시 2번 문제의 번호 1~5도 같은 곡선입니다. 원본 문제지 그림 기준으로 ① 자연대류 ② 핵비등 ③ 정점(CHF) ④ 천이비등 ⑤ 막비등입니다.</p>
+<p>풀비등 CHF는 수력학적 불안정 이론의 Zuber형 식으로 구합니다[9][2].</p>
+<ul>
+<li>q″CHF = C · hfg · ρv^1/2 · [σ g (ρl − ρv)]^1/4</li>
+<li>C = 0.131(Zuber 원식) 또는 0.149(Lienhard). 이 노트는 0.149를 기본으로 씁니다. 1기압 물에 넣으면 0.149 → 약 1.26 MW/m², 0.131 → 약 1.11 MW/m²입니다. 문제 그림의 D(약 1.0 MW/m²)와 같은 크기입니다.</li>
+</ul>
+<figure class="article-image"><img alt="1기압 포화 물 비등곡선(양대수), 점 A~F·D′·E′, 열속 제어면의 D→D′ 점프와 E→E′ 복귀, Zuber형 CHF 식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-007-chf-dnb/fig1_boiling_curve_chf_jump.avif"/><figcaption>1기압 포화 물 비등곡선(양대수), 점 A~F·D′·E′, 열속 제어면의 D→D′ 점프와 E→E′ 복귀, Zuber형 CHF 식</figcaption></figure>
+<h3>왜 CHF를 넘으면 '점프'하나</h3>
+<p>핵연료봉은 핵분열 출력으로 **열속이 정해지는 가열면(열속 제어면)**입니다. 열속이 D를 넘으면 천이비등 가지를 따라갈 수 없습니다. 같은 열속을 내보낼 수 있는 상태가 막비등 가지의 D′뿐이므로 벽온도가 그쪽으로 급상승합니다. 풀비등 예시에서 D′의 ΔTe는 1,000 °C 이상이며, 금속 가열면이 녹는 현상을 burnout이라 부른 이유입니다. 반대로 열속을 낮추면 막비등은 E까지 유지되다가 E′로 돌아옵니다. 이 <strong>이력(hysteresis)</strong> 때문에 한 번 DNB가 나면 출력을 조금 낮추는 것만으로는 바로 회복되지 않습니다. 재습윤에는 벽온도가 최소막비등 온도 아래로 내려가야 합니다.</p>
+<h3>DNB와 dryout — 같은 CHF, 다른 메커니즘</h3>
+<ul>
+<li><strong>DNB(PWR)</strong>: 과냉~저건도(국부 평형건도 xe가 0 부근 이하)·고열속 조건입니다. 벌크 액체는 남아 있는데 벽 근처 기포층이 밀집·합체해 국부 증기막이 벽을 덮습니다. 설명 모델로는 기포층 밀집(Weisman–Pei), 기포 아래 액체 미세층 고갈(Lee–Mudawar, Katto), 수력학적 불안정 등이 있으며 단일 정설은 없습니다. 열속이 높은 상태에서 일어나므로 벽온도 상승이 빠르고 큽니다.</li>
+<li><strong>Dryout(BWR·CANDU)</strong>: 고건도 환상류에서 벽 액막이 증발과 비말 이탈로 고갈되는 현상입니다. 국부 열속보다 상류에서 쌓인 열량(국부 건도, 비등 길이)이 지배합니다. 그래서 BWR은 국부 열속비 대신 임계출력비(CPR)로 관리합니다. 증기·액적 냉각이 남아 있어 온도 상승은 대체로 DNB보다 완만하지만 조건에 따라 다릅니다.</li>
+</ul>
+<figure class="article-image"><img alt="가열 유로의 유동양식과 DNB·dryout 발생 가능 위치, W-3 예시 계산의 CHF–건도–질량속 관계(15.5 MPa)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-007-chf-dnb/fig2_dnb_dryout_channel_w3.avif"/><figcaption>가열 유로의 유동양식과 DNB·dryout 발생 가능 위치, W-3 예시 계산의 CHF–건도–질량속 관계(15.5 MPa)</figcaption></figure>
+<h2>영향인자</h2>
+<p>다른 조건을 고정했을 때 CHF의 변화입니다.</p>
+<table>
+<thead>
+<tr>
+<th>인자 증가</th>
+<th>CHF</th>
+<th>이유·단서</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>국부 평형건도(엔탈피)</td>
+<td>크게 감소</td>
+<td>가장 강한 인자. W-3 예시(G 3,500)에서 xe 0 → 0.15에 약 56 % 감소</td>
+</tr>
+<tr>
+<td>입구 과냉도</td>
+<td>증가</td>
+<td>같은 높이의 국부 건도가 낮아짐</td>
+</tr>
+<tr>
+<td>질량속 G</td>
+<td>저건도에서 증가</td>
+<td>고건도 쪽은 효과 약화·역전 가능(W-3 예시에서는 xe 약 0.1 부근 교차)</td>
+</tr>
+<tr>
+<td>압력</td>
+<td>중압에서 최대</td>
+<td>고정 건도 기준 물은 약 3~7 MPa에서 최대, 임계압력 쪽으로 감소</td>
+</tr>
+<tr>
+<td>수력직경</td>
+<td>감소</td>
+<td>소경 유로일수록 CHF 증가</td>
+</tr>
+<tr>
+<td>상류 열속 집중(비균일 축방향 분포)</td>
+<td>하류 CHF 감소</td>
+<td>상류 기포층·엔탈피 누적, W-3 F-factor로 보정</td>
+</tr>
+<tr>
+<td>혼합날개 지지격자</td>
+<td>증가</td>
+<td>난류 혼합으로 벽 기포층을 깨뜨림</td>
+</tr>
+</tbody>
+</table>
+<p>압력은 두 효과를 구분해야 합니다. PWR 운전대역에서 압력이 떨어지면 포화온도가 낮아져 과냉도가 줄고 국부 건도가 올라가 DNBR이 떨어집니다. 이것은 고정 건도에서의 압력 효과와 다른 이야기입니다.</p>
+<h2>CHF를 구하는 방법</h2>
+<p>CHF는 이론식이 아니라 <strong>실험 상관식</strong>으로 구합니다. 전기 가열봉으로 실제 연료 다발을 모의한 시험에서 연료 설계별로 만듭니다.</p>
+<ul>
+<li><strong>W-3</strong>(Tong, Westinghouse): 국부 조건형(압력, G, xe, 수력직경, 입구 엔탈피) 균일열속 식입니다[3]. 적용범위는 xe ±0.15, 압력 약 7~16 MPa이며 비균일 열속 F-factor와 격자 인자로 보정합니다. 전통적 한계 DNBR은 1.30입니다.</li>
+<li><strong>WRB-1·WRB-2(M)</strong>: Westinghouse 혼합날개 격자 다발용입니다.</li>
+<li><strong>CHF 룩업테이블(Groeneveld 2006)</strong>: 8 mm 원관 기준으로 정규화한 데이터뱅크입니다. 압력 0.1~21 MPa, G 0~8,000 kg/m²s, xe −0.5~1.0 범위이고 직경·다발 보정인자를 곱해 계통 해석 코드에 씁니다[4].</li>
+<li><strong>BWR</strong>: GEXL 같은 임계출력 상관식(비등 길이–건도형)으로 MCPR을 평가합니다.</li>
+</ul>
+<p>상관식마다 데이터베이스와 적용범위가 다르므로 범위 밖 외삽은 허용되지 않습니다. 이 때문에 설계 한계가 상관식에 묶여 있습니다.</p>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>설계</strong>: CHF 이후에는 열전달계수가 한 자릿수 이상 떨어져 피복관 온도가 수백 °C 이상 오르고 산화·취화가 빨라집니다. 그래서 정상운전과 예상운전과도(AOO)에서 "DNB 미발생"을 허용핵연료설계제한치(SAFDL)로 둡니다.</li>
+<li><strong>PWR(OPR1000·APR1400 등)</strong>: hot channel 상부의 국부 과냉비등은 허용되지만 DNB는 허용되지 않습니다. CE형은 노심보호연산기(CPC)의 DNBR 저 트립, Westinghouse형은 과온도 ΔT 트립이 보호합니다.</li>
+<li><strong>BWR·CANDU</strong>: dryout 기준입니다. BWR은 MCPR, 월성 CANDU는 임계채널출력과 지역과출력보호(ROP) 트립을 씁니다.</li>
+<li><strong>사고</strong>: 유량상실·RCP 축 고착·제어봉 인출이 DNB 제한 사건입니다. LOCA처럼 CHF가 불가피한 사고는 최고 피복관 온도 1,204 °C 등 별도 기준으로 판단합니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>「원자로시설 등의 기술기준에 관한 규칙」 제2조 제1항 제10호·제17조①[8]</td>
+<td>핵연료허용손상한계(핵비등이탈률 포함) 정의, 정상운전·예상운전과도 시 여유 확보</td>
+</tr>
+<tr>
+<td>10 CFR 50 App. A GDC 10·20</td>
+<td>정상운전·AOO 중 SAFDL 비초과, 보호계통 자동 동작[6]</td>
+</tr>
+<tr>
+<td>NUREG-0800 SRP 4.4 Rev.2(2007)</td>
+<td>PWR 95/95 DNB 미발생, BWR은 AOO 중 연료봉 99.9 % 이상 boiling transition 미발생[5]</td>
+</tr>
+<tr>
+<td>10 CFR 50.46</td>
+<td>LOCA 시 최고 피복관 온도 1,204 °C 등 ECCS 허용기준[6]</td>
+</tr>
+</tbody>
+</table>
+<!-- 기술기준규칙 제2조 제1항 제10호·제17조①: 현행 원안위규칙 제37호(2026.3.30) 조문목록으로 확인 -->
+<p>출제 당시와 달라진 점은 CHF 현상 자체가 아니라 판정 방법입니다. 과거 답안의 "W-3, 한계 1.30"은 현행 기준에서 "연료별 상관식과 통계적 열설계로 정한 한계(예: APR1400 KCE-1 1.29[7])"로 쓰는 것이 맞습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>DNB</th>
+<th>Dryout</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>노형</td>
+<td>PWR</td>
+<td>BWR, CANDU</td>
+</tr>
+<tr>
+<td>유동 조건</td>
+<td>과냉~저건도, 기포류</td>
+<td>고건도, 환상류</td>
+</tr>
+<tr>
+<td>메커니즘</td>
+<td>벽 기포 밀집 → 국부 증기막</td>
+<td>벽 액막 증발·비말 이탈로 고갈</td>
+</tr>
+<tr>
+<td>지배 변수</td>
+<td>국부 열속</td>
+<td>국부 건도·누적 출력</td>
+</tr>
+<tr>
+<td>관리 지표</td>
+<td>DNBR(MDNBR)</td>
+<td>CPR(MCPR), 임계채널출력</td>
+</tr>
+</tbody>
+</table>
+<p>또 한 가지 짝은 <strong>ONB와 DNB</strong>입니다. ONB는 비등이 시작되는 점(B)이고, DNB는 핵비등이 끝나는 점(D)입니다. "DNB = 끓기 시작"은 흔한 오답입니다. 열속은 실제로 흐르는 열이고 CHF는 유동 조건이 허용하는 한계입니다. 둘의 비가 DNBR입니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: CHF = 핵비등이 유지되는 최대 열속, 넘으면 비등 열전달 급격히 악화</li>
+<li><strong>비등곡선</strong>: 자연대류 → ONB → 핵비등 → <strong>CHF</strong> → 천이비등 → Leidenfrost → 막비등</li>
+<li><strong>열속 제어면</strong>: CHF 초과 시 D → D′ 수평 점프, 벽온도 급상승(1기압 예시 ΔTe 1,000 °C 이상)</li>
+<li><strong>DNB</strong>: 과냉·저건도·고열속, 벽 기포 밀집 → 증기막(PWR)</li>
+<li><strong>Dryout</strong>: 고건도 환상류 액막 고갈(BWR, CANDU)</li>
+<li><strong>영향인자</strong>: 건도↑ → CHF↓(최대 인자), 과냉도·G(저건도)↑ → CHF↑, 압력은 중압에서 최대</li>
+<li><strong>예측</strong>: 실험 상관식(W-3, WRB, KCE-1), 룩업테이블, 풀비등 Zuber 식</li>
+<li><strong>설계 의미</strong>: SAFDL, DNBR ≥ 상관식별 한계(95/95), BWR은 MCPR</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 비등곡선 4영역 + CHF점과 열속 제어면 점프 도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-th-007-chf-dnb/sketch1_boiling_curve_chf.avif"/><figcaption>답안지용 비등곡선 4영역 + CHF점과 열속 제어면 점프 도식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 2교시 1번</td>
+<td>풀비등 곡선 구간·점별 명칭과 특성</td>
+</tr>
+<tr>
+<td>2023년 1교시 3번</td>
+<td>DNB 발생 과정과 설계 고려 이유</td>
+</tr>
+<tr>
+<td>2018년 1교시 2번</td>
+<td>핵비등이탈(DNB)과 핵비등열속</td>
+</tr>
+<tr>
+<td>2015년 1교시 11번</td>
+<td>DNB</td>
+</tr>
+<tr>
+<td>제76회 1교시 6번</td>
+<td>DNBR</td>
+</tr>
+<tr>
+<td>제71회 3교시 2번</td>
+<td>수조비등 곡선 영역별 열전달</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>F. P. Incropera, D. P. DeWitt, T. L. Bergman, A. S. Lavine, Fundamentals of Heat and Mass Transfer, John Wiley &amp; Sons, 비등과 응축 장(풀비등 곡선·대표값).</li>
+<li>J. H. Lienhard IV, J. H. Lienhard V, A Heat Transfer Textbook, Phlogiston Press(공개 전자판), 비등 장(풀비등 곡선, CHF 상수 0.149).</li>
+<li>L. S. Tong, "Prediction of Departure from Nucleate Boiling for an Axially Non-uniform Heat Flux Distribution", Journal of Nuclear Energy 21 (1967) — W-3 상관식.</li>
+<li>D. C. Groeneveld et al., "The 2006 CHF Look-up Table", Nuclear Engineering and Design 237 (2007) 1909–1922.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.4 "Thermal and Hydraulic Design", Rev. 2 (2007).</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix A GDC 10·20; 10 CFR 50.46.</li>
+<li>KHNP, APR1400-F-C-NR-12001-NP(KCE-1 CHF 상관식 기술보고서, 비공개 정보 제외본). NRC 설계인증 공개 문서.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제2조·제17조. 국가법령정보센터.</li>
+<li>N. Zuber, Hydrodynamic Aspects of Boiling Heat Transfer, AECU-4439, U.S. Atomic Energy Commission (1959).</li>
+</ol>

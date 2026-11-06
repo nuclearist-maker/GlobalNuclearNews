@@ -1,0 +1,365 @@
+<figure class="article-image"><img alt="[개념 노트] 원자로 냉각재 선정조건과 노형 비교 — 물·기체·액체금속·용융염이 정하는 압력과 온도 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-pe-001-coolant-selection/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>원자로 냉각재</strong>는 노심에서 생긴 열을 제거해 증기발생기·터빈 쪽으로 나르는 유체입니다. 좋은 냉각재는 <strong>열을 많이 담고 잘 전하며(ρcₚ·k↑), 적은 펌프동력으로 흐르고, 낮은 압력에서 끓지 않으며, 중성자를 덜 흡수하고 덜 방사화되고, 구조재와 화학적으로 양립하며, 값이 싸야</strong> 합니다.</p>
+<p>냉각재 선택이 곧 노형의 압력·온도·스펙트럼을 정합니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>구비조건 일곱 가지</h3>
+<table>
+<thead>
+<tr>
+<th>분류</th>
+<th>조건</th>
+<th>왜 필요한가</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>열적</td>
+<td>체적 열용량 ρcₚ 큼, 열전도율 k 큼</td>
+<td>적은 유량으로 열 수송, 피복관-냉각재 온도차 축소</td>
+</tr>
+<tr>
+<td>수력</td>
+<td>점성 작음, 펌프동력 작음</td>
+<td>소내 전력·펌프 크기 축소</td>
+</tr>
+<tr>
+<td>상변화</td>
+<td>끓는점 높고 녹는점 낮음</td>
+<td>저압 운전, 동결 방지</td>
+</tr>
+<tr>
+<td>핵적</td>
+<td>중성자 흡수 σa 작음</td>
+<td>열로는 중성자 경제, 고속로는 감속도 작아야 함</td>
+</tr>
+<tr>
+<td>방사화</td>
+<td>유도방사능 작고 반감기 짧음</td>
+<td>피폭·보수 접근성</td>
+</tr>
+<tr>
+<td>화학</td>
+<td>연료·피복관·구조재와 양립, 물·공기와 반응 작음, 방사선분해 안정</td>
+<td>부식·화재·수소 방지</td>
+</tr>
+<tr>
+<td>경제·안전</td>
+<td>저렴·풍부, 정화 쉬움, 반응도 궤환 유리</td>
+<td>운전비, 고유안전성</td>
+</tr>
+</tbody>
+</table>
+<p>구비조건 분류는 냉각재 교과서의 공통 항목을 묶은 것입니다[1][2]. 모든 조건을 만족하는 냉각재는 없으므로 <strong>무엇을 희생하고 어떤 설계로 보완했는지</strong>가 노형의 성격이 됩니다.</p>
+<h3>숫자로 보는 구비조건</h3>
+<figure class="article-image"><img alt="냉각재 7종의 체적 열용량·열전도율·상대 수력동력(같은 ΔT/대표 ΔT) 비교와 유도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-pe-001-coolant-selection/fig1_coolant_heat_capacity_pumping.avif"/><figcaption>냉각재 7종의 체적 열용량·열전도율·상대 수력동력(같은 ΔT/대표 ΔT) 비교와 유도식</figcaption></figure>
+<p>열출력 Q를 온도상승 ΔT로 나르려면 질량유량 ṁ = Q/(cₚΔT)가 필요합니다. 난류 마찰계수 f ∝ Re^−0.2, 같은 유로 형상, 일정 물성을 가정하면 펌프동력은 **Ẇ ∝ μ^0.2/(ρ²cₚ^2.8)**입니다(El-Wakil의 냉각재 성능지수와 같은 형태)[2]. 실제 펌프·송풍기 동력비가 아니라 같은 조건의 상대 수력동력입니다.</p>
+<table>
+<thead>
+<tr>
+<th>냉각재(조건)</th>
+<th>ρcₚ [MJ/m³·K]</th>
+<th>펌프동력 지표(H₂O=1)</th>
+<th>k [W/m·K]</th>
+<th>녹는점/1기압 끓는점 [°C]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H₂O(15.5 MPa, 307 °C)</td>
+<td>4.02</td>
+<td>1</td>
+<td>0.55</td>
+<td>0/100</td>
+</tr>
+<tr>
+<td>FLiBe(650 °C)</td>
+<td>4.68</td>
+<td>3.5</td>
+<td>약 1.1</td>
+<td>459/약 1,430</td>
+</tr>
+<tr>
+<td>Na(450 °C)</td>
+<td>1.07</td>
+<td>57</td>
+<td>약 66</td>
+<td>98/883</td>
+</tr>
+<tr>
+<td>Pb(450 °C)</td>
+<td>1.55</td>
+<td>235</td>
+<td>약 17</td>
+<td>327/1,749</td>
+</tr>
+<tr>
+<td>CO₂(4 MPa, 500 °C)</td>
+<td>0.032</td>
+<td>약 4.6만</td>
+<td>약 0.05</td>
+<td>—</td>
+</tr>
+<tr>
+<td>He(7 MPa, 500 °C)</td>
+<td>0.023</td>
+<td>약 2.9만</td>
+<td>약 0.3</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>물성은 IAPWS-IF97(물)[3], Fink &amp; Leibowitz(Na)[4], OECD/NEA 핸드북(Pb)[5], Romatoski &amp; Hu(FLiBe)[6], 이상기체(기체)로 계산했습니다.</p>
+<p>물과 용융염은 **담는 힘(ρcₚ)**이 크고, 액체금속은 **전하는 힘(k)**이 압도적입니다. FLiBe는 ρcₚ가 물보다 크지만 점성이 커서 지표가 3.5입니다. 기체는 ρcₚ가 물의 1/100 이하라 고압으로 밀도를 올리고 ΔT를 크게 잡습니다. Ẇ ∝ ΔT^−2.8이므로 ΔT만 바꾸면 SFR(약 150 °C)은 0.85로 물(약 33 °C) 수준, HTGR(약 500 °C)은 약 15까지 내려옵니다(1차 근사).</p>
+<h3>핵적 성질과 방사화</h3>
+<p>열중성자 흡수 단면적은 H 0.332 b, D 0.00052 b, Na 0.53 b, Pb 0.17 b, He-4는 거의 0입니다[7]. 고속로는 감속을 피해야 하므로 수소를 뺀 Na·Pb·He를 씁니다. 방사화 생성물은 냉각재마다 다릅니다.</p>
+<ul>
+<li>H₂O: O-16(n,p)N-16(T½ 7.13 s, γ 6.13 MeV). 정지하면 수 분 안에 사라집니다.</li>
+<li>D₂O: D(n,γ)T(T½ 12.3년). 삼중수소를 관리해야 합니다.</li>
+<li>Na: Na-24(T½ 15.0 h, γ 1.37·2.75 MeV). 그래서 중간 Na 루프를 둡니다.</li>
+<li>Pb-Bi: Bi-209(n,γ) → Po-210(T½ 138 d, α)이 생깁니다.</li>
+<li>FLiBe: Li-6·Li-7에서 삼중수소가 생겨 Li-7 고농축이 필요합니다.</li>
+</ul>
+<h2>원전에서의 의미</h2>
+<h3>노형별 운전 조건</h3>
+<figure class="article-image"><img alt="노형별 압력-온도 운전 지도(경수 포화곡선, 경수·중수 계열 확대, 대기압 운전 띠)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-pe-001-coolant-selection/fig2_coolant_operating_map.avif"/><figcaption>노형별 압력-온도 운전 지도(경수 포화곡선, 경수·중수 계열 확대, 대기압 운전 띠)</figcaption></figure>
+<table>
+<thead>
+<tr>
+<th>노형</th>
+<th>냉각재</th>
+<th>감속재</th>
+<th>1차 압력</th>
+<th>입구→출구 [°C]</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PWR</td>
+<td>H₂O(단상)</td>
+<td>H₂O</td>
+<td>15.5 MPa</td>
+<td>290.6→323.9</td>
+<td>APR1400[8]</td>
+</tr>
+<tr>
+<td>BWR</td>
+<td>H₂O(노심 비등)</td>
+<td>H₂O</td>
+<td>약 7.0 MPa</td>
+<td>증기 약 286(포화)</td>
+<td>대표 BWR</td>
+</tr>
+<tr>
+<td>PHWR</td>
+<td>D₂O(압력관)</td>
+<td>D₂O(칼란드리아, 저온·저압)</td>
+<td>출구헤더 약 9.9 MPa(abs)</td>
+<td>약 266→310</td>
+<td>CANDU-6[9]</td>
+</tr>
+<tr>
+<td>AGR</td>
+<td>CO₂</td>
+<td>흑연</td>
+<td>약 4 MPa</td>
+<td>약 290→640</td>
+<td>영국 AGR</td>
+</tr>
+<tr>
+<td>HTGR</td>
+<td>He</td>
+<td>흑연</td>
+<td>7 MPa</td>
+<td>250→750</td>
+<td>HTR-PM[10]</td>
+</tr>
+<tr>
+<td>SFR(LMFBR)</td>
+<td>Na</td>
+<td>없음</td>
+<td>대기압 근처</td>
+<td>약 395→545</td>
+<td>Superphénix</td>
+</tr>
+<tr>
+<td>LFR</td>
+<td>Pb(Pb-Bi)</td>
+<td>없음</td>
+<td>대기압 근처</td>
+<td>약 420→540</td>
+<td>BREST-OD-300[10]</td>
+</tr>
+<tr>
+<td>MSR</td>
+<td>용융 불화염</td>
+<td>흑연 또는 없음</td>
+<td>대기압 근처</td>
+<td>출구 700~800</td>
+<td>GIF 목표</td>
+</tr>
+</tbody>
+</table>
+<p>경수의 포화압력은 286 °C에서 7.0 MPa, 311 °C에서 10.0 MPa, 344.8 °C에서 15.5 MPa입니다(IAPWS-IF97)[3]. PWR은 15.5 MPa에서 고온관 323.9 °C로 약 21 °C의 벌크 과냉도를 두어 벌크 비등을 막습니다. DNBR 여유와는 별개의 양입니다. 그래서 물 냉각로의 출구온도는 약 330 °C 안팎에 묶이고 열효율은 약 33~35 %에 머뭅니다. 액체금속·용융염은 끓는점이 높아 대기압 근처에서 500 °C 이상을 냅니다. 파단 시 감압 비등이 없는 대신 동결·화학 반응이 숙제입니다.</p>
+<h3>고속로·가압경수로·고온가스로 냉각재 장단점</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>H₂O(PWR)</th>
+<th>Na(SFR)</th>
+<th>He(HTGR)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>장점</td>
+<td>저렴·성숙, ρcₚ 큼, 감속재 겸용, 음의 감속재·기포 궤환</td>
+<td>대기압 운전, 끓는점 883 °C, k 큼, 감속 작음</td>
+<td>화학·핵적 불활성, 상변화 없음, 750 °C 이상 → 효율·수소 생산</td>
+</tr>
+<tr>
+<td>단점</td>
+<td>고압 필요, 출구온도 제한, LOCA 시 감압 비등, 방사선분해·부식</td>
+<td>물·공기와 격렬 반응, Na-24, 불투명, 98 °C 동결 예열, 노심 중심 Na 기포계수 양(+) 가능</td>
+<td>ρcₚ 작아 고압·대형 송풍기, 누설 쉬움, 공기·수분 유입 시 흑연 산화</td>
+</tr>
+<tr>
+<td>보완 설계</td>
+<td>가압기, ECCS</td>
+<td>중간 루프, 풀형, 증기발생기 누설 감시</td>
+<td>저출력밀도·흑연 열용량으로 피동 붕괴열 제거</td>
+</tr>
+</tbody>
+</table>
+<p>CO₂(AGR)는 싸고 고온이지만 흑연 산화를 관리해야 합니다. Pb는 물과 격렬히 반응하지 않지만 무겁고 강재를 부식시켜 산소 농도를 제어합니다.</p>
+<h3>경수로와 중수로</h3>
+<p>경수로는 H₂O가 냉각재와 감속재를 겸하고 붕산으로 반응도를 제어합니다. 중수로(CANDU-6)는 <strong>고온·고압 D₂O 냉각재(압력관 380개)와 저온·저압 D₂O 감속재(칼란드리아)를 분리</strong>합니다[9]. D의 흡수가 H의 약 1/640이라 천연우라늄을 씁니다. 대가는 D₂O 비용, 삼중수소, 작은 양(+)의 냉각재 기포계수입니다. CANDU와 PWR의 근본 차이는 감속재, 연료(천연/농축), 압력관/압력용기, 운전 중/정지 후 재장전, 반응도 제어·정지계통(SDS1·2)입니다.</p>
+<h3>Gen-IV 6개 계통</h3>
+<p>GIF 기술 로드맵(2002, 2014 갱신)이 고른 6개 계통은 냉각재로 구분됩니다[11]. VHTR(He, 900~1,000 °C), GFR(He, 850 °C), SFR(Na, 500~550 °C), LFR(Pb, 480~570 °C), MSR(불화염, 700~800 °C), SCWR(초임계수, 510~625 °C)입니다. 출구온도는 GIF 비교표 기준이며 문헌마다 차이가 있습니다. 공통 방향은 <strong>경수 포화곡선을 벗어나 고온·저압(또는 초임계)으로</strong> 가는 것입니다.</p>
+<h2>규제·기준 근거</h2>
+<ul>
+<li><strong>10 CFR 50 부록 A</strong>: GDC 10(연료 설계한계), GDC 11(원자로 고유보호), GDC 14(원자로냉각재압력경계), GDC 33·34·35(냉각재 보충·잔열제거·비상노심냉각). 경수로를 전제로 쓰였습니다[12].</li>
+<li><strong>NRC RG 1.232 Rev.0(2018.4)</strong>: 비경수로용 주요 설계기준으로, GDC를 각색한 ARDC와 SFR-DC·MHTGR-DC를 제시합니다[13]. 예컨대 고압 경계를 전제한 GDC 14는 대기압 근처에서 운전하는 노형에 그대로 맞지 않습니다.</li>
+<li><strong>IAEA SSR-2/1 Rev.1(2016)</strong>: 원자로냉각재계통 설계 요건(Requirement 47 등)을 둡니다[14]. 주로 수냉각로 기준이며, 다른 노형은 등급별로 적용합니다.<!-- 확인필요: SSR-2/1 Rev.1 냉각재 관련 요건 번호(47 외) 원문 미대조 --></li>
+<li><strong>국내</strong>: 「원자로시설 등의 기술기준에 관한 규칙」 제18조(원자로의 고유보호)·제21조(원자로냉각재압력경계)도 경수로 중심 체계입니다[15].</li>
+<li><strong>출제 당시 대비</strong>: 기출(2001~2005) 이후 Gen-IV 로드맵 갱신(2014)과 비경수로 설계기준(RG 1.232, 2018)이 생겼습니다. 냉각재 물성과 선정 원리는 그대로입니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>냉각재</th>
+<th>감속재</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>목적</td>
+<td>열 제거·수송</td>
+<td>중성자 감속</td>
+</tr>
+<tr>
+<td>핵심 지표</td>
+<td>ρcₚ, k, 펌프동력, 끓는점</td>
+<td>ξ, 감속능 ξΣs, 감속비 ξΣs/Σa</td>
+</tr>
+<tr>
+<td>고속로</td>
+<td>Na·Pb·He</td>
+<td>없음</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>열 '담기'(ρcₚ)</th>
+<th>열 '전하기'(k)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>강자</td>
+<td>FLiBe·물</td>
+<td>Na</td>
+</tr>
+<tr>
+<td>효과</td>
+<td>유량·펌프동력 감소</td>
+<td>피복관 온도차 감소</td>
+</tr>
+</tbody>
+</table>
+<p>"Na는 물보다 열을 잘 담는다"는 틀린 문장입니다. 열전도율은 약 120배지만 체적 열용량은 약 1/4입니다.</p>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 원자로 냉각재의 구비조건</strong></p>
+<ol>
+<li><strong>정의</strong>: 노심 열을 제거·수송하는 유체임(경수로는 감속재 겸용)</li>
+<li><strong>열적</strong>: ρcₚ 큼 → 적은 유량, k 큼 → 피복관 온도차 작음</li>
+<li><strong>수력</strong>: 점성 작음 → 펌프동력 Ẇ ∝ μ^0.2/(ρ²cₚ^2.8) 작음</li>
+<li><strong>상변화</strong>: 끓는점 높음 → 저압 운전(물은 15.5 MPa 필요), 녹는점 낮음 → 동결 방지</li>
+<li><strong>핵적</strong>: σa 작음, 고속로는 감속 작음(H 배제)</li>
+<li><strong>방사화</strong>: 유도방사능 작고 반감기 짧음(N-16 7 s, Na-24 15 h, Po-210)</li>
+<li><strong>화학</strong>: 구조재 양립, 물·공기 반응 없음, 방사선분해 안정</li>
+<li><strong>경제·안전</strong>: 저렴, 음의 기포계수, 화재·폭발 없음</li>
+<li><strong>예</strong>: H₂O(PWR·BWR), D₂O(PHWR), CO₂(AGR), He(HTGR·VHTR·GFR), Na(SFR), Pb(LFR), 불화염(MSR)</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: 압력-온도 운전 창과 냉각재 구비조건 6가지" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-pe-001-coolant-selection/sketch1_coolant_requirements.avif"/><figcaption>답안용 도식: 압력-온도 운전 창과 냉각재 구비조건 6가지</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>연도-교시-번호</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2001(제65회)-4-1</td>
+<td>노형별 감속재·냉각재 표 채우기</td>
+</tr>
+<tr>
+<td>2003(제71회)-2-1</td>
+<td>고속로·PWR·HTGR 냉각재 장단점</td>
+</tr>
+<tr>
+<td>2003(제71회)-3-1</td>
+<td>CANDU와 PWR의 근본 차이 5가지</td>
+</tr>
+<tr>
+<td>2005(제76회)-4-4</td>
+<td>원자로 냉각재 구비조건 5가지 이상</td>
+</tr>
+<tr>
+<td>2023-1-4</td>
+<td>경수로·중수로 냉각재 및 감속재 특성</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>S. Glasstone, A. Sesonske, Nuclear Reactor Engineering, 4th ed., Chapman &amp; Hall (1994), 냉각재 절.</li>
+<li>M. M. El-Wakil, Nuclear Heat Transport, International Textbook Co. (1971), 냉각재 장(냉각재 성능지수).</li>
+<li>IAPWS, Revised Release on the IAPWS Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam (IAPWS-IF97).</li>
+<li>J. K. Fink, L. Leibowitz, Thermodynamic and Transport Properties of Sodium Liquid and Vapor, ANL/RE-95/2, Argonne National Laboratory (1995).</li>
+<li>OECD/NEA, Handbook on Lead-bismuth Eutectic Alloy and Lead Properties, Materials Compatibility, Thermal-hydraulics and Technologies, 2015 Edition, NEA No. 7268.</li>
+<li>R. R. Romatoski, L. W. Hu, "Fluoride salt coolant properties for nuclear reactor applications: A review", Annals of Nuclear Energy 109 (2017).</li>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 부록(열중성자 단면적).</li>
+<li>S.-S. Lee, S.-H. Kim, K.-Y. Suh, "The Design Features of the Advanced Power Reactor 1400", Nuclear Engineering and Technology 41(8), 995–1004 (2009) — 원자로 입구 555 °F·출구 615 °F, 2,250 psia.</li>
+<li>AECL, CANDU 6 Technical Summary (AECL 공개 기술 요약서).</li>
+<li>IAEA, Advanced Reactors Information System (ARIS), aris.iaea.org — HTR-PM, BREST-OD-300.</li>
+<li>GIF, A Technology Roadmap for Generation IV Nuclear Energy Systems, GIF-002-00 (2002.12); Technology Roadmap Update for Generation IV Nuclear Energy Systems (2014.1).</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix A "General Design Criteria for Nuclear Power Plants".</li>
+<li>U.S. NRC, Regulatory Guide 1.232 Rev. 0 "Guidance for Developing Principal Design Criteria for Non-Light-Water Reactors" (2018.4).</li>
+<li>IAEA, Safety of Nuclear Power Plants: Design, Specific Safety Requirements No. SSR-2/1 (Rev. 1) (2016).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제18조·제21조. 국가법령정보센터.</li>
+</ol>

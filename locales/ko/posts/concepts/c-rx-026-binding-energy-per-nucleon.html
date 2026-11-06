@@ -1,0 +1,280 @@
+<figure class="article-image"><img alt="[개념 노트] 핵자당 결합에너지(Binding Energy) — 곡선의 봉우리 Ni-62와 핵분열·핵융합 에너지의 원리 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-026-binding-energy-per-nucleon/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>결합에너지는 원자핵을 구성 핵자로 완전히 떼어내는 데 필요한 에너지로 질량결손에 c²를 곱한 값이며, 이를 질량수로 나눈 핵자당 결합에너지(B/A)는 A ≈ 60 부근(최대 Ni-62 8.79 MeV)에서 가장 크고 양쪽으로 작아지므로, 무거운 핵은 쪼개질 때(핵분열), 가벼운 핵은 합쳐질 때(핵융합) 에너지를 냅니다.</strong></p>
+<h2>원리와 메커니즘</h2>
+<h3>질량결손과 결합에너지</h3>
+<p>원자핵의 질량은 구성 핵자 질량의 합보다 작습니다. 이 차이가 질량결손 Δm이고, 결합에너지는</p>
+<ul>
+<li><strong>B(Z, A) = [Z·M(¹H) + N·m_n − M(중성 원자)]·c²</strong>, 1 u·c² = 931.494 MeV</li>
+</ul>
+<p>입니다. 원자질량을 쓰면 전자 질량이 양쪽에서 상쇄됩니다. 예를 들어 U-235는 B = 1,783.9 MeV, 질량결손 1.915 u(원자질량의 약 0.8 %)입니다. 결합에너지가 크다는 것은 핵이 에너지를 많이 "가지고" 있다는 뜻이 아니라, 그만큼 질량이 작고 단단히 묶여 있다는 뜻입니다.</p>
+<h3>B/A 곡선 — 봉우리는 Ni-62</h3>
+<p>AME2020 질량표[1]에서 직접 읽은 값은 다음과 같습니다.</p>
+<table>
+<thead>
+<tr>
+<th>핵종</th>
+<th>²H</th>
+<th>⁴He</th>
+<th>¹⁶O</th>
+<th>⁵⁶Fe</th>
+<th>⁶²Ni</th>
+<th>¹⁴¹Ba</th>
+<th>⁹²Kr</th>
+<th>²³⁵U</th>
+<th>²³⁸U</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B/A (MeV)</td>
+<td>1.11</td>
+<td>7.07</td>
+<td>7.98</td>
+<td>8.790</td>
+<td><strong>8.795</strong></td>
+<td>8.33</td>
+<td>8.51</td>
+<td>7.59</td>
+<td>7.57</td>
+</tr>
+</tbody>
+</table>
+<p>B/A가 가장 큰 핵은 Ni-62(8.7946)이고 Fe-58(8.7923), Fe-56(8.7904)이 뒤따릅니다[1][4]. 교재의 "철 부근 최대"는 이 세 핵이 0.005 MeV 안에 몰려 있다는 뜻입니다. 다만 핵자당 <strong>질량</strong>이 가장 작은 핵은 Fe-56입니다. Ni-62는 중성자 비율이 높고 중성자가 양성자보다 무겁기 때문입니다. 가벼운 쪽에서는 He-4(7.07 MeV)가 이웃(He-3 2.57, Li-6 5.33)보다 크게 돌출하는데, 짝-짝·이중 마법수 핵이기 때문입니다.</p>
+<figure class="article-image"><img alt="핵자당 결합에너지 곡선(AME2020 평가값 249점과 반경험 질량공식 곡선), 봉우리 확대(Ni-62 8.7946), 핵분열·핵융합 방향과 Q값" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-026-binding-energy-per-nucleon/fig1_binding_energy_curve.avif"/><figcaption>핵자당 결합에너지 곡선(AME2020 평가값 249점과 반경험 질량공식 곡선), 봉우리 확대(Ni-62 8.7946), 핵분열·핵융합 방향과 Q값</figcaption></figure>
+<h3>반경험 질량공식 — 왜 가운데가 높은가</h3>
+<p>액체방울 모형에 바탕을 둔 바이츠재커 식(SEMF)은 곡선 모양을 다섯 항으로 설명합니다.</p>
+<ul>
+<li><strong>B = a_v·A − a_s·A^(2/3) − a_c·Z²/A^(1/3) − a_a·(A − 2Z)²/A + δ</strong></li>
+<li>계수(Lamarsh 3판 2.12절[3]): a_v 15.56, a_s 17.23, a_c 0.697, a_a 23.285 MeV, δ = ±12/√A MeV(짝-짝 +, 홀-홀 −, 홀수 A 0. Lamarsh 표의 12.0 MeV를 통용형 a_p/√A로 적용)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>항</th>
+<th>물리적 의미</th>
+<th>Fe-56 (MeV/핵자)</th>
+<th>U-235 (MeV/핵자)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>체적</td>
+<td>핵력 포화(가까운 이웃과만 결합)</td>
+<td>+15.56</td>
+<td>+15.56</td>
+</tr>
+<tr>
+<td>표면</td>
+<td>표면 핵자의 결합 부족</td>
+<td>−4.50</td>
+<td>−2.79</td>
+</tr>
+<tr>
+<td>쿨롱</td>
+<td>양성자 사이 반발</td>
+<td>−2.20</td>
+<td>−4.07</td>
+</tr>
+<tr>
+<td>비대칭</td>
+<td>N ≠ Z의 파울리 손해</td>
+<td>−0.12</td>
+<td>−1.10</td>
+</tr>
+<tr>
+<td>짝짓기 δ/A</td>
+<td>짝-짝 +, 홀-홀 −</td>
+<td>+0.03</td>
+<td>0(홀수 A)</td>
+</tr>
+<tr>
+<td>합(계산/실측)</td>
+<td></td>
+<td>8.77 / 8.79</td>
+<td>7.60 / 7.59</td>
+</tr>
+</tbody>
+</table>
+<p>가벼운 핵은 표면항이, 무거운 핵은 쿨롱항이 B/A를 깎으므로 중간에서 최대가 됩니다. 이 계수로 β 안정선을 따라 계산하면 곡선 최대가 A = 62(8.76 MeV)에 옵니다. A ≳ 20에서는 실측과 1 % 안팎으로 맞지만 He-4(계산 5.77)처럼 가벼운 핵과 마법수 핵은 껍질 효과가 빠져 벗어납니다.</p>
+<h3>핵분열과 핵융합은 왜 에너지를 내나</h3>
+<p>반응 뒤 생성핵의 총 결합에너지가 반응 전보다 크면 그 차이만큼 질량이 줄고 에너지가 나옵니다(Q = ΣB생성 − ΣB반응, 자유 중성자 B = 0).</p>
+<ul>
+<li><strong>핵분열</strong>: U-235(7.6) → 핵분열편(약 8.5). 개략 (8.5 − 7.6) × 236 ≈ 210 MeV 규모입니다. AME2020으로 ²³⁵U + n → ¹⁴¹Ba + ⁹²Kr + 3n을 계산하면 즉발 Q = 1,174.0 + 783.2 − 1,783.9 = <strong>173.3 MeV</strong>입니다. 두 핵분열편이 β⁻ 붕괴 7회로 안정핵 ¹⁴¹Pr·⁹²Zr이 되면 26.0 MeV가 더 나와 합계 199.3 MeV(반중성미자 포함)입니다. 이때 결합에너지 차는 20.5 MeV뿐이고, 중성자가 양성자로 바뀔 때마다 (m_n − m_H)c² = 0.78 MeV가 더해집니다(Z가 바뀌는 반응은 원자질량 차로 계산해야 하는 이유). 생성물 쌍 분포 평균이 방출 약 207 MeV, 회수가능 약 200 MeV입니다.</li>
+<li><strong>핵융합</strong>: ²H + ³H → ⁴He + n, Q = <strong>17.59 MeV</strong>. 곡선 왼쪽의 가파른 오르막을 타므로 핵자당 3.5 MeV로 핵분열(약 0.85 MeV/핵자)의 약 4배입니다. 반응 1회당으로는 핵분열이 약 11배 큽니다. 쿨롱 장벽을 넘기려면 1억 K 이상의 플라스마가 필요합니다.</li>
+</ul>
+<h3>추가 중성자의 결합에너지와 임계에너지 — 핵분열성과 핵분열 가능</h3>
+<p>중성자를 흡수한 복합핵의 들뜸에너지는 E* = S_n + (질량중심계) 입사 운동에너지이고, S_n = B(A+1) − B(A)는 추가 중성자의 결합에너지입니다. E*가 핵분열 장벽, 즉 임계에너지 E_crit를 넘어야 핵분열이 가능해집니다(넘어도 γ 방출 포획과 경쟁).</p>
+<table>
+<thead>
+<tr>
+<th>표적 + n</th>
+<th>복합핵</th>
+<th>S_n (AME2020)[1]</th>
+<th>E_crit (Lamarsh 표 3.3)[3]</th>
+<th>차이</th>
+<th>분류</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>U-235</td>
+<td>U-236(짝-짝)</td>
+<td>6.55</td>
+<td>5.3</td>
+<td>+1.2</td>
+<td>핵분열성(열중성자)</td>
+</tr>
+<tr>
+<td>U-238</td>
+<td>U-239(짝-홀)</td>
+<td>4.81</td>
+<td>5.5</td>
+<td>−0.7</td>
+<td>핵분열 가능(고속)</td>
+</tr>
+<tr>
+<td>Pu-239</td>
+<td>Pu-240</td>
+<td>6.53</td>
+<td>4.0</td>
+<td>+2.5</td>
+<td>핵분열성</td>
+</tr>
+</tbody>
+</table>
+<p>차이를 만드는 것이 짝짓기 효과입니다. 홀수 N 표적(U-235, N = 143)에 들어온 중성자는 짝을 이뤄 강하게 묶이고, 짝수 N 표적(U-238)의 추가 중성자는 짝이 없습니다. SEMF로도 S_n이 6.76 대 4.83 MeV로 갈리며 그중 약 1.6 MeV(2δ)가 짝짓기 몫입니다. 단순 장벽 모형의 부족분은 약 0.7 MeV이지만 실제 핵분열 단면적이 의미 있게 커지는 실용 문턱은 약 1 MeV입니다. 그래서 U-238은 고속 중성자로만 핵분열하고, 대신 포획 뒤 붕괴로 Pu-239가 되는 친원료입니다.</p>
+<figure class="article-image"><img alt="반경험 질량공식 항별 손실 띠 그래프, 액체방울 변형과 핵분열 장벽 개념도, U-235·U-238의 S_n 대 E_crit 막대" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-026-binding-energy-per-nucleon/fig2_semf_terms_fission_barrier.avif"/><figcaption>반경험 질량공식 항별 손실 띠 그래프, 액체방울 변형과 핵분열 장벽 개념도, U-235·U-238의 S_n 대 E_crit 막대</figcaption></figure>
+<h2>원전에서의 의미</h2>
+<ul>
+<li><strong>연료 설계</strong>: 열중성자로 쪼개지는 핵분열성 핵종이 필요하므로 경수로(OPR1000·APR1400)는 약 3~5 wt% 농축 우라늄을, 중수로(월성)는 감속 효율로 천연우라늄을 씁니다.</li>
+<li><strong>U-238의 역할</strong>: 고속 핵분열로 빠른 핵분열 인자 ε에 기여하고, Pu-239로 전환되어 주기 후반 출력의 상당 부분을 맡습니다.</li>
+<li><strong>출력·연소도 환산</strong>: 결합에너지 차에서 나온 약 200 MeV/핵분열이 열출력 ↔ 핵분열률 ↔ 연소도 환산의 기준입니다.</li>
+<li><strong>붕괴열</strong>: 핵분열편은 모핵의 N/Z(약 1.55)를 물려받아 중성자가 과잉이므로 β⁻ 붕괴로 안정선에 다가가며 결합에너지 증가분을 β·γ로 냅니다. 이것이 정지 후 붕괴열(직후 약 6~7 %)의 근원이고, ECCS·잔열제거 설계 입력입니다.</li>
+</ul>
+<h2>규제·기준 근거</h2>
+<table>
+<thead>
+<tr>
+<th>근거</th>
+<th>요지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>원자력안전법 제2조[6]</td>
+<td>핵연료물질(우라늄·토륨 등) 정의, 시행령에서 U-233·U-235 농축 우라늄·플루토늄 등 지정</td>
+</tr>
+<tr>
+<td>IAEA 헌장 제20조</td>
+<td>특수핵분열성물질 = Pu-239, U-233, U-235·U-233 농축 우라늄[5]</td>
+</tr>
+<tr>
+<td>AME2020 (Chinese Phys. C 45, 030003, 2021)</td>
+<td>원자질량 평가 표준(이전판 AME2016)[1]</td>
+</tr>
+<tr>
+<td>CODATA 2018</td>
+<td>1 u = 931.494 MeV/c²[2]</td>
+</tr>
+</tbody>
+</table>
+<!-- 확인필요: 원자력안전법 제2조의 "핵연료물질" 호 번호(제3호 추정)와 시행령 조문 번호 미대조. 본문은 조 단위까지만 기재 -->
+<p>결합에너지 자체를 다루는 규제 조항은 없고, 핵분열성 여부가 핵물질 관리·안전조치 분류의 물리적 근거가 됩니다. 출제 당시(제71·78회, 2021년)와 비교해 물리 내용은 같고, 질량표 개정(AME2003 → 2020)에 따른 값 변화는 keV 수준이라 답안에 영향이 없습니다.</p>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>결합에너지 B</th>
+<th>핵자당 결합에너지 B/A</th>
+<th>분리에너지 S_n</th>
+<th>임계에너지 E_crit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정의</td>
+<td>전체 분해 에너지</td>
+<td>B ÷ A</td>
+<td>마지막 중성자 1개 분리</td>
+<td>핵분열 장벽 높이</td>
+</tr>
+<tr>
+<td>U-235 계열 값</td>
+<td>1,784 MeV</td>
+<td>7.59 MeV</td>
+<td>6.55 MeV(U-236)</td>
+<td>5.3 MeV(U-236)</td>
+</tr>
+<tr>
+<td>쓰임</td>
+<td>질량결손 계산</td>
+<td>안정성 비교, 반응 Q</td>
+<td>복합핵 들뜸</td>
+<td>핵분열성 판정</td>
+</tr>
+<tr>
+<td>흔한 실수</td>
+<td>크면 에너지 보유로 착각</td>
+<td>최대를 Fe-56으로 단정</td>
+<td>B/A와 혼동</td>
+<td>S_n과 비교 대상 혼동</td>
+</tr>
+</tbody>
+</table>
+<p>또 하나의 짝은 **핵분열성(fissile) / 핵분열 가능(fissionable) / 친원료(fertile)**입니다. U-235·Pu-239는 셋 중 앞의 둘, U-238은 뒤의 둘에 해당합니다.</p>
+<h2>답안용 요약</h2>
+<ol>
+<li><strong>정의</strong>: 핵을 구성 핵자로 분리하는 데 필요한 에너지 = 질량결손 × c², B = [Z·M(¹H) + N·m_n − M]c²</li>
+<li><strong>B/A 곡선</strong>: A ≈ 60 최대(Ni-62 8.79 MeV, Fe-56 8.79 근접), U-235 7.59, He-4 7.07 돌출</li>
+<li><strong>SEMF</strong>: 체적 − 표면 − 쿨롱 − 비대칭 ± 짝짓기, 가벼운 핵은 표면, 무거운 핵은 쿨롱이 B/A 감소</li>
+<li><strong>핵분열</strong>: 7.6 → 8.5 MeV, 개략 0.9 × 236 ≈ 200 MeV/핵분열</li>
+<li><strong>핵융합</strong>: D-T 17.6 MeV, 3.5 MeV/핵자(핵분열의 약 4배), 쿨롱 장벽 → 고온 플라스마</li>
+<li><strong>임계에너지</strong>: S_n(U-236) 6.5 &gt; E_crit 5.3 → 열중성자 핵분열(fissile)</li>
+<li><strong>U-238</strong>: S_n 4.8 &lt; 5.5 → 약 1 MeV 이상 고속 중성자 필요(fissionable, fertile)</li>
+<li><strong>짝짓기</strong>: 홀수 N 표적 + n → 짝-짝 복합핵, S_n 큼</li>
+<li><strong>붕괴열</strong>: 중성자 과잉 핵분열편의 β⁻ 붕괴(Q = ΔB + 0.78 MeV/회) → 정지 후 열</li>
+</ol>
+<figure class="article-image"><img alt="답안지용 B/A–A 곡선(봉우리 Ni-62, He-4, U-235, 핵분열편, 핵분열·핵융합 화살표)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-rx-026-binding-energy-per-nucleon/sketch1_be_curve.avif"/><figcaption>답안지용 B/A–A 곡선(봉우리 Ni-62, He-4, U-235, 핵분열편, 핵분열·핵융합 화살표)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>기출</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021년 1교시 1번</td>
+<td>결합에너지와 붕괴열</td>
+</tr>
+<tr>
+<td>제78회 2교시 4번</td>
+<td>핵자당 결합에너지 곡선과 핵반응</td>
+</tr>
+<tr>
+<td>제78회 1교시 5번</td>
+<td>Binding Energy</td>
+</tr>
+<tr>
+<td>제71회 4교시 6번</td>
+<td>핵융합과 핵분열의 결합에너지</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>제78회 2교시 4번은 "그림으로 나타내고"를 요구하므로 곡선 도식이 배점의 핵심입니다. 축 이름, 봉우리 위치와 값, U-235 위치, 양쪽 화살표를 꼭 넣습니다.</li>
+<li>2021년 1교시 1번은 두 개념을 β 붕괴로 잇는 것이 요점입니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>M. Wang, W. J. Huang, F. G. Kondev, G. Audi, S. Naimi, "The AME 2020 atomic mass evaluation (II). Tables, graphs and references", Chinese Physics C 45, 030003 (2021). IAEA AMDC 공개 파일 mass_1.mas20.txt.</li>
+<li>E. Tiesinga, P. J. Mohr, D. B. Newell, B. N. Taylor, "CODATA recommended values of the fundamental physical constants: 2018", Reviews of Modern Physics 93, 025010 (2021).</li>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 2.12절(식 2.51), 표 3.3.</li>
+<li>M. P. Fewell, "The atomic nuclide with the highest mean binding energy", American Journal of Physics 63, 653 (1995).</li>
+<li>IAEA, Statute of the International Atomic Energy Agency, Article XX.</li>
+<li>「원자력안전법」 제2조(정의). 국가법령정보센터.</li>
+</ol>

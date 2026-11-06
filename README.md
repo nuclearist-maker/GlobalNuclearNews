@@ -1,6 +1,6 @@
 # GlobalNuclearNews
 
-An English-language public board that explains global nuclear news and core nuclear theory for general readers.
+A bilingual public board explaining global nuclear news and core nuclear theory. The existing URL opens in English; EN / KR links switch to the matching page.
 
 Live site: https://nuclearist-maker.github.io/GlobalNuclearNews/
 
@@ -31,7 +31,20 @@ The script renders every ready package into `posts/`, copies images into `assets
 
 ## Korean edition
 
-The previous Korean edition (theory lessons 001–060, four news articles, and its QA pipeline) is preserved in git history at tag `korean-site-2026-10-05`. The Korean-pipeline tools under `tools/`, `qa/`, `policies/` and `docs/` are kept in the repository but are not used by the English deployment.
+The Korean edition lives at `/GlobalNuclearNews/ko/`. Articles, lists, navigation, support pages and reactor controls are localized. Original proper names, technical identifiers and reference titles may retain their spelling. Language links preserve the current article. There is no automatic language redirect or preference cookie.
+
+Portable Korean bodies and metadata are in `locales/ko/`; Korean images are under `assets/images/ko/`. Source manuscripts, private mapping paths and review records are not published. `tools/build_bilingual.py` installs the edition during every build, so rerunning the English publisher preserves the switcher. Both languages have static article archives and language-specific feeds, with reciprocal hreflang links and a combined root sitemap.
+
+After adding or changing an English article, refresh its corresponding final Korean original and explicit internal mapping, then run:
+
+```
+python tools/import_korean.py --map <internal-source-map.json>
+python tools/build_en_site.py
+python tools/check_search_discovery.py
+python tools/check_bilingual.py
+```
+
+The local importer requires Pillow with AVIF support, markdown-it-py and beautifulsoup4. CI needs only beautifulsoup4 and the portable inputs. Missing translations, mismatched article sets, changed paired files, missing images and untranslated interface keys block publication; the previous live deployment remains available. Review both languages before using the normal publisher's `--push` option. The historical Korean site and its old QA pipeline remain preserved at tag `korean-site-2026-10-05`; they are not the source of the current site's deployment checks.
 
 ## Search discovery
 

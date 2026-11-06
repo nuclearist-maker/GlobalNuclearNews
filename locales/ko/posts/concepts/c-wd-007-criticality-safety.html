@@ -1,0 +1,203 @@
+<figure class="article-image"><img alt="[개념 노트] 핵임계안전(Criticality Safety) — 노심 밖에서 keff를 1 아래로 묶어 두는 8가지 변수와 이중 우발 원칙 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/concepts/c-wd-007-criticality-safety/thumbnail_01.thumb.avif"/></figure>
+<h2>한 줄 정의</h2>
+<p><strong>핵임계안전</strong>은 원자로 노심 밖에서 핵분열성물질을 취급·가공·저장·운반할 때 의도하지 않은 자체 유지 연쇄반응, 즉 <strong>임계사고</strong>를 막고, 만일의 경우 그 결과를 줄이는 활동입니다. IAEA SSG-27 Rev.1(2022)은 노심처럼 일부러 임계로 운전하는 계통을 적용 범위에서 뺍니다[1]. 노심의 정지여유도와는 대상이 다릅니다.</p>
+<p>답안 첫 줄은 "노심 외 핵분열성물질의 keff를 편차·불확도를 포함해 1보다 충분히 낮게 유지하도록 질량·형상·감속·반사·농도·상호작용·농축도·흡수체를 제어하고, 이중 우발 원칙으로 설계하는 것"이라고 쓰면 됩니다.</p>
+<h2>원리와 메커니즘</h2>
+<h3>keff를 낮추는 세 갈래</h3>
+<p>keff = 생성 ÷ (흡수 + 누설)입니다. 미임계를 확보하는 방법은 생성을 줄이거나, 흡수를 늘리거나, 누설을 늘리는 것뿐입니다. 1군으로 쓰면 keff = k∞/(1 + M²B²)이고, 형상이 작거나 가늘수록 B_g²가 커져 누설이 늘어납니다[9].</p>
+<h3>제어 변수 8가지</h3>
+<p>ANSI/ANS-8.1 계열 문헌은 다음 변수를 제어 대상으로 꼽습니다. 문헌에 따라 체적을 따로 세어 9가지로 정리하기도 합니다[1][2].</p>
+<table>
+<thead>
+<tr>
+<th>변수</th>
+<th>미임계 방향</th>
+<th>적용 예</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>질량</td>
+<td>단위당 질량 한도</td>
+<td>공정 배치 질량 제한</td>
+</tr>
+<tr>
+<td>형상</td>
+<td>가는 원통·얇은 평판</td>
+<td>안전형상 용기, 랙 셀</td>
+</tr>
+<tr>
+<td>감속</td>
+<td>최적 감속 회피, H/X 제한</td>
+<td>신연료 건식 저장</td>
+</tr>
+<tr>
+<td>반사</td>
+<td>반사 조건 보수적 평가</td>
+<td>물·콘크리트·인체</td>
+</tr>
+<tr>
+<td>농도</td>
+<td>검증된 농도 한계 이하</td>
+<td>변환·재처리 용액</td>
+</tr>
+<tr>
+<td>상호작용</td>
+<td>유닛 간격 확보</td>
+<td>랙 피치, 운반 CSI</td>
+</tr>
+<tr>
+<td>농축도</td>
+<td>상한 설정</td>
+<td>경수로 예: 5.0 wt% 이하</td>
+</tr>
+<tr>
+<td>중성자 흡수체</td>
+<td>고정·가용성 흡수체</td>
+<td>Boral·Metamic 판, 붕산수</td>
+</tr>
+</tbody>
+</table>
+<p>H/X는 수소 대 핵분열성 원자수비, CSI는 운반물의 임계안전지수입니다.</p>
+<p>2021년 4교시 4번의 "고유매개변수(조정 불가능 인자)"는 공정 중 바꿀 수 없는 물질 고유 특성으로 해석합니다. 핵분열성 핵종과 동위원소 조성(단면적·ν), 화학·물리 형태(금속·산화물·용액), 밀도, 비균질성(봉 배열·입자)이 여기에 해당합니다. 표준 용어가 아니므로 답안에 해석을 먼저 밝히는 것이 안전합니다. 같은 문항의 "독성물질"은 중성자 독물질, 즉 흡수체로 읽습니다.</p>
+<h3>감속에는 최적점이 있다</h3>
+<figure class="article-image"><img alt="설명용 수정 1군 무반사 구의 임계질량·임계반경 대 H/²³⁵U(공유 x축 2단)와 8개 제어 변수 표, 저장 랙 적용 예" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-wd-007-criticality-safety/fig1_criticality_control_parameters.avif"/><figcaption>설명용 수정 1군 무반사 구의 임계질량·임계반경 대 H/²³⁵U(공유 x축 2단)와 8개 제어 변수 표, 저장 랙 적용 예</figcaption></figure>
+<p>위 그림 왼쪽은 ²³⁵U와 물의 균질 혼합물을 반사체 없는 구로 두고 수정 1군으로 계산한 설명용 값입니다[9]. 가정은 2200 m/s 단면적, τ = 27 cm², L²(물) = 8.1 cm²입니다. H/²³⁵U 원자수비가 커지면 임계반경은 계속 커집니다. 반면 임계질량은 H/U ≈ 600(약 43 g/L)에서 최소 약 1.8 kg이 되고, 과다감속 쪽에서 다시 늘어납니다. H/U ≈ 2,180(약 12 g/L)에서 k∞ = 1이 되므로, 이 균질 모델에서는 이보다 묽으면 유한한 크기의 임계해가 없습니다. 실제 공정에서는 침전·증발·불균질화로 국부 농도가 높아질 수 있어 농도 제어는 검증된 한계와 함께 씁니다. 실제 값은 반사·온도·고속 효과로 달라집니다. 물 반사 용액의 최소 임계질량은 ²³⁵U 약 0.8 kg 수준으로 보고되어 있습니다[6].<!-- 확인필요: 물 반사 용액 최소 임계질량 약 0.8 kg·ANS-8.1 표 값은 원문 표 미대조 --> 질량 한도를 신뢰할 수 있는 최악의 감속·반사 조건에서 정하는 이유가 여기에 있습니다.</p>
+<h3>이중 우발 원칙</h3>
+<p>ANSI/ANS-8.1은 "공정 조건에 발생 가능성이 낮고 서로 독립인 변화가 적어도 두 개 동시에 일어나기 전에는 임계사고가 불가능하도록" 충분한 안전율을 설계에 넣으라고 권고합니다[2]. 미국 10 CFR 70.64(a)(9)는 신규 핵연료주기시설에 이 원칙을 요건으로 둡니다[3]. 각 우발은 독립적이고 그 자체로 발생 가능성이 낮아야 합니다. 그래서 "가능성이 낮은 사건" 자체를 한 다리로 세는 것은 인정되지 않습니다.</p>
+<h2>원전에서의 의미</h2>
+<h3>사용후핵연료 저장조 keff 제한치와 근거</h3>
+<p>미국 10 CFR 50.68(b)는 70.24의 임계경보 대신 택할 수 있는 원전용 기준입니다.</p>
+<ul>
+<li><strong>(b)(4) 사용후연료 랙</strong>: 붕소 크레딧 미적용이면 <strong>무붕산수에서 keff ≤ 0.95</strong>입니다. 적용이면 붕산수에서 keff ≤ 0.95이고, 무붕산수에서도 keff &lt; 1.0이어야 합니다.</li>
+<li><strong>(b)(2)·(b)(3) 신연료 랙</strong>: 무붕산수 침수 시 keff ≤ 0.95, 저밀도 수소 함유 유체(안개·거품)의 최적감속 시 keff ≤ 0.98입니다.</li>
+<li><strong>(b)(7)</strong>: 신연료 공칭 농축도는 5.0 wt% 이하입니다.</li>
+<li>모든 값은 **95 % 확률·95 % 신뢰도(95/95)**로 계산 편차와 불확도(제작 공차, 감손 계산 등)를 더한 값입니다[3][4].</li>
+</ul>
+<p>0.95의 근거(2020년 4교시 1번 나)는 다음과 같습니다. 5 %의 여유가 해석 코드 검증의 한계와 모델링하지 못한 효과를 덮습니다. 붕소 희석 같은 단일 사건만으로는 임계에 이르지 않습니다. 오장전처럼 비정상 조건을 해석할 때는 이중 우발 원칙에 근거해 가용성 붕소 크레딧을 인정받을 수 있습니다. 오장전과 붕소 희석은 서로 독립인 저확률 사건이라 동시에 가정하지 않는다는 논리입니다. 다만 자동 인정이 아니라, 붕소 농도 감시·희석 해석 같은 인허가 근거가 있어야 합니다.</p>
+<h3>설계기준과 해석 사례</h3>
+<p>2012년 4교시 2번·2020년 4교시 1번 다의 설계기준은 다음과 같이 정리합니다.</p>
+<ul>
+<li><strong>임계 방지</strong>: 랙 피치, 중성자흡수판(B-10 면밀도와 감시 쿠폰), 붕산수, 연소도 크레딧</li>
+<li><strong>해석 사례</strong>: 집합체 오장전, 집합체 낙하·랙 위 수평 놓임, 붕소 희석, 수온 범위, 지진에 의한 랙 변위</li>
+<li><strong>기타 기능</strong>: 내진 범주 I, 냉각·보충수, 차폐 수위, 중량물 낙하 방지</li>
+</ul>
+<p><strong>연소도 크레딧</strong>은 연소로 줄어든 반응도를 인정하는 방법입니다. 초기 농축도별 최소 연소도를 <strong>장전곡선</strong>으로 정하고, 저장조를 Region I(신연료·저연소)과 Region II(고연소)로 나눕니다. NRC는 감손 불확도 기본값으로 연소 반응도 감소분의 5 %를 받아들입니다. DSS-ISG-2010-01(2011)은 핵분열생성물 검증 불확도를 따로 정량하라고 요구했고, 현행 해석 지침은 RG 1.240(2021.3, NEI 12-16 Rev.4 조건부 승인)입니다[4].</p>
+<h3>운반과 임계 경보</h3>
+<p>운반물은 IAEA SSR-6 Rev.1(2018)에 따라 물 침입과 최적 반사를 가정한 단일 운반물과 배열이 미임계여야 합니다. <strong>임계안전지수 CSI = 50/N</strong>으로 적재 수를 관리합니다[5]. 미국 심사에서는 keff + 2σ + 편차 ≤ 0.95를 통상 허용기준으로 씁니다.<!-- 확인필요: NUREG-2216 6장 0.95 기준·SSR-6 CSI 문언은 2차 인용 --></p>
+<p>10 CFR 70.24는 ²³⁵U 700 g, ²³³U 520 g, Pu 450 g을 넘게 보유한 시설에 <strong>임계사고 경보계통</strong>을 요구합니다. 비차폐 2 m 거리에서 1분 안에 연조직 흡수선량 20 rad(중성자+감마)를 내는 임계를 탐지해야 하고, 검출기 2개로 전 구역을 감시하며 대피 절차를 둡니다[3].</p>
+<h2>관련 사고 — JCO 도카이무라(1999)</h2>
+<p>1999년 9월 30일 일본 JCO 변환시설에서 18.8 % 농축 질산우라닐 용액 약 16 kg U가 안전형상이 아닌 침전조(직경 45 cm, 냉각수 자켓)에 버킷으로 직접 투입되었습니다. 승인된 절차와 배치 질량 제한을 벗어난 작업이었습니다.<!-- 확인필요: 배치 질량 제한 약 2.4 kg U는 문헌 인용값 --> 임계는 약 20시간 간헐적으로 이어졌습니다. 반사체 역할을 한 냉각수를 빼고 붕산을 넣어 멈췄습니다. 작업자 3명 중 2명이 사망했고 INES 4등급이었습니다. 질량·형상·반사 제어와 행정 통제가 한꺼번에 무너지면[7] 이중 우발 원칙이 성립하지 않는다는 사례입니다.</p>
+<h2>규제·기준 근거</h2>
+<ul>
+<li><strong>국내</strong>: 「원자로시설 등의 기술기준에 관한 규칙」(원안위규칙 제37호, 2026.3.30) 제33조 ①1호는 연료취급장치가 "연료등이 임계에 도달할 우려가 없는 구조일 것"을 요구하고, ②1호는 저장설비의 임계 방지를 요구합니다. 운영 단계는 제61조(취급·저장 중 미임계 여유도 평가)입니다[8]. 국내 저장조 keff 수치 기준은 안전심사지침이 미국 기준을 준용하는 것으로 알려져 있습니다.<!-- 확인필요: 국내 keff 0.95 수치 기준(KINS 안전심사지침) 원문 미확인 --></li>
+<li><strong>미국</strong>: 10 CFR 50.68·70.24·70.64(a)(9), GDC 61·62·63, SRP 9.1.1·9.1.2, DSS-ISG-2010-01 → RG 1.240(2021), NUREG-2216·2215[3][4][5]</li>
+<li><strong>표준·IAEA</strong>: ANSI/ANS-8.1-2014(R2023), ANS-8.3(경보), IAEA SSG-27 Rev.1(2022), SSR-6 Rev.1(2018)[1][2][5]</li>
+<li><strong>출제 당시 대비 변경</strong>: 50.68 수치(0.95·0.98·5 wt%)는 그대로입니다. 2011년 이후 저장조 해석 심사가 강화되어 편차·감손 불확도와 흡수재 열화(Boraflex, GL 96-04)를 반영하고, 저장조 해석 지침은 DSS-ISG-2010-01에서 RG 1.240(2021)으로 바뀌었습니다[4][10]. 국내 규칙은 현행 제37호로 인용합니다.</li>
+</ul>
+<h2>헷갈리는 짝 개념</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>핵임계안전</th>
+<th>정지여유도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>대상</td>
+<td>노심 밖(저장·취급·운반·공정)</td>
+<td>노심</td>
+</tr>
+<tr>
+<td>지표</td>
+<td>keff ≤ 0.95 등(95/95)</td>
+<td>반응도(%Δk/k)</td>
+</tr>
+<tr>
+<td>기준</td>
+<td>50.68, ANS-8.1, 제33조</td>
+<td>운영기술지침서</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>붕소 크레딧</th>
+<th>연소도 크레딧</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>인정 대상</td>
+<td>저장조 가용성 붕소</td>
+<td>연소에 따른 반응도 감소</td>
+</tr>
+<tr>
+<td>조건</td>
+<td>무붕산수 keff &lt; 1.0 병행</td>
+<td>장전곡선·연소도 확인</td>
+</tr>
+</tbody>
+</table>
+<h2>답안용 요약</h2>
+<blockquote>
+<p><strong>[10점 답안 예시] 핵연료물질의 임계 방지수단</strong></p>
+<ol>
+<li><strong>정의</strong>: 노심 외 핵분열성물질의 의도치 않은 임계를 방지함</li>
+<li><strong>제어 변수</strong>: 질량·형상·감속·반사·농도·상호작용·농축도·중성자 흡수체</li>
+<li><strong>기술적 수단</strong>: 안전형상 설비, 고정 흡수체, 랙 간격</li>
+<li><strong>행정적 수단</strong>: 질량·배치 한도, 절차·이중 확인, 교육</li>
+<li><strong>설계 원칙</strong>: 이중 우발 원칙(ANSI/ANS-8.1), 수동·공학적 통제 우선</li>
+<li><strong>저장조 기준</strong>: 무붕산수 keff ≤ 0.95(95/95), 붕소 크레딧 시 무붕산수 &lt; 1.0, 신연료 최적감속 ≤ 0.98</li>
+<li><strong>크레딧</strong>: 붕소 크레딧, 연소도 크레딧(장전곡선)</li>
+<li><strong>감시</strong>: 임계경보(2 m·1분·20 rad), 국내 기술기준규칙 제33조</li>
+</ol>
+</blockquote>
+<figure class="article-image"><img alt="답안용 도식: keff 계산값 + 편향 + 불확도(95/95) ≤ 0.95와 50.68(b) 조건" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/concepts/c-wd-007-criticality-safety/sketch1_keff_margin_stack.avif"/><figcaption>답안용 도식: keff 계산값 + 편향 + 불확도(95/95) ≤ 0.95와 50.68(b) 조건</figcaption></figure>
+<blockquote>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+</blockquote>
+<h2>이 개념이 나온 기출</h2>
+<table>
+<thead>
+<tr>
+<th>연도-교시-번호</th>
+<th>짧은 제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021-4-4</td>
+<td>핵임계 폭주사고 방지 조치(고유매개변수·수단·제어)</td>
+</tr>
+<tr>
+<td>2020-4-1</td>
+<td>사용후핵연료저장조 keff 제한치·근거·설계기준</td>
+</tr>
+<tr>
+<td>2014-1-8</td>
+<td>핵연료물질의 임계 방지수단</td>
+</tr>
+<tr>
+<td>2012-4-2</td>
+<td>사용후연료 저장조 핵임계·안전 설계기준</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>IAEA, Specific Safety Guide SSG-27 (Rev. 1) "Criticality Safety for Facilities and Activities Handling Fissionable Material" (2022).</li>
+<li>ANSI/ANS-8.1-2014 (R2023) "Nuclear Criticality Safety in Operations with Fissionable Materials Outside Reactors", American Nuclear Society.</li>
+<li>U.S. NRC, 10 CFR 50.68 "Criticality accident requirements", 70.24 "Criticality accident requirements", 70.64(a)(9) "Criticality control".</li>
+<li>U.S. NRC, NUREG-0800 SRP 9.1.1·9.1.2; DSS-ISG-2010-01 "Staff Guidance Regarding the Nuclear Criticality Safety Analysis for Spent Fuel Pools" (2011); Regulatory Guide 1.240 (2021.3); L. Kopp, NRC 메모(1998, 사용후연료 저장조 임계 해석 지침 — 감손 불확도 5 %).</li>
+<li>IAEA, SSR-6 (Rev. 1) "Regulations for the Safe Transport of Radioactive Material" (2018); U.S. NRC, NUREG-2216 "Standard Review Plan for Transportation Packages for Spent Fuel and Radioactive Material".</li>
+<li>H. C. Paxton, N. L. Pruvost, LA-10860-MS "Critical Dimensions of Systems Containing ²³⁵U, ²³⁹Pu, and ²³³U", 1986 Revision, Los Alamos National Laboratory.</li>
+<li>T. P. McLaughlin 외, LA-13638 "A Review of Criticality Accidents", 2000 Revision, Los Alamos National Laboratory; World Nuclear Association, "Tokaimura Criticality Accident 1999" 정보 페이지.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제33조·제61조, 국가법령정보센터.</li>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 6장(1군 확산 이론·임계 크기).</li>
+<li>U.S. NRC, Generic Letter 96-04 "Boraflex Degradation in Spent Fuel Pool Storage Racks" (1996).</li>
+</ol>
