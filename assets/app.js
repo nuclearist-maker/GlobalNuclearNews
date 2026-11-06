@@ -1,5 +1,44 @@
 const posts = [
   {
+    "title": "Degradation Found in a Reactor's Thermal Shield: Salem Unit 1's Additional Inspection and a 200 MW Uprate Plan",
+    "date": "2026.11.05",
+    "displayDate": "2026.11.05",
+    "publishedAt": "2026-11-05T14:39:33Z",
+    "section": "news",
+    "category": "Large Reactors",
+    "summary": "PSEG's November 2, 2026 quarterly filing reports degradation of the thermal shield inside Salem Unit 1's reactor vessel, found by visual inspection during an October refueling outage. Additional testing is under way and is expected to extend the outage. Separately, PSEG is developing about 200 MW of uprates at Salem (about 112 MW its share) that require NRC license amendment review, and has notified the NRC of its intent to seek 20-year license renewals.",
+    "thumbnail": "assets/images/news/2026-11-05-salem-1-thermal-shield-inspection/thumbnail_01.webp",
+    "thumbnailAlt": "Concept image of a clear blue refueling pool with reactor internals and an inspection camera",
+    "url": "posts/news/2026-11-05-salem-1-thermal-shield-inspection.html",
+    "keywords": "Thermal Shield Salem Nuclear Plant Reactor Internals Additional Inspection Refueling Outage Flexure Neutron Noise Monitoring Power Uprate License Renewal PSEG NRC Westinghouse USNuclear Nuclear Power"
+  },
+  {
+    "title": "Heat Only, or Heat and Power? The Five Options in Helen's Helsinki SMR Environmental Assessment",
+    "date": "2026.11.05",
+    "displayDate": "2026.11.05",
+    "publishedAt": "2026-11-05T14:39:33Z",
+    "section": "news",
+    "category": "SMR",
+    "summary": "Helen Ydinvoima Oy's EIA programme for a Helsinki SMR project is open for comment from November 3, 2026 to January 4, 2027. It compares heat-only options of up to 18 units (630 MW thermal, 600 MW district heat) at three sites with single-unit combined heat and power options (1,400 MW thermal, 500 MW power, 700 MW heat) at two sites, where intake and discharge tunnels range from 3.5 to 19.7 km. A possible siting decision is targeted for 2028.",
+    "thumbnail": "assets/images/news/2026-11-05-helsinki-smr-district-heat-eia/thumbnail_01.webp",
+    "thumbnailAlt": "Concept image of a compact reactor heat plant on Helsinki's winter shoreline",
+    "url": "posts/news/2026-11-05-helsinki-smr-district-heat-eia.html",
+    "keywords": "Helsinki SMR Small Modular Reactor Helen Environmental Impact Assessment YVA District Heating Combined Heat And Power Heat Only Reactor Cooling Water Finland Nuclear TEM STUK Vuosaari Norrberget Nuclear Energy"
+  },
+  {
+    "title": "Asking About Construction at the Design Stage: Inside the Hyundai E&C and FANCO Master Service Agreement for EAGL-1",
+    "date": "2026.11.05",
+    "displayDate": "2026.11.05",
+    "publishedAt": "2026-11-05T14:39:33Z",
+    "section": "news",
+    "category": "Advanced Reactors",
+    "summary": "Hyundai E&C and First American Nuclear Co. signed a five-year Master Service Agreement on October 30, 2026 covering constructability review, design and engineering advice and construction feedback for EAGL-1, a 240 MWe lead-bismuth-cooled fast reactor. Individual task orders will set scope, duration and price. FANCO is in NRC pre-application engagement ahead of a future construction permit application.",
+    "thumbnail": "assets/images/news/2026-11-05-eagl1-hyundai-ec-constructability-msa/thumbnail_01.webp",
+    "thumbnailAlt": "Concept image of a large reactor module being assembled in a bright factory",
+    "url": "posts/news/2026-11-05-eagl1-hyundai-ec-constructability-msa.html",
+    "keywords": "EAGL1 Hyundai EC FANCO Master Service Agreement Constructability Review Lead Bismuth Fast Reactor Fast Reactor SMR Modularization Balance Of Plant Bridge Power NRC Pre Application Construction Permit Nuclear Power"
+  },
+  {
     "title": "Making Fusion Magnet Tape in Germany: The Proxima–Fujikura MOU and How Superconducting Wire Is Tested",
     "date": "2026.11.04",
     "displayDate": "2026.11.04",
