@@ -7242,7 +7242,7 @@
     "url": "posts/theory/263-verification-vs-validation.html",
     "keywords": "문법은 완벽한데 뜻이 틀린 번역 — 검증과 검인(V&V)의 차이 verification validation V&V nuclear simulation code verification mesh convergence separate effects test integral effects test reflood RG 1.203 EMDAP",
     "en_sha256": "549ad4508d1310f2d7d05861afe1729058449adc1b5e36d8ad442d0193ad5ca6",
-    "ko_sha256": "a5eb531d962a14b313fd8a7d96b201c0bfbcca2c6d7d29008f5808aa0bd33665"
+    "ko_sha256": "dd5fc7c01f787b8f43a7b5016ed4d2c1fd3b2e71a97f93c6f7cec00d64022f51"
   },
   {
     "title": "전국 모의고사처럼 같은 시험지를 푼다 — 원자로 계산의 벤치마크 문제",
@@ -7392,7 +7392,7 @@
     "url": "posts/theory/253-point-kinetics-strengths-limits.html",
     "keywords": "줄넘기 횟수만 세는 심판의 함정 — 점동특성 모델의 장점과 한계 point kinetics reactor kinetics shape function amplitude delayed neutrons 3D core analysis xenon oscillation control rod ejection reactivity meter simulator",
     "en_sha256": "b9c4b41e5f2510a7264133458aed65ef9da4cedfaddbac18a1830ea9d728950d",
-    "ko_sha256": "b905a57a76a86c6559fc2e9a94b8458251898d6d2d818a342fa3ae2cf10b547d"
+    "ko_sha256": "aa7c0f16978aace7741ec5b7506a4b71f52af573bb5cca217783faaf198eb208"
   },
   {
     "title": "원자로도 통장처럼 장부를 쓴다 — 원자로를 수식으로 표현한다는 뜻",
@@ -7422,7 +7422,7 @@
     "url": "posts/theory/251-model-as-scaled-map.html",
     "keywords": "노선도만 믿고 걸었더니 — 모델은 현실의 축소 지도 nuclear modeling simulation computer code verification validation V&V core design safety analysis operator training simulator APR1400 startup test",
     "en_sha256": "1d48a0ff7cab28e8ec280fc70ad3a25e25372d6dc3b34fd8ecf7a28f710011d2",
-    "ko_sha256": "d65d0c37d9ac63ec6af432b817da2ad25fd9dbeeeeff70fbeeaee9a811e68783"
+    "ko_sha256": "bede1cb5b14d9da33040b7cb216fbed194e5a6e953f73f5c04e43fc53d728b45"
   },
   {
     "title": "타율만 보고 4번 타자를 뽑진 않죠 — 원전 운영 성능지표 읽는 법",
@@ -7467,7 +7467,7 @@
     "url": "posts/theory/248-capacity-factor.html",
     "keywords": "코인빨래방 세탁기의 성적표 — 원전의 용량인자(이용률) 읽는 법 capacity factor utilization rate load factor nuclear plant performance refueling outage coastdown unplanned shutdown net gross capacity availability efficiency",
     "en_sha256": "9a089400dd10a33a1c86f7c2ab65a499eb44cc30f4c6ef5579ebc3662d19f9fa",
-    "ko_sha256": "8c22ee8e46479006604b548fc460aa74a09674f098a6f5192868b8135d310620"
+    "ko_sha256": "9466680a88d29982747355217c5775c2a723180603ed5b1b83f0bcfb1fe468e4"
   },
   {
     "title": "녹음 파일 속 '웅' 소리가 시각을 안다 — 계통 주파수 조정과 원전",
@@ -7512,7 +7512,7 @@
     "url": "posts/theory/245-why-feedwater-control-is-hard.html",
     "keywords": "뚜껑 연 탄산수처럼 부푸는 수위 — 원전 급수 제어가 까다로운 이유 feedwater control steam generator shrink and swell inverse response void fraction pressurized water reactor low-power operation reactor trip nuclear plant operation",
     "en_sha256": "78aed92fe52de09f7c1afb86cf7b72e3c927dc6fe8152ffb0768c9dff82d7666",
-    "ko_sha256": "096860e07c944d1ed1fec3645e72b090b7a2603d86fe9c94ab05cc54da3258be"
+    "ko_sha256": "f95df5602529ef17d164fe15b81e96bb34cf1d22dacece4fe5caf115b1ae131b"
   },
   {
     "title": "변기 물탱크 부구로는 어림없다 — 증기발생기 수위 제어의 세 가지 눈",
@@ -7527,7 +7527,7 @@
     "url": "posts/theory/244-steam-generator-level-control.html",
     "keywords": "변기 물탱크 부구로는 어림없다 — 증기발생기 수위 제어의 세 가지 눈 steam generator level control three-element control feedwater control pressurized water reactor narrow-range level level program feedwater control valve reactor trip nuclear plant operation",
     "en_sha256": "f47ee3f654e7ca3e20e5f8e1c69f5cc352d6d72d64e7cbd1faa2234d5c766d5b",
-    "ko_sha256": "c7984c85af724543603c28f003ffcf1e0230d577920c586ecbbfa1dbc45c575e"
+    "ko_sha256": "1540fa4bdc1de644c0ad9466073069952fa162f470f07b1b0d0877515c0d3128"
   },
   {
     "title": "끓지 말라고 누르고, 터지지 말라고 푼다 — 원전의 계통 압력 제어",
@@ -7542,7 +7542,7 @@
     "url": "posts/theory/243-system-pressure-control.html",
     "keywords": "끓지 말라고 누르고, 터지지 말라고 푼다 — 원전의 계통 압력 제어 system pressure control pressurizer pressurized water reactor subcooling margin reactor coolant system pressurizer spray pressurizer heaters insurge outsurge nuclear plant operation",
     "en_sha256": "49c15a46e715b89825ca2c8f9d4d35d89f68ec613b9351e463c1bab43b3c17ca",
-    "ko_sha256": "db1ebdec2bda6cfed2d86ec7b0437711bfb402f4522cf22eae5a131b491c4a7d"
+    "ko_sha256": "4d6b8d2dfc0cff5e9c0c75ee4ea803166c76f8e8248d6a7160663dbc7c66efc0"
   },
   {
     "title": "얼음이 '쩍' 하고 우는 이유 — 원자로를 천천히 데워야 하는 까닭, 열응력",
@@ -7557,7 +7557,7 @@
     "url": "posts/theory/242-thermal-stress-heatup-rate.html",
     "keywords": "얼음이 '쩍' 하고 우는 이유 — 원자로를 천천히 데워야 하는 까닭, 열응력 thermal stress reactor pressure vessel heat-up rate cool-down rate thermal expansion fatigue cumulative usage factor pressure-temperature limits pressurized thermal shock nuclear plant operation",
     "en_sha256": "896907ee442e314585f531893ac6fabca479c5241d0755b2cbe035f2d1cede9a",
-    "ko_sha256": "f4e188c61ed7282b32a943d13809f95eb55cf0a239f062e1b8ca6b2fa2456b25"
+    "ko_sha256": "9a18543f64971db978103c046108863b6ac921f034a0cc7431ce2eea530de533"
   },
   {
     "title": "새 구두는 길들여 신는다 — 원전이 출력 상승률을 제한하는 이유",
@@ -7632,7 +7632,7 @@
     "url": "posts/theory/237-plant-shutdown-process.html",
     "keywords": "스위치가 아니라 착륙이다 — 원전 정지 과정의 큰 그림 nuclear plant shutdown pressurized water reactor cold shutdown hot standby shutdown cooling system decay heat boron reactivity steam dump subcooling reactor trip",
     "en_sha256": "3a8ae65fea1d39fe2ff4c538431cbd55313ab4a9470c0489708c9b47e7285d02",
-    "ko_sha256": "1c29ccd215d1494b6224540e56d924e77876fa9d9051949ffe4a9156a650858e"
+    "ko_sha256": "473af07da2fdd6a671979a11d67c148fb3e35143b4a6e542369360265f69b3d8"
   },
   {
     "title": "연주 전에 조율부터 — 원전 기동 과정의 큰 그림",
@@ -7692,7 +7692,7 @@
     "url": "posts/theory/233-turbine-generator.html",
     "keywords": "바람개비와 자전거 전조등을 한 축에 — 터빈 발전기가 전기를 만드는 원리 turbine generator steam turbine electromagnetic induction synchronous generator 1800 rpm 60 Hz excitation moisture separator reheater last-stage blade APR1400",
     "en_sha256": "3466f8eeba5b5296f1eff1ab011b72808594c9db34beae7986dc72b17686490d",
-    "ko_sha256": "c9ddd8610fe6eb38c9404eb6b7f0581a2a416be74fbcd399d6a8143210f8a644"
+    "ko_sha256": "e6491d57ce836ebf4acd86c6d22569c6d94bc0fa352c25a4e712e28c4d353581"
   },
   {
     "title": "물 1kg의 네 정거장 여행기 — 원전 증기를 굴리는 랭킨 사이클",
@@ -7707,7 +7707,7 @@
     "url": "posts/theory/232-rankine-cycle.html",
     "keywords": "물 1kg의 네 정거장 여행기 — 원전 증기를 굴리는 랭킨 사이클 Rankine cycle T-s diagram steam generator turbine condenser feedwater pump phase change pressurized water reactor secondary system thermodynamics",
     "en_sha256": "8b451f06b9fb4eb9cf7b521cab0842e7685a5ca95f5936b5f25a5c80d786f53b",
-    "ko_sha256": "45d22288eb97e41babeaa8ed4c2fe6084fdf836294ae5f13ff5544d548bb92d2"
+    "ko_sha256": "5952411fb06b98d3a3fcb9d4d199db1578c44da101de79b20a8f1290f440d545"
   },
   {
     "title": "물레방아는 낙차만큼만 돈다 — 원전의 전기출력과 열효율",
@@ -7722,7 +7722,7 @@
     "url": "posts/theory/231-thermal-efficiency.html",
     "keywords": "물레방아는 낙차만큼만 돈다 — 원전의 전기출력과 열효율 thermal efficiency electric output thermal output MWt MWe Carnot efficiency second law of thermodynamics APR1400 condenser pressurized water reactor",
     "en_sha256": "8874fea7f6b483e1b37381c3f405fd256a112ce38ad999ed5c6b8bf386e19b80",
-    "ko_sha256": "a76c65f9517b4bd631ab9e7fb333312054deace198d6a4745da1aab5ac2ea7c2"
+    "ko_sha256": "9c9c6bbc3ea900d6b41cdff438791df5f1c4c29a78836cf244ecd7b4136096fc"
   },
   {
     "title": "불꽃은 안 보여도 샤워기는 안다 — 원자로 출력이 곧 '열출력'인 이유",
@@ -8157,7 +8157,7 @@
     "url": "posts/theory/202-defense-in-depth.html",
     "keywords": "소화기 하나만 믿지 않는 집처럼 — 원전을 겹겹이 지키는 심층방어 defense in depth nuclear safety levels of defense physical barriers redundancy diversity independence common cause failure INSAG-10 reactor safety",
     "en_sha256": "88434d5d3076e30ba32dbf01c5bcd8dfe313b0ac33bc7eed3811faed66c20c65",
-    "ko_sha256": "57af4f57f5372a3067d2ffb82c4d9b2a8ccc7bfbc56e704011fefc734e7068c6"
+    "ko_sha256": "8966cb77bf9f016e9c874a85e87535bcd5612e5d1037dd4ed1d096abbbb17f0d"
   },
   {
     "title": "\"사고 0\"을 약속하지 않는다? — 원자력 안전이 진짜 노리는 목표",
@@ -8187,7 +8187,7 @@
     "url": "posts/theory/200-reading-plant-system-diagrams.html",
     "keywords": "지하철 노선도처럼 읽으면 보인다 — 원전 계통도를 읽는 첫걸음 system diagram system flow diagram P&ID piping and instrumentation diagram symbols pump valve heat exchanger pressurized water reactor primary system secondary system steam generator nuclear plant systems",
     "en_sha256": "52e71ce1866c61ccd3d9c11f9b7da80a5ae49d1a5b114b7eb3eed13c8c642bca",
-    "ko_sha256": "f1d6f2799929292484d78e06daa809e2936be8bd37419ca28d942aeb6252a681"
+    "ko_sha256": "b2f9dfad2cc8dfad5b515f17afae17dd61826a11327836e6e7892ca343c5ce56"
   },
   {
     "title": "경고등이 깜빡였다고 사고는 아닙니다 — 원전의 정상운전과 비정상운전",
@@ -8652,7 +8652,7 @@
     "url": "posts/theory/169-cladding-oxidation-and-hydrogen.html",
     "keywords": "평소엔 든든한 보호막, 고온에선 수소를 만드는 반전 — 피복관 산화와 수소 발생 cladding oxidation hydrogen generation zirconium Zircaloy zirconium-steam reaction oxide film hydriding hydrogen recombiner fuel integrity nuclear safety",
     "en_sha256": "e9785031219055c63b188521175c445187ac8b841bce07aa228deec1bc85bb09",
-    "ko_sha256": "4989f82ed6471fdb4dd5dec1f46028e746c632117fa3358f3f49dc40892ffa1c"
+    "ko_sha256": "35f5cfd7d226b25bdbe39aebde254165e24b969e8bc05af3b4e21fbe08a022dd"
   },
   {
     "title": "1밀리미터도 안 되는 금속 껍질이 첫 번째 방벽 — 연료 건전성이 중요한 이유",
@@ -8697,7 +8697,7 @@
     "url": "posts/theory/166-power-peaking-factor.html",
     "keywords": "국 한 숟갈에 입천장을 덴 이유 — 노심을 지배하는 '출력 피킹 인자' power peaking factor hot spot power distribution core design thermal margin reactor physics fuel integrity nuclear safety local power flattening",
     "en_sha256": "ef902ff881fff7ecc3b53e2742a193d6efac17a2104bfaca91a1af19575b2ab8",
-    "ko_sha256": "858ded265220a583c599284a5bc15142d6c0426a46449892cee67753b649bdf1"
+    "ko_sha256": "2dffc5a11b35ff0a378ad88814adc9b4bf5a3d7c103e06433a37e9559700ac3e"
   },
   {
     "title": "빨래 한 통을 끝까지 돌리듯 — 배치 운전과 캠페인(운전주기) 이야기",
@@ -8727,7 +8727,7 @@
     "url": "posts/theory/164-fuel-shuffling.html",
     "keywords": "카드처럼 마구 섞는 게 아니에요 — 셔플링, 노심의 자리를 새로 짜는 기술 fuel shuffling refueling core design loading pattern burnup power flattening peaking factor equilibrium core fuel cycle nuclear fuel",
     "en_sha256": "0483d21808ef1d01b6ec17ec4f8e5b308446fac8a705f9acf09d83d5132b83bf",
-    "ko_sha256": "c22d30c630f5fb1081de8d59f9c9be7fcb86d962ef3549d82cb4e1d1f264acd8"
+    "ko_sha256": "8a02e1b6b9d4947c751e1c5da886047b10065da025538f6a5c4fa7af5faebbab"
   },
   {
     "title": "난로를 창가에 둘까, 방 한가운데 둘까 — 원자로가 매번 푸는 재장전 패턴의 고민",
@@ -8742,7 +8742,7 @@
     "url": "posts/theory/163-fuel-loading-pattern.html",
     "keywords": "난로를 창가에 둘까, 방 한가운데 둘까 — 원자로가 매번 푸는 재장전 패턴의 고민 loading pattern refueling core design fuel management low-leakage loading power flattening neutron leakage peaking factor burnable poison fuel cycle",
     "en_sha256": "843783c4141d4613478b326ef3aab944984fa87a081d0fdfad113d4a81168987",
-    "ko_sha256": "17edbe1a3d54c9107e8b78e3b9e540c083937f45f75f1a941bbca9254fd9276b"
+    "ko_sha256": "8031be8e4d6ebf3819f0438fc6495b5dac884c34c69ea6a87416c6e134c71789"
   },
   {
     "title": "파티가 끝나도 소파에서 일어나지 않는 손님 — 사마륨-149는 왜 오래 남을까",
@@ -8907,7 +8907,7 @@
     "url": "posts/theory/152-how-fuel-changes-in-operation.html",
     "keywords": "오래 산 동네처럼, 핵연료도 세월 따라 얼굴이 바뀝니다 — 운전 중 연료 조성 변화 이야기 nuclear fuel composition burnup uranium-235 plutonium-239 uranium-238 fission products neutron poisons refueling fuel cycle",
     "en_sha256": "6d5875e169f235f984f94c4508e64e2daa7df0308ecbe3c148201ccc7feec8e4",
-    "ko_sha256": "9caaf5abe7cda0db5f55f07f1ff8982e1985f0fdf12130b61a371a07ba9cbccf"
+    "ko_sha256": "856017c5ac939329e0b6b280f783f6eab6baa9a52de33df74d98b5cc378eafd9"
   },
   {
     "title": "이 연료, 며칠 썼느냐가 아니라 얼마나 달렸느냐 — 핵연료의 주행거리, 연소도",
@@ -9012,7 +9012,7 @@
     "url": "posts/theory/145-decay-heat-curve-intuition.html",
     "keywords": "전력질주 뒤 심장은 왜 급브레이크를 밟았다가 천천히 멈출까 — 붕괴열 곡선의 직관 decay heat decay heat curve residual heat Way-Wigner approximation fission products half-life reactor shutdown residual heat removal spent fuel pool thermal hydraulics",
     "en_sha256": "210f4d7b08bcfe3d4c97f411ac0be75b722805a1078afb921aec94282289c2c1",
-    "ko_sha256": "8f2a8fff720c63c46f3d29984cf004ac27dd7b4f313e7e85487cf567c0e5ecb2"
+    "ko_sha256": "296d5164cfccd7ef484483a983daa11fc35a5984b8a20839d1a52973f03e7256"
   },
   {
     "title": "촛불을 훅 불어 꺼도 심지는 한참 뜨겁습니다 — 잔열이 원자로 정지 뒤에도 남는 이유",
@@ -9102,7 +9102,7 @@
     "url": "posts/theory/139-pressure-and-boiling-point.html",
     "keywords": "높은 산에서는 물이 진작 끓어버립니다 — 압력이 끓는점을 바꾸는 이유 boiling point saturation temperature vapor pressure pressure cooker high altitude cooking saturation curve coolant pressure pressurized water reactor PWR pressurizer thermal hydraulics",
     "en_sha256": "6d1794b4ccfbd20236c00fbe0b250eb6b54191b24df3bbc094c97e2b345e427f",
-    "ko_sha256": "d8903fad2064bc99f32866ca7c6c146d181cae5eb776bb0c25450347681d1b7b"
+    "ko_sha256": "d84362766abb6ffcfde6a4919efe890f490feabc7f3c177ebda35b3e48e2b9b7"
   },
   {
     "title": "앞차 꽁무니에 바짝 붙어 달리지 않는 사람이 잘하는 운전자다 — 열적 여유도라는 안전 여백",
@@ -9117,7 +9117,7 @@
     "url": "posts/theory/138-thermal-margin.html",
     "keywords": "앞차 꽁무니에 바짝 붙어 달리지 않는 사람이 잘하는 운전자다 — 열적 여유도라는 안전 여백 thermal margin DNBR MDNBR minimum DNBR critical heat flux CHF DNB safety margin shutdown margin thermal hydraulics reactor safety core design",
     "en_sha256": "f8528d7e9b154fbb9359dd6e18f53582d345d35991a458a4793ee469072797c4",
-    "ko_sha256": "f4d1cdf8c4f3007dc92b9ff18a03da8d596bc511656d96038aba4ab76871976b"
+    "ko_sha256": "e6a5fcf158fea291033cb2539ddbc0c8255d39e38dffd4b8cf3e959fe27659cd"
   },
   {
     "title": "빗길 고속도로에서 타이어가 붕 뜨는 순간 — DNB는 왜 피해야 할까",
@@ -9132,7 +9132,7 @@
     "url": "posts/theory/137-departure-from-nucleate-boiling.html",
     "keywords": "빗길 고속도로에서 타이어가 붕 뜨는 순간 — DNB는 왜 피해야 할까 DNB departure from nucleate boiling critical heat flux CHF DNBR MDNBR boiling crisis fuel cladding thermal hydraulics reactor safety PWR",
     "en_sha256": "800c106a22452396a5c803fee6580062cf568f7be54dd4f682ac74533f8c36dd",
-    "ko_sha256": "782df3dd86ec237b2aa0edb88f6c1c5ebbd022a570dcd55ac540d9e35f5c21f2"
+    "ko_sha256": "f64697e7e79700e0260d42430bf1489481369249dfa3b49eac6295c1ac367734"
   },
   {
     "title": "댐 수문 계기판 바늘이 빨간 선에 다가갈 때 — 임계열유속(CHF)이라는 이름의 의미",
@@ -9147,7 +9147,7 @@
     "url": "posts/theory/136-critical-heat-flux.html",
     "keywords": "댐 수문 계기판 바늘이 빨간 선에 다가갈 때 — 임계열유속(CHF)이라는 이름의 의미 critical heat flux CHF departure from nucleate boiling DNB dryout DNBR MDNBR thermal margin boiling curve thermal hydraulics reactor safety",
     "en_sha256": "6956eb4f823be565db4fd97ba75eea735614e0d382bf8091a0af775265f8bd96",
-    "ko_sha256": "d5a6a3e5d9b4b69417f993a542bea32e3e497bd2b42e237205f402e9452d793a"
+    "ko_sha256": "679db21a4541b7c287f555af38ebae07b53156edf21e6a243793d02cece47500"
   },
   {
     "title": "지글지글 사라질 줄 알았던 물방울이 통통 튀며 버틴다 — 핵비등과 막비등의 차이",
@@ -9177,7 +9177,7 @@
     "url": "posts/theory/134-two-faces-of-boiling.html",
     "keywords": "압력솥 김이 밸브로 얌전히 빠져나가는 동안은 — 비등, 좋은 걸까 나쁜 걸까 boiling heat transfer thermal hydraulics nucleate boiling film boiling critical heat flux CHF DNB MDNBR thermal margin reactor coolant",
     "en_sha256": "d45f1fcd280137015da3d57ee42bf500b2fc0b5770e72e36df035f9733298be2",
-    "ko_sha256": "c72aee85ffc800b656c66419381c0f622fc32b38e72c0eedc3ba6ac1bd65060e"
+    "ko_sha256": "0f138bbbbb037ebd51cbd417ceb0c428a7ef3538c141e64bbed2567b3543410d"
   },
   {
     "title": "창문에 붙은 그 스티커, 사실 뭘 재고 있는 걸까 — 열전달계수란 무엇인가",
@@ -9237,7 +9237,7 @@
     "url": "posts/theory/130-heat-flow-through-gap-and-cladding.html",
     "keywords": "겹겹이 껴입을수록 살갗은 더 차가워진다 — 피복관을 지나는 열 흐름 fuel cladding gas gap heat flux temperature drop thermal conductivity thermal resistance fuel pellet helium zirconium alloy heat transfer thermal hydraulics",
     "en_sha256": "a91eb08f5746b5b8a797b95b2716923bfa026bff9e1e1bb3839161c509191112",
-    "ko_sha256": "62f5d605a7bc4c805ef67983211e917a1147c2a4649cb22836141603f1db8036"
+    "ko_sha256": "12b6904930ca13ac919ca4f7166940b7d8d4022d8620b833bf19225bb312e72d"
   },
   {
     "title": "굵은 빨대는 시원하게, 가는 빨대는 뜨겁게 — 열전도율이 연료 온도를 가르는 이유",
@@ -9252,7 +9252,7 @@
     "url": "posts/theory/129-thermal-conductivity-and-fuel-temperature.html",
     "keywords": "굵은 빨대는 시원하게, 가는 빨대는 뜨겁게 — 열전도율이 연료 온도를 가르는 이유 thermal conductivity fuel temperature centerline temperature uranium dioxide UO2 fuel pellet heat transfer linear heat rate thermal stress reactor design thermal hydraulics",
     "en_sha256": "0f17cd8b56b7d12c2d65bb550b887206798085bd73417a05d6c8def46fcc29d6",
-    "ko_sha256": "b7aefc040ecc92e92e2fdaeeacd505e6f3c697bb47bd4c23e99c24a68a221e76"
+    "ko_sha256": "0733e8eee9bea0b16d6ba188cea51b27d6caa063d44bf0d4a6d59c81924fffc2"
   },
   {
     "title": "물통은 옮겨도 사람은 제자리에 — 열전도가 열을 나르는 방식",
@@ -9267,7 +9267,7 @@
     "url": "posts/theory/128-how-heat-conduction-works.html",
     "keywords": "물통은 옮겨도 사람은 제자리에 — 열전도가 열을 나르는 방식 heat conduction Fourier's law thermal conductivity heat flux temperature gradient phonon free electrons convection fuel pellet cladding thermal hydraulics",
     "en_sha256": "8984075dc74d44deb39aa8fd2e029a8a86e3f60adeaf8a7a5c5358c17210b85b",
-    "ko_sha256": "7f11f18b1bfc350861a72a81bbc8364cfda9f3edd7e14472a72cd637b64e086a"
+    "ko_sha256": "1d231154a2fe2e4f80aa91f1291a3d950ae1ae14472615df0518c636959d25f2"
   },
   {
     "title": "장작불 다 타고 남은 숯덩이, 왜 겉보다 속이 오래 뜨거울까 — 연료펠릿 온도 분포의 비밀",
@@ -9282,7 +9282,7 @@
     "url": "posts/theory/127-fuel-pellet-temperature-profile.html",
     "keywords": "장작불 다 타고 남은 숯덩이, 왜 겉보다 속이 오래 뜨거울까 — 연료펠릿 온도 분포의 비밀 fuel pellet temperature distribution parabolic temperature profile heat conduction thermal conductivity uranium dioxide fuel centerline temperature linear heat rate heat transfer thermal hydraulics",
     "en_sha256": "13bd01abf88007f4ddfe91489214356b8ab19ab5d959ae96f1a8a45aae50126f",
-    "ko_sha256": "ead50a76440f6ac5029317ff5d812cd3e0ae06ac3c44d6c23af24e53e742cbcc"
+    "ko_sha256": "024da2c6357a86fead36b021dbd03dd9de28075111e8d09d1762ab26d1dbfb88"
   },
   {
     "title": "오븐이 아니라 전자레인지에 가깝다 — 핵분열 열은 어디서 먼저 생길까",
@@ -9297,7 +9297,7 @@
     "url": "posts/theory/126-where-fission-heat-is-born.html",
     "keywords": "오븐이 아니라 전자레인지에 가깝다 — 핵분열 열은 어디서 먼저 생길까 fission heat fission fragments heat transfer thermal hydraulics fuel pellet kinetic energy heat source reactor thermal design fuel temperature nuclear power basics",
     "en_sha256": "1bdbbdcfd7c92744c071f415e5638c6b76ff7d8a2ef7bc366eda582d8c4b58ff",
-    "ko_sha256": "8321663776ad82d4c4d6169189047c311866adc052adf7100548d38a2de15573"
+    "ko_sha256": "5c2bb3280b3b075dd6f50b564a983202e8149fe412358a267041de4621d6deb5"
   },
   {
     "title": "아무리 밀어도 결국 일어서는 오뚝이처럼 — 원자로가 스스로 안정화되는 조건",
@@ -9357,7 +9357,7 @@
     "url": "posts/theory/122-power-coefficient.html",
     "keywords": "몸의 컨디션은 하나가 아니라 여럿의 합 — 출력계수와 연료온도계수 이야기 power coefficient fuel temperature coefficient Doppler coefficient moderator temperature coefficient void coefficient reactivity feedback reactor kinetics reactor physics inherent safety",
     "en_sha256": "fb719db6ea79b4a9c55c8771e75ed4dfa0140ddd8f993d70e35f61c25d432798",
-    "ko_sha256": "3ac731be00af3aeba2baca9e7488fd575a8f6999c8d49558c5fccb83367f4890"
+    "ko_sha256": "7aeb1e2840697da098671ea5d71d0efeb69c86c04d5fdac1186773b786e25c73"
   },
   {
     "title": "거품을 일부러 채우는 레시피, 거품을 절대 허용하지 않는 레시피 — 공극계수는 왜 원자로형마다 다를까",
@@ -9372,7 +9372,7 @@
     "url": "posts/theory/121-void-coefficient-by-reactor-type.html",
     "keywords": "거품을 일부러 채우는 레시피, 거품을 절대 허용하지 않는 레시피 — 공극계수는 왜 원자로형마다 다를까 void coefficient reactivity feedback reactor kinetics PWR BWR pressurized water reactor boiling water reactor under-moderation soluble boron recirculation flow",
     "en_sha256": "0b538c4e19a010848059cde492c63e02ca8fd30446b2cde2a0f0c07fee41205a",
-    "ko_sha256": "8a127bc0040889530c839ec7aa47823214968bbefa29b3e3b3c7c99a4984cc7f"
+    "ko_sha256": "ef23f259b7d6363cb45afa63097ec7dcfdca121be8c80d6cff89d5caf7407ba3"
   },
   {
     "title": "탄산음료 뚜껑을 여는 순간, 기포가 확 차오르는 이유 — 냉각재 밀도 변화가 반응도를 흔드는 방식",
@@ -9402,7 +9402,7 @@
     "url": "posts/theory/119-moderator-temperature-coefficient.html",
     "keywords": "주전자 물이 끓기도 전에 몸집을 불리는 순간 — 감속재 온도계수의 의미 moderator temperature coefficient MTC reactivity coefficient light water reactor moderator density boron burnable absorber Doppler feedback reactor kinetics self-regulation",
     "en_sha256": "843dda49f00653ecb908e9c1933addb936f7b6ac7eb1ab6c3eede539c2b2592c",
-    "ko_sha256": "c2ef610c131f3dd6d0cf88cc4c261f7d8fc334d371003b5e647ca081ec796fc3"
+    "ko_sha256": "48eb0756316b66ccada6eef98a22e376cbd6414ecd3f8bb734c205c087c7585f"
   },
   {
     "title": "뜨거운 손잡이에 손이 닿자마자 튕겨 나오는 순간 — 도플러 피드백은 왜 즉각적인가",
@@ -9417,7 +9417,7 @@
     "url": "posts/theory/118-why-doppler-feedback-is-immediate.html",
     "keywords": "뜨거운 손잡이에 손이 닿자마자 튕겨 나오는 순간 — 도플러 피드백은 왜 즉각적인가 Doppler feedback Doppler broadening fuel temperature coefficient resonance absorption uranium-238 reactivity feedback reactor kinetics inherent safety reactivity insertion accident",
     "en_sha256": "70763252a3aa876aafe8a8e64ec434499b221b3b8e3382378052997317526929",
-    "ko_sha256": "7ff1a94f6cf79e1e47099e294ce7742786de4630f77062e5ca662320db7eff71"
+    "ko_sha256": "0dbaba07f5518326c1bc6278d5b894382bbd0114a2d56290cd28c1a099d2b33d"
   },
   {
     "title": "짐볼 위에서 휘청하면 몸이 먼저 반응합니다 — 온도 피드백이 원자로를 안정시키는 방식",
@@ -9432,7 +9432,7 @@
     "url": "posts/theory/117-temperature-feedback.html",
     "keywords": "짐볼 위에서 휘청하면 몸이 먼저 반응합니다 — 온도 피드백이 원자로를 안정시키는 방식 temperature feedback negative feedback temperature coefficient reactivity reactor kinetics inherent safety reactor safety scram reactivity control nuclear reactor",
     "en_sha256": "37c046e46bcdc7046f762e82b018429c56e0c9c44fd419522075f3b29e0a728f",
-    "ko_sha256": "effa67f99b0395b825603696a9aab342227994850bd5b72b904c865c980b8691"
+    "ko_sha256": "ce257842b85fc5f5860383b3b97d2421ad138dcd1d9dff7cda97a37d263c5c37"
   },
   {
     "title": "지금 이 순간의 페이스, 오늘의 총 걸음 수 — 미분 제어봉 가치와 적분 제어봉 가치",
@@ -9447,7 +9447,7 @@
     "url": "posts/theory/116-differential-and-integral-rod-worth.html",
     "keywords": "지금 이 순간의 페이스, 오늘의 총 걸음 수 — 미분 제어봉 가치와 적분 제어봉 가치 differential rod worth integral rod worth control rod worth reactivity reactor kinetics neutron flux reactor physics S-curve control rods reactivity insertion accident",
     "en_sha256": "bc2a78bdf41d2793653f6fe096812629b1da467ba118ff8b6e1e2b9b46578b01",
-    "ko_sha256": "91acff17fbf3e8fa89f6f10132f4edfab2f07edb4dfdc231a022c70d125af348"
+    "ko_sha256": "0af09d25d6fd76574f00036604674a81882248da081521972fd05e9ed424c006"
   },
   {
     "title": "시소 끝에 놓인 추가 더 크게 기우는 이유 — 제어봉 가치라는 말의 의미",
@@ -9477,7 +9477,7 @@
     "url": "posts/theory/114-shutdown-margin.html",
     "keywords": "언덕길에 보조 브레이크를 하나 더 거는 마음 — 정지여유도는 왜 필요한가 shutdown margin control rods stuck rod single failure criterion reactivity scram reactor safety core design defense in depth",
     "en_sha256": "10aa079bf785d846ae92a1e236d7788a7258b44d8672e9def8be2728959ac2e9",
-    "ko_sha256": "99790c295ef77323ee28d5d4c297ba0499012889a1fc5fde152bc71876f0fa64"
+    "ko_sha256": "e395c476748a5b037e404190ea8d9b3136c1c393b08c31ece8ef2e158515041a"
   },
   {
     "title": "손을 놓아버리는 순간, 원자로가 멈춥니다 — 스크램의 자유낙하 한 수",
@@ -9492,7 +9492,7 @@
     "url": "posts/theory/113-how-a-scram-works.html",
     "keywords": "손을 놓아버리는 순간, 원자로가 멈춥니다 — 스크램의 자유낙하 한 수 scram control rods reactor shutdown fail-safe design reactor protection system reactor safety reactivity reactor kinetics Chicago Pile-1",
     "en_sha256": "56642975424be982a70daa181ff0eede906edc4c241aed1d90f94275b819adb4",
-    "ko_sha256": "7b85c36b614e54d12d63f93c1c21c6e2315e9e2aab8730e285025d8dc4892f99"
+    "ko_sha256": "7070573f7d2718c141b58b5399e6f1d023df80d7be7d8cdb078278b120f48ef4"
   },
   {
     "title": "엘리베이터처럼 뚝, 에스컬레이터처럼 스르륵 — 반응도의 스텝 변화와 램프 변화",
@@ -9507,7 +9507,7 @@
     "url": "posts/theory/112-reactivity-step-and-ramp.html",
     "keywords": "엘리베이터처럼 뚝, 에스컬레이터처럼 스르륵 — 반응도의 스텝 변화와 램프 변화 reactivity step change ramp change reactivity insertion prompt jump reactor kinetics reactor physics reactor power reactor operation",
     "en_sha256": "03dcda03e17a5baeee4d18f926bdda65d2d199d0b08f37fabfb2904960f9124f",
-    "ko_sha256": "de379272590b65417150c53889e02b8dc2e28aeaff7c1e15685d963f3d5ec70a"
+    "ko_sha256": "53e5c94a544ae36e43881a734306eea774b76a9e2d9bdd849322b986c35f299f"
   },
   {
     "title": "커튼을 걷으면 방이 다시 밝아지듯 — 제어봉 인출이 출력을 늘리는 순간",
@@ -9522,7 +9522,7 @@
     "url": "posts/theory/111-control-rod-withdrawal.html",
     "keywords": "커튼을 걷으면 방이 다시 밝아지듯 — 제어봉 인출이 출력을 늘리는 순간 control rod withdrawal reactivity reactor kinetics prompt jump delayed neutrons reactor power neutron flux reactor control reactor startup",
     "en_sha256": "975fe664a6cc1f15ad731dce9f21c12bf90f5a6cdeee58ebfc13fdf08732839a",
-    "ko_sha256": "83799e8b9b7941d82f1be27da92392700788f089bcf61f7c7fe55382ea669354"
+    "ko_sha256": "64b374d67f788326da7a4bc18c5be25e9ba5020d746013b47dbd6c32fa001fda"
   },
   {
     "title": "커튼을 치면 방이 어두워지듯 — 제어봉 삽입이 출력을 줄이는 순간",
@@ -9552,7 +9552,7 @@
     "url": "posts/theory/109-prompt-jump.html",
     "keywords": "지휘자가 템포를 바꾸는 순간 — 즉발점프와 완만한 상승이 함께 그리는 출력 곡선 prompt jump reactor kinetics reactivity delayed neutrons prompt neutrons point kinetics dollar unit prompt critical core power reactor safety analysis",
     "en_sha256": "964b107f42fa5bebcb95664b70d1f5489b5a89211536fd743629a89e20aec92b",
-    "ko_sha256": "d6d7d84e8306325f4df9d49c4ae240922e400d3dc21ad7864221e97466c8274c"
+    "ko_sha256": "445e1d825373b3bd79b00bd8fa8c387ff479072cb8857be25b0466b7f1302766"
   },
   {
     "title": "바로 출발하는 즉시배송, 잠시 창고에 머무는 예약배송 — 지발중성자 선행핵의 진짜 역할",
@@ -9597,7 +9597,7 @@
     "url": "posts/theory/106-reactor-period.html",
     "keywords": "저금통 이자처럼 출력이 불어난다? — 원자로 주기의 정체 reactor period reactivity reactor kinetics doubling time exponential growth delayed neutrons inhour equation startup rate reactor control reactor physics",
     "en_sha256": "e74a06c40016e9bb839c3056c3e3627ba3bf6506a357727b279a7d09da59a472",
-    "ko_sha256": "296af7a2659838647ee7e1fa6fffd2f8145bb88cd778f58803afdcceb0d7c294"
+    "ko_sha256": "5d874f5313ecf6eb4e906bcb8880c5033351b2727914862ce3136de6ece2a479"
   },
   {
     "title": "눈 한 번 깜빡이는 사이, 몇 번을 되풀이했을까 — 중성자 세대시간이라는 찰나",
@@ -9612,7 +9612,7 @@
     "url": "posts/theory/105-neutron-generation-time.html",
     "keywords": "눈 한 번 깜빡이는 사이, 몇 번을 되풀이했을까 — 중성자 세대시간이라는 찰나 neutron generation time reactor kinetics point kinetics delayed neutrons prompt neutrons thermal reactor fast reactor reactivity reactor control reactor physics",
     "en_sha256": "b560421f1ec33c6d94651f4ff91e6558f24ecc3caaf8df7b75d3e12ca906c99a",
-    "ko_sha256": "c168f764389009c796c24adcd821601f6f9c6f93b0447be730d89db938f79e32"
+    "ko_sha256": "1a0c64d385957df5fe07dc1815b39f9b6ae1e4d8bdaaecf58ca222be237d67ee"
   },
   {
     "title": "건물 전체 온도를 온도계 하나로 잰다면 — 점동특성 방정식이 하는 일",
@@ -9627,7 +9627,7 @@
     "url": "posts/theory/104-point-kinetics-equations.html",
     "keywords": "건물 전체 온도를 온도계 하나로 잰다면 — 점동특성 방정식이 하는 일 point kinetics reactor kinetics reactivity delayed neutron fraction neutron generation time precursors diffusion theory core analysis safety analysis reactor simulator",
     "en_sha256": "7c1a66573716ffa6b41d0a204eb6ed59e362c59a2d1695e63668cfa6ec3fb053",
-    "ko_sha256": "4347ec1aa34f8fa76c1a0836aa79571e2e81aea6a2234dfa15f2d7da9f2b1d93"
+    "ko_sha256": "197afe8009c231bd858a67eeb13dfb6030ee7b2b984c1417686713d1e357c2a2"
   },
   {
     "title": "한 번 건드리면 끝까지 넘어가는 도미노 — 즉발임계가 특별한 경계인 이유",
@@ -9672,7 +9672,7 @@
     "url": "posts/theory/101-reactivity.html",
     "keywords": "반응도, 자동차 가속페달 같은 걸까요? — 원자로가 균형에서 벗어난 정도를 재는 값 reactivity reactor kinetics multiplication factor criticality control rods boron pcm reactor physics reactor safety scram",
     "en_sha256": "6f80c277520696dfbcb3e992417df5312a6b15c94992210d58399b09fccf0007",
-    "ko_sha256": "e539e61276c9647917a503af9f6d37de06406bd97faa8fbab41c37c9dfd5b760"
+    "ko_sha256": "9814dff93682c9b1a362643ba9cb8742d286c67be4e525723c413887ab21dc86"
   },
   {
     "title": "삐죽 솟은 스카이라인을 다듬는 도시계획가처럼 — 출력분포를 평탄화한다는 것의 의미",
@@ -9687,7 +9687,7 @@
     "url": "posts/theory/100-power-flattening.html",
     "keywords": "삐죽 솟은 스카이라인을 다듬는 도시계획가처럼 — 출력분포를 평탄화한다는 것의 의미 power flattening peaking factor burnable poison gadolinia gadolinium borated water soluble boron chemical shim reload pattern low-leakage loading core design reactor physics",
     "en_sha256": "72acb1d9d428d8a526aaf26fdfe4688d3e1a404685568d8b6cbbb50ce18de17a",
-    "ko_sha256": "8312c890adbec1e04513efeaac2aaf43510ac418330ecc29325da4d30b49913c"
+    "ko_sha256": "5cc4d03985a4e51202f5a81374fa8b7d0dd2b65cf3bad30526104643f73920ef"
   },
   {
     "title": "화단 가장자리 식물이 더디게 자라는 이유 — 노심 출력 분포와 첨두계수",
@@ -9717,7 +9717,7 @@
     "url": "posts/theory/098-xenon-samarium-poisons.html",
     "keywords": "줄였는데 왜 더 막힐까 — 제논과 사마륨이 중성자를 잡아먹는 방식 xenon-135 samarium-149 neutron poison fission products xenon transient iodine pit xenon oscillation axial power distribution absorption cross-section reactivity reactor physics",
     "en_sha256": "d91f2ed6d7d1d7f3b1323f11c2a9a3374cffd17e8d166fa275e902af88794cce",
-    "ko_sha256": "2db246db352b022e7672b808f82b8e0222dd9de77ea96bf38cfb1e03e48928b4"
+    "ko_sha256": "f74ad8d23c667cbc93a15be4453fc17d56fb1d9edcc63c54d6a1d66051e65d7c"
   },
   {
     "title": "산에서 \"야호!\" 외치면 생기는 일 — 반사체가 임계 조건을 바꾸는 이유",
@@ -9747,7 +9747,7 @@
     "url": "posts/theory/096-spherical-reactor-in-calculations.html",
     "keywords": "소도 구라고 우기는 물리학자들 — 구형 원자로가 계산에서 자주 등장하는 이유 spherical reactor neutron flux sinc function geometric buckling isoperimetric neutron leakage peaking factor diffusion theory critical volume reactor physics",
     "en_sha256": "4260c891cc5949df44efb92554ddd4c10606c2f6063ab507f7e7d122f561f43f",
-    "ko_sha256": "a9ac6d1f3e14f8e87704c96d96524cdc6fcfb336885c97e8a259b3270e59fcad"
+    "ko_sha256": "5059db3baf74448e11cc1337594d333c943902985ab9492238301251395e0153"
   },
   {
     "title": "롤케이크를 잘라보면 보이는 진짜 모양 — 원통형 원자로 플럭스 분포",
@@ -9777,7 +9777,7 @@
     "url": "posts/theory/094-slab-reactor-flux-distribution.html",
     "keywords": "온열매트는 왜 중심만 뜨끈할까 — 슬래브 원자로 플럭스 분포의 코사인 곡선 slab reactor flux distribution neutron flux cosine distribution reactor physics diffusion equation buckling core design peaking factor",
     "en_sha256": "15cf4072625d2d64e7bfbfa6d5eac9209e9fa242116c52fdcb62c5cfe3ab50b8",
-    "ko_sha256": "62b8758cd350278021d08cdaf73a2d8b1408f5e53708f1b713506c5e4c70a343"
+    "ko_sha256": "1441a8a1716f9b5a8caaa38bf7acb09e88bd99951067157aef15ad5efdda3b14"
   },
   {
     "title": "가장 작은 사이즈부터 입을 수 있습니다 — 임계 크기는 어떻게 정해질까",
@@ -9792,7 +9792,7 @@
     "url": "posts/theory/093-critical-size.html",
     "keywords": "가장 작은 사이즈부터 입을 수 있습니다 — 임계 크기는 어떻게 정해질까 critical size buckling material buckling geometric buckling neutron physics reactor design critical mass reactor core criticality safety",
     "en_sha256": "94c38afa39a89b824938356b71c43cbca16a8707f1e740c656b7b1bb5f6e7cf9",
-    "ko_sha256": "8f93146fb9ba5327a15fd2aab760c92009c9c747c70a7a926af4231da8fe7d8e"
+    "ko_sha256": "40ade01994d636aed01d9bd1aef407392de5306ecc44a981d466e7ba1714a464"
   },
   {
     "title": "조건이 맞아야 계약이 성사됩니다 — 기하학적 버클링과 물질 버클링이 만나는 순간",
@@ -9822,7 +9822,7 @@
     "url": "posts/theory/091-buckling.html",
     "keywords": "같은 반죽인데 틀만 바꿨을 뿐인데 — 버클링이라는 원자로의 모양 언어 buckling neutron flux reactor physics diffusion equation core design flux distribution neutron physics reactor core criticality",
     "en_sha256": "b06c6f6843d493d4e07d7ff1596cfbf92d146839ec23c147c38f7f9788082650",
-    "ko_sha256": "f3639adb061ec433d315954e837dc2d370a7701e92872988c3c4491726e0bae0"
+    "ko_sha256": "38e37863e311ae45cae7fb46784e56ac2b350f510b111e20c1386e13c3194a97"
   },
   {
     "title": "두 겹 울타리를 넘지 않고 남은 양은 몇 마리일까 — 비누설확률이 의미하는 것",
@@ -9837,7 +9837,7 @@
     "url": "posts/theory/090-non-leakage-probability.html",
     "keywords": "두 겹 울타리를 넘지 않고 남은 양은 몇 마리일까 — 비누설확률이 의미하는 것 non-leakage probability fast non-leakage thermal non-leakage neutron leakage six-factor formula effective multiplication factor k-infinity reflector core size reactor physics",
     "en_sha256": "63a36c9d00e868946590bdb2c6e262525f8cae184b0b09061fa0dfd6ea507274",
-    "ko_sha256": "d318bbd89d77969c540fabdf8d8d093fb74c76c0c39533b878dae7f066153bfd"
+    "ko_sha256": "a93acf0724f17abffab7fb45a4ec10b6dcf86031c64c467d0b05e31b28cf24c7"
   },
   {
     "title": "투자한 돈이 항상 이자를 만들어주진 않는다면? — 재생계수(에타)가 말해주는 중성자의 진짜 수익률",
@@ -9852,7 +9852,7 @@
     "url": "posts/theory/089-reproduction-factor-eta.html",
     "keywords": "투자한 돈이 항상 이자를 만들어주진 않는다면? — 재생계수(에타)가 말해주는 중성자의 진짜 수익률 reproduction factor eta nu fission cross section absorption cross section radiative capture six-factor formula four-factor formula neutron physics reactor physics fuel enrichment",
     "en_sha256": "9745a0dfd51a40c79a49aeb9261b421abb07b8e3e0f8766fc7b6868d5c9fc0bb",
-    "ko_sha256": "1ac25ac462e6788a2875843cfdd8f826ffb3f1cdb838c91e33a09cdc76550bbb"
+    "ko_sha256": "61e914513061be724d8659f10f076a7ff2d24040eab5aaf4c7104b7ffeb1c6de"
   },
   {
     "title": "버스 문이 닫히기도 전에 몇 명은 이미 타고 있었다 — 빠른 핵분열 인자가 슬쩍 챙기는 보너스 승객",
@@ -9882,7 +9882,7 @@
     "url": "posts/theory/087-resonance-escape-probability.html",
     "keywords": "허들을 넘어야 진짜 '탈출'입니다 — 공명탈출확률이라는 이름이 헷갈리는 이유 resonance escape probability resonance absorption six-factor formula four-factor formula uranium-238 thermal neutrons moderation non-leakage probability reactor physics",
     "en_sha256": "a8a045c1e5c2fb6fe47ad0268ef6fe011296d1b9bf1539034ede90da462adeba",
-    "ko_sha256": "5fa1db05c337f1ed549d97beae09002848d01225892766a8d19096f575f1399a"
+    "ko_sha256": "f2231e0ecd95a82cb3f2d64ba22d048d81ba057c7409fbeaff5d56bdd111c1c8"
   },
   {
     "title": "한 잔에 빨대 여러 개가 꽂혀 있다면, 누가 제일 많이 마실까 — 열이용률의 정체",
@@ -9897,7 +9897,7 @@
     "url": "posts/theory/086-thermal-utilization-factor.html",
     "keywords": "한 잔에 빨대 여러 개가 꽂혀 있다면, 누가 제일 많이 마실까 — 열이용률의 정체 thermal utilization factor six-factor formula four-factor formula neutron absorption macroscopic cross section reactor physics control rods boron self-shielding flux depression",
     "en_sha256": "7f00b535484ffce870131cef7e4abc6b494d2e268e5290fd6c97264739e1bc18",
-    "ko_sha256": "e2f51bb76452e473899776bb59c41ff7534f8addb5fda50bc299c6aa35748deb"
+    "ko_sha256": "9af6320f7857204bf71dee42b6768dcedb6ab0bb886c189932ecbb3cd0932e3c"
   },
   {
     "title": "바통을 여섯 번 넘겨야 결승선을 통과합니다 — 육인자 공식이 그리는 원자로의 큰 그림",
@@ -9912,7 +9912,7 @@
     "url": "posts/theory/085-six-factor-formula.html",
     "keywords": "바통을 여섯 번 넘겨야 결승선을 통과합니다 — 육인자 공식이 그리는 원자로의 큰 그림 six-factor formula multiplication factor k-effective k-infinity reproduction factor fast fission factor resonance escape probability thermal utilization factor non-leakage probability criticality reactor physics",
     "en_sha256": "980b5c7eb9f076755baa68b97a9c65bb9f49910d4c116aa803c6d8f4decbb75a",
-    "ko_sha256": "f7e719b4e7f68c5b17de408edb65db3b8b1e0987ce1c7d84532573d32308d895"
+    "ko_sha256": "105762a4186353d7f7a16e7a27d52a480a1448d1d5ec0fa3db327c9c0f74b062"
   },
   {
     "title": "끝없이 넓던 그 방에 벽을 세워봤습니다 — 유효 증배계수(k-effective)가 말하는 진짜 이야기",
@@ -9927,7 +9927,7 @@
     "url": "posts/theory/084-k-effective.html",
     "keywords": "끝없이 넓던 그 방에 벽을 세워봤습니다 — 유효 증배계수(k-effective)가 말하는 진짜 이야기 k-effective effective multiplication factor criticality subcritical supercritical non-leakage probability neutron leakage k-infinity reflector control rods reactor physics",
     "en_sha256": "5f9583e69e4e1f1bc5634b97398e9c58973dcecf1150fcb76b7faf4be3cdff1a",
-    "ko_sha256": "b3d6e5eee391eeae22b6171eb3ce5ee3ee11577639d361fe357eeba2bb3f989b"
+    "ko_sha256": "1acc3008f5c12ddc72258285977dcbc399f9879f9f59f46aa78ceccebeec45a4"
   },
   {
     "title": "탈출구 없는 방에서 중성자는 몇 배로 늘어날까 — 무한 증배계수 k-infinity 이야기",
@@ -9957,7 +9957,7 @@
     "url": "posts/theory/082-why-flux-is-not-flat.html",
     "keywords": "창가 자리는 왜 항상 더 추울까 — 플럭스 분포가 평평하지 않은 이유 neutron flux flux distribution neutron leakage reactor core flux flattening reflector extrapolated boundary buckling peaking factor reactor physics",
     "en_sha256": "0445b55701e89eec8405cdb7947788e43d57528b2609d0877c0fb0c873cc0c9f",
-    "ko_sha256": "a6aad40e43defc74e6b1218aa1f10557d85e9d64381ba3484ef7310856958b18"
+    "ko_sha256": "e38f1b80cd10ee05ae9bba02c0c902a983e3568fc8a8b7943edca1bfc8d31e0a"
   },
   {
     "title": "컵 속 잉크 한 방울이 알아서 퍼지는 순간 — 중성자 전류와 농도 기울기",
@@ -9987,7 +9987,7 @@
     "url": "posts/theory/080-diffusion-theory.html",
     "keywords": "빗방울 하나하나 좇지 않아도 일기예보는 맞습니다 — 확산 이론이 필요한 이유 diffusion theory diffusion equation neutron flux distribution neutron transport equation Monte Carlo method diffusion coefficient extrapolation distance core design reactor physics",
     "en_sha256": "7febcec3c9f634c20af15ad1ba04376b8b28e1a6cb92172c56529fc67db94416",
-    "ko_sha256": "e734f12a5756a1260fc04b46d24deb5821794c4958b2e600901d7df3a64e0f7d"
+    "ko_sha256": "f0ae8bae1dc7996349cc229b1352a6b02e9318e25b402ed924d1f5f9a6d9ab12"
   },
   {
     "title": "붐비는 복도에서 몇 걸음 못 가 부딪히는 이유 — 중성자의 평균 자유행로",
@@ -10002,7 +10002,7 @@
     "url": "posts/theory/079-mean-free-path.html",
     "keywords": "붐비는 복도에서 몇 걸음 못 가 부딪히는 이유 — 중성자의 평균 자유행로 mean free path macroscopic cross section neutron collision number density microscopic cross section moderator radiation shielding reactor design reactor physics",
     "en_sha256": "2ce9caeb64b62c4445f425d55e13cb13b811d9161fda21962f8f3ad4c4b91640",
-    "ko_sha256": "c686c42693e47d69c5fcfd5da082827429cf17f75961e997fc5a65ca790c2ccd"
+    "ko_sha256": "fd846bb8803ad9d8ac68e6807159f0899201e6954a910060f4a79828d122de0e"
   },
   {
     "title": "다트판에 맞을 확률 vs 다트판으로 뒤덮인 벽 — 미시 단면적과 거시 단면적 이야기",
@@ -10017,7 +10017,7 @@
     "url": "posts/theory/078-cross-sections.html",
     "keywords": "다트판에 맞을 확률 vs 다트판으로 뒤덮인 벽 — 미시 단면적과 거시 단면적 이야기 microscopic cross section macroscopic cross section barn number density reaction probability absorption cross section fission cross section xenon-135 reactor physics",
     "en_sha256": "6e3ecc8f97d95e14833eb35250a7c33de9989d1314484523e9ebbaaa68a57fb7",
-    "ko_sha256": "1069a7389990652bacfccf80dac2ec35b29287d42ceb4d775a2922299a336ed7"
+    "ko_sha256": "d0a98c8b142ee1e3b2c3ca8256c2af35397b8569eafa6c8ac05921e2bead17d7"
   },
   {
     "title": "같은 인원인데 왜 이 문만 늘 붐빌까 — 중성자속이 알려주는 이야기",
@@ -10062,7 +10062,7 @@
     "url": "posts/theory/075-reactor-building-layout.html",
     "keywords": "드론을 띄워 내려다본 원전, 왜 이렇게 건물이 뿔뿔이 흩어져 있을까 — 원자로 건물 배치의 비밀 reactor building plant layout containment building common cause failure redundancy independence physical separation safety design defense in depth",
     "en_sha256": "205be6ef12fb142fbb0a2239ed15834ec00b58e5f68f3fbd300caf7d75c2982c",
-    "ko_sha256": "4310c201cffc53c8e42953134af7689dc236d078b10129c3a3933bd38d82ac50"
+    "ko_sha256": "0b86a22ac6f5a112d4625ab923b414c06e1e6e4fc8091101eb14676cb4cb3fa8"
   },
   {
     "title": "노선도가 복잡해 보이는 데는 다 이유가 있죠 — 원전 배관과 밸브가 많은 이유",
@@ -10077,7 +10077,7 @@
     "url": "posts/theory/074-piping-and-valves.html",
     "keywords": "노선도가 복잡해 보이는 데는 다 이유가 있죠 — 원전 배관과 밸브가 많은 이유 nuclear plant piping valves isolation valve check valve relief valve redundancy single failure criterion safety design reactor components",
     "en_sha256": "41d6787c9753348a0191f9d9e46989962ca75664eb0dcea92550191e2531aaf4",
-    "ko_sha256": "8cd0d879829de682ad42b3888f06f8393e7219c3362414eb9276cd620a1b4fa7"
+    "ko_sha256": "fada22c140abd619970a79ce1a886782435c5b03e3cbaea2785c2765b23f2046"
   },
   {
     "title": "네 번 도망쳐도 네 번 다 붙잡힌다 — 원전의 다중 방벽 구조",
@@ -10107,7 +10107,7 @@
     "url": "posts/theory/072-spent-fuel-pool.html",
     "keywords": "다 쓴 건전지가 아닙니다 — 사용후핵연료 저장조에 몇 년씩 담가두는 이유 spent fuel pool spent nuclear fuel wet storage radiation shielding decay heat dry cask storage interim storage reactor components nuclear safety",
     "en_sha256": "82bfdf226008518fddb62d0cd14e028a886b963ec2e196434c3cf5f5cc21628b",
-    "ko_sha256": "100a9b26db92713d9f324461e257bc12c433796d7a0715346b153d1a8044b8de"
+    "ko_sha256": "2399b135674ef9a7dca816b77461b221330c79c73a66119240f051e63a54e09c"
   },
   {
     "title": "만약 냉각수가 갑자기 사라진다면? — 초 단위로 움직이는 비상노심냉각계통",
@@ -10137,7 +10137,7 @@
     "url": "posts/theory/070-residual-heat-removal.html",
     "keywords": "불 끈 다리미도 한참 뜨겁습니다 — 잔열제거계통 이야기 residual heat removal decay heat reactor shutdown core cooling fission products steam generator spent fuel pool reactor protection system reactor components nuclear safety",
     "en_sha256": "a83eb2cb4183d3d7f2f0c3f0736c5dc14b7aa7b73d7be434f414545bf4b8ea09",
-    "ko_sha256": "32621b0d5612f060728d9d401b8cfc6aa3315c15fa49b988a6bf3f6428cad715"
+    "ko_sha256": "2dc7c0032e4e2e8270e28042ec3757d442e5ea52480edfcd8e34d1aa5618cd85"
   },
   {
     "title": "위험을 감지하면 즉시 멈춘다 — 원자로 보호계통 이야기",
@@ -10152,7 +10152,7 @@
     "url": "posts/theory/069-reactor-protection-system.html",
     "keywords": "위험을 감지하면 즉시 멈춘다 — 원자로 보호계통 이야기 reactor protection system reactor trip scram setpoint automatic shutdown control rods redundant channels voting logic instrumentation and control reactor components nuclear safety",
     "en_sha256": "2a8ebfe0577c34f9e0feb576a85eff1cfc94ca70e7833ce9012902b31f960689",
-    "ko_sha256": "4f8d7e16d576556fd0b4ca93ed7a4bd7328094ff0050dbaf5a7f95ede14daf38"
+    "ko_sha256": "949f7cd199fd4da998aa10f3876cd89a117802eba4274dc1a5352519ca64b4e2"
   },
   {
     "title": "원전에도 오감이 있다 — 계측제어계통 이야기",
@@ -10167,7 +10167,7 @@
     "url": "posts/theory/068-instrumentation-and-control.html",
     "keywords": "원전에도 오감이 있다 — 계측제어계통 이야기 instrumentation and control I&C main control room sensors neutron flux automatic control reactor protection system redundancy reactor components nuclear power plant",
     "en_sha256": "62aef1678f13f91233457ae82ae5d0ab3c6156f83a594a0ab824b2ab3dcc14da",
-    "ko_sha256": "b53e0a2cbf9b2700fd8455c93965e1d06a087fa6fdec7cbaee30614da30d6000"
+    "ko_sha256": "2c4b9369e9619d1b79cb7b26a0c9c757785b89d6baca0482c6254699cfd05843"
   },
   {
     "title": "정전에도 불이 켜지는 이유 — 비상디젤발전기 이야기",
@@ -10182,7 +10182,7 @@
     "url": "posts/theory/067-emergency-diesel-generator.html",
     "keywords": "정전에도 불이 켜지는 이유 — 비상디젤발전기 이야기 emergency diesel generator loss of off-site power backup power redundancy safety equipment reactor cooling station blackout reactor components nuclear safety nuclear power plant",
     "en_sha256": "894c42bed2c8e5e2dea75e876b2f6ff8b9c7a5ebd03565897b2cd0e91092798a",
-    "ko_sha256": "103be66b0e6ad6dbc95a45e55734595a33f95d302d30d94a88660ded30ec2f05"
+    "ko_sha256": "f4131e02f5c78f11bd8cb0f060ea74058a16b8b925404cdf13ff89a7c9654b42"
   },
   {
     "title": "김 서린 유리창을 식히듯 — 복수기와 냉각탑 이야기",
@@ -10197,7 +10197,7 @@
     "url": "posts/theory/066-condenser-and-cooling-tower.html",
     "keywords": "김 서린 유리창을 식히듯 — 복수기와 냉각탑 이야기 condenser cooling tower secondary loop condensation steam turbine waste heat cooling water steam generator reactor components nuclear power plant",
     "en_sha256": "553e92679ec2b095074ac9ec141249a5887e671b9454bd6521fbe8ca2f671e39",
-    "ko_sha256": "0159efbe94d2e10b373fbd48754f0d5b733f57a7ae00f58acddf76c26bd21c0a"
+    "ko_sha256": "41108547b14e239d95b2b9da40c2a11baac8560510f6147d245a96d63642e2a5"
   },
   {
     "title": "증기만 있으면 됩니다 — 터빈은 원자력만의 기술이 아니다",
@@ -10212,7 +10212,7 @@
     "url": "posts/theory/065-turbine.html",
     "keywords": "증기만 있으면 됩니다 — 터빈은 원자력만의 기술이 아니다 steam turbine generator steam cycle electromagnetic induction fossil vs nuclear heat source pressurized water reactor reactor components power plant",
     "en_sha256": "f94e32ad72466aaeab292e563ad99def22b7977fc0bd60bbfaf9012c2ce4ca9c",
-    "ko_sha256": "716077ad7e2415483780ded37288283eba7aa1d4f7bb0a020774b2da6fd344c3"
+    "ko_sha256": "ac5fac44f3b058bf61674ad3c228ebafa902bbd8e2a744be349f4b2becf20f92"
   },
   {
     "title": "선물을 몇 겹으로 포장하시나요 — 격납건물이 가두는 것",
@@ -10257,7 +10257,7 @@
     "url": "posts/theory/062-pressurizer.html",
     "keywords": "타이어에 바람 넣듯, 원전도 압력을 조절합니다 — 가압기 이야기 pressurizer pressurized water reactor PWR pressure control primary system heaters spray safety valve reactor pressure vessel reactor components",
     "en_sha256": "661c1c8a6ed3d163ef29c88d489bc2e757575d06a2b5760c82064053fc6987f7",
-    "ko_sha256": "a07297442a50227a686a0624c42991ea7d37b1d16e44848991f3a15679fb7e28"
+    "ko_sha256": "8237e4d2a5ee6ceed3a6c0641ac81b00ea26a999b50ebfec4bb8a90129797852"
   },
   {
     "title": "보일러가 물을 두 번 나누어 데우는 이유 — 증기발생기 이야기",
@@ -10272,7 +10272,7 @@
     "url": "posts/theory/061-steam-generator.html",
     "keywords": "보일러가 물을 두 번 나누어 데우는 이유 — 증기발생기 이야기 steam generator pressurized water reactor PWR heat exchanger U-tube primary system secondary system reactor components multiple barriers nuclear plant",
     "en_sha256": "9ddcec56b63706ef876879d1700a2acf00324b620d68d8d560c324fc69251ff8",
-    "ko_sha256": "bd4de02cb677d677042b9e4c0b151a3042e18a19c5633a37eba02d71e2480391"
+    "ko_sha256": "aabbfdb88ad28317158bf865a48fbb3adc6dd7e91b7f96d8b39f58cbf9006276"
   },
   {
     "title": "압력밥솥처럼, 원자로 압력용기도 두껍습니다",
@@ -10287,7 +10287,7 @@
     "url": "posts/theory/060-why-pressure-vessel-is-thick.html",
     "keywords": "압력밥솥처럼, 원자로 압력용기도 두껍습니다 reactor pressure vessel pressurized water reactor safety barrier reactor core reactor components defense in depth pressure design embrittlement",
     "en_sha256": "e71255d87ebc87b91e904ff331cfe9571b58842ec07640df286bd92115b1858a",
-    "ko_sha256": "cd7b07554dc25057240c4c261710b9a31c5774f840e3410792a5cdef44d91577"
+    "ko_sha256": "670d07ae8fac8b29db49ebc17d1f4a9c734de2765d48834575c7fb90e6e443c5"
   },
   {
     "title": "당구대 쿠션처럼, 반사체가 중성자를 돌려보냅니다",
@@ -10302,7 +10302,7 @@
     "url": "posts/theory/059-neutron-reflector.html",
     "keywords": "당구대 쿠션처럼, 반사체가 중성자를 돌려보냅니다 neutron reflector neutron leakage neutron economy core design beryllium graphite reactor components reactor physics neutron scattering",
     "en_sha256": "c337b4a57c3e8aa5cbf8bde46d19ee9c666998853688ce71f623044a98e27432",
-    "ko_sha256": "8dad39488a500b283a13f803986cda43ff91b18f0d08bc127f8f7df6b3862de1"
+    "ko_sha256": "5ede9768af096fff877eacad17e941bf4443469a2a7ca463130c99e8cdcbd447"
   },
   {
     "title": "욕조 입욕제처럼 퍼지는 붕산수, 액체 제어봉이 맞을까",
@@ -10317,7 +10317,7 @@
     "url": "posts/theory/058-borated-water-liquid-control-rod.html",
     "keywords": "욕조 입욕제처럼 퍼지는 붕산수, 액체 제어봉이 맞을까 borated water boric acid soluble boron control rods reactivity control neutron absorption light water reactor reactor components",
     "en_sha256": "dc980236b7e1e30bf60ba1492ba0042f4b743c0fd5fe9ebd52feaf1fe761905e",
-    "ko_sha256": "23598d4ac9f27e1b689cb66a1aa1afac118551e9b74a688af1847e671c7ee4fe"
+    "ko_sha256": "8dc6f2c3d4e7ace6422696f6081a6c8a400853276e3c94cc3df400d01a47de0c"
   },
   {
     "title": "제어봉은 원자로의 브레이크일까, 가속 페달일까",
@@ -10332,7 +10332,7 @@
     "url": "posts/theory/057-control-rods-brake-or-pedal.html",
     "keywords": "제어봉은 원자로의 브레이크일까, 가속 페달일까 control rods scram reactivity control neutron absorption reactor safety reactor components reactor physics emergency shutdown",
     "en_sha256": "2d34765e6d9e5c4fa9b90d870cc5605982434fa0f76116641e8e370652df0f1b",
-    "ko_sha256": "4b0f7338c7c5fb5a821b5d1d2ae257ded8049145881d2bee4260b0d4ebed62d1"
+    "ko_sha256": "d44803ec6cef0ca04c901f5bc081475c1181a749f09953608321a4cfd4af1489"
   },
   {
     "title": "자동차 냉각수처럼, 냉각재도 열을 실어 나릅니다",
@@ -10347,7 +10347,7 @@
     "url": "posts/theory/056-role-of-the-coolant.html",
     "keywords": "자동차 냉각수처럼, 냉각재도 열을 실어 나릅니다 reactor coolant moderator reactor cooling heat transfer steam generator reactor components light water reactor coolant pump",
     "en_sha256": "338a37bcf5d6c40759490fd592d37f857725afb71620d7e3b8abafaf39e207df",
-    "ko_sha256": "d8491d0486464ed4ae7521cba04b724bf10df8da5cf11f7945872940518000c2"
+    "ko_sha256": "e4a9b2b06cf913add0793198adaf5489ff1cb1fb5650f56a4a90a3edcb3f736c"
   },
   {
     "title": "포장 완충재 고르듯, 감속재도 이렇게 고릅니다",
@@ -10362,7 +10362,7 @@
     "url": "posts/theory/055-moderator-role.html",
     "keywords": "포장 완충재 고르듯, 감속재도 이렇게 고릅니다 moderator light water heavy water graphite neutron moderation thermal neutrons low-enriched uranium natural uranium reactor components",
     "en_sha256": "e1e47b2e2b2848b42e398caebcd4afb808750f1e945de7be2046ad9922726ea5",
-    "ko_sha256": "c8e259ec163da3dd286a8c248a9156c6a0c2842fa8230654ae65a2bbd8219f1d"
+    "ko_sha256": "14b96d1f72e016b6a2f408b111c9bcf579f88c4cd2beac5c85e5f530cc50d197"
   },
   {
     "title": "빨대 한 개와 빨대 다발, 연료집합체가 묶여 있는 이유",
@@ -10377,7 +10377,7 @@
     "url": "posts/theory/054-fuel-assembly-structure.html",
     "keywords": "빨대 한 개와 빨대 다발, 연료집합체가 묶여 있는 이유 fuel assembly fuel rod spacer grid coolant channel reactor core refueling loading pattern reactor components",
     "en_sha256": "bd760ae3774acd788e6c44d42ef07fa91153bba5bf84856ba4b0d84fb5fc4d3c",
-    "ko_sha256": "c9a04cd64d4f2c14fea02d9d47924d50fcb436ab3b1e6752367004883ea8c77b"
+    "ko_sha256": "2065e641dc9e1e6c42e7f35626d991bd96b62c412ae3233f534b0b5e24c6b595"
   },
   {
     "title": "소시지 속과 케이싱처럼, 연료펠릿과 피복관의 역할",
@@ -10392,7 +10392,7 @@
     "url": "posts/theory/053-fuel-pellet-and-cladding.html",
     "keywords": "소시지 속과 케이싱처럼, 연료펠릿과 피복관의 역할 fuel pellet cladding zirconium alloy uranium dioxide first barrier defense in depth reactor components nuclear fuel rod",
     "en_sha256": "61818a6dd3919754e8babaf213366afae695623ff1f8753d1bcabba45637ec34",
-    "ko_sha256": "589f84cc2375dacf26cd82d7d13a6f6f961aec311916a3c750adb6d7a2bc167f"
+    "ko_sha256": "e60da1cfa47eb84eb6ba5e8c453d7e70fecf7a6593cb3567b624410f247dbff9"
   },
   {
     "title": "페즈 캔디 디스펜서처럼 생긴 핵연료봉의 비밀",
@@ -10407,7 +10407,7 @@
     "url": "posts/theory/052-fuel-rod-shape.html",
     "keywords": "페즈 캔디 디스펜서처럼 생긴 핵연료봉의 비밀 nuclear fuel rod fuel pellet cladding uranium dioxide helium reactor components reactor core nuclear fuel",
     "en_sha256": "31ffb5e2f1ed8d63af5e7ccc950921bcd41abaa63d00ea90d5277404bb12e9b5",
-    "ko_sha256": "54773687522046681b9d42763a3865d69c944534259ab84e0aa9b228dbbcfb04"
+    "ko_sha256": "30c7d82faa40935907a0de06ff99adf54e0fb0fa5ddcc10711197109f3bf936a"
   },
   {
     "title": "원자로는 거대한 주전자일까 — 물을 데우는 방식의 비밀",
@@ -10422,7 +10422,7 @@
     "url": "posts/theory/051-reactor-giant-kettle.html",
     "keywords": "원자로는 거대한 주전자일까 — 물을 데우는 방식의 비밀 nuclear reactor kettle how nuclear power works pressurized water reactor coolant fission chain reaction control rods boric acid reactor components",
     "en_sha256": "97b5f66654a50ecf9c328c3f4e4bca3abb24a43e272ab7ce83d4b86e7823536f",
-    "ko_sha256": "ab5ce001f72f6f9bb97566ff541b7b171e01904a9174ba07b543fb2fcc6712dc"
+    "ko_sha256": "43d65ce57414ab3cbd908cab48721aadb74af067812753e1454d5d4e22d309ba"
   },
   {
     "title": "이삿짐 트럭 1대 vs 12만 대 — 원자력 에너지 밀도를 발전소 크기로 실감하기",
@@ -10452,7 +10452,7 @@
     "url": "posts/theory/049-reactor-vs-bomb.html",
     "keywords": "마라토너와 100 m 스프린터 — 원자로와 원자폭탄의 연쇄반응은 무엇이 다른가 nuclear reactor atomic bomb fission chain reaction enriched uranium low-enriched uranium delayed neutrons Doppler effect negative feedback Chernobyl nuclear safety",
     "en_sha256": "f4f05ef9993f6194c204f18dd7ca08bc39381f6840a7d4ef665e23a389f66f6b",
-    "ko_sha256": "4f81d9996a5fef0b11bb98a1b1c973fad64ece6fbd4309012dcf8d88a23f0c81"
+    "ko_sha256": "5fdf1939762b2d0fb448c0e65adf02924dadf259a9d4caa3bdfd017dd75f5290"
   },
   {
     "title": "양쪽 비탈에서 같은 골짜기로 — 핵융합과 핵분열의 공통점과 차이",
@@ -10467,7 +10467,7 @@
     "url": "posts/theory/048-fusion-vs-fission.html",
     "keywords": "양쪽 비탈에서 같은 골짜기로 — 핵융합과 핵분열의 공통점과 차이 nuclear fusion nuclear fission fusion vs fission deuterium tritium uranium-235 binding energy plasma ITER chain reaction nuclear basics",
     "en_sha256": "fdcb5a5f9c3ff46606505341f1ed05fcf323d4e02ffc457d8ba83fbefa28af33",
-    "ko_sha256": "a6fd0c08bb3293f59f894603d22dc28a14a1e6a919cd7ddc04deb0bcf4b8519d"
+    "ko_sha256": "2212b4e98b62684a39a939afa49b387337e5ca839ab13f85d69f0da32c928bfc"
   },
   {
     "title": "내리막이면 남고 오르막이면 챙겨라 — 핵반응 Q값이 알려 주는 에너지 고도차",
@@ -10482,7 +10482,7 @@
     "url": "posts/theory/047-nuclear-reaction-q-value.html",
     "keywords": "내리막이면 남고 오르막이면 챙겨라 — 핵반응 Q값이 알려 주는 에너지 고도차 Q-value nuclear reactions exothermic endothermic threshold energy Rutherford fission energy nitrogen-16 boron-10 reactor physics",
     "en_sha256": "f816aea64aa5fd79d984f958ae95008b8072709c0191036d1c869d3dbead6a0c",
-    "ko_sha256": "116a447e865ff1ce0d60b0f5f8cb4d99133f6b6dabffe4cde7c54a9c9831edfe"
+    "ko_sha256": "a2044f06fc9ab5e04f5a31b976abb58a94551a7735a5783d9c5331a6141d4cb3"
   },
   {
     "title": "옷에 달라붙는 도꼬마리 씨앗처럼 — 중성자 포획과 방사화",
@@ -10497,7 +10497,7 @@
     "url": "posts/theory/046-neutron-capture-activation.html",
     "keywords": "옷에 달라붙는 도꼬마리 씨앗처럼 — 중성자 포획과 방사화 neutron capture activation cobalt-60 half-life saturation activity occupational dose decommissioning gamma rays nuclear basics",
     "en_sha256": "7d68a913b9424fbcb10d98f3a343119298c246962e54595027282861e744d0d5",
-    "ko_sha256": "e961be8037d8f311539f53c0ae5043aeda32091927c5a1ba039d320f178157c6"
+    "ko_sha256": "94087776a1a509ee7aeab085445b783dec07951317edcef072ec7cb39b459863"
   },
   {
     "title": "반반은 좀처럼 안 되는 이상한 칼 — 핵분열 수율 곡선 읽는 법",
@@ -10527,7 +10527,7 @@
     "url": "posts/theory/044-making-plutonium-239.html",
     "keywords": "환승 두 번이면 도착 — 플루토늄-239가 원자로 안에서 만들어지는 길 plutonium-239 uranium-238 uranium-239 neptunium-239 neutron capture beta decay half-life Bateman equations fissile spent fuel",
     "en_sha256": "1330ba1ba8b10e81d7cbe43ba46d916a67f02f76df6854612aa01cdcda22c737",
-    "ko_sha256": "4c2d076fd3d9ef5ad24ecc160f4638d461d1d4c1240123a792d6f2fa402f556f"
+    "ko_sha256": "04a8d7f81b9e15f9a54b923c2a16b0d5eb71304c111db655b78f86c1437689f7"
   },
   {
     "title": "대사 적은 조연이 극을 살린다 — 우라늄-238은 왜 버려지는 물질이 아닐까",
@@ -10542,7 +10542,7 @@
     "url": "posts/theory/043-value-of-uranium-238.html",
     "keywords": "대사 적은 조연이 극을 살린다 — 우라늄-238은 왜 버려지는 물질이 아닐까 uranium-238 uranium-235 plutonium-239 fast fission capture Doppler effect fuel temperature coefficient nuclear fuel light water reactor burnup",
     "en_sha256": "b6986fbe3f0a3ce508feaed5f4ee3a008c9d49ebadc80b521ffc90032d0f0846",
-    "ko_sha256": "fb533eaee69b995a4894acd762a0072ad89555f9c774ed2438bdee92d400dcbe"
+    "ko_sha256": "203665bb327123b50c2041b48db6f061c679fea7bc608e944f56f90325349989"
   },
   {
     "title": "전단지는 천천히 걷는 사람이 받는다 — 감속하면 핵분열이 쉬워지는 이유",
@@ -10557,7 +10557,7 @@
     "url": "posts/theory/042-moderation-and-fission.html",
     "keywords": "전단지는 천천히 걷는 사람이 받는다 — 감속하면 핵분열이 쉬워지는 이유 moderator neutron moderation thermal neutrons nuclear fission cross section 1/v law light water heavy water graphite low-enriched uranium",
     "en_sha256": "d1adac34422e058097db041047d2644069ae1cd3dc013c4c0adc7e5c2d54ad54",
-    "ko_sha256": "296a6970fa6216a951fdde3c74338176538ce7ff905828f8b508622352df5de9"
+    "ko_sha256": "f9e5f096eac9c0dabff8d245ec430abc780c45f9b14e8096793711dde7691628"
   },
   {
     "title": "산책하는 사람과 우주로켓만큼 다르다 — 열중성자와 고속중성자의 차이",
@@ -10572,7 +10572,7 @@
     "url": "posts/theory/041-thermal-vs-fast-neutrons.html",
     "keywords": "산책하는 사람과 우주로켓만큼 다르다 — 열중성자와 고속중성자의 차이 thermal neutrons fast neutrons neutron energy electronvolt thermal equilibrium thermal reactor fast reactor sodium-cooled fast reactor moderator nuclear fission",
     "en_sha256": "c1b13f12a04a7e6d68fbbd185b5412d72d4f3ace036cbfb5260419675f3b84ba",
-    "ko_sha256": "bb17216c494538360ae2d3c7bdd1e221cc21cf6aa366848d51c9f16e4a893390"
+    "ko_sha256": "878b94340e0b8cfa51fc202fc1444cc0e060c69195b6e89010f0baa531dbee05"
   },
   {
     "title": "라디오 다이얼처럼 딱 걸리는 순간 — 공명 흡수가 원자로에서 중요한 이유",
@@ -10587,7 +10587,7 @@
     "url": "posts/theory/040-resonance-absorption.html",
     "keywords": "라디오 다이얼처럼 딱 걸리는 순간 — 공명 흡수가 원자로에서 중요한 이유 resonance absorption uranium-238 capture cross section compound nucleus resonance escape probability self-shielding Doppler broadening Doppler coefficient negative temperature coefficient reactor physics",
     "en_sha256": "0366b858f82dfa6b096ac34005e965ab4f3d9677464eb7c86b08e17139367f0c",
-    "ko_sha256": "f0167924b2d5fae3aecc29fcb88c9879f41ab2606089ccf37c275de34a916c4b"
+    "ko_sha256": "629968fdf5dedf6789040357eab5dc0f52e5fe93cfab177dfd4a019210203d30"
   },
   {
     "title": "천천히 던질수록 과녁이 커지는 마법 다트판 — 핵분열 단면적 이야기",
@@ -10602,7 +10602,7 @@
     "url": "posts/theory/039-fission-cross-section.html",
     "keywords": "천천히 던질수록 과녁이 커지는 마법 다트판 — 핵분열 단면적 이야기 fission cross section cross section barn uranium-235 uranium-238 thermal neutrons fast neutrons 1/v law macroscopic cross section mean free path reactor physics",
     "en_sha256": "7809714a7a9dc4c7cadf7a3f1fa13fd36d77ae5eaaae2c72f7723027e7c843f5",
-    "ko_sha256": "808c2eff17a93c71e5be524182314fdaa20800c75b0f7d5a1c05a6b932b519e7"
+    "ko_sha256": "c2dd63b849ea057876dff003f6fa1e13b47e4bdec43a23b1ef287d9f41b2feac"
   },
   {
     "title": "스케이트보드 말고 크루즈선처럼 — 지발 중성자가 원자로 제어를 가능하게 하는 이유",
@@ -10617,7 +10617,7 @@
     "url": "posts/theory/038-delayed-neutrons-reactor-control.html",
     "keywords": "스케이트보드 말고 크루즈선처럼 — 지발 중성자가 원자로 제어를 가능하게 하는 이유 delayed neutrons prompt neutrons reactor control neutron generation time prompt criticality reactivity reactor period point kinetics nuclear fission reactor physics",
     "en_sha256": "c6324ec9f829116ba1937111e2047f71967e746e204a8735293cabc184738424",
-    "ko_sha256": "b57b85e7894bb79f166485787c0f1ef0b755727c0d28a0421895f73bf95c6fbc"
+    "ko_sha256": "ed4dae9e07521cddf40dc9cbcda0d65fd620e7c7d97d9b9fba3ad43f477ef9fa"
   },
   {
     "title": "당일 배송과 예약 배송 — 즉발 중성자와 지발 중성자는 '언제' 나오느냐의 차이",
@@ -10632,7 +10632,7 @@
     "url": "posts/theory/037-prompt-and-delayed-neutrons.html",
     "keywords": "당일 배송과 예약 배송 — 즉발 중성자와 지발 중성자는 '언제' 나오느냐의 차이 prompt neutrons delayed neutrons precursor delayed neutron fraction beta decay bromine-87 six-group model Keepin nuclear fission reactor physics",
     "en_sha256": "9fe7618aa5107e19149fac5b9fb5bb0a465a6d07dcf200bb4a3cc93dc31d3888",
-    "ko_sha256": "10eba798ed742eee59c64e28fe56dafa3f4428cb38e8155716b9c4a63babb3cb"
+    "ko_sha256": "f295747c5eb1394abadf717d7971a26f6aaa5244d087cf3196bba159c511569a"
   },
   {
     "title": "마라톤 결승선처럼 몰리고 늘어지는 — 핵분열 중성자의 에너지 분포",
@@ -10647,7 +10647,7 @@
     "url": "posts/theory/036-fission-neutron-energy-spectrum.html",
     "keywords": "마라톤 결승선처럼 몰리고 늘어지는 — 핵분열 중성자의 에너지 분포 fission neutrons neutron energy spectrum Watt spectrum fission spectrum prompt neutrons neutrons per fission nu-bar uranium-235 moderator reactor physics",
     "en_sha256": "462067041c59a14be0a9d277c41d0a27d33e4219ecc50b902704eaebf7b62b12",
-    "ko_sha256": "aafde599cd12a589bce302980556385b22ab434dba72ed176acab1539ed09e07"
+    "ko_sha256": "d11d92400a594870af1753289be3240b288cd00f891710b488a0ce8ef9e4c197"
   },
   {
     "title": "관중 수만으로는 파도가 안 일어난다 — 임계질량이라는 말의 오해",
@@ -10662,7 +10662,7 @@
     "url": "posts/theory/035-critical-mass-misconception.html",
     "keywords": "관중 수만으로는 파도가 안 일어난다 — 임계질량이라는 말의 오해 critical mass criticality nuclear fission chain reaction neutron leakage enrichment moderator reflector criticality safety Tokaimura",
     "en_sha256": "a245954e4c59285711518012f2b81b3e8456f98b70ffaf68d30b53a35a1fd78c",
-    "ko_sha256": "2adf0585d004d2a0ab99fe9b7ee756427e3c7b16cea280ab64a9bf275fc371d9"
+    "ko_sha256": "47565a98da47168c4d4a6c25c70f56f3306e40603e153ef294b20cbd3be58542"
   },
   {
     "title": "평지에서 페달을 밟는 중입니다 — 임계·미임계·초임계, 원자로의 세 가지 상태",
@@ -10677,7 +10677,7 @@
     "url": "posts/theory/034-critical-subcritical-supercritical.html",
     "keywords": "평지에서 페달을 밟는 중입니다 — 임계·미임계·초임계, 원자로의 세 가지 상태 criticality critical subcritical supercritical multiplication factor reactivity pcm control rods boron reactor operation",
     "en_sha256": "ddc2d7952e15885c1a2040400bf2517f0fc9af2f16b114c4d7c5e50eeddff9b5",
-    "ko_sha256": "8b8c3852a4fe6d9ba6aee9afd0ffddc1bb8206a7946615d50e974ac51d3d83c6"
+    "ko_sha256": "b6ad9a7f92f2f8810875246c34fe8b3c7504ee985b61c4af9957f62f623eb67e"
   },
   {
     "title": "단톡방 메시지는 왜 퍼지고 왜 사그라들까 — 연쇄반응이란 무엇인가",
@@ -10692,7 +10692,7 @@
     "url": "posts/theory/033-chain-reaction.html",
     "keywords": "단톡방 메시지는 왜 퍼지고 왜 사그라들까 — 연쇄반응이란 무엇인가 chain reaction nuclear fission multiplication factor neutron generation criticality exponential growth reactor basics nuclear power",
     "en_sha256": "7c52303b19227d92e54f0338975a73705b9fed6c419a4c712db043344c55d67f",
-    "ko_sha256": "a03955ece95d3304559b51538dd7ca71dbf72d98787623b733a5e74a41fe964b"
+    "ko_sha256": "852aaf80e9900f0767102d114588266e639e05191ebec75788a6fe4ff2affb91"
   },
   {
     "title": "모래알 한 알과 사막 사이 — 핵분열 한 번의 에너지, 감으로 재 보기",
@@ -10722,7 +10722,7 @@
     "url": "posts/theory/031-fission-energy-source.html",
     "keywords": "눌러 둔 용수철이 탁 풀리는 순간 — 핵분열 에너지는 어떤 모양으로 나올까 nuclear fission fission energy 200 MeV Coulomb repulsion fission fragments binding energy antineutrino decay heat reactor thermal power",
     "en_sha256": "6ec8ea3893bfefab947dff882738e770e7f3c1932e009667d41ed85b08489bbf",
-    "ko_sha256": "83090e1453e18d8275499aded076759bf8cb97ac2df93879a6f0b13e675f1b11"
+    "ko_sha256": "2bfd59b2f9d5d12a2e4bad04d0298428306d46efe5cd58cc9d3ae7bd8edb7da4"
   },
   {
     "title": "과적 트럭이 휴게소마다 짐을 정리하듯 — 핵분열 생성물이 방사성인 이유",
@@ -10737,7 +10737,7 @@
     "url": "posts/theory/030-why-fission-products-are-radioactive.html",
     "keywords": "과적 트럭이 휴게소마다 짐을 정리하듯 — 핵분열 생성물이 방사성인 이유 fission products radioactive decay beta decay decay heat cesium-137 neutron excess decay chain half-life nuclear power nuclear basics",
     "en_sha256": "fbaf2f5d158a4a0ce90e82bc1eeeeb5f9e2c0bec15364e5b04046467f4e6e59f",
-    "ko_sha256": "28d630bff237d020a546748db37e2f4a062ecf914a8f240dc95adb874e03d0ff"
+    "ko_sha256": "c70db37bcfd59aa0887c8e705c61a73ca353110a26fcf2c58edb223a7e07ef76"
   },
   {
     "title": "찹쌀떡처럼 늘어나다 툭 — 우라늄-235 핵분열이 일어나는 순서",
@@ -10752,7 +10752,7 @@
     "url": "posts/theory/029-uranium-235-fission-sequence.html",
     "keywords": "찹쌀떡처럼 늘어나다 툭 — 우라늄-235 핵분열이 일어나는 순서 uranium-235 nuclear fission compound nucleus prompt neutrons prompt gamma rays fission barrier neutron capture beta decay reactor physics",
     "en_sha256": "7a7164a2b1ab82f61f5606f12fb4c5d7eef454ce0e36818be4dc1589e1cbf006",
-    "ko_sha256": "4cc0df2f0834e3234ef2488db6c5af6708b8a31a1e792e009417cf15a867d6e6"
+    "ko_sha256": "20397b6f5e9ab76f04ec9edc5beb8fc88438a97091fe075d7680dc33192a3bf8"
   },
   {
     "title": "범인은 무거운 원소일 줄 알았는데 — 추리 소설처럼 풀린 핵분열의 발견",
@@ -10767,7 +10767,7 @@
     "url": "posts/theory/028-discovery-of-fission.html",
     "keywords": "범인은 무거운 원소일 줄 알았는데 — 추리 소설처럼 풀린 핵분열의 발견 nuclear fission discovery of fission Otto Hahn Lise Meitner Otto Frisch Enrico Fermi liquid drop model barium chain reaction nuclear history",
     "en_sha256": "b3b75959bc219f603b30402b59680d04b92f3234e6c1f012f427e55948919f69",
-    "ko_sha256": "715ee21cd2cd6f4c3ca9c97d67b2f6ebb46dfdba12b14b7c3fe0cc0c6e300e72"
+    "ko_sha256": "a77d5b394bfb23a54cf0af28d4f8c6c944a8feff4ee4d71c28c826aa33b76f83"
   },
   {
     "title": "열면 새 열쇠를 깎아 주는 자물쇠 — 중성자가 핵반응의 열쇠인 이유",
@@ -10782,7 +10782,7 @@
     "url": "posts/theory/027-role-of-the-neutron.html",
     "keywords": "열면 새 열쇠를 깎아 주는 자물쇠 — 중성자가 핵반응의 열쇠인 이유 neutron Chadwick discovery of the neutron nuclear reaction nuclear fission neutron capture neutron scattering chain reaction nuclear basics",
     "en_sha256": "52c096799422f24197aceaa77d604fc06a5f3e6e435a56785eb1ded17cef0fd5",
-    "ko_sha256": "95206bc8e1a2da6d330c8c60b2aafceb122673c59351701eba56d3e78308916a"
+    "ko_sha256": "3d0fd466c2c3eeaf43aaa0dfb4ee899001792e3813a71dc535d2f77c0285a39d"
   },
   {
     "title": "가구만 옮길까, 골조를 뜯을까 — 핵반응과 화학반응은 무엇이 다를까",
@@ -10797,7 +10797,7 @@
     "url": "posts/theory/026-nuclear-vs-chemical-reactions.html",
     "keywords": "가구만 옮길까, 골조를 뜯을까 — 핵반응과 화학반응은 무엇이 다를까 nuclear reaction chemical reaction atomic nucleus electronvolt fission energy radioactive decay half-life mass number conservation nuclear basics",
     "en_sha256": "c4b56eb28992a77a30403b9c2345bf1ebf02a4b4279a92d41d55119dbb35670d",
-    "ko_sha256": "a7e75b67e568a964153bb83a327ef65dfda03b2f4111e42f0d358ae81fd53bf5"
+    "ko_sha256": "0f1823b6b3dbbb42749ea1648a209f331a5b7e74127fa5a864c20c5a491a35cb"
   },
   {
     "title": "과자 봉지 영양성분표처럼 읽어 보세요 — 일상 속 방사선 수치 해석하는 법",
@@ -10812,7 +10812,7 @@
     "url": "posts/theory/025-reading-radiation-numbers.html",
     "keywords": "과자 봉지 영양성분표처럼 읽어 보세요 — 일상 속 방사선 수치 해석하는 법 radiation numbers dose rate microsievert millisievert becquerel natural radiation background dose limit LNT medical radiation CT dose UNSCEAR",
     "en_sha256": "b5e4967edc21fe72c583c4a5439a6642d8338d0e1933266fb01b142c1c5f5d64",
-    "ko_sha256": "f0b30c2e5d8d3cbb2ec9b9cca7088eaa62d5052111ca108cfd621d122bc74e6d"
+    "ko_sha256": "d1c001cd17f58abb5918306a6ba49fae99ceaa691a57ed31edcc8d3e0e5235f3"
   },
   {
     "title": "양철 지붕 빗소리를 세는 귀 — 방사선 검출기는 보이지 않는 방사선을 어떻게 셀까",
@@ -10827,7 +10827,7 @@
     "url": "posts/theory/024-radiation-detectors.html",
     "keywords": "양철 지붕 빗소리를 세는 귀 — 방사선 검출기는 보이지 않는 방사선을 어떻게 셀까 radiation detector Geiger counter GM tube ionization chamber proportional counter scintillation detector NaI HPGe germanium personal dosimeter TLD OSL cpm microsievert",
     "en_sha256": "007983c56f960b7f87fddb9ec7dd1cfc4525610e04b4c2136672ffd6d96a9cc1",
-    "ko_sha256": "eec7d8c872cb8d5459d654e4899126d48e77509c9e69a00635ae3f5656ffdc6d"
+    "ko_sha256": "9fdece94276c56eb4eefded7083cd48f25e6f14fcb987477702ba159792c84cc"
   },
   {
     "title": "공마다 걸리는 장애물이 다르다 — 납, 물, 콘크리트가 막는 방사선이 다른 이유",
@@ -10842,7 +10842,7 @@
     "url": "posts/theory/023-lead-water-concrete-shielding.html",
     "keywords": "공마다 걸리는 장애물이 다르다 — 납, 물, 콘크리트가 막는 방사선이 다른 이유 radiation shielding shielding materials lead concrete water gamma rays neutrons beta radiation bremsstrahlung half-value layer tenth-value layer spent fuel pool biological shield",
     "en_sha256": "4e7ae03281676b223bf0f6aabe0f05a9b578fc48cecdb2f9df14c5f25bf199e5",
-    "ko_sha256": "8784682058565e2f93e2e45d42e19805b10fbaa4bf8ec1f554a576f6cbbfab59"
+    "ko_sha256": "3c939a50569ec5a023ce81742c5e43d2cdf6e7e8016d425073c62b7dd7bb8de6"
   },
   {
     "title": "한여름 땡볕 피하는 요령 그대로? — 방사선 차폐의 세 원칙: 시간, 거리, 차폐",

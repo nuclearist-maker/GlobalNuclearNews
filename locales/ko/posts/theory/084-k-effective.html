@@ -8,7 +8,7 @@
 <h2>k∞에 곱하기 하나만 더하면 됩니다</h2>
 <p>그럼 이 누설을 어떻게 숫자로 담아낼 수 있을까요? 다행히 아주 복잡한 계산이 필요하지는 않습니다. 앞서 구했던 무한 증배계수(k∞, 벽이 없다고 가정했을 때의 값)에, "얼마나 새지 않고 남아 있는가"를 나타내는 확률 하나만 곱해주면 됩니다.</p>
 <p>이 확률을 <strong>비누설확률</strong>이라고 부르고, 기호로는 P_NL이라고 씁니다(non-leakage probability, 즉 "새지 않을 확률"). 한 세대의 중성자 중에서 노심 바깥으로 빠져나가지 않고 노심 안에 남아 있는 중성자의 비율이라고 생각하면 됩니다. 이 확률은 0에서 1 사이의 값을 갖는데, 만약 벽이 아예 없어서 누설이 전혀 없다면 P_NL = 1이 되고, 그러면 아래 식이 말해주듯 k_eff는 다시 k∞와 똑같아집니다.</p>
-<p>k_eff = k∞ × P_NL</p>
+<p>k_eff = k∞ × P_NL.<span class="citation-group"> <a aria-label="참고문헌 1" class="citation" href="#ref-1">[1]</a></span></p>
 <p>한 줄로 요약하면, <strong>유효 증배계수(k_eff)는 무한 매질에서의 이론적인 값(k∞)에, 실제 벽 때문에 생기는 손실(P_NL)을 곱해준 값</strong>입니다. 현실의 P_NL은 항상 1보다 작으니(누설이 아예 없을 수는 없으니까요), k_eff는 항상 k∞보다 작거나 같습니다. 무한한 방에서 재본 값이 실제 방에서는 그대로 나올 수 없다는 뜻이죠. 노심이 커질수록 부피에 비해 표면적이 상대적으로 작아지기 때문에 새어나갈 기회도 상대적으로 줄어들어 P_NL이 1에 가까워지고, 반대로 노심이 작을수록 P_NL이 눈에 띄게 작아집니다. 앞서 다룬 반사체도 결국은 이 P_NL을 높여주는 장치입니다 — 빠져나가려던 중성자를 노심 표면에서 다시 튕겨 돌려보내 주니까요.</p>
 <h2>숫자 하나, 1이 갈라놓는 세 가지 운명</h2>
 <p>k∞ 이야기를 할 때도 임계라는 말이 등장했었죠. 그런데 사실 현실의 원자로에서 "지금 임계 상태인가?"를 판단하는 진짜 기준은 언제나 k∞가 아니라 k_eff입니다. 무한한 방에서의 값은 어디까지나 참고용 이론값일 뿐, 실제로 중성자가 늘어나는지 줄어드는지는 누설까지 다 반영한 k_eff가 말해주거든요.</p>
@@ -31,3 +31,4 @@
 <li>k_eff는 원자로의 효율이나 발전 출력의 크기를 나타내는 수치가 아니다 — 세대 간 중성자 수의 증감 비율일 뿐이다</li>
 </ul>
 <p>무한한 방에 벽을 세우고 나니, 계산이 한 단계 더 현실에 가까워졌습니다. 하지만 사실 이 P_NL이라는 확률 하나도, 더 들여다보면 여러 겹의 확률들이 곱해져서 만들어진 결과입니다. 다음에는 k_eff 전체를 이루는 그 여러 확률들을 하나씩 뜯어보는 이야기로 넘어가 보겠습니다.</p>
+<footer class="source"><h2>참고문헌 및 출처</h2><ol class="reference-list" style="list-style:none;padding-left:0"><li class="reference-entry" id="ref-1"><span class="reference-number">[1]</span> U.S. Department of Energy. <a href="https://www.energy.gov/documents/doe-hdbk-1019-93vol2">DOE Fundamentals Handbook: Nuclear Physics and Reactor Theory, Volume 2 of 2 (DOE-HDBK-1019/2-93)</a>. U.S. DOE, 1993. NP-03, Neutron Life Cycle, p.9. 확인일: 2026-11-06.</li></ol></footer>

@@ -15,8 +15,8 @@
 <p>수위가 너무 <strong>높으면</strong> 꼭대기의 기수분리기(증기에서 물방울을 걸러 내는 장치)가 물에 잠깁니다. 그러면 물방울이 증기에 섞여 터빈으로 넘어가요. 초고속으로 도는 터빈 날개에 부딪힌 물방울은 모래알처럼 날개 표면을 깎아 냅니다. APR1400은 증기 속 습분을 <strong>무게 기준 0.25% 이하</strong>로 설계해요.</p>
 <p>반대로 너무 <strong>낮으면</strong> 원자로 열을 받아 줄 물이 부족해집니다. 증기발생기는 원자로 입장에서 열을 버리는 곳이라, 여기 물이 줄면 열이 빠져나갈 출구가 좁아지는 거죠.</p>
 <p>그래서 목표선과 별도로, 양 끝에는 자동 보호선이 그어져 있습니다. 웨스팅하우스형 예를 보면 협역 수위계 세 채널 중 두 개가 **78%**를 넘으면 터빈을 세우고 주급수를 차단합니다. 두 개가 <strong>21%</strong> 아래로 떨어지면 원자로를 정지시키고 보조급수를 자동으로 돌리죠. APR1400에도 증기발생기별 수위 고·저 정지 기능이 있지만, 설정값은 발전소마다 다릅니다.</p>
-<!-- 확인필요: APR1400 증기발생기 수위 고·저 정지 설정값의 공개 수치가 자료마다 달라 본문에는 수치를 쓰지 않음 -->
-<p>재미있는 건 목표선도 고정이 아니라는 점이에요. 같은 교육자료에서 목표 수위는 <strong>무부하 33%에서 출력 20%까지 44%로 올라가고, 그 위로는 44%로 일정</strong>합니다. 이렇게 출력에 따라 정해 둔 곡선을 <strong>수위 프로그램</strong>이라고 부릅니다.</p>
+
+<p>재미있는 건 목표선도 고정이 아니라는 점이에요. 같은 교육자료에서 목표 수위는 <strong>무부하 33%에서 출력 20%까지 44%로 올라가고, 그 위로는 44%로 일정</strong>합니다. 이렇게 출력에 따라 정해 둔 곡선을 <strong>수위 프로그램</strong>이라고 부릅니다.<span class="citation-group"> <a aria-label="참고문헌 1" class="citation" href="#ref-1">[1]</a></span></p>
 <figure class="article-image"><img alt="증기발생기 상부 절개도의 협역 구간을 확대 투영한 그래프: 출력별 목표 수위(33→44%)와 보호 끝선 78%·21%" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/theory/244-steam-generator-level-control/fig1_level_program_trip_bands.avif"/><figcaption>증기발생기 상부 절개도의 협역 구간을 확대 투영한 그래프: 출력별 목표 수위(33→44%)와 보호 끝선 78%·21%</figcaption></figure>
 <h2>부구 대신 세 개의 눈 — 3요소 제어기</h2>
 <p>이제 처음 질문으로 돌아가죠. 초당 1.1톤이 빠지는 탱크에서 부구처럼 수위만 보면 왜 부족할까요? 수위는 결과이기 때문입니다. 증기가 더 나가기 시작해도 수위계에 변화가 뚜렷해지기까지 시간이 걸리고, 그동안 물 재고는 이미 줄고 있어요.</p>
@@ -34,3 +34,4 @@
 <h2>부구가 못 하는 일, 선이 지키는 일</h2>
 <p>정리하면 증기발생기 수위 제어는 세 겹입니다. 출력에 맞춰 움직이는 <strong>목표 수위</strong>, 증기·급수·수위를 함께 보는 <strong>3요소 제어기</strong>, 그리고 제어와 따로 서 있는 <strong>고·저 수위 보호선</strong>. 목표선을 지키는 건 제어기, 끝선을 지키는 건 보호계통이에요.</p>
 <p>그런데 이 물탱크에는 부구가 상상도 못 할 성질이 하나 더 있습니다. 물이 끓고 있어서, 증기를 갑자기 더 뽑으면 기포가 부풀어 수위계가 잠깐 <strong>거꾸로</strong> 올라가 보이기도 하거든요. 수위만 믿으면 안 되는 또 하나의 이유인 이 '수축과 팽창' 이야기는 다음에 급수 제어가 왜 어려운지와 함께 자세히 풀어 보겠습니다.</p>
+<footer class="source"><h2>참고문헌 및 출처</h2><ol class="reference-list" style="list-style:none;padding-left:0"><li class="reference-entry" id="ref-1"><span class="reference-number">[1]</span> U.S. Nuclear Regulatory Commission, Human Resources Training and Development. <a href="https://www.nrc.gov/docs/ML1122/ML11223A293.pdf">Westinghouse Technology Systems Manual, Section 11.1: Steam Generator Water Level Control System (ML11223A293)</a>. U.S. NRC, 발행연도 미상(개정 코드 0706). Westinghouse Technology Systems Manual, §11.1.2.1, printed p.11.1-2, revision code0706. 확인일: 2026-11-06.</li></ol></footer>
