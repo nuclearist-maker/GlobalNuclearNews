@@ -10227,7 +10227,7 @@
     "url": "posts/theory/064-containment-building.html",
     "keywords": "선물을 몇 겹으로 포장하시나요 — 격납건물이 가두는 것 containment building multiple barriers defense in depth reactor pressure vessel fuel cladding nuclear safety radioactive material confinement reactor components",
     "en_sha256": "8da48fb0cf5a74cddca3bb55125a9ec454070ff4a42d8ee85c4a952e09445758",
-    "ko_sha256": "f29cb6413a5517677be8a0a900b5fb9efe5997481320e05e24f37e5e7cdd4dfe"
+    "ko_sha256": "e379b27f5ad1574c386b2c0f647b66de8aa174fc186601bb006022de7c77af13"
   },
   {
     "title": "온몸에 피를 보내는 심장처럼 — 냉각재 펌프 이야기",
@@ -10242,7 +10242,7 @@
     "url": "posts/theory/063-reactor-coolant-pump.html",
     "keywords": "온몸에 피를 보내는 심장처럼 — 냉각재 펌프 이야기 reactor coolant pump pressurized water reactor PWR primary system forced circulation natural circulation steam generator pressurizer flow reactor components",
     "en_sha256": "cca2777eabeb7011f5e8bd3e8b64957bb232e43893e15de5383cae6dcbd6da4d",
-    "ko_sha256": "6b6a306b29d4f4c78f9375a27ad2a4cc6b725fbadf897e73618e05bee94a926e"
+    "ko_sha256": "cc128aa7bf6220248618ea63c71c5f45276b225f4a762a3021595796a73f0c0a"
   },
   {
     "title": "타이어에 바람 넣듯, 원전도 압력을 조절합니다 — 가압기 이야기",
@@ -10707,7 +10707,7 @@
     "url": "posts/theory/032-fission-energy-scale.html",
     "keywords": "모래알 한 알과 사막 사이 — 핵분열 한 번의 에너지, 감으로 재 보기 fission energy 200 MeV fission rate nuclear power plant uranium-235 thermal power megawatt-day energy unit conversion nuclear basics",
     "en_sha256": "18ba01abf00e78b75fb0247ef293bbdf805d8be4495b608f58e86c0b02493204",
-    "ko_sha256": "19cd3db00e7e6f60cda854aa35573c0c3546d2dfb48ac4d5b71e3ceccbd59eca"
+    "ko_sha256": "ac4bd8727275ade4b21965469490bc3b3d0087d81cd72690ef4c38cad3398cac"
   },
   {
     "title": "눌러 둔 용수철이 탁 풀리는 순간 — 핵분열 에너지는 어떤 모양으로 나올까",
