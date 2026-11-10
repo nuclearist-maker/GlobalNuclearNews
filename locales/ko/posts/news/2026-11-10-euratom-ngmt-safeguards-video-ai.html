@@ -1,0 +1,32 @@
+<figure class="article-image"><img alt="감시카메라 영상은 AI가 고르고, 판단은 검사원이: Euratom NGMT가 보여 준 안전조치 AI의 검증 방식 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/news/2026-11-10-euratom-ngmt-safeguards-video-ai/thumbnail_01.thumb.avif"/></figure>
+<p>원자력 시설의 감시카메라가 쉬지 않고 찍는 영상을 사람이 하나하나 들여다본다고 생각하면 막막하게 느껴지실 겁니다. 인공지능(AI)에게 맡기면 빨라질 것 같으면서도, 핵물질 감시를 AI가 맡아도 되는지 궁금해지기도 합니다. 2026년 11월 9일부터 12일까지 빈에서 열리는 IAEA 국제 안전조치 심포지엄은 10일 <strong>'AI와 안전조치' 세션</strong>을 편성해 책임 있는 도입, 투명성, 검증에 대한 신뢰를 논의합니다.</p>
+<p>안전조치(safeguards)는 핵물질이 신고된 평화적 용도로 쓰이는지 검증하는 활동이며, 검사원은 이 과정에서 감시카메라 영상을 검토합니다. 같은 날 발표된 유럽의 NGMT 사례로 AI와 사람이 각각 맡는 일을 살펴보겠습니다.</p>
+<h2>수많은 감시영상, AI는 어떤 장면을 골라내나</h2>
+<p>NGMT(Next Generation Model Trainer)는 유럽연합 집행위원회 공동연구센터(JRC, 이탈리아 Ispra)와 에너지총국(DG ENER, 룩셈부르크)이 협력해 개발한 감시영상 검토 지원 도구입니다. 핵심은 <strong>카메라와 관심영역마다 모델을 따로 학습</strong>한다는 점입니다. 관심영역(ROI, Region of Interest)은 화면에서 판단할 대상을 한정해 둔 구역입니다. 넓은 화면 위에 액자 틀을 하나 대고, 그 틀 안에서 일어나는 일만 지켜보는 모습을 떠올리시면 됩니다.</p>
+<p>사전학습된 특징 추출기가 영상을 비교하기 쉬운 표현으로 바꾸고, 유사/비유사 이진 분류모델이 검사원이 정한 대상과 비슷한지를 가립니다. 영상 전체를 하나의 범용 판단기로 처리하는 대신 관심영역별로 탐색하는 구조입니다.</p>
+<p>학습에는 능동학습(active learning)을 씁니다. 검사원이 사례를 '관련'과 '비관련'으로 표시(라벨링)하면 그 결과가 대화하듯 모델 학습에 반영되며, 발표자료는 이 방식으로 짧은 시간에 모델을 학습할 수 있다고 설명합니다. 모델을 잘게 나눈 배경으로는 시설마다 다른 대상물, 기존 모델이 다루지 않는 물체, 민감한 학습영상, 재학습의 필요성이 현장 제약으로 제시되었습니다. 그래서 달라지는 점은, 검사원이 긴 영상을 처음부터 끝까지 보는 대신 <strong>AI가 우선 제시한 장면부터 검토</strong>할 수 있다는 것입니다.</p>
+<p><figure class="article-image"><img alt="크레인과 운반 용기가 있는 취급동 감시화면 위에 카메라에서 검사원 판단까지의 4단계 흐름을 표시한 도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/news/2026-11-10-euratom-ngmt-safeguards-video-ai/body_01.avif"/></figure>
+<em>NGMT는 카메라·관심영역별 모델로 장면을 골라 검사원의 표준 검토 흐름에 넘깁니다 (출처: EC-JRC·DG ENER, NGMT 발표자료 재구성)</em></p>
+<h2>'오탐 최대 98% 감소'를 읽는 법: 재현율과 오탐</h2>
+<p>발표자료가 제시한 운영 현황은 배치 모델 25개, 오탐 최대 98% 감소, DG ENER의 영상 검토 지원 도구 승인, 두 번째 검사원 실습 워크숍 완료, 프랑스 시설의 첫 현장 배치입니다. 발표 초록은 여러 시설 유형에서 검증을 수행했고 Euratom 안전조치 업무에 운영 적용을 시작했다고 기술합니다.</p>
+<p>이 숫자를 읽으려면 두 용어가 필요합니다. 재현율(recall)은 실제 관련 사례 가운데 AI가 찾아낸 비율이고, 오탐(false positive)은 관련 없는 장면을 관련 있다고 표시한 경우입니다. '오탐 최대 98% 감소'를 숫자로 풀면, 같은 조건에서 오탐이 100건이었다면 최대 2건으로 줄어드는 비율입니다. 계산하면 <strong>100 × (1 − 0.98) = 2</strong>, 즉 약 2건입니다. 이 값은 비율을 환산한 예시이며, 실제 오탐 건수와 분모, 비교 절차는 공개 슬라이드에 수록되지 않았습니다.</p>
+<p>두 지표는 따로 확인합니다. 일반적으로 오탐을 줄이려고 판정 기준을 엄격하게 하면 관련 장면까지 걸러질 위험이 커질 수 있어, 발표자료도 높은 재현율을 별도 운영 요구로 명시했습니다.</p>
+<p>공개 지표 네 가지가 알려 주는 범위도 다릅니다. 배치 모델 25개는 카메라·관심영역 단위의 모델 수량이며, 시설 수는 시설·카메라·용도별 모델 목록으로 확인합니다. 높은 재현율은 운영 요구로 명시되었고, 재현율 수치와 검증 표본은 공개되지 않았습니다. DG ENER의 도구 승인은 발표자료가 설명한 기관 운영승인이며, 사용 조건과 변경 승인 범위는 승인 문서로 확인할 부분입니다. <strong>98%는 발표자료가 제시한 최대치</strong>이고, 비교 기준과 표본 규모가 공개되면 시설별 성능까지 판단할 수 있습니다.</p>
+<p><figure class="article-image"><img alt="감시영상 썸네일을 검토하는 검사원 책상 위에 오탐 감소 환산, 배치 모델 수, 재현율을 정리한 패널" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/news/2026-11-10-euratom-ngmt-safeguards-video-ai/body_02.avif"/></figure>
+<em>오탐 최대 98% 감소는 100건이 2건으로 줄어드는 비율이며, 재현율은 별도로 확인할 지표입니다 (출처: EC-JRC·DG ENER, NGMT 발표자료 재구성)</em></p>
+<h2>모델도 검증·배치·재학습 기록을 남긴다: 여섯 단계 생애주기</h2>
+<p>모델의 생애주기는 <strong>계획→학습→검증→배치→감시→재학습</strong>의 여섯 단계이며, 재학습을 마친 모델은 다시 검증 단계로 돌아갑니다. 사용사례 목록, NGMTCore, NGMTValidation, NGMTInference, NGMTMonitor가 각 단계를 지원하고, 이 흐름 전체가 거버넌스·추적성·품질보증을 유지하도록 짜여 있습니다.</p>
+<p>이 구조는 측정 장비의 교정과 비슷합니다. 장비를 손보면 다시 교정 기록을 남기고 쓰듯, 모델을 다시 학습시키면 검증 단계를 다시 거친 뒤 현장에 배치됩니다. 배치 뒤에도 감시 단계에서 성능 변화를 지켜보고, 필요하면 재학습과 재검증으로 이어집니다. 발표자료가 운영 요구로 든 투명성·추적성이 이 순환 안에서 기록으로 남습니다.</p>
+<p><figure class="article-image"><img alt="보안 서버실 위에 계획, 학습, 검증, 배치, 감시, 재학습의 6단계와 재검증 복귀를 표시한 흐름도" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/news/2026-11-10-euratom-ngmt-safeguards-video-ai/body_03.avif"/></figure>
+<em>NGMT 모델은 여섯 단계 생애주기를 돌며, 재학습한 모델은 다시 검증 단계로 돌아갑니다 (출처: EC-JRC·DG ENER, NGMT 발표자료 재구성)</em></p>
+<p>IAEA의 2025년 워크숍 보고서도 안전조치 AI의 고려사항으로 정보보안, 품질보증, IT 자원, 인간 통제를 제시해, 모델 성능과 함께 자료 보안과 변경 기록을 도입 조건으로 다룹니다.</p>
+<h2>장면은 AI가, 판단은 검사원이: 다음에 확인할 것</h2>
+<p>NGMT가 탐지한 사건·프레임은 기존의 표준 검토 흐름에 입력되고, <strong>검사원이 책임과 설명책임을 유지</strong>합니다. AI는 검토할 장면을 골라 앞에 놓아 주고, 핵물질 이용이 적정한지는 검사원이 판단하는 분업입니다. IAEA 워크숍 보고서 역시 분석가·검사원의 통제와 안전조치 결론에 대한 책임을 유지하도록 제시했고, 심포지엄 프로그램도 효율과 함께 사람의 감독과 기술적 엄밀성을 강조했습니다.</p>
+<p>현재 운영 적용을 시작한 곳은 Euratom 안전조치 업무이며, 프랑스 시설에서 첫 현장 배치가 이뤄졌습니다. 다음으로 확인할 것은 시설별 평가자료, 재현율 수치, 모델 변경 승인 절차에 관한 문서의 공개 여부입니다. 이 자료가 나오면 '최대 98%'의 조건과 관련 장면을 찾는 비율까지 읽을 수 있습니다.</p>
+<p>감시카메라 앞에서 AI는 부지런한 1차 선별자를 맡고, 마지막 판단과 책임은 사람에게 있습니다. AI 도구가 다른 안전조치 데이터로 넓어질 때 어떤 검증 절차가 따라붙는지도 앞으로 지켜볼 대목입니다.</p>
+<h2>참고 자료</h2>
+<ul>
+<li>EC-JRC / DG ENER, "NGMT: AI for Nuclear Safeguards Video Review" (IAEA Symposium on International Safeguards 발표자료), 2026-11-10 — https://conferences.iaea.org/event/470/contributions/42437/attachments/24288/43784/IAEA_Symposium_423_rev20261103.pptx</li>
+<li>IAEA, "Symposium on International Safeguards" 공식 프로그램, 2026-11-09~12 — https://conferences.iaea.org/event/470/timetable/?view=standard_inline_minutes</li>
+<li>IAEA, "Emerging Technologies Workshop: Artificial Intelligence for Nuclear Verification" — https://www.iaea.org/sites/default/files/25/07/emerging-technologies-workshop-artificial-intelligence-for-nuclear-verification.pdf</li>
+</ul>

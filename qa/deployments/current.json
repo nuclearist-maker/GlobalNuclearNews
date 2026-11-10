@@ -48,6 +48,7 @@
     "ko/archive/history-9.html",
     "ko/archive/index.html",
     "ko/archive/news-1.html",
+    "ko/archive/news-10.html",
     "ko/archive/news-2.html",
     "ko/archive/news-3.html",
     "ko/archive/news-4.html",
@@ -595,6 +596,13 @@
     "ko/posts/news/2026-11-06-norway-nac-spent-fuel-silo-contract.html",
     "ko/posts/news/2026-11-06-nuscale-ihi-component-contract-stages.html",
     "ko/posts/news/2026-11-06-oak-ridge-cpe-large-waste-box-upgrade.html",
+    "ko/posts/news/2026-11-09-calogena-cal30-heat-reactor-eu-funding.html",
+    "ko/posts/news/2026-11-09-cascade-xe100-nuclear-island-design-split.html",
+    "ko/posts/news/2026-11-09-constellation-peak-plus-270mw-contract.html",
+    "ko/posts/news/2026-11-09-xuwei-htgr-pwr-industrial-steam.html",
+    "ko/posts/news/2026-11-09-zaporizhzhia-single-offsite-power-line-diesel.html",
+    "ko/posts/news/2026-11-10-euratom-ngmt-safeguards-video-ai.html",
+    "ko/posts/news/2026-11-10-pastis-passive-safety-test-facility.html",
     "ko/posts/theory/001-mass-defect.html",
     "ko/posts/theory/002-mostly-empty-atom.html",
     "ko/posts/theory/003-inside-the-nucleus.html",
@@ -901,19 +909,44 @@
   ],
   "changed_features": [
     {
-      "path": "ko/posts/theory/032-fission-energy-scale.html",
-      "feature": "Source-backed factual correction and references",
-      "reason": "Correct fission energy, pump flow path/natural circulation, containment leak limitation; remove erroneous flow figure."
+      "path": "ko/archive/news-10.html",
+      "feature": "Korean news archive pagination",
+      "reason": "News archive gains a page as new Korean news counterparts are added."
     },
     {
-      "path": "ko/posts/theory/063-reactor-coolant-pump.html",
-      "feature": "Source-backed factual correction and references",
-      "reason": "Correct fission energy, pump flow path/natural circulation, containment leak limitation; remove erroneous flow figure."
+      "path": "ko/posts/news/2026-11-09-calogena-cal30-heat-reactor-eu-funding.html",
+      "feature": "Korean counterpart of new English news post",
+      "reason": "Pair the 2026-11-09 and 2026-11-10 English news posts with their final Korean manuscripts."
     },
     {
-      "path": "ko/posts/theory/064-containment-building.html",
-      "feature": "Source-backed factual correction and references",
-      "reason": "Correct fission energy, pump flow path/natural circulation, containment leak limitation; remove erroneous flow figure."
+      "path": "ko/posts/news/2026-11-09-cascade-xe100-nuclear-island-design-split.html",
+      "feature": "Korean counterpart of new English news post",
+      "reason": "Pair the 2026-11-09 and 2026-11-10 English news posts with their final Korean manuscripts."
+    },
+    {
+      "path": "ko/posts/news/2026-11-09-constellation-peak-plus-270mw-contract.html",
+      "feature": "Korean counterpart of new English news post",
+      "reason": "Pair the 2026-11-09 and 2026-11-10 English news posts with their final Korean manuscripts."
+    },
+    {
+      "path": "ko/posts/news/2026-11-09-xuwei-htgr-pwr-industrial-steam.html",
+      "feature": "Korean counterpart of new English news post",
+      "reason": "Pair the 2026-11-09 and 2026-11-10 English news posts with their final Korean manuscripts."
+    },
+    {
+      "path": "ko/posts/news/2026-11-09-zaporizhzhia-single-offsite-power-line-diesel.html",
+      "feature": "Korean counterpart of new English news post",
+      "reason": "Pair the 2026-11-09 and 2026-11-10 English news posts with their final Korean manuscripts."
+    },
+    {
+      "path": "ko/posts/news/2026-11-10-euratom-ngmt-safeguards-video-ai.html",
+      "feature": "Korean counterpart of new English news post",
+      "reason": "Pair the 2026-11-09 and 2026-11-10 English news posts with their final Korean manuscripts."
+    },
+    {
+      "path": "ko/posts/news/2026-11-10-pastis-passive-safety-test-facility.html",
+      "feature": "Korean counterpart of new English news post",
+      "reason": "Pair the 2026-11-09 and 2026-11-10 English news posts with their final Korean manuscripts."
     }
   ],
   "reuse_completed_cumulative_qa": true,
