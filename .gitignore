@@ -3,6 +3,11 @@ __pycache__/
 temp/
 _site/
 /local-source-archive/
+# Internal QA, approval and review records are private (moved 2026-11-10).
+# They live in ../data/qa/GlobalNuclearNews/qa/ — see tools/qa_paths.py.
+# Only qa/deployments/ stays public because CI reads it.
+/qa/*
+!/qa/deployments/
 # Future QA screenshots and copied release sites belong in Actions artifacts.
 # Existing tracked evidence remains versioned.
 /qa/**/*.png

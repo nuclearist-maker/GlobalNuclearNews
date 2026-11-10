@@ -9,6 +9,8 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
+from qa_paths import qa_base
+
 
 def digest(path: Path) -> str:
     text_extensions = {".html", ".css", ".js", ".json", ".md", ".py", ".yml", ".yaml"}
@@ -150,7 +152,7 @@ def main() -> int:
     legacy = (args.first, args.last) == (1, 50)
     if legacy and args.audit:
         raise SystemExit('FAIL: legacy 001-050 uses its existing MD audits; --audit is not accepted')
-    manifest = root / f"qa/theory/visual_approval_{args.first:03d}_{args.last:03d}.json"
+    manifest = qa_base(root) / f"qa/theory/visual_approval_{args.first:03d}_{args.last:03d}.json"
     current = snapshot(root, args.first, args.last)
 
     if args.seal:
@@ -160,9 +162,9 @@ def main() -> int:
         if not legacy:
             bindings = audit_bindings(root, args.audit, current)
         audits = [
-            root / "qa/theory/visual_audit_001_017.md",
-            root / "qa/theory/visual_audit_018_034.md",
-            root / "qa/theory/visual_audit_035_050.md",
+            qa_base(root) / "qa/theory/visual_audit_001_017.md",
+            qa_base(root) / "qa/theory/visual_audit_018_034.md",
+            qa_base(root) / "qa/theory/visual_audit_035_050.md",
         ]
         for audit in audits if legacy else []:
             if not audit.exists() or "종합 판정: **PASS**" not in audit.read_text(encoding="utf-8"):

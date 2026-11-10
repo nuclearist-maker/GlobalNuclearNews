@@ -228,7 +228,8 @@ def main():
     args=parser.parse_args()
     if not 1<=args.first<=args.last: parser.error('require 1 <= first <= last')
     root=args.root.resolve();result=audit(root,args.first,args.last,args.dhash_threshold,None if args.no_cache else args.cache_dir)
-    out=root/f'qa/theory/cumulative_{args.first:03d}_{args.last:03d}'
+    from qa_paths import qa_base
+    out=qa_base(root)/f'qa/theory/cumulative_{args.first:03d}_{args.last:03d}'
     out.parent.mkdir(parents=True,exist_ok=True)
     out.with_suffix('.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     lines=[f'# 누적 QA {args.first:03d}–{args.last:03d}', '',f"판정: **{result['status']}**. 자동 PASS는 독립 승인이나 게시 승인이 아닙니다.",'',f"차단 후보 {len(result['findings'])}건 / 수동 확인 {len(result['manual_review'])}건",'','## 차단 후보']

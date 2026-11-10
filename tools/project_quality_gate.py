@@ -8,6 +8,7 @@ import hashlib
 import json
 from pathlib import Path
 import sys
+from qa_paths import is_private_qa, qa_base
 
 SITE = Path(__file__).resolve().parents[1]
 POLICY = SITE / 'policies/quality_gates.json'
@@ -31,6 +32,8 @@ def read(path):
     return json.loads(path.read_text(encoding='utf-8-sig'))
 
 def local(root, name):
+    if is_private_qa(name):
+        root = qa_base(root)
     p = (root / name).resolve()
     if not p.is_relative_to(root.resolve()):
         raise ValueError('Path escapes declared root: ' + str(name))
@@ -224,8 +227,9 @@ def site_errors(site):
                         if current.is_file() and digest(current)==h:covered[path]=h
                 except (KeyError,ValueError,TypeError,OSError) as e:
                     errors.append('Historical release: '+str(e))
-    for f in (site/'qa/releases').glob('*.json'):
-        if f.relative_to(site).as_posix() in historical:continue
+    qa_root=qa_base(site)
+    for f in (qa_root/'qa/releases').glob('*.json'):
+        if f.relative_to(qa_root).as_posix() in historical:continue
         r=read(f)
         kind=r.get('kind')
         if kind not in ('theory','news'):

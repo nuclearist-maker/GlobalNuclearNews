@@ -33,7 +33,8 @@ def main():
         if len(posts)>=3 and any(args.first<=n<=args.last for n in posts):
             findings.append(f'반복문장 {posts}: {vals[0][1]}')
     result={'range':[args.first,args.last],'compare_range':[args.compare_first,args.last],'status':'PASS' if not findings else 'FAIL','finding_count':len(findings),'posts':per,'findings':findings}
-    out=ROOT/f'qa/theory/style_qa_{args.first:03d}_{args.last:03d}.json'; out.parent.mkdir(parents=True,exist_ok=True); out.write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+    from qa_paths import qa_base
+    out=qa_base(ROOT)/f'qa/theory/style_qa_{args.first:03d}_{args.last:03d}.json'; out.parent.mkdir(parents=True,exist_ok=True); out.write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps({'status':result['status'],'finding_count':len(findings),'output':str(out)},ensure_ascii=False)); sys.exit(1 if findings else 0)
 
 if __name__=='__main__': main()

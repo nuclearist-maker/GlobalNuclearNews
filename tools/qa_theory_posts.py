@@ -10,6 +10,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 from PIL import Image
 from qa_theory_citations import audit_html
+from qa_paths import qa_base
 
 
 @dataclass
@@ -177,7 +178,7 @@ def main() -> int:
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
     result = audit(args.root.resolve(), args.first, args.last)
-    output = args.output or args.root / "qa" / "theory" / f"independent_qa_{args.first:03d}_{args.last:03d}.json"
+    output = args.output or qa_base(args.root) / "qa" / "theory" / f"independent_qa_{args.first:03d}_{args.last:03d}.json"
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     markdown = output.with_suffix(".md")
