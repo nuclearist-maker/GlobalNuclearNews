@@ -1,9 +1,24 @@
 """Validate Claude review provenance and coverage, not scientific truth."""
 from datetime import datetime
 from uuid import UUID
+import hashlib
+import json
 from project_quality_gate import digest, local, read
 
 CHECKPOINTS = ['direction', 'plan', 'research', 'design', 'draft', 'final']
+
+
+def input_manifest(inputs):
+    if not isinstance(inputs, dict) or not inputs:
+        raise ValueError('nonempty input map required')
+    if any(not isinstance(p, str) or not p or not isinstance(h, str) or
+           len(h) != 64 or any(c not in '0123456789abcdef' for c in h)
+           for p, h in inputs.items()):
+        raise ValueError('invalid input path/hash')
+    rows = [{'id': f'I{i:04d}', 'path': p, 'sha256': inputs[p]}
+            for i, p in enumerate(sorted(inputs), 1)]
+    payload = json.dumps(rows, ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+    return hashlib.sha256(payload.encode('utf-8')).hexdigest(), rows
 
 
 def response_errors(raw, request):
@@ -22,7 +37,19 @@ def response_errors(raw, request):
         return errors + ['missing structured_output']
     if result.get('verdict') != 'PASS' or result.get('findings') != [] or result.get('limitations') != []:
         errors.append('unresolved findings, limitations or non-PASS review')
-    if result.get('reviewed_inputs') != request.get('inputs'):
+    if request.get('ack_format') == 'manifest-v1':
+        try:
+            sha, rows = input_manifest(request.get('inputs'))
+            ids = result.get('reviewed_ids')
+            if (result.get('reviewed_manifest_sha256') != sha or not isinstance(ids, list)
+                    or any(not isinstance(i, str) for i in ids)
+                    or len(ids) != len(rows) or sorted(ids) != [r['id'] for r in rows]):
+                errors.append('reviewed manifest or IDs do not match request')
+        except ValueError as exc:
+            errors.append(str(exc))
+    elif request.get('ack_format', 'full-map-v1') != 'full-map-v1':
+        errors.append('unknown acknowledgement format')
+    elif result.get('reviewed_inputs') != request.get('inputs'):
         errors.append('reviewed inputs do not match request')
     if result.get('checkpoint') != request.get('checkpoint'):
         errors.append('checkpoint mismatch')

@@ -22,11 +22,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+      - name: Fetch editorial maintenance comparison tree
+        shell: bash
+        run: |
+          BASE=$(python -c "import json; m=json.load(open('qa/deployments/current.json')); print(m.get('base_commit','') if m.get('kind')=='editorial-maintenance' else '')")
+          if [ -n "$BASE" ]; then
+            [[ "$BASE" =~ ^[0-9a-f]{40}$ ]] || exit 1
+            git fetch --no-tags --depth=1 origin "$BASE"
+          fi
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - name: Install HTML parser
         run: python -m pip install beautifulsoup4==4.14.3
+      - name: Test editorial deployment guards
+        run: python -m unittest discover -s tools -p test_editorial_deployment_scope.py
       - name: Package public site files (fails on any missing linked file)
         run: python tools/build_en_site.py
       - name: Validate search metadata and crawlable links

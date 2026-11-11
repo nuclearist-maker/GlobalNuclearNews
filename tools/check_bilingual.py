@@ -6,14 +6,24 @@ from bs4 import BeautifulSoup,Comment,Doctype
 from build_bilingual import BASE,KBASE,PREFIX,vocabulary,translate,digest
 from search_discovery import content_html_files,posts_from
 
+def localization_scope_errors(scope,actual):
+    errors=[]
+    if scope.get('new_posts')!=[]:errors.append('Invalid localization deployment scope')
+    if scope.get('kind')=='language-edition':
+        if scope.get('new_localized_pages')!=actual:errors.append('Localization deployment coverage mismatch')
+    elif scope.get('kind')=='editorial-maintenance':
+        existing=set(actual)|{p[3:] for p in actual if p.startswith('ko/')}
+        if any(x.get('path') not in existing for x in scope.get('changed_features',[])):errors.append('Maintenance counterpart missing')
+    else:errors.append('Invalid localization deployment kind')
+    if not scope.get('changed_features') or not all(x.get('path') and x.get('feature') and x.get('reason') for x in scope['changed_features']):errors.append('Missing changed feature reasons')
+    return errors
+
 def check(root,source=None):
     source=source or Path(__file__).resolve().parents[1]
     en=posts_from(root);ko=posts_from(root/'ko');words=vocabulary(source)
     scope=json.loads((source/'qa/deployments/current.json').read_text(encoding='utf8'))
-    assert scope.get('kind')=='language-edition' and scope.get('new_posts')==[], 'Invalid localization deployment scope'
     actual=sorted(p.relative_to(root).as_posix() for p in content_html_files(root/'ko'))
-    assert scope.get('new_localized_pages')==actual, 'Localization deployment coverage mismatch'
-    assert scope.get('changed_features') and all(x.get('path') and x.get('feature') and x.get('reason') for x in scope['changed_features']), 'Missing changed feature reasons'
+    assert not localization_scope_errors(scope,actual),localization_scope_errors(scope,actual)
     assert {p['url'] for p in en}=={p['url'] for p in ko},'Different article sets'
     checked=0;links=0;missing=[];untranslated=[]
     for path in content_html_files(root):

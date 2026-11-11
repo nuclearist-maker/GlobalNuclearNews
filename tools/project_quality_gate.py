@@ -191,6 +191,9 @@ def validate(record, root, kind, stage, required_paths=(), *, public_site=False,
             accepted = True
         if not accepted:
             errors.append('COMMON-01: missing valid user approval for ' + scope)
+    if kind == 'editorial-maintenance':
+        from editorial_maintenance_gate import maintenance_errors
+        errors.extend(maintenance_errors(record, root))
     return errors
 
 def site_errors(site):
@@ -264,7 +267,7 @@ def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--record',type=Path)
     ap.add_argument('--root',type=Path,default=Path.cwd())
-    ap.add_argument('--kind',choices=['brief','report','theory','news'])
+    ap.add_argument('--kind',choices=['brief','report','theory','news','editorial-maintenance'])
     ap.add_argument('--stage',choices=['research','generate','draft','finalize','publish'])
     ap.add_argument('--require-file',type=Path,action='append',default=[])
     ap.add_argument('--site',action='store_true')

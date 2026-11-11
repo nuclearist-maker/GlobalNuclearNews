@@ -2,7 +2,8 @@
   "independent": [
     "THEORY-04",
     "NEWS-04",
-    "COMMON-05"
+    "COMMON-05",
+    "MAINT-03"
   ],
   "brief": {
     "generate": {
@@ -180,6 +181,25 @@
         "research",
         "design",
         "draft",
+        "final"
+      ]
+    }
+  },
+  "editorial-maintenance": {
+    "publish": {
+      "approvals": [
+        "direction",
+        "publish"
+      ],
+      "checks": [
+        "MAINT-01",
+        "MAINT-02",
+        "MAINT-03",
+        "MAINT-04",
+        "COMMON-05"
+      ],
+      "claude_checkpoints": [
+        "design",
         "final"
       ]
     }
