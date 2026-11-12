@@ -12118,5 +12118,35 @@
     "keywords": "펌프 없이 잔열을 빼는 SMR 안전계통, 무엇으로 확인하나: 프랑스 PASTIS 시험시설 개소 Passive Safety Natural Circulation PASTIS ASNR Small Modular Reactor SMR Decay Heat Removal Wall Condensation EASISMR CATHARE Thermal Hydraulics Safety Analysis Codes Nuclear Safety Nuclear Energy",
     "en_sha256": "60e5ec76ba25d4a107d86956aba98e12946691394b899f6e784a27b18bf308e4",
     "ko_sha256": "8a26a32c93f78bb2b5944193cfa0b0cdb156d6d3d1b91f6145475ce2c1274d57"
+  },
+  {
+    "title": "캐나다 첫 SMR, 2030년·77억 달러 목표를 다시 계산한다: Darlington BWRX-300 재평가",
+    "date": "2026.11.11",
+    "displayDate": "2026.11.11",
+    "publishedAt": "2026-11-12T01:14:33Z",
+    "section": "news",
+    "category": "소형모듈원자로(SMR)",
+    "summary": "소형모듈원전(SMR, Small Modular Reactor)은 작은 원자로를 여러 기 지어 전력을 늘리는 방식으로 주목받고 있습니다. 캐나다가 처음으로 짓고 있는 SMR이 일정과 비용을 다시 따져 보기로 했다는 소식이 나왔습니다. 무엇이 일정을 흔드는지, 77억 캐나다달러 안에 무엇이 들어 있는지 차근차근 풀어 보겠습니다.",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/news/2026-11-11-darlington-bwrx300-cost-schedule-review/thumbnail_01.thumb.avif",
+    "thumbnailAlt": "캐나다 첫 SMR, 2030년·77억 달러 목표를 다시 계산한다: Darlington BWRX-300 재평가 대표 이미지",
+    "url": "posts/news/2026-11-11-darlington-bwrx300-cost-schedule-review.html",
+    "keywords": "캐나다 첫 SMR, 2030년·77억 달러 목표를 다시 계산한다: Darlington BWRX-300 재평가 SMR small modular reactor BWRX-300 Darlington OPG CNSC regulatory hold point project cost first-of-a-kind FOAK design maturity Canada nuclear nuclear energy",
+    "en_sha256": "ad30113bb04016eb486f1bc01838401ae0fdab94ac034a1c1ae0429d9c250915",
+    "ko_sha256": "9e1254f7c91e3a4e77286a040697150a70ea606b63f748053972c09b05a59cd1"
+  },
+  {
+    "title": "버려질 뻔한 라듐-226이 항암 동위원소 원료로: NIST·DOE 인계는 어떻게 이뤄졌나",
+    "date": "2026.11.11",
+    "displayDate": "2026.11.11",
+    "publishedAt": "2026-11-12T01:14:33Z",
+    "section": "news",
+    "category": "발전 외 이용",
+    "summary": "연구소에 오래 보관된 방사성물질이라면 언젠가 폐기물로 처리될 짐부터 떠오르실 겁니다. 그런데 같은 물질이 암 치료용 동위원소를 만드는 원료가 될 수 있다면 이야기가 달라집니다. 미국 국립표준기술연구소(NIST)가 2026년 11월 10일 공개한 라듐-226 인계 사례가 그렇습니다. 무엇이 필요했는지 물질의 성질, 운송 규정, 비용 순으로 짚어 보겠습니다.",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/news/2026-11-11-nist-radium-226-medical-isotope-reuse/thumbnail_01.thumb.avif",
+    "thumbnailAlt": "버려질 뻔한 라듐-226이 항암 동위원소 원료로: NIST·DOE 인계는 어떻게 이뤄졌나 대표 이미지",
+    "url": "posts/news/2026-11-11-nist-radium-226-medical-isotope-reuse.html",
+    "keywords": "버려질 뻔한 라듐-226이 항암 동위원소 원료로: NIST·DOE 인계는 어떻게 이뤄졌나 Radium-226 Actinium-225 Medical Isotopes Radiopharmaceuticals Half-Life NIST DOE PNNL Type A Package Special Form Radioactive Material Radioactive Material Transport NRC PHMSA Life-Cycle Cost Nuclear Energy",
+    "en_sha256": "db7c3d06c23fadd6c9cfdde911b0f1e35ee7de61767ff2d940df51a89ced742b",
+    "ko_sha256": "34c3d8ce24f20d1b955e7ba77c746298fbc8e01151e03d1580e72321c1a947ef"
   }
 ]

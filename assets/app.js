@@ -1,5 +1,31 @@
 const posts = [
   {
+    "title": "From Legacy Waste to Cancer-Fighting Feedstock: How NIST Handed Its Radium-226 to DOE",
+    "date": "2026.11.11",
+    "displayDate": "2026.11.11",
+    "publishedAt": "2026-11-12T01:14:33Z",
+    "section": "news",
+    "category": "Non-power Uses",
+    "summary": "On November 10, 2026, NIST described how radium-226 stored at its Gaithersburg campus, unused in research for about ten years, was transferred for reuse as feedstock for medical isotope production through DOE's Isotope R&D and Production office, with PNNL handling, packaging and shipping. With a 1,600-year half-life, ten years of storage lowers activity by only about 0.4%, so the handover follows NRC and DOT transport rules from package classification to shipping certification.",
+    "thumbnail": "assets/images/news/2026-11-11-nist-radium-226-medical-isotope-reuse/thumbnail_01.webp",
+    "thumbnailAlt": "A technician with a survey meter beside a heavy lead-shielded container in a bright lab, with empty medical vials behind",
+    "url": "posts/news/2026-11-11-nist-radium-226-medical-isotope-reuse.html",
+    "keywords": "Radium-226 Actinium-225 Medical Isotopes Radiopharmaceuticals Half-Life NIST DOE PNNL Type A Package Special Form Radioactive Material Radioactive Material Transport NRC PHMSA Life-Cycle Cost Nuclear Energy"
+  },
+  {
+    "title": "Canada's First SMR Recalculates Its October 2030 and C$7.7 Billion Targets: Inside the Darlington BWRX-300 Review",
+    "date": "2026.11.11",
+    "displayDate": "2026.11.11",
+    "publishedAt": "2026-11-12T01:14:33Z",
+    "section": "news",
+    "category": "SMR",
+    "summary": "On November 10, 2026, Ontario Power Generation said the first BWRX-300 unit at Darlington is expected to be challenged to meet its October 2030 commercial operation target and C$7.7 billion budget, as ongoing first-of-a-kind engineering affects construction and supply chain performance. The budget combines C$6.1 billion for the first unit and C$1.6 billion of common facilities for four planned units, including interest. A comprehensive reassessment is expected to be substantially complete by mid-2027.",
+    "thumbnail": "assets/images/news/2026-11-11-darlington-bwrx300-cost-schedule-review/thumbnail_01.webp",
+    "thumbnailAlt": "A lakeside nuclear construction site with a tower crane above a circular reactor building shaft and a rising turbine hall",
+    "url": "posts/news/2026-11-11-darlington-bwrx300-cost-schedule-review.html",
+    "keywords": "SMR small modular reactor BWRX-300 Darlington OPG CNSC regulatory hold point project cost first-of-a-kind FOAK design maturity Canada nuclear nuclear energy"
+  },
+  {
     "title": "How Do You Prove a Pumpless SMR Safety System Works? France Opens the PASTIS Test Facility",
     "date": "2026.11.10",
     "displayDate": "2026.11.10",
