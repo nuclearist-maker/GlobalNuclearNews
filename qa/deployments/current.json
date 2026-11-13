@@ -611,6 +611,10 @@
     "ko/posts/news/2026-11-12-oklo-centrus-haleu-firm-contract-prepayment.html",
     "ko/posts/news/2026-11-12-oklo-groves-1-final-hold-point.html",
     "ko/posts/news/2026-11-12-uk-step-fusion-engineering-tender.html",
+    "ko/posts/news/2026-11-13-akkuyu-1-containment-strength-leak-tests.html",
+    "ko/posts/news/2026-11-13-bwxt-cambridge-expansion-component-supply.html",
+    "ko/posts/news/2026-11-13-cop31-35-by-35-electrification-nuclear.html",
+    "ko/posts/news/2026-11-13-mochovce-4-power-ascension-tests.html",
     "ko/posts/theory/001-mass-defect.html",
     "ko/posts/theory/002-mostly-empty-atom.html",
     "ko/posts/theory/003-inside-the-nucleus.html",
@@ -917,84 +921,79 @@
   ],
   "changed_features": [
     {
-      "path": "ko/posts/news/2026-11-12-oklo-centrus-haleu-firm-contract-prepayment.html",
+      "path": "ko/posts/news/2026-11-13-akkuyu-1-containment-strength-leak-tests.html",
       "feature": "Korean counterpart of new English news post",
-      "reason": "Pair the 2026-11-12 English news posts with their final Korean manuscripts."
+      "reason": "Pair the 2026-11-13 English news posts with their final Korean manuscripts."
     },
     {
-      "path": "ko/posts/news/2026-11-12-house-reprocessing-enrichment-bills.html",
+      "path": "ko/posts/news/2026-11-13-mochovce-4-power-ascension-tests.html",
       "feature": "Korean counterpart of new English news post",
-      "reason": "Pair the 2026-11-12 English news posts with their final Korean manuscripts."
+      "reason": "Pair the 2026-11-13 English news posts with their final Korean manuscripts."
     },
     {
-      "path": "ko/posts/news/2026-11-12-uk-step-fusion-engineering-tender.html",
+      "path": "ko/posts/news/2026-11-13-bwxt-cambridge-expansion-component-supply.html",
       "feature": "Korean counterpart of new English news post",
-      "reason": "Pair the 2026-11-12 English news posts with their final Korean manuscripts."
+      "reason": "Pair the 2026-11-13 English news posts with their final Korean manuscripts."
     },
     {
-      "path": "ko/posts/news/2026-11-12-oklo-groves-1-final-hold-point.html",
+      "path": "ko/posts/news/2026-11-13-cop31-35-by-35-electrification-nuclear.html",
       "feature": "Korean counterpart of new English news post",
-      "reason": "Pair the 2026-11-12 English news posts with their final Korean manuscripts."
-    },
-    {
-      "path": "ko/posts/news/2026-11-12-oak-ridge-isotope-row-demolition.html",
-      "feature": "Korean counterpart of new English news post",
-      "reason": "Pair the 2026-11-12 English news posts with their final Korean manuscripts."
+      "reason": "Pair the 2026-11-13 English news posts with their final Korean manuscripts."
     },
     {
       "path": "ko/archive/news-1.html",
       "feature": "Korean news archive pagination",
-      "reason": "News archive listings shift as five new Korean news posts are added."
+      "reason": "News archive listings shift as 4 new Korean news post(s) are added."
     },
     {
       "path": "ko/archive/news-10.html",
       "feature": "Korean news archive pagination",
-      "reason": "News archive listings shift as five new Korean news posts are added."
+      "reason": "News archive listings shift as 4 new Korean news post(s) are added."
     },
     {
       "path": "ko/archive/news-11.html",
       "feature": "Korean news archive pagination",
-      "reason": "News archive listings shift as five new Korean news posts are added."
+      "reason": "News archive listings shift as 4 new Korean news post(s) are added."
     },
     {
       "path": "ko/archive/news-2.html",
       "feature": "Korean news archive pagination",
-      "reason": "News archive listings shift as five new Korean news posts are added."
+      "reason": "News archive listings shift as 4 new Korean news post(s) are added."
     },
     {
       "path": "ko/archive/news-3.html",
       "feature": "Korean news archive pagination",
-      "reason": "News archive listings shift as five new Korean news posts are added."
+      "reason": "News archive listings shift as 4 new Korean news post(s) are added."
     },
     {
       "path": "ko/archive/news-4.html",
       "feature": "Korean news archive pagination",
-      "reason": "News archive listings shift as five new Korean news posts are added."
+      "reason": "News archive listings shift as 4 new Korean news post(s) are added."
     },
     {
       "path": "ko/archive/news-5.html",
       "feature": "Korean news archive pagination",
-      "reason": "News archive listings shift as five new Korean news posts are added."
+      "reason": "News archive listings shift as 4 new Korean news post(s) are added."
     },
     {
       "path": "ko/archive/news-6.html",
       "feature": "Korean news archive pagination",
-      "reason": "News archive listings shift as five new Korean news posts are added."
+      "reason": "News archive listings shift as 4 new Korean news post(s) are added."
     },
     {
       "path": "ko/archive/news-7.html",
       "feature": "Korean news archive pagination",
-      "reason": "News archive listings shift as five new Korean news posts are added."
+      "reason": "News archive listings shift as 4 new Korean news post(s) are added."
     },
     {
       "path": "ko/archive/news-8.html",
       "feature": "Korean news archive pagination",
-      "reason": "News archive listings shift as five new Korean news posts are added."
+      "reason": "News archive listings shift as 4 new Korean news post(s) are added."
     },
     {
       "path": "ko/archive/news-9.html",
       "feature": "Korean news archive pagination",
-      "reason": "News archive listings shift as five new Korean news posts are added."
+      "reason": "News archive listings shift as 4 new Korean news post(s) are added."
     }
   ],
   "reuse_completed_cumulative_qa": true,

@@ -1,5 +1,57 @@
 const posts = [
   {
+    "title": "From 35% to Full Power: How Mochovce 4 Moves Through Power Ascension Testing",
+    "date": "2026.11.13",
+    "displayDate": "2026.11.13",
+    "publishedAt": "2026-11-13T23:19:35Z",
+    "section": "news",
+    "category": "Large Reactors",
+    "summary": "Slovenské elektrárne reported that Mochovce Unit 4, a 471 MW VVER-440/V213, reached 35% reactor power on 12 November 2026 during power ascension commissioning. After tests at each level are evaluated, power will rise to 55, 75, 90 and 100%, ending with a 144-hour full-power run under design conditions. The unit first fed the grid on 15 October at about 20% reactor power and had generated 16,184.77 MWh by 8 November. Slovakia's regulator ÚJD SR approved the power ascension phase on 18 September after re-evaluating physics test results against corrected criteria.",
+    "thumbnail": "assets/images/news/2026-11-13-mochovce-4-power-ascension-tests/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail: Mochovce plant with cooling towers and the power ascension title",
+    "url": "posts/news/2026-11-13-mochovce-4-power-ascension-tests.html",
+    "keywords": "Mochovce Mochovce 4 power ascension testing commissioning VVER-440 Slovakia nuclear Slovenske Elektrarne UJD SR full-power demonstration run grid synchronization physics testing IAEA SSG-28 nuclear power"
+  },
+  {
+    "title": "The 35% in COP31's \"35-by-35\": Electrification Targets and the Nuclear Industry's Ask",
+    "date": "2026.11.13",
+    "displayDate": "2026.11.13",
+    "publishedAt": "2026-11-13T23:19:35Z",
+    "section": "news",
+    "category": "Policy & Regulation",
+    "summary": "At COP31 in Antalya, Türkiye, industry groups urged that nuclear energy's contribution be recognized in the 35-by-35 electrification goal, World Nuclear News reported on 13 November 2026. The goal is to raise electricity's share of final energy consumption to 35% by 2035, framed by the UNFCCC as a shared goal that takes national circumstances into account. The World Nuclear Association called for nuclear to be assessed on equal terms with other low-carbon sources in taxonomies, lending policies and climate finance. Panelists said turning the goal into investment decisions by 2030 requires siting, regulatory capacity, fuel and manufacturing supply chains, and workforce planning.",
+    "thumbnail": "assets/images/news/2026-11-13-cop31-35-by-35-electrification-nuclear/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail: coastal city lights and power lines with the 35-by-35 title",
+    "url": "posts/news/2026-11-13-cop31-35-by-35-electrification-nuclear.html",
+    "keywords": "COP31 35-by-35 electrification final energy primary energy World Nuclear Association UNFCCC climate finance taxonomy nuclear energy heat pumps electric vehicles multi-unit programs"
+  },
+  {
+    "title": "A 40% Bigger Clean Room: What BWXT's Cambridge Expansion Means for Nuclear Component Supply",
+    "date": "2026.11.13",
+    "displayDate": "2026.11.13",
+    "publishedAt": "2026-11-13T23:19:35Z",
+    "section": "news",
+    "category": "SMR",
+    "summary": "On 12 November 2026, BWXT announced completion of a roughly C$80 million expansion of its nuclear component plant in Cambridge, Ontario, adding 55,000 square feet of manufacturing space and expanding its commercial nuclear clean room area by 40%. The company created 200 long-term jobs during the expansion and aims to hire 200 more over the next year. Work under way includes 48 steam generators for the Pickering refurbishment, contracted through CanAtom, and the reactor pressure vessel for the first BWRX-300 at Darlington, contracted by GE Hitachi. Annual output gains and lead-time reductions have not been published.",
+    "thumbnail": "assets/images/news/2026-11-13-bwxt-cambridge-expansion-component-supply/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail: heavy fabrication hall with a large vessel shell and the BWXT expansion title",
+    "url": "posts/news/2026-11-13-bwxt-cambridge-expansion-component-supply.html",
+    "keywords": "BWXT Cambridge Nuclear Component Manufacturing Steam Generator Reactor Pressure Vessel Pickering Darlington BWRX-300 Can Atom OPG Clean Room Supply Chain Canada Nuclear Nuclear Energy"
+  },
+  {
+    "title": "Pressurizing a Reactor Building to 0.46 MPa: Akkuyu 1's Containment Tests and the Next Gate",
+    "date": "2026.11.13",
+    "displayDate": "2026.11.13",
+    "publishedAt": "2026-11-13T23:19:35Z",
+    "section": "news",
+    "category": "Large Reactors",
+    "summary": "On 12 November 2026, Rosatom announced that strength and leak-tightness tests of the inner containment at Akkuyu Unit 1, a VVER-1200 in Türkiye, were complete after eight days of continuous testing. Air pressure was raised step by step to 0.46 MPa, 15% above the 0.4 MPa design pressure, while leak tightness was evaluated at design pressure and below atmospheric pressure. Measured leak rates and detailed acceptance criteria have not been published. The regulator NDK granted a commissioning licence in November 2023 covering pre-fuel-loading tests, and its review of the operating licence application began on 15 June 2026.",
+    "thumbnail": "assets/images/news/2026-11-13-akkuyu-1-containment-strength-leak-tests/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail: coastal reactor building with the title on Akkuyu Unit 1 containment tests",
+    "url": "posts/news/2026-11-13-akkuyu-1-containment-strength-leak-tests.html",
+    "keywords": "Akkuyu containment reactor building strength test leak-tightness test VVER-1200 commissioning functional testing operating licence NDK IAEA SSG-28 Türkiye nuclear nuclear regulation nuclear power"
+  },
+  {
     "title": "Inside the UK's £115 Million STEP Fusion Engineering Tender: Five Lots, One Power Plant",
     "date": "2026.11.12",
     "displayDate": "2026.11.12",
