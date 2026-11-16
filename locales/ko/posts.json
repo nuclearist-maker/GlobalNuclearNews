@@ -12283,5 +12283,50 @@
     "keywords": "COP31 '35-by-35'의 35%는 무엇의 35%인가: 전력화 목표와 원자력 업계의 요구 COP31 35-by-35 electrification final energy primary energy World Nuclear Association UNFCCC climate finance taxonomy nuclear energy heat pumps electric vehicles multi-unit programs",
     "en_sha256": "4241cd291f43bc5534bad54fb5c2c3d6783edbde4f3b9bbd3c42ae9e235896c2",
     "ko_sha256": "fb6bde0de2176da933e9538c91fa80b61bc818718a9c225144ca2d10d9112f41"
+  },
+  {
+    "title": "선진원자로 연료를 어디서 구하나: newcleo·Curio 재활용 원료 협력과 Blykalla·Urenco HALEU 농축계약",
+    "date": "2026.11.16",
+    "displayDate": "2026.11.16",
+    "publishedAt": "2026-11-16T21:38:23Z",
+    "section": "news",
+    "category": "핵연료주기",
+    "summary": "새로운 원자로 소식을 접하면 \"그 원자로에 넣을 연료는 어디서 오나요?\"라는 질문이 자연스럽게 따라옵니다. 2026년 11월 16일, 이 질문과 맞닿은 소식 두 건이 같은 날 나왔습니다. 하나는 사용후핵연료에서 회수한 물질을 새 연료의 원료로 쓰려는 협력이고, 다른 하나는 새로 농축한 우라늄을 확보하는 계약입니다. 두 발표가 연료 확보의 어느 단계에 와 있는지, 재활용 원료가 연료…",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/news/2026-11-16-recycled-mox-feed-and-haleu-enrichment/thumbnail_01.thumb.avif",
+    "thumbnailAlt": "선진원자로 연료를 어디서 구하나: newcleo·Curio 재활용 원료 협력과 Blykalla·Urenco HALEU 농축계약 대표 이미지",
+    "url": "posts/news/2026-11-16-recycled-mox-feed-and-haleu-enrichment.html",
+    "keywords": "선진원자로 연료를 어디서 구하나: newcleo·Curio 재활용 원료 협력과 Blykalla·Urenco HALEU 농축계약 MOX fuel HALEU nuclear fuel recycling used nuclear fuel newcleo Curio Nu Cycle Blykalla Urenco SEALER lead-cooled fast reactor MC&A IAEA NRC nuclear energy",
+    "en_sha256": "e37d0a103dde11a5170b6166317e9f1894d4a3966ee5629c617d967925a4b428",
+    "ko_sha256": "edc32e8ec3683e3cc1f9b3d42af386762f7c97bdabd4c9c4cef63a66d51359b7"
+  },
+  {
+    "title": "페블베드 원자로가 NRC에 먼저 내는 자료: Tesseract TGR 규제협의계획과 연료·흑연 적격성",
+    "date": "2026.11.16",
+    "displayDate": "2026.11.16",
+    "publishedAt": "2026-11-16T21:38:23Z",
+    "section": "news",
+    "category": "차세대 원자로",
+    "summary": "새 원자로 소식을 들으면 \"그래서 언제 지어지나요?\"가 먼저 궁금하실 겁니다. 원자로가 지어지기 전에는 규제기관과 긴 대화가 먼저 이어지고, Tesseract TGR 소식은 그 대화의 초입을 보여 줍니다. 이번 발표가 허가 절차의 어디쯤인지, 새 연료와 흑연이 \"쓸 만하다\"는 것은 무엇으로 증명하는지 차례로 풀어 보겠습니다.",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/news/2026-11-16-tesseract-tgr-fuel-graphite-qualification/thumbnail_01.thumb.avif",
+    "thumbnailAlt": "페블베드 원자로가 NRC에 먼저 내는 자료: Tesseract TGR 규제협의계획과 연료·흑연 적격성 대표 이미지",
+    "url": "posts/news/2026-11-16-tesseract-tgr-fuel-graphite-qualification.html",
+    "keywords": "페블베드 원자로가 NRC에 먼저 내는 자료: Tesseract TGR 규제협의계획과 연료·흑연 적격성 Tesseract TGR Thorium Atomics Regulatory Engagement Plan Fuel Qualification Graphite Qualification TRISO Fuel Pebble Bed Reactor High-Temperature Gas-Cooled Reactor NRC NUREG-2246 10 CFR Part 53 Pre-Application Engagement Idaho National Laboratory Thorium Nuclear Energy",
+    "en_sha256": "21c6991e922c9149f97b92192a6ef5167d0344145ebc3c6a17becba8406c1dbe",
+    "ko_sha256": "869625c138aff3ef052ffc594894f981897ea4979de3602d32ce8697f3d9cc4c"
+  },
+  {
+    "title": "영국 원자력 인력 102,867명, 이 숫자는 어떻게 만들어졌나: 직접 보고와 공급망 추정",
+    "date": "2026.11.16",
+    "displayDate": "2026.11.16",
+    "publishedAt": "2026-11-16T21:38:23Z",
+    "section": "news",
+    "category": "정책 및 규제",
+    "summary": "\"영국 원자력 인력이 1년 새 7% 넘게 늘었다.\" 11월 13일 NucNet이 전한 소식입니다. 원전을 새로 짓는 나라가 늘면서 \"일할 사람은 충분한가\"라는 질문에 반가운 답처럼 보입니다.",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/news/2026-11-16-uk-nuclear-workforce-102867/thumbnail_01.thumb.avif",
+    "thumbnailAlt": "영국 원자력 인력 102,867명, 이 숫자는 어떻게 만들어졌나: 직접 보고와 공급망 추정 대표 이미지",
+    "url": "posts/news/2026-11-16-uk-nuclear-workforce-102867.html",
+    "keywords": "영국 원자력 인력 102,867명, 이 숫자는 어떻게 만들어졌나: 직접 보고와 공급망 추정 UK nuclear workforce Nuclear Workforce Assessment Cogent Skills workforce statistics supply chain estimate skills planning nuclear skills apprenticeships National Nuclear Strategic Plan for Skills defence nuclear civil nuclear nuclear training nuclear energy",
+    "en_sha256": "3f33cad47242a772a6cb9bbf86ead2c94c64ccc2a9f57f2bb89cf99b34590dd9",
+    "ko_sha256": "923d6c7973aed5c55c116342b0e168d99742ea0b9466b29dce83502bd5fda0da"
   }
 ]

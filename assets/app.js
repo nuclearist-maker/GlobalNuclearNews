@@ -1,5 +1,44 @@
 const posts = [
   {
+    "title": "How the UK Counts 102,867 Nuclear Workers: Reported Data, Supply-Chain Estimates and What Each Figure Measures",
+    "date": "2026.11.16",
+    "displayDate": "2026.11.16",
+    "publishedAt": "2026-11-16T21:38:23Z",
+    "section": "news",
+    "category": "Policy & Regulation",
+    "summary": "Cogent Skills' Nuclear Workforce Assessment 2025, published in November 2026, counts 102,867 people in the UK civil and defence nuclear sectors as of 31 October 2025: 55,133 civil and 47,734 defence, up from 95,796 a year earlier. Participating organisations directly reported 81,662 workers; the remaining 21,205 come from a supply-chain spending model. Age, gender, recruitment, training and leaving indicators cover directly reported staff only, and year-on-year change also reflects improvements in survey scope and classification. The National Nuclear Strategic Plan for Skills links such data to job standards and training capacity.",
+    "thumbnail": "assets/images/news/2026-11-16-uk-nuclear-workforce-102867/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail: workers at a nuclear construction site with the 102,867 workforce title",
+    "url": "posts/news/2026-11-16-uk-nuclear-workforce-102867.html",
+    "keywords": "UK nuclear workforce Nuclear Workforce Assessment Cogent Skills workforce statistics supply chain estimate skills planning nuclear skills apprenticeships National Nuclear Strategic Plan for Skills defence nuclear civil nuclear nuclear training nuclear energy"
+  },
+  {
+    "title": "What a Pebble-Bed Reactor Brings to the NRC First: Tesseract TGR's Engagement Plan and Fuel and Graphite Qualification",
+    "date": "2026.11.16",
+    "displayDate": "2026.11.16",
+    "publishedAt": "2026-11-16T21:38:23Z",
+    "section": "news",
+    "category": "Advanced Reactors",
+    "summary": "Thorium Atomics announced on 16 November 2026 that it had submitted the first edition of a pre-application Regulatory Engagement Plan for the Tesseract TGR, a pebble-bed high-temperature gas-cooled reactor concept targeting 250 MWth and 100 MWe, to the U.S. NRC on 27 October (project number 99902174). The plan sets out the order of engagement ahead of a future construction permit application under 10 CFR Part 53, with topics including reactor physics, fuel and graphite qualification, safety analysis, source term and emergency planning zones. The company targets its first technical introduction meeting for December 2026 or January 2027. NRC guidance NUREG-2246 and INL programmes show what qualification evidence typically involves.",
+    "thumbnail": "assets/images/news/2026-11-16-tesseract-tgr-fuel-graphite-qualification/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail: graphite fuel pebbles with the Tesseract TGR engagement plan title",
+    "url": "posts/news/2026-11-16-tesseract-tgr-fuel-graphite-qualification.html",
+    "keywords": "Tesseract TGR Thorium Atomics Regulatory Engagement Plan Fuel Qualification Graphite Qualification TRISO Fuel Pebble Bed Reactor High-Temperature Gas-Cooled Reactor NRC NUREG-2246 10 CFR Part 53 Pre-Application Engagement Idaho National Laboratory Thorium Nuclear Energy"
+  },
+  {
+    "title": "Two Routes to Advanced Reactor Fuel: newcleo–Curio Recycled MOX Feed and the Blykalla–Urenco HALEU Deal",
+    "date": "2026.11.16",
+    "displayDate": "2026.11.16",
+    "publishedAt": "2026-11-16T21:38:23Z",
+    "section": "news",
+    "category": "Fuel Cycle",
+    "summary": "On 16 November 2026, newcleo and Curio announced a framework to assess commercial terms for supplying recycled nuclear material to newcleo's planned U.S. mixed oxide (MOX) fuel fabrication facility, plus joint R&D on spent fuel recycling; quantities, prices and delivery dates remain for later negotiation. IAEA guide SSG-7 Rev.1 lists isotopic composition, moisture and density as feed control variables, linking measured feed properties to the plant's safety analysis. The same day, Blykalla and Urenco announced a HALEU enrichment services contract for the first U.S. SEALER reactor, with enrichment planned at Urenco's HALEU facility under development at Capenhurst.",
+    "thumbnail": "assets/images/news/2026-11-16-recycled-mox-feed-and-haleu-enrichment/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail: fuel pellets in a clean-room tray with the title on two fuel supply routes",
+    "url": "posts/news/2026-11-16-recycled-mox-feed-and-haleu-enrichment.html",
+    "keywords": "MOX fuel HALEU nuclear fuel recycling used nuclear fuel newcleo Curio Nu Cycle Blykalla Urenco SEALER lead-cooled fast reactor MC&A IAEA NRC nuclear energy"
+  },
+  {
     "title": "From 35% to Full Power: How Mochovce 4 Moves Through Power Ascension Testing",
     "date": "2026.11.13",
     "displayDate": "2026.11.13",
