@@ -1,0 +1,113 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2026년 원자력발전기술사 필기 2교시 3번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>가압경수로 1차측 냉각재펌프가 정지한 상태에서 자연순환냉각에 대하여 다음을 기술하시오.
+가. 자연순환냉각의 구동력 발생 원리
+나. 자연순환을 발생시키기 위한 1차측 주요 기기 배치도
+다. 자연순환냉각 시 냉각재 유량과 주요 기기 간 높이차의 수식적 관계</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>RCP가 멈춘 뒤(소외전원 상실, 정전 등) 붕괴열이 어떤 힘으로, 어떤 경로를 따라 증기발생기(SG)까지 가는지를 묻습니다. 세 소문항이 "원리 → 배치 → 정량 관계"로 이어지므로, 가에서 밀도차·높이차를 세우고 나에서 그 높이차를 만드는 배치를 그린 뒤 다에서 그 높이차를 유량식에 넣어 마무리하는 흐름이 좋습니다. 다에서는 결과식만이 아니라 운동량·에너지·밀도 세 식을 연립하는 과정과 가정(정상 단상, 난류)을 함께 보여야 점수를 받습니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: RCP 정지 후 붕괴열 제거 경로, 자연순환의 정의</li>
+<li>본론 가: 루프 정수압 적분 → 두 기둥의 밀도차 × 높이차 → 열중심 개념, 크기 감각</li>
+<li>본론 나: 입면 배치도(노심 &lt; 노즐 &lt; SG 관판 &lt; U-관 열중심), 루프 실·RCP·가압기·2차측 열침원</li>
+<li>본론 다: 구동력 = 마찰, 에너지 보존, 밀도차 근사 → ṁ³ 식 → 비례 관계와 수치 예</li>
+<li>결론: 성립·유지 조건과 확인 지시값</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>RCP 정지 → 관성 서행(플라이휠 coastdown) 후 강제순환 소멸 → <strong>자연순환</strong>으로 노심 붕괴열을 SG로 전달함</li>
+<li>붕괴열은 정지 약 3분 후 정격의 약 2 %, 약 1시간 후 약 1 % 수준임(Way-Wigner 식, 장기 운전 가정)[7] → 정격 유량의 수 %만으로도 제거 가능함</li>
+<li>정의: 펌프 없이 <strong>열원(노심)과 열침원(SG) 사이 냉각재 밀도차가 중력장에서 만드는 부력</strong>으로 루프가 도는 현상</li>
+</ul>
+<p><strong>2. 가. 구동력 발생 원리</strong></p>
+<ul>
+<li>루프 한 바퀴의 정수압 적분: ΔPb = −g∮ρ dz → 0이 아닌 이유는 가열(아래)과 냉각(위)으로 상승측과 하강측의 밀도가 다르기 때문임</li>
+<li>단순화(두 기둥 모델): <strong>ΔPb = (ρc − ρh)·g·ΔH</strong>[6]
+<ul>
+<li>ρh: 상승측(노심 출구 → 고온관 → SG 입구) 평균밀도, 가벼움</li>
+<li>ρc: 하강측(SG 출구 → 저온관 → 강수부) 평균밀도, 무거움</li>
+<li>ΔH: <strong>SG 열중심과 노심 열중심의 고도차</strong></li>
+</ul>
+</li>
+<li><strong>열중심</strong> = 열이 실질적으로 가해지거나 빠지는 등가 높이, z = ∫z dQ / ∫dQ(열 가중 평균 고도). 대칭 cosine 출력이면 노심 열중심 ≈ 노심 중앙높이임</li>
+<li>요점: 무거운 하강측 기둥이 가벼운 상승측 기둥을 밀어 올림 → <strong>열원이 열침원보다 낮아야(ΔH &gt; 0)</strong> 구동력이 생김. 같은 높이면 온도차가 있어도 구동력 0</li>
+<li>크기 감각(가정 예시, 15.5 MPa): Tc 290.0 °C(746.2 kg/m³), Th 301.6 °C(723.2 kg/m³)(IAPWS-IF97[8]), ΔH 10 m → ΔPb = 23.0 × 9.81 × 10 ≈ <strong>2.26 kPa</strong>
+<ul>
+<li>정격 유량 시 루프 압력손실(가정 0.7 MPa)의 약 0.3 %에 불과함 → 유량은 정격의 수 %로 작음</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="열중심 사이 상승측·하강측 두 물기둥의 밀도(IAPWS-IF97)와 구동압 2.26 kPa 계산, 정격 루프 압력손실 700 kPa와의 선형 축 비교" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/2e41d78e61ecb0b7e2ad9c1883ed7f6337fe8b837aa9bd2578c877c67f81453d.webp"/><figcaption>열중심 사이 상승측·하강측 두 물기둥의 밀도(IAPWS-IF97)와 구동압 2.26 kPa 계산, 정격 루프 압력손실 700 kPa와의 선형 축 비교</figcaption></figure>
+<p><strong>3. 나. 1차측 주요 기기 배치도</strong></p>
+<ul>
+<li>입면 배치 원칙: <strong>노심 열중심 &lt; 원자로용기 출입구 노즐(고온관·저온관) &lt; SG 관판·입구 플레넘 &lt; SG U-관 다발 열중심</strong></li>
+<li>주요 기기와 역할
+<ul>
+<li>원자로용기·노심: 열원, 용기 아래쪽에 위치. 강수부 → 하부 플레넘 → 노심 상향 유로</li>
+<li>고온관: 용기 출구 노즐 → SG 입구 플레넘, 상승측 기둥의 일부</li>
+<li>SG(U-관): 열침원. 2차측은 <strong>보조급수</strong>로 수위를 유지하고 <strong>주증기 대기방출밸브(MSADV)</strong>·증기덤프로 증기를 방출해 1차측보다 낮은 포화온도를 유지함</li>
+<li>크로스오버 레그(루프 실): SG 출구 → RCP 흡입, 루프에서 가장 낮은 U자 배관</li>
+<li>RCP(정지): 저온관 상에 위치, 자연순환 중에는 <strong>흐름 저항</strong> 요소</li>
+<li>저온관 → 강수부: 하강측 기둥</li>
+<li>가압기: 고온관에 밀림관으로 연결, 루프 최고부의 기상(氣相)으로 1차측 압력 유지 → <strong>과냉각</strong> 확보</li>
+</ul>
+</li>
+<li>노형 예: APR1400(OPR1000 계열)은 SG 2기, 고온관 2개, 저온관 4개, RCP 4대(2-루프, 루프당 고온관 1·저온관 2·SG 1·RCP 2)[9]</li>
+</ul>
+<figure class="article-image"><img alt="답안용 입면 배치도: 원자로용기·고온관·SG·루프 실·RCP·저온관·가압기, 2차측 보조급수·MSADV, 두 열중심과 ΔH" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/939eefc379bd6b61e9880b63207f85ee7ea3d8681c19cd19b11cb54c59362f7a.webp"/><figcaption>답안용 입면 배치도: 원자로용기·고온관·SG·루프 실·RCP·저온관·가압기, 2차측 보조급수·MSADV, 두 열중심과 ΔH</figcaption></figure>
+<p><strong>4. 다. 유량과 높이차의 수식적 관계</strong></p>
+<ul>
+<li>가정: 정상 단상, 물성·저항계수 일정, 루프 마찰은 난류(ΔPf ∝ ṁ²)</li>
+<li>① 운동량(구동력 = 마찰): (ρc − ρh)·g·ΔH = R·ṁ²/ρ, R = Σ(Ki + fi·Li/Di)/(2Ai²)</li>
+<li>② 에너지: Q = ṁ·cp·ΔT</li>
+<li>③ 밀도차(부시네스크 근사): ρc − ρh ≈ ρβΔT (β 체적팽창계수)</li>
+<li>연립 → <strong>ṁ³ = ρ²βgΔH·Q / (cp·R)</strong>[6]
+<ul>
+<li><strong>ṁ ∝ (Q·ΔH)^1/3 · R^−1/3</strong></li>
+<li><strong>ΔT ∝ Q^2/3 · ΔH^−1/3 · R^1/3</strong></li>
+<li>층류(ΔPf ∝ ṁ)면 지수 1/2 → 답안에 가정 명시</li>
+</ul>
+</li>
+<li>해석
+<ul>
+<li>높이차 2배 → 유량 2^1/3 = <strong>1.26배</strong>, ΔT 0.79배</li>
+<li>높이차 20 % 감소 → 유량 0.8^1/3 = 0.928배(약 7 %↓), ΔT 0.8^−1/3 = <strong>1.077배(약 7.7 %↑)</strong>, 검산 0.928 × 1.077 = 1.000</li>
+<li>ΔH ≤ 0 → 해 없음(구동력 없음)</li>
+</ul>
+</li>
+<li>수치 예(가정: 정격 루프 압력손실 0.7 MPa, 정격 ΔT 33 °C, 붕괴열 2 %, ΔH 10 m) → 유량 정격의 <strong>약 5.7 %</strong>, 노심 ΔT <strong>약 11.6 °C</strong></li>
+</ul>
+<figure class="article-image"><img alt="답안용 유도 흐름: 운동량·에너지·밀도차 세 식 → ṁ³ 식 → 비례 관계" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/82e4c3a813a26fdd62d00499cb9a8c8942e9af69389f30d7e43c7624fb495782.webp"/><figcaption>답안용 유도 흐름: 운동량·에너지·밀도차 세 식 → ṁ³ 식 → 비례 관계</figcaption></figure>
+<figure class="article-image"><img alt="열중심 높이차 0~20 m에 따른 자연순환 유량(붕괴열 1·2·3 %, 난류·층류 비교)과 붕괴열 2 %일 때 ΔH별 유량·ΔT 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/0e1dd818c77eba51be3e67a36b28d23443a58506ca1dd5a833481bcde643f614.webp"/><figcaption>열중심 높이차 0~20 m에 따른 자연순환 유량(붕괴열 1·2·3 %, 난류·층류 비교)과 붕괴열 2 %일 때 ΔH별 유량·ΔT 표</figcaption></figure>
+<p><strong>5. 결론 — 성립·유지 조건과 확인</strong></p>
+<ul>
+<li>조건: ΔH &gt; 0(설계 배치), SG 열침원 유지(보조급수 + 증기 방출), 고온관·U-관 정상부에 증기·비응축성 기체 공극 없음, 가압기로 과냉각 유지</li>
+<li>확인 지시값(위 원리에서 나오는 판단 항목, 구체 기준은 발전소 절차서): 과냉각여유도 확보, SG 압력 안정·감소, Th·노심출구온도(CET) 안정·감소, Tc ≈ SG 압력의 포화온도(SG가 열침원으로 작동), 노심 ΔT가 전출력 ΔT보다 작고 안정[5]</li>
+<li>재고량이 줄면 단상 → 이상 자연순환 → 리플럭스 응축으로 모드가 바뀜(위 식은 단상 범위에서만 성립)</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 구동압이 이렇게 작은데 충분한 이유</h3>
+<p>fig1의 수치 예에서 자연순환 구동압은 2.26 kPa로, RCP가 정격 유량에서 이기던 루프 저항의 0.3 % 정도입니다. 마찰은 유량의 제곱에 비례하므로 유량비는 √0.0032 ≈ 5.7 %가 됩니다. 그런데도 붕괴열이 정격의 2 % 남짓이면 노심 ΔT는 11.6 °C로, 정격 ΔT 33 °C보다 오히려 작습니다. 유량이 줄어든 만큼 ΔT가 커지면서 밀도차가 커지고, 그 밀도차가 다시 구동력을 키우는 자기조절이 일어나 균형점이 생기는 것입니다. 이 균형이 수식으로는 세제곱근 관계로 나타납니다. 다만 수치 예는 설계값이 아니며, 정지한 RCP 임펠러와 저 레이놀즈수 마찰 증가로 실제 유량은 더 작을 수 있습니다.</p>
+<h3>해설: 배치도에서 채점자가 보는 것</h3>
+<p>배치도는 기기 이름보다 <strong>높이 관계</strong>가 핵심입니다. 노심이 가장 아래, SG U-관이 가장 위에 있고, 두 열중심 사이에 ΔH를 표시해야 다 항의 식과 연결됩니다. 크로스오버 레그(루프 실)를 노즐보다 낮게 그리고, 가압기는 고온관에 붙이며, 2차측 보조급수와 증기 방출을 화살표로 덧붙이면 "열침원이 살아 있어야 한다"는 조건까지 한 장으로 설명됩니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 달라진 기준 없음(확인 근거: 2026년 출제 문항이며, 잔열제거 요건은 「원자로시설 등의 기술기준에 관한 규칙」 제29조(잔열제거설비, 현행 원안위규칙 제37호 2026.3.30)[1]와 10 CFR 50 부록 A GDC 34[2]가 근거입니다). 자연순환 냉각의 입증은 미국 BTP 5-4[3](안전등급 계통만으로 냉각정지, 자연순환 상태 붕소 혼합·냉각 시험 또는 동일 설계 시험 결과와의 비교)와 RG 1.68[4]의 저출력 자연순환 시험, 그리고 1980년 St. Lucie 1호기 상부헤드 기포 사건 이후의 NRC GL 81-21[5](자연순환 냉각 절차·훈련)이 골격이며 그대로 유효합니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제29조(잔열제거설비). 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix A "General Design Criteria for Nuclear Power Plants", Criterion 34 "Residual heat removal".</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan, Branch Technical Position 5-4 "Design Requirements of the Residual Heat Removal System".</li>
+<li>U.S. NRC, Regulatory Guide 1.68 "Initial Test Programs for Water-Cooled Nuclear Power Plants", Appendix A.</li>
+<li>U.S. NRC, Generic Letter 81-21 "Natural Circulation Cooldown" (1981).</li>
+<li>N. E. Todreas, M. S. Kazimi, Nuclear Systems I: Thermal Hydraulic Fundamentals, Taylor &amp; Francis — 단상 자연순환 루프(구동력·마찰 균형) 장.</li>
+<li>S. Glasstone, A. Sesonske, Nuclear Reactor Engineering, Chapman &amp; Hall — 붕괴열(Way-Wigner 식) 절.</li>
+<li>IAPWS, Revised Release on the IAPWS Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam, IAPWS R7-97(2012). IAPWS 웹(iapws.org).</li>
+<li>S.-S. Lee, S.-H. Kim, K.-Y. Suh, "The Design Features of the Advanced Power Reactor 1400", Nuclear Engineering and Technology, Vol. 41, No. 8, pp. 995–1004 (2009).</li>
+</ol>

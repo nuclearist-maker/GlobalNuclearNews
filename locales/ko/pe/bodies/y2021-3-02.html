@@ -1,0 +1,188 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2021년 원자력발전기술사 필기 3교시 2번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>OPR형 원전의 안전감압계통(SDS : Safety Depressurization System)에 대하여 다음 사항을 기술하시오.
+가. SDS 설치 목적
+나. SDS 사용 시기 및 구체적 방법
+다. 타 노형(WH형 및 APR형) 원전에서 SDS 기능을 수행하는 계통 혹은 기기</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>가압기 PORV가 없는 CE 계열 OPR1000이 왜 전용 감압계통을 두었는지, 그 계통이 설계기준사고용이 아니라 <strong>설계기준 초과 사건(급수완전상실)과 중대사고</strong>용이라는 점을 아는지 봅니다. 다 항목은 같은 "RCS 의도적 감압" 기능을 WH형은 PORV로, APR1400은 POSRV로 수행한다는 노형 비교 능력을 확인합니다. 방출처(격납건물 대기 / 가압기 방출탱크 / IRWST)를 정확히 구분해 쓰는 것이 변별 포인트입니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 가정 및 문제 해석(OPR1000 기준), SDS의 위상</li>
+<li>본론 가: 설치 목적 3가지와 배경(PORV 부재), 구성·설계기준</li>
+<li>본론 나: 사용 시기 3가지, 일방관류냉각 운전 6단계, 중대사고 감압</li>
+<li>본론 다: WH형 PORV + 차단밸브, APR1400 SDVS(POSRV·RCGVS)·3방향 밸브·ERDV</li>
+<li>결론: 3노형 비교표</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 문제 해석</strong></p>
+<ul>
+<li>"OPR형" = OPR1000(한국표준형, CE 계열), "APR형" = APR1400으로 해석함</li>
+<li>구성·수치는 공개 학회 논문·설계 자료의 OPR1000 예이며 밸브 구성·설정치 등 세부는 호기별 설계값</li>
+<li>SDS = 가압기 증기부에서 RCS를 <strong>원격 수동으로 급속 감압</strong>하는 계통, <strong>설계기준 초과 사건 전용</strong>(안전정지·설계기준사고 완화 기능 없음)[2]</li>
+</ul>
+<p><strong>2. 가. SDS 설치 목적</strong></p>
+<ul>
+<li>① <strong>급수완전상실(TLOFW) 대응</strong>: SG 열제거 상실 시 RCS를 HPSI 체절압력 아래로 감압 → <strong>급수·배출(일방관류냉각)</strong>으로 붕괴열 제거, 노심 노출 방지
+<ul>
+<li>감압이 없으면 가압기 안전밸브(PSV, 해석상 개방 약 17.2 MPa[3])가 설정압 부근에서 개폐만 반복 → RCS 고압 유지 → 안전주입 불가 → 재고 고갈</li>
+</ul>
+</li>
+<li>② <strong>고압 노심손상 대응</strong>: 원자로용기 파손 전 감압 → <strong>고압용융물방출(HPME)·격납건물직접가열(DCH)</strong> 방지, 고압 자연순환에 의한 고온관·SG 전열관 <strong>크리프 파손</strong> 방지[9]</li>
+<li>배경: CE 계열은 <strong>가압기 PORV가 없음</strong> → 배출 경로를 전용 계통으로 확보(OPR1000 급수·배출 = SDS + 안전주입계통[2])</li>
+<li>현행 위상: 급수완전상실은 사고관리 고시(원안위고시 제2026-1호) <strong>별표 1 다중고장 필수 9종</strong>의 하나[1]</li>
+<li>구성(OPR1000 예)
+<ul>
+<li>가압기 상부에서 나오는 <strong>독립된 2개 배관</strong>, 각 배관 끝 <strong>파열판</strong>을 거쳐 <strong>격납건물 대기</strong>로 방출[2]</li>
+<li>정상운전 중 닫혀 있고, 필요 시 운전원이 주제어실에서 <strong>원격 수동 개방</strong>[2] — 밸브 종류·전원 구성·안전등급 경계는 호기별 설계(FSAR)</li>
+</ul>
+</li>
+<li>용량 평가조건(한울 3·4 FSAR 5장 조건을 학회가 재해석한 예[3])
+<ul>
+<li>안전주입 일부만 가용 + <strong>SDS 1계열</strong>을 PSV 최초 개방 <strong>즉시</strong> 개방</li>
+<li>안전주입·SDS <strong>모두 가용</strong> + PSV 최초 개방 <strong>30분 뒤</strong> 개방</li>
+<li>두 조건 모두 최고 피복재 온도가 1,204 °C 기준에 크게 못 미쳐 노심 냉각 유지</li>
+</ul>
+</li>
+</ul>
+<p><strong>3. 나. SDS 사용 시기 및 구체적 방법</strong></p>
+<ul>
+<li>사용 시기
+<ul>
+<li>① <strong>TLOFW</strong>: 비상운전절차서 기능회복절차의 열제거 안전기능 수행경로가 SG 냉각 → <strong>일방관류냉각</strong>으로 넘어갈 때</li>
+<li>② <strong>중대사고</strong>: 노심출구온도(CET) 649 °C 이상 + 노심냉각 회복 실패 → 중대사고관리지침서(SAMG) 진입 → 완화전략 <strong>원자로냉각재계통 감압</strong>의 수단(SG 경유 2차측 감압, 가압기 보조살수, SDS 등)</li>
+<li>정상운전·LOCA 등 설계기준사고에는 사용하지 않음(고온 냉각재 격납건물 직접 방출 → 기기 환경 악화)</li>
+</ul>
+</li>
+<li>구체적 방법(일방관류냉각 골격)
+<ol>
+<li><strong>진입 판단</strong>: 급수(주·보조·기동·복수) 복구 불가, SG 수위 저하·건조 임박, RCS 압력·CET 상승 </li>
+<li><strong>준비</strong>: RCP 정지, 안전주입작동신호(SIAS) 확인·필요 시 수동, HPSI·충전펌프 가동, RWT 정렬</li>
+<li><strong>개방</strong>: 주제어실에서 SDS 밸브를 <strong>원격 수동 개방</strong>(가용한 계열 모두), 방출 유량과 RCS 압력 하강 확인 — <strong>지체 금지</strong>(늦을수록 노심 가열 여유가 줄어듦[3])</li>
+<li><strong>성공 확인</strong>: RCS 압력 하강 → HPSI 주입유량 확인 → 안전주입탱크 주입, CET·과냉각여유도·원자로용기 수위·가압기 수위 감시</li>
+<li><strong>장기 냉각</strong>: RWT 저수위 → <strong>재순환작동신호(RAS)</strong> → 격납건물 집수조 재순환(방출수가 집수조로 모임), 격납건물 압력·온도·수소 감시</li>
+<li><strong>종료</strong>: 급수 복구 → SG 열제거 확립 → SI 종료 기준 확인 → <strong>SDS 닫음</strong> → SG 냉각 → 정지냉각</li>
+</ol>
+</li>
+<li>중대사고 감압: 원자로용기 파손 전 RCS를 저압으로 낮춰 HPME·DCH 위험 저감(APR1400 심사 예 250 psia ≈ 1.72 MPa 이하[7]) — OPR1000의 목표값은 호기별 사고관리계획서 기준</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 위 배출 경로(원자로 → 가압기 → SDS 독립 2계열 → 파열판 → 격납건물 대기), 아래 주입 경로(RWT → HPSI → 원자로), 점선 RAS 후 재순환" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/1429e4c07883c49acc2411acd1fe515d8aa464646ecd0b5039a31f0117359733.webp"/><figcaption>답안용 도식: 위 배출 경로(원자로 → 가압기 → SDS 독립 2계열 → 파열판 → 격납건물 대기), 아래 주입 경로(RWT → HPSI → 원자로), 점선 RAS 후 재순환</figcaption></figure>
+<p><strong>4. 다. 타 노형에서 SDS 기능을 수행하는 계통·기기</strong></p>
+<ul>
+<li><strong>WH형</strong>(고리 3·4, 한빛 1·2 등)
+<ul>
+<li>기기: <strong>가압기 PORV(전력구동 방출밸브) + 전동 차단밸브(block valve)</strong></li>
+<li>방출처: <strong>가압기 방출탱크(PRT)</strong> 수중 방출·응축(탱크 과압 시 파열판 파열 → 격납건물)</li>
+<li>사용: 2차측 열제거원 상실 기능회복절차의 <strong>bleed and feed</strong>(SI 작동 + PORV 개방), 중대사고 RCS 감압</li>
+<li>예: 고리 3·4는 안전등급 PORV 3개로 일방관류냉각 수행(별도 SDS 없음)[8]</li>
+<li>PORV는 저온과압보호(LTOP) 저설정으로도 사용</li>
+</ul>
+</li>
+<li><strong>APR형</strong>(APR1400)
+<ul>
+<li>계통: <strong>안전감압배기계통(SDVS)</strong> = <strong>POSRV 4개</strong> + 원자로냉각재 배기계통(RCGVS)</li>
+<li>POSRV: 자동 과압보호 설정압 <strong>2,470 psia</strong>, 개당 244.9 t/h[4] — 과압보호(스프링 파일럿 자동) + 급속감압(<strong>직렬 전동 파일럿 2개</strong>, 원격 수동, 둘 다 열려야 개방) 겸용</li>
+<li>방출처: 설계기준(급수·배출)은 <strong>IRWST 수면 아래 스파저</strong>로 응축</li>
+<li>중대사고(호기별 대안 설계): 새울 1·2·UAE·미국 설계인증은 POSRV 배출관 <strong>3방향 전환밸브 2개</strong>로 방출 방향을 SG 격실로 전환, 새울 3·4는 가압기에서 SG 격실로 가는 별도 <strong>비상감압밸브(ERDV) 2계열</strong>[5]</li>
+<li>감압 목표 <strong>250 psia(1.72 MPa)</strong>[7] — KINS 해석의 DCH 판정 기준 1.78 MPa[6]와 다른 값</li>
+<li>RCGVS: 원자로용기 상부헤드·가압기 증기부 고점 배기(비응축성 기체 → IRWST), 살수 불가 시 압력 제어 보조</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="WH형 PORV → PRT, OPR1000 SDS 독립 2계열 → 파열판 → 격납건물 대기, APR1400 POSRV → IRWST(중대사고 전환밸브·새울 3·4 ERDV → SG 격실) 3행 단선도와 속성 메모" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/917d0d7ae64513b6bf93ac09ad28d1111ba6361f3184e2446ec59e4d48753a06.webp"/><figcaption>WH형 PORV → PRT, OPR1000 SDS 독립 2계열 → 파열판 → 격납건물 대기, APR1400 POSRV → IRWST(중대사고 전환밸브·새울 3·4 ERDV → SG 격실) 3행 단선도와 속성 메모</figcaption></figure>
+<p><strong>5. 결론</strong></p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>WH형</th>
+<th>OPR1000</th>
+<th>APR1400</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>감압 기기</td>
+<td>가압기 PORV + 차단밸브</td>
+<td>SDS 2계열(원격 수동 밸브)</td>
+<td>POSRV 4개 + RCGVS</td>
+</tr>
+<tr>
+<td>방출처</td>
+<td>PRT(과압 시 파열판 → 격납건물)</td>
+<td>파열판 → 격납건물 대기</td>
+<td>IRWST / 중대사고 SG 격실</td>
+</tr>
+<tr>
+<td>안전밸브 기능 통합</td>
+<td>아니오(PSV 별도)</td>
+<td>아니오(PSV 별도)</td>
+<td>예(POSRV)</td>
+</tr>
+<tr>
+<td>정상 대기</td>
+<td>차단밸브 격리 가능</td>
+<td>밸브 닫힘(운전원 수동 개방)</td>
+<td>전동 파일럿 닫힘</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>세 노형 모두 "RCS 의도적 감압 → 안전주입 유량 확보·급수배출 냉각 / 용기 파손 시 HPME·DCH 위험 저감"이라는 같은 기능을 서로 다른 기기로 구현함</li>
+<li>OPR1000 SDS는 격납건물 환경 악화를 감수하는 <strong>설계기준 초과 전용</strong> 수단이므로 조기 개시 판단이 핵심임</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: PSV가 열려 있는데 왜 감압이 안 되나</h3>
+<p>안전밸브는 압력이 설정치를 넘을 때만 열리고 조금 내려가면 닫힙니다. 그래서 급수완전상실에서 PSV가 계속 개폐해도 RCS는 2,500 psia 근처에 머물고, HPSI는 이 압력을 이기지 못합니다. 냉각재만 빠져나가고 들어오는 물은 없는 상태가 이어집니다. SDS는 이 "고압 함정"을 일부러 깨는 밸브입니다. 한울 3·4 조건 해석에서는 SDS를 PSV 개방 즉시 열거나 30분 늦게 열어도 최고 피복재 온도가 각각 325 °C, 350 °C에 머물렀습니다[3]. 저자들은 그래도 가능한 한 빨리 열라고 결론지었습니다.</p>
+<h3>해설: 방출처를 정확히</h3>
+<p>세 노형의 방출처가 답안의 변별 포인트입니다. OPR1000은 IRWST가 없으므로 파열판을 지나 격납건물 대기로 바로 나갑니다. 그래서 설계기준사고에는 쓰지 않습니다. WH형 PORV는 가압기 방출탱크로 갑니다. APR1400 POSRV는 IRWST 물속 스파저에서 증기를 응축합니다. 중대사고 때는 IRWST 상부에 수소가 쌓이는 것을 피하려고 SG 격실로 경로를 바꿉니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>출제 당시(2021)</th>
+<th>현행(2026)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>사고관리 고시</td>
+<td>원안위고시 제2017-34호(위협요인 별표 2)</td>
+<td>제2026-1호(2026.1.16) — 다중고장 별표 1(급수완전상실 포함) 유지, 위협요인 표 별표 3</td>
+</tr>
+<tr>
+<td>기술기준규칙</td>
+<td>구판</td>
+<td>원안위규칙 제37호(2026.3.30), 사고관리 제85조의19~23</td>
+</tr>
+<tr>
+<td>사고관리계획서</td>
+<td>제출·심사 중</td>
+<td>APR1400 새울 1·2·신한울 1·2 승인(2025.1, POSRV 감압 17.25 → 1.72 MPa 이하 평가[7]), WH형 고리 3·4·한빛 1·2 승인(2026.10)</td>
+</tr>
+<tr>
+<td>APR1400 중대사고 감압</td>
+<td>3방향 밸브 설계(새울 1·2)</td>
+<td>새울 3·4는 ERDV 2계열 적용</td>
+</tr>
+</tbody>
+</table>
+<p>OPR1000 SDS의 구성과 용량 설계기준 자체가 바뀌었다는 공지는 확인되지 않았습니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」, 원안위고시 제2026-1호(2026.1.16), 별표 1·별표 3; 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제85조의19~23. 국가법령정보센터.</li>
+<li>B. G. Kim, H. J. Yoon, S. H. Kim, H. G. Kang, "Development of state categorization model for necessity of feed and bleed operation and application to OPR1000", PSAM 12, Honolulu (2014.6).</li>
+<li>M. J. Kim, M. H. Kim, H. J. Lee, H. G. Choi, "Simulation Study of Total Loss of Feedwater in OPR1000 using SPACE", Transactions of the Korean Nuclear Society Spring Meeting, Jeju (2018.5).</li>
+<li>U.S. NRC, Final Safety Evaluation Report for the APR1400 Design Certification, Chapter 5 (POSRV 설정압 173.7 kg/cm²A(2,470 psia), 방출용량 244,900 kg/h; DCD Tier 2 Table 5.4.14-1 인용).</li>
+<li>MDEP, "APR1400 Design Description and Comparison of Design Differences", Technical Report TR-APR1400-01, 3.1절.</li>
+<li>조용진 외(KINS), APR1400 비상급속감압밸브(ERDV) MELCOR 평가, 한국원자력학회 추계학술발표회 (2014) — DCH 판정 압력 1.78 MPa. 논문 제목 미대조.</li>
+<li>원자력안전위원회, 제206회 원자력안전위원회 회의 의안(2025.1.9), 새울 1·2호기·신한울 1·2호기 사고관리계획서 승인. 원안위 공개 회의자료.</li>
+<li>S. J. Park 외, "Total Loss of Feedwater Analysis of Power Uprated Kori 3&amp;4", 한국원자력학회 학술발표회 (2005).</li>
+<li>U.S. NRC, SECY-93-087 (1993) 및 SRM — 진화형 경수로 RCS 급속감압 능력; 10 CFR 52.47(a)(23).</li>
+</ol>

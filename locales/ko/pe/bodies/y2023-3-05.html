@@ -1,0 +1,151 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2023년 원자력발전기술사 필기 3교시 5번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>다음 원자로 반응도계수에 대해 기술하시오.
+가. 감속재 온도계수
+나. 감속재 밀도계수
+다. 감속재 기포계수</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>세 계수의 정의와 부호만 따로 외웠는지, 아니면 셋이 모두 "감속재 원자수밀도가 줄면 반응도가 어떻게 되는가"라는 하나의 물리 현상에서 나온다는 것을 아는지를 봅니다. 경수로가 과소감속으로 설계된 이유, 붕소 농도와 연소도에 따른 MTC 변화, 노형별(PWR·BWR·CANDU) 기포계수의 차이를 연결해 쓰면 고득점입니다. 세 계수를 궤환 반응도에 함께 넣을 때 같은 효과를 두 번 세지 않아야 한다는 점도 채점 포인트입니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 반응도계수 정의, 경수로에서 세 계수의 공통 뿌리(밀도 효과)</li>
+<li>본론 가: MTC — 정의, 부호 결정 메커니즘, 붕소·연소·온도 의존, 운영 제한과 측정</li>
+<li>본론 나: 밀도계수 — 정의·부호, MTC·압력계수와의 관계식</li>
+<li>본론 다: 기포계수 — 정의, 밀도계수와의 관계, 노형별 비교</li>
+<li>결론: 세 계수 비교표, 안전해석에서의 보수적 선택, 이중계산 주의</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>반응도계수 <strong>α_x = ∂ρ/∂x</strong>: 다른 변수를 고정하고 변수 x가 단위량 변할 때의 반응도 변화(1 pcm = 10⁻⁵ Δk/k)[1]</li>
+<li>경수로의 감속재 = 냉각재 → 온도·압력·기포 변화가 모두 <strong>물 원자수밀도 변화</strong>로 반응도에 작용함</li>
+<li>밀도 감소 시 세 효과: ① 감속능↓ → 공명탈출확률 p↓(음) ② 감속·확산거리↑ → 비누설확률↓(음) ③ 물·용해 붕소 흡수↓ → 열이용률 f↑(양)</li>
+<li>PWR은 <strong>과소감속</strong>(감속재/연료비 &lt; k∞ 최대점)으로 설계해 ①·②가 ③을 이기게 함 → 음의 계수[1][2]</li>
+</ul>
+<figure class="article-image"><img alt="k∞ 대 감속재/연료비 곡선, 과소감속 설계점과 밀도 감소 방향" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/d2110c20c6e9384d0465c6de8f23a0514d7f18cba4abe7e1260cdf7168b06f06.webp"/><figcaption>k∞ 대 감속재/연료비 곡선, 과소감속 설계점과 밀도 감소 방향</figcaption></figure>
+<p><strong>2. 가. 감속재 온도계수(MTC, α_T)</strong></p>
+<ul>
+<li>정의: α_T = ∂ρ/∂T_M [pcm/°C, pcm/°F], 연료온도 고정</li>
+<li>실체: 대부분 밀도 효과 → <strong>α_T ≈ α_D·(∂ρ_w/∂T)_p</strong>, 순수 온도(스펙트럼 경화) 효과는 작음</li>
+<li>의존성
+<ul>
+<li>붕소 농도↑ → 덜 음(③ 증가), 주기초·저온·고붕소에서 <strong>양</strong> 가능</li>
+<li>연소 진행(BOC → EOC) → 더 음(붕소 희석이 주원인)</li>
+<li>온도↑ → 더 음: 15.5 MPa에서 ∂ρ_w/∂T가 290 °C −1.88 → 330 °C −3.14 kg/(m³·K)로 약 1.7배(IAPWS-IF97 계산)[3]</li>
+</ul>
+</li>
+<li>대표값(상용 PWR 예): BOC HFP 약 0 ~ −10, EOC HFP 약 −30 ~ −45 pcm/°F</li>
+<li>운영 제한: 운영기술지침서 MTC LCO(STS LCO 3.1.3)[5] — COLR 상한(주기초, 미국 Ginna 예: +5 pcm/°F 저출력·0 pcm/°F 고출력)과 하한(주기말, 같은 예: −44.6 pcm/°F) 사이 유지[4], 기동 노물리시험(HZP)에서 ITC 측정 → MTC = ITC − FTC</li>
+<li>의미: 음의 MTC → 출력↑ → 냉각재 온도↑ → 반응도↓ 자기제어(지발 궤환, 수 초 단위)</li>
+</ul>
+<p><strong>3. 나. 감속재 밀도계수(α_D)</strong></p>
+<ul>
+<li>정의: α_D = ∂ρ/∂ρ_w [pcm/(g/cm³) 또는 pcm/(kg/m³)]</li>
+<li>부호: 과소감속·통상 붕소 조건의 경수로에서 <strong>양</strong>(밀도↑ → 감속↑ → ρ↑) = <strong>밀도 감소 시 반응도 감소</strong>, 고붕소에서는 작아지거나 음으로 바뀔 수 있음(MTC 양과 같은 조건)</li>
+<li>MTC·기포계수·압력계수의 공통 모체
+<ul>
+<li>α_T ≈ α_D·(∂ρ_w/∂T)_p, α_p ≈ α_D·(∂ρ_w/∂p)_T (PWR 압력계수는 작은 <strong>양</strong>) — 밀도 외 순수 온도 효과를 무시한 근사</li>
+</ul>
+</li>
+<li>설명용 환산(EOC MTC −30 pcm/°F, 310 °C, ∂ρ_w/∂T = −2.30 kg/(m³·K)): α_D = −54/−2.30 ≈ <strong>+23.5 pcm/(kg/m³)</strong> → α_p ≈ 23.5 × 2.29 ≈ <strong>+54 pcm/MPa</strong></li>
+<li>활용: 노심 설계 코드는 밀도·온도를 분리한 단면적 표로 계산하고, 안전해석은 밀도계수 곡선을 입력으로 쓰는 경우가 많음(냉각·감압 사건)</li>
+</ul>
+<p><strong>4. 다. 감속재 기포계수(α_V)</strong></p>
+<ul>
+<li>정의: α_V = ∂ρ/∂α [pcm/% 기포], α = 증기 체적분율</li>
+<li>관계식(밀도 효과만 고려한 근사): 평균 밀도 ρ̄ = (1−α)ρ_l + αρ_g → Δρ̄ = −(ρ_l − ρ_g)Δα → <strong>α_V ≈ −α_D·(ρ_l − ρ_g)/100</strong>(기포율 1 %p당)</li>
+<li>설명용 환산(310 °C에서 구한 α_D를 15.5 MPa 포화상태로 외삽, ρ_l − ρ_g ≈ 492 kg/m³): EOC 약 <strong>−116 pcm/%</strong>, BOC(MTC −5 pcm/°F) 약 −19 pcm/%</li>
+<li>노형 비교
+<ul>
+<li>PWR: 정상운전은 고온 유로 상부 국부(과냉) 비등 수준 → 궤환 영향 작음, LOCA 초기 기포는 음의 반응도로 정지 보조</li>
+<li>BWR: 노심 상부 기포율이 높아 <strong>주 궤환</strong> — 재순환 유량으로 출력 제어, 압력 상승 시 기포 붕괴 → 양의 반응도</li>
+<li>CANDU: 감속재(D₂O 칼란드리아)와 냉각재 분리 → <strong>냉각재 기포계수 양</strong>(크기는 노심·연소 상태에 따라 다름) → 고속 정지계통 2개로 보완</li>
+<li>RBMK: 흑연 감속·경수 냉각, 양의 기포계수(체르노빌 사고 요인 중 하나)[9]</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="15.5 MPa 물 밀도-온도 곡선과 세 계수 관계식 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/b1a01caa90349bbb86a12eec81a640c83c71c25bef1ae9f11dadb47a039849bc.webp"/><figcaption>15.5 MPa 물 밀도-온도 곡선과 세 계수 관계식 카드</figcaption></figure>
+<p><strong>5. 결론 — 비교</strong></p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>감속재 온도계수</th>
+<th>감속재 밀도계수</th>
+<th>감속재 기포계수</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>변수</td>
+<td>감속재 온도 T_M</td>
+<td>감속재 밀도 ρ_w</td>
+<td>기포율 α</td>
+</tr>
+<tr>
+<td>단위</td>
+<td>pcm/°C(°F)</td>
+<td>pcm/(g/cm³)</td>
+<td>pcm/% 기포</td>
+</tr>
+<tr>
+<td>PWR 부호</td>
+<td>음(BOC 저온 양 가능)</td>
+<td>양(밀도 감소 시 음)</td>
+<td>음</td>
+</tr>
+<tr>
+<td>관계</td>
+<td>α_D × ∂ρ_w/∂T</td>
+<td>모체</td>
+<td>−α_D × (ρ_l − ρ_g)</td>
+</tr>
+<tr>
+<td>주 관심 노형</td>
+<td>PWR</td>
+<td>설계·해석 공통</td>
+<td>BWR·CANDU·RBMK</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>세 계수는 같은 밀도 효과 → 같은 밀도 변화를 온도·밀도·기포 항으로 <strong>중복 합산 금지</strong>(고정 조건 명시)</li>
+<li>안전해석: 가장 덜 음(BOC) → 가열·반응도 삽입 사건, 가장 음(EOC) → 냉각 사건(MSLB) 재임계에 보수적</li>
+<li>근거: 기술기준규칙 제18조(원자로의 고유보호)[6], GDC 11[7], SRP 4.3[8], 운영기술지침서 MTC LCO[5]</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 왜 고온일수록 MTC가 더 음이 되는가</h3>
+<p>같은 1 °C 상승이라도 고온에서 물이 더 많이 팽창합니다. 15.5 MPa에서 물 밀도 기울기는 290 °C에서 −1.88, 310 °C에서 −2.30, 330 °C에서 −3.14 kg/(m³·K)입니다. 밀도계수가 양이고 비슷하다면 MTC는 이 기울기에 비례하므로, 감속재 온도가 높을수록 MTC 절댓값이 커집니다. 영출력 기동 때(저온) MTC가 가장 덜 음이고, 그래서 운영기술지침서가 저출력 구간의 MTC 상한과 최소임계온도를 함께 관리합니다.</p>
+<h3>해설: 설명용 환산값을 읽는 법</h3>
+<p>답안의 α_D ≈ +23.5 pcm/(kg/m³), 기포계수 약 −116 pcm/%, 압력계수 약 +54 pcm/MPa는 "MTC가 전부 밀도 효과이고 α_D가 일정하다"는 단순화로 얻은 값입니다. 특히 기포계수는 310 °C에서 구한 α_D를 344.8 °C 포화상태의 액체·증기 혼합물로 외삽한 것이라, 310 °C 유로의 실제 국부 비등 기포계수로 읽으면 안 됩니다. 실제 기포계수는 기포가 생기는 위치(출력이 높은 축방향 상부)와 스펙트럼 변화에 따라 달라 노심 설계 코드로 계산합니다. 시험 답안에서는 수치를 외울 필요가 없고, "MTC가 덜 음인 주기초에는 기포계수·압력계수도 그만큼 약하다"는 연동 관계를 보여 주는 정도로 쓰면 됩니다.</p>
+<h3>해설: 자주 하는 실수</h3>
+<ol>
+<li>밀도계수 부호를 "음"으로만 쓰는 경우 — 정의(밀도 증가당)를 먼저 밝히고 "밀도 감소 시 반응도 감소"로 서술해야 오해가 없습니다.</li>
+<li>MTC·밀도계수·기포계수를 독립 궤환으로 모두 더하는 경우 — 같은 효과의 중복입니다.</li>
+<li>CANDU의 양의 기포계수를 "감속재 기포"로 쓰는 경우 — 냉각재 기포입니다.</li>
+<li>PWR 압력계수를 음으로 쓰는 경우 — 압력↑ → 밀도↑ → 감속↑이라 작은 양입니다.</li>
+</ol>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 계수의 정의와 물리는 바뀌지 않았습니다. 관련 기준은 현행판으로 인용합니다.</p>
+<ul>
+<li>「원자로시설 등의 기술기준에 관한 규칙」 현행 원안위규칙 제37호(2026.3.30) — 제18조(원자로의 고유보호) 취지는 출제 당시와 같습니다.</li>
+<li>「운영기술지침서의 작성에 관한 기준」 현행 원안위고시 제2024-13호(2024.12.31 시행) — LCO 선정기준 문언은 구판과 같고, MTC는 여전히 COLR 한계 이내로 관리합니다.</li>
+<li>미국 STS NUREG-1431은 Rev.5(2021) 그대로이며 LCO 3.1.3(MTC) 체계에 변화가 없습니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 7장(반응도 궤환·온도계수).</li>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, John Wiley &amp; Sons (1976).</li>
+<li>IAPWS, Revised Release on the IAPWS Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam (IAPWS-IF97), IAPWS R7-97(2012).</li>
+<li>R. E. Ginna Nuclear Power Plant, Cycle 39 Core Operating Limits Report, Rev. 0 (2015), NRC ADAMS ML15308A102.</li>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications — Westinghouse Plants, Rev. 5 (2021), LCO 3.1.3 "Moderator Temperature Coefficient".</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제18조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix A, General Design Criterion 11 "Reactor inherent protection".</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.3 "Nuclear Design".</li>
+<li>IAEA, INSAG-7 The Chernobyl Accident: Updating of INSAG-1, Safety Series No. 75-INSAG-7 (1992).</li>
+</ol>

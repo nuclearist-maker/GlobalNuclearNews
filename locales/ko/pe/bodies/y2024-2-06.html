@@ -1,0 +1,137 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2024년 원자력발전기술사 필기 2교시 6번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>원자로 출력을 동일하게 유지하면서 냉각재 입구온도를 낮추는 경우, 그 영향을 다음의 관점에서 기술하시오.
+가. 증기효율
+나. 안전성
+다. 운전 여유도</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>가압경수로의 1차측 온도(저온관·평균·고온관)가 2차측 증기 조건과 증기발생기 열전달로 묶여 있다는 점을 아는지 먼저 봅니다. 그 위에서 같은 온도 변화가 효율에는 불리하고 DNBR·과냉각여유도·재료 부식에는 유리하며, 반응도·조사취화·2차측 설정치에는 새 부담이 된다는 <strong>맞교환 관계</strong>를 균형 있게 정리하는지를 확인하는 문제입니다. 한쪽 효과만 쓰면 배점의 절반을 잃기 쉽습니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 가정 및 문제 해석(출력·유량·SG 전열능력 일정, "증기효율" = 2차 증기 사이클 열효율), 온도 연쇄 관계</li>
+<li>본론 가: 증기발생기 열전달 → 증기압력 저하 → 사이클 효율 저하(예시 계산)</li>
+<li>본론 나: 열적 여유(DNBR·과냉각), 반응도(MTC), 재료(PWSCC·조사취화), 사고해석 초기조건</li>
+<li>본론 다: 늘어나는 여유와 줄어드는 여유 구분, 주기말 감온 운전 활용</li>
+<li>결론: 효율과 열적 여유의 맞교환, 적용 시 재해석·운영기술지침서 변경 필요</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 문제 해석</strong></p>
+<ul>
+<li>"출력 동일" = 원자로 열출력 일정, RCS 유량·증기발생기 전열능력(UA) 일정으로 봄</li>
+<li>입구온도(Tc) 저하는 실제로 <strong>평균온도(Tavg) 프로그램 하향</strong>, 즉 2차측 증기압력을 낮춰 구현함</li>
+<li>노심 ΔT = Q/(ṁ·cp) 거의 일정 → <strong>고온관(Th)도 같은 폭만큼 하강</strong></li>
+<li>"증기효율" = 2차 증기 사이클(랭킨) 열효율로 해석함</li>
+<li>예시 값: 입구 290.6 ℃ / 출구 323.9 ℃(APR1400 공칭 555/615 °F, 2,250 psia)[1], RCS 15.5 MPa, 증기 6.9 MPa, 저하 폭 5 ℃</li>
+</ul>
+<p><strong>2. 가. 증기효율 — 저하</strong></p>
+<ul>
+<li>증기발생기: <strong>Q = UA·LMTD</strong>, Q·UA 일정 → LMTD 일정 → 2차측 포화온도 Ts도 <strong>같은 폭(5 ℃) 하강</strong></li>
+<li>증기압력: Ts 284.9 → 279.9 ℃ ⇒ <strong>6.90 → 6.40 MPa</strong>(IAPWS-IF97 물성[2])</li>
+<li>고온 열원 온도 하강 → 카르노·랭킨 효율 하강
+<ul>
+<li>포화증기 랭킨(복수기 5 kPa) 이상 효율 <strong>37.78 → 37.51 %</strong>(−0.27 %p, 상대 −0.72 %)</li>
+<li>같은 열출력에서 전기출력 약 0.7 % 감소 → 1,400 MWe급이면 약 10 MWe 손실(개략)</li>
+</ul>
+</li>
+<li>부수 효과: 증기 비체적 증가 → 같은 출력에 터빈 조절밸브 개도 증가, 1차측 밀도 증가(저온관 745.1 → 754.3 kg/m³)로 같은 체적유량에서 질량유량 약 +1.2 %</li>
+<li>결론: <strong>같은 열출력을 내도 전기출력이 줄어 경제성 손실</strong></li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 증기발생기 1차측 Th→Tc 곡선과 2차측 Ts 직선이 모두 5 ℃ 하강, LMTD 일정 → 증기압 6.90 → 6.40 MPa → 효율 저하" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/7db48f182948c872c30e53685bd91aa3b45be80f718381a43fd4b0cb92acf4d8.webp"/><figcaption>답안용 도식: 증기발생기 1차측 Th→Tc 곡선과 2차측 Ts 직선이 모두 5 ℃ 하강, LMTD 일정 → 증기압 6.90 → 6.40 MPa → 효율 저하</figcaption></figure>
+<p><strong>3. 나. 안전성 — 열적 여유는 증가, 반응도·취화는 부담</strong></p>
+<ul>
+<li><strong>DNB 여유 증가</strong>: 입구 과냉도↑ → 국부 건도↓ → q″CHF↑ → MDNBR↑
+<ul>
+<li>W-3 상관식[3] 예시(첨두 열속·유량 고정): <strong>1.93 → 2.13</strong>(약 +10 %), 입구 1 ℃당 약 0.04</li>
+</ul>
+</li>
+<li><strong>과냉각여유도 증가</strong>: Tsat(15.5 MPa) 344.8 − Th → <strong>20.9 → 25.9 ℃</strong>, 고온관·SG 상부 기포 생성 여유↑</li>
+<li><strong>반응도 변화</strong>: 음의 MTC에서 감속재 온도↓ → <strong>양의 반응도</strong>
+<ul>
+<li>ΔTavg = −5 ℃(−9 °F): BOC(−5 pcm/°F 예) <strong>+45 pcm</strong>, EOC(−35 pcm/°F 예) <strong>+315 pcm</strong></li>
+<li>출력 유지를 위해 붕산 주입·제어봉 삽입으로 보상해야 함</li>
+<li>저온일수록 물 열팽창이 작아 MTC가 덜 음 → 온도 궤환 다소 약화</li>
+</ul>
+</li>
+<li><strong>재료 부식 감소</strong>: Alloy 600 계열 PWSCC 속도(Q = 50 kcal/mol) Th 5 ℃↓ → <strong>약 0.70배</strong></li>
+<li><strong>조사취화 증가</strong>: 원자로용기 벽 조사 온도↓ → 취화 이동량↑
+<ul>
+<li>10 CFR 50.61a 기질손상(MD)항 인자 (1 − 0.001718·TC[°F])[4]: 0.0464 → 0.0618(<strong>MD항 ×1.33</strong>)</li>
+<li>RTPTS·P-T 한계곡선 여유↓ → PTS 측면 불리</li>
+</ul>
+</li>
+<li><strong>사고해석 초기조건</strong>: 안전해석은 공칭 Tavg ± 불확도를 가정 → 범위를 벗어나면 <strong>재해석</strong> 필요(냉각 사건은 초기 SG 압력이 낮아지고, 가열 사건은 여유가 커지는 등 사건별 방향이 다름)</li>
+</ul>
+<figure class="article-image"><img alt="입구온도 5 ℃ 저하의 득실: 온도 사다리(전/후), 랭킨 이상 효율 37.78 → 37.51 %, W-3 예시 MDNBR 1.93 → 2.13, 과냉각여유도·PWSCC·반응도·조사취화·증기압력 비교표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/d2eb7c2fdd2ba5a918afcda34c3a78d237bdbf6df042ba8ebc2994a942534f61.webp"/><figcaption>입구온도 5 ℃ 저하의 득실: 온도 사다리(전/후), 랭킨 이상 효율 37.78 → 37.51 %, W-3 예시 MDNBR 1.93 → 2.13, 과냉각여유도·PWSCC·반응도·조사취화·증기압력 비교표</figcaption></figure>
+<p><strong>4. 다. 운전 여유도 — 늘어나는 것과 줄어드는 것</strong></p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>항목</th>
+<th>변화</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>증가</td>
+<td>DNB 관련 LCO(평균온도 상한)[5] 여유, 과온도 ΔT(OTΔT) 트립 설정치까지 여유(W형), CPC DNBR 여유(CE형)</td>
+<td>↑</td>
+</tr>
+<tr>
+<td>증가</td>
+<td>과냉각여유도(ICCMS), RCP 유효흡입수두</td>
+<td>↑</td>
+</tr>
+<tr>
+<td>증가</td>
+<td>주기말 반응도: 감온 운전으로 +수백 pcm 확보 → 주기 연장</td>
+<td>↑</td>
+</tr>
+<tr>
+<td>감소</td>
+<td>저SG압력 정지·MSIS 설정치까지 여유, 터빈 밸브 개도 여유</td>
+<td>↓</td>
+</tr>
+<tr>
+<td>감소</td>
+<td>최소임계온도·저온관 하한 LCO까지 여유, MTC 상한(덜 음)까지 여유</td>
+<td>↓</td>
+</tr>
+<tr>
+<td>감소</td>
+<td>P-T 한계·PTS 여유(조사취화), 붕소 보상 부담</td>
+<td>↓</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>주기말 예시: +315 pcm ÷ 약 23.8 pcm/EFPD(설명용 주기 모델) ≈ <strong>약 13 EFPD 연장 효과</strong></li>
+<li>실제 적용: Tavg 프로그램 변경은 안전해석 재수행, 운영기술지침서·노심운영제한보고서 변경과 규제 승인 대상임</li>
+</ul>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>가. 증기압력↓ → <strong>사이클 효율↓</strong>(예시 −0.27 %p) → 전기출력 손실</li>
+<li>나. <strong>DNBR·과냉각여유도·PWSCC는 유리</strong>, 반응도 보상·조사취화·초기조건 재해석은 부담</li>
+<li>다. 1차측 열적 여유는 늘고 <strong>2차측·재료·반응도 여유는 줄어드는 맞교환</strong></li>
+<li>실제 사례: APR1400은 고온관 온도를 OPR1000의 621 °F에서 615 °F로 낮춰 운전 여유를 늘렸음[1](증기발생기 전열관 부식 완화 효과도 같은 방향)</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 왜 입구온도만 따로 낮출 수 없나</h3>
+<p>가압경수로의 출력은 1차측 평균온도와 2차측 증기압력의 차이로 증기발생기를 건너갑니다. 열출력과 전열 면적이 그대로라면 온도 차(LMTD)도 그대로여야 하므로, 1차측을 5 ℃ 낮추면 2차측 포화온도도 5 ℃ 내려갑니다. 그래서 이 문제의 효율 저하는 "1차측이 차가워져서"가 아니라 "증기가 낮은 압력으로 만들어져서" 생깁니다. 반대로 증기발생기 전열관을 막아 UA가 줄면, 같은 평균온도에서도 증기압력이 떨어집니다. 그래서 관막음률이 큰 발전소는 평균온도를 올려 증기압력을 회복하기도 합니다. 이때는 이 문제와 반대 방향의 맞교환을 하게 됩니다.</p>
+<h3>해설: 수치를 쓸 때 주의할 점</h3>
+<p>효율 수치는 포화증기 단순 랭킨 이상 사이클입니다(재열·재생 없음). 실제 발전소의 절대값과는 다르지만, 상대 감소율(약 0.7 %)은 같은 크기로 보아도 됩니다. MDNBR 수치는 W-3 상관식으로 고온봉 하나를 계산한 설명용 예시이며 설계값이 아닙니다. 실제로는 질량유량 증가와 출력분포 변화가 더해집니다. 조사취화 인자는 50.61a 식 가운데 MD항 하나의 변화입니다. 구리 석출(CRP)항에는 온도항이 없으므로 전체 ΔT30의 증가율은 1.33배보다 작습니다.  MTC 값은 상용 PWR 대표 범위 안에서 고른 예시입니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 달라진 기준 없음 — 확인 근거: 10 CFR 50.61a 취화 상관식(2010년 제정, TC는 저온관 시간가중 평균온도 °F)[4]과 Westinghouse형 표준기술지침서(NUREG-1431 Rev.5)의 DNB 변수 LCO 구조[5]가 그대로이며, 국내 PTS 기준은 감시시험 고시 제2021-28호가 현행입니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>S.-S. Lee, S.-H. Kim, K.-Y. Suh, "The Design Features of the Advanced Power Reactor 1400", Nuclear Engineering and Technology 41(8), 995(2009) — Table 1(원자로 입구 555 °F·출구 615 °F, 운전압력 2,250 psia), 고온관 621 → 615 °F.</li>
+<li>W. Wagner et al., "The IAPWS Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam", Journal of Engineering for Gas Turbines and Power 122(2000).</li>
+<li>N. E. Todreas, M. S. Kazimi, Nuclear Systems I: Thermal Hydraulic Fundamentals, CRC Press — 임계열속(W-3 상관식) 장.</li>
+<li>U.S. NRC, 10 CFR 50.61a "Alternate fracture toughness requirements for protection against pressurized thermal shock events"(2010).</li>
+<li>U.S. NRC, NUREG-1431 Rev. 5 "Standard Technical Specifications — Westinghouse Plants", LCO 3.4.1 "RCS Pressure, Temperature, and Flow DNB Limits"; NUREG-1432(CE Plants) LCO 3.4.1.</li>
+</ol>

@@ -1,0 +1,188 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2024년 원자력발전기술사 필기 2교시 1번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>증기발생기에 대해 다음을 기술하시오.
+가. 증기유량제한기의 기능
+나. 전열관 손상 메커니즘
+다. 전열관의 건전성 유지 방법
+라. 전열관 파열 시의 과도현상</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>증기발생기(SG)를 2차측 배관 파단과 1차측 압력경계 손상이라는 두 방향의 사고와 연결해 묻는 종합 문제입니다. 가.에서는 유량제한기를 "밸브"가 아니라 <strong>임계유동으로 방출률 상한을 정하는 고정 벤투리</strong>로 설명하는지 봅니다. 나.·다.에서는 손상 기구와 대책을 짝지어 쓰는지, 라.에서는 SGTR의 1·2차측 거동과 <strong>압력 평형</strong>이라는 대응 원리까지 연결하는지 봅니다. 소문항이 4개라 각 항목을 표와 개조식으로 압축하는 시간 배분이 중요합니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: SG의 역할과 전열관이 압력경계라는 점</li>
+<li>본론 가: 유량제한기 구조·원리(임계유동)·기능 4가지</li>
+<li>본론 나: 손상 기구(1차측·2차측·기계적) 표</li>
+<li>본론 다: 설계·수화학·검사·보수의 4단계 건전성 유지</li>
+<li>본론 라: SGTR 과도현상(1차측·2차측·자동 응답·운전원 대응)</li>
+<li>결론: 두 사고를 잇는 공통점(2차측 경계와 1차측 경계)</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>SG = 1차 냉각재(약 15.5 MPa) 열을 2차측(약 7 MPa)에 전달해 증기를 만드는 U-관 열교환기임</li>
+<li>전열관은 <strong>원자로냉각재 압력경계(RCPB)의 일부</strong>이며 면적 기준으로 대부분을 차지함. 벽은 약 1 mm임(대형 PWR SG는 외경 약 19 mm급 관이 SG당 수천~1만여 개)</li>
+<li>2차측 배관 파단(MSLB)에서는 <strong>방출률</strong>이, 전열관 손상에서는 <strong>1차→2차 경계</strong>가 안전의 핵심임</li>
+</ul>
+<p><strong>2. 가. 증기유량제한기의 기능</strong></p>
+<ul>
+<li><strong>구조</strong>: SG 증기 출구노즐에 일체로 넣은 <strong>벤투리</strong>(수렴부–목–확산부)임. 가동부가 없는 수동 기기로, 밸브가 아님
+<ul>
+<li>예: APR1400은 SG당 제한기 2개이며, 제한기 1개의 유동면적이 주증기관 면적의 30 %임 [1]</li>
+</ul>
+</li>
+<li><strong>원리</strong> [2][7]: 하류 파단으로 압력비가 임계값(포화증기 약 0.58) 아래가 되면 목에서 <strong>임계(초크)유동</strong>이 생김 → <em><em>W = G</em>(P_SG) × A_목 (W: 질량유량)</em>*
+<ul>
+<li>목에서 임계유동이 성립하면(파단 면적 &gt; 목 면적) 방출 질량유량은 파단 크기와 무관하게 <strong>SG 압력과 목 면적으로 상한</strong>이 정해짐</li>
+</ul>
+</li>
+<li><strong>기능</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>제한하는 것</th>
+<th>효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① MSLB 방출 질량유량</td>
+<td>RCS 과냉각률·양의 반응도 삽입률(음의 MTC) 제한 → 재임계·출력 복귀 완화, DNBR 여유 확보 [2]</td>
+</tr>
+<tr>
+<td>② 격납건물 내 질량·에너지 방출률</td>
+<td>격납건물 첨두 압력·온도 제한</td>
+</tr>
+<tr>
+<td>③ 파단 시 동적 하중</td>
+<td>SG 내부구조물(전열관·관지지판·습분분리기) 차압·취출력, 배관 반력·제트 하중 감소</td>
+</tr>
+<tr>
+<td>④ (부수) 차압 신호</td>
+<td>일부 설계는 제한기 전후 차압을 증기유량 측정에 활용 </td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>특징</strong>: 정상 운전 압력손실은 확산부 압력 회복으로 작음. 격리 기능은 없으므로 MSIV와 역할이 다름(제한기 = 상한, MSIV = 차단)</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 출구노즐 벤투리 단면과 목의 임계유동, W = G*·A_목" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/c4cd6a0e34fb387b55a84de5db0c2b0d45920865fed72fee23f040e883a23b44.webp"/><figcaption>답안용 도식: 출구노즐 벤투리 단면과 목의 임계유동, W = G*·A_목</figcaption></figure>
+<figure class="article-image"><img alt="SG 압력별 포화증기 임계질량속과 SG 1대 최대 방출유량(제한기 유무, 설명용 가정 치수), 기능 4가지 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/335839c904984bd6fd1f289719908482125d1c4291a36a69bfe69e9f12a9f391.webp"/><figcaption>SG 압력별 포화증기 임계질량속과 SG 1대 최대 방출유량(제한기 유무, 설명용 가정 치수), 기능 4가지 표</figcaption></figure>
+<p><strong>3. 나. 전열관 손상 메커니즘</strong></p>
+<ul>
+<li>응력부식균열(SCC)은 <strong>민감 재질·인장응력·부식 환경</strong>이 겹칠 때 생김</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>기구</th>
+<th>대표 위치</th>
+<th>원인</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1차측(내면)</td>
+<td>PWSCC</td>
+<td>관판 확관 천이부, 소반경 U-벤드</td>
+<td>Alloy 600MA + 잔류응력 + 고온</td>
+</tr>
+<tr>
+<td>2차측(외면)</td>
+<td>ODSCC·IGA</td>
+<td>관판 상단 슬러지, 지지판 틈새</td>
+<td>비등에 의한 불순물 농축</td>
+</tr>
+<tr>
+<td>2차측</td>
+<td>피팅·감육</td>
+<td>관판 상단 슬러지</td>
+<td>Cu·Cl·O₂, 과거 인산염 처리</td>
+</tr>
+<tr>
+<td>변형</td>
+<td>덴팅</td>
+<td>탄소강 지지판 교차부</td>
+<td>부식 생성물 부피 팽창 → 관 압착</td>
+</tr>
+<tr>
+<td>기계적</td>
+<td>프레팅 마모</td>
+<td>AVB·지지판</td>
+<td>유체유발진동</td>
+</tr>
+<tr>
+<td>기계적</td>
+<td>고주기 피로</td>
+<td>U-벤드 상부</td>
+<td>유체탄성불안정 + 지지 상실</td>
+</tr>
+<tr>
+<td>기계적</td>
+<td>이물질 마모</td>
+<td>관판 상부 외곽</td>
+<td>반입·유입 이물질</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>PWSCC는 온도 의존이 큼 → 고온관측에 집중됨(Q ≈ 50 kcal/mol 가정 시 Thot 10 °C 저감 → 약 1/2)</li>
+<li>Alloy 690TT 이후 부식균열은 거의 사라지고 <strong>마모가 지배 기구</strong>임 [5]</li>
+</ul>
+<p><strong>4. 다. 전열관의 건전성 유지 방법</strong></p>
+<ul>
+<li><strong>설계·재질</strong>: Alloy 690TT, 스테인리스강 4엽형 지지판, 관판 전 깊이 수압 확관(틈새 제거), AVB 보강, 소반경 U-벤드 응력 완화</li>
+<li><strong>수화학·운전</strong>: AVT(아민 + 히드라진 탈산소), Na·Cl·SO₄ 관리와 몰비 조절, 연속 취출, 슬러지 랜싱·화학세정, Thot 저감, 이물질 관리(FME)</li>
+<li><strong>검사·평가</strong>: SG 프로그램에 따라 정비 때 <strong>ECT</strong>(보빈 전수 선별 + 회전형·어레이 정밀) 수행. 상태감시(CM)와 운전평가(OA)로 다음 점검까지 성능기준 만족을 입증함
+<ul>
+<li>성능기준: 구조(정상 ΔP×3.0·사고 ΔP×1.4에서 파열 안 함), 사고 유발 누설 ≤ 해석 가정치, 운전 누설 <strong>SG 1기당 150 gpd</strong> [3][4]</li>
+</ul>
+</li>
+<li><strong>보수·교체</strong>: 결함 깊이 <strong>≥ 공칭 벽두께 40 %</strong> → 관막음 또는 슬리빙 [3][8]. 누적 관막음률이 안전해석 가정치에 접근하면 재해석 또는 <strong>SG 교체</strong></li>
+<li><strong>운전 중 감시</strong>: 복수기 공기추출기 배기·SG 취출수·주증기관 N-16 방사선 감시기로 1차→2차 누설 추세를 감시함</li>
+</ul>
+<p><strong>5. 라. 전열관 파열 시의 과도현상</strong></p>
+<ul>
+<li>설계기준 = <strong>전열관 1개 양단(완전 원주) 파단</strong> [6]. 초기 파단유량은 정상 충전 용량을 넘음(fig2 설명용 계산: 약 29 kg/s 대 충전 용량 가정 약 8 kg/s)</li>
+<li><strong>1차측</strong>: 가압기 수위·압력 감소, 충전유량 증가·유출 격리, VCT 수위 감소 → 원자로 정지(가압기 저압력 등) → 터빈 정지 → <strong>SIAS</strong>
+<ul>
+<li>RCS 압력은 SI 유량과 파단유량이 같아지는 압력에서 정체함</li>
+</ul>
+</li>
+<li><strong>2차측</strong>: 파열 SG 수위 상승, 급수 &lt; 증기 유량, 공기추출기·취출수·N-16 감시기 경보</li>
+<li><strong>특징</strong>: 격납건물 압력·방사선 변화가 없음 → LOCA·MSLB와 구별됨. 냉각재가 격납건물 밖으로 나가는 <strong>격납건물 우회</strong> 경로임</li>
+<li><strong>소외전원상실 가정 시</strong>: 복수기 상실 → 파열 SG 압력 상승 → ADV·MSSV로 대기 방출(선량 평가의 주 경로)</li>
+<li><strong>운전원 대응</strong>: 파열 SG 확인·격리 → 건전 SG로 냉각(과냉도 확보) → 가압기 살수·PORV로 감압 → <strong>RCS 압력 = 파열 SG 압력(유출 정지)</strong> → SI 종료 → 정지냉각 진입</li>
+<li><strong>2차 위험</strong>: 냉각 전 조기 격리 시 MSSV 개방, SI 지속 시 <strong>과충수</strong>(주증기관 침수·안전밸브 물 방출·고착)</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 파열 SG를 중심으로 한 1차측(↓)·2차측(↑) 증상 지도와 압력 평형 목표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/4dd15c869d284ebf5397c4706daa992ceda16fdda18604b3829ccff9a7f959a8.webp"/><figcaption>답안용 도식: 파열 SG를 중심으로 한 1차측(↓)·2차측(↑) 증상 지도와 압력 평형 목표</figcaption></figure>
+<figure class="article-image"><img alt="1·2차 압력차에 따른 전열관 1개 양단 파단유량(설명용 계산)과 충전 용량 비교, 단계별 과도현상 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/6e9b269cce451f6f2f85953230281c68161883450ff8a5d47e0e61a0f237565e.webp"/><figcaption>1·2차 압력차에 따른 전열관 1개 양단 파단유량(설명용 계산)과 충전 용량 비교, 단계별 과도현상 표</figcaption></figure>
+<p><strong>6. 결론</strong></p>
+<ul>
+<li>유량제한기는 <strong>2차측 파단의 방출률 상한</strong>을, 전열관 관리는 <strong>1·2차 경계의 건전성</strong>을 지키는 장치·활동임</li>
+<li>전열관 사고는 격납건물을 우회하므로, 재질·수화학으로 예방하고 ECT·성능기준으로 확인하며 사고 시에는 <strong>압력 평형</strong>으로 유출을 멈추는 것이 핵심임</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 두 그림의 숫자를 읽는 법</h3>
+<p>fig1은 포화증기가 등엔트로피로 팽창할 때의 임계질량속 G<em>를 IAPWS-IF97[7]로 직접 계산한 곡선입니다. G</em>는 SG 압력에 거의 비례해 7.38 MPa에서 약 10,500 kg/m²·s입니다. 출구 유로 단면을 0.58 m²로 가정하면, 전단면이 그대로 열릴 때 SG 1대의 방출 상한은 약 6,150 kg/s로 가정한 정격 증기유량(약 800 kg/s)의 7.7배입니다. 목 면적을 30 %(APR1400 비율)로 줄이면 약 1,850 kg/s로 떨어집니다. 이 계산은 유출계수와 파단 후 압력 강하를 무시한 설명용 상한이므로 실제 안전해석의 방출률보다 큽니다. 답안에는 <strong>"임계유동이 성립하면 방출률 ∝ 목 면적, 파단 크기와 무관"</strong>이라는 원리만 쓰면 충분합니다.</p>
+<p>fig2는 전열관 1개 양단 파단을 두 개의 오리피스로 본 설명용 근사입니다(Cd 0.6, ρ 700 kg/m³, 플래싱·관 마찰 무시). 정상 압력차 8.1 MPa에서 약 29 kg/s입니다. 충전 용량을 약 8.2 kg/s(약 130 gpm)로 가정하면 파단유량과 같아지는 압력차는 약 0.67 MPa입니다. 그래서 파단은 충전으로 보충할 수 없고, 유출을 멈추려면 압력차를 0으로 만들어야 합니다. 이 그림 하나로 "누설과 파단의 구분"과 "압력 평형 전략"을 함께 설명할 수 있습니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 달라진 기준 없음(확인 근거: NRC STS 5.5.9 성능기준 3.0·1.4배와 3.4.13의 150 gpd, 40 %TW 깊이 기준은 TSTF-449·510·577 이후 변경 없음). 국내에서는 가동중검사 고시가 원안위고시 제2026-14호 「원자로시설의 가동중 검사에 관한 고시」(2026.8.26)로 제명이 바뀌었고, 근거 조항은 기술기준규칙 제63조입니다[9]. </p>
+<h2>참고문헌</h2>
+<ol>
+<li>S. Cho, K.-Y. Choi, H.-S. Park, K.-H. Kang, Y.-S. Kim, N.-H. Choi, C.-H. Song, "Break Size Effects on MSLB event using the ATLAS", Transactions of the Korean Nuclear Society Spring Meeting, Jeju (2012).</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 15.1.5, "Steam System Piping Failures Inside and Outside of Containment (PWR)".</li>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications — Westinghouse Plants, Rev. 5 (2021), 5.5.9 "Steam Generator (SG) Program", LCO 3.4.13·3.4.17.</li>
+<li>Nuclear Energy Institute, NEI 97-06, "Steam Generator Program Guidelines".</li>
+<li>U.S. NRC, NUREG-1841, "U.S. Operating Experience with Thermally Treated Alloy 690 Steam Generator Tubes" (2007).</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 15.6.3, "Radiological Consequences of Steam Generator Tube Failure (PWR)".</li>
+<li>IAPWS, "Revised Release on the IAPWS Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam" (IAPWS-IF97).</li>
+<li>U.S. NRC, Regulatory Guide 1.121, "Bases for Plugging Degraded PWR Steam Generator Tubes" (1976).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제63조; 원안위고시 제2026-14호 「원자로시설의 가동중 검사에 관한 고시」(2026.8.26). 국가법령정보센터.</li>
+</ol>

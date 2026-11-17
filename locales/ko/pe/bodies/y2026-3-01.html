@@ -1,0 +1,118 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2026년 원자력발전기술사 필기 3교시 1번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>가압경수로를 2,815 MWth 열출력으로 운전하고 있다. 원자로 냉각재 입구온도는 296 ℃, 유량은 5.96 × 10⁷ kg/hr, 운전압력은 158 kg/㎠일 때, 다음을 계산하시오. 단, 냉각재 비열은 1 kcal/kg·℃, 가압기 포화수 및 포화증기 온도는 158 kg/㎠에서 350 ℃, 1 J = 0.24 cal 이다.
+가. 원자로 냉각재의 출구온도
+나. 원자로냉각재 고온관을 기준한 과냉각 여유도</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>노심 열출력과 냉각재 유량으로 온도 상승을 구하는 정상상태 에너지 수지(Q = ṁ·cp·ΔT)와, MW·kg/hr·kcal가 섞인 단위를 정확히 환산하는지를 먼저 봅니다. 이어서 가압기만 포화 상태이고 나머지 1차계통은 과냉 액체라는 가압경수로의 압력 유지 원리를 이해하고, 왜 "고온관"을 기준으로 여유도를 정의하는지 설명할 수 있는지를 확인하려는 문제입니다. 계산은 두 줄이므로 배점의 상당 부분은 가정 명시, 단위 처리, 결과의 물리적 의미 서술에서 갈립니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 가정 및 문제 해석(정상상태, 단상, 열손실·RCP 입열 무시, 압력 기준), 주어진 값 정리</li>
+<li>본론 가: 열출력 단위 환산 → 에너지 수지 → 온도 상승 → 출구온도 → SI 검산</li>
+<li>본론 나: 과냉각여유도 정의 → 대입 → 고온관을 기준으로 삼는 이유 → 감시와 운전상 의미</li>
+<li>결론: 결과 요약, 주어진 비열(1 kcal/kg·℃)과 실제 물성의 차이</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 문제 해석</strong></p>
+<ul>
+<li>정상상태, 노심 열출력 전량이 냉각재로 전달됨(용기 열손실·RCP 입열 무시)</li>
+<li>냉각재는 단상 액체, 비열은 문제 조건 <strong>cp = 1 kcal/kg·℃ 일정</strong>으로 계산함</li>
+<li>출구온도 = 원자로용기 출구 혼합 평균온도 = <strong>고온관 온도</strong>로 봄</li>
+<li>158 kg/㎠는 1차계통 공칭 운전압력(약 15.5 MPa)이며, 가압기와 고온관의 압력차는 무시하고 <strong>Tsat = 350 ℃(주어진 값)</strong>를 그대로 씀</li>
+</ul>
+<p><strong>2. 주어진 값</strong></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>기호</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>열출력</td>
+<td>Q</td>
+<td>2,815 MWth</td>
+</tr>
+<tr>
+<td>입구온도</td>
+<td>Tin</td>
+<td>296 ℃</td>
+</tr>
+<tr>
+<td>질량유량</td>
+<td>ṁ</td>
+<td>5.96 × 10⁷ kg/h</td>
+</tr>
+<tr>
+<td>비열</td>
+<td>cp</td>
+<td>1 kcal/kg·℃</td>
+</tr>
+<tr>
+<td>포화온도</td>
+<td>Tsat</td>
+<td>350 ℃ (158 kg/㎠)</td>
+</tr>
+<tr>
+<td>환산</td>
+<td>—</td>
+<td>1 J = 0.24 cal</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3. 가. 원자로 냉각재의 출구온도</strong></p>
+<ul>
+<li>식: Q = ṁ·cp·(Tout − Tin) → <strong>Tout = Tin + Q / (ṁ·cp)</strong></li>
+<li>열출력 환산: Q = 2,815 × 10⁶ J/s × 3,600 s/h × 0.24 cal/J = 2.432 × 10¹² cal/h = <strong>2.432 × 10⁹ kcal/h</strong></li>
+<li>분모: ṁ·cp = 5.96 × 10⁷ kg/h × 1 kcal/kg·℃ = 5.96 × 10⁷ kcal/h·℃</li>
+<li>온도 상승: ΔT = 2.432 × 10⁹ / 5.96 × 10⁷ = <strong>40.8 ℃</strong></li>
+<li>출구온도: Tout = 296 + 40.8 = <strong>336.8 ℃</strong></li>
+<li>단위 검토: (kcal/h) ÷ (kg/h × kcal/kg·℃) = ℃ ✓</li>
+<li>SI 검산: ṁ = 16,556 kg/s, cp = 1,000 / 0.24 = 4,166.7 J/kg·℃ → ΔT = 2.815 × 10⁹ / (16,556 × 4,166.7) = 40.8 ℃ ✓</li>
+<li>참고: 노심 평균온도 = (296 + 336.8) / 2 = 316.4 ℃</li>
+</ul>
+<figure class="article-image"><img alt="에너지 수지 계산 흐름(2.432×10⁹ kcal/h ÷ 5.96×10⁷ kcal/h·℃ = 40.8 ℃ → 336.8 ℃)과 온도 축 위의 입구·출구·Tsat, 문제 조건 여유 13.2 ℃와 IAPWS 실제 물성 여유 19.5 ℃ 비교" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/3b21ee1b64909ef22f9ac9d8a20be3e4a00e7da428b0250f368af535287be95b.webp"/><figcaption>에너지 수지 계산 흐름(2.432×10⁹ kcal/h ÷ 5.96×10⁷ kcal/h·℃ = 40.8 ℃ → 336.8 ℃)과 온도 축 위의 입구·출구·Tsat, 문제 조건 여유 13.2 ℃와 IAPWS 실제 물성 여유 19.5 ℃ 비교</figcaption></figure>
+<p><strong>4. 나. 고온관 기준 과냉각여유도</strong></p>
+<ul>
+<li>정의: 과냉각여유도 ΔTsub = Tsat(계통 압력) − T고온관 → 냉각재가 비등하기까지 남은 온도 여유</li>
+<li>대입: ΔTsub = 350 − 336.8 = <strong>13.2 ℃</strong></li>
+<li>판정: 양수이므로 고온관 냉각재는 <strong>과냉(미포화) 액체</strong> 상태, 단상 유지됨</li>
+<li>압력으로 표현할 수도 있음: 운전압력 − Psat(T고온관) (계기·절차서에 따라 온도/압력 여유 병용)</li>
+</ul>
+<p><strong>5. 고온관을 기준으로 삼는 이유와 의미</strong></p>
+<ul>
+<li>가압경수로 1차계통에서 <strong>포화 상태는 가압기 한 곳뿐</strong>임 → 가압기 히터·살수로 압력을 정하고, 루프 냉각재는 그 압력의 포화온도보다 낮은 단상 액체로 운전함</li>
+<li>루프에서 가장 뜨거운 액체는 노심을 막 빠져나온 <strong>고온관</strong> → 여유가 가장 작은 지점이므로 보수적 기준이 됨</li>
+<li>여유도가 0에 가까워지면 고온관·증기발생기 상부·원자로헤드에 기포·증기가 생김 → 가압기 수위가 실제 냉각재 재고를 대표하지 못하고, RCP 공동현상·자연순환 방해 우려</li>
+<li>감소 요인: 압력 하강(냉각재상실사고, 가압기 살수·밸브 개방), 고온관 온도 상승(출력 증가, 유량 감소, 2차측 열제거 상실)</li>
+<li>감시: <strong>부적절한 노심냉각 감시계통(ICCMS)</strong>의 과냉각여유도 감시 기능이 RCS 압력과 고온관·노심출구 온도로 여유도를 계산·표시함[2][3] → 비상운전절차서의 안전주입 조절·정지, RCP 정지 판단 등에 쓰임</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 원자로용기·고온관·저온관·가압기와 온도 막대(296 → 336.8 → 350 ℃), ΔT 40.8 ℃와 여유 13.2 ℃" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/5d968c0840fed30412e635a32638c1a8cb8d9352686d9d199187f2358a178b24.webp"/><figcaption>답안용 도식: 원자로용기·고온관·저온관·가압기와 온도 막대(296 → 336.8 → 350 ℃), ΔT 40.8 ℃와 여유 13.2 ℃</figcaption></figure>
+<p><strong>6. 결론</strong></p>
+<ul>
+<li>가. 냉각재 출구온도 <strong>약 336.8 ℃</strong> (ΔT = 40.8 ℃)</li>
+<li>나. 고온관 기준 과냉각여유도 <strong>약 13.2 ℃</strong></li>
+<li>문제의 cp = 1 kcal/kg·℃는 상온 물 값임. 15.5 MPa·300 ℃대 물의 실제 비열은 약 1.3~1.5 kcal/kg·℃라 실제 온도 상승은 이보다 작음(아래 해설)</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 실제 물성으로 풀면 숫자가 어떻게 달라지나</h3>
+<p>158 kg/㎠를 절대압 15.49 MPa로 보고 IAPWS-IF97 물성표[1]로 다시 계산해 보았습니다. 입구 296 ℃의 엔탈피는 1,315.9 kJ/kg이고, 냉각재 1 kg이 얻는 엔탈피는 Δh = Q/ṁ = 2,815,000 kW ÷ 16,556 kg/s = 170.0 kJ/kg입니다. 이를 더한 출구 엔탈피에 해당하는 온도는 325.3 ℃입니다. 이 압력의 포화온도는 344.8 ℃이므로 여유도는 19.5 ℃가 됩니다. 고압 고온의 물은 비열이 입구 5.36 kJ/kg·K에서 출구 6.42 kJ/kg·K로 커지는데, 문제의 1 kcal/kg·℃(4.17 kJ/kg·K)는 평균값 5.80 kJ/kg·K의 약 72 %에 그칩니다. 그래서 온도 상승이 약 39 % 크게(40.8 대 29.3 ℃) 나옵니다. 반대로 문제의 포화온도 350 ℃는 실제보다 약 5 ℃ 높아 두 단순화가 일부 상쇄됩니다. 실제 물성 결과는 국내 표준형 원전(OPR1000)의 설계 고온관 온도 621 °F(약 327 ℃)와 비슷한 수준입니다(같은 문헌에서 APR1400은 615 °F로 낮춤)[4]. 답안에서는 주어진 조건으로 답을 내고, 결론에 "실제 비열은 더 커서 온도 상승이 작다"는 한 줄만 덧붙이면 충분합니다.</p>
+<h3>해설: 자주 하는 실수</h3>
+<p>첫째, 1 J = 0.24 cal 조건을 쓰지 않고 1 kWh = 860 kcal로 환산하면 Q = 2.421 × 10⁹ kcal/h, 출구온도 336.6 ℃, 여유도 13.4 ℃가 나옵니다. 문제가 환산 계수를 준 이상 그 값을 따르는 것이 원칙입니다. 둘째, 유량의 시간 단위(hr)와 출력의 시간 단위(s)를 맞추지 않으면 답이 3,600배 어긋납니다. 셋째, 여유도를 노심 평균온도(316.4 ℃) 기준으로 계산하면 33.6 ℃가 되어 여유를 과대평가합니다. 넷째, 과냉각여유도가 양수라고 노심 안 어디에서도 비등이 없다고 쓰면 안 됩니다. 고온 유로의 피복관 표면에서는 정상 운전 중에도 국부 과냉 비등이 생길 수 있고, 그 한계는 DNBR로 따로 관리합니다[5].</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 달라진 기준 없음(확인 근거: 2026년 출제 문항이며, 과냉각여유도 감시는 TMI-2 사고 후 NUREG-0737 II.F.2 "부적절한 노심냉각 계측" 요구[2]에 따라 설치된 ICCMS 기능으로 현행 국내 가압경수로에 그대로 유지되고 있음). 구체적인 여유도 경보·절차 설정값은 노형과 발전소 운영기술지침서·비상운전절차서마다 다르므로 답안에 고정 수치로 쓰지 않는 편이 안전합니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>IAPWS, Revised Release on the IAPWS Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam, IAPWS R7-97(2012). IAPWS 웹(iapws.org).</li>
+<li>U.S. NRC, NUREG-0737 "Clarification of TMI Action Plan Requirements" (1980), Item II.F.2 "Instrumentation for Detection of Inadequate Core Cooling".</li>
+<li>U.S. NRC, Regulatory Guide 1.97 "Criteria for Accident Monitoring Instrumentation for Nuclear Power Plants".</li>
+<li>S.-S. Lee, S.-H. Kim, K.-Y. Suh, "The Design Features of the Advanced Power Reactor 1400", Nuclear Engineering and Technology, Vol. 41, No. 8, pp. 995–1004 (2009) — 고온관 온도 OPR1000 621 °F, APR1400 615 °F.</li>
+<li>N. E. Todreas, M. S. Kazimi, Nuclear Systems I: Thermal Hydraulic Fundamentals, Taylor &amp; Francis — 과냉 비등·임계열속 장.</li>
+</ol>

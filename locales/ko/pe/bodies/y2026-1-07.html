@@ -1,0 +1,58 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2026년 원자력발전기술사 필기 1교시 7번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>가압경수로 파단전누설(LBB, Leak-Before-Break)의 개념 및 평가 요소</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>누설크기 균열</strong>: 정상운전 하중에서 누설탐지 능력의 10배를 흘리는 관통균열입니다.</li>
+<li><strong>임계균열</strong>: 정상+SSE 하중에서 불안정 파단이 시작되는 균열 크기입니다.</li>
+<li><strong>3대 여유</strong>: 누설률 10배, 균열 크기 2배, 하중 1.4배(절대합 조합 시 1.0)입니다.</li>
+<li><strong>동적 영향 제외</strong>: 배관 휩·분사 제트 등 가상 파단의 동적 영향만 설계기준에서 빼는 것입니다. LOCA 해석 자체는 그대로 남습니다.</li>
+<li><strong>열화기구 배제</strong>: 수격·크리프·응력부식균열(SCC)·피로·침식이 파단 원인이 아님을 먼저 보여야 합니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개념</strong></p>
+<ul>
+<li>고에너지 배관에 관통균열이 생겨도 <strong>불안정 파단 전에 탐지 가능한 누설이 먼저 발생</strong>함을 결정론적 파괴역학으로 입증하는 개념임</li>
+<li>입증 구간은 가상 양단파단의 <strong>동적 영향</strong>(배관 휩, 제트 충돌, 격실 압력, 비대칭 하중)을 설계기준에서 제외함 → 휩 구속장치·제트 차단판 제거, 가동중검사(ISI) 접근성·피폭 개선</li>
+<li>ECCS·격납건물·환경검증의 LOCA 가정은 유지함</li>
+<li>근거: 기술기준규칙 <strong>제15조 ① 3호 단서</strong>[1], 10 CFR 50 App. A <strong>GDC 4</strong>[2], SRP 3.6.3[3], NUREG-1061 Vol.3[4]</li>
+</ul>
+<p><strong>2. 평가 요소 (SRP 3.6.3 Rev.1)</strong>[3]</p>
+<ul>
+<li>① <strong>적용 범위</strong>: 고에너지 ASME Class 1·2 배관, 계통·해석 구간 단위(개별 용접부 단위 불가)</li>
+<li>② <strong>열화기구 배제</strong>: 수격, 크리프, 침식·부식(SCC), 피로(열성층·진동), 간접 파손(지진·비산물), 벽개파괴(Charpy 상부 선반 확인)</li>
+<li>③ <strong>PWSCC</strong>: Alloy 600/82/182는 활성 열화기구로 간주 → 완화조치 필요, 690/52/152는 비민감</li>
+<li>④ <strong>재료 물성</strong>: 실제 heat의 <strong>J-R 곡선</strong>·응력-변형률 곡선, 운전온도 하한값, 주조 스테인리스 <strong>열시효</strong> 반영</li>
+<li>⑤ <strong>누설크기 균열</strong>: 정상운전 하중(대수합)에서 누설률 = 탐지능력 × <strong>10</strong> (예: APR1400 DC 0.5 gpm → 5 gpm)[6]</li>
+<li>⑥ <strong>임계균열</strong>: 정상+SSE 하중, J/T 안정성 또는 한계하중 해석 → 균열 크기 여유 <strong>≥ 2</strong></li>
+<li>⑦ <strong>하중 여유</strong>: 1.4 ×(정상+SSE)에서 누설크기 균열 안정(절대합 조합 시 1.0)</li>
+<li>⑧ <strong>누설탐지계통</strong>: RG 1.45[5] 동등 이상, 독립·다양한 방법(집수조 수위·유량, 대기 입자 방사능 등), 운영기술지침서 LCO로 운전 중 유지</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 균열 길이 수직선 위 탐지 균열·누설크기 균열·임계균열과 누설률 ×10·균열 크기 ×2 여유" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/2efe81149cf70ebddc690498c906ae4712feec84abf02a1d3a904cae4989a5b7.webp"/><figcaption>답안용 도식: 균열 길이 수직선 위 탐지 균열·누설크기 균열·임계균열과 누설률 ×10·균열 크기 ×2 여유</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="관통균열 길이에 따른 누설률 곡선(개념적 추세) 위의 탐지능력·10배 누설 기준선, 임계균열까지 2배 여유와 SRP 3.6.3 3대 여유 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/4093e4dc90f2e3fdb7e7fe4e6d996ea289fc492ea0aa57c0681c386049ae571c.webp"/><figcaption>관통균열 길이에 따른 누설률 곡선(개념적 추세) 위의 탐지능력·10배 누설 기준선, 임계균열까지 2배 여유와 SRP 3.6.3 3대 여유 표</figcaption></figure>
+<p>LBB 평가는 결국 두 개의 거리를 확인하는 일입니다. 하나는 <strong>세로축의 거리</strong>로, 탐지 최소량과 누설크기 균열의 누설률 사이에 10배가 있어야 합니다. 균열이 입자로 막히거나 누설 계산이 틀려도 탐지가 되도록 하는 여유입니다. 다른 하나는 <strong>가로축의 거리</strong>로, 누설크기 균열과 임계균열 사이에 2배가 있어야 합니다. 이 두 여유를 하중 1.4배 조건과 함께 만족해야 "파단 전에 누설로 먼저 알려 준다"는 말이 성립합니다.</p>
+<p>여기서 전제가 하나 있습니다. 열화기구 배제가 먼저입니다. 수격처럼 순간 하중으로 끊어지거나, PWSCC처럼 표면균열로 길게 자라 관통 전에 파단될 수 있는 배관에는 위 계산을 적용할 수 없습니다. 2000년 VC Summer 고온관 노즐의 Alloy 82/182 용접부 누설[7] 이후, 이종금속 용접부의 LBB 적용이 엄격해진 것도 이 때문입니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>"LOCA 해석 면제"로 쓰는 실수</strong>: LBB가 제외하는 것은 동적 영향뿐입니다. ECCS와 격납건물 설계 기준 파단은 남는다고 한 줄 적으면 개념 배점을 지킬 수 있습니다.</li>
+<li><strong>여유 숫자 혼동</strong>: 누설률 10, 균열 크기 2, 하중 1.4(√2)입니다. 둘을 바꿔 쓰는 경우가 많습니다.</li>
+<li><strong>열화기구 배제 누락</strong>: 파괴역학 계산만 쓰고 수격·SCC·피로 배제를 빠뜨리면 평가 요소가 반쪽이 됩니다.</li>
+<li><strong>누설탐지와의 연결 생략</strong>: 탐지 능력이 LBB의 출발점입니다. RG 1.45와 운영기술지침서 누설 제한을 연결하면 완성도가 높아집니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제15조 제1항 제3호 단서. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criterion 4 "Environmental and dynamic effects design bases".</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 3.6.3 "Leak-Before-Break Evaluation Procedures", Rev. 1 (2007.3), NRC ADAMS ML063600396.</li>
+<li>U.S. NRC, NUREG-1061 Vol. 3 "Report of the U.S. Nuclear Regulatory Commission Piping Review Committee — Evaluation of Potential for Pipe Breaks" (1984).</li>
+<li>U.S. NRC, Regulatory Guide 1.45 "Guidance on Monitoring and Responding to Reactor Coolant System Leakage", Rev. 1 (2008).</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, 3.6.3절(Leak-Before-Break Evaluation Procedures) 및 관련 NRC 설계인증 심사 질의응답(NRC ADAMS 공개).</li>
+<li>U.S. NRC, Information Notice 2000-17 "Crack in Weld Area of Reactor Coolant System Hot Leg Piping at V.C. Summer" (2000).</li>
+</ol>

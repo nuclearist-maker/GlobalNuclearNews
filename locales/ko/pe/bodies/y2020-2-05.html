@@ -1,0 +1,88 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2020년 원자력발전기술사 필기 2교시 5번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>아래 그림과 같이 무한한 확산 매질에서 각각 초 당 S개의 중성자를 방출하는 4개(A, B, C, D)의 중성자 점선원이 있다. 다음을 구하시오.
+단, 점선원에 대한 중성자속은 φ(r) = (S·e^(−r/L)) / (4πr·D)이고, r은 선원으로부터의 거리, L은 중성자 확산거리, D는 중성자 확산계수이다.</p>
+<p>(그림: 한 변이 2a인 정사각형의 네 꼭짓점에 위 왼쪽 A, 위 오른쪽 B, 아래 왼쪽 C, 아래 오른쪽 D가 있고, 변 BD의 중앙에 P₁, 정사각형 중앙에 P₂가 있음)</p>
+<p>가. 정사각형 한 변의 중앙에 있는 점 P₁에서의 중성자속(Neutron flux)
+나. 정사각형 한 변의 중앙에 있는 점 P₁에서의 중성자류(Neutron current)
+다. 정사각형 중앙에 위치한 P₂에서의 중성자속
+라. 정사각형 중앙에 위치한 P₂에서의 중성자류</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>1군 확산이론의 두 가지 기본 성질을 확인하는 문제입니다. 첫째, 확산방정식이 선형이라 여러 선원의 해를 <strong>중첩</strong>할 수 있습니다. 둘째, 중성자속 φ는 <strong>스칼라</strong>라 그냥 더하지만, 중성자류 J = −D∇φ는 <strong>벡터</strong>라 방향을 따져 더해야 합니다. 대칭을 이용해 상쇄되는 성분을 먼저 지우면 계산이 짧아집니다. 점선원 중성자류에 흡수 효과 항(1/rL)이 붙는다는 점도 확인 포인트입니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>가정 및 문제 해석: 좌표·거리 설정, 중첩 원리, 점선원의 중성자류 식</li>
+<li>가·나: P₁의 φ(4개 스칼라 합)와 J(벡터 합, B·D 상쇄)</li>
+<li>다·라: P₂의 φ와 J(대칭 상쇄)</li>
+<li>검산: 무흡수 극한, 수치 미분, a/L 의존성</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 문제 해석</strong></p>
+<ul>
+<li>무한 균질 매질, 1군 확산 근사, 정상상태, 네 선원 세기 S(n/s) 동일</li>
+<li>좌표: 정사각형 중심을 원점 → A(−a, a), B(a, a), C(−a, −a), D(a, −a), P₁(a, 0), P₂(0, 0)</li>
+<li>거리: P₁ → B·D = <strong>a</strong>, P₁ → A·C = √(a² + (2a)²) = <strong>√5·a</strong>, P₂ → 네 선원 = <strong>√2·a</strong></li>
+<li>중첩: 확산방정식이 선형이므로 φ = Σφᵢ(스칼라 합), J = ΣJᵢ(벡터 합) [1][2]</li>
+<li>점선원 하나의 중성자류(픽의 법칙)
+<ul>
+<li>dφ/dr = −(S / 4πD)·e^(−r/L)·(1/r² + 1/(rL))</li>
+<li>J = −D·dφ/dr·r̂ = <strong>S·e^(−r/L)·(1 + r/L) / (4πr²)</strong>, 방향은 선원에서 점으로 향하는 r̂ [1]</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 한 변 2a 정사각형, 선원 A·B·C·D, P₁·P₂, 거리 a·√5a·√2a, P₁ 중성자류 +x" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/1e427771625f2b66ba78b9a411cd69cd557251732bb10d5d238080f733e39680.webp"/><figcaption>답안용 도식: 한 변 2a 정사각형, 선원 A·B·C·D, P₁·P₂, 거리 a·√5a·√2a, P₁ 중성자류 +x</figcaption></figure>
+<p><strong>2. 가. P₁의 중성자속</strong></p>
+<ul>
+<li>φ(P₁) = φ_B + φ_D + φ_A + φ_C = (S / 4πD)·[2·e^(−a/L)/a + 2·e^(−√5a/L)/(√5a)]</li>
+<li><strong>φ(P₁) = (S / 2πDa)·[e^(−a/L) + e^(−√5a/L)/√5]</strong></li>
+</ul>
+<p><strong>3. 나. P₁의 중성자류</strong></p>
+<ul>
+<li>B 기여: 아래(−y), D 기여: 위(+y), 거리 같아 크기 같음 → <strong>상쇄</strong></li>
+<li>A 기여: 방향 (2, −1)/√5, C 기여: 방향 (2, 1)/√5 → y성분 상쇄, x성분만 합산(cos θ = 2/√5)</li>
+<li>Jₓ = 2 × (2/√5) × S·e^(−√5a/L)·(1 + √5a/L) / (4π·5a²)</li>
+<li><strong>J(P₁) = S·(1 + √5a/L)·e^(−√5a/L) / (5√5·π·a²)</strong>, 방향 <strong>+x</strong>(변 BD에 수직, 정사각형 바깥쪽)</li>
+<li>D는 명시적 계수로는 소거됨(L = √(D/Σa)를 통해서는 영향)</li>
+</ul>
+<figure class="article-image"><img alt="재구성 기하와 거리, P₁ 벡터 합성(B·D 상쇄, A·C의 x성분), P₂ 대칭 상쇄, 가~라 정답 수식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/63945d6ae36dfa1b997aa4f372c874e5624b900bd5c09a4a256e0a2ac5047b07.webp"/><figcaption>재구성 기하와 거리, P₁ 벡터 합성(B·D 상쇄, A·C의 x성분), P₂ 대칭 상쇄, 가~라 정답 수식</figcaption></figure>
+<p><strong>4. 다·라. P₂의 중성자속과 중성자류</strong></p>
+<ul>
+<li>다. φ(P₂) = 4 × S·e^(−√2a/L) / (4πD·√2a) → <strong>φ(P₂) = S·e^(−√2a/L) / (√2·π·D·a)</strong></li>
+<li>라. A–D, B–C가 대각선상 정반대 방향, 같은 크기 → <strong>J(P₂) = 0</strong>(대칭으로 ∇φ = 0)</li>
+<li>순 중성자류가 0이어도 중성자는 있음: 확산 근사의 부분류 J⁺ = J⁻ ≈ φ/4 &gt; 0 [2]</li>
+</ul>
+<p><strong>5. 검산과 수치 예</strong></p>
+<ul>
+<li>무흡수 극한(L → ∞): φ(P₁) → (S/2πDa)(1 + 1/√5), J(P₁) → S/(5√5πa²) — 1/r² 장의 중첩과 일치</li>
+<li>a = L일 때: φ(P₁) = 0.0662·S/(DL), φ(P₂) = 0.0547·S/(DL), J(P₁) = 0.00985·S/L², φ(P₁)/φ(P₂) = 1.21</li>
+<li>단위: φ [n/(cm²·s)] = S[n/s] / (D[cm]·a[cm]), J [n/(cm²·s)] = S / a² → 일치</li>
+<li>수치 미분(J = −D∇φ 중앙차분)으로 a/L = 0.5, 1, 2에서 해석식과 일치 확인</li>
+</ul>
+<figure class="article-image"><img alt="a/L에 따른 φ(P₁)·φ(P₂)·J(P₁) 무차원 곡선(로그), φ(P₁)/φ(P₂) 비 표, a = L 수치 예" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/65d1fde8dbc42adf35ccff4aa2c809472ab45b8d6dfe554262ea1d46f12b659f.webp"/><figcaption>a/L에 따른 φ(P₁)·φ(P₂)·J(P₁) 무차원 곡선(로그), φ(P₁)/φ(P₂) 비 표, a = L 수치 예</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 왜 가까운 선원 둘이 0이 되는가</h3>
+<p>P₁은 B와 D의 정확히 가운데에 있습니다. 두 선원에서 오는 중성자류는 크기가 같고 방향이 반대라 서로 지웁니다. 남는 것은 멀리 있는 A와 C가 만드는 성분입니다. 이 둘은 각각 오른쪽 아래와 오른쪽 위를 향하므로 위아래 성분이 지워지고 오른쪽(+x) 성분만 남습니다. 그래서 P₁의 중성자류는 크기가 작고, 거리 √5·a에 해당하는 지수항 e^(−√5a/L)만 들어갑니다. 반면 중성자속은 방향이 없으므로 네 기여가 모두 더해지고, 가까운 B·D 항이 가장 큰 몫을 차지합니다. a/L = 1에서 B 하나의 중성자류 크기는 A 하나의 약 10.6배인데도 결과에 남지 않습니다.</p>
+<p>그래프는 a/L이 커질수록 중성자속에서 가까운 선원의 비중이 커짐을 보여 줍니다. a와 D를 고정하고 흡수(Σa)를 키우면 L이 줄어 a/L이 커집니다. 이때 거리 a인 B·D 항보다 √2·a, √5·a인 항이 더 빨리 줄어 φ(P₁)/φ(P₂)는 1.02(무흡수 극한)에서 a/L = 3일 때 2.48까지 커집니다. 이 결과는 균질 매질의 확산 근사이므로 선원 바로 옆이나 흡수가 매우 강한 조건에서는 정확도가 떨어집니다.</p>
+<h3>해설: 채점 포인트와 흔한 실수</h3>
+<ul>
+<li><strong>φ를 벡터처럼 상쇄시킴</strong>: 중성자속은 네 기여를 모두 더합니다.</li>
+<li><strong>J를 스칼라로 더함</strong>: 가까운 B·D 기여까지 더하면 크게 틀립니다.</li>
+<li><strong>1/(rL) 항 누락</strong>: 점선원 J에는 (1 + r/L) 인자가 붙습니다.</li>
+<li><strong>cos θ를 1/√5로 씀</strong>: x성분은 2a/(√5a) = 2/√5입니다.</li>
+<li><strong>J(P₂) = 0을 "중성자가 없다"로 해석</strong>: φ(P₂) ≠ 0이고 부분류도 있습니다.</li>
+</ul>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li>출제 이후 달라진 기준 없음(교과서 1군 확산이론 계산 문항 — 확인 근거: Lamarsh 5장 점선원 해, 픽의 법칙 [1]).</li>
+<li>원본 문제지 PDF에는 그림의 선이 남아 있지 않고 라벨(A, B, C, D, P₁, P₂, 2a, r)만 있습니다. 위 기하는 문구("한 변의 중앙", "정사각형 중앙")와 라벨 배치로 재구성했습니다. 의미가 불분명한 "r" 라벨은 계산에 쓰지 않았습니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 5장(중성자 확산 — 점선원 해, 픽의 법칙, 확산거리).</li>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, John Wiley &amp; Sons (1976) — 1군 확산이론, 부분류(partial current).</li>
+</ol>

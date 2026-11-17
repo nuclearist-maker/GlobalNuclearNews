@@ -1,0 +1,144 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2024년 원자력발전기술사 필기 3교시 5번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>원자력발전소 열교환기 내부에서 발생하는 열에너지 전달 방법 3가지를 기술하시오.</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>열전달의 기본 3형태(전도·대류·복사)를 정의와 지배 법칙으로 정확히 쓰는지 먼저 봅니다. 25점 문항이므로 이름만 나열하면 부족합니다. 원전 열교환기(증기발생기·복수기 등)에서 세 형태가 <strong>어디서, 어떤 크기로</strong> 작용하는지, 직렬 열저항과 총괄 열전달계수 U로 어떻게 묶이는지까지 연결해야 배점을 채울 수 있습니다. 특히 "복사는 왜 무시하는가"를 근거와 함께 쓰는지가 변별 포인트입니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 가정 및 문제 해석, 열교환기의 역할과 열 흐름 경로</li>
+<li>본론 1: 전도 — Fourier 법칙, 전열관 벽·파울링층</li>
+<li>본론 2: 대류 — Newton 냉각법칙, 1차측 강제대류, 2차측 비등·응축(상변화 대류)</li>
+<li>본론 3: 복사 — Stefan–Boltzmann 법칙, 물 매질 열교환기에서 무시하는 이유와 예외</li>
+<li>본론 4: 세 형태의 결합 — 직렬 저항, U, 증기발생기 예시 계산, 열교환기별 지배 형태</li>
+<li>결론: 설계·운전상 의미(파울링·관막음·성능 감시)</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 문제 해석</strong></p>
+<ul>
+<li>"열에너지 전달 방법 3가지" = 열전달 기본 3형태 <strong>전도·대류·복사</strong>로 해석함</li>
+<li>비등·응축은 별도 형태가 아니라 <strong>상변화를 동반한 대류</strong>로 분류함</li>
+<li>대표 열교환기로 <strong>U자관 증기발생기(SG)</strong> 를 예로 듦: APR1400 SG 1대 2,000 MWt, 1차 15.5 MPa·323.9/290.6 ℃, 2차 6.9 MPa(포화 284.9 ℃)[2]</li>
+<li>계산 가정(물성 IAPWS-IF97[5]): 전열관 19.05 × 1.07 mm, Alloy 690(k = 17.3 W/m·K[3]), 관내 질량유속 3,600 kg/m²·s</li>
+<li>참고: 열교환기 "형식"(격벽식·축열식·직접접촉식)을 묻는 해석도 가능하나, 문장이 "내부에서 발생하는 전달 방법"이므로 물리 기구로 답함</li>
+</ul>
+<p><strong>2. 열교환기의 열 흐름 경로</strong></p>
+<ul>
+<li>원전 열교환기는 대부분 <strong>격벽식(표면식)</strong>: 고온 유체 → 벽 → 저온 유체</li>
+<li>경로: ① 고온측 대류 → ② 벽 전도 → ③ 저온측 대류(비등·응축 포함), 복사는 병렬 경로이나 무시 가능</li>
+<li>세 저항이 <strong>직렬</strong> → 가장 큰 저항이 전체 성능을 지배</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 1차 냉각재 → ① 대류 → ② 관벽 전도 → ③ 대류·비등 → 2차측, 1/U = 1/hi + t/k + 1/ho, 예시 저항비 26:53:21 %, 복사 무시" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/3695fbb26ad2f5c3a147c45cab51d314545291666bd895ec0adf361f9157768f.webp"/><figcaption>답안용 도식: 1차 냉각재 → ① 대류 → ② 관벽 전도 → ③ 대류·비등 → 2차측, 1/U = 1/hi + t/k + 1/ho, 예시 저항비 26:53:21 %, 복사 무시</figcaption></figure>
+<p><strong>3. 전도(Conduction)</strong></p>
+<ul>
+<li>정의: 정지 매질(주로 고체) 안에서 온도구배에 따라 분자 진동·자유전자로 에너지가 이동함</li>
+<li>법칙: <strong>Fourier q″ = −k·dT/dx</strong>[1], 원통 벽 저항 R′ = ln(ro/ri)/(2πk)</li>
+<li>위치: <strong>전열관 벽</strong>, 관판, 관 표면의 스케일·산화막·슬러지(파울링층)</li>
+<li>예시: kw/t = 17.3/0.00107 ≈ <strong>16.2 kW/m²·K</strong>, 관벽 온도강하 약 <strong>9.2 ℃</strong>, 전체 저항의 <strong>약 53 %</strong></li>
+<li>특징: Alloy 690은 탄소강보다 k가 낮아 관벽 저항이 큼 → 관 두께·재질이 전열면적을 좌우</li>
+<li>파울링층은 k가 매우 작아 얇아도 큰 저항 → <strong>증기압력 저하·출력 제한</strong> 원인</li>
+</ul>
+<p><strong>4. 대류(Convection)</strong></p>
+<ul>
+<li>정의: 유체의 거시적 운동이 열을 운반하고, 벽면 경계층에서는 전도로 벽과 열을 주고받음</li>
+<li>법칙: <strong>Newton 냉각법칙 q″ = h(Tw − T∞)</strong>, h는 유속·물성·형상·상변화에 의존</li>
+<li>분류: 강제/자연, 단상/상변화(비등·응축)</li>
+<li><strong>1차측(관 내) 단상 강제대류</strong>
+<ul>
+<li>Dittus–Boelter Nu = 0.023·Re^0.8·Pr^0.3(유체 냉각)[1]</li>
+<li>예시: 유속 5.06 m/s, Re 7.1 × 10⁵, Pr 0.88 → <strong>hi ≈ 34.7 kW/m²·K</strong>, 온도강하 4.5 ℃(26 %)</li>
+</ul>
+</li>
+<li><strong>2차측(관 외) 예열부 강제대류 → 증발부 핵비등</strong>
+<ul>
+<li>급수 232 ℃가 관 다발 하부에서 포화까지 가열된 뒤 핵비등</li>
+<li>Rohsenow 식(Csf 0.013)[1][2] → <strong>ho ≈ 37.9 kW/m²·K</strong>, 벽면 과열도 ΔTsat 3.7 ℃(21 %)</li>
+</ul>
+</li>
+<li><strong>응축(상변화 대류)</strong>: 복수기·급수가열기 쉘측 막응축 → 관 내 해수·급수 강제대류</li>
+<li>주의: SG 열속(약 0.14 MW/m²)은 노심보다 훨씬 낮아 CHF 여유가 큼. 비등 위기는 노심 쪽 문제임</li>
+</ul>
+<p><strong>5. 복사(Radiation)</strong></p>
+<ul>
+<li>정의: 표면 온도에 따른 전자기파(적외선) 방출·흡수, <strong>매질 없이도 전달</strong></li>
+<li>법칙: <strong>Stefan–Boltzmann q″ = εσ(T₁⁴ − T₂⁴)</strong>, σ = 5.67 × 10⁻⁸ W/m²·K⁴[1]</li>
+<li>예시: ε = 0.8, 302 ↔ 285 ℃ 등가 h_rad ≈ <strong>33 W/m²·K</strong> → hi의 약 <strong>1/1,050</strong>, U의 약 1/240</li>
+<li>무시하는 이유
+<ul>
+<li>온도가 300 ℃ 내외로 낮고 온도차가 작음(T⁴ 차이 작음)</li>
+<li>300 ℃ 복사 피크 파장 약 5 μm(적외선)를 <strong>물이 강하게 흡수</strong> → 표면 사이 직접 경로 없음</li>
+</ul>
+</li>
+<li>고려해야 하는 경우: 고온 기체 열교환기(고온가스로 IHX), <strong>막비등</strong>(증기막 복사), 중대사고 노심·하부헤드, 건식저장 캐니스터</li>
+</ul>
+<figure class="article-image"><img alt="열전달계수 크기 비교(로그 눈금): 교과서 대표 범위와 SG 예시값(복사 33, 관벽 16,168, 1차 대류 34,670, 2차 비등 37,922 W/m²K), 세 형태의 법칙·원동력 표, 원전 열교환기별 지배 형태 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/72ae51286c255aedeb483b1c909be53681163d670905c19544abb24ff9cae23b.webp"/><figcaption>열전달계수 크기 비교(로그 눈금): 교과서 대표 범위와 SG 예시값(복사 33, 관벽 16,168, 1차 대류 34,670, 2차 비등 37,922 W/m²K), 세 형태의 법칙·원동력 표, 원전 열교환기별 지배 형태 표</figcaption></figure>
+<p><strong>6. 세 형태의 결합 — 총괄 열전달계수</strong></p>
+<ul>
+<li><strong>1/U = Do/(Di·hi) + Do·ln(Do/Di)/(2kw) + 1/ho (+ 파울링 저항)</strong>, Q = U·A·LMTD</li>
+<li>예시: LMTD 17.4 ℃, <strong>U ≈ 8,030 W/m²·K</strong>, 평균 열속 약 140 kW/m²</li>
+<li>2,000 MWt 전달 필요 면적 A ≈ <strong>1.43만 m²</strong>(예시 모델)</li>
+<li>온도 분포: 유효 1차 302.2 → 내벽 297.7 → 외벽 288.5 → 포화 284.9 ℃</li>
+</ul>
+<figure class="article-image"><img alt="관벽을 가로지르는 온도 분포(대류 4.5 ℃ · 전도 9.2 ℃ · 비등 3.7 ℃), 직렬 저항식과 hi·kw/t·ho·U 값, 저항 분담률 26:53:21 %" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/34e99a5e835ba0c36ef85ee6e86945619fd8505740cad3f6d882886606455e38.webp"/><figcaption>관벽을 가로지르는 온도 분포(대류 4.5 ℃ · 전도 9.2 ℃ · 비등 3.7 ℃), 직렬 저항식과 hi·kw/t·ho·U 값, 저항 분담률 26:53:21 %</figcaption></figure>
+<table>
+<thead>
+<tr>
+<th>열교환기</th>
+<th>고온측</th>
+<th>벽</th>
+<th>저온측</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>증기발생기</td>
+<td>단상 강제대류</td>
+<td>전도</td>
+<td>예열 대류 → 핵비등</td>
+</tr>
+<tr>
+<td>복수기</td>
+<td>막응축</td>
+<td>전도</td>
+<td>해수 강제대류</td>
+</tr>
+<tr>
+<td>급수가열기</td>
+<td>추기 응축</td>
+<td>전도</td>
+<td>급수 강제대류</td>
+</tr>
+<tr>
+<td>잔열제거·기기냉각 HX</td>
+<td>단상 강제대류</td>
+<td>전도</td>
+<td>단상 강제대류</td>
+</tr>
+</tbody>
+</table>
+<p><strong>7. 결론</strong></p>
+<ul>
+<li>원전 열교환기의 열은 <strong>대류 → 전도 → 대류(비등·응축)</strong> 직렬 경로로 전달되고, 복사는 무시 가능함</li>
+<li>성능은 <strong>가장 큰 저항</strong>이 지배함 → 관벽(재질·두께)과 파울링 관리가 핵심</li>
+<li>운전 감시: 파울링·관막음으로 UA 감소 → 같은 출력에서 <strong>SG 증기압력 저하</strong>로 나타남(성능 감시 지표)</li>
+<li>관막음 여유(설계별 값)는 UA 감소를 설계 단계에서 보상하는 장치임</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: "3가지"를 어떻게 채점받을까</h3>
+<p>이 문항은 이름 세 개로 끝나는 1교시형 문제처럼 보이지만, 3교시 25점입니다. 정의·법칙·원전 적용·결합(U)·정량 감각까지 써야 합니다. 법칙 세 줄(Fourier, Newton, Stefan–Boltzmann)과 직렬 저항식 하나만 정확히 써도 골격이 섭니다. 여기에 "증기발생기에서는 1차 대류 → 관벽 전도 → 2차 비등"이라는 실제 경로를 붙이면 채점자가 원하는 연결이 됩니다.</p>
+<h3>해설: 예시 수치를 읽는 법</h3>
+<p>예시의 hi·ho는 대표 상관식으로 계산한 평균값입니다. 실제 SG는 예열부와 증발부의 열속이 다르고, 관 지지판·유량 분포·파울링이 더해집니다. 그래서 면적 1.43만 m²는 "규모 감각"으로만 쓰십시오. 관벽 저항이 절반을 넘는다는 결과는 양쪽 h가 모두 수만 W/m²·K로 큰 고압수 열교환기의 특징입니다. 복수기처럼 한쪽이 저유속 해수면 그쪽 대류 저항이 커집니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 달라진 기준 없음 — 확인 근거: 열전달 기본 법칙에 관한 원리 문항입니다. 관련 실무 사항(APR1400 SG 전열관 Alloy 690 채택[4], 설계별 관막음 여유)도 출제 당시와 같습니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>F. P. Incropera, D. P. DeWitt, T. L. Bergman, A. S. Lavine, Fundamentals of Heat and Mass Transfer, Wiley — 1장 표 1.1(열전달계수 대표 범위), 강제대류(Dittus–Boelter)·비등(Rohsenow)·복사 장.</li>
+<li>K. Yi, S. Hwang, K. Ju, S. Park, "Thermal-Hydraulics Evaluation Program Development for U-type Steam Generator of APR1400", Transactions of the Korean Nuclear Society Autumn Meeting, Goyang (2019.10.24~25) — 표 1 운전 조건(SG 1대 2,000 MWt 등), 예열부·증발부 열전달 모델.</li>
+<li>Special Metals Corporation, INCONEL alloy 690 기술자료(Publication), 표 3 열전도도.</li>
+<li>「신형경수로의 증기발생기 전열관 재질 Inconel-690 적용」, 대한기계학회 학술대회논문집 (2003). KoreaScience.</li>
+<li>IAPWS, Revised Release on the IAPWS Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam (IAPWS-IF97), R7-97(2012).</li>
+</ol>

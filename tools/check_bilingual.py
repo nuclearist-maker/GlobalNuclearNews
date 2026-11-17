@@ -8,13 +8,13 @@ from search_discovery import content_html_files,posts_from
 
 def localization_scope_errors(scope,actual):
     errors=[]
-    if scope.get('new_posts')!=[]:errors.append('Invalid localization deployment scope')
+    if scope.get('kind')!='pe-board' and scope.get('new_posts')!=[]:errors.append('Invalid localization deployment scope')
     if scope.get('kind')=='language-edition':
         if scope.get('new_localized_pages')!=actual:errors.append('Localization deployment coverage mismatch')
     elif scope.get('kind')=='editorial-maintenance':
         existing=set(actual)|{p[3:] for p in actual if p.startswith('ko/')}
         if any(x.get('path') not in existing for x in scope.get('changed_features',[])):errors.append('Maintenance counterpart missing')
-    else:errors.append('Invalid localization deployment kind')
+    elif scope.get('kind')!='pe-board':errors.append('Invalid localization deployment kind')
     if not scope.get('changed_features') or not all(x.get('path') and x.get('feature') and x.get('reason') for x in scope['changed_features']):errors.append('Missing changed feature reasons')
     return errors
 
@@ -25,20 +25,24 @@ def check(root,source=None):
     actual=sorted(p.relative_to(root).as_posix() for p in content_html_files(root/'ko'))
     assert not localization_scope_errors(scope,actual),localization_scope_errors(scope,actual)
     assert {p['url'] for p in en}=={p['url'] for p in ko},'Different article sets'
+    if scope.get('kind')=='pe-board':
+        from check_pe import check as check_pe
+        check_pe(source,root)
     checked=0;links=0;missing=[];untranslated=[]
     for path in content_html_files(root):
         rel=path.relative_to(root).as_posix();is_ko=rel.startswith('ko/');pair=rel[3:] if is_ko else rel
         text=path.read_text(encoding='utf8');s=BeautifulSoup(text,'html.parser');lang='ko' if is_ko else 'en'
+        if rel.startswith('ko/pe/'):continue # Validated by check_pe; common links by search discovery.
         assert s.html.get('lang')==lang,(rel,'lang')
         assert not re.search(r'(?:[A-Z]:[\\/]|file://|local-source-archive|data/qa/|v1_draft\.md|fact_sheet\.md)',text),(rel,'private path')
         assert '이미지 삽입:' not in text,(rel,'image placeholder')
         nav=s.select_one('.language-switch');assert nav is not None,(rel,'language switch')
-        hrefs={a['hreflang']:urljoin(BASE+rel,a['href']) for a in nav.find_all('a')}
+        hrefs={a['hreflang']:urljoin(BASE+rel,a['href']).removesuffix('?lang=en') for a in nav.find_all('a')}
         if pair=='index.html':hrefs['en']=BASE if hrefs['en']==BASE+'index.html' else hrefs['en']
         assert hrefs=={'en':BASE if pair=='index.html' else BASE+pair,'ko':KBASE+pair},(rel,hrefs)
         assert len(nav.select('[aria-current="true"]'))==1 and nav.select_one('[aria-current="true"]')['hreflang']==lang,(rel,'current language')
         alternate={a['hreflang']:a['href'] for a in s.select('link[hreflang]')}
-        assert alternate==dict(hrefs,**{'x-default':hrefs['en']}),(rel,'hreflang')
+        assert alternate==dict(hrefs,**{'x-default':hrefs['ko']}),(rel,'hreflang')
         assert s.select_one('meta[property="og:locale"]')['content']==('ko_KR' if is_ko else 'en_US'),(rel,'og locale')
         for tag in s.select('script[type="application/ld+json"]'):
             data=json.loads(tag.string);assert data['inLanguage']==lang,(rel,'schema locale')

@@ -1,0 +1,91 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2026년 원자력발전기술사 필기 2교시 1번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>가압경수로의 수용성 독물질(Soluble Poison) 붕산(H₃BO₃)에 대하여 다음을 기술하시오.
+가. 붕소(Boron, ¹⁰B)의 핵적 특성
+나. 원자로냉각재에 붕산을 희석하여 사용하는 이유 5가지
+다. 붕산의 원자로 반응도 제어 3가지</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>가압경수로의 두 번째 반응도 제어계통인 붕소 화학제어를 핵물리(B-10 흡수 특성), 설계(왜 용액으로 쓰는가), 운전(무엇을 보상하는가) 세 층위로 묻는 종합 서술 문제입니다. 계산은 없지만 가 항에서 단면적·반응식·에너지 의존성을 수치로 쓰는지, 다 항에서 반응도 변화 인자를 시간척도로 정리하는지가 점수를 가릅니다. 나 항의 "희석하여"는 운전 중 희석 조작이 아니라 냉각재에 녹여(용해해) 쓰는 이유로 읽는 것이 자연스럽습니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 수용성 독물질의 정의, GDC 26의 두 번째 반응도 제어계통이라는 위치</li>
+<li>본론 가: B-10 존재비·흡수단면적·1/v 특성·(n,α) 반응·부반응·감손</li>
+<li>본론 나: 용해 사용 이유 5가지(균일 분포, 제어봉 인출 운전, 연속 조절, 큰 반응도·정지여유도, 화학적 적합성)</li>
+<li>본론 다: 반응도 제어 3가지(장기 연소 보상, 제논·출력 변화 보상, 정지여유도 유지)와 조작 방식</li>
+<li>결론: 한계(느린 속도, 양의 MTC, 희석 사고)와 관리 방법</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li><strong>수용성 독물질(Soluble Poison)</strong>: 원자로냉각재에 붕산(H₃BO₃)을 녹여 <strong>B-10의 열중성자 흡수</strong>로 반응도를 조절하는 방식(Chemical Shim)임</li>
+<li>제어봉(빠른 제어·정지)과 설계원리가 다른 <strong>두 번째 독립 반응도 제어계통</strong>(10 CFR 50 부록 A GDC 26, 기술기준규칙 제28조)[1][2]임</li>
+<li>붕소 농도 단위는 <strong>ppm B</strong>(용액 질량 대비 붕소 질량). 붕산 환산 계수 <strong>5.72</strong>(H₃BO₃ 61.83 / B 10.81)</li>
+</ul>
+<p><strong>2. 가. 붕소(¹⁰B)의 핵적 특성</strong></p>
+<ul>
+<li><strong>존재비</strong>: 천연 붕소 중 B-10 약 <strong>19.8 at%</strong>, B-11 약 80.2 at%. 흡수는 거의 전부 B-10이 담당(B-11 σa 약 0.005 b)</li>
+<li><strong>흡수단면적</strong>: 열중성자(0.0253 eV) σa ≈ <strong>3,840 b</strong>[3], 천연 붕소 기준 약 759 b[4]</li>
+<li><strong>1/v 흡수체</strong>: 공명이 없고 σ(E) = 3,840·√(0.0253/E) b → 1 eV 611 b, 1 keV 19.3 b로 감소. 열중성자 영역에 흡수가 집중됨</li>
+<li><strong>온도 의존</strong>: 냉각재 약 310 °C 맥스웰 평균 단면적 ≈ 3,840 × 0.629 ≈ <strong>2,410 b</strong> → 온도가 오르면 흡수가 줄고 밀도 감소로 붕소 원자 수도 줄어 <strong>MTC를 양(+) 쪽으로</strong> 미는 성분이 됨</li>
+<li><strong>반응</strong>: ¹⁰B + n → ⁷Li + α, <strong>Q = 2.79 MeV</strong>[4]. 약 94 %는 ⁷Li 들뜬상태를 거쳐 <strong>0.48 MeV 감마</strong> 방출. α·⁷Li는 물속 비정이 수 μm로 그 자리에서 흡수됨</li>
+<li><strong>생성물</strong>: Li-7(안정)·He로 장수명 방사성 생성물이 거의 없음. Li-7은 냉각재 pH에 영향 → LiOH와 함께 관리</li>
+<li><strong>부반응</strong>: 고속중성자 ¹⁰B(n,2α)³H → 냉각재 <strong>삼중수소</strong> 생성원 중 하나</li>
+<li><strong>감손(¹⁰B Depletion)</strong>: 운전 중 B-10 소모로 같은 ppm의 반응도가 감소(OPR1000 15년간 19.8 → 19.6 a/o 실적[5]) → B-10 원자비 측정·보정</li>
+</ul>
+<figure class="article-image"><img alt="B-10 흡수단면적 1/v 로그 그래프(0.001 eV~10 keV, 0.0253 eV 3,840 b, 310 °C 맥스웰 평균 2,410 b)와 (n,α) 반응 카드, 천연 존재비 막대" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/e9adfc30e132c84fbfc4af5f35d42c0ca5a6fd8a37101fcb9e31ccd13458812d.webp"/><figcaption>B-10 흡수단면적 1/v 로그 그래프(0.001 eV~10 keV, 0.0253 eV 3,840 b, 310 °C 맥스웰 평균 2,410 b)와 (n,α) 반응 카드, 천연 존재비 막대</figcaption></figure>
+<p><strong>3. 나. 냉각재에 붕산을 녹여 사용하는 이유 5가지</strong></p>
+<ol>
+<li><strong>균일 분포</strong>: 냉각재와 함께 노심 전체에 고르게 퍼짐 → 중성자속 왜곡·국부 출력 첨두가 생기지 않음</li>
+<li><strong>제어봉 인출 운전 가능</strong>: 장기 반응도를 붕소가 맡아 제어봉을 거의 뺀 상태로 운전 → 축방향 출력분포 개선, <strong>제어봉 이탈 사고 시 투입 반응도 감소</strong>, 필요한 제어봉 수 감소</li>
+<li><strong>연속·정밀 조절</strong>: 기계 구동장치 없이 화학체적제어계통(CVCS)의 충전·유출로 농도를 연속·미세 조절(희석·붕산 주입)</li>
+<li><strong>큰 반응도 상쇄와 정지여유도</strong>: 주기초 큰 잉여반응도를 상쇄하고, 냉간 정지·재장전 때 고농도로 미임계 유지. 비상시 안전주입 붕산수로 같은 원리를 그대로 이용</li>
+<li><strong>화학적 적합성</strong>: 물에 잘 녹고 고온·방사선에서 안정. <strong>약산</strong>(pKa 약 9.2)이라 LiOH로 pH 조정 가능. 생성물이 비방사성</li>
+</ol>
+<ul>
+<li>부가: 노심 밖에서 시료 채취로 농도를 직접 측정·확인할 수 있음</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 제어봉 부분 삽입 시 하부로 치우친 축방향 출력분포와 붕소 제어 시 대칭 분포 비교" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/a5e4a4f4ad4c0326810997405d1866874a42ed37765c6ee4d05f949a46afb936.webp"/><figcaption>답안용 도식: 제어봉 부분 삽입 시 하부로 치우친 축방향 출력분포와 붕소 제어 시 대칭 분포 비교</figcaption></figure>
+<p><strong>4. 다. 붕산의 원자로 반응도 제어 3가지</strong></p>
+<ul>
+<li><strong>문제 해석</strong>: 보상 대상(기능) 기준 3가지로 답하고, 조작 방식 3가지를 병기함</li>
+</ul>
+<ol>
+<li><strong>장기 잉여반응도(연소) 보상</strong>: 주기초 고온전출력 임계 붕소 약 1,000~1,500 ppm → 주기말 수십 ppm 이하로 <strong>연속 희석</strong>(붕소 강하곡선, 예시). 연소 손실 약 1만 pcm 수준(예시)</li>
+<li><strong>제논·사마륨·출력 변화 보상(중기)</strong>: 평형 Xe 약 −2,500~−3,000 pcm, 출력결손 약 −1,000~−2,500 pcm(예시). 출력 변화 직후는 제어봉이 받고 이후 수 시간~일의 제논 과도는 <strong>희석·붕산 주입</strong>으로 넘김(삽입한계·축방향 출력분포 여유 유지)</li>
+<li><strong>정지여유도·미임계 유지</strong>: 정지 후 냉각(양의 온도 반응도)·제논 소멸을 <strong>붕산 주입</strong>으로 상쇄해 정지여유도(설명용 예 1.3 %Δk/k[6])와 재장전 keff ≤ 0.95 상당 농도를 확보. 사고 시 <strong>비상 붕산 주입</strong>(안전주입, APR1400 IRWST 최소 4,000 ppm[5])</li>
+</ol>
+<ul>
+<li>조작 방식 기준: ① 희석(순수 보충) ② 붕산 주입(Boration) ③ 비상 붕산 주입. CVCS 보충 모드는 자동·붕산주입·희석·수동</li>
+<li>환산 예: −10 pcm/ppm 가정 시 1만 pcm ≈ 1,000 ppm, 3,000 pcm ≈ 300 ppm(실제 반응도가는 약 −5~−15 pcm/ppm)</li>
+</ul>
+<figure class="article-image"><img alt="반응도 제어 3가지 비교표: 보상 대상과 크기(예시), ppm 환산(−10 pcm/ppm 가정), 시간척도, CVCS 조작, 제어봉과의 분담" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/e8cc278036cc62915574c30575b6f37929b367e6b7c0202655f666c10450042d.webp"/><figcaption>반응도 제어 3가지 비교표: 보상 대상과 크기(예시), ppm 환산(−10 pcm/ppm 가정), 시간척도, CVCS 조작, 제어봉과의 분담</figcaption></figure>
+<figure class="article-image"><img alt="답안용 도식: 원자로냉각재계통 → 유출 → 정화 → 체적제어탱크 → 충전펌프 → 원자로냉각재계통 순환과 순수(희석)·붕산수(주입) 보충 경로" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/4e2b6a39efc1d87547b4cf164fe087a7600120720efd384d4733730ac676211c.webp"/><figcaption>답안용 도식: 원자로냉각재계통 → 유출 → 정화 → 체적제어탱크 → 충전펌프 → 원자로냉각재계통 순환과 순수(희석)·붕산수(주입) 보충 경로</figcaption></figure>
+<p><strong>5. 결론: 한계와 관리</strong></p>
+<ul>
+<li><strong>느린 속도</strong>(분~시간) → 원자로 정지 수단이 아님(정지는 제어봉)</li>
+<li><strong>고농도 시 MTC 양(+) 가능</strong> → 최대 붕소 농도 제한, 가연성 흡수체 병용</li>
+<li><strong>붕소 희석 사고</strong> → 경보 후 정지여유도 상실까지 운전원 조치 시간 확보(SRP 15.4.6: 재장전 30분, 그 외 15분 이상)[7]</li>
+<li>붕산 부식(2002 Davis-Besse 상부헤드)·저온 석출(보온), 주기말 희석수 증가(탈붕소 이온교환기)</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 가 항에서 수치가 왜 중요한가</h3>
+<p>"B-10은 흡수단면적이 크다"만 쓰면 반쪽 답입니다. 3,840 b라는 크기, 1/v라는 에너지 의존성, 반응 생성물이 비방사성이라는 세 가지가 함께 있어야 "왜 하필 붕소인가"가 설명됩니다. 특히 1/v 특성은 다 항과 결론을 잇는 고리입니다. 온도가 오르면 단면적이 줄고 물 밀도가 줄어 붕소도 노심에서 빠지므로, 붕소 농도가 높은 주기초에는 감속재온도계수가 덜 음이 되거나 양이 될 수 있습니다. 이 연결을 한 줄로 써 두면 채점자가 원리를 이해했다고 판단하기 쉽습니다.</p>
+<h3>해설: "3가지"를 어떻게 나눌까</h3>
+<p>다 항은 공식 목록이 정해진 질문이 아닙니다. 보상 대상을 기준으로 나누면 반응도 변화의 시간척도(장기 연소, 중기 제논·출력, 정지 상태)와 자연스럽게 맞물리고, 조작 방식을 기준으로 나누면 희석·붕산 주입·비상 주입이 됩니다. 어느 쪽이든 기준을 첫 줄에 밝히고 다른 기준을 한 줄 병기하면 안전합니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 달라진 기준 없음(확인 근거: 2026년 출제 문항이며, 붕소 화학제어의 근거인 10 CFR 50 부록 A GDC 26~28, NUREG-0800 SRP 15.4.6, 「원자로시설 등의 기술기준에 관한 규칙」 제28조(원안위규칙 제37호, 2026.3.30)는 그대로 유효함). 다만 호기별 정지여유도·재장전 붕소 농도·MTC 한계는 운영기술지침서와 노심운영제한보고서(COLR)에 따르므로 답안의 수치는 "예시"로 표기하는 편이 안전합니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criteria 26·27·28.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제28조. 국가법령정보센터.</li>
+<li>Brookhaven National Laboratory, National Nuclear Data Center(NNDC) — ENDF/B 평가 핵데이터, ¹⁰B(n,α) 열중성자 단면적·천연 존재비.</li>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 부록(원소 열중성자 단면적) 및 3장(¹⁰B(n,α) 반응).</li>
+<li>KEPCO/KHNP, APR1400 Design Certification RAI 응답(IRWST·SIT 붕소 농도 및 B-10 원자비 감시), NRC ADAMS ML17180A455.</li>
+<li>U.S. NRC, NUREG-1431 "Standard Technical Specifications — Westinghouse Plants", LCO 3.1.1 "Shutdown Margin" ([1.3] %Δk/k 예시값).</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 15.4.6 "Inadvertent Decrease in Boron Concentration in the Reactor Coolant System".</li>
+</ol>

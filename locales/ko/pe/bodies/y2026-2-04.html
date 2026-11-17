@@ -1,0 +1,114 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2026년 원자력발전기술사 필기 2교시 4번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>APR1400 원전의 발전소 보호계통(PPS)에 대하여 다음을 기술하시오.
+가. 발전소 보호계통(PPS)을 구성하는 계통 2가지
+나. 노심보호연산기(CPC)의 주요 기능
+다. 다중보호계통(DPS)에서 고려하는 원자로정지불능사고(ATWS)의 사고유형 6가지</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>APR1400 안전 계측제어계통의 세 층을 한 문제로 묻습니다. 보호 신호를 만드는 PPS, PPS에 DNBR·LPD 트립 입력을 주는 CPC, PPS가 공통원인고장으로 실패할 때를 대비한 DPS입니다. 가는 PPS 안에 무엇이 들어 있는지, 나는 CPC가 "계산기"로서 무엇을 내보내는지, 다는 DPS가 왜 필요한지를 사건 목록으로 확인합니다. 세 계통의 경계, 즉 무엇이 PPS 안이고 무엇이 밖인지를 정확히 긋는 것이 채점의 핵심입니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: APR1400 보호 계측제어계통의 층 구조(CPC → PPS → RTSS·ESF-CCS, 별도 DPS), 근거 조문</li>
+<li>본론 가: PPS = RPS + ESFAS, 공통 4채널 구조(BP → LCL 2/4), 두 계통의 출력과 공유 입력</li>
+<li>본론 나: CPC 입력 → 계산 → 출력 기능 6가지, CEAC·COLSS와의 구분</li>
+<li>본론 다: 열제거 감소형 AOO 6개, 정량 해석과 최제한 사건, 허용기준, DPS 대응 기능</li>
+<li>결론: 다중성(PPS 4채널)과 다양성(DPS)의 역할 분담</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>APR1400 보호 계측제어계통은 <strong>CPC(노심 상태 계산) → PPS(트립·작동 개시 판단) → RTSS·ESF-CCS(실행)</strong>의 사슬과, 이와 독립된 <strong>DPS(다양성 경로)</strong>로 구성됨</li>
+<li>근거: 「원자로시설 등의 기술기준에 관한 규칙」 <strong>제26조</strong>(원자로보호계통: ① 1호 AOO 시 SAFDL 비초과 자동 작동, 2호 사고 감지 시 안전계통 작동 개시), <strong>제27조</strong>(다양성보호계통)[1], 10 CFR 50 부록 A GDC 20~25[2]</li>
+<li>시험지의 "다중보호계통(DPS)"은 다양성보호계통(Diverse Protection System)과 같은 계통으로 보고 작성함</li>
+</ul>
+<p><strong>2. 가. PPS를 구성하는 계통 2가지</strong></p>
+<ul>
+<li><strong>① 원자로보호계통(RPS)</strong>: 공정변수가 트립 설정치에 도달하면 RTSS를 열어 CEDM 전원을 끊고, CEA를 중력 낙하시켜 원자로를 정지함
+<ul>
+<li>트립 기능 예(신고리 3·4호기): 가변과출력, 고 로그출력, 저 DNBR·고 LPD(CPC), 가압기 고·저압력, RCS 저유량, SG 저압력·고수위·저수위, 격납건물 고압력 + 수동 트립[4]</li>
+</ul>
+</li>
+<li><strong>② 공학적안전설비작동계통(ESFAS)</strong>: 사고를 감지해 공학적안전설비(ESF) 작동 개시 신호를 냄
+<ul>
+<li>APR1400 신호 6종: <strong>SIAS·CIAS·CSAS·MSIS·AFAS-1·AFAS-2</strong> (RAS 없음 — 재장전수 탱크 IRWST가 격납건물 안에 있음)</li>
+<li>공칭 설정치 예(APR1400 DCD 기준): SIAS 가압기 저압력 <strong>1,810 psia</strong>·격납건물 고압력 1.9 psig, CSAS 20.03 psig, MSIS SG 저압력 855 psia[3]</li>
+</ul>
+</li>
+<li><strong>공통 구조</strong>: 4채널(A~D) 독립 측정 → 채널별 <strong>BP</strong>(바이스테이블 프로세서, 설정치 비교) → <strong>LCL</strong>(국부 동시논리, 기능별 <strong>2/4</strong>) → RPS는 RTSS로, ESFAS는 안전등급 링크로 <strong>ESF-CCS</strong>에 전달 → 그룹 제어기가 펌프·밸브 구동</li>
+<li><strong>한 계통으로 묶는 이유</strong>: 가압기 저압력·격납건물 고압력·SG 수위·압력처럼 <strong>같은 측정 변수를 두 기능이 공유</strong>함 → 센서·채널·시험·바이패스 체계를 하나로 관리</li>
+<li>오답 주의: CPC·DPS·ESF-CCS는 PPS를 구성하는 계통이 아님(CPC는 입력원, ESF-CCS는 하류 실행, DPS는 독립 계통)</li>
+</ul>
+<figure class="article-image"><img alt="PPS의 두 구성 계통(RPS·ESFAS)이 같은 측정 변수를 나눠 쓰는 공유 입력 매트릭스와 APR1400 ESFAS 공칭 설정치" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/f27189901b23638e655a057b59c8a10029ec37008d7768a0663090123dec292f.webp"/><figcaption>PPS의 두 구성 계통(RPS·ESFAS)이 같은 측정 변수를 나눠 쓰는 공유 입력 매트릭스와 APR1400 ESFAS 공칭 설정치</figcaption></figure>
+<p><strong>3. 나. CPC의 주요 기능</strong></p>
+<ul>
+<li><strong>정의</strong>: CE형(OPR1000·APR1400) 안전등급 4채널 디지털 연산기, 최소 DNBR과 최대 국부출력밀도(LPD, kW/ft 국부 선출력)를 실시간 계산</li>
+<li><strong>입력</strong>: 노외 핵계측기 상·중·하 3단 신호, 고온관·저온관 온도, 가압기 압력, RCP 속도(유량), CEA 위치(CEAC 편차 페널티)</li>
+<li><strong>계산</strong>: 노외 신호를 SAM·CEA 그림자·온도 그림자 계수로 보정 → 축방향 출력분포 → LPD, 상관식 DNBR → 동적 보상(계기 지연 보수적 반영)</li>
+<li><strong>주요 기능(출력)</strong>
+<ol>
+<li><strong>저 DNBR·고 LPD 원자로정지 신호</strong> → PPS 바이스테이블(2/4)</li>
+<li>DNBR·LPD <strong>예비트립 경보</strong></li>
+<li><strong>CEA 인출금지(CWP)</strong> — 예비트립, 부그룹 편차, 순서 이탈 시</li>
+<li>운전원 모듈의 <strong>DNBR·LPD 여유 표시</strong></li>
+<li><strong>CEA 위치 표시</strong></li>
+<li>보조 트립(빠른 출력 상승은 CPCS 가변과출력 트립)</li>
+</ol>
+</li>
+<li><strong>CEAC</strong>: CEA 부그룹 위치 편차를 감시해 DNBR·LPD 페널티를 줌 → 반응도 제어 단일 오동작에도 SAFDL 유지(GDC 25)</li>
+<li><strong>COLSS와 구분</strong>: COLSS는 비안전등급 감시(노내 계측기, 운전 여유 경보), CPC는 안전등급 보호(트립)</li>
+<li><strong>목적</strong>: AOO 중 <strong>SAFDL</strong>(DNB 방지, 핵연료 중심 용융 방지) 보호[3]. 저 DNBR·고 LPD 트립 설정치는 호기·주기·DNB 상관식에 따른 설계값(운영기술지침서·노심운전제한보고서)이며 안전한계 자체가 아님</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: CPC 입력·출력과 PPS(RPS·ESFAS) 2계통 구성, 독립된 DPS 경로" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/4ab0ea72d0982c5ffc4b844ca3cd9b1bb40cd53d01f49fc0a92ecd685873b918.webp"/><figcaption>답안용 도식: CPC 입력·출력과 PPS(RPS·ESFAS) 2계통 구성, 독립된 DPS 경로</figcaption></figure>
+<p><strong>4. 다. DPS가 고려하는 ATWS 사고유형 6가지</strong></p>
+<ul>
+<li><strong>ATWS</strong>: AOO에 뒤이어 원자로정지 기능이 실패하는 사건(10 CFR 50.62(b)). 출력은 유지되고 열제거만 줄어 <strong>RCS 과압</strong>이 핵심 쟁점</li>
+<li>대상 6개(APR1400 ATWS 평가 보고서[5], 모두 SRP 15.2 <strong>2차측 열제거 감소형 AOO</strong>[7])
+<ol>
+<li><strong>외부부하상실</strong> (15.2.1)</li>
+<li><strong>터빈정지</strong> (15.2.2)</li>
+<li><strong>복수기진공상실</strong> (15.2.3) — 터빈 우회 불가, 주증기안전밸브만 사용</li>
+<li><strong>주증기격리밸브(MSIV) 닫힘</strong> (15.2.4)</li>
+<li><strong>소외전원상실</strong>(소내 보조계통의 비상용 아닌 교류전원 상실) (15.2.6) — RCP·급수 동시 상실</li>
+<li><strong>정상급수상실</strong> (15.2.7)</li>
+</ol>
+</li>
+<li>정량 해석: 터빈정지, 복수기진공상실, 소외전원상실, 정상급수상실(터빈정지 유·무) </li>
+<li><strong>최제한 사건: 터빈정지 없는 정상급수상실</strong> — 터빈이 증기를 계속 빼 SG 재고가 빨리 고갈됨</li>
+<li><strong>허용기준</strong>: 첨두 RCS 압력 ASME Level C 약 3,200 psig = <strong>22.06 MPa(g)</strong> 이하[7]. 국내 APR1400(새울 1·2, 신한울 1·2) 심사 결과 최대 <strong>17.59 MPa(g)</strong>[8]</li>
+<li>첨두는 MTC가 덜 음인 <strong>주기 초(1주기)</strong>에 생기며, 30분간 운전원 조치를 인정하지 않음</li>
+<li><strong>DPS 대응</strong>: 가압기 고압력·격납건물 고압력 → 다양성 원자로정지, PPS 또는 DPS 정지 조건 → <strong>터빈정지(3초 지연, 미국 DC)</strong>, SG 저수위 → <strong>보조급수 작동</strong>, 그 밖에 안전주입(DPS-SIAS)·CEA 인출금지[6]</li>
+</ul>
+<figure class="article-image"><img alt="ATWS 6개 사건의 열제거 감소 방식·정량 해석 여부 표와, 정상운전 15.41·POSRV 16.93·국내 최대 17.59·기준 22.06 MPa(g) 압력 축" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/fb6e83b3cad26f870877565a962583311f33a78fb546f6c3aeca1580f80fca83.webp"/><figcaption>ATWS 6개 사건의 열제거 감소 방식·정량 해석 여부 표와, 정상운전 15.41·POSRV 16.93·국내 최대 17.59·기준 22.06 MPa(g) 압력 축</figcaption></figure>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>PPS는 RPS·ESFAS를 4채널 2/4로 묶은 <strong>다중성</strong> 계통이고, CPC는 그 안의 노심 열적 한계 입력, DPS는 PPS와 다른 기술·경로의 <strong>다양성</strong> 계통임</li>
+<li>다중성은 단일고장에, 다양성은 소프트웨어 공통원인고장(CCF)과 ATWS에 대비함 → 기술기준규칙 제26조·제27조가 이 분담을 그대로 요구함</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 2차측 열제거 감소형 AOO 6개를 터빈측·증기 경로·급수·전원으로 묶은 트리와 최제한 사건·압력 기준" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/490e78a7c7d66f09e8b18836a19a722b663833224def513cd354b87994d38215.webp"/><figcaption>답안용 도식: 2차측 열제거 감소형 AOO 6개를 터빈측·증기 경로·급수·전원으로 묶은 트리와 최제한 사건·압력 기준</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: "구성 계통 2가지"에서 자주 틀리는 지점</h3>
+<p>PPS라는 이름 때문에 계통 안에 CPC나 DPS가 들어 있다고 쓰는 답안이 많습니다. CPC는 4채널 연산기로서 PPS 바이스테이블에 트립 신호를 넣는 입력원입니다. DPS는 기술기준규칙 제27조 ②에 따라 감지장치 출력부터 최종 작동기 구동장치까지 원자로보호계통과 독립되어야 하므로 PPS의 일부가 될 수 없습니다. 정답은 RPS와 ESFAS이고, 두 기능을 한 계통에 둔 이유(입력 변수 공유)를 한 줄 덧붙이면 충분합니다. ESF-CCS를 함께 적고 싶다면 "PPS의 ESFAS 개시 신호를 받아 기기를 구동하는 하류 계통"으로 경계를 밝혀 두십시오.</p>
+<h3>해설: 6개 사건 목록의 근거를 밝히는 법</h3>
+<p>다 항은 외워서 쓰는 목록처럼 보이지만, 채점자는 "왜 이 6개인가"를 봅니다. 여섯 사건은 모두 2차측 열제거가 줄어드는 AOO입니다. 정지에 실패하면 노심 출력은 그대로인데 열을 받아 줄 곳이 사라지므로, 냉각재가 팽창해 가압기가 만수되고 안전밸브 방출만으로 압력을 버텨야 합니다. 반대로 제어봉 인출처럼 출력이 늘어나는 사건은 이 보고서의 평가 대상 6개에 들어 있지 않습니다. 문헌마다 "부하상실", "비상용 아닌 교류전원 상실"처럼 이름이 조금씩 다르므로, 답안 첫 줄에 "APR1400 ATWS 평가 기준, 열제거 감소형 AOO"라고 출처를 적어 두는 편이 안전합니다. </p>
+<h3>해설: CPC 기능을 "계산"과 "출력"으로 나누기</h3>
+<p>나 항에서 "DNBR과 LPD를 계산한다"만 쓰면 기능의 절반만 쓴 셈입니다. 계산 결과로 무엇을 내보내는지(트립, 예비트립, 인출금지, 여유·위치 표시)를 번호로 나열해야 "주요 기능"이 됩니다. DNBR은 두 곡선 사이의 거리가 아니라 국부 임계열속과 국부 열속의 비가 가장 작은 값(MDNBR)이라는 점도 정확히 쓰십시오.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 달라진 기준 없음(확인 근거: 2026년 출제 문항이며, 현행 「원자로시설 등의 기술기준에 관한 규칙」 원안위규칙 제37호(2026.3.30) 제26조·제27조와 사고관리 고시 제2026-1호 별표 1의 다중고장 ① ATWS[9] 기준으로 작성함). 다만 DPS의 채널 구성은 호기마다 다릅니다. 국내 새울 1·2·신한울 1·2호기는 2채널 2/2, 미국 설계인증 APR1400은 4채널 2/4이고, DPS-SIAS는 새울 3·4호기와 미국 설계인증에 들어 있습니다[3][10]. 답안에 호기를 밝혀 쓰는 것이 좋습니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제26조(원자로보호계통)·제27조(다양성보호계통). 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix A "General Design Criteria for Nuclear Power Plants", Criteria 20~25; 10 CFR 50.62 "Requirements for reduction of risk from anticipated transients without scram (ATWS) events".</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Rev. 3 (2018), Chapter 7(7.2 원자로정지계통, 7.3 공학적안전설비작동계통, 7.8 다양성 계측제어계통). NRC ADAMS 공개.</li>
+<li>장승철 외, "Model and Estimation of ATWS Frequency for the APR-1400 Reactor", 한국원자력학회 춘계학술발표회 (2020).</li>
+<li>KEPCO &amp; KHNP, APR1400 ATWS Evaluation, APR1400-Z-A-NR-14014-NP, Rev. 1. NRC ADAMS ML18087A121.</li>
+<li>KEPCO &amp; KHNP, APR1400 CCF Coping Analysis, APR1400-Z-A-NR-14019-NP, Rev. 3. NRC ADAMS ML18225A340.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan, 15.2.1~15.2.7(2차측 열제거 감소 사건), 15.8 "Anticipated Transients Without Scram".</li>
+<li>원자력안전위원회, 제206회 원자력안전위원회 회의 안건(2025.1.9) — 새울 1·2호기·신한울 1·2호기 사고관리계획서 승인.</li>
+<li>원자력안전위원회 고시 제2026-1호(2026.1.16, 사고관리 세부기준), 별표 1(다중고장). 국가법령정보센터.</li>
+<li>오양균 외, "Design Improvements of DPS Regarding CCF and D3 Issues", 한국원자력학회 학술발표회 (2012).</li>
+</ol>

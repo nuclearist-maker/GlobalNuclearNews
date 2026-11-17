@@ -1,0 +1,129 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2020년 원자력발전기술사 필기 2교시 3번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>감속재와 핵연료 비율에 따른 변화를 도시(圖示)하고(가, 나, 다), 원자로 설계(라)에 대해 기술하시오.
+가. 열중성자이용률(Thermal utilization factor, f)
+나. 공명이탈확률(Resonance escape probability, p)
+다. 유효증배계수(Effective multiplication factor, k_eff)
+라. 과소감속(Under moderation) 조건으로 설계하는 이유(안전성, 경제성 측면)</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>감속재 대 연료비가 <strong>f와 p를 서로 반대 방향으로 움직이고</strong>, 그 곱인 증배계수가 최대점을 갖는다는 것을 그림으로 보일 수 있는지 봅니다. 이어서 경수로가 왜 그 최대점의 왼쪽, 즉 과소감속 영역에 설계되는지를 <strong>감속재 밀도 궤환(음의 MTC)</strong>과 <strong>노심 소형화</strong> 논리로 설명해야 합니다. 그림 세 개를 따로 그리기보다 같은 가로축 위에 겹쳐 그리면 시간과 점수 모두 유리합니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 6인자 공식과 감속재 대 연료비의 정의</li>
+<li>본론 1(가·나): f 단조 감소, p 단조 증가 — 식과 물리적 이유</li>
+<li>본론 2(다): keff 최대점, 과소감속·과다감속 영역, 붕소 영향</li>
+<li>본론 3(라): 과소감속 설계 이유 — 안전성(음의 궤환), 경제성(소형화·전환비·붕소 운용)</li>
+<li>결론: 최대점 왼쪽의 "적당한" 위치(냉각 사건과의 절충)</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>유효증배계수(6인자): <strong>keff = ε·P_FNL·p·P_TNL·f·η = k∞·P_FNL·P_TNL</strong>
+<ul>
+<li>ε 고속핵분열인자, P_FNL·P_TNL 고속·열 비누설확률, p 공명이탈확률, f 열중성자이용률, η 재생계수</li>
+</ul>
+</li>
+<li>감속재 대 연료비: 격자에서 <strong>감속재 체적/연료 체적(Vm/Vf)</strong> 또는 원자수비(N_M/N_F) — 경향은 같음</li>
+<li>η·ε는 연료 조성으로 정해져 감속재 비에는 거의 불변 → 변화는 <strong>f와 p</strong>가 지배</li>
+</ul>
+<p><strong>2. 열중성자이용률 f — 감속재비 증가 시 감소</strong></p>
+<ul>
+<li>정의: 흡수된 열중성자 중 연료가 흡수한 비율
+<ul>
+<li><strong>f = Σa^F/(Σa^F + Σa^M + Σa^기타)</strong> (비균질 격자는 영역별 열중성자속 가중) [3]</li>
+</ul>
+</li>
+<li>감속재가 많아질수록 감속재(물의 수소, 용해 붕소)의 흡수 몫이 커짐 → <strong>f 단조 감소</strong></li>
+<li>용해 붕소가 있으면 감속재 흡수가 커져 <strong>f가 더 빨리 감소</strong></li>
+</ul>
+<p><strong>3. 공명이탈확률 p — 감속재비 증가 시 증가</strong></p>
+<ul>
+<li>정의: 감속 중 U-238 공명흡수(주요 공명 약 6~200 eV)를 피해 열에너지에 도달할 확률
+<ul>
+<li>균질 근사 <strong>p = exp[−N_F·I_eff/(ξΣs)]</strong> [3][4]</li>
+</ul>
+</li>
+<li>감속재가 많을수록 ξΣs/N_F 증가 → 공명영역에서의 흡수 손실 감소 → <strong>p 단조 증가</strong>(1에 점근)</li>
+</ul>
+<p><strong>4. 유효증배계수 keff — 최대점 존재</strong></p>
+<ul>
+<li>keff ∝ f·p → 감소하는 f와 증가하는 p의 곱 → <strong>최대점(최적 감속)</strong> 존재
+<ul>
+<li>최대점 왼쪽: <strong>과소감속</strong>(감속 부족, p가 지배) / 오른쪽: <strong>과다감속</strong>(흡수 과다, f가 지배)</li>
+</ul>
+</li>
+<li>설명용 모델 예: f = 1/(1 + 0.0376x), p = exp(−0.575/x), keff = 1.85·f·p
+<ul>
+<li>x = 2에서 f 0.930·p 0.750·keff 1.291, 최대 x ≈ 4.2(keff 1.393) — η·ε·비누설확률 일정 가정</li>
+<li>감속재 흡수 계수를 0.1576으로 키운 붕소 예시: 최대점 x ≈ 2.2로 <strong>왼쪽 이동</strong></li>
+</ul>
+</li>
+<li>비누설확률은 노심 크기에 따라 달라지므로 그림에서는 일정하다고 가정함</li>
+</ul>
+<figure class="article-image"><img alt="감속재 대 연료 체적비에 따른 f(감소)·p(증가)와 keff 최대점(무붕소·붕소 예시), 과소/과다감속 영역, PWR 대표 설계점과 밀도 감소 효과(설명용 모델)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/552cc8b7f968b77a0daf5a268d780c39b1f5f40519f92c59eed30ca11ca66bc6.webp"/><figcaption>감속재 대 연료 체적비에 따른 f(감소)·p(증가)와 keff 최대점(무붕소·붕소 예시), 과소/과다감속 영역, PWR 대표 설계점과 밀도 감소 효과(설명용 모델)</figcaption></figure>
+<p><strong>5. 과소감속 조건으로 설계하는 이유</strong></p>
+<ul>
+<li><strong>안전성</strong>
+<ul>
+<li>감속재 온도↑ 또는 기포율↑ → 밀도↓ → 격자 형상(기하학적 Vm/Vf)은 그대로지만 <strong>감속재 원자수비(밀도 환산 Vm/Vf)↓</strong> → 과소감속 영역에서는 <strong>keff↓</strong></li>
+<li>즉 <strong>음의 감속재 온도계수(MTC)·기포계수</strong> → 출력 상승을 스스로 억제(고유 안전)</li>
+<li>과다감속이라면 밀도 감소 시 흡수 감소로 f↑가 우세 → keff↑ → <strong>양의 궤환</strong></li>
+<li>냉각재 상실 시에도 감속 감소로 반응도가 내려가는 방향</li>
+<li>근거: 「원자로시설 등의 기술기준에 관한 규칙」 제18조(원자로의 고유보호) [1], 10 CFR 50 부록 A GDC 11 [2] — 출력운전 범위에서 신속한 고유 궤환의 <strong>순효과</strong>가 반응도 증가를 상쇄하도록 요구(개별 계수마다 음을 명시한 조항은 아님)</li>
+<li>단, 고붕소 조건에서는 밀도 감소 시 붕소도 함께 빠져 이 효과를 상쇄 → 음의 MTC가 항상 보장되지는 않으므로 운영기술지침서로 MTC를 제한 [5]</li>
+</ul>
+</li>
+<li><strong>경제성</strong>
+<ul>
+<li>감속재(물) 체적이 작아 <strong>연료봉 간격이 조밀</strong> → 열수력 한계 안에서 노심·원자로용기 소형화, 높은 출력밀도 → 설비비 절감에 유리</li>
+<li>공명흡수가 상대적으로 커서 <strong>U-238 포획·Pu-239 생성이 늘어 전환비 향상 가능</strong> → 생성 Pu가 핵분열에 기여(주기 연장·연료비 절감으로 바로 이어지지는 않음)</li>
+</ul>
+</li>
+<li><strong>운전·반응도 제어</strong>
+<ul>
+<li>최대점과 거리가 있어 <strong>용해 붕소를 써도 음의 MTC를 확보할 설계 여유</strong>가 있음 → 균일한 화학적 반응도 제어 가능</li>
+</ul>
+</li>
+<li><strong>절충</strong>
+<ul>
+<li>지나친 과소감속 → MTC가 지나치게 음 → <strong>냉각 사건(주증기관 파단 등) 시 반응도 증가</strong>가 큼</li>
+<li>최대점에서 멀수록 같은 연료로 얻는 k∞가 낮아짐 → 최대점 왼쪽의 <strong>적정 위치</strong>를 설계로 선정</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: f·p·keff 3곡선과 keff 최대점 왼쪽의 PWR 설계점" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/c9af6e0570d79f566ba6abd60566f0683e1b1493e93c9f245d508d111a640d79.webp"/><figcaption>답안용 도식: f·p·keff 3곡선과 keff 최대점 왼쪽의 PWR 설계점</figcaption></figure>
+<p><strong>6. 결론</strong></p>
+<ul>
+<li>감속재비 증가 → <strong>f↓, p↑, keff는 최대점</strong>을 가짐</li>
+<li>PWR은 <strong>최대점 왼쪽(과소감속)</strong>에 설계해 음의 궤환과 소형 노심을 함께 확보하고, 붕소 농도·MTC는 운영기술지침서로 관리</li>
+<li>그림의 PWR 설계점(Vm/Vf ≈ 2)은 대표 예시[6]이며, 모델의 keff 값이 실제 운전 keff를 뜻하지는 않음</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 그림 한 장에 세 곡선을 겹치세요</h3>
+<p>f와 p를 같은 세로축(0~1)에, keff를 따로 그린 두 단 그래프가 가장 읽기 쉽습니다. 손으로 그릴 때는 한 축에 세 곡선을 겹쳐도 되지만, keff는 1보다 클 수 있으므로 축 이름에 "개념"이라고 적어 두세요. 채점자가 보는 것은 방향(f 하강, p 상승), 최대점, 그리고 설계점이 왼쪽에 있다는 표시입니다.</p>
+<h3>해설: 붕소가 많으면 왜 MTC가 양이 될 수 있나요</h3>
+<p>용해 붕소는 감속재 속에 있으므로, 붕소가 많을수록 감속재의 흡수가 커져 f 곡선이 가파르게 떨어집니다. 그러면 keff 최대점이 왼쪽으로 옮겨져 설계점과 가까워집니다. 주기 초 고붕소·영출력 조건에서 MTC가 0에 가깝거나 양이 될 수 있는 이유입니다. 그래서 운영기술지침서는 MTC 상한(주기 초)과 하한(주기 말)을 함께 둡니다. 그림의 음영은 무붕소 곡선 기준이며, 붕소 예시 곡선으로 보면 Vm/Vf 약 2.2~4.2 구간은 이미 과다감속 쪽이라는 점도 함께 읽어 두세요.</p>
+<h3>해설: 설명용 모델의 숫자는 외우지 마세요</h3>
+<p>곡선의 계수는 PWR 대표 설계점(Vm/Vf ≈ 2)에서 f ≈ 0.93, p ≈ 0.75가 되도록 맞춘 설명용 값입니다. 실제 격자의 최적 감속재비는 농축도, 연소도, 붕소 농도, 온도에 따라 달라집니다. 답안에는 수치보다 개형과 영역 이름, 그리고 설계점의 위치를 정확히 그리는 것이 중요합니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li>감속재 대 연료비와 증배계수의 관계는 물리 법칙이므로 출제 이후 달라진 것이 없습니다.</li>
+<li>설계 요건 근거인 「원자로시설 등의 기술기준에 관한 규칙」 제18조(원자로의 고유보호)는 2026년 두 차례 개정(원안위규칙 제36호 2026.1.20, 제37호 2026.3.30) 뒤에도 취지가 같습니다 [1].</li>
+<li>MTC 운전 제한은 운영기술지침서(LCO 3.1.3 체계, 수치는 COLR)로 관리하며, 작성 기준은 원안위고시 제2024-13호(2024.12.31)가 현행판입니다 [5][7].</li>
+<li>참고로 무붕산 운전을 택한 일부 SMR 설계(i-SMR 등)는 붕소에 의한 최대점 이동 문제가 없습니다. 대신 반응도 제어를 제어봉과 가연성흡수체가 맡습니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제18조(원자로의 고유보호). 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, "General Design Criteria for Nuclear Power Plants", Criterion 11 "Reactor inherent protection".</li>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 6장(원자로 이론 — 4인자 공식).</li>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, John Wiley &amp; Sons (1976).</li>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications — Westinghouse Plants, Rev. 5 (2021), LCO 3.1.3 "Moderator Temperature Coefficient (MTC)".</li>
+<li>E. E. Lewis, Fundamentals of Nuclear Reactor Physics, Academic Press (2008).</li>
+<li>원자력안전위원회, 「운영기술지침서의 작성에 관한 기준」, 원안위고시 제2024-13호(2024.12.31). 국가법령정보센터.</li>
+</ol>

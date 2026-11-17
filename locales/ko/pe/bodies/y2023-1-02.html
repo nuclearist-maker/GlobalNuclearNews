@@ -1,0 +1,69 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2023년 원자력발전기술사 필기 1교시 2번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>원자로 노심의 3차원 출력분포에서 공학적 고온유로계수(Engineering Hot Channel Factor)의 정의 및 영향인자</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>고온유로계수</strong>: 열수로계수, 고온관 인자, Hot Channel Factor와 같은 말입니다. 노심 최대 열적 변수를 평균값으로 나눈 배수입니다.</li>
+<li><strong>핵적 인자 F^N</strong>: 3차원 노심 계산이 주는 출력분포 첨두입니다. 공칭 치수를 전제로 합니다.</li>
+<li><strong>공학적 인자 F^E</strong>: 제조 공차와 기준 유동조건으로부터의 편차가 국부 열속·유로 엔탈피 상승에 미치는 영향을 반영하는 보정계수입니다.</li>
+<li><strong>FQ^E와 FΔH^E</strong>: 국부 열속 쪽과 고온유로 엔탈피 상승 쪽 공학적 인자입니다. 영향인자가 서로 다릅니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 정의</strong></p>
+<ul>
+<li>고온유로계수 F = 노심 최대 열적 변수 ÷ 평균값 = <strong>핵적 인자 F^N × 공학적 인자 F^E</strong>[1][2]</li>
+<li><strong>F^N</strong>: 3차원 출력분포(중성자속) 불균일에 의한 첨두 — 노심 계산은 공칭 치수·밀도·농축도 기준</li>
+<li><strong>F^E</strong>: 연료·피복관 치수, 밀도, 농축도, 유로 형상, 유량이 공칭값에서 벗어나 <strong>고온점 국부 열속 또는 고온유로 엔탈피 상승이 공칭 계산보다 커지는 몫을 반영하는 보정계수</strong>(≥ 1)</li>
+<li>구분: <strong>고온점</strong> = 한 위치의 국부 열속, <strong>고온유로</strong> = 유로를 따라 누적된 엔탈피 상승 → 같은 발열에서도 유량이 줄면 엔탈피 상승이 커짐</li>
+</ul>
+<p><strong>2. 영향인자</strong>(불리한 쪽 편차가 생긴 경우의 영향)</p>
+<ul>
+<li><strong>FQ^E(고온점 국부 열속)</strong>
+<ul>
+<li>펠릿 직경·밀도·농축도 편차 → 국부 발열량 증가</li>
+<li>피복관 외경 편차 → 전열면적 감소</li>
+<li>펠릿 편심·간극 불균일 → 국부 열속 편중</li>
+</ul>
+</li>
+<li><strong>FΔH^E(고온유로 엔탈피 상승)</strong>
+<ul>
+<li>봉별 연료 장전량·농축도 편차 → 축방향 적분출력 증가</li>
+<li>입구 유량 불균일, 유로 간 유량 재분배 → 고온유로 유량 감소</li>
+<li>연료봉 피치 편차·휨(rod bow) → 유로면적 축소</li>
+<li>유로 간 난류 혼합(혼합날개 지지격자) → 고온유로 엔탈피 상승 <strong>완화 요인</strong>(해석모델에 반영)</li>
+</ul>
+</li>
+</ul>
+<p><strong>3. 결합과 적용</strong></p>
+<ul>
+<li>결합: 부인자 <strong>곱(결정론, 보수적)</strong> 또는 <strong>통계 결합 1 + √Σ(fᵢ − 1)²</strong>(작은 편차·독립 가정일 때)</li>
+<li>대표값: Westinghouse형 <strong>FQ^E ≈ 1.03</strong>[3], FΔH 쪽 유동·제조 불확실성은 설계 방법론에 따라 처리(예: ITDP·RTDP·SCU로 DNBR 한계에 반영)</li>
+<li>측정 FQ 비교: × 1.03(제조) × 1.05(측정) = <strong>× 1.0815</strong>[3]</li>
+<li>한계: FQ → LOCA PCT·연료 중심 용융, FΔH → DNB(95/95), 기술기준규칙 제17조① 연료허용손상한계 여유[4]</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 총 인자 = 핵적 × 공학적, FQ^E·FΔH^E별 영향인자 트리와 결합 방식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/2a5a55d92a23ef463a4e89c74aa56bdf0f3614708f749ac756c5ef8b2a879b0a.webp"/><figcaption>답안용 도식: 총 인자 = 핵적 × 공학적, FQ^E·FΔH^E별 영향인자 트리와 결합 방식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="핵적·공학적 인자 식 카드, FQ^E·FΔH^E 영향인자 표, 가상 부인자로 비교한 곱 1.067과 통계 결합 1.034" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/834ac8781915ff8b23d8aed974ef74e4d11418007ac616a7bb34c4ee047c9d8c.webp"/><figcaption>핵적·공학적 인자 식 카드, FQ^E·FΔH^E 영향인자 표, 가상 부인자로 비교한 곱 1.067과 통계 결합 1.034</figcaption></figure>
+<p>문제의 "3차원 출력분포에서"라는 말이 힌트입니다. 노심 설계 코드가 계산하는 3차원 분포는 모든 연료가 도면 치수대로 만들어졌다고 보고 얻은 결과입니다. 실제 펠릿은 직경과 밀도에 공차가 있고, 유로는 조금씩 좁거나 넓습니다. 이 차이를 덮어 주는 것이 공학적 인자입니다. 농축도나 밀도 편차는 실제 국부 발열도 바꾸지만, 기준 설계의 공간 분포(핵적 인자)와는 원인이 다른 추가 보정이라는 점이 핵심입니다. 이미 노심 해석에 반영한 효과를 다시 곱하지 않는 것도 전제입니다.</p>
+<p>그림 아래 막대는 결합 방식의 차이를 보여 줍니다. 가상의 부인자 네 개(1.020, 1.020, 1.010, 1.015)를 모두 곱하면 1.067입니다. 작은 편차이고 서로 독립이라고 보고 통계적으로 결합하면 1.034가 되어, 1을 넘는 가산분이 약 절반으로 줄어듭니다. 모든 공차가 한 점에서 동시에 최악일 확률은 매우 낮기 때문입니다. 다만 상관이 있거나 체계적인 편차에는 이 식을 그대로 쓸 수 없습니다. 과거 교과서 계산 문제의 큰 공학적 인자(예: 1.75)는 결정론적 곱의 산물입니다. 현행 설계는 통계적 방법을 쓰며, 유동 관련 불확실성을 어디에 반영할지는 승인된 설계 방법론에 따라 다릅니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>핵적 인자와 혼동</strong>: 핵적 인자는 기준 설계의 출력분포 첨두, 공학적 인자는 제조·유동 편차에 따른 추가 보정입니다. 첫 줄에서 둘을 구분하십시오.</li>
+<li><strong>영향인자를 한 묶음으로 씀</strong>: 열속(FQ^E)과 엔탈피(FΔH^E)로 나누면 구조가 분명해집니다.</li>
+<li><strong>혼합을 가중 요인으로 씀</strong>: 유로 간 혼합은 고온유로 엔탈피 상승을 줄이는 완화 요인입니다.</li>
+<li><strong>1.03을 모든 인자에 적용</strong>: 1.03은 Westinghouse형 FQ^E 대표값입니다.</li>
+<li><strong>결합 방식 누락</strong>: 곱과 통계 결합을 한 줄로 비교하면 가점 요소가 됩니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>N. E. Todreas, M. S. Kazimi, Nuclear Systems I: Thermal Hydraulic Fundamentals, 2nd ed., CRC Press (2012), 고온유로계수 절.</li>
+<li>M. M. El-Wakil, Nuclear Heat Transport, International Textbook Co. (1971), hot channel factor 장.</li>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications — Westinghouse Plants, Rev. 5 (2021), LCO 3.2.1 FQ(Z) 및 Bases(제조 공차 1.03·측정 불확실성 1.05).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제17조. 국가법령정보센터.</li>
+</ol>

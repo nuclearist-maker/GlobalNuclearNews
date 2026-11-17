@@ -1,0 +1,63 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2026년 원자력발전기술사 필기 1교시 12번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>원자력발전소 설계 시 안전해석 수행 목적 3가지</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>결정론적 안전해석</strong>: 가상 초기사건을 정하고 보수적 가정으로 발전소 거동을 계산해 허용기준과 비교하는 해석입니다. 대상은 정상운전, 예상운전과도(AOO = ANS Condition II + III), 설계기준사고(Condition IV)입니다.</li>
+<li><strong>허용기준</strong>: AOO는 연료허용손상한계(SAFDL)와 RCS 압력 110 % 미만, LOCA는 ECCS 5기준, 설계기준사고 선량은 제한구역 경계 2시간 250 mSv입니다[3][4].</li>
+<li><strong>해석 가정 = 운전 제한</strong>: 해석에 쓴 초기조건과 트립 작동값이 운영기술지침서(T/S)의 LCO와 설정치가 됩니다.</li>
+<li><strong>안전성분석보고서 15장</strong>: 건설·운영 허가 심사의 핵심 자료입니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 문제 해석</strong></p>
+<ul>
+<li>"설계 시 안전해석" = 정상운전·AOO·DBA에 대한 <strong>결정론적 사고해석</strong>(SAR 15장)으로 봄. PSA는 보완 수단임</li>
+</ul>
+<p><strong>2. 목적 ① 허용기준 만족 입증 — 설계 적합성</strong></p>
+<ul>
+<li>초기사건별로 <strong>단일고장·소외전원 상실·불리한 초기조건</strong>을 가정해 계산함</li>
+<li>AOO: <strong>SAFDL</strong>(MDNBR ≥ 95/95 한계, 중심선 비용융)[1], RCS 압력 <strong>&lt; 설계압력 110 %</strong>[5]</li>
+<li>LOCA: <strong>ECCS 5기준</strong>(PCT ≤ 1,204 ℃, ECR ≤ 17 % 등)[3] / 선량: <strong>EAB 2 h 250 mSv</strong>[4]</li>
+<li>4중 방벽이 유지됨을 보여 심층방어 3단계의 유효성을 확인함</li>
+</ul>
+<p><strong>3. 목적 ② 설계기준·운전 제한 설정</strong></p>
+<ul>
+<li>안전계통 <strong>성능 요구</strong> 결정: 안전주입 유량, 안전밸브 용량, 보조급수 유량, 작동 지연시간</li>
+<li>보호계통 <strong>해석한계</strong> → 계측 불확도만큼 보수 쪽(고압 트립은 낮게, 저압·저유량 트립은 높게)에 <strong>트립 설정치(LSSS)</strong> 결정</li>
+<li>해석 초기조건(출력·온도·압력·MTC) → <strong>LCO·COLR</strong> → <strong>운영기술지침서</strong></li>
+</ul>
+<p><strong>4. 목적 ③ 인허가·운영 근거 제공</strong></p>
+<ul>
+<li><strong>PSAR/FSAR 15장</strong> 제출 → 규제기관 심사(기술기준규칙 <strong>제42조</strong>: 결정론적·보수적 평가)[1]</li>
+<li>재장전 안전성 평가, 출력증강·설비 변경 재평가, <strong>EOP</strong>·PSA 성공기준의 입력으로 씀</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 결정론적 안전해석 상자에서 ①허용기준 입증 ②설계·운전 제한 설정 ③인허가·운영 근거로 뻗는 화살표와 압력 여유 사다리" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/e01a920c4bd133cdc7055540042285e889f638c3b8feaf2427edab7c6b3b593f.webp"/><figcaption>답안용 도식: 결정론적 안전해석 상자에서 ①허용기준 입증 ②설계·운전 제한 설정 ③인허가·운영 근거로 뻗는 화살표와 압력 여유 사다리</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="초기사건·보수적 가정이 결정론적 해석을 거쳐 ①허용기준 표 ②RCS 압력 여유 사다리(정상 2,250 → 트립 약 2,400 → 안전밸브 2,500 → 안전한계 2,750 psia, W형 예시) ③인허가·운영 산출물로 이어지는 흐름도" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/4c6705d71710bf725aceae35b582ea68063de656022a4ce1f13c1d165d8d6fbb.webp"/><figcaption>초기사건·보수적 가정이 결정론적 해석을 거쳐 ①허용기준 표 ②RCS 압력 여유 사다리(정상 2,250 → 트립 약 2,400 → 안전밸브 2,500 → 안전한계 2,750 psia, W형 예시) ③인허가·운영 산출물로 이어지는 흐름도</figcaption></figure>
+<p>세 목적은 따로 노는 것이 아니라 한 번의 해석이 세 방향으로 쓰이는 구조입니다. 같은 LOCA 해석이 ①에서는 PCT 1,204 ℃ 이하를 보여 주고, ②에서는 그 결과를 얻으려고 가정한 안전주입 유량과 초기 출력이 설계 요구와 LCO가 되며, ③에서는 FSAR 15장으로 제출됩니다. IAEA SSG-2도 결정론적 해석의 목적을 "모든 상태에서 충분한 방벽이 유지됨을 입증"하는 것으로 두고, 운영기술지침서가 해석의 초기·경계조건을 모두 포괄해야 한다고 적고 있습니다[2]. 미국 10 CFR 50.36도 기술지침서를 안전성분석보고서의 해석에서 도출하도록 정합니다[6].</p>
+<p>②에서 자주 틀리는 부분은 설정치의 위계입니다. 안전한계(예: RCS 압력 2,750 psia = 설계압력 2,500 psia × 110 %)를 지키도록 해석에 쓴 트립 작동값이 해석한계이고, 실제 트립 설정치는 계측 불확도만큼 더 보수 쪽에 둡니다. 그림의 압력값은 W형 4루프 표준 기술지침서[7]의 설명용 예시이며, 국내 노형 값은 호기별 기술지침서를 따릅니다.</p>
+<p>해석 방법은 보수적 방법(보수 코드·보수 입력)과 최적평가(BEPU, 최적 코드 + 불확실성 정량)로 나뉩니다. 어느 방법이든 세 목적은 같고, 여유를 확보하는 방식만 다릅니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>①만 세 개로 쪼개기</strong>: 연료·압력·선량을 목적 3가지로 나열하면 ②·③이 빠집니다. 셋은 "허용기준 확인"이라는 하나의 목적입니다.</li>
+<li><strong>해석과 T/S의 연결 누락</strong>: "해석 가정이 곧 운전 제한"이라는 ②를 써야 설계와 운영을 잇는 답이 됩니다.</li>
+<li><strong>설정치 = 해석한계</strong>: 트립 설정치는 해석한계보다 계측 불확도만큼 보수 쪽에 있습니다.</li>
+<li><strong>PSA와 혼동</strong>: 설계 인허가 해석은 결정론이 중심이고 PSA는 보완입니다.</li>
+<li><strong>110 %를 모든 사고에 적용</strong>: 설계압력 110 %는 AOO 공통 기준이고, 설계기준사고(Condition IV)는 사건별 기준입니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제2조 제10호, 제17조 제1항, 제42조. 국가법령정보센터.</li>
+<li>IAEA, Safety Standards Series No. SSG-2 "Deterministic Safety Analysis for Nuclear Power Plants" (2010), paras 7.2·7.12·8.1 (개정판 SSG-2 Rev. 1, 2019).</li>
+<li>원자력안전위원회고시 제2017-23호(비상노심냉각계통 성능기준); U.S. NRC, 10 CFR 50.46(b).</li>
+<li>원자력안전위원회고시 제2026-7호(원자로시설 위치제한 기준, 2026.1.20 제정) — 제한구역경계 2시간·저인구지대 유효선량 250 mSv. 국가법령정보센터.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 15.0 "Introduction — Transient and Accident Analysis Methods", Rev. 3 (2007).</li>
+<li>U.S. NRC, 10 CFR 50.36 "Technical specifications", (a)(1)·(c)(1)(ii)(A).</li>
+<li>U.S. NRC, NUREG-1431 "Standard Technical Specifications — Westinghouse Plants", Safety Limit 2.1.2(RCS 압력 ≤ 2,735 psig) 및 LCO 3.3.1.</li>
+</ol>

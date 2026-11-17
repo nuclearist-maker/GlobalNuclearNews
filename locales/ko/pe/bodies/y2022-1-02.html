@@ -1,0 +1,71 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2022년 원자력발전기술사 필기 1교시 2번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>원자로의 고유안전성과 이에 영향을 주는 4가지 반응도계수</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>고유안전성</strong>: 설계 개념의 선택으로 위험요소 자체를 없애거나 줄여 얻는 안전입니다. 노심에서는 음의 반응도 궤환이 대표 특성입니다.</li>
+<li><strong>반응도계수 α = ∂ρ/∂x</strong>: 상태변수 x 하나가 단위량 변할 때의 반응도 변화입니다(pcm/단위).</li>
+<li><strong>4가지 계수</strong>: 핵연료온도(도플러), 감속재온도, 기포, 압력계수입니다.</li>
+<li><strong>출력계수</strong>: 네 계수가 출력 변화에서 합쳐진 종합 계수로, 출력운전 영역에서 음이어야 합니다.</li>
+<li><strong>규제 문언</strong>: 기술기준규칙 제18조(원자로의 고유보호), 10 CFR 50 부록 A GDC 11입니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 고유안전성</strong></p>
+<ul>
+<li>정의(IAEA-TECDOC-626): 기본 설계 개념의 선택으로 <strong>내재 위험요소를 제거·배제</strong>해 얻는 안전[1]
+<ul>
+<li>위험요소: 잉여반응도·출력 폭주, 핵분열생성물·붕괴열, 고온·고압·화학 에너지</li>
+</ul>
+</li>
+<li>노심 관점: <strong>신호·동력·운전원 조치 없이</strong> 물리 법칙(음의 반응도 궤환)만으로 출력 상승을 억제하는 성질</li>
+<li>규제: 기술기준규칙 <strong>제18조</strong> — 출력운전범위에서 급격한 반응도 증가가 <strong>자연적으로 억제</strong>되도록 설계[2] / <strong>GDC 11</strong> — 즉발 고유 핵궤환의 순효과[3]</li>
+<li>피동안전(자연력·저장에너지로 기능 수행하는 계통)과 구분</li>
+</ul>
+<p><strong>2. 4가지 반응도계수</strong> — ρ_fb = α_F·ΔT_F + α_M·ΔT_M + α_V·Δv + α_p·Δp</p>
+<ul>
+<li><strong>① 핵연료온도계수(FTC, 도플러)</strong>: U-238 공명 도플러 확장 → 공명흡수↑(p↓)
+<ul>
+<li>저농축 경수로에서 <strong>항상 음, 즉발</strong>(연료 발열에 바로 응답), 대형 PWR −1 ~ −2 pcm/°F, 연소 시 더 음(Pu-240)</li>
+</ul>
+</li>
+<li><strong>② 감속재온도계수(MTC)</strong>: 온도↑ → 밀도↓ → 과소감속 노심에서 감속↓(음) vs 붕소·물 흡수↓(양)
+<ul>
+<li><strong>붕소 농도 의존</strong>: 전출력 주기초 0 ~ −10 → 주기말 −30 ~ −45 pcm/°F, 주기초 영출력 양 가능(COLR 관리)</li>
+<li>연료 → 냉각재 열전달만큼 수 초 지연</li>
+</ul>
+</li>
+<li><strong>③ 기포계수</strong>: 기포↑ → 평균 냉각재 밀도↓ → 과소감속 경수로에서 <strong>음</strong>. PWR 영향 작음, BWR 주 궤환(RBMK는 양)</li>
+<li><strong>④ 압력계수</strong>: PWR에서 압력↑ → 밀도↑ → 통상 <strong>작은 양</strong>(조건 의존), 영향 미미</li>
+</ul>
+<p><strong>3. 종합 — 출력계수</strong></p>
+<ul>
+<li><strong>α_P = MTC·dT_M/dP + FTC·dT_F/dP</strong>(pcm/%power) → 출력운전 전 영역 <strong>음</strong>으로 설계</li>
+<li>설명용 예시: 주기초 약 −12 → 주기말 약 −21 pcm/% (감속재 몫 증가)[4]</li>
+<li>요건은 "각 계수 모두 음"이 아니라 출력운전 영역에서 <strong>즉발 궤환의 순효과 음</strong>(출력계수 음은 그 대표 지표)</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 출력↑ → 연료온도(FTC −, 즉발)·감속재온도(MTC −, 지연)·기포(−)·압력(작은 +) → 궤환 순효과 &lt; 0 → 출력 상승 억제" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/67bba22148769acbb0b2e5e87306fd270346ee4bafd471b6ab22decbb628e7ef.webp"/><figcaption>답안용 도식: 출력↑ → 연료온도(FTC −, 즉발)·감속재온도(MTC −, 지연)·기포(−)·압력(작은 +) → 궤환 순효과 &lt; 0 → 출력 상승 억제</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="궤환 반응도 식과 4가지 계수의 원인·부호·대표값·응답, 출력계수 도플러·감속재 몫 분해 막대(PWR 설명용 가상 운전점: 주기초 −12.0, 주기말 −20.8 pcm/%p)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/630e6426f730a078047a86c5b5318377cc05759664a6eeee1c3e64ed1312b846.webp"/><figcaption>궤환 반응도 식과 4가지 계수의 원인·부호·대표값·응답, 출력계수 도플러·감속재 몫 분해 막대(PWR 설명용 가상 운전점: 주기초 −12.0, 주기말 −20.8 pcm/%p)</figcaption></figure>
+<p>이 문제의 두 부분은 따로 놀지 않습니다. 고유안전성의 노심 쪽 실체가 바로 음의 반응도 궤환이고, 그 궤환을 숫자로 적은 것이 반응도계수입니다. 그래서 답안 1번에서 제18조와 GDC 11의 "출력운전범위·즉발·순효과"라는 표현을 쓴 뒤, 2번에서 계수별 부호와 응답 속도로 그 요건을 누가 맡는지 보여 주면 흐름이 이어집니다.</p>
+<p>그림은 출력계수를 두 몫으로 나눠 본 설명용 계산입니다. 계수 크기와 출력 1 %p당 연료(도플러 유효온도)·감속재(평균온도) 온도 상승은 설명용 가상 운전점의 가정값이고, 소변화 선형 근사입니다. 온도 기울기는 평균온도 운전 프로그램과 유량에 따라 달라집니다. 주기초에는 MTC가 0에 가까워 출력계수 대부분을 도플러가 맡습니다. 주기말에는 주기 진행에 따른 붕소 농도 감소 등으로 MTC가 크게 음이 되어, 이 예시에서는 감속재 몫이 약 51 %로 도플러 몫과 비슷해집니다. FTC 계수 자체는 MTC보다 작지만, 출력이 변할 때 연료 온도가 냉각재보다 훨씬 크게 변하므로 도플러 몫이 작지 않습니다. 실제 값은 노형과 주기별 노심운영제한보고서(COLR)·핵설계 자료를 따릅니다.</p>
+<p>압력계수와 기포계수 몫은 이 조건에서 변화량이 작다고 보고 그림에서 뺐습니다. 또 정상상태 출력계수가 음이라는 것만으로 GDC 11을 다 설명하지는 못합니다. GDC 11은 급격한 반응도 증가를 신속한 고유 궤환이 보상하는 경향을 요구하므로, 즉발 도플러의 역할을 함께 써야 합니다. 답안에서는 "PWR에서 압력계수는 작은 양"이라는 부호를 정확히 쓰는 것이 중요합니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>고유안전과 피동안전 혼동</strong>: 체크밸브 축압 주입 같은 계통은 피동안전입니다. 고유안전은 계통이 아니라 설계 성질입니다.</li>
+<li><strong>"네 계수 모두 음"</strong>: PWR 압력계수는 작은 양이고, MTC는 주기초 영출력에서 양일 수 있습니다. 요건은 순효과(출력계수)가 음이라는 것입니다.</li>
+<li><strong>즉발·지연 구분 누락</strong>: 도플러는 즉발, 감속재·기포는 열전달 뒤 지연이라는 한 줄이 GDC 11의 "즉발" 요건과 연결됩니다.</li>
+<li><strong>계수 구성 차이</strong>: 문헌에 따라 압력계수 대신 출력계수를 넣기도 합니다. 네 계수를 쓰고 출력계수는 종합 계수로 덧붙이면 어느 쪽 채점에도 안전합니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>IAEA, Safety Related Terms for Advanced Nuclear Plants, IAEA-TECDOC-626, Vienna (1991).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제18조(원자로의 고유보호). 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix A "General Design Criteria for Nuclear Power Plants", Criterion 11 "Reactor inherent protection".</li>
+<li>U.S. NRC Human Resources Training &amp; Development(HRTD), Westinghouse Technology Systems Manual, 2.1절(출력계수 예시). NRC 공개 문서.</li>
+</ol>

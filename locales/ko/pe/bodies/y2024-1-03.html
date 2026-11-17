@@ -1,0 +1,73 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2024년 원자력발전기술사 필기 1교시 3번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>노심 안전제한치</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>안전제한치(SL)</strong>: 물리적 방어벽 건전성에 필요한 주요 공정변수의 한계(고시 제4조). 초과하면 정지·보고·승인 후 재가동입니다.</li>
+<li><strong>노심 SL 두 조문</strong>: MDNBR ≥ 상관식 95/95 한계, 핵연료 중심선 최고온도 &lt; 용융 한계. 모드 1·2에 적용합니다.</li>
+<li><strong>연료허용손상한계(SAFDL)</strong>: 정상운전·예상운전과도(AOO)에서 넘지 않아야 할 설계한계(GDC 10, 기술기준규칙 제17조①). 노심 SL의 설계 근거입니다.</li>
+<li><strong>LSSS</strong>: SL을 넘기 전에 작동하는 자동 트립 설정치. CPC 저 DNBR·고 LPD 트립이 여기에 해당합니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 정의</strong></p>
+<ul>
+<li>방사성물질 누출을 막는 <strong>물리적 방어벽의 건전성</strong>을 확보하는 데 필요한 주요 공정변수의 한계임(원안위고시 제2024-13호 제4조①, 10 CFR 50.36(c)(1)) [1][2]</li>
+<li>노심 SL은 <strong>핵연료 펠릿·피복관</strong> 방벽을 지키는 한계로, 운영기술지침서 2.1.1에 규정함(<strong>모드 1·2</strong>)</li>
+</ul>
+<p><strong>2. 노심 SL 두 조문</strong></p>
+<ul>
+<li><strong>MDNBR ≥ CHF 상관식별 95/95 한계값</strong>(예: APR1400 KCE-1 <strong>1.29</strong> [4])
+<ul>
+<li>MDNBR = 노심 내 DNBR(q″CHF/q″)의 최솟값, DNB 미발생 확률 95 %를 신뢰도 95 %로 보장 → 피복관 과열 방지</li>
+</ul>
+</li>
+<li><strong>핵연료 중심선 최고온도 &lt; 용융 한계</strong>
+<ul>
+<li>표준기술지침서 예시 <strong>5,080 °F(2,804 °C), 10 GWd/tU당 58 °F(32 °C) 감소</strong> [3] → 연소로 UO₂ 융점이 내려가기 때문임 </li>
+</ul>
+</li>
+</ul>
+<p><strong>3. 설계 근거</strong></p>
+<ul>
+<li>GDC 10·기술기준규칙 제17조①: 정상운전·AOO에서 <strong>연료허용손상한계(SAFDL)</strong> 초과 금지 [5][6]</li>
+<li>노심 SL = SAFDL 중 핵심 2개(DNB 미발생, 중심 용융 없음)를 운전 조문으로 옮긴 것</li>
+</ul>
+<p><strong>4. 보호 수단</strong></p>
+<ul>
+<li>SL 변수는 직접 계측값이 아님 → <strong>CPC 저 DNBR 트립</strong>(DNBR), <strong>고 LPD 트립</strong>(중심선 온도)이 LSSS로 보호</li>
+<li>LCO: DNB 변수(가압기 압력·저온관 온도·RCS 유량), 축방향 출력분포, 선출력밀도로 해석 초기조건을 유지함</li>
+<li>위계: SL과 정상운전 사이에 해석한계·트립 설정치·LCO가 여유를 두고 놓임. 고 LPD·고압력처럼 증가 방향 변수는 손상 한계 &gt; <strong>SL</strong> &gt; 해석한계 &gt; 트립 설정치 &gt; LCO·정상운전이고, 저 DNBR처럼 감소 방향 변수는 부등호가 반대(정상운전 MDNBR &gt; 트립 &gt; SL)</li>
+</ul>
+<p><strong>5. 위반 시 조치</strong></p>
+<ul>
+<li><strong>1시간 이내 모드 3</strong>(고온대기) 진입 [3]</li>
+<li>사건경위·원인분석·조치내용을 원안위에 보고하고 <strong>승인 후 재가동</strong>(고시 제4조②)</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: DNBR·중심선 온도 두 변수별 정상운전–LCO–트립–SL–손상 순서 사다리" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/8bd232e5fda93a606da345e5867dd1edab47ef48ecb8db5057bae0fb96c25da8.webp"/><figcaption>답안용 도식: DNBR·중심선 온도 두 변수별 정상운전–LCO–트립–SL–손상 순서 사다리</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="연소도에 따른 중심선 온도 SL 직선(예시 2,804 → 2,611 °C)과 예시 중심온도, DNBR 조문 카드, SL 초과 후 조치 흐름" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/d536fbfa0de7a3b1fb9d620fb04e6418406f92d9e8e2ac55a89f2a27a2840c83.webp"/><figcaption>연소도에 따른 중심선 온도 SL 직선(예시 2,804 → 2,611 °C)과 예시 중심온도, DNBR 조문 카드, SL 초과 후 조치 흐름</figcaption></figure>
+<p>그림 왼쪽은 중심선 온도 SL이 연소도에 따라 낮아지는 모습입니다. 같은 그래프에 17×17급 연료의 예시 계산 중심온도를 함께 찍었습니다(평균 선출력 약 859 °C, 국부 40 kW/m 약 1,926 °C). 연소로 열전도도가 떨어지면 중심온도는 오르고 한계는 내려가므로, 고연소 구간에서 여유가 줄어든다는 점이 핵심입니다. 그래서 운전 중에는 온도 대신 선출력(LPD) 트립과 LCO로 관리합니다.</p>
+<p>구형 Westinghouse형 지침서는 같은 내용을 열출력–가압기 압력–평균온도 곡선으로 주었습니다. 어느 형식이든 보호 대상은 펠릿과 피복관이며, 압력경계를 지키는 RCS 압력 SL(≤ 2,750 psia, 모드 1~5)과는 구분합니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>정의 문언</strong>: "물리적 방어벽 건전성 + 주요 공정변수 한계"와 근거 고시를 쓰면 정의 배점을 확보합니다.</li>
+<li><strong>DNBR 한계를 1.3으로 고정</strong>: W-3 시대 값입니다. "상관식별 95/95 한계(예 1.29)"로 써야 합니다.</li>
+<li><strong>중심선 온도 한계를 상수로 씀</strong>: 연소도에 따라 감소한다는 점이 빠지면 감점 요인입니다.</li>
+<li><strong>SL과 트립 설정치 혼동</strong>: 트립은 LSSS로 SL 앞에 놓입니다. 적용 모드(1·2)도 RCS 압력 SL(1~5)과 다릅니다.</li>
+<li><strong>LCO처럼 복구 후 계속 운전</strong>: SL 초과는 정지·보고·승인 후 재가동입니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「운영기술지침서의 작성에 관한 기준」, 원안위고시 제2024-13호(2024.12.31), 제4조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR 50.36 "Technical specifications", (c)(1).</li>
+<li>U.S. NRC, NUREG-1432 Standard Technical Specifications — Combustion Engineering Plants, Rev. 5 (2021), 2.1.1 "Reactor Core SLs", 2.2 "SL Violations".</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Ch. 4.4 "Thermal and Hydraulic Design", NRC 설계인증 공개본.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, "General Design Criteria for Nuclear Power Plants", Criterion 10 "Reactor design".</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제17조. 국가법령정보센터.</li>
+</ol>

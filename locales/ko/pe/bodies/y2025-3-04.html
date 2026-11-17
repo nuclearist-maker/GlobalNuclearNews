@@ -1,0 +1,89 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2025년 원자력발전기술사 필기 3교시 4번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>가압열충격(PTS, Pressurized Thermal Shock)에 대하여 다음을 기술하시오.
+가. 운전 중 PTS에 역효과를 초래할 수 있는 설비 및 이유
+나. 운전 중 PTS 문제가 발생할 경우 이를 완화하기 위한 운전 조치 사항</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>PTS의 정의나 선별기준을 묻는 대신, 운전 현장의 시각에서 "어떤 설비가 과냉각이나 재가압을 만드는가"와 "운전원이 무엇을 어떤 순서로 하는가"를 묻는 문제입니다. 설비를 나열하는 것보다 각 설비가 <strong>과냉각·재가압·혼합 저하</strong> 가운데 어느 조건을 악화시키는지 연결하는 것이 핵심입니다. 나 문항에서는 냉각 중지와 재가압 방지가 짝을 이룬다는 점, 그리고 감압에는 과냉각 여유도라는 하한이 있다는 점을 보여 주면 높은 점수를 받을 수 있습니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: PTS 정의(10 CFR 50.61), 정의 요소(과냉각·압력)와 재료 조건(조사취화), 판정 KI ≥ KIC</li>
+<li>본론 가: 역효과 설비를 과냉각 원천, 압력 유지·재가압 원천, 혼합 저하의 3군으로 분류하고 설비별 이유를 제시</li>
+<li>본론 나: 감지 → 냉각 중지 → 안전주입 조절·종료 → 감압과 RCP 재기동 → 온도 유지(soak) → 사후 평가 순서와 각 조치의 근거</li>
+<li>결론: 운전 조치와 설계·운영 대책(중성자속 저감, 감시시편, RTPTS 관리)의 연계</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>PTS = 원자로용기 내면의 <strong>심한 과냉각</strong>이 <strong>상당한 압력과 동시에 또는 뒤이어</strong> 일어나는 사건임(10 CFR 50.61(a)(2)) [1]</li>
+<li>위험 요인: ① 내면 급랭 → <strong>내면 인장 열응력</strong> ② 압력 유지·재가압 → 원주 막응력(①②가 정의 요소) ③ 노심대 <strong>조사취화(RTNDT 상승)</strong> → KIC 감소(여유를 줄이는 재료 조건)</li>
+<li>판정: 균열 선단 <strong>KI(열) + KI(압력) ≥ KIC(T − RTNDT)</strong>이면 균열 개시. 재가압으로 KI가 다시 오르는 순간이 가장 위험함</li>
+<li>관리 기준: RTPTS 선별기준 <strong>270 °F(132 °C)</strong>(판재·단조·축방향 용접), <strong>300 °F(149 °C)</strong>(원주방향 용접) [1]</li>
+</ul>
+<p><strong>2. 가. PTS에 역효과를 초래하는 설비와 이유</strong></p>
+<p>(1) 과냉각 원천 — 1차측 온도를 급히 떨어뜨림</p>
+<ul>
+<li><strong>터빈우회밸브·대기방출밸브·주증기안전밸브 개방 고착</strong>: 2차측 증기 과다 방출 → 증기발생기를 통해 1차측 과냉(주증기관 파단과 같은 기전)</li>
+<li><strong>주증기격리밸브(MSIV) 미닫힘</strong>: 건전한 증기발생기까지 함께 방출되어 과냉 범위가 커짐</li>
+<li><strong>주급수(제어밸브 개방 고착·격리 실패)·보조급수 과다</strong>: 과급수로 증기발생기 열제거가 과도해짐. 파단 증기발생기에 보조급수를 계속 공급하면 냉각이 지속됨</li>
+<li><strong>RWST·IRWST·SIT 저온 붕산수</strong>: 주입수 온도가 낮을수록(겨울철 외기 영향) 강수부 급랭이 심해짐</li>
+</ul>
+<p>(2) 압력 유지·재가압 원천 — 냉각된 계통을 다시 고압으로 만듦</p>
+<ul>
+<li><strong>고압안전주입펌프·충전펌프</strong>: 체절수두(shutoff head)가 높으면 수축·감압된 계통을 다시 고압으로 올림. 체절압력은 노형별로 다름</li>
+<li><strong>가압기 히터</strong>: 냉각 중에도 압력을 유지·상승시킴</li>
+<li><strong>PORV·가압기 안전밸브의 개방 고착 후 재닫힘(차단밸브 폐쇄 포함)</strong>: 개방 중에는 감압·안전주입으로 과냉되고, 닫히는 순간 주입 유량이 남아 <strong>급격히 재가압</strong>됨</li>
+</ul>
+<p>(3) 혼합 저하 — 국부 저온을 만듦</p>
+<ul>
+<li><strong>원자로냉각재펌프(RCP) 정지</strong>: 루프 유동이 정체되어 주입수가 섞이지 않음 → 저온관·강수부 <strong>냉수 플룸·온도 성층</strong></li>
+<li><strong>주입 노즐 위치(저온관 주입, APR1400 직접용기주입 DVI)</strong>: 주입수가 강수부 벽을 따라 내려가 노심대에 국부 저온을 만들 수 있음. 혼합 조건에 따라 달라 평가 대상임</li>
+</ul>
+<p>(4) 피동 설비(재료) — 같은 과도에서도 견디는 힘이 약함</p>
+<ul>
+<li><strong>노심대 용접부·모재</strong>: Cu·Ni 함량이 높은 용접부와 축방향 용접부는 KIC가 낮고 원주응력을 정면으로 받음. 링 단조 용기(APR1400 등)는 축방향 용접이 없음</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 원자로용기를 둘러싼 과냉각 원천(2차측 증기·급수, 저온 주입수), 재가압 원천(SI·충전펌프, 가압기 히터, 밸브 재닫힘), 혼합 저하(RCP 정지) 3군 블록도" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/7cbb33f7154ec879f7ae49776dbbe826107ad979199647607171cb9c45059cdf.webp"/><figcaption>답안용 도식: 원자로용기를 둘러싼 과냉각 원천(2차측 증기·급수, 저온 주입수), 재가압 원천(SI·충전펌프, 가압기 히터, 밸브 재닫힘), 혼합 저하(RCP 정지) 3군 블록도</figcaption></figure>
+<figure class="article-image"><img alt="PWR 1·2차 계통도 위 역효과 설비 9곳 번호 표시(과냉각·재가압·혼합 저하 색 구분)와 설비별 이유 표, 강수부 냉수 플룸 단면 슬롯" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/4822a01f8dfa0643e398c015a3ea3ea77a60e11c6724db2116211827be1b4c3f.webp"/><figcaption>PWR 1·2차 계통도 위 역효과 설비 9곳 번호 표시(과냉각·재가압·혼합 저하 색 구분)와 설비별 이유 표, 강수부 냉수 플룸 단면 슬롯</figcaption></figure>
+<p><strong>3. 나. PTS 발생 시 완화 운전 조치</strong></p>
+<p>근거 틀: 증상 기반 비상운전절차는 <strong>1차계통 건전성(PTS)</strong>을 핵심 안전기능의 하나로 감시하고, 위협이 확인되면 PTS 대응 절차로 들어가 냉각 중지·재가압 방지·감압을 수행함. 노형(W형·CE형)마다 절차 구성은 달라도 P-T 한계 안의 RCS 압력·온도 제어와 안전주입 조절·정지 기준으로 같은 목적을 수행함 [3]</p>
+<ul>
+<li>① <strong>감지</strong>: 저온관 온도의 급격한 하강(냉각률)과 압력-온도 상태가 P-T 경계 바깥인지 감시. 분기 설정값은 호기별 절차서에 정함</li>
+<li>② <strong>적용 제외 확인</strong>: RCS 압력이 낮고 저압 주입 유량이 충분한 대형 LOCA는 재가압 우려가 작아 원 절차로 복귀함</li>
+<li>③ <strong>냉각 중지(과냉 원인 격리)</strong>: 대기방출밸브·터빈우회밸브 닫기, MSIV 닫기, 파단 증기발생기 급수·터빈구동 보조급수펌프 증기 공급 차단, 건전 증기발생기 보조급수는 <strong>수위 유지 최소량</strong>으로 제한</li>
+<li>④ <strong>안전주입 조절·종료</strong>: 과냉각 여유도, 2차측 열제거원, RCS 압력 안정 또는 상승, 가압기 수위 기준이 충족되면 <strong>SI 정지·충전 유량 조절</strong> → 재가압 방지. 종료 후 과냉각 여유나 수위를 잃으면 SI를 다시 시작함</li>
+<li>⑤ <strong>감압</strong>: 가압기 히터 정지, 정상 분무(RCP 운전 시)·보조분무·PORV로 RCS 압력을 P-T 경계 아래로 낮춤. <strong>하한 = 과냉각 여유도</strong>(포화압력 + 여유)를 유지해 기포 생성을 막음</li>
+<li>⑥ <strong>혼합 회복</strong>: SI를 끝낼 수 없으면 조건이 충족될 때 <strong>RCP 1대를 재기동</strong>해 주입수를 혼합하고 국부 열응력을 완화함</li>
+<li>⑦ <strong>온도 유지(soak)</strong>: 냉각을 멈추고 온도·압력을 일정 시간(절차서에 정한 시간) 유지해 벽 두께 방향 온도차를 줄임 → 열응력 KI 감소. 이후 냉각은 호기별 제한 냉각률(P-T 한계 보고서 등) 안에서 시행</li>
+<li>⑧ <strong>저온 영역 대비</strong>: 저온에 이르면 저온과압보호(LTOP)를 투입해 저온 과압을 방지함</li>
+<li>⑨ <strong>사후 평가</strong>: P-T 한계 이탈 시 표준기술지침서 LCO 3.4.3 [4]에 따라 <strong>30분 안에 한계 안으로 복귀</strong>하고 <strong>72시간 안에 계속 운전 가능 여부를 공학적으로 평가</strong>함. ASME Sec. XI 비필수 부록 E(예상 밖 운전 사건 평가) [5]로 원자로용기 건전성을 확인한 뒤 재기동함</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 감지 → 냉각 중지 → SI 조절·종료 → 감압·RCP 재기동 → 온도 유지 후 제한 냉각 5단계 순서도" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/127cfce870f00a740c90125746e672fb1550648d19693606c989500b8d10a68b.webp"/><figcaption>답안용 도식: 감지 → 냉각 중지 → SI 조절·종료 → 감압·RCP 재기동 → 온도 유지 후 제한 냉각 5단계 순서도</figcaption></figure>
+<figure class="article-image"><img alt="저온관 온도-RCS 압력 평면: 포화곡선(과냉각 여유 하한)과 P-T 경계(개념 곡선) 사이 운전 창, 정상점 → 과냉 → 재가압 위험 경로와 SI 종료·감압·soak로 창 안에 붙잡는 조치 경로" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/926206585446b5c478b5646c3d1822e5ce3d6afd1d6b0f4c0024dd0d632f6bb8.webp"/><figcaption>저온관 온도-RCS 압력 평면: 포화곡선(과냉각 여유 하한)과 P-T 경계(개념 곡선) 사이 운전 창, 정상점 → 과냉 → 재가압 위험 경로와 SI 종료·감압·soak로 창 안에 붙잡는 조치 경로</figcaption></figure>
+<p><strong>4. 결론</strong></p>
+<ul>
+<li>가 문항의 설비는 과냉각·재가압·혼합 저하라는 세 기전으로 묶이며, 나 문항의 조치는 그 역순인 <strong>냉각 중지·재가압 방지·혼합 회복</strong>으로 대응함</li>
+<li>감압은 P-T 경계(상한)와 과냉각 여유도(하한) 사이의 <strong>운전 창</strong> 안에서만 해야 함</li>
+<li>운전 조치는 사건 대응이고, 근본 여유는 설계·운영 대책에서 나옴: 중성자속 저감(저누설 장전), ECCS 수원 온도 관리, 감시시편으로 RTNDT 실측 추적, RTPTS 선별기준 관리, 필요 시 열처리(10 CFR 50.66) [1][2]</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 감압은 왜 "적당히"여야 하나</h3>
+<p>나 문항에서 가장 많이 빠뜨리는 것이 감압의 하한입니다. PTS만 생각하면 압력을 최대한 낮추는 것이 좋아 보입니다. 그러나 압력이 포화압력에 가까워지면 고온부에서 기포가 생기고, 원자로용기 상부에 증기 공간이 생기거나 RCP가 손상될 수 있습니다. 그래서 fig2처럼 위쪽 P-T 경계와 아래쪽 포화곡선 사이의 창 안에 상태점을 붙잡아 두는 것이 운전 조치의 본질입니다. 예를 들어 저온관 온도 200 °C에서 포화압력은 약 1.6 MPa이므로, 감압 목표는 이 값에 과냉각 여유를 더한 압력보다 높아야 합니다.</p>
+<p>RCP는 두 얼굴을 가집니다. 소형 냉각재상실사고에서는 RCP 정지 전략이 있지만, PTS 관점에서 RCP 정지는 혼합을 잃게 만들어 불리합니다. 답안에는 "조건이 충족될 때 재기동"처럼 절차 조건을 붙여 쓰는 것이 안전합니다. 과급수 과냉의 대표 사례로는 1978년 Rancho Seco 과도가 자주 인용됩니다. 비원자력 계측 전원 상실로 급수 제어가 교란되었고, 운영기술지침서의 냉각률 한계(100 °F/h)를 크게 넘는 과냉을 겪었습니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 달라진 기준 없음(확인 근거: 10 CFR 50.61은 1991년 개정 이후, 50.61a는 2010년 제정 이후 PTS 선별기준 개정이 없습니다. 국내는 「원자로시설 등의 기술기준에 관한 규칙」 현행 원안위규칙 제37호(2026.3.30) 제21조 ③④의 감시시험계획 체계가 그대로이고 [6], 감시시험 세부는 원안위고시 제2021-28호를 따릅니다). 계속운전 심사에서도 같은 132.2 °C 기준을 씁니다. 2025년 11월 고리 2호기 계속운전 허가 심사에서는 용접시험편 RTPTS 27.1 °C로 기준 만족을 확인했습니다 [7]. </p>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, 10 CFR 50.61 "Fracture toughness requirements for protection against pressurized thermal shock events"; 10 CFR 50.66 "Requirements for thermal annealing of the reactor pressure vessel".</li>
+<li>U.S. NRC, 10 CFR 50.61a "Alternate fracture toughness requirements for protection against pressurized thermal shock events" (2010).</li>
+<li>U.S. NRC, NUREG-1806 "Technical Basis for Revision of the Pressurized Thermal Shock (PTS) Screening Limit in the PTS Rule (10 CFR 50.61)" (2007).</li>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications — Westinghouse Plants, LCO 3.4.3 "RCS Pressure and Temperature (P/T) Limits".</li>
+<li>ASME Boiler and Pressure Vessel Code, Section XI, Nonmandatory Appendix E "Evaluation of Unanticipated Operating Events".</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제21조. 국가법령정보센터.</li>
+<li>원자력안전위원회, 고리 2호기 계속운전 허가 심의 안건(2025.11).</li>
+</ol>

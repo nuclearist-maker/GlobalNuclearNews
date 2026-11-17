@@ -1,0 +1,73 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2024년 원자력발전기술사 필기 1교시 6번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>노외중성자감시계통의 선형출력과 대수출력</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>노외중성자감시계통(ENFMS)</strong>: 원자로용기 밖 검출기로 누설 중성자를 재어 출력·변화율·축방향 분포를 내는 계통입니다. 안전채널은 4개입니다.</li>
+<li><strong>대수출력</strong>: 10 decade(2×10⁻⁸~200 %)를 대수 눈금으로 보여 줍니다. 기동·저출력 감시와 고대수출력 트립, 기동률(SUR) 산출에 씁니다.</li>
+<li><strong>선형출력</strong>: 0~200 %를 선형 눈금으로 보여 줍니다. 열평형으로 교정하며 가변과출력 트립(VOPT)과 CPC 입력에 씁니다.</li>
+<li><strong>기동률(SUR)</strong>: 대수 신호의 시간 미분입니다. SUR(dpm) = 26.06/T(s).</li>
+<li><strong>범위와 정밀도의 분업</strong>: 대수는 넓게, 선형은 정밀하게 봅니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>ENFMS 안전채널 4개(90° 배치) [1]가 같은 검출기 신호를 <strong>대수증폭기</strong>와 <strong>선형증폭기</strong>로 나눠 처리함
+<ul>
+<li>예시(APR1400 기준): 핵분열함 3개를 수직 배열, 범위 <strong>2×10⁻⁸~200 %(10 decade)</strong> [1]</li>
+</ul>
+</li>
+<li>한 눈금으로는 10 decade와 고출력 정밀도를 동시에 만족할 수 없어 두 출력을 둠</li>
+</ul>
+<p><strong>2. 대수출력(Log power)</strong></p>
+<ul>
+<li>신호: 저준위 <strong>펄스 계수</strong>(파고 변별) → 고준위 <strong>평균제곱전압(MSV, Campbelling)</strong> → 대수 변환 [2]</li>
+<li>용도
+<ul>
+<li>정지·기동·저출력 감시, 임계 접근 감시</li>
+<li><strong>고대수출력 트립</strong>: 정지 중 붕소 희석·CEA 인출에 의한 <strong>비계획 임계</strong> 방호, 출력 운전 시 운전 우회 [3][5]</li>
+<li><strong>기동률 SUR = d(log₁₀P)/dt</strong> → 대수 눈금에서 일정 주기 상승은 직선, 기울기가 SUR임</li>
+<li>저출력 연동: CPC DNBR·LPD 트립 우회 판단(CE형 표준기술지침서 예 10⁻⁴ %) [3]</li>
+</ul>
+</li>
+</ul>
+<p><strong>3. 선형출력(Linear power)</strong></p>
+<ul>
+<li>신호: 검출기 <strong>직류 전류</strong> → 선형증폭, <strong>0~200 %</strong></li>
+<li><strong>2차측 열평형</strong>(calorimetric)으로 주기적 교정</li>
+<li>3단 합 → 출력, 단별 신호 → CPC 축방향 분포·ASI</li>
+<li>용도: <strong>가변과출력 트립(VOPT)</strong>, CPC <strong>DNBR·LPD</strong> 계산, 제어채널(비안전, 격리기) → 출력 제어 [1]</li>
+</ul>
+<p><strong>4. 비교</strong></p>
+<ul>
+<li>대수: 범위 넓음, 고출력 해상도 낮음 / 선형: 정밀, 1 % 이하 판독 불가</li>
+<li>WH형 대응: 선원·중간영역 = 대수, 출력영역 = 선형(0~120 %) [4]</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 핵분열함 신호가 대수증폭기·선형증폭기로 갈라져 각각의 범위·용도로 이어지는 블록도" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/c88028842b566d8b469f73b675d04a9aa5e40fd13f0d4cc24cd863b17cd11905.webp"/><figcaption>답안용 도식: 핵분열함 신호가 대수증폭기·선형증폭기로 갈라져 각각의 범위·용도로 이어지는 블록도</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="같은 기동 과정(SUR 0.5 dpm)을 대수 눈금과 선형 눈금으로 비교한 그래프, 100→102 % 변화의 눈금 폭 비교 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/063f2b3671a97335e1968964247a84318b3ec03e8f161f41d68b2b346a509c00.webp"/><figcaption>같은 기동 과정(SUR 0.5 dpm)을 대수 눈금과 선형 눈금으로 비교한 그래프, 100→102 % 변화의 눈금 폭 비교 카드</figcaption></figure>
+<p>그림은 10⁻⁶ %에서 SUR 0.5 dpm(주기 52 s)으로 1 %까지 올리는 개념적 기동 예입니다. 대수 눈금에서는 12분 동안 6 decade가 곧은 직선으로 보이고, 그 기울기가 곧 기동률입니다. 같은 과정을 0~200 % 선형 눈금에 그리면 마지막 1 %도 눈금 폭의 0.5 %에 불과해 지시는 사실상 0에 붙어 있습니다.</p>
+<p>반대로 정격 부근에서 출력이 100 %에서 102 %로 바뀌는 경우를 보겠습니다. 이 변화는 선형 눈금에서 전 눈금의 1.0 %를 차지하지만, 10 decade 대수 눈금에서는 0.0086 decade, 즉 0.086 %에 그칩니다. 약 12배 차이입니다. 그래서 과출력 보호(VOPT)와 CPC 계산은 선형출력을 쓰고, 정지·기동 보호는 대수출력이 맡습니다.</p>
+<p>선형출력은 누설 중성자 기반이라 검출기와 노심의 기하, 냉각재 온도, 출력분포의 영향을 받습니다. 따라서 열출력과 같다고 볼 수 없으며 열평형으로 맞춰 줘야 합니다. 비안전 기동·제어 채널은 같은 신호를 검증된 격리기로 받아 보호 기능과 분리됩니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>두 출력을 다른 계통으로 서술</strong>: APR1400 등 최근 설계는 같은 안전채널·같은 검출기에서 신호처리만 다르게 합니다. "증폭 방식의 차이"가 핵심입니다.</li>
+<li><strong>트립 연결 뒤바뀜</strong>: 고출력 보호는 선형(VOPT), 정지·저출력 보호는 대수(고대수출력 트립)입니다.</li>
+<li><strong>SUR 출처 누락</strong>: 기동률은 대수 신호를 미분해 얻는다는 한 줄이 배점 포인트입니다.</li>
+<li><strong>열평형 교정 누락</strong>: 선형출력 항목에 교정 방법이 빠지면 감점되기 쉽습니다.</li>
+<li><strong>CPC 그림자 보정 혼동</strong>: CPC의 CEA 그림자 보정은 검출기 응답 보정이며, 제어봉 상호작용(동시 반응도가 ≠ 개별 합)과 다른 개념입니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, "Final Safety Evaluation Report for the APR1400 Design Certification", Ch. 7 "Instrumentation and Controls", NRC ADAMS ML18215A241.</li>
+<li>U.S. NRC HRTD, Combustion Engineering Technology Cross Training Course Manual, Ch. 9.1 "Excore Nuclear Instrumentation", NRC ADAMS ML11251A025.</li>
+<li>U.S. NRC, NUREG-1432 Standard Technical Specifications — Combustion Engineering Plants, Rev. 5 (2021), 3.3.1 "Reactor Protective System (RPS) Instrumentation — Operating" 및 Bases.</li>
+<li>U.S. NRC HRTD, Westinghouse Technology Systems Manual, Ch. 9.1 "Excore Nuclear Instrumentation", NRC ADAMS ML023040050.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제20조·제26조. 국가법령정보센터.</li>
+</ol>

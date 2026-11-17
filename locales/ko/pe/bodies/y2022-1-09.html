@@ -1,0 +1,63 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2022년 원자력발전기술사 필기 1교시 9번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>확률론적안전성평가(PSA)의 내부사건 및 외부사건</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>초기사건 원천</strong>: PSA 범위는 사고를 일으키는 원인이 계통 내부인지(내부사건), 계통 바깥의 재해인지(외부사건)로 나눕니다.</li>
+<li><strong>내부사건</strong>: 기기 무작위 고장·운전원 오류로 시작되는 LOCA·과도·SGTR 등입니다. 소외전원상실도 관례상 여기에 넣습니다.</li>
+<li><strong>외부사건</strong>: 지진·해일·강풍·항공기 충돌처럼 여러 계통을 한꺼번에 공격하는 재해입니다.</li>
+<li><strong>재해도 × 취약도</strong>: 외부사건 PSA의 핵심 입력입니다. 지진이면 재해곡선과 기기 취약도곡선을 결합합니다.</li>
+<li><strong>분류 체계 차이</strong>: 내부 화재·침수는 체계에 따라 외부사건 또는 내부재해로 분류합니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>PSA는 사고경위 빈도 × 결과로 위험도 정량화, <strong>CDF = Σ f_IE × P(노심손상 | IE)</strong></li>
+<li>초기사건의 <strong>원천</strong>에 따라 내부사건 PSA와 외부사건 PSA로 구분</li>
+</ul>
+<p><strong>2. 내부사건(Internal Events)</strong></p>
+<ul>
+<li>정의: 발전소 <strong>계통 내부</strong>에서 시작 — 기기 무작위 고장, 인적 오류, 계통 과도</li>
+<li>예: 대·중·소형 LOCA, 일반 과도, 급수상실, SGTR, ISLOCA, <strong>소외전원상실(관례상 내부)</strong></li>
+<li>방법: 초기사건 분석 → 사건수목·고장수목 → HRA·CCF·신뢰도 자료 → MCS 정량화</li>
+<li>특징: 운전경험 자료 풍부, 모델 성숙도 높음, <strong>모든 PSA의 기본 모델</strong></li>
+</ul>
+<p><strong>3. 외부사건(External Events)</strong></p>
+<ul>
+<li>정의: <strong>계통 바깥</strong> 원인이 다수 계통·트레인을 <strong>동시에</strong> 손상(공통원인 성격)</li>
+<li>자연재해: 지진, 홍수·해일, 강풍·태풍, 극한 기온 / 인위재해: 항공기 충돌, 외부 폭발·독성가스</li>
+<li>내부 화재·침수: 미국 IPE는 내부침수를 내부사건 평가에, IPEEE는 내부화재를 외부사건 평가에 포함 / IAEA SSG-3 Rev.1은 둘 다 <strong>내부재해</strong>[2][3]</li>
+<li>방법: 재해 식별·선별 → <strong>재해도 분석 → 취약도 분석</strong> → 내부사건 모델 수정(동시 고장·LOOP 반영) → 정량화</li>
+<li>지진: PGA 구간별 발생빈도 × 조건부 노심손상확률 적분, <strong>HCLPF ≈ Am·exp[−1.645(βR + βU)]</strong>(95 % 신뢰도로 파손확률 5 % 이하), 설계 목표 예 HCLPF ≥ 1.67 × SSE[4]</li>
+<li>특징: 내부사건의 자료·모델 불확실성에 <strong>재해도·취약도 불확실성 추가</strong>, 운전원 조치 여건 악화, CDF 기여가 큰 경우 많음</li>
+</ul>
+<p><strong>4. 규제 근거</strong></p>
+<ul>
+<li>고시 제2026-1호 제9조: PSA 분석범위는 위험도를 <strong>종합적으로</strong> 평가하기에 적합해야 함[1] → 내부·외부사건 모두 포함</li>
+</ul>
+<figure class="article-image"><img alt="내부사건·외부사건 두 상자와 외부사건 PSA 흐름(재해 식별·선별 → 재해도 × 취약도 → 발전소 모델 → CDF) 답안용 도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/bdb46f6957e115befe2ca89a7436d561eb59273f107253b710b5ccba396aa64c.webp"/><figcaption>내부사건·외부사건 두 상자와 외부사건 PSA 흐름(재해 식별·선별 → 재해도 × 취약도 → 발전소 모델 → CDF) 답안용 도식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="내부 초기사건·내부재해·외부재해 3열 분류, 두 사건 비교표, 지진 PSA 흐름(재해도·취약도 → 발전소 응답 → 지진 CDF)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/764cd5b725a77ccd0472e0ba70a480984b3841cc3d065a36c88fe56492ce92a9.webp"/><figcaption>내부 초기사건·내부재해·외부재해 3열 분류, 두 사건 비교표, 지진 PSA 흐름(재해도·취약도 → 발전소 응답 → 지진 CDF)</figcaption></figure>
+<p>두 사건을 가르는 기준은 "어디서 일어났는가"보다 <strong>"무엇이 사고를 시작시켰는가"</strong>입니다. 소외전원상실은 원인이 발전소 밖 전력망이지만, 초기사건 빈도를 운전경험으로 정하고 내부사건 사건수목으로 바로 분석하므로 내부사건에 넣습니다. 반대로 지진에 의한 소외전원상실은 지진이 여러 기기를 함께 흔드는 상관 고장이라 외부사건 모델에서 다룹니다.</p>
+<p>외부사건 PSA는 모델을 새로 만들지 않습니다. 내부사건 모델을 바탕으로 재해가 일으키는 고장을 기본사건으로 덧붙이고, 같은 재해로 다중 트레인이 함께 고장 나는 상관관계를 반영합니다. 지진이면 PGA별 연 초과빈도 곡선과 기기 취약도곡선을 발전소 응답 모델(수정한 사건수목·고장수목)에 넣고, PGA 구간별 발생빈도와 조건부 노심손상확률을 곱해 적분하면 지진 CDF가 나옵니다. 기기 하나의 취약도에서 곧바로 CDF가 나오지 않는다는 점에 주의합니다.</p>
+<p><strong>현행 기준 메모</strong>: 사고관리 고시는 출제 당시 제2017-34호에서 현행 제2026-1호(2026.1.16)로 바뀌었습니다. 제9조 목표치는 그대로이고, 제4조 제목이 "의도적 재해"로 바뀌고 재해 후 대처 상태를 정한 별표 2가 신설되었습니다. IAEA 지침도 SSG-3 Rev.1(2024)로 개정되었습니다[2].</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>분류 기준을 먼저</strong>: 초기사건의 원천(계통 내부 / 계통 바깥 재해)과 분석 체계를 첫 줄에 씁니다.</li>
+<li><strong>소외전원상실을 외부사건으로 쓰기</strong>: PSA 관례상 내부사건입니다(지진 유발 LOOP만 외부사건 모델).</li>
+<li><strong>화재·침수 분류</strong>: 체계마다 다르다는 점을 밝히면 감점 위험이 없습니다.</li>
+<li><strong>외부사건의 본질</strong>: 다중 계통 동시 손상과 재해도·취약도 결합을 빠뜨리지 않습니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」, 원안위고시 제2026-1호(2026.1.16), 제4조·제9조. 국가법령정보센터.</li>
+<li>IAEA, Development and Application of Level 1 Probabilistic Safety Assessment for Nuclear Power Plants, Specific Safety Guide No. SSG-3 (Rev. 1), Vienna (2024).</li>
+<li>U.S. NRC, NUREG-1407, Procedural and Submittal Guidance for the Individual Plant Examination of External Events (IPEEE) for Severe Accident Vulnerabilities (1991); Generic Letter 88-20 (1988).</li>
+<li>U.S. NRC, SECY-93-087, Policy, Technical, and Licensing Issues Pertaining to Evolutionary and Advanced Light-Water Reactor (ALWR) Designs (1993) — PRA 기반 지진여유평가.</li>
+</ol>

@@ -1,0 +1,66 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2023년 원자력발전기술사 필기 1교시 10번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>초기 노심에서 증배계수(Keff)가 1보다 크도록 핵연료를 장전하는 이유</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>잉여반응도(ρex)</strong>: 제어봉·용해 붕소·가연성 흡수체 같은 제어 요소를 모두 뺐다고 가정한 반응도입니다. ρex = (k_max − 1)/k_max입니다.</li>
+<li><strong>온도결손·출력결손</strong>: 냉간에서 고온, 고온 영출력에서 전출력으로 갈 때 음의 온도 되먹임이 빼앗는 반응도입니다.</li>
+<li><strong>핵분열생성물 독</strong>: 출력 운전 중 쌓이는 Xe-135·Sm-149의 흡수입니다.</li>
+<li><strong>연소 보상</strong>: 주기 동안 U-235가 줄고 생성물이 쌓여 잃는 반응도입니다. 가장 큰 몫입니다.</li>
+<li><strong>억제 수단</strong>: 제어봉, 용해 붕소, 가연성 흡수체입니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 문제 해석</strong></p>
+<ul>
+<li>정상 출력 운전 시 노심은 <strong>임계(keff = 1)</strong> 임</li>
+<li>"keff &gt; 1로 장전" = <strong>제어 요소를 모두 뺐다고 가정한 k_max &gt; 1</strong>로 장전한다는 뜻으로 해석함</li>
+<li>그 차이가 <strong>잉여반응도 ρex = (k_max − 1)/k_max</strong></li>
+</ul>
+<p><strong>2. 장전 이유 — 잃을 반응도를 미리 넣음</strong></p>
+<ul>
+<li>① <strong>온도결손</strong>: 냉간 → 고온 시 음의 MTC·FTC로 반응도 감소(교과서 PWR 청정 노심 약 4.5 %Δk/k[1])</li>
+<li>② <strong>출력결손</strong>: 고온 영출력 → 전출력 시 연료·감속재 온도 상승분(설명용 예시 약 −1,200 pcm[2])</li>
+<li>③ <strong>Xe·Sm 독</strong>: 평형 Xe만 실제 PWR 약 −2,500~−3,000 pcm</li>
+<li>④ <strong>연소 보상</strong>: 주기 동안 U-235 감소·생성물 축적분 → <strong>주기 길이를 결정</strong>하는 가장 큰 몫</li>
+<li>⑤ <strong>운전 여유</strong>: 출력 상승(초임계 필요), 부하 조절, 정지 후 <strong>제논 정점 극복 재기동</strong></li>
+</ul>
+<p><strong>3. 초기 노심의 특수성</strong></p>
+<ul>
+<li>전부 신연료, Pu·생성물 없음 → <strong>냉간·청정 잉여가 가장 큼</strong>(교과서 약 0.29 Δk/k)</li>
+<li>시운전 <strong>임계 접근·영출력 물리시험</strong>(제어봉가·붕소가·온도계수 측정)과 출력상승시험을 계획 위치에서 하려면 여유가 필요함</li>
+<li>농축도 영역 분할 장전과 다량의 <strong>가연성 흡수체</strong>로 첨두와 초기 잉여를 누름</li>
+</ul>
+<p><strong>4. 억제와 한계</strong></p>
+<ul>
+<li>제어봉(빠른 조절·정지) + 용해 붕소(느린 변화) + 가연성 흡수체(주기초 몫, 조사에 따라 흡수능 감소)</li>
+<li><strong>총 제어능 = ρex + 정지여유도</strong>(교과서식, 모든 제어 요소 삽입 기준), T/S 정지여유도는 최대가 봉 1개 고착 가정이라 별개로 평가[3][4][5]</li>
+<li>과대하면 중성자 경제 악화, 반응도 사고 투입량 증가, 고붕소로 <strong>MTC 양</strong> 우려</li>
+<li>고온 전출력·평형 Xe에서 ρex = 0이 되는 시점 = <strong>주기말</strong></li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 필요 반응도 4가지 → 잉여반응도(k_max &gt; 1) → 제어 수단 3가지 → 정상 운전 keff = 1" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/bb3bc58fbc1479c0a0524dd0784dccdc4b44fc7b7162e0ba7e6bf32958477146.webp"/><figcaption>답안용 도식: 필요 반응도 4가지 → 잉여반응도(k_max &gt; 1) → 제어 수단 3가지 → 정상 운전 keff = 1</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="교과서 PWR 청정 노심의 잉여반응도 폭포(29.3 → 24.8 → 18.1 → 0 %Δk/k, 주기 운전 몫은 개념 표시)와 같은 축척의 제어능 막대(제어봉·붕소·가연성 흡수체 = 32)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/8ca2c430f581b18b2ef65d63e1f40b2acca00c0d5acda576120c8bc7a357be96.webp"/><figcaption>교과서 PWR 청정 노심의 잉여반응도 폭포(29.3 → 24.8 → 18.1 → 0 %Δk/k, 주기 운전 몫은 개념 표시)와 같은 축척의 제어능 막대(제어봉·붕소·가연성 흡수체 = 32)</figcaption></figure>
+<p>그림의 수치는 Duderstadt &amp; Hamilton 표 14-1[1]의 PWR 청정(신연료) 노심 교과서값입니다. 냉간 29.3 %Δk/k 가운데 운전온도까지 가열하면서 4.5 %, 출력 운전의 평형 Xe·Sm으로 6.7 %가 빠집니다. 표는 출력결손을 따로 나누지 않으므로 이 6.7 %에 출력 효과가 섞여 있다고 보는 편이 안전합니다. 남은 18.1 %가 주기를 운전하는 데 쓰는 몫으로, 연소 보상과 운전 여유를 합친 상태값입니다. 숫자 자체보다 <strong>주기 운전 몫이 가장 크다</strong>는 구조를 기억하면 됩니다. 가열에 따른 손실은 냉각하면 돌아오지만 연소 소진은 돌아오지 않는다는 점도 다릅니다. 실제 노심의 값은 노형·주기 설계마다 다르므로, 답안에서는 "교과서 예"라고 밝히고 씁니다.</p>
+<p>반대편 막대는 같은 축척으로 그린 제어능입니다. 제어봉 7 %, 붕소 17 %, 가연성 흡수체 8 %로 총 32 %입니다. 같은 표의 정지여유도는 냉간·청정에서 3 %(표의 반올림값, 32 − 29.3 = 2.7), 고온·평형 Xe·Sm에서 14 %라 어느 상태에서든 잉여반응도 + 정지여유도 ≈ 32 %가 됩니다. 다만 이것은 모든 제어 요소를 넣은 교과서 기준입니다. 운영기술지침서의 정지여유도는 반응도가가 가장 큰 제어봉 집합체 1개가 빠진 채 고착됐다고 가정하므로 이 차이와 같지 않습니다. 장전량을 늘려 주기를 길게 하면 제어능도 같이 늘려야 하는 이유가 여기서 보입니다.</p>
+<p>초기 노심만의 사정도 있습니다. 재장전 노심은 연소된 연료가 섞여 반응도가 일부 상쇄되지만, 초기 노심은 전부 신연료라 냉간·청정 잉여가 가장 큽니다. 그래서 가연성 흡수체를 많이 써서 붕소 농도를 낮추고, 감속재온도계수가 양이 되지 않게 합니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>"운전 중 keff &gt; 1"로 쓰기</strong>: 정상 출력 운전 중은 임계입니다. 흡수체를 뺐다고 가정한 값이라는 해석을 첫 줄에 둡니다.</li>
+<li><strong>ρex = k − 1</strong>: 큰 값에서 틀립니다. k = 1.41이면 0.41이 아니라 0.291입니다.</li>
+<li><strong>이유를 연소 하나로 끝내기</strong>: 온도·출력결손, Xe·Sm, 운전 여유까지 나눠 써야 합니다.</li>
+<li><strong>억제 수단 누락</strong>: 잉여를 넣은 만큼 무엇으로 누르는지와 정지여유도 관계 한 줄이 있으면 완결됩니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, John Wiley &amp; Sons (1976), 14장, 표 14-1(PWR 잉여반응도·제어능·정지여유도).</li>
+<li>U.S. NRC HRTD, Westinghouse Technology Systems Manual, Section 2.1 (출력결손 예시 곡선). NRC ADAMS 공개.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criteria 26·27·28.</li>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications — Westinghouse Plants, Rev. 5 (2021), LCO 3.1.1 Shutdown Margin, LCO 3.1.3 MTC.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제28조. 국가법령정보센터.</li>
+</ol>

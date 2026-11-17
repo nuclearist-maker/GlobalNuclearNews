@@ -1,0 +1,109 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2022년 원자력발전기술사 필기 1교시 13번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>원자력발전소 운전모드(APR1400 기준)</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>운전모드(MODE)</strong>: 운영기술지침서가 LCO 적용 여부를 정하는 발전소 상태 구분입니다. 노심에 핵연료가 있을 때만 정의합니다.</li>
+<li><strong>네 가지 판정 변수</strong>: 유효증배계수(keff), 정격열출력 비율(%RTP), 저온관 온도(Tcold), 원자로용기 헤드 체결볼트 조임 상태입니다.</li>
+<li><strong>keff 0.99</strong>: 모드 1·2와 모드 3~5를 가르는 반응도 경계입니다.</li>
+<li><strong>177 °C·99 °C</strong>: APR1400의 모드 3·4·5 저온관 온도 경계입니다.</li>
+<li><strong>LCO 적용 범위</strong>: 각 LCO의 "적용 모드"가 이 구분을 따릅니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 정의</strong></p>
+<ul>
+<li>노심 반응도, 출력, 냉각재 저온관 온도, 헤드 체결볼트 조임 상태의 조합으로 정한 발전소 상태(원자로용기 내 핵연료가 있을 때)</li>
+<li>운영기술지침서 표 1.1-1에 규정, LCO <strong>적용 모드</strong>와 정지 조치 목표의 기준</li>
+</ul>
+<p><strong>2. APR1400 운전모드</strong> (APR1400 DCD Ch.16 표 1.1-1 기준)[1]</p>
+<table>
+<thead>
+<tr>
+<th>모드</th>
+<th>명칭</th>
+<th>keff</th>
+<th>출력(%RTP)*</th>
+<th>저온관 온도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>출력운전</td>
+<td>≥ 0.99</td>
+<td>&gt; 5</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2</td>
+<td>기동</td>
+<td>≥ 0.99</td>
+<td>≤ 5</td>
+<td>—</td>
+</tr>
+<tr>
+<td>3</td>
+<td>고온대기</td>
+<td>&lt; 0.99</td>
+<td>—</td>
+<td>≥ 177 °C</td>
+</tr>
+<tr>
+<td>4</td>
+<td>고온정지**</td>
+<td>&lt; 0.99</td>
+<td>—</td>
+<td>177 °C 미만~99 °C 초과</td>
+</tr>
+<tr>
+<td>5</td>
+<td>저온정지**</td>
+<td>&lt; 0.99</td>
+<td>—</td>
+<td>≤ 99 °C</td>
+</tr>
+<tr>
+<td>6</td>
+<td>핵연료재장전***</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>* 붕괴열 제외, RTP = 3,983 MWt[1] / ** 헤드 체결볼트 모두 완전 조임 / *** 하나 이상 완전 조임 아님</li>
+</ul>
+<p><strong>3. 특징</strong></p>
+<ul>
+<li>온도 판정에 <strong>저온관 온도(Tcold)</strong> 사용(STS의 평균온도 Tavg와 다름), 모드 4·5 경계 99 °C(210 °F)[2][3]</li>
+<li>keff ≥ 0.99는 <strong>임계 판정이 아님</strong>(임계에 이를 수 있는 반응도 영역)</li>
+<li>모드별 대표 관리 사항: 1·2 노심 안전제한치·CPC 트립 / 3·4 정지여유도·RCS 또는 정지냉각 열제거 / 5 정지냉각·저온 과압보호(부분충수 운전 포함) / 6 붕소 농도·재장전 수위·격납건물 관통부</li>
+<li><strong>LCO 3.0.3</strong>: 진입 시점부터 1시간 이내 조치 개시, 7시간 이내 모드 3, 13시간 이내 모드 4, 37시간 이내 모드 5[1]</li>
+</ul>
+<figure class="article-image"><img alt="모드 구분 세 갈래(keff ≥ 0.99 출력 분기, keff &lt; 0.99 저온관 온도 띠, 헤드 체결볼트 조건 비교) 답안용 도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/434dbe481cdaf4a9b0fd917acbc999c5d6353a440eb0f6536b0608d086815e4b.webp"/><figcaption>모드 구분 세 갈래(keff ≥ 0.99 출력 분기, keff &lt; 0.99 저온관 온도 띠, 헤드 체결볼트 조건 비교) 답안용 도식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="APR1400 운전모드 6행 조건표(keff·출력·Tcold·헤드 체결볼트, 비적용 구분)와 모드 3~5 저온관 온도 띠, 모드별 대표 관리 사항" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/53d67347a0fbc022c3c0875811f7fa1b7c225db98e9a261c3d8af637e0c4bc41.webp"/><figcaption>APR1400 운전모드 6행 조건표(keff·출력·Tcold·헤드 체결볼트, 비적용 구분)와 모드 3~5 저온관 온도 띠, 모드별 대표 관리 사항</figcaption></figure>
+<p>표 1.1-1은 판정 순서가 아니라 조건의 조합을 정의합니다. 그래서 각 모드에서 어떤 칸이 유효한지를 함께 읽어야 합니다. 모드 1·2는 반응도와 출력만, 모드 3은 반응도와 저온관 온도만, 모드 4·5는 여기에 헤드 체결볼트가 모두 완전히 조여져 있다는 조건이 더해집니다. 모드 6은 반응도·출력·온도가 모두 비적용이고, 볼트가 하나라도 완전히 조여져 있지 않다는 조건만으로 정의됩니다. 원자로용기에서 핵연료를 모두 꺼내면 어느 모드에도 해당하지 않습니다.</p>
+<p>APR1400은 온도 판정에 저온관 온도를 씁니다. 표준기술지침서와 System 80+는 평균온도를 쓰므로, 답안에 "평균온도 177 °C"처럼 쓰면 노형 기준과 어긋납니다. 모드 4·5 경계도 표준기술지침서의 200 °F(93 °C)가 아니라 210 °F(99 °C)입니다.</p>
+<p><strong>현행 기준 메모</strong>: 운전모드 구분과 수치는 출제 이후 바뀌지 않았습니다. 지침서 작성 근거 고시는 출제 당시 제2017-5호에서 제2023-9호를 거쳐 현행 제2024-13호(2024.12.31 시행)입니다[4].</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>판정 변수 네 가지</strong>를 모두 씁니다. 모드 4·5와 모드 6의 헤드 볼트 조건을 빠뜨리기 쉽습니다.</li>
+<li><strong>모드 1·2 구분</strong>: 임계 여부가 아니라 출력 5 %RTP(붕괴열 제외)입니다.</li>
+<li><strong>온도 기준</strong>: APR1400은 Tcold, 경계 177 °C·99 °C입니다.</li>
+<li><strong>활용까지</strong>: LCO 적용 모드와 정지 조치(3.0.3) 시간을 함께 쓰면 좋습니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>KHNP, APR1400 Design Control Document Tier 2, Chapter 16 "Technical Specifications", Rev. 0, §1.1 Table 1.1-1 "MODES", LCO 3.0.3. NRC ADAMS ML13281A767.</li>
+<li>U.S. NRC, Final Safety Evaluation Report for the APR1400 Design Certification, Chapter 16 "Technical Specifications" (2018), NRC ADAMS ML18227A061.</li>
+<li>U.S. NRC, NUREG-1432, Standard Technical Specifications — Combustion Engineering Plants, Vol. 1 (Specifications).</li>
+<li>원자력안전위원회, 「운영기술지침서의 작성에 관한 기준」, 원안위고시 제2024-13호(2024.12.31 시행). 국가법령정보센터.</li>
+</ol>

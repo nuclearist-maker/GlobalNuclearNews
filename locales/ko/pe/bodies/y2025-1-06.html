@@ -1,0 +1,64 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2025년 원자력발전기술사 필기 1교시 6번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>가압경수로 저출력운전 중 주증기관 파단사고 시 노심 현상 및 반응도 영향</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>과냉각(overcooling)</strong>: 증기 방출로 1차측 열제거가 늘어 감속재 온도가 내려가는 현상입니다.</li>
+<li><strong>감속재온도계수(MTC)</strong>: 음의 MTC 때문에 온도가 내려가면 양의 반응도가 들어옵니다. 주기말(EOC)에 가장 음입니다.</li>
+<li><strong>정지여유도(SDM)</strong>: 정지 노심이 냉각 반응도를 견딜 수 있는 여유입니다. 최대가치 제어봉 1개 고착이 이미 반영돼 있습니다.</li>
+<li><strong>재임계(return to power)</strong>: 트립 후 순반응도가 0에 닿아 노심이 다시 임계가 되는 현상입니다[2].</li>
+<li><strong>비대칭 냉각·국부 첨두</strong>: 파단 루프 쪽 섹터와 고착봉 주변에 출력이 몰려 DNBR 여유가 줄어듭니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 문제 해석</strong></p>
+<ul>
+<li>"저출력 운전" = 재임계 관점 제한 조건인 <strong>고온영출력(HZP)~저출력</strong>, <strong>주기말(EOC)</strong>, <strong>최대가치 제어봉 1개 인출 고착</strong>, 소외전원 유·무 각각 가정</li>
+</ul>
+<p><strong>2. 노심 현상</strong></p>
+<ul>
+<li>증기 방출↑ → SG 압력·포화온도↓ → <strong>1차측 과냉각</strong>, 냉각재 수축 → 가압기 수위·압력↓</li>
+<li>임계 저출력이면 <strong>트립 전 출력 상승</strong> → 원자로 정지</li>
+<li>정지 후에도 냉각 지속 → <strong>트립 후 재임계</strong> 가능, 출력은 정격보다 낮은 수준에서 도플러로 제한</li>
+<li><strong>비대칭 냉각</strong>(파단 루프 섹터) + <strong>고착봉 주변 국부 첨두</strong> → 열수로계수↑</li>
+<li>낮은 RCS 압력·(소외전원 상실 시) 낮은 유량 → <strong>DNBR 여유 감소</strong>, 판정은 DNBR·첨두 선출력</li>
+<li>SIAS 붕산 도달, 파단 SG 건조 → 냉각 종료·재승온 → 미임계 회복</li>
+</ul>
+<p><strong>3. 반응도 영향</strong></p>
+<ul>
+<li>수지: <strong>ρ = −SDM + α_M·ΔT_M + Δρ_D + Δρ_B</strong>, ρ = 0이면 재임계[1]</li>
+<li>감속재: α_M &lt; 0, ΔT_M &lt; 0 → <strong>양(+), 지배항</strong></li>
+<li>도플러: HZP 냉각 중 연료도 식어 <strong>소폭 양</strong>, 출력 상승 시 <strong>음(제한)</strong></li>
+<li>붕소: SI 붕산 <strong>음</strong>, 배관 내 무붕소수 때문에 <strong>지연</strong></li>
+<li>고착봉: SDM에 이미 반영 → <strong>중복 차감 금지</strong>, 출력분포 평가에만 사용</li>
+</ul>
+<p><strong>4. 저출력·EOC가 제한인 이유</strong></p>
+<ul>
+<li>EOC 붕소 최저 → MTC 최대 음, HZP SG 보유수량 최대 → 냉각 에너지 최대</li>
+<li>붕괴열·저장열 작아 냉각 상쇄 불가 → <strong>SDM·MTC 하한(COLR)·MSIV 격리·붕산 주입</strong>으로 관리[2]</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 냉각량 ΔT에 따른 순반응도 직선(EOC·BOC), −SDM 출발점, ρ = 0 재임계선, 반응도 수지식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/6ce933d2b58e407364f62710eb1dce70f2bf339ecf32edffc617bc3178a09ba7.webp"/><figcaption>답안용 도식: 냉각량 ΔT에 따른 순반응도 직선(EOC·BOC), −SDM 출발점, ρ = 0 재임계선, 반응도 수지식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="감속재 냉각량 ΔT(0~80 °C)에 따른 노심 순반응도: −SDM −1,300 pcm 출발, EOC(−50 pcm/°C)는 ΔT ≈ 26 °C에서 재임계, BOC는 미임계 유지, 비대칭 냉각 노심 단면과 저출력·EOC 제한 이유 5개" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/14ae9385cad6a90c831a63519e1ee3490b1978437be1acf7e6d9b9e48a80dc43.webp"/><figcaption>감속재 냉각량 ΔT(0~80 °C)에 따른 노심 순반응도: −SDM −1,300 pcm 출발, EOC(−50 pcm/°C)는 ΔT ≈ 26 °C에서 재임계, BOC는 미임계 유지, 비대칭 냉각 노심 단면과 저출력·EOC 제한 이유 5개</figcaption></figure>
+<p>그림의 수치는 설명용 가정값입니다. SDM 1,300 pcm에서 출발해 EOC 평균 MTC −50 pcm/°C로 식으면 약 26 °C 냉각에서 순반응도가 0이 됩니다. 붕소가 높은 주기초(BOC)에는 고온영출력 MTC가 0 근처라 같은 냉각에도 미임계가 유지됩니다. 실제 MTC는 온도가 내려갈수록 덜 음이 되므로 곡선은 노심 설계 계산으로 구합니다.</p>
+<p>재임계가 실제로 일어나는지는 노형과 SDM에 따라 다릅니다. SDM 요구값이 큰 CE형 일부 호기(Waterford 3, 5.15 %Δk/k)는 저온 개시 파단에서 붕산 없이도 재임계가 없다고 해석했습니다[3]. 그래서 답안에는 "재임계 가능 → 해석으로 확인"이라고 쓰는 편이 정확합니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>제한 조건 누락</strong>: HZP·EOC·고착봉·소외전원 유무를 빠뜨리면 "왜 저출력인가"에 답하지 못한 답안이 됩니다.</li>
+<li><strong>고착봉 중복 차감</strong>: SDM 정의에 이미 들어 있으므로 수지에서 다시 빼지 않습니다.</li>
+<li><strong>도플러 부호</strong>: 항상 음으로만 쓰면 감점 요인입니다. 냉각 중에는 양, 출력이 오를 때 음입니다.</li>
+<li><strong>재임계를 폭주로 서술</strong>: 낮은 출력에서 도플러로 제한되는 출력 복귀이며, 쟁점은 국부 첨두와 DNBR입니다.</li>
+<li><strong>급수 계속 공급</strong>: 파단 SG로 급수가 계속 들어가면 냉각이 길어져 재임계가 악화됩니다(1980년 IE Bulletin 80-04[4] 계기). 급수 격리를 함께 쓰면 좋습니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, Wiley (1976), 반응도 궤환·온도계수 장.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 15.1.5 "Steam System Piping Failures Inside and Outside of Containment (PWR)", Rev. 3 (2007).</li>
+<li>U.S. NRC, NUREG-0787 "Safety Evaluation Report Related to the Operation of Waterford Steam Electric Station, Unit No. 3" (1981) 및 보충판, NRC ADAMS ML20009E071.</li>
+<li>U.S. NRC, IE Bulletin 80-04 "Analysis of a PWR Main Steam Line Break with Continued Feedwater Addition" (1980).</li>
+</ol>

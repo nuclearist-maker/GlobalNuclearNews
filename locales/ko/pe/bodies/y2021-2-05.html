@@ -1,0 +1,115 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2021년 원자력발전기술사 필기 2교시 5번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>중대사고 대응 전략 중 원자로냉각재계통 감압에 대해 다음을 기술하시오.
+가. 목적
+나. RCS 감압 수단
+다. 감압으로 인한 부정적인 영향</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>중대사고관리지침서(SAMG)의 완화 전략 하나를 골라 "왜 하는가 → 무엇으로 하는가 → 무엇을 대가로 치르는가"를 묻는 전형적인 득실 문항입니다. 목적에서는 HPME·DCH 방지에 더해 유도 SGTR 방지와 저압 주입원 확보까지 써야 하고, 수단은 1차측 직접 감압과 2차측 간접 감압을 노형별 기기로 구분해야 합니다. 부정적 영향은 SAMG가 전략마다 따로 평가하게 하는 항목이므로, 방출 위치별로 정리해 두면 점수를 받기 쉽습니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 고압 노심손상 사고의 특징, SAMG에서 감압 전략의 위치와 진입 조건</li>
+<li>본론 가: 목적 — HPME·DCH 방지, 유도 SGTR 방지, 저압 주입원 확보, IVR 전제, 목표 압력</li>
+<li>본론 나: 수단 — 1차측 직접(POSRV·SDS·PORV, 방출 경로), 2차측 간접(SG 급수 + ADV), 보조 수단</li>
+<li>본론 다: 부정적 영향 — 재고 상실, 격납건물 부담, 재관수 수소, 전열관 차압, 저압 FCI, 밸브 문제</li>
+<li>결론: 득실 판단 주체(TSC)와 규제 근거</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li><strong>고압 노심손상 사고</strong>: 소외전원 완전상실(SBO)·급수완전상실처럼 2차측 열제거를 잃고 감압 경로가 없으면 RCS 압력이 가압기 안전밸브(APR1400 POSRV) 개방압 부근 <strong>약 17 MPa</strong>에 머문 채 노심 노출·손상이 진행될 수 있음(고온관·밀림관이 먼저 크리프 파손되면 스스로 감압되기도 함)</li>
+<li><strong>RCS 감압 전략</strong>: 운전원이 RCS를 의도적으로 열거나 2차측으로 냉각해 압력을 낮추는 SAMG 완화 전략</li>
+<li>국내 SAMG(WOG 기반 통합형) 진입: <strong>노심출구온도(CET) ≥ 649 °C AND EOP 노심냉각 회복 실패</strong>[1] → 기술지원실(TSC)이 진단흐름도로 전략 결정 → 운전원 감압 조치(진입과 조치 시작은 별개 시점). 완화 전략 순서는 SG 급수 주입 → <strong>RCS 감압</strong> → RCS 냉각수 주입 → 격납건물 주입 → …(진단 우선순위)</li>
+</ul>
+<p><strong>2. 가. 목적</strong></p>
+<ul>
+<li>① <strong>HPME·DCH 방지</strong>: 고압 상태로 원자로용기 하부헤드가 파손되면 용융물이 고압 분출(HPME)되고 미세 입자가 격납건물 대기를 급가열·가압(DCH) → 격납건물 조기 파손 위협. <strong>용기 파손 전 저압화</strong>로 위험을 낮춤
+<ul>
+<li>감압은 용기 파손 자체를 막는 수단이 아니라 <strong>파손 시 결과를 완화</strong>하는 수단임</li>
+</ul>
+</li>
+<li>② <strong>유도 SGTR 방지</strong>: 고압 + SG 건조 상태에서 노심의 고온 기체가 고온관·SG 전열관으로 자연순환 → 고온과 큰 차압으로 <strong>전열관 크리프 파손</strong> 가능 → 격납건물 우회 방출. 고온관·밀림관·전열관 중 어디가 먼저 파손되느냐는 경쟁 관계이며, 감압으로 전열관 차압을 줄임</li>
+<li>③ <strong>주입 가능 조건 확대</strong>: 안전주입탱크(SIT, 질소 가압 — 예: APR1400 SIT 블로다운 시험 압력 44 bar(약 4.4 MPa)는 실제 운전압과 비슷한 수준[5]. RCS 압력이 탱크 압력보다 낮아지면 피동 주입), 주입 펌프(OPR1000 HPSI·LPSI·정지냉각, APR1400은 안전주입펌프의 원자로용기 직접주입(DVI)·정지냉각 — 양정·연결 구성에 따라 호기별 확인), <strong>저압이동형펌프차(1.72 MPa 감압 후 주입하는 운용 사례)</strong>[1] → 재관수로 손상 진행 정지·지연</li>
+<li>④ <strong>노심용융물 노내 억제(IVR-ERVC)의 전제</strong>: 감압은 용기 구조 하중을 줄이는 전제 조건이고, 외벽냉각은 별도 냉각 경로임(새울 1·2 SAMG 전략, 인허가 크레딧 없음)</li>
+<li><strong>목표값(APR1400 예)</strong>: 용기 파손 전 <strong>250 psia(1.72 MPa) 이하</strong>. 2025.1 사고관리계획서 심사에서 POSRV로 17.25 MPa → 1.72 MPa 이하 감압해 HPME·DCH 방지로 평가[1]
+<ul>
+<li>1.72 MPa는 감압 <strong>목표</strong>, KINS 해석의 DCH <strong>판정 기준 1.78 MPa</strong>[4]와 다른 값임. 250 psig(≈ 1.825 MPa)와도 다름 </li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="시간축 없는 RCS 압력 사다리(로그): 약 17 MPa 고압 사고 예, APR1400 SIT 운전압 수준 약 4.4 MPa, APR1400 감압 목표 1.72 MPa, 줄어드는 고압 위험과 넓어지는 주입 가능성" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/40e5b85abe4f5da7ef25683a7e54b01e4769a2c5bf57c863f837bf49f61a2f47.webp"/><figcaption>시간축 없는 RCS 압력 사다리(로그): 약 17 MPa 고압 사고 예, APR1400 SIT 운전압 수준 약 4.4 MPa, APR1400 감압 목표 1.72 MPa, 줄어드는 고압 위험과 넓어지는 주입 가능성</figcaption></figure>
+<p><strong>3. 나. RCS 감압 수단</strong></p>
+<ul>
+<li><strong>(1) 1차측 직접 감압 — 가압기 증기부 개방</strong>
+<ul>
+<li><strong>APR1400</strong>: POSRV 4개(설정압 2,470 psia, 개당 244.9 t/h)[2]. 직렬 전동 파일럿 2개를 운전원이 원격으로 모두 열어 주밸브 개방
+<ul>
+<li>방출: 설계기준은 IRWST 스파저 응축 / 중대사고는 IRWST 상부 수소 축적을 피하려고 <strong>3방향 밸브로 SG 격실 방출</strong>(새울 1·2·UAE·미국 DC)[3]</li>
+<li>새울 3·4: 전용 <strong>비상급속감압밸브(ERDV) 2계열</strong>(계열당 449.1 t/h) 추가. KINS 평가(SBO)에서 ERDV 1계열을 첫 POSRV 개방 1시간 뒤 열어도 용기 파손 시 1.46 MPa &lt; 1.78 MPa[4]</li>
+</ul>
+</li>
+<li><strong>OPR1000</strong>: 안전감압계통(SDS) — 가압기 상부의 독립된 2개 배관, 각각 파열판을 거쳐 격납건물 대기로 방출, 운전원이 수동으로 개방[6]</li>
+<li><strong>W형</strong>: 가압기 PORV + 차단밸브 → 가압기 방출탱크(파열판 → 격납건물)</li>
+</ul>
+</li>
+<li><strong>(2) 2차측 간접 감압 — SG를 열침원으로</strong>
+<ul>
+<li>SG 급수(보조급수·이동형 펌프) 확보 → <strong>ADV·터빈우회밸브 개방</strong> → SG 포화온도 하강 → 1차측 냉각·감압</li>
+<li>SG가 마른 상태에서 2차측만 감압하면 전열관 차압이 커지므로 <strong>급수 확보가 선행 조건</strong>(국내 SAMG가 SG 급수를 1순위에 두는 이유와 연결)</li>
+<li>조치가 늦을수록 2차측만으로는 충분히 감압하지 못한다는 해석 결과가 있어, 1차측 직접 감압과 병행 판단</li>
+</ul>
+</li>
+<li><strong>(3) 보조 수단</strong>: 원자로냉각재 기체배기(원자로용기 상부헤드·가압기 → IRWST, 용량 작음), 가압기 보조살수(충전 가능 시 증기부 응축)</li>
+</ul>
+<figure class="article-image"><img alt="답안용 감압 유무별 RCS 압력 경로, 1.72 MPa(250 psia) 목표, SAMG 진입·감압 조치" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/e0e17d28c78029ebf5b803f8996063c182b6ae5d8aea9908767d21105145e6f5.webp"/><figcaption>답안용 감압 유무별 RCS 압력 경로, 1.72 MPa(250 psia) 목표, SAMG 진입·감압 조치</figcaption></figure>
+<p><strong>4. 다. 감압으로 인한 부정적 영향</strong></p>
+<ul>
+<li>① <strong>재고량 상실 가속(의도적 LOCA)</strong>: 주입원이 없거나 늦으면 노심 노출·가열이 빨라짐 → 주입원 가용성을 함께 판단. 다만 주입원이 없어도 용기 파손 전 감압의 HPME·DCH 저감 이득은 따로 평가함</li>
+<li>② <strong>격납건물 부담</strong>: 증기·수소·핵분열생성물이 IRWST/SG 격실/격납건물 대기로 방출 → IRWST에서는 증기는 응축되지만 <strong>비응축성 기체(수소)가 상부에 축적</strong> 가능, SG 격실·격납건물 대기에서는 <strong>국부 수소·격납건물 가압·가온</strong>. 살수 등 열제거가 없으면 가압 지속</li>
+<li>③ <strong>고온 손상 노심 재관수 시 수소·증기 급증 가능</strong>: 감압 뒤 SIT·펌프 주입으로 약 1,800 °C 이상 노심에 물이 닿으면 Zr 산화 재가속 → 수소·증기 급증, 일시 재가압, 핵분열생성물 방출 증가 가능(TMI-2 수소의 약 1/3이 재관수 과도 중 생성 추정)</li>
+<li>④ <strong>SG 건조·고온 상태에서 2차측만 감압</strong>: 전열관 차압 증가 → 크리프 파손 위험 → 격납건물 우회</li>
+<li>⑤ <strong>전열관 손상(1차→2차 누설)이 있는 SG의 ADV 개방</strong>: 핵분열생성물 대기 직접 방출</li>
+<li>⑥ <strong>저압 상태의 노내 증기폭발 가능성 상대 증가</strong>: 고압은 촉발을 억제하는 쪽이라 감압 후 용융물–냉각수 상호작용 가능성이 커짐(격납 파손 기여는 낮게 평가됨)</li>
+<li>⑦ <strong>밸브·계통 측면</strong>: 개방 고착·재폐쇄 불가, 방출탱크 파열판 파열(W형), 직류 전원·계측 의존, 한 번 감압하면 되돌리기 어려움</li>
+</ul>
+<figure class="article-image"><img alt="APR1400 배치 기준 감압 경로(POSRV·3방향 전환밸브, SG 급수 + ADV)와 부정적 영향 ①~⑤의 위치, 노형별 직접 감압 수단" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/30ec40df9a397de6e05b8665ab9db5f76bcdc907cb48ec4e8dcb884df9560caa.webp"/><figcaption>APR1400 배치 기준 감압 경로(POSRV·3방향 전환밸브, SG 급수 + ADV)와 부정적 영향 ①~⑤의 위치, 노형별 직접 감압 수단</figcaption></figure>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>RCS 감압 = <strong>고압 용기 파손(HPME·DCH)과 유도 SGTR을 막고 저압 주입으로 가는 관문</strong>. 대가는 재고 상실·격납건물 수소/압력 부담·전열관 차압</li>
+<li>SAMG는 전략마다 부정적 영향을 평가하게 하며, 득실은 TSC가 <strong>주입원 가용성·격납건물 열제거·수소 제어 상태</strong>를 함께 보고 판단함</li>
+<li>근거: 원자력안전법 제20조②·제21조①6호(사고관리계획서), 기술기준규칙 제85조의19~23, 원안위고시 제2026-1호 별표 3(위협요인: HPME·DCH 포함)[7], 미국 SECY-93-087·10 CFR 52.47(a)(23)[8]</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 감압과 주입은 한 쌍입니다</h3>
+<p>감압만 떼어 외우면 "LOCA를 일부러 만든다"는 부정적 영향이 너무 크게 보입니다. 실제 판단은 압력과 주입원을 함께 봅니다. 압력이 약 17 MPa에 머무는 동안에는 고압안전주입 말고는 들어갈 물이 없고, 그마저 없으면 감압 여부와 관계없이 노심은 녹습니다. 이때 감압의 가치는 노심을 살리는 데보다 <strong>용기가 뚫릴 때 고압이 아니게 만드는 데</strong> 있습니다. 반대로 SIT·저압 펌프·이동형 펌프가 준비되어 있으면 감압은 그 물을 넣기 위한 문을 여는 조치가 됩니다. 그래서 답안 결론에는 "감압과 주입을 묶어 판단한다"는 문장을 넣는 것이 좋습니다.</p>
+<p>2차측 감압은 1차측을 열지 않으므로 격납건물 부담이 작다는 장점이 있습니다. 하지만 SG에 물이 있어야 열침원이 되고, 마른 SG를 감압하면 오히려 전열관 양쪽 압력차만 키웁니다. 이 조건을 빠뜨리면 감점 요인이 됩니다.</p>
+<h3>해설: 채점 포인트와 흔한 실수</h3>
+<ul>
+<li><strong>목적을 HPME·DCH 하나로 끝내기</strong>: 유도 SGTR 방지와 저압 주입원 확보를 함께 써야 합니다.</li>
+<li><strong>1.72 MPa와 1.78 MPa 혼동</strong>: 앞은 감압 목표, 뒤는 KINS 해석의 DCH 판정 기준입니다.</li>
+<li><strong>"감압하면 용기 파손을 막는다"</strong>: 재관수에 성공해야 파손을 피할 수 있습니다. 감압 자체는 파손 시 결과를 완화합니다.</li>
+<li><strong>노형별 기기 혼동</strong>: OPR1000에는 가압기 PORV가 없고 SDS가 따로 있습니다. APR1400은 POSRV가 과압보호와 급속감압을 겸합니다.</li>
+</ul>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li>사고관리 고시는 출제 당시 제2017-34호에서 현행 원안위고시 제2026-1호(2026.1.16)로 바뀌었습니다. HPME·DCH가 들어 있는 위협요인 표가 별표 2에서 별표 3으로 옮겨졌고, 제6조①에 사고관리 설비·전략·이행체계 문언이 추가되었습니다. 감압 전략의 요구 자체는 같습니다.</li>
+<li>「원자로시설 등의 기술기준에 관한 규칙」은 원안위규칙 제36호(2026.1.20)·제37호(2026.3.30)로 개정되었습니다. 사고관리 조항은 현행판에서도 제85조의19~23입니다.</li>
+<li>출제 이후 2025년 1월 새울 1·2·신한울 1·2 사고관리계획서가 처음 승인되었고, 이때 POSRV 감압(17.25 → 1.72 MPa 이하)으로 HPME·DCH를 막는 것으로 평가되었습니다. 새울 3·4는 ERDV를 더한 설계입니다.</li>
+<li>한수원은 PWROG 진단과정지침(DPG) 기반 SAMG 개정 과제를 2022~2025년 수행했고, 비상조치에서 RCS 감압·주입을 앞당기는 단기 개선을 했습니다. </li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 제206회 원자력안전위원회 회의 의안(2025.1.9), 새울 1·2호기·신한울 1·2호기 사고관리계획서 승인(SAMG 진입 조건, POSRV 감압 17.25 → 1.72 MPa, 저압이동형펌프차 주입). 원안위 공개 회의자료.</li>
+<li>U.S. NRC, Final Safety Evaluation Report for the APR1400 Design Certification, Chapter 5 (Sections 5.2.2·5.4.14 — POSRV 설정압 173.7 kg/cm²A(2,470 psia), 방출용량 244,900 kg/h; DCD Tier 2 Table 5.4.14-1 인용).</li>
+<li>MDEP, "APR1400 Design Description and Comparison of Design Differences", Technical Report TR-APR1400-01, 3.1절.</li>
+<li>조용진 외(KINS), APR1400 비상급속감압밸브(ERDV) MELCOR 평가, 한국원자력학회 추계학술발표회 (2014) — DCH 판정 압력 1.78 MPa. 논문 제목 미대조.</li>
+<li>S. H. Yoo, Y. S. Bang, "Performance Assessment of Safety Injection Tank with Fluidic Device during LBLOCA", Transactions of the Korean Nuclear Society Spring Meeting, Jeju (2017.5).</li>
+<li>B. G. Kim, H. J. Yoon, S. H. Kim, H. G. Kang, "Development of state categorization model for necessity of feed and bleed operation and application to OPR1000", PSAM 12, Honolulu (2014.6).</li>
+<li>「원자력안전법」 제20조·제21조; 원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제85조의19~23; 원안위고시 제2026-1호(2026.1.16) 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」 별표 3. 국가법령정보센터.</li>
+<li>U.S. NRC, SECY-93-087 "Policy, Technical, and Licensing Issues Pertaining to Evolutionary and Advanced Light-Water Reactor (ALWR) Designs" (1993) 및 SRM; 10 CFR 52.47(a)(23).</li>
+</ol>

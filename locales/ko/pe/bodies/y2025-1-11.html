@@ -1,0 +1,69 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2025년 원자력발전기술사 필기 1교시 11번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>원자로냉각재 pH(수소이온농도) 제어 방법 및 수산화리튬(Li₇OH) 사용 이유</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>pH(T)</strong>: 운전온도에서의 pH입니다. 300 °C에서는 중성이 약 5.6[1]이므로 목표 pH₃₀₀ ≈ 7.2는 약알칼리입니다.</li>
+<li><strong>협조 붕소-리튬 운전(Coordinated B–Li)</strong>: 연소에 따라 붕소가 줄어들면 Li도 붕소-리튬 표에 맞춰 함께 낮추는 운전 방식입니다.</li>
+<li><strong>크러드(CRUD)와 AOA</strong>: 부식생성물이 연료 표면에 쌓인 침적물과, 그 안에 붕소가 모여 생기는 축방향 출력 이상입니다.</li>
+<li><strong>¹⁰B(n,α)⁷Li</strong>: 붕소가 중성자를 흡수하면 Li-7이 생깁니다. 리튬을 알칼리제로 고른 출발점입니다.</li>
+<li><strong>⁷Li 농축</strong>: ⁶Li(n,α)³H 반응(약 940 b)을 피하려고 ⁷Li 99.9 % 이상의 LiOH를 씁니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 문제 해석</strong></p>
+<ul>
+<li>시험지의 "Li₇OH"는 <strong>⁷LiOH</strong>(Li-7 농축 수산화리튬, ⁷LiOH·H₂O로 주입)를 뜻하는 것으로 해석함</li>
+</ul>
+<p><strong>2. pH 제어 목적</strong></p>
+<ul>
+<li>반응도 제어용 <strong>붕산(약산)</strong> 수백~2,000 ppm 때문에 냉각재가 산성 쪽으로 기욺</li>
+<li>목표 <strong>pH₃₀₀ ≈ 7.2(범위 6.9~7.4)</strong>[2]: 마그네타이트·니켈 페라이트 <strong>용해도 최소</strong>, 온도가 오를수록 더 녹는 영역 → 고온 연료 표면 <strong>크러드 침적 억제</strong>(AOA·피복 부식), 노외 <strong>방사선장 감소</strong></li>
+</ul>
+<p><strong>3. 제어 방법</strong></p>
+<ol>
+<li><strong>협조 B–Li 운전</strong>: 붕소 희석에 맞춰 호기별 B–Li 표로 Li 조정, 주기 전체 pH(T) 일정 유지
+<ul>
+<li>수정 방식: 주기초 Li 2.2 ppm 고정 → 목표 도달 후 협조 / 고·일정 pH 방식: Li <strong>3.5 ppm 이하</strong>에서 가능한 높게(APR1400 채택)[2]</li>
+</ul>
+</li>
+<li><strong>LiOH 주입</strong>: CVCS 화학약품 주입 경로로 충전 계통에 투입(기동·승온 시 Li 확보)</li>
+<li><strong>Li 제거</strong>: ¹⁰B(n,α)⁷Li로 Li가 계속 생김 → <strong>양이온 탈염기</strong> 간헐 운전, 정화 혼상은 ⁷Li형으로 포화</li>
+<li><strong>감시</strong>: 정기 시료로 B·Li 분석 후 표와 대조(관리 범위는 사업자 수화학 관리 프로그램의 호기별 값)</li>
+</ol>
+<p><strong>4. 수산화리튬 사용 이유</strong></p>
+<ol>
+<li><strong>이미 생기는 원소</strong>: 붕소 반응 생성물이 Li-7 → 새 불순물 없이 한 변수로 관리</li>
+<li><strong>소량으로 pH 조절</strong>: ppm 수준(약 1~3.5 ppm as Li)으로 고온 pH 상승, 주입·정화 부담 작음(강염기 성질 자체는 KOH·NaOH도 같아 LiOH만의 이유는 아님)</li>
+<li><strong>작은 흡수·짧은 수명의 포획 생성물</strong>: ⁷Li 열중성자 흡수 약 <strong>0.045 b</strong>, ⁷Li(n,γ)⁸Li 반감기 약 <strong>0.84 s</strong>(Na-24 약 15 h, K-42 약 12.4 h와 대비)[3]</li>
+<li><strong>⁷Li 농축 필요</strong>: 천연 Li의 ⁶Li 약 7.5 %가 (n,α)³H <strong>940 b</strong>[3] → <strong>⁷Li 99.9 % 이상</strong>[1]</li>
+</ol>
+<p><strong>5. 한계</strong></p>
+<ul>
+<li>Li 과다 → <strong>Zr 피복 부식 가속·Alloy 600 PWSCC</strong> 우려 → 상한 약 3.5 ppm, 장주기 노심은 농축 붕산으로 보완</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 붕소-리튬 평면에서 pH₃₀₀ 일정선(7.2, 6.9)과 Li 상한 3.5 ppm, 주기초 상한 구간 → 일정 pH선을 따라 내려오는 운전 경로" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/b316d2276177881e4fc36727db04e7a42ea043e90e5d022f2564906690df3503.webp"/><figcaption>답안용 도식: 붕소-리튬 평면에서 pH₃₀₀ 일정선(7.2, 6.9)과 Li 상한 3.5 ppm, 주기초 상한 구간 → 일정 pH선을 따라 내려오는 운전 경로</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="연료주기 진행에 따른 붕소·리튬 농도와 pH₃₀₀(수정 방식 vs 고·일정 pH 방식), 목표 범위 6.9~7.4, ⁶Li/⁷Li 핵자료 비교, Li 상·하한의 줄다리기" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/4fa63737ca111d774e27e47b0bb8f3a52acee53a4118f9696c0a265d46c17ec3.webp"/><figcaption>연료주기 진행에 따른 붕소·리튬 농도와 pH₃₀₀(수정 방식 vs 고·일정 pH 방식), 목표 범위 6.9~7.4, ⁶Li/⁷Li 핵자료 비교, Li 상·하한의 줄다리기</figcaption></figure>
+<p>pH 목표를 "중성 7"로 쓰면 감점 요인이 됩니다. 물의 이온곱은 온도와 함께 커져 300 °C의 중성 pH는 약 5.6입니다. 목표 7.2는 상온 값이 아니라 운전온도 기준 약알칼리라는 점을 한 줄로 밝혀 두십시오.</p>
+<p>LiOH는 붕산을 "중화"하지 않습니다. Li 몰수는 붕소 몰수의 수백분의 일 수준이라, 붕산과 붕산염이 섞인 완충 상태에서 pH(T)만 끌어올립니다. 그래서 붕소가 줄어드는 만큼 Li도 줄여야 같은 pH가 유지되며, 이것이 협조 운전의 원리입니다.</p>
+<p>장주기 노심은 주기초 붕소 농도가 더 높습니다. 그래서 목표 pH를 지키려면 Li를 더 넣어야 하는데, 피복관 부식 때문에 상한이 있습니다. 상한에 걸리면 주기초 일부 구간은 목표 pH보다 낮게 운전할 수밖에 없습니다[2]. B-10 농축 붕산은 총 붕소량을 줄여 이 딜레마를 푸는 방법입니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>"왜 pH를 올리는가"의 근거</strong>: 부식생성물 용해도와 크러드 침적 한 줄이 빠지면 방법 나열에 그칩니다.</li>
+<li><strong>Li-7 농축 누락</strong>: 문제에 "Li₇"가 적힌 이유가 바로 ⁶Li의 삼중수소 생성입니다. 940 b와 99.9 %를 쓰십시오.</li>
+<li><strong>Li 상한 누락</strong>: 많이 넣을수록 좋은 것이 아닙니다. 피복 부식·PWSCC와의 균형을 적어야 합니다.</li>
+<li><strong>용존수소와 혼동</strong>: 수소 25~50 cc/kg은 산소 제어 수단이며 pH 제어 방법이 아닙니다.</li>
+<li><strong>Li 생성원 누락</strong>: 운전 중 Li가 저절로 늘어나므로 "주입"만 쓰지 말고 "양이온 탈염기 제거"를 함께 쓰십시오.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>P. Cohen, Water Coolant Technology of Power Reactors, Gordon and Breach (1969); American Nuclear Society 재간행(1980).</li>
+<li>천양호 외(KEPCO E&amp;C), "Primary Coolant pH Control for Soluble Boron-Free PWRs", 한국원자력학회 추계학술발표회 (2015).</li>
+<li>S. F. Mughabghab, Atlas of Neutron Resonances, 5th ed., Elsevier (2006) — ⁶Li(n,α)·⁷Li(n,γ) 열중성자 단면적.</li>
+</ol>

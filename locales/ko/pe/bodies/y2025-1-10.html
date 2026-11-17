@@ -1,0 +1,72 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2025년 원자력발전기술사 필기 1교시 10번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>즉발임계(Prompt critical) 및 지발임계(Delayed critical)의 정의, 각각이 원자로 제어에 미치는 영향</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>지발임계</strong>: 즉발·지발중성자를 모두 합쳐 keff = 1(ρ = 0)인 상태. 지발중성자가 있어야 임계가 유지됩니다.</li>
+<li><strong>즉발임계</strong>: 즉발중성자만으로 임계, keff(1−βeff) = 1 → ρ = βeff = 1$.</li>
+<li><strong>βeff와 달러($)</strong>: 즉발임계 문턱 그 자체. ²³⁵U β = 0.0065이면 약 650 pcm이고, 연소가 진행되면 작아집니다.</li>
+<li><strong>원자로 주기 T</strong>: 1$ 미만은 선행핵 붕괴가 정하는 초 단위, 1$ 이상은 Λ/(ρ−βeff)의 밀리초 단위입니다.</li>
+<li><strong>즉발 음의 궤환</strong>: ms 시간대의 즉발초임계 출력 상승을 억제하는 수단(도플러 효과).</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 정의</strong></p>
+<ul>
+<li><strong>지발임계(Delayed critical)</strong>: 즉발 + 지발중성자 전체로 <strong>keff = 1, ρ = 0</strong>인 상태임
+<ul>
+<li>즉발중성자만 보면 k(1−β) &lt; 1(즉발 미임계) → 지발중성자 β가 임계를 완성함</li>
+<li>0 &lt; ρ &lt; βeff 구간은 <strong>지발초임계</strong>로 구분함</li>
+</ul>
+</li>
+<li><strong>즉발임계(Prompt critical)</strong>: 즉발중성자만으로 임계, <strong>keff(1−βeff) = 1</strong>
+<ul>
+<li>ρ = (k−1)/k = <strong>βeff = 1$</strong>, β = 0.0065[2]이면 k ≈ 1.0065, 약 650 pcm</li>
+<li>ρ &gt; βeff는 <strong>즉발초임계</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>2. 지발임계(지발초임계 포함)가 제어에 미치는 영향</strong></p>
+<ul>
+<li>출력 변화 속도를 선행핵 붕괴(평균수명 약 13 s)가 결정 → 안정주기 수 s~수십 s
+<ul>
+<li>6군 계산(Keepin U-235 상수[2], Λ = 2×10⁻⁵ s): 0.1$ → 98.6 s, 0.5$ → 5.7 s</li>
+</ul>
+</li>
+<li>제어봉·붕소·운전원 조치가 따라갈 시간 여유가 있음(1$에 가까울수록 급감) → <strong>기계적 제어가 가능한 영역</strong></li>
+<li>기동 시 반응도를 $·¢로 관리, <strong>기동률(SUR) 제한</strong>으로 주기를 길게 유지함</li>
+<li>반응도 투입 직후 <strong>즉발도약</strong> β/(β−ρ) 후 안정주기로 이행함</li>
+</ul>
+<p><strong>3. 즉발임계가 제어에 미치는 영향</strong></p>
+<ul>
+<li>주기 <strong>ms 수준</strong>(1.0$ → 92 ms, 1.2$ → 15 ms) → 제어봉 구동·운전원 대응보다 빠름</li>
+<li>제어봉이 따라가지 못하므로 첫 출력 첨두는 <strong>도플러 등 즉발 음의 궤환</strong>이 억제함 → 연료 엔탈피 급증·손상 우려</li>
+<li>설계·운전에서 배제함: 반응도 삽입률·제어봉가 제한, <strong>제어봉 삽입한계(PDIL)</strong>로 이탈 제어봉가 제한</li>
+<li>제어봉 이탈 사고 해석으로 확인함(SRP 15.4.8[3], RG 1.236[4])</li>
+<li><strong>주기말 βeff 감소</strong>(Pu-239 축적) → 즉발임계 문턱(pcm) 하락 → 보수적으로 반영함</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 반응도 축 위의 지발임계(ρ = 0)·즉발임계(ρ = β) 위치와 구간별 주기·제어 수단" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/0af31c76772a83fab9129a05125c3e4a838e96688ef0222b514be945d121e12e.webp"/><figcaption>답안용 도식: 반응도 축 위의 지발임계(ρ = 0)·즉발임계(ρ = β) 위치와 구간별 주기·제어 수단</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="6군 점동특성으로 계산한 0.5$·0.9$·1.0$·1.2$ 계단 투입 후 출력 이력(로그), 임계 상태 구분표, 안정주기 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/c28e69078eef17624e1484a40457310240ae2406f1226693d179d663e7ee7d46.webp"/><figcaption>6군 점동특성으로 계산한 0.5$·0.9$·1.0$·1.2$ 계단 투입 후 출력 이력(로그), 임계 상태 구분표, 안정주기 표</figcaption></figure>
+<p>그림은 같은 원자로에 반응도만 바꿔 넣었을 때의 출력 이력입니다(온도 궤환 없음). 0.5$에서는 수 ms 안에 출력이 2배로 즉발도약한 뒤 5.7 s 주기로 천천히 오릅니다. 1$에 다가가면 주기가 0.38 s(0.9$), 92 ms(1.0$)로 급격히 짧아지고, 1.2$에서는 0.18 s 만에 출력이 백만 배를 넘습니다. 1$를 경계로 응답의 주도권이 선행핵에서 즉발중성자 세대시간 Λ로 넘어간다는 점이 이 문제의 핵심입니다.</p>
+<p>답안에서 숫자 하나를 고르라면 "ρ = βeff = 1$"입니다. βeff는 노심과 연소 시점에 따라 달라지므로, 즉발임계를 keff = 1.0065 같은 고정값으로만 쓰지 말고 βeff로 정의한 뒤 예시로 수치를 붙이는 편이 정확합니다. 실제 사례로는 SL-1(1961)과 체르노빌(1986)이 즉발초임계에 들어간 사고로 꼽힙니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>지발임계 정의 혼동</strong>: 0 &lt; ρ &lt; β 구간 전체를 "지발임계"로 쓰는 답안이 많습니다. 정의는 keff = 1(ρ = 0)이고, 그 구간은 "지발초임계"로 따로 이름 붙여야 합니다.</li>
+<li><strong>즉발임계를 식으로 쓰지 않음</strong>: k(1−βeff) = 1 → ρ = βeff 한 줄이 정의 배점의 핵심입니다.</li>
+<li><strong>β와 βeff 혼용</strong>: 문턱은 중요도로 가중한 βeff입니다. 연소에 따라 줄어든다는 점까지 쓰면 "영향" 배점이 올라갑니다.</li>
+<li><strong>"즉발임계 = 핵폭발"</strong>: 상용 원자로에서 출력 첨두는 도플러 궤환으로 끝납니다. 문제는 연료 손상이며, 그래서 설계로 배제한다고 써야 합니다.</li>
+<li><strong>근사식의 적용 범위</strong>: (β−ρ)/(λρ)와 Λ/(ρ−β)는 1$ 부근에서 맞지 않습니다. 정확한 값은 역시간방정식으로 구합니다[1].</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 7장(원자로 동특성, 역시간방정식).</li>
+<li>G. R. Keepin, Physics of Nuclear Kinetics, Addison-Wesley (1965) — U-235 열중성자 핵분열 6군 지발중성자 상수.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 15.4.8 "Spectrum of Rod Ejection Accidents (PWR)".</li>
+<li>U.S. NRC, Regulatory Guide 1.236 "Pressurized-Water Reactor Control Rod Ejection and Boiling-Water Reactor Control Rod Drop Accidents" (2020).</li>
+</ol>

@@ -1,0 +1,208 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2024년 원자력발전기술사 필기 2교시 3번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>APR1400 원전의 중대사고 예방 및 완화 전략에 대하여 다음을 기술하시오.
+가. 최종열제거원상실사고(LUHS)의 정의 및 주요 대응전략
+나. 장기교류전원상실사고(ELAP)의 정의 및 고압이동형펌프를 포함한 주요대응전략
+다. 1차측기기냉각수상실사고(LOCCW)의 정의 및 주요 대응전략
+라. 중대사고 시 저압이동형펌프차를 이용한 냉각전략</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>세 사건(LUHS·ELAP·LOCCW)은 모두 붕괴열을 바깥으로 내보내는 사슬의 서로 다른 고리를 끊습니다. 각 사건에서 무엇을 잃고 무엇이 남는지 구분해, 남은 경로(증기발생기 → 대기)와 이동형 설비로 버티는 전략을 쓰라는 문제입니다. 라.는 노심손상 이후로 넘어가 "감압이 먼저, 그다음 저압 주입"이라는 완화 원리를 묻습니다. 2025년 1월 처음 승인된 APR1400 사고관리계획서 심사 결과를 근거로 쓰면 설득력이 높아집니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 열제거 사슬(노심 → RCS → SG/CCW → ESW → 최종열제거원)과 세 사건이 끊는 위치, 규제 근거</li>
+<li>본론 가: LUHS 정의 → 영향 → 2차측 열제거·대체급수원·ESW 복구</li>
+<li>본론 나: ELAP 정의(SBO와 구분) → MACST 3단계 → 고압이동형펌프의 역할</li>
+<li>본론 다: LOCCW 정의 → RCP 밀봉 LOCA → 정지·밀봉주입·CCW 복구</li>
+<li>본론 라: SAMG 진입 → RCS 감압 → 펌프차 주입처 4곳과 부정적 영향</li>
+<li>결론: 세 사건 비교표와 공통 원리</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요 — 열제거 사슬과 세 사건의 위치</strong></p>
+<ul>
+<li>정지 후 붕괴열 경로 ① <strong>노심 → RCS → SG → 증기 방출(대기)</strong> ② <strong>RCS → 정지냉각 열교환기 → CCW → ESW → 최종열제거원(UHS, 국내 APR1400은 해수)</strong></li>
+<li>APR1400 지원계통: CCW·ESW 각 <strong>2계열 × 100 % 펌프 2대</strong>[4]</li>
+<li>세 사건이 끊는 곳: <strong>LUHS = 사슬 끝(ESW·UHS)</strong>, <strong>LOCCW = 중간(CCW)</strong>, <strong>ELAP = 사슬을 돌리는 교류전원</strong></li>
+<li>규제 근거
+<ul>
+<li>「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」(현행 원안위고시 제2026-1호) <strong>별표 1 다중고장 ⑦ 최종열제거원 상실사고</strong>[1]</li>
+<li>같은 고시 <strong>별표 2</strong>: 설계기준 초과 자연재해 후 대처할 시설 상태 = <strong>장기적인 교류전원 및 최종열제거원 상실</strong>[1]</li>
+<li>미국 <strong>10 CFR 50.155(b)(1)</strong>: 모든 교류전원 상실과 최종열제거원 정상 접근 상실을 동시에 가정[2]</li>
+<li>LOCCW는 별표 1 필수 9종에 없음 → PSA로 선정하는 <strong>추가 고려 사고</strong> 후보</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="APR1400 열제거 사슬(노심·RCS·SG·CCW·ESW·해수)과 전원 계층 위에 LUHS·LOCCW·ELAP이 끊는 위치를 표시하고, 사건별 잃는 것·남는 경로·규제 위치를 표로 정리" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/46e05056b362dc50226b209857aad9d8d0a6db7a59c1afc52c0b5ac26e9b6fed.webp"/><figcaption>APR1400 열제거 사슬(노심·RCS·SG·CCW·ESW·해수)과 전원 계층 위에 LUHS·LOCCW·ELAP이 끊는 위치를 표시하고, 사건별 잃는 것·남는 경로·규제 위치를 표로 정리</figcaption></figure>
+<p><strong>2. 가. 최종열제거원상실사고(LUHS)</strong></p>
+<ul>
+<li>정의: 해수 취수 설비·ESW 상실 등으로 안전 관련 기기의 열을 <strong>최종열제거원으로 보낼 수 없게 된 상태</strong>. 수원은 있어도 <strong>정상 접근 수단을 잃은 것</strong></li>
+<li>영향: CCW 열교환기 냉각 상실 → CCW 온도 상승 → RCP 밀봉·베어링, 정지냉각(SCS)·살수 열교환기, 저장조 냉각 등 CCW 부하 무력화 → <strong>SCS 진입 불가</strong></li>
+<li>대응전략(APR1400 사고관리계획서 심사 결과[3])
+<ul>
+<li>원자로 정지, RCP 정지, 밀봉주입 유지 → 밀봉 보호</li>
+<li><strong>SG 급수 + 주증기대기방출밸브(MSADV) 증기 방출</strong>로 노심 열제거 → <strong>고온정지 유지</strong>(대기가 대체 열제거원)</li>
+<li><strong>대체급수원 확보</strong>: 보조급수저장탱크 → 복수저장탱크 → 탈염수저장탱크 → 원수저장탱크</li>
+<li>ESW 복구: 대기 펌프 기동, 취수구 이물 제거. 장기화 시 이동형 고유량 펌프차로 해수 공급 대체(MACST)</li>
+<li>사용후핵연료저장조: 수위·온도 감시, 외부주입유로로 보충</li>
+</ul>
+</li>
+<li>판정: <strong>핵연료의 현저한 손상 방지</strong>(심사 목표: 핵연료 냉각 유지 또는 PCT 1,204 ℃ 이하)[3]</li>
+</ul>
+<p><strong>3. 나. 장기교류전원상실사고(ELAP)</strong></p>
+<ul>
+<li>정의: <strong>소외전원 + 비상디젤발전기(EDG) + 대체교류전원(AAC)</strong>까지 모든 교류전원이 상실되어 <strong>대처시간을 넘어 장기화</strong>된 상태. 축전지·인버터 모선은 살아 있음[5]
+<ul>
+<li>SBO(10 CFR 50.2)는 AAC로 대처함[2](새울 1·2 AAC-DG 7,200 kW, 10분 이내 공급[4]). ELAP는 그 AAC까지 잃은 상태</li>
+<li>자연재해형 ELAP는 LUHS를 동반한다고 가정함(별표 2, 50.155)</li>
+</ul>
+</li>
+<li>대응전략: <strong>MACST(다중방어사고대응전략) 3단계</strong>, 극한재해완화지침서에 반영[3]
+<ul>
+<li><strong>1단계(소내 고정형)</strong>: RCP 관성 정지 → <strong>자연순환</strong>, <strong>터빈구동 보조급수펌프(TDAFP)</strong> SG 급수, MSADV 수동 조작 냉각·감압, <strong>직류 부하 차단</strong>, RCP 밀봉 누설 경로 격리, 감압 시 SIT 주입</li>
+<li><strong>2단계(소내 이동형)</strong>: <strong>이동형 발전차</strong>(APR1400 PSA 개선: <strong>1 MW 이동형발전차 선배치</strong>[3]) → 축전지 충전·필수 계측 / <strong>고압이동형펌프</strong> → 외부주입유로로 <strong>RCS 붕산수 보충</strong> / 저압이동형펌프차 → SG 감압 후 SG 급수, 급수탱크·저장조 보충</li>
+<li><strong>3단계(소외 지원)</strong>: 부지 밖 장비·연료·인력으로 <strong>무기한 유지</strong></li>
+</ul>
+</li>
+<li>고압이동형펌프가 필요한 이유
+<ul>
+<li>TDAFP 구동 증기압을 지키려면 SG 감압이 제한됨 → <strong>RCS가 고압으로 남아</strong> 저압 펌프로는 주입 불가</li>
+<li>RCP 밀봉 누설(RG 1.155 가정 펌프당 20 gpm[6])과 냉각 수축 → 가압기 수위 저하·자연순환 약화 → <strong>재고 보충</strong></li>
+<li>냉각에 따른 정반응도·제논 붕괴 → <strong>붕산수로 미임계 유지</strong></li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 노심·RCS·SG·대기 경로와 RCS·CCW·ESW·해수 경로, 전원 줄 위에 LUHS·LOCCW·ELAP 절단 표시" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/228e6ae2763fa4496b5770465361291dd9b31e4f1f821146ae9af9394796ceae.webp"/><figcaption>답안용 도식: 노심·RCS·SG·대기 경로와 RCS·CCW·ESW·해수 경로, 전원 줄 위에 LUHS·LOCCW·ELAP 절단 표시</figcaption></figure>
+<p><strong>4. 다. 1차측기기냉각수상실사고(LOCCW)</strong></p>
+<ul>
+<li>정의: <strong>기기냉각수계통(CCW) 두 계열이 모두</strong> 냉각수 공급 기능을 잃은 상태(전체 상실). 원인: 펌프·전원·배관 파손, 서지탱크 고갈, ESW·UHS 상실의 결과</li>
+<li>영향
+<ul>
+<li><strong>RCP 밀봉·베어링 냉각 상실</strong> → 밀봉 손상 → <strong>RCP 밀봉 LOCA(소형 LOCA)</strong></li>
+<li>유출수 냉각 상실, SCS·살수 열교환기 무력, 저장조 냉각 상실</li>
+</ul>
+</li>
+<li>대응전략
+<ul>
+<li><strong>원자로 정지 → RCP 정지</strong>(베어링·밀봉 손상 방지)</li>
+<li><strong>밀봉주입 유지</strong>: 충전펌프·보조충전펌프(미국 DC 심사에서 보조충전펌프를 다양성 밀봉주입 경로로 인정[7])</li>
+<li><strong>유출 격리</strong>(고온 유출수로부터 이온교환수지 보호)</li>
+<li><strong>2차측 열제거로 고온정지 유지</strong>: 보조급수 + MSADV</li>
+<li><strong>CCW 복구</strong>: 대기 펌프 기동, 서지탱크 보충, 누설 계열 격리</li>
+<li>밀봉 LOCA 진행 시 LOCA 절차로 전환, 장기화 시 이동형 열교환기·펌프 투입(MACST)</li>
+</ul>
+</li>
+</ul>
+<p><strong>5. 라. 중대사고 시 저압이동형펌프차를 이용한 냉각전략</strong></p>
+<ul>
+<li>진입: <strong>노심출구온도 649 ℃ 이상 + EOP 노심냉각 회복 실패</strong> → 중대사고관리지침서(SAMG)[3]</li>
+<li>전제: <strong>RCS 감압 선행</strong> — POSRV 수동 개방, <strong>17.25 → 1.72 MPa(250 psia) 이하</strong>(HPME·DCH 방지, 저압 주입 가능)[3]</li>
+<li>주입처(외부주입유로 활용)
+<ul>
+<li>① <strong>SG 급수</strong>: SG 감압 후 주입 → 열제거원 확보, 전열관 덮기(크리프 파손 방지·누설 시 FP 세정)</li>
+<li>② <strong>RCS 주입</strong>: 노내 잔해 냉각 → 원자로용기 파손 지연·방지</li>
+<li>③ <strong>격납건물 주입·살수</strong>: 비상원자로건물살수보조계통(ECSBS) 살수 헤더로 외부 수원 주입 → 격납건물 감압·냉각·FP 세정, IRWST 수위 보충</li>
+<li>④ <strong>사용후핵연료저장조 보충·살수</strong></li>
+</ul>
+</li>
+<li>수원 우선순위: 원수·탈염수 → 최후 수단으로 해수</li>
+<li>부정적 영향 점검
+<ul>
+<li>RCS 주입 → 증기·수소 급증으로 격납건물 가압</li>
+<li>건조된 SG에 급수 → 열충격</li>
+<li>살수 → 증기 응축으로 수소 몰분율 상승</li>
+<li>해수 → 염 석출·붕소 희석(재임계 검토)</li>
+</ul>
+</li>
+<li>APR1400 PSA 결과에서 <strong>저압이동형펌프차를 이용한 외부주입</strong>이 개선 방안으로 반영됨[3]</li>
+</ul>
+<figure class="article-image"><img alt="압력 축(0.1~20 MPa, 로그) 위의 RCS 정상압·SCS 진입·POSRV 감압 목표·격납건물 압력과 고압이동형펌프/저압이동형펌프차의 역할, 펌프차 주입처 4곳의 전제·목적·부정적 영향" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/277440bc745ba510af50c23ed0586a456adb57ddada6e1832b44bb17a5f2bb17.webp"/><figcaption>압력 축(0.1~20 MPa, 로그) 위의 RCS 정상압·SCS 진입·POSRV 감압 목표·격납건물 압력과 고압이동형펌프/저압이동형펌프차의 역할, 펌프차 주입처 4곳의 전제·목적·부정적 영향</figcaption></figure>
+<figure class="article-image"><img alt="답안용 도식: RCS 감압(≤ 1.72 MPa) 전제 아래 저압이동형펌프차에서 SG·RCS·격납건물·저장조로 가는 네 갈래" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/80615a8fcf824a4a69e439f6e143f306263abeaf1e97a9d5b2c7816e863823a6.webp"/><figcaption>답안용 도식: RCS 감압(≤ 1.72 MPa) 전제 아래 저압이동형펌프차에서 SG·RCS·격납건물·저장조로 가는 네 갈래</figcaption></figure>
+<p><strong>6. 결론</strong></p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>잃는 것</th>
+<th>남는 열제거 경로</th>
+<th>핵심 대응</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LUHS</td>
+<td>ESW·해수 접근</td>
+<td>SG → 대기</td>
+<td>대체급수원 4종, ESW 복구</td>
+</tr>
+<tr>
+<td>ELAP</td>
+<td>모든 교류전원</td>
+<td>자연순환 + TDAFP</td>
+<td>MACST 3단계, 고압이동형펌프</td>
+</tr>
+<tr>
+<td>LOCCW</td>
+<td>CCW 2계열</td>
+<td>SG → 대기</td>
+<td>RCP 정지·밀봉주입, CCW 복구</td>
+</tr>
+<tr>
+<td>중대사고</td>
+<td>노심 냉각</td>
+<td>외부 주입</td>
+<td>감압 후 저압이동형펌프차</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>공통 원리: <strong>2차측 열제거로 시간 확보 → RCS 재고·미임계 유지 → 이동형 설비로 무기한 유지</strong></li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 세 사건은 결국 같은 곳에서 만납니다</h3>
+<p>LUHS가 길어지면 CCW 열을 버릴 곳이 없어 LOCCW와 같은 결과가 됩니다. ELAP에서는 CCW·ESW 펌프가 모두 멈추므로 LUHS와 LOCCW가 한꺼번에 옵니다. 그래서 세 사건의 대응에는 공통점이 있습니다. RCP 밀봉을 지키고, 증기발생기를 마지막 열제거 경로로 삼는 것입니다. 답안에서 이 연결을 한 줄로 짚어 주면 채점자는 사건을 따로 외운 것이 아니라 계통 의존성을 이해했다고 봅니다. CCW 부하 목록은 호기마다 다르므로 "대표 부하"로 쓰는 것이 안전합니다.</p>
+<h3>해설: LOCCW는 필수 9종이 아닙니다</h3>
+<p>다중고장 필수 9종에는 "최종열제거원 상실"은 있지만 "기기냉각수 상실"은 없습니다. WENRA의 DEC A 목록에는 기기냉각수계통 완전상실이 들어 있으므로, 국내에서는 PSA로 선정하는 추가 고려 사고의 후보로 보는 것이 맞습니다. 국내 OPR1000 대상 MELCOR 해석 연구에서는 기기냉각수 완전상실 후 중대사고에 진입한 경우, 이동형 열교환기·펌프를 약 1.5시간 안에 투입하면 원자로용기 파손을 막을 수 있다는 결과가 있습니다[8]. 이 값은 해석 예이며 APR1400 값이 아닙니다.</p>
+<h3>해설: 고압 펌프와 저압 펌프차를 가르는 것은 압력입니다</h3>
+<p>이동형 펌프는 주입 대상의 압력보다 높은 압력을 내야 물이 들어갑니다. ELAP 중 RCS는 고압이라 고압이동형펌프가 붕산수를 보충합니다. 중대사고에서는 POSRV로 RCS를 먼저 낮춘 뒤 저압이동형펌프차가 많은 유량을 넣습니다. 장비별 정격 토출압과 유량은 사업자 자료에 따라 다르므로 답안에는 수치 대신 "감압 후 주입" 원리를 씁니다. 원자로공동 충수는 APR1400에서 IRWST → HVT → 공동으로 중력 배수하는 방식(CFS)이므로, 펌프차는 공동에 직접 넣는 설비가 아니라 격납건물 주입·살수로 IRWST 수위를 채우는 수단으로 쓰는 것이 정확합니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>출제 당시(2024)</th>
+<th>현행(2026)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>사고관리 고시</td>
+<td>제2017-34호, 다중고장 9종 별표 1</td>
+<td>제2026-1호(2026.1.16). 별표 1 9종 불변, 외부재해 후 시설 상태(장기 교류전원·최종열제거원 상실)를 별표 2로 명시, 위협요인은 별표 3</td>
+</tr>
+<tr>
+<td>APR1400 사고관리계획서</td>
+<td>심사 중</td>
+<td>2025.1.9 제206회 원안위에서 새울 1·2·신한울 1·2 첫 승인</td>
+</tr>
+<tr>
+<td>미국 기준</td>
+<td>10 CFR 50.155(2019)</td>
+<td>변동 없음</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」, 원안위고시 제2026-1호(2026.1.16), 별표 1·별표 2. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50, §50.2 "Definitions"(Station blackout), §50.155 "Mitigation of beyond-design-basis events"(2019), (b)(1).</li>
+<li>원자력안전위원회, 제206회 원자력안전위원회 회의 의안 제2호(2025.1.9), 새울 1·2호기·신한울 1·2호기 사고관리계획서 심사 결과. nssc.go.kr 공개 회의자료.</li>
+<li>MDEP, "APR1400 Design Description and Comparison of Design Differences", Technical Report TR-APR1400-01.</li>
+<li>Nuclear Energy Institute, NEI 12-06 "Diverse and Flexible Coping Strategies (FLEX) Implementation Guide".</li>
+<li>U.S. NRC, Regulatory Guide 1.155 "Station Blackout"(1988).</li>
+<li>KHNP, APR1400 Design Certification, Response to RAI 19-86, NRC ADAMS ML16211A392.</li>
+<li>이형호, MACST 민감도 분석에 관한 석사학위논문, 한양대학교(2022), DBpia 공개 초록.</li>
+</ol>

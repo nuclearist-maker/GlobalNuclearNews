@@ -1,0 +1,133 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2023년 원자력발전기술사 필기 2교시 4번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>원자로 냉각방식 중 하나인 자연순환냉각에 대해 다음을 기술하시오.
+가. 자연순환냉각의 발생 조건
+나. 자연순환냉각의 구동력 발생 원리 (수식 포함)</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>펌프 없이 냉각재가 도는 이유를 "조건"과 "힘"으로 나누어 설명할 수 있는지 봅니다. 가에서는 열원·열침원·높이 관계·유로 상태·재고량을 빠짐없이 짚어야 하고, 나에서는 "뜨거운 물은 가볍다"는 말에서 멈추지 않고 루프 정수압 적분으로 구동압 식을 세운 뒤 두 기둥 근사와 마찰 균형까지 이어 가야 수식 배점을 받습니다. 조건 하나하나가 식의 어느 항을 살리는지 연결해 쓰면 두 소문항이 한 흐름이 됩니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 자연순환의 정의, PWR에서 필요한 상황(RCP 정지·전원 상실)</li>
+<li>본론 가: 발생 조건 5가지(열원·열침원, 열침원이 위, 연속 유로, 재고량·과냉각, 저항과 균형)</li>
+<li>본론 나: 폐루프 운동량 적분 → ρ–z 선도 넓이 → 두 기둥 근사 → 수치 예 → 마찰 균형과 유량 관계</li>
+<li>본론 보충: 재고량 감소 시 이상 자연순환·리플럭스 응축</li>
+<li>결론: 운전 중 자연순환 확인 지시값, 규제 근거</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li><strong>자연순환냉각</strong>: 외부 동력 없이 <strong>열원(노심)과 열침원(SG) 사이 냉각재 밀도차가 중력장에서 만드는 부력</strong>으로 폐루프가 순환하며 열을 나르는 냉각 방식</li>
+<li>PWR: RCP 정지(소외전원상실·발전소 정전 등) 후 붕괴열 제거 수단. 붕괴열은 정격의 수 % 이하라 작은 유량으로도 제거 가능함</li>
+<li>일부 신형로·SMR은 정상운전 냉각 자체를 자연순환으로 설계함</li>
+</ul>
+<p><strong>2. 가. 자연순환냉각의 발생 조건</strong></p>
+<ul>
+<li>① <strong>열원과 열침원이 동시에 존재</strong>
+<ul>
+<li>노심 붕괴열(가열) + SG 2차측 열제거(보조급수로 수위 유지, 주증기 대기방출밸브·증기덤프로 증기 방출)</li>
+<li>열침원을 잃으면 루프 온도가 같아져 밀도차가 사라짐 → 구동력 소멸</li>
+</ul>
+</li>
+<li>② <strong>열침원이 열원보다 높을 것(ΔH &gt; 0)</strong>
+<ul>
+<li>SG 열중심이 노심 열중심보다 높아야 정방향 구동력이 생김</li>
+<li>열중심 z = ∫z dQ / ∫dQ(열 가중 평균 높이). 같은 높이면 온도차가 있어도 구동력 0</li>
+</ul>
+</li>
+<li>③ <strong>폐루프 유로가 연속일 것(단상 순환 기준)</strong>
+<ul>
+<li>단상 순환은 루프가 액체로 차 있어야 함. 고온관 정상부·SG U-관 상단에 증기 공극이나 비응축성 기체(용존 수소, SIT 질소 등)가 쌓이면 유로가 끊김</li>
+</ul>
+</li>
+<li>④ <strong>충분한 재고량과 과냉각(단상 순환 기준)</strong>
+<ul>
+<li>가압기 압력 유지로 과냉각여유도 확보 → 노심 출구에서 비등·공극 생성 억제</li>
+<li>재고량이 줄면 순환 모드가 단상 → 이상 → 리플럭스로 바뀜(4항)</li>
+</ul>
+</li>
+<li>⑤ <strong>유동 저항보다 구동력이 커 균형점이 존재할 것</strong>
+<ul>
+<li>정지한 RCP 임펠러·노심·SG 관이 저항. 구동력(수 kPa)과 마찰(∝ ṁ²)이 같아지는 유량에서 정상상태</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="답안용 폐루프 도식: 노심(열원)·SG(열침원)·ΔH와 조건 ①~④ 위치" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/bf0c249ff060ecd8aa0dc95b3abafecace383dfe1efec21518a50d8ecc4c73ed.webp"/><figcaption>답안용 폐루프 도식: 노심(열원)·SG(열침원)·ΔH와 조건 ①~④ 위치</figcaption></figure>
+<p><strong>3. 나. 구동력 발생 원리 (수식)</strong></p>
+<ul>
+<li><strong>폐루프 운동량 적분</strong>(정상, 1차원, 흐름 방향으로 한 바퀴): ∮dP = 0 이므로
+<ul>
+<li>0 = −g∮ρ dz − ΔP마찰 − ΔP국부 → <strong>ΔP구동 = −g∮ρ dz</strong></li>
+<li>의미: 상승측(가벼움)과 하강측(무거움)의 정수압 차. 수평 배관은 dz = 0이라 기여 없음</li>
+<li>ρ–z 선도에서 상승측·하강측이 그리는 폐곡선의 넓이 A = −∮ρ dz = ∫[ρ하강(z) − ρ상승(z)]dz → <strong>구동압 = g·A</strong>(넓이는 구동압/g)</li>
+</ul>
+</li>
+<li><strong>두 기둥 근사</strong>: <strong>ΔP구동 = (ρc − ρh)·g·ΔH</strong> [1]
+<ul>
+<li>ρc: 하강측(SG 출구 → 저온관 → 강수부) 대표밀도(저온), ρh: 상승측(노심 출구 → SG 입구) 대표밀도(고온)</li>
+<li>ΔH: SG 열중심과 노심 열중심의 고도차. 밀도를 열량에 선형으로 보는 일정 물성 가정이면 폐곡선 넓이 = Δρ·ΔH</li>
+</ul>
+</li>
+<li><strong>밀도차와 온도차</strong>: ρc − ρh ≈ ρ·β·ΔT (β: 체적팽창계수, 15.5 MPa·295 °C에서 약 2.7×10⁻³ /K)[2]</li>
+<li><strong>수치 예</strong>(가정, 15.5 MPa): Tc 285 °C → ρc 755.4 kg/m³, Th 300 °C → ρh 726.5 kg/m³, ΔH 9.0 m
+<ul>
+<li>ΔP = 28.9 kg/m³ × 9.81 m/s² × 9.0 m = 2,552 Pa ≈ <strong>2.55 kPa</strong> → 정격 운전 루프 압력손실(수백 kPa 수준)의 1 % 미만이므로 유량은 정격의 수 %</li>
+</ul>
+</li>
+<li><strong>마찰과 균형 → 유량 관계</strong>
+<ul>
+<li>운동량: (ρc − ρh)gΔH = R·ṁ²/ρ, R = Σ(K + fL/D)/(2A²) (난류)</li>
+<li>에너지: Q = ṁ·cp·ΔT</li>
+<li>연립 → <strong>ṁ³ = ρ²βgΔH·Q / (cp·R)</strong> → ṁ ∝ (Q·ΔH)^1/3·R^−1/3, ΔT ∝ Q^2/3·ΔH^−1/3 (층류면 지수 1/2)[1]</li>
+</ul>
+</li>
+<li><strong>자기조절</strong>: 유량이 줄면 ΔT↑ → 밀도차↑ → 구동력↑ → 유량 회복 → 안정 균형점</li>
+</ul>
+<figure class="article-image"><img alt="ρ–z 선도의 폐곡선 넓이 A = −∮ρ dz ≈ 260 kg/m², 구동압 g·A ≈ 2.55 kPa, 높이별 밀도 폭 누적식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/3c097d49bc637c75597a6c7c57fa793007df0015a423812b5bd8fc7c69a18e77.webp"/><figcaption>ρ–z 선도의 폐곡선 넓이 A = −∮ρ dz ≈ 260 kg/m², 구동압 g·A ≈ 2.55 kPa, 높이별 밀도 폭 누적식</figcaption></figure>
+<p><strong>4. 다. 재고량 감소 시 순환 모드(보충)</strong></p>
+<ul>
+<li><strong>단상 자연순환</strong>: 과냉각 유지, 위 식이 성립하는 범위</li>
+<li><strong>이상 자연순환</strong>: 상승측에 기포 → ρh 급감 → 구동력 크게 증가. 이상 마찰 증배도 커서 재고량에 따라 유량이 피크를 보임</li>
+<li><strong>리플럭스 응축</strong>: 재고량이 더 줄면 연속 액체 순환이 끊기고, 노심 증기가 U-관에서 응축해 고온관을 거꾸로 흘러 돌아옴. 순루프 유량은 거의 0이어도 증기 응축으로 열은 계속 빠짐. 대향류 제한(CCFL)·비응축성 기체가 제약</li>
+<li>예: Semiscale S-NC-2 실험에서 재고량 93.1 %에서 유량이 단상의 약 2.1배로 피크, 66.3 % 이하에서 루프 유량 0(장치 고유값, 재고량은 RELAP5 매뉴얼 정의 기준)[3]</li>
+</ul>
+<figure class="article-image"><img alt="답안용: 재고량 감소에 따른 단상·이상·리플럭스 모드(개념적 추세)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/ae3afb27c7da6533f27e70a26be0f23ebec53da339da89aa997c8e1c779f82dc.webp"/><figcaption>답안용: 재고량 감소에 따른 단상·이상·리플럭스 모드(개념적 추세)</figcaption></figure>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>자연순환 = <strong>열원 아래·열침원 위 + 연속 유로 + 과냉각</strong> 조건에서 <strong>ΔP = −g∮ρ dz ≈ (ρc − ρh)gΔH</strong>가 마찰과 균형하는 현상</li>
+<li>운전 중 확인(원리상 감시 지표): 과냉각여유도 유지, SG 압력 안정·감소(열침원 작동), 고온관 온도·노심출구온도(CET) 안정·감소, 저온관 온도 ≈ SG 압력의 포화온도, 노심 ΔT가 전출력 ΔT보다 작음 — 판정 방법·수치는 발전소 비상운전절차서에 따름[6]</li>
+<li>설계 근거: 기술기준규칙 제29조(잔열제거설비)[4], 10 CFR 50 부록 A GDC 34[5]</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 왜 "넓이"로 설명하나</h3>
+<p>두 기둥 식만 쓰면 높이 ΔH를 어디서 어디까지 재야 하는지가 모호해집니다. 루프를 따라 밀도를 가로축, 높이를 세로축으로 찍으면 상승측과 하강측이 서로 다른 선을 그리며 닫힌 도형이 생깁니다. 같은 높이에서 두 선 사이의 가로 폭이 ρ하강(z) − ρ상승(z)이고, 이 폭을 높이 방향으로 쌓은 넓이가 구동압을 g로 나눈 값입니다. 흐름 방향으로 돌면 경로가 시계방향이라 ∮ρ dz 자체는 음수이며, 그래서 식에 음의 부호가 붙습니다. 가열이 노심 전체에 cosine 모양으로 퍼져 있어도, SG 냉각이 관판 근처에 몰려 있어도 넓이는 그대로 계산되며, 그 넓이를 Δρ로 나눈 값이 열중심 사이 고도차입니다. 그래서 "열중심"은 외울 정의가 아니라 넓이를 같은 넓이의 사각형으로 바꿨을 때의 높이라고 이해하면 됩니다. 이상화 모델에서 냉각부의 유효 열중심을 노심 열중심 높이까지 내리면 순넓이가 0이 되어, 온도차가 있어도 순구동압이 사라집니다.</p>
+<h3>해설: 채점 포인트와 흔한 실수</h3>
+<ul>
+<li><strong>조건에서 높이를 빠뜨리기</strong>: "온도차가 있으면 자연순환"은 감점입니다. 열침원이 위에 있어야 한다는 조건을 반드시 씁니다.</li>
+<li><strong>수식 없이 서술만</strong>: 나는 수식 포함 문항입니다. 적분식 → 두 기둥 식 → 균형식 순서로 최소 세 줄을 씁니다.</li>
+<li><strong>ΔH를 기기 높이로 쓰기</strong>: 노심 바닥과 SG 꼭대기 차이가 아니라 열중심 사이 고도차입니다.</li>
+<li><strong>이상 상태는 항상 유리하다고 쓰기</strong>: 유량은 피크 뒤 감소하고, 리플럭스에서는 CCFL·비응축성 기체가 문제입니다.</li>
+</ul>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li>자연순환의 물리와 운전 확인 기준은 출제 이후 바뀌지 않았습니다.</li>
+<li>「원자로시설 등의 기술기준에 관한 규칙」은 2026년에 원안위규칙 제36호(2026.1.20)·제37호(2026.3.30)로 개정됐지만, 잔열제거설비는 현행 제37호에서도 제29조입니다[4].</li>
+<li>사고관리 고시는 제2017-34호에서 현행 원안위고시 제2026-1호(2026.1.16)로 바뀌었습니다[9]. 위협요인 표가 별표 2에서 별표 3으로 옮겨졌고, 별표 1 다중고장 9종은 그대로입니다. 장기 교류전원 상실 대처에서 자연순환과 SG 열제거가 핵심 경로라는 점도 같습니다.</li>
+<li>미국의 BTP 5-4(냉각정지 설계·자연순환 시험)[7], RG 1.68(초기 시험 프로그램)[8], GL 81-21(자연순환 냉각 절차·훈련)[6]도 그대로 유효합니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>N. E. Todreas, M. S. Kazimi, Nuclear Systems I: Thermal Hydraulic Fundamentals, 2nd ed., CRC Press, 자연순환 장.</li>
+<li>IAPWS, Revised Release on the IAPWS Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam (IAPWS-IF97), 2007.</li>
+<li>A. Prošek, B. Končar, "TRACE simulation of Semiscale S-NC-2 and S-NC-3 tests", Proc. 30th Int. Conf. Nuclear Energy for New Europe (NENE 2021), Paper 609, Table 1. https://www.djs.si/nene2021/proceedings/pdf/NENE2021_609.pdf</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제29조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A "General Design Criteria for Nuclear Power Plants". GDC 34.</li>
+<li>U.S. NRC, Generic Letter 81-21 "Natural Circulation Cooldown" (1981).</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan, BTP 5-4 "Design Requirements of the Residual Heat Removal System".</li>
+<li>U.S. NRC, Regulatory Guide 1.68 "Initial Test Programs for Water-Cooled Nuclear Power Plants".</li>
+<li>원자력안전위원회 고시 제2026-1호(사고관리 관련 고시, 2026.1.16). 국가법령정보센터.</li>
+</ol>

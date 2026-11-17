@@ -1,0 +1,127 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2020년 원자력발전기술사 필기 3교시 1번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>가압경수로에서 출력계수(Power coefficient)가 감속재 온도계수(MTC)와 핵연료 온도계수(FTC)로만 표현된다고 할 때, 다음 정보를 이용하여 출력계수(pcm/%power)를 계산하시오.</p>
+<ul>
+<li>MTC = −10 pcm/K</li>
+<li>ITC (Isothermal temperature coefficient) = −12 pcm/K</li>
+<li>출력에 따른 감속재 온도 변화 = 2 K/%power</li>
+<li>출력에 따른 핵연료 온도 변화 = 10 K/%power</li>
+</ul>
+</blockquote>
+<h2>출제 의도</h2>
+<p>주어진 계수는 MTC와 ITC뿐이고 FTC는 빠져 있습니다. 수험자가 등온온도계수의 정의에서 FTC를 끌어낼 수 있는지가 첫 관문입니다. 두 번째는 "온도계수"와 "출력계수"의 차원 차이를 알고, 출력 1 %당 각 온도가 얼마나 변하는지를 가중치로 써서 합하는지입니다. 계산 자체는 몇 줄이면 끝나므로, 배점의 상당 부분은 검산, 결과의 부호가 뜻하는 궤환 특성, 문제 수치와 실제 노심 값의 차이를 짚는 데 있습니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 가정(기포·압력 효과 제외), 주어진 값과 단위</li>
+<li>본론 1: 등온 조건에서 FTC 분리</li>
+<li>본론 2: 출력계수 식과 대입, 차원 확인</li>
+<li>본론 3: 두 가지 검산과 출력결손 환산</li>
+<li>결론: 음의 출력계수의 운전·안전상 의미, 규제 근거, 문제 수치의 현실성</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 문제 해석</strong></p>
+<ul>
+<li>출력계수는 문제 조건대로 <strong>감속재 온도 효과 + 연료 온도(도플러) 효과</strong>만으로 구성함 → 기포계수·압력계수 기여는 0으로 둠</li>
+<li>계수는 운전 범위에서 <strong>일정</strong>하다고 가정함(출력결손 환산에도 같은 가정 적용)</li>
+<li>온도 "차이"를 다루므로 K와 °C의 크기는 같음</li>
+<li>1 pcm = 10⁻⁵ Δk/k, %power = 정격 열출력 대비 백분율</li>
+</ul>
+<p><strong>2. FTC 분리 — 등온온도계수 정의</strong></p>
+<ul>
+<li><strong>ITC</strong>: 연료와 감속재가 <strong>똑같은 온도 변화</strong>를 겪을 때의 반응도 변화율 [4]</li>
+<li>두 효과가 같은 ΔT에 걸리므로 단순 합이 성립함: <strong>ITC = MTC + FTC</strong></li>
+<li><strong>FTC = ITC − MTC = (−12) − (−10) = −2 pcm/K</strong></li>
+<li>부호 점검: 도플러 효과(U-238 공명 흡수 봉우리의 확장)는 연료 온도 상승 시 언제나 흡수를 늘림 → FTC &lt; 0이어야 함 → <strong>−2 pcm/K 타당</strong></li>
+</ul>
+<p><strong>3. 출력계수 계산</strong></p>
+<ul>
+<li>출력이 1 % 오를 때 감속재와 연료의 온도 상승폭이 다름(2 K vs 10 K) → 계수를 그냥 더하면 안 되고 <strong>출력당 온도 변화로 가중</strong>해야 함</li>
+<li><strong>α_P = dρ/dP = MTC·(dT_M/dP) + FTC·(dT_F/dP)</strong> [3]</li>
+<li>감속재 기여 = (−10 pcm/K)(2 K/%) = <strong>−20 pcm/%</strong></li>
+<li>연료 기여 = (−2 pcm/K)(10 K/%) = <strong>−20 pcm/%</strong></li>
+<li><strong>α_P = −20 + (−20) = −40 pcm/%power</strong> (−4.0 × 10⁻⁴ Δk/k per %power)</li>
+<li>차원: (pcm/K) × (K/%power) = pcm/%power ✓</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 출력 +1 %p → 감속재 +2 K × MTC(−10) = −20, 연료 +10 K × FTC(−2) = −20 → α_P = −40 pcm/%" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/f19c225b32a87f39399fa2dd64d82baf65803155d87c557444a9be031dfa2388.webp"/><figcaption>답안용 도식: 출력 +1 %p → 감속재 +2 K × MTC(−10) = −20, 연료 +10 K × FTC(−2) = −20 → α_P = −40 pcm/%</figcaption></figure>
+<p><strong>4. 검산과 출력결손</strong></p>
+<ul>
+<li>검산 ①(ITC 기준 재배열): α_P = ITC·dT_M/dP + FTC·(dT_F/dP − dT_M/dP) = (−12)(2) + (−2)(8) = −24 − 16 = <strong>−40</strong> ✓
+<ul>
+<li>의미: 두 온도가 2 K씩 함께 오르는 부분(−24)과 연료만 8 K 더 오르는 부분(−16)</li>
+</ul>
+</li>
+<li>검산 ②(MTC 기준 재배열): ITC·dT_F/dP − MTC·(dT_F/dP − dT_M/dP) = −120 + 80 = <strong>−40</strong> ✓</li>
+<li>기여 비율: 감속재 50 % : 연료 50 %</li>
+<li>출력결손(계수·온도변화율을 0 → 100 % 전 구간에 일정하게 외삽): 고온영출력 기준 온도 궤환 기여분 Δρ = −40 × 100 = <strong>−4,000 pcm</strong> → 출력을 올리려면 이만큼의 양의 반응도(제어봉 인출·붕소 희석)를 넣어 주어야 함</li>
+</ul>
+<figure class="article-image"><img alt="계수 일정 외삽 시 반응도 변화 직선(감속재·연료 각 −2,000, 합계 −4,000 pcm), FTC 도출·출력계수·검산 카드, 조건이 다른 설명용 예시 참고 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/aea8726f0bea07dc12f3f0d5e99bcde92144a3c4ac67d51ef3d20ba0bdc5daaa.webp"/><figcaption>계수 일정 외삽 시 반응도 변화 직선(감속재·연료 각 −2,000, 합계 −4,000 pcm), FTC 도출·출력계수·검산 카드, 조건이 다른 설명용 예시 참고 카드</figcaption></figure>
+<p><strong>5. 결과 해석</strong></p>
+<ul>
+<li><strong>α_P &lt; 0</strong>: 출력 상승 → 반응도 감소 → 상승 억제, 출력 하강 → 반응도 회복 → 하강 억제 → <strong>자기제어(음의 궤환)</strong></li>
+<li><strong>응답 시간 차이</strong>: 연료 온도는 핵분열 열 발생과 거의 동시에 변하므로 FTC는 <strong>즉발 궤환</strong>, 감속재는 연료 → 피복관 → 냉각재로 열이 전달된 뒤 변하므로 수 초 지연된 궤환임 → 반응도 삽입 과도 초기의 출력 억제는 도플러가 담당함</li>
+<li>규제 근거: 10 CFR 50 부록 A <strong>GDC 11</strong>(원자로 고유보호) [1], 「원자로시설 등의 기술기준에 관한 규칙」 <strong>제18조</strong>(원자로의 고유보호) [2]</li>
+<li>운영 관리: 출력계수 자체의 운영기술지침서 제한은 없고, <strong>MTC 상·하한(LCO 3.1.3, 수치는 COLR)</strong>으로 관리함 [5]</li>
+</ul>
+<p><strong>6. 결론</strong></p>
+<ul>
+<li><strong>FTC = −2 pcm/K, 출력계수 α_P = −40 pcm/%power</strong>(감속재 −20, 연료 −20)</li>
+<li>음의 출력계수로 출력 운전 영역의 자기제어성 확보</li>
+<li>−4,000 pcm는 계수 일정 외삽값이며, 공개 예시(NRC HRTD)의 전출력 출력결손보다 큰 문제용 수치임(아래 해설)</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 정의 하나를 헷갈리면 답이 이렇게 달라집니다</h3>
+<table>
+<thead>
+<tr>
+<th>잘못 적용한 식</th>
+<th>계산</th>
+<th>결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ITC를 FTC 자리에 대입</td>
+<td>(−10)(2) + (−12)(10)</td>
+<td>−140 pcm/%</td>
+</tr>
+<tr>
+<td>FTC = ITC + MTC</td>
+<td>(−10)(2) + (−22)(10)</td>
+<td>−240 pcm/%</td>
+</tr>
+<tr>
+<td>FTC = MTC − ITC</td>
+<td>(−10)(2) + (+2)(10)</td>
+<td>0 pcm/%</td>
+</tr>
+<tr>
+<td>ITC × (2 + 10)</td>
+<td>(−12)(12)</td>
+<td>−144 pcm/%</td>
+</tr>
+<tr>
+<td>출력계수 = MTC + FTC</td>
+<td>−10 + (−2)</td>
+<td>−12 pcm/K</td>
+</tr>
+</tbody>
+</table>
+<p>마지막 줄은 단위가 pcm/K로 남는 순간 틀렸다는 것이 드러납니다. 그 값은 다름 아닌 ITC입니다. 세 번째 줄처럼 FTC가 양수로 나오면 도플러 효과의 부호와 모순되므로, FTC를 구한 직후 부호를 한 번 확인하는 것만으로 걸러집니다. 네 번째 줄은 두 온도가 서로 다른 폭으로 오른다는 점을 무시하고 등온 조건을 출력 변화에 그대로 적용한 경우입니다.</p>
+<h3>해설: 문제 수치는 실제 노심과 얼마나 다른가</h3>
+<p>계수 자체는 현실적인 편입니다. FTC −2 pcm/K는 약 −1.1 pcm/°F로, 대형 PWR의 도플러 계수 대표값(−1 ~ −2 pcm/°F) 범위에 들어갑니다 [3]. MTC −10 pcm/K(약 −5.6 pcm/°F)도 주기 중간쯤의 음의 MTC로 무리가 없습니다.</p>
+<p>차이는 출력당 온도 변화에서 생깁니다. 연료 10 K/%는 전출력까지 평균 연료 온도가 1,000 K 오른다는 뜻인데, NRC가 공개한 웨스팅하우스형 기술 매뉴얼(HRTD) 예시의 평균 연료 온도 상승은 약 1,000 °F(약 555 K)라 [3] 두 배 가까이 큽니다. 감속재 2 K/%는 더 과장돼 있습니다. 가변 평균온도(Tavg) 운전에서 무부하 → 전부하 상승폭은 15~20 K 안팎이므로 실제 기울기는 0.2 K/% 정도입니다. 그 결과 −40 pcm/%와 외삽 출력결손 −4,000 pcm는 NRC 교육 과정용 웨스팅하우스 기술 매뉴얼(HRTD) 2.1절에서 읽은 예시값(주기초 약 −12 pcm/%·−1,200 pcm, 주기말 약 −21 pcm/%·−2,100 pcm, 출력결손은 반응도 기준 음수로 표기) [3]의 약 1.9~3.3배입니다. 다만 이 예시는 계수 일정 외삽이 아닌 실제 노심 조건의 값이라 조건이 다르고, 호기·주기마다 달라지므로 크기 비교의 참고로만 봐야 합니다. 답안 결론에 "계수 일정 가정의 문제용 수치"라는 한 줄을 붙이면 실무 감각을 보여 줄 수 있습니다.</p>
+<p>실제 노심에서는 계수도 일정하지 않습니다. 출력이 오르면 연료–피복관 간극이 닫혀 연료 온도 상승폭이 줄어들고, 주기말로 갈수록 붕소가 희석돼 MTC가 크게 음으로 바뀝니다. 그래서 출력결손 곡선은 직선이 아니라 출력과 연소 시점에 따라 기울기가 변하는 곡선이 됩니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>계산 원리는 출제 당시와 같습니다. 고유보호 요건은 10 CFR 50 부록 A GDC 11과 현행 「원자로시설 등의 기술기준에 관한 규칙」(원안위규칙 제37호, 2026.3.30) 제18조로 유지되고 있습니다 [1][2]. 미국 표준기술지침서(STS)는 출제 당시 NUREG-1431 Rev.4(2012)에서 Rev.5(2021.9 발행)로 바뀌었지만, MTC를 LCO 3.1.3에서 관리하고 한계값을 노심운전제한보고서(COLR)에 두는 구조는 그대로입니다 [5]. 출력계수 자체에 대한 별도 제한치가 새로 생기지는 않았습니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, "General Design Criteria for Nuclear Power Plants", Criterion 11 "Reactor inherent protection".</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제18조(원자로의 고유보호). 국가법령정보센터.</li>
+<li>U.S. NRC HRTD, Westinghouse Technology Systems Manual, Section 2.1 "Reactor Physics Review" (Rev 1208), NRC ADAMS ML11223A207 — 2.1.6.5 출력계수·출력결손 예시.</li>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 7장(반응도 온도계수).</li>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications — Westinghouse Plants, Rev. 5 (2021), LCO 3.1.3 "Moderator Temperature Coefficient (MTC)".</li>
+</ol>

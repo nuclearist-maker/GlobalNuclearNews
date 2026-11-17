@@ -1,0 +1,85 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2023년 원자력발전기술사 필기 1교시 8번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>조사선량, 흡수선량, 등가선량, 유효선량, 집단선량</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>물리량과 방호량</strong>: 조사선량·흡수선량은 측정 가능한 물리량이고, 등가·유효·집단선량은 방호 목적으로 가중한 방호량입니다.</li>
+<li><strong>방사선가중치 wR</strong>: 방사선 종류·에너지에 따른 생물학적 효과 차이를 반영하는 계수입니다.</li>
+<li><strong>조직가중치 wT</strong>: 조직별 확률적 영향 위험의 상대 기여로, 모든 조직의 합이 1입니다.</li>
+<li><strong>고시 제2026-12호 제2조</strong>: 다섯 선량의 국내 법정 정의가 3~7호에 있습니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 정의와 단위</strong> (원안위고시 제2026-12호 「방사선방호 등에 관한 기준」 제2조 3~7호[1])</p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>정의</th>
+<th>식·단위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>조사선량</td>
+<td>X선·감마선이 <strong>공기</strong> 단위 질량당 만든 전하량</td>
+<td>X = dQ/dm, <strong>C/kg</strong>, 1 R = 2.58×10⁻⁴ C/kg</td>
+</tr>
+<tr>
+<td>흡수선량</td>
+<td><strong>물질</strong> 단위 질량당 흡수된 방사선 에너지</td>
+<td>D = dε/dm, <strong>Gy</strong> = J/kg</td>
+</tr>
+<tr>
+<td>등가선량</td>
+<td>조직 평균 흡수선량 × 방사선가중치</td>
+<td>H_T = Σ wR·D_T,R, <strong>Sv</strong></td>
+</tr>
+<tr>
+<td>유효선량</td>
+<td>조직별 등가선량 × 조직가중치의 전 조직 합</td>
+<td>E = Σ wT·H_T, ΣwT = 1, <strong>Sv</strong></td>
+</tr>
+<tr>
+<td>집단선량</td>
+<td>피폭 집단의 개인 피폭선량 총합</td>
+<td>S = Σ Eⱼ (= Σ Ēᵢ·Nᵢ), <strong>man·Sv</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>2. 특징과 관계</strong></p>
+<ul>
+<li>조사선량: <strong>광자·공기에만</strong> 정의 → 하전입자평형에서 공기 흡수선량 1 R × 33.97 J/C ≈ <strong>8.76 mGy</strong>[5](조직 흡수선량 환산은 별도)</li>
+<li>흡수선량: 모든 방사선·물질에 적용, 결정적 영향(조직 반응) 평가의 기준량</li>
+<li>등가선량: 국내 wR(별표 1) <strong>광자·전자 1, 양성자 5(2 MeV 초과), 알파 20, 중성자 에너지별 5~20</strong>[1][3] → 수정체·피부 한도에 사용</li>
+<li>유효선량: 국내 wT(별표 2) <strong>생식선 0.20, 골수·대장·폐·위 0.12</strong> 등 → 확률적 영향 관리, 선량한도(종사자 연 50·5년 100 mSv, 일반인 연 1 mSv)[2]</li>
+<li>집단선량: 작업·시설 단위 <strong>최적화(ALARA) 지표</strong>(예: 계획예방정비 호기당 집단선량)</li>
+<li>등가·유효선량은 인체 내부 양이라 <strong>직접 측정 불가</strong> → 외부피폭은 실용량 H*(10)·Hp(10), 내부피폭은 섭취량·체내동태 모델·선량계수로 평가함</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 조사선량 → 흡수선량 → ×wR 등가선량 → ×wT 유효선량 → ×N 집단선량, 단위와 물리량/방호량 구분" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/56f5183a00b86ae6b9ad5ef17717c0a006e7e2d12af8d25981b0c7c7abdbf8f2.webp"/><figcaption>답안용 도식: 조사선량 → 흡수선량 → ×wR 등가선량 → ×wT 유효선량 → ×N 집단선량, 단위와 물리량/방호량 구분</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="다섯 선량의 계단식 관계(식·단위·가중치), 조사선량 → 공기 흡수선량 환산, 폐 알파 피폭 계산 예(0.10 mGy → 2.0 mSv → 폐 기여 0.24 mSv → 1,000명 0.24 man·Sv)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/74916b6da35c144f5f933102756b66c18df7d7be8d15c4c262f8cd3e4ecf1ef3.webp"/><figcaption>다섯 선량의 계단식 관계(식·단위·가중치), 조사선량 → 공기 흡수선량 환산, 폐 알파 피폭 계산 예(0.10 mGy → 2.0 mSv → 폐 기여 0.24 mSv → 1,000명 0.24 man·Sv)</figcaption></figure>
+<p>다섯 양은 계단처럼 이어지지만, 첫 계단은 성격이 다릅니다. 조사선량은 광자가 공기를 전리시킨 전하로, 하전입자평형에서 공기 흡수선량으로만 바로 환산됩니다. 조직의 흡수선량은 에너지·물질·조사 조건을 따져 따로 구합니다. 그다음부터는 조직 평균 흡수선량에서 출발합니다. 같은 흡수선량이라도 알파선은 감마선보다 생물학적 효과가 크므로 wR을 곱해 등가선량을 만듭니다. 조직마다 암 위험 기여가 다르므로 wT를 곱해 전신 하나의 값, 즉 유효선량으로 합칩니다. 마지막으로 사람 수를 곱해 더하면 집단선량입니다.</p>
+<p>계산 예로 보면 차이가 분명합니다(설명용 가정). 알파 방출 에어로졸을 흡입해 폐 평균 흡수선량(예탁 기간 적산)이 0.10 mGy라면 등가선량은 20 × 0.10 = 2.0 mSv입니다. 폐의 wT 0.12를 곱하면 유효선량에 대한 폐의 기여는 0.24 mSv입니다(다른 조직 기여는 무시). 같은 피폭을 작업자 1,000명이 받았다면 집단선량은 0.24 man·Sv가 됩니다.</p>
+<p>답안에서 놓치기 쉬운 점은 기준 권고입니다. 국내 고시 별표 1·2는 아직 ICRP 60(1990) 값입니다. ICRP 103(2007)은 양성자 wR을 2로, 생식선 wT를 0.08로, 유방 wT를 0.12로 바꿨고 중성자 wR을 연속함수로 정했습니다[4]. 국내 기준으로 쓰고 ICRP 103 값을 병기하는 구성이 안전합니다. 출제 이후 고시는 제2026-12호로 바뀌었지만, 이 다섯 정의와 별표 값은 그대로입니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>조사선량의 적용 범위</strong>: 광자·공기에만 정의된다는 한 줄이 핵심입니다.</li>
+<li><strong>Gy와 Sv 혼용</strong>: 물리량(Gy)과 방호량(Sv)을 구분해야 합니다. wR = 1이면 조직 평균 흡수선량과 등가선량의 수치가 같고, 전신 균일 피폭이면 유효선량까지 같은 수치가 됩니다.</li>
+<li><strong>가중치 값의 기준 혼동</strong>: 국내 별표(ICRP 60)와 ICRP 103 값을 섞어 쓰지 않습니다.</li>
+<li><strong>유효선량의 오용</strong>: 개인 위험 평가나 결정적 영향에는 쓰지 않습니다.</li>
+<li><strong>집단선량의 오용</strong>: ICRP 103은 극저선량·대규모 인구의 암 사망자 수 추산에 집단선량을 쓰지 않도록 권고합니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「방사선방호 등에 관한 기준」, 원안위고시 제2026-12호(2026.7.9 시행), 제2조, 별표 1·2. 국가법령정보센터.</li>
+<li>「원자력안전법 시행령」 별표 1(선량한도). 국가법령정보센터.</li>
+<li>ICRP, 1990 Recommendations of the International Commission on Radiological Protection, ICRP Publication 60, Ann. ICRP 21(1-3) (1991).</li>
+<li>ICRP, The 2007 Recommendations of the International Commission on Radiological Protection, ICRP Publication 103, Ann. ICRP 37(2-4) (2007).</li>
+<li>F. H. Attix, Introduction to Radiological Physics and Radiation Dosimetry, Wiley (1986), 조사선량과 W/e(33.97 J/C).</li>
+</ol>

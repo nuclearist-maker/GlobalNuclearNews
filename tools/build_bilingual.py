@@ -58,11 +58,12 @@ def switch(text,rel,language):
     for tag in head.select('link[rel=stylesheet]'):
         if tag.get('href')==PREFIX+'assets/languages.css':tag.decompose()
     head.append(soup.new_tag('link',rel='stylesheet',href=PREFIX+'assets/languages.css'))
-    for lang,url in [('en',en),('ko',ko),('x-default',en)]:head.append(soup.new_tag('link',rel='alternate',hreflang=lang,href=url))
+    for lang,url in [('en',en),('ko',ko),('x-default',ko)]:head.append(soup.new_tag('link',rel='alternate',hreflang=lang,href=url))
     nav=soup.new_tag('nav',attrs={'class':'language-switch','aria-label':'언어 선택' if language=='ko' else 'Language selection'})
-    for lang,label,url in [('en','EN',en),('ko','KR',ko)]:
+    for lang,label,url in [('en','EN',en),('ko','KOR',ko)]:
         current=('ko/' if language=='ko' else '')+rel
         target=('ko/'+rel) if lang=='ko' else rel
+        if lang=='en' and rel=='index.html':target+='?lang=en'
         a=soup.new_tag('a',href=posixpath.relpath(target,posixpath.dirname(current) or '.'),lang=lang,hreflang=lang);a['aria-label']='한국어' if lang=='ko' else 'English'
         if lang==language:a['aria-current']='true'
         a.string=label;nav.append(a)

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "rules": {
+    "PE-01": "Import final manuscripts and referenced assets only; reject private paths and placeholders",
+    "PE-02": "Unique safe IDs and matching portable body/asset hashes",
+    "PE-03": "Korean-only board without fabricated English counterparts; preserve paired editions",
+    "PE-04": "Dynamic years, searchable static lists, session/question ordering and annual summaries",
+    "PE-05": "Exact new-post scope and declared revisions; independent review before publication",
+    "PE-06": "Korean default entry and explicit English home opt-in without redirect loops"
+  },
+  "checks": ["check_pe.py", "check_bilingual.py", "check_search_discovery.py", "check_deployment_scope.py"]
+}

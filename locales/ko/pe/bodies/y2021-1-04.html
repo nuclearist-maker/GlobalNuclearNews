@@ -1,0 +1,68 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2021년 원자력발전기술사 필기 1교시 4번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>능동 안전계통과 피동 안전계통의 원리, 장점, 단점</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>능동 안전계통</strong>: 외부 동력과 작동 신호로 펌프·전동밸브를 움직여 안전기능을 수행합니다.</li>
+<li><strong>피동 안전계통</strong>: 중력·자연순환·축압 같은 자연법칙으로 안전기능을 수행합니다. 개시에는 신호나 배터리 같은 저장에너지를 쓸 수 있습니다.</li>
+<li><strong>TECDOC-626 범주 A~D</strong>: 피동성의 정도를 나눈 IAEA 분류입니다. 안전성 순위가 아닙니다.</li>
+<li><strong>구동력 차이</strong>: 펌프는 고압 주입이 가능하지만, 물 10 m의 중력 수두는 약 0.1 MPa의 차압에 그칩니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 정의·원리</strong></p>
+<ul>
+<li><strong>능동</strong>: 외부 전원·압축공기 + 작동 신호로 <strong>펌프·전동밸브·팬을 구동</strong>, 강제 주입·순환(IAEA: 외부 입력에 의존하는 기기)[1]
+<ul>
+<li>예: APR1400 안전주입펌프(기계 4계열)[3], 정지냉각·격납건물 살수 펌프, 전동기 구동 보조급수펌프</li>
+</ul>
+</li>
+<li><strong>피동</strong>: <strong>중력·자연순환(밀도차)·축압(질소)·자연대류·응축</strong>으로 작동, 기능 수행에 외부 동력 불필요(개시 신호·저장에너지는 필요할 수 있음)
+<ul>
+<li>예: SIT(축압식, 체크밸브·유량조절기), PAR(촉매식 수소재결합기), AP1000 CMT·IRWST 중력 주입·PRHR, APR+ PAFS</li>
+</ul>
+</li>
+<li>IAEA-TECDOC-626 범주: <strong>A</strong> 구조물 → <strong>B</strong> 자연순환 → <strong>C</strong> 체크밸브·안전밸브 → <strong>D</strong> 신호로 개시 후 피동 작동(피동성 정도 구분)[2]</li>
+</ul>
+<p><strong>2. 능동 안전계통 장단점</strong></p>
+<ul>
+<li>장점: <strong>큰 구동력(고압 주입)</strong>, 유량 조절·정지 용이, 운전·시험 자료 풍부, 시험·감시 쉬움</li>
+<li>단점: <strong>전원·냉각수 등 지원계통 의존 → SBO·ELAP 취약</strong>, 다중화로 계통 복잡·기기 수 증가, 기동·운전 고장모드 다양, 시험·정비 부담, 공통원인고장 대비 필요</li>
+</ul>
+<p><strong>3. 피동 안전계통 장단점</strong></p>
+<ul>
+<li>장점: <strong>외부 동력·운전원 조치 의존 감소 → SBO에 강함</strong>, 기기 수 적고 단순, 정비 부담·인적 오류 개입 감소, 일정 기간 무조치 유지(AP1000 목표 72 h)[4]</li>
+<li>단점: <strong>중력·자연순환은 구동 차압이 작아 성능 여유 작음</strong>(10 m 수두 ≈ 0.1 MPa → 저압 탱크 중력 주입은 충분한 감압 후), 비응축성 기체·열성층·체크밸브 고착에 민감, <strong>열수력 조건에 민감 → 해석·실증시험으로 성능 입증 필요</strong>, 작동 후 조절·중단 곤란, 대형 탱크·높이 배치 제약</li>
+</ul>
+<p><strong>4. 설계 동향·근거</strong></p>
+<ul>
+<li>신형로는 능동 + 피동 조합으로 다양성 확보(APR1400 SIP + SIT, APR+ PAFS 추가)</li>
+<li>10 CFR 52.47(c)(2)·50.43(e): 피동 설계는 해석·시험으로 성능 입증[5] / 기술기준규칙 제44조[6]: 계통 형식과 무관하게 다중성·다양성·독립성 요구</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 능동(전원 → 펌프 → 원자로)과 피동(고위 탱크 Δh → 체크밸브 → 원자로) 주입 대비" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/661626d71e470984db345cb69187728486d12a162c82685a233d53f62b22c257.webp"/><figcaption>답안용 도식: 능동(전원 → 펌프 → 원자로)과 피동(고위 탱크 Δh → 체크밸브 → 원자로) 주입 대비</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="능동·피동 비교표(원리·대표 설비·장점·단점), 중력·자연순환 구동 차압 로그 그래프(0.008·0.1 MPa, 1차 계통압 15.5 MPa 참고선), TECDOC-626 범주 A~D" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/9daaf5052ed73d8ce1e9bb87d79cae5866c2d3c2889c6413b5bf5ac731d68ced.webp"/><figcaption>능동·피동 비교표(원리·대표 설비·장점·단점), 중력·자연순환 구동 차압 로그 그래프(0.008·0.1 MPa, 1차 계통압 15.5 MPa 참고선), TECDOC-626 범주 A~D</figcaption></figure>
+<p>그림 오른쪽 막대가 피동계통의 장단점을 한 번에 설명합니다. 1차 계통 압력 15.5 MPa에서 고온 325 °C와 저온 290 °C 물의 밀도 차는 약 80 kg/m³입니다. 높이차가 10 m라면 자연순환 구동 차압은 약 0.008 MPa에 불과합니다. 물탱크를 10 m 위에 두어도 중력 수두는 약 0.1 MPa입니다. 자연순환은 고압에서도 작동하지만 이처럼 구동 차압 자체가 작습니다. IRWST처럼 대기압에 가까운 탱크의 중력 주입은 계통을 탱크 압력 가까이 감압해야 들어가며, AP1000이 자동감압계통을 단계적으로 여는 이유가 여기에 있습니다. 반면 노심보충탱크(CMT)는 압력 균형관으로 계통과 같은 압력을 유지해 고압에서도 중력으로 주입합니다. 구동력이 작으니 배관 저항이나 비응축성 기체가 조금만 생겨도 성능이 크게 달라집니다. 이 때문에 규제기관은 피동 설계에 실증시험을 요구합니다.</p>
+<p>반대로 펌프는 높은 압력에서도 주입할 수 있고 유량도 조절할 수 있습니다. 대신 전원과 냉각수가 있어야 돌아갑니다. 후쿠시마 사고처럼 교류전원을 오래 잃으면 능동계통 전체가 함께 멈출 수 있습니다. 그래서 신형로는 한쪽을 고르기보다 둘을 조합해 다양성을 얻습니다. 피동이 곧 고유안전은 아니라는 점도 구분해 두십시오. 고유안전은 위험요소 자체를 설계로 없애는 것이고, 피동은 자연현상으로 기능을 수행하는 방식입니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>원리를 "전원 유무"로만 씀</strong>: 신호·외부 동력·움직이는 부품이라는 기준과 TECDOC-626 범주를 함께 쓰면 정확합니다.</li>
+<li><strong>피동은 고장이 없다고 씀</strong>: 체크밸브 고착·비응축성 기체 같은 고유 고장모드가 있습니다.</li>
+<li><strong>범주 A가 가장 안전하다고 씀</strong>: A~D는 피동성의 정도이지 안전성 순위가 아닙니다.</li>
+<li><strong>구동력 차이 누락</strong>: 수두 0.1 MPa 대 계통 압력 15.5 MPa처럼 숫자로 대비하면 단점의 근거가 분명해집니다.</li>
+<li><strong>예시 없음</strong>: APR1400 SIP·SIT, AP1000 CMT·PRHR처럼 노형 예를 하나씩 붙입니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>IAEA, IAEA Safety Glossary: Terminology Used in Nuclear Safety, Nuclear Security, Radiation Protection and Emergency Preparedness and Response, 2018 Edition (2019).</li>
+<li>IAEA, Safety Related Terms for Advanced Nuclear Plants, IAEA-TECDOC-626 (1991).</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Rev. 3 (2018), Ch. 6.3 "Emergency Core Cooling System". NRC ADAMS 공개.</li>
+<li>Westinghouse, AP1000 Design Control Document, Rev. 19 (2011), Tier 2 Ch. 6·Ch. 19. NRC ADAMS 공개.</li>
+<li>U.S. NRC, 10 CFR 52.47(c)(2), 10 CFR 50.43(e).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제44조. 국가법령정보센터.</li>
+</ol>

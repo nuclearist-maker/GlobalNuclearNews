@@ -1,0 +1,134 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2020년 원자력발전기술사 필기 2교시 6번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>냉각재상실사고(LOCA) 시 피복재 부풀림(Ballooning)과 핵연료 소결체의 재배치(Relocation) 현상을 설명하시오.</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>LOCA 중 연료봉이 겪는 기계적 변화를 원인–과정–결과로 설명할 수 있는지 봅니다. 부풀림은 <strong>내압과 외압의 역전 + 고온 크립</strong>이라는 원인을, 재배치는 <strong>부풀림이 만든 공간으로 펠릿 파편이 떨어지는 과정</strong>을 짚어야 합니다. 그 결과가 피복 얇아짐·유로 막힘·산화·국부 열부하 증가로 이어져 ECCS 허용기준(PCT, ECR, 냉각 가능 형상)과 연결된다는 점을 쓰면 상위 점수입니다. 출제 이후 고연소도 연료의 파편화·재배치·분산(FFRD) 연구와 규칙 제정이 진전되었으므로 현행 쟁점은 보충으로 덧붙입니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: LOCA 중 연료봉 하중 조건 변화(외압 급감, 피복 가열)</li>
+<li>본론 가: 부풀림 — 정의·구동력, 영향 인자, 파열, 결과</li>
+<li>본론 나: 재배치 — 정상운전 재배치와 구분, 축방향 재배치 메커니즘, 결과</li>
+<li>본론 다: 상호작용과 냉각성, 고연소도 FFRD, 규제 근거</li>
+<li>결론: 설계·해석상 대응</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>정상운전: 냉각재 압력(약 15.5 MPa)이 보통 연료봉 내압보다 높아 피복이 안쪽으로 눌림(크립다운)</li>
+<li>LOCA: 냉각재 압력 급감 + 냉각 악화로 피복 온도 상승 → <strong>내압 &gt; 외압</strong>으로 하중 역전</li>
+<li>이때 피복관은 바깥으로 부풀고(부풀림), 구속이 풀린 공간으로 펠릿 파편이 이동(재배치) → 노심 형상·열부하 분포 변화</li>
+</ul>
+<p><strong>2. 가. 피복재 부풀림(Ballooning)</strong></p>
+<ul>
+<li><strong>정의</strong>: 연료봉 내압이 외압보다 커진 상태에서 고온 피복관이 원주방향으로 크게 소성·크립 변형해 국부적으로 부푸는 현상, 변형이 계속되면 <strong>파열(burst)</strong></li>
+<li><strong>구동력</strong>: 원주응력 σθ ≈ (P_in − P_out)·r/t
+<ul>
+<li>예시(외경 9.5 mm, 두께 0.57 mm, ΔP 6.7 MPa): σθ ≈ 52 MPa(초기 치수 박막 근사 — 부풀며 r·t·P가 모두 변함)</li>
+<li>내압 원천: 제조 시 He 가압 + 연소 중 핵분열기체 방출 + 과도 중 기체 가열, 부풀어 체적이 커지면 내압은 떨어짐(경쟁)</li>
+</ul>
+</li>
+<li><strong>발생 조건</strong>: 감압과 피복 가열이 겹치는 LOCA 과도 중(취출 단계 포함) 가능</li>
+<li><strong>영향 인자</strong>
+<ul>
+<li>온도와 상: Zircaloy는 약 810 °C부터 α+β 2상, 약 980 °C 이상 β상(조성·산소·수소 의존) → 상에 따라 연성·파열 변형이 달라짐</li>
+<li>가열률: 느릴수록 변형이 커지는 경향(시험 조건 의존)</li>
+<li>원주 온도 불균일: 크면 한쪽에 변형이 집중해 작은 둘레 증가에서 조기 파열</li>
+<li>응력: 클수록 낮은 온도에서 파열</li>
+<li>산화·산소 유입: 고온 변형 저항에 영향, 대신 잔류 연성·급랭 후 건전성은 떨어짐</li>
+</ul>
+</li>
+<li><strong>파열 변형</strong>: 조건에 따라 크게 다름(예: NRC 지원 고연소도 시험군에서 파열 원주 변형 25~55 %) [5]</li>
+<li><strong>결과</strong>
+<ul>
+<li>① <strong>피복 얇아짐</strong>: 반경↑·두께↓ → 응력 증가, 같은 산화량에서 산화 분율 증가</li>
+<li>② <strong>유로 막힘</strong>: 인접 봉이 같은 높이에서 부풀면 부수로 단면 감소 → 재관수 냉각수 우회, 국부 냉각 악화(막힘 하류는 액적 파쇄로 냉각 개선 효과도 있음 — 막힘 길이·중첩·우회 유로에 좌우)</li>
+<li>③ <strong>파열 시</strong>: 간극 방사능 방출(선량해석의 파손 연료봉 수), 내면도 증기에 노출 → 양면 산화, 파열부 주변 내면 수소 흡수</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 부푼 피복관, 위쪽 공동과 아래부터 쌓인 재배치 파편, 내압·외압, 파열 개구(파열 동반 예), 인접 봉과 좁아진 유로" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/b4d28daa9a9c17bbbb334f7d4ca1f9ff3a97a9dba3594888ee49b00915337725.webp"/><figcaption>답안용 도식: 부푼 피복관, 위쪽 공동과 아래부터 쌓인 재배치 파편, 내압·외압, 파열 개구(파열 동반 예), 인접 봉과 좁아진 유로</figcaption></figure>
+<p><strong>3. 나. 핵연료 소결체 재배치(Relocation)</strong></p>
+<ul>
+<li><strong>두 가지 구분</strong>
+<ul>
+<li>정상운전 재배치: 첫 출력 상승 때 열응력 균열로 펠릿 조각이 반경방향 바깥으로 이동 → 간극 감소</li>
+<li><strong>LOCA 축방향 재배치</strong>(이 문제의 대상): 부풀림으로 커진 공간으로 위쪽 펠릿 파편이 중력으로 떨어져 풍선부에 쌓임</li>
+</ul>
+</li>
+<li><strong>메커니즘</strong>: 운전 중 이미 균열된 펠릿 → 피복이 부풀어 구속이 풀림 → 파편 이동·충전
+<ul>
+<li>파열은 필수 조건이 아님(부풀림만으로 가능), 파편 가교·지지격자 부근 구속으로 이동이 제한되기도 함</li>
+</ul>
+</li>
+<li><strong>시험 근거(RIL 2021-13 보수적 판단값)</strong> [5]
+<ul>
+<li>국부 원주 변형 약 <strong>3 %</strong> 초과 구간에서 축방향 재배치 가능성 고려</li>
+<li>풍선부 파편층 <strong>충전율 60~85 %</strong>(파편층 체적 중 연료 고체 비율, 시험 보고 범위)</li>
+</ul>
+</li>
+<li><strong>결과</strong>
+<ul>
+<li>① 풍선부에 연료가 모여 <strong>단위 길이당 연료 질량·붕괴열 부하 증가</strong> [4] → 국부 피복 온도·ECR 증가 가능(총 연료량은 그대로)</li>
+<li>② 위쪽은 연료가 빠진 공동 → 열부하 감소</li>
+<li>③ 간극 확대·파편층 구조로 연료–피복 열전달 변화</li>
+<li>④ 파열 개구가 있으면 미세 파편이 피복 밖으로 <strong>분산</strong>될 수 있음</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="정상 → 감압·고온 변형 → 부풀림 + 축방향 재배치(봉 사이 유로 협소화), 파열이 동반되는 경우의 갈래(기체·간극 방사성 물질 방출, 내·외면 산화, 조건부 분산)와 원주응력 식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/e6e6e344f4d2ccf5ac188cbf648afca2c4a0c08a5638a941637d120560cf1aba.webp"/><figcaption>정상 → 감압·고온 변형 → 부풀림 + 축방향 재배치(봉 사이 유로 협소화), 파열이 동반되는 경우의 갈래(기체·간극 방사성 물질 방출, 내·외면 산화, 조건부 분산)와 원주응력 식</figcaption></figure>
+<p><strong>4. 다. 상호작용과 냉각성, 고연소도(FFRD), 규제 근거</strong></p>
+<ul>
+<li><strong>상호작용</strong>: 얇아진 벽 + (파열 시) 양면 산화 + 늘어난 국부 열부하가 풍선부 한곳에 겹침 → PCT·ECR 평가의 핵심 위치</li>
+<li><strong>냉각성 판단</strong>: 파열이나 부풀림 자체가 냉각성 상실은 아님 → 국부 열부하·유로 변화·산화·급랭 후 건전성을 종합 평가</li>
+<li><strong>고연소도</strong>: 펠릿 평균 약 <strong>55 GWd/MTU</strong>부터 미세 파편화 감수성 고려 [5] → 파열 개구 크기·압력 방출·유동에 따라 분산 가능(파편화·재배치·분산 세 요소가 상호작용)</li>
+<li><strong>규제 근거</strong>
+<ul>
+<li>10 CFR 50.46(b) [1]: PCT 1,204 °C, ECR 17 %(부풀림 구간은 부풀림 이후 두께 기준, 파열 시 내면 산화 포함), 수소 1 %, <strong>냉각 가능 형상</strong>, 장기 냉각</li>
+<li>10 CFR 50 Appendix K I.B [2]: 피복 부풀림·파열 예측 요구(NRC 기준 모델 NUREG-0630 — 파열 온도·파열 변형·유로 막힘) [3]</li>
+<li>국내: 원안위고시 제2017-23호 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」 [9] — 같은 골격, 보수적 평가 또는 최적평가</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="고연소도 연료 분산을 좌우하는 세 요소(파편화·재배치·분산)의 요인과 RIL 2021-13 보수적 평가 기준(55 GWd/MTU·3 %·충전율 60~85 %), 결과 평가 항목" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/85ff500607113df304503c58ba0d584d92dd124eeaac9fa0b9378ed20e833ede.webp"/><figcaption>고연소도 연료 분산을 좌우하는 세 요소(파편화·재배치·분산)의 요인과 RIL 2021-13 보수적 평가 기준(55 GWd/MTU·3 %·충전율 60~85 %), 결과 평가 항목</figcaption></figure>
+<p><strong>5. 결론(설계·해석상 대응)</strong></p>
+<ul>
+<li>연료봉 내압 설계 관리(He 가압량, FGR 평가), 연소도 한계 준수</li>
+<li>ECCS 해석에 부풀림·파열·유로 막힘·재배치 효과 반영(국부 열부하, 양면 산화)</li>
+<li>고연소도·증가농축 연료는 분산 가능성과 그 결과를 평가하거나 파열 회피를 입증</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 왜 "부풀림 이후 두께"로 ECR을 계산하는가</h3>
+<p>부풀어 늘어난 피복은 벽이 얇아집니다. 같은 양의 산소를 흡수해도 얇은 벽에서는 산화 분율이 커지므로, 50.46(b)(2)는 부풀림 구간의 ECR을 부풀림 이후·유의한 산화 이전 두께로 계산하도록 합니다. 파열이 일어나면 그 시점부터 내면 산화도 더합니다. 여기에 축방향 재배치로 풍선부의 연료 질량과 붕괴열까지 늘면 PCT와 ECR이 함께 오릅니다. 세 현상을 따로 외우기보다 "얇아진 벽 + 양면 산화 + 늘어난 열부하가 한곳에 겹친다"는 그림으로 이해하면 결론이 자연스럽습니다.</p>
+<p>두 번째 그림의 55 GWd/MTU와 3 %는 시험 자료를 보수적으로 해석한 평가 기준입니다. 규제 한계도, 발생 영역의 경계도 아닙니다. 어떤 연료봉 구간에서 파편화와 재배치를 따져 봐야 하는지를 알려 주는 기준이며, 피복 밖 분산량은 개구 크기와 압력 방출 같은 조건을 함께 봐야 정해집니다. 인허가 연소도 한계 약 62 GWd/MTU는 봉 평균이라 펠릿 평균 판단값과 직접 비교하지 않습니다.</p>
+<h3>해설: 채점 포인트와 흔한 실수</h3>
+<ul>
+<li><strong>부풀림을 열팽창으로 설명</strong>: 원인은 내외압 역전과 고온 크립입니다.</li>
+<li><strong>정상운전 재배치만 씀</strong>: LOCA 문제의 핵심은 풍선부로의 축방향 재배치입니다.</li>
+<li><strong>파열해야 재배치가 일어난다고 씀</strong>: 봉 내부 재배치는 부풀림만으로도 가능하고, 파열은 피복 밖 분산의 조건입니다.</li>
+<li><strong>결과를 허용기준과 연결하지 않음</strong>: 피복 얇아짐·유로 막힘·양면 산화·국부 열부하를 PCT·ECR·냉각 가능 형상에 연결합니다.</li>
+<li><strong>50.46c를 현행으로 씀</strong>: 2024년 직원에게 반환되어 제정되지 않았습니다.</li>
+</ul>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li><strong>미국 ECCS 기준</strong>: 출제 당시 계류 중이던 10 CFR 50.46c(2016 최종규칙안)는 2024.4.11 위원회 SRM으로 직원에게 반환되어 제정되지 않았습니다 [7]. 현행 50.46(b)와 Appendix K가 그대로 적용됩니다.</li>
+<li><strong>FFRD 연구</strong>: NRC 연구국이 RIL 2021-13(2021)으로 미세 파편화(펠릿 평균 약 55 GWd/MTU)·축방향 재배치(국부 변형 약 3 %)·충전율(60~85 %)에 대한 보수적 판단값을 정리했고, ACRS가 2021.12에 검토했습니다 [5]. 2008년 RIL-0801은 당시 연소도 한계(최고 봉 평균 62 GWd/MTU)면 유의한 연료 손실을 막기에 충분할 것으로 보았습니다 [6].</li>
+<li><strong>2026년 제안규칙</strong>: NRC는 2026.7.16 관보(FR 2026-14341, "Modernizing Reactor Licensing, Safety Oversight, and Siting Practices")에 5 wt% 초과 농축·고연소도 연료와 FFRD를 다루는 제안규칙을 냈습니다. 50.46c 초안의 성능기반 접근과 취화 연구결과를 새 자발적 대안 10 CFR 50.46a에 담고, 분산 결과 평가 지침(DG-1434)을 함께 제시했습니다 [8]. 기존 50.46a(RCS 배기계통 허용기준)는 50.46b로 재지정하는 안입니다. 의견수렴은 2026.8.31 마감이었고, 2026년 10월 현재 최종 규칙이 발표되지 않았으므로 현행 기준으로 인용하지 않습니다.</li>
+<li><strong>국내</strong>: 원안위고시 제2017-23호가 현행이며 이후 개정이 없습니다. </li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, 10 CFR 50.46 "Acceptance criteria for emergency core cooling systems for light-water nuclear power reactors", (b)(1)~(5).</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix K "ECCS Evaluation Models", I.B.</li>
+<li>D. A. Powers, R. O. Meyer, NUREG-0630 "Cladding Swelling and Rupture Models for LOCA Analysis", U.S. NRC (1980.4).</li>
+<li>U.S. NRC, NUREG-2121 "Mechanical Behavior of Ballooned and Ruptured Cladding" (2012).</li>
+<li>U.S. NRC, RIL 2021-13 "Interpretation of Research on Fuel Fragmentation, Relocation, and Dispersal at High Burnup" (2021), 및 ACRS 검토 서한(2021.12.20).</li>
+<li>U.S. NRC, RIL-0801 "Technical Basis for Revision of Embrittlement Criteria in 10 CFR 50.46" (2008.5).</li>
+<li>U.S. NRC, Staff Requirements Memorandum SRM-SECY-16-0033 (2024.4.11) — 10 CFR 50.46c 최종규칙안 반환.</li>
+<li>U.S. NRC, "Modernizing Reactor Licensing, Safety Oversight, and Siting Practices" 제안규칙, Federal Register Doc. 2026-14341 (2026.7.16), Docket NRC-2025-0975.</li>
+<li>원자력안전위원회, 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」, 원안위고시 제2017-23호. 국가법령정보센터.</li>
+</ol>

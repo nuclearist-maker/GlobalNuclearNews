@@ -1,0 +1,83 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2026년 원자력발전기술사 필기 2교시 2번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>열출력 2,500 MWth인 원자로에 직경 1 cm, 높이 3.6 m인 연료봉이 25,000개 장전하여 운전 중일 때, 다음을 계산하시오. 단, 중성자핵분열인자는 0.974이다.
+가. 연료봉 평균 열속(Average Heat Flux)
+나. 임계열속(CHF, Critical Heat Flux)이 150 W/㎠일 때, 핵비등이탈율(DNBR, Departure from Nucleate Boiling Ratio)
+다. 한계 DNBR이 1.3일 때, 의미 및 DNBR 여유도(%)</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>노심 열출력을 연료봉 표면 열속으로 바꾸는 기본 환산(열전달면적 π·D·H·N)과, 그 열속을 임계열속에 견주는 DNBR의 정의를 알고 있는지 확인하는 문제입니다. 계산 자체는 짧기 때문에 25점의 상당 부분은 다 항, 즉 한계 DNBR의 통계적 의미(95/95)와 여유도 정의를 얼마나 정확히 서술하느냐에서 갈립니다. 문제의 "중성자핵분열인자 0.974"를 어떻게 해석했는지 근거를 밝히는 것도 채점자에게 좋은 인상을 줍니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 주어진 값 정리, 0.974의 해석(연료 내 열발생 분율), 단위 통일</li>
+<li>본론 가: 열전달면적 → 연료 내 발생 열 → 평균 열속</li>
+<li>본론 나: DNBR 정의 → 대입 → 결과의 해석(평균값 기반이라는 한계)</li>
+<li>본론 다: 한계 DNBR 1.3의 의미(DNB 현상, CHF 상관식 불확실성, 95/95, SAFDL) → 여유도 정의와 계산 → 허용 최대 국부 열속</li>
+<li>결론: 계산 결과 요약, 실제 설계는 MDNBR·열수로계수로 평가한다는 점</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 주어진 값과 가정</strong></p>
+<ul>
+<li>열출력 P = 2,500 MWth, 연료봉 외경 D = 0.01 m, 가열 길이 H = 3.6 m, 연료봉 수 N = 25,000개</li>
+<li><strong>0.974 = 연료봉 내 열발생 분율로 해석함</strong> — 핵분열 에너지 중 약 2.6%는 감마선·중성자 감속으로 냉각재·구조물에서 직접 열이 됨(Westinghouse형 가압경수로 설계 표의 "연료 내 발생 열 97.4%"와 같은 값임[3])</li>
+<li>CHF = 150 W/cm² = 1.5 MW/m², 한계 DNBR = 1.3</li>
+<li>축방향·반경방향 출력 분포는 균일하다고 가정함(평균값 계산)</li>
+</ul>
+<p><strong>2. 가. 연료봉 평균 열속</strong></p>
+<ul>
+<li>연료봉 1개 열전달면적: A_rod = π·D·H = π × 0.01 × 3.6 = 0.1131 m²</li>
+<li>전체 열전달면적: A_T = N·A_rod = 25,000 × 0.1131 = 2,827.4 m²</li>
+<li>연료 내 발생 열: Q = 0.974 × 2,500 MW = 2,435 MW</li>
+<li>평균 열속: q″_avg = Q / A_T = 2,435 × 10⁶ W / 2,827.4 m² = 8.61 × 10⁵ W/m²</li>
+<li><strong>q″_avg ≈ 86.1 W/cm² (0.861 MW/m²)</strong></li>
+<li>참고: 봉당 출력 97.4 kW, 평균 선출력 27.1 kW/m</li>
+</ul>
+<figure class="article-image"><img alt="열출력 2,500 MWth에서 평균 열속 86.1 W/cm²까지의 계산 흐름, 열속 축(평균 86.1·허용 국부 115.4·CHF 150)과 DNBR 축(1.0·1.3·1.74, 여유도 25.4 %)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/fd0e9de3a74d62386613cf376bdb9a5a6924ecbd4f4cfbfd685e286bebd5d3e9.webp"/><figcaption>열출력 2,500 MWth에서 평균 열속 86.1 W/cm²까지의 계산 흐름, 열속 축(평균 86.1·허용 국부 115.4·CHF 150)과 DNBR 축(1.0·1.3·1.74, 여유도 25.4 %)</figcaption></figure>
+<p><strong>3. 나. DNBR</strong></p>
+<ul>
+<li>정의: DNBR = (그 위치의 임계열속 q″_CHF) / (그 위치의 실제 국부 열속 q″_local)</li>
+<li>대입: DNBR = 150 W/cm² / 86.1 W/cm² = <strong>1.74</strong></li>
+<li>검산: 86.12 × 1.742 = 150.0 W/cm² ✓</li>
+<li>해석: 평균 열속 기준값이므로 노심 평균 조건의 여유를 뜻함. 실제 판정 대상은 노심에서 가장 작은 값(<strong>MDNBR</strong>)임</li>
+</ul>
+<p><strong>4. 다. 한계 DNBR 1.3의 의미</strong></p>
+<ul>
+<li><strong>DNB(핵비등이탈)</strong>: 열속이 CHF에 이르면 가열면이 증기막으로 덮여 열전달계수가 급감 → 피복관 온도 급상승 → 피복관 손상 가능</li>
+<li>DNBR = 1은 CHF 상관식이 DNB를 예측하는 점. 그러나 상관식 예측값에 실험 대비 산포가 있음</li>
+<li><strong>한계 DNBR 1.3 = 최소 DNBR이 1.3 이상이면 그 연료봉에서 DNB가 일어나지 않을 확률 95%를 95% 신뢰수준으로 보장하는 값(95/95 기준)</strong>[1]. 1.3은 과거 W-3 상관식의 대표 한계값이며[4], 현행 상관식·통계적 설계방법에서는 상관식별로 값이 다름</li>
+<li>정상운전과 예상운전과도(AOO) 동안 MDNBR ≥ 한계 DNBR 유지 = <strong>허용 핵연료 설계한계(SAFDL)</strong>의 하나[2][5]</li>
+<li>운전 중에는 노심보호연산기(CPC)·노심운전제한감시계통(COLSS)이 DNBR을 실시간 계산해 감시·트립함(APR1400·OPR1000 예)</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: DNBR 수직선 위 1.0(DNB 예측)·1.3(한계)·1.74(계산값)와 여유도 화살표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/edbe107e3ce4cc14cdb5d6dd930b5a0193c9f9bca49707faebc56049ee11b9ac.webp"/><figcaption>답안용 도식: DNBR 수직선 위 1.0(DNB 예측)·1.3(한계)·1.74(계산값)와 여유도 화살표</figcaption></figure>
+<p><strong>5. 다. DNBR 여유도</strong></p>
+<ul>
+<li>정의(명시): 여유도(%) = (DNBR − DNBR_limit) / DNBR × 100 = (1 − DNBR_limit / DNBR) × 100 → "현재 DNBR이 몇 % 줄어도 한계에 닿지 않는가"</li>
+<li>대입: (1 − 1.3 / 1.742) × 100 = <strong>25.4 %</strong></li>
+<li>(참고) 한계 대비 초과분으로 정의하면 (1.742 / 1.3 − 1) × 100 = 34.0 %</li>
+<li>열속으로 환산: DNBR 1.3을 지키는 최대 허용 국부 열속 = 150 / 1.3 = <strong>115.4 W/cm²</strong> → 평균 열속의 1.34배까지만 허용됨</li>
+</ul>
+<p><strong>6. 결론</strong></p>
+<ul>
+<li>평균 열속 86.1 W/cm², DNBR 1.74, 여유도 25.4 %</li>
+<li>실제 노심은 국부 열속이 평균의 수 배(열속 열수로계수 F_Q)이고 CHF도 위치마다 다름 → 평균 DNBR만으로 안전성을 판단할 수 없으며, 설계·운전은 고온 유로의 MDNBR로 평가함</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 축방향 국부 열속과 CHF 곡선, 두 곡선의 비가 최소인 MDNBR 위치" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/4b2619dbe45551193967c1f6b303109372ccdfb5542f2cd481f38383086adf05.webp"/><figcaption>답안용 도식: 축방향 국부 열속과 CHF 곡선, 두 곡선의 비가 최소인 MDNBR 위치</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 0.974를 어디에 곱하나</h3>
+<p>문제의 "중성자핵분열인자"라는 이름 때문에 고속핵분열인자 ε나 재생인자 η를 떠올리기 쉽지만, 두 값 모두 1보다 크므로 0.974가 될 수 없습니다. 열수력 계산에서 1보다 조금 작은 이 값은 핵분열 에너지 중 연료봉 안에서 열로 발생하는 비율로 쓰입니다. 그래서 열출력에 곱해 "연료봉 표면을 통해 냉각재로 나가야 하는 열"만 남긴 뒤 표면적으로 나눕니다. 이 해석을 적용하지 않으면 평균 열속 88.4 W/cm², DNBR 1.70, 여유도 23.4 %가 나옵니다. 어느 쪽으로 풀든 해석 근거를 한 줄 적어 두는 것이 안전합니다.</p>
+<h3>해설: 평균 DNBR 1.74가 낙관적인 이유</h3>
+<p>이 문제는 출력이 노심 전체에 균일하다고 보고 계산했습니다. 실제 가압경수로에서는 축방향으로 코사인에 가까운 분포가, 반경방향으로 집합체·봉별 편차가 겹쳐 국부 최대 열속이 평균의 2배를 훌쩍 넘습니다. 위에서 구한 허용 최대 국부 열속이 평균의 1.34배에 불과하다는 점을 보면, 같은 CHF 150 W/cm²를 노심 전체에 적용할 경우 첨두 지점은 한계를 넘게 됩니다. 실제 설계에서는 CHF도 위치마다 압력·질량속·건도에 따라 다르게 계산하고, 국부 열속과 국부 CHF의 비가 가장 작아지는 지점(보통 노심 중간보다 약간 위)에서 MDNBR을 평가합니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 달라진 기준 없음(확인 근거: 2026년 출제 문항이며, 95/95 DNB 기준은 미국 NUREG-0800 SRP 4.4와 10 CFR 50 부록 A GDC 10[1][2], 국내는 기술기준규칙의 연료허용손상한계 요건[5]이 근거임). 다만 답안에 "한계 DNBR = 1.3"을 고정값처럼 쓰지 않는 편이 좋습니다. 1.3은 W-3 상관식 시절의 대표값이고, 현재 국내 원전은 노형·핵연료별 CHF 상관식과 통계적 설계방법에 따라 한계값이 다르게 승인되어 있기 때문입니다. </p>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.4 "Thermal and Hydraulic Design" (95/95 DNBR 기준).</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criterion 10 "Reactor design".</li>
+<li>Duke Energy, Catawba Nuclear Station UFSAR, 4장 Table 4-1(Heat generated in fuel 97.4 %), NRC ADAMS ML18305A292.</li>
+<li>N. E. Todreas, M. S. Kazimi, Nuclear Systems I: Thermal Hydraulic Fundamentals, Taylor &amp; Francis — 임계열속 상관식(W-3)과 DNBR.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제2조 제1항 제10호(연료허용손상한계), 제17조 제1항. 국가법령정보센터.</li>
+</ol>

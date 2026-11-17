@@ -1,0 +1,120 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2023년 원자력발전기술사 필기 2교시 5번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>2단계 확률론적안전성평가(PSA)는 노심과 원자로격납건물이 손상되어 방사성 물질이 원자로격납건물 외부로 방출될 때까지 발생하는 중대사고 현상과 방사성물질 이동을 체계적으로 분석하여 원자로격납건물이 손상되는 형태와 가능성, 원자로격납건물 외부로 방사성물질이 방출될 가능성과 이의 방출량을 확률론적으로 계산하는 도구이다. 다음 2단계 PSA의 주요 수행단계에 대해 기술하시오.
+가. 발전소손상군(Plant Damage State) 분석
+나. 격납건물 사건수목(Containment Event Tree) 구성
+다. 방사선원항 방출군(Source Term Category) 분석
+라. 민감도 및 불확실성 분석</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>2단계 PSA를 "1단계 다음 단계"라는 이름으로만 아는지, 실제 작업 순서와 각 단계의 입력·산출을 아는지 확인하는 문제입니다. 네 소문항은 그 자체가 작업 순서입니다. 각 단계마다 <strong>무엇을 기준으로 묶거나 전개하는지(속성·표제)</strong>와 <strong>무엇이 다음 단계로 넘어가는지(빈도·확률·선원항)</strong>를 쓰면 흐름이 살아납니다. 가상 수치로 CET 정량화를 한 줄 보여 주면 "확률론적으로 계산하는 도구"라는 문제 정의에 정확히 답할 수 있습니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 2단계 PSA의 범위·산출물, 전체 흐름(1단계 → PDS → CET → STC → 3단계)</li>
+<li>본론 가: PDS의 목적, 묶는 속성, 우회 PDS, 브리지 트리</li>
+<li>본론 나: CET 구조(시간 단계·표제), 분기확률 정량화, 파손모드, 수치 예</li>
+<li>본론 다: STC 속성, 대표 선원항, 산출 지표(LERF, Cs-137 100 TBq)</li>
+<li>본론 라: 불확실성 원천 4가지, 불확실성 분석과 민감도 분석의 구분</li>
+<li>결론: 활용과 국내 규제 근거</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li><strong>2단계 PSA</strong>: 노심손상 이후 중대사고 진행과 격납건물 거동(격리 실패·우회·파손)을 분석해 <strong>격납건물 파손모드별 빈도와 환경 방출(시점·양)</strong>을 확률론적으로 정량화</li>
+<li>산출물: 조건부 격납건물 파손확률(CCFP), 방출군(STC)별 빈도와 선원항, 대량방출빈도(LRF)·대량조기방출빈도(LERF)</li>
+<li>흐름(IAEA SSG-4 Rev.1[1]): 1단계 노심손상 경위 → <strong>PDS 그룹화</strong> → 중대사고 해석·격납건물 성능 → <strong>CET 정량화</strong> → <strong>STC 그룹화·선원항</strong> → <strong>불확실성·민감도</strong> → (3단계 소외 결과)</li>
+</ul>
+<figure class="article-image"><img alt="가~라 4단계의 묶는 기준·시간 단계·산출물과 불확실성 피드백" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/318377ba708aae0ddb777ffc7c94bbcf4ab26022ca8a278f093f2434d45b9269.webp"/><figcaption>가~라 4단계의 묶는 기준·시간 단계·산출물과 불확실성 피드백</figcaption></figure>
+<p><strong>2. 가. 발전소손상군(PDS) 분석</strong></p>
+<ul>
+<li>목적: 1단계의 수많은 노심손상 경위를 <strong>이후 격납건물 거동과 방출이 비슷한 것끼리</strong> 묶어 1·2단계 접속점을 만듦. PDS 빈도 = 소속 경위 빈도의 합</li>
+<li>묶는 속성(수냉각로 예, SSG-4 Rev.1 표 3[1])
+<ul>
+<li><strong>초기사건 유형</strong>: 대·소형 LOCA, 과도, 우회 사건(ISLOCA·SGTR), 반응도 사고</li>
+<li><strong>노심손상 시 RCS 압력</strong>: 고압(DCH·유도 SGTR 위험) / 중압 / 저압(감압 방법 포함)</li>
+<li><strong>냉각 상태</strong>: 주입 실패(조기 손상) / 주입 성공 후 재순환 실패(후기 손상), SG 냉각 가용성</li>
+<li><strong>격납 ESF 상태</strong>: 살수, 팬쿨러, 배기, 수소 제어(PAR·점화기)</li>
+<li><strong>지원계통</strong>: 교류·직류 전원, 기기냉각수</li>
+<li><strong>격납건물 상태</strong>: 격리 건전 / 미격리 / 우회 / 구조 손상</li>
+</ul>
+</li>
+<li>우회·미격리 PDS는 CET를 단순화하거나 바로 선원항 해석으로 감</li>
+<li>1단계 모델에 없는 격납 계통은 <strong>브리지 트리(확장 사건수목)</strong>로 이어 의존성(전원·운전원) 유지</li>
+<li>묶을수록 해석 수는 줄지만 정보가 손실되므로 보수적으로 묶고 근거를 문서화함</li>
+</ul>
+<p><strong>3. 나. 격납건물 사건수목(CET) 구성</strong></p>
+<ul>
+<li>정의: PDS를 초기조건으로 <strong>중대사고 현상·계통·운전원 조치</strong>를 표제로 놓고 격납건물 파손 시점·모드를 분기로 전개하는 사건수목(SSG-4 Rev.1은 사고진행 사건수목 APET로 부름[1])</li>
+<li>시간 단계별 표제
+<ul>
+<li>① 노내 노심손상 초기: 격납 격리, 교류전원 복구, 살수 작동, RCS 감압</li>
+<li>② 용기 파손 전: 온도 유발 고온관 파손·SGTR, 수소 연소</li>
+<li>③ 용기 파손 직후: 고압 용융물 분출·직접 격납건물 가열(DCH), 노외 증기폭발</li>
+<li>④ 노외 단기·장기: 용융물 냉각, 용융물-콘크리트 반응(MCCI)의 비응축성 기체 가압, 장기 과압, 기저부 관통</li>
+</ul>
+</li>
+<li>분기확률 정량화: 중대사고 해석 코드(MAAP·MELCOR), <strong>격납건물 취약도 곡선</strong>(하중 → 파손확률), 분해사건수목, 전문가 판단(NUREG-1150 방식[5]), 실험 근거</li>
+<li>구성 원칙: 현상적·시간적으로 일관, 표제 간 의존성 반영, 검토자가 추적 가능한 크기</li>
+<li>종단 상태(파손모드): 무파손(설계 누설), 후기 파손, 조기 파손, 기저부 관통, 격리 실패, 우회</li>
+<li>수치 예(설명용 가상, 격리 상태를 아직 세분하지 않은 집계 PDS 가정): PDS 2.0×10⁻⁶/년 × 경로 분기확률 → 무파손 0.927, 후기 0.054, 조기 0.014, 격리 실패 0.005 → <strong>CCFP ≈ 0.073</strong>(해당 PDS 조건부, 격리 실패 포함), 조기 대량 방출 후보 3.8×10⁻⁸/년</li>
+</ul>
+<figure class="article-image"><img alt="답안용 CET 골격: PDS → 격리 → 감압 → 조기 파손 회피 → 용융물 냉각, 종단 파손모드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/9e1ab0bc2d0cc5cbad5a3e74e89a7bfea86662d7a95a0ece723f740515c44c65.webp"/><figcaption>답안용 CET 골격: PDS → 격리 → 감압 → 조기 파손 회피 → 용융물 냉각, 종단 파손모드</figcaption></figure>
+<figure class="article-image"><img alt="설명용 가상 수치의 CET 분기확률 곱과 STC 빈도 합산, CCFP·조기 대량 방출 후보" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/a604082be22c77a063e864fa07cc136ccf76be04d6bff4d444c02127cef3ac2f.webp"/><figcaption>설명용 가상 수치의 CET 분기확률 곱과 STC 빈도 합산, CCFP·조기 대량 방출 후보</figcaption></figure>
+<p><strong>4. 다. 방사선원항 방출군(STC) 분석</strong></p>
+<ul>
+<li>정의: CET 종단을 <strong>환경 방출 특성이 비슷한 것끼리</strong> 묶은 그룹(방출범주와 같은 뜻으로 많이 씀)</li>
+<li>묶는 속성: <strong>파손·우회 최초 시점</strong>(노심손상 시·조기·용기 파손 직후·후기), 용기 파손 시 RCS 압력, 격납건물 압력, <strong>누설 모드·위치·크기·경로</strong>, 노외 용융물 냉각·용융물-콘크리트 반응(MCCI) 여부, <strong>저감 설비</strong>(살수, 필터 배기), <strong>저류</strong>(풀 세정, 배관 침착)</li>
+<li>대표 선원항: STC마다 대표 사고경위를 코드로 해석 → 핵종군별 방출분율(비활성기체, I, Cs, Te, Sr 등), 방출 개시 시점·지속시간·에너지·높이</li>
+<li>산출: STC별 빈도(= 종단 빈도 합) + 선원항 → LERF[4], 국내 고시의 Cs-137 100 TBq 초과 빈도 합 판정[8], 3단계 PSA 입력</li>
+</ul>
+<p><strong>5. 라. 민감도 및 불확실성 분석</strong></p>
+<ul>
+<li>불확실성 원천(SSG-4 Rev.1 11.22항[1])
+<ul>
+<li><strong>불완전성</strong>: 모든 시나리오를 찾았다는 보장 없음 → 동료 검토·한계 분석</li>
+<li><strong>그룹화 손실</strong>: PDS·STC로 묶을 때의 상세 손실</li>
+<li><strong>모델 불확실성</strong>: 수소 연소·DCH·증기폭발·MCCI 등 현상 지식과 코드의 한계</li>
+<li><strong>매개변수 불확실성</strong>: 고장률, 초기사건 빈도, 격납 하중·응답 매개변수</li>
+</ul>
+</li>
+<li><strong>불확실성 분석</strong>: 매개변수에 분포를 주고 몬테카를로로 전파 → 평균, 5·95백분위수</li>
+<li><strong>민감도 분석</strong>: 핵심 가정(유도 SGTR 확률, DCH 하중, 운전원 감압·SAMG 조치 성공, 취약도 곡선, 원자로공동 충수 크레딧)을 바꿔 LERF·STC 빈도 변화 확인 → 지배 인자·결론의 견고성 판단</li>
+<li>구분: 불확실성 = 분포의 정량 전파, 민감도 = 가정 변경의 영향(what-if)</li>
+</ul>
+<p><strong>6. 결론</strong></p>
+<ul>
+<li>2단계 PSA = <strong>묶고(PDS) → 전개하고(CET) → 다시 묶고(STC) → 흔들어 보는(민감도·불확실성)</strong> 절차</li>
+<li>활용: 격납건물 취약점 식별, 중대사고 관리(SAMG) 전략·설비 우선순위, 사고관리계획서 위험도 평가</li>
+<li>근거: 원자력안전법 제20조②(사고관리계획서)[6], 기술기준규칙 제85조의22[7], 원안위고시 제2026-1호 제9조[8]</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 그룹화가 두 번 나오는 이유</h3>
+<p>1단계에서 나오는 노심손상 경위는 수천 개의 최소단절집합으로 이루어져 있어, 하나하나 중대사고 코드를 돌릴 수 없습니다. 그래서 먼저 격납건물 입장에서 중요한 속성으로 묶는 것이 PDS이고, CET로 다시 펼친 종단 상태를 이번에는 방출 입장에서 묶는 것이 STC입니다. 같은 "조기 파손"이라도 살수가 작동했는지, 파손 위치가 어디인지에 따라 선원항이 크게 달라지므로 STC는 파손모드와 일대일이 아닙니다. 그림의 수치 예처럼 빈도는 곱하고 더하는 것으로 계산되지만, 분기확률 하나하나가 해석 코드와 취약도 곡선, 전문가 판단에서 나오므로 라의 불확실성 분석이 결과 해석에 반드시 따라붙습니다.</p>
+<h3>해설: 채점 포인트와 흔한 실수</h3>
+<ul>
+<li><strong>CET 표제를 계통 성공·실패로만 쓰기</strong>: 수소 연소, DCH, MCCI 같은 현상과 격납건물 하중이 표제에 들어가야 합니다.</li>
+<li><strong>구조 파손이 없으면 방출 없음</strong>: 격리 실패와 우회(SGTR·ISLOCA)를 빠뜨리면 감점입니다.</li>
+<li><strong>불확실성과 민감도를 같은 말로 쓰기</strong>: 분포 전파와 가정 변경을 구분합니다.</li>
+<li><strong>CCFP를 빈도로 쓰기</strong>: 노심손상이 일어났다는 조건에서의 확률(무차원)입니다.</li>
+</ul>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li><strong>IAEA 지침 개정</strong>: 출제 당시 SSG-4(2010)는 2025년 SSG-4 Rev.1 「Development and Application of Level 2 PSA for NPPs」로 개정되었습니다. 용어는 사고진행 사건수목(APET)을 기본으로 쓰고 CET와 같은 뜻이라고 밝혔으며, PDS 속성 표와 불확실성 원천(불완전성·그룹화·모델·매개변수)을 정리했습니다. 1단계 지침도 SSG-3 Rev.1(2024)로 바뀌었습니다[2].</li>
+<li><strong>미국 표준</strong>: Level 2 PRA 표준이 2014년 시범사용판에서 정식판 ASME/ANS RA-S-1.2-2024(2024.5.31 ANSI 승인)[3]로 바뀌었습니다.</li>
+<li><strong>국내 고시</strong>: 사고관리 고시는 제2017-34호에서 원안위고시 제2026-1호(2026.1.16)로 바뀌었습니다. 제9조의 PSA 적합성 요건과 안전목표(사망 위험도 각 0.1 %, Cs-137 100 TBq 초과 빈도 합 10⁻⁶/년 미만)는 그대로입니다[8]. 위협요인 표는 별표 2에서 별표 3으로 옮겨졌습니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>IAEA, Development and Application of Level 2 Probabilistic Safety Assessment for Nuclear Power Plants, Specific Safety Guide No. SSG-4 (Rev. 1), IAEA, Vienna (2025).</li>
+<li>IAEA, Development and Application of Level 1 Probabilistic Safety Assessment for Nuclear Power Plants, Specific Safety Guide No. SSG-3 (Rev. 1), IAEA, Vienna (2024).</li>
+<li>ASME/ANS RA-S-1.2-2024, Severe Accident Progression and Radiological Release (Level 2) PRA Standard for Nuclear Power Plant Applications for Light Water Reactors, ASME (2024).</li>
+<li>U.S. NRC, Regulatory Guide 1.174 "An Approach for Using Probabilistic Risk Assessment in Risk-Informed Decisions on Plant-Specific Changes to the Licensing Basis" (LERF 정의).</li>
+<li>U.S. NRC, NUREG-1150 "Severe Accident Risks: An Assessment for Five U.S. Nuclear Power Plants" (1990).</li>
+<li>「원자력안전법」(법률 제21679호), 제20조②·제21조. 국가법령정보센터.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제85조의22. 국가법령정보센터.</li>
+<li>원자력안전위원회 고시 제2026-1호(사고관리 관련 고시, 2026.1.16), 제9조. 국가법령정보센터.</li>
+</ol>

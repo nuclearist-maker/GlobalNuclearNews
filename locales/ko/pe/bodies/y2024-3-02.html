@@ -1,0 +1,115 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2024년 원자력발전기술사 필기 3교시 2번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>OPR1000 출력운전 중 원자력발전소에서 2차측의 모든 급수가 상실되었을 경우 다음 사항에 대해 기술하시오.
+가. 운전원 조치가 없을 경우 노심냉각 및 손상 메커니즘
+나. 모든 급수상실에 대비한 안전감압계통(Safety Depressurization System)의 설계 목적
+다. 회복절차서 일방관류냉각에서의 안전감압계통 운전전략</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>증기발생기로 열을 못 버리면 RCS가 왜 "고압에 갇힌 채" 재고를 잃는지 설명하라는 문제입니다. 고압이 안전주입을 막는다는 점이 핵심입니다. 그 고리를 끊는 수단이 가압기 PORV가 없는 OPR1000의 전용 SDS입니다. 기능회복절차에서 SDS를 언제 어떻게 열고 언제 닫는지까지 쓰라는 문제입니다. 설계기준 용량 조건 두 가지와 노심 노출 판정 기준을 수치로 쓰면 변별력이 생깁니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: TLOFW 정의, 설계기준 초과 사고, 다중고장 필수 9종</li>
+<li>본론 가: 진행 7단계 → 고압 유지가 주입을 막는 이유 → 손상 메커니즘(산화·재배치·고압 용기 파손·크리프)</li>
+<li>본론 나: 설계 목적 3가지 → 설계기준(용량 2조건, 노심 노출 판정) → 구성·설계요건</li>
+<li>본론 다: 진입 → 준비 → 개방 → 성공 확인 → 장기 재순환 → 종료·전환</li>
+<li>결론: 조기 개시와 SDS의 한계(격납건물 방출)</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li><strong>급수완전상실(TLOFW)</strong>: 증기발생기(SG) 2대 모두 <strong>주급수 + 보조급수 완전 상실</strong>. 발생 가능성이 설계기준사고보다 낮은 <strong>설계기준 초과 사고</strong>[3]</li>
+<li>현행 사고관리 고시(원안위고시 제2026-1호) <strong>별표 1 다중고장 필수 9종</strong>의 하나[1]</li>
+<li>보조급수는 전동기구동·터빈구동 펌프의 다중 계열로 구성 → 전부 상실은 다중고장</li>
+</ul>
+<p><strong>2. 가. 운전원 조치가 없을 경우 노심냉각 및 손상 메커니즘</strong></p>
+<ul>
+<li>진행
+<ol>
+<li>급수 상실 → <strong>SG 저수위 원자로정지</strong>·터빈정지[2](보조급수 작동신호는 나도 펌프 불능)</li>
+<li>붕괴열(정지 직후 약 6 % → 1 h 약 1 %대)로 SG 2차측 보유수 비등·방출 → <strong>SG 건조</strong> → 1차→2차 열전달 종료</li>
+<li>1차측 가열·팽창 → 가압기 수위·압력 상승 → <strong>가압기 안전밸브(PSV, 약 17.2 MPa ≈ 2,500 psia)</strong>[2] 개폐 반복, 방출 증기는 격납건물 안으로</li>
+<li><strong>RCS 고압 유지 → 안전주입 불가</strong>: 고압안전주입(HPSI) 펌프의 체절압력이 PSV 설정압보다 낮아 주입되지 않고(펌프 설계값은 호기별), 질소 가압 안전주입탱크는 더 낮은 압력(해석 예 약 4.3 MPa)에서야 주입됨[4]</li>
+<li>PSV로 증기 → 2상 → 액체 방출, <strong>재고량 일방 감소</strong> → <strong>노심 노출</strong></li>
+<li>노출 부위 증기 냉각 불량 → 피복재 온도 상승</li>
+<li><strong>RCS 고압 상태로 노심 손상·용기 파손</strong></li>
+</ol>
+</li>
+<li>손상 메커니즘
+<ul>
+<li><strong>피복재 산화</strong>: 약 1,300 K부터 Zr-수증기 반응 가속, 발열(약 586 kJ/mol Zr)이 가열을 키움, <strong>수소 생성</strong></li>
+<li><strong>피복 팽창·파열</strong> → 간극 핵분열생성물 방출, 냉각 유로 막힘</li>
+<li><strong>용융·재배치</strong>: 지르칼로이(1,760~1,980 ℃) → 용융물 하강, UO₂(약 2,830 ℃) 용융 → 하부헤드 재배치</li>
+<li><strong>고압 용기 파손</strong> → <strong>고압용융물방출(HPME)·격납건물직접가열(DCH)</strong></li>
+<li><strong>고압 자연순환</strong> → 고온관·SG 전열관 <strong>크리프 파손</strong>(전열관이면 격납건물 우회) 경쟁</li>
+</ul>
+</li>
+<li>해석 예(OPR1000 변수, MAAP, 안전주입 비정상 가정): <strong>노심 노출 약 2,360 s, 원자로용기 파손 약 8,390 s</strong>[7]</li>
+</ul>
+<figure class="article-image"><img alt="운전원 조치 없음(노심 노출 2,362 s·용기 파손 8,391 s)과 일방관류냉각 설계기준 두 경우(PSV 개방 즉시·30분 지연)의 시간축 비교, 피복재 온도 랜드마크 사다리 위 PCT 325·350 ℃" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/932d27099fc31518da9b3ca0763d7470bc2905b7463413a060b95e941c510392.webp"/><figcaption>운전원 조치 없음(노심 노출 2,362 s·용기 파손 8,391 s)과 일방관류냉각 설계기준 두 경우(PSV 개방 즉시·30분 지연)의 시간축 비교, 피복재 온도 랜드마크 사다리 위 PCT 325·350 ℃</figcaption></figure>
+<figure class="article-image"><img alt="답안용 도식: 급수 상실 → SG 건조 → PSV 개폐 반복(고압) → 재고 감소 → 노심 노출 → 산화·재배치 → 고압 용기 파손" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/9967a24c1cca9317cdee53bee3e3b790a76558523667fe9494bf8bea271a99a2.webp"/><figcaption>답안용 도식: 급수 상실 → SG 건조 → PSV 개폐 반복(고압) → 재고 감소 → 노심 노출 → 산화·재배치 → 고압 용기 파손</figcaption></figure>
+<p><strong>3. 나. 모든 급수상실에 대비한 안전감압계통의 설계 목적</strong></p>
+<ul>
+<li>설계 목적
+<ol>
+<li><strong>TLOFW 시 RCS를 원격 수동으로 급속 감압</strong> → 안전주입이 들어갈 압력까지 낮춤[2][3]</li>
+<li><strong>일방관류냉각(급수·배출)으로 붕괴열 제거</strong> → <strong>노심 노출·손상 방지</strong>[3]</li>
+<li>(부가) 노심손상이 진행되면 <strong>용기 파손 전 RCS 감압</strong> 수단으로 활용 → HPME·DCH·크리프 파손 위험 저감[5]</li>
+</ol>
+</li>
+<li>설계기준(용량 — FSAR 사례로 공개된 해석 조건[2])
+<ul>
+<li><strong>안전주입 1계열만 가용</strong>: SDS <strong>1계열</strong>을 PSV 개방과 <strong>동시에</strong> 열면 노심 냉각 유지</li>
+<li><strong>안전주입 전 계열 가용</strong>: SDS <strong>2계열</strong>을 PSV 최초 개방 후 <strong>30분 지연</strong> 개방해도 노심 냉각 유지</li>
+<li>판정: 노심 <strong>혼합수위 노심 상단 위 2 ft 이상</strong>(OPR1000 SDS 수용기준[3]), 해석에서는 PCT 1,204 ℃ 이하도 확인[2]</li>
+</ul>
+</li>
+<li>구성: 가압기 상부에 연결된 <strong>독립 2계열</strong> 원격 수동 밸브[2][5], 방출 냉각재는 <strong>격납건물 내부</strong>로(OPR1000에는 IRWST 없음)</li>
+<li>설계요건(원리)
+<ul>
+<li>정상운전 중 미사용: <strong>오개방을 막는 관리 조치</strong>를 두고, 사고 시 MCR에서 원격 조작(세부 방식은 호기별 설계)</li>
+<li>단일고장에도 감압 기능과 원자로냉각재압력경계 격리가 함께 유지되도록 다중 밸브·독립 전원 구성</li>
+<li><strong>LOCA·DBA 완화 계통 아님</strong>: 고온 냉각재를 격납건물에 직접 방출 → 기기 환경조건 악화. 설계기준 초과 사고(TLOFW) 전용</li>
+</ul>
+</li>
+<li>배경: CE 계열 설계에는 <strong>가압기 PORV가 없음</strong> → 배출 경로를 전용 계통으로 확보. WH형(고리 3·4)은 안전등급 PORV 3개로 급수·배출[3]</li>
+</ul>
+<figure class="article-image"><img alt="OPR1000 SDS 2계열(가압기 상부 → 원격 수동 밸브 → 격납건물 내부)과 RWT·HPSI·집수조 재순환 루프, 일방관류냉각 6단계 운전전략과 설계기준 2조건 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/a9f69223839a3d74bb2a85fe223fdc8fc65e6ec379c22182839c5ab7b44993c9.webp"/><figcaption>OPR1000 SDS 2계열(가압기 상부 → 원격 수동 밸브 → 격납건물 내부)과 RWT·HPSI·집수조 재순환 루프, 일방관류냉각 6단계 운전전략과 설계기준 2조건 표</figcaption></figure>
+<p><strong>4. 다. 회복절차서 일방관류냉각에서의 SDS 운전전략</strong></p>
+<ul>
+<li>위치: 기능회복절차(FRP) <strong>열제거 안전기능</strong>의 수행경로 SG 냉각 → <strong>일방관류냉각</strong> 순</li>
+<li>① <strong>진입 판단</strong>: 급수(주·보조·기동·복수) 복구 불가 + SG 수위 저하·건조 임박, RCS 압력·CET 상승 </li>
+<li>② <strong>준비</strong>: RCP 정지(재고 보존·열부하 감소)[2], <strong>SIAS 확인(필요 시 수동)</strong>, HPSI·충전펌프 가동, RWT 정렬</li>
+<li>③ <strong>SDS 개방</strong>: 주제어실에서 원격 개방(조작 준비 절차는 호기별) → <strong>2계열 모두</strong> 개방, 방출 유량 확인. <strong>지체 금지</strong></li>
+<li>④ <strong>성공 확인</strong>: RCS 압력 하강 → 저가압기압력 신호 → <strong>HPSI 주입유량</strong> 확인 → SIT 주입[2]. <strong>CET·과냉각여유도·원자로용기 수위(HJTC)·가압기 수위</strong> 감시</li>
+<li>⑤ <strong>장기 냉각</strong>: RWT 저수위 → <strong>재순환작동신호(RAS)</strong> → 격납건물 집수조 흡입(SDS 방출수가 집수조로 모임). 격납건물 압력·온도·수소 감시, 필요 시 살수</li>
+<li>⑥ <strong>종료·전환</strong>: 급수 복구 노력 병행 → SG 수위·열제거 확립 → SI 종료 기준 확인 → <strong>SDS 닫음</strong> → SG로 냉각 → 정지냉각(SCS) 진입. 건조 SG 재급수는 열충격 고려</li>
+<li>실패 시: CET 649 ℃ 이상 + 회복 실패 → <strong>중대사고관리지침서(SAMG)</strong>, SDS로 용기 파손 전 감압 유지</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: RWT → HPSI → 노심 → 가압기 → SDS 2계열 → 격납건물 → 집수조 → (RAS) → HPSI 루프" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/609d43365baacf3808ebbdc7b6ecb67a55a76bb3c45081dbf6f6eb4fa7ca43b8.webp"/><figcaption>답안용 도식: RWT → HPSI → 노심 → 가압기 → SDS 2계열 → 격납건물 → 집수조 → (RAS) → HPSI 루프</figcaption></figure>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>일방관류냉각은 <strong>"주입(HPSI) + 배출(SDS)"</strong>이 짝이다. 늦을수록 감압 중 재고 손실이 커진다 → <strong>조기 개시</strong></li>
+<li>SDS는 <strong>설계기준 초과 전용</strong> 수단 → 격납건물 환경 악화를 감수하고 노심을 지키는 마지막 열제거 경로</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 왜 "30분"과 "동시에"인가</h3>
+<p>두 용량 조건은 가용 안전주입 계열 수와 개방 시점을 맞바꾼 것입니다. 안전주입이 1계열뿐이면 주입유량이 작습니다. 그래서 배출로 압력을 빨리 낮춰 주입 시점을 앞당겨야 하고, PSV가 처음 열리는 순간 바로 SDS를 열어야 노심이 드러나지 않습니다. 전 계열이 있으면 운전원의 진단·밸브 조작 시간을 30분까지 인정합니다. OPR1000(2,815 MWt) SPACE 해석에서는 두 경우의 최고 피복재 온도가 325 ℃, 350 ℃로 1,204 ℃에 크게 못 미쳤습니다[2]. 그래도 저자들의 결론은 "가능한 한 빨리 시작하라"였습니다. 같은 성격의 WH형(고리 3·4) 해석에서 SG 건조 5분 뒤 PORV를 열면 2 ft 여유가 확보됐습니다. 20분 뒤에 열면 노출은 없었지만 2 ft 여유를 지키지 못했습니다[3]. 답안에 "PSV 최초 개방 기준"이라는 시점 정의를 함께 써 주면 정확합니다.</p>
+<h3>해설: OPR1000과 APR1400을 섞지 마십시오</h3>
+<p>APR1400은 SDS 밸브를 따로 두지 않고 가압기 POSRV가 안전밸브와 감압밸브 기능을 함께 맡아, 원격 개방 시 IRWST로 방출합니다[6]. 이 문항은 OPR1000을 물었으므로 가압기 상부의 전용 SDS 2계열과 격납건물 내부 방출로 써야 합니다. OPR1000에는 IRWST가 없어 초기 수원은 RWT이고, 장기 냉각은 집수조 재순환(RAS)으로 넘어갑니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 달라진 기준 없음 — 확인 근거: 사고관리 고시 제2017-34호 → 제2026-1호(2026.1.16) 개정에도 별표 1 다중고장 9종(급수완전상실 포함)은 그대로이고, 위협요인 표만 별표 2 → 3으로 옮겨졌습니다. OPR1000 SDS 설계와 EOP의 일방관류냉각 구조에 대한 공개 변경 사항도 없습니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」, 원안위고시 제2026-1호(2026.1.16), 별표 1. 국가법령정보센터.</li>
+<li>M. Kim, M. Kim, H. Lee, H. Choi, "Simulation Study of Total Loss of Feedwater in OPR1000 using SPACE", Transactions of the Korean Nuclear Society Spring Meeting, Jeju(2018).</li>
+<li>S. J. Park, K. S. Han, C. W. Kim, H. R. Choi, E. K. Kim, "Total Loss of Feedwater Analysis of Power Uprated Kori 3&amp;4", Transactions of the Korean Nuclear Society Autumn Meeting, Busan(2005).</li>
+<li>D. Kang, Y. Cho, J. Suh, "Preliminary Assessment of SPACE code for SBLOCA with HPSI failure in OPR1000", Transactions of the Korean Nuclear Society Autumn Meeting, Yeosu(2018).</li>
+<li>R.-J. Park, S.-W. Hong, S.-B. Kim, H.-D. Kim, "An Evaluation of a Coolant Injection into an In-Vessel with a RCS Depressurization during a SBLOCA in OPR1000", Transactions of the Korean Nuclear Society Spring Meeting, Jeju(2007).</li>
+<li>S.-S. Lee, S.-H. Kim, K.-Y. Suh, "The Design Features of the Advanced Power Reactor 1400", Nuclear Engineering and Technology 41(8), 995(2009).</li>
+<li>K. H. Yoo, J. H. Back, S. H. Yun, M. G. Na, "Analysis of Golden Time for Recovering the Safety Injection System in BDBA", Transactions of the Korean Nuclear Society Spring Meeting, Jeju(2018).</li>
+</ol>

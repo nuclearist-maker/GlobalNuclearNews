@@ -18,6 +18,7 @@ from search_discovery import enrich
 from advertising import install as install_advertising
 from build_reactor_pages import main as build_reactor_pages
 from build_bilingual import install as install_bilingual
+from build_pe import install as install_pe
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "_site"
@@ -39,6 +40,7 @@ def main():
         list(pool.map(copy_public, sorted(files)))
     discovery = enrich(OUT, json.loads((ROOT / 'tools/search_config.json').read_text(encoding='utf-8')))
     print('Bilingual edition:', json.dumps(install_bilingual(ROOT, OUT)))
+    print('PE board:', json.dumps(install_pe(ROOT, OUT)))
     print('AdSense:', json.dumps(install_advertising(OUT)))
     print('Search discovery:', json.dumps(discovery))
     if not check_site(OUT):

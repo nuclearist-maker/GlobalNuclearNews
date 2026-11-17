@@ -1,0 +1,65 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2026년 원자력발전기술사 필기 1교시 1번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>가압경수로 규제기준에서 정의한 계통 간 냉각재상실사고(Inter-System LOCA, ISLOCA)의 사고정의, 위험요인 및 대응조치</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>연결부속계통</strong>: RCS에 연결되어 격납건물 밖까지 이어지는 저압계통입니다(저압안전주입, 정지냉각 흡입, CVCS 유출 배관 등).</li>
+<li><strong>압력격리밸브(PIV)</strong>: 고압 RCS와 저압계통 사이에 직렬로 둔 2개 이상의 밸브(체크밸브 또는 체크 + 전동밸브)입니다. 기술기준규칙 제22조 ④의 역류 방지·격리 요건과 연결됩니다[1].</li>
+<li><strong>격납건물 우회</strong>: 방출 경로가 격납건물 대기를 거치지 않아 살수·침적에 의한 저감을 받지 못하는 경로입니다.</li>
+<li><strong>극한파열강도(URS)</strong>: 배관이 실제로 터지는 압력입니다. 설계압력과 다르며, 이 값이 RCS 전압력 이상이면 PIV가 모두 열려도 배관이 견딥니다.</li>
+<li><strong>다중고장 사고 ⑤</strong>: 사고관리 고시(제2026-1호) 별표 1 필수 9종에 "계통간 냉각재상실사고"로 들어 있습니다[2].</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 사고 정의</strong></p>
+<ul>
+<li>RCPB에 연결된 <strong>저압계통과 RCPB 사이를 격리하는 기기(PIV)의 고장</strong>으로 저압계통이 과압되고, 저압 배관이 누설·파단되어 냉각재를 잃는 사고임[3][4]</li>
+<li>즉 RCS에서 <strong>격납건물 밖으로 연결된 부속계통의 LOCA</strong>이며, 국내는 고시 별표 1 <strong>다중고장 사고</strong>로 관리함</li>
+<li>대표 경로: <strong>LPSI 주입 라인, 정지냉각(SCS) 흡입 라인, CVCS 유출 라인</strong> (WASH-1400 "Event V")[4]</li>
+</ul>
+<p><strong>2. 위험요인</strong></p>
+<ul>
+<li><strong>격납건물 우회</strong>: 노심손상 시 살수·침적 저감 없이 조기·대량 방출 → LERF 주 기여</li>
+<li><strong>재순환 불가</strong>: 냉각재가 격납건물 밖에서 유실 → 집수조(APR1400은 IRWST)로 돌아오지 않아 장기 냉각 상실</li>
+<li><strong>보조건물 환경 악화</strong>: 고온 분출·침수·고방사선으로 저압안전주입펌프 등 완화설비 손상, 현장 접근 곤란</li>
+<li><strong>진단 지연</strong>: 격납건물 압력·방사선·집수조 수위가 정상이라 LOCA 신호가 약함</li>
+<li><strong>잠복 고장</strong>: 체크밸브 누설·개방 고착은 누설시험 없으면 장기간 미탐지, 시험·정비 중 오조작이 유발</li>
+</ul>
+<p><strong>3. 대응조치</strong></p>
+<ul>
+<li><strong>설계(예방)</strong>: 연결부속계통을 <strong>가능한 범위까지 URS ≥ RCS 전압력</strong>으로 설계, 미충족 계통은 <strong>PIV 위치 주제어실 지시 + 고압경보 + 주기적 누설시험</strong>[5]</li>
+<li><strong>연동</strong>: 정지냉각 흡입밸브 고압 개방 금지·자동 닫힘, 저압측 방출밸브</li>
+<li><strong>운영</strong>: 운영기술지침서 PIV 누설 제한·재장전 시 시험, 정지냉각 진입 조건 준수, 밸브 정렬 관리</li>
+<li><strong>사고 시</strong>: 보조건물 방사선·수위 경보로 <strong>감지</strong> → 파단 계통 <strong>격리</strong> → RCS <strong>냉각·감압</strong>으로 누설 감소 → RWT/IRWST <strong>보충</strong></li>
+<li><strong>중대사고</strong>: SAMG 파단부 침수(수중 세정)·외부 주입, 비상 조기 발령</li>
+<li>APR1400 예: <strong>정지냉각계통 설계압력 900 psig</strong> 상향·안전주입과 분리[6] → 사고관리계획서 심사에서 "발생 자체 방지" 평가[7]</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: RCS → 직렬 PIV 2개 → 격납건물 관통 → 저압계통 파단 → 환경(격납건물 우회)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/ac17b064d91a96a20cb38b01d5302cf4afd3451498d1527e1910e0632dfe249c.webp"/><figcaption>답안용 도식: RCS → 직렬 PIV 2개 → 격납건물 관통 → 저압계통 파단 → 환경(격납건물 우회)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="ISLOCA 경로도(격납건물 경계·직렬 PIV·보조건물 저압계통 파단)와 위험요인 4개, RCS·저압계통 압력 비교 막대, 예방→감지·격리→감압·보충 대응 흐름" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/137aa850d91e675b92c1afc7baf53c039d43bb7d7fccfa1e9b03a9cdb18451bc.webp"/><figcaption>ISLOCA 경로도(격납건물 경계·직렬 PIV·보조건물 저압계통 파단)와 위험요인 4개, RCS·저압계통 압력 비교 막대, 예방→감지·격리→감압·보충 대응 흐름</figcaption></figure>
+<p>정의 문장은 공개 문헌(KNS 학회 논문의 ISLOCA 정의, NRC 일반안전현안 105)에 공통된 요소, 즉 "격리 기기 고장 → 저압계통 과압 → 격납건물 밖 누설·파단"으로 썼습니다[3][4]. 설계 요건은 미국 진화형 경수로 정책(SECY-90-016, SECY-93-087)의 "URS 설계, 안 되면 지시·경보·누설시험" 구조를 따랐습니다[5].</p>
+<p>그림의 압력 막대를 보면 왜 PIV 두 개가 중요한지 드러납니다. RCS 정상 운전압력 약 15.5 MPa(a)는 APR1400 정지냉각계통 설계압력(900 psig, 약 6.3 MPa(a))의 약 2.5배입니다. 설계압력을 높여도 RCS 전압력에는 못 미치므로, 결국 PIV 감시·시험과 흡입밸브 연동이 함께 있어야 합니다. 누설 제한의 예로 미국 STS 3.4.14는 공칭 밸브 크기 1인치당 0.5 gpm, 최대 5 gpm을 둡니다[8].</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>"격납건물 밖"을 빠뜨림</strong>: 저압계통 파단이 격납건물 밖이라는 점이 우회·재순환 불가의 출발점입니다. 정의 줄에 꼭 넣으십시오.</li>
+<li><strong>설계압력과 파열강도 혼동</strong>: 요건은 설계압력이 아니라 URS ≥ RCS 전압력입니다.</li>
+<li><strong>SGTR·격리 실패와 혼동</strong>: SGTR은 2차계통을 거치는 우회이고, 격리 실패는 관통부가 처음부터 열린 경우입니다. ISLOCA는 1차 연결 저압계통이 터지는 경우입니다.</li>
+<li><strong>설계기준 LOCA로 분류</strong>: 국내는 다중고장 사고(설계기준 초과)로 관리합니다. 단일고장 가정 대상이 아닙니다.</li>
+<li><strong>대응을 사고 시 조치만 나열</strong>: 배점은 예방 설계(URS·지시·경보·시험)에 가장 많이 걸립니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제22조 ④. 국가법령정보센터.</li>
+<li>원자력안전위원회, 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」, 원안위고시 제2026-1호, 별표 1. 국가법령정보센터.</li>
+<li>S. Y. Park et al. (KAERI), "ISLOCA Analysis for a Typical 1000MW PWR", Transactions of the Korean Nuclear Society Spring Meeting (2017).</li>
+<li>U.S. NRC, NUREG-0933 "Resolution of Generic Safety Issues", Issue 105 "Interfacing Systems LOCA at Light Water Reactors".</li>
+<li>U.S. NRC, SECY-90-016 "Evolutionary Light Water Reactor (LWR) Certification Issues and Their Relationship to Current Regulatory Requirements" (1990) 및 SECY-93-087 (1993), Intersystem LOCA 항목.</li>
+<li>OECD/NEA MDEP APR1400 Working Group, TR-APR1400-01 "Design Description and Comparison of Design Differences", 2.2절.</li>
+<li>원자력안전위원회, 제206회 원자력안전위원회 의안 제2호(2025.1.9), APR1400 사고관리계획서 승인 심사 결과. nssc.go.kr.</li>
+<li>U.S. NRC, NUREG-1431 "Standard Technical Specifications — Westinghouse Plants", LCO 3.4.14 "RCS Pressure Isolation Valve (PIV) Leakage".</li>
+</ol>

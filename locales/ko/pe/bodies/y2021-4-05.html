@@ -1,0 +1,206 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2021년 원자력발전기술사 필기 4교시 5번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>원자력발전소에 설치된 공학적안전설비에 대하여 다음을 기술하시오.
+가. 공학적안전설비의 기능
+나. 공학적안전설비 계통의 구성
+다. 공학적안전설비 작동신호 종류</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>공학적안전설비(ESF)를 비상노심냉각계통 하나로 좁히지 않고, 설계기준사고에서 지켜야 할 안전기능 전체(노심 냉각, 격납건물 보호, 2차측 열제거, 방사성물질 방출 저감)와 그 기능을 맡는 계통, 그리고 계통을 깨우는 신호를 한 줄로 이어 설명할 수 있는지 봅니다. 노형이 지정되지 않았으므로 국내 가압경수로(OPR1000·APR1400)를 기준으로 쓰고 차이를 짚으면 됩니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: ESF의 정의와 법적 위치(안전설비·보호계통과의 관계)</li>
+<li>본론 가: 기능 6가지와 공통 설계 요건</li>
+<li>본론 나: 계통 구성 — 안전주입·수원·살수·격리·수소제어·보조급수·주증기 격리·비상 환기·지원계통(OPR1000/APR1400 비교)</li>
+<li>본론 다: NSSS 작동신호 6종(입력·설정치·작동), BOP 신호, 논리 특성, 사고별 조합</li>
+<li>결론: 신호 → 계통 → 기능의 연결과 현행 기준</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li><strong>공학적안전설비(ESF)</strong>: 설계기준사고(DBA)가 일어났을 때 사고 결과를 허용기준 이내로 제한하려고 설치한 안전계통임(NUREG-0800 6장 체계: 격납건물 계통·ECCS·주제어실 거주성·핵분열생성물 제거)[1]</li>
+<li>법적 위치: 기술기준규칙 제2조①3호 "안전설비" 나목(비상노심냉각장치 등 비상시 설비)의 대부분이 ESF이며, 작동 개시는 원자로보호 기능이 맡음(제26조①2호)[2]</li>
+<li>원자로정지(RPS)가 예상운전과도에서 연료를 보호한다면, ESF는 정지 이후에도 남는 냉각재 상실·열 축적·압력 상승을 처리함</li>
+</ul>
+<p><strong>2. 가. 공학적안전설비의 기능</strong></p>
+<ul>
+<li>① <strong>노심 냉각·재고량 보충</strong>: LOCA 시 붕산수를 주입해 노심을 다시 덮고 피복재 온도·산화를 ECCS 허용기준(원안위고시 제2017-23호)[3] 안에 묶음, 재순환으로 장기 냉각</li>
+<li>② <strong>부반응도 주입</strong>: 고농도 붕산수로 주증기관 파단(MSLB) 같은 과냉각 사고에서 재임계를 막음</li>
+<li>③ <strong>격납건물 건전성 유지</strong>: 열제거·감압(살수), 관통 배관 격리, 수소 등 가연성기체 제어</li>
+<li>④ <strong>핵분열생성물 제거·방출 저감</strong>: 살수에 의한 요오드 세정(pH 조절), 주제어실·연료취급지역 비상 환기·여과</li>
+<li>⑤ <strong>2차측 열제거·사고 확대 방지</strong>: 보조급수로 증기발생기 수위 유지·붕괴열 제거, 주증기·주급수 격리로 과냉각과 질량·에너지 방출 제한</li>
+<li>⑥ <strong>주제어실 거주성 유지</strong>: 운전원이 사고 중에도 머물며 조치할 수 있게 함</li>
+<li><strong>공통 설계 요건</strong>: 다중성·독립성·단일고장 기준(제44조), 소외전원 상실 시 비상디젤발전기(EDG)로 작동, 운전 중 시험·검사 가능, 내진·환경검증</li>
+</ul>
+<p><strong>3. 나. 공학적안전설비 계통의 구성</strong></p>
+<table>
+<thead>
+<tr>
+<th>계통</th>
+<th>OPR1000(일반 구성)</th>
+<th>APR1400[5][6]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>안전주입</td>
+<td>SIT 4기, HPSI 2·LPSI 2, 저온관 주입</td>
+<td>SIT 4기(유량조절기), SIP 4대, 원자로용기 직접주입(DVI)</td>
+</tr>
+<tr>
+<td>주입 수원</td>
+<td>RWT(격납건물 밖) → RAS 후 집수조</td>
+<td>IRWST(격납건물 안) 단일 수원</td>
+</tr>
+<tr>
+<td>격납건물 살수</td>
+<td>살수펌프 2계열, TSP로 pH 조절</td>
+<td>살수펌프·열교환기 2계열, IRWST 흡입</td>
+</tr>
+<tr>
+<td>격납건물 냉각</td>
+<td>팬냉각기 병행</td>
+<td>살수계통이 열제거 담당</td>
+</tr>
+<tr>
+<td>격납건물 격리</td>
+<td>관통 배관 격리밸브</td>
+<td>같음</td>
+</tr>
+<tr>
+<td>수소제어</td>
+<td>재결합기·점화기(후속 PAR)</td>
+<td>PAR 30대 + 점화기 10개(설계 예)[6]</td>
+</tr>
+<tr>
+<td>보조급수</td>
+<td>전동 2·터빈구동 2</td>
+<td>전동 2·터빈구동 2</td>
+</tr>
+<tr>
+<td>주증기 격리</td>
+<td>MSIV·MFIV</td>
+<td>같음</td>
+</tr>
+<tr>
+<td>비상 환기</td>
+<td>주제어실·연료건물</td>
+<td>주제어실·연료취급지역·격납건물 퍼지 격리</td>
+</tr>
+<tr>
+<td>지원</td>
+<td>EDG, 기기냉각수, 필수용수</td>
+<td>EDG 2대 + AAC-DG(국내 새울 3·4·신한울 1·2)</td>
+</tr>
+<tr>
+<td>신호</td>
+<td>아날로그 PPS → 보조계전기</td>
+<td>디지털 PPS(개시) → ESF-CCS(작동)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>안전주입계통</strong>: SIT는 RCS 압력이 질소 충전압 아래로 떨어지면 차압으로 피동 주입하고, 펌프는 신호로 기동함. APR1400은 SIT 유량조절기가 대유량에서 소유량으로 자동 전환해 OPR1000 LPSI의 역할을 대신함</li>
+<li><strong>수원 차이</strong>: OPR1000은 RWT가 비면 재순환작동신호(RAS)로 집수조 흡입으로 바꾸지만, APR1400은 IRWST가 격납건물 안에 있어 흡입 전환이 없음</li>
+<li><strong>살수계통</strong>: 돔 상부 헤더로 분사해 증기를 응축시켜 압력을 낮추고, 열교환기로 열을 기기냉각수에 넘기며, 요오드를 씻어 냄</li>
+<li><strong>보조급수계통</strong>: 터빈구동 펌프는 교류전원 없이 증기로 돌아 SBO에도 2차측 열제거를 유지함</li>
+<li><strong>주증기 격리</strong>: MSIV는 격납건물 밖 주증기관에 있으며, 닫혀도 그 상류의 대기 방출밸브·안전밸브로 증기를 내보내 2차측 열제거를 이어 감</li>
+<li><strong>지원계통</strong>: EDG·기기냉각수·필수용수·안전등급 HVAC가 없으면 ESF가 기능하지 못하므로 함께 다중화함</li>
+</ul>
+<figure class="article-image"><img alt="APR1400 ESF 수원·계통 연결 개념도: 격납건물 안 IRWST·SIT·살수 헤더·PAR, 밖 SIP(DVI)·살수펌프·열교환기·보조급수·MSIV(상류 대기 방출), CIAS 격리 예시, OPR1000 차이" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/93015bd88503469c1c4091662b5e89a0792e1e41c2dc8f845eaf0496df6ccfd6.webp"/><figcaption>APR1400 ESF 수원·계통 연결 개념도: 격납건물 안 IRWST·SIT·살수 헤더·PAR, 밖 SIP(DVI)·살수펌프·열교환기·보조급수·MSIV(상류 대기 방출), CIAS 격리 예시, OPR1000 차이</figcaption></figure>
+<figure class="article-image"><img alt="답안용 도식: ESF 4대 기능과 담당 계통 나무" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/4ae39179f850efc4fb3db61a3f43cacaeafe4228fcf7b2788ff014a503b47f3d.webp"/><figcaption>답안용 도식: ESF 4대 기능과 담당 계통 나무</figcaption></figure>
+<p><strong>4. 다. 공학적안전설비 작동신호 종류</strong></p>
+<ul>
+<li><strong>NSSS-ESFAS 6종</strong>(설정치 = 예시, APR1400 DCD 표 7.3-5A 공칭값[5]. OPR1000도 신호 구성은 같으나 설정치는 호기별 설계값)
+<ul>
+<li><strong>SIAS(안전주입)</strong>: 가압기 저압력 1,810 psia 또는 격납건물 고압력 1.9 psig → 안전주입펌프 기동·SI 밸브 개방·EDG 기동(APR1400은 살수펌프도 미리 기동)</li>
+<li><strong>CIAS(격납건물 격리)</strong>: SIAS와 같은 두 조건 → 격리 대상 관통 배관의 밸브 닫힘(안전주입·살수 유로는 대상 아님)</li>
+<li><strong>CSAS(격납건물 살수)</strong>: 격납건물 고-고압력 20.03 psig → 살수펌프 기동·살수 헤더 격리밸브 개방, 살수 시작(APR1400 살수펌프는 SIAS로 먼저 기동해 대기)</li>
+<li><strong>MSIS(주증기 격리)</strong>: SG 저압력 855 psia, SG 고수위 90 % NR, 격납건물 고압력 중 하나 → MSIV·MFIV 닫힘</li>
+<li><strong>AFAS-1·2(보조급수)</strong>: 해당 SG 저수위 25 % WR → 그 SG에 보조급수 공급, 파단 SG 판정 시 급수 차단 논리 별도</li>
+<li><strong>RAS(재순환, OPR1000만)</strong>: RWT 저-저수위(설정치 호기별) → 집수조 흡입 전환, LPSI 정지</li>
+</ul>
+</li>
+<li><strong>BOP-ESFAS</strong>: 방사선 감시기 입력 → 주제어실 비상 환기(CREVAS), 연료건물(취급지역) 비상 환기, 격납건물 퍼지 격리(CPIAS)</li>
+<li><strong>논리 특성</strong>
+<ul>
+<li>같은 변수의 4채널 중 2채널 트립(2/4) 시 그 변수 조건이 성립하고, 한 신호의 입력 변수끼리는 OR임</li>
+<li>일단 나간 신호는 수동 리셋 전까지 유지(래치)되며, AFAS는 예외로 밸브가 SG 수위에 따라 자동 개폐함</li>
+<li>주제어실에서 계통 단위 수동 개시 가능, 냉각·감압 운전 중에는 가압기 저압력 입력만 400 psia 이하에서 운전 바이패스 가능하고 500 psia 이상이면 자동 해제됨(APR1400 DCD 7.3.1.5[5])</li>
+<li>APR1400 응답시간 요건 예: 안전주입 40 s 이하, MSIV 닫힘 6.35 s 이하[5]</li>
+</ul>
+</li>
+<li><strong>사고별 대표 조합(설정치 도달 시)</strong>: LOCA → SIAS·CIAS(대형 LOCA 시 CSAS, OPR1000은 이후 RAS) / MSLB → MSIS·SIAS·CIAS·AFAS / SGTR → SIAS·CIAS·AFAS(고수위면 MSIS) / 급수상실 → AFAS</li>
+</ul>
+<figure class="article-image"><img alt="작동신호 6종의 입력 조건(설정치 예시 = APR1400 DCD 공칭)·작동 ESF 행 정렬표와 사고별 대표 조합" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/d6dc4a08d09781b3a0a163a4d0ae70be3e2332b95d3e669a33726713d31ba70e.webp"/><figcaption>작동신호 6종의 입력 조건(설정치 예시 = APR1400 DCD 공칭)·작동 ESF 행 정렬표와 사고별 대표 조합</figcaption></figure>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>ESF는 "신호(ESFAS) → 계통(ECCS·살수·격리·보조급수 등) → 안전기능(노심 냉각·격납 보호·열제거·방출 저감)"의 사슬로 이해해야 함</li>
+<li>근거: 기술기준규칙 제23조(격납건물)·제26조①2호(작동 개시)·제29조·제30조(비상노심냉각장치)·제31조·제44조(신뢰성), 원안위고시 제2017-23호, GDC 34~46[4]</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 같은 입력, 다른 신호</h3>
+<p>SIAS와 CIAS는 입력이 같아 LOCA에서는 거의 동시에 나오지만, 신호를 따로 두는 이유는 작동 대상과 리셋 판단이 다르기 때문입니다. 주입은 계속 필요해도 격리는 상황에 따라 일부 해제해야 할 수 있습니다. 또 CIAS가 닫는 것은 사고 완화에 필요 없는 관통 배관이며, 안전주입·살수 유로는 격리 대상이 아닙니다. 답안에서 "CIAS = 모든 배관 격리"로 쓰면 감점 요인이 됩니다.</p>
+<h3>해설: APR1400에서 사라진 신호와 더해진 보완</h3>
+<p>APR1400은 IRWST 덕분에 RAS가 없어 운전원이 흡입원을 바꾸는 조작과 그 실패 경로가 사라졌습니다. 반대로 디지털 보호계통의 소프트웨어 공통원인고장에 대비해 다양성보호계통(DPS)이 AFAS를, 새울 3·4 이후에는 SIAS까지 다양성 수단으로 보완합니다. 같은 "작동신호"라도 노형과 호기에 따라 종류와 구현이 다르므로, 답안에는 기준 노형을 먼저 밝히는 것이 안전합니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>출제 당시(2021)</th>
+<th>현행(2026)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기술기준규칙</td>
+<td>원안위규칙 제24호(2020.1.7)·제30호(2021.8.19)</td>
+<td>제37호(2026.3.30) — 제23·26·29·30·31·44조 번호 유지</td>
+</tr>
+<tr>
+<td>안전등급</td>
+<td>2021년 당시 판(구 제명)</td>
+<td>제2026-13호(2026.8.26, 제명 변경, 제5·6조 문언 유지)</td>
+</tr>
+<tr>
+<td>ECCS 성능 기준</td>
+<td>원안위고시 제2017-23호</td>
+<td>같은 고시, 이후 개정 없음</td>
+</tr>
+<tr>
+<td>사고관리</td>
+<td>고시 제2017-34호</td>
+<td>제2026-1호(2026.1.16) — 다중고장 9종 유지, 위협요인 표 별표 3</td>
+</tr>
+<tr>
+<td>국내 PAR</td>
+<td>기설치 PAR 운영</td>
+<td>2021 공익신고 → 성능 재검증 → 2025.8.28 18기 교체 운영변경허가[7] → 2026 정기검사 중 교체</td>
+</tr>
+<tr>
+<td>APR1400</td>
+<td>신고리 3·4 명칭</td>
+<td>새울 1·2(2022.11.1), 새울 3·4는 DPS-SIAS 추가</td>
+</tr>
+<tr>
+<td>미국 ECCS 규정</td>
+<td>50.46c 제정 추진</td>
+<td>2024.4.11 반려, 현행 50.46(b) 유지</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan, Chapter 6 "Engineered Safety Features"(6.2 격납건물 계통, 6.3 ECCS, 6.4 주제어실 거주성, 6.5 핵분열생성물 제거).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제2조①3호, 제23·26·29·30·31·44조. 국가법령정보센터.</li>
+<li>원자력안전위원회, 원안위고시 제2017-23호(비상노심냉각계통 성능 기준). 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, "General Design Criteria for Nuclear Power Plants", Criteria 34~46; 10 CFR 50.46.</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Rev.0, Chapter 7(7.3 ESFAS, 표 7.3-1·7.3-5A·7.3-7), NRC ADAMS ML15006A046.</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Chapter 6(6.2 격납건물 계통·가연성기체 제어, 6.3 ECCS), Chapter 10(보조급수), NRC 공개.</li>
+<li>원자력안전위원회, 피동촉매형 수소재결합기(PAR) 교체 관련 운영변경허가 의결(2025.8.28).</li>
+</ol>

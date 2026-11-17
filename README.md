@@ -1,6 +1,6 @@
 # GlobalNuclearNews
 
-A bilingual public board explaining global nuclear news and core nuclear theory. The existing URL opens in English; EN / KR links switch to the matching page.
+A bilingual public board explaining global nuclear news and core nuclear theory. The existing URL opens in Korean by default; EN / KOR links switch to the matching page. The English homepage uses index.html?lang=en.
 
 Live site: https://nuclearist-maker.github.io/GlobalNuclearNews/
 
@@ -8,10 +8,10 @@ Live site: https://nuclearist-maker.github.io/GlobalNuclearNews/
 
 Posts are written outside this repository and published from here:
 
-- Nuclear theory: `G:\내 드라이브\My_Claude\Blog-Nuclear\output-EN\<NNN_slug>\web\`
-- Concept Dictionary: `G:\내 드라이브\My_Claude\Blog-Nuclear\output-pe-EN\<C-XX-NNN_slug>\web\`
-- Nuclear History: `G:\내 드라이브\My_Claude\Blog-Nuclear\output-history\<NNN_slug>\web\`
-- Global nuclear news: `G:\내 드라이브\My_Claude\Blog\output\drafts_EN\<YYYY-MM-DD-slug>\web\`
+- Nuclear theory: `<theory-source>/<NNN_slug>/web/`
+- Concept Dictionary: `<concept-source>/<C-XX-NNN_slug>/web/`
+- Nuclear History: `<history-source>/<NNN_slug>/web/`
+- Global nuclear news: `<news-source>/<YYYY-MM-DD-slug>/web/`
 
 Each `web/` package holds `post.json` (metadata, `"status": "ready"` to publish), `article.html` and its images. The format is specified in [docs/english-post-package.md](docs/english-post-package.md).
 
@@ -25,13 +25,13 @@ The script renders every ready package into `posts/`, copies images into `assets
 
 ## Sources of the English posts
 
-- Nuclear theory posts are English adaptations of the Korean public blog series (working files under `My_Claude/Blog-Nuclear/output-EN/`).
-- Concept Dictionary entries are English adaptations of the Korean nuclear power engineering concept notes (working files under `My_Claude/Blog-Nuclear/output-pe-EN/`).
+- Nuclear theory posts are English adaptations of the Korean public blog series, imported from the configured manuscript packages.
+- Concept Dictionary entries are English adaptations of the Korean nuclear power engineering concept notes, imported from the configured manuscript packages.
 - Body figures keep every number of the original and render all text in English as a separate layer over text-free scene images.
 
 ## Korean edition
 
-The Korean edition lives at `/GlobalNuclearNews/ko/`. Articles, lists, navigation, support pages and reactor controls are localized. Original proper names, technical identifiers and reference titles may retain their spelling. Language links preserve the current article. There is no automatic language redirect or preference cookie.
+The Korean edition lives at `/GlobalNuclearNews/ko/`. Articles, lists, navigation, support pages and reactor controls are localized. Original proper names, technical identifiers and reference titles may retain their spelling. Language links preserve the current article. The root entry redirects to Korean unless lang=en is explicitly selected. No preference cookie is used.
 
 Portable Korean bodies and metadata are in `locales/ko/`; Korean images are under `assets/images/ko/`. Source manuscripts, private mapping paths and review records are not published. `tools/build_bilingual.py` installs the edition during every build, so rerunning the English publisher preserves the switcher. Both languages have static article archives and language-specific feeds, with reciprocal hreflang links and a combined root sitemap.
 
@@ -79,3 +79,7 @@ Real verification values may be added to `tools/search_config.json` under `verif
 After deployment, dry-run with `python tools/submit_indexnow.py`. Use `--submit` to verify the live project-scoped key and notify participating search engines about the sitemap URLs. The generated key is a public ownership-verification value, not an account credential. Do not continuously resend unchanged URLs. IndexNow does not replace Google/Naver/Daum registration and an HTTP 200/202 response does not guarantee indexing or ranking.
 
 Official protocol: https://www.indexnow.org/documentation
+
+## 발전기술사 준비
+
+The Korean-only [study board](https://nuclearist-maker.github.io/GlobalNuclearNews/ko/pe/index.html) contains concept explanations and exam solutions grouped by year, session and question number. Portable imports survive every English/bilingual rebuild. See [publication instructions](docs/pe-publishing.md) for adding final manuscripts and new years.

@@ -1,0 +1,143 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2022년 원자력발전기술사 필기 3교시 3번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>전출력운전 중인 가압경수형 원자력발전소에서 주증기관파단사고(MSLB)가 발생하였다. 파단 위치에 따라 다음 변수가 어떻게 변화하는지 기술하시오. 단, 사고 진행 중 원자로보호계통과 공학적안전설비는 설계대로 작동한다고 가정한다.</p>
+<ul>
+<li>원자로출력</li>
+<li>가압기 수위</li>
+<li>가압기 압력</li>
+<li>증기발생기 수위</li>
+<li>증기발생기 압력</li>
+<li>원자로격납건물 압력</li>
+</ul>
+</blockquote>
+<h2>출제 의도</h2>
+<p>MSLB의 공통 기전(2차측 과다 열제거 → 1차측 과냉 → 수축과 양의 반응도)을 이해한 뒤, <strong>파단 위치가 무엇을 바꾸는지</strong> 구분할 수 있는지를 묻는 문제입니다. 위치가 바꾸는 것은 두 가지입니다. MSIV로 방출을 끊을 수 있는지(상류냐 하류냐)와 증기가 격납건물 안으로 나오는지(안이냐 밖이냐)입니다. 증기발생기 변수는 파단 SG와 건전 SG를 나눠 써야 하고, ESF 신호가 언제 어떤 변수로 발생하는지까지 연결하면 높은 점수를 받습니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: MSLB 정의, 공통 기전, 파단 위치 3구분(격납건물 내·MSIV 상류 / 격납건물 외·MSIV 상류 / MSIV 하류)</li>
+<li>본론: 변수 6개별 시간 순 거동(트립 → MSIS → SIAS → 파단 SG 건조) — 위치별 차이 강조</li>
+<li>종합: 위치 × 변수 비교표, 신호 발생 순서</li>
+<li>결론: 위치별 평가 관점(재임계·PTS, 격납건물 압력·온도, 환경 검증)</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>MSLB = 2차측 주증기관 파단으로 증기가 대량 방출되는 사고 → SG 열제거 급증 → <strong>1차측 과냉</strong></li>
+<li>공통 기전: 냉각재 온도 하강 → ① <strong>수축</strong>(가압기 수위·압력 하강) ② <strong>음의 MTC로 양의 반응도</strong>(출력 상승·재임계 우려)</li>
+<li>파단 위치 3구분
+<ul>
+<li>① <strong>격납건물 내부·MSIV 상류</strong>: MSIV로 파단 SG의 방출을 막을 수 없음 + 증기가 격납건물로 방출</li>
+<li>② <strong>격납건물 외부(주증기 밸브실)·MSIV 상류</strong>: 파단 SG 방출 차단 불가 + 격납건물 직접 영향 없음</li>
+<li>③ <strong>MSIV 하류(공통 헤더·터빈 쪽)</strong>: MSIV 닫힘으로 파단을 통한 <strong>모든 SG의 방출 차단</strong></li>
+</ul>
+</li>
+<li>방출률 상한: SG 출구 <strong>유량제한기</strong>(벤투리)의 임계유동으로 제한</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: SG별 주증기관·유량제한기·MSIV와 공통 헤더, 격납건물 경계 기준 파단 위치 ①②③, MSIS 전 건전 SG 방출 경로(역류 차단 없는 구성)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/ac4e0abc2566933ec502296c03d84d862a6055d82a4cf36897a01825ccd74780.webp"/><figcaption>답안용 도식: SG별 주증기관·유량제한기·MSIV와 공통 헤더, 격납건물 경계 기준 파단 위치 ①②③, MSIS 전 건전 SG 방출 경로(역류 차단 없는 구성)</figcaption></figure>
+<p><strong>2. 변수별 거동</strong> (신호 설정치는 예시(APR1400 DCD 공칭값)[1], 신호 발생과 MSIV 닫힘 완료 사이에는 밸브 작동 시간이 있음)</p>
+<p>(1) 원자로출력</p>
+<ul>
+<li>트립 전: 증기 수요 증가 + 음의 MTC → <strong>소폭 상승</strong> 가능</li>
+<li>가변과출력, SG 저압력, 가압기 저압력, CPC 저 DNBR 등으로 <strong>원자로 트립</strong> → 붕괴열 수준</li>
+<li>①·②: MSIV로 파단 SG의 방출을 막을 수 없어 과냉이 이어짐 → 최대가치 제어봉 고착 가정에서 <strong>재임계 가능성 평가 대상</strong>, SI 붕산수가 음의 반응도로 종결</li>
+<li>③: MSIV 닫힘 완료 후 파단을 통한 증기 방출이 차단되어 과냉이 제한됨 → 재임계 우려 작음</li>
+<li>재임계의 제한 조건은 고온영출력·주기말이며, 발생 여부는 노형·정지여유도·주기 시점별 해석 결과에 따름</li>
+</ul>
+<p>(2) 가압기 수위</p>
+<ul>
+<li>냉각재 수축으로 <strong>급감</strong>, 대형 파단이면 지시 하한을 벗어날 수 있음</li>
+<li>①·②: SI·충전으로 보충, 파단 SG 쪽 열제거가 줄면 RCS가 다시 데워져 <strong>회복·상승</strong></li>
+<li>③: 격리 후 과냉이 멈춰 <strong>비교적 빨리 회복</strong></li>
+</ul>
+<p>(3) 가압기 압력</p>
+<ul>
+<li>수축으로 <strong>급감</strong> → <strong>SIAS(가압기 저압력, APR1400 1,810 psia)</strong> → 붕산수 주입</li>
+<li>①·②: SI 주입과 수축의 균형으로 하강이 완화됨. 파단 SG 재고가 줄어 열제거가 감소하면 SI 유입과 함께 <strong>재가압</strong>될 수 있음 → 원자로용기가 식은 상태의 재가압이므로 <strong>PTS 평가</strong>와 SI 조절·종료 기준을 적용함</li>
+<li>③: 격리 후 히터·충전으로 <strong>회복</strong>, 파단이 작으면 SIAS에 도달하지 않을 수 있음</li>
+</ul>
+<p>(4) 증기발생기 수위(계측 수위)</p>
+<ul>
+<li>초기: 감압으로 기포가 팽창해 <strong>swell(계측 수위 일시 상승)</strong> 가능, 재고량은 감소함. 이후 트립에 따른 열전달 감소로 shrink가 겹침</li>
+<li>①·② 파단 SG: <strong>급감</strong>. 파단 SG 급수가 격리되면 재고가 고갈되어 열제거가 줄어듦(계측 수위 0 %가 곧 완전 건조는 아님)</li>
+<li>①·② 건전 SG: 감소 후 <strong>AFAS 보조급수로 회복</strong>(CE형은 SG 간 압력차로 파단 SG를 식별해 보조급수 차단)</li>
+<li>③: <strong>모든 SG</strong>가 감소 후 격리 뒤 보조급수로 회복</li>
+</ul>
+<p>(5) 증기발생기 압력</p>
+<ul>
+<li>① 파단 SG: <strong>격납건물 압력</strong> 쪽으로, ② 파단 SG: <strong>대기압</strong> 쪽으로 계속 하강(방출 중에는 유동 저항·임계유동 때문에 그보다 높게 유지)</li>
+<li>①·② 건전 SG: MSIV 하류가 공통 헤더로 이어져 있으면 함께 하강(역류 차단이 없는 구성 기준: 건전 SG → 건전측 MSIV → 헤더 → 파단측 MSIV 역방향 → 파단부) → <strong>MSIS(SG 저압력, APR1400 855 psia)</strong>로 MSIV 닫힘 → 붕괴열로 <strong>재상승</strong>, ADV 제어압력 또는 MSSV 설정압 이하에서 유지</li>
+<li>③: <strong>모든 SG</strong>가 MSIV 닫힘 완료까지 하강 후 재상승</li>
+</ul>
+<p>(6) 원자로격납건물 압력</p>
+<ul>
+<li>①: 과열증기 유입으로 <strong>급상승</strong> → <strong>격납건물 고압력(APR1400 1.9 psig)</strong>에서 SIAS·CIAS·MSIS → 대형 파단이면 <strong>고-고 압력(APR1400 20.03 psig)</strong>에서 CSAS 살수 → 첨두 후 살수·냉각기로 하강</li>
+<li>②·③: <strong>직접 증기 방출에 따른 유의한 상승 없음</strong>(②는 주증기 밸브실·보조건물, ③은 MSIV 하류 배관이 지나는 구역의 환경이 악화됨)</li>
+</ul>
+<figure class="article-image"><img alt="원자로출력·가압기 수위·가압기 압력·SG 수위·SG 압력·격납건물 압력의 파단 위치별 대표 경향(MSIV 상류 ①·② 대 하류 ③, 파단 SG 대 건전 SG, 트립·MSIV 닫힘 완료 시점, 신호 설정치)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/e86e3070b3db5bedfd6f143743e436a0959927276e46b41f7677d1c7230c6b1c.webp"/><figcaption>원자로출력·가압기 수위·가압기 압력·SG 수위·SG 압력·격납건물 압력의 파단 위치별 대표 경향(MSIV 상류 ①·② 대 하류 ③, 파단 SG 대 건전 SG, 트립·MSIV 닫힘 완료 시점, 신호 설정치)</figcaption></figure>
+<p><strong>3. 위치 × 변수 비교</strong></p>
+<table>
+<thead>
+<tr>
+<th>변수</th>
+<th>① 내부·MSIV 상류</th>
+<th>② 외부·MSIV 상류</th>
+<th>③ MSIV 하류</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>원자로출력</td>
+<td>상승 → 트립, 재임계 평가</td>
+<td>①과 같음</td>
+<td>상승 → 트립, 격리 후 과냉 제한</td>
+</tr>
+<tr>
+<td>가압기 수위·압력</td>
+<td>급감 → SIAS, 열제거 감소 후 회복·재가압 가능</td>
+<td>①과 같음</td>
+<td>감소 → 격리 후 회복</td>
+</tr>
+<tr>
+<td>SG 수위</td>
+<td>파단 SG 급감·재고 고갈, 건전 SG 보조급수 회복</td>
+<td>①과 같음</td>
+<td>전 SG 감소 → 회복</td>
+</tr>
+<tr>
+<td>SG 압력</td>
+<td>파단 SG 격납건물 압력 쪽으로, 건전 SG 재상승</td>
+<td>파단 SG 대기압 쪽으로, 건전 SG 재상승</td>
+<td>전 SG 하강 → 재상승</td>
+</tr>
+<tr>
+<td>격납건물 압력</td>
+<td>급상승 → (대형) CSAS → 하강</td>
+<td>유의한 상승 없음</td>
+<td>유의한 상승 없음</td>
+</tr>
+</tbody>
+</table>
+<p><strong>4. 결론</strong></p>
+<ul>
+<li>MSIV <strong>상류</strong> 파단은 파단 SG 재고가 줄 때까지 과냉이 계속되므로 <strong>재임계·PTS</strong> 평가가 핵심임</li>
+<li>격납건물 <strong>내부</strong> 파단은 <strong>격납건물 압력·온도</strong>(최고 온도는 MSLB가 지배하는 경우가 많음)와 기기 환경 검증이 핵심임[3]</li>
+<li>MSIV <strong>하류</strong> 파단은 MSIS로 모든 SG가 격리되어 격리 후 과냉이 제한됨</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: SG 변수는 반드시 둘로 나눠 쓰십시오</h3>
+<p>이 문항에서 가장 많이 감점되는 부분은 증기발생기 변수를 하나로 쓰는 것입니다. MSIV 상류 파단에서는 파단 SG와 건전 SG가 MSIV 닫힘 이후 정반대로 움직입니다. 파단 SG는 압력·수위가 끝까지 떨어지고, 건전 SG는 격리된 뒤 붕괴열로 압력이 회복되고 보조급수로 수위가 돌아옵니다. MSIV 하류가 공통 헤더로 이어진 구성이라면 MSIS 전에는 건전 SG도 헤더와 파단측 MSIV를 거꾸로 지나 함께 방출된다는 점을 써 주면 위치에 따른 차이가 분명해집니다. 역류방지밸브가 있는 설계는 이 경로가 막히므로 "구성에 따라"라는 단서를 붙입니다.</p>
+<p>가압기 압력의 재상승도 답안에 한 줄 넣을 가치가 있습니다. 파단 SG의 재고가 줄어 열제거가 감소하면 RCS가 다시 데워지고, 그 사이 SI가 계속 주입되면 압력이 오를 수 있습니다. 재상승 여부와 시점은 SI 유량, 건전 SG 열제거, 파단 SG 급수 격리에 따라 달라집니다. 이때 원자로용기 벽은 이미 식어 있으므로 가압열충격 관점에서 SI 조절·종료 기준을 적용합니다. fig1의 곡선은 대표 경향이며, 어떤 신호가 먼저 발생하는지와 회복 정도는 노형·파단 크기·사고 조건에 따라 달라집니다. 설정치도 노형마다 다르므로 답안에는 "예"로 표기하는 것이 안전합니다. 본문 설정치는 APR1400 DCD 표 7.3-5A의 공칭값이며[1], 다른 노형은 호기별 운영기술지침서 값을 따릅니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 MSLB 설계기준 해석 체계(SRP 15.1.5의 재임계·연료 손상·격납건물·선량 평가)[2]는 달라지지 않았습니다. 국내 「원자로시설 등의 기술기준에 관한 규칙」은 현행 원안위규칙 제37호(2026.3.30)로 판이 바뀌었지만 격납건물(제23조), 원자로보호계통(제26조), 반응도제어계통(제28조) 요건 체계는 같습니다[4]. 설계기준을 넘는 다중고장은 사고관리 고시가 출제 당시 제2017-34호에서 현행 제2026-1호(2026.1.16)로 개정되었으나, 별표 1의 다중고장 9종 구성은 그대로입니다[5]. MSLB에 이어 SG 전열관이 파단되는 경우는 이 다중고장 범위에서 따로 평가합니다. 노형 명칭은 2022년 11월 신고리 3·4호기가 새울 1·2호기로 바뀌었습니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>KHNP, APR1400 Design Control Document Tier 2, Rev. 0, Chapter 7, Section 7.3 (Table 7.3-5A ESF 작동 설정치) (2014), NRC ADAMS ML15006A046.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 15.1.5 "Steam System Piping Failures Inside and Outside of Containment (PWR)", Rev. 3 (2007).</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 6.2.1.4 "Mass and Energy Release Analysis for Postulated Secondary System Pipe Ruptures".</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제23조·제26조·제28조. 국가법령정보센터.</li>
+<li>원자력안전위원회, 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」, 원안위고시 제2026-1호(2026.1.16), 별표 1. 국가법령정보센터.</li>
+</ol>

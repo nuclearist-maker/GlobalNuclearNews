@@ -1,0 +1,67 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2021년 원자력발전기술사 필기 1교시 8번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>각 단계별(Level-1, 2, 3) 확률론적안전성평가(PSA) 목적</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>경계 확장</strong>: PSA는 초기사건 → 노심손상 → 환경 방출 → 소외 영향으로 분석 경계를 넓혀 가며 세 단계로 나눕니다.</li>
+<li><strong>Level 1</strong>: 노심손상빈도(CDF)와 지배 사고경위를 구합니다.</li>
+<li><strong>Level 2</strong>: 격납건물 거동과 방출군별 빈도·선원항, 조건부 격납건물 파손확률(CCFP)·대량조기방출빈도(LERF)를 구합니다.</li>
+<li><strong>Level 3</strong>: 소외 선량과 조기·암 사망 위험도 같은 공중 위험도를 구합니다.</li>
+<li><strong>국내 안전목표</strong>: 원안위고시 제2026-1호 제9조 — 사망 위험도 0.1 %, Cs-137 100 TBq 초과 빈도 합 10⁻⁶/년 미만입니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>PSA: 사고경위의 <strong>빈도 × 결과</strong>로 위험도를 정량화해 결정론적 안전해석을 보완함</li>
+<li>단계 구분: NUREG/CR-2300[1], IAEA SSG-3 Rev.1(1단계)·SSG-4 Rev.1(2단계)[2][3]</li>
+</ul>
+<p><strong>2. Level 1 PSA — 초기사건 → 노심손상</strong></p>
+<ul>
+<li>목적: 노심손상 <strong>사고경위 식별, CDF 정량화</strong>, 지배 기여 계통·기기·인적 조치 파악 → 설계·운영 개선</li>
+<li>방법: 초기사건 분석, 사건수목·고장수목, HRA·CCF, MCS 정량화, <strong>CDF = Σ f_IE × P(노심손상 | IE)</strong></li>
+<li>산출: CDF(/원자로·년), 중요도(FV·RAW), 불확실성</li>
+</ul>
+<p><strong>3. Level 2 PSA — 노심손상 → 환경 방출</strong></p>
+<ul>
+<li>목적: <strong>중대사고 현상·격납건물 파손·격리 실패·우회</strong> 평가, 격납건물 취약점과 중대사고 관리 전략 근거 제공</li>
+<li>흐름: PDS → APET(CET) → 방출군 → 선원항</li>
+<li>산출: <strong>방출군별 빈도·선원항</strong>, CCFP, LRF·LERF</li>
+</ul>
+<p><strong>4. Level 3 PSA — 환경 방출 → 소외 영향</strong></p>
+<ul>
+<li>목적: 대기확산·피폭경로·방호조치를 반영해 <strong>소외 결과와 공중 위험도</strong> 평가, 안전목표 비교와 비상계획 효과 확인</li>
+<li>산출: 개인·집단 선량, <strong>조기사망·잠재성 암사망 위험도</strong>, 토지 오염, CCDF</li>
+</ul>
+<p><strong>5. 국내 기준(고시 제2026-1호 제9조)[4]</strong></p>
+<ul>
+<li>원전 사고로 인한 초기사망·암사망 위험도가 각각 다른 원인에 의한 전체 위험도의 <strong>0.1 % 이하</strong>(Level 3), <strong>Cs-137 100 TBq 초과 빈도 합 10⁻⁶/년 미만</strong>(Level 2)</li>
+</ul>
+<figure class="article-image"><img alt="경계 4개(초기사건·노심손상·환경 방출·소외 영향)와 Level 1·2·3 괄호, 단계별 목적 답안용 도식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/210f3d4d3306fc68a8be8844972094f763edb47d41524466e210acb0fafb13a5.webp"/><figcaption>경계 4개(초기사건·노심손상·환경 방출·소외 영향)와 Level 1·2·3 괄호, 단계별 목적 답안용 도식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="경계 칩 4개와 단계 카드 3개(질문·목적·산출물), CDF 식 카드, Level 2 흐름, 판단 기준 보충표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/f94885078e1ce4b1cdc9ac28c429e1f7756c82786f46e55f5b32746b3e41aaa4.webp"/><figcaption>경계 칩 4개와 단계 카드 3개(질문·목적·산출물), CDF 식 카드, Level 2 흐름, 판단 기준 보충표</figcaption></figure>
+<p>목적 문제는 단계마다 <strong>하나의 질문</strong>으로 정리하면 답안이 깔끔해집니다. Level 1은 "노심이 얼마나 자주 손상되는가", Level 2는 "손상 뒤 무엇이 얼마나 자주, 얼마나 방출되는가", Level 3은 "그 방출이 주민과 환경에 어떤 영향을 주는가"를 묻습니다. 앞 단계의 결과가 뒤 단계의 입력이 된다는 점도 함께 씁니다. 노심손상 경위는 발전소손상군(PDS)으로 묶여 Level 2로 가고, 방출군별 빈도와 선원항은 Level 3의 입력이 됩니다.</p>
+<p>지표의 성격을 구분해야 감점을 피할 수 있습니다. CDF·LRF·LERF는 원자로·년당 빈도이고, CCFP는 노심손상이 일어났다는 조건에서의 확률이며, 선원항은 방출 시점·양·조성 같은 방출 특성입니다. CCDF는 선량이나 사망자 수 같은 결과값을 넘을 빈도를 그린 곡선입니다.</p>
+<p>판단 기준은 출처가 다릅니다. 국내 고시 제9조에는 원전 사고로 인한 초기사망·암사망 위험도 0.1 %(다른 원인에 의한 전체 위험도 대비 비율)와 Cs-137 100 TBq 초과 빈도 합 10⁻⁶/년 미만만 있습니다. CDF 목표(INSAG-12: 기존 약 10⁻⁴ 미만, 신규 10⁻⁵ 이하)[5], 미국 RG 1.174의 LERF 기준값(가동원전 10⁻⁵/년)[6], 신규 원전에 많이 인용되는 대량방출빈도(LRF) 10⁻⁶/년(미국 NRC 지침, LERF와 다른 지표)은 통용되는 값입니다. INSAG-12는 대량 방출을 수치 대신 "기존 원전은 CDF보다 최소 10배 낮게, 신규 원전은 대량 조기방출의 실질적 배제"로 적습니다. Cs-137 목표는 방출량 문턱을 넘는 사고의 빈도이므로 LERF와 같은 지표가 아닙니다.</p>
+<p><strong>현행 기준 메모</strong>: 사고관리 고시는 출제 당시 제2017-34호에서 현행 제2026-1호(2026.1.16)로 바뀌었고 제9조 목표치는 같습니다. IAEA 지침은 SSG-3 Rev.1(2024)·SSG-4 Rev.1(2025)로 개정되었습니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>경계를 첫 줄에</strong>: 초기사건 → 노심손상 → 방출 → 소외 영향과 단계별 대응을 먼저 씁니다.</li>
+<li><strong>CDF를 확률로 표기</strong>: 원자로·년당 빈도입니다.</li>
+<li><strong>LERF = Cs-137 목표로 쓰기</strong>: 정의가 다른 별개 지표입니다.</li>
+<li><strong>Level 2를 구조해석으로만</strong>: 격리 실패·우회·현상·선원항까지 씁니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, PRA Procedures Guide: A Guide to the Performance of Probabilistic Risk Assessments for Nuclear Power Plants, NUREG/CR-2300 (1983).</li>
+<li>IAEA, Development and Application of Level 1 Probabilistic Safety Assessment for Nuclear Power Plants, Specific Safety Guide SSG-3 (Rev. 1) (2024).</li>
+<li>IAEA, Development and Application of Level 2 Probabilistic Safety Assessment for Nuclear Power Plants, Specific Safety Guide SSG-4 (Rev. 1) (2025).</li>
+<li>원자력안전위원회, 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」, 원안위고시 제2026-1호(2026.1.16), 제9조. 국가법령정보센터.</li>
+<li>IAEA INSAG, Basic Safety Principles for Nuclear Power Plants, 75-INSAG-3 Rev. 1, INSAG-12 (1999).</li>
+<li>U.S. NRC, Regulatory Guide 1.174 "An Approach for Using Probabilistic Risk Assessment in Risk-Informed Decisions on Plant-Specific Changes to the Licensing Basis".</li>
+</ol>

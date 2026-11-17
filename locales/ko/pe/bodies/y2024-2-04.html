@@ -1,0 +1,192 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2024년 원자력발전기술사 필기 2교시 4번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>가압경수로 비상노심냉각계통의 성능에 관한 설계기준에 대해 다음을 기술하시오.
+가. 허용기준
+나. 평가방법
+다. OPR1000 비상노심냉각계통 주요 기기와 그 기능</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>문두의 "비상노심냉각계통의 성능에 관한 설계기준"은 원안위고시 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」의 제명을 그대로 옮긴 표현입니다. 가는 고시 제3조, 나는 제4조(와 제5조)에 그대로 대응합니다. 다섯 수치를 외웠는지와 함께 "평가방법이 두 갈래이고 LOCA 스펙트럼 전체를 계산해야 한다"는 구조를 아는지를 봅니다. 다는 그 기준을 실제로 만족시키는 하드웨어를 국내 표준형 기준으로 연결할 수 있는지 확인하는 문항입니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 근거 체계(기술기준규칙 제30조 → 고시 제2017-23호, 미국 10 CFR 50.46)</li>
+<li>본론 가: 허용기준 5개(제3조)와 각 기준의 목적</li>
+<li>본론 나: 평가방법(제4조) — 공통 요건(LOCA 스펙트럼·최악 조건), 보수적 평가(부록 K형), 최적평가(불확실성·95/95), 변경·오류 보고(제5조)</li>
+<li>본론 다: OPR1000 ECCS 기기(SIT·HPSI·LPSI·RWT·집수조·TSP·신호·EDG)의 구성과 기능, 운전 순서</li>
+<li>결론: 기준 → 평가 → 설비가 한 줄로 이어지는 구조, 현행 동향(50.46c 미제정)</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>ECCS: LOCA 등 설계기준사고 시 RCS에 붕산수를 주입해 <strong>노심 냉각·부반응도·장기 냉각</strong>을 제공하는 공학적 안전설비임</li>
+<li>근거: 「원자로시설 등의 기술기준에 관한 규칙」 <strong>제30조</strong>(비상노심냉각장치)[1] ① 고시 허용기준 적합 ② 단일전력·단일고장 가정 시에도 기능</li>
+<li>세부 기준: 원안위고시 <strong>제2017-23호</strong> 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」(제3조 허용기준, 제4조 평가방법, 제5조 변경·오류 보고)[2]</li>
+<li>미국 대응: <strong>10 CFR 50.46</strong>(b)(1)~(5), 부록 K, GDC 35~37[3]</li>
+<li>적용 대상: 원통형 <strong>지르코늄합금 피복재 + UO₂ 소결체</strong> 연료 가압경수로</li>
+<li>냉각재상실사고 정의(제2조): 최대 배관 <strong>양단 파단</strong>을 포함한 압력경계 파손으로 냉각재 상실률이 보충계통 능력을 넘는 가상 사고임</li>
+</ul>
+<p><strong>2. 가. 허용기준(고시 제3조)</strong> — 계산된 냉각성능이 다섯 기준을 <strong>모두</strong> 만족해야 함</p>
+<table>
+<thead>
+<tr>
+<th>항</th>
+<th>기준</th>
+<th>판정 대상</th>
+<th>목적</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>피복재 최고온도(PCT) ≤ 1,204 ℃</strong>(2,200 °F)</td>
+<td>노심 최고온 지점</td>
+<td>Zr-증기 반응 급가속·취화 방지</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>최대 산화 ≤ 산화 전 피복 두께 × 0.17</strong>(17 % ECR)</td>
+<td>가장 많이 산화된 <strong>국부</strong> 지점</td>
+<td>재관수 급랭 시 피복 연성 유지(파쇄 방지)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>수소 발생 ≤ 피복 전량 반응 가상량 × 0.01</strong></td>
+<td><strong>노심 전체</strong> 피복</td>
+<td>노심 전체 반응량·수소 부담 제한</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>냉각가능 형상</strong> 유지</td>
+<td>노심 형상 변화</td>
+<td>부풀림·파열에 의한 유로 막힘 방지</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>장기 냉각</strong></td>
+<td>초기 작동 이후</td>
+<td>장수명 방사성물질이 남는 기간 동안 붕괴열 제거</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>1·2는 함께 <strong>피복 연성</strong>을 지켜 4(형상)를 떠받침. 1,204 ℃는 녹는점(Zircaloy 약 1,850 ℃)이 아닌 설계 판정선임</li>
+<li>ECR = 흡수 산소가 모두 ZrO₂가 된다고 볼 때의 등가 산화 두께 ÷ 산화 전 두께. 파열이 계산되면 내면 산화도 더함</li>
+<li>수소 1 %는 피복 반응량 기준이며 <strong>격납건물 수소 농도가 아님</strong></li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 가로 국부 최대 산화(ECR %)·세로 PCT(℃) 평면 위의 허용 영역(≤17 %, ≤1,204 ℃)과 나머지 세 기준 목록" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/1a9a8a97a54070cdce7c0f223c24e586c72fde6c6d897de4e3f42b6230296377.webp"/><figcaption>답안용 도식: 가로 국부 최대 산화(ECR %)·세로 PCT(℃) 평면 위의 허용 영역(≤17 %, ≤1,204 ℃)과 나머지 세 기준 목록</figcaption></figure>
+<p><strong>3. 나. 평가방법(고시 제4조·제5조)</strong></p>
+<ul>
+<li><strong>공통 요건</strong>: 허용 가능한 평가방법 중 <strong>하나</strong>로 계산하되, <strong>파단 크기·위치 등 성질을 바꿔 가며 다양한 LOCA</strong>를 계산해 <strong>가장 심각한 경우</strong>가 포함됐음을 입증해야 함
+<ul>
+<li>범위: 소형 파단 ~ 최대 배관 양단 파단, 저온관·고온관·펌프 흡입관 위치</li>
+<li>가정: <strong>최악 단일고장</strong>(대표: EDG 1대 상실 = 1계열 상실), 소외전원 상실 여부, 노심 연소 시점·출력분포</li>
+</ul>
+</li>
+<li><strong>① 보수적 평가방법(제4조 1호)</strong>: 보수성이 입증·승인된 모델 사용 — 미국 <strong>부록 K</strong>가 대표
+<ul>
+<li>출력 허가출력 × <strong>1.02</strong>, 붕괴열 <strong>ANS-1971 × 1.2</strong>, 금속-물 반응 <strong>Baker-Just</strong>[3]</li>
+<li>임계유량 Moody(방출계수 0.6~1.0 검토), 취출 중 CHF 후 핵비등 복귀 금지, 저온관 파단 시 ECC <strong>우회</strong> 가정, 재관수율 1 in/s 미만이면 증기 냉각만 인정</li>
+<li>판정값 = <strong>계산 PCT</strong></li>
+</ul>
+</li>
+<li><strong>② 최적평가방법(제4조 2호)</strong>: 4요건 충족
+<ul>
+<li>실제 거동을 <strong>사실적으로 모의</strong>, 가용 <strong>실험자료로 검증</strong></li>
+<li>방법·입력의 <strong>불확실성 정량화</strong>(CSAU 틀: 시나리오·PIRT → 코드 평가 → 불확실성 전파)[4]</li>
+<li>기준 만족 <strong>확률이 매우 높음</strong>을 입증 — 실무상 PCT <strong>95 % 확률·95 % 신뢰도</strong>(95/95)</li>
+<li>Wilks 순서통계: 단측 95/95 표본 수 <strong>1차 59회</strong>·2차 93회·3차 124회[5]</li>
+<li>국내 예: KREM(최적평가 방법론). 미국은 1988년 50.46 개정으로 허용</li>
+</ul>
+</li>
+<li><strong>③ 변경·오류 관리(제5조)</strong>: 영향을 평가해 <strong>매년 3월까지</strong> 보고, PCT가 기승인값과 <strong>30 ℃ 이상</strong> 차이(누적 절대값 포함) 나면 <strong>30일 이내</strong> 보고(미국 50.46(a)(3)은 50 °F 초과)[2][3]</li>
+</ul>
+<figure class="article-image"><img alt="고시 제4조 평가 흐름: 공통 입력(LOCA 스펙트럼·단일고장·LOOP) → 보수적(부록 K 가정 목록)과 최적평가(4요건·Wilks 표본 수) 두 갈래 → 제3조 다섯 기준 판정 → 제5조 30 ℃·30일 보고" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/5868317cc8d47897027479f7da4ffad02b6c5297ce2a25d15df93a80b34b020f.webp"/><figcaption>고시 제4조 평가 흐름: 공통 입력(LOCA 스펙트럼·단일고장·LOOP) → 보수적(부록 K 가정 목록)과 최적평가(4요건·Wilks 표본 수) 두 갈래 → 제3조 다섯 기준 판정 → 제5조 30 ℃·30일 보고</figcaption></figure>
+<p><strong>4. 다. OPR1000 ECCS 주요 기기와 기능</strong>(CE형 기계 2계열 구성 — 용량·설정치는 호기별 설계값)</p>
+<table>
+<thead>
+<tr>
+<th>기기</th>
+<th>구성</th>
+<th>기능</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>안전주입탱크(SIT)</td>
+<td>4기, 저온관마다 1기[6], 질소 가압 붕산수</td>
+<td>RCS 압력이 탱크 압력 아래로 떨어지면 <strong>압력차로 자동 주입</strong>(피동). LBLOCA 취출·재충수 신속 충수. 1기는 파단부 유실 가정</td>
+</tr>
+<tr>
+<td>고압안전주입펌프(HPSI)</td>
+<td>계열당 1대(2계열)[7]</td>
+<td><strong>고압 주입</strong>(SBLOCA 재고량 보충), 재순환 운전, <strong>고온관 동시 주입</strong></td>
+</tr>
+<tr>
+<td>저압안전주입펌프(LPSI)</td>
+<td>계열당 1대(2계열)[7][8]</td>
+<td><strong>저압 대유량</strong>(LBLOCA 재관수), RAS 시 자동 정지, 정지냉각 겸용[8]</td>
+</tr>
+<tr>
+<td>재장전수탱크(RWT)</td>
+<td>격납건물 밖, 고농도 붕산수</td>
+<td><strong>주입 단계 수원</strong>, 부반응도</td>
+</tr>
+<tr>
+<td>재순환 집수조</td>
+<td>격납건물 최저점, 스크린</td>
+<td><strong>재순환 단계 수원</strong> → 장기 냉각</td>
+</tr>
+<tr>
+<td>삼인산나트륨(TSP)</td>
+<td>격납건물 바닥 바스켓</td>
+<td>재순환수 <strong>pH ≥ 7</strong>[9] → 요오드 휘발·응력부식 억제</td>
+</tr>
+<tr>
+<td>작동 신호</td>
+<td>SIAS / RAS</td>
+<td>SIAS(가압기 저압력 또는 격납건물 고압력) → 펌프 기동·밸브 개방. RAS(RWT 저수위) → 집수조로 흡입 전환·LPSI 정지[8]</td>
+</tr>
+<tr>
+<td>비상디젤발전기(EDG)</td>
+<td>계열별 1대</td>
+<td>LOOP 시 펌프 전원. 1대 상실(단일고장)에도 나머지 1계열로 기능</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>운전 순서(LBLOCA)</strong>: SIAS → SIT 주입(취출 중) → HPSI·LPSI 주입(EDG 부하 투입 후) → 재관수·급랭 → RAS → 집수조 재순환 → 고온관·저온관 동시 주입(붕산 석출 방지)</li>
+<li>기기와 기준의 연결: SIT·LPSI = 1·2·4 기준(재관수 피크 억제), 집수조·고온관 주입 = 5 기준(장기 냉각)</li>
+</ul>
+<figure class="article-image"><img alt="OPR1000 ECCS 계열 배치도: A·B 계열(EDG·HPSI·LPSI), 공통 RWT·집수조·TSP, SIT 4기와 저온관 4개, SIAS·RAS 전환점, 기기별 기능·담당 기준 번호" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/f06f08d8ae7b1f34fcb8f76af86ea76c7a529ede1b5ca432b978aa72d1ff65d9.webp"/><figcaption>OPR1000 ECCS 계열 배치도: A·B 계열(EDG·HPSI·LPSI), 공통 RWT·집수조·TSP, SIT 4기와 저온관 4개, SIAS·RAS 전환점, 기기별 기능·담당 기준 번호</figcaption></figure>
+<figure class="article-image"><img alt="답안용 도식: 2계열 블록도(EDG → HPSI·LPSI), RWT/집수조 흡입 전환(RAS), SIT 4 → 저온관 4" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/0339d83edeac9fa6d9cdec28e47b620b42acb333c32e8d91cb4dd2e0140e69ff.webp"/><figcaption>답안용 도식: 2계열 블록도(EDG → HPSI·LPSI), RWT/집수조 흡입 전환(RAS), SIT 4 → 저온관 4</figcaption></figure>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>기준(제3조) → 평가(제4조, 최악 LOCA·단일고장) → 설비(SIT·HPSI·LPSI·재순환)가 하나의 고리로 연결되며, PCT 여유도(1,204 ℃ − 계산 PCT)로 관리함</li>
+<li>출력 증강·연료 변경 시 재평가, 제5조로 변경 누적을 관리함. 미국 50.46c(수소 의존 산화 한계)는 2024년 반려되어 현행 기준이 유지됨</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 17 %와 1 %의 "분모"를 구분하십시오</h3>
+<p>두 기준 모두 피복 산화에서 나오지만, 17 %는 가장 많이 산화된 한 지점의 두께 비율이고 1 %는 노심 전체 피복이 다 반응했을 때의 가상 수소량 대비 비율입니다. 답안에 "판정 대상"을 표처럼 붙이면 이 혼동을 피했다는 것이 바로 보입니다.</p>
+<h3>해설: 평가방법은 "코드 이름"이 아니라 "구조"로 쓰십시오</h3>
+<p>고시 제4조 본문의 요구는 두 가지입니다. 승인된 방법 중 하나를 쓸 것, 그리고 LOCA 스펙트럼 전체를 계산해 최악 사례를 찾을 것입니다. 보수적 방법은 입력과 모델에 여유를 넣어 계산값 하나로 판정하고, 최적평가는 현실적으로 계산한 뒤 불확실성 분포의 95/95 상한으로 판정합니다. 둘 다 "보수성"을 확보하지만 넣는 위치가 다릅니다. 코드명(RELAP5 등)은 덧붙이는 정도로 충분합니다.</p>
+<h3>해설: 다는 기능을 "언제·어느 압력에서"로 묶으면 강해집니다</h3>
+<p>SIT는 압력차로, HPSI는 고압에서, LPSI는 저압 대유량으로 들어갑니다. RAS를 경계로 수원이 RWT에서 집수조로 바뀝니다. 기기 이름만 나열하기보다 이 순서를 한 줄 붙이면 채점자가 계통 이해를 확인하기 쉽습니다. APR1400은 SIP 4대·직접용기주입(DVI)·SIT 유량조절기·IRWST로 구성이 달라 LPSI와 RAS가 없습니다[10].</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 달라진 기준 없음(확인 근거: 국가법령정보센터 DRF 2026-10-10 조회 — 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」 현행 원안위고시 제2017-23호(2017.12.26), 이후 개정 차수 없음. 상위 기술기준규칙은 원안위규칙 제37호(2026.3.30)로 개정됐으나 비상노심냉각장치는 그대로 제30조). 미국 10 CFR 50.46c는 2024.4.11 위원회 결정(SRM)으로 반려되어 미제정이므로 현행 50.46(b)를 인용합니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제30조. 국가법령정보센터.</li>
+<li>원자력안전위원회, 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」, 원안위고시 제2017-23호(2017.12.26), 제2조~제5조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR 50.46 "Acceptance criteria for emergency core cooling systems for light-water nuclear power reactors" 및 10 CFR Part 50 Appendix K "ECCS Evaluation Models", Appendix A GDC 35~37.</li>
+<li>B. E. Boyack et al., "Quantifying Reactor Safety Margins: Application of Code Scaling, Applicability, and Uncertainty Evaluation Methodology to a Large-Break, Loss-of-Coolant Accident", NUREG/CR-5249(1989).</li>
+<li>S. S. Wilks, "Determination of Sample Sizes for Setting Tolerance Limits", Annals of Mathematical Statistics 12(1941).</li>
+<li>R.-J. Park, S.-W. Hong, S.-B. Kim, H.-D. Kim, "An Evaluation of a Coolant Injection into an In-Vessel with a RCS Depressurization during a SBLOCA in OPR1000", Transactions of the Korean Nuclear Society Spring Meeting, Jeju(2007).</li>
+<li>M. Kim et al., "Simulation Study of Total Loss of Feedwater in OPR1000 using SPACE", Transactions of the Korean Nuclear Society Spring Meeting, Jeju(2018).</li>
+<li>U.S. NRC HRTD, Combustion Engineering Technology Cross Training Course Manual, Ch. 11.2 "Low Pressure Safety Injection System"(Rev 10/08), NRC ADAMS ML11251A033.</li>
+<li>U.S. NRC, Regulatory Guide 1.183 "Alternative Radiological Source Terms for Evaluating Design Basis Accidents at Nuclear Power Reactors", Rev. 0(2000), 3.5절.</li>
+<li>S.-S. Lee, S.-H. Kim, K.-Y. Suh, "The Design Features of the Advanced Power Reactor 1400", Nuclear Engineering and Technology 41(8), 995(2009).</li>
+</ol>

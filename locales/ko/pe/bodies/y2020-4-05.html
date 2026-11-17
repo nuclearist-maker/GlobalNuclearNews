@@ -1,0 +1,100 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2020년 원자력발전기술사 필기 4교시 5번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>증기발생기 전열관 파열(SGTR) 사고에 대해 다음을 설명하시오.</p>
+<p>가. 증상
+나. SGTR 이후 후속냉각 방법
+다. 해당 증기발생기 측의 원자로냉각재펌프(RCP) 정지 필요성</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>SGTR을 격납건물 내부 냉각재 상실사고와 구별하는 징후(2차측 방사선, 파열 SG 수위, 격납건물 징후 없음)를 아는지, 회복의 핵심인 "격리 → 냉각 → 감압으로 압력 평형 → SI 종료 → 정지냉각"과 그 이유(MSSV 개방·과충수 방지)를 설명할 수 있는지 봅니다. 다 문항은 파열 SG 루프의 강제순환이 회복 과정에 주는 득실, 즉 초기 열유입과 가압기 주살수·후속냉각 확보 사이의 균형을 짚으라는 문제입니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: SGTR 정의, 설계기준(전열관 1개 양단 파단), 격납건물 우회</li>
+<li>가: 증상 — 1차측, 2차측, 격납건물, 보호신호, 진단 조합</li>
+<li>나: 후속냉각 — 식별·격리, 냉각, 감압·압력 평형, SI 종료, SCS 진입 냉각, 격리 SG 냉각 세 방법, 주의점</li>
+<li>다: 파열 SG 측 RCP 정지 — 공통 정지 기준, 오해 방지, 초기 열유입 억제 대 주살수·후속냉각 유지, Ginna 교훈, EOP 판단</li>
+<li>결론: 유출 정지·방출 최소화·노심 냉각의 세 목표</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li><strong>SGTR</strong>: SG 전열관 파단으로 1차 냉각재(약 15.5 MPa)가 2차측(약 7 MPa)으로 유출되는 사고. 설계기준은 <strong>전열관 1개 양단(완전 원주) 파단</strong>(SRP 15.6.3) [1]</li>
+<li>1차 압력경계 손상(냉각재 상실)이면서, 방출 경로가 MSIV 상류의 ADV·MSSV를 거쳐 <strong>격납건물을 우회</strong>함</li>
+</ul>
+<p><strong>2. 가. 증상</strong></p>
+<ul>
+<li><strong>2차측 방사선 상승(핵심)</strong>: 복수기 공기추출기 배기(비응축성 Xe·Kr, 조기 지표 중 하나), SG 취출수(SG별 → 파열 SG 식별), 주증기관 N-16(출력 운전 중 실시간, 정지 후·저출력에서는 감도 저하)</li>
+<li><strong>1차측</strong>: 가압기 압력·수위 감소, 충전유량 증가·유출유량 감소(재고 수지 불일치), 체적제어탱크 수위 감소</li>
+<li><strong>파열 SG</strong>: 수위 상승 경향, 급수유량 &lt; 증기유량인데 수위가 유지·상승하는 불일치(유용한 단서, 필수 증상은 아님), 격리 후 압력 상승</li>
+<li><strong>격납건물</strong>: 단독 SGTR에서는 격납건물 내부 LOCA의 직접 징후(압력·온도·방사선·집수조 상승)가 통상 없음. RCS 온도는 소폭 감소(MSLB의 급감과 구분)</li>
+<li><strong>보호신호</strong>: 가압기 저압력 원자로 정지 → 터빈 정지 → SIAS(예시 APR1400 DCD 기준 가압기 저압력 1,810 psia [2]). APR1400은 SG 고수위도 MSIS 입력임 [2]. 순서·시점은 누설 크기와 제어계 응답에 따라 다름</li>
+<li>판정: 고정된 발생 순서가 아니라 <strong>진단 조합</strong>으로 봄 — 2차측 방사선 + SG 수위 + 격납건물 징후 없음을 함께 확인하고 SG별 취출수 감시로 파열 SG를 특정함</li>
+</ul>
+<figure class="article-image"><img alt="회복 6단계별 RCS·파열 SG·건전 SG 압력 관계 개념도(MSSV 설정압·SCS 진입 기준선, 누설 개형)와 호기별 조건 예" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/8965751c6fea5adc646e3ff914739327f6d8aa67ac2cbee950225b5bf73c3b0e.webp"/><figcaption>회복 6단계별 RCS·파열 SG·건전 SG 압력 관계 개념도(MSSV 설정압·SCS 진입 기준선, 누설 개형)와 호기별 조건 예</figcaption></figure>
+<p><strong>3. 나. SGTR 이후 후속냉각 방법</strong></p>
+<ul>
+<li>목표: ① 1차→2차 유출 정지 ② 대기 방출 최소화 ③ 노심 냉각을 유지한 채 정지냉각계통(SCS) 진입</li>
+<li><strong>(1) 파열 SG 식별·격리</strong>: 방사선·수위로 식별 → MSIV 닫힘, 주급수·보조급수 차단, 취출 격리, ADV 설정 조정</li>
+<li><strong>(2) RCS 냉각</strong>: 건전 SG로 RCS를 격리 SG 압력의 포화온도보다 충분히 낮게 냉각(과냉각여유도 확보). 격리 후 RCS가 뜨거운 채로 있으면 격리 SG가 열을 받아 압력이 MSSV 설정압(예시 APR1400: 1단 MSSV 해석 개방압 1,235.7 psia ≈ 8.52 MPa(a) [3])에 닿을 수 있음 → 격리·냉각의 구체적 순서는 호기 절차에 따름</li>
+<li><strong>(3) RCS 감압·압력 평형</strong>: 가압기 주살수(불가 시 보조살수, 또는 감압 밸브 — APR1400은 POSRV [2])로 RCS 압력을 격리 SG 압력 부근으로 유지 → <strong>파열부 차압 ≈ 0, 유출 억제</strong>. 살수는 증기 응축으로, 밸브는 냉각재 방출로 감압함(정수두·유동손실로 국부 차압은 남을 수 있어 계속 감시)</li>
+<li><strong>(4) SI 종료·조절</strong>: 과냉각여유도, 가압기 수위, 건전 SG 열제거원(수위·급수), RCS 압력 안정을 확인하고 종료. 늦으면 RCS 압력이 SG보다 높게 유지되어 <strong>과충수</strong>(주증기관 침수, 물 방출 시 MSSV 고착 우려)</li>
+<li><strong>(5) SCS 진입 냉각</strong>: 건전 SG로 강제·자연순환 냉각 → SCS 진입 온도·압력 조건(예시 APR1400: 350 °F에서 개시, SCS 최대 운전압력 450 psia [3]; 설정값은 호기별 설계값)까지</li>
+<li><strong>격리 SG 냉각</strong>(함께 식혀야 RCS를 SCS 조건까지 내릴 수 있음)
+<ul>
+<li>역충수: RCS를 격리 SG보다 약간 낮게 두어 파열관을 통한 역류와 관벽 역열전달로 냉각 → 붕소 희석·SG 재고 감시</li>
+<li>취출: RCS ≥ SG 압력으로 역류를 막고 SG 물을 배출 → 폐액 처리 부담</li>
+<li>증기 방출: 복수기·증기 경로가 가용하면 터빈우회밸브로, 불가하면 ADV(대기 직접 방출, 최후 수단)</li>
+</ul>
+</li>
+<li>미국 W형 발전소 절차 예: SGTR 대응(E-3, 식별·격리 → 냉각 → 감압 → SI 종료) 뒤 후속냉각을 역충수(ES-3.1)·취출(ES-3.2)·증기 방출(ES-3.3) 절차로 나눔 [4]</li>
+</ul>
+<figure class="article-image"><img alt="CE형 2루프 개략(APR1400 예, 서지관·주살수 위치)과 파열 SG 측 RCP 정지 vs 유지 득실(초기·후속 두 상황)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/0b711714bc803e6b7dcfcd4f7274e60187cd8ee641338955325bd6aa1350cfc9.webp"/><figcaption>CE형 2루프 개략(APR1400 예, 서지관·주살수 위치)과 파열 SG 측 RCP 정지 vs 유지 득실(초기·후속 두 상황)</figcaption></figure>
+<p><strong>4. 다. 해당 SG 측 RCP 정지 필요성</strong></p>
+<ul>
+<li><strong>공통 전제</strong>: RCS 압력·온도·과냉각여유도(NPSH)나 지원계통(기기냉각수·밀봉 주입)이 운전 제한치를 벗어나면 RCP 보호를 위해 정지함(SI 작동 자체가 정지 원인은 아님)</li>
+<li><strong>오해 방지</strong>: RCP 정지는 누설 차단이나 루프 격리가 아님. 정지해도 고온관·저온관으로 RCS와 연결되고, 2차측 방사능 유입은 <strong>파열부 누설 유량(차압·파단 면적에 좌우) × 1차 냉각재 방사능 농도</strong>로 정해짐</li>
+<li><strong>정지를 검토하는 이유(초기)</strong>: RCS가 격리 SG보다 뜨거운 단계에서 파열 루프 강제순환을 줄이면 격리 SG로의 <strong>열유입과 압력 상승(MSSV 개방 가능성)을 완화</strong>할 수 있음</li>
+<li><strong>유지가 유리한 이유</strong>
+<ul>
+<li>① <strong>주살수 확보</strong>: 주살수는 RCP 토출 압력차로 공급됨(예: APR1400은 Loop 2A·2B RCP 토출에서 인출해 합류 [2]). 살수 공급 RCP를 세우면 주살수를 잃고, 대체 감압 수단(보조살수 등)은 EOP에 따름</li>
+<li>② <strong>운전 경험</strong>: Ginna(1982)에서 RCP 정지로 주살수를 잃고 PORV로 감압하다 PORV가 개방 고착됨 → 미국 NRC는 SGTR 동안 강제순환을 유지할 수 있는 RCP 정지 기준을 요구함(일반현안 67.4.1) [5][6]</li>
+<li>③ <strong>후속냉각</strong>: RCS가 식어 격리 SG가 1차측보다 뜨거워진 뒤에는 격리 SG 2차측 → 1차측 → 건전 SG로 열을 빼야 하므로 파열 루프 순환이 격리 SG 냉각에 도움(정지해도 자연순환은 가능하나 느림). 붕소 혼합·온도 균일화에도 유리</li>
+</ul>
+</li>
+<li>정지해도 자연순환이나 다른 루프 펌프에 의한 역방향 유동이 있을 수 있어 정지 = 정체가 아님</li>
+<li><strong>결론</strong>: 파열 SG 측 RCP 정지는 <strong>초기 열유입 억제 효과</strong>와 <strong>주살수·강제순환·격리 SG 후속냉각 유지 필요성</strong>을 함께 검토해 호기 EOP에 따라 판단함</li>
+</ul>
+<figure class="article-image"><img alt="답안용 회복 4단계 상자 흐름과 RCP 정지·유지 득실 두 열" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/92bb9c61091e014ac609d4503fe97ad98473fd8a45ed6fb82d21af1be8fedbc1.webp"/><figcaption>답안용 회복 4단계 상자 흐름과 RCP 정지·유지 득실 두 열</figcaption></figure>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>SGTR 대응 = <strong>압력 평형으로 유출 억제 + 격납건물 우회 방출 최소화 + 노심 냉각 유지</strong></li>
+<li>핵심 판단: 격리 후 냉각·감압 속도(MSSV 개방 방지)와 SI 종료 시점(과충수 방지)</li>
+<li>파열 SG 측 RCP는 "세우면 끝"이 아니라 열유입 억제와 살수·순환 확보의 균형으로 판단함</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 격리 SG 압력이 오르는 이유</h3>
+<p>파열 SG를 격리하면 방사성 증기가 나갈 길은 막히지만, 1차 냉각재는 압력차가 있는 동안 계속 들어오고 1차측 열도 관벽을 통해 계속 전달됩니다. RCS가 뜨거운 채로 시간이 지나면 격리 SG는 압력이 올라 MSSV 설정압에 닿고 결국 대기로 방출됩니다. 그래서 회복 절차는 격리와 함께 건전 SG로 RCS를 서둘러 식히고, 살수로 압력을 격리 SG 압력에 맞춥니다. 격리와 냉각의 세부 순서는 호기 절차마다 다를 수 있지만 목표는 같습니다. 격리 SG 압력이 MSSV에 닿기 전에 RCS를 식히고 압력을 맞추는 것입니다.</p>
+<h3>해설: RCP 문항은 득실로 쓰세요</h3>
+<p>다 문항을 "정지해야 한다"로만 쓰면 반쪽 답이 됩니다. Ginna 사고는 반대 방향의 교훈을 남겼습니다. 펌프를 세워 주살수를 잃자 운전원은 PORV로 감압해야 했고, 그 PORV가 열린 채 고착되었습니다. 그 뒤 미국에서는 SGTR처럼 강제순환이 유리한 사고에서 펌프를 불필요하게 세우지 않도록 RCP 정지 기준을 다듬었습니다. 정지로 얻는 초기 열유입 억제와, 유지로 얻는 살수·후속냉각을 나란히 적고 호기 EOP 판단으로 맺는 구성이 가장 안전합니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li>사고관리 고시는 출제 당시 원안위고시 제2017-34호에서 현행 제2026-1호(2026.1.16)로 바뀌었습니다. 위협요인 표가 별표 2에서 별표 3으로 옮겨졌고, 별표 1의 다중고장 9종("증기발생기 전열관 다중파단" 포함)은 그대로입니다 [7].</li>
+<li>「원자로시설 등의 기술기준에 관한 규칙」은 원안위규칙 제36호(2026.1.20)·제37호(2026.3.30)로 개정되었고, 설계기준사고 정의(제2조 제9호)와 원자로냉각재압력경계(제21조)의 조 번호는 그대로입니다.</li>
+<li>부지 선량 기준은 구 「원자로시설의 위치에 관한 기술기준」이 2026.1.20 폐지되고 원안위고시 제2026-7호(위치제한)로 대체되었습니다. SGTR 선량 평가 체계(사고 전·사고 동반 옥소 첨두 두 경우)는 같습니다 [8].</li>
+<li>회복 전략과 증상은 물리 현상이므로 출제 이후 달라지지 않았습니다. 절차는 2016.6.23 시행된 사고관리계획서 체계의 비상운전절차서로 관리됩니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 15.6.3 "Radiological Consequences of Steam Generator Tube Failure (PWR)".</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Ch. 5.4(가압기 살수·POSRV), Ch. 7.3(ESFAS 설정치), Ch. 15.6.3(SGTR). U.S. NRC 설계인증 공개 문서(NRC ADAMS).</li>
+<li>KEPCO/KHNP, APR1400 Design Certification RAI 233-8244 응답(Question 05.02.02-1, SRP 5.2.2 Overpressure Protection), Docket No. 52-046. NRC ADAMS ML15348A085.</li>
+<li>U.S. NRC ADAMS ML20126B698, "Forwards discussion of unscheduled SG insp activities &amp; procedures re SG tube rupture" (1992.12) — 첨부 절차 E-3·ES-3.1·ES-3.2·ES-3.3 목록.</li>
+<li>U.S. NRC, NUREG-0909 "NRC Report on the January 25, 1982 Steam Generator Tube Rupture at R. E. Ginna Nuclear Power Plant" (1982).</li>
+<li>U.S. NRC, NUREG-0933 "Resolution of Generic Safety Issues", Issue 67.4.1(RCP Trip).</li>
+<li>원자력안전위원회, 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」, 원안위고시 제2026-1호(2026.1.16), 별표 1·별표 3. 국가법령정보센터.</li>
+<li>U.S. NRC, Regulatory Guide 1.183 "Alternative Radiological Source Terms for Evaluating Design Basis Accidents at Nuclear Power Reactors", Rev. 1 (2023).</li>
+</ol>

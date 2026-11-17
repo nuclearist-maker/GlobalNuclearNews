@@ -1,0 +1,168 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2023년 원자력발전기술사 필기 2교시 1번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>다음 원자로 과도사고(Transient)에 대해 기술하시오.
+가. 주증기 배관 파단
+나. 증기발생기 전열관 파단
+다. 소외전원상실을 수반한 단일 원자로냉각재펌프 회전자 고착
+라. 제어봉 이탈</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>안전해석 15장의 대표 사건 네 개를 사건군별로 구분할 수 있는지 봅니다. 각 사건의 <strong>초기 변화</strong>(과냉각·반응도, 1·2차 경계, 노심유량, 급격한 반응도 삽입)를 짚고, 그 결과로 어떤 보호 신호가 작동하며 어떤 판정기준으로 평가하는지를 일관된 틀로 정리해야 합니다. 네 사건을 같은 분량·같은 순서로 쓰는 것이 득점에 유리합니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 가정 및 문제 해석(네 사건 모두 SRP 15장 가상사고), 공통 판정 축 3개</li>
+<li>본론 가: MSLB — 과냉각 → 반응도 → 재임계, 제한 조건(HZP·EOC·고착봉)</li>
+<li>본론 나: SGTR — 격납건물 우회, 증상, 압력 평형 전략</li>
+<li>본론 다: RCP 고착 + LOOP — 유량 급감, 관성서행, 파손봉 가정</li>
+<li>본론 라: 제어봉 이탈 — 출력 펄스, 도플러, RG 1.236 기준</li>
+<li>결론: 비교표와 설계 대책 요약</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 문제 해석</strong></p>
+<ul>
+<li>문제는 "과도사고"로 묶었으나 네 사건의 제한 형태는 모두 NUREG-0800 SRP 15장 <strong>가상사고(PA, ANS Condition IV 상당)</strong>로 분석함[1]</li>
+<li>소형 2차측 증기 유출(SG 방출밸브 오개방 등)은 예상운전과도(AOO)로 구분함</li>
+<li>각 사건을 <strong>정의 → 진행 → 정지·완화 → 제한 가정 → 판정기준</strong> 순으로 기술함</li>
+<li>공통 판정 축: ① 연료(DNBR·선출력·연료 엔탈피) ② RCS·주증기 압력(사건별 허용 설계한계) ③ 부지 경계 선량</li>
+</ul>
+<p><strong>2. 가. 주증기 배관 파단(MSLB, SRP 15.1.5)</strong></p>
+<ul>
+<li>정의: 2차측 주증기관 파단 → SG 열제거 급증 → <strong>1차측 과냉각</strong> → 음의 MTC로 양의 반응도 삽입</li>
+<li>진행
+<ul>
+<li>SG 압력 급감 → 저온관 온도 하강 → 냉각재 수축 → 가압기 수위·압력 감소</li>
+<li>원자로 정지(노형별: 저SG압력, 가변과출력, 저가압기압력 등) → <strong>MSIS로 MSIV 폐쇄</strong> → 건전 SG 방출 종료</li>
+<li>MSIV 상류 파단이면 파단 SG가 <strong>건조될 때까지</strong> 방출 지속 → 급수 격리·파단 SG 보조급수 차단</li>
+<li>SIAS → 붕산 주입으로 음의 반응도 확보 → 건조 후 RCS 재승온, 건전 SG로 붕괴열 제거</li>
+</ul>
+</li>
+<li>제한 가정: <strong>고온 영출력(HZP)·주기말(EOC)</strong>(MTC 최대 음, SG 수량 최대), 반응도가 최대인 제어봉 1개 고착, 소외전원 유·무, 단일고장</li>
+<li>재임계 판정 = 순반응도 0 도달 여부(SDM에 고착봉이 이미 반영되어 있어 중복 차감하지 않음)
+<ul>
+<li>냉각 중 도플러 기여는 +(연료온도 하강), 재임계 뒤 출력이 오르면 −</li>
+<li>재임계 여부는 노형·SDM·주기 시점별 해석 결과에 따름</li>
+</ul>
+</li>
+<li>국부 현상: 파단 루프 쪽 비대칭 냉각 + 고착봉 주변 <strong>첨두계수 증가</strong> → DNBR·첨두 선출력으로 평가</li>
+<li>격납건물 내부 파단은 격납건물 압력·온도 상승(살수 작동) — 격납건물 설계압력 평가 사건</li>
+<li>대책: SG 출구 <strong>유량제한기</strong>(고정 벤투리, 임계유동으로 방출 상한), 빠른 MSIV, 충분한 SDM, MTC 하한 관리</li>
+</ul>
+<p><strong>3. 나. 증기발생기 전열관 파단(SGTR, SRP 15.6.3)</strong></p>
+<ul>
+<li>정의: 설계기준 = <strong>전열관 1개 양단(완전 원주) 파단</strong>[1], 1차(약 15.5 MPa) → 2차(약 7 MPa) 유출</li>
+<li>특징: 1차 압력경계 손상이며, 2차계통으로 새어 나간 냉각재가 ADV·MSSV 등으로 대기 방출되면 <strong>격납건물 우회</strong> 경로가 됨</li>
+<li>증상
+<ul>
+<li>가압기 압력·수위 감소, 충전유량 증가</li>
+<li>파열 SG 수위 증가, 급수 &lt; 증기 유량</li>
+<li>2차측 방사선 경보(복수기 공기추출기 배기, SG 취출수, 주증기관 N-16)</li>
+<li>격납건물 압력·방사선은 변화 없음 → LOCA와 구별</li>
+</ul>
+</li>
+<li>진행: 저가압기압력 트립·SIAS → SI 유량 = 파단유량인 압력에서 RCS 압력 정체 → 소외전원 상실 가정 시 복수기 상실 → ADV·MSSV 대기 방출</li>
+<li>운전 전략: <strong>파열 SG 확인·격리 → 건전 SG로 냉각 → RCS 감압(파열 SG 압력과 평형) → SI 종료 → 정지냉각 진입</strong>
+<ul>
+<li>격리 전 충분히 냉각해야 파열 SG 압력이 MSSV 설정압에 닿지 않음</li>
+<li>SI를 계속 돌리면 유출 지속 → <strong>SG 과충수</strong>·주증기관 침수 위험</li>
+</ul>
+</li>
+<li>판정: 사고 전 옥소첨두·사고 동반 옥소첨두 두 경우를 선원항으로 가정한 부지 경계 선량, 과충수 방지 확인</li>
+</ul>
+<p><strong>4. 다. 소외전원상실을 수반한 단일 RCP 회전자 고착(SRP 15.3.3)</strong></p>
+<ul>
+<li>정의: RCP 1대 회전자가 순간 고착 → 해당 루프 유량이 거의 즉시 0, 역류까지 발생 → <strong>노심유량 급감</strong></li>
+<li>소외전원상실 동반은 보수적 가정임: 터빈 트립 시점(또는 수 초 후)에 소외전원 상실 → <strong>나머지 RCP도 관성서행</strong> → 유량 감소 확대 → DNB 측면 제한 경우</li>
+<li>진행
+<ul>
+<li>유량 급감 → 냉각재 온도 상승 → 가압기 인서지 → RCS 압력 상승</li>
+<li>원자로 정지(노형별): CE형 CPC 저DNBR(RCP 축속도 입력), W형 저RCS유량·RCP 저속도</li>
+<li>터빈 트립 → 소외전원 상실 → 비상디젤발전기·보조급수 → 자연순환, 복수기 상실로 ADV·MSSV 열제거</li>
+</ul>
+</li>
+<li>판정
+<ul>
+<li>DNBR이 한계 아래로 내려간 연료봉은 <strong>파손으로 가정</strong>해 선량 평가에 반영</li>
+<li>냉각 가능 형상 유지, RCS·주증기 첨두압력은 사건별 허용 설계한계 이하</li>
+</ul>
+</li>
+<li>대책: RCP 플라이휠 관성(유량 감소 완화), 빠른 유량 감시 트립, DNBR 운전 여유(LCO)</li>
+</ul>
+<figure class="article-image"><img alt="1루프 PWR 개략도 위 사고 시작 위치(① 주증기관 ② 전열관 ③ RCP ④ CEDM)와 4사건 비교표(초기 변화 → 위협, 주요 보호·완화, 판정 관점), 공통 판정 축 3개" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/3236db3f52eb4175a0c95135cb967394ea2505fd90202ca38ffdf41817735ed2.webp"/><figcaption>1루프 PWR 개략도 위 사고 시작 위치(① 주증기관 ② 전열관 ③ RCP ④ CEDM)와 4사건 비교표(초기 변화 → 위협, 주요 보호·완화, 판정 관점), 공통 판정 축 3개</figcaption></figure>
+<p><strong>5. 라. 제어봉 이탈(SRP 15.4.8)</strong></p>
+<ul>
+<li>정의: 원자로용기 헤드의 <strong>제어봉구동장치 압력하우징 원주 파단</strong> → 압력차로 제어봉 집합체 1개가 약 0.1 s 안에 이탈</li>
+<li>결과: 국부 양의 반응도 급삽입 + 출력분포 왜곡(첨두계수 급증) + 하우징 파단부의 <strong>소형 냉각재상실</strong></li>
+<li>진행
+<ul>
+<li>제한 사례에서 이탈 반응도가 βeff를 넘으면 <strong>즉발임계</strong> → 수십 ms 폭의 출력 펄스</li>
+<li>펄스 정점은 <strong>도플러(음의 FTC) 궤환</strong>이 꺾음 → 이후 트립(고출력·가변과출력 등)으로 정지</li>
+</ul>
+</li>
+<li>제한 가정: HZP·EOC(이탈 반응도 최대, βeff 최소)가 대개 제한, 전출력 경우도 평가</li>
+<li>판정(현행 미국 RG 1.236, 2020)[2]
+<ul>
+<li>냉각 가능성: 첨두 반경평균 연료 엔탈피 <strong>&lt; 230 cal/g</strong>, 연료 용융 <strong>&lt; 10 % 체적</strong></li>
+<li>피복관 파손 문턱: 고온 파손(피복관 차압 함수), <strong>PCMI 파손(초과 수소 함량 함수)</strong>, 용융 연료 → 파손봉 수를 선량 평가에 반영</li>
+<li>RCS 압력: ASME III <strong>Service Level C</strong> 응력 이내(신규 신청)</li>
+</ul>
+</li>
+<li>대책: <strong>출력의존 삽입한계(PDIL)</strong>로 이탈 가능 반응도를 사전에 제한(운전제한), CEDM 하우징 1등급 설계·가동중검사, 음의 FTC</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 네 사건의 대표 변수 추세(MSLB 출력·재임계 가능, SGTR 가압기 압력·압력 평형, RCP 고착 노심유량, 제어봉 이탈 출력 펄스), 개념적" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/7cbb77bde624759702ebea1f83755e7eb72845785bbdeb102449960e5b7059fc.webp"/><figcaption>답안용 도식: 네 사건의 대표 변수 추세(MSLB 출력·재임계 가능, SGTR 가압기 압력·압력 평형, RCP 고착 노심유량, 제어봉 이탈 출력 펄스), 개념적</figcaption></figure>
+<p><strong>6. 결론</strong></p>
+<ul>
+<li>초기 변화: MSLB = 과냉각·반응도, SGTR = 1·2차 경계(우회 방출), RCP 고착 = 노심유량(DNB), 제어봉 이탈 = 급격한 반응도 삽입(엔탈피)</li>
+<li>네 사건 모두 <strong>연료 손상 정도·압력경계·선량</strong> 세 축으로 판정하며, 제한 조건(HZP·EOC·고착봉·LOOP)을 보수적으로 조합함</li>
+<li>설계 대책은 사건별 1차 원인을 직접 막는 장치(유량제한기·MSIV, SG 전열관 관리, 플라이휠, PDIL)와 공통 보호(원자로 정지·SI)로 이중화됨</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 왜 네 사건을 함께 묻나</h3>
+<p>네 사건은 각각 다른 사건군을 대표합니다. 2차계통 열제거 증가, 냉각재 재고량 감소, 냉각재 유량 감소, 반응도·출력분포 이상입니다. 답안에서 사건마다 초기 변화를 한 줄로 밝혀 두면 진행 과정과 판정기준이 자연스럽게 따라옵니다. 소외전원상실 가정은 다목에만 적혀 있지만, 실제 해석에서는 MSLB와 SGTR에서도 소외전원 유·무를 모두 따져 더 불리한 쪽을 씁니다. SGTR은 복수기를 잃어 대기 방출이 생기므로 소외전원 상실이 대개 불리합니다.</p>
+<h3>해설: 230 cal/g를 쓸 때 주의할 점</h3>
+<p>230 cal/g는 냉각 가능 형상을 지키는 상한입니다. 피복관 파손 여부는 별도 문턱으로 판단합니다. 고연소도 연료는 PCMI 파손 문턱이 훨씬 낮을 수 있어, 엔탈피 상승량을 피복관 초과 수소 함량별 곡선과 비교합니다. 구 RG 1.77의 280 cal/g[3]는 2020년 RG 1.236으로 대체되었습니다[2]. </p>
+<h2>현행 기준으로 달라진 점</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>출제 당시(2023)</th>
+<th>현행(2026)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>부지 선량 기준</td>
+<td>구 위치고시 — 10 CFR 100.11 준용 전신 250 mSv·갑상선 3 Sv</td>
+<td>원안위고시 제2026-7호(2026.1.20) — EAB 2 h 250 mSv, LPZ 250 mSv 유효선량 단일 기준[5]</td>
+</tr>
+<tr>
+<td>사고관리</td>
+<td>고시 제2017-34호</td>
+<td>고시 제2026-1호(2026.1.16), 위협요인 표 별표 3. 별표 1 다중고장(증기발생기 전열관 다중파단 등)은 그대로</td>
+</tr>
+<tr>
+<td>선량 해석 지침(미국)</td>
+<td>RG 1.183 Rev.0(2000)</td>
+<td>RG 1.183 Rev.1(2023.10) — 비LOCA 방출분율 개정, 출력펄스 과도 방출분율 추가[4]</td>
+</tr>
+<tr>
+<td>기술기준규칙</td>
+<td>구판</td>
+<td>원안위규칙 제37호(2026.3.30) — 제17조 연료허용손상한계 여유, 제26조 원자로보호계통, 제28조 반응도제어계통 조 번호 유지[6]</td>
+</tr>
+</tbody>
+</table>
+<p>사건 정의, SRP 15장 사건 분류, RG 1.236 판정기준(2020)은 출제 이후 바뀌지 않았습니다. </p>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan, Ch. 15 — 15.1.5 Steam System Piping Failures, 15.3.3 Reactor Coolant Pump Rotor Seizure, 15.4.8 Spectrum of Rod Ejection Accidents, 15.6.3 Radiological Consequences of Steam Generator Tube Failure.</li>
+<li>U.S. NRC, Regulatory Guide 1.236 "Pressurized-Water Reactor Control Rod Ejection and Boiling-Water Reactor Control Rod Drop Accidents" (2020).</li>
+<li>U.S. NRC, Regulatory Guide 1.77 "Assumptions Used for Evaluating a Control Rod Ejection Accident for Pressurized Water Reactors" (1974).</li>
+<li>U.S. NRC, Regulatory Guide 1.183 "Alternative Radiological Source Terms for Evaluating Design Basis Accidents at Nuclear Power Reactors", Rev. 0 (2000), Rev. 1 (2023.10).</li>
+<li>원자력안전위원회, 원자로시설 위치제한 고시, 원안위고시 제2026-7호(2026.1.20); 사고관리 고시, 원안위고시 제2026-1호(2026.1.16). 국가법령정보센터.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제17조·제26조·제28조. 국가법령정보센터.</li>
+</ol>

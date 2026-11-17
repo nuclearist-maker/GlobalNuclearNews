@@ -1,0 +1,123 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2025년 원자력발전기술사 필기 2교시 4번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>표준형 원전의 다양성 보호계통(DPS, Diverse Protection System)에 대하여 다음을 기술하시오.
+가. DPS 설치 목적
+나. DPS 기능
+다. DPS 출력신호와 목적</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>한국표준형원전(OPR1000)의 DPS를 "왜 두는가 → 무엇을 하는가 → 무엇을 내보내는가"의 순서로 묻습니다. 가에서는 ATWS와 디지털 보호계통 공통원인고장(CCF)이라는 두 목적을 근거 규정과 함께 쓰는지 봅니다. 나에서는 입력 변수와 일치논리, 독립된 작동 경로를 봅니다. 다는 출력신호마다 목적을 짝지어 써야 하는 항목이며, 기술기준규칙 제27조①의 세 기능(원자로정지·비상보조급수 작동·터빈정지)과 맞물립니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: DPS 정의(비안전등급, PPS와 독립·다양), 근거(기술기준규칙 제27조, 10 CFR 50.62)</li>
+<li>본론 가: 설치 목적 ① ATWS 완화 ② 디지털 보호계통 CCF 대비 ③ 심층방어 다양성</li>
+<li>본론 나: 기능 — 입력 변수, 변수별 2/2·변수 간 OR, 최종 작동장치, 수동 정지, 시험·감시, 설정치 협조</li>
+<li>본론 다: 출력신호 4종과 목적, OPR1000 ATWS 해석으로 본 작동 순서</li>
+<li>결론: 다중성(PPS)과 다양성(DPS)의 역할 분담, APR1400과의 차이</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li><strong>DPS</strong>: 원자로보호계통(PPS)과 <strong>감지장치 출력부분부터 최종작동기 구동장치까지 독립</strong>되고, 다른 기술로 구현된 <strong>비안전등급 2채널 보조 보호계통</strong>임</li>
+<li>근거: 「원자로시설 등의 기술기준에 관한 규칙」 <strong>제27조</strong>(①정지되어야 할 조건에서 정지되지 않는 과도에 대비해 원자로정지·비상보조급수 작동·터빈정지 기능을 갖춘 별도 보호계통 설치, ②원자로보호계통으로부터 독립) [1], 미국 <strong>10 CFR 50.62</strong>(ATWS 규칙) [2]</li>
+<li>"표준형 원전"은 한국표준형(OPR1000)으로 보고 작성함</li>
+</ul>
+<p><strong>2. 가. DPS 설치 목적</strong></p>
+<ul>
+<li><strong>① ATWS 완화</strong>: 예상운전과도(AOO)에 이어 원자로정지가 실패하면 출력은 유지되고 열제거만 줄어 <strong>RCS 과압</strong>이 생김 → 다른 경로로 원자로를 정지하고 2차측 열제거를 확보함
+<ul>
+<li>10 CFR 50.62 (c)(1) 모든 PWR: 다양한 터빈정지·보조급수 자동 작동, (c)(2) CE·B&amp;W형: 다양성 스크램계통 → CE 계열인 표준형은 둘 다 필요해 <strong>DPS 하나로 구현</strong>함</li>
+</ul>
+</li>
+<li><strong>② 디지털 보호계통 CCF 대비</strong>: 디지털 PPS는 4채널이 같은 소프트웨어를 쓰므로 잠재 결함 하나로 네 채널이 함께 실패할 수 있음 → 설계기준사고와 소프트웨어 CCF가 겹칠 때 2차 보호 수행(SRM-SECY-93-087 II.Q, BTP 7-19) [3][4]</li>
+<li><strong>③ 심층방어 보강</strong>: 다중성(PPS 4채널 2/4)은 단일고장에, <strong>다양성(DPS)</strong>은 공통원인고장에 대비함(기술기준규칙 제44조 1호) [1]</li>
+</ul>
+<p><strong>3. 나. DPS 기능</strong></p>
+<ul>
+<li><strong>자동 원자로정지</strong>: 가압기 고압력 또는 격납건물 고압력이 DPS 설정치에 도달하면 정지
+<ul>
+<li>변수마다 2채널 <strong>2/2 일치논리</strong>, 변수끼리는 <strong>OR</strong></li>
+<li>2/2를 쓰는 이유: 비안전등급이라 단일고장 기준 적용 대상이 아니므로 <strong>불시 작동 방지</strong>를 우선함 [4]</li>
+<li><strong>SG 저압력 정지 추가</strong>: CCF를 동반한 격납건물 외부 주증기관 파단에서 가압기 고압력 정지가 약 850 s 뒤에야 작동함 → SG 저압력 정지로 약 10 s 이내에 정지하도록 개선함 [4][6] </li>
+</ul>
+</li>
+<li><strong>수동 원자로정지</strong>: 주제어실 DPS 수동 정지 → 같은 작동장치로 정지</li>
+<li><strong>터빈정지 시 원자로정지(선택)</strong>: 기능을 활성화한 상태에서 터빈이 정지하면 원자로를 정지함</li>
+<li><strong>최종 작동장치 다양성</strong>: PPS는 원자로정지 차단기를 열지만 DPS는 <strong>CEDM 전동발전기(MG) 세트 1·2의 출력 차단기</strong>를 열어 CEDM 전원을 끊음 → 제어봉(CEA) 중력 낙하 [4][7]</li>
+<li><strong>자동 터빈정지·보조급수 작동</strong>: 원자로정지 연동 터빈정지, 증기발생기 저수위 시 DPS-AFAS</li>
+<li><strong>구성</strong>: 측정채널 → 트립 인지 → 일치논리 → 개시 회로, 제어기는 PLC에서 <strong>FPGA 기반 제어기로 교체</strong>됨 [4], 캐비닛 시험 패널(MTP)로 상태 감시·시험</li>
+<li><strong>설정치 협조</strong>: DPS와 PPS 사이에 인터록이 없으므로 PPS가 먼저 동작하도록 DPS 설정치에 여유를 둠</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: DPS 입력(2/2, OR) → 출력신호 3종 → 목적, 제27조① 대응" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/5ea7f1dfd13ebd78297e41082e3f82fa2bcba5ad5ff1d05c3422e0898252f336.webp"/><figcaption>답안용 도식: DPS 입력(2/2, OR) → 출력신호 3종 → 목적, 제27조① 대응</figcaption></figure>
+<p><strong>4. 다. DPS 출력신호와 목적</strong></p>
+<table>
+<thead>
+<tr>
+<th>출력신호</th>
+<th>개시 조건</th>
+<th>작동</th>
+<th>목적</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 원자로정지</td>
+<td>가압기·격납건물 고압력, SG 저압력, 수동</td>
+<td>MG 세트 출력 차단기 개방 → CEA 낙하</td>
+<td>노심 출력 차단, RCS 과압 방지</td>
+</tr>
+<tr>
+<td>② 터빈정지</td>
+<td>DPS 원자로정지 연동</td>
+<td>터빈 정지</td>
+<td>터빈으로의 주증기 공급 차단, SG 재고 보존</td>
+</tr>
+<tr>
+<td>③ 보조급수 작동</td>
+<td>SG 저수위</td>
+<td>보조급수 펌프·밸브 기동</td>
+<td>2차측 열제거원 확보</td>
+</tr>
+<tr>
+<td>④ 경보·상태</td>
+<td>채널 트립·바이패스</td>
+<td>경보·전산기·MTP</td>
+<td>운전원 인지, 후속 수동조치</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>①~③은 제27조①의 세 기능과 1:1로 대응함</li>
+<li><strong>작동 예(신고리 1·2 ATWS 해석, 정상급수상실)</strong>: SG 수위 22.1 %(광역) 도달 46 s → 가압기 압력 16.52 MPa(해석 설정치) 도달 68 s에 <strong>DPS 원자로정지 + 연동 터빈정지</strong> → 보조급수 주입 69 s → 첨두압력 <strong>17.09 MPa</strong>로 기준 22.06 MPa(ASME Level C) 이내 [5] </li>
+</ul>
+<figure class="article-image"><img alt="표준형 DPS 출력신호 4종의 개시 조건·일치논리·최종 작동·목적·근거 매트릭스" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/5739f1506b21c458a938cd1d901cf798c26c9c1293b5705452f518d5824c267b.webp"/><figcaption>표준형 DPS 출력신호 4종의 개시 조건·일치논리·최종 작동·목적·근거 매트릭스</figcaption></figure>
+<figure class="article-image"><img alt="OPR1000 ATWS(정상급수상실) 해석의 사건 시점과 압력: DPS 원자로정지 68 s·보조급수 69 s·첨두 17.09 MPa vs 기준 22.06 MPa" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/de319df41bb81c44150b0bd4103ddb0bc78404fb3ec7b8f0e072aa6dff742192.webp"/><figcaption>OPR1000 ATWS(정상급수상실) 해석의 사건 시점과 압력: DPS 원자로정지 68 s·보조급수 69 s·첨두 17.09 MPa vs 기준 22.06 MPa</figcaption></figure>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>PPS는 <strong>다중성</strong>으로 단일고장에, DPS는 <strong>다양성</strong>(다른 플랫폼·다른 작동장치·독립 경로)으로 ATWS와 CCF에 대비함</li>
+<li>APR1400(미국 인증)은 4채널 2/4로 바꾸고, 원자로정지 차단기를 분로 트립 코일로 여는 경로(PPS는 부족전압 코일)와 안전주입 작동신호(DPS-SIAS)를 더해 기능을 넓혔음 [8]</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 목적은 두 개, 하나만 쓰면 감점</h3>
+<p>가 항에서 ATWS만 쓰는 답안이 많습니다. 그러나 표준형 후기 호기와 APR1400은 디지털 보호계통을 쓰므로, DPS는 소프트웨어 공통원인고장이 사고와 겹칠 때의 2차 보호도 맡습니다. 2018년 신한울 1·2호기 심사에서 이 평가의 오류가 드러났고, 재평가 결과 CCF를 동반한 주증기관 파단에서는 연료가 사고 후 약 2분 24초에 용융온도에 도달하는데 DPS 가압기 고압력 정지는 10분 이상 뒤에 작동했습니다 [4][6]. SG 저압력 정지가 추가된 이유가 바로 이것이며, 이 사례를 한 줄 덧붙이면 "CCF 대비"가 구체적인 근거를 갖게 됩니다.</p>
+<h3>해설: "출력신호와 목적"은 짝지어 쓰기</h3>
+<p>다 항은 신호 이름만 나열하면 절반 점수입니다. 신호마다 무엇을 막는지 붙여야 합니다. 원자로정지는 출력을 끊어 냉각재 팽창과 과압을 막습니다. 터빈정지는 2차측이 증기를 계속 빼 가서 증기발생기가 빨리 마르는 것을 막습니다. 보조급수 작동은 열을 받아 줄 곳을 다시 만들어 줍니다. ATWS 해석에서 가장 가혹한 사건이 "터빈정지 없는 정상급수상실"인 것도 같은 이치입니다.</p>
+<h3>해설: 작동장치의 다양성까지 쓰면 변별력</h3>
+<p>독립성은 신호 경로만의 문제가 아닙니다. PPS 정지는 원자로정지 차단기를 열고, 표준형 DPS 정지는 제어봉 구동장치 전원을 공급하는 MG 세트의 출력 차단기를 엽니다. 두 경로가 결국 같은 CEDM 전원을 끊지만 서로 다른 기기를 거치므로, 정지 차단기 공통고장에도 대비가 됩니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 달라진 기준 없음(확인 근거: 2025년 출제 문항이며, 현행 「원자로시설 등의 기술기준에 관한 규칙」 원안위규칙 제37호(2026.3.30) 제27조의 제목·요지가 같고, BTP 7-19 Rev.9(2024.5)와 SG 저압력 정지 추가(2020~2023)는 출제 전에 이미 반영됨). 다만 DPS 구성은 호기마다 다릅니다. 표준형은 2채널 2/2이고, 미국 인증 APR1400은 4채널 2/4이며, DPS-SIAS는 새울 3·4호기와 미국 인증 설계에만 있습니다. 답안에 노형을 밝혀 쓰는 것이 좋습니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제27조(다양성보호계통)·제44조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR 50.62 "Requirements for reduction of risk from anticipated transients without scram (ATWS) events for light-water-cooled nuclear power plants".</li>
+<li>U.S. NRC, SRM on SECY-93-087 "Policy, Technical, and Licensing Issues Pertaining to Evolutionary and Advanced Light-Water Reactor (ALWR) Designs" (1993), Item II.Q.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan, Branch Technical Position 7-19, Rev. 9 (2024); 정진호 외(KEPCO E&amp;C), "Design Improvement of DPS in OPR1000", 한국원자력학회 학술발표회 (2025).</li>
+<li>남경호(한수원 중앙연구원), "Safety Analysis of ATWS for OPR1000 with DPS using SPACE code", 한국원자력학회 학술발표회 (2019), 표 I·II.</li>
+<li>원자력안전위원회, 제183회 원자력안전위원회 회의 안건(2023.9.7), 다양성보호계통 설계 개선 관련 운영변경허가 안건.</li>
+<li>한국원자력연구원, KAERI/TR-2569/2003 (다양성보호계통 기술보고서).</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Chapter 7.8 "Diverse Instrumentation and Control Systems", NRC ADAMS 공개본.</li>
+</ol>

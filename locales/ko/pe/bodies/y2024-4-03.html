@@ -1,0 +1,119 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2024년 원자력발전기술사 필기 4교시 3번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>방사능 값이 1,000㏃인 ¹³⁷Cs 핵종이 체내에 흡수된 후 140일이 지났을 경우 체내 잔존 방사능 값과 유효반감기 값을 계산하시오. 단, 핵종의 물리적 반감기는 30.2년, 생물학적 반감기는 70일이다. (풀이과정을 제시하시오.)</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>몸 안의 방사능은 방사성 붕괴와 배설이라는 두 경로로 동시에 줄어듭니다. 이 문제는 두 제거율을 <strong>더해서</strong>(λeff = λp + λb) 유효반감기를 구할 줄 아는지 확인합니다. 연과 일이 섞인 반감기를 같은 단위로 바꾸는지도 봅니다. 물리적 반감기가 생물학적 반감기보다 훨씬 길 때 유효반감기가 생물학적 반감기에 거의 같아진다는 물리적 해석까지 쓰면 변별력이 생깁니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 가정 및 문제 해석(단일 구획·1차 제거, 단위 통일), 주어진 값 정리</li>
+<li>본론 1: 유효반감기 — 제거율 합산 → 식 유도 → 대입</li>
+<li>본론 2: 140일 후 잔존 방사능 — 지수 감소식 → 대입</li>
+<li>본론 3: 검산 — 두 감쇠 인자의 곱, Teff &lt; min(Tp, Tb) 확인</li>
+<li>결론: 답 요약과 의미(배설이 지배), 표준 성인 Tb와의 차이</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 문제 해석</strong></p>
+<ul>
+<li>체내 Cs를 <strong>단일 구획</strong>으로 보고, 붕괴·배설 모두 <strong>농도에 비례하는 1차 과정</strong>으로 가정함</li>
+<li>1,000 Bq는 흡수 직후(t = 0) 체내 ¹³⁷Cs 방사능 A₀로 봄. 추가 섭취 없음</li>
+<li>1년 = <strong>365일</strong>로 환산함(365.25일로 해도 결과 차이 0.001 % 미만)</li>
+<li>반감기는 <strong>문제에 주어진 값</strong>(Tp 30.2년, Tb 70일)을 그대로 씀. 표준값(Tp 30.08년, 성인 주성분 Tb 약 110일)과의 차이는 결론에서 따로 적음</li>
+<li>¹³⁷Cs 자체의 방사능만 구함(딸핵종 ¹³⁷ᵐBa는 제외)</li>
+</ul>
+<p><strong>2. 주어진 값</strong></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>기호</th>
+<th>값</th>
+<th>일 단위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>초기 체내 방사능</td>
+<td>A₀</td>
+<td>1,000 Bq</td>
+<td>—</td>
+</tr>
+<tr>
+<td>경과 시간</td>
+<td>t</td>
+<td>140일</td>
+<td>140 d</td>
+</tr>
+<tr>
+<td>물리적 반감기</td>
+<td>Tp</td>
+<td>30.2년</td>
+<td>30.2 × 365 = <strong>11,023 d</strong></td>
+</tr>
+<tr>
+<td>생물학적 반감기</td>
+<td>Tb</td>
+<td>70일</td>
+<td>70 d</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3. 유효반감기</strong></p>
+<ul>
+<li>체내량 변화: dA/dt = −(λp + λb)·A → <strong>λeff = λp + λb</strong> (λ = ln2/T)[4]</li>
+<li>ln2/Teff = ln2/Tp + ln2/Tb → <strong>1/Teff = 1/Tp + 1/Tb</strong> → <strong>Teff = Tp·Tb/(Tp + Tb)</strong></li>
+<li>대입: Teff = 11,023 × 70 / (11,023 + 70) = 771,610 / 11,093 = <strong>69.56 d ≈ 69.6일</strong></li>
+<li>붕괴상수: λp = 0.6931/11,023 = 6.29 × 10⁻⁵ d⁻¹, λb = 0.6931/70 = 9.90 × 10⁻³ d⁻¹</li>
+<li>λeff = 9.965 × 10⁻³ d⁻¹ → ln2/λeff = 69.56 d (일치)</li>
+</ul>
+<p><strong>4. 140일 후 체내 잔존 방사능</strong></p>
+<ul>
+<li>식: <strong>A(t) = A₀·e^(−λeff·t) = A₀·(1/2)^(t/Teff)</strong></li>
+<li>지수: λeff·t = 9.965 × 10⁻³ × 140 = 1.3951 (t/Teff = 140/69.56 = 2.013)</li>
+<li>A(140) = 1,000 × e^(−1.3951) = 1,000 × 0.2478 = <strong>247.8 Bq ≈ 248 Bq</strong></li>
+<li>초기의 약 <strong>24.8 %</strong>가 남고 약 75 %가 사라짐</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 체내 방사능 감소 곡선(1,000 → 500 → 247.8 Bq, 0·69.6·140일), λeff = λp + λb와 Teff 식, 잔존 방사능 대입식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/6225e866022b7be012fb5323c9ce0f642e287e2e0cee9baadcbd244a6906e226.webp"/><figcaption>답안용 도식: 체내 방사능 감소 곡선(1,000 → 500 → 247.8 Bq, 0·69.6·140일), λeff = λp + λb와 Teff 식, 잔존 방사능 대입식</figcaption></figure>
+<p><strong>5. 검산</strong></p>
+<ul>
+<li>두 감쇠를 따로 곱함: 물리 (1/2)^(140/11,023) = 0.99124, 생물 (1/2)^(140/70) = 0.25</li>
+<li>1,000 × 0.99124 × 0.25 = <strong>247.8 Bq</strong> → 3번 결과와 일치함</li>
+<li>Teff(69.56 d) &lt; min(Tp, Tb) = 70 d 조건을 만족함</li>
+<li>Tp ≫ Tb이므로 Teff ≈ Tb가 됨. 물리적 붕괴의 기여는 0.9 %에 불과함(250 → 247.8 Bq)</li>
+</ul>
+<p><strong>6. 결론</strong></p>
+<ul>
+<li><strong>유효반감기 Teff ≈ 69.6일</strong>, <strong>140일 후 체내 잔존 방사능 ≈ 248 Bq</strong></li>
+<li>이 조건에서 체내 Cs 감소는 <strong>배설(생물학적 제거)이 지배함</strong>. 140일은 거의 2 Teff이므로 약 1/4이 남음</li>
+<li>성인 주성분 Tb 110일만 쓰는 단일 성분 가정이면 Teff ≈ 109일, 140일 후 약 410 Bq가 남음. 문제의 70일은 표준값보다 짧은 조건임</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 곡선 세 개로 보는 유효반감기</h3>
+<figure class="article-image"><img alt="체내 ¹³⁷Cs 잔존 방사능 곡선(0~350일): 물리적 붕괴만·생물학적 배설만·두 과정 동시(유효) 비교, Teff·140일 표시점(500·247.8 Bq), 140일 값 비교표, Teff 식 카드와 140일 계산 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/8418eb056f8679416f8140f4f15fbe139398c929b6b3f3df7645f215f3a33b1b.webp"/><figcaption>체내 ¹³⁷Cs 잔존 방사능 곡선(0~350일): 물리적 붕괴만·생물학적 배설만·두 과정 동시(유효) 비교, Teff·140일 표시점(500·247.8 Bq), 140일 값 비교표, Teff 식 카드와 140일 계산 카드</figcaption></figure>
+<p>위 그림의 회색 선은 물리적 붕괴만 있을 때입니다. 30.2년 반감기로는 140일 동안 1,000 Bq가 991 Bq로 거의 그대로입니다. 주황 점선은 배설만 있을 때로, 70일마다 절반이 되어 140일에 정확히 250 Bq입니다. 실제 체내량은 두 과정이 동시에 작용하는 파란 실선을 따릅니다. 이 선은 주황 점선보다 아주 조금 아래에 놓이며, 140일에 247.8 Bq입니다.</p>
+<p>핵심은 반감기가 아니라 <strong>제거 속도(λ)가 더해진다</strong>는 점입니다. 빨리 비우는 수도꼭지(배설)와 아주 느리게 새는 틈(붕괴)이 함께 열려 있으면, 물이 빠지는 속도는 둘의 합입니다. 그래서 유효반감기는 언제나 둘 중 짧은 쪽보다도 짧습니다. 이 문항은 Tp/Tb가 약 157배라서 Teff가 Tb와 0.44일밖에 차이 나지 않습니다.</p>
+<h3>해설: 표준값으로 바꾸면 무엇이 달라지나</h3>
+<p>¹³⁷Cs의 물리적 반감기 표준값은 30.08년(통용 30.1년)[1]입니다. 문제의 30.2년을 그대로 써도 Teff 차이는 0.003 % 수준이라 결과에 영향이 없습니다. 생물학적 반감기는 사정이 다릅니다. ICRP의 성인 Cs 체내 모델은 두 성분으로 되어 있는데, 약 10 %는 2일, 약 90 %는 110일로 빠져나갑니다[2]. 단일 Tb 110일로 계산하면 Teff는 108.9일이고, 140일 후 약 410 Bq가 남습니다. 어린이는 Tb가 더 짧습니다. 답안에는 "문제 조건 70일로 계산함"을 밝히고, 표준 성인값과의 차이를 한 줄 덧붙이면 충분합니다.</p>
+<p>실무에서는 전신계수기(WBC)가 ¹³⁷Cs의 딸핵종 ¹³⁷ᵐBa가 내는 661.7 keV 감마선[1]을 측정해 체내량을 평가합니다. 체내 Cs의 배설은 프러시안 블루로 앞당길 수 있습니다. 장으로 다시 흡수되는 Cs를 붙잡아 생물학적 반감기를 줄이는 원리입니다. 성인 경구섭취 선량계수(ICRP 72) 1.3 × 10⁻⁸ Sv/Bq[3]를 쓰면 1,000 Bq 섭취는 약 13 µSv입니다.</p>
+<h3>해설: 자주 하는 실수</h3>
+<ol>
+<li>반감기를 더함(Teff = Tp + Tb) → 140일 후 991 Bq. 제거 경로가 늘었는데 오히려 오래 남는다는 모순이 생깁니다.</li>
+<li>단위를 섞음: 30.2 × 70/(30.2 + 70) = 21.1 → 연과 일이 섞여 단위가 없는 값입니다.</li>
+<li>물리적 감쇠만 적용 → 991 Bq. 체내 문제에서 배설을 빼먹은 경우입니다.</li>
+<li>"140일 = 2 × Tb이므로 정확히 250 Bq"라고 단정함 → 근사로는 가깝지만, 문제는 유효반감기를 묻고 있습니다. 247.8 Bq와 함께 0.9 % 차이의 이유를 쓰세요.</li>
+<li>유효반감기를 "둘 중 긴 쪽"이나 "평균"으로 씀 → 반드시 둘 중 짧은 쪽보다 짧습니다.</li>
+</ol>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 달라진 기준 없음(확인 근거: 계산 원리는 물리 법칙입니다. 「방사선방호 등에 관한 기준」은 제2019-10호 → 제2025-3호 → 현행 제2026-12호[5]로 바뀌었지만, 내부피폭 조항과 별표 3의 Cs-137 ALI·DAC 값은 그대로입니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>Brookhaven National Laboratory NNDC, NuDat / ENSDF — ¹³⁷Cs 반감기 30.08 y, ¹³⁷ᵐBa 661.7 keV 감마선.</li>
+<li>ICRP Publication 67, Age-dependent Doses to Members of the Public from Intake of Radionuclides: Part 2 Ingestion Dose Coefficients, Ann. ICRP 23(3-4) (1993) — Cs 체내 잔류 모델.</li>
+<li>ICRP Publication 72, Age-dependent Doses to Members of the Public from Intake of Radionuclides: Part 5 Compilation of Ingestion and Inhalation Dose Coefficients, Ann. ICRP 26(1) (1996).</li>
+<li>H. Cember, T. E. Johnson, Introduction to Health Physics, 4th ed., McGraw-Hill (2009) — 유효반감기.</li>
+<li>원자력안전위원회, 「방사선방호 등에 관한 기준」, 원안위고시 제2026-12호(2026.7.9 시행), 별표 3. 국가법령정보센터.</li>
+</ol>

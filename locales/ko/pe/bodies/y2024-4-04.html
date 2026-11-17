@@ -1,0 +1,141 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2024년 원자력발전기술사 필기 4교시 4번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>원자력발전소 증기발생기의 순환비에 대하여 다음을 기술하시오.
+가. 재순환유량 및 순환유량의 정의
+나. 재순환 운전의 장점
+다. 설계 순환비를 초과하거나 미달할 경우 설비상의 문제점</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>U-관 재순환형 증기발생기(SG) 2차측의 <strong>자연순환 질량수지</strong>를 이해하는지 확인하는 문제입니다. 가.에서는 급수·증기·재순환수·순환유량의 관계를 식으로 정확히 쓰고, 순환비(CR)와 관다발 출구 건도의 관계(x_e = 1/CR)까지 연결하는지 봅니다. 나.는 관류형(OTSG)과 비교한 재순환의 이점을, 다.는 CR이 낮을 때(건조·농축)와 높을 때(유속·분리기 부하)를 <strong>양방향으로 나눠</strong> 설비 문제로 연결하는지 봅니다. 2013년 1교시 4번(재순환율의 정의·출력에 따른 변화·장점)의 확장판입니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 재순환형 SG 2차측 유로(급수 → 하향수로 → 관다발 → 습분분리기 → 증기/재순환수)</li>
+<li>본론 가: 순환유량·재순환유량·순환비 정의, 질량수지 식, 구동력, 대표값과 부하 의존성</li>
+<li>본론 나: 재순환 운전의 장점 6가지(열전달·부식·열응력·재고·유동 안정·수위 제어)</li>
+<li>본론 다: CR 미달 시 / 초과 시 문제점 표와 원인</li>
+<li>결론: 설계 CR은 열전달·부식·진동·분리 성능의 절충점이며 운전 중 감시 대상임</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>재순환형 SG(APR1400, W형 등)는 2차측이 <strong>자연순환 루프</strong>임
+<ul>
+<li>급수 → 하향수로(downcomer) → 관다발(상승부, 비등) → 습분분리기·건조기 → 증기는 터빈, 분리된 포화수는 다시 하향수로</li>
+</ul>
+</li>
+<li>순환을 일으키는 힘 = 하향수로(액체, 고밀도)와 관다발(2상, 저밀도)의 <strong>밀도차 수두</strong> g∫(ρ_dc − ρ_m)dz → 관다발·지지판·분리기 마찰과 평형을 이룸(펌프 없음)</li>
+</ul>
+<p><strong>2. 가. 재순환유량 및 순환유량의 정의</strong></p>
+<ul>
+<li><strong>순환유량 W_c</strong>: 관다발(상승부)을 통과하는 2차측 총 유량 = 하향수로 유량(정상상태) = <strong>급수 + 재순환수</strong></li>
+<li><strong>재순환유량 W_r</strong>: 습분분리기·건조기에서 분리되어 하향수로로 되돌아가는 <strong>포화수</strong> 유량</li>
+<li>정상상태(취출 무시)에서 급수 = 증기(W_fw = W_s)이므로
+<ul>
+<li><strong>순환비 CR = W_c / W_s</strong>, W_r = (CR − 1)·W_s</li>
+<li><strong>관다발 출구 평균 건도 x_e = W_s / W_c = 1/CR</strong></li>
+</ul>
+</li>
+<li>표기 주의: 문헌에 따라 "재순환비(율)"를 W_r/W_s = CR − 1로 쓰기도 하므로 답안에 <strong>정의식을 먼저 명시</strong>함</li>
+<li>대표값(전출력): <strong>약 3~5</strong>(설계별)
+<ul>
+<li>예: APR1400 참조 설계의 순환비는 출력 수준에 따라 약 3~30이며 고출력일수록 작음[1]</li>
+<li>예: W Model 51 대표값(특허 문헌) 100 % 출력 CR 5.2[2]</li>
+<li>계산 예(가정): 전출력 CR 3.3(관다발 출구 건도 30 %), SG 1대 증기 1,000 kg/s이면 W_c ≈ 3,330 kg/s, W_r ≈ 2,330 kg/s</li>
+</ul>
+</li>
+<li><strong>부하 의존성</strong>: 출력이 낮아지면 증기유량은 비례해 줄지만 순환유량은 구동수두가 남아 덜 줄어 <strong>CR이 커짐</strong>(Model 51 예 10 % 출력 33.5[2]). 설계 순환비는 보통 <strong>전출력 값</strong>임</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 급수·하향수로·관다발·습분분리기의 질량수지와 CR·W_r·x_e 식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/efd64249558b7e4dde1f29a3f09f72536ad013c6cb8dcac2956edfea47caff43.webp"/><figcaption>답안용 도식: 급수·하향수로·관다발·습분분리기의 질량수지와 CR·W_r·x_e 식</figcaption></figure>
+<figure class="article-image"><img alt="순환비에 따른 관다발 출구 건도(1/CR)·보이드율, 설계 예 3~5 구간과 미달·초과 쪽 문제, 가정 예(CR 3.3) 질량수지" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/fd7359de22195ac3cfe6d26e1be2df7bcb96a79afc96443ecc78eaa8839d89b2.webp"/><figcaption>순환비에 따른 관다발 출구 건도(1/CR)·보이드율, 설계 예 3~5 구간과 미달·초과 쪽 문제, 가정 예(CR 3.3) 질량수지</figcaption></figure>
+<p><strong>3. 나. 재순환 운전의 장점</strong></p>
+<ul>
+<li>① <strong>전열관 습윤·핵비등 유지</strong>: 출구 건도를 약 0.2~0.33으로 낮게 유지 → 관 표면 건조(dryout) 방지, 높은 비등 열전달계수</li>
+<li>② <strong>부식·퇴적 억제</strong>: 관다발 유속 확보 → 관판 위 슬러지 침착 감소, 건조·습윤 반복에 의한 불순물 농축 억제 → ODSCC·IGA·덴팅 완화[5]</li>
+<li>③ <strong>급수 예열·열응력 완화</strong>: (하향수로 급수 방식 예) 찬 급수(가정 예 232 °C)가 포화 재순환수와 섞여 관다발 입구 과냉도가 작아짐(CR 4 예: 약 13 °C) → 관판·전열관 열충격·열피로 완화</li>
+<li>④ <strong>큰 2차측 재고</strong>: 물 보유량이 커서 과도 시 열적 완충, 급수 상실 시 관다발 노출까지 시간 여유(관류형 대비)</li>
+<li>⑤ <strong>증기 품질·유동 안정</strong>: 포화증기를 습분분리기로 처리(출구 습분은 설계 사양값 이하로 제한), 높은 순환유량이 2상 유동 불안정(밀도파 진동)을 억제</li>
+<li>⑥ <strong>수위 운전</strong>: 하향수로 수위로 재고를 감시·제어할 수 있음(단, 저출력 수축·팽창 현상 고려)</li>
+<li>단점(비교): 과열증기를 얻지 못하고 습분분리기·큰 동체가 필요하며 취출로 불순물을 관리해야 함</li>
+</ul>
+<p><strong>4. 다. 설계 순환비를 초과하거나 미달할 경우 설비상의 문제점</strong></p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>물리적 변화</th>
+<th>설비상 문제점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>미달</strong>(CR ↓)</td>
+<td>출구 건도 ↑(1/CR), 유속 ↓</td>
+<td>상부 관다발·U-벤드 <strong>dryout</strong> → 열전달 ↓ → 증기압·출력 ↓</td>
+</tr>
+<tr>
+<td></td>
+<td>건조·습윤 반복 영역 발생</td>
+<td>불순물 <strong>농축</strong> → ODSCC·IGA·피팅·덴팅 가속</td>
+</tr>
+<tr>
+<td></td>
+<td>저유속·정체 영역</td>
+<td>관판 위 <strong>슬러지 침착</strong> 증가, 유량 불균일</td>
+</tr>
+<tr>
+<td></td>
+<td>2상 유동 비율 ↑</td>
+<td>밀도파 <strong>유동 불안정</strong> → 수위 진동, 수위 제어 곤란</td>
+</tr>
+<tr>
+<td><strong>초과</strong>(CR ↑)</td>
+<td>순환유량·관다발 유속 ↑</td>
+<td><strong>유체유발진동</strong>(유체탄성불안정) → AVB·지지판 <strong>프레팅 마모</strong>[5]</td>
+</tr>
+<tr>
+<td></td>
+<td>습분분리기 유입량 ↑</td>
+<td>분리 성능 저하 → <strong>캐리오버</strong>(증기 습분 ↑) → 터빈 습분 침식, 효율 ↓</td>
+</tr>
+<tr>
+<td></td>
+<td>분리기 출구 증기 혼입</td>
+<td><strong>캐리언더</strong> → 하향수로 밀도·구동수두 ↓, 수위 지시 오차</td>
+</tr>
+<tr>
+<td></td>
+<td>압력손실 ↑</td>
+<td>내부구조물·지지판 <strong>하중</strong> 증가</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>원인 예</strong>: 미달 = 관지지판 유로 막힘(퇴적물), 관다발 파울링, 저수위 운전 / 초과 = 고수위(구동수두 ↑), 저부하 운전, 유로 저항 감소</li>
+<li><strong>대응</strong>: 수화학 관리·슬러지 랜싱·화학세정으로 유로 회복, 수위 프로그램 준수, 하향수로 차압·수위 진동 추세와 ECT 마모 지시로 감시</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: CR 축 위 설계 구간과 미달(←)·초과(→) 쪽 문제점, 원인 예" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/29504c1159919ef3cb4b6a7b1e8177716ad5bfd6052aa167524eae4f6b187d6d.webp"/><figcaption>답안용 도식: CR 축 위 설계 구간과 미달(←)·초과(→) 쪽 문제점, 원인 예</figcaption></figure>
+<figure class="article-image"><img alt="출력에 따른 순환비(설명용 균질 자연순환 모델, 100 % CR 3.3 기준)와 W Model 51 문헌 예, 출력별 W_s·W_c·x_e 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/68f8cba1c86b7deca62e0e721fc8e2b46e97eab7494c3fb7909fde3bb4cc666e.webp"/><figcaption>출력에 따른 순환비(설명용 균질 자연순환 모델, 100 % CR 3.3 기준)와 W Model 51 문헌 예, 출력별 W_s·W_c·x_e 표</figcaption></figure>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>순환비는 <strong>CR = 순환유량/증기유량 = 1/x_e</strong>로 정의되며, 재순환은 관을 젖은 상태로 유지해 열전달·부식·열응력 측면에서 유리함</li>
+<li>설계 CR은 <strong>미달 시 건조·농축, 초과 시 진동·분리기 과부하</strong>를 피하는 절충점이므로, 퇴적·수위 관리로 설계 범위를 유지해야 함</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 두 그림의 숫자를 읽는 법</h3>
+<p>fig1의 실선은 질량수지에서 바로 나오는 x_e = 1/CR이고, 점선은 7.37 MPa(전형적 2차측 압력 가정) 포화 물성(ρf 733, ρg 38.7 kg/m³)[3]으로 계산한 균질 보이드율[4]입니다. CR 3.3(건도 30 %)에서도 보이드율은 이미 약 89 %입니다. 그래서 CR이 조금만 더 낮아져도 상부 관다발은 거의 증기로 덮이게 됩니다. 미달 쪽이 위험한 이유가 여기에 있습니다. 구간 경계(2.5·6)는 이해를 돕기 위한 개념적 구분이며, 실제 허용 범위는 SG 설계마다 다릅니다.</p>
+<p>fig2는 가열 9 m·상승부 3 m의 1차원 균질 모델을 100 %에서 CR 3.3이 되도록 맞춘 설명용 계산입니다. SG 1대 증기 1,000 kg/s(전출력)를 가정하면 순환유량은 50 %와 100 %에서 각각 약 3,460·3,330 kg/s로 거의 같습니다. 그런데 증기유량이 500 → 1,000 kg/s로 두 배가 되므로 CR은 6.9 → 3.3으로 떨어집니다. 10 %에서는 27.7까지 커져, 설계가 다른 Model 51 문헌 예(33.5)[2]와 같은 경향을 보입니다. 답안에는 "<strong>출력 ↓ → CR ↑, 설계 CR은 전출력 값</strong>"이라는 결론만 쓰면 충분합니다. 같은 문헌은 아주 낮은 출력(0~5 %)에서는 분리기로 넘치는 재순환이 거의 없는 pot boiler 상태(CR ≈ 1)로도 설명하는데, 이는 수위·설계에 따른 특수 영역입니다. </p>
+<p>답안에서 가장 많이 감점되는 부분은 정의의 혼동입니다. "순환비 4"를 "증기 1에 재순환수 4"로 쓰면 실제로는 CR 5를 말한 셈이 됩니다. 그래서 첫 줄에 <strong>CR = W_c/W_s</strong>와 <strong>W_r = (CR − 1)·W_s</strong>를 함께 쓰고, 문헌마다 재순환율을 CR − 1로 쓰는 경우가 있다고 한 줄 덧붙이는 것이 안전합니다. 다.에서는 문제가 "초과하거나 미달할 경우"라고 양방향을 묻고 있으므로, 표처럼 두 방향을 나눠 각각 물리적 변화와 설비 문제를 짝지어야 합니다. 관류형 증기발생기(OTSG)는 CR = 1인 극단적인 경우로 볼 수 있습니다. 과열증기를 얻는 대신 재고가 작고 수위 운전을 하지 않는다는 점을 비교로 쓰면 나.의 장점이 분명해집니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 달라진 기준 없음(확인 근거: 순환비는 SG 열수력 설계 개념으로 직접 규제하는 고시·조항이 없고, 관련 운전 감시는 각 호기 운영기술지침서의 SG 수위·전열관 프로그램으로 관리됨). </p>
+<h2>참고문헌</h2>
+<ol>
+<li>Y.-S. Kim, N.-H. Choi, B.-D. Kim, K.-H. Min, S.-J. Lee, K.-Y. Choi, "Thermal Hydraulic Characteristics of the Steam Generators at the ATLAS Facility", Transactions of the Korean Nuclear Society Spring Meeting, Pyeongchang (2010.5.27~28). 한국원자력학회.</li>
+<li>미국·유럽 특허, "Steam Generation System Mass and Feedwater Control System", US 5,249,551 / EP 0 580 798 B1(1998.7.1) — downcomer 유량/증기유량 순환비 정의와 Model 51 대표값(100 % 5.2, 10 % 33.5, 0~5 % pot boiler CR 1; Model 51 명시는 같은 계열 US 5,559,293). EPO·USPTO 공개.</li>
+<li>IAPWS, Revised Release on the IAPWS Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam (IAPWS-IF97), R7-97(2012).</li>
+<li>N. E. Todreas, M. S. Kazimi, Nuclear Systems Volume I: Thermal Hydraulic Fundamentals, 2nd ed., CRC Press (2012) — 2상 유동 균질 모델·자연순환.</li>
+<li>IAEA, Assessment and Management of Ageing of Major Nuclear Power Plant Components Important to Safety: Steam Generators, IAEA-TECDOC-1668 (2011) — IAEA-TECDOC-981(1997) 대체판.</li>
+</ol>

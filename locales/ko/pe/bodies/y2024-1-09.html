@@ -1,0 +1,68 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2024년 원자력발전기술사 필기 1교시 9번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>OPR1000 운영기술지침서의 확인누설, 미확인누설, 압력경계누설 정의</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>확인누설</strong>: 포집되어 수집되거나, 위치가 확인된 대기 누설이거나, 증기발생기를 거쳐 2차측으로 가는 누설입니다.</li>
+<li><strong>미확인누설</strong>: 확인누설이 아닌 모든 누설입니다. 출처를 모른다는 뜻이며 양이 적다는 뜻이 아닙니다.</li>
+<li><strong>압력경계누설</strong>: 기기 몸체·배관 벽·용기 벽의 격리할 수 없는 결함을 통한 누설입니다. 증기발생기 전열관 누설은 제외합니다.</li>
+<li><strong>공통 제외</strong>: 원자로냉각재펌프(RCP) 밀봉 주입수와 밀봉 유출수(제어누설)는 설계상 흐름이므로 누설로 세지 않습니다.</li>
+<li><strong>분류 기준</strong>: 확인·미확인은 "출처를 아는가", 압력경계는 "벽을 뚫은 결함인가"로 나눕니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 근거</strong></p>
+<ul>
+<li>OPR1000 운영기술지침서의 <strong>정의 조항</strong>은 CE형 표준기술지침서(NUREG-1432) 1.1 "LEAKAGE" 정의와 같은 구조임 — 아래 문언은 공개된 NUREG-1432·APR1400 GTS 기준 [1][2]</li>
+<li>정의를 쓰는 LCO: "원자로냉각재계통 운전누설"(STS LCO 3.4.13, 모드 1~4) [1]</li>
+<li>상위 요건: 기술기준규칙 제21조(누설 확률 최소, 신속 탐지·위치 파악), GDC 14·30 [4][5]</li>
+</ul>
+<p><strong>2. 확인누설</strong> — 다음 중 하나</p>
+<ul>
+<li>① 펌프 밀봉·밸브 패킹 누설처럼 <strong>포집되어 수집계통·집수조·수집탱크로 가는 누설</strong></li>
+<li>② <strong>위치가 확인되고</strong>, 누설탐지계통 운전을 방해하지 않거나 압력경계누설이 아닌 것으로 알려진 <strong>원자로건물 대기로의 누설</strong></li>
+<li>③ <strong>증기발생기를 통한 2차계통으로의 누설</strong>(1차→2차 누설) [3]</li>
+</ul>
+<p><strong>3. 미확인누설</strong></p>
+<ul>
+<li><strong>확인누설이 아닌 모든 누설</strong></li>
+<li>출처를 모르므로 압력경계누설일 가능성을 열어 두고 엄격히 제한함</li>
+</ul>
+<p><strong>4. 압력경계누설</strong></p>
+<ul>
+<li>RCS <strong>기기 몸체·배관 벽·원자로용기 벽</strong>의 <strong>격리(차단)할 수 없는 결함</strong>을 통한 누설</li>
+<li><strong>SG 전열관 누설은 제외</strong>(확인누설 ③으로 따로 관리)</li>
+<li>밀봉·패킹·개스킷 누설은 해당 없음</li>
+</ul>
+<p><strong>5. 공통 제외와 관리</strong></p>
+<ul>
+<li>RCP 밀봉 주입수·밀봉 유출수(제어누설)는 누설 아님</li>
+<li>관리: <strong>압력경계 0</strong>, <strong>미확인 1 gpm</strong>, <strong>확인 10 gpm</strong>, 1차→2차는 별도 제한 [1]</li>
+<li>미확인 = 물수지 총 운전누설 − 확인누설</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 질문 세 개로 누설을 분류하는 판정 순서(제외 → 압력경계 → 확인 → 미확인)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/494841aad326c5c6ec6dafca4dc90eeb9c7e67a8daa47d8cfad91e0e0887a2bd.webp"/><figcaption>답안용 도식: 질문 세 개로 누설을 분류하는 판정 순서(제외 → 압력경계 → 확인 → 미확인)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="OPR1000형 1차계통 개략도 위 여섯 누설 지점(밸브 패킹, 플랜지, SG 전열관, 배관 용접부 균열, 출처 미상, RCP 밀봉수)과 각 지점의 분류·판정 근거 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/ca752b8500330be8c9a78c2e048ab1e9ccc34fde8421a5e214ac8005123c3461.webp"/><figcaption>OPR1000형 1차계통 개략도 위 여섯 누설 지점(밸브 패킹, 플랜지, SG 전열관, 배관 용접부 균열, 출처 미상, RCP 밀봉수)과 각 지점의 분류·판정 근거 표</figcaption></figure>
+<p>정의 세 개는 같은 잣대로 나눈 것이 아닙니다. 확인·미확인은 <strong>출처를 아는지</strong>로 나누고, 압력경계는 <strong>결함의 성격</strong>으로 따로 떼어 냅니다. 그래서 판정 순서가 중요합니다. 배관 용접부를 관통한 균열은 위치를 정확히 알아도 확인누설이 될 수 없습니다. 벽 결함은 응력부식균열이나 붕산 부식이 진행 중이라는 신호이고, 시간이 지나면 냉각재상실사고로 커질 수 있기 때문입니다. 반대로 밸브 패킹이나 플랜지 개스킷 누설은 압력경계 구성품에서 나오더라도 벽 결함이 아니므로 압력경계누설이 아닙니다.</p>
+<p>1차→2차 누설은 정의상 확인누설의 한 갈래이지만, LCO에서는 별도 제한치를 두고 초과하면 압력경계누설처럼 감소 기회 없이 정지 조치로 갑니다. 1차→2차 제한값은 호기와 개정 시기에 따라 다르므로 답안에는 "별도 제한"으로 쓰는 편이 안전합니다. 참고로 현행 미국 표준기술지침서(TSTF-449 반영)는 증기발생기 1기당 150 gpd입니다[1]. </p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>1차→2차 누설을 압력경계누설로 분류</strong>: 정의에서 명시적으로 빠집니다. 확인누설 ③이라고 써야 합니다.</li>
+<li><strong>"위치를 알면 확인누설"</strong>: 벽을 관통한 결함이면 위치와 상관없이 압력경계누설입니다.</li>
+<li><strong>RCP 제어누설을 확인누설에 합산</strong>: 설계상 흐름이라 누설이 아닙니다. 이 제외 문구를 한 줄 넣으면 정의의 완결성이 올라갑니다.</li>
+<li><strong>미확인누설을 "작은 누설"로 설명</strong>: 크기가 아니라 출처 식별 여부의 문제입니다.</li>
+<li><strong>정의만 나열하고 끝내기</strong>: 10점 단답이라도 압력경계 0·미확인 1 gpm·확인 10 gpm처럼 정의가 관리와 어떻게 이어지는지 한 줄 덧붙이면 좋습니다. 조치(4 h 감소, 6 h 모드 3·36 h 모드 5)는 묻지 않았으므로 길게 쓰지 않습니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, NUREG-1432 Standard Technical Specifications — Combustion Engineering Plants, Rev. 5 (2021), 1.1 "LEAKAGE" 정의, LCO 3.4.13 "RCS Operational LEAKAGE" 및 Bases.</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Ch. 16 "Technical Specifications"(Generic Technical Specifications), 1.1 Definitions, NRC 설계인증 공개본.</li>
+<li>U.S. NRC, Regulatory Guide 1.45 Rev. 1, "Guidance on Monitoring and Responding to Reactor Coolant System Leakage" (2008).</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, "General Design Criteria for Nuclear Power Plants", Criteria 14·30.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제21조. 국가법령정보센터.</li>
+</ol>

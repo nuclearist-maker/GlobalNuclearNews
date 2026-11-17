@@ -1,0 +1,68 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2021년 원자력발전기술사 필기 1교시 2번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>공통원인고장(Common Cause Failure)</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>공통원인고장(CCF)</strong>: 공유된 원인 하나로 둘 이상의 기기가 동시에 또는 짧은 시간 안에 고장 나는 종속고장입니다.</li>
+<li><strong>근본원인과 결합인자</strong>: 고장을 일으키는 원인과, 여러 기기가 그 원인에 함께 취약해지게 만드는 공유 특성(같은 설계·절차·위치)입니다.</li>
+<li><strong>β인자 모형</strong>: 기기 고장확률 중 β 비율을 CCF로 보는 PSA 모형입니다. 다중 계통의 이용불능도가 βq 부근에서 멈춥니다.</li>
+<li><strong>다양성·물리적 격리</strong>: 결합을 끊거나 공통 취약성을 낮추는 설계 대책입니다. 다중성만으로는 CCF를 방어할 수 없습니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 정의</strong></p>
+<ul>
+<li>공유된 원인 하나로 <strong>둘 이상의 기기가 동시에 또는 짧은 시간 안에</strong> 고장 나는 종속고장(NUREG/CR-5485)[1]</li>
+<li>다중 트레인을 한꺼번에 무력화 → <strong>다중성의 효과를 상쇄</strong>, 단일고장기준만으로는 대비 불가</li>
+<li>국내 기술기준규칙 용어는 "공통유형고장"(제26조②8호)[2]</li>
+</ul>
+<p><strong>2. 발생 구조 = 근본원인 + 결합인자</strong></p>
+<ul>
+<li><strong>근본원인</strong>: 설계·제작 결함, 시험·보수 인적 오류, 환경(온도·습도·방사선), 외부사건(지진·홍수·화재), 소프트웨어 잠재 결함, 경년열화</li>
+<li><strong>결합인자</strong>: 같은 설계·제작사, 같은 절차·작업조·시점의 보수, 같은 위치·환경, 같은 소프트웨어</li>
+<li>사례: 브라운스페리 화재(1975, 다중 트레인 케이블 동시 손상), 후쿠시마(2011, 해일로 비상디젤발전기 동시 침수)[5]</li>
+</ul>
+<p><strong>3. PSA에서의 취급</strong></p>
+<ul>
+<li>고장수목에 독립 고장과 별도로 <strong>CCF 기본사건</strong>을 두고 OR 결합: Q_sys ≈ Q_I² + Q_CCF(2트레인)</li>
+<li>모형: <strong>β인자</strong>(Q_CCF = β·Q_T), MGL(β·γ·δ), α인자[1] / 자료: NRC CCF DB, OECD/NEA ICDE</li>
+<li>예(q = Q_T = 10⁻², β = 0.05, 단순 β모형): 2트레인 독립만 10⁻⁴ → CCF 포함 <strong>약 5.9×10⁻⁴</strong>, 3·4트레인도 약 5×10⁻⁴에서 포화</li>
+</ul>
+<p><strong>4. 방어 대책</strong></p>
+<ul>
+<li><strong>다양성</strong>: 기능·설비·소프트웨어(전동/터빈구동 보조급수펌프, DPS)</li>
+<li><strong>독립성·물리적 격리</strong>: 트레인별 격실·방화벽·이격, 전기 구분 분리</li>
+<li><strong>운영</strong>: 시차 시험·보수, 트레인별 다른 작업조, 보수 후 기능시험, 운전경험 반영</li>
+<li>품질보증, 내환경·내진검증(공유 스트레스에 대한 취약성 저감)</li>
+</ul>
+<p><strong>5. 규제 근거</strong></p>
+<ul>
+<li>기술기준규칙 제44조(다중성·다양성·독립성·물리적 격리성), 제26조②8호(소프트웨어 공통유형고장 → 수동기능 포함 심층방어·다양성), 제27조(다양성보호계통)[2]</li>
+<li>10 CFR 50 App. A GDC 22[3], NUREG-0800 BTP 7-19 Rev.9(2024, D3 평가)[4]</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 2트레인 고장수목(A·B 독립 고장 AND + A·B 공통원인고장 OR)과 β인자 식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/3fb2038cbf56065a80d13d70eba262973ea614fb641531d04fa11b82c46c27c7.webp"/><figcaption>답안용 도식: 2트레인 고장수목(A·B 독립 고장 AND + A·B 공통원인고장 OR)과 β인자 식</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="트레인 수별 계통 이용불능도(독립만 vs β인자 포함, βq 하한), 근본원인 + 결합인자 → 다중 고장 구조, 결합 차단·공통 취약성 저감 대책 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/c69be96b0ca797f38ff5a2c2bc4a08e862deab5c6430eb56a210e56a6e8f49b1.webp"/><figcaption>트레인 수별 계통 이용불능도(독립만 vs β인자 포함, βq 하한), 근본원인 + 결합인자 → 다중 고장 구조, 결합 차단·공통 취약성 저감 대책 표</figcaption></figure>
+<p>그림 왼쪽 그래프가 이 문제의 핵심입니다. 트레인을 하나 더 둘 때마다 독립 고장 조합의 확률은 두 자릿수씩 떨어집니다. 그러나 이 모형에서 CCF 항 βq는 트레인 수와 무관하게 남습니다. 그래서 2트레인부터 이미 CCF가 계통 이용불능도를 지배하고, 3·4트레인으로 늘려도 거의 줄지 않습니다. β = 0.05, q = 10⁻²는 개념을 보이기 위한 예시값이며, 실제 β는 기기 종류와 고장모드마다 다릅니다. 단순 β인자 모형은 3개 이상 그룹에서도 "전부 동시 고장" 하나만 다루므로, 실제 PSA에서는 일부 트레인만 함께 고장 나는 경우까지 나누는 MGL·α인자 모형을 주로 씁니다.</p>
+<p>대책은 결합을 끊거나 공통 취약성을 낮추는 방향으로 정리하면 빠짐이 없습니다. 같은 설계라는 결합은 다양성으로, 같은 위치라는 결합은 물리적 격리로, 같은 작업조·같은 시점이라는 결합은 시차 시험과 작업 분리로 끊습니다. 내환경·내진검증은 결합 자체를 없애지는 못하지만 공유 스트레스에 함께 무너질 가능성을 줄입니다. 디지털 보호계통에서는 4채널이 같은 소프트웨어를 쓰므로 채널을 늘려도 소용이 없습니다. 그래서 기술기준규칙이 수동기능을 포함한 다양성 설계를 따로 요구합니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>"동시에 또는 짧은 시간 안에"와 "공유 원인"</strong>: 정의에서 이 두 요소가 빠지면 일반 다중고장과 구분되지 않습니다.</li>
+<li><strong>단일고장과 혼동</strong>: CCF는 단일고장기준이 다루지 않는 동시 다중고장입니다.</li>
+<li><strong>다중성만 대책으로 씀</strong>: 같은 기기를 더 두는 것만으로는 CCF를 방어할 수 없습니다. 다양성과 격리를 함께 써야 합니다.</li>
+<li><strong>PSA 모형 누락</strong>: β인자 식 한 줄과 포화 현상을 적으면 정량적 이해를 보여 줄 수 있습니다.</li>
+<li><strong>사례 없이 나열</strong>: 화재·해일 사례 하나를 붙이면 결합인자 설명이 설득력을 얻습니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>A. Mosleh et al., Guidelines on Modeling Common-Cause Failures in Probabilistic Risk Assessment, NUREG/CR-5485, U.S. NRC (1998).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제26조·제27조·제44조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A "General Design Criteria for Nuclear Power Plants", Criterion 22.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan, BTP 7-19 "Guidance for Evaluation of Defense in Depth and Diversity to Address Common-Cause Failure Due to Latent Design Defects in Digital Safety Systems", Rev. 9 (2024), NRC ADAMS ML24005A077.</li>
+<li>IAEA, The Fukushima Daiichi Accident, Report by the Director General, IAEA (2015).</li>
+</ol>

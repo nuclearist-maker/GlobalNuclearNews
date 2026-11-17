@@ -1,0 +1,59 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2025년 원자력발전기술사 필기 1교시 13번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>핵연료 연소가 유효 지발중성자 분율(βeff)에 미치는 영향</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>노심 평균 β̄</strong>: 핵분열 핵종별 β를 중성자 생성량으로 가중평균한 값(β̄ = ΣFᵢνᵢβᵢ/ΣFᵢνᵢ)입니다.</li>
+<li><strong>βeff = I·β̄</strong>: 지발중성자의 중요도를 반영한 유효 분율이며, 대형 PWR은 I ≈ 0.97입니다.</li>
+<li><strong>Pu 축적</strong>: 연소가 진행되면 U-235가 줄고 β가 작은 Pu-239(0.0021)·Pu-241(약 0.0054)이 핵분열을 나눠 맡습니다.</li>
+<li><strong>1$ = βeff</strong>: 반응도의 잣대가 작아지므로 같은 pcm이라도 달러 값이 커집니다.</li>
+<li><strong>즉발임계 여유·원자로 주기</strong>: βeff가 줄면 즉발임계 문턱이 낮아지고 같은 ρ에서 주기가 짧아집니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>βeff = I·β̄, <strong>β̄ = ΣFᵢνᵢβᵢ / ΣFᵢνᵢ</strong>(Fᵢ: 핵종 i의 핵분열 분율)[3] → βeff는 <strong>핵분열 핵종 구성</strong>에 따라 바뀜</li>
+<li>핵종별 β: U-235 <strong>0.0065</strong>, U-238(고속) <strong>0.0148</strong>, Pu-239 <strong>0.0021</strong>, Pu-241 약 <strong>0.0054</strong>[1]</li>
+</ul>
+<p><strong>2. 연소에 따른 변화(감소)</strong></p>
+<ol>
+<li><strong>U-235 소모</strong>: β가 큰 주 분열 핵종의 분율 감소</li>
+<li><strong>Pu 생성·분열</strong>: U-238 포획 → Pu-239 → Pu-241, Pu-239 핵분열 분율 주기초 약 0.15 → 주기말 약 0.40(평형노심 예)[2]</li>
+<li><strong>U-238 고속분열</strong>(약 7~8 %)은 거의 일정 → 감소를 막지 못함</li>
+<li><strong>결과</strong>: βeff 주기초 약 <strong>0.0062</strong> → 주기말 약 <strong>0.0050</strong>(약 19 % 감소, 예시)</li>
+<li>지발중성자 물리가 바뀌는 것이 아니라 <strong>분열 핵종 구성이 바뀌는 것</strong>임</li>
+</ol>
+<p><strong>3. 운전·안전에 미치는 영향</strong></p>
+<ol>
+<li><strong>1$ 축소</strong>: 같은 100 pcm이 주기초 0.16$ → 주기말 0.20$</li>
+<li><strong>즉발임계 여유 감소</strong>: 문턱 약 623 → 503 pcm</li>
+<li><strong>주기 단축</strong>: ρ = 100 pcm에서 약 52 s → 37 s(6군 계산), 즉발도약도 커짐</li>
+<li><strong>해석·운전 반영</strong>: 반응도 사고(제어봉 이탈) 해석에 주기 중 βeff 범위 적용, 반응도계에 해당 주기 βeff·βᵢ·λᵢ 입력, 주기말 반응도 삽입률 관리</li>
+<li><strong>MOX 노심</strong>은 Pu 비중이 커 βeff가 더 작음</li>
+</ol>
+<figure class="article-image"><img alt='답안용 도식: 반응도 축 위에서 즉발임계 문턱(1$)이 주기초 623 pcm에서 주기말 503 pcm으로 내려오고, 같은 100 pcm의 달러 값이 0.16$에서 0.20$로 커짐"&gt;&lt;figcaption&gt;답안용 도식: 반응도 축 위에서 즉발임계 문턱(1$)이 주기초 623 pcm에서 주기말 503 pcm으로 내려오고, 같은 100 pcm의 달러 값이 0.16$에서 0.20$로 커짐&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.&lt;/p&gt;
+&lt;h2&gt;해설&lt;/h2&gt;
+&lt;figure class=' article-image"="" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/af5483595fd917b3480dbc618a0d46c88b514c2d2a3b363533f6e808899042b3.webp"/><img alt="6군 역시간방정식으로 계산한 원자로 주기–반응도 곡선(주기초 βeff 623 pcm, 주기말 503 pcm), 즉발임계 문턱 두 선, ρ = 100·300 pcm의 주기 비교, 핵종 구성 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/52270ecc7ab96ecfdbc19bef64bac800fb4671fb51fc72e0aed3a14c5a3ac5b8.webp"/><figcaption>6군 역시간방정식으로 계산한 원자로 주기–반응도 곡선(주기초 βeff 623 pcm, 주기말 503 pcm), 즉발임계 문턱 두 선, ρ = 100·300 pcm의 주기 비교, 핵종 구성 표</figcaption></figure>
+<p>답안의 뼈대는 "βeff는 핵종 구성의 가중평균이고, 연소는 그 구성을 Pu 쪽으로 옮긴다"는 한 문장입니다. 주기초 642 pcm, 주기말 519 pcm인 β̄ 값은 평형노심의 핵분열 분율을 근사 모델에 넣어 계산한 설명용 수치입니다. 실제 노심 값은 핵설계보고서의 주기별 계산값을 따릅니다.</p>
+<p>영향 쪽은 숫자 하나로 보이면 설득력이 커집니다. 그림의 주기는 U-235의 6군 상수와 Λ = 2×10⁻⁵ s를 고정하고 βeff만 바꿔 계산했습니다[1]. 같은 100 pcm이 주기초에는 약 52 s, 주기말에는 약 37 s 주기를 만듭니다. 300 pcm이면 6.3 s가 3.4 s로 줄어듭니다. Pu-239 선행핵의 평균 수명은 U-235보다 약간 길어서 실제 단축폭은 이보다 조금 작을 수 있습니다. 그래도 방향은 같습니다.</p>
+<p>βeff가 줄었다고 반응도가 줄어든 것은 아닙니다. 반응도를 재는 잣대인 1$가 작아진 것입니다. 이 차이를 구분해서 쓰십시오.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>원인 서술 누락</strong>: "Pu가 생겨서 줄어든다"에서 멈추지 말고, β̄가 핵분열 분율 가중평균이라는 식을 함께 쓰십시오.</li>
+<li><strong>방향만 쓰고 결과 없음</strong>: 문제는 "영향"을 묻습니다. 1$ 축소, 즉발임계 여유 감소, 주기 단축 세 가지를 꼭 붙이십시오.</li>
+<li><strong>βeff = 0.0065로 고정</strong>: 0.0065는 U-235 단일 핵종 값입니다. 실제 노심 βeff는 시점에 따라 약 0.005~0.007입니다.</li>
+<li><strong>반응도 감소와 혼동</strong>: βeff 감소는 잉여반응도 감소와 다른 현상입니다.</li>
+<li><strong>수치 단정</strong>: 0.0062 → 0.0050은 예시라고 밝히십시오.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>G. R. Keepin, Physics of Nuclear Kinetics, Addison-Wesley (1965) — 핵종별 지발중성자 분율·6군 상수.</li>
+<li>F. P. An 외 (Daya Bay Collaboration), "Evolution of the Reactor Antineutrino Flux and Spectrum at Daya Bay", Physical Review Letters 118, 251801 (2017) — 평형노심 핵종별 핵분열 분율.</li>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, Wiley (1976), 원자로 동특성 장(유효 지발중성자 분율).</li>
+</ol>

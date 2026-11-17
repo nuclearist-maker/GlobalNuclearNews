@@ -1,0 +1,76 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2024년 원자력발전기술사 필기 1교시 2번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>대형냉각재상실사고(Large Break LOCA)의 진행과정 4단계</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>취출(blowdown)</strong>: 파단 직후 급속 감압·방출 구간이며, 노심 유량 정체와 조기 CHF로 첫 번째 온도 피크가 생깁니다.</li>
+<li><strong>재충수(refill)</strong>: 비상냉각수가 하부 플레넘을 채우는 구간이며, 노심은 거의 단열 상태로 가열됩니다.</li>
+<li><strong>재관수(reflood)</strong>: 물이 노심 하단부터 차오르며 급랭 전선이 올라가는 구간이며, 두 번째 피크가 나타납니다.</li>
+<li><strong>장기 냉각(long-term cooling)</strong>: 급랭 이후 재순환으로 붕괴열을 계속 제거하고 붕산 석출을 막습니다.</li>
+<li><strong>ECC 우회(bypass)</strong>: 취출 후반 저온관 주입수가 노심에 닿지 못하고 파단부로 빠지는 현상입니다. 우회가 끝나야 재충수가 시작됩니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>대구경 배관 파단으로 RCS가 수십 초 안에 격납건물 압력 부근까지 감압되는 설계기준사고임 [1][2]</li>
+<li>제한 파단은 <strong>저온관(RCP 토출측) 양단 파단(DECLG)</strong>임. 단계 경계는 시간이 아니라 <strong>사건</strong>으로 구분함</li>
+</ul>
+<p><strong>2. 진행과정 4단계</strong> (시간은 4-loop PWR 대표 범위의 예시임)</p>
+<ul>
+<li>① <strong>취출</strong>(0 ~ 약 20~30 s): 파단 → <strong>RCS 압력 ≈ 격납건물 압력</strong>까지
+<ul>
+<li>과냉 감압 후 포화 감압·비등, 노심 유량 <strong>정체·역류</strong> → 수 초 내 <strong>조기 CHF</strong></li>
+<li>기포 반응도로 핵분열 정지, 저장에너지 재분배로 <strong>1차(취출) 피크</strong> 발생</li>
+<li>RCS 압력 &lt; SIT 압력이면 SIT 주입이 시작되나, 상승 증기에 밀려 <strong>ECC 우회</strong>가 일어남</li>
+</ul>
+</li>
+<li>② <strong>재충수</strong>(~ 약 30~40 s): <strong>우회 종료</strong> → 하부 플레넘 충수, 수위가 <strong>노심 가열부 하단</strong>에 도달
+<ul>
+<li>노심 유동이 거의 없어 <strong>단열 가열</strong>(붕괴열, 복사 열전달) → PCT 단조 상승</li>
+</ul>
+</li>
+<li>③ <strong>재관수</strong>(~ 수백 s): 물이 노심 하단에 도달 → <strong>노심 전체 급랭</strong> 완료
+<ul>
+<li>강수부 수두로 물을 밀어 올림, <strong>급랭 전선</strong> 상승, <strong>증기 결합</strong>으로 재관수율 저하</li>
+<li><strong>2차(재관수) 피크</strong>가 나타나며 대형 PWR에서는 흔히 이 피크가 제한값임</li>
+</ul>
+</li>
+<li>④ <strong>장기 냉각</strong>: 급랭 이후, 붕괴열 제거가 필요한 기간 전체
+<ul>
+<li><strong>집수조 재순환</strong>(외부 저장탱크 수원 노형은 저수위 시 재순환 전환(RAS), APR1400은 IRWST 단일 수원으로 전환 없음 [5])</li>
+<li><strong>고온관·저온관 동시 주입</strong>으로 붕산 석출을 방지함(전환 시점은 노형별 붕산 석출 해석으로 정함)</li>
+</ul>
+</li>
+</ul>
+<p><strong>3. 판정 기준</strong></p>
+<ul>
+<li>원안위고시 제2017-23호(= 10 CFR 50.46(b)): <strong>PCT ≤ 1,204 °C, 국부 산화 ≤ 17 %, 수소 ≤ 1 %, 냉각 가능 형상, 장기 냉각</strong> [3][4]</li>
+<li>①~③단계는 피크 온도·산화로, ④단계는 장기 냉각 기준으로 판정함</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: RCS 압력과 피복재 온도의 시간 변화 위 4단계 구간과 경계 사건" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/8133ef71e168da4d9c3edde3df1b747690118fba4bbe52419a5b077c82378a28.webp"/><figcaption>답안용 도식: RCS 압력과 피복재 온도의 시간 변화 위 4단계 구간과 경계 사건</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="원자로용기 단면 4컷으로 본 단계별 냉각재 위치·흐름과 경계 사건·대표 시간·피복재 온도·주역 ECCS" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/2767711984f2e7e42f011f5288fe1eb6817b7d64f30bf47ee0ef52d757dadf89.webp"/><figcaption>원자로용기 단면 4컷으로 본 단계별 냉각재 위치·흐름과 경계 사건·대표 시간·피복재 온도·주역 ECCS</figcaption></figure>
+<p>이 문제는 4단계의 이름만 쓰면 절반의 점수에 그칩니다. 단계마다 <strong>어디서 시작해 어디서 끝나는지</strong>를 사건으로 적어야 변별이 됩니다. 그림처럼 원자로용기 안의 물 위치로 보면 경계가 분명합니다. 취출이 끝나면 용기는 거의 비어 있고, 재충수가 끝나면 하부 플레넘이 찹니다. 재관수가 끝나면 노심 전체가 급랭됩니다.</p>
+<p>단계별 시간은 노형과 해석 방법에 따라 크게 달라집니다. 최적평가에서는 취출 중 급랭이 얼마나 일어나느냐에 따라 제한 피크가 취출 쪽으로 옮겨가기도 합니다. 따라서 답안의 시간 값에는 "대표 범위"나 "예시"를 붙이는 것이 안전합니다. </p>
+<p>APR1400은 원자로용기 직접주입(DVI)과 SIT 유량조절기를 씁니다[5]. 주입수가 강수부로 바로 들어가므로 저온관 주입 노형과 우회 양상이 다르고, SIT는 주입 도중 대유량에서 소유량으로 저절로 바뀝니다. 4단계의 구분 자체는 같습니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>재충수와 재관수 혼동</strong>: 재충수는 하부 플레넘까지만 채우는 단계입니다. 노심을 다시 덮는 것은 재관수입니다.</li>
+<li><strong>장기 냉각 누락</strong>: 세 단계(취출·재충수·재관수)만 쓰면 "4단계"를 채우지 못합니다.</li>
+<li><strong>PCT 시점 단정</strong>: "PCT는 취출 중 발생"이라고 단정하지 마십시오. 대형 PWR은 재관수 피크가 제한인 경우가 많습니다.</li>
+<li><strong>우회 위치 오류</strong>: ECC 우회는 취출 후반의 현상이며, 우회가 끝나는 시점이 재충수의 시작입니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, NUREG-1230, "Compendium of ECCS Research for Realistic LOCA Analysis" (1988).</li>
+<li>N. E. Todreas, MIT OpenCourseWare 22.39 "Integration of Reactor Design, Operations, and Safety", Lecture "PWR Large Break LOCA Phases".</li>
+<li>원자력안전위원회, 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」, 원안위고시 제2017-23호, 제3조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR 50.46 "Acceptance criteria for emergency core cooling systems for light-water nuclear power reactors", (b).</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Ch. 6.3 "Emergency Core Cooling System", NRC 설계인증 공개본.</li>
+</ol>

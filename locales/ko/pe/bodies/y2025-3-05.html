@@ -1,0 +1,189 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2025년 원자력발전기술사 필기 3교시 5번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>원자력발전소의 자연순환에 대하여 다음을 기술하시오.
+가. 자연순환 정의
+나. 원자로 용기내에서 기포의 존재를 감지할 수 있는 방법
+다. 원자로냉각재계통 내 비응축성 기체 생성원</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>자연순환의 정의만 묻지 않고, 자연순환을 <strong>깨뜨리는 두 가지 기체 공극</strong>(증기 기포, 비응축성 기체)을 함께 묻는 문제입니다. 가에서 "열중심 고도차 + 연속 액체 유로"라는 성립 조건을 세우면, 나는 그 조건이 깨졌는지 <strong>어떻게 아는가</strong>(계측), 다는 무엇이 그 조건을 <strong>깨뜨리는가</strong>(생성원)로 자연스럽게 이어집니다. 나는 RVLMS 한 가지로 끝내지 말고 간접 지표까지, 다는 정상운전 생성원과 사고 시 생성원을 나눠 쓰면 점수가 안정됩니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: RCP 정지 후 붕괴열 제거 수단으로서 자연순환</li>
+<li>본론 가: 정의, 구동력 식과 열중심, 성립·유지 조건</li>
+<li>본론 나: 직접 계측(CE형 HJTC 방식 RVLMS, W형 차압식 RVLIS)과 간접 지표(포화 비교, 가압기 수위 이상 거동, 질량 수지, RCP 전류), 상부헤드 플래싱</li>
+<li>본론 다: 정상운전·과도·사고 생성원 표, 축적 위치와 영향, 제거 수단</li>
+<li>결론: 감지 → 과냉각 회복·감압 속도 제한·고점 배기</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>RCP 정지(소외전원 상실, 정전 등) 후 노심 붕괴열을 SG로 보내는 기본 수단이 <strong>자연순환</strong>임</li>
+<li>자연순환은 연속된 액체 유로가 있어야 유지됨 → 원자로용기·고온관·U-관 정상부의 <strong>증기 기포와 비응축성 기체</strong>가 최대 방해 인자임</li>
+</ul>
+<p><strong>2. 가. 자연순환 정의</strong></p>
+<ul>
+<li>정의: 펌프 없이 <strong>열원(노심)에서 가열된 냉각재와 열침원(SG)에서 냉각된 냉각재의 밀도차가 중력장에서 만드는 부력</strong>으로 1차 루프가 순환하는 현상</li>
+<li>구동압: <strong>ΔPb = (ρc − ρh)·g·ΔH</strong>[8]
+<ul>
+<li>ρc 하강측(SG 출구 → 저온관 → 강수부) 평균밀도, ρh 상승측(노심 → 고온관 → SG 입구) 평균밀도</li>
+<li>ΔH = <strong>SG 열중심 − 노심 열중심 &gt; 0</strong>, 열중심 z = ∫z dQ / ∫dQ</li>
+</ul>
+</li>
+<li>정상상태(구동력 = 마찰, 난류): ṁ ∝ (Q·ΔH)^1/3, ΔT ∝ Q^2/3·ΔH^−1/3 (층류면 지수 1/2)</li>
+<li>성립·유지 조건
+<ul>
+<li>배치: 열침원 열중심이 열원 열중심보다 높음</li>
+<li>열침원: SG 2차측 보조급수 + 증기 방출(MSADV)</li>
+<li>유로: 고온관·U-관 정상부에 <strong>증기·비응축성 기체 공극 없음</strong></li>
+<li>과냉각: 가압기로 1차측 압력 유지</li>
+</ul>
+</li>
+<li>재고량이 줄면 단상 → 이상 → 리플럭스 응축으로 모드가 바뀜</li>
+</ul>
+<p><strong>3. 나. 원자로용기 내 기포 감지 방법</strong></p>
+<ul>
+<li>(1) <strong>원자로용기 수위감시계통(RVLMS, CE형·국내 OPR1000·APR1400 계열)</strong> — 직접 계측
+<ul>
+<li>감지 소자: <strong>가열접점열전대(HJTC)</strong> = 가열 접점 + 비가열 접점 한 쌍</li>
+<li>원리: 물에 잠기면 열이 잘 빠져 두 접점 온도차가 작음 → 증기에 노출되면 가열 접점 온도 상승, 온도차가 설정값을 넘으면 "노출"로 판정</li>
+<li>배치: 분리관 안에 여러 높이로 축방향 배치 → 연료정렬판 위~상부헤드의 액체 재고량을 계단식으로 표시(센서 수·채널 구성은 호기별 설계)</li>
+<li>부적절노심냉각감시계통(ICCMS) = 과냉각여유도 감시(SMM) + RVLMS + 노심출구열전대(CET) — NUREG-0737 II.F.2·GL 82-28이 요구한 ICC 계측 조합[1][2]</li>
+<li>한계: 소형 파단 직후 포화까지의 급감압 구간처럼 수위가 매우 빨리 변하면 추종이 늦음</li>
+</ul>
+</li>
+<li>(2) <strong>차압식 원자로용기 수위계(RVLIS, W형)</strong> — 직접 계측
+<ul>
+<li>상부헤드 배기 연결부와 용기 하부(노내계측 딤블) 사이 차압</li>
+<li>3범위: 전 범위·상부 범위(RCP 정지 시 수위), 동적 범위(RCP 운전 중 차압 → 기포율)</li>
+</ul>
+</li>
+<li>(3) <strong>포화 비교(과냉각여유도)</strong> — 간접
+<ul>
+<li>CET·고온관·상부헤드 온도를 RCS 압력의 포화온도와 비교, <strong>Tsat(P) − T ≤ 0이면 그 위치 비등·플래싱</strong></li>
+<li>상부헤드는 주 유로 밖 정체 영역 → 자연순환 냉각 중 온도가 늦게 떨어짐 → 감압 시 CET는 과냉각이어도 헤드는 포화 가능</li>
+</ul>
+</li>
+<li>(4) <strong>가압기 수위·압력 거동</strong> — 간접
+<ul>
+<li>감압 중 충전·유출로 설명되지 않는 <strong>가압기 수위 급상승</strong> = 용기 내 기포 팽창이 냉각재를 가압기로 밀어냄</li>
+<li>압력 변화에 대한 수위 응답(계통 압축성)으로 기포 체적 추정(TMI-2 수소 기포 추정 방법)</li>
+</ul>
+</li>
+<li>(5) <strong>질량 수지 불일치</strong>: 충전 − 유출 누적량과 가압기 수위 변화가 맞지 않음</li>
+<li>(6) <strong>RCP 운전 중</strong>: 기포 증가 → 모터 전류·펌프 차압 감소(밀도 저하)</li>
+<li>(7) 보조 지표: 노외 핵계측 계수율 증가(강수부 물 차폐 감소), 상부헤드 배기 시 압력·수위 응답</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 원자로용기 단면의 HJTC 프로브와 잠김·노출 센서별 온도차" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/b6ce84c98d47fef9bb5c734c8ef4d4f14c83616b57d1bf7ca6c9a2531eca98f0.webp"/><figcaption>답안용 도식: 원자로용기 단면의 HJTC 프로브와 잠김·노출 센서별 온도차</figcaption></figure>
+<figure class="article-image"><img alt="원자로용기 단면 위 기포 감지 수단 7가지의 감지 위치와 기포 시 신호 변화 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/2ebed322f474108ae851a7476981a42a91f4ad462631bfabb328cd18d9d7cf8a.webp"/><figcaption>원자로용기 단면 위 기포 감지 수단 7가지의 감지 위치와 기포 시 신호 변화 표</figcaption></figure>
+<p><strong>4. 다. 원자로냉각재계통 내 비응축성 기체 생성원</strong></p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>생성원</th>
+<th>기체</th>
+<th>발생 조건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정상운전</td>
+<td>용존 수소(VCT 수소 → 충전수)</td>
+<td>H₂</td>
+<td>약 25~50 cc/kg(STP)[5][6], 감압·가열 시 탈기</td>
+</tr>
+<tr>
+<td>정상운전</td>
+<td>냉각재 방사선분해</td>
+<td>H₂·O₂</td>
+<td>정지·수소 부족 시 순 생성</td>
+</tr>
+<tr>
+<td>정상운전</td>
+<td>붕소 B-10(n,α)Li-7 반응</td>
+<td>He</td>
+<td>운전 중 연속, 소량</td>
+</tr>
+<tr>
+<td>정상운전</td>
+<td>금속 부식</td>
+<td>H₂</td>
+<td>미량</td>
+</tr>
+<tr>
+<td>연료 결함</td>
+<td>핵분열기체·봉 내 충전기체</td>
+<td>Xe·Kr·He</td>
+<td>피복 결함·파손</td>
+</tr>
+<tr>
+<td>사고</td>
+<td>지르코늄-물 반응</td>
+<td>H₂</td>
+<td>피복 고온 산화(Zr + 2H₂O → ZrO₂ + 2H₂)</td>
+</tr>
+<tr>
+<td>사고</td>
+<td>안전주입탱크(SIT) 질소</td>
+<td>N₂</td>
+<td>탱크 배출 완료 후 피복가스 유입</td>
+</tr>
+<tr>
+<td>정비·보충</td>
+<td>공기</td>
+<td>N₂·O₂</td>
+<td>충수 후 배기 불완전, 주입수(RWST·IRWST) 용존 공기</td>
+</tr>
+<tr>
+<td>기동</td>
+<td>히드라진 분해</td>
+<td>N₂·NH₃</td>
+<td>기동 시 산소 제거 약품</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>축적 위치: 원자로용기 상부헤드, <strong>SG U-관 정상부</strong>, 가압기 증기 공간(고점)</li>
+<li>영향
+<ul>
+<li>단상 자연순환 유로 차단(U-관 정상부 기체 정체)</li>
+<li>리플럭스 응축 열전달 저하: 기체 분압만큼 증기 분압이 낮아져 응축 온도·열전달 감소</li>
+<li>감압 시 팽창 → 수위 지시 왜곡, 펌프 기체 결합</li>
+</ul>
+</li>
+<li>규모 감각(예시): 피복 Zr 20 t을 가정하면 1 % 반응 수소 98.3 m³(STP, Zr + 2H₂O → ZrO₂ + 2H₂ 화학량론)는 용존 수소(냉각재 250 t × 35 cc/kg 가정) 8.75 m³의 약 11배</li>
+<li>제거: <strong>원자로용기 헤드·가압기 고점 배기</strong>(APR1400 RCGVS → IRWST), 정지 전 탈기(VCT 퍼지·유출 탈기), 정비 후 진공 충수·배기</li>
+</ul>
+<figure class="article-image"><img alt="1차 루프 위 비응축성 기체 생성원 9가지와 축적 고점, 수소 양 비교 막대(용존 수소 대 지르코늄 반응 1 %·100 %)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/9f18ff97428eb2a6ebb58583ee08191275d3ba89880a28e56e0717eac5bb038c.webp"/><figcaption>1차 루프 위 비응축성 기체 생성원 9가지와 축적 고점, 수소 양 비교 막대(용존 수소 대 지르코늄 반응 1 %·100 %)</figcaption></figure>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>자연순환은 <strong>ΔH &gt; 0 + SG 열침원 + 연속 액체 유로 + 과냉각</strong>이 함께 있어야 유지됨</li>
+<li>기포는 RVLMS(HJTC)·RVLIS로 직접, 포화 비교·가압기 수위 거동·수지·RCP 전류로 간접 감지함</li>
+<li>대응: 가압으로 과냉각 회복, 냉각·감압 속도 제한, CRDM 냉각팬 가동, 고점 배기로 기체 제거</li>
+<li>근거: NUREG-0737 II.F.2(ICC 계측)[1], II.B.1·10 CFR 50.46a(RCS 고점 배기)[1][4], NRC GL 81-21(자연순환 냉각 절차)[3]</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 왜 CET가 과냉각인데 헤드에 기포가 생기나</h3>
+<figure class="article-image"><img alt="포화곡선 위 노심출구와 상부헤드 냉각 경로, 헤드 300 °C의 포화압력 8.59 MPa 아래로 감압할 때 생기는 플래싱 구간" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/eb6f1a8f55b0cdc44ec6fd662c65043ddd767d5c1340252b5119416eaab72d38.webp"/><figcaption>포화곡선 위 노심출구와 상부헤드 냉각 경로, 헤드 300 °C의 포화압력 8.59 MPa 아래로 감압할 때 생기는 플래싱 구간</figcaption></figure>
+<p>상부헤드는 노심에서 올라온 물이 대부분 고온관으로 빠져나가는 주 유로 밖에 있습니다. RCP가 돌 때는 우회 유량으로 섞이지만, 자연순환에서는 이 물이 거의 정체해 운전 중 온도 근처에 머뭅니다. fig3의 예처럼 노심출구가 260 °C까지 식어도 헤드가 300 °C에 남아 있으면, RCS 압력을 그 포화압력 8.59 MPa[7] 아래로 낮추는 순간 헤드 물이 플래싱합니다. 이때 CET 기준 과냉각여유도는 아직 수십 °C로 보이므로, 운전원은 가압기 수위가 이유 없이 급상승하는 현상으로 먼저 알아채게 됩니다. 1980년 St. Lucie 1호기가 이 경우였고, NRC는 GL 81-21[3]로 자연순환 냉각 절차와 훈련을 점검하게 했습니다. 그래서 절차서는 냉각·감압 속도를 제한하고 CRDM 냉각팬을 돌려 헤드를 함께 식힙니다. 헤드 기포만으로 루프 자연순환이 곧바로 멈추지는 않지만, 기포가 고온관·U-관으로 번지면 리플럭스 모드로 넘어가고 압력 제어도 어려워집니다.</p>
+<h3>해설: 다 항에서 채점자가 보는 것</h3>
+<p>비응축성 기체 문항에서는 "증기"를 넣는 실수가 잦습니다. 증기는 응축되므로 비응축성 기체가 아닙니다. 또 노심-콘크리트 반응의 CO·CO₂는 격납건물 기체이지 RCS 생성원이 아닙니다. 표처럼 <strong>정상운전 / 연료 결함 / 사고 / 정비</strong> 로 나누면 빠뜨리는 항목이 줄어듭니다. 마지막에 "고점에 모여 U-관을 막는다 → 고점 배기로 뺀다"를 붙여 가 항의 자연순환과 연결해 주십시오. 미국 10 CFR 50.46a는 RCS와 원자로용기 헤드의 고점 배기를 요구하면서도 <strong>U-관형 SG 전열관은 대상에서 제외</strong>합니다[4]. 그래서 U-관 정상부의 기체는 배기가 아니라 탈기와 충수 관리로 예방하는 것이 기본입니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 달라진 기준 없음(확인 근거: 2025년 출제 문항이며, 10 CFR 50.46a 고점 배기 요건과 NUREG-0737 II.F.2·II.B.1의 이행 내용, 「원자로시설 등의 기술기준에 관한 규칙」 제29조(잔열제거설비, 현행 원안위규칙 제37호 2026.3.30)[9]는 그대로 유효합니다).</p>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, NUREG-0737 "Clarification of TMI Action Plan Requirements" (1980), II.B.1(RCS 배기)·II.F.2(부적절 노심냉각 계측).</li>
+<li>U.S. NRC, Generic Letter 82-28 "Inadequate Core Cooling Instrumentation System" (1982).</li>
+<li>U.S. NRC, Generic Letter 81-21 "Natural Circulation Cooldown" (1981).</li>
+<li>U.S. NRC, 10 CFR 50.46a "Acceptance criteria for reactor coolant system venting systems".</li>
+<li>U.S. NRC, NUREG-0933 Resolution of Generic Safety Issues, Issue 198 "Hydrogen Combustion in PWR Piping"(정상운전 용존 수소 25~35 cc(STP)/kg).</li>
+<li>E. H. Lee, D. H. Lee, M. S. Choi, D. H. Hur, "Measurements of Henry's Law Constant for Hydrogen in Simulated PWR Primary Water", Transactions of the Korean Nuclear Society Spring Meeting, Gwangju (2013)(용존 수소 관리 범위 25~50 cc(STP)/kg).</li>
+<li>IAPWS, Revised Release on the IAPWS Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam (IAPWS-IF97).</li>
+<li>N. E. Todreas, M. S. Kazimi, Nuclear Systems Volume I: Thermal Hydraulic Fundamentals, 2nd ed., CRC Press, 자연순환 장.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제29조. 국가법령정보센터.</li>
+</ol>

@@ -1,0 +1,122 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2026년 원자력발전기술사 필기 4교시 1번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>APR1400 원전의 원자로 용기, 내장품 및 원자로냉각재계통에 대하여 다음을 기술하시오.
+가. 원자로용기 감시시편의 재질과 구성 및 설치 장소
+나. 원자로냉각재계통 압력의 안전제한치 및 설정 목적
+다. 파일롯구동안전감압밸브(POSRV)의 기능
+라. 원자로냉각재가스배기계통(RCGVS)의 기능</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>원자로냉각재압력경계(RCPB)를 지키는 수단을 네 방향에서 묻습니다. 가는 용기 재료가 수명 동안 얼마나 취화되는지 실측하는 감시시편, 나는 압력경계가 넘어서는 안 되는 운전 한계, 다는 그 한계를 지키는 과압보호 밸브, 라는 사고 후 고점에 모인 기체를 빼는 배기 계통입니다. APR1400 고유 설계(용기 벽 부착 시편함, PSV와 SDS를 통합한 POSRV, 안전감압배기계통 안의 배기 기능)를 공개 문헌의 숫자로 근거 있게 쓰는지가 채점의 핵심입니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: RCPB 건전성 관리의 네 축(재료 감시·운전 한계·과압보호·고점 배기), 근거 법령</li>
+<li>본론 가: 시험재료(모재·용접금속·HAZ), 시편 종류와 감시자, 시편함 수량, 용기 내벽 고정대·노심 중심선·선배율</li>
+<li>본론 나: 2,750 psia = 설계압력 × 110 %, 설정 목적, 보호 수단과 위반 시 조치, 과압보호 해석 예</li>
+<li>본론 다: 과압보호·급속감압(급수·배출)·중대사고 감압·방출 응축 4기능과 파일럿 구성</li>
+<li>본론 라: 비응축성 기체 배출, 살수 상실 시 압력 제어, 설계 요건과 경로 구성</li>
+<li>결론: 네 설비가 RCPB 방벽을 함께 지키는 방식</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>원자로용기와 RCS는 핵분열생성물의 세 번째 방벽인 <strong>RCPB</strong>임. 건전성은 ① 재료 취화 감시(감시시편) ② 압력 한계(안전제한치) ③ 과압보호(POSRV) ④ 고점 기체 제거(RCGVS)로 관리함</li>
+<li>근거: 기술기준규칙 제21조(RCPB)·제37조(과압방지)[11], 원안위고시 제2021-28호 「원자로압력용기 감시시험 기준」[1], 10 CFR 50 부록 H[4], ASME Sec. III NB-7000[10]</li>
+<li>수치는 공개 문헌(미국 설계인증 기술지침서·심사 자료, 학회 발표 논문) 기준이며, 호기별 설계값은 다를 수 있음</li>
+</ul>
+<p><strong>2. 가. 감시시편의 재질·구성·설치 장소</strong></p>
+<ul>
+<li><strong>재질(시험재료)</strong>: 노심대(beltline) 실제 제작재에서 채취, 용기와 같은 제작·열처리 이력[4]
+<ol>
+<li><strong>모재</strong>: 노심대 링 단조재(SA-508 Gr.3 Cl.1 계열 저합금강) 중 수명말 조정 RTNDT가 가장 높을 것으로 예상되는 것, 주가공방향 평행(L)·수직(T) 두 방향 </li>
+<li><strong>용접금속</strong>: 노심대 용접과 같은 용접재·용접 조건</li>
+<li><strong>용접 열영향부(HAZ)</strong>: 모재와 같은 단조재</li>
+</ol>
+</li>
+<li><strong>시편 종류</strong>: <strong>샤르피 V노치 충격시편</strong>(ΔRTNDT·USE), <strong>인장시편</strong>(항복·인장강도), <strong>파괴인성 시편</strong>(CT·예균열 샤르피)[4]</li>
+<li><strong>감시자</strong>: <strong>중성자속 감시자</strong>(조사량 산정), <strong>온도감시자</strong>(저융점 합금 — 최고 조사온도 확인)</li>
+<li><strong>구성</strong>: 시편과 감시자를 밀봉 캡슐에 넣은 <strong>감시시편함 집합체</strong>, 국내 운영 원전은 통상 <strong>6개</strong> 설치[3] → 운전 연수(EFPY) 계획에 따라 순차 인출, 나머지는 예비</li>
+<li><strong>설치 장소</strong>: <strong>원자로용기 내벽 피복재에 용접한 시편함 고정대</strong> 안, 교체 시편함 원격 설치 가능[2]
+<ul>
+<li>노심대 높이, 축방향 중심 = 노심 중심선, 원주상 고속중성자속이 큰 방위</li>
+<li><strong>선배율</strong>(시편 중성자속 / 용기 내벽 최대 중성자속) &gt; 1 → 용기보다 먼저 취화를 보여 줌(고시 제8조③ 1~3)[1]. 미국 DC 1.4(1.5에서 정정)[2], 국내 OPR1000·APR1400 약 1.2~1.4[3]</li>
+</ul>
+</li>
+<li><strong>활용</strong>: 첫 시험은 선배율 최대 캡슐, <strong>인출 후 1년 이내 보고</strong>(고시 제12조·제13조③)[1], ΔRTNDT·USE로 P-T 곡선·PTS 평가 갱신</li>
+</ul>
+<figure class="article-image"><img alt="시편함의 용기 내벽 배치(평면·입면, 노심 중심선)와 시편·감시자 종류별 시험재료·측정 항목표, 선배율 식과 공개 값" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/70654c558bef38bb6b2cb5ed78a3dbccdd610b82929df96a6ad8e99323ca2019.webp"/><figcaption>시편함의 용기 내벽 배치(평면·입면, 노심 중심선)와 시편·감시자 종류별 시험재료·측정 항목표, 선배율 식과 공개 값</figcaption></figure>
+<p><strong>3. 나. RCS 압력 안전제한치와 설정 목적</strong></p>
+<ul>
+<li><strong>안전제한치</strong>: RCS 압력 ≤ <strong>2,750 psia(193.3 kg/cm²A, 18.96 MPa)</strong> = 설계압력 2,500 psia × <strong>110 %</strong>, 모드 1~5 적용[5]</li>
+<li><strong>근거</strong>: ASME Sec. III NB-7000(과압 110 %)[10], GDC 15, 10 CFR 50.36(c)(1), 운영기술지침서 작성 기준 고시 제4조</li>
+<li><strong>설정 목적</strong>
+<ol>
+<li>RCPB의 소성변형·파손 방지 → 냉각재 상실과 방벽 동시 손상 차단</li>
+<li>모든 AOO 안전해석의 압력 판정선(설계 근거를 운전 조문으로 옮긴 것)</li>
+<li>위반 시 정지·보고·승인 재가동을 강제해 운전 여유를 제도적으로 보장</li>
+</ol>
+</li>
+<li><strong>보호 수단</strong>: 가압기 고압력 트립(LSSS) + POSRV + 주증기안전밸브(MSSV, 3개 설정압 군)[7] + LCO, 저온 모드는 LTOP</li>
+<li><strong>위반 시 조치</strong>: 모드 1·2 → 압력 복구·1시간 이내 모드 3, 모드 3~5 → 5분 이내 압력 복구[5]</li>
+<li><strong>설계 확인 예</strong>: 터빈 부하상실, 102 % 출력, <strong>두 번째 안전등급 신호로 정지</strong>(SRP 5.2.2), MTC 0, 살수·우회 불고려 → RCS 첨두 <strong>설계압력의 104~107 %</strong>, SG 첨두 106~109 % &lt; 110 %(신고리 3·4 해석)[6]</li>
+</ul>
+<figure class="article-image"><img alt="부하상실 과압 해석의 초기조건별 RCS·SG 첨두압력(설계압력 대비 %)과 110 % 한계선, 2,250·2,470·2,500·2,750 psia 압력 위계와 POSRV 공개 설계값" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/14e3196458eca8ec6c0702abfe2f7a1aa9bd080491ec32d4bda9aacb6c009fa7.webp"/><figcaption>부하상실 과압 해석의 초기조건별 RCS·SG 첨두압력(설계압력 대비 %)과 110 % 한계선, 2,250·2,470·2,500·2,750 psia 압력 위계와 POSRV 공개 설계값</figcaption></figure>
+<p><strong>4. 다. POSRV의 기능</strong></p>
+<ul>
+<li>가압기 상부 <strong>4대</strong>, 개방 설정압 <strong>2,470 psia</strong>, 개당 <strong>540,000 lb/h(약 244.9 t/h)</strong>, 4대 합계 2,160,000 lb/h[7][8]</li>
+<li>주밸브 1개 + <strong>스프링 파일럿 2개</strong> + <strong>전동 파일럿 2개</strong> 구성, 기존 가압기 안전밸브(PSV)와 안전감압계통(SDS)을 한 밸브로 통합[7]
+<ol>
+<li><strong>과압보호(자동)</strong>: 스프링 파일럿이 설정압에서 열려 주밸브 개방 → RCS ≤ 2,750 psia</li>
+<li><strong>급속감압(운전원 원격)</strong>: 상시 닫힌 전동 파일럿을 열어 개방 → 완전급수상실 시 <strong>급수·배출 운전</strong>, 정지냉각 진입 압력까지 감압</li>
+<li><strong>중대사고 감압</strong>: 용기 파손 전에 RCS를 저압으로 낮춤 → 고압 용융물 분출(HPME)·DCH 방지</li>
+<li><strong>방출 응축</strong>: 방출 유체를 IRWST 스파저로 보내 수중 응축(IRWST가 가압기 방출탱크 역할)</li>
+</ol>
+</li>
+</ul>
+<p><strong>5. 라. RCGVS의 기능</strong></p>
+<ul>
+<li>APR1400에서는 <strong>안전감압배기계통(SDVS)의 원자로냉각재 배기 기능</strong>, TMI-2 교훈(NUREG-0737 II.B.1, 10 CFR 50.34(f)(2)(vi))[9]
+<ol>
+<li><strong>비응축성 기체 배출</strong>: 사고 후 원자로용기 상부헤드·가압기 증기영역에 모인 수소·핵분열기체·질소를 주제어실에서 원격 배출 → 자연순환·열전달 저해 방지</li>
+<li><strong>압력 제어</strong>: 주·보조 살수를 못 쓰는 비LOCA 사건에서 가압기 증기를 빼 RCS 감압</li>
+<li><strong>증기기포 제거</strong>: 자연순환 냉각 중 상부헤드 기포 배출(BTP RSB 5-1)</li>
+<li><strong>정지·재장전 배기</strong>: RCS 충수·배수 시 공기 배기</li>
+</ol>
+</li>
+<li><strong>설계 요건</strong>: 단일고장을 고려해 <strong>1시간에 RCS 체적 1/2 이상</strong>의 기체 배출, 원격 조작, 비상 전원[9]</li>
+<li><strong>구성</strong>: 가압기·상부헤드 고점마다 병렬 배기 경로, 상시 닫힘·고장 시 닫힘 밸브, 방출처 IRWST</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 용기 내벽 시편함 위치(노심 중심선)와 시편·시험재료·감시자 구성, 선배율" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/726ac2067d3140e8a3d42f826c09c797f7370d622669c60f678a276612fd6e72.webp"/><figcaption>답안용 도식: 용기 내벽 시편함 위치(노심 중심선)와 시편·시험재료·감시자 구성, 선배율</figcaption></figure>
+<figure class="article-image"><img alt="답안용 도식: POSRV 4대 → IRWST 스파저, 가압기·상부헤드 배기 → IRWST" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/62f310e982c70f044994ea7d62c2c2b841b2530495faa8883a235914b3f28f0d.webp"/><figcaption>답안용 도식: POSRV 4대 → IRWST 스파저, 가압기·상부헤드 배기 → IRWST</figcaption></figure>
+<p><strong>6. 결론</strong></p>
+<ul>
+<li>감시시편은 재료 여유를, 안전제한치는 압력 한계를, POSRV는 그 한계의 능동 방어를, RCGVS는 사고 후 냉각 경로 유지를 맡음 → 네 설비가 RCPB 방벽을 함께 지킴</li>
+<li>APR1400은 PSV·SDS를 POSRV로 통합하고 배기 기능을 같은 계통에 둬 방출을 IRWST 한 곳에서 응축함</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 세 개의 압력 숫자를 섞지 마십시오</h3>
+<p>나 항에서 가장 흔한 실수는 2,470, 2,500, 2,750 psia를 뒤섞는 것입니다. 2,500 psia는 RCPB 설계압력, 2,470 psia는 그보다 약간 낮게 잡은 POSRV 개방 설정압, 2,750 psia는 설계압력의 110 %인 안전제한치입니다. 과압보호 해석은 트립과 밸브 개방을 모두 불리하게 가정합니다. 첫 번째 고압력 트립 신호는 무시하고 두 번째 안전등급 신호에서 정지한다고 보며, 밸브 설정압 허용오차까지 더하고도 첨두가 110 % 아래임을 보입니다. KINS 연구진의 공개 해석에서는 초기 가압기 압력·수위를 바꿔 가며 계산해도 RCS 첨두가 설계압력의 약 107 %를 넘지 않았고, 소외전원 상실을 겹치면 첨두가 약 20 psi 올라 민감도가 가장 컸습니다[6].</p>
+<h3>해설: 감시시편 "구성"은 시편 종류와 감시자까지</h3>
+<p>구성을 "샤르피 시편"만으로 쓰면 절반입니다. 인장·파괴인성(CT) 시편, 조사량을 재는 중성자속 감시자, 최고 조사 온도를 재는 온도감시자가 함께 들어가야 ΔRTNDT를 해석할 수 있습니다. APR1400은 시편함이 용기 내벽에 직접 붙어 있다는 점도 웨스팅하우스형(노심 배럴 바깥 고정, 선배율 약 3)과 구별해 쓰십시오[3]. 국내 표준형·APR1400은 선배율이 1.2~1.4로 낮아 수명말 조사량의 1.5배에 이르는 시편을 얻기 어렵다는 점이 학회에서 과제로 다뤄지고 있습니다[3].</p>
+<h3>해설: POSRV와 RCGVS는 같은 계통 안에 있습니다</h3>
+<p>APR1400은 두 설비를 안전감압배기계통(SDVS)으로 묶어 설명합니다. POSRV는 큰 유량으로 압력을 낮추고, RCGVS는 작은 배관으로 고점의 기체를 뺍니다. 둘 다 방출물을 IRWST로 보내 응축합니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 달라진 기준 없음(확인 근거: 2026년 출제 문항이며, 현행 원안위고시 제2021-28호 「원자로압력용기 감시시험 기준」, 「운영기술지침서의 작성에 관한 기준」 제2024-13호, 기술기준규칙 원안위규칙 제37호(2026.3.30) 제21조·제37조로 작성함). 오래된 문헌에는 감시시험 근거가 구 교과부고시 제2009-37호로 인용돼 있으므로, 답안에는 현행 고시 번호를 쓰는 편이 좋습니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로압력용기 감시시험 기준」, 원안위고시 제2021-28호(2021.8.19), 제3조·제8조·제12조·제13조. 국가법령정보센터.</li>
+<li>KHNP, APR1400 Design Certification RAI 응답(원자로용기 감시시험 — 시편함 고정대, 선배율 1.5 → 1.4 정정), NRC ADAMS ML15198A559.</li>
+<li>C. H. Lee, B. C. Kim, M. J. Lim, H. C. Lee, "Study on the application of the Supplemental Surveillance Capsule for APR 1400", Transactions of the Korean Nuclear Society Autumn Meeting, Changwon (2024).</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix H "Reactor Vessel Material Surveillance Program Requirements"; ASTM E185 "Standard Practice for Design of Surveillance Programs for Light-Water Moderated Nuclear Power Reactor Vessels".</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Ch. 16 Generic Technical Specifications, 2.1.2 RCS 압력 안전제한치·2.2 위반 시 조치, Rev. 2 (2018). NRC ADAMS 공개.</li>
+<li>B. S. Shin, Y. I. Kim, B. K. Min, "Performance Evaluation for Overpressure Transient at Reactor Coolant System of SHINKORI 3/4 NPP by Loss of Turbine Load", Transactions of the Korean Nuclear Society Autumn Meeting, Pyeongchang (2014).</li>
+<li>S. J. Lee 외, "Design Optimization of Overpressurization Protection for APR1400", Transactions of the Korean Nuclear Society Autumn Meeting, Goyang (2019).</li>
+<li>T. H. Kim 외, "Development of CFD Analysis Methodology of Hydraulic Load Evaluation in POSRV Piping System", Transactions of the Korean Nuclear Society Autumn Meeting, Gyeongju (2009).</li>
+<li>U.S. NRC, NUREG-0737 "Clarification of TMI Action Plan Requirements", Item II.B.1 Reactor Coolant System Vents (1980); 10 CFR 50.34(f)(2)(vi).</li>
+<li>ASME Boiler and Pressure Vessel Code, Section III, Division 1, Subsection NB, NB-7000 Overpressure Protection; U.S. NRC, NUREG-0800 SRP 5.2.2 "Overpressure Protection".</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제21조·제37조. 국가법령정보센터.</li>
+</ol>

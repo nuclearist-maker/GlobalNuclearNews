@@ -1,0 +1,63 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2024년 원자력발전기술사 필기 1교시 1번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>지발중성자분율(β)과 유효 지발중성자분율(βeff)</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>β = ν_d/ν</strong>: 핵분열 중성자 중 지발중성자의 비율이며, 핵종과 입사 에너지가 정하는 핵자료 값입니다(U-235 열분열 0.0065).</li>
+<li><strong>노심 평균 β̄</strong>: 여러 핵종이 함께 분열할 때의 중성자 생성 기준 가중평균입니다(β̄ = ΣFᵢνᵢβᵢ/ΣFᵢνᵢ).</li>
+<li><strong>중요도(수반 중성자속 φ†)</strong>: 중성자 하나가 연쇄반응에 기여하는 정도입니다. βeff는 β를 이 중요도로 가중한 값입니다.</li>
+<li><strong>방출 에너지 차이</strong>: 지발중성자는 약 0.45 MeV, 즉발중성자는 평균 약 2 MeV로 태어납니다. βeff ≠ β의 원인입니다.</li>
+<li><strong>1$ = βeff</strong>: 점동특성·역시간방정식과 달러 단위, 즉발임계 판정에 쓰는 값은 β가 아니라 βeff입니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 지발중성자분율(β)</strong></p>
+<ul>
+<li>정의: 핵분열 1회당 방출 중성자 중 <strong>지발중성자 비율</strong>, <strong>β = ν_d / ν</strong> (ν = 즉발 + 지발)</li>
+<li>발생: 핵분열편의 β⁻ 붕괴 뒤 선행핵(Br-87, I-137 등)이 방출 → 6군 표현 β = Σβᵢ</li>
+<li>핵종·입사 에너지 고유값: <strong>U-235(열) 0.0065</strong>(= 0.0158/2.43), U-238(고속) 0.0148, Pu-239(열) 0.0021 [1]</li>
+<li>노심 평균: <strong>β̄ = ΣFᵢνᵢβᵢ / ΣFᵢνᵢ</strong> (Fᵢ: 핵종 i의 핵분열 분율) → 신연료는 U-238 고속분열로 약 0.0072(예시)</li>
+</ul>
+<p><strong>2. 유효 지발중성자분율(βeff)</strong></p>
+<ul>
+<li>정의: 지발중성자를 <strong>중요도(수반 중성자속 φ†)로 가중</strong>한 분율 → 연쇄반응 기여 기준</li>
+<li>식: βeff = ⟨φ†, χ_d·ν_d·Σf·φ⟩ / ⟨φ†, χ·ν·Σf·φ⟩ = <strong>I·β̄</strong> (I: 지발/전체 중성자 평균 중요도 비) [3]</li>
+<li>원인: <strong>방출 에너지</strong> 지발 약 0.45 MeV &lt; 즉발 평균 약 2 MeV [1][2]
+<ul>
+<li><strong>누설 감소(I↑)</strong>: 감속 거리 짧음 → 소형·고누설 노심은 <strong>βeff &gt; β</strong></li>
+<li><strong>고속분열 기여 감소(I↓)</strong>: U-238 고속분열 문턱(약 1 MeV) 아래</li>
+</ul>
+</li>
+<li>크기·노형: 노심이 클수록 누설 효과 소멸 → <strong>대형 PWR I ≈ 0.97</strong>(βeff 약 0.0069, 예시), 고속로 I &lt; 1</li>
+</ul>
+<p><strong>3. 의미</strong></p>
+<ul>
+<li>동특성의 잣대: <strong>1$ = βeff</strong>, 즉발임계 ρ = βeff, 주기·즉발도약 계산에 βeff 사용</li>
+<li>연소로 Pu-239 축적 → βeff 감소(예 623 → 503 pcm) → 즉발임계 여유↓</li>
+<li>반응도 사고 해석·반응도계 입력에 주기별 βeff 적용</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: β(핵종별, U-235 0.0065) → 핵분열 분율 가중 → 노심 평균 β(약 0.0072) → 중요도 가중 → βeff(대형 PWR ≈ 0.97β̄), 1$ = βeff" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/24678e35fc0074ae741ca69d181558613bd21dd77956e7727662a4553871b17d.webp"/><figcaption>답안용 도식: β(핵종별, U-235 0.0065) → 핵분열 분율 가중 → 노심 평균 β(약 0.0072) → 중요도 가중 → βeff(대형 PWR ≈ 0.97β̄), 1$ = βeff</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="즉발중성자(Watt 스펙트럼, 평균 2.0 MeV)와 지발중성자(평균 0.45 MeV 근사 형상)의 방출 에너지 분포, U-238 고속분열 문턱 1 MeV 이상 비율(약 69 % 대 약 8 %), β → 평균 β → βeff 예시 값 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/aadfd96c4af9603f09b0a9daca888d1eaa140d3d4b0a83ff50b4bec1b1dfd2b2.webp"/><figcaption>즉발중성자(Watt 스펙트럼, 평균 2.0 MeV)와 지발중성자(평균 0.45 MeV 근사 형상)의 방출 에너지 분포, U-238 고속분열 문턱 1 MeV 이상 비율(약 69 % 대 약 8 %), β → 평균 β → βeff 예시 값 표</figcaption></figure>
+<p>이 문제는 두 개념의 정의를 나란히 쓰는 것만으로는 점수가 다 나오지 않습니다. 채점자는 "왜 둘이 다른가"를 봅니다. 답은 지발중성자가 태어나는 <strong>에너지</strong>에 있습니다.</p>
+<p>그림의 파란 곡선은 U-235 열분열 즉발중성자의 Watt 스펙트럼입니다. 이 중 약 69 %가 1 MeV 이상으로 태어나 U-238 고속분열을 일으킬 수 있습니다. 주황 곡선은 지발중성자로, 평균 0.45 MeV에 맞춘 근사 형상입니다. 1 MeV 이상은 약 8 %에 그칩니다. 그래서 지발중성자는 고속분열에 거의 기여하지 못합니다. 대신 감속 거리가 짧아 노심 밖으로 덜 샙니다. 두 효과의 크기는 노심 크기가 정합니다. 소형·고누설 노심에서는 누설 효과가 이겨 βeff가 β보다 큽니다. 대형 저농축 PWR에서는 누설이 작아 고속분열 효과가 약간 우세하고, I는 0.97 내외가 됩니다.</p>
+<p>"βeff는 항상 β보다 크다"는 설명이 자주 보입니다. 이는 소형 연구로 같은 고누설 노심의 설명입니다. 답안에는 노심 크기에 따라 달라진다는 점까지 쓰는 편이 안전합니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>정의만 나열</strong>: β = ν_d/ν, βeff = 중요도 가중 분율을 쓴 뒤 반드시 "방출 에너지 차이"라는 원인을 붙이십시오.</li>
+<li><strong>β와 β̄ 혼동</strong>: 0.0065는 U-235 단일 핵종 값입니다. 노심 평균은 U-238 고속분열과 Pu 분열이 섞여 달라집니다.</li>
+<li><strong>"βeff &gt; β" 단정</strong>: 소형·고누설 노심에서만 성립합니다. 대형 PWR은 βeff가 β̄보다 약간 작을 수 있습니다.</li>
+<li><strong>쓰임 누락</strong>: 1$ = βeff, 즉발임계 ρ = βeff처럼 동특성에서 실제로 쓰이는 값이 βeff라는 점을 한 줄 넣으십시오.</li>
+<li><strong>수치 단정</strong>: 0.97, 0.0072 같은 값은 예시라고 밝히십시오.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>G. R. Keepin, Physics of Nuclear Kinetics, Addison-Wesley (1965) — 핵종별 지발중성자 수율·6군 자료.</li>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001) — 핵분열 중성자 스펙트럼(Watt), 지발중성자.</li>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, John Wiley &amp; Sons (1976) — 수반 중성자속(중요도)과 유효 지발중성자분율.</li>
+</ol>

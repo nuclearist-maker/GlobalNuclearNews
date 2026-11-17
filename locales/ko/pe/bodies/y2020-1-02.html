@@ -1,0 +1,63 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2020년 원자력발전기술사 필기 1교시 2번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<ol start="2">
+<li>화학 및 체적제어 탱크(Volume control tank)의 설계기준</li>
+</ol>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>체적제어탱크(VCT)</strong>: 화학 및 체적제어계통(CVCS)에서 유출수와 RCP 제어누설수를 받고 보충수와 섞어 충전펌프로 보내는 서지 탱크입니다.</li>
+<li><strong>서지 용량</strong>: 출력 변화에 따른 냉각재 팽창·수축을 자동보충 없이 흡수하는 수위대입니다.</li>
+<li><strong>수소 상층기체</strong>: 탱크 기체 공간의 수소 분압으로 냉각재 용존 수소 농도를 유지합니다. 탱크 총압과 수소 분압은 같은 값이 아닙니다.</li>
+<li><strong>충전펌프 흡입원</strong>: 수위와 압력으로 충전펌프의 NPSH를 확보합니다. 흡입 배관에서 용존 기체가 빠져나오지 않게 하는 것은 별도 조건입니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 문제 해석</strong></p>
+<ul>
+<li>"화학 및 체적제어 탱크"는 영문 병기대로 CVCS의 <strong>체적제어탱크(VCT)</strong>로 해석함</li>
+<li>용량·압력·수위 설정점은 <strong>호기별 설계값</strong>이므로 답안에는 설계 원리와 결정 근거를 씀</li>
+</ul>
+<p><strong>2. 기능</strong></p>
+<ul>
+<li>정화된 유출수·RCP 제어누설수 수용, 보충수(붕산수 + 순수)와 혼합 [4]</li>
+<li><strong>서지 탱크</strong>, <strong>수소 농도 제어</strong>, <strong>충전펌프 흡입원</strong>, 방사성 기체 배기(기체폐기물계통)</li>
+</ul>
+<p><strong>3. 설계기준</strong></p>
+<ul>
+<li><strong>용량</strong>: <strong>정상 운전 수위대만으로 출력 변화에 따른 냉각재 팽창·수축을 자동보충 없이 수용</strong> + 희석 운전 때 들어오는 순수를 받을 여유 → 내부체적 결정 [4]</li>
+<li><strong>기체 제어</strong>: 운전 중 <strong>H₂ 상층</strong>(냉각재 용존 수소 유지 — 예: APR1400 정상범위 25~50 cc/kg [6], 방사선분해 산소 제거 [5]), 정지·퍼지 시 <strong>N₂</strong>, 배기 → 기체폐기물계통 [3]</li>
+<li><strong>압력</strong>: <strong>내압 설계 + 외압(진공) 설계</strong>. 운전 압력은 수소 분압·충전펌프 흡입 조건을 함께 만족하도록 설정</li>
+<li><strong>흡입원 확보</strong>: 수위·압력으로 충전펌프 <strong>NPSH</strong> 확보 + 흡입 배관 국부압력이 용존 기체 방출 압력 아래로 내려가지 않게 해 <strong>가스 바인딩 방지</strong> [2][3] [2][3]</li>
+<li><strong>수위 연동</strong>: 저수위 보충 개시·정상 수위 정지 / 고수위에서 VCT 전단 3방향 밸브가 유출수를 <strong>붕소회수계통으로 우회</strong> / 저저수위에서 VCT 출구밸브 닫힘 + <strong>충전펌프 흡입원 재장전수탱크(RWT) 전환</strong> [4]</li>
+<li><strong>과압 보호</strong>: 방출밸브(설계압 이하 설정, 방출용량 확보) → 기기배수탱크</li>
+<li><strong>재질·등급</strong>: 붕산수에 견디는 오스테나이트 스테인리스강, <strong>RG 1.26 품질군·RG 1.29 내진 분류</strong>에 따른 등급 [1]</li>
+<li><strong>근거</strong>: GDC 33(재고량 보충), GDC 60·61(방사성 물질 방출 제어·함유), SRP 9.3.4 [1]</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: VCT 유입·고수위 우회·H₂·배기·방출밸브와 저저수위 흡입원 전환" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/9cbd91190e7f88fcb1acc509902213f68d33f4c58bd064432798192ce64ba6d6.webp"/><figcaption>답안용 도식: VCT 유입·고수위 우회·H₂·배기·방출밸브와 저저수위 흡입원 전환</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="VCT 기능 개념도(유입·고수위 우회·H₂/N₂·배기·방출·충전펌프 흡입), 수위별 작동, 설계 요건 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/5b9e0f8b4d27752dad13452a82c75313bc71493b55efa41c1960c5138d2c257c.webp"/><figcaption>VCT 기능 개념도(유입·고수위 우회·H₂/N₂·배기·방출·충전펌프 흡입), 수위별 작동, 설계 요건 카드</figcaption></figure>
+<p>그림 오른쪽 수위별 작동이 이 문제의 뼈대입니다. 탱크 크기는 정상 운전 수위대의 용량만으로 출력 변화에 따른 팽창·수축을 흡수하도록 정합니다. 보충 개시·정지 수위는 그와 별개인 보충 제어 설정점이고, 구체적인 % 값은 호기별 설계값입니다. 고수위에서는 탱크에서 물을 빼는 것이 아니라, 탱크 앞 3방향 밸브가 들어오던 유출수를 붕소회수계통으로 돌립니다. 저저수위에서는 VCT 출구를 닫고 충전펌프 흡입 헤더를 재장전수탱크로 바꿔 펌프가 기체를 빨아들이지 않게 합니다. 이 두 동작, 곧 위쪽 우회와 아래쪽 흡입원 전환이 보이면 답안 도식으로 충분합니다.</p>
+<p>기체 공간은 단순한 빈 곳이 아닙니다. 기체 공간의 수소 분압이 냉각재 용존 수소를 정하므로 VCT의 기체 조성과 압력은 수화학 설계값입니다. 동시에 탱크 압력은 충전펌프 흡입 조건이기도 합니다. 흡입 배관의 국부 압력이 너무 낮으면 용존 수소가 빠져나와 배관 고점이나 펌프에 기체가 모입니다. 미국 NRC 정보통지 IN 88-23에는 VCT 하류 엘보·티에서 국부 압력이 VCT 압력보다 낮아져 수소가 빠져나오고, 흡입 배관 수직부에 갇힌 사례가 실려 있습니다[2]. 국내 학회에서도 퍼지 운전 때 압력조절밸브 설정점이 높으면 흡입부에서 수소가 빠져나올 수 있어 설정점과 용량을 함께 검토해야 한다는 해석 결과가 발표되었습니다[3]. 그래서 수소 농도, NPSH, 흡입부 기체 방출 방지를 함께 보고 운전 압력과 방출밸브 설정을 정합니다.</p>
+<p>외압 설계도 놓치기 쉽습니다. 탱크 내부 압력이 대기압 아래로 내려가는 경우에도 찌그러지지 않도록 외압 조건을 함께 줍니다. VCT는 방사성 기체를 품은 탱크이므로 배기는 기체폐기물계통으로만 보내고, 방출수는 기기배수탱크로 회수합니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>저장탱크로만 설명</strong>: 서지 용량, 수소 제어, 충전펌프 흡입원 세 가지 기능을 함께 써야 설계기준으로 이어집니다.</li>
+<li><strong>가압기 수위와 혼동</strong>: 가압기 수위는 충전·유출 유량으로 조절하고, VCT 수위는 보충과 전환으로 관리합니다.</li>
+<li><strong>외압 설계 누락</strong>: 내압만 쓰면 반쪽 답입니다.</li>
+<li><strong>수치를 노형 공통값처럼 씀</strong>: 체적·압력·설정점은 호기별 설계값입니다. 수치보다 그 값을 정하는 조건을 씁니다.</li>
+<li><strong>문제 표현 그대로 "화학 탱크"로 해석</strong>: 화학약품은 충전 헤더의 화학첨가설비로 넣습니다. VCT는 체적·기체 관리 탱크입니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 9.3.4 "Chemical and Volume Control System (PWR) (Including Boron Recovery System)", Rev. 3 (2007).</li>
+<li>U.S. NRC, Information Notice 88-23 "Potential for Gas Binding of High-Pressure Safety Injection Pumps During a Loss-of-Coolant Accident" (1988.5.12) 및 Supplement 2·3 (1990).</li>
+<li>김창호, 정창규, 임덕재, 김은기, "Performance Analysis of Gas Purging Operation in Volume Control Tank", 한국원자력학회 2004 춘계학술발표회 (2004), INIS 수록.</li>
+<li>U.S. NRC, Westinghouse Technology Systems Manual, Section 4.1 "Chemical and Volume Control System", NRC ADAMS ML023030495.</li>
+<li>U.S. NRC, NUREG-0933 "Resolution of Generic Safety Issues", Section 3, Issue 198 "Hydrogen Combustion in PWR Piping".</li>
+<li>Y. H. Cheon et al., "Primary Coolant pH Control for Soluble Boron-Free PWRs", Transactions of the Korean Nuclear Society Autumn Meeting, Gyeongju (2015), Table I.</li>
+</ol>

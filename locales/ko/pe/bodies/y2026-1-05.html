@@ -1,0 +1,62 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2026년 원자력발전기술사 필기 1교시 5번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>²³⁵U의 중성자 평균 세대시간 산출 및 원자로 운전에 미치는 지발중성자 역할
+(단, 모핵종 평균수명은 12.5초, 감속시간은 10⁻⁶초, 확산시간은 2×10⁻⁵초이다.)</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>즉발중성자 수명 l_p</strong>: 감속시간 + 확산시간. 경수로에서 10⁻⁵~10⁻⁴ s 수준입니다.</li>
+<li><strong>지발중성자 분율 β</strong>: ²³⁵U 열중성자 핵분열에서 0.0065. 문제에 없으므로 가정값으로 밝혀 써야 합니다.</li>
+<li><strong>모핵종(지발중성자 선행핵) 평균수명 τ̄</strong>: ⁸⁷Br 등 선행핵 6군을 분율로 가중평균한 붕괴 평균수명입니다. ²³⁵U 자체의 수명이 아닙니다.</li>
+<li><strong>평균 세대시간 l̄</strong>: 선행핵 대기를 포함해 즉발·지발을 가중평균한 세대 간격, l̄ = l_p + β·τ̄. 점동특성식의 즉발 생성시간 Λ(= l_p/k)와는 다른 양입니다.</li>
+<li><strong>원자로 주기 T</strong>: 출력이 e배 되는 시간, 단순 모델에서 T ≈ l̄/(k−1).</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 정의</strong></p>
+<ul>
+<li>²³⁵U 열중성자 핵분열의 지발중성자 분율 <strong>β = 0.0065로 가정함</strong>[2]</li>
+<li>즉발중성자 수명 l_p = 감속시간 t_s + 확산시간 t_d</li>
+<li>평균 세대시간 l̄ = (1−β)·l_p + β·(τ̄ + l_p) = <strong>l_p + β·τ̄</strong>[1]</li>
+</ul>
+<p><strong>2. 산출</strong></p>
+<ul>
+<li>l_p = 1×10⁻⁶ + 2×10⁻⁵ = <strong>2.1×10⁻⁵ s</strong></li>
+<li>β·τ̄ = 0.0065 × 12.5 = 0.08125 s</li>
+<li>l̄ = 2.1×10⁻⁵ + 0.08125 ≈ <strong>0.0813 s (약 8.1×10⁻² s)</strong></li>
+<li>즉발 수명 대비 약 <strong>3,900배</strong> 증가 → 0.65%의 지발중성자가 세대시간을 지배함</li>
+</ul>
+<p><strong>3. 운전 영향 (k = 1.001 투입 예)</strong></p>
+<ul>
+<li>즉발만 고려(β = 0 가상): T = 2.1×10⁻⁵ / 0.001 = <strong>0.021 s</strong> → 1초 후 출력 약 10²⁰배, 제어 불가</li>
+<li>지발 포함(단순근사): T = 0.0813 / 0.001 ≈ <strong>81 s</strong> → 1초 후 약 +1.2%, 제어 가능</li>
+</ul>
+<p><strong>4. 지발중성자의 역할</strong></p>
+<ul>
+<li><strong>제어 가능성 확보</strong>: 선행핵 붕괴 대기가 출력 상승을 늦춰, 0 &lt; ρ &lt; βeff 범위에서 주기를 수십 초 이상으로 유지 → 제어봉·붕소·운전원 대응 시간 확보</li>
+<li><strong>즉발임계 경계</strong>: ρ &lt; β(1$) 유지가 운전의 기본 한계, 반응도를 $·¢로 관리</li>
+<li><strong>과도 응답</strong>: 반응도 변화 직후 즉발도약·즉발강하 후 안정주기로 이행</li>
+<li><strong>정지 후 감소 한계</strong>: 즉발강하 뒤에는 최장 수명군(반감기 약 55.7 s)이 남아, 장시간 안정주기가 약 −80 s(|T₁| &gt; 1/λ₁ ≈ 80.6 s)보다 짧아지지 않음[2]</li>
+<li><strong>연소 영향</strong>: ²³⁹Pu 축적(β≈0.0021)[2]으로 주기 말 βeff 감소 → 동특성 응답이 빨라져 안전해석에 반영</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 즉발·지발 경로로 나눈 평균 세대시간 산출" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/8c459729e5c6911917561024e372505e0a4fcd3b496bafdd2c4abad7e95efeac.webp"/><figcaption>답안용 도식: 즉발·지발 경로로 나눈 평균 세대시간 산출</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<figure class="article-image"><img alt="로그 시간축 위의 감속·확산·즉발 수명·평균 세대시간·선행핵 수명과 k=1.001 투입 시 원자로 주기 비교" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/be4ff6e7cf21804e96f1b3d6b8cbaab2d17eaca40954286123227cc1c0933117.webp"/><figcaption>로그 시간축 위의 감속·확산·즉발 수명·평균 세대시간·선행핵 수명과 k=1.001 투입 시 원자로 주기 비교</figcaption></figure>
+<p>위 그림은 답안의 숫자를 한 개의 로그 시간축에 올려 본 것입니다. 감속·확산 시간은 마이크로초 영역에 머물지만, 지발중성자 0.65%가 섞이는 순간 평균 세대시간이 0.1초 근처로 뛰어오르고, 같은 반응도에서 원자로 주기는 0.021초에서 81초로 바뀝니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>β 가정 누락</strong>: 문제에 β가 없다고 생략하면 계산이 성립하지 않습니다. "β = 0.0065 가정"을 첫 줄에 쓰는 것이 가장 확실한 득점 포인트입니다.</li>
+<li><strong>l_p 구성 오류</strong>: 확산시간만 쓰거나 감속시간만 쓰는 경우가 있습니다. 둘을 더하는 것이 정석이며, 식 l̄ = l_p + β·τ̄가 정확히 성립한다는 점을 보이면 좋습니다.</li>
+<li><strong>숫자만 쓰고 의미 생략</strong>: 0.0813 s에서 멈추지 말고, 주기 비교 한 줄로 "왜 제어가 가능한가"까지 연결해야 역할 문항 배점을 받습니다.</li>
+<li><strong>모델 적용 범위</strong>: T ≈ l̄/(k−1)은 ρ가 β보다 충분히 작을 때의 근사입니다. 이 예는 ρ/β ≈ 0.15라서 1군 근사 T ≈ (β−ρ)/(λρ), λ = 1/τ̄[3]로 검산하면 약 69 s가 나옵니다. 값은 조금 다르지만 같은 자릿수이고, ρ ≥ β에서는 둘 다 성립하지 않는다는 단서를 달면 완성도가 높아집니다.</li>
+<li><strong>에너지와 시간 혼동</strong>: 지발중성자의 제어상 의미는 '느린 방출 시점'입니다. 낮은 방출 에너지는 βeff 보정의 이유로 구분해서 쓰십시오.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 7장(원자로 동특성·평균 중성자 수명).</li>
+<li>G. R. Keepin, Physics of Nuclear Kinetics, Addison-Wesley (1965) — ²³⁵U·²³⁹Pu 지발중성자 6군 데이터.</li>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, John Wiley &amp; Sons (1976), 6장(점동특성·1군 지발중성자 근사).</li>
+</ol>

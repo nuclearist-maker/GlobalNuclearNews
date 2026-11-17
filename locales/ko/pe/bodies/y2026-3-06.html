@@ -1,0 +1,146 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2026년 원자력발전기술사 필기 3교시 6번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>APR1400 원전의 운영기술지침서에 대하여 다음을 기술하시오.
+가. 원자로냉각재계통 운전누설 종류 및 누설 제한치
+나. 각 운전누설 제한치 불만족 시 조치요구사항</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>운영기술지침서의 대표 LCO 하나를 정의 → 제한치 → 조치까지 완결해서 쓸 수 있는지 봅니다. 핵심은 세 가지입니다. 첫째, 누설을 출처와 결함 성격으로 나누는 이유(같은 1 gpm이라도 패킹 누설과 배관 벽 균열은 의미가 다름)를 아는지. 둘째, APR1400의 미확인누설 제한이 왜 표준 기술지침서(STS)보다 엄격한지(LBB 탐지 능력)를 연결하는지. 셋째, 조치에서 <strong>4시간 감소 기회가 있는 누설과 곧바로 정지로 가는 누설</strong>을 구분하는지입니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 운전누설의 의미, T/S 근거와 적용 모드, 문제 해석(APR1400 표준 기술지침서 기준)</li>
+<li>본론 가: 운전누설 4종의 정의 → 종류별 제한치와 설정 근거 표</li>
+<li>본론 나: 조건 A(4 h 감소) / 조건 B(6 h 모드 3, 36 h 모드 5), 완료시간 세는 법, 감시요구사항(물수지 72 h)</li>
+<li>결론: 노형·판에 따른 수치 차이, LBB·누설탐지 LCO와의 관계</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 문제 해석</strong></p>
+<ul>
+<li>공개된 APR1400 기술지침서 원문은 미국 설계인증 표준 기술지침서(GTS Rev.2, 2018)임 → <strong>LCO 3.4.12 "RCS 운전누설"</strong> 구조로 기술함[1]</li>
+<li>국내 호기 T/S도 같은 체계(CE형 STS, NUREG-1432 기반)[2]이나 미확인누설 수치가 다르게 인용됨 → 판을 밝혀 병기함</li>
+<li>근거: 원자력안전법 시행규칙 제16조②(T/S 기재사항), 원안위고시 「운영기술지침서의 작성에 관한 기준」(제2024-13호) 제5조② LCO 선정기준 2(사고해석 초기조건)[4]</li>
+<li>적용 모드: <strong>모드 1~4</strong>(모드 5·6은 압력이 낮아 제한 없음)</li>
+</ul>
+<p><strong>2. 가. 운전누설 종류(T/S 1.1 정의)</strong></p>
+<ul>
+<li><strong>압력경계누설</strong>: RCS 기기 몸체·배관 벽·용기 벽의 <strong>격리 불가능한 결함</strong>을 통한 누설(1차→2차 제외). 밀봉·패킹·개스킷 누설은 해당 없음</li>
+<li><strong>미확인누설</strong>: 확인누설이 아닌 모든 누설</li>
+<li><strong>확인누설</strong>: ① 포집되어 수집계통·집수조·탱크로 가는 누설(펌프 밀봉·밸브 패킹) ② 위치가 확인되고 탐지를 방해하지 않으며 압력경계누설이 아닌 격납건물 대기 누설 ③ 1차→2차 누설</li>
+<li><strong>1차→2차 누설</strong>: SG 전열관을 통한 누설. 정의상 확인누설이지만 LCO에서 별도 제한함</li>
+<li>제외: RCP 밀봉수 주입, 제어누설(controlled bleed-off) → 설계상 흐름이라 T/S상 누설 아님</li>
+</ul>
+<p><strong>3. 가. 누설 제한치(LCO 3.4.12)[1][2]</strong></p>
+<table>
+<thead>
+<tr>
+<th>종류</th>
+<th>APR1400 GTS</th>
+<th>STS 참고</th>
+<th>설정 근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>압력경계</td>
+<td><strong>없음(0)</strong></td>
+<td>없음</td>
+<td>재료 열화의 징후, 누설이 열화를 키움</td>
+</tr>
+<tr>
+<td>미확인</td>
+<td><strong>0.5 gpm(1.89 L/min)</strong></td>
+<td>1 gpm</td>
+<td>집수조·대기 방사능 감시로 합리적 시간 내 탐지 가능한 최소량, LBB 탐지 능력 0.5 gpm/1 h</td>
+</tr>
+<tr>
+<td>확인</td>
+<td><strong>10 gpm(37.8 L/min)</strong></td>
+<td>10 gpm</td>
+<td>미확인 탐지를 방해하지 않고 충전 능력 이내</td>
+</tr>
+<tr>
+<td>1차→2차</td>
+<td><strong>SG 1기당 150 gpd(0.39 L/min)</strong></td>
+<td>150 gpd</td>
+<td>NEI 97-06 성능기준[6], 총 0.2 gpm을 SG 2기에 배분</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>국내 APR1400(신고리 4호기 운영허가 안건)은 미확인누설 제한을 <strong>1.0 gpm(NUREG-1432)</strong>으로 인용함[5] → 답안에 "미국 DC 0.5 gpm / 국내 인용 1 gpm" 병기 </li>
+<li>1차→2차 150 gpd는 SLB·SGTR 선량해석의 초기조건(총 0.6 gpm 가정)을 운전 중 보장하는 값임</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 물수지로 누설 확인 → 종류 판정 → 조건 A(4 h 감소)·조건 B(6 h 모드 3, 36 h 모드 5) 흐름" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/d24dac060d22093a2a47de006b78c573d1d9938336f31b8846597add0ebdf12c.webp"/><figcaption>답안용 도식: 물수지로 누설 확인 → 종류 판정 → 조건 A(4 h 감소)·조건 B(6 h 모드 3, 36 h 모드 5) 흐름</figcaption></figure>
+<p><strong>4. 나. 제한치 불만족 시 조치요구사항</strong></p>
+<table>
+<thead>
+<tr>
+<th>조건</th>
+<th>해당 상황</th>
+<th>요구조치</th>
+<th>완료시간</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>미확인 또는 확인누설 제한치 초과(압력경계·1차→2차 제외)</td>
+<td>A.1 운전누설을 제한치 이내로 감소</td>
+<td><strong>4 h</strong></td>
+</tr>
+<tr>
+<td>B</td>
+<td>A 미이행, 또는 <strong>압력경계누설 존재</strong>, 또는 <strong>1차→2차 150 gpd 초과</strong></td>
+<td>B.1 모드 3 / B.2 모드 5</td>
+<td><strong>6 h / 36 h</strong>[1]</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>감소 방법: 누설원 격리·보수, 출처를 찾아 <strong>미확인 → 확인누설로 재분류</strong>(확인 10 gpm 이내면 해소)</li>
+<li>압력경계누설은 위치를 알아도 확인누설로 재분류 불가 → <strong>감소 기회 없이 조건 B 직행</strong></li>
+<li>1차→2차 초과도 감소 기회 없음 → SGTR 전조로 보고 곧바로 정지·냉각</li>
+<li>완료시간은 <strong>조건 B 진입 시점부터</strong> 각각 셈(6 h와 36 h, 합산 42 h 아님)</li>
+<li>A 실패 시 최초 발견부터 최대 4 + 6 = <strong>10 h 모드 3</strong>, 4 + 36 = <strong>40 h 모드 5</strong></li>
+<li>조건 B가 명시돼 있으므로 LCO 3.0.3 진입 대상 아님</li>
+</ul>
+<figure class="article-image"><img alt="누설 종류별 제한치 표와 조치 시계(0~42 h 시간축: 조건 A 4 h 감소 → 10 h 모드 3·40 h 모드 5, 압력경계·1차→2차 6 h·36 h)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/6a921152e706debf3cd81118c95f47c6183344c952c12611e3dc9150f9d8d4cc.webp"/><figcaption>누설 종류별 제한치 표와 조치 시계(0~42 h 시간축: 조건 A 4 h 감소 → 10 h 모드 3·40 h 모드 5, 압력경계·1차→2차 6 h·36 h)</figcaption></figure>
+<p><strong>5. 감시요구사항(SR)</strong></p>
+<ul>
+<li>SR 3.4.12.1: <strong>RCS 물수지로 운전누설 확인, 72 h마다</strong>(정상상태 확립 후 12 h까지 수행 불요)[1]
+<ul>
+<li>총 운전누설 = (보충량 − 회수량 − 보유량 변화) ÷ 시간</li>
+<li>미확인누설 = 총 운전누설 − 확인누설(수집탱크 증가량)</li>
+</ul>
+</li>
+<li>SR 3.4.12.2: 1차→2차 누설 SG 1기당 150 gpd 이하 확인, 72 h마다</li>
+<li>연관 LCO 3.4.14 누설탐지계측: 격납건물 집수조 수위, 대기 입자 방사능, 대기 습도 감시기 각 1개 운전가능. 1개 불능 시 24 h마다 물수지로 보완, 30일 내 복구</li>
+</ul>
+<p><strong>6. 결론</strong></p>
+<ul>
+<li>운전누설은 <strong>압력경계 0 / 미확인 0.5 gpm(DC) / 확인 10 gpm / 1차→2차 150 gpd·SG</strong>로 관리함</li>
+<li>조치는 "확인·미확인 초과 → 4 h 감소, 실패·압력경계·1차→2차 → 6 h 모드 3·36 h 모드 5"의 2단 구조임</li>
+<li>APR1400 미확인 0.5 gpm은 LBB 누설률 10배 여유(0.5 × 10 = 5 gpm)[7]를 운전 중 보장하는 장치임 → 운전누설 LCO와 탐지 LCO가 GDC 14·30 요건을 함께 지킴[3]</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 왜 종류마다 다르게 다루나</h3>
+<p>누설 1 gpm은 하루 약 5.5 m³에 해당해 충전펌프로 충분히 보충됩니다. 양만 보면 위험하지 않지만, 문제는 <strong>출처</strong>입니다. 밸브 패킹 누설은 정비 대상일 뿐이지만, 배관 벽을 관통한 균열은 응력부식균열이나 붕산 부식이 진행 중이라는 신호이고 시간이 지나면 냉각재상실사고로 커질 수 있습니다. 그래서 출처를 아는 누설은 넉넉하게(10 gpm), 출처를 모르는 누설은 압력경계누설일 가능성을 열어 두고 엄격하게(0.5~1 gpm), 벽 결함이 확인된 누설은 아예 허용하지 않습니다. 조치 구조도 같은 논리입니다. 미확인누설은 4시간 동안 출처를 찾아 확인누설로 옮길 기회를 주지만, 압력경계누설과 1차→2차 초과는 원인이 이미 "경계 손상"이므로 기다리지 않고 정지·냉각으로 압력과 온도를 낮춥니다.</p>
+<h3>해설: 자주 하는 실수</h3>
+<p>첫째, 1차→2차 누설을 압력경계누설로 분류하는 답안이 많습니다. 정의에서 명시적으로 제외되며 확인누설의 특수형입니다. 다만 조치는 압력경계누설과 똑같이 조건 B로 갑니다. 둘째, 모드 5 도달 시간을 6 + 36 = 42시간으로 쓰는 실수입니다. 두 완료시간은 모두 조건 B 진입부터 셉니다. 셋째, APR1400 값을 STS의 1 gpm으로만 쓰면 "APR1400"을 지정한 출제 의도를 놓칩니다. 미국 설계인증의 0.5 gpm과 LBB 근거를 한 줄 넣고 국내 인용값을 병기하면 채점자가 판단할 여지를 줄일 수 있습니다. 넷째, RCP 제어누설을 확인누설 10 gpm에 합산하는 실수입니다. 설계상 흐름이라 누설로 세지 않습니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 달라진 기준 없음(확인 근거: 2026년 출제 문항이며, APR1400 GTS Rev.2 LCO 3.4.12와 현행 원안위고시 「운영기술지침서의 작성에 관한 기준」 제2024-13호로 작성함). 참고로 미국 STS는 TSTF-554 Rev.1(2020.12 승인)로 압력경계누설에 "4시간 이내 해당 기기 격리" 조치를 새로 두고 1차→2차 초과를 별도 조건으로 분리했습니다[8]. APR1400 GTS Rev.2(2018)는 그 이전 구조이므로 답안은 위 2단 구조로 쓰면 됩니다. </p>
+<h2>참고문헌</h2>
+<ol>
+<li>KHNP, APR1400 Design Control Document Tier 2, Ch. 16 Generic Technical Specifications(1.1 정의, LCO 3.4.12 RCS 운전누설·SR, LCO 3.4.14 누설탐지계측, Bases), Rev. 2 (2018). NRC ADAMS 공개.</li>
+<li>U.S. NRC, NUREG-1432 Standard Technical Specifications — Combustion Engineering Plants, Vol. 1, LCO 3.4.13 "RCS Operational LEAKAGE".</li>
+<li>U.S. NRC, Regulatory Guide 1.45 Rev. 1 "Guidance on Monitoring and Responding to Reactor Coolant System Leakage" (2008); 10 CFR Part 50 Appendix A, GDC 14·30.</li>
+<li>원자력안전위원회, 「운영기술지침서의 작성에 관한 기준」, 원안위고시 제2024-13호, 제5조. 「원자력안전법 시행규칙」 제16조. 국가법령정보센터.</li>
+<li>원자력안전위원회, 제96회 원자력안전위원회 회의(2019.2.1) 「신고리 4호기 운영허가(안)」 안건.</li>
+<li>Nuclear Energy Institute, NEI 97-06 "Steam Generator Program Guidelines".</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 3.6.3 "Leak-Before-Break Evaluation Procedures".</li>
+<li>TSTF-554 Rev. 1 "Revise Reactor Coolant Leakage Requirements", U.S. NRC 승인(2020.12).</li>
+</ol>

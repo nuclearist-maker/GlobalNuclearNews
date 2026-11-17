@@ -1,0 +1,160 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2025년 원자력발전기술사 필기 4교시 3번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>중성자 조사에 의한 원자로 압력용기 영향을 감시(Irradiation surveillance program)하기 위한 압력용기 내 감시시편의 파괴시험에 대하여 다음을 기술하시오.
+가. 가동 기간 증가에 따른 최대흡수에너지(USE, Upper Shelf Energy) 및 가압열충격온도(RTpts) 변화
+나. 파괴시험 선별기준(Screen criteria) 값
+다. 선배율(Lead factor)
+라. 압력-온도(P-T) 한계 곡선
+마. 원자로 내부에 설치된 감시용기 위치 및 내장된 시편종류</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>감시시험 프로그램 전체를 한 번에 묻는 문제입니다. 조사취화가 샤르피 곡선을 어떻게 바꾸는지(가), 그 결과를 무엇과 비교해 판정하는지(나), 시편이 왜 용기보다 먼저 조사되도록 놓이는지(다), 결과가 운전에 어떻게 반영되는지(라), 시편이 어디에 무엇으로 들어 있는지(마)를 연결해 쓰는지 봅니다. 2019년 4교시 6번과 구성이 거의 같아, 수치(132.2/148.9 ℃, 68 J, 1~3)를 정확히 쓰는 것이 변별 포인트입니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 감시시험 목적, 근거(원안위고시 제2021-28호, 10 CFR 50 App. G·H, 50.61)</li>
+<li>본론 가: 조사취화 기구 → USE 감소·RTPTS 상승, 식과 EFPY 경향</li>
+<li>본론 나: 선별기준 표(RTPTS·USE), 불만족 시 조치</li>
+<li>본론 다: 선배율 정의·범위·의미, 인출 계획</li>
+<li>본론 라: P-T 곡선 원리, ART와 곡선 이동, 최소온도·LTOP</li>
+<li>본론 마: 노형별 감시용기 위치, 시험재와 시편 종류</li>
+<li>결론: 감시시험 → P-T·PTS·계속운전 평가로 이어지는 흐름</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li><strong>감시시험</strong>: 노심대(beltline) 재료와 같은 이력의 시편을 용기 안에 넣어 미리 조사시키고, 주기적으로 인출해 <strong>파괴시험</strong>(샤르피·인장·파괴인성)으로 취화를 실측하는 제도임</li>
+<li>근거: 원안위고시 제2021-28호 「원자로압력용기 감시시험 기준」[1](위임: 기술기준규칙 제21조[2]), 10 CFR 50 App. H(감시)·App. G(파괴인성)·50.61(PTS)[3]</li>
+</ul>
+<p><strong>2. 가. 가동 기간 증가에 따른 USE·RTPTS 변화</strong></p>
+<ul>
+<li><strong>기구</strong>: 고속중성자(E &gt; 1 MeV) 변위손상 → 점결함·Cu 석출물·Ni-Mn-Si 클러스터 → 경화 → 샤르피 천이곡선이 <strong>고온 쪽 이동 + 상부 선반 하강</strong></li>
+<li><strong>USE(최대흡수에너지)</strong>: 천이구역 상단 이상 온도 샤르피 흡수에너지 평균(고시 제3조) → 가동 기간에 따라 <strong>감소</strong>
+<ul>
+<li>예측: RG 1.99 Rev.2[4] — Cu 함량과 <strong>1/4T fluence</strong>로 감소율(%) 산정, 감시 실측으로 보정</li>
+</ul>
+</li>
+<li><strong>RTPTS(가압열충격 기준온도)</strong>: 가동 기간에 따라 <strong>증가하되 증가율은 둔화(포화형)</strong>
+<ul>
+<li>RTPTS = RTNDT(U) + M + ΔRTPTS</li>
+<li>ΔRTPTS = CF × f^(0.28 − 0.10 log f), f = <strong>수명말 내면 fluence</strong>(10¹⁹ n/cm²)[3]</li>
+<li>CF: Cu·Ni 함량 표값, M = 2√(σU² + σΔ²), σΔ 용접 15.6 ℃·모재 9.4 ℃</li>
+</ul>
+</li>
+<li><strong>예시 계산</strong>(원주 용접 Cu 0.20 %·Ni 0.80 %, CF 194 °F, 초기 −20 °F, 내면 0.05×10¹⁹ n/cm²/EFPY): 6 EFPY 74.5 ℃ → 32 EFPY 124.0 ℃ → 48 EFPY <strong>135.4 ℃</strong> — 148.9 ℃ 이내</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: EFPY에 따른 RTPTS 상승(포화형)과 USE 감소, 선별기준선 132.2/148.9 ℃·68 J" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/3d5f3ff37b91aebbc1a0d4309d9230173a1a00c1488a048691839db6f0c83f8c.webp"/><figcaption>답안용 도식: EFPY에 따른 RTPTS 상승(포화형)과 USE 감소, 선별기준선 132.2/148.9 ℃·68 J</figcaption></figure>
+<p><strong>3. 나. 파괴시험 선별기준 값</strong></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>선별기준</th>
+<th>근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RTPTS — 판재·단조재·축방향 용접</td>
+<td><strong>≤ 132.2 ℃ (270 °F)</strong></td>
+<td>고시 별표 5[1], 50.61(b)(2)[3]</td>
+</tr>
+<tr>
+<td>RTPTS — 원주방향 용접</td>
+<td><strong>≤ 148.9 ℃ (300 °F)</strong></td>
+<td>같음</td>
+</tr>
+<tr>
+<td>USE — 조사 전</td>
+<td><strong>≥ 102 J (75 ft-lb)</strong></td>
+<td>고시 제15조①[1], App. G IV.A.1.a[3]</td>
+</tr>
+<tr>
+<td>USE — 설계수명 말까지</td>
+<td><strong>≥ 68 J (50 ft-lb)</strong></td>
+<td>같음</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>축방향 결함은 원주응력을 받아 불리 → 기준이 더 낮음</li>
+<li><strong>불만족 시</strong>: ① 중성자속 저감(저누설 장전) ② 100 % 체적 비파괴검사 + 추가 파괴인성시험 + 파괴역학 해석 → 원안위 승인 ③ 위반 예상 <strong>3년 전</strong> 제출 ④ <strong>열처리</strong>로 인성 회복 → 승인 없으면 운전 불가</li>
+<li>수명말 USE ≤ 68 J 또는 조사후 RTNDT ≈ 93 ℃ 이상 예상 원자로는 <strong>열처리 가능 설계</strong>(제15조⑥)</li>
+</ul>
+<figure class="article-image"><img alt="예시 원주 용접부의 EFPY별 RTPTS 궤적과 선별기준 132.2/148.9 ℃, 선배율 2 캡슐이 앞당겨 보는 시점, USE 판정 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/a036829f7a6bdcc1dcf42fba0531466b69e9bad0e12fd99c04dd9ab3cd3f609a.webp"/><figcaption>예시 원주 용접부의 EFPY별 RTPTS 궤적과 선별기준 132.2/148.9 ℃, 선배율 2 캡슐이 앞당겨 보는 시점, USE 판정 카드</figcaption></figure>
+<p><strong>4. 다. 선배율(Lead factor)</strong></p>
+<ul>
+<li><strong>정의</strong>: LF = 시험편 중성자속 / 용기 내벽 최대 중성자속(고시 제3조)</li>
+<li><strong>범위</strong>: 가능한 한 <strong>1~3</strong>(제8조③)[1]</li>
+<li><strong>의미</strong>: LF &gt; 1 → 시편이 용기보다 먼저 같은 fluence 도달 → <strong>미래 용기 상태를 미리 실측</strong>(LF 2 캡슐을 6 EFPY에 인출 ≈ 용기 12 EFPY)
+<ul>
+<li>상한 이유: 조사속도·스펙트럼 차이로 대표성 저하 방지</li>
+</ul>
+</li>
+<li><strong>운영</strong>: 첫 시험은 LF 최대 캡슐(제12조①), 인출 후 <strong>1년 이내 보고</strong>(제13조③)</li>
+<li><strong>인출 계획</strong>(별표 3, 60년·48 EFPY): 예상 ΔRTNDT ≤ 56 ℃ 4개, 56~111 ℃ 5개, &gt; 111 ℃ 6개</li>
+<li>예: OPR1000·APR1400 약 1.2~1.4, WH형 약 3.0[7] / 미국 APR1400 DC 1.4(DCD Rev.0의 1.5를 RAI 응답에서 정정)[6]</li>
+</ul>
+<p><strong>5. 라. 압력-온도(P-T) 한계 곡선</strong></p>
+<ul>
+<li><strong>목적</strong>: 가열·냉각·수압시험 중 노심대·플랜지 <strong>취성파괴 방지</strong> → 곡선 오른쪽·아래만 운전 허용</li>
+<li><strong>평가</strong>: 기준결함 깊이 1/4T·길이 1.5T, 가열·냉각 <strong>2K_Im + K_It &lt; K_Ic</strong>, 수압시험 1.5K_Im + K_It &lt; K_Ic
+<ul>
+<li>K_Ic = 36.5 + 22.783·exp[0.036(T − RTNDT)] MPa√m, RTNDT 자리에 <strong>ART(1/4T·3/4T)</strong> 대입[5]</li>
+<li>냉각은 내면 인장(1/4T), 가열은 외면 인장(3/4T)이 지배</li>
+</ul>
+</li>
+<li><strong>추가 요건</strong>: 노심 임계 시 P-T 한계 + 22.2 ℃(40 °F), 미임계·고압 시 플랜지 + 66.7 ℃(120 °F)[3]</li>
+<li><strong>감시시험 반영</strong>: ART↑ → 곡선 <strong>오른쪽 평행이동</strong> → 저온 운전창 축소 → <strong>LTOP 설정·적용온도 갱신</strong>, 곡선 유효 EFPY 명시(고시 제14조·별표 4)</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: P-T 한계곡선, ART 상승에 따른 우측 이동, 임계 운전 +22 ℃선, 허용 운전영역" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/76dda3787ebb516d2ef6f9bd693152a85cb058093a15bd988da820f0d9a73ec3.webp"/><figcaption>답안용 도식: P-T 한계곡선, ART 상승에 따른 우측 이동, 임계 운전 +22 ℃선, 허용 운전영역</figcaption></figure>
+<figure class="article-image"><img alt="ASME XI App. G 등온 근사로 계산한 P-T 허용압력 곡선(ART 37.8 ℃ vs 93.3 ℃), 55.6 ℃ 평행이동과 별표 4 최소온도" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/e7d1331c52f8e620e2e88b5c3b0999c1b4e7fe9618c0ec6e57c5c30987a059d7.webp"/><figcaption>ASME XI App. G 등온 근사로 계산한 P-T 허용압력 곡선(ART 37.8 ℃ vs 93.3 ℃), 55.6 ℃ 평행이동과 별표 4 최소온도</figcaption></figure>
+<p><strong>6. 마. 감시용기 위치 및 시편 종류</strong></p>
+<ul>
+<li><strong>위치 원칙</strong>: 노심대 높이, 용기 내벽 가까운 강수부(downcomer), 최대 중성자속 방위 → 용기와 같은 스펙트럼·온도이력 재현
+<ul>
+<li><strong>CE형(OPR1000·APR1400)</strong>: 용기 내벽 피복에 용접된 <strong>시편함 고정대</strong>[8](국내 가동 원전은 일반적으로 감시용기 6개[7])</li>
+<li><strong>WH형</strong>: 노심배럴 바깥 <strong>열차폐체(중성자 패드)에 부착된 캡슐 바스켓</strong></li>
+<li>감시용기는 견고·내식성·<strong>불활성 분위기 밀폐</strong>, 시편 고정 봉입(제8조①②)</li>
+</ul>
+</li>
+<li><strong>시험재</strong>: 취화가 가장 심할 노심대 <strong>모재(L·T 방향, 1/4T 채취)·용접금속·열영향부(HAZ)</strong>, 표준참조재료(SRM)</li>
+<li><strong>시편 종류</strong>:
+<ul>
+<li><strong>충격시험편</strong>: 샤르피 V노치 → ΔRTNDT(41 J 온도 이동)·USE</li>
+<li><strong>인장시험편</strong>: 항복·인장강도 변화</li>
+<li><strong>파괴인성시험편</strong>: CT·예균열 샤르피 → K_Ic·마스터커브</li>
+<li><strong>중성자감시자</strong>: 문턱반응 선량계 → fluence·스펙트럼</li>
+<li><strong>온도감시자</strong>: 저융점 합금선 → 조사 중 최고온도 확인</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 원자로 평면도에서 CE형(내벽 고정대)과 WH형(열차폐체 캡슐) 감시용기 위치 비교" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/e22892582f6d877359094ad9726f206eaf2110cde454ed1278acb62c0e5a8247.webp"/><figcaption>답안용 도식: 원자로 평면도에서 CE형(내벽 고정대)과 WH형(열차폐체 캡슐) 감시용기 위치 비교</figcaption></figure>
+<p><strong>7. 결론</strong></p>
+<ul>
+<li>감시시험은 <strong>예측식(RG 1.99)을 실측으로 검증</strong>하는 장치이며, 결과는 P-T 곡선·LTOP·PTS 평가·계속운전 심사로 바로 이어짐</li>
+<li>저 Cu·P 재료, 저누설 장전, 열처리 가능 설계가 취화 여유를 확보하는 3대 수단임</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: RTPTS와 ART는 보는 위치가 다릅니다</h3>
+<p>가와 라를 함께 쓰다 보면 RTPTS와 1/4T ART를 섞기 쉽습니다. RTPTS는 PTS 균열이 내면에서 시작한다고 보고 <strong>수명말 내면 fluence</strong>로 계산합니다. USE 감소와 P-T 곡선의 ART는 기준결함 끝이 놓이는 <strong>1/4T·3/4T fluence</strong>를 씁니다. fluence는 벽 안쪽으로 갈수록 f(x) = f_내면·e^(−0.24x)(x는 인치)로 줄어드므로 같은 재료라도 RTPTS가 1/4T ART보다 큰 ΔRTNDT를 갖습니다.</p>
+<h3>해설: 선별기준은 합격선이 아니라 문턱입니다</h3>
+<p>132.2 ℃를 넘으면 곧바로 정지한다고 쓰면 감점입니다. 선별기준은 "이보다 낮으면 PTS 추가 평가가 필요 없다"는 문턱이고, 넘을 것으로 예상되면 중성자속 저감, 확률론적 파괴역학 평가, 열처리 순서로 대응합니다. 국내에서는 제2021-28호 개정 때 별표 5로 PTS 기준이 고시에 직접 들어왔습니다. 그 전에는 10 CFR 50.61을 준용했습니다.</p>
+<h3>해설: 그림 fig1을 읽는 법</h3>
+<p>fig1의 궤적은 예시 재료(원주 용접)이므로 기준선은 148.9 ℃가 적용되고 48 EFPY에서도 여유가 있습니다. 같은 화학성분이 축방향 용접에 있었다면 약 42.7 EFPY에 132.2 ℃를 넘습니다. 결함 방향에 따라 판정선이 달라지는 이유입니다. 선배율 2인 캡슐을 3·6·15 EFPY에 인출하면 용기의 6·12·30 EFPY 상태를 미리 보는 셈이어서, 기준 초과를 수년 앞서 알 수 있습니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 달라진 기준 없음(확인 근거: 「원자로압력용기 감시시험 기준」은 원안위고시 제2021-28호(2021.8.19)가 현행판이며 이 판에서 60년 수명 인출 계획(별표 3), USE 기준(제15조①), PTS 기준(별표 5)이 국내 규정으로 들어왔습니다. 10 CFR 50.61·App. G의 270/300 °F·102/68 J도 현행 eCFR과 같습니다). 미국은 App. H가 2020년 개정(2021.2 시행)으로 HAZ 시편·상관감시재·온도감시자 일부를 선택 사항으로 바꿨으나 국내 고시는 시험재 구성 요건을 유지합니다. </p>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로압력용기 감시시험 기준」, 원안위고시 제2021-28호(2021.8.19), 제3조·제8조·제12~15조, 별표 2~5. 국가법령정보센터.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제21조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix G "Fracture Toughness Requirements", Appendix H "Reactor Vessel Material Surveillance Program Requirements", 10 CFR 50.61 "Fracture toughness requirements for protection against pressurized thermal shock events".</li>
+<li>U.S. NRC, Regulatory Guide 1.99 "Radiation Embrittlement of Reactor Vessel Materials", Rev. 2 (1988).</li>
+<li>ASME Boiler and Pressure Vessel Code, Section XI, Nonmandatory Appendix G "Fracture Toughness Criteria for Protection Against Failure".</li>
+<li>KHNP, APR1400 Design Certification RAI 응답(PTLR·FSAR 감시시편 선배율 1.5 → 1.4 정정), NRC ADAMS ML15198A559.</li>
+<li>C. H. Lee, B. C. Kim, M. J. Lim, H. C. Lee, "Study on the application of the Supplemental Surveillance Capsule for APR 1400", Transactions of the Korean Nuclear Society Autumn Meeting, Changwon (2024).</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Section 5.3.1.6 (원자로용기 재료 감시), NRC 설계인증 공개 문서.</li>
+</ol>

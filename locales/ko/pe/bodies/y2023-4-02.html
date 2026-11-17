@@ -1,0 +1,137 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2023년 원자력발전기술사 필기 4교시 2번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>OPR1000 원전의 허용핵연료설계제한치(SAFDL: Specific Acceptable Fuel Design Limit)에 대해 다음을 기술하시오.
+가. SAFDL 설정 목적
+나. SAFDL 도달 방지 수단
+다. SAFDL 적용 운전모드 및 이유</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>SAFDL을 정의만 외웠는지, 아니면 설계 한계가 운전 단계에서 어떻게 지켜지는지(노심 안전제한치 → 트립 설정치 → 운전제한조건)까지 연결하는지를 보는 문항입니다. 특히 OPR1000이라고 노형을 지정했으므로 CE형 고유의 노심보호연산기(CPC)와 노심운전제한감시계통(COLSS)의 역할 구분, 그리고 운영기술지침서의 적용 모드(1·2)와 그 이유를 쓸 수 있는지가 변별 포인트입니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: SAFDL 정의와 근거(GDC 10, 기술기준규칙 제2조①10호·제17조①), 문제의 "Specific" 해석</li>
+<li>본론 가: 설정 목적 — 1차 방벽 보호, AOO 후 재가동, 사고해석 초기조건, 대표 기준</li>
+<li>본론 나: 도달 방지 수단 — 설계 여유, LCO·COLSS, LSSS·CPC, 반응도 제어 측 보호</li>
+<li>본론 다: 적용 운전모드(1·2)와 이유, 다른 모드의 보호 수단</li>
+<li>결론: 설계 한계 → 운전 한계의 위계</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요(가정 및 문제 해석 포함)</strong></p>
+<ul>
+<li>문제의 "Specific"은 GDC 10 원어 <strong>Specified</strong> Acceptable Fuel Design Limits의 오기로 보고 답함</li>
+<li><strong>정의</strong>: 정상운전과 예상운전과도(AOO) 동안 핵연료 손상을 방지하기 위해 핵비등이탈률(DNBR)과 핵연료 중심선 온도 등에 대해 정한 설계제한치임(국내 용어 "연료허용 손상한계", 기술기준규칙 제2조①10호)[2]</li>
+<li><strong>근거</strong>: 10 CFR 50 App. A <strong>GDC 10</strong>(적절한 여유로 SAFDL 불초과), <strong>GDC 20</strong>(AOO 시 보호계통 자동 작동), <strong>GDC 25</strong>(반응도제어계통 단일 오작동 시에도 불초과)[1], 기술기준규칙 <strong>제17조①</strong>(현행 원안위규칙 제37호)[2]</li>
+</ul>
+<p><strong>2. 가. SAFDL 설정 목적</strong></p>
+<ul>
+<li><strong>1차 방벽 보호</strong>: 펠릿·피복관 건전성을 유지해 정상운전·AOO에서 <strong>연료봉 파손이 없도록</strong> 함 → 냉각재로의 방사성물질 유출 최소화</li>
+<li><strong>AOO 후 운전 재개 기반</strong>: AOO(제어봉 인출, 부분 유량 상실, 터빈 정지 등)에서 연료 손상이 없어야 사건 평가 후 연료 수리·교체 없이 운전을 재개할 수 있음</li>
+<li><strong>운전 한계의 기준점</strong>: 노심 안전제한치(SL), 트립 설정치(LSSS), 운전제한조건(LCO)을 정하는 출발점이며, FSAR 15장 사고해석의 초기조건을 보장함</li>
+<li><strong>대표 SAFDL(CE형 OPR1000)</strong>
+<ul>
+<li><strong>DNB 방지</strong>: MDNBR ≥ CHF 상관식별 <strong>95/95 한계</strong>(95 % 확률·95 % 신뢰도로 DNB 없음) → 피복관 과열 방지[3]</li>
+<li><strong>연료 중심 용융 방지</strong>: 첨두 선출력 한계(CE형 STS 예시값 <strong>21 kW/ft = 68.9 kW/m</strong>[4]) 또는 연소도에 따라 낮아지는 중심선 온도 한계</li>
+<li><strong>기타(설계 해석으로 확인)</strong>: 피복관 과도 균일 변형률 ≤ 1 %, 응력 &lt; 항복, 피로 사용계수 &lt; 1, 봉 내압(간극 재개방 없음), 산화·수소화·프레팅 마모, 피복관 붕괴 없음(SRP 4.2)[3]</li>
+</ul>
+</li>
+<li>구분: 사고 시 냉각성 기준(PCT 1,204 °C, ECR 17 % 등)은 <strong>사고 허용기준</strong>이며 SAFDL이 아님[7]</li>
+</ul>
+<p><strong>3. 나. SAFDL 도달 방지 수단</strong></p>
+<ul>
+<li><strong>(1) 설계 단계</strong>
+<ul>
+<li>노심 열수력 설계 여유(FΔH·FQ 제한), 가연성흡수봉 장전으로 출력 첨두 억제, 연료봉 He 가압</li>
+<li>FSAR 15장 AOO 해석: <strong>LCO 경계 초기조건 + 해석한계 트립</strong>으로 SAFDL 불초과를 입증함</li>
+</ul>
+</li>
+<li><strong>(2) 운전제한조건(LCO) — 운전 여유 유지</strong>
+<ul>
+<li>대상: 선출력(LHR), DNBR 여유, 축방향 출력분포(ASI), 방위각 출력 기울기(Tq), 평면 반경방향 첨두계수, 조절군 CEA 삽입한계·CEA 정렬, RCS DNB 변수(가압기 압력·저온관 온도·RCS 유량)</li>
+<li><strong>COLSS</strong>(비안전 감시계통): 노내 로듐 검출기와 공정변수·노심 모델로 출력분포와 DNBR·LHR 운전 여유를 계산 → 운전한계 접근 시 경보 → 운전원이 해당 LCO 요구조치(출력 감발 등) 수행[9]</li>
+</ul>
+</li>
+<li><strong>(3) 트립 설정치(LSSS) — 자동 보호</strong>
+<ul>
+<li><strong>CPC</strong>(안전등급, 4채널): 노외 검출기(상·중·하 3구간), 저온관·고온관 온도, 가압기 압력, RCP 축 속도(유량 추정), CEA 위치로 DNBR·국부출력밀도(LPD)를 실시간 계산 → <strong>저 DNBR 트립·고 LPD 트립</strong>[8]</li>
+<li>CEAC가 CEA 편차를 감지하면 CPC 계산에 <strong>페널티</strong>를 반영함</li>
+<li>설정치는 <strong>SL 도달 전에 트립되도록</strong> 계산·측정 불확도와 보호계통 응답시간 여유를 두어 정함 → 트립 후에도 실제 노심이 SL 안에 머묾</li>
+<li>기타 RPS 트립(가변과출력, 가압기 고압력·저압력, SG 저수위 등)이 과도의 원인을 차단하고, 동시논리 <strong>2/4</strong>로 신뢰성·오작동 방지를 함께 확보함</li>
+</ul>
+</li>
+<li><strong>(4) 반응도 제어 측</strong>: CEA 인출 금지(CWP) 신호, 반응도제어계통 단일 오작동에도 SAFDL 불초과(GDC 25)</li>
+<li><strong>(5) 운전 관리</strong>: 출력 상승률 제한, 축방향 제논 진동 제어, 노내 계측 출력분포 감시시험</li>
+</ul>
+<figure class="article-image"><img alt="선출력(kW/m: 평균 17.2·정상 첨두 42~45·용융 방지 59~69·CE형 68.9)과 MDNBR의 LCO–LSSS–노심 SL 여유 사다리, 모드 1~6 적용 표(노심 SL·CPC 트립 = 모드 1·2)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/57a624f9c9116a3efbe18429a5f67cfbd62425ecb4ff9c9d831c8fbcb5f8e967.webp"/><figcaption>선출력(kW/m: 평균 17.2·정상 첨두 42~45·용융 방지 59~69·CE형 68.9)과 MDNBR의 LCO–LSSS–노심 SL 여유 사다리, 모드 1~6 적용 표(노심 SL·CPC 트립 = 모드 1·2)</figcaption></figure>
+<figure class="article-image"><img alt="답안용 도식: 정상운전–LCO(COLSS)–LSSS(CPC 트립)–노심 SL 사다리와 트립 여유, 운전모드 1·2 강조 띠" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/2a051f4f61f45865ab885071c54ac83067f338896dc16b1652c65d2035dadc2a.webp"/><figcaption>답안용 도식: 정상운전–LCO(COLSS)–LSSS(CPC 트립)–노심 SL 사다리와 트립 여유, 운전모드 1·2 강조 띠</figcaption></figure>
+<p><strong>4. 다. SAFDL 적용 운전모드 및 이유</strong></p>
+<ul>
+<li><strong>적용 모드</strong>: 운영기술지침서 2.1.1 노심 안전제한치와 CPC 저 DNBR·고 LPD 트립은 <strong>모드 1(출력운전)·모드 2(기동)</strong>에 적용함[4]. 출력분포 LCO는 모드 1 출력 영역(CE형 예: 열출력 20 % 초과)에 적용함</li>
+<li><strong>이유</strong>
+<ul>
+<li>모드 1·2는 keff ≥ 0.99로 <strong>임계·출력 상태가 될 수 있는 모드</strong>임 → 핵분열 출력과 국부 열속이 커서 DNB·중심 용융 가능성이 실재함</li>
+<li>제어봉 인출, 유량 상실 같은 <strong>AOO로 출력·출력분포가 급변</strong>할 수 있어 자동 보호(LSSS)가 필요함</li>
+<li>모드 3~6은 keff &lt; 0.99로 <strong>미임계 유지</strong>되고 열원이 주로 붕괴열(정지 직후 수 % 이하, 시간에 따라 감소)이므로, 노심 SL 대신 <strong>정지여유도(모드 3~5)·붕소 농도(모드 6)</strong> LCO와 RCS·정지냉각 잔열제거 LCO로 보호함</li>
+</ul>
+</li>
+<li><strong>SL 위반 시</strong>: 1시간 이내 모드 3 진입, 원안위 보고 후 <strong>승인을 받아 재가동</strong>(「운영기술지침서의 작성에 관한 기준」 고시 제2024-13호 제4조②)[5]</li>
+</ul>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>SAFDL은 <strong>설계 한계</strong>이고, 운전 중에는 <strong>노심 SL → LSSS(CPC 트립) → LCO(COLSS 감시)</strong>의 위계로 옮겨져 지켜짐</li>
+<li>OPR1000은 같은 두 SAFDL(DNB·중심 용융)을 <strong>노외 계측 기반 자동 트립(CPC)</strong>과 <strong>노내 계측 기반 여유 감시(COLSS)</strong>로 함께 관리함</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: CPC와 COLSS는 역할이 다릅니다</h3>
+<figure class="article-image"><img alt="CPC(노외 검출기·공정변수 → DNBR·LPD 계산 → 2/4 자동 트립)와 COLSS(노내 검출기 → 운전여유 계산 → 경보·LCO 조치) 흐름, 원자로용기 개념 절개도, 계측·등급·적용 비교표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/63409b415a7e0f71d1b7d05ac50880f5a601e983c5b3762984c1f6babf7fc5f1.webp"/><figcaption>CPC(노외 검출기·공정변수 → DNBR·LPD 계산 → 2/4 자동 트립)와 COLSS(노내 검출기 → 운전여유 계산 → 경보·LCO 조치) 흐름, 원자로용기 개념 절개도, 계측·등급·적용 비교표</figcaption></figure>
+<p>두 계통 모두 DNBR과 선출력을 계산하므로 수험생이 자주 섞어 씁니다. CPC는 안전등급 보호계통으로, 응답이 빠른 노외 검출기와 공정변수를 써서 과도 중에도 SL을 넘기 전에 원자로를 자동 정지시킵니다. COLSS는 비안전 감시계통으로, 노내 검출기의 3차원 출력분포를 써서 평상시 운전 여유를 정밀하게 보여 주고 LCO 준수를 돕습니다. COLSS를 쓸 수 없으면 운영기술지침서는 해당 LCO에 따라 CPC 지시와 더 제한적인 대체 한계로 여유를 감시하도록 조치를 둡니다. 답안에서는 "CPC = LSSS(트립), COLSS = LCO(감시)"로 짝지어 쓰면 채점자가 위계를 이해했다고 판단하기 쉽습니다.</p>
+<h3>해설: 선출력 숫자는 서로 다른 선입니다</h3>
+<p>OPR1000 노심 평균 선출력은 계산 예로 약 17.2 kW/m(열출력 2,815 MWt 가정 × 0.975 ÷ (177다발 × 236봉 × 3.81 m)[6])입니다. 정상운전 첨두는 대표 범위 약 42~45 kW/m, 용융 방지 한계는 설계별 예로 약 59~69 kW/m(CE형 예 21 kW/ft = 68.9 kW/m)입니다. 그림의 사다리는 서로 다른 양을 한 축에 모은 여유 관계 개념도이며, 한계를 넘는 즉시 용융한다는 뜻이 아니라 "중심 비용융 보장 한계를 넘는다"는 뜻입니다. 세 값을 한 숫자처럼 쓰면 감점 요인이 됩니다. DNBR 한계도 과거 W-3 상관식의 1.30처럼 고정값으로 쓰지 말고 "상관식별 95/95 한계"로 쓰는 것이 안전합니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 SAFDL의 정의·적용 모드는 바뀌지 않았습니다. 근거 문서의 판만 다음과 같이 확인했습니다.</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>출제 당시(2023)</th>
+<th>현행(2026)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>연료허용 손상한계 정의·설계 요건</td>
+<td>기술기준규칙 제2조①10호·제17조①</td>
+<td>같은 조문, 현행 원안위규칙 제37호(2026.3.30) 문언 동일</td>
+</tr>
+<tr>
+<td>운영기술지침서 작성 기준</td>
+<td>원안위고시 구판(제2017-5호·제2023-9호)</td>
+<td>제2024-13호(2024.12.31) — 제4조 SL 문언 동일</td>
+</tr>
+<tr>
+<td>미국 연료 설계 심사</td>
+<td>SRP 4.2 Rev.3(2007)</td>
+<td>개정 없음</td>
+</tr>
+<tr>
+<td>사고 허용기준(구분 대상)</td>
+<td>10 CFR 50.46c 개정 추진</td>
+<td>2024.4.11 반려 → 현행 50.46(b) 유지</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, 10 CFR Part 50, Appendix A, General Design Criteria 10, 20, 25.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제2조 제1항 제10호·제17조 제1항. 국가법령정보센터.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.2 "Fuel System Design", Rev. 3 (2007).</li>
+<li>U.S. NRC, NUREG-1432 Standard Technical Specifications — Combustion Engineering Plants, Rev. 5 (2021), 1.1 운전모드 표, 2.1.1 노심 안전제한치.</li>
+<li>원자력안전위원회 고시 제2024-13호 「운영기술지침서의 작성에 관한 기준」(2024.12.31), 제4조. 국가법령정보센터.</li>
+<li>G. J. You, J. H. Sim, H. G. Kim, "Application of CASMO-3/MASTER Code System to the OPR1000," Transactions of the Korean Nuclear Society Autumn Meeting, PyeongChang (2007) — 노심 177다발, 16×16 236봉, 유효 길이 381 cm.</li>
+<li>U.S. NRC, 10 CFR 50.46 "Acceptance criteria for emergency core cooling systems for light-water nuclear power reactors", (b).</li>
+<li>U.S. NRC, HRTD Combustion Engineering Technology Cross Training Course Manual, Ch. 12.1 "Core Protection Calculators", NRC ADAMS ML11251A139.</li>
+<li>U.S. NRC, HRTD Combustion Engineering Technology Cross Training Course Manual, Ch. 12.3 "Core Operating Limit Supervisory System", Rev. 10/08, NRC ADAMS ML11251A042.</li>
+</ol>

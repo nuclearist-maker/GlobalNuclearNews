@@ -1,0 +1,142 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2022년 원자력발전기술사 필기 2교시 6번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>원자력발전소 출력운전 중 핵연료의 건전성을 진단하는 방법에 대해 기술하시오.</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>운전 중에는 연료를 꺼내 볼 수 없으므로, 첫 번째 방벽인 피복관의 상태를 <strong>원자로냉각재의 방사화학</strong>으로 간접 판단합니다. 이 문제는 그 판단 체계를 단계적으로 쓸 수 있는지 봅니다. 핵심은 세 가지입니다. ① 결함에서 냉각재까지 핵분열생성물이 어떻게 나오는지(원리), ② 무엇을 언제 측정하는지(연속 감시·시료 분석·과도 관찰), ③ 측정값을 어떻게 판정하고 조치하는지(핵종 비, 트램프 바탕, LCO)입니다. 25점 문항이므로 원리와 판정 논리까지 써야 하고, 교체기간 검사는 결론에서 연결만 합니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 진단의 목적과 근거(연료허용손상한계, 냉각재 비방사능 LCO)</li>
+<li>본론 1: 결함 → 냉각재 방출 원리(간극 체류, 반감기 효과)</li>
+<li>본론 2: 진단 방법 — 연속 감시, 시료 감마분광, 핵종 비 해석, 트램프 차감·결함봉 수 추정, 과도 응답, 2차 손상 감시</li>
+<li>본론 3: 판정 기준과 운전 조치</li>
+<li>결론: 운전 중 진단의 범위와 교체기간 검사 연계</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li><strong>목적</strong>: 출력운전 중 피복관 <strong>관통결함의 발생 여부·규모·진행</strong>을 판단해 방사능 방출을 제한하고 운전 조치를 정함</li>
+<li><strong>설계 근거</strong>: 기술기준규칙 제17조①[1] — 정상운전·예상운전과도 시 <strong>연료허용손상한계</strong>를 넘지 않도록 여유 설계 → 운전 중 감시는 이 목표의 확인 수단</li>
+<li><strong>운영 근거</strong>: 운영기술지침서의 원자로냉각재 비방사능 LCO(STS 3.4.16, <strong>DEI-131·DEX-133</strong>)[2][3]</li>
+<li><strong>방법의 성격</strong>: 연료를 직접 볼 수 없으므로 <strong>냉각재 핵분열생성물로 간접 진단</strong></li>
+<li><strong>진단 체계</strong>: 탐지(연속 감시) → 확인·판별(시료 분석, 트램프와 결함 구분) → 정량·추세(결함봉 수·연소도·확대 여부) → 조치(LCO·운전 제한·교체기간 검사)</li>
+</ul>
+<p><strong>2. 결함 → 냉각재 방출 원리</strong></p>
+<ul>
+<li>펠릿에서 생성된 핵분열생성물 → 확산·반조로 <strong>간극</strong> → 결함 통과 → 냉각재 희석 → CVCS 정화·붕괴로 제거</li>
+<li><strong>간극 체류 효과</strong>: 결함이 작아 체류가 길수록 단수명 핵종이 간극에서 더 붕괴 → <strong>장수명/단수명 비가 커짐</strong> → 핵종 구성에 결함 크기 정보가 담김</li>
+<li><strong>트램프 우라늄</strong>: 피복관 외면 등의 미량 우라늄이 반조로 직접 방출 → 결함이 없어도 <strong>바탕 방사능</strong>(단수명 비중 큼)</li>
+<li>부식생성물(Co-58·Co-60)과 냉각재 활성화 핵종(N-16)은 직접 결함 지표가 아님</li>
+</ul>
+<figure class="article-image"><img alt="결함봉 → 냉각재 → 연속 감시·시료 분석의 신호 경로와 '이상인가 → 결함인가 → 얼마나 변하나 → 조치' 4단계" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/07cf785c31fe88871983298c52b927903eef97e0700fd1087f1928d69d4e4be8.webp"/><figcaption>결함봉 → 냉각재 → 연속 감시·시료 분석의 신호 경로와 '이상인가 → 결함인가 → 얼마나 변하나 → 조치' 4단계</figcaption></figure>
+<p><strong>3. 진단 방법</strong></p>
+<ul>
+<li><strong>① 연속 감시</strong>: 대표적 PWR 구성은 CVCS 유출수(렛다운) 계통의 <strong>파손연료 감시기</strong>(방사선감시기)로 총감마 추세·경보 → 결함 발생의 1차 탐지(설치·시료 위치는 노형별)[4]. 비상 분류에서도 파손연료 감시기 지시가 피복재 손상 판단 지표로 쓰임(NUREG-0654 예시 기준, 지시값은 호기별 계획서)[6]</li>
+<li><strong>② 시료 감마분광</strong>: 냉각재 시료의 핵종별 농도
+<ul>
+<li><strong>불활성기체</strong> Xe-133·Xe-135·Kr-85m·Kr-88: 화학적 체류가 작아 결함 발생의 민감 지표</li>
+<li><strong>요오드</strong> I-131~I-135: DEI-131 산정, 불활성기체는 DEX-133 산정</li>
+<li>결함 징후가 보이면 분석 빈도를 높여 추세 확보</li>
+</ul>
+</li>
+<li><strong>③ 핵종 비 해석</strong>
+<ul>
+<li><strong>I-131/I-133</strong>: 결함봉 기여가 늘면 상승하는 경향(경험적 선별 예 약 0.1[5], 발전소 바탕값 대비 추세로 판단, 결함 상태에 따라 반대로 움직일 수 있어 단독 확진 아님)</li>
+<li><strong>Xe-133/Xe-135</strong>: 결함이 작아 체류가 길수록 증가(Xe-135는 중성자 흡수·선행핵종 영향도 큼)</li>
+<li><strong>R/B–λ 로그 기울기</strong>(방출률/생성률 vs 붕괴상수, 정화·붕괴 보정 후): 반조 우세 ≈0(트램프), 확산 지배 ≈−0.5, 간극 체류 효과가 커지면 ≈−1.5 방향(경계는 겹침)</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="간극 1구역 1차 탈출 모델 f = 1/(1+λτ)로 계산한 반감기별 탈출 분율(τ = 1·10시간 예시)과 요오드 분율비" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/73aed65ac7d1b69b7d242a9448893191c41b7b6c62c5f789780be899f5b1162b.webp"/><figcaption>간극 1구역 1차 탈출 모델 f = 1/(1+λτ)로 계산한 반감기별 탈출 분율(τ = 1·10시간 예시)과 요오드 분율비</figcaption></figure>
+<ul>
+<li><strong>주요 지표 핵종(반감기·용도)</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>핵종(반감기)</th>
+<th>진단 용도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>단수명</td>
+<td>Xe-138(14.1분), I-134(52.5분), Kr-87(76.3분)</td>
+<td>트램프 바탕·큰 결함 판별</td>
+</tr>
+<tr>
+<td>중간</td>
+<td>Kr-88(2.84시간), Kr-85m(4.48시간), Xe-135(9.14시간), I-133(20.8시간)</td>
+<td>비 해석의 분모, 체류시간 정보</td>
+</tr>
+<tr>
+<td>장수명</td>
+<td>Xe-133(5.25일), I-131(8.02일)</td>
+<td>결함 발생 누적 지표, DEI-131 주성분</td>
+</tr>
+<tr>
+<td>연소도</td>
+<td>Cs-134(2.07년)/Cs-137(30.1년)</td>
+<td>결함봉 연소도 추정</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>④ 트램프 차감·결함봉 수 추정</strong>: 바탕 기여를 뺀 Xe-133·I-131 방출률 ÷ 결함봉 1개 기준 방출률(평가 코드 사용, 불확실성 큼)</li>
+<li><strong>⑤ 과도 응답 관찰</strong>
+<ul>
+<li>출력 변화·정지·감압 시 <strong>요오드 스파이크</strong> → 주로 기존 결함봉 간극에 축적된 요오드가 과도적으로 나오는 현상, 결함 존재의 단서(스파이크만으로 새 결함을 단정하지 않으며 크기가 결함 수에 직접 대응하지도 않음)</li>
+<li><strong>Cs-134/Cs-137 비</strong> → 결함봉 연소도(몇 주기째 연료인지) 추정(조사이력 보정 필요)</li>
+</ul>
+</li>
+<li><strong>⑥ 2차 손상 감시</strong>: 지표의 계단식 재상승, <strong>Np-239</strong> 등 악티나이드의 바탕 대비 증가 → 연료물질 노출·씻김 등 결함 확대 의심(2차 수소화 균열이 대표 기구이나 이것만으로 확진하지 않음)</li>
+</ul>
+<p><strong>4. 판정 기준과 운전 조치</strong></p>
+<ul>
+<li><strong>LCO(STS 3.4.16 예)[2]</strong>: DEI-131 ≤ 1.0 µCi/g, DEX-133 ≤ 호기별 값(괄호 값 1.0·60 모두 예시, 호기별 값은 운영기술지침서)
+<ul>
+<li>성격: 결함 유무 판정선이 아니라 <strong>설계기준사고 선량평가의 냉각재 선원항을 제한</strong>하는 기준</li>
+<li>DEI-131 초과: 4시간마다 60 µCi/g 이하 확인, 48시간 내 복귀 / DEX-133 초과: 48시간 내 복귀</li>
+<li>DEI-131 60 µCi/g 초과 또는 조치 미이행: 그 조건 진입부터 6시간 내 MODE 3, 36시간 내 MODE 5</li>
+</ul>
+</li>
+<li><strong>결함 확인 시 조치</strong>(호기 절차): 출력 변화율 제한·감발 검토, 정화 유량·분석 빈도 증가, 2차 손상 추세 감시</li>
+<li><strong>교체기간 연계</strong>: 인-마스트·캔 시핑으로 결함 집합체 선별 → 초음파·육안으로 결함봉 특정 → 원인 분석(그리드 프레팅·이물질·PCI·크러드)</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 탐지 → 확인·판별 → 정량·추세 → 조치, 교체기간 시핑·UT 연계" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/d44096314447517698639d30d2a915fe0daa111c0cb7dad2b906988659c7e647.webp"/><figcaption>답안용 도식: 탐지 → 확인·판별 → 정량·추세 → 조치, 교체기간 시핑·UT 연계</figcaption></figure>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>출력운전 중 진단의 결론은 "<strong>결함이 있는가, 얼마나 큰가, 커지고 있는가</strong>"이며, 위치 특정은 교체기간 검사의 몫임</li>
+<li>한 지표가 아니라 반감기·화학 거동이 다른 여러 핵종을 함께, 시간 추세로 읽는 것이 핵심임</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 반감기가 왜 진단 도구가 되나</h3>
+<p>그림은 간극을 하나의 저장조로 보는 단순 모델입니다. 간극으로 들어온 핵종은 탈출률상수 k = 1/τ로 냉각재로 빠져나가거나 붕괴상수 λ로 사라집니다. 정상상태에서 붕괴 전에 탈출하는 분율은 k/(k+λ) = 1/(1+λτ)입니다. 여기서 τ는 모든 원자가 똑같이 머무는 시간이 아니라 붕괴가 없다고 가정한 평균 탈출 대기시간입니다(모두 같은 시간 머문다면 e^(−λτ)). τ를 1시간과 10시간으로 놓고 계산하면, 반감기 수십 분인 Xe-138·I-134는 τ가 길어질 때 분율이 크게 떨어지고, 반감기 수 일인 Xe-133·I-131은 거의 그대로입니다. 그래서 장수명 핵종의 비중이 크면 체류가 긴 작은 결함, 단수명 비중이 크면 체류 없이 나오는 트램프 기여나 큰 결함을 의심합니다. 다만 이 요오드 탈출 분율비(f(I-131)/f(I-133) 1.03 → 1.29)는 선택적 탈출 효과만 보인 것이고 측정 농도비가 아닙니다. 실제 냉각재 농도비에는 생성률, 펠릿 내 확산, 정화, 냉각재 내 붕괴가 함께 작용합니다.</p>
+<p>판정값은 구분해서 써야 합니다. I-131/I-133 비 0.1은 경험적 선별 기준의 예이고, 0.15는 특정 노형(CPR1000) 운전자료 연구가 제안한 값입니다[5]. 규제 한계는 운영기술지침서의 DEI-131·DEX-133입니다. BWR은 복수기 공기추출기 배기가스를 감시하고 제어봉을 움직이는 출력 억제 시험으로 결함 위치를 좁힐 수 있지만, PWR에서는 적용이 제한됩니다.</p>
+<h3>해설: 채점 포인트와 흔한 실수</h3>
+<ul>
+<li><strong>원리 없이 측정 항목만 나열</strong>: 간극 체류와 반감기 효과를 써야 비 해석이 설명됩니다.</li>
+<li><strong>트램프 바탕을 무시</strong>: 결함이 없어도 바탕 방사능이 있으므로 차감 후 판단합니다.</li>
+<li><strong>요오드 스파이크를 곧바로 새 결함으로 해석</strong>: 주로 기존 결함봉의 축적분 방출이므로 다른 지표와 함께 판단합니다.</li>
+<li><strong>교체기간 검사를 본론으로 쓰기</strong>: "출력운전 중" 문항이므로 연결 한 줄로 충분합니다.</li>
+</ul>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li><strong>진단 기술·LCO 구조</strong>: 출제 이후 달라진 것은 없습니다. 미국 STS는 TSTF-490(2006) 이후 DEI-131과 DEX-133 체계를 유지합니다[3].</li>
+<li><strong>운영기술지침서 작성 기준</strong>: 출제 당시 원안위고시 제2017-5호에서 제2023-9호를 거쳐 현행 제2024-13호(2024.12.31, 용어 정비 일괄개정)입니다. LCO 선정기준(제5조②) 문언은 같습니다.</li>
+<li><strong>기술기준규칙</strong>: 현행판은 원안위규칙 제37호(2026.3.30)이며, 제17조①(연료허용손상한계 여유) 문언은 그대로입니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제17조. 국가법령정보센터.</li>
+<li>U.S. NRC, NUREG-1431, Standard Technical Specifications — Westinghouse Plants, Vol. 1, LCO 3.4.16 "RCS Specific Activity".</li>
+<li>Technical Specifications Task Force, TSTF-490, "Deletion of E Bar Definition and Revision to Reactor Coolant System Specific Activity Technical Specification" (NRC 안전성평가 2006).</li>
+<li>IAEA, Review of Fuel Failures in Water Cooled Reactors (2006–2015), IAEA Nuclear Energy Series No. NF-T-2.5, IAEA, Vienna (2019).</li>
+<li>Fu et al., "Relationship Between Fuel Reliability and I-131/I-133 in the Primary Coolant of CPR1000 PWRs", Frontiers in Energy Research, Vol. 10 (2022), doi:10.3389/fenrg.2022.860480.</li>
+<li>U.S. NRC/FEMA, NUREG-0654/FEMA-REP-1, Rev. 1, Criteria for Preparation and Evaluation of Radiological Emergency Response Plans and Preparedness in Support of Nuclear Power Plants (1980), Appendix 1, NRC ADAMS ML040420012.</li>
+</ol>

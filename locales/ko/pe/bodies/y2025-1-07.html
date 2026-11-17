@@ -1,0 +1,65 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2025년 원자력발전기술사 필기 1교시 7번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>가압경수로의 다음의 조건에서 제논 농도 거동(그래프 포함)
+가. 원자로 출력 100%에서 50% 단계변화(Step change)
+나. 원자로 출력 50%에서 100% 단계변화(Step change)</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>I-135 지연 공급</strong>: Xe-135의 95 % 이상은 I-135(반감기 6.7 h) 붕괴로 생깁니다[1]. 그래서 공급은 출력을 수 시간 늦게 따라갑니다.</li>
+<li><strong>연소(burnout) 항 σφX</strong>: 중성자 흡수에 의한 제거입니다. 출력(φ)과 함께 즉시 변합니다.</li>
+<li><strong>평형제논 포화</strong>: X∞ ∝ φ/(φ + φX)입니다. 출력에 비례하지 않습니다.</li>
+<li><strong>직후와 최종의 반대 방향</strong>: 감소하면 일시 증가 후 낮은 평형, 증가하면 일시 감소 후 높은 평형으로 갑니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 문제 해석</strong></p>
+<ul>
+<li>단계변화 전 장시간 운전으로 I·Xe <strong>평형</strong>, 순간 계단 변화로 이상화(실제는 램프)</li>
+<li>수치는 교과서 1군 모델 예(φ100 = 5×10¹³ n/cm²·s, Lamarsh 상수[1]) — <strong>실제 PWR 값과 다름</strong></li>
+</ul>
+<p><strong>2. 지배식</strong></p>
+<ul>
+<li>dI/dt = γIΣfφ − λI·I, dX/dt = γXeΣfφ + λI·I − λXe·X − σaφX</li>
+<li>평형 X∞ = (γI+γXe)Σfφ/(λXe + σaφ)[1] → <strong>50 % 평형 = 100 %의 약 0.88배</strong></li>
+</ul>
+<p><strong>3. 가. 100 % → 50 %</strong></p>
+<ul>
+<li>직후 <strong>연소 항 절반으로 감소</strong>, I-135 공급은 지연 → <strong>제논 증가</strong></li>
+<li><strong>약 5 h(4.8 h) 정점</strong>(100 % 평형의 약 1.4배, 손실 2,365 → 3,303 pcm)</li>
+<li>이후 I 감소 따라 감소 → <strong>약 2일 후 새 평형 0.88배</strong>(2,082 pcm)</li>
+<li>운전: 정점 구간 음의 반응도 추가 → 붕소 희석·제어봉 인출로 보상</li>
+</ul>
+<p><strong>4. 나. 50 % → 100 %</strong></p>
+<ul>
+<li>직후 <strong>연소 항 2배로 증가</strong> → <strong>제논 감소</strong></li>
+<li><strong>약 3 h(3.2 h) 최저</strong>(약 0.65배, 1,549 pcm)</li>
+<li>이후 I 증가로 공급 회복 → <strong>약 2일 후 새 평형 1.0배</strong>(2,365 pcm)</li>
+<li>운전: 직후 양의 반응도 → 붕산 첨가·제어봉 삽입, 이후 다시 희석</li>
+</ul>
+<p><strong>5. 공통 의미</strong></p>
+<ul>
+<li>출력 변화 후 수십 시간 반응도 보상 필요(부하추종 제약)</li>
+<li>축방향 제논 분포 불균형 → <strong>제논 진동</strong> 가능 → ASI 감시[2]</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 가(약 5 h 정점 후 0.88로 감소)·나(약 3 h 최저 후 1.0으로 회복) 제논 농도 곡선" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/ee18fdda21de55a36c0e9208fa307f1436d6f4fcabc2ac66c66a1694a37488ac.webp"/><figcaption>답안용 도식: 가(약 5 h 정점 후 0.88로 감소)·나(약 3 h 최저 후 1.0으로 회복) 제논 농도 곡선</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="두 경우의 출력·I-135 상대값과 Xe-135 농도(오른쪽 축 제논 반응도 손실 pcm) 계산 곡선" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/6881bc45b5ca59dc093bc4fb41bf5b14c83aeca68b63f4197ede05af264a2cf9.webp"/><figcaption>두 경우의 출력·I-135 상대값과 Xe-135 농도(오른쪽 축 제논 반응도 손실 pcm) 계산 곡선</figcaption></figure>
+<p>그림 위쪽 띠를 보면 출력은 계단처럼 한 번에 바뀝니다. 그런데 I-135는 반감기 6.7 h의 속도로 천천히 새 수준을 찾아갑니다. 제논의 제거 쪽은 거의 연소가 담당합니다. 100 % 평형에서 제거의 약 86 %가 연소입니다. 연소 항은 출력과 함께 즉시 바뀝니다. 그래서 생성과 제거의 균형이 순간적으로 깨집니다. 가의 경우 변화 직후 제논은 100 % 평형 대비 시간당 약 23 %의 속도로 늘어납니다. 나의 경우 시간당 약 20 %의 속도로 줄어듭니다.</p>
+<p>가의 정점(4.8 h, 1.4배)은 정지 후 정점(같은 모델에서 약 9.5 h, 약 2.7배)보다 낮고 빠릅니다. 출력을 끝까지 내리지 않아 연소가 절반은 남기 때문입니다. 두 경우 모두 새 평형을 지나쳐 되돌아오는 진동 없이 접근합니다. 약 48 h에 새 평형의 1 % 이내로 들어옵니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>"50 % 출력이면 제논도 절반"</strong>: 평형제논은 포화 특성이라 약 0.88배입니다. 최종 수준을 절반 높이로 그리면 감점 요인입니다.</li>
+<li><strong>직후 방향을 반대로 그림</strong>: 감소 시 먼저 오르고, 증가 시 먼저 내려갑니다. 이유(연소 즉시·I 지연)를 한 줄로 반드시 씁니다.</li>
+<li><strong>두 경우 시간 척도 동일 표기</strong>: 정점(약 5 h)과 최저(약 3 h)의 시각이 다르고, 정착은 둘 다 약 2일입니다.</li>
+<li><strong>축 부호 혼동</strong>: 농도나 "제논 반응도 손실(양수)"로 그려야 정점이 위로 갑니다. 반응도 자체(음수)로 그리면 모양이 뒤집힙니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 7.5절(핵분열생성물 독, 제논-135).</li>
+<li>U.S. DOE, DOE Fundamentals Handbook: Nuclear Physics and Reactor Theory, DOE-HDBK-1019/2-93, Vol. 2, Module 3 "Reactor Theory (Reactor Operations)" — Xenon(출력 변화·제논 진동).</li>
+</ol>

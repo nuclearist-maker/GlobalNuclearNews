@@ -1,0 +1,117 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2021년 원자력발전기술사 필기 3교시 4번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>WH형, OPR형, APR형 원전의 운영기술지침서에 대해 다음을 기술하시오.
+가. 운전제한조건 선정기준 4가지
+나. 각 선정기준별 운전제한조건 예</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>선정기준 4가지를 고시 문언대로 쓰는 것은 기본입니다. 이 문항은 여기에 <strong>"WH형, OPR형, APR형"</strong>이라는 조건을 붙였습니다. 출제자는 선정기준이 노형마다 다르다는 답을 기대하지 않습니다. 기준은 하나의 고시가 모든 노형에 똑같이 적용하고, 그 기준에 걸리는 <strong>설비와 감시 변수의 이름이 노형마다 다르다</strong>는 점을 예로 보여 달라는 문제입니다. 따라서 기준별 예를 세 노형으로 나눠 쓰고, 차이가 나는 지점(DNB 온도 변수, 출력분포 감시 변수, 안전주입 수원)을 짚으면 변별력이 생깁니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: LCO 정의(고시 제5조①), 근거 체계, 노형별 표준기술지침서 계보</li>
+<li>본론 가: 선정기준 4가지 — 문언 핵심어와 취지</li>
+<li>본론 나: 기준별 LCO 예 — WH·OPR·APR 3열 비교표, 노형별 차이의 요점</li>
+<li>결론: 판정 방법(하나 이상, 이관), 선정기준과 안전등급의 구분</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li><strong>운전제한조건(LCO)</strong>: 원자로시설이 안전한 상태를 유지하기 위한 <strong>최소한의 기능 또는 성능 수준</strong>임. 충족하지 못하면 원자로를 정지하거나, 조건이 만족될 때까지 요구되는 조치를 수행함(고시 제5조①)[2]</li>
+<li><strong>근거</strong>: 원자력안전법 제20조 → 같은 법 시행규칙 제16조②[1] → 원안위고시 「운영기술지침서의 작성에 관한 기준」 제5조②(현행 제2024-13호, 출제 당시 제2017-5호, 선정기준 문언 동일)[2]</li>
+<li><strong>노형별 계보</strong>: WH형은 W형 표준기술지침서(NUREG-1431)[4], OPR형과 APR형은 CE형 표준기술지침서(NUREG-1432)[5] 구조가 바탕임. 미국 원형은 10 CFR 50.36(c)(2)(ii) Criterion 1~4임[3]</li>
+<li><strong>요점</strong>: 선정기준은 노형과 무관하게 같음. 노형별 차이는 그 기준에 해당하는 설비·변수의 명칭과 고유 설비에서 나타남</li>
+</ul>
+<p><strong>2. 선정기준 4가지(고시 제5조②)</strong></p>
+<ul>
+<li><strong>기준 1</strong>: 주제어실에서 <strong>원자로냉각재압력경계(RCPB)의 현저한 성능저하</strong>를 감시·지시하기 위해 설치된 <strong>계기</strong> → 사고로 커지기 전 열화를 조기 탐지</li>
+<li><strong>기준 2</strong>: 핵분열생성물 방벽의 결함이나 건전성 위협을 가정하는 설계기준사고·과도상태 해석의 <strong>초기조건</strong>에 해당하는 공정변수·설비·운전제한사항 → 해석의 출발점을 지킴</li>
+<li><strong>기준 3</strong>: 같은 사고·과도를 완화하기 위해 작동하는 <strong>주성공경로(primary success path)</strong>의 구조물·계통·기기 → 해석이 완화에 크레딧한 설비의 운전가능성 확보</li>
+<li><strong>기준 4</strong>: <strong>운전경험 또는 확률론적 안전성평가(PSA)</strong> 결과 공중의 건강과 안전에 중요한 구조물·계통·기기 → 결정론적 해석이 놓치는 위험 중요 설비 보완</li>
+</ul>
+<p><strong>3. 선정기준별 운전제한조건 예(노형별)</strong>[4][5][6]</p>
+<table>
+<thead>
+<tr>
+<th>기준</th>
+<th>WH형</th>
+<th>OPR형</th>
+<th>APR형</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>RCS 누설감지계측(STS 3.4.15): 격납건물 집수조·대기 방사능 감시 등</td>
+<td>RCS 누설감지계측: 집수조·대기 방사능 감시 등</td>
+<td>누설감지계측(미국 DC 3.4.14): 집수조 수위·대기 입자 방사능, 습도 감시(정성 보조)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>DNB 변수(가압기 압력·<strong>Tavg</strong>·RCS 유량), <strong>AFD·QPTR</strong>·FQ·FΔH, 정지여유도, RCS 운전누설</td>
+<td>DNB 변수(가압기 압력·<strong>Tc</strong>·RCS 유량), <strong>ASI·LHR·Tq</strong>, 정지여유도</td>
+<td>DNB 변수(Tc 기준), DNBR·LPD 운전한계(<strong>COLSS</strong> 감시), 정지여유도</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>축압기</strong>, ECCS(충전/고압 안전주입·RHR 펌프), <strong>RWST</strong>, 보조급수, 격납건물 살수, RTS·ESFAS 계측</td>
+<td><strong>SIT</strong>, HPSI·LPSI, <strong>RWT</strong>(사고 후 집수조로 흡입원 전환), 보조급수, 격납건물 살수</td>
+<td>SIT, 안전주입 4계열 <strong>직접용기주입(DVI)</strong>, <strong>IRWST</strong>(상시 흡입, 흡입원 전환 불필요), 보조급수, POSRV</td>
+</tr>
+<tr>
+<td>4</td>
+<td>RHR 루프(모드 4·5 붕괴열 제거), 원격정지계통(STS 3.3.4)</td>
+<td>정지냉각(SDC) 루프(모드 4·5), 원격정지반</td>
+<td>정지냉각계통(SCS) 루프, 원격정지실</td>
+</tr>
+</tbody>
+</table>
+<figure class="article-image"><img alt="선정기준 4행(선정 이유·대상) × WH·OPR·APR형 3열 대표 LCO 예, 노형별 차이 단어 강조" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/d2870807ee3b3f9f158c09a18b9858aad21405f2002048fdaf63679d57b6837e.webp"/><figcaption>선정기준 4행(선정 이유·대상) × WH·OPR·APR형 3열 대표 LCO 예, 노형별 차이 단어 강조</figcaption></figure>
+<p><strong>4. 노형별 차이의 요점</strong></p>
+<ul>
+<li><strong>DNB 온도 변수</strong>: DNB 변수 LCO에서 WH형은 RCS 평균온도(Tavg), OPR·APR형은 저온관 온도(Tc)를 제한 변수로 씀</li>
+<li><strong>출력분포 감시</strong>: WH형은 축방향 중성자속차(AFD)·사분면 출력경사비(QPTR), OPR·APR형은 축방향 출력편차(ASI)·방위각 출력경사(Tq)·선출력(LHR). OPR·APR형은 노심운전제한감시계통(COLSS)으로 DNBR·LPD 여유를 감시하고 노심보호연산기(CPC)가 트립을 맡음</li>
+<li><strong>안전주입 수원</strong>: WH형 RWST, OPR형 RWT에서 사고 후 집수조로 흡입원을 바꿈(재순환작동신호 RAS). APR형은 격납건물 안 IRWST에서 처음부터 흡입하므로 흡입원 전환이 없음(RAS 없음)</li>
+<li><strong>기준이 갈리는 짝</strong>: 누설감지 <strong>계기</strong>는 기준 1이지만 RCS 운전누설 <strong>제한값</strong>은 기준 2임(W형 STS 기술배경서[4]). 축압기·SIT는 압력·수위·붕소농도를 지키지만 기술배경서상 분류는 기준 3임. 복수 기준의 실제 예는 일부 W형 호기의 붕소주입탱크(BIT, 기준 2·3)임</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 고시 제5조② 공통 기준에서 세 노형 가지로, DNB 온도 변수·출력분포 지표·안전주입 수원 비교" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/5186e68657a3518f4f4b46563f37c6fd04d86fb96960b33dfc825cde0bc72f7d.webp"/><figcaption>답안용 도식: 고시 제5조② 공통 기준에서 세 노형 가지로, DNB 온도 변수·출력분포 지표·안전주입 수원 비교</figcaption></figure>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>선정기준 4가지 중 <strong>하나 이상</strong> 해당하면 LCO로 두고, 비해당 항목은 FSAR·절차서로 <strong>이관</strong>함</li>
+<li>LCO 조항은 LCO 문장, 적용 모드, 조치(불만족상태·조치·제한시간), 점검요구사항으로 구성하고, 기술배경서에 해당 기준을 적음</li>
+<li>선정기준은 안전등급(설계·품질 분류)과 다름. 원격정지계통처럼 기준 4로 들어오는 설비가 있음</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 표의 조항 번호는 "예"입니다</h3>
+<p>표의 3.4.15·3.3.4는 W형 표준기술지침서(NUREG-1431), 3.4.14는 미국 설계인증(DC) APR1400 기술지침서의 번호입니다. W형 기술배경서에는 조항마다 "Criterion 1을 만족한다"처럼 해당 기준이 적혀 있어, 표의 WH형 분류는 그 문언을 따랐습니다. 국내 호기별 운영기술지침서는 개정 이력에 따라 번호가 다를 수 있습니다. 답안에는 조항 번호보다 설비 이름과 감시 변수를 쓰는 편이 안전합니다. </p>
+<p>APR형 미국 DC 기술지침서는 집수조 수위와 대기 입자 방사능을 정량 탐지 수단으로, 습도 감시를 정성 보조 수단으로 둡니다. 미확인 누설 제한이 파단전누설(LBB) 근거의 0.5 gpm이어서, 설계 문서도 이 누설을 1시간 안에 탐지할 수 있다고 기술합니다[6].</p>
+<h3>해설: 기준 4는 "해석 밖"에서 들어옵니다</h3>
+<p>정지냉각·원격정지는 설계기준사고 해석의 주성공경로가 아닙니다. W형 기술배경서도 원격정지계통과 모드 4·5의 RCS 루프(RHR 루프) 요건을 기준 4로 분류합니다. 그런데도 LCO에 남은 것은 운전경험과 PSA가 정지 중 붕괴열 제거 상실과 주제어실 이탈 상황을 중요한 위험으로 보여 줬기 때문입니다. 미국 1993년 최종 정책성명은 기준 4의 예로 PWR 잔열제거(RHR)를 직접 들었습니다[7]. 2020년에는 미국 업계가 최신 PSA로 기준 4 해당 여부를 재평가하자고 제안했지만 아직 결론은 나지 않았습니다[8].</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>핵심어 누락</strong>: 기준 1 "주제어실·RCPB·계기", 기준 2 "초기조건", 기준 3 "주성공경로", 기준 4 "운전경험·PSA"</li>
+<li><strong>노형마다 기준이 다르다고 쓰기</strong>: 기준은 같고 예가 다릅니다.</li>
+<li><strong>APR형에 RWT·RAS 쓰기</strong>: APR1400은 IRWST가 수원입니다.</li>
+<li><strong>Tavg와 Tc 혼동</strong>: WH형 DNB 변수는 Tavg, CE 계열은 Tc입니다.</li>
+<li><strong>"4개 모두 만족"</strong>: 하나 이상이면 LCO입니다.</li>
+</ul>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li><strong>고시 번호</strong>: 출제 당시 제2017-5호 → 제2023-9호(2023.12.27) → 현행 제2024-13호(2024.12.31, 17개 행정규칙 용어 정비 일괄개정). 제5조②의 선정기준 4가지 문언은 바뀌지 않았습니다(국가법령정보센터 현행 본문 대조).</li>
+<li><strong>APR형 운전 호기</strong>: 출제 당시 상업운전 중인 국내 APR1400은 신고리 3·4호기뿐이었습니다. 신한울 1호기(2022.12)와 2호기(2024.4)가 상업운전에 들어갔고, 신고리 3~6호기는 2022.11.1 새울 1~4호기로 이름이 바뀌었습니다.</li>
+<li><strong>미국 원형</strong>: 10 CFR 50.36(c)(2)(ii)의 기준 문언은 1995년 이후 그대로입니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>「원자력안전법」 제20조; 「원자력안전법 시행규칙」 제16조. 국가법령정보센터.</li>
+<li>원자력안전위원회, 「운영기술지침서의 작성에 관한 기준」, 원안위고시 제2024-13호(2024.12.31), 제5조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR 50.36(c)(2)(ii) "Technical specifications — Limiting conditions for operation", Criteria 1~4.</li>
+<li>U.S. NRC, NUREG-1431 "Standard Technical Specifications — Westinghouse Plants", Vol. 1·2(Bases 3.3.4·3.4.15 등).</li>
+<li>U.S. NRC, NUREG-1432 "Standard Technical Specifications — Combustion Engineering Plants".</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Chapter 16 Technical Specifications(LCO 3.4.14); KHNP RAI 응답(Question 05.02.05-1), NRC ADAMS ML15243A076·ML16197A430.</li>
+<li>U.S. NRC, "Final Policy Statement on Technical Specifications Improvements for Nuclear Power Reactors", 58 FR 39132 (1993.7.22).</li>
+<li>U.S. NRC, TSTF(Technical Specifications Task Force)와의 공개회의(2020.12.21) — 기준 4 재평가 제안. 회의 자료 서지 미대조.</li>
+</ol>

@@ -1,0 +1,134 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2021년 원자력발전기술사 필기 4교시 3번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>가압경수로의 반응도계수 정보가 아래와 같다.</p>
+<ul>
+<li>연료온도계수: α_F = −2.0 pcm/°C</li>
+<li>감속재온도계수: α_M = −5.0 pcm/°C</li>
+<li>제어봉 (삽입/인출)미분제어능: α_CR = (−/+)10 pcm/step</li>
+<li>붕소 미분제어능: α_B = −10 pcm/ppm</li>
+</ul>
+<p>출력을 0%에서 100%로 증가시키는 동안 평균 연료온도는 300°C에서 800°C로, 평균 감속재온도는 300°C에서 320°C로 증가할 때 다음을 구하시오.
+가. 출력 변화 시 온도에 의한 총 반응도 변화량
+나. 출력계수
+다. 출력 변화 시 감속재 내 붕소농도를 고정시킬 경우 인출 제어봉 step수
+라. 출력 변화 시 제어봉의 위치를 고정시킬 경우 붕소 희석 농도(ppm)</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>출력을 올리면 온도 궤환으로 음의 반응도가 들어오고(출력결손), 운전원은 이를 제어봉이나 붕소로 갚아야 임계를 유지하며 출력을 올릴 수 있습니다. 이 "반응도 수지"를 숫자로 따라가는지 보는 문제입니다. 계산은 곱셈과 나눗셈뿐이므로 변별은 세 군데서 납니다. 연료와 감속재의 온도 변화폭이 크게 다르다는 점(500 °C 대 20 °C)을 반영하는지, 보상 방향(제어봉 인출, 붕소 희석)과 부호를 정확히 쓰는지, 그리고 계수가 일정하다는 가정의 한계를 실제 노심과 연결해 설명하는지입니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 주어진 값, 가정(계수 일정, 제논 무시 등), 반응도 수지 원칙</li>
+<li>본론 가: 연료·감속재 몫 → 출력결손</li>
+<li>본론 나: 출력계수(평균)와 구성</li>
+<li>본론 다·라: 제어봉 인출 step, 붕소 희석 ppm</li>
+<li>결론: 검산, 실제 노심과의 차이, 규제 근거</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 문제 해석</strong></p>
+<ul>
+<li>주어진 값: α_F = −2.0 pcm/°C, α_M = −5.0 pcm/°C, α_CR = −10(삽입)/+10(인출) pcm/step, α_B = −10 pcm/ppm, 1 pcm = 10⁻⁵ Δk/k</li>
+<li>온도 변화: ΔT_F = 800 − 300 = <strong>500 °C</strong>, ΔT_M = 320 − 300 = <strong>20 °C</strong></li>
+<li>가정: 각 계수는 온도·제어봉 위치·붕소 농도와 무관하게 <strong>일정</strong>, 기포·압력 계수 무시, 출력 상승 중 <strong>제논·사마륨 변화 무시</strong>(단시간 출력 변화), 출력분포 재분배 효과 무시</li>
+<li>0 %는 연료·감속재가 모두 300 °C인 <strong>고온 영출력</strong> 임계 상태로 봄</li>
+<li>원칙: 출력 상승 전후 모두 임계 → <strong>온도 궤환 반응도 + 보상 반응도 = 0</strong>(다·라는 각각 한 수단으로 전량 보상하는 경우)</li>
+</ul>
+<p><strong>2. 가. 온도에 의한 총 반응도 변화량(출력결손)</strong></p>
+<ul>
+<li>연료(도플러) 몫: Δρ_F = α_F·ΔT_F = (−2.0)(500) = <strong>−1,000 pcm</strong></li>
+<li>감속재 몫: Δρ_M = α_M·ΔT_M = (−5.0)(20) = <strong>−100 pcm</strong></li>
+<li><strong>Δρ_T = −1,000 + (−100) = −1,100 pcm</strong>[6](= −1.1 %Δk/k = −0.011 Δk/k)</li>
+<li>이 값이 <strong>출력결손(power defect)</strong>이며, 도플러 몫이 약 91 %를 차지함 → 연료온도 상승폭이 감속재보다 25배 크기 때문임</li>
+</ul>
+<p><strong>3. 나. 출력계수</strong></p>
+<ul>
+<li>정의: α_P = dρ/dP = α_M·(dT_M/dP) + α_F·(dT_F/dP)</li>
+<li>출력당 온도 상승: 연료 500/100 = 5 °C/%, 감속재 20/100 = 0.2 °C/%</li>
+<li>α_P = (−5.0)(0.2) + (−2.0)(5) = −1 + (−10) = <strong>−11 pcm/%power</strong></li>
+<li>같은 값: Δρ_T/ΔP = −1,100/100 = −11 pcm/%power(0~100 % 구간 평균)</li>
+<li><strong>α_P &lt; 0</strong> → 출력이 오르면 반응도가 줄어 스스로 억제하는 음의 궤환(자기제어)</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 출력(0~100 %)과 온도 궤환 반응도 직선, 기울기 −11 pcm/%, 100 %에서 −1,100 pcm, 보상 화살표 +1,100 pcm(제어봉 110 step 인출 또는 붕소 110 ppm 희석)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/a80c3597f4f842d349b8576cc6dcf4aabeadc39b38c6ff28eae464466a503238.webp"/><figcaption>답안용 도식: 출력(0~100 %)과 온도 궤환 반응도 직선, 기울기 −11 pcm/%, 100 %에서 −1,100 pcm, 보상 화살표 +1,100 pcm(제어봉 110 step 인출 또는 붕소 110 ppm 희석)</figcaption></figure>
+<p><strong>4. 다. 붕소 고정 시 제어봉 인출 step 수</strong></p>
+<ul>
+<li>필요한 보상 반응도: <strong>+1,100 pcm</strong>(출력결손 상쇄)</li>
+<li>인출 미분제어능 +10 pcm/step → N = 1,100/10 = <strong>110 step 인출</strong></li>
+<li>부호 확인: 삽입은 −10 pcm/step이므로 삽입하면 오히려 출력이 떨어짐 → 반드시 <strong>인출</strong></li>
+</ul>
+<p><strong>5. 라. 제어봉 고정 시 붕소 희석 농도</strong></p>
+<ul>
+<li>필요한 보상 반응도: +1,100 pcm, α_B = −10 pcm/ppm</li>
+<li>ΔC_B = Δρ/α_B = (+1,100)/(−10) = <strong>−110 ppm</strong> → <strong>110 ppm 희석</strong></li>
+<li>붕산 기준으로는 110 × 5.72 ≈ 629 ppm H₃BO₃에 해당함(ppm B, 용액 질량 기준)</li>
+</ul>
+<figure class="article-image"><img alt="출력 0→100 % 반응도 수지 폭포 차트: 도플러 −1,000 pcm, 감속재 −100 pcm(누적 출력결손 −1,100 pcm), 보상 +1,100 pcm → 제어봉 110 step 인출 또는 붕소 110 ppm 희석 중 하나로 전량 보상, 출력계수 −11 pcm/%power" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/da0cfbe0dc737e9e6c18cb59260eb76be4d70211d28e7b1c6ec0635f0fb68954.webp"/><figcaption>출력 0→100 % 반응도 수지 폭포 차트: 도플러 −1,000 pcm, 감속재 −100 pcm(누적 출력결손 −1,100 pcm), 보상 +1,100 pcm → 제어봉 110 step 인출 또는 붕소 110 ppm 희석 중 하나로 전량 보상, 출력계수 −11 pcm/%power</figcaption></figure>
+<p><strong>6. 검산과 결론</strong></p>
+<ul>
+<li>단위: (pcm/°C)(°C) = pcm, pcm ÷ (pcm/step) = step, pcm ÷ (pcm/ppm) = ppm ✓</li>
+<li>수지: −1,100(온도) + 110 × 10(제어봉) = 0 ✓, −1,100 + (−110)(−10)(붕소) = 0 ✓</li>
+<li>결과 요약: <strong>가 −1,100 pcm, 나 −11 pcm/%power, 다 110 step 인출, 라 110 ppm 희석</strong></li>
+<li>음의 출력계수는 원자로 고유보호 요건(10 CFR 50 부록 A <strong>GDC 11</strong>[2], 기술기준규칙 <strong>제18조</strong>[1])의 운전 지표이며, 운영기술지침서는 출력계수 대신 <strong>MTC 제한(LCO 3.1.3, 한계값은 COLR)</strong>[4]과 제어군 삽입한계로 간접 관리함</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 계수가 일정하다는 가정이 깨지는 곳</h3>
+<p>문제는 모든 계수를 상수로 주었지만 실제 노심에서는 셋 다 변합니다.</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>문제 가정</th>
+<th>실제 노심</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>연료온도계수</td>
+<td>−2.0 pcm/°C 일정</td>
+<td>온도가 오를수록 절댓값 감소(도플러 넓어짐이 둔화)</td>
+</tr>
+<tr>
+<td>제어봉 미분제어능</td>
+<td>10 pcm/step 일정</td>
+<td>노심 중앙부에서 최대, 끝에서 작음(적분제어능 S자 곡선)</td>
+</tr>
+<tr>
+<td>붕소 미분제어능</td>
+<td>−10 pcm/ppm 일정</td>
+<td>연소·온도·붕소 농도에 따라 달라짐(노심·주기별 설계값)</td>
+</tr>
+<tr>
+<td>시간 효과</td>
+<td>무시</td>
+<td>출력 상승 후 수 시간에 걸쳐 제논이 쌓여 추가 희석 필요</td>
+</tr>
+</tbody>
+</table>
+<p>그래서 실제 step 수는 적분제어능 곡선에서 +1,100 pcm에 해당하는 구간을 읽어 구합니다. W형 제어봉의 전 행정이 약 228 step(1 step = 5/8 in, 예시)[3]이라는 점을 떠올리면, 110 step은 제어군 하나를 절반 가까이 움직이는 양입니다. 실제 운전에서는 제어군 삽입한계를 지키며 제어봉 인출과 붕소 희석을 함께 씁니다.</p>
+<h3>해설: 문제 수치는 실제와 얼마나 맞나</h3>
+<p>NRC가 공개한 Westinghouse 기술 훈련 매뉴얼의 대형 PWR 예시값은 주기초 출력계수 약 −12 pcm/%, 출력결손 약 −1,200 pcm, 주기말 약 −21 pcm/%, 약 −2,100 pcm입니다[3]. 이 문제의 −11 pcm/%, −1,100 pcm는 주기초 수준입니다. 도플러 몫이 91 %로 지배적인 것도 MTC가 작은 주기초 노심의 특징과 맞습니다. 주기말에는 붕소가 희석되어 MTC가 크게 음이 되므로 감속재 몫이 늘어나고 출력결손도 커집니다.</p>
+<h3>해설: 자주 하는 실수</h3>
+<ul>
+<li>ΔT_F에 800 °C를 그대로 넣음 → −1,600 pcm</li>
+<li>출력계수를 계수의 합 −7로 씀 → 단위가 pcm/°C라 출력계수가 아님</li>
+<li>출력결손을 100으로 나누지 않고 −1,100 pcm/%로 씀</li>
+<li>제어봉 "삽입", 붕소 "주입"으로 답함 → 보상 방향이 반대</li>
+</ul>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li><strong>계산 자체</strong>: 출제 이후 달라진 것이 없습니다.</li>
+<li><strong>고유보호 근거</strong>: 현행 「원자로시설 등의 기술기준에 관한 규칙」(원안위규칙 제37호, 2026.3.30) 제18조와 10 CFR 50 부록 A GDC 11로 유지됩니다.</li>
+<li><strong>MTC 관리 체계</strong>: 표준기술지침서(STS)는 NUREG-1431 Rev.5(2021)가 현행이며 LCO 3.1.3·COLR 체계는 같습니다.</li>
+<li><strong>국내 운영기술지침서 기준</strong>: 출제 당시 원안위고시 제2017-5호에서 현행 제2024-13호(2024.12.31 시행)[5]로 바뀌었습니다. 다만 용어 정비 일괄개정이라 LCO 선정기준의 문언은 같습니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제18조(원자로의 고유보호). 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, "General Design Criteria for Nuclear Power Plants", Criterion 11 "Reactor inherent protection".</li>
+<li>U.S. NRC Human Resources Training &amp; Development(HRTD), Westinghouse Technology Systems Manual, 2.1절(출력계수·출력결손 예시), 8.1절(제어봉 제어계통 — step 행정). NRC 공개 훈련 매뉴얼.</li>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications — Westinghouse Plants, Rev.5 (2021), LCO 3.1.3 "Moderator Temperature Coefficient (MTC)".</li>
+<li>원자력안전위원회, 「운영기술지침서의 작성에 관한 기준」, 원안위고시 제2024-13호(2024.12.31). 국가법령정보센터.</li>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 7장(반응도 궤환·온도계수).</li>
+</ol>

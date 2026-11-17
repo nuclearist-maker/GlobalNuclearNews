@@ -1,0 +1,57 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2026년 원자력발전기술사 필기 1교시 8번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>가압경수로 임계 전 원자로냉각재 저온관온도를 운영기술지침서(Technical Specification)의 최소 요구온도 이상으로 제한하는 이유</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>최소임계온도(LCO 3.4.2)</strong>: 임계 상태에서 지켜야 할 냉각재 온도 하한입니다. CE형·APR1400은 저온관온도 Tcold, Westinghouse형은 평균온도 Tavg 기준입니다.</li>
+<li><strong>감속재온도계수(MTC)</strong>: 저온일수록 덜 음이 되고, 주기 초 고붕소 노심에서는 양이 될 수도 있습니다.</li>
+<li><strong>사고해석 초기조건</strong>: 기동·저출력 사건 해석은 고온영출력 정상 온도대를 출발점으로 둡니다.</li>
+<li><strong>가압기 증기 거품</strong>: 압력 제어와 과도 흡수가 가능한 운전 가능(OPERABLE) 상태를 뜻합니다.</li>
+<li><strong>RTNDT·P-T 한계</strong>: 10 CFR 50 부록 G는 노심 임계 시 가열 P-T 한계보다 40 °F 이상 높은 온도를 요구합니다[4].</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>운영기술지침서 LCO 3.4.2 <strong>최소임계온도</strong>: 임계(MODE 1, MODE 2 keff ≥ 1) 중 각 루프 <strong>Tcold ≥ 하한</strong> 유지</li>
+<li>예(APR1400 표준 기술지침서): <strong>Tcold ≥ 286.7 °C(548 °F)</strong>, 미충족 시 <strong>30분 내 MODE 3</strong>[1]</li>
+<li>감시: <strong>임계 도달 15분 전 확인</strong>, 임계 중 Tcold &lt; 289.4 °C(553 °F)이면 30분마다 확인</li>
+</ul>
+<p><strong>2. 제한 이유</strong></p>
+<ul>
+<li>① <strong>MTC 해석 범위 유지</strong>: 저온에서는 물의 열팽창이 작아 MTC가 덜 음(주기 초 양 가능) → 안전해석·COLR이 가정한 MTC 범위 안에서 임계 유지, 고유 궤환 확보(GDC 11)[5]</li>
+<li>② <strong>사고해석 초기조건 만족</strong>: 제어봉 인출·붕소 희석 등 기동·저출력 사건 해석의 초기 온도 범위 안에서 운전</li>
+<li>③ <strong>계측·보호 설정치 유효</strong>: 협역 온도계·노외 중성자 계측·온도 입력 보호 계산(W형 OTΔT, CE형 CPC)의 범위·정확도 안에서 운전(W형은 P-12 연동 위)</li>
+<li>④ <strong>가압기 운전 가능</strong>: 증기 거품을 가진 정상 압력 제어 상태 유지</li>
+<li>⑤ <strong>원자로용기 파괴인성 여유</strong>: 임계 중 용기 온도를 RTNDT 기반 P-T 한계 + 40 °F 이상으로 유지(10 CFR 50 부록 G)[4]</li>
+</ul>
+<p><strong>3. 운전상 의미</strong></p>
+<ul>
+<li>정격 Tcold 290.6 °C(555 °F)[3]와 하한 차이 약 7 °F → 기동 시 1차측 가열 완료 후에만 임계 접근</li>
+<li>하한 이탈은 해석 전제 상실 → 반응도 조정이 아닌 <strong>정지(MODE 3)</strong> 로 대응</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: Tcold 사다리(555 정격·553 감시·548 LCO 하한)와 임계 금지 영역, 이유 5개" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/1f1c8985fa0582759c788654b4d7e80909f9fa0cc52478b336ee75c7376464d6.webp"/><figcaption>답안용 도식: Tcold 사다리(555 정격·553 감시·548 LCO 하한)와 임계 금지 영역, 이유 5개</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="저온관온도 축 위의 MTC 개념 곡선과 LCO 548 °F·SR 553 °F·정격 555 °F, APR1400 LCO 3.4.2 요약과 이유 5개" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/0e1eac9b469ddc25f2e2483f80a9af644f27a03083e11e6162d826701699c2be.webp"/><figcaption>저온관온도 축 위의 MTC 개념 곡선과 LCO 548 °F·SR 553 °F·정격 555 °F, APR1400 LCO 3.4.2 요약과 이유 5개</figcaption></figure>
+<p>이 문항의 첫 이유는 MTC이지만, 하한값은 MTC 하나로 정해지지 않습니다. 계측 범위, 해석 초기조건, 가압기, 원자로용기 파괴인성을 함께 따져 가장 높은 요구를 하한으로 둡니다. 그래서 STS 근거서(Bases)도 이유를 여러 개로 나열합니다[2]. 그림의 MTC 곡선과 COLR 상한의 교차 위치는 개념적 표현입니다. 실제 값은 노심과 주기마다 다릅니다.</p>
+<p>548 °F와 553 °F를 같은 한계로 쓰는 실수도 잦습니다. 548 °F는 LCO 한계이고, 553 °F는 감시 주기를 30분으로 좁히는 감시요건(SR) 기준입니다. 하한값은 노형·호기마다 다르므로 답안에는 "예(APR1400)"를 붙여 쓰는 편이 안전합니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>이유를 MTC 하나로 끝내기</strong>: 10점 답안에서는 MTC·해석 초기조건·계측·가압기·RTNDT의 5개를 모두 나열해야 배점을 다 받습니다.</li>
+<li><strong>RTNDT를 PTS와 혼동</strong>: 여기서 말하는 것은 임계 운전 중의 파괴인성 여유(부록 G P-T 한계)입니다. 사고 시 급랭인 가압열충격(PTS)과 구분하십시오.</li>
+<li><strong>값의 위치 착각</strong>: 최소임계온도는 기술지침서 LCO 본문 값이고, MTC 한계는 노심운영제한보고서(COLR)에 있습니다.</li>
+<li><strong>조치 누락</strong>: "미충족 시 30분 내 MODE 3"과 "임계 15분 전 확인"까지 쓰면 운영기술지침서 구조를 안다는 인상을 줍니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>KHNP, APR1400 설계인증 RAI 481-8546 Question 16-145 응답(기술지침서 3.4.2 마크업), NRC ADAMS ML16190A316.</li>
+<li>U.S. NRC, NUREG-1431 "Standard Technical Specifications — Westinghouse Plants" 및 NUREG-1432 "Standard Technical Specifications — Combustion Engineering Plants", LCO 3.4.2 "RCS Minimum Temperature for Criticality" 및 Bases.</li>
+<li>IAEA, Advanced Reactors Information System(ARIS), "APR1400" 상태 보고서 (2020).</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix G "Fracture Toughness Requirements", Table 1.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criterion 11 "Reactor inherent protection"; 원안위규칙 「원자로시설 등의 기술기준에 관한 규칙」 제18조. 국가법령정보센터.</li>
+</ol>

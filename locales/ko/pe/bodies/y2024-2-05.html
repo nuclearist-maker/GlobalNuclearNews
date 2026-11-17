@@ -1,0 +1,135 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2024년 원자력발전기술사 필기 2교시 5번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>원자력발전소에서 내부 방사선 방호에 대한 다음 사항을 기술하시오.
+가. 방사성 핵종의 내부 섭취 경로
+나. 방사선 내부 피폭평가 시 고려되어야 할 주요 인자
+다. 방사선 내부 피폭의 방호원칙</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>외부피폭은 시간·거리·차폐로 다루지만, 핵종이 몸 안에 들어오면 이 수단이 듣지 않습니다. 이 문제는 그 차이를 아는지 확인합니다. 핵종이 어디로 들어오는지(경로), 들어온 뒤 선량이 무엇으로 정해지는지(인자), 그래서 무엇을 막아야 하는지(원칙)를 한 줄기로 연결해 쓰는 것이 핵심입니다. 국내 고시의 ALI·DAC 유도 조건과 예탁선량 정의를 정확히 쓰면 변별력이 생깁니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 내부피폭 정의(고시 제2조 2호), 외부피폭과의 차이, 원전 주요 핵종</li>
+<li>본론 가: 흡입·경구섭취·피부 흡수·상처 4경로와 원전 사례</li>
+<li>본론 나: 예탁유효선량 식 → 핵종·섭취·물리화학 형태·체내 거동·선량환산·측정 인자, 유효반감기, ALI·DAC</li>
+<li>본론 다: 섭취 차단 원칙(격리·희석·제거·차단) → 감시·평가 → 섭취 후 조치</li>
+<li>결론: 외부+내부 합산 최적화</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li><strong>내부피폭</strong>: 신체 내부에 유입되어 체내에 존재하는 방사성핵종이 내는 방사선에 의한 피폭임(「방사선방호 등에 관한 기준」 고시 제2026-12호 제2조 2호)[1]</li>
+<li>외부피폭과 달리 <strong>선원을 떼어 낼 수 없어</strong> 시간·거리·차폐가 무력함. 배출은 생물학적 반감기에 맡겨짐</li>
+<li>선량한도는 <strong>외부 + 내부</strong> 피폭방사선량의 합으로 적용함(원자력안전법 시행령 제2조 4호)[2]</li>
+<li>원전 주요 핵종: <strong>I-131</strong>(계통 개방), <strong>Co-58·Co-60</strong>(부식생성물 입자), <strong>Cs-134·137</strong>(연료 결함), <strong>H-3</strong>(HTO, 중수로에서 특히 중요)</li>
+</ul>
+<p><strong>2. 가. 방사성 핵종의 내부 섭취 경로</strong></p>
+<table>
+<thead>
+<tr>
+<th>경로</th>
+<th>경로와 체내 이동</th>
+<th>원전 예</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>흡입</strong></td>
+<td>에어로졸·기체·증기 → 호흡기 침착 → 혈액 흡수 또는 섬모 청소 후 위장관</td>
+<td>정비 중 I-131, Co-60 입자. <strong>작업자 주 경로</strong></td>
+</tr>
+<tr>
+<td><strong>경구섭취</strong></td>
+<td>오염된 손·음식 → 위장관 → 장 흡수(f1)</td>
+<td>오염구역 내 음식·흡연, 일반인은 음식물</td>
+</tr>
+<tr>
+<td><strong>피부 흡수</strong></td>
+<td>손상 없는 피부 통과</td>
+<td><strong>HTO</strong>: 흡입 흡수의 1/2로 보고 DAC를 1.5로 나눔(고시 별표 3 주석 7마)[1]</td>
+</tr>
+<tr>
+<td><strong>상처</strong></td>
+<td>절창·찰과상 → 혈액·조직 직접 유입</td>
+<td>오염 기기 정비 중 상처</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>국내 ALI는 <strong>흡입·경구섭취</strong> 두 경로로 구분해 정함(고시 제7조, 별표 3)[1]. ICRP는 흡입·경구·상처·피부를 섭취 경로로 다룸[3]</li>
+</ul>
+<figure class="article-image"><img alt="4개 섭취 경로(흡입·경구·피부·상처) → 혈액 → 표적 장기(갑상샘·전신·뼈·폐) → 배설(소변·대변·호기), 경로별 측정 지점(공기 시료·WBC·갑상샘 계측·바이오어세이)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/3c37a8ed210b87170e774beced0e6995f10a249d13aa115d19e29373e1f90254.webp"/><figcaption>4개 섭취 경로(흡입·경구·피부·상처) → 혈액 → 표적 장기(갑상샘·전신·뼈·폐) → 배설(소변·대변·호기), 경로별 측정 지점(공기 시료·WBC·갑상샘 계측·바이오어세이)</figcaption></figure>
+<p><strong>3. 나. 내부 피폭평가 시 고려할 주요 인자</strong></p>
+<ul>
+<li>기본 식: <strong>E(50) = Σ I × e(50)</strong>, 측정값에서 <strong>I = M(t)/m(t)</strong>
+<ul>
+<li>I 섭취량(Bq), e(50) 선량계수(Sv/Bq), M 측정 체내량·배설량, m(t) 섭취 후 t일 잔류·배설 분율</li>
+</ul>
+</li>
+<li><strong>① 핵종 특성</strong>: 방사선 종류·에너지(α는 wR 20), 물리적 반감기 Tp, 딸핵종</li>
+<li><strong>② 섭취 조건</strong>: 경로, 섭취량, 섭취 시점·양상(급성·만성)</li>
+<li><strong>③ 물리·화학 형태</strong>: 입자 크기(작업자 <strong>5 µm AMAD</strong>), 폐 흡수형 <strong>F·M·S</strong>(G = 기체)[4], 위장관 흡수분율 f1</li>
+<li><strong>④ 체내 거동</strong>: 표적 장기(I → 갑상샘, Cs·H-3 → 전신, Sr·Pu → 뼈, 불용성 Co → 폐), 생물학적 반감기 Tb
+<ul>
+<li><strong>유효반감기 T_eff = Tp·Tb/(Tp + Tb)</strong> → I-131 약 7.3일, Cs-137 약 109일, HTO 약 10일[5]</li>
+</ul>
+</li>
+<li><strong>⑤ 선량 환산</strong>: 예탁기간 <strong>성인 50년·아동 70년</strong>(고시 제2조 8호)[1], 조직가중치, 연령
+<ul>
+<li>예탁선량은 <strong>섭취한 연도에 전량 계상</strong>함</li>
+</ul>
+</li>
+<li><strong>⑥ 측정 인자</strong>: 직접법(전신계수기 WBC·갑상샘 계측), 간접법(소변·대변 바이오어세이), 공기 시료, 측정 시각·최소검출방사능
+<ul>
+<li>측정법은 핵종에 맞춰 고름: γ선을 내는 Co·Cs는 WBC, I-131은 갑상샘 계측, γ선이 없는 H-3는 소변 시료로 평가함. 섭취 시점을 모르면 감시 주기의 중간 시점에 섭취했다고 가정함[3]</li>
+</ul>
+</li>
+<li><strong>ALI·DAC</strong>(고시 제7·8조, 별표 3): 20 mSv/년, 5 µm AMAD, 연 2,000 h, 1.2 m³/h로 유도함[1]
+<ul>
+<li>DAC = ALI/2,400 m³ → <strong>1 DAC-h ≈ 10 µSv</strong></li>
+<li>예: Cs-137(F) ALI 3×10⁶ Bq, DAC 1×10³ Bq/m³</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="체내 잔류 곡선(반대수, 0~200일)으로 본 HTO·I-131·Cs-137의 유효반감기, T_eff 식 카드와 Tp·Tb·T_eff·표적 장기·ALI·DAC 표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/f82fbca3b98746f131fe20b67b73c8d94c0bc83335cbdf2fe6d1ba6a370c00ca.webp"/><figcaption>체내 잔류 곡선(반대수, 0~200일)으로 본 HTO·I-131·Cs-137의 유효반감기, T_eff 식 카드와 Tp·Tb·T_eff·표적 장기·ALI·DAC 표</figcaption></figure>
+<figure class="article-image"><img alt="답안용 도식: 섭취 경로 → 측정(WBC·바이오어세이) → I = M/m(t) → E(50) = I·e(50) → 외부선량과 합산" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/daaf21398a8f5958144a187ef7aac3a9022c3097afa83fed24f0fd7d9175faff.webp"/><figcaption>답안용 도식: 섭취 경로 → 측정(WBC·바이오어세이) → I = M/m(t) → E(50) = I·e(50) → 외부선량과 합산</figcaption></figure>
+<p><strong>4. 다. 내부 피폭의 방호원칙</strong></p>
+<ul>
+<li>기본: 섭취 후에는 통제가 어려우므로 <strong>섭취 자체를 막는 것</strong>이 원칙임</li>
+<li><strong>① 격리(봉쇄)</strong>: 계통 밀봉, 오염구역 구획, 텐트·글러브박스, 부압 유지</li>
+<li><strong>② 희석·배기</strong>: 환기·국소배기로 공기 농도를 <strong>DAC 이하</strong>로 유지함. 기류는 저오염 → 고오염, HEPA·활성탄 여과 후 배기</li>
+<li><strong>③ 제거</strong>: 계통 화학제염·표면 제염, 정화계통 운전, 오염 물품 반출 통제</li>
+<li><strong>④ 차단</strong>: 방호복·장갑·덧신, <strong>호흡보호구</strong>, 구역 내 음식·흡연 금지, 상처 보호</li>
+<li><strong>⑤ 감시·평가</strong>: 공기 오염 감시, 표면오염 스미어(허용 α 0.4, 비α 4 Bq/cm², 고시 제5조)[1], 출구 오염감시, WBC·바이오어세이</li>
+<li><strong>⑥ 섭취 후 조치</strong>: 안정 요오드(I), 프러시안 블루(Cs), DTPA(Pu·Am), 수분 섭취(HTO)</li>
+<li>적용 순서: 공학적 관리(①~③) → 관리적 통제 → 개인보호구(④)</li>
+<li>예: 0.5 DAC에서 4 h → 2 DAC-h ≈ <strong>20 µSv</strong>, 보호계수 50 마스크[8] 착용 시 <strong>0.4 µSv</strong></li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 선원 → 격리 → 희석·배기 → 제거 → 차단(보호구) → 인체, 아래에 감시·평가와 섭취 후 조치" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/788dad975afd90fb4433c8408ca7d387bfe39b9e83be19df0501de9e2f8864b2.webp"/><figcaption>답안용 도식: 선원 → 격리 → 희석·배기 → 제거 → 차단(보호구) → 인체, 아래에 감시·평가와 섭취 후 조치</figcaption></figure>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>내부피폭 방호는 <strong>선원 쪽에서 섭취를 막고</strong>, 감시로 확인하고, 섭취가 생기면 측정으로 평가하는 체계임</li>
+<li>보호구는 작업시간을 늘려 외부피폭을 키울 수 있음 → <strong>외부 + 내부 총선량</strong>으로 최적화함(기술기준규칙 제46조)[7]</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 원칙 이름보다 "막는 위치"를 쓰세요</h3>
+<p>"격리·희석·제거(+차단)"는 답안에서 흔히 쓰는 묶음이며, ICRP나 고시가 정한 법정 명칭은 아닙니다. 그래서 이름만 나열하기보다 선원 → 공기 → 표면 → 인체 순서로 어디에서 무엇을 막는지 쓰는 편이 채점자에게 잘 읽힙니다. 산업보건의 관리 위계(공학적 → 관리적 → 보호구)와 같은 논리입니다.</p>
+<h3>해설: 유효반감기와 ALI는 함께 써야 의미가 있습니다</h3>
+<p>I-131은 물리적 반감기 8일이 생물학적 반감기 80일보다 훨씬 짧아 유효반감기가 약 7.3일입니다. Cs-137은 반대로 생물학적 반감기(약 110일)가 지배합니다. 같은 Bq를 섭취해도 선량이 다른 이유가 여기에 있고, 이를 숫자 하나로 담은 것이 선량계수와 ALI입니다. 국내 고시 별표 3의 ALI는 IAEA SS-115 선량계수와 20 mSv/년으로 유도한 값이라[1][6], 연 50 mSv 한도와 직접 비례하지 않는다는 점도 기억해 두시면 좋습니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 달라진 기준 없음(확인 근거: 국가법령정보센터 DRF에서 출제 당시 고시 제2019-10호, 제2025-3호, 현행 제2026-12호 본문을 비교함). 제2025-3호(2025.4.23)는 제15조 인용 조항 정비, '갑상선 → 갑상샘' 용어 변경, 별표 5 오기 수정이었고, 제2026-12호(2026.7.9)는 건강진단 서식 정리였습니다. 내부피폭 정의(제2조), 임신 종사자 ALI/20(제4조), 허용표면오염도(제5조), ALI·DAC(제7·8조, 별표 3)는 그대로입니다. 국내 ALI는 여전히 ICRP 60 계열 선량계수 기반이며, ICRP가 2015년 이후 내놓은 OIR 시리즈의 새 작업자 선량계수는 아직 반영되지 않았습니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「방사선방호 등에 관한 기준」, 원안위고시 제2026-12호(2026.7.9), 제2·4·5·7·8조, 별표 3. 국가법령정보센터.</li>
+<li>「원자력안전법 시행령」 제2조 제4호, 별표 1. 국가법령정보센터.</li>
+<li>ICRP, "Occupational Intakes of Radionuclides: Part 1", ICRP Publication 130, Ann. ICRP 44(2)(2015).</li>
+<li>ICRP, "Human Respiratory Tract Model for Radiological Protection", ICRP Publication 66, Ann. ICRP 24(1–3)(1994).</li>
+<li>ICRP, "Limits for Intakes of Radionuclides by Workers", ICRP Publication 30, Part 1(1979); ICRP Publication 67(1993).</li>
+<li>IAEA, "International Basic Safety Standards for Protection against Ionizing Radiation and for the Safety of Radiation Sources", Safety Series No. 115(1996).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제46조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 20, Appendix A "Assigned Protection Factors for Respirators".</li>
+</ol>

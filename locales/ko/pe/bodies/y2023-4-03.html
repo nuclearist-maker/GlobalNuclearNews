@@ -1,0 +1,154 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2023년 원자력발전기술사 필기 4교시 3번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>OPR1000 원전의 정지냉각계통에 대해 다음을 기술하시오.
+가. 기능
+나. 정지냉각펌프 흡입원
+다. 정지냉각펌프 출구유로
+라. 정지냉각계통의 저온과압 발생 원인 (가압기 만수위 상태)</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>정지냉각계통(SCS)을 "붕괴열 제거 계통"이라는 한 줄로 끝내지 않고, OPR1000 고유 구성(저압안전주입펌프 겸용, 고온관 흡입·저온관 회송, 흡입 배관 방출밸브의 LTOP 겸용)을 계통도 수준으로 설명할 수 있는지 봅니다. 라는 가압기 만수위(water-solid) 운전에서 압력이 왜 급격히 오르는지를 질량 유입·에너지 유입으로 나눠 설명하는지가 핵심입니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: SCS의 위치(정지 후 열제거 2단계 중 저온 단계)와 OPR1000 특징</li>
+<li>본론 가: 기능 6가지와 설계기준</li>
+<li>본론 나: 흡입원 — RCS 고온관(정지냉각 운전), RWT·CS 펌프 대체(다른 모드·대체)</li>
+<li>본론 다: 출구유로 — 열교환기·우회 → 유량제어밸브 → LPSI 주입 배관 → 저온관, 기타 유로</li>
+<li>본론 라: 만수위 저온과압 원인(질량·에너지 유입, 보호기능 상실 요인)과 방지</li>
+<li>결론: 정지 중 열제거와 압력경계 보호의 접점</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>원자로 정지 후 초기에는 증기발생기와 증기우회제어계통(SBCS)으로 냉각하고, RCS 온도·압력이 SCS 운전 허용 조건 이하가 되면 정지냉각계통으로 전환함. 진입 조건은 호기별 설계값임(예시 APR1400: 약 350 °F(176.7 °C)에서 정지냉각 개시, SCS 최대 운전압력 450 psia[3])</li>
+<li>OPR1000(CE 계열)은 <strong>저압안전주입펌프(LPSI)와 정지냉각펌프를 겸용</strong>하고[1][2], 정지냉각 열교환기는 기기냉각수(CCW)로 냉각함[1]</li>
+<li>근거: GDC 34(잔열제거)[4], SRP 5.4.7·BTP 5-4[5], 기술기준규칙 제29조(잔열제거설비)·제37조(과압방지)[6]</li>
+</ul>
+<p><strong>2. 가. 기능</strong></p>
+<ul>
+<li>① <strong>잔열 제거·저온정지</strong>: 붕괴열과 잔열을 CCW로 제거해 RCS를 재장전 온도까지 냉각하고, 정비·재장전 중 냉각재 온도를 유지함[1]</li>
+<li>② <strong>사고 후 장기 냉각</strong>: 주증기관 파단·LOCA 후 다른 열제거 수단과 연계해 상온(저온)정지 달성</li>
+<li>③ <strong>재장전수 충수·배수</strong>: 재장전 때 RWT의 물을 재장전수조로 보내고, 끝나면 RWT로 되돌림[1]</li>
+<li>④ <strong>저온과압보호(LTOP)</strong>: 흡입 배관 방출밸브가 저온 운전 중 RCS 과압을 방출함[1][3]</li>
+<li>⑤ <strong>정지 정화</strong>: 정지냉각 중 일부 유량을 CVCS로 보내 냉각재를 정화함[7]</li>
+<li>⑥ <strong>냉각률·가열률 제어</strong>: 열교환기 통과 유량과 우회 유량을 조절해 운영기술지침서의 냉각률 제한을 지킴[1]</li>
+<li>설계기준: 단일 능동고장(소외전원 상실 포함)에도 1계열로 잔열을 제거하고, 안전등급 기기만으로 저온정지에 도달해야 함(GDC 34, BTP 5-4)[4][5]. 냉각 목표 온도·시간과 설계압력은 호기별 설계값임(예시 APR1400 재장전 온도 120 °F[3])</li>
+</ul>
+<p><strong>3. 나. 정지냉각펌프 흡입원</strong></p>
+<ul>
+<li><strong>정지냉각 운전 시: RCS 고온관</strong>[1]
+<ul>
+<li>계열별로 고온관 1개에 연결된 흡입 배관 → <strong>직렬 전동 흡입격리밸브</strong> → LPSI 펌프 흡입(밸브 수·번호는 호기별)</li>
+<li>RCS 쪽 격리밸브까지는 원자로냉각재 압력경계에 속하고, 그 뒤가 저압 배관임[8]</li>
+<li>연동: 가압기(RCS) 압력이 설정값보다 높으면 흡입격리밸브를 <strong>열 수 없음</strong> → 저압 배관 보호(ISLOCA 방지)[1]</li>
+</ul>
+</li>
+<li><strong>다른 운전 모드·대체 수단</strong>
+<ul>
+<li><strong>RWT</strong>: 안전주입 주입 모드와 재장전수 충수 때 LPSI 펌프의 흡입원[1]</li>
+<li><strong>격납건물살수(CS) 펌프 대체</strong>: CE형은 정지냉각 열교환기를 CS 계통과 함께 쓰는 배치가 일반적이며[1], CS 펌프로 정지냉각을 보조하는 교차 연결을 두는 설계가 있음(APR1400은 SC·CS 펌프 상호 대체를 설계기준으로 둠[7], 적용 조건은 호기별 절차)</li>
+<li>격납건물 집수조: LPSI는 <strong>재순환작동신호(RAS) 때 정지</strong>하므로 정지냉각 흡입원으로 쓰지 않음[1]</li>
+</ul>
+</li>
+</ul>
+<p><strong>4. 다. 정지냉각펌프 출구유로</strong></p>
+<ul>
+<li>주 유로: <strong>LPSI 펌프 → 정지냉각 열교환기</strong>(관측 원자로냉각재 / 동체측 CCW) <strong>→ LPSI 주입 배관(주입밸브 4개) → RCS 저온관</strong>(RCP 토출 배관) → 원자로 입구[1]</li>
+<li><strong>열교환기 우회 병렬 배관과 유량 제어</strong>: 펌프 토출 유량제어밸브가 전체 유량을 일정하게 유지하고, 열교환기 출구 밸브로 열교환기 통과 유량을 조절함 → 열교환기 쪽 유량이 늘면 우회 유량이 줄어 냉각률이 커짐[1]</li>
+<li>기타 운전 유로: 정지 정화(→ CVCS 정화설비 → 회수)[7], 재장전 충수·배수(↔ RWT)[1], 최소유량 재순환(펌프 보호)</li>
+<li>방출밸브 구성(CE형 예)[1]
+<ul>
+<li>두 흡입격리밸브 사이: <strong>열팽창 방출밸브</strong> — 계통 격리 후 갇힌 배관수가 주위 온도 상승으로 팽창할 때 보호</li>
+<li>격리밸브 하류 흡입 배관: <strong>방출밸브(LTOP 겸용)</strong> — 만수위 상태에서 충전펌프 전량 유입 등의 질량 유입을 처리하도록 용량을 정함. 설정 예시 APR1400 <strong>530 psig</strong>[3]</li>
+<li>열교환기 관측: 급격한 온도 상승에 대비한 방출밸브</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="1개 계열 정지냉각 유로 개념도: 고온관 → 직렬 흡입격리밸브(사이 열팽창 방출밸브, 하류 LTOP 겸용 방출밸브) → LPSI 펌프(겸용) → 열교환기(CCW)·병렬 우회 → 유량제어 → 저온관 4개, RWT·CS 펌프 대체, APR1400 예시 수치 카드(350 °F·450 psia, LTOP 530 psig·한계 625 psia, 단일고장 요건)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/6caec54e81ac539a007e7c66e2ca1df9a7a79c7beb5f775deadb69af419439ed.webp"/><figcaption>1개 계열 정지냉각 유로 개념도: 고온관 → 직렬 흡입격리밸브(사이 열팽창 방출밸브, 하류 LTOP 겸용 방출밸브) → LPSI 펌프(겸용) → 열교환기(CCW)·병렬 우회 → 유량제어 → 저온관 4개, RWT·CS 펌프 대체, APR1400 예시 수치 카드(350 °F·450 psia, LTOP 530 psig·한계 625 psia, 단일고장 요건)</figcaption></figure>
+<figure class="article-image"><img alt="답안용 도식: 원자로–고온관–직렬 격리밸브(하류 LTOP 방출밸브 분기)–LPSI 펌프–SCS HX(CCW)·우회–저온관 회송 약도" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/adaec177e50d4d2a81acecabe0285b6e7cf0312dd932ac31e1dac8fee14df8de.webp"/><figcaption>답안용 도식: 원자로–고온관–직렬 격리밸브(하류 LTOP 방출밸브 분기)–LPSI 펌프–SCS HX(CCW)·우회–저온관 회송 약도</figcaption></figure>
+<p><strong>5. 라. 정지냉각계통의 저온과압 발생 원인(가압기 만수위 상태)</strong></p>
+<ul>
+<li><strong>배경</strong>: 저온에서는 원자로용기 파괴인성이 낮아 P-T 한계 압력이 낮음[9]. 가압기 안전밸브는 저온 과도를 보호하지 못하므로 SCS 흡입 배관 방출밸브를 RCS에 연결해 LTOP으로 씀(흡입 배관마다 1개)[1][3]. 예시 APR1400의 LTOP 한계는 625 psia(RCS 수압시험압력 3,125 psia의 20 %)이며, 질량·에너지 유입 해석의 최고압력이 이 한계보다 낮음을 보였음[3]</li>
+<li><strong>만수위가 위험한 이유</strong>: 가압기에 증기 공간(완충)이 없어 물의 압축률(약 4.4×10⁻⁴ MPa⁻¹)만큼만 흡수함[10] → <strong>dp/dt ≈ ΔQ ÷ (V·κ)</strong>로 작은 체적 증가에도 압력이 급상승함
+<ul>
+<li>설명용 계산: RCS 300 m³(가정), 순유입 44 gpm(충전펌프 1대분 예[1])이면 약 <strong>1.26 MPa/min</strong> → 450 psia(3.10 MPa(a))에서 530 psig(3.76 MPa(a))까지 <strong>약 31 s</strong></li>
+</ul>
+</li>
+<li><strong>원인 ① 질량 유입</strong>
+<ul>
+<li>충전 &gt; 유출 불균형(유출 격리·유출 유량제어밸브 닫힘, 충전펌프 추가 기동)</li>
+<li>안전주입펌프 오기동(SIAS 오동작·시험) — 예시 APR1400의 제한 질량 유입 사건은 SIAS 오작동에 의한 안전주입펌프 4대 + 충전펌프 1대 운전[3]</li>
+<li>안전주입탱크(SIT) 오방출(격리 미흡), 보충계통 과다 주입</li>
+</ul>
+</li>
+<li><strong>원인 ② 에너지 유입</strong>[3]
+<ul>
+<li><strong>SG 2차측 온도가 RCS보다 높은 상태에서 RCP 기동</strong> → 2차측 열이 1차측으로 전달돼 냉각재 팽창</li>
+<li>RCP 발열, 가압기 가열기 작동, 붕괴열(정지냉각 상실·유량 감소 시 가열)</li>
+</ul>
+</li>
+<li><strong>운전상 유발 요인</strong>: 만수위 압력 제어(충전·유출) 오조작, 밸브 정렬 오류, 시험 중 기기 오기동</li>
+<li><strong>보호기능 상실 요인(원인과 구분)</strong>: LTOP 방출밸브보다 RCS 쪽에 있는 흡입격리밸브가 닫히면 그 계열 LTOP 밸브가 RCS에서 분리됨, 방출밸브 고장 → 양 계열 LTOP 유로 상태를 함께 확인</li>
+<li><strong>방지</strong>: RCS–LTOP 방출밸브 유로 확보(적용온도 이하), RCP 기동 전 SG–RCS 온도차 제한과 RCP 한 대씩 기동(예시 APR1400 운영기술지침서 100 °F, 행정 관리 20 °F[3]), 안전주입펌프 전원 차단·SIT 격리·충전펌프 운전 대수 제한(해당 모드의 운영기술지침서·절차에 따름), 가능하면 가압기 증기 공간 유지</li>
+</ul>
+<figure class="article-image"><img alt="만수위 RCS 압력 상승 설명용 계산(순유입 44·88·132 gpm → 530 psig 설정압 도달 31·16·10 s, APR1400 예시 설정값), 질량·에너지 유입 원인 표, 보호기능 상실 요인, 방지 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/ef519bf96e155f3ea7b2197160dd48537d8b80acffa718117bdf8aece3a45167.webp"/><figcaption>만수위 RCS 압력 상승 설명용 계산(순유입 44·88·132 gpm → 530 psig 설정압 도달 31·16·10 s, APR1400 예시 설정값), 질량·에너지 유입 원인 표, 보호기능 상실 요인, 방지 카드</figcaption></figure>
+<p><strong>6. 결론</strong></p>
+<ul>
+<li>OPR1000 SCS는 <strong>고온관 흡입 → LPSI 펌프 → 열교환기(CCW) → 저온관 회송</strong>의 저압 계통이며, 고압 RCS와의 경계(흡입격리밸브 연동·방출밸브)가 안전의 핵심임</li>
+<li>가압기 만수위에서는 압력 완충이 없어 <strong>질량·에너지 유입이 곧 압력 급상승</strong>이 되므로, LTOP 유로 확보와 유입원 통제를 함께 관리해야 함</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 31초는 "설정압 도달 시간"입니다</h3>
+<p>설명용 계산은 RCS 전체가 액체로 꽉 차 있고 유입이 일정하며 배관·용기의 탄성과 방출을 무시한다는 가정에서 나온 값입니다. 유입이 두 배(88 gpm)면 약 16 s, 세 배(132 gpm)면 약 10 s로 줄어듭니다. 실제로는 구조물 탄성과 온도 변화가 상승률을 바꾸고, 설정압에 도달하면 방출밸브가 열리므로 이 값을 최고압력 예측으로 읽으면 안 됩니다. 최고압력은 방출밸브 용량과 유입량의 균형으로 정해지며, APR1400 해석은 그 값이 LTOP 한계(625 psia)보다 낮음을 보였습니다[3]. 방출밸브 설정압은 P-T 허용한계 자체가 아니라 그보다 낮게 정한 보호 설정입니다. 가압기에 증기 공간이 있으면 증기의 압축·응축이 완충 역할을 해 상승이 훨씬 완만합니다. 그래서 만수위 운전 시간을 줄이고 증기 공간을 일찍 만드는 것이 운전 관행입니다.</p>
+<h3>해설: LTOP 밸브가 정지냉각 배관에 있다는 점이 함정입니다</h3>
+<p>CE형 계열(OPR1000·APR1400)의 LTOP은 가압기 방출밸브가 아니라 SCS 흡입 배관의 스프링식 방출밸브입니다[1][3]. 따라서 흡입격리밸브 가운데 방출밸브보다 원자로 쪽에 있는 밸브가 닫히면 그 계열의 LTOP 밸브는 RCS와 분리됩니다. 정지냉각 계열을 전환하거나 격리할 때 다른 계열의 LTOP 유로가 살아 있는지 먼저 확인해야 하는 이유입니다. 답안에서 "정지냉각 격리 = LTOP 상실 가능"을 한 줄로 짚으면 계통 이해도를 보여 줄 수 있습니다. 밸브 번호·설정값은 호기마다 다르므로 답안에는 구성과 원리를 중심으로 쓰고, 수치는 "예시(노형)"로 밝혀 둡니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 OPR1000 정지냉각계통의 설계·기능은 바뀌지 않았습니다. 인용 문서의 현행판은 다음과 같습니다.</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>현행(2026)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>설계 요건</td>
+<td>기술기준규칙 현행 원안위규칙 제37호(2026.3.30) 제29조(잔열제거설비)·제37조(과압방지)[6]</td>
+</tr>
+<tr>
+<td>운전 제한</td>
+<td>「운영기술지침서의 작성에 관한 기준」 원안위고시 제2024-13호(2024.12.31)</td>
+</tr>
+<tr>
+<td>P-T 곡선·LTOP 설정 갱신</td>
+<td>「원자로압력용기 감시시험 기준」 원안위고시 제2021-28호</td>
+</tr>
+<tr>
+<td>안전등급</td>
+<td>원안위고시 제2026-13호(2026.8.26, 제명 변경) — RCPB 연결 배관은 두 번째 격리밸브까지 안전등급 1</td>
+</tr>
+<tr>
+<td>정지냉각 상실 대비</td>
+<td>사고관리 고시 제2026-1호 별표 1 "정지냉각기능 상실사고"(다중고장 9종, 출제 당시 구판과 같음)[11]</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, HRTD Combustion Engineering Technology Cross Training Course Manual, Ch. 11.2 "Low Pressure Safety Injection System", Rev. 10/08, NRC ADAMS ML11251A033.</li>
+<li>D. Kwon, E. Jeon, G. Heo, "Analysis of Success Criteria for POS5 in OPR-1000 using MARS-KS," Transactions of the Korean Nuclear Society Virtual Spring Meeting (2020.7.9–10) — OPR1000 정지냉각 유량 = LPSI 펌프 설계유량.</li>
+<li>KEPCO/KHNP, Response to Request for Additional Information No. 233-8244, Question 05.02.02-1 (SRP 5.2.2 Overpressure Protection), APR1400 Design Certification, Docket No. 52-046 (2016.1.18), NRC ADAMS ML15348A085.</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix A, General Design Criterion 34 "Residual heat removal".</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 5.4.7 "Residual Heat Removal (RHR) System" 및 BTP 5-4.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제29조·제37조. 국가법령정보센터.</li>
+<li>U.S. NRC, Request for Additional Information 221-8248, Review Section 05.04.07 "Residual Heat Removal (RHR) System", APR1400 Design Certification, Docket No. 52-046 (2015.9.23), NRC ADAMS ML15295A513.</li>
+<li>U.S. NRC, 10 CFR 50.2 "Definitions" — Reactor coolant pressure boundary.</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix G "Fracture Toughness Requirements".</li>
+<li>IAPWS, Revised Release on the IAPWS Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam (IAPWS-IF97), IAPWS R7-97(2012) — 물의 등온 압축률.</li>
+<li>원자력안전위원회 고시 제2026-1호(2026.1.16, 사고관리) [별표 1] 다중고장. 국가법령정보센터.</li>
+</ol>

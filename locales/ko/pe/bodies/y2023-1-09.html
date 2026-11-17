@@ -1,0 +1,75 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2023년 원자력발전기술사 필기 1교시 9번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>경수로의 축방향 중성자 분포를 변화시키는 4가지 인자 및 각 인자의 영향</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>절단 cosine</strong>: 균질 원통 노심의 기준 분포입니다. 양 끝값이 첨두의 약 0.145배이고 축방향 첨두계수 F_Z는 약 1.44입니다.</li>
+<li><strong>ASI·AO</strong>: 분포의 위아래 기울기를 숫자 하나로 나타낸 지표입니다. CE형 ASI는 양이면 하부 편중, W형 AO는 양이면 상부 편중이라 부호가 반대입니다.</li>
+<li><strong>4인자</strong>: 제어봉 위치, 감속재 온도(밀도) 분포, 연소도 분포, 제논 분포입니다.</li>
+<li><strong>영향의 귀결</strong>: 축방향 첨두가 커지면 F_Z와 FQ가 커져 선출력·DNBR 여유가 줄어듭니다. 기울기(ASI)와 첨두(F_Z)는 서로 다른 지표입니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 기준 분포 (PWR 운전 조건 기준)</strong></p>
+<ul>
+<li>균질 원통 노심 = <strong>절단 cosine</strong>(외삽 경계가 연료 밖), F_Z ≈ 1.44[1][2]</li>
+<li>기울기 지표: <strong>ASI = (P_B − P_T)/(P_B + P_T)</strong>(CE형, 양 = 하부 편중), AO = −ASI(W형)</li>
+</ul>
+<p><strong>2. 제어봉 위치</strong></p>
+<ul>
+<li>PWR 제어봉은 <strong>상부에서 삽입</strong> → 상부 흡수 증가 → 출력 <strong>하부 이동</strong>(ASI +)</li>
+<li>봉 끝 아래 국부 첨두로 F_Z 증가 가능, 인출 시 반대</li>
+<li>CE형은 <strong>부분강도 제어봉</strong>으로 반응도 변화 없이 분포만 조절함</li>
+</ul>
+<p><strong>3. 감속재 온도·밀도 분포</strong></p>
+<ul>
+<li>냉각재가 <strong>아래에서 위로 가열</strong>(예: APR1400 290.6 → 323.9 °C[3]) → 상부 밀도 낮음</li>
+<li><strong>MTC가 음</strong> → 상부 반응도 저하 → <strong>하부 편중</strong></li>
+<li>출력이 높을수록, MTC가 더 음일수록(주기말) 강해짐. 도플러 되먹임도 첨두를 누름</li>
+</ul>
+<p><strong>4. 연소도 분포</strong></p>
+<ul>
+<li>출력 큰 곳이 먼저 연소 → 반응도 감소 → <strong>자기 평탄화</strong></li>
+<li>주기초 하부 편중 → 주기말 평탄, <strong>이중 첨두(말안장형)</strong> 가능</li>
+<li>축방향 블랭킷·가연성흡수체 상하단 절삭으로 설계 조정함</li>
+</ul>
+<p><strong>5. 제논 분포</strong></p>
+<ul>
+<li>출력·제어봉 변화 후 I-135 → Xe-135 지연으로 <strong>수 시간에 걸쳐 재분포</strong></li>
+<li>상부 쏠림 → 상부 Xe 연소 → 반응도 증가(양의 되먹임) → 이후 반전 → <strong>축방향 제논 진동</strong> 가능[4](총출력 거의 일정, 대략 하루 안팎 주기, 감쇠·제어될 수 있음)</li>
+<li>대형 노심·주기말(분포 평탄)일수록 불안정</li>
+</ul>
+<p><strong>6. 영향과 관리</strong></p>
+<ul>
+<li>축방향 첨두 ↑ → <strong>F_Z·FQ ↑</strong> → 선출력·LOCA PCT 여유 ↓, 상부 첨두는 DNBR에 불리</li>
+<li>|ASI|와 F_Z는 일대일이 아님(ASI 0이어도 중앙 첨두 가능) → 상하 불균형은 ASI, 축방향 첨두는 F_Z, 국부 첨두는 FQ로 확인</li>
+<li>노외계측기 상·하부 신호로 ASI·AFD 감시, 한계는 <strong>COLR</strong>[5][6]</li>
+<li>붕소와 제어봉을 조합해 반응도·분포 관리, 제논 진동은 반주기 역방향 봉 조작으로 억제</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 기준 절단 cosine과 네 인자가 분포를 미는 방향" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/cb0d4b2fcdedd3b28caef3f71e19e564c8a2b56ae6625d2ea7996032ee1fdcf5.webp"/><figcaption>답안용 도식: 기준 절단 cosine과 네 인자가 분포를 미는 방향</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="네 인자별 축방향 분포 변화(PWR 조건 계산 예)와 ASI·F_Z 값" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/9789378b6bcd837e46037ccbcd79d04df56321503833d2649b1981f90dd9e399.webp"/><figcaption>네 인자별 축방향 분포 변화(PWR 조건 계산 예)와 ASI·F_Z 값</figcaption></figure>
+<p>그림의 곡선은 절단 cosine에 인자별 형상 함수를 곱해 평균 1로 맞춘 계산 예입니다. 실제 노심 예측값은 아니며 PWR 운전 조건을 전제로 합니다. 그래도 방향과 상대 크기는 읽을 수 있습니다. 제어봉을 상부 약 3분의 1까지 넣으면 ASI가 +0.22, F_Z가 1.75까지 올라갑니다. 감속재 온도 효과만으로는 ASI +0.08 정도로 완만합니다. 연소는 반대로 F_Z를 1.27까지 낮추는 평탄화 인자입니다. 다만 중앙이 꺼진 이중 첨두가 생길 수 있습니다. 이 곡선은 ASI가 거의 0인데도 첨두가 두 곳에 있어, ASI만으로 첨두를 판단할 수 없다는 점도 보여 줍니다. 제논은 방향이 고정되지 않고 위아래를 오가는 인자라는 점이 다른 셋과 다릅니다.</p>
+<p>용해 붕소를 네 번째 인자로 쓰는 답안이 가끔 있습니다. 균일하게 녹아 있는 흡수체는 1군 근사에서 분포 형상을 바꾸지 않습니다. 붕소 농도는 MTC의 크기를 바꿔 감속재 온도 효과를 키우거나 줄일 뿐이므로, 독립 인자로 세우지 않는 편이 정확합니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>4인자를 정확히 지목</strong>: 제어봉·감속재 온도·연소도·제논입니다. 붕소나 "출력"만 단독으로 쓰면 감점 소지가 있습니다.</li>
+<li><strong>방향을 쓰기</strong>: 인자마다 "하부로", "평탄화", "진동"처럼 분포가 어디로 가는지 적어야 "영향"에 답한 것입니다.</li>
+<li><strong>부호 혼동</strong>: ASI와 AO의 부호가 반대입니다. 어느 지표인지 먼저 밝힙니다.</li>
+<li><strong>제논 진동의 성격</strong>: 총출력이 아니라 공간 분포가 진동합니다.</li>
+<li><strong>결과 연결</strong>: 첨두 → F_Z·FQ → 열적 여유 한 줄을 붙이면 10점 답안이 완결됩니다. 다만 "ASI가 크면 반드시 FQ가 크다"처럼 단정하지 않습니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001).</li>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, John Wiley &amp; Sons (1976).</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Ch. 5, 표 5.1.1-1 (NRC 설계인증 공개본).</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criterion 12 "Suppression of reactor power oscillations".</li>
+<li>U.S. NRC, NUREG-1431(Westinghouse) LCO 3.2.3 AFD 및 NUREG-1432(Combustion Engineering) LCO 3.2.5 ASI, Standard Technical Specifications, Rev. 5 (2021).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제19조. 국가법령정보센터.</li>
+</ol>

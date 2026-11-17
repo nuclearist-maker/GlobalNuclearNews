@@ -1,0 +1,58 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2026년 원자력발전기술사 필기 1교시 9번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>배관 수격현상(Water Hammering)의 정의, 발생원인 및 방지대책</p>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>압력파와 전파속도 a</strong>: 유속 변화가 만든 압력 교란은 관 탄성을 반영한 음속(강관 속 물 약 1,000~1,400 m/s)으로 관로를 왕복합니다.</li>
+<li><strong>Joukowsky 식 ΔP = ρ·a·Δv</strong>: 순간 폐쇄 때의 최대 압력 상승입니다. 유속 2 m/s만 막아도 약 2.6 MPa가 됩니다.</li>
+<li><strong>임계 폐쇄시간 2L/a</strong>: 압력파가 밸브↔반사단을 한 번 왕복하는 시간입니다. 이보다 빨리 닫으면 급폐쇄로 보고 Joukowsky 압력을 그대로 받습니다.</li>
+<li><strong>수주분리(column separation)</strong>: 압력이 증기압 아래로 떨어져 공동이 생겼다가 다시 붙을 때 2차 충격이 생깁니다.</li>
+<li><strong>원전 특유 유형</strong>: 증기 응축 유발 수격(CIWH), 증기발생기 급수링 수격, ECCS 배관 기체 축적(NRC GL 2008-01)[3].</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 정의</strong></p>
+<ul>
+<li>관로 유속이 급변(밸브 급폐·펌프 정지/기동·증기 급응축)할 때 유체 관성의 운동에너지가 압력에너지로 바뀌어 <strong>압력파가 음속 a로 왕복</strong>하며 압력이 급상승·급강하하는 과도 현상임</li>
+<li>최대 상승(순간 폐쇄): <strong>ΔP = ρ·a·Δv</strong> — 예: ρ = 1,000 kg/m³, a = 1,300 m/s, Δv = 2 m/s → <strong>ΔP = 2.6 MPa</strong>(수두 약 265 m)</li>
+<li>전파속도 a = √(K/ρ) / √(1 + K·D/(E·e))[1], 폐쇄시간 t_c ≤ <strong>2L/a</strong>면 급폐쇄(L = 200 m → 0.31 s), t_c &gt; 2L/a면 ΔP ≈ 2ρLv₀/t_c로 감소함</li>
+</ul>
+<p><strong>2. 발생원인</strong></p>
+<ul>
+<li><strong>급격한 유속 변화</strong>: 밸브 급폐쇄, 체크밸브 역류 후 급폐(slam), 펌프 트립·기동</li>
+<li><strong>증기 응축 유발 수격(CIWH)</strong>: 증기배관 응축수 고임, 증기발생기 급수링 노출 후 저온 급수 재개 → 급응축·물 슬러그 가속</li>
+<li><strong>공극·기체 축적</strong>: ECCS·RHR·격납건물 살수 배관 공극 상태에서 펌프 기동(GL 2008-01)[3], LOOP 후 냉각기 배관 비등·재충수(GL 96-06)[4]</li>
+<li><strong>수주분리</strong>: 펌프 정지·하류 감압으로 공동 생성 후 재결합 충격</li>
+</ul>
+<p><strong>3. 방지대책</strong></p>
+<ul>
+<li><strong>유속 변화 완화</strong>: 밸브 폐쇄시간 &gt; 2L/a(다단 폐쇄), 설계유속 저감, 펌프 플라이휠·소프트 스타트, 비슬램(non-slam) 체크밸브</li>
+<li><strong>압력 완충</strong>: 서지탱크·공기실, 압력 릴리프 밸브, 진공차단기(부압 시 공기 유입)</li>
+<li><strong>공극·증기 관리</strong>: 충수(keep-fill) 유지, 고점 벤트·주기 점검, 드레인·스팀트랩, 배관 경사, 서서히 가열, 급수링 <strong>J-tube</strong></li>
+<li><strong>설계·운전 확인</strong>: 과도해석(특성곡선법)으로 하중 산정, 지지대·스너버 설계, 밸브 조작·기동 순서 절차화</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 저수조-배관-밸브 계통과 2L/a마다 부호가 바뀌는 압력 사각파" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/e2374b83febeb43e5316edf88593ca83179bd983ea91690d182883dcde4403c8.webp"/><figcaption>답안용 도식: 저수조-배관-밸브 계통과 2L/a마다 부호가 바뀌는 압력 사각파</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="순간 폐쇄와 2 s 완폐쇄의 밸브 직전 압력 이력(특성곡선법 계산)과 Joukowsky 식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/3eb7080d225c579f78f9c639149fe0c542774a910306211a674b05da85b60c19.webp"/><figcaption>순간 폐쇄와 2 s 완폐쇄의 밸브 직전 압력 이력(특성곡선법 계산)과 Joukowsky 식</figcaption></figure>
+<p>위 그림은 길이 200 m, 내경 0.30 m 강관에서 유속 2 m/s를 막는 경우를 1차원 특성곡선법으로 계산한 결과입니다. 순간 폐쇄하면 압력이 3.0 MPa에서 약 5.6 MPa로 뛰고, 0.31 s(2L/a)마다 높고 낮은 구간이 바뀌며 0.62 s(4L/a) 주기로 출렁입니다. 같은 밸브를 2 s에 걸쳐 닫으면 상승폭이 0.44 MPa로 줄어듭니다. 대책의 첫 줄이 "폐쇄시간을 2L/a보다 충분히 길게"인 이유가 여기에 있습니다. 이 예에서는 최저 압력이 약 0.45 MPa라 증기압 아래로 내려가지 않았지만, 초기 압력이 낮은 계통이라면 수주분리까지 이어집니다.</p>
+<p>원전 수격 경험은 NRC가 미해결 안전 현안(USI A-1)으로 다뤄 NUREG-0927 Rev.1(1984)로 정리했습니다[2]. 사건 대부분이 PWR 급수·증기발생기 계통이었고, 원인은 증기 포켓 급응축, 증기에 밀린 물 슬러그, 부분 충수 배관의 펌프 기동, 급격한 밸브 동작의 네 가지로 분류됐습니다. 급수링 수격 대책(J-tube, 급수링 배수 방지)은 SRP의 BTP 10-2에 설계지침으로 남아 있습니다[5].</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>식과 숫자</strong>: "물이 배관을 때리는 현상"만 쓰면 정의 점수가 깎입니다. ΔP = ρ·a·Δv와 2L/a를 반드시 쓰고, 간단한 수치 예를 붙이면 확실합니다.</li>
+<li><strong>완폐쇄 혼동</strong>: Joukowsky 식은 t_c ≤ 2L/a일 때의 최대값입니다. 천천히 닫는 경우까지 같은 값을 쓰면 오류입니다.</li>
+<li><strong>압력 강하 누락</strong>: 상승만 쓰고 부압·수주분리를 빠뜨리는 답안이 많습니다. 진공차단기 같은 대책도 여기서 나옵니다.</li>
+<li><strong>원전 맥락 부족</strong>: 일반 수도관 예만 들면 기술사 답안으로 약합니다. CIWH, 급수링 J-tube, ECCS 기체 축적 중 두 가지 이상을 넣으십시오.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>E. B. Wylie, V. L. Streeter, Fluid Transients, McGraw-Hill — 압력파 전파속도·특성곡선법.</li>
+<li>U.S. NRC, NUREG-0927 Rev. 1 "Evaluation of Water Hammer Occurrence in Nuclear Power Plants" (1984); NUREG-0933 Item A-1 "Water Hammer (Former USI)".</li>
+<li>U.S. NRC, Generic Letter 2008-01 "Managing Gas Accumulation in Emergency Core Cooling, Decay Heat Removal, and Containment Spray Systems" (2008).</li>
+<li>U.S. NRC, Generic Letter 96-06 "Assurance of Equipment Operability and Containment Integrity During Design-Basis Accident Conditions" (1996).</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan, Branch Technical Position 10-2 "Design Guidelines for Avoiding Water Hammers in Steam Generators".</li>
+</ol>

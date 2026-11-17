@@ -1,0 +1,111 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2021년 원자력발전기술사 필기 2교시 4번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>원자력발전소의 다음 조건에서 복수기 증기덤프계통의 역할을 설명하시오.
+가. 기동 시
+나. 원자로 냉각 시
+다. 터빈부하 자동 감발 시
+라. 원자로 비상 정지 시</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>증기덤프계통을 "증기를 버리는 밸브"가 아니라 <strong>터빈을 대신하는 인위적 증기 부하</strong>로 이해하고 있는지 봅니다. 네 조건은 모두 원자로 출력과 터빈 부하가 어긋나는 순간입니다. 조건마다 어떤 제어 모드가 어떤 변수를 따라 밸브를 여는지, 그 결과 무엇(원자로정지, 안전밸브 개방, 대기 방출, 과냉각)을 막는지를 연결해 쓰면 배점을 받습니다. ADV·MSSV와의 위치·기능 구분과 노형별 용량 차이를 덧붙이면 변별력이 생깁니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 정의, 구성 위치(MSIV 하류 → 복수기), 제어 모드와 연동 신호</li>
+<li>본론 가: 기동 시 — 고온대기 온도 유지, 임계·저출력 시험, 터빈 병입 전 인위적 부하</li>
+<li>본론 나: 원자로 냉각 시 — 증기압력 설정 하향으로 정지냉각 진입까지 열제거</li>
+<li>본론 다: 터빈부하 자동 감발 시 — Tavg − Tref 오차로 초과 증기 흡수, 노형별 용량</li>
+<li>본론 라: 원자로 비상정지 시 — 저장열·붕괴열 제거, 무부하 온도 안정화, 과냉각 차단</li>
+<li>결론: 복수기 불가 시 대체 수단, 안전해석상 지위</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li><strong>증기덤프계통(W형) / 증기우회제어계통(SBCS, CE형)</strong>: 주증기격리밸브(MSIV) 하류 모관의 증기를 터빈을 거치지 않고 <strong>복수기로 직접 보내는 비안전 제어계통</strong></li>
+<li>기능 핵심: 터빈 대신 <strong>인위적 증기 부하</strong>를 만들어 원자로 출력과 터빈 부하의 <strong>1·2차 에너지 불균형을 흡수</strong>함</li>
+<li>배치: MSIV 상류(증기관마다)의 대기방출밸브(ADV)·주증기 안전밸브(MSSV)는 대기로 방출(안전 관련). 덤프는 MSIV 하류에서 복수기로 회수 → 냉각재·탈염수 손실과 대기 방출이 없음</li>
+<li>제어 모드(W형): ① <strong>증기압력 모드</strong>(모관 압력 제어, 무부하 1,092 psig 예) ② <strong>Tavg 모드-부하탈락 제어기</strong>(Tavg − Tref) ③ <strong>Tavg 모드-원자로정지 제어기</strong>(Tavg − T무부하, 557 °F 예)[1]</li>
+<li>연동: <strong>C-9</strong> 복수기 가용(진공·순환수) 없으면 차단, <strong>C-7</strong> 부하탈락 장전, <strong>P-4</strong> 원자로정지 시 정지 제어기로 전환, <strong>P-12</strong> 저저 Tavg 차단(과냉각 방지)</li>
+</ul>
+<figure class="article-image"><img alt="2차측 3층 배치(정상 증기 경로·덤프 우회·응축수 회수, ADV·MSSV는 MSIV 상류)와 조건별 제어 기준 표, 연동 신호" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/f3a5e6c954eae7ffa7cb42515c65f3d729ce12872e5946b4f0d42b396ac22136.webp"/><figcaption>2차측 3층 배치(정상 증기 경로·덤프 우회·응축수 회수, ADV·MSSV는 MSIV 상류)와 조건별 제어 기준 표, 연동 신호</figcaption></figure>
+<p><strong>2. 가. 기동 시</strong></p>
+<ul>
+<li><strong>고온대기 온도 유지</strong>: RCP 열·붕괴열로 승온한 뒤 증기압력 모드 자동 운전 → 모관 압력을 무부하 설정(1,092 psig 예, 포화온도 ≈ 557 °F)[1]에 묶어 Tavg를 무부하 온도로 유지</li>
+<li><strong>임계 접근·저출력 시험 지원</strong>: 원자로 출력이 올라도 덤프가 그만큼 열려 Tavg 일정 → 감속재 온도 변화에 따른 반응도 교란 제거(MTC 측정 등 안정)</li>
+<li><strong>터빈 병입 전 인위적 부하</strong>: 터빈이 증기를 받기 전 원자로 출력(수 %)을 복수기로 보냄 → 터빈 기동·동기·병입 동안 2차측 압력 안정</li>
+<li><strong>부하 이양</strong>: 터빈 부하가 오르면 같은 양만큼 덤프가 닫힘 → 이후 Tavg 모드로 전환해 대기 상태로 둠</li>
+<li>전제: 주증기관 예열 후 MSIV 개방, 복수기 진공 확립(C-9)</li>
+</ul>
+<p><strong>3. 나. 원자로 냉각 시</strong></p>
+<ul>
+<li><strong>정지냉각 진입까지 열제거</strong>: 고온대기에서 운전원이 증기압력 설정을 단계적으로 낮춤 → SG 포화온도가 내려가며 붕괴열과 1차측 현열을 제거</li>
+<li><strong>냉각률 제어</strong>: 운영기술지침서 압력-온도 제한 범위[2](제한 예 55.6 °C/h(100 °F/h), 호기별 절차) 안에서 설정값 하향 속도로 조절</li>
+<li><strong>진입 목표</strong>: 정지냉각(잔열제거)계통 진입 온도·압력(호기별 설계값)까지 낮춘 뒤 정지냉각계통으로 전환</li>
+<li><strong>장점</strong>: 증기를 복수기에서 회수 → 탈염수 보존, 대기 방출·소음 없음, SG 미세 누설이 있어도 방출 경로 통제</li>
+<li><strong>제약</strong>: 압력이 낮아질수록 덤프 용량 감소, W형은 P-12 아래에서 냉각용 밸브만 우회 스위치로 사용(호기별). 복수기를 쓸 수 없으면 ADV로 대체</li>
+</ul>
+<p><strong>4. 다. 터빈부하 자동 감발 시</strong></p>
+<ul>
+<li><strong>상황</strong>: OTΔT·OPΔT 런백, 제어봉 낙하 런백, 급수펌프 정지 등으로 터빈 부하가 자동으로 급감 → 원자로 출력이 제어봉 속도로는 못 따라감(원자로제어계통 능력 10 % 계단·5 %/min 경사[1]) → Tavg·가압기 압력·SG 압력 상승</li>
+<li><strong>덤프 동작</strong>: C-7 장전 → <strong>Tavg − Tref 오차에 비례해 개방</strong>, 오차가 크면 급속 열림 → 초과 증기를 복수기로 흡수</li>
+<li><strong>효과</strong>: 제어봉이 출력을 내릴 시간 확보 → <strong>가압기 고압력·OTΔT 원자로정지 회피</strong>, 가압기 PORV·MSSV 개방 방지, 소내부하 운전 가능 범위 확대. Tavg가 Tref에 접근하면 덤프 닫힘</li>
+<li><strong>용량과 협조제어</strong>(덤프 용량은 증기유량 기준, 원자로 측 출력 감소와 더하는 양이 아님)
+<ul>
+<li>W형 대표 설계 예(NRC 공개 기술매뉴얼): 덤프 40 % + 제어봉 협조(10 % 계단·5 %/min) → <strong>50 % 부하탈락 설계</strong>[1]</li>
+<li>고리 3·4·한빛 1·2: 덤프 70 % → 출력증강 후 <strong>64 %</strong>(각각 그 시점 정격 증기유량 기준). 해석상 100 % 탈락 시 OTΔT 여유가 부족해 <strong>50 % 부하탈락을 설계 기준으로 제안</strong>[3][4]</li>
+<li>한울 1·2: 85 % → 출력증강 후 <strong>80 %</strong>, 95 % 부하탈락 해석에서 정지 설정치 미도달[5]</li>
+<li>OPR1000: 덤프 <strong>55 % + 원자로출력급감발계통(RPCS)</strong> → 덤프 용량이 작아도 대형 부하탈락에서 원자로정지 없이 소내부하 운전 가능[4]</li>
+<li>APR1400: SBCS 55 % + RPCS(선택 제어봉 부그룹 낙하 → 해석에서 직후 출력 약 75 %, 이후 원자로조절계통·SBCS로 안정화)[6]</li>
+</ul>
+</li>
+<li>협조제어로 불균형이 해소되지 않으면 보호동작(가압기 고압력·OTΔT 정지, MSSV 개방)이 일어날 수 있음</li>
+</ul>
+<figure class="article-image"><img alt="노형별 덤프(터빈우회) 용량(W형 예 40 %, 고리 3·4·한빛 1·2 64 %, 한울 1·2 80 %, OPR1000·APR1400 55 %)과 원자로 측 협조 방식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/4c458afa8c0898df2aa2a081a01b9ec7d78f00a63c11708dfe515e8c3483ff8d.webp"/><figcaption>노형별 덤프(터빈우회) 용량(W형 예 40 %, 고리 3·4·한빛 1·2 64 %, 한울 1·2 80 %, OPR1000·APR1400 55 %)과 원자로 측 협조 방식</figcaption></figure>
+<p><strong>5. 라. 원자로 비상 정지 시</strong></p>
+<ul>
+<li><strong>상황</strong>: 원자로정지와 터빈정지가 함께 일어남 → 원자로 출력은 붕괴열(정지 직후 약 6~7 %)로 떨어지지만 노심·구조물·냉각재의 <strong>저장열</strong>이 남음</li>
+<li><strong>덤프 동작</strong>: P-4로 <strong>원자로정지 제어기</strong> 전환 → <strong>Tavg − T무부하 오차</strong>로 개방(급속 열림 포함) → Tavg를 무부하 온도(557 °F 예)로 신속히 안정화</li>
+<li><strong>효과</strong>: SG 압력 상승을 억제해 <strong>MSSV·ADV 개방(대기 방출) 방지</strong>, 가압기 압력 안정, 붕괴열 지속 제거</li>
+<li><strong>과냉각 방지</strong>: 덤프가 과도하면 음의 MTC로 정반응도 삽입(재임계 우려), 가압기 수위·압력 저하, 안전주입 유발 → <strong>P-12(저저 Tavg)로 덤프 차단</strong></li>
+<li><strong>후속</strong>: 안정 후 운전원이 증기압력 모드로 전환해 고온대기 유지. 소외전원상실로 순환수펌프가 멈추거나 진공을 잃으면(C-9 불만족) ADV가 열제거를 맡음</li>
+</ul>
+<figure class="article-image"><img alt="답안용 증기덤프 경로와 네 조건의 제어 기준·목표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/92925d7ac92cab686f00ebfb39e0f7b8ccd5eee61c17a762bba0fcb143d1cbc6.webp"/><figcaption>답안용 증기덤프 경로와 네 조건의 제어 기준·목표</figcaption></figure>
+<p><strong>6. 결론</strong></p>
+<ul>
+<li>증기덤프 = <strong>복수기로 가는 인위적 부하</strong> → 네 조건 모두에서 1·2차 불균형을 흡수해 <strong>원자로정지·안전밸브 개방·대기 방출을 줄이고 Tavg를 계획값에 유지</strong></li>
+<li>비안전 계통이라 사고 해석에서 크레딧하지 않으며, 밸브 오개방은 FSAR 15.1(2차측 열제거 증가) 사건으로 해석함</li>
+<li>운전 시 복수기 가용성, 과냉각(P-12) 감시, 복수기 불가 시 ADV 대체 경로 확보가 필요함</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 네 조건을 한 장으로 묶는 법</h3>
+<p>네 조건은 따로 외우기보다 "누가 기준값을 정하느냐"로 묶으면 쉽습니다. 기동과 냉각에서는 운전원이 정한 <strong>증기 압력</strong>이 기준이고, SG 포화온도를 통해 1차측 온도가 따라옵니다. 자동 감발에서는 터빈 부하로 만든 <strong>Tref</strong>가 기준이고, 정지 후에는 고정된 <strong>무부하 온도</strong>가 기준입니다. 같은 밸브가 세 가지 기준을 번갈아 따르는 셈입니다. 그래서 답안 서론에 제어 모드 세 가지와 연동 신호 네 가지를 먼저 적어 두면, 본론의 각 소문항은 "이 조건에서는 이 모드가 이 변수를 따라 열린다 → 그래서 무엇을 막는다"로 짧게 쓸 수 있습니다.</p>
+<p>CE 계열(OPR1000·APR1400) 답안이라면 용어만 바꿉니다. 증기우회제어계통이 증기유량·가압기 압력·증기압력을 입력으로 받아 터빈우회밸브를 조절합니다. 우회가 일어나는 동안에는 제어봉 자동 인출·자동 동작을 제한하는 신호(AWP·AMI)도 냅니다. 덤프 용량을 넘는 탈락에는 원자로출력급감발계통 개시 신호를 줍니다. 원자로출력급감발계통이 있는 노형은 덤프 용량이 작아도 전부하 탈락을 넘길 수 있다는 점이 W형과의 큰 차이입니다.</p>
+<h3>해설: 채점 포인트와 흔한 실수</h3>
+<ul>
+<li><strong>ADV와 혼동</strong>: ADV는 MSIV 상류에서 대기로, 덤프는 MSIV 하류에서 복수기로 보냅니다. 위치를 틀리면 감점입니다.</li>
+<li><strong>"덤프 용량 = 탈락 수용 능력"으로 쓰기</strong>: W형은 제어봉 10 %를 더하고, CE형은 원자로출력급감발계통과 함께 봅니다.</li>
+<li><strong>원자로정지 후 "계속 냉각"으로 쓰기</strong>: 목표는 무부하 온도 안정화이며, 과냉각은 저저 Tavg 차단으로 막습니다.</li>
+<li><strong>복수기 조건 누락</strong>: 진공·순환수가 없으면 덤프는 쓸 수 없고 ADV로 넘어갑니다. 소외전원상실과 연결해 쓰면 좋습니다.</li>
+</ul>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li>증기덤프계통은 비안전 제어계통이라 기능과 운전 원리는 출제 이후 바뀌지 않았습니다. 사고 해석에서 크레딧하지 않고 오개방을 FSAR 15.1 사건으로 다루는 체계도 같습니다.</li>
+<li>「원자로시설 등의 기술기준에 관한 규칙」은 2026년 원안위규칙 제36호(2026.1.20)·제37호(2026.3.30)로 개정됐습니다. 증기덤프를 직접 정한 조항은 지금도 없고, 관련 요건은 제22조(원자로냉각재계통 — 과도 중 설계조건 여유)로 봅니다[7].</li>
+<li>냉각률 제한의 근거인 운영기술지침서 작성 기준은 현행 원안위고시 제2024-13호(2024.12.31)입니다[2]. 출제 당시 판인 제2017-5호 이후 2023-9를 거쳐 개정됐으며, 압력-온도 제한을 지침서에서 관리한다는 골격은 같습니다.</li>
+<li>미국 SRP 10.4.4(Turbine Bypass System) Rev.3(2007)이 현행이며[8], 국내 APR1400 설계도 이 기준 적합으로 기술합니다.</li>
+<li>노형 측면의 변화는 출제 전에 이미 있었습니다. 고리 3·4·한빛 1·2는 출력증강으로 덤프 용량이 70 %에서 64 %로 줄어 50 % 부하탈락을 설계 기준으로 삼는 방향이 제안됐고[3], 한울 1·2는 85 %에서 80 %로 줄었지만 95 % 탈락 해석에서 정지 설정치에 닿지 않았습니다[5]. 이후 W형에 원자로출력급감발계통을 도입하는 타당성 연구(2012)[4]도 있었지만, 실제 설치 여부는 공개 자료로 확인하지 못했습니다. </li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, Westinghouse Technology Systems Manual, Section 11.2 "Steam Dump Control System" (2003), NRC ADAMS ML11223A294.</li>
+<li>원자력안전위원회, 「운영기술지침서의 작성에 관한 기준」, 원안위고시 제2024-13호(2024.12.31). 국가법령정보센터.</li>
+<li>J. Y. Lee, J. S. Kim, D. J. Yoon, J. I. Kim, "Evaluation of Large Load Rejection Capability for Kori 3/4 and Yonggwang 1/2 Units after Power Uprate", 한국원자력학회 춘계학술발표회 (2005.5).</li>
+<li>D.-J. Yoon, S.-C. Lee, "Sensitivity Research on Design Parameter of Reactor Power Cutback System in Westinghouse type plant", Transactions of the Korean Nuclear Society Autumn Meeting, Gyeongju (2012.10).</li>
+<li>D.-J. Yoon, J.-Y. Lee, S.-Y. Kim, "Operating Margin Analyses in Large Load Rejection and Reactor Trip Transients after Power Uprate of UCN 1&amp;2", Transactions of the Korean Nuclear Society Spring Meeting, Jeju (2012.5).</li>
+<li>S. J. Kim, C. E. Park, J. H. Choi, G. C. Lee, "Analysis of Turbine Load Rejection for APR1400 using SPACE", Transactions of the Korean Nuclear Society Autumn Meeting, Gyeongju (2016.10).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제22조. 국가법령정보센터.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 10.4.4 "Turbine Bypass System", Rev. 3 (2007).</li>
+</ol>
