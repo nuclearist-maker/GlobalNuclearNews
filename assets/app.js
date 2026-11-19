@@ -1,5 +1,44 @@
 const posts = [
   {
+    "title": "What Will the NRC's Safety Advisory Committee Review Now? ACRS Refocuses on New and Notable Safety Issues",
+    "date": "2026.11.18",
+    "displayDate": "2026.11.18",
+    "publishedAt": "2026-11-18T23:32:08Z",
+    "section": "news",
+    "category": "Policy & Regulation",
+    "summary": "The US Nuclear Regulatory Commission published a direct final rule on 17 November 2026 that refocuses the Advisory Committee on Reactor Safeguards (ACRS) on new and notable safety issues in design, siting and operation. Revised 10 CFR 1.13 has NRC staff and the ACRS coordinate on which issues to examine, while 50.58(a) keeps referring construction permit, operating licence and testing facility applications to the committee. The committee keeps 7 to 15 members on four-year terms and may take on added reviews at the Commission's request. Comments are due by 11:59 p.m. Eastern Time on 17 December 2026; without significant adverse comments the rule takes effect on 1 February 2027.",
+    "thumbnail": "assets/images/news/2026-11-18-nrc-acrs-new-safety-issues-rule/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail: advisory committee hearing room with the ACRS rule title",
+    "url": "posts/news/2026-11-18-nrc-acrs-new-safety-issues-rule.html",
+    "keywords": "ACRS Advisory Committee on Reactor Safeguards NRC Direct Final Rule Nuclear Licensing Safety Review 10 CFR Executive Order 14300 SSC Regulatory Finality Construction Permit Operating License Nuclear Regulation"
+  },
+  {
+    "title": "France's 10-Year Fusion Strategy: What ITER, WEST and the Laser Mégajoule Each Have to Prove",
+    "date": "2026.11.18",
+    "displayDate": "2026.11.18",
+    "publishedAt": "2026-11-18T23:32:08Z",
+    "section": "news",
+    "category": "Advanced Reactors",
+    "summary": "On 16 November 2026 France adopted a 10-year national fusion strategy centred on three facilities: ITER, which aims for 500 MW of fusion power from 50 MW of heating (Q=10); CEA's WEST tokamak, which held a hydrogen plasma for 1,337 seconds in February 2025; and the Laser Mégajoule inertial-confinement facility. From 2026 to 2030 the plan strengthens the science base, skills, infrastructure and funding, with a goal of doubling student numbers in related fields, and by 2035 it aims to secure the technologies needed for a European pilot power plant. ITER's 2025 baseline places research operation in 2034 and deuterium-tritium operation in 2039.",
+    "thumbnail": "assets/images/news/2026-11-18-france-fusion-strategy-iter-west-lmj/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail: tokamak assembly hall with the France fusion strategy title",
+    "url": "posts/news/2026-11-18-france-fusion-strategy-iter-west-lmj.html",
+    "keywords": "fusion energy France fusion strategy ITER WEST tokamak Laser Mégajoule tokamak inertial confinement fusion burning plasma CEA DEMO tritium breeding plasma physics nuclear energy"
+  },
+  {
+    "title": "EPR2's €72.8bn and €84bn Are the Same Cost: How France Plans to Fund Six Reactors Before and After Start-up",
+    "date": "2026.11.18",
+    "displayDate": "2026.11.18",
+    "publishedAt": "2026-11-18T23:32:08Z",
+    "section": "news",
+    "category": "Large Reactors",
+    "summary": "In a 16 November 2026 report, France's Cour des comptes analysed how the six-reactor EPR2 programme (9,990 MW at Penly, Gravelines and Bugey) would be financed. The overnight construction cost is €72.8 billion in 2020 prices, or €84 billion in 2025 prices. Under the notified proposal, a state-supported loan covers 60% of the reference cost and EDF shareholder loans cover 40%; interest support is expected in the budget from 2027, while the two-way contract for difference applies for 40 years from each reactor's start-up, with budget effects from 2038 at the earliest. The court warns that power prices below €70/MWh could sharply raise EDF's funding needs. The package remains under an EU in-depth state-aid investigation.",
+    "thumbnail": "assets/images/news/2026-11-18-epr2-financing-price-basis-support-timing/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail: coastal reactor construction site with the EPR2 financing title",
+    "url": "posts/news/2026-11-18-epr2-financing-price-basis-support-timing.html",
+    "keywords": "EPR2 France nuclear nuclear financing contract for difference Cf D overnight cost EDF Cour des comptes state aid European Commission electricity prices pressurised water reactor nuclear finance nuclear energy"
+  },
+  {
     "title": "How the UK Counts 102,867 Nuclear Workers: Reported Data, Supply-Chain Estimates and What Each Figure Measures",
     "date": "2026.11.16",
     "displayDate": "2026.11.16",
