@@ -1,5 +1,57 @@
 const posts = [
   {
+    "title": "When AI Cyberattacks Move Faster Than Nuclear Approvals: Reading VCDNP's Two Conclusions and Five Principles",
+    "date": "2026.11.19",
+    "displayDate": "2026.11.19",
+    "publishedAt": "2026-11-19T15:23:27Z",
+    "section": "news",
+    "category": "Policy & Regulation",
+    "summary": "The Vienna Center for Disarmament and Non-Proliferation (VCDNP) published 'Outpacing the AI Cyber Threat' in November 2026 and launched it on 18 November. Built on a 30-expert workshop in June, two commissioned studies and an October review, it recommends adopting AI where benefits exceed full costs, starting with cyber defence, and adapting national regulatory approaches to the pace of AI. The figures it cites, from UK AISI evaluations and KnowBe4 phishing data, each come with specific test conditions, and the CNSC/ONR/NRC joint paper explains why defensive AI needs checks matched to its authority. A regulatory sandbox is proposed as the next step.",
+    "thumbnail": "assets/images/news/2026-11-19-nuclear-ai-cyber-defense-change-approval/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail: security operations room with the AI cyber title",
+    "url": "posts/news/2026-11-19-nuclear-ai-cyber-defense-change-approval.html",
+    "keywords": "Nuclear Cybersecurity AICyber Threat Nuclear Security VCDNP Regulatory Sandbox Prompt Injection Data Poisoning Configuration Management AISI NRC ONR CNSC IAEA Nuclear Regulation Nuclear Energy"
+  },
+  {
+    "title": "Two Routes to Putting Reactors on Ships: Korea's First IAEA Naval Propulsion Report and a Nuclear LNG Carrier MOU",
+    "date": "2026.11.19",
+    "displayDate": "2026.11.19",
+    "publishedAt": "2026-11-19T15:23:27Z",
+    "section": "news",
+    "category": "Marine Nuclear",
+    "summary": "Korea's Ministry of Foreign Affairs said on 19 November 2026 that the IAEA had published its first Director General report on Korea's naval nuclear propulsion, discussed at the 18-20 November Board of Governors meeting. It covers communication since the 2025 Korea-US leaders' announcement, Korea's safeguards declarations and technical consultations; a final safeguards arrangement is still to come. Separately, Splash reported an exclusive MOU between Samsung Heavy Industries and Tesser Atomics on design, integration and licensing for a nuclear-powered LNG carrier, aiming at a US-Europe demonstration ship in the early 2030s; no build contract or delivery date has been announced.",
+    "thumbnail": "assets/images/news/2026-11-19-korea-naval-propulsion-iaea-report-nuclear-lng-carrier/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail: LNG carrier at sea with the marine nuclear title",
+    "url": "posts/news/2026-11-19-korea-naval-propulsion-iaea-report-nuclear-lng-carrier.html",
+    "keywords": "Nuclear Submarine IAEA Safeguards Director General Report Additional Protocol Comprehensive Safeguards Agreement Low-Enriched Uranium Nuclear LNG Carrier Samsung Heavy Industries Tesser Atomics TRISO Molten Salt Cooling Marine Reactor Maritime Nuclear Nuclear Energy"
+  },
+  {
+    "title": "Who Gets to Use INL's New Arco Supercomputer? Free Access Rules and Verifying Reactor Simulations",
+    "date": "2026.11.19",
+    "displayDate": "2026.11.19",
+    "publishedAt": "2026-11-19T15:23:27Z",
+    "section": "news",
+    "category": "Advanced Reactors",
+    "summary": "On 18 November 2026 the US Department of Energy introduced Arco, a new GPU supercomputer at Idaho National Laboratory with 160 NVIDIA H200 GPUs and 20 TB of total memory, complementing the Teton system that came online in January. The INL Computing Facility is now a DOE-NE high-performance computing user facility. Researchers can apply for free access for non-proprietary work, but need an INL sponsor, an NCRC account request that can take 2 to 8 weeks, and access approvals. Scratch storage is not backed up and is purged about every 90 days, so verification, validation and regression records must be archived separately.",
+    "thumbnail": "assets/images/news/2026-11-19-inl-arco-supercomputer-user-access/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail: supercomputer hall with the INL Arco title",
+    "url": "posts/news/2026-11-19-inl-arco-supercomputer-user-access.html",
+    "keywords": "INL Arco Supercomputer High-Performance Computing HPC GPU Reactor Simulation Verification and Validation Regression Testing MOOSE DOE User Facility Nuclear Research Nuclear Energy"
+  },
+  {
+    "title": "Cernavodă 1 Refurbishment: Where the First EUR 400 Million EIB Loan Fits in an EUR 800 Million Plan",
+    "date": "2026.11.19",
+    "displayDate": "2026.11.19",
+    "publishedAt": "2026-11-19T15:23:27Z",
+    "section": "news",
+    "category": "Large Reactors",
+    "summary": "On 16 November 2026, Romania's Nuclearelectrica (SNN) and the European Investment Bank signed a EUR 400 million loan for the refurbishment of Cernavodă Unit 1, the first of two EUR 400 million contracts under an EUR 800 million plan the EIB board approved on 15 July. The second contract is planned for 2027. The project is valued at about EUR 3.1 billion, so the full EIB plan equals about 25.8% and the first contract about 12.9%. The refurbishment replaces fuel channels, calandria tubes and feeders during a 2027-2030 outage, aiming for 30 more years of operation subject to regulatory requirements.",
+    "thumbnail": "assets/images/news/2026-11-19-cernavoda-1-refurbishment-eib-loan/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail: riverside nuclear plant with the Cernavodă refurbishment title",
+    "url": "posts/news/2026-11-19-cernavoda-1-refurbishment-eib-loan.html",
+    "keywords": "Cernavoda Nuclear Refurbishment Life Extension European Investment Bank EIB Nuclearelectrica CANDU Retubing Fuel Channels EPC Nuclear Financing Romania Nuclear Nuclear Energy"
+  },
+  {
     "title": "Testing Before Building a Reactor: Rolls-Royce SMR's Seismic Isolation Plinth and newcleo's PRECURSOR Core Simulator",
     "date": "2026.11.18",
     "displayDate": "2026.11.18",
