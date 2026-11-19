@@ -1,5 +1,31 @@
 const posts = [
   {
+    "title": "Testing Before Building a Reactor: Rolls-Royce SMR's Seismic Isolation Plinth and newcleo's PRECURSOR Core Simulator",
+    "date": "2026.11.18",
+    "displayDate": "2026.11.18",
+    "publishedAt": "2026-11-19T02:35:07Z",
+    "section": "news",
+    "category": "SMR",
+    "summary": "Two pre-deployment tests advanced on 18 November 2026. Skanska completed manufacturing and testing of a precast plinth demonstrator for Rolls-Royce SMR at Bentley Works in Doncaster, validating an off-site way to make the structure that supports the plant's seismic isolation devices. In Brasimone, Italy, newcleo installed an electrically heated core simulator in PRECURSOR, a 10 MWth non-nuclear lead-cooled test facility, and targets primary-system completion and lead melting by end-2026, commissioning from December to mid-2027 and first experimental data in early Q2 2027. newcleo also reported preliminary Q3 revenue of about €10 million.",
+    "thumbnail": "assets/images/news/2026-11-18-rolls-royce-plinth-newcleo-precursor-tests/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail: test hall with the pre-deployment testing title",
+    "url": "posts/news/2026-11-18-rolls-royce-plinth-newcleo-precursor-tests.html",
+    "keywords": "seismic isolation isolation plinth core simulator Rolls-Royce SMR newcleo PRECURSOR Skanska precast manufacturing lead-cooled reactor thermal hydraulics small modular reactor SMR nuclear energy"
+  },
+  {
+    "title": "What AI Speeds Up in Nuclear Paperwork: NuScale's Gordian Rollout and DOE's 208-Page, One-Day Demonstration",
+    "date": "2026.11.18",
+    "displayDate": "2026.11.18",
+    "publishedAt": "2026-11-19T02:35:07Z",
+    "section": "news",
+    "category": "Policy & Regulation",
+    "summary": "On 18 November 2026 NuScale said it is expanding its use of Everstar's nuclear-specific AI platform, Gordian, after an initial pilot, to licensing, plant services, project management, supply chain, quality assurance and product development; it reported efficiency gains without publishing figures. In a March 2026 DOE demonstration with INL, Argonne and Microsoft, Gordian mapped a generic high-temperature gas reactor safety analysis into NRC application sections, producing a 208-page document in one day versus four to six weeks, which experts then reviewed; the document was written for the demonstration and was not submitted to the NRC. The platform combines retrieval-augmented generation, document parsing and knowledge graphs.",
+    "thumbnail": "assets/images/news/2026-11-18-nuscale-everstar-gordian-nuclear-ai/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail: engineer reviewing documents with the nuclear AI title",
+    "url": "posts/news/2026-11-18-nuscale-everstar-gordian-nuclear-ai.html",
+    "keywords": "nuclear AI nuclear licensing document automation Nu Scale Everstar Gordian DOE NRC retrieval-augmented generation knowledge graph HTGR 10 CFR 810 small modular reactors nuclear energy"
+  },
+  {
     "title": "What Will the NRC's Safety Advisory Committee Review Now? ACRS Refocuses on New and Notable Safety Issues",
     "date": "2026.11.18",
     "displayDate": "2026.11.18",

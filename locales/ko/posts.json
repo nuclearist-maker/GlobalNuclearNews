@@ -12373,5 +12373,35 @@
     "keywords": "프랑스 핵융합 10년 전략, 세 실험시설은 각각 무엇을 증명하나: ITER·WEST·레이저 메가줄 fusion energy France fusion strategy ITER WEST tokamak Laser Mégajoule tokamak inertial confinement fusion burning plasma CEA DEMO tritium breeding plasma physics nuclear energy",
     "en_sha256": "9a4bca2e4c48831a092de43a8c13d73822acc5d755bcde0a9c8687b23e8ea205",
     "ko_sha256": "3da380c8069e3b5af3bfccd3f786ee4f567e3e2a5996d32bdd54fcefa0cc17c2"
+  },
+  {
+    "title": "원전 서류 업무에 AI를 쓰면 무엇이 빨라지나: NuScale의 Gordian 확대와 DOE '208쪽·1일' 실증 읽기",
+    "date": "2026.11.18",
+    "displayDate": "2026.11.18",
+    "publishedAt": "2026-11-19T02:35:07Z",
+    "section": "news",
+    "category": "정책 및 규제",
+    "summary": "원전 하나를 짓고 운영하려면 인허가 신청서, 설계 변경 검토서, 품질보증 기록처럼 방대한 문서가 필요합니다. 여기에 인공지능(AI)을 쓴다는 소식을 들으면 \"정말 빨라질까, 정확성은 누가 챙길까\" 하는 궁금증이 먼저 생깁니다. 최근 발표 두 건으로 공개된 숫자가 무엇을 잰 것인지 짚어 보겠습니다.",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/news/2026-11-18-nuscale-everstar-gordian-nuclear-ai/thumbnail_01.thumb.avif",
+    "thumbnailAlt": "원전 서류 업무에 AI를 쓰면 무엇이 빨라지나: NuScale의 Gordian 확대와 DOE '208쪽·1일' 실증 읽기 대표 이미지",
+    "url": "posts/news/2026-11-18-nuscale-everstar-gordian-nuclear-ai.html",
+    "keywords": "원전 서류 업무에 AI를 쓰면 무엇이 빨라지나: NuScale의 Gordian 확대와 DOE '208쪽·1일' 실증 읽기 nuclear AI nuclear licensing document automation Nu Scale Everstar Gordian DOE NRC retrieval-augmented generation knowledge graph HTGR 10 CFR 810 small modular reactors nuclear energy",
+    "en_sha256": "48be2ee295d9b65572a791f70798e268e1e61016b457a4aa15e2656c1ab81d90",
+    "ko_sha256": "450fdab26a567d99dcdeb01c88929f4381205c3536b0bdca21df165010b73550"
+  },
+  {
+    "title": "원자로를 짓기 전에 먼저 시험하는 것들: Rolls-Royce SMR 면진 받침대와 newcleo PRECURSOR 노심 모사장치",
+    "date": "2026.11.18",
+    "displayDate": "2026.11.18",
+    "publishedAt": "2026-11-19T02:35:07Z",
+    "section": "news",
+    "category": "소형모듈원자로(SMR)",
+    "summary": "원자로 설계가 끝났다는 소식을 들으면 이제 곧 공사를 시작할 것 같다는 생각이 드실 겁니다. 그런데 실제 사업에서는 설계와 실물 건설 사이에 '미리 만들어 보고, 미리 돌려 보는' 단계가 따로 있습니다. 실물 원자로에서 처음 문제를 발견하면 고치는 데 드는 시간과 비용이 훨씬 커지기 때문입니다.",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/news/2026-11-18-rolls-royce-plinth-newcleo-precursor-tests/thumbnail_01.thumb.avif",
+    "thumbnailAlt": "원자로를 짓기 전에 먼저 시험하는 것들: Rolls-Royce SMR 면진 받침대와 newcleo PRECURSOR 노심 모사장치 대표 이미지",
+    "url": "posts/news/2026-11-18-rolls-royce-plinth-newcleo-precursor-tests.html",
+    "keywords": "원자로를 짓기 전에 먼저 시험하는 것들: Rolls-Royce SMR 면진 받침대와 newcleo PRECURSOR 노심 모사장치 seismic isolation isolation plinth core simulator Rolls-Royce SMR newcleo PRECURSOR Skanska precast manufacturing lead-cooled reactor thermal hydraulics small modular reactor SMR nuclear energy",
+    "en_sha256": "b913b98afba6e62895a52a0fe7203fb99fc205682b75bb45cb741ebfef7a3e2e",
+    "ko_sha256": "dd72acbb1a0b50fb8b8b9be3682cc0f225ab567c7dbca937ca42cc8548b1ba28"
   }
 ]
