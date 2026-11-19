@@ -135,7 +135,9 @@ def main():
         else:raise ValueError('Missing Korean thumbnail: '+str(src))
         # Insert a thumbnail if the source does not already contain it.
         if not any('thumbnail' in im.get('src','') for im in soup.find_all('img')):
-            fig=soup.new_tag('figure',attrs={'class':'article-image'});im=soup.new_tag('img',src=thumbnail,alt=title+' 대표 이미지');fig.append(im);soup.insert(0,fig)
+            # 2026-11-18: in-article hero uses the full-size encode (1440px); the 640px .thumb stays for list cards only.
+            hero=asset(thumb,False) if thumb else thumbnail
+            fig=soup.new_tag('figure',attrs={'class':'article-image'});im=soup.new_tag('img',src=hero,alt=title+' 대표 이미지');fig.append(im);soup.insert(0,fig)
         body=str(soup)
         if '이미지 삽입:' in body:raise ValueError('Unresolved image anchor: '+str(src))
         out=ROOT/'locales/ko'/row['url'];out.parent.mkdir(parents=True,exist_ok=True);out.write_text(body,encoding='utf8')
@@ -158,7 +160,7 @@ def main():
         if target.exists() and target.stat().st_mtime>=p.stat().st_mtime:return
         with Image.open(p) as im:
             im.thumbnail((640,640) if thumb else (1440,2000))
-            im.convert('RGBA' if im.mode in ('RGBA','LA') else 'RGB').save(target,'AVIF',quality=42 if not thumb else 40,speed=6)
+            im.convert('RGBA' if im.mode in ('RGBA','LA') else 'RGB').save(target,'AVIF',quality=60 if not thumb else 40,speed=6)  # 2026-11-18: 42→60 for new encodes; existing files are skipped above
     print('Encoding',len(jobs),'Korean images',flush=True)
     with ThreadPoolExecutor(max_workers=8) as pool:list(pool.map(encode,jobs.items()))
     for row in evidence:
