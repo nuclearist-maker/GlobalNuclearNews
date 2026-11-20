@@ -1,0 +1,11 @@
+# Coordinated publication
+
+Authoring projects export completed packages. A shared private coordinator records source fingerprints, reviewed public files, actual Git commit, Actions results and live checks. Conversations do not automatically notify each other; shared files and guards are the authority.
+
+For a new publishing checkout, run the workspace `scripts/install_publication_hook.py <checkout>` and `scripts/publication_sync.py scan --repo <checkout>`. The installer preserves and chains an existing pre-push hook; private paths are stored only in local Git config. Consult the workspace publication coordination runbook for the private registry location.
+
+Prepare an exact reviewed release on an isolated checkout based on current origin/main. Do not reset or overwrite another project's dirty work. Obtain the applicable content/visual and independent workflow reviews and actual local gate PASS. `publication_sync.py export --manifest <manifest> --gate <private-gate> --review <receipt>` binds proof; `prepare --repo <checkout> --manifest <manifest> --source-map <private-map> --gate <private-gate> --review <receipt>` acquires the shared lease. Repeat --review for each required receipt. Stage exactly the manifest files, commit once on the reviewed parent, and use normal `git push origin HEAD:main`. Automatic rebase/force push are forbidden. The former publisher --push option is blocked before export mutations.
+
+CI requires qa/deployments/publication.json: exact base_commit, full release_files hashes excluding only itself, and verification.local_publish_gate_sha256, independent_review_sha256, reviewed_release_sha256. The last field is SHA256 of canonical JSON {base_commit, release_files} with sorted keys and compact separators; CI recomputes it and every changed file. Gate/review commitments are provenance hashes, not a cryptographic identity attestation. Full private reviews stay private.
+
+After exact-commit Pages and Storage success, run verify-live with the source map and tested _site, then finish with the resulting live report. Only finish updates PUBLISHED; source changes remain pending. Failed propagation holds the lease for retry. Recover a crashed transaction by inspecting its private lease, remote and Actions, then resume or explicitly abort its token after ensuring no push is running. No automatic expiry or stealing.

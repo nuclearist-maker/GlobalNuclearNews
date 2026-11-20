@@ -30,6 +30,12 @@ jobs:
             [[ "$BASE" =~ ^[0-9a-f]{40}$ ]] || exit 1
             git fetch --no-tags --depth=1 origin "$BASE"
           fi
+      - name: Fetch reviewed publication baseline
+        shell: bash
+        run: |
+          BASE=$(python -c "import json; print(json.load(open('qa/deployments/publication.json'))['base_commit'])")
+          [[ "$BASE" =~ ^[0-9a-f]{40}$ ]] || exit 1
+          git fetch --no-tags --depth=1 origin "$BASE"
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
@@ -41,6 +47,10 @@ jobs:
         run: python -m unittest discover -s tools -p test_news_deployment_scope.py
       - name: Test Korean study board guards
         run: python -m unittest discover -s tools -p test_pe.py
+      - name: Test publication coordination guards
+        run: python -m unittest discover -s tools -p test_publication_release_guard.py
+      - name: Verify reviewed publication scope
+        run: python tools/publication_release_guard.py --require-latest
       - name: Package public site files (fails on any missing linked file)
         run: python tools/build_en_site.py
       - name: Validate search metadata and crawlable links
@@ -53,6 +63,8 @@ jobs:
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
+      - name: Recheck current main before deployment
+        run: python tools/publication_release_guard.py --require-latest
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

@@ -212,6 +212,9 @@ def main() -> int:
     ap.add_argument("--match", metavar="REGEX", help="publish only new posts whose source folder name matches "
                     "REGEX (e.g. '^C-FM-'); other unpublished posts are held back")
     args = ap.parse_args()
+    if args.push:
+        print("BLOCKED: direct --push is retired. Use the reviewed publication coordinator; see docs/publication-coordination.md.")
+        return 1
 
     errors: list[str] = []
     print("Scanning source folders ...")

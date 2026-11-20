@@ -4377,7 +4377,7 @@
     "url": "posts/concepts/c-wd-003-waste-classification.html",
     "keywords": "[개념 노트] 방사성폐기물 분류 — 고준위 기준값, 중·저·극저준위 경계와 IAEA·미국 체계 비교 radioactive waste classification high-level waste intermediate-level waste low-level waste very low level waste exempt waste clearance clearance level minimum detectable concentration MDC GSG-1 10 CFR 61.55 Class A B C GTCC",
     "en_sha256": "a09aa4d77aefa60474e98d01cecf77d5ccd590d036e382cc82f4b1d58958a0d0",
-    "ko_sha256": "6ab3496e34030b4e1e24d6cae7940b05282825c9354469cd93f51fa61cacea98"
+    "ko_sha256": "66f70c3ec8cfb774e9d15072329c0a946e5df56f62b8d280a5f5ab4f4d42e028"
   },
   {
     "title": "[개념 노트] 사용후핵연료 저장 — 습식·건식 저장, 중간저장, 영구처분까지",
@@ -4392,7 +4392,7 @@
     "url": "posts/concepts/c-wd-002-spent-fuel-storage.html",
     "keywords": "[개념 노트] 사용후핵연료 저장 — 습식·건식 저장, 중간저장, 영구처분까지 spent fuel storage wet storage dry storage spent fuel pool high-density racks Boraflex neutron absorber transport cask Type B interim storage deep geological disposal KBS-3 Onkalo decay heat",
     "en_sha256": "0a7cb5c4ea56b9ec8d90c92ae401e06d4fa7a8c8e0b7fabd419e3c7b450610f6",
-    "ko_sha256": "9e2e583fa0d85df4cdb8a60d701c276fe5ed88e53f795e8365a55a81b457bcb8"
+    "ko_sha256": "63b066c76f82a61b04ee64d73bb505ef25b4ce21cae5edab293f889644e03bff"
   },
   {
     "title": "[개념 노트] 중·저준위 방사성폐기물 처분 — 분류·처분방식·처분제한과 경주 처분시설",
@@ -4602,7 +4602,7 @@
     "url": "posts/concepts/c-sy-010-excore-neutron-flux-monitoring.html",
     "keywords": "[개념 노트] 노외핵계측계통(ENFMS)과 중성자검출기 — 10 decade를 영역 겹침으로 잇는 출력 감시와 보호 신호 ex-core neutron flux monitoring ENFMS NIS neutron detector BF3 proportional counter fission chamber compensated ion chamber Campbelling MSV source range intermediate range power range P-6 P-10 logarithmic power linear power startup rate VOPT CPC rhodium SPND",
     "en_sha256": "fd1ff7046280783741d399feb86ee5d9e180cb9fc6302bc4664d9adb6d527b1c",
-    "ko_sha256": "82f3fb6f37ac7d921f507ea30fd9bf29cbcc0a7d34975d14771a48fde8d420d9"
+    "ko_sha256": "5aca2a10c0b755ad17033c60704a3191136c52ee74a1759e1479b6ee630393a0"
   },
   {
     "title": "[개념 노트] 원자로냉각재압력경계(RCPB) — 정의·외곽 한계 3목과 경계를 지키는 설계·검사 요건",
@@ -4631,8 +4631,8 @@
     "thumbnailAlt": "[개념 노트] 비상노심냉각계통(ECCS) — 피동 SIT와 능동 HPSI·LPSI가 시간대별로 나눠 맡는 노심 냉각 대표 이미지",
     "url": "posts/concepts/c-sy-008-emergency-core-cooling-system.html",
     "keywords": "[개념 노트] 비상노심냉각계통(ECCS) — 피동 SIT와 능동 HPSI·LPSI가 시간대별로 나눠 맡는 노심 냉각 emergency core cooling system ECCS safety injection tank SIT HPSI LPSI RWT sump SIAS RAS hot-leg recirculation boric acid precipitation LOCA OPR1000 APR1400 DVI IRWST",
-    "en_sha256": "187d574556267ffa4827799ebc85f0c38cfd782c0213812bcfb8e6d466d24f3b",
-    "ko_sha256": "05ed4d4263b88c8ee550a70b6555a9f5aab386c450904abf4c28a6c390862923"
+    "en_sha256": "f643f62458bfba70dd847515e96cacc7b9062ee5fd2bb2a90329e49a199f5913",
+    "ko_sha256": "2832995e07e6357abe7f62bb6623e356ede462ae90ddec7038612601ee8b924c"
   },
   {
     "title": "[개념 노트] 격납건물 누설률시험(ILRT/LLRT) — Pa에서 잰 누설률을 La의 75 %·60 % 안에 묶는 기밀시험",
@@ -4707,7 +4707,7 @@
     "url": "posts/concepts/c-sy-003-emergency-diesel-generator.html",
     "keywords": "[개념 노트] 비상디젤발전기(EDG) — 자동기동 신호, 부하 순차투입, 유효시험과 신뢰도 emergency diesel generator EDG Class 1E LOOP load sequencing RG 1.9 auto-start signal SIAS valid test reliability station blackout AAC APR1400",
     "en_sha256": "60cde1b3e43e999329e2fd88c065103a116c1e2394f3c148f65ee7778a9ced40",
-    "ko_sha256": "3b0841e34895a15220e838461c4c097ccb7615f329ca6a7178ad525f5bd01b9a"
+    "ko_sha256": "46fac40f76b93396156d9515f6215e040a702a66e54ff0a43dfeae2729a5d8a2"
   },
   {
     "title": "[개념 노트] 원자로보호계통(RPS)·발전소보호계통(PPS) — 4채널 2/4 동시논리와 설계기준",
@@ -4887,7 +4887,7 @@
     "url": "posts/concepts/c-sa-016-ines-event-scale.html",
     "keywords": "[개념 노트] 국제원자력사건등급(INES) — 세 영역에서 매기고 최고값을 택하는 0~7등급 INES event scale level incident accident defence in depth radiological barriers I-131 equivalent TBq Chernobyl Fukushima TMI event reporting IAEA",
     "en_sha256": "bf59d69a4f9e54a6f3a43c1314c1b91fe06883d105bf98148dfcb2aa7ffa655c",
-    "ko_sha256": "b85af02e289091421fdfda06919f45dcdfa1408adffca214ac9341447b044d51"
+    "ko_sha256": "8b578c392de0e78fcc38b6a83537eb828cd827ea583c9da622732aebe0a4aad9"
   },
   {
     "title": "[개념 노트] 비상운전절차서(EOP, 징후기반) — 사건기반·징후기반 이중 구조와 SPTA·ORP·FRP",
@@ -5292,7 +5292,7 @@
     "url": "posts/concepts/c-rx-015-inherent-safety.html",
     "keywords": "[개념 노트] 고유안전성(Inherent Safety) — 위험요소를 설계 선택으로 없애는 안전, 피동안전과의 경계 inherent safety passive safety TECDOC-626 reactivity feedback Doppler FTC MTC void coefficient pressure coefficient under-moderation GDC 11 walk-away safety NuScale APR1400 RBMK",
     "en_sha256": "46d1e952bc9681ff6e40f9f55d6d4b491fb84461630113b3354e6139330921fb",
-    "ko_sha256": "03bd4e8eec168cddc106c204e1e02d37d5e87403172057681921eb6416fd4c4d"
+    "ko_sha256": "279bdb9348043e8d1b7a107b52f4a65684a0b24b990887d80392e259ecabf121"
   },
   {
     "title": "[개념 노트] 지발중성자분율과 유효지발중성자분율(β·βeff) — 핵종이 정하는 β, 중요도가 정하는 βeff, 연소가 줄이는 1달러",
@@ -5352,7 +5352,7 @@
     "url": "posts/concepts/c-rx-011-excess-reactivity.html",
     "keywords": "[개념 노트] 잉여반응도(Excess Reactivity) — 제어 흡수체를 모두 뺐을 때 노심에 남는 반응도 excess reactivity reserve reactivity k_max built-in reactivity shutdown margin total control worth burnup reactivity temperature defect power defect burnable absorber boron letdown curve end of cycle GDC 26",
     "en_sha256": "c6dbd5c484f5fb494cf9ac860f39eeefa1ca7c40d01eb06b74434009c028680c",
-    "ko_sha256": "c381b75d6c5aeb56799791ad5e4725bacee8037b80bee10fc402147c6f803d71"
+    "ko_sha256": "c990d07a054ade0040913439bf90e68715f8f9ebdd3e478bfea7ce4305ea60a9"
   },
   {
     "title": "[개념 노트] 핵연료온도계수(도플러 계수, FTC) — 공명 확장이 만드는 즉발 음의 궤환",
@@ -5502,7 +5502,7 @@
     "url": "posts/concepts/c-rx-001-delayed-neutrons.html",
     "keywords": "[개념 노트] 지발중성자(Delayed Neutron) — 0.65%가 원자로를 제어 가능하게 만드는 이유 delayed neutrons prompt neutrons precursor Br-87 beta beta effective six groups Keepin mean generation time reactor period inhour equation prompt critical dollar reactivity",
     "en_sha256": "68dc98af070478bfc242e4cf26172240ecbc299f971ce96338870af72541df73",
-    "ko_sha256": "ee7db5853a6fa473d2fc19f881fc27c6e53b899764855b5a2667b01e6a26bb6f"
+    "ko_sha256": "684ab4b06917f81b2fe457da7aea6c0b9315487c0ef29211334df7d10af6bba8"
   },
   {
     "title": "[개념 노트] 삼중수소(Tritium) — 붕소·리튬과 중수에서 생기고 처리로 걸러지지 않는 저에너지 β 핵종",
@@ -5667,7 +5667,7 @@
     "url": "posts/concepts/c-pe-002-apr1400-design-features.html",
     "keywords": "[개념 노트] APR1400 주요 설계특징 — OPR1000 대비 무엇이 바뀌었나(출력·수명·내진·안전주입·MMIS·중대사고) APR1400 OPR1000 utility requirements evolutionary PWR direct vessel injection DVI IRWST safety injection fluidic device POSRV digital MMIS AAC severe accident plot plan design certification",
     "en_sha256": "23b96d33bcf1cbf69a2abe870cce803e76ad7485c7f7482de4098b13c4d6d3b1",
-    "ko_sha256": "c172800edf7dc9b9a9b91b3d3bbfb383148163f134bcc91e88d811ea5bc97e76"
+    "ko_sha256": "77d07ba58eca3d86b36bb1981dbbfdf5bc229ef9a4a5a077c2feea3ae3cfc8e1"
   },
   {
     "title": "[개념 노트] 원자로 냉각재 선정조건과 노형 비교 — 물·기체·액체금속·용융염이 정하는 압력과 온도",
@@ -5832,7 +5832,7 @@
     "url": "posts/concepts/c-fm-012-safdl.html",
     "keywords": "[개념 노트] 허용핵연료설계제한치(SAFDL) — 정상운전·예상운전과도에서 연료봉이 깨지지 않게 긋는 설계 한계 SAFDL specified acceptable fuel design limits GDC 10 SRP 4.2 DNBR 95/95 centerline melting uniform strain rod internal pressure lift-off anticipated operational occurrence safety limit LSSS LCO CPC COLSS",
     "en_sha256": "a313be31c5bd2536b3ebb30bda48d071fb2ba2466e62187ce87478781bcf6e97",
-    "ko_sha256": "a6f5d8b99b645a4713441ada3435e551757196bf7c589cee167b836b2293003f"
+    "ko_sha256": "4826780a459d032992a7f6d41cdc766c3ddeec945b73591079a242969f43842a"
   },
   {
     "title": "[개념 노트] 핵분열기체 방출(FGR) — 결정립계를 건너 간극으로 새는 Xe·Kr",
@@ -5877,7 +5877,7 @@
     "url": "posts/concepts/c-fm-009-fuel-integrity-monitoring.html",
     "keywords": "[개념 노트] 핵연료 건전성 감시(연료결함 진단) — 냉각재 방사능 지표, 요오드 동위원소비, 시핑·UT 검사 fuel integrity monitoring fuel failure diagnosis Xe-133 I-131 I-133 iodine ratio R/B slope tramp uranium iodine spike DEI-131 DEX-133 TSTF-490 sipping ultrasonic testing grid-to-rod fretting",
     "en_sha256": "71810e565c421d2f9ad77d2f30fbf69be83dbc84968061a87ded18e6e180058a",
-    "ko_sha256": "8f1339dcb9b86eeb72444d4ae44d3390424662fa72f22859ea8c8095640c5d6e"
+    "ko_sha256": "09949bee0bd36f233da9ac5dd83ef8077656e52833db87e4a065f9839abce5a7"
   },
   {
     "title": "[개념 노트] 증기발생기 전열관 손상·열화 — 위치별 열화 기구, 재질 이력, ECT와 40 %TW 관막음 기준",
@@ -5922,7 +5922,7 @@
     "url": "posts/concepts/c-fm-006-densification-swelling.html",
     "keywords": "[개념 노트] 핵연료 고밀화와 팽윤(Densification/Swelling) — 초기에 줄고 연소하며 부푸는 펠릿 fuel densification swelling UO2 pellet resintering test RG 1.126 solid fission product swelling gaseous swelling pellet-cladding gap PCMI cladding collapse Ginna high burnup structure rim HBS",
     "en_sha256": "94082a71276374c5d24788272863e88278e74bf832d5852e41781e51c98a991d",
-    "ko_sha256": "d23a81661c3176b515b1b355c37ffbe0785d3f284bc8e2569c389f67c3d932ad"
+    "ko_sha256": "fbc704aae533363e4897cbda59b8b3eab464daad3c5a583c13233a333a0ce8bb"
   },
   {
     "title": "[개념 노트] 피복관 수소화와 수소취화(Hydriding) — 부식 수소 흡수, TSS, 수소화물 재배향과 RIA·LOCA·건식저장",

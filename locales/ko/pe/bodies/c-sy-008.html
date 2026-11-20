@@ -53,7 +53,7 @@
 </tbody>
 </table>
 <p>용량·설정치(펌프 유량·양정, 탱크 체적)는 호기별 설계값이라 이 노트에서는 쓰지 않습니다.</p>
-<p>SIT 4기 중 1기는 파단부로 그대로 빠져나간다고 가정합니다. 나머지 3기로 기능하도록 질소량·수량·배관 크기를 정합니다[6].</p>
+<p>저온관 파단 해석에서는 파단된 루프의 SIT 1기 주입수가 파단부로 빠져나가 노심 냉각에 기여하지 않는다고 봅니다. 그래서 나머지 3기만으로 노심을 다시 채우도록 질소량·수량·배관 크기를 정합니다[6].</p>
 <h3>작동 신호</h3>
 <ul>
 <li><strong>SIAS(안전주입작동신호)</strong>: 가압기 저압력 또는 격납건물 고압력. HPSI·LPSI가 자동 기동하고 주입 모관 격리밸브가 열립니다. 설정치는 노형별이며, 예로 APR1400은 가압기 저압력 1,810 psia·격납건물 고압력 1.9 psig(공칭)입니다[9].</li>
@@ -72,7 +72,7 @@
 <li>운전원이 HPSI 토출 경로를 바꿔 고온관·저온관 동시 주입(시점은 노형별 붕산 석출 해석으로 정함)</li>
 <li>장기 냉각 → 정지냉각 전환</li>
 </ol>
-<figure class="article-image"><img alt="CE형(OPR1000 계열) 격납건물 절개 장면과 대형 LOCA 이후 로그 시간축 위 SIT·HPSI·LPSI 중첩 작동, RAS 흡입 전환, 고온관 동시 주입" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/2ff70ea964261acd08a926bb574e1e562e0199a1f2cbc990313d275e219b2d2e.webp"/><figcaption>CE형(OPR1000 계열) 격납건물 절개 장면과 대형 LOCA 이후 로그 시간축 위 SIT·HPSI·LPSI 중첩 작동, RAS 흡입 전환, 고온관 동시 주입</figcaption></figure>
+<figure class="article-image"><img alt="CE형(OPR1000 계열) 격납건물 절개 장면과 대형 LOCA 이후 로그 시간축 위 SIT·HPSI·LPSI 중첩 작동, RAS 흡입 전환, 고온관 동시 주입" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/77cb234e116b44789b63462587fb89855fecf8b6faf6830e88b5a59fde7812e5.webp"/><figcaption>CE형(OPR1000 계열) 격납건물 절개 장면과 대형 LOCA 이후 로그 시간축 위 SIT·HPSI·LPSI 중첩 작동, RAS 흡입 전환, 고온관 동시 주입</figcaption></figure>
 <h3>고온관 동시 주입(고온관 재순환)을 하는 이유</h3>
 <p>저온관 파단이면 저온관으로 넣은 물이 노심에서 끓어 증기로 나갑니다. 붕산은 증발하지 않아 노심과 하부 플레넘에 쌓입니다. 농도가 용해도 한계를 넘으면 붕산이 석출해 유로를 막고 열전달을 떨어뜨립니다. 그러면 장기 냉각 기준(50.46(b)(5))이 위협받습니다[3]. 고온관으로도 넣으면 노심을 관통하는 순유량이 생겨 농축수를 파단부로 씻어 냅니다. 고온관 파단이면 저온관 주입만으로도 노심이 씻기지만, 파단 위치를 미리 알 수 없어 양쪽에 동시에 넣습니다. CE형에서는 운전원이 HPSI 토출 일부를 고온관 쪽 주입 경로로 돌려 고온관과 저온관에 동시에 넣습니다.</p>
 <p>전환 시점은 노형별 붕산 석출 해석과 절차로 정합니다. 하부 플레넘에서 섞이는 체적을 작게 볼수록 농축이 빨라 더 일찍 바꿔야 합니다. 제73회 문항의 "약 24시간"은 문제의 전제로 읽으면 됩니다.</p>
@@ -263,6 +263,6 @@
 <li>U.S. NRC HRTD, Combustion Engineering Technology Cross Training Course Manual, Ch. 11.2 "Low Pressure Safety Injection System", NRC ADAMS ML11251A033.</li>
 <li>U.S. NRC, Regulatory Guide 1.183 "Alternative Radiological Source Terms for Evaluating Design Basis Accidents at Nuclear Power Reactors", Rev. 0 (2000), 3.5절(집수조 pH).</li>
 <li>KHNP, APR1400 Design Control Document Tier 2, Rev. 0, Table 7.3-5A(ESFAS 설정치), NRC ADAMS ML15006A046.</li>
-<li>U.S. NRC, NUREG-2215 "Final Safety Evaluation Report Related to the Certification of the APR1400 Standard Design", Ch. 6.3 (2018); S.-S. Lee, S.-H. Kim, K.-Y. Suh, "The Design Features of the Advanced Power Reactor 1400", Nuclear Engineering and Technology 41(8), 995 (2009).</li>
+<li>U.S. NRC, APR1400 FSER (ADAMS ML18087A364, 2018-09-28) "Final Safety Evaluation Report Related to the Certification of the APR1400 Standard Design", Ch. 6.3 (2018); S.-S. Lee, S.-H. Kim, K.-Y. Suh, "The Design Features of the Advanced Power Reactor 1400", Nuclear Engineering and Technology 41(8), 995 (2009).</li>
 <li>KEPCO/KHNP, APR1400 Design Certification, Response to RAI No. 233-8244(정지냉각 개시 온도·최대 운전압력), NRC ADAMS ML15348A085.</li>
 </ol>
