@@ -1,0 +1,133 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 4교시 3번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>한국표준형원전의 안전주입계통(Safety injection system)을 구성하는 각 기기의 기능을 설명하시오.</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>한국표준형원전(OPR1000) 안전주입계통을 <strong>피동부(SIT)·능동부(HPSI·LPSI)·수원(RWT·집수조)·밸브와 신호</strong>로 나눠 기기마다 "무엇을, 언제, 어떻게" 하는지 설명할 수 있는지 봅니다. 기기 이름만 나열하기보다 압력대별 역할 분담, 주입 단계에서 재순환 단계로의 전환(RAS), 고온관 주입 같은 장기 냉각 기능까지 이어서 쓰면 답안의 완결성이 높아집니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 안전주입계통의 정의·기능과 설계 근거</li>
+<li>본론 1: 계통 구성(2계열, 4저온관 주입)과 작동 신호(SIAS·RAS)</li>
+<li>본론 2: 기기별 기능 — SIT, HPSI, LPSI, RWT, 집수조·TSP, 주입 밸브·역지밸브, 최소유량관, 고온관 주입</li>
+<li>본론 3: 대형 LOCA에서 기기 작동의 흐름(병행·중첩)</li>
+<li>결론: 설계 요건(단일고장·다중성)과 APR1400과의 차이</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>안전주입계통(SIS): 냉각재상실사고(LOCA) 등에서 <strong>RCS에 붕산수를 주입</strong>해 노심을 냉각하는 비상노심냉각계통(ECCS)의 주입 설비</li>
+<li>기능: ① 재고량 보충·<strong>노심 냉각</strong> ② 붕산수로 <strong>부반응도</strong> 공급(주증기관 파단 재임계 방지) ③ 집수조 <strong>재순환 장기 냉각</strong> ④ 고온관 동시 주입으로 <strong>붕산 석출 방지</strong></li>
+<li>근거: 기술기준규칙 <strong>제30조</strong>(비상노심냉각장치)[3], 원안위고시 <strong>제2017-23호</strong> 허용기준[4], 10 CFR 50.46·GDC 35[5]</li>
+</ul>
+<p><strong>2. 계통 구성과 작동 신호</strong></p>
+<ul>
+<li><strong>피동부</strong>: 안전주입탱크(SIT) <strong>4기</strong>(저온관마다 1기)</li>
+<li><strong>능동부</strong>: 고압안전주입펌프(HPSI) <strong>2대</strong>, 저압안전주입펌프(LPSI) <strong>2대</strong> → 기계 <strong>2계열</strong>, 1E 전원 2계열</li>
+<li><strong>수원</strong>: 재장전수탱크(RWT, 격납건물 밖) → 격납건물 재순환 집수조</li>
+<li><strong>주입 위치</strong>: 4개 <strong>저온관</strong>(SIT·HPSI·LPSI 주입관 합류), 장기 냉각 중 고온관 주입 경로 추가(OPR1000은 고온관 2·저온관 4의 2루프)</li>
+<li><strong>SIAS</strong>(안전주입작동신호): <strong>가압기 저압력 또는 격납건물 고압력</strong> → 펌프 기동, 주입 밸브 개방, 비상디젤발전기 부하 순차 투입</li>
+<li><strong>RAS</strong>(재순환작동신호): <strong>RWT 저수위</strong> → 흡입원을 집수조로 전환</li>
+</ul>
+<figure class="article-image"><img alt="OPR1000 안전주입계통 단순화 개념도(RWT·HPSI 2·LPSI 2·SIT 4·저온관 4·집수조·RAS 제어 신호·고온관 주입)와 겹치는 압력대별 주요 역할" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/2a5c55ed9f58d6b1d1791ba1cfd347e4e2ca9fccc541bd831b9311ccbd761f54.webp"/><figcaption>OPR1000 안전주입계통 단순화 개념도(RWT·HPSI 2·LPSI 2·SIT 4·저온관 4·집수조·RAS 제어 신호·고온관 주입)와 겹치는 압력대별 주요 역할</figcaption></figure>
+<p><strong>3. 기기별 기능</strong></p>
+<ul>
+<li><strong>(1) 안전주입탱크(SIT) 4기</strong>
+<ul>
+<li>붕산수를 담고 <strong>질소로 가압</strong>한 피동 탱크 → RCS 압력이 탱크 압력 아래로 떨어지면 <strong>역지밸브가 열려 차압으로 대유량 자동 주입</strong>(별도 작동 신호 불필요)</li>
+<li>전원 없이 작동 → 대형 LOCA <strong>취출·재충수 단계</strong>에서 하부 플레넘·강수부를 빠르게 채움</li>
+<li>저온관 파단 해석에서는 파단 루프 쪽 SIT 1기의 주입수가 노심 냉각에 기여하지 않는다고 보고, 나머지 3기로 기능하도록 설계(CE형 STS 기술배경 예)[2]</li>
+<li><strong>출구 격리밸브(MOV)</strong>: 운전 중 <strong>완전 열림 유지</strong>, CE형 STS 예로는 구동부 전원 차단(오동작 닫힘 방지), 계획된 감압 시 닫아 불필요한 방출 방지[2] — 세부 요건은 호기별 운영기술지침서</li>
+<li><strong>출구 역지밸브</strong>: 정상 시 RCS 고압과 탱크를 격리, 주입 시 개방</li>
+<li><strong>질소 공급·배기 밸브, 수위·압력 계측</strong>: 압력·수위 유지와 감시(CE형 STS 예: 12시간마다 확인)[2]</li>
+</ul>
+</li>
+<li><strong>(2) 고압안전주입펌프(HPSI) 2대</strong>
+<ul>
+<li><strong>고압·저유량</strong> 원심펌프 → RCS 압력이 펌프 주입 가능 압력 이하로 내려가면 주입, <strong>소형 LOCA</strong>에서 재고량 보충</li>
+<li>주증기관 파단 등 과냉각 사고에서 <strong>붕산 주입</strong>으로 부반응도 공급</li>
+<li>RAS 뒤 <strong>집수조 물을 흡입해 재순환 주입</strong> 지속(장기 냉각의 주역)</li>
+<li>장기 냉각 중 토출 일부를 <strong>고온관 주입 경로</strong>로 돌려 붕산 석출 방지</li>
+</ul>
+</li>
+<li><strong>(3) 저압안전주입펌프(LPSI) 2대</strong>
+<ul>
+<li><strong>저압·대유량</strong> 원심펌프 → <strong>대형 LOCA</strong> 재관수 단계에서 노심을 빠르게 덮음</li>
+<li><strong>RAS 시 자동 정지</strong> → 집수조 재고와 HPSI·살수펌프 흡입 수두 보호</li>
+<li>원자로 정지 후 <strong>정지냉각 운전에서 정지냉각펌프로 겸용</strong>(OPR1000)[1]</li>
+</ul>
+</li>
+<li><strong>(4) 재장전수탱크(RWT)</strong>
+<ul>
+<li>격납건물 밖 <strong>고농도 붕산수</strong> 저장 → <strong>주입 단계 수원</strong></li>
+<li>저수위 설정치 신호가 <strong>RAS의 입력</strong> → 고갈 전에 재순환으로 전환</li>
+</ul>
+</li>
+<li><strong>(5) 재순환 집수조·스크린·TSP</strong>
+<ul>
+<li>파단부로 흘러나온 냉각재와 살수수를 모아 <strong>재순환 단계 수원</strong> 제공</li>
+<li><strong>스크린</strong>이 보온재 등 파편을 걸러 펌프·노심 유로 보호</li>
+<li><strong>삼인산나트륨(TSP) 바스켓</strong>(스크린과 별개): 물에 녹아 재순환수 pH를 올림(목표 예: pH 7 이상, 호기별 기준) → 요오드 재휘발 억제[6], 염화물 응력부식균열 가능성 저감</li>
+</ul>
+</li>
+<li><strong>(6) 주입 모관·주입관 밸브</strong>
+<ul>
+<li><strong>주입 격리밸브</strong>: SIAS로 개방 → 펌프 토출을 4개 저온관으로 분배</li>
+<li><strong>주입관 역지밸브</strong>: RCS 고압으로부터 저압 계통 보호(연계계통 냉각재 상실 방지), 누설 시험으로 관리[3]</li>
+</ul>
+</li>
+<li><strong>(7) 최소유량 재순환관</strong>
+<ul>
+<li>필요한 계통 차압이 펌프가 낼 수 있는 차압을 넘어 주입 유량이 부족할 때 펌프 <strong>과열·손상 방지</strong>용 소유량 순환(재순환 단계 개폐 조건은 호기 설계)</li>
+</ul>
+</li>
+<li><strong>(8) 흡입원 전환 밸브</strong>
+<ul>
+<li>RAS(제어 신호)로 <strong>집수조 흡입밸브 개방, RWT 쪽 격리</strong> → 흡입원 자동 전환</li>
+</ul>
+</li>
+<li><strong>(9) 고온관 주입 밸브</strong>
+<ul>
+<li>장기 냉각 중 <strong>운전원 조작</strong>으로 고온관·저온관 <strong>동시 주입</strong>(전환 시점은 붕산 석출 해석으로 정함)</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="답안용 블록도: RWT → HPSI·LPSI → 저온관, SIT → 저온관, RAS 후 집수조 → HPSI" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/4dd24010b6ef15f327e6affa453279ccffd69d638b4f38cf9eef419d02103a08.webp"/><figcaption>답안용 블록도: RWT → HPSI·LPSI → 저온관, SIT → 저온관, RAS 후 집수조 → HPSI</figcaption></figure>
+<p><strong>4. 대형 LOCA에서 작동 흐름</strong></p>
+<ul>
+<li>① 압력 급강하 → 원자로정지·<strong>SIAS</strong> → ② SIAS에 따른 <strong>HPSI·LPSI 기동</strong>(소외전원 상실 시 EDG 기동·부하 투입 뒤)과 압력 저하에 따른 <strong>SIT 주입</strong>이 <strong>병행·중첩</strong>(실제 주입 개시는 감압 속도·펌프 양정에 따라 다름) → ③ 재관수·노심 급랭 → ④ RWT 저수위 → <strong>RAS</strong>: LPSI 정지, HPSI 집수조 재순환 → ⑤ <strong>고온관 동시 주입</strong> → 장기 냉각</li>
+</ul>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>피동 SIT가 <strong>초기 대유량</strong>, HPSI가 <strong>고압·재순환</strong>, LPSI가 <strong>저압 대유량</strong>을 맡아 LOCA 크기 전 범위를 담당함</li>
+<li><strong>2계열 독립·단일고장 가정</strong>에도 기능하도록 설계(기술기준규칙 제30조②)[3]</li>
+<li>APR1400은 <strong>SIP 4대·원자로용기 직접주입(DVI)·SIT 유량조절기·격납건물 내 IRWST</strong>로 LPSI와 RAS를 없앰[7]</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<h3>압력대로 나누면 기기 역할이 한눈에 보입니다</h3>
+<p>세 주입 수단은 담당하는 RCS 압력대가 다릅니다. HPSI는 RCS 압력이 펌프 주입 가능 압력 아래로 내려가는 비교적 높은 압력에서부터 주입해 작은 파단을 맡습니다. SIT는 RCS 압력이 질소 압력 아래로 내려가는 순간 한꺼번에 쏟아져 대형 파단 초기의 공백을 메웁니다. LPSI는 압력이 충분히 낮아진 뒤 대유량으로 노심을 덮습니다. 작동 범위는 서로 겹치며, 대형 LOCA에서는 셋이 함께 들어가고 소형 LOCA에서는 압력·사고 진행에 따라 HPSI가 주된 주입 수단이 됩니다. 원심펌프는 RCS 압력이 낮을수록 유량이 늘지만, 펌프 곡선의 체절양정은 펌프 차압이라 RCS 절대압력의 주입 상한으로 그대로 읽으면 안 됩니다. 실제 주입 개시 압력과 유량은 호기 설계 펌프 곡선과 안전해석이 정합니다.</p>
+<h3>재순환 전환(RAS)이 답안의 분수령입니다</h3>
+<p>RWT는 유한하므로 장기 주입으로 저수위 설정치에 이르면, 고갈 전에 재순환으로 전환합니다. RAS가 나면 흡입원을 격납건물 집수조로 바꾸고, LPSI를 세워 집수조 재고와 남은 펌프의 흡입 수두를 지킵니다. 이후의 장기 냉각은 HPSI가 집수조 물을 다시 넣는 재순환이 맡습니다. 집수조 스크린이 막히면 이 단계 전체가 위협받기 때문에, 미국은 GSI-191 이후 스크린 성능을 다시 평가하게 했습니다. 고온관 동시 주입은 저온관 파단에서 노심에 쌓이는 붕산을 씻어 내기 위한 조치입니다. 전환 시점은 노형별 붕산 석출 해석으로 정하므로 답안에는 "장기 냉각 중 해석 시점에"처럼 쓰는 편이 안전합니다.</p>
+<h3>CE형 표준기술지침서로 본 감시 요건</h3>
+<p>CE형 표준기술지침서(NUREG-1432)는 SIT 4기를 별도 LCO 3.5.1로, HPSI·LPSI 2계열을 LCO 3.5.2로 관리합니다[2]. SIT 격리밸브를 열고 전원을 차단해 두는 것, 수위·압력을 12시간마다 확인하는 것이 그 예입니다. 다만 STS는 CE형 일반 예시이므로 OPR1000 호기의 실제 요건은 해당 호기 운영기술지침서가 정합니다. 충전펌프는 화학 및 체적제어계통(CVCS) 소속이라 이 문제의 구성 기기에 넣지 않는 것이 일반적입니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li>설계 근거인 「원자로시설 등의 기술기준에 관한 규칙」은 원안위규칙 제37호(2026.3.30)가 현행판이며, 비상노심냉각장치 조문은 출제 당시와 같이 제30조입니다[3].</li>
+<li>성능 기준 고시는 원안위고시 제2017-23호 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」이 현행판이며 출제 이후 개정이 없습니다[4].</li>
+<li>미국은 개정 ECCS 규칙안 50.46c를 2024.4.11 위원회가 직원에게 반환해 제정하지 않았습니다. 따라서 현행 50.46(b)가 그대로 기준입니다[5]. 2026.7.16 공고된 별도의 포괄 제안규칙(FR 2026-14341, 5 wt% 초과 농축·FFRD 등)은 아직 제안 단계입니다.</li>
+<li>안전주입계통의 구성과 기기 기능 자체는 출제 이후 달라지지 않았습니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC HRTD, Combustion Engineering Technology Cross Training Course Manual, Ch. 11.2 "Low Pressure Safety Injection System", Rev. 10/08, NRC ADAMS ML11251A033.</li>
+<li>U.S. NRC, NUREG-1432 "Standard Technical Specifications — Combustion Engineering Plants", LCO 3.5.1 "Safety Injection Tanks"·LCO 3.5.2 "ECCS — Operating" 및 Bases B 3.5.1·B 3.5.2.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제22조·제30조. 국가법령정보센터.</li>
+<li>원자력안전위원회, 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」, 원안위고시 제2017-23호(2017.12.26). 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR 50.46 "Acceptance criteria for emergency core cooling systems for light-water nuclear power reactors" 및 10 CFR Part 50 Appendix A, GDC 35·36·37.</li>
+<li>U.S. NRC, Regulatory Guide 1.183 "Alternative Radiological Source Terms for Evaluating Design Basis Accidents at Nuclear Power Reactors", Rev. 0 (2000).</li>
+<li>U.S. NRC, NUREG-2215 "Final Safety Evaluation Report Related to the Certification of the APR1400 Standard Design", Ch. 6.3 (2018); S.-S. Lee, S.-H. Kim, K.-Y. Suh, "The Design Features of the Advanced Power Reactor 1400", Nuclear Engineering and Technology 41(8), 995 (2009).</li>
+</ol>

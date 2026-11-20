@@ -1,0 +1,214 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 3교시 6번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>국내 경수로형 원전의 전력계통과 관련하여 다음을 설명하시오.
+가. 비상디젤발전기(EDG), 대체교류디젤발전기(AACDG), 이동형발전차가 전력을 공급하는 모선
+나. 비상디젤발전기 자동기동 조건
+다. 운영기술지침서에서 요구하는 교류전원 계통의 운전제한조건</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>소외전원 상실(LOOP) → 교류전원완전상실(SBO) → 설계기준 초과의 장기 교류전원 상실(ELAP)로 갈수록 대처 전원이 EDG → AAC DG → 이동형발전차로 바뀝니다. 이 문제는 세 전원이 각각 어느 모선에, 어떤 방식(자동·수동)으로 붙는지 단선도로 설명하고, EDG가 언제 스스로 기동하는지, 그리고 운영기술지침서가 교류전원의 가용성을 어떤 조건·허용시간으로 묶어 두는지를 연결해서 쓸 수 있는지 봅니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 소내 전력계통 구성(소외전원 2회로, Class 1E 2계열)</li>
+<li>본론 가: 전원별 공급 모선 — EDG, AAC DG, 이동형발전차</li>
+<li>본론 나: EDG 자동기동 조건과 신호별 응답</li>
+<li>본론 다: 교류전원 LCO(STS 3.8.1) — LCO 문언, 적용 모드, 조치·허용시간, 주요 점검요구사항, 정지 중 LCO</li>
+<li>결론: 사건 단계별 전원 계층과 LCO의 의미</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요 — 소내 교류전원 계통</strong></p>
+<ul>
+<li>소외전원: 스위치야드 → 소내변압기·기동(예비)변압기 → 비안전 모선 → <strong>Class 1E 4.16 kV 안전모선 A·B</strong>(소외 <strong>2회로</strong>, 기술기준규칙 제24조[1], GDC 17[2])</li>
+<li>1E 계통: 4.16 kV 안전모선 → 480 V 부하센터·MCC → 충전기·인버터 → 125 V DC·120 V AC 무정전 계측 모선</li>
+<li>비상전원 계층: LOOP → <strong>EDG</strong>(Class 1E), SBO → <strong>AAC DG</strong>(비안전), ELAP → <strong>이동형발전차</strong>(사고관리 설비)</li>
+</ul>
+<p><strong>2. 가. 전원별 공급 모선</strong></p>
+<table>
+<thead>
+<tr>
+<th>전원</th>
+<th>공급 모선</th>
+<th>연결 방식</th>
+<th>대비 사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EDG A·B</td>
+<td>자기 계열 <strong>4.16 kV 1E 안전모선 A·B</strong></td>
+<td>자동 기동·자동 투입, 순차투입</td>
+<td>LOOP(LOCA 동반 포함)</td>
+</tr>
+<tr>
+<td>AAC DG</td>
+<td>AAC 모선 → 연결 차단기로 <strong>1E 안전모선 A 또는 B</strong>(한 계열)</td>
+<td>주제어실 수동 연결</td>
+<td>SBO</td>
+</tr>
+<tr>
+<td>이동형발전차</td>
+<td>사전 설치 접속점 → <strong>1E 안전모선 A 또는 B</strong>(설계에 따라 480 V 부하센터)</td>
+<td>운반·케이블 연결</td>
+<td>ELAP·다중고장</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>EDG</strong>: 계열별 전용(1:1), 계열 간 자동 연결 없음 → 독립성·단일고장 기준 만족[3]</li>
+<li><strong>AAC DG</strong>
+<ul>
+<li>비안전등급(non-1E) 전원. SBO 시 운전원이 연결 차단기로 <strong>한 번에 한 계열</strong> 안전모선에 공급(두 안전모선 동시 연결 금지 — 계열 독립성 유지) → 안전정지 부하</li>
+<li>10분 안에 연결할 수 있음을 시험으로 입증하면 SBO 대처분석 부담이 줄어듦(RG 1.155) — 의무 복구시한은 아님[4]</li>
+<li>공개 예: 국내 새울 3호기 AAC-DG 7,200 kW[8], 미국 인증 APR1400은 가스터빈 AAC가 LOOP 때 비안전 모선, SBO 때 지정 1E 4.16 kV 모선을 지원[5]</li>
+</ul>
+</li>
+<li><strong>이동형발전차</strong>(후쿠시마 후속, 2012년부터 배치)
+<ul>
+<li><strong>1 MW</strong>(MACST 2단계, 8 h 이내 가용화) → 4.16 kV 안전모선 A 또는 B → 충전기 경유 <strong>축전지 충전</strong>·필수 계측 유지[6]</li>
+<li><strong>3.2 MW</strong>(3단계, 부지 공용) → 안전모선 → 전동 펌프·밸브 등 장기 냉각 부하[6][7]</li>
+<li>접속점 위치·전압은 호기별 설계</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="단선도(소외 2회로·1E 안전모선 A/B·EDG·AAC DG·이동형발전차 접속)와 STS 3.8.1 조치·허용시간 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/5ce2765d8f116d4e6fff311460cb5c4f08c46e1f6088b39b5ed6155635337e5a.webp"/><figcaption>단선도(소외 2회로·1E 안전모선 A/B·EDG·AAC DG·이동형발전차 접속)와 STS 3.8.1 조치·허용시간 카드</figcaption></figure>
+<p><strong>3. 나. EDG 자동기동 조건</strong></p>
+<ul>
+<li>① <strong>안전모선 저전압(LOV)</strong>: 소외전원 상실 시 4.16 kV 1E 모선 저전압 계전기 동작(APR1400 DC 모선당 4개, 4중 2)[5]</li>
+<li>② <strong>저하전압(DVR)</strong>: 지속 저전압을 시간지연 후 판정 → 소외전원 분리 → 기동</li>
+<li>③ <strong>안전주입 작동신호(SIAS)</strong>, ④ <strong>격납건물살수 작동신호(CSAS)</strong>, ⑤ <strong>보조급수 작동신호(AFAS)</strong>(APR1400 DC 기준 ESF 기동신호)[5]</li>
+<li>⑥ <strong>수동</strong>: 주제어실 비상기동, 현장 기동</li>
+<li><strong>신호별 응답</strong>
+<ul>
+<li>ESF 신호 단독(소외전원 정상) → 기동 후 <strong>무부하 대기</strong>, 차단기 개방 유지</li>
+<li>LOOP → 인입차단기 개방·부하 차단 → 정격 도달 후 EDG 차단기 투입 → <strong>순차투입</strong></li>
+<li>LOCA + LOOP → 같은 경로, ESF 부하 순서로 순차투입</li>
+<li>시험 중 ESF 신호 → 시험모드 해제, 비상운전 우선(SR 3.8.1.17)[3]</li>
+</ul>
+</li>
+<li>기동 성능: 대기 상태에서 <strong>[10 s] 이내</strong> 전압 ≥ [3,740] V·주파수 ≥ [58.8] Hz(CE형 STS 괄호값, 호기별 값은 T/S)[3]</li>
+</ul>
+
+<p><strong>4. 다. 교류전원 운전제한조건(미국 CE형 STS 3.8.1 "AC Sources — Operating" 예)</strong>[3]</p>
+<ul>
+<li><strong>LCO</strong>: ① 소외 송전망과 1E 교류 배전계통 사이의 <strong>독립 소외회로 2개</strong> ② 각각 1E 한 계열에 공급할 수 있는 <strong>DG 2대</strong> ③ [계열별 자동 부하순차투입기] 운전 가능</li>
+<li><strong>적용</strong>: MODE 1~4. DG에는 LCO 3.0.4.b(위험평가 후 모드 진입) 적용 불가</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>상태</th>
+<th>주요 조치</th>
+<th>허용시간</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A. 소외회로 1개 불능</td>
+<td>남은 회로 차단기 정렬 점검(SR 3.8.1.1) / 복구</td>
+<td>1 h, 이후 8 h마다 / <strong>72 h</strong></td>
+</tr>
+<tr>
+<td>B. DG 1대 불능</td>
+<td>소외회로 점검, 반대 계열 불능 시 해당 기능 불능 선언(4 h), 공통원인 아님 확인 또는 남은 DG 기동시험 / 복구</td>
+<td>[24 h] / <strong>72 h</strong></td>
+</tr>
+<tr>
+<td>C. 소외회로 2개 불능</td>
+<td>한 회로 복구</td>
+<td><strong>24 h</strong></td>
+</tr>
+<tr>
+<td>D. 소외 1 + DG 1 불능</td>
+<td>둘 중 하나 복구</td>
+<td><strong>12 h</strong></td>
+</tr>
+<tr>
+<td>E. DG 2대 불능</td>
+<td>1대 복구</td>
+<td><strong>2 h</strong></td>
+</tr>
+<tr>
+<td>G. 위 완료시간 미충족</td>
+<td>MODE 3 / MODE 4</td>
+<td>6 h / 12 h 이내</td>
+</tr>
+<tr>
+<td>H. 교류전원 3개 이상 불능</td>
+<td>즉시 LCO 3.0.3 진입</td>
+<td>즉시</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>72 h·24 h·12 h에는 [위험도 정보 활용 허용시간(RICT) 프로그램] 대안이 괄호로 병기됨</li>
+<li><strong>주요 점검요구사항</strong>: 소외회로 차단기 정렬(SR 3.8.1.1, [7일]), DG 기동(3.8.1.2, [31일]), 부하운전 60분(3.8.1.3), 일일탱크 연료(3.8.1.4), 급속기동 [10 s](3.8.1.7), LOOP 모의(3.8.1.11), ESF 모의(3.8.1.12), 24 h 운전(3.8.1.14), LOOP+ESF(3.8.1.19), 동시기동(3.8.1.20)</li>
+<li><strong>관련 LCO</strong>: 3.8.2(정지 중, MODE 5·6 및 조사연료 이동 중 소외회로 1개 + DG 1대), 3.8.3(연료유·윤활유·기동공기), 3.8.9(배전계통: 교류 배전 불능 8 h, 무정전 교류모선 2 h)[3]</li>
+<li>국내 운영기술지침서도 같은 골격(3.8.1~3.8.3)이며, 괄호 값과 허용시간은 호기별 지침서 값을 따름</li>
+</ul>
+<figure class="article-image"><img alt="답안용 단선도: 소외 2회로 → 1E 모선 A/B ← EDG A/B, AAC DG 수동 연결, 이동형발전차 접속점" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/552d09f48c9d3970b4fd17d4b4e0b5fbbca3b4e12410418e019c24e09d434a6d.webp"/><figcaption>답안용 단선도: 소외 2회로 → 1E 모선 A/B ← EDG A/B, AAC DG 수동 연결, 이동형발전차 접속점</figcaption></figure>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>EDG는 자기 계열 1E 모선에 <strong>자동</strong>, AAC DG와 이동형발전차는 1E 모선에 <strong>수동</strong>으로 붙으며, 사건 단계가 깊어질수록 수동·장시간 전원이 맡음</li>
+<li>LCO는 "소외 2회로 + DG 2대"의 가용성을 지키고, 불능 조합이 나빠질수록 허용시간을 72 → 24 → 12 → 2 h로 줄여 LOOP·SBO 위험을 묶어 둠</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 허용시간이 왜 이렇게 나뉘나</h3>
+<p>소외회로 하나나 DG 하나를 잃어도 나머지로 한 계열 이상을 살릴 수 있으므로 72시간을 줍니다. 소외회로 둘을 모두 잃으면 DG 2대가 남아 있어도 LOOP 상태라 24시간, 소외회로와 DG를 하나씩 잃으면 남은 전원이 계열마다 하나뿐이라 12시간입니다. DG 2대를 모두 잃으면 소외전원이 끊기는 순간 SBO가 되므로 2시간입니다. "반대 계열 기능이 불능이면 해당 기능을 불능으로 선언"하는 조치(B.2 등)는, 한 계열 전원과 반대 계열 설비가 동시에 불능이면 그 안전기능 전체를 잃는 조합을 막기 위한 것입니다.</p>
+<h3>해설: 채점 포인트와 흔한 실수</h3>
+<ul>
+<li><strong>AAC DG를 자동 투입으로 서술</strong>: AAC DG는 비안전등급이며 운전원이 수동으로 연결합니다.</li>
+<li><strong>ESF 신호가 오면 EDG가 바로 모선에 붙는다고 서술</strong>: 투입은 모선 저전압일 때만입니다.</li>
+<li><strong>LCO를 "EDG 2대"로만 서술</strong>: 소외회로 2개와 부하순차투입기도 LCO 대상입니다.</li>
+</ul>
+<h2>현행 기준으로 달라진 점</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>출제 당시(2019)</th>
+<th>현행(2026)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>운영기술지침서 작성 기준</td>
+<td>원안위고시 제2017-5호</td>
+<td>제2024-13호(2024.12.31) — LCO 선정기준 문언은 같음</td>
+</tr>
+<tr>
+<td>CE형 STS</td>
+<td>NUREG-1432 Rev.4</td>
+<td>Rev.5(2021) — RICT 대안 병기, 3.8.1 말단 조치 MODE 4·12 h(구판·호기별 지침서는 MODE 5·36 h인 경우 있음)[3]</td>
+</tr>
+<tr>
+<td>기술기준규칙</td>
+<td>당시 판</td>
+<td>원안위규칙 제37호(2026.3.30) 제24조 — 대체교류전원 확보·시험 입증 체계 유지[1]</td>
+</tr>
+<tr>
+<td>사고관리</td>
+<td>사고관리계획서 제도(2016 시행)</td>
+<td>고시 제2026-1호(2026.1.16), MACST 이동형 설비(제206회 원안위 의안)[6]</td>
+</tr>
+<tr>
+<td>RG 1.9</td>
+<td>Rev.4(2007)</td>
+<td>Rev.4 유지, 개정안 DG-1477 의견수렴 중(2026)</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제24조·제44조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criteria 17·18.</li>
+<li>U.S. NRC, NUREG-1432 Standard Technical Specifications — Combustion Engineering Plants, Vol. 1, Rev. 5 (2021), LCO 3.8.1·3.8.2·3.8.3·3.8.9, NRC ADAMS ML21258A421.</li>
+<li>U.S. NRC, Regulatory Guide 1.155 "Station Blackout" (1988); 10 CFR 50.63.</li>
+<li>U.S. NRC, Final Safety Evaluation Report for the APR1400 Design Certification, Chapter 8 "Electric Power", NRC ADAMS ML18197A219.</li>
+<li>원자력안전위원회, 제206회 원자력안전위원회 회의 의안(2025.1.9), 사고관리계획서 승인; OECD/NEA, NEA No. 7578 (2023), 한국 사례.</li>
+<li>장승현, 김민규, "Analysis of the impact of MACST equipment on Seismic PSA", 한국원자력학회 추계학술발표회 (2024.10).</li>
+<li>원자력안전위원회, 제228회 회의(2025.12.30) 의안 「새울 3호기 운영허가(안)」.</li>
+</ol>

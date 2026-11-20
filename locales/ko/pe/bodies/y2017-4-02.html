@@ -1,0 +1,206 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 4교시 2번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>표준형 원자력발전소 공학적 안전설비와 관련하여 다음에 사항에 대하여 기술하시오.
+가. 공학적안전설비작동신호의 종류, 신호원 및 기능
+나. 공학적안전설비작동신호와 설계기준사고의 관계</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>표준형(OPR1000)의 NSSS 공학적안전설비작동신호 6종을 <strong>신호원(입력 변수) → 논리 → 작동 대상</strong>의 사슬로 정확히 쓸 수 있는지 봅니다. 두 번째 소문항은 "사고별로 어떤 신호가 나오는가"에 그치지 말고, 사고해석이 신호의 작동점과 응답시간을 가정하고 그 가정을 설정치·시험으로 보장한다는 <strong>설계 논리</strong>까지 써야 변별력이 생깁니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: ESFAS의 정의·목적과 구성(4채널, 2/4)</li>
+<li>본론 1(가): 신호 6종의 신호원·기능 표, 공통 특성(래치·수동 개시·바이패스)</li>
+<li>본론 2(나): 사고별 신호 조합, 사고해석 가정(해석한계·응답시간)과 설정치의 관계, 허용기준 연결</li>
+<li>결론: 신호는 사고해석의 가정을 실제 설비로 구현하는 수단</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>공학적안전설비작동계통(ESFAS): 선정된 공정변수가 설정치에 도달하면 안전주입·격납건물 격리·살수·주증기 격리·보조급수 등 공학적안전설비(ESF)를 <strong>자동 작동</strong>시켜 설계기준사고(DBA)의 결과를 허용기준 안에 유지하는 안전등급 계통</li>
+<li>국내 근거: 기술기준규칙 제26조①2호(사고 조건 감지 시 안전상 중요 계통의 작동 개시), 제44조(다중성·독립성·단일고장)[4]</li>
+<li>표준형 구성: 원자로정지계통(RPS)과 함께 <strong>발전소보호계통(PPS)</strong> 4채널에 수용[1]
+<ul>
+<li>변수별 4채널 측정 → 바이스테이블(설정치 비교) → <strong>2/4 논리 매트릭스</strong> → 개시 회로 → 보조계전기 캐비닛 → Train A·B 작동[1][2]</li>
+<li>채널당 ESFAS 계측 루프 10개, ESFAS 기능 6종[1]</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. 가. 신호의 종류, 신호원 및 기능</strong></p>
+<table>
+<thead>
+<tr>
+<th>신호</th>
+<th>신호원(입력 변수)[1]</th>
+<th>기능(작동 대상)[2]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SIAS 안전주입작동</td>
+<td>가압기 저압력, 격납건물 고압력</td>
+<td>고압·저압 안전주입펌프 기동, SI 밸브 개방, 비상디젤발전기 기동 요구, 지원계통 정렬</td>
+</tr>
+<tr>
+<td>CIAS 격납건물격리작동</td>
+<td>가압기 저압력, 격납건물 고압력</td>
+<td>격리 대상 관통 배관 격리밸브 닫힘(안전주입·살수 유로 제외)</td>
+</tr>
+<tr>
+<td>CSAS 격납건물살수작동</td>
+<td>격납건물 고-고압력</td>
+<td>살수펌프 기동, 살수 헤더 밸브 개방 → 격납건물 압력·온도 저감, 요오드 제거</td>
+</tr>
+<tr>
+<td>MSIS 주증기격리</td>
+<td>SG 저압력, SG 고수위, 격납건물 고압력</td>
+<td>양쪽 SG의 주증기격리밸브(MSIV)·주급수 격리밸브 닫힘</td>
+</tr>
+<tr>
+<td>AFAS-1/2 보조급수작동</td>
+<td>해당 SG 저수위</td>
+<td>그 SG에 보조급수펌프 기동·밸브 개방(파단 SG 공급 차단 논리 별도)</td>
+</tr>
+<tr>
+<td>RAS 재순환작동</td>
+<td>재장전수탱크(RWT) 저수위</td>
+<td>흡입원을 RWT에서 격납건물 집수조로 전환, 저압 안전주입펌프 정지</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>입력 변수 대부분은 원자로정지 변수와 공용(가압기 저압력, SG 저수위·고수위·저압력, 격납건물 고압력)[1] → LOCA·MSLB에서 정지와 ESF 작동이 거의 동시</li>
+<li>각 신호의 입력 변수끼리는 <strong>OR</strong>, 같은 변수의 4채널 중 <strong>2채널</strong> 트립으로 개시</li>
+<li>설정치는 호기별 설계값(참고: APR1400 DCD 공칭 가압기 저압력 1,810 psia, 격납건물 고압력 1.9 psig, 고-고 20.03 psig)[3]</li>
+<li>공통 특성
+<ul>
+<li><strong>래치(보호동작 완결)</strong>: 개시 후 변수가 회복돼도 수동 리셋 전까지 유지, 단 AFAS는 SG 수위에 따라 밸브 자동 개폐</li>
+<li><strong>수동 개시</strong>: 주제어실에서 계통 수준으로 개시 가능</li>
+<li><strong>운전 바이패스</strong>: 정상 냉각·감압 중 가압기 저압력 입력만 우회, 압력 상승 시 자동 해제, 격납건물 압력 입력은 우회 없음[2]</li>
+<li><strong>채널 바이패스</strong>: 시험·정비 중 1채널 제외 시 2/3 논리</li>
+<li>다양성: 비안전 DPS가 원자로정지와 <strong>AFAS를 독립 제공</strong> — 디지털·공통원인고장 대비[1]</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 입력 변수 7개 → 변수별 4채널 2/4 → 신호별 OR → 6종 신호와 작동 설비" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/3163aa0d9454ae84348e4af0ff5d24b952f55a7e7477fbf77fb7aeb6642e36a7.webp"/><figcaption>답안용 도식: 입력 변수 7개 → 변수별 4채널 2/4 → 신호별 OR → 6종 신호와 작동 설비</figcaption></figure>
+<p><strong>3. 나. ESFAS와 설계기준사고의 관계</strong></p>
+<ul>
+<li><strong>목적 관계</strong>: ESF는 DBA를 가정해 설계된 설비 → ESFAS는 사고가 바꾸는 변수(압력·수위·격납건물 압력)를 감지해 해당 ESF를 작동</li>
+<li><strong>사고별 대표 신호</strong>(설정치 도달 시)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>설계기준사고</th>
+<th>변수 변화</th>
+<th>주된 신호</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>대형 LOCA</td>
+<td>격납건물 압력 급상승, 가압기 압력 급감</td>
+<td>SIAS·CIAS·MSIS → CSAS → (RWT 저수위 도달 시) RAS</td>
+</tr>
+<tr>
+<td>소형 LOCA</td>
+<td>가압기 압력 서서히 감소</td>
+<td>SIAS·CIAS, 격납건물 압력에 따라 MSIS·CSAS, 장기 RAS</td>
+</tr>
+<tr>
+<td>주증기관 파단(격납건물 내부)</td>
+<td>SG 압력 급감, 1차측 과냉각, 격납건물 압력 상승</td>
+<td>MSIS, SIAS·CIAS, 건전 SG AFAS, 조건부 CSAS</td>
+</tr>
+<tr>
+<td>SG 전열관 파단</td>
+<td>가압기 압력 감소, 파열 SG 수위 상승</td>
+<td>SIAS·CIAS, 고수위 시 MSIS(또는 수동 격리), 조건부 AFAS</td>
+</tr>
+<tr>
+<td>급수관 파단</td>
+<td>SG 수위·압력 감소</td>
+<td>AFAS, 조건부 MSIS·SIAS</td>
+</tr>
+<tr>
+<td>급수상실</td>
+<td>SG 수위 감소</td>
+<td>AFAS</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>사고해석과 설정치의 관계</strong>
+<ul>
+<li>FSAR 15장 해석은 ESF 작동점을 <strong>해석한계(AL)</strong>로, 작동 지연을 <strong>응답시간</strong>으로 가정</li>
+<li>설정치 = 계측 불확도를 고려해 <strong>AL 도달 전에 작동</strong>하도록 정한 값(운영기술지침서 LSSS) — 저압력·저수위 변수는 AL보다 높게, 고압력·고수위 변수는 낮게</li>
+<li>실제 응답시간 ≤ 해석 가정시간을 응답시간 시험으로 확인(예: APR1400 DCD 안전주입 ≤ 40 s, MSIV 닫힘 ≤ 6.35 s)[3]</li>
+<li>단일고장 가정에서도 2계열 중 1계열로 기능 → 해석은 최소 ESF 가용 조건으로 수행</li>
+</ul>
+</li>
+<li><strong>허용기준 연결</strong>
+<ul>
+<li>LOCA: SIAS·RAS → ECCS 허용기준(피복관 최고온도 1,204 °C, 국부 산화 17 %, 수소 1 %, 냉각 가능 형상, 장기냉각)[5][6], CSAS·CIAS → 격납건물 설계압력·방출 제한</li>
+<li>MSLB: MSIS·SIAS → 재임계·DNBR, 격납건물 압력 제한</li>
+<li>SGTR: SIAS·MSIS(격리) → SG 과충수 방지, 소외 선량 제한</li>
+<li>모든 DBA: 주민 피폭이 원안위가 정하는 선량 이하(기술기준규칙 제42조)[4]</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="표준형 ESFAS 6종의 신호원과 6개 설계기준사고별 개시 조합(●대표·○조건부·–없음), 해석한계–불확도–설정치·응답시간의 관계" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/d25b95fa5d26eb62d6d4f15e7d689b36a042c78900ace82c80cb58ec334f6e70.webp"/><figcaption>표준형 ESFAS 6종의 신호원과 6개 설계기준사고별 개시 조합(●대표·○조건부·–없음), 해석한계–불확도–설정치·응답시간의 관계</figcaption></figure>
+<p><strong>4. 결론</strong></p>
+<ul>
+<li>ESFAS 신호는 <strong>사고가 움직이는 변수 → 2/4 → 신호 → 설비</strong>의 사슬이며, 사고해석이 가정한 작동점·응답시간을 실제 설비가 보장하게 하는 수단</li>
+<li>신호 6종은 가압기 압력·SG 압력·수위·격납건물 압력·RWT 수위의 5개 변수군으로 대부분의 DBA를 덮음</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: AFAS는 "건전 SG 판별 신호"가 아닙니다</h3>
+<p>AFAS의 입력은 SG별 저수위입니다. 신호가 나오면 그 SG에 보조급수를 넣습니다. 파단된 SG에 계속 물을 넣으면 1차측 과냉각과 파단부 방출이 계속되므로, 파단 SG를 가려 공급을 막는 판정 논리를 따로 둡니다. 그 논리와 설정은 호기별 설계입니다. 답안에 "AFAS = 건전 SG 급수"로 줄여 쓰면 신호가 판별까지 하는 것처럼 읽히므로, 신호와 판별 논리를 나눠 쓰세요.</p>
+<h3>해설: 사고별 표는 "대표 경위"입니다</h3>
+<p>같은 소형 LOCA라도 파단 크기와 위치에 따라 격납건물 압력이 MSIS·CSAS 설정치에 닿기도 하고 닿지 않기도 합니다. RAS는 사고를 감지하는 신호가 아니라, 주입으로 RWT 수위가 저수위 설정치까지 내려가면 나오는 후속 전환 신호입니다(탱크가 완전히 빈 뒤가 아님). 표를 쓸 때 "설정치 도달 시"라는 단서를 붙이면 정확성과 채점 인상이 함께 좋아집니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>출제 당시(2017)</th>
+<th>현행(2026)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기술기준규칙</td>
+<td>구판</td>
+<td>원안위규칙 제37호(2026.3.30) — 제26·42·44조 취지 동일[4]</td>
+</tr>
+<tr>
+<td>표준형 DPS 제어기</td>
+<td>PLC</td>
+<td>FPGA 기반 제어기로 교체[7]</td>
+</tr>
+<tr>
+<td>신형 노형</td>
+<td>APR1400 건설·초기 운전</td>
+<td>새울 1~3·신한울 1·2 운전 — RAS 없음(IRWST), PPS 개시 → ESF-CCS 디지털 작동</td>
+</tr>
+<tr>
+<td>미국 ECCS 규정</td>
+<td>10 CFR 50.46</td>
+<td>50.46c는 2024년 위원회 반환으로 미제정, 현행 50.46(b) 유지[6]</td>
+</tr>
+</tbody>
+</table>
+<p>ECCS 성능 고시(원안위고시 제2017-23호)는 출제 이후 개정되지 않았고, 표준형 ESFAS 신호의 종류·입력 변수는 그대로입니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>S.-C. Jang, Y.-H. Lee, S.-J. Lee, "Unavailability of RPS and ESFAS for the OPR-1000 Reactor", Transactions of the Korean Nuclear Society Spring Meeting, Jeju (2014.5), 표 1·그림 1.</li>
+<li>U.S. NRC HRTD, CE Technology Cross Training Course Manual, Ch. 10.3 "Engineered Safety Features Actuation System", Rev 10/08, NRC ADAMS ML11251A030.</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Ch. 7 "Instrumentation and Controls", Rev. 0 (2014), 표 7.3-5A·7.3-7, NRC ADAMS ML15006A046.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제26·42·44조. 국가법령정보센터.</li>
+<li>원자력안전위원회, 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」, 원안위고시 제2017-23호. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR 50.46(b); SRM-SECY-16-0033 (2024.4.11).</li>
+<li>정진호 외(KEPCO E&amp;C), "Design Improvement of DPS in OPR1000", 한국원자력학회 학술발표회 (2025).</li>
+</ol>

@@ -1,0 +1,136 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 4교시 6번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<ol start="6">
+<li>유체계통에 쓰이는 원심형 펌프와 전동기의 설계요건을 결정하려고 한다. 다음 사항에 대하여 기술 및 계산하시오.
+가. 원심형 펌프의 성능곡선
+나. 펌프 축 동력(Shaft Power)과 전동기 동력(Motor Power)</li>
+</ol>
+<ul>
+<li>질량 유량 (Mass Flow Rate) : 100,000 kg/hr</li>
+<li>수두 (Head) : 30 m</li>
+<li>유체 밀도 : 950 kg/m³</li>
+<li>펌프 기계적 효율 (Mechanical Efficiency) : 90%</li>
+<li>전동기 효율 (Motor Efficiency) : 95%</li>
+</ul>
+</blockquote>
+<h2>출제 의도</h2>
+<p>성능곡선 네 가지(H·η·축동력·NPSHr)와 계통 곡선으로 <strong>운전점</strong>을 설명할 수 있는지, 그리고 <strong>수동력 → 축동력 → 전동기 동력</strong>을 단위 환산과 효율의 방향(나누기)까지 정확히 계산하는지 봅니다. 마지막에 전동기 정격을 비과부하 조건으로 고르는 설계 감각을 보이면 가점입니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>가정 및 문제 해석(효율·동력 용어)</li>
+<li>본론 1(가): 성능곡선 4종, 계통 곡선과 운전점, 운전 영역, 상사법칙</li>
+<li>본론 2(나): 주어진 값 → 체적유량 → 수동력 → 축동력 → 전동기 동력 → 검산</li>
+<li>결론: 전동기 정격 선정과 원전 펌프 설계 고려사항</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 문제 해석</strong></p>
+<ul>
+<li>"펌프 기계적 효율 90 %"만 주어짐 → 엄밀한 기계효율(η_m)은 전효율보다 크지만 다른 손실 정보가 없으므로, 이 풀이에서는 주어진 값을 <strong>수동력/축동력의 펌프 효율 η_p = 0.90</strong>으로 해석(η_p = η_h·η_v·η_m)</li>
+<li>"전동기 동력" = 전동기 <strong>전기 입력 동력</strong>으로 해석, 전동기가 내야 할 축출력(= 펌프 축동력, 커플링 손실 무시)과 정격 선정은 결론에서 따로 제시</li>
+<li>중력가속도 g = 9.81 m/s², 운전점이 최고효율점(BEP) 부근이라고 가정</li>
+</ul>
+<p><strong>2. 원심형 펌프의 성능곡선(가)</strong></p>
+<ul>
+<li><strong>정의</strong>: 정속(일정 회전수)에서 유량 Q에 따른 <strong>양정 H, 효율 η, 축동력 P, NPSHr</strong> 특성, 제작사가 물로 시험해 제공[1]</li>
+<li><strong>① H–Q 곡선</strong>: Q = 0(<strong>체절점</strong>)에서 최대, 유량이 늘면 감소 → 병렬운전 안정을 위해 체절 쪽으로 계속 오르는 곡선이 유리</li>
+<li><strong>② η–Q 곡선</strong>: Q = 0에서 0, <strong>최고효율점(BEP)</strong>에서 최대 → <strong>BEP 부근</strong>에서 운전하도록 선정, 선호 운전영역(POR)은 펌프 형식별로 정함(예: BEP의 약 70~120 %, 실제 범위는 제작사 확인)[2]</li>
+<li><strong>③ 축동력(P–Q) 곡선</strong>: 반경류 원심펌프는 <strong>유량 증가에 따라 증가</strong> → 최대 유량(runout) 쪽에서 최대 → 전동기 비과부하 선정 기준
+<ul>
+<li>축류펌프는 반대로 체절점에서 축동력 최대 → 체절 기동 금지</li>
+</ul>
+</li>
+<li><strong>④ NPSHr–Q 곡선</strong>: 유량 증가에 따라 증가, <strong>NPSHa &gt; NPSHr + 여유</strong>여야 공동현상 방지(NPSH3 = 양정 3 % 저하 기준)[2]</li>
+<li><strong>계통 곡선과 운전점</strong>: H_sys = H_정 + K·Q² → 펌프 H–Q 곡선과의 <strong>교점이 운전점</strong>, 같은 유량에서 효율·축동력·NPSHr을 읽음
+<ul>
+<li>유량 조절: 밸브 교축(계통 곡선 변경) 또는 회전수 변경</li>
+</ul>
+</li>
+<li><strong>상사법칙</strong>(같은 임펠러): <strong>Q ∝ N, H ∝ N², P ∝ N³</strong>[3]</li>
+<li><strong>저유량 운전 문제</strong>: 재순환·진동·유체 온도 상승 → <strong>최소유량 재순환 라인</strong> 설치, 병렬 펌프의 강/약 펌프 상호작용 검토(NRC Bulletin 88-04)[4]</li>
+</ul>
+<figure class="article-image"><img alt="원심펌프 성능곡선(H–Q·η–Q·축동력–Q·NPSHr–Q, 설명용 모델)과 계통 곡선 교점 운전점(105.3 m³/h, 30 m, η 0.90, 9.08 kW), 동력 흐름 계산 카드(8.18 → 9.08 → 9.56 kW)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/191809882c1238d0c0bc32cb9a2ca73c8514327990d7dc283b564833f451b761.webp"/><figcaption>원심펌프 성능곡선(H–Q·η–Q·축동력–Q·NPSHr–Q, 설명용 모델)과 계통 곡선 교점 운전점(105.3 m³/h, 30 m, η 0.90, 9.08 kW), 동력 흐름 계산 카드(8.18 → 9.08 → 9.56 kW)</figcaption></figure>
+<p><strong>3. 축동력과 전동기 동력 계산(나)</strong></p>
+<ul>
+<li><strong>주어진 값</strong>: ṁ = 100,000 kg/h, H = 30 m, ρ = 950 kg/m³, η_p = 0.90, η_m = 0.95</li>
+<li><strong>① 단위 환산</strong>: ṁ = 100,000/3,600 = <strong>27.78 kg/s</strong></li>
+<li><strong>② 체적유량</strong>: Q = ṁ/ρ = 27.78/950 = <strong>0.02924 m³/s = 105.3 m³/h</strong></li>
+<li><strong>③ 수동력(유체가 받는 동력)</strong>
+<ul>
+<li>P_w = ρ·g·Q·H = ṁ·g·H</li>
+<li>= 27.78 kg/s × 9.81 m/s² × 30 m = 8,175 W ≈ <strong>8.18 kW</strong></li>
+</ul>
+</li>
+<li><strong>④ 펌프 축동력</strong>
+<ul>
+<li>P_s = P_w/η_p = 8.175/0.90 = <strong>9.08 kW</strong>(약 12.2 hp)</li>
+</ul>
+</li>
+<li><strong>⑤ 전동기 동력(전기 입력)</strong>
+<ul>
+<li>P_e = P_s/η_m = 9.08/0.95 = <strong>9.56 kW</strong></li>
+<li>종합효율 η_p·η_m = 0.90 × 0.95 = <strong>0.855</strong></li>
+</ul>
+</li>
+<li><strong>⑥ 검산</strong>
+<ul>
+<li>단위: kg/s × m/s² × m = N·m/s = <strong>W</strong></li>
+<li>역산: 9.56 × 0.855 = 8.17 kW ≈ P_w(반올림 범위 일치)</li>
+<li>크기: 약 105 m³/h·30 m급 공정 펌프에 10 kW급 전동기 → 타당</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>식</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>수동력 P_w</td>
+<td>ṁ·g·H</td>
+<td>8.18 kW</td>
+</tr>
+<tr>
+<td>축동력 P_s</td>
+<td>P_w/η_p</td>
+<td>9.08 kW</td>
+</tr>
+<tr>
+<td>전동기 입력 P_e</td>
+<td>P_s/η_m</td>
+<td>9.56 kW</td>
+</tr>
+</tbody>
+</table>
+<figure class="article-image"><img alt="답안용 도식: H–Q·η–Q·축동력–Q 곡선과 계통 곡선 교점 운전점, BEP·체절점·runout 표기" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/271efc216fffa63e2645a6cf2869d3c16de6cea953ab82a647d392a3daf5ca80.webp"/><figcaption>답안용 도식: H–Q·η–Q·축동력–Q 곡선과 계통 곡선 교점 운전점, BEP·체절점·runout 표기</figcaption></figure>
+<p><strong>4. 결론 — 전동기 정격 선정</strong></p>
+<ul>
+<li>전동기 <strong>정격 출력(축출력 기준)</strong>은 펌프 축동력에 여유를 둠: 9.08 × 1.10~1.15 = 10.0~10.4 kW → 표준 <strong>11 kW</strong> 선정 예(전기 입력 9.56 kW에 여유를 붙이는 것이 아님)</li>
+<li>반경류 펌프는 유량이 늘수록 축동력이 커지므로 <strong>예상 운전범위의 최대 축동력</strong>까지 정격 이하인지 확인(비과부하), 범위를 넘으면 정격을 올리거나 유량 제한</li>
+<li>원전 안전관련 펌프는 추가로 최소유량 보호, NPSH 여유, 가동중시험(ASME OM Code ISTB)[5]으로 성능 저하를 감시</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 효율은 나누고, 질량유량에는 ρ를 다시 곱하지 않습니다</h3>
+<p>가장 흔한 실수 세 가지입니다. kg/h를 kg/s로 바꾸지 않으면 3,600배 큰 값이 나옵니다. 질량유량으로 ṁgH를 쓰면 이미 밀도가 들어가 있으므로 ρ를 또 곱하면 안 됩니다. 효율은 출력에서 입력으로 거슬러 올라가므로 나눠야 하는데, 곱해서 7.0 kW 같은 값을 쓰는 답안이 적지 않습니다. 단위를 한 줄로 적어 두면 세 실수가 모두 걸러집니다.</p>
+<h3>해설: 그림 곡선은 설명용 모델입니다</h3>
+<p>그림의 H–Q·η–Q 곡선은 운전점(105.3 m³/h, 30 m)을 지나도록 만든 설명용 모델입니다(H = 38 − 7.22×10⁻⁴Q², 체절 양정 38 m, 운전점 = BEP, 최고효율 0.90은 모두 가정). 이 모델에서 축동력은 130 % 유량에서 약 10.6 kW, 143 % 유량(150 m³/h)에서 약 11.4 kW입니다. 그래서 예상 운전범위를 BEP의 130 %까지로 잡으면 11 kW 정격으로 비과부하가 되지만, 더 큰 유량까지 열어 두려면 정격을 올려야 합니다. 체절점(Q = 0)의 축동력도 0이 아니라 약 5.8 kW로 남습니다. 실제 설계에서는 제작사 시험 곡선으로 같은 확인을 합니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li>성능곡선의 물리와 동력 계산식은 출제 이후 달라진 것이 없습니다.</li>
+<li>운전 영역 지침(ANSI/HI 9.6.3)과 가동중시험 규격(ASME OM Code)은 판이 갱신되고 있으며, 미국은 10 CFR 50.55a 개정으로 참조 판을 바꿉니다. 적용 판은 호기별 가동중시험 프로그램이 정합니다[5].</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>I. J. Karassik, J. P. Messina, P. Cooper, C. C. Heald, Pump Handbook, 4th ed., McGraw-Hill (2008).</li>
+<li>Hydraulic Institute, ANSI/HI 9.6.3 "Rotodynamic Pumps – Guideline for Operating Regions"; ANSI/HI 9.6.1 "Rotodynamic Pumps – Guideline for NPSH Margin".</li>
+<li>F. M. White, Fluid Mechanics, McGraw-Hill, 11장 "Turbomachinery".</li>
+<li>U.S. NRC, NRC Bulletin No. 88-04 "Potential Safety-Related Pump Loss" (1988).</li>
+<li>ASME, OM Code "Operation and Maintenance of Nuclear Power Plants", Subsection ISTB; U.S. NRC, 10 CFR 50.55a(f). eCFR.</li>
+</ol>

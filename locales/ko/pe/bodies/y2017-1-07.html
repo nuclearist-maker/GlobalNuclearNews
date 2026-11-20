@@ -1,0 +1,58 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 1교시 7번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<ol start="7">
+<li>가압기의 일반설계요건(5개)</li>
+</ol>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>가압기 기능</strong>: 포화 증기–물 평형으로 RCS 압력을 제어하고, 냉각재 체적 변화를 흡수하며, 과압보호 밸브를 답니다.</li>
+<li><strong>물 체적(아웃서지 대비)</strong>: 원자로 정지·부하 증가 때 가압기가 비거나 히터가 드러나지 않아야 합니다.</li>
+<li><strong>증기 체적(인서지 대비)</strong>: 부하 변화와 부하상실 때 압력 상승을 흡수하고 안전밸브로 물이 나가지 않아야 합니다.</li>
+<li><strong>물 체적 최소화</strong>: LOCA 때 방출 에너지와 격납건물 압력을 줄이기 위한 상한 조건입니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가압기 기능</strong></p>
+<ul>
+<li>RCS 압력 제어: 포화 증기–물 평형 유지, <strong>히터(증기 생성)·살수(증기 응축)</strong>로 압력 변동 제한</li>
+<li>냉각재 <strong>체적 변화 흡수</strong>(밀림관 인서지·아웃서지), 과압보호 밸브 설치, RCPB 일부(ASME III Class 1)</li>
+</ul>
+<p><strong>2. 일반설계요건 5가지 (공개 FSAR의 가압기 체적 결정 요소 정리)</strong>[1]</p>
+<ul>
+<li><strong>① 원자로 정지 시 비지 않을 물 체적</strong>: 설계상 고려한 정지 과도의 아웃서지에도 가압기가 비지 않고, 최저 압력이 <strong>저압력 안전주입 설정치에 닿지 않을 것</strong></li>
+<li><strong>② 부하 증가 시 히터 노출 방지</strong>: 부하 증가(예: 10 % 계단) 아웃서지에도 히터가 물에 잠겨 있을 것</li>
+<li><strong>③ 정상 부하 변화 압력 응답</strong>: 부하 변화 시 체적 변화를 증기 공간이 완충해 압력 응답이 허용 범위일 것(계통·제어계통과 함께 ±10 % 계단·±5 %/분 램프를 <strong>원자로 정지 없이</strong> 수용 — Palisades 설계 예)</li>
+<li><strong>④ 부하상실 인서지 수용</strong>: 인서지에도 수위가 <strong>안전밸브·방출밸브 노즐에 닿지 않을</strong> 증기 체적 → 밸브 액체 방출 방지</li>
+<li><strong>⑤ 물 체적 최소화</strong>: 필요한 물 체적은 확보하되, LOCA 시 <strong>방출 에너지와 격납건물 압력</strong>을 줄이도록 과도하게 크게 하지 않음</li>
+</ul>
+<p><strong>3. 관련 용량 요건</strong></p>
+<ul>
+<li>히터: 기동 시 가열·압력 형성, 소외전원 상실 시 일부를 비상모선에서 공급해 자연순환 고온대기 유지[1]</li>
+<li>과압보호: 안전밸브(APR1400은 POSRV)·주증기 안전밸브·원자로보호계통이 함께 지연 정지 부하상실에서 RCS 압력을 <strong>설계압력의 110 % 미만</strong>으로 제한(ASME III NB-7000)[2]</li>
+<li>충전·유출 유량과 체적제어탱크 용량에 맞게 수위 프로그램 설정</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 가압기 단면의 증기·물 영역, 히터·살수·안전밸브 노즐, 인서지·아웃서지 화살표와 요건 ①~⑤ 위치" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/57a956987ea6f4c631a3a941a0f5cd037a28514f43aaa487787f87d6d469fad3.webp"/><figcaption>답안용 도식: 가압기 단면의 증기·물 영역, 히터·살수·안전밸브 노즐, 인서지·아웃서지 화살표와 요건 ①~⑤ 위치</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="가압기 단면 위에 요건 ①~⑤를 아웃서지(물 체적 하한)·인서지(증기 체적 하한)·LOCA(물 체적 상한)로 배치한 도식과 APR1400 가압기 주요 제원표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/83e01eef97ae0c9b39575c8594fb3f1092f698e6cb4cce3ae03d885bb3180142.webp"/><figcaption>가압기 단면 위에 요건 ①~⑤를 아웃서지(물 체적 하한)·인서지(증기 체적 하한)·LOCA(물 체적 상한)로 배치한 도식과 APR1400 가압기 주요 제원표</figcaption></figure>
+<p>5가지 요건은 결국 "물은 얼마 이상, 증기는 얼마 이상, 그러면서 전체는 너무 크지 않게"라는 세 방향 제약입니다. 아웃서지 사건(원자로 정지, 부하 증가)이 물 체적의 하한을, 인서지 사건(부하 변화, 부하상실)이 증기 체적의 하한을, LOCA 에너지 방출이 물 체적의 상한을 정합니다. 운전 수위를 출력(평균온도)에 따라 프로그램하는 것도 이 여유를 모든 출력에서 확보하기 위해서입니다[1]. 공개 FSAR은 여기에 "부하추종 중 충전·유출 유량 변화를 체적제어계통 용량과 맞출 것"을 여섯 번째 고려사항으로 덧붙이므로, 5가지를 쓴 뒤 한 줄 보충하면 좋습니다.</p>
+<p>APR1400은 OPR1000보다 가압기를 키워 <strong>Condition III 과도까지 원자로 정지 없이 수용</strong>하도록 설계했습니다[3]. 총 내부 자유체적(물 + 증기) 2,400 ft³(약 68 m³), 히터 2,400 kW, 설계 2,500 psia·700 °F, 운전 2,250 psia입니다[3]. 설계인증 기술보고서는 터빈 정지, 소내부하 런백, 50 % 부하 탈락에서 원자로 정지(보고서의 고압력 정지 설정 2,377 psia)와 POSRV 개방(2,470 psia)이 일어나지 않음을 보였습니다[2].</p>
+<p><strong>현행 기준 메모</strong>: 가압기 설계요건 자체는 출제 이후 바뀌지 않았습니다. 국내 과압보호 근거는 현행 기술기준규칙(원안위규칙 제37호, 2026.3.30) 제37조입니다[4].</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>기능만 나열</strong>: 문제는 "설계요건"이므로 체적·용량 조건으로 써야 합니다.</li>
+<li><strong>물 체적 상한 누락</strong>: ⑤ LOCA 에너지 조건이 빠지면 "크면 클수록 좋다"로 읽힙니다.</li>
+<li><strong>안전밸브 액체 방출 조건 누락</strong>: ④는 밸브 성능과 직결되는 핵심 요건입니다.</li>
+<li><strong>저압력 안전주입 조건 누락</strong>: ①에 함께 써야 정확합니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>Palisades Nuclear Plant, Final Safety Analysis Report, Chapter 4 "Primary Coolant System", Section 4.3 (Rev. 31), NRC ADAMS ML16120A381.</li>
+<li>KEPCO &amp; KHNP, "Pressurizer Sizing and Overpressure Protection Evaluation", APR1400-Z-A-NR-14020-NP, Rev. 0 (2018.1), NRC ADAMS ML18087A117.</li>
+<li>S.-S. Lee, S.-H. Kim, K.-Y. Suh, "The Design Features of the Advanced Power Reactor 1400", Nuclear Engineering and Technology, 41(8), 995–1004 (2009).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제37조. 국가법령정보센터.</li>
+</ol>

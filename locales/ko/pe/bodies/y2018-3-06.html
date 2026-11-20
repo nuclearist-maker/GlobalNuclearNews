@@ -1,0 +1,127 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 3교시 6번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>저온과압보호(LTOP)계통에 대하여 다음을 설명하시오.
+가) LTOP 계통 설치 목적
+나) 원자로냉각재계통 과압 유발 사건 유형
+다) LTOP 작동(혹은 과도상태 발생) 가능성 최소화를 위한 요구(조치필요) 사항</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>LTOP을 "저온에서 쓰는 방출밸브"로만 쓰지 않고, <strong>저온 파괴인성 → 낮은 P-T 한계 → 가압기 안전밸브로는 보호 불가 → 만수위의 압력 급상승</strong>이라는 인과로 설치 목적을 설명하는지 봅니다. 과압 사건은 <strong>질량 유입과 에너지 유입</strong> 두 축으로 분류해야 하고, 다)는 밸브가 열릴 상황 자체를 만들지 않는 <strong>유입원 통제(펌프·SIT·RCP 기동)와 운전 관리</strong>를 묻습니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: LTOP의 정의와 적용 모드</li>
+<li>본론 1(가): 저온 취성파괴 위험, P-T 한계와 고압 보호 설비의 괴리, 만수위 압력 특성, 도입 배경</li>
+<li>본론 2(나): 질량 유입·에너지 유입 사건, 보호기능 상실 요인</li>
+<li>본론 3(다): 설계 요건, 운전 제한(펌프·SIT·RCP·만수위), 설정치 관리, 감시</li>
+<li>결론: 보호(방출)와 예방(유입 통제)의 이중 체계</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li><strong>LTOP(Low Temperature Overpressure Protection)</strong>: 원자로 저온 운전(냉각·가열·정지·재장전 헤드 체결 상태)에서 RCS 압력이 원자로용기 <strong>P-T 한계</strong>를 넘지 않도록 자동으로 압력을 방출하는 계통</li>
+<li>방출 수단: W형 = 가압기 <strong>PORV 저설정</strong> 또는 RHR 흡입 방출밸브, CE형(OPR1000·APR1400) = <strong>정지냉각(SCS) 흡입 배관 스프링식 방출밸브</strong>(흡입 배관마다 1개) [3]</li>
+</ul>
+<p><strong>2. 가) LTOP 계통 설치 목적</strong></p>
+<ul>
+<li><strong>저온 파괴인성 저하</strong>: 원자로용기 강재는 저온에서 파괴인성이 낮고 조사취화로 RTNDT가 올라감 → 10 CFR 50 부록 G의 <strong>P-T 한계 압력이 저온일수록 낮음</strong> [4]</li>
+<li><strong>고압 보호 설비의 괴리</strong>: 가압기 안전밸브·POSRV는 고온 운전용(APR1400 POSRV 설정 2,470 psia) → 저온 P-T 한계보다 훨씬 높아 저온 과압을 막지 못함</li>
+<li><strong>만수위(water-solid) 특성</strong>: 가압기 증기 공간이 없으면 물의 압축성(약 4.4×10⁻⁴ MPa⁻¹)과 계통 탄성만으로 유입을 흡수 → 작은 유입에도 압력 급상승 [7] — 설명용 계산(RCS 300 m³·순유입 44 gpm 가정, 계통 탄성·방출 무시) 약 <strong>1.26 MPa/min</strong></li>
+<li><strong>목적 정리</strong>: 저온에서 <strong>RV 취성파괴 방지 → 원자로냉각재압력경계(RCPB) 건전성 유지</strong>(GDC 15·31, 부록 G)</li>
+<li><strong>도입 배경</strong>: 1970년대 미국 PWR의 저온·만수위 압력 과도가 잇따라 미해결 안전현안(USI A-26) → NUREG-0224(1978)와 BTP RSB 5-2로 LTOP 요건 정립 [1]. 이후 Turkey Point 4호기(1981)의 T/S 한계 초과 사건 등으로 가용성 요건을 강화(GI-94 → GL 90-06) [2]</li>
+<li><strong>APR1400 예시</strong>: LTOP 방출밸브 <strong>530 psig</strong>, LTOP 해석 한계 <strong>625 psia</strong>(수압시험압력 3,125 psia의 20 %), 해석 최고압력 &lt; 625 psia [3]</li>
+</ul>
+<figure class="article-image"><img alt="개념 P-T 평면(저온 P-T 한계와 POSRV 설정의 괴리, LTOP 설정·적용온도)과 APR1400 예시 설정값 압력 사다리(2,470 / 625 / 530 psig ≈ 545 / 450 psia), 질량·에너지 유입 사건 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/9692e0b39a7ed0016f149b18cb541a461a7a0350810bd47e25e1c9390efbe9b4.webp"/><figcaption>개념 P-T 평면(저온 P-T 한계와 POSRV 설정의 괴리, LTOP 설정·적용온도)과 APR1400 예시 설정값 압력 사다리(2,470 / 625 / 530 psig ≈ 545 / 450 psia), 질량·에너지 유입 사건 카드</figcaption></figure>
+<p><strong>3. 나) 원자로냉각재계통 과압 유발 사건 유형</strong></p>
+<ul>
+<li><strong>① 질량 유입(mass input)</strong>
+<ul>
+<li>충전 &gt; 유출 불균형: 유출 격리, 유출 유량제어밸브 닫힘, 충전펌프 추가 기동</li>
+<li><strong>안전주입펌프 오기동</strong>(SIAS 오동작·시험 중 오작동) — APR1400 제한 사건: 안전주입펌프 4대 + 충전펌프 1대 운전 [3]</li>
+<li><strong>안전주입탱크(SIT)·축압기 오방출</strong>(격리 미흡)</li>
+<li>보충계통 과다 주입, 밸브 정렬 오류</li>
+</ul>
+</li>
+<li><strong>② 에너지(열) 유입(heat input)·열 제거 감소</strong>
+<ul>
+<li><strong>SG 2차측이 RCS보다 뜨거운 상태에서 RCP 기동</strong> → 2차측 열이 1차측으로 전달 → 냉각재 팽창(APR1400 제한 열유입 사건) [3]</li>
+<li>가압기 전열기 작동, RCP 발열</li>
+<li><strong>정지냉각 상실·유량 감소</strong> → 붕괴열 제거 저하로 냉각재 가열(열 제거 감소형)</li>
+</ul>
+</li>
+<li><strong>③ 보호기능 상실 요인(사건과 구분)</strong>
+<ul>
+<li>CE형: LTOP 밸브보다 RCS 쪽 <strong>흡입격리밸브가 닫히면</strong> 그 계열 LTOP 분리</li>
+<li>W형: PORV 차단밸브 닫힘·구동 공기 상실(Zion 2호기 1980 사례) [8], 설정치 미갱신</li>
+</ul>
+</li>
+</ul>
+<p><strong>4. 다) LTOP 작동(과도상태 발생) 가능성 최소화 요구사항</strong></p>
+<ul>
+<li><strong>설계 요건</strong>(BTP 5-2) [1]
+<ul>
+<li>가장 제한적인 질량·열 유입 사건에서 압력 ≤ P-T 한계</li>
+<li><strong>단일 능동고장</strong> 가정, 운전원 조치는 인지 후 <strong>10분</strong>까지 크레딧 없음</li>
+<li>시험 가능, <strong>투입(arming) 상태·밸브 위치 경보</strong></li>
+</ul>
+</li>
+<li><strong>질량 유입원 통제</strong>(운영기술지침서 LTOP LCO — 아래는 미국 W형 STS 골격이며, 대수·조건은 호기별 지침서에 따름) [5]
+<ul>
+<li>주입 가능 펌프 수 제한: 안전주입펌프 <strong>차단기 개방</strong>, 충전펌프 운전 대수 제한</li>
+<li><strong>SIT·축압기 격리</strong>: 압력이 P-T 허용치를 넘을 수 있으면 출구밸브 닫고 전원 제거</li>
+<li>충전·유출 균형 유지, 밸브 정렬 독립 확인</li>
+</ul>
+</li>
+<li><strong>열 유입원 통제</strong>
+<ul>
+<li><strong>RCP 기동 전 SG–RCS 온도차 제한</strong>, 한 대씩 기동(APR1400 T/S 100 °F, 행정 관리 20 °F) [3]</li>
+<li>가열·냉각률 제한, 정지냉각 유량 유지</li>
+</ul>
+</li>
+<li><strong>운전 방식</strong>
+<ul>
+<li><strong>만수위 운전 시간 최소화</strong>, 가능한 한 가압기 <strong>증기 공간 유지</strong></li>
+<li>정지냉각 계열 전환·격리 전 <strong>다른 계열 LTOP 유로 확보</strong> 확인</li>
+</ul>
+</li>
+<li><strong>설정치 관리·감시</strong>
+<ul>
+<li>감시시험 결과로 조사취화(ART)를 반영해 P-T 곡선과 <strong>LTOP 설정·적용온도의 적정성을 재평가</strong>, 필요 시 변경(PTLR) [6]</li>
+<li>방출밸브 설정압 시험, 흡입격리밸브·PORV 차단밸브 열림 주기 확인, 운전원 교육·절차</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 온도–압력 평면의 P-T 한계 곡선, LTOP 설정선과 적용온도, 허용 영역, 질량·열 유입 화살표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/40cf7b7578af179224b3d8b512a2fe1f8256d700da04feea4f2dcf2d9a255711.webp"/><figcaption>답안용 도식: 온도–압력 평면의 P-T 한계 곡선, LTOP 설정선과 적용온도, 허용 영역, 질량·열 유입 화살표</figcaption></figure>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>LTOP은 저온 P-T 한계를 지키는 <strong>최후 방출 수단</strong>이고, 요구사항 다)의 핵심은 <strong>밸브가 열릴 상황을 만들지 않는 예방</strong>(펌프·SIT·RCP 기동·만수위 관리)임</li>
+<li>조사취화가 진행되면 P-T 한계가 바뀔 수 있으므로 <strong>감시시험–P-T 곡선–LTOP 설정</strong>을 하나의 고리로 재평가해야 함</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 설정압은 P-T 한계가 아닙니다</h3>
+<p>방출밸브가 열린 뒤에도 유입이 계속되면 압력이 설정압 위로 잠시 더 오릅니다. 그래서 설정압은 P-T 한계보다 낮게 잡고, 해석으로 구한 <strong>최고압력</strong>이 한계 아래임을 보입니다. APR1400 예시에서 설정 530 psig(약 545 psia)와 해석 한계 625 psia 사이의 간격이 이 여유를 담습니다. 해석은 설정 오차·밸브 응답·압력손실·과도 응답을 함께 고려해 최고압력이 625 psia 아래임을 확인합니다[3]. 625 psia는 해석의 판정값이며 온도별 P-T 한계 자체와는 다릅니다. 그림의 P-T 곡선은 형상만 그린 개념도이며 실제 곡선은 호기별 PTLR에 있습니다.</p>
+<h3>해설: 다)는 "LTOP을 잘 관리하라"가 아니라 "LTOP이 일할 일을 줄여라"입니다</h3>
+<p>문항 다)의 괄호 "(혹은 과도상태 발생)"이 힌트입니다. 출제자는 방출밸브의 정비보다 질량·열 유입 사건 자체를 막는 조치를 묻고 있습니다. 나)에서 든 사건마다 짝이 되는 조치를 하나씩 붙이면(안전주입펌프 오기동 ↔ 차단기 개방, SIT 오방출 ↔ 격리·전원 제거, RCP 기동 ↔ 온도차 제한) 채점자가 구조를 바로 알아봅니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li><strong>감시시험 고시</strong>: 원안위고시 제2021-28호 「원자로압력용기 감시시험 기준」(2021.8.19)이 현행이며, 출제 당시에 없던 PTS·USE 기준(제15조·별표 5)이 들어왔습니다. 감시시험 결과는 P-T 곡선과 LTOP 설정 갱신으로 이어집니다[6].</li>
+<li><strong>기술기준규칙</strong>: 현행 원안위규칙 제37호(2026.3.30) 제21조(원자로냉각재압력경계)·제37조(과압방지)가 근거입니다[9].</li>
+<li><strong>운영기술지침서 작성 기준</strong>: 출제 당시 원안위고시 제2017-5호에서 현행 제2024-13호(2024.12.31)로 바뀌었고, LTOP LCO 체계는 같습니다[10].</li>
+<li><strong>미국 기준</strong>: SRP 5.2.2와 BTP 5-2는 Rev.3(2007)이 현행으로, 출제 이후 바뀌지 않았습니다[1].</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, NUREG-0224 "Reactor Vessel Pressure Transient Protection for Pressurized Water Reactors" (1978), 부록 BTP RSB 5-2; NUREG-0800 SRP 5.2.2 "Overpressure Protection" 및 BTP 5-2 "Overpressurization Protection of Pressurized-Water Reactors While Operating at Low Temperatures", Rev. 3 (2007.3).</li>
+<li>U.S. NRC, NUREG-0933 Generic Issue 94 "Additional Low-Temperature Overpressure Protection for Light-Water Reactors"; Generic Letter 90-06 (1990).</li>
+<li>KEPCO/KHNP, Response to Request for Additional Information No. 233-8244, Question 05.02.02-1 (SRP 5.2.2 Overpressure Protection), APR1400 Design Certification, Docket No. 52-046 (2016.1.18), NRC ADAMS ML15348A085.</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix G "Fracture Toughness Requirements".</li>
+<li>U.S. NRC, NUREG-1431, Standard Technical Specifications — Westinghouse Plants, LCO 3.4.12 "Low Temperature Overpressure Protection (LTOP) System".</li>
+<li>원자력안전위원회, 「원자로압력용기 감시시험 기준」, 원자력안전위원회고시 제2021-28호(2021.8.19). 국가법령정보센터.</li>
+<li>IAPWS, Revised Release on the IAPWS Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam (IAPWS-IF97), IAPWS R7-97(2012).</li>
+<li>U.S. NRC, Information Notice 82-45 (1982).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제21·37조. 국가법령정보센터.</li>
+<li>원자력안전위원회, 「운영기술지침서의 작성에 관한 기준」, 원자력안전위원회고시 제2024-13호(2024.12.31). 국가법령정보센터.</li>
+</ol>

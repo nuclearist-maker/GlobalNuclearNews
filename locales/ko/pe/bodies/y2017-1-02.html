@@ -1,0 +1,72 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 1교시 2번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<ol start="2">
+<li>역시간방정식(In-hour Equation)과 각 인자들의 물리적 의미</li>
+</ol>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>역시간 방정식</strong>: 점동특성 방정식에 지수해 n ∝ e^(ωt)를 넣어 얻는 반응도 ρ와 역주기 ω = 1/T의 관계식입니다[1][2].</li>
+<li><strong>안정주기</strong>: 6군이면 ω에 대한 7차식이 되어 근이 7개 나옵니다. 양의 반응도에서는 양의 근 ω₁ 하나만 남아 장시간 출력 증가율을 정합니다.</li>
+<li><strong>지발중성자 지배</strong>: 작은 반응도에서는 지발 항이 반응도 대부분을 흡수해 주기가 수십 초 이상으로 길어집니다.</li>
+<li><strong>inhour 단위</strong>: 안정주기를 1시간으로 만드는 반응도(약 2.3 pcm)를 1 inhour라 불렀던 데서 이름이 나왔습니다[3].</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 식</strong></p>
+<ul>
+<li><strong>ρ = ωΛ + Σᵢ βᵢω/(ω + λᵢ)</strong> (i = 1~6, Λ 형식)</li>
+<li>ℓp 형식(Lamarsh): ρ = ωℓp/(1+ωℓp) + [1/(1+ωℓp)]·Σβᵢω/(ω+λᵢ) — Λ = ℓp/k로 같은 식임[2]</li>
+<li>유도: dcᵢ/dt = (βᵢ/Λ)n − λᵢcᵢ, dn/dt = [(ρ−β)/Λ]n + Σλᵢcᵢ에 n, cᵢ ∝ e^(ωt) 대입</li>
+</ul>
+<p><strong>2. 인자의 물리적 의미</strong></p>
+<ul>
+<li><strong>ρ</strong>: 투입 반응도(입력값), 일정하다고 가정함</li>
+<li><strong>ω = 1/T</strong>: 역주기, 출력의 지수 증가율(s⁻¹). T는 출력이 e배 되는 시간</li>
+<li><strong>Λ(ℓp)</strong>: 즉발중성자 세대시간(PWR 약 10⁻⁵ s대) → <strong>즉발 항 ωΛ</strong>, ρ &gt; β에서 출력 상승 속도를 결정함</li>
+<li><strong>βᵢ (Σβᵢ = β = 0.0065)</strong>: i군 지발중성자 분율 → 지발 항의 무게, <strong>1 $ = β</strong></li>
+<li><strong>λᵢ (0.0124~3.01 s⁻¹)</strong>: i군 선행핵 붕괴상수 → 지발 항의 시간 척도, 근의 경계(−λᵢ) 위치[3]</li>
+</ul>
+<p><strong>3. 해의 성질</strong></p>
+<ul>
+<li>7개 근 중 ρ &gt; 0이면 <strong>ω₁만 양수</strong> → 장시간 n(t) ≈ A₁e^(ω₁t), <strong>안정주기 T = 1/ω₁</strong></li>
+<li>ρ &lt; 0이면 근이 모두 음수, 장시간 지배 모드는 T₁ &lt; −1/λ₁(|T₁| &gt; 80.6 s)</li>
+<li>작은 ρ: T ≈ (Λ + Σβᵢ/λᵢ)/ρ ≈ 0.085 s/ρ, 1군 근사 T ≈ (β − ρ)/(λρ)</li>
+<li>ρ &gt; β(즉발초임계): T ≈ Λ/(ρ − β)로 짧아짐</li>
+</ul>
+<p><strong>4. 활용</strong></p>
+<ul>
+<li>양주기법 제어봉 반응도가 측정, 반응도계(역동특성) 원리, 영출력 노물리시험</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 역시간 방정식의 항 분해(투입 반응도 = 즉발 항 + 지발 항)와 인자별 의미, 반응도–안정주기 개략 곡선" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/9a4dce3ced2c67a2d3df3e0d493d97cc2a7daed341d1dec25101be84f5c2c9e3.webp"/><figcaption>답안용 도식: 역시간 방정식의 항 분해(투입 반응도 = 즉발 항 + 지발 항)와 인자별 의미, 반응도–안정주기 개략 곡선</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="Keepin 6군 상수(β = 0.0065, Λ = 2×10⁻⁵ s)로 푼 반응도–안정주기 곡선(로그 축), 1군 근사·즉발만 곡선 비교, 대표점 10·100·650 pcm, 항별 의미 수식 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/60d7f1aa02a17bff995f973edca728f68771cb6cf906935997a41e711b260e4e.webp"/><figcaption>Keepin 6군 상수(β = 0.0065, Λ = 2×10⁻⁵ s)로 푼 반응도–안정주기 곡선(로그 축), 1군 근사·즉발만 곡선 비교, 대표점 10·100·650 pcm, 항별 의미 수식 카드</figcaption></figure>
+<p>그림은 Keepin U-235 6군 상수와 Λ = 2×10⁻⁵ s(설명용 가정)로 역시간 방정식을 푼 결과입니다. 100 pcm을 넣으면 안정주기는 약 55 s입니다. 지발중성자를 무시하고 Λ/ρ로 계산하면 0.02 s가 되므로, 지발중성자가 출력 변화를 약 2,700배 느리게 만든다는 뜻입니다[3]. 반응도가 1 $(650 pcm)에 가까워지면 주기가 급격히 짧아져 1 $에서 약 92 ms가 됩니다. 곡선이 끊어지지 않고 이어진다는 점도 눈여겨볼 만합니다.</p>
+<p>1군 근사 (β − ρ)/(λρ)는 λ = 0.08 s⁻¹을 쓰면 100 pcm에서 68.8 s로, 6군 정확해보다 길게 나옵니다. 계산 문항에서는 문제가 준 λ로 풀되, 결과가 λ 선택에 민감하다는 점을 한 줄 덧붙이면 좋습니다.</p>
+<p>운전에서 쓰는 기동률 SUR(dpm)은 26.06/T(s)로 주기와 바로 바뀝니다. 100 pcm의 55 s는 약 0.47 dpm입니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>식만 쓰고 인자 설명 누락</strong>: 문제는 "물리적 의미"를 묻습니다. 즉발 항과 지발 항이 각각 무엇을 나타내는지 써야 합니다.</li>
+<li><strong>근이 하나라고 씀</strong>: 6군이면 근이 7개이고, 안정주기는 그중 최대 근이 정합니다. 나머지는 감쇠하는 과도항입니다.</li>
+<li><strong>음의 주기 하한 혼동</strong>: 큰 음의 반응도 뒤 장시간 주기가 약 −80 s에 머무는 것이지, 정지 직후 출력 강하 속도의 하한이 아닙니다.</li>
+<li><strong>ρ와 $ 혼동</strong>: β가 바뀌면(연소에 따른 βeff 감소) 같은 pcm이라도 주기가 짧아집니다.</li>
+</ul>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li>역시간 방정식의 물리와 형태는 2017년과 같습니다.</li>
+<li>반응도 사고 판단기준은 RG 1.77(1974)에서 RG 1.236(2020)으로 바뀌었습니다[4]. 제어봉 이탈처럼 1 $를 넘는 사건에서는 즉발 항(Λ)과 βeff가 해석의 핵심 인자입니다.</li>
+<li>반응도 제어계통 요건(10 CFR 50 App. A GDC 26~28, 기술기준규칙 제28조)은 골격이 그대로입니다[5][6].</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, John Wiley &amp; Sons (1976), 6장.</li>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 7장.</li>
+<li>G. R. Keepin, Physics of Nuclear Kinetics, Addison-Wesley (1965).</li>
+<li>U.S. NRC, Regulatory Guide 1.236 "Pressurized-Water Reactor Control Rod Ejection and Boiling-Water Reactor Control Rod Drop Accidents" (2020).</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criteria 26~28.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제28조. 국가법령정보센터.</li>
+</ol>

@@ -1,0 +1,130 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 3교시 1번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>원자로 운전에 따라 발생하는 핵분열생성물 중 Xe의 거동과 관련하여 다음을 설명하시오.
+가. Xe의 생성 및 소멸 과정
+나. 평형상태에서의 Xe 농도
+다. 계획예방정비를 마친 원자로를 짧은 시간 내에 기동하여 3일 후 정지한 경우 Xe의 농도변화
+라. 원자로 재기동 불능시간(Reactor dead time)</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>제논-135 거동을 <strong>생성·소멸 방정식 → 평형해 → 시간 변화 → 운전상 결과</strong> 순서로 엮을 수 있는지 봅니다. 다항이 핵심입니다. 정비 직후 노심은 제논이 0인 상태에서 출발하므로, 출력 상승 후 약 2일에 걸쳐 평형에 다가가는 <strong>증가 곡선</strong>과, 3일째 정지 후 약 10시간에 오는 <strong>정점 곡선</strong>을 이어서 그려야 합니다. 라항은 정의에 판정 기준(제논 반응도 손실 &gt; 가용 잉여반응도)을 넣고, 이 문항의 조건(주기초)에서는 대개 문제가 되지 않는다는 점까지 짚으면 좋습니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: ¹³⁵Xe의 성질(흡수단면적, 반감기)</li>
+<li>본론 가: 생성 2경로(¹³⁵I 붕괴·직접 수율), 소멸 2경로(중성자 흡수·β 붕괴), 지배 방정식</li>
+<li>본론 나: 평형 농도 식, 중성자속 의존성(포화), 평형 제논 반응도</li>
+<li>본론 다: 무제논 기동 → 평형 접근(약 40~50 h) → 3일 후 정지 → 약 9.5 h 정점 → 감쇠</li>
+<li>본론 라: 정의·판정식·영향인자·대응</li>
+<li>결론: 주기초에는 잉여반응도가 커서 불능시간이 대개 없음, 주기말 정지가 문제</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>¹³⁵Xe: 열중성자 흡수단면적 약 <strong>2.65×10⁶ b</strong>(2,200 m/s), 가장 강한 핵분열생성물 독[1]</li>
+<li>반감기: 모핵 ¹³⁵I <strong>6.7 h</strong>(λI = 2.87×10⁻⁵ s⁻¹), ¹³⁵Xe <strong>9.2 h</strong>(λXe = 2.09×10⁻⁵ s⁻¹)[1]</li>
+</ul>
+<p><strong>2. 가. Xe의 생성 및 소멸 과정</strong></p>
+<ul>
+<li><strong>생성</strong>
+<ul>
+<li>① 간접: 핵분열 → ¹³⁵Te(수십 초) → <strong>¹³⁵I 붕괴</strong> → ¹³⁵Xe — 누적 수율 γI ≈ <strong>0.0639</strong>(주 경로, 약 96 %)</li>
+<li>② 직접 핵분열 수율 γXe ≈ <strong>0.00237</strong>(약 4 %)</li>
+</ul>
+</li>
+<li><strong>소멸</strong>
+<ul>
+<li>① <strong>중성자 흡수(연소)</strong>: ¹³⁵Xe(n,γ)¹³⁶Xe(안정·흡수 작음), 율 σa·φ·X</li>
+<li>② <strong>β⁻ 붕괴</strong>: ¹³⁵Xe → ¹³⁵Cs, 율 λXe·X</li>
+</ul>
+</li>
+<li><strong>지배 방정식</strong>
+<ul>
+<li>dI/dt = γI·Σf·φ − λI·I</li>
+<li>dX/dt = γXe·Σf·φ + λI·I − λXe·X − σa·φ·X</li>
+</ul>
+</li>
+<li>출력 운전 중 소멸은 <strong>연소가 약 86 %</strong>(φ = 5×10¹³ n/cm²·s 기준) → 정지하면 이 경로가 사라짐</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 핵분열 → I-135 → Xe-135 → Cs-135 사슬, 직접 수율·연소(n,γ)·β 붕괴 화살표와 지배식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/a8b0f1229822da69821d71b1f53c53c708c74af5af66b8372eaccb81ec2b5488.webp"/><figcaption>답안용 도식: 핵분열 → I-135 → Xe-135 → Cs-135 사슬, 직접 수율·연소(n,γ)·β 붕괴 화살표와 지배식</figcaption></figure>
+<p><strong>3. 나. 평형상태에서의 Xe 농도</strong></p>
+<ul>
+<li>dI/dt = dX/dt = 0 → <strong>I∞ = γI·Σf·φ/λI</strong>, <strong>X∞ = (γI + γXe)·Σf·φ/(λXe + σa·φ)</strong></li>
+<li>중성자속 의존: σa·φ ≫ λXe(고출력)이면 X∞ → (γI + γXe)·Σf/σa로 <strong>포화</strong>, φ에 거의 무관</li>
+<li>평형 제논 반응도: ρXe = −σa·X∞/(ν·Σf) = −(γI + γXe)/ν × φ/(φ + λXe/σa)
+<ul>
+<li>상한(φ → ∞) = −0.0663/2.42 = <strong>약 −2,740 pcm</strong>, φ = 5×10¹³에서 <strong>약 −2,365 pcm</strong>(교과서 1군 계산값, 실제 PWR 값과 다름)[1]</li>
+</ul>
+</li>
+<li>평형 도달: I는 수 반감기, Xe는 연소가 빨라 <strong>약 40~50 h 운전 후 98~99 %</strong></li>
+</ul>
+<p><strong>4. 다. 정비 후 단시간 기동 → 3일 운전 → 정지 시 농도 변화</strong></p>
+<ul>
+<li><strong>가정 및 문제 해석</strong>: 계획예방정비(수 주)로 정지 기간이 길어 <strong>기동 시 I = Xe = 0</strong>, 출력은 짧은 시간 내 전출력 도달로 보아 <strong>t = 0에 전출력 계단 상승</strong>, 교과서 1군 상수·φ = 5×10¹³ n/cm²·s</li>
+<li><strong>① 기동 후 0~72 h (증가)</strong>
+<ul>
+<li>초기 X = 0 → 연소·붕괴 소멸 작음, ¹³⁵I가 쌓이면서 Xe 증가(I가 먼저 늘고 Xe가 뒤따르는 S자형 초기)</li>
+<li>제논 반응도 손실: <strong>6 h 약 870, 12 h 약 1,550, 24 h 약 2,130(평형의 90 %), 48 h 약 2,346(99 %)</strong> pcm</li>
+<li><strong>72 h</strong>: 약 <strong>2,364 pcm(평형의 99.9 %)</strong> → 사실상 평형</li>
+<li>운전 중 반응도 보상: 제논 증가분만큼 <strong>붕소 희석</strong>(약 −10 pcm/ppm 가정 시 약 240 ppm)</li>
+</ul>
+</li>
+<li><strong>② 정지 후 (정점 → 감쇠)</strong>
+<ul>
+<li>φ = 0 → 연소 소멸 차단, 쌓인 ¹³⁵I 붕괴는 계속 → λI·I &gt; λXe·X 동안 증가</li>
+<li><strong>약 9.5 h에 정점 약 6,290 pcm(평형의 약 2.66배)</strong> → 24 h 약 4,000, 약 34 h 평형값 복귀, 72 h 약 180 pcm</li>
+<li>3일 운전은 평형에 가까우므로 <strong>장기 평형 운전 후 정지와 거의 같은 곡선</strong>(정점 차이 0.1 % 미만)</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="무제논 기동 후 72 h 증가 곡선과 정지 후 정점(9.5 h, 약 6,290 pcm)·감쇠 곡선, 가용 잉여반응도 M 예시선과 불능 구간(교과서 1군 모델)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/ae73b6df23db7ecbb2a1bd4c68923c18ee579094b68278a07ef0aeab244d13e2.webp"/><figcaption>무제논 기동 후 72 h 증가 곡선과 정지 후 정점(9.5 h, 약 6,290 pcm)·감쇠 곡선, 가용 잉여반응도 M 예시선과 불능 구간(교과서 1군 모델)</figcaption></figure>
+<p><strong>5. 라. 원자로 재기동 불능시간(Reactor dead time)</strong></p>
+<ul>
+<li><strong>정의</strong>: 정지 후 제논 반응도 손실 L(t)가 <strong>가용 잉여반응도 M</strong>(제논을 제외한 가용 양의 반응도 — 제어봉 전 인출·붕소 최대 희석, 재기동 조건)을 넘어 <strong>임계에 도달할 수 없는 시간 구간</strong></li>
+<li><strong>판정</strong>: 불능 구간 = {t : L(t) &gt; M}, 시작 t₁·끝 t₂는 L(t) = M의 두 근, L_max &lt; M이면 불능시간 없음</li>
+<li><strong>예시(1군 모델)</strong>: M = 4,000 pcm → 약 1.8~24 h(약 22 h), M = 6,000 pcm → 약 6.3~13.4 h</li>
+<li><strong>영향인자</strong>
+<ul>
+<li>정지 전 출력(중성자속)↑ → ¹³⁵I 재고↑ → 정점↑ → 구간 길어짐</li>
+<li>주기 시점: 주기초 잉여반응도·붕소 여력이 커서 <strong>대개 없음</strong>, 주기말에 가장 김</li>
+</ul>
+</li>
+<li><strong>이 문항 조건</strong>: 계획예방정비 직후 = 새 주기 <strong>주기초(BOC)</strong> → 붕소 희석 여력이 커서 정점(약 6,300 pcm)도 붕소로 보상 가능 → <strong>재기동 불능시간은 대개 생기지 않음</strong>(희석 속도·시간은 고려)</li>
+<li><strong>대응</strong>: t₁ 이전 신속 재기동, 정지 전 감발로 정점 감소, t₂ 이후 재기동 시 경과시간별 제논을 반영해 예상 임계 위치(ECP) 재계산, 재기동 후 제논 감소에 따른 양의 반응도·축방향 제논 진동 감시</li>
+</ul>
+<p><strong>6. 결론</strong></p>
+<ul>
+<li>제논 거동은 <strong>¹³⁵I 붕괴 공급과 연소 소멸의 균형</strong>으로 결정되며, 정지는 균형을 깨 약 10 h 뒤 정점을 만듦</li>
+<li>재기동 불능시간은 안전 제한이 아니라 <strong>가용성 문제</strong>(제논이 많은 동안 노심은 더 깊은 미임계)</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 다항은 "두 곡선을 이어 그리기"입니다</h3>
+<p>기동 곡선과 정지 곡선은 방정식은 같고 초기조건만 다릅니다. 기동 때는 X = I = 0에서 출발하므로 제논이 연소로 빨리 사라지지 않고, ¹³⁵I가 쌓이는 속도에 맞춰 늘어납니다. 그래서 곡선은 처음 몇 시간 완만하다가 가팔라지고, 이후 평형으로 수렴합니다. 1군 모델로 계산하면 24시간에 평형의 90 %, 48시간에 99 %가 됩니다. 문제의 "3일"은 평형에 충분히 도달하는 시간이므로, 정지 후 곡선은 장기 운전 후 정지와 사실상 같습니다. 답안에 "3일이면 평형이므로 정점은 평형 운전 후 정지와 같다"는 판단을 한 줄 넣으면 문제 의도를 정확히 읽었다는 신호가 됩니다.</p>
+<p>반대로 정지 전 운전이 짧았다면(예: 수 시간) ¹³⁵I 재고가 작아 정점도 낮습니다. 출제자가 "짧은 시간 내에 기동"과 "3일"을 함께 준 것은 이 대비를 염두에 둔 것으로 읽힙니다.</p>
+<h3>해설: 주기초라는 조건을 놓치지 마세요</h3>
+<p>라항에서 많은 답안이 "정지 후 약 10시간 동안 재기동할 수 없다"고 단정합니다. 그러나 불능시간은 정점과 M의 비교로 정해집니다. 정비 직후 주기초는 새 연료가 들어와 잉여반응도가 크고, 임계 붕소 농도도 높아 희석으로 보상할 여유가 큽니다. 그래서 주기초에는 대개 불능 구간이 생기지 않습니다. 문제가 되는 것은 붕소 희석 여력이 거의 남지 않은 주기말 정지입니다. 단, 주기초라도 정점 근처에서 재기동하려면 많은 양의 붕소를 희석해야 하므로 시간이 걸립니다.</p>
+<p>수치는 교과서 1군 모델(Lamarsh 상수[1], φ = 5×10¹³ n/cm²·s)로 계산한 값입니다. 이 모델은 정점/평형 비가 실제 PWR보다 크게 나오므로, 답안에는 경향과 판정식을 쓰고 수치는 "예시"로 밝히는 편이 안전합니다.</p>
+<h3>해설: 채점 포인트와 흔한 실수</h3>
+<ul>
+<li><strong>생성 경로 비중</strong>: 직접 수율(약 4 %)보다 ¹³⁵I 붕괴(약 96 %)가 주 경로라는 점을 써야 정지 후 증가를 설명할 수 있습니다.</li>
+<li><strong>평형 농도의 포화</strong>: 고출력에서 X∞가 φ에 거의 무관하다는 점과, 정점 크기는 정지 전 φ에 거의 비례한다는 점을 구분합니다.</li>
+<li><strong>정점 시각 ≠ 불능 시작</strong>: 정점 약 10 h는 불능 구간의 중간입니다. 시작은 L(t)가 M을 처음 넘는 t₁입니다.</li>
+<li><strong>계수기 불감시간과 혼동 금지</strong>: Reactor dead time은 검출기의 dead time τ와 다른 개념입니다[2].</li>
+</ul>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li>제논 거동 물리는 출제 이후 달라진 것이 없습니다.</li>
+<li>재기동 불능시간을 직접 정한 조항은 없습니다. 관련 근거는 「원자로시설 등의 기술기준에 관한 규칙」 제28조(반응도제어계통)·제61조(노심관리 및 핵연료 취급)입니다[3]. 이 규칙의 현행판은 원안위규칙 제37호(2026.3.30)이며, 출제 당시(2019년)와 조 번호 체계가 다르므로 현행 번호로 인용합니다. 미국 기준은 10 CFR 50 부록 A GDC 26입니다[4].</li>
+<li>재기동 전 예상 임계 위치(ECP) 확인은 미국 표준 운영기술지침서 SR 3.1.6.1(Westinghouse형) 체계로 관리합니다[5].</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 7.5절, 표 7.5·7.6.</li>
+<li>U.S. DOE, DOE Fundamentals Handbook: Nuclear Physics and Reactor Theory, DOE-HDBK-1019/2-93, Vol. 2, Module 3 "Reactor Theory (Reactor Operations)" — Xenon.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제28조·제61조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix A, Criterion 26 "Reactivity control system redundancy and capability".</li>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications — Westinghouse Plants, Rev. 5 (2021), LCO 3.1.6.</li>
+</ol>

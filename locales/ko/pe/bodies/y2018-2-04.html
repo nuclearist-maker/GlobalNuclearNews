@@ -1,0 +1,165 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 2교시 4번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>부적절한 노심냉각감시계통 (ICCMS)에 대하여 다음 사항을 기술하시오.
+가) ICCMS 설치 목적(배경)
+나) ICCMS 관련 측정 변수 계측기의 종류(예: 가압기 수위 감지기)
+다) ICCMS 기능(부속 계통 기능, 예: 과냉각여유도 감시계통의 기능)</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>TMI-2 사고의 교훈이 어떤 계측 요건으로 바뀌었는지 설명할 수 있는지 봅니다. 배경으로 TMI-2와 NUREG-0737 II.F.2를 짚고, 계측기로 HJTC·CET·RTD·압력 감지기를 들어야 합니다. 기능은 과냉각여유도·원자로용기 수위·노심출구온도 세 가지로 나눠 각각 무엇을 언제 알려 주는지 쓰면 됩니다. 세 지표가 ICC 진행 단계마다 차례로 반응한다는 점과 표시·경보 출력을 함께 쓰면 상위 점수입니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 부적절한 노심냉각(ICC)의 정의, 문제 해석</li>
+<li>본론 가: 설치 목적 — TMI-2 교훈, NUREG-0737 II.F.2·GL 82-28 요건</li>
+<li>본론 나: 측정 변수와 계측기 — HJTC, CET, 고온관·저온관 RTD, 가압기 압력, 관련 감시 변수</li>
+<li>본론 다: 기능 — 과냉각여유도 감시, 원자로용기 수위 감시, 노심출구온도 감시, 표시·경보</li>
+<li>결론: 세 지표의 상호보완과 운전 활용</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요 및 문제 해석</strong></p>
+<ul>
+<li><strong>ICC(부적절한 노심냉각)</strong>: 노심의 열을 충분히 제거하지 못하는 상태. 과냉각 상실은 접근의 조기 신호이고, 재고량 감소·노심 노출·출구온도 상승까지 종합해 접근·발생·회복을 판단함 [2]</li>
+<li><strong>ICCMS</strong>: ICC 접근·발생·회복을 운전원에게 알려 주는 <strong>안전관련 감시계통</strong>(자동 작동 기능 없음)</li>
+<li><strong>가정 및 문제 해석</strong>: 나)의 예시 "가압기 수위 감지기"는 ICC 판단에 함께 보는 관련 사고감시 변수로 정리함. 공개 설계 기술에 나타난 ICCMS 직접 입력은 가압기(RCS) <strong>압력</strong> 감지기임 [3]</li>
+</ul>
+<p><strong>2. 가) 설치 목적(배경)</strong></p>
+<ul>
+<li><strong>TMI-2(1979)</strong>: PORV 개방고착으로 냉각재가 빠지는 중에도 가압기 수위는 높게 지시
+<ul>
+<li>운전원이 RCS가 가득 찼다고 판단해 고압안전주입을 줄임 → 노심 노출·손상</li>
+<li>당시 원자로용기 수위를 직접 재는 계측이 없었고, 과냉각 상실(포화)과 노심 과열을 바로 보여 주는 지시도 없었음</li>
+</ul>
+</li>
+<li><strong>NUREG-0737 II.F.2(1980)</strong> [1]: PWR에 ICC 접근·발생을 <strong>모호하지 않게</strong> 알려 주는 계측 요구
+<ul>
+<li>원자로 수위 측정 고려, ICC 접근 <strong>사전 경고</strong>, Class 1E 요건(NUREG-0737 Appendix B)</li>
+<li>인간공학 분석으로 경보·표시 선정, 비상운전절차·훈련에 통합</li>
+</ul>
+</li>
+<li><strong>GL 82-28(1982)</strong> [2]: <strong>향상된 과냉각여유도 감시기 + 노심출구열전대(CET) + 냉각재 재고량 추적계통</strong> 조합 요구, CE형 가열접점열전대(HJTC) 방식 수용</li>
+<li>신규 원전: 10 CFR 50.34(f)(2)(xviii) [5], 사고감시계측 RG 1.97 [6]</li>
+<li>국내: 한국표준형 원전에 TMI 후속 보완조치로 설치된 안전관련 감시계통 [3]</li>
+</ul>
+<p><strong>3. 나) 측정 변수와 계측기</strong></p>
+<table>
+<thead>
+<tr>
+<th>계측기</th>
+<th>위치</th>
+<th>측정 변수</th>
+<th>쓰임</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HJTC(가열접점열전대)</td>
+<td>상부헤드~핵연료정렬판(FAP) 위 분리관 안 탐침, 감지기 8개</td>
+<td>높이별 액체 잠김 여부, 상부헤드 온도(비가열 접점)</td>
+<td>원자로용기 수위(재고량), 상부헤드 포화여유도</td>
+</tr>
+<tr>
+<td>CET(노심출구열전대)</td>
+<td>노내계측관 최상단, 유효 노심 위 약 4~6 in</td>
+<td>노심 출구 냉각재 온도</td>
+<td>대표 CET, CET 포화여유도</td>
+</tr>
+<tr>
+<td>RTD</td>
+<td>고온관·저온관</td>
+<td>냉각재 온도</td>
+<td>RCS 포화여유도</td>
+</tr>
+<tr>
+<td>압력 감지기</td>
+<td>가압기(RCS) 압력</td>
+<td>계통 압력 → T_sat(P)</td>
+<td>세 여유도 계산</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>감지기~표시기 <strong>독립 2채널(A/B)</strong> 구성 [3]</li>
+<li>HJTC 원리: 한 감지기 = 가열 접점 + 비가열 접점 한 쌍
+<ul>
+<li>분리관 안에서 기포가 빠져 생긴 액체 수위(응축수위)를 감지: 물에 잠긴 감지기는 열이 잘 빠져 두 접점 온도차가 작고, 증기에 노출되면 커짐 → 감지점별 잠김 여부로 그 구간의 액체 재고량 추정</li>
+</ul>
+</li>
+<li><strong>가압기 수위(문제 예시)</strong>: 재고량 관련 감시 변수이나 원자로용기 수위·노심 피복 여부를 단독으로 대표하지 못함(TMI 교훈) → ICCMS 지표와 함께 봄. 광역 RCS 압력, SG 수위·압력도 함께 보는 변수</li>
+<li>APR1400 예: 같은 입력(RTD, HJTC 비가열 열전대, CET, 압력)으로 과냉각 상실·포화·회복을 계산, CET 범위 0~1,260 °C [4]</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 원자로용기 단면의 HJTC 8점(헤드~FAP 위), CET(노심 출구), 고온관 RTD, 가압기 압력과 과냉각여유도 식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/fd5041ca4794014d06a5f425f32618daa9e3219efe69b2b033f48def44b7839e.webp"/><figcaption>답안용 도식: 원자로용기 단면의 HJTC 8점(헤드~FAP 위), CET(노심 출구), 고온관 RTD, 가압기 압력과 과냉각여유도 식</figcaption></figure>
+<figure class="article-image"><img alt="ICCMS의 네 가지 입력(HJTC·CET·RTD·가압기 압력)이 독립 2채널을 거쳐 과냉각여유도·원자로용기 수위·노심출구온도 감시와 경보·표시로 이어지는 구성" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/c8b10a499a08655e9ba1059c9d3d547bdd661cdccace93cf7827054479c2809f.webp"/><figcaption>ICCMS의 네 가지 입력(HJTC·CET·RTD·가압기 압력)이 독립 2채널을 거쳐 과냉각여유도·원자로용기 수위·노심출구온도 감시와 경보·표시로 이어지는 구성</figcaption></figure>
+<p><strong>4. 다) ICCMS 기능(부속 기능)</strong></p>
+<ul>
+<li><strong>① 과냉각(포화)여유도 감시(SMM)</strong>
+<ul>
+<li>ΔT_sub = T_sat(P) − T, P = 가압기 압력</li>
+<li>T = 고온관 RTD(RCS), 대표 CET(노심출구), 상부헤드 비가열 열전대 최고값(상부헤드)</li>
+<li>온도 여유(°C)와 압력 여유를 함께 표시, 음수 = 포화 초과(과열)</li>
+<li>쓰임: 과냉각 상실 조기 인지(SBLOCA 등), 자연순환 확인, 안전주입 정지·조절·RCP 조작 판단의 근거 변수(발전소별 승인 EOP에 따라 다른 계측과 종합)</li>
+</ul>
+</li>
+<li><strong>② 원자로용기 수위(냉각재 재고량) 감시</strong>
+<ul>
+<li>HJTC 8점으로 FAP 위~상부헤드의 액체 재고량(응축수위) 이산 표시, <strong>히터 전력 제어</strong> 포함</li>
+<li>상부헤드 기포(자연순환 냉각 중 플래싱) 탐지, 노심 노출 전 재고량 감소 사전 경고, 회복 확인</li>
+<li>한계: 감지 범위(FAP 위) 아래로 내려간 수위, 즉 노심 영역 수위는 직접 재지 않음</li>
+</ul>
+</li>
+<li><strong>③ 노심출구온도 감시</strong>
+<ul>
+<li>대표 CET와 사분면·위치별 온도 분포 표시 → 국부 이상 판단, 노심 노출 뒤 과열 증기 온도 상승으로 ICC 진행 정도 판단, 회복 시 하강 확인</li>
+<li>강제순환을 잃은 상태(자연순환)에서는 노심출구 과냉각여유도 평가에도 씀</li>
+<li>한계: 유동이 작으면 CET가 피복 온도를 늦고 낮게 반영할 수 있음 → 재고량 계측과 함께 씀</li>
+<li>CET 649 °C(1,200 °F): APR1400 사고관리계획서 심사에서 중대사고 판정에 쓰인 값 [8]</li>
+</ul>
+</li>
+<li><strong>④ 표시·경보·전송</strong>
+<ul>
+<li>발전소경보계통 경보, 주제어반 추이기록계, <strong>원격정지반 지시</strong>, 발전소 전산계통·SPDS 전송 [3]</li>
+<li>APR1400: SPADES+가 1차 표시(ICC 요약 화면: RCS/상부헤드 과냉각여유도 중 작은 값, 노심 위 수위, 대표 CET), QIAS-P가 Class 1E 후비 표시 [4]</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="소형 냉각재 상실형 진행의 정성적 예: 과냉각여유도, HJTC 잠긴 감지기 수, 대표 CET와 포화온도·649 °C 기준선" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/9d1eb333405451ddd6a965b774a7d7898984f222baf7a185e5a646012008e4ec.webp"/><figcaption>소형 냉각재 상실형 진행의 정성적 예: 과냉각여유도, HJTC 잠긴 감지기 수, 대표 CET와 포화온도·649 °C 기준선</figcaption></figure>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>소형 냉각재 상실형 진행에서는 대체로 <strong>과냉각 상실 → 재고량 감소 → 노심 노출·과열</strong> 순으로 지표가 나빠짐(순서는 사고 조건에 따라 달라짐)</li>
+<li>과냉각여유도는 접근의 조기 경고이지만 재고량의 악화·회복을 구분하지 못함 → HJTC(재고량)와 CET(노심 과열)를 함께 써서 모호하지 않게 판단</li>
+<li>운전 활용: 징후기반 EOP의 노심 열제거 안전기능 판단, 중대사고관리지침 진입 판단</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<h3>왜 가압기 수위가 아니라 세 지표인가</h3>
+<p>TMI-2에서 가압기 수위가 높게 지시된 이유는 원자로용기 상부와 고온관에 생긴 증기가 냉각재를 가압기로 밀어 올렸기 때문입니다. 가압기는 계통의 가장 높은 곳에 붙은 별도 용기라, 계통 안에 기포가 생기면 재고량이 줄어도 수위가 오를 수 있습니다. 그래서 ICCMS는 원자로용기 안에서 직접 재는 HJTC와, 포화에 얼마나 가까운지를 숫자로 보여 주는 과냉각여유도를 함께 둡니다.</p>
+<p>두 번째 그림은 소형 냉각재 상실형 진행을 정성적으로 그린 예입니다. 고온관 기준 과냉각여유도가 먼저 0으로 떨어지고, HJTC가 상부헤드부터 차례로 노출되며, 노심이 드러난 뒤 CET가 포화온도 위로 오릅니다. CET만 보면 노심이 노출된 뒤에야 경보가 나므로 앞의 두 지표가 사전 경고를 맡습니다. HJTC가 모두 노출되었다는 것은 수위가 감지 범위 아래로 내려갔다는 뜻이지, 노심이 완전히 드러났다는 뜻은 아닙니다. 실제 순서와 시간은 파단 크기·주입 상태에 따라 달라지므로, 회복도 세 지표를 함께 확인합니다.</p>
+<h3>채점 포인트와 흔한 실수</h3>
+<ul>
+<li><strong>배경을 TMI 일반론으로만 씀</strong>: 가압기 수위 오판과 수위 계측 부재라는 구체 교훈, NUREG-0737 II.F.2를 함께 씁니다.</li>
+<li><strong>ICCMS가 안전주입을 자동 작동시킨다고 씀</strong>: 감시·표시계통입니다.</li>
+<li><strong>HJTC가 노심 안 수위를 연속 측정한다고 씀</strong>: FAP 위 영역의 분리관 안 액체 수위를 8개 높이로 판정합니다.</li>
+<li><strong>과냉각여유도를 평균온도로 계산</strong>: 고온관(또는 CET)·상부헤드 온도 기준입니다.</li>
+<li><strong>문제 예시를 그대로 입력으로 씀</strong>: 가압기 수위는 관련 감시 변수로, 입력은 압력으로 구분하면 정확합니다.</li>
+</ul>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li><strong>요건</strong>: NUREG-0737 II.F.2와 GL 82-28 체계는 그대로입니다. 사고감시계측 지침은 RG 1.97 Rev.5(2019, IEEE 497-2016 승인, 중대사고관리용 변수군 추가)가 최신판입니다 [6]. APR1400 설계인증은 Rev.4를 적용했고, 기존 원전은 각 인허가에서 정한 판을 따릅니다.</li>
+<li><strong>구현</strong>: 출제 당시 국내 가동 원전은 전용 ICCMS 장비(발전소 자료수집계통 연계, 울진 5·6호기부터 독립 산업용 컴퓨터)를 썼습니다 [3]. APR1400은 디지털 MMIS의 SPADES+(1차 표시)와 QIAS-P(Class 1E 후비 표시)가 같은 기능을 수행합니다 [4].</li>
+<li><strong>사고관리 연계</strong>: 사고관리계획서 체계(2016.6.23 시행)와 현행 사고관리 고시 제2026-1호에서 CET는 중대사고 판정에 쓰이며, 판정 기준 649 °C는 원안위 제206회(2025.1.9) 의안에 나옵니다 [8].</li>
+<li><strong>국내 기술기준</strong>: 「원자로시설 등의 기술기준에 관한 규칙」 현행판은 원안위규칙 제37호(2026.3.30)이며, 계측 요건은 제20조(계측 및 제어장치)에 있습니다 [7].</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, NUREG-0737 "Clarification of TMI Action Plan Requirements" (1980.11), Item II.F.2 "Instrumentation for Detection of Inadequate Core Cooling".</li>
+<li>U.S. NRC, Generic Letter 82-28 "Inadequate Core Cooling Instrumentation System" (1982.12.10).</li>
+<li>윤태웅·백광일·백승민·김항배, "부적절노심냉각감시계통 개선", 한국원자력학회 2001 추계학술발표회 논문집.</li>
+<li>KEPCO/KHNP, APR1400 Design Control Document Tier 2, Section 7.5 및 Table 7.5-1 "Accident Monitoring Instrumentation Variables" — RAI 38-7878 Question 07.05-1 Rev.2 응답 첨부, NRC ADAMS ML17271A085.</li>
+<li>U.S. NRC, 10 CFR 50.34(f)(2)(xviii).</li>
+<li>U.S. NRC, Regulatory Guide 1.97 "Criteria for Accident Monitoring Instrumentation for Nuclear Power Plants", Rev.4 (2006), Rev.5 (2019).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제20조. 국가법령정보센터.</li>
+<li>원자력안전위원회, 제206회 원자력안전위원회 회의(2025.1.9) 의안 — APR1400 사고관리계획서 심사(CET 649 °C 중대사고 판정).</li>
+</ol>

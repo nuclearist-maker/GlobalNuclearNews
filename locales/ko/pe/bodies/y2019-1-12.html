@@ -1,0 +1,60 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 1교시 12번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<ol start="12">
+<li>후열처리(Post weld heat treatment, PWHT)와 모의후열처리(Simulated post weld heat treatment, SPWHT)</li>
+</ol>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>PWHT</strong>: 페라이트계 용접부를 변태점(Ac1) 아래로 가열·유지·서랭해 잔류응력을 풀고 열영향부(HAZ)를 템퍼링하는 열처리입니다.</li>
+<li><strong>SPWHT</strong>: 재료 인수시험용 시험재에 부품이 받을 누적 PWHT를 모사해 가하는 열처리입니다.</li>
+<li><strong>누적 열이력</strong>: 최종 PWHT에 보수용접 재PWHT까지 더한 시간·온도 이력입니다.</li>
+<li><strong>NB-4620 / NB-2211</strong>: ASME III 1등급 기기의 PWHT 요건과 시험재 열처리 요건입니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 후열처리(PWHT)</strong></p>
+<ul>
+<li>정의: 용접 후 <strong>Ac1 이하</strong>로 가열·유지·서랭하는 <strong>응력제거·템퍼링</strong> 열처리(페라이트계 대상, 오스테나이트계 제외)</li>
+<li>목적: ① <strong>잔류응력 완화</strong> ② HAZ 경화조직 <strong>템퍼링</strong> ③ (부수 효과) 확산성 <strong>수소 방출</strong> ④ 치수 안정·응력부식 감수성 저감</li>
+<li>조건: ASME III <strong>Table NB-4622.1-1</strong> — P-No.1·3(SA-508 Gr.3, SA-533 Type B) <strong>595 °C(1,100 °F) 이상</strong> 유지, 유지시간은 두께 비례[1]</li>
+<li>운영: 여러 사이클 <strong>누적 인정</strong>(NB-4622.4), 425 °C 초과 구간 <strong>가열·냉각 속도 제한</strong>(NB-4623, 두께에 반비례)[1]</li>
+</ul>
+<p><strong>2. 모의후열처리(SPWHT)</strong></p>
+<ul>
+<li>정의: 모재·용접재료 <strong>시험재</strong>에 부품의 <strong>최종 PWHT + 보수 재PWHT 누적 열이력</strong>을 모사해 가하는 열처리</li>
+<li>목적: 누적 열이력 후의 기계적 성질·인성(재료·규격에 따라 <strong>인장·샤르피 충격·RTNDT</strong> 등)이 규격을 만족하는지 확인 → 시험값의 <strong>대표성</strong> 확보</li>
+<li>기준: <strong>NB-2211</strong> — 시험재 누적 유지시간 ≥ 부품 누적의 <strong>80 %</strong>, 단일 사이클로 수행 가능[1], 강판은 SA-20 <strong>보충요건 S3</strong>로 주문 시 지정[2]</li>
+<li>적용: 재료 인증시험, 용접절차 인정(PQR), <strong>감시시편</strong>(노심대 재료와 같은 열처리 이력)</li>
+</ul>
+<p><strong>3. 비교</strong></p>
+<ul>
+<li>대상: PWHT = <strong>부품 용접부</strong> / SPWHT = <strong>시험재</strong></li>
+<li>목적: PWHT = 부품 성질 개선 / SPWHT = 부품 성질의 <strong>검증</strong></li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 부품의 PWHT 반복 사이클(누적)과 시험재 단일 SPWHT 사이클(누적의 80 % 이상) → 기계시험 흐름" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/f70a702092ac926e8aedd7a1bef64f547b6486c3a8b1ca64a73972266d207b3a.webp"/><figcaption>답안용 도식: 부품의 PWHT 반복 사이클(누적)과 시험재 단일 SPWHT 사이클(누적의 80 % 이상) → 기계시험 흐름</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="Hollomon–Jaffe 템퍼링 파라미터로 본 유지온도·유지시간의 맞바꿈(등-P 곡선), 595 °C 최소 유지온도선, 부품 누적 30 h와 시험재 24 h 예시, PWHT·SPWHT 비교표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/67b4fc8f6ad6f24092af632bb245db7a2b98a5ba0cc2abd4d121a547d1145983.webp"/><figcaption>Hollomon–Jaffe 템퍼링 파라미터로 본 유지온도·유지시간의 맞바꿈(등-P 곡선), 595 °C 최소 유지온도선, 부품 누적 30 h와 시험재 24 h 예시, PWHT·SPWHT 비교표</figcaption></figure>
+<p>열처리 효과는 온도와 시간을 함께 봐야 합니다. 그림은 강의 템퍼링 정도를 비교하는 데 관용적으로 쓰는 Hollomon–Jaffe 파라미터 P = T(K)·(20 + log t)/1000을 그린 것입니다[3]. 595 °C에서 1시간이면 P ≈ 17.36이고, 620 °C·1시간(P ≈ 17.86)과 같은 P를 595 °C에서 얻으려면 약 3.8시간이 필요합니다. 이 지표는 같은 강재의 템퍼링 정도를 비교하는 설명용 도구일 뿐, 규격 적합성이나 응력 완화의 등가를 보증하지는 않습니다.</p>
+<p>원자로용기처럼 두꺼운 부품은 제작 중 보수용접 때문에 PWHT를 여러 번 받습니다. 누적 P가 커질수록 응력은 더 풀리지만, 과도하면 탄화물이 굵어져 강도가 떨어지거나 인성이 달라질 수 있습니다. 그래서 열처리 전 시험재로 인수시험을 하면 실제 부품보다 좋은 값이 나올 수 있고, 이를 막기 위해 SPWHT를 합니다. 80 % 규칙은 시간 기준이며, 그림의 예(595 °C 부품 누적 30 h, 시험재 24 h)처럼 P가 완전히 같아지는 조건은 아닙니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제(2019) 이후 PWHT·SPWHT 개념과 NB-4620·NB-2211 체계는 그대로입니다. 국내 적용판은 현행 원안위고시 제2026-13호 제9조에 따라 KEPIC MN 2020년판·ASME III 2019년판까지입니다[4].</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>SPWHT를 PWHT 생략용 대체 열처리로 쓰기</strong>: 부품이 아니라 시험재에 가하는 열처리입니다.</li>
+<li><strong>누적 개념 누락</strong>: 보수용접 재PWHT까지 합친 열이력을 모사한다는 점이 핵심입니다.</li>
+<li><strong>목적 축소</strong>: PWHT 목적을 응력제거 하나로만 쓰지 말고 템퍼링·수소 방출까지 씁니다.</li>
+<li><strong>회복 열처리와 혼동</strong>: 10 CFR 50.66의 열처리는 운전 중 조사취화를 회복시키는 것으로 제작 단계 PWHT와 다릅니다[5].</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>ASME, Boiler and Pressure Vessel Code, Section III, Division 1, Subsection NB — NB-2211, NB-4620(Table NB-4622.1-1, NB-4622.4), NB-4623.</li>
+<li>ASME SA-20/SA-20M (= ASTM A20/A20M), Supplementary Requirement S3 "Simulated Post-Weld Heat Treatment of Mechanical Test Coupons".</li>
+<li>J. H. Hollomon, L. D. Jaffe, "Time-Temperature Relations in Tempering Steel", Transactions of the AIME, Vol. 162, p. 223 (1945).</li>
+<li>원자력안전위원회, 「원자로시설의 안전등급과 등급별 규격에 관한 고시」, 원안위고시 제2026-13호(2026.8.26), 제9조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR 50.66 "Requirements for thermal annealing of the reactor pressure vessel".</li>
+</ol>

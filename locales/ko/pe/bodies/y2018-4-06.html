@@ -1,0 +1,139 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 4교시 6번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>다음 중 운영기술지침서에서 규정한 정지여유도(Shutdown Margin)에 대하여 다음 사항을 기술하시오.
+가) 정지여유도의 정의(가정조건을 포함할 것)
+나) 정지여유도 운전제한조건을 준수할 경우 안전해석 측면에서 보장하고 있는 사항</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>교재식 "전 제어봉 삽입 시 미임계도"가 아니라 <strong>운영기술지침서(T/S) 정의의 가정조건</strong>을 정확히 쓰는지 봅니다. 핵심은 ① 반응도가가 가장 큰 제어봉 집합체 1개 고착, ② 모드 1·2의 영출력 온도 가정, ③ "순간" 반응도량(제논 현재 값)입니다. 나)는 SDM이 <strong>안전해석의 초기조건</strong>이라는 점, 그리고 그 결과 미임계 도달·반응도 사고 제어·비의도적 임계 방지가 보장된다는 점을 사고(주증기관 파단, 붕소 희석)와 연결해 설명해야 합니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 정지여유도의 의미와 T/S 내 위치(정의 1.1, LCO 3.1.1, 수치는 COLR)</li>
+<li>본론 1(가): 정의, 가정조건 3가지와 예외, 정의식</li>
+<li>본론 2(나): 안전해석상 보장 사항 3가지와 제한 사고, LCO·감시</li>
+<li>결론: 정지여유도는 사고해석 초기조건이자 GDC 26의 구현</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li><strong>정지여유도(SDM)</strong>: 원자로가 미임계인 정도를 나타내는 <strong>반응도량</strong>(양의 크기, %Δk/k 또는 pcm)</li>
+<li>T/S 구성: 정의(1.1) → 운전제한조건 LCO 3.1.1(SDM) → 감시요건 → 요구값은 <strong>노심운영제한보고서(COLR)</strong>[1][2][5]</li>
+<li>근거: 「원자로시설 등의 기술기준에 관한 규칙」 제28조(반응도제어계통)[6], 미국 10 CFR 50 부록 A GDC 26·27·28[3]</li>
+</ul>
+<p><strong>2. 가) 정의와 가정조건</strong></p>
+<ul>
+<li><strong>정의</strong>: 원자로가 현재 미임계인, 또는 현재 상태로부터 아래를 가정할 때 미임계가 될 <strong>순간(instantaneous) 미임계 반응도량</strong>[1][2]</li>
+<li><strong>가정 ① 고착봉</strong>: <strong>반응도가가 가장 큰 제어봉 집합체 1개는 완전 인출</strong>, 나머지는 모두 완전 삽입된다고 가정
+<ul>
+<li>모든 제어봉이 <strong>서로 독립적인 두 수단</strong>으로 완전 삽입 확인되면 고착봉을 고려하지 않아도 됨</li>
+<li>완전 삽입이 불가능한 제어봉이 있으면 그 반응도가를 SDM 산정에 반영함</li>
+</ul>
+</li>
+<li><strong>가정 ② 온도</strong>: 모드 1·2(출력운전·기동)에서는 <strong>연료·감속재 온도가 공칭 영출력 설계 준위로 바뀐다고</strong> 가정 → 정지 시 되돌아오는 출력결손을 미리 반영</li>
+<li><strong>가정 ③ 부분강 제어봉</strong>(CE형 STS만): 부분강 제어봉 위치는 변하지 않는다고 가정 — 국내 OPR1000·APR1400은 CE 계열</li>
+<li><strong>"순간" 반응도량</strong>: 제논·사마륨은 <strong>현재 값</strong> 사용(제논 소멸 가정 없음). "제논 없음·68 °F" 가정은 BWR 정의이므로 PWR에 쓰지 않음</li>
+<li><strong>정의식</strong>: SDM = −ρ_N−1 = (1 − k_N−1)/k_N−1, k_N−1은 최대가 봉 1개 인출 상태의 keff
+<ul>
+<li>예: k_N−1 = 0.987 → SDM = 0.013/0.987 = <strong>1,317 pcm</strong>(1 − k = 1,300 pcm과 구별)</li>
+</ul>
+</li>
+<li><strong>요구값 예</strong>: 웨스팅하우스형 COLR 예 모드 1~4 <strong>1.3 %Δk/k</strong>, 모드 5 1.0 %Δk/k / CE형 예 Tavg &gt; 200 °F에서 5.15 %Δk/k[7] → 발전소·주기별 값</li>
+</ul>
+<figure class="article-image"><img alt="반응도 축 위 정지여유도 정의(최대가 제어봉 1개 인출 고착, 요구값 예 1,300 pcm), 주기말 영출력 주증기관 파단의 양의 반응도, LCO가 보장하는 3가지" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/7fbb0d69983c50adc922698d87ecc3844e8cb059ded0cbb2f57c17821c7391b5.webp"/><figcaption>반응도 축 위 정지여유도 정의(최대가 제어봉 1개 인출 고착, 요구값 예 1,300 pcm), 주기말 영출력 주증기관 파단의 양의 반응도, LCO가 보장하는 3가지</figcaption></figure>
+<p><strong>3. 나) LCO 준수 시 안전해석 측면 보장 사항</strong></p>
+<ul>
+<li>SDM은 사고해석이 가정하는 <strong>초기조건</strong> → 10 CFR 50.36(c)(2)(ii) 기준 2에 따라 LCO로 선정(국내 「운영기술지침서의 작성에 관한 기준」 제5조② 선정기준 2)[4][8]</li>
+<li>LCO를 지키면 해석에서 가정한 최소 미임계 여유가 실제로 확보되어, 해당 안전해석의 계통 작동 가정 아래 다음이 뒷받침됨(STS Bases B 3.1.1)[1]
+<ul>
+<li><strong>① 미임계 도달</strong>: 모든 운전 상태·예상운전과도·설계기준사건에서 원자로를 <strong>미임계로 만들 수 있음</strong></li>
+<li><strong>② 반응도 사고 제어</strong>: 가상사고의 반응도 과도를 <strong>허용 한계(연료 설계한계) 안에서 제어</strong> 가능</li>
+<li><strong>③ 비의도적 임계 방지</strong>: 정지 상태에서 <strong>비의도적 임계를 막을 만큼</strong> 충분히 미임계 유지</li>
+</ul>
+</li>
+<li><strong>제한 사고 ① 주증기관 파단(MSLB)</strong> — 모드 1~4 요구값을 정하는 대표 사고
+<ul>
+<li><strong>주기말(EOC)·고온영출력(HZP)</strong>이 제한 조건: 감속재온도계수(MTC)가 가장 음 → 과냉각 시 큰 양의 반응도, 출력결손 여유 없음, 도플러 완충 작음</li>
+<li>판정: ρ &lt; 0 유지, 또는 재임계가 일어나도 출력이 제한되어 <strong>DNBR 등 연료 설계한계 충족</strong>(노형·주기별 해석)</li>
+<li>수지: ρ(t) = −SDM + Δρ_감속재 + Δρ_연료 + Δρ_붕소 → SDM에 고착봉이 이미 반영되어 있으므로 <strong>중복 차감 금지</strong></li>
+</ul>
+</li>
+<li><strong>제한 사고 ② 비제어 붕소 희석</strong> — 저온 모드 요구값을 정함
+<ul>
+<li>운전원 조치에 의존하는 해석에서 경보부터 SDM 소진까지 <strong>재장전 모드 30분, 그 밖 모드 15분 이상</strong> 확보(SRP 15.4.6)[9] — LCO 미충족 시 허용조치시간과는 다른 개념</li>
+</ul>
+</li>
+<li>그 밖에 정지·저출력 제어봉 인출, 영출력 제어봉 이탈 등 반응도 사고의 초기조건으로 쓰임</li>
+</ul>
+<p><strong>4. LCO 운영과 감시(웨스팅하우스형 STS 예)</strong></p>
+<ul>
+<li>적용 모드: LCO 3.1.1은 모드 2(keff &lt; 1.0)·3·4·5. 임계 상태(모드 1·2)는 <strong>제어봉 삽입한계</strong>(LCO 3.1.5·3.1.6)가 SDM을 보장함[2]</li>
+<li>감시: 24시간마다 붕소 농도·제어봉 위치·RCS 온도·연소도·제논 등을 반영해 계산으로 확인</li>
+<li>미충족 시: <strong>15분 이내 붕산 주입 개시</strong>, SDM 회복까지 지속</li>
+<li>기동 전 예상임계조건(ECC)과 실측 임계점 비교로 노심 반응도 모델을 검증 → 계산 SDM의 신뢰성 확보</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 반응도 수직선(0 = 임계, −SDM, 요구값)과 가정 3가지 박스" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/36f081fded23db7aeae3cbaa81360f5fb2fae687da56f13fc3f67041c441dcfe.webp"/><figcaption>답안용 도식: 반응도 수직선(0 = 임계, −SDM, 요구값)과 가정 3가지 박스</figcaption></figure>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>정지여유도는 "<strong>가장 센 제어봉 1개가 걸려도</strong> 원자로를 끌 수 있는 여유"를 T/S로 강제한 것이며, GDC 26의 고착봉 여유 요건을 운전 단계에서 구현함</li>
+<li>LCO 준수는 사고해석의 초기조건 성립을 뜻하므로, 해석 결과(미임계 도달, 반응도 사고 제어, 비의도적 임계 방지)의 전제가 지켜짐을 보장함</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 교재 정의와 T/S 정의를 섞지 마세요</h3>
+<p>교재(Duderstadt &amp; Hamilton 표 14-1)의 정지여유도는 <strong>전 제어요소 삽입</strong> 기준이라 "총 제어능 = 잉여반응도 + 정지여유도" 관계가 깔끔하게 성립합니다[10]. 반면 운영기술지침서의 정의는 <strong>최대가 봉 1개 고착</strong>을 가정합니다. 이 문항은 "운영기술지침서에서 규정한"이라고 범위를 정했으므로, 고착봉 가정과 그 예외(두 독립 수단으로 전 삽입 확인 시)를 반드시 써야 합니다.</p>
+<h3>해설: "보장 사항"은 사고와 짝지어 쓰세요</h3>
+<p>나)를 STS Bases 세 줄만 옮겨 쓰면 내용이 추상적으로 보입니다. ①·②는 주기말 영출력 주증기관 파단, ③은 붕소 희석과 연결해 쓰면 "왜 그 값이어야 하는가"가 드러납니다. 다만 SDM을 지킨다고 모든 사고에서 재임계가 없다는 뜻은 아닙니다. 주증기관 파단은 재임계를 허용하되 연료 설계한계를 지키는 해석도 있으므로, "재임계 시에도 허용 한계 충족"으로 표현하는 것이 정확합니다.</p>
+<h3>해설: 1.3 %Δk/k는 공통값이 아닙니다</h3>
+<p>1.3 %Δk/k는 웨스팅하우스형 발전소 COLR에서 흔히 보이는 값일 뿐, 노형과 주기에 따라 다릅니다. CE형은 주증기관 파단 과냉각 반응도가 커서 더 큰 값을 요구한 예가 있습니다. 답안에는 "예"라고 밝히고, 값은 COLR에서 정한다고 쓰면 됩니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>출제 당시(2018)</th>
+<th>현행(2026)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T/S 작성 기준 고시</td>
+<td>원안위고시 제2017-5호</td>
+<td>제2024-13호(2024.12.31) — 제5조② LCO 선정기준 문언은 같음[8]</td>
+</tr>
+<tr>
+<td>기술기준규칙</td>
+<td>구판(반응도제어계통 요건)</td>
+<td>원안위규칙 제37호(2026.3.30) 제28조[6]</td>
+</tr>
+<tr>
+<td>미국 STS</td>
+<td>NUREG-1431/1432 Rev.4(2012)</td>
+<td>Rev.5(2021) — SDM 정의·Bases 취지 동일[1][2]</td>
+</tr>
+<tr>
+<td>APR1400 미국 설계인증</td>
+<td>심사 중</td>
+<td>2019.8 인증, SDM LCO를 냉각재 온도 영역별로 분할(LCO 3.1.1·3.1.2)[11]</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>정지여유도의 정의와 안전해석상 역할은 출제 이후 달라진 것이 없습니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, NUREG-1432 "Standard Technical Specifications — Combustion Engineering Plants", Rev. 5 (2021), 1.1 Definitions "Shutdown Margin", LCO 3.1.1, Bases B 3.1.1.</li>
+<li>U.S. NRC, NUREG-1431 "Standard Technical Specifications — Westinghouse Plants", Rev. 5 (2021), 1.1 Definitions, LCO 3.1.1·SR 3.1.1.1, LCO 3.1.5·3.1.6, Bases B 3.1.1.</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix A, General Design Criteria 26·27·28.</li>
+<li>U.S. NRC, 10 CFR 50.36(c)(2)(ii) Criterion 2.</li>
+<li>U.S. NRC, Generic Letter 88-16 "Removal of Cycle-Specific Parameter Limits from Technical Specifications" (1988).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제28조. 국가법령정보센터.</li>
+<li>Callaway Plant Core Operating Limits Report; Waterford 3 Core Operating Limits Report (Cycle 23). NRC ADAMS 공개.</li>
+<li>원자력안전위원회, 「운영기술지침서의 작성에 관한 기준」, 원안위고시 제2024-13호(2024.12.31), 제5조. 국가법령정보센터.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 15.1.5 "Steam System Piping Failures Inside and Outside of Containment (PWR)", 15.4.6 "Inadvertent Decrease in Boron Concentration in the Reactor Coolant System (PWR)".</li>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, John Wiley &amp; Sons (1976), 14장 표 14-1.</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Chapter 16 "Technical Specifications". NRC 설계인증 공개 문서.</li>
+</ol>

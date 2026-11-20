@@ -1,0 +1,67 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 1교시 6번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<ol start="6">
+<li>초기사건(Initiating Event) 및 단일고장(Single Failure)의 정의</li>
+</ol>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>초기사건</strong>: 정상운전을 교란해 예상운전과도나 사고 상태로 이어지는 사건입니다. 안전해석과 PSA의 출발점입니다.</li>
+<li><strong>가상초기사건(PIE)</strong>: 설계 단계에서 AOO·사고로 이어질 수 있다고 식별해 가정하는 초기사건입니다.</li>
+<li><strong>단일고장</strong>: 기기 하나가 안전기능 수행능력을 잃는 고장이며, 그 고장으로 연이어 생긴 고장까지 포함합니다.</li>
+<li><strong>단일고장기준</strong>: 단일고장을 가정해도 안전기능을 잃지 않게 설계하라는 원칙입니다(다중성·독립성).</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 초기사건(Initiating Event)</strong></p>
+<ul>
+<li>정의: 정상운전을 교란해 <strong>예상운전과도(AOO) 또는 사고 상태로 이어지는 식별된 사건</strong>(IAEA Safety Glossary) [1]</li>
+<li>원인: 신뢰할 만한 <strong>기기 고장·운전원 오류</strong>, 내부재해(화재·침수), <strong>외부재해</strong>(지진·해일)</li>
+<li>분류: FSAR 15장 <strong>발전소 영향 유형 7개 + ATWS = 8범주</strong>, 빈도로 <strong>AOO / 가상사고(설계기준사고)</strong> [3]</li>
+<li>용도: 결정론적 해석의 출발 조건, PSA에서는 <strong>초기사건군 빈도 f_IE</strong> → CDF = Σ f_IE × P(CD|IE)</li>
+<li>국내 기술기준규칙에는 별도 정의 조항이 없고, 제2조 제7호(예상운전과도)·제9호(설계기준사고) 정의가 분류의 틀임 [2]</li>
+</ul>
+<p><strong>2. 단일고장(Single Failure)</strong></p>
+<ul>
+<li>정의(기술기준규칙 제2조 제11호): <strong>하나의 기기가 의도된 안전기능 수행능력을 상실하는 고장</strong>, 그 고장에 의하여 <strong>연이어 발생하는 고장도 단일고장</strong>으로 봄 [2]</li>
+<li>10 CFR 50 부록 A: 하나의 사건으로 생긴 다수 고장도 단일고장 [4]</li>
+<li>종류: <strong>능동고장</strong>(펌프 기동 실패·밸브 오동작) / <strong>수동고장</strong>(배관 누설·유로 막힘)</li>
+<li><strong>단일고장기준</strong>: 임의의 단일고장에도 안전기능 유지 → <strong>적절한 다중성·독립성</strong>(구현 예 N+1, 규칙 제24·26·44조) [2]</li>
+</ul>
+<p><strong>3. 해석에서의 관계</strong></p>
+<ul>
+<li><strong>초기사건 + LOOP + 최악 단일고장 1개</strong> → 남은 설비로 허용기준 만족 여부 평가</li>
+<li>초기사건과 그 직접 결과는 해석에 포함하되 <strong>추가 단일고장으로 세지 않음</strong></li>
+<li>한계: CCF·다중고장(제15호)은 단일고장기준 밖 → 다양성·DEC 해석으로 보완</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 초기사건(LOCA) + LOOP + 단일고장(EDG A) → 계열 A 불능, 계열 B(100 %)로 허용기준 평가" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/fbc7e5cde4f7e5a735410b28509d5cdfeedc5c7dce74fd2141b9d27feefb5263.webp"/><figcaption>답안용 도식: 초기사건(LOCA) + LOOP + 단일고장(EDG A) → 계열 A 불능, 계열 B(100 %)로 허용기준 평가</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="두 정의 카드, 독립 2계열(각 100 %) 예시에서 초기사건·전원 조건·추가 단일고장 → 허용기준 평가, 단일고장·다중고장·CCF 구별점" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/675da52340adff4dcaf4cae81dadaab83fc164a4f5b62bbe6688943ea1330140.webp"/><figcaption>두 정의 카드, 독립 2계열(각 100 %) 예시에서 초기사건·전원 조건·추가 단일고장 → 허용기준 평가, 단일고장·다중고장·CCF 구별점</figcaption></figure>
+<p>두 용어는 "무엇이 일어났나"와 "대응 설비에 무엇을 더 가정하나"로 나누면 헷갈리지 않습니다. 저온관 대형 LOCA는 초기사건입니다. 여기에 소외전원 상실을 겹치고, 비상디젤발전기(EDG) A 기동 실패 같은 단일고장 하나를 더 가정합니다. 각 계열이 필요 용량의 100 %인 2계열 설계라면 계열 B와 안전주입탱크로 허용기준을 만족하는지 계산합니다. 어떤 고장이 가장 불리한지는 허용기준마다 다르므로 후보를 모두 검토합니다[5].</p>
+<p>"연이어 발생하는 고장"이 핵심 문구입니다. EDG A가 서면 그 모선의 펌프·밸브가 함께 멈추는데, 이것을 고장 여러 개로 세지 않고 단일고장 하나로 봅니다. 반대로 서로 무관한 두 기기의 고장이나, 하나의 공통 원인으로 둘 이상의 기기가 고장 나는 공통원인고장(CCF)은 단일고장기준만으로 다뤄지지 않습니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li>기술기준규칙 현행판은 원안위규칙 제37호(2026.3.30)이며, 단일고장 정의 문언은 같습니다. 같은 조 제15호에 다중고장 정의가 있습니다[2].</li>
+<li>IAEA는 Safety Glossary 2018 Edition과 SSG-2 Rev.1(2019, 결정론적 안전해석)을 냈습니다[1][5].</li>
+<li>단일고장을 넘는 다중고장은 사고관리 고시 현행 제2026-1호 별표 1(필수 9종)로 따로 해석합니다[6].</li>
+</ul>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>두 개념 혼동</strong>: 초기사건을 "단일고장의 한 종류"로 쓰면 감점입니다.</li>
+<li><strong>연쇄 고장 누락</strong>: "결과적 고장 포함"이 정의의 절반입니다.</li>
+<li><strong>법령 근거</strong>: 단일고장은 기술기준규칙 제2조 제11호로 인용합니다.</li>
+<li><strong>해석 가정 세트</strong>: 초기사건 + LOOP + 최악 단일고장을 한 줄로 쓰면 변별됩니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>IAEA, IAEA Safety Glossary: Terminology Used in Nuclear Safety, Nuclear Security, Radiation Protection and Emergency Preparedness and Response, 2018 Edition (2019).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제2조 제1항 제7·9·11·15호, 제24·26·44조. 국가법령정보센터.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 15.0 "Introduction – Transient and Accident Analysis Methods", Rev. 3 (2007).</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, Definitions and Explanations(Single failure).</li>
+<li>IAEA, Specific Safety Guide No. SSG-2 (Rev. 1) "Deterministic Safety Analysis for Nuclear Power Plants" (2019).</li>
+<li>원자력안전위원회, 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」, 원안위고시 제2026-1호(2026.1.16), 별표 1. 국가법령정보센터.</li>
+</ol>

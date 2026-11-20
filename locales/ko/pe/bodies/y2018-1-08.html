@@ -1,0 +1,67 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 1교시 8번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<ol start="8">
+<li>비상디젤발전기(EDG), 대체교류발전기(AAC DG), 이동형발전기</li>
+</ol>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>EDG</strong>: 소외전원 상실(LOOP)·사고 시 안전모선에 자동으로 전원을 넣는 Class 1E 비상전원입니다.</li>
+<li><strong>SBO</strong>: 소외전원과 EDG까지 모두 잃은 교류전원완전상실입니다. AAC DG가 대비합니다.</li>
+<li><strong>AAC DG</strong>: EDG와 공통원인 고장이 적도록 독립시킨 대체교류전원입니다. 운전원이 수동으로 연결합니다.</li>
+<li><strong>이동형발전기</strong>: 후쿠시마 후속조치로 배치한 차량 탑재형 발전기입니다. AAC까지 잃은 장기교류전원상실(ELAP)에 대비합니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 비상디젤발전기(EDG)</strong></p>
+<ul>
+<li><strong>LOOP·설계기준사고</strong> 시 Class 1E 안전모선에 교류 공급, 계열별 독립·단일고장 가정(GDC 17, 기술기준규칙 제24조) [1][2]</li>
+<li><strong>자동기동</strong>: 안전모선 저전압·저하전압, 안전주입 등 ESF 신호 → 정격 전압·주파수 도달 후 <strong>부하 순차투입</strong></li>
+<li>기동시간은 사고해석 가정에서 정한 T/S 값(예: APR1400 DC <strong>17 s</strong>) [3]</li>
+</ul>
+<p><strong>2. 대체교류발전기(AAC DG)</strong></p>
+<ul>
+<li><strong>SBO</strong>(LOOP + 터빈 트립 + EDG 상실) 대비, 규칙 제24조⑥ "필요한 용량과 신뢰성, 성능은 시험으로 입증" [2]</li>
+<li><strong>소외전원·EDG와 공통원인 고장이 최소</strong>인 독립 전원, 평상시 안전모선과 분리 → <strong>수동 기동·연결</strong>(안전모선 A 또는 B)</li>
+<li><strong>10분 이내</strong> 급전 가능을 시험 입증하면 SBO 대처분석 불요(의무 복구시한 아님) [4]</li>
+<li><strong>비안전등급</strong>, 새울 3·4는 내진범주 I·연료 72 h로 상향(등급과 내진범주는 별개)</li>
+</ul>
+<p><strong>3. 이동형발전기(이동형발전차)</strong></p>
+<ul>
+<li><strong>ELAP</strong>(EDG·AAC까지 상실, 장기화) 등 설계기준 초과 사건 대비, 2012년부터 부지 배치</li>
+<li>MACST <strong>2단계</strong>(소내 이동형): <strong>8 h 이내 가용화</strong>, 예: <strong>1 MW</strong> 발전차 [5]</li>
+<li>역할: <strong>축전지 충전, 필수 계측·제어</strong>, 필요 부하 급전 / 운반·케이블 접속·연료 보급 필요</li>
+</ul>
+<p><strong>4. 비교 요지</strong>: 사건 LOOP → SBO → ELAP, 등급 1E → 비1E → 비1E, 접속 자동 → 수동 → 수동(현장)</p>
+<figure class="article-image"><img alt="답안용 도식: 소외전원·EDG A/B·AAC DG·이동형발전기가 안전모선 A/B에 연결되는 단선도와 대비 사건" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/46abfc8a3091a4e78ee42760c635a85e464a71167b96944eb9318b4573cb5309.webp"/><figcaption>답안용 도식: 소외전원·EDG A/B·AAC DG·이동형발전기가 안전모선 A/B에 연결되는 단선도와 대비 사건</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="EDG·AAC·이동형 3개 레인의 대표 응답시간·가용성 기준(17 s, 10 min, 8 h)과 역할·등급·기동/접속 비교표, 새울 3호기 용량 예" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/fdf06028450f3d0bbaf02da660a414cc840b4b6ab6438de22782c6b2ac5c94bb.webp"/><figcaption>EDG·AAC·이동형 3개 레인의 대표 응답시간·가용성 기준(17 s, 10 min, 8 h)과 역할·등급·기동/접속 비교표, 새울 3호기 용량 예</figcaption></figure>
+<p>세 설비는 "무엇까지 잃었을 때 쓰나"로 구분됩니다. 국내 새울 3호기는 EDG 2대(7,500 kW)와 AAC-DG 1대(7,200 kW)를 갖춥니다[6]. 핵심은 독립성입니다. 전원과 지원계통을 독립시키고 물리적으로 분리해야 한 원인으로 함께 잃을 위험이 줄어듭니다.</p>
+<p>시간 값은 성격이 다릅니다. 17 s는 EDG 기동 성능, 10분은 AAC의 시험 입증 기준, 8 h는 MACST 단계 구분입니다. 설비가 순서대로 교대한다는 뜻이 아니며, 이동형 설비가 붙기 전까지는 터빈구동 보조급수펌프와 축전지로 버팁니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li>미국은 2019년 10 CFR 50.155로 이동형 설비 전략(FLEX)을 규칙화했습니다[7].</li>
+<li>국내는 사고관리 고시 현행 제2026-1호에 외부재해 이후 장기 교류전원 상실이 들어가 있고, APR1400 사고관리계획서 심사(2025.1)에서 MACST 단계가 정리되었습니다[5][8].</li>
+</ul>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>대비 사건 짝짓기</strong>: EDG–LOOP, AAC–SBO, 이동형–ELAP를 정확히 연결합니다.</li>
+<li><strong>AAC 10분 오해</strong>: 복구 의무 시한이 아니라 대처분석 면제 기준입니다.</li>
+<li><strong>등급</strong>: AAC를 Class 1E로 쓰면 틀립니다.</li>
+<li><strong>독립성</strong>: 공통원인 고장 최소화를 빠뜨리면 AAC 정의가 불완전합니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, GDC 17 "Electric power systems".</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제24조. 국가법령정보센터.</li>
+<li>U.S. NRC, Final Safety Evaluation Report for the APR1400 Design Certification, Ch. 8 "Electric Power", NRC ADAMS ML18197A219.</li>
+<li>U.S. NRC, 10 CFR 50.2(Station blackout, Alternate ac source 정의)·50.63 "Loss of all alternating current power"; Regulatory Guide 1.155 "Station Blackout" (1988).</li>
+<li>원자력안전위원회, 제206회 원자력안전위원회 회의 의안(2025.1.9) — APR1400 사고관리계획서 심사; OECD/NEA, NEA No. 7578 (2023).</li>
+<li>원자력안전위원회, 제228회 회의(2025.12.30) 의안 「새울 3호기 운영허가(안)」.</li>
+<li>U.S. NRC, 10 CFR 50.155 "Mitigation of beyond-design-basis events", 최종규칙 Federal Register (2019.8.9).</li>
+<li>원자력안전위원회, 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」, 원안위고시 제2026-1호(2026.1.16), 별표 2. 국가법령정보센터.</li>
+</ol>

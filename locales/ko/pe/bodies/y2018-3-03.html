@@ -1,0 +1,94 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 3교시 3번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>원전사고 시 이물질로부터 노심을 보호하기 위한 재순환집수조 여과설비(Recirculation Sump Strainer)의 설치 목적과 기능에 대해 기술하시오.</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>LOCA 뒤 장기 냉각은 격납건물 바닥에 모인 물을 다시 퍼 올리는 재순환에 기대므로, 그 물에 섞인 <strong>파편(debris)</strong>이 계통을 막지 않게 하는 여과설비가 마지막 관문이 됩니다. 출제자는 여과기를 "체" 하나로 보지 않고, <strong>상류(파편 발생·이동) – 여과기(수두손실·NPSH) – 하류(펌프·노심)</strong> 세 단계의 문제로 설명하는지를 봅니다. 미국 GSI-191 해결 과정에서 확인된 <strong>얇은 층 효과</strong>와 <strong>화학적 영향</strong>, 그리고 대면적 피동형 여과기로 바뀐 배경까지 쓰면 답안의 기술적 완성도가 높아집니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 재순환 냉각과 여과설비의 위치, 규제 근거</li>
+<li>본론 1: 설치 목적 — 장기 노심냉각 보장, 펌프·하류 기기 보호, 격납건물 살수 기능 유지</li>
+<li>본론 2: 기능 — 여과, 수두손실 제한(NPSH 여유), 하류 영향 제한, 피동·구조 건전성, 와류·공기 유입 방지</li>
+<li>본론 3: 문제가 된 현상과 대책 — 파편 종류, 얇은 층 효과, 화학적 영향, GSI-191 대응</li>
+<li>결론: 여과기 + 파편원 관리 + 시험·해석의 묶음으로 성능 입증</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>LOCA 후 수원(RWT)이 설정 저수위에 이르면(완전 고갈 전) 흡입을 전환해 격납건물 <strong>재순환 집수조</strong>의 물을 씀 — ECCS 펌프는 원자로로, CSS 펌프는 격납건물 살수 노즐로 보냄 → 장기 냉각·감압(파단 유출수·살수는 다시 집수조로 돌아옴)</li>
+<li>이때 파단부 제트·고온수·살수로 생긴 <strong>파편이 물과 함께 집수조로 이동</strong>함</li>
+<li><strong>재순환집수조 여과설비</strong>: 집수조 흡입구를 덮어 파편을 걸러 내는 설비(피동형 여과기, 앞단의 트래시랙·체 포함)</li>
+<li>규제 근거
+<ul>
+<li>미국: 10 CFR 50.46(b)(5) <strong>장기 냉각</strong>, RG 1.82 Rev.5(2022.8) 장기 냉각 수원 평가 지침[1][2]</li>
+<li>국내: 「원자로시설 등의 기술기준에 관한 규칙」 제30조(비상노심냉각장치), 원안위고시 제2017-23호(ECCS 성능 기준)[3][4]</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. 설치 목적</strong></p>
+<ul>
+<li><strong>① 장기 노심냉각 보장</strong>: 재순환 주입이 끊기지 않게 해 붕괴열을 사고기간 내내 제거함</li>
+<li><strong>② 펌프 흡입 보호</strong>: 파편이 쌓여 흡입이 막히거나 <strong>NPSH 부족</strong>으로 펌프가 공동현상을 일으키는 것을 막음</li>
+<li><strong>③ 하류 기기와 노심 보호</strong>: 여과기를 통과한 미세 파편이 펌프 씰·밸브·열교환기·살수 노즐을 마모·막히게 하거나, 축적 시 <strong>노심 입구·연료집합체</strong> 냉각 유로를 막는 것을 제한함</li>
+<li><strong>④ 격납건물 열제거·감압 유지</strong>: 같은 수원을 쓰는 살수계통도 기능을 유지해 격납건물 압력·온도를 낮춤</li>
+</ul>
+<p><strong>3. 기능</strong></p>
+<ul>
+<li><strong>(1) 여과</strong>: 천공판·적층 디스크 구조로 정해진 크기 이상의 파편을 차단 — 다만 섬유는 형태·방향에 따라 구멍을 통과할 수 있어 <strong>통과 파편의 하류 영향 평가가 별도로 필요</strong>함</li>
+<li><strong>(2) 수두손실 제한 → NPSH 여유 확보</strong>
+<ul>
+<li>NPSH_가용 = (격납건물 압력(절대압) − 수온 기준 증기압)/ρg + 펌프 기준 정수두 − 흡입 손실(배관 + <strong>여과기 청정 손실 + 파편층 손실</strong>) ≥ NPSH_필요</li>
+<li>대면적화는 <strong>접근 유속</strong>을 낮추고 파편층을 넓게 분산해 같은 파편량에서 수두손실을 줄임 — 단, 얇은 섬유·입자 혼합층(얇은 층 효과)의 불리한 조건은 시험으로 확인</li>
+</ul>
+</li>
+<li><strong>(3) 하류 영향 제한</strong>: 통과량(bypass)을 줄여 노내 섬유 축적을 허용 범위 이하로 관리</li>
+<li><strong>(4) 피동·구조 건전성</strong>: 역세척·운전원 조치 없이 기능, 파편 차압과 지진 하중에 견딤(내진범주 I)</li>
+<li><strong>(5) 잠김 유지·와류 방지</strong>: 최저 수위에서도 여과기가 잠기도록 하고, 잠김 깊이·유속·형상·파편층 차압을 함께 평가해 공기 유입·와류와 여과기 통과 시 <strong>탈기·플래싱</strong> 가능성을 검토</li>
+</ul>
+<figure class="article-image"><img alt="파단 → 파편 생성(섬유 단열재·입자·도장재·화학 침전물) → 이동 → 여과기(수두손실·NPSH 여유) → 펌프 → 노심·살수(하류 영향) 흐름과 규제 이력 연표(1985 GL 85-22, 1992 Barsebäck, 2003 BL 2003-01, 2004 GL 2004-02, 2019 GI-191 종결, 2022 RG 1.82 Rev.5)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/2e05c4409b10fb8ddcccde5738d582870a7f8b3dcca4d9e009abb0f7a8d694c6.webp"/><figcaption>파단 → 파편 생성(섬유 단열재·입자·도장재·화학 침전물) → 이동 → 여과기(수두손실·NPSH 여유) → 펌프 → 노심·살수(하류 영향) 흐름과 규제 이력 연표(1985 GL 85-22, 1992 Barsebäck, 2003 BL 2003-01, 2004 GL 2004-02, 2019 GI-191 종결, 2022 RG 1.82 Rev.5)</figcaption></figure>
+<p><strong>4. 문제가 된 현상과 대책</strong></p>
+<ul>
+<li><strong>파편의 종류</strong>: 섬유형 단열재(유리섬유·광물면), 입자(먼지·도장재 조각), 반사형 금속 단열재(RMI) 조각, 잠재 이물질(평소 쌓인 먼지·섬유), <strong>화학 침전물</strong>(알루미늄·칼슘이 붕산수·pH 조절제와 반응)[5]</li>
+<li><strong>얇은 층 효과(thin-bed)</strong>: 얇은 섬유층이 입자를 촘촘히 붙잡아 <strong>적은 파편량으로도 수두손실이 급증</strong>함</li>
+<li><strong>화학적 영향</strong>: 장기 재순환 중 생긴 침전물이 섬유층 틈을 막아 수두손실을 더 키움(NRC IN 2005-26)[5]</li>
+<li><strong>운전경험</strong>: 1992년 스웨덴 Barsebäck 2호기(BWR)에서 안전밸브 개방 뒤 단열재 파편이 살수 흡입 여과기를 막음 → 가압경수로 집수조 문제로 확대 검토[6]</li>
+<li><strong>대책</strong>
+<ul>
+<li>소면적 망형 스크린 → <strong>대면적 피동형 여과기</strong>(적층 디스크·카세트형)로 교체[5]</li>
+<li>파편원 관리: 섬유 단열재를 RMI로 교체, 도장재 관리, 격납건물 청결 점검</li>
+<li>시험·해석: 파편 생성·이동 해석, 실규모 수두손실 시험(화학 영향 포함), 통과량 시험, 노내 영향 평가(WCAP-16793)[5]</li>
+</ul>
+</li>
+<li><strong>노형 예(APR1400)</strong>: 격납건물 안 IRWST가 주입·재순환 공통 수원이라 RWT→집수조 흡입 전환(RAS)이 없음. 파편은 유수탱크(HVT)에서 무거운 것이 먼저 가라앉고, IRWST 여과기가 미세 파편을 거름[7]</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 격납건물 바닥 → 집수조 여과기 → ECCS·CSS 펌프 → 원자로 흐름, NPSH_가용 ≥ NPSH_필요와 여과기 수두손실 표시" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/506137363a20608ca2ed5f85f0250b6a30d4dc4ceb2a6238cd44b44c72655806.webp"/><figcaption>답안용 도식: 격납건물 바닥 → 집수조 여과기 → ECCS·CSS 펌프 → 원자로 흐름, NPSH_가용 ≥ NPSH_필요와 여과기 수두손실 표시</figcaption></figure>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>여과설비의 목적은 <strong>재순환 장기 냉각의 연속성</strong>이고, 기능은 <strong>여과·수두손실 제한(NPSH)·하류 영향 제한·피동 건전성·와류 방지</strong>임</li>
+<li>성능은 여과기 하나가 아니라 <strong>파편원 관리 + 대면적 여과기 + 시험·해석</strong>의 묶음으로 입증함</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 여과를 잘할수록 좋은 것만은 아닙니다</h3>
+<p>여과기 구멍을 작게 하면 통과 파편은 대체로 줄지만, 그만큼 파편층이 빨리 쌓여 수두손실이 커집니다. 반대로 구멍을 키우면 펌프 흡입은 편해지지만 노심 입구로 가는 섬유가 늘 수 있습니다. 그래서 GSI-191 해결은 상류 파편 발생, 여과기 수두손실, 하류 노내 영향을 함께 따지는 방식으로 진행되었습니다. NRC는 SECY-12-0093(2012.7)이 제안한 해결 방안 세 가지를 2012.12 SRM으로 승인했습니다. 그중 Option 1은 승인된 해석·시험 방법과 적용 조건을 만족하면서 노심 섬유 유입량이 연료집합체당 15 g 미만인 발전소가 쓰는 방식입니다[5]. 15 g은 이 방안의 적용 조건이지 보편적인 노심 막힘 임계값이 아닙니다. 답안에서는 이 상충 관계를 한두 줄로 짚어 주면 좋습니다.</p>
+<h3>해설: NPSH 식에서 격납건물 압력을 쓰는 문제</h3>
+<p>재순환 펌프의 가용 NPSH를 계산할 때 사고 중 격납건물 가압분(containment accident pressure)을 더할 수 있는지는 오래 논쟁이 되었습니다. 압력을 더하면 여유가 커 보이지만, 살수로 압력이 빨리 떨어지면 여유도 함께 사라집니다. RG 1.82 Rev.5는 이 가압분을 쓰는 경우의 평가 방법을 함께 다룹니다[2]. 답안에서는 "여과기 수두손실이 NPSH 여유를 깎는다"는 관계를 식으로 보여 주는 것이 핵심입니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li><strong>GSI-191 종결</strong>: 출제(2018) 당시 미국은 GL 2004-02 대응을 발전소별로 마무리하던 중이었습니다. NRC는 2019년 7월 대면적 여과기 설치 등 설비·운영 개선과 남은 기술 문제의 위험도 평가를 근거로 일반안전현안 GI-191을 종결했습니다(ML19157A120)[5]. 발전소별 GL 2004-02 검토가 모두 같은 시점에 끝났다는 뜻은 아닙니다.</li>
+<li><strong>지침 개정</strong>: RG 1.82가 Rev.4(2012)에서 <strong>Rev.5(2022.8.8)</strong>로 개정되었습니다. 제목이 "Water Sources for Long-Term Cooling Following a LOCA"로 바뀌었고, 파편의 장기 냉각 영향과 격납건물 가압분 활용 평가 방법이 보강되었습니다[2].</li>
+<li>국내 근거인 기술기준규칙 제30조는 현행 원안위규칙 제37호(2026.3.30)에서도 취지가 같고, ECCS 성능 기준 고시 제2017-23호는 이후 개정이 없습니다[3][4].</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, 10 CFR 50.46 "Acceptance criteria for emergency core cooling systems for light-water nuclear power reactors", (b)(5) Long-term cooling.</li>
+<li>U.S. NRC, Regulatory Guide 1.82 "Water Sources for Long-Term Cooling Following a Loss-of-Coolant Accident", Rev. 5 (2022.8), 87 FR 48202.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제30조(비상노심냉각장치). 국가법령정보센터.</li>
+<li>원자력안전위원회, 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」, 원안위고시 제2017-23호. 국가법령정보센터.</li>
+<li>U.S. NRC, NUREG-0933 "Resolution of Generic Safety Issues", Issue 191 "Assessment of Debris Accumulation on PWR Sump Performance" (Bulletin 2003-01, GL 2004-02, IN 2005-26, SECY-12-0093, 종결 메모 ML19157A120 포함).</li>
+<li>U.S. NRC, NRC Bulletin 93-02 "Debris Plugging of Emergency Core Cooling Suction Strainers" (1993).</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Ch. 6.8 "In-Containment Water Storage System", Rev. 3 (2018), NRC ADAMS.</li>
+</ol>

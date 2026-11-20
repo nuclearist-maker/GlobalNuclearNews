@@ -1,0 +1,64 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 1교시 9번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<ol start="9">
+<li>중성자 감속비(Moderating ratio)</li>
+</ol>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>감속비 ξΣs/Σa</strong>: 감속능을 거시 흡수단면적으로 나눈 무차원 값입니다. 감속재가 중성자를 잃지 않고 얼마나 효율적으로 감속시키는지를 나타냅니다.</li>
+<li><strong>감속능 ξΣs</strong>: 단위 이동거리당 평균 레싸지 증가량(cm⁻¹)으로, 감속의 "빠르기"입니다.</li>
+<li><strong>ξ(평균 대수 에너지 감소)</strong>: 충돌 한 번에 늘어나는 레싸지의 평균입니다. 수소 1, 중수소 0.725, 탄소 0.158입니다.</li>
+<li><strong>천연우라늄 노심</strong>: 감속비가 큰 중수·흑연은 천연우라늄 노심 설계의 여지를 줍니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 정의</strong></p>
+<ul>
+<li>감속재의 <strong>흡수 대비 감속 효율</strong>을 나타내는 지표</li>
+<li><strong>감속비 = ξΣs / Σa</strong> (무차원) — 분자 = 감속능, 분모 = 거시 흡수단면적(열중성자)[1]</li>
+<li>역수 Σa/ξΣs = 레싸지 한 단위를 지나는 동안의 <strong>흡수 대 감속 비</strong> → 감속비가 클수록 감속 중 손실이 작음</li>
+</ul>
+<p><strong>2. 구성 인자</strong></p>
+<ul>
+<li><strong>ξ = 1 + α·lnα/(1−α)</strong>, α = [(A−1)/(A+1)]² → 질량수가 작을수록 큼(H 1, D 0.725, C 0.158)[2]</li>
+<li><strong>Σs = N·σs</strong>: 원자밀도·산란단면적이 클수록 큼(기체 감속재 부적합)</li>
+<li><strong>Σa = N·σa</strong>: 작을수록 유리(경수소의 (n,γ) 흡수가 경수의 약점)</li>
+</ul>
+<p><strong>3. 감속재별 값(D&amp;H 표 8-1)</strong>[1]</p>
+<ul>
+<li>감속능: <strong>경수 1.35</strong> &gt; 중수 0.176 &gt; Be 0.158 &gt; 흑연 0.060 cm⁻¹</li>
+<li>감속비: <strong>중수 5,670</strong> &gt; 흑연 192 &gt; Be 143 &gt; 경수 71</li>
+<li>경수의 Σa는 중수의 약 600배 → 감속능 1위·감속비 꼴찌로 순위가 뒤집힘</li>
+</ul>
+<p><strong>4. 설계상 의미</strong></p>
+<ul>
+<li>경수: 감속비 작음(중성자 경제성 불리) → 농축 우라늄 사용, 감속능은 최대</li>
+<li>중수: 감속비 최대 → <strong>천연우라늄 노심 설계 가능</strong>(CANDU), 감속능 작아 노심 대형·<strong>순도 관리</strong> 필수[3]</li>
+<li>흑연: 감속비 중간·감속능 최소 → 대형 천연우라늄 흑연로 사례</li>
+<li>천연우라늄 사용 여부는 감속비 외에 격자 설계·구조재 흡수·누설도 함께 결정함</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 감속비 = 감속능 ξΣs ÷ 흡수 Σa 식 구조와 감속재 4종 순위 막대" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/82179bea7f9d4348b294c50672a602e89d1b3d6c42334f3a961852ca24c92642.webp"/><figcaption>답안용 도식: 감속비 = 감속능 ξΣs ÷ 흡수 Σa 식 구조와 감속재 4종 순위 막대</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="감속능(가로, 로그)과 감속비(세로, 로그)로 그린 감속재 4종의 위치 지도(D&amp;H 표 8-1), 감속비 수식 카드와 역산 Σa" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/f372c68b70879125192715667b7c808baee7f34117e9bf3ec6c34ab0f88df32b.webp"/><figcaption>감속능(가로, 로그)과 감속비(세로, 로그)로 그린 감속재 4종의 위치 지도(D&amp;H 표 8-1), 감속비 수식 카드와 역산 Σa</figcaption></figure>
+<p>그림은 두 지표를 가로·세로 로그 축에 함께 놓은 지도입니다. 오른쪽으로 갈수록 단위 이동 경로당 감속 효과가 크고, 위로 갈수록 감속능에 비해 흡수 손실이 작습니다. 세로축 값만으로 Σa 자체의 크고 작음이 정해지지는 않는다는 점도 주의하십시오. 그림의 Σa는 표의 감속능을 감속비로 나누어 거꾸로 구한 값입니다. 경수는 가장 오른쪽에 있지만 가장 아래에 있고, 중수는 가장 위에 있지만 감속능은 경수의 약 13 %입니다. 하나의 감속재가 두 지표를 모두 최고로 가질 수 없다는 점이 노형 선택의 출발점입니다.</p>
+<p>감속비 값은 교과서마다 다릅니다. 흑연은 표에 따라 130~240, 중수는 순도와 흡수단면적 평가 기준에 따라 수천에서 2만까지 보고됩니다. 답안에서는 한 표의 값만 쓰고 순위로 결론을 내는 편이 안전합니다. 중수는 경수가 조금만 섞여도 분모가 크게 늘어 감속비가 급격히 떨어지므로, 중수로는 감속재 동위원소 순도를 원자로급(약 99.8 wt% 수준)으로 관리합니다[3].</p>
+<p>감속비는 감속재 물질 자체의 성질입니다. 노심 설계에서 말하는 감속재 대 연료 체적비(과소·과대 감속)와는 다른 개념이니 섞어 쓰지 마십시오.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>분모 착오</strong>: 감속비의 분모는 Σs가 아니라 Σa입니다. 식과 함께 "흡수 대비"라는 말을 꼭 씁니다.</li>
+<li><strong>순위 혼동</strong>: 감속능은 경수, 감속비는 중수가 1위입니다.</li>
+<li><strong>단위 누락</strong>: 감속능은 cm⁻¹, 감속비는 무차원입니다.</li>
+<li><strong>표 혼용</strong>: 서로 다른 교과서의 값을 섞으면 흑연과 Be의 순서가 바뀔 수 있습니다.</li>
+<li><strong>과잉 단정</strong>: "감속비가 크면 천연우라늄을 쓴다"를 충분조건처럼 쓰지 말고, 설계 여지를 준다고 씁니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, John Wiley &amp; Sons (1976), 8장, 표 8-1.</li>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 5장(중성자 확산과 감속).</li>
+<li>CANTEACH(AECL·COG 공개 웹 문서, nuceng.ca), "CANDU Fundamentals"(중수 감속재·순도).</li>
+</ol>

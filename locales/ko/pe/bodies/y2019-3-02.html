@@ -1,0 +1,108 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 3교시 2번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>음(−)의 값을 갖도록 설계된 가압경수형 원자로의 감속재온도계수(MTC)가 노심운전 주기 초(BOC)에 양(+)의 값을 가질 수 있는 이유를 설명하시오.</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>MTC 부호를 정하는 <strong>두 효과의 경쟁</strong>(감속 저하 → 음, 흡수 감소 → 양)을 설명하고, 주기초에 <strong>용해 붕소 농도가 가장 높아</strong> 양의 흡수 감소 효과가 커진다는 연결을 보이는지 확인합니다. 감속재/연료비와 k∞ 최대점 이동으로 설명하면 원리가 완결됩니다. 여기에 고온영출력(HZP)이 가장 불리한 조건이라는 점, 규제상 허용 범위(COLR 상한), 설계·운전 대책까지 쓰면 25점 답안이 됩니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: MTC 정의와 PWR 음의 MTC 설계 원칙(과소감속, 고유보호)</li>
+<li>본론 1: 감속재 온도 상승 시 밀도 효과 세 갈래(감속↓, 물 흡수↓, 붕소 흡수↓)</li>
+<li>본론 2: 붕소 농도와 k∞ 최대점 이동 → 설계점이 과다감속 쪽</li>
+<li>본론 3: 주기초·HZP가 가장 양으로 가는 이유(붕소 최대, 제논·출력결손 없음, 밀도 기울기 작음)</li>
+<li>본론 4: 영향과 대책(가연성 흡수체, COLR 상한·HZP 측정, 제어봉 인출 제한)</li>
+<li>결론: 주기 진행에 따라 음으로 변함</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li><strong>MTC(α_M) = ∂ρ/∂T_M</strong>: 감속재 평균 온도 1도 변화당 반응도 변화(pcm/°C, 1 pcm/°F = 1.8 pcm/°C)</li>
+<li>PWR은 감속재/연료비를 <strong>과소감속</strong> 쪽에 두어 운전 중 MTC &lt; 0 → 온도 상승 시 출력 억제(고유보호)[1][2]</li>
+<li>"음으로 설계"는 <strong>전출력 운전 상태의 주된 범위</strong>를 말하며, 주기초 고붕소·저출력 조건에서는 양이 될 수 있음</li>
+</ul>
+<p><strong>2. 감속재 온도 상승의 세 갈래 효과(밀도 효과)</strong></p>
+<ul>
+<li>온도↑ → <strong>물 밀도↓</strong>(15.5 MPa, 약 290~310 °C에서 약 −0.26~−0.31 %/°C)</li>
+<li>① <strong>감속 저하</strong>: 수소 원자 수↓ → 감속능↓ → 공명흡수↑ → 공명이탈확률 <strong>p↓</strong> → <strong>음(−)</strong>(별도로 누설↑도 음)</li>
+<li>② <strong>물 자체의 흡수 감소</strong>: H 흡수↓ → 열이용률 <strong>f↑</strong> → <strong>양(+)</strong></li>
+<li>③ <strong>용해 붕소 흡수 감소</strong>: 붕소는 물에 녹아 있어 밀도와 함께 줄어듦 → f↑ → <strong>양(+), 붕소 농도에 비례</strong></li>
+<li>그 밖에 스펙트럼 경화 효과(조건 의존)</li>
+<li>MTC = ①(−) + ②(+) + ③(+) → <strong>붕소가 적으면 ①이 지배해 음, 붕소가 많으면 ③이 커져 0 또는 양</strong></li>
+</ul>
+<p><strong>3. k∞ 최대점 이동으로 본 원리</strong></p>
+<ul>
+<li>k∞ = η·ε·p·f: 감속재/연료비 증가 → p↑, f↓ → <strong>최대점(최적 감속)</strong> 존재[7]</li>
+<li>설계점: 최대점보다 <strong>왼쪽(과소감속)</strong> → 밀도↓ = 실효 감속재/연료비↓ → k∞↓ → MTC &lt; 0</li>
+<li><strong>붕소 첨가</strong> → 감속재 쪽 흡수↑ → f가 더 빨리 감소 → <strong>최대점이 왼쪽으로 이동</strong></li>
+<li>고붕소에서 최대점이 설계점보다 왼쪽에 오면 설계점이 <strong>과다감속</strong> 쪽 → 밀도↓ → k∞↑ → <strong>MTC &gt; 0</strong></li>
+</ul>
+<figure class="article-image"><img alt="붕소 농도에 따른 MTC 성분(감속 저하 −, 흡수 감소 +)과 합계 곡선, 0선 교차(개념 모델 약 1,825 ppm), 주기초 HZP·주기말 위치, COLR 상한 예시" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/d356680811cdce155130366b8e32d1074fb307b1db6b1b0763189529a8b7be8a.webp"/><figcaption>붕소 농도에 따른 MTC 성분(감속 저하 −, 흡수 감소 +)과 합계 곡선, 0선 교차(개념 모델 약 1,825 ppm), 주기초 HZP·주기말 위치, COLR 상한 예시</figcaption></figure>
+<p><strong>4. 주기초(BOC)에 양이 될 수 있는 이유</strong></p>
+<ul>
+<li>① <strong>잉여반응도 최대</strong>: 새 연료 장전으로 잉여반응도가 가장 큼 → 이를 상쇄할 <strong>임계 붕소 농도 최대</strong>(주기초 약 1,000~2,000 ppm 수준, 노심 의존)</li>
+<li>② <strong>고온영출력(HZP) 조건이 가장 불리</strong>
+<ul>
+<li>제논 없음·출력결손 없음 → 보상할 반응도가 커서 <strong>붕소 농도가 전출력보다 더 높음</strong></li>
+<li>저온(약 292 °C)에서 밀도 기울기가 작아 음의 ① 효과가 작음</li>
+</ul>
+</li>
+<li>③ <strong>연소 진행에 따라 감소</strong>: 붕소 희석(주기말 약 10 ppm 수준) + Pu 축적·핵분열생성물로 스펙트럼 변화 → 주기말 MTC 가장 음(하한 예: Ginna EOL 전출력 −44.6 pcm/°F ≈ −80 pcm/°C[4])</li>
+<li>개념 모델(2인자, HZP 밀도 기울기): 무붕소 <strong>−46 pcm/°C</strong>, 1,000 ppm <strong>−19</strong>, 1,500 ppm <strong>−7</strong>, <strong>약 1,825 ppm에서 0</strong>, 2,000 ppm <strong>+3.5 pcm/°C</strong>(경향 설명용 계산값)</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 주기 연소에 따른 MTC(HZP·HFP 두 선), 0선, BOC 양 가능 구간, COLR 상한·하한" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/5843145a51f2ad189bf6672fb5df09210bf682324dfd9caa1e80c2bca88c7dbd.webp"/><figcaption>답안용 도식: 주기 연소에 따른 MTC(HZP·HFP 두 선), 0선, BOC 양 가능 구간, COLR 상한·하한</figcaption></figure>
+<p><strong>5. 영향과 대책</strong></p>
+<ul>
+<li><strong>영향</strong>: 양의 MTC → 온도 상승 시 반응도 증가 → 냉각재 온도 상승 과도(예: 급수 상실·부하 감소)에서 출력 상승을 키우는 방향, 출력 안정성 저하</li>
+<li><strong>설계 대책</strong>
+<ul>
+<li><strong>가연성 흡수체</strong>(Gd₂O₃ 혼합 연료, IFBA 등)로 초기 잉여반응도 일부를 고체로 제어 → <strong>임계 붕소 농도 제한</strong></li>
+<li>노심 장전모형 최적화(저누설 장전 시 붕소 요구량 고려)</li>
+</ul>
+</li>
+<li><strong>운전·규제 대책</strong>
+<ul>
+<li>운영기술지침서 <strong>LCO 3.1.3(W형)</strong>: MTC를 <strong>COLR 상한·하한</strong> 이내로 유지, 상한은 모드 1·2 적용[3]</li>
+<li>상한 예: Ginna COLR <strong>HZP +5 pcm/°F(70 % 출력 미만), 0(70 % 이상)</strong>, CE형 STS 양의 한계 +0.5×10⁻⁴ Δk/k/°F(70 % 이하)[4][5]</li>
+<li>재장전 후 기동 물리시험에서 <strong>HZP 등온온도계수 측정</strong> → MTC 확인(ANSI/ANS-19.6.1 체계)</li>
+<li>상한 초과 시 24시간 내 <strong>제어봉 행정적 인출한계</strong> 설정(삽입된 제어봉이 감속재 쪽 흡수를 대신해 MTC를 음 쪽으로), 불가 시 6시간 내 모드 2(keff &lt; 1)[3]</li>
+</ul>
+</li>
+<li><strong>안전해석</strong>: 사고해석은 각 사건에 보수적인 MTC(가열 사건은 양의 상한, 냉각 사건은 가장 음인 값)를 가정</li>
+</ul>
+<p><strong>6. 결론</strong></p>
+<ul>
+<li>주기초 양의 MTC는 <strong>고농도 용해 붕소가 밀도 감소와 함께 빠져나가는 흡수 감소 효과</strong>가 감속 저하 효과를 넘기 때문</li>
+<li>가연성 흡수체로 붕소를 제한하고 COLR 상한으로 관리하며, 출력 상승·연소에 따라 MTC는 음으로 바뀜</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: "물이 감속재라서 MTC는 항상 음"이 틀린 이유</h3>
+<p>물이 음의 궤환을 주는 것은 물의 성질이 아니라 <strong>설계점이 최적 감속보다 왼쪽에 있기 때문</strong>입니다. 붕소는 이 위치 관계를 바꿉니다. 붕소는 물에 녹아 있으므로 물의 밀도가 줄면 같은 부피 안의 붕소 원자도 같은 비율로 줄어듭니다. 감속재가 "흡수체를 품은 감속재"가 되는 셈이라, 감속재가 줄어드는 것이 꼭 손해만은 아니게 됩니다. 붕소가 충분히 많으면 흡수 감소의 이득이 감속 저하의 손해를 넘습니다.</p>
+<h3>해설: 그래프 수치는 개념 모델입니다</h3>
+<p>그림의 곡선은 2인자 모델(f = 1/(1 + b·x), p = exp(−0.25/x), 설계점 x = 1, 붕소 1 ppm당 흡수항 0.19 % 증가)에 IAPWS-IF97 물 밀도 기울기(15.5 MPa, 291.7 °C)를 곱해 얻었습니다. 누설·스펙트럼 효과를 빼서 크기와 0 교차 농도(약 1,825 ppm)는 실제 노심과 다를 수 있습니다. 답안에는 "붕소 농도가 높을수록 MTC가 양 쪽으로 간다"는 경향과 세 갈래 효과를 쓰고, 수치는 "예시"로 밝히는 편이 안전합니다.</p>
+<h3>해설: 채점에서 갈리는 지점</h3>
+<ul>
+<li><strong>HZP를 언급했는가</strong>: 같은 주기초라도 전출력보다 영출력에서 더 양입니다. 제논·출력결손이 없어 붕소가 더 필요하고, 저온에서 밀도 기울기가 작기 때문입니다.</li>
+<li><strong>대책을 설계·운전·규제로 나눴는가</strong>: 가연성 흡수체(설계), HZP 측정·제어봉 인출 제한(운전), COLR·LCO(규제)를 나눠 쓰면 구조가 분명해집니다.</li>
+<li><strong>안전 의미를 과장하지 않았는가</strong>: 양의 MTC 허용은 작은 크기·저출력 범위로 제한되고 사고해석에 반영됩니다. "양이면 위험해서 운전 불가"는 틀린 서술입니다.</li>
+</ul>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li>물리 원리는 출제 이후 달라진 것이 없습니다.</li>
+<li>국내 설계 근거는 「원자로시설 등의 기술기준에 관한 규칙」 제18조(원자로의 고유보호)이며 현행판은 원안위규칙 제37호(2026.3.30)입니다[2]. 미국 기준은 10 CFR 50 부록 A GDC 11입니다[1].</li>
+<li>운영기술지침서 작성 기준은 출제 당시 원안위고시 제2017-5호였고, 현행은 제2024-13호(2024.12.31)입니다(연혁 2017-5 → 2023-9 → 2024-13)[6]. MTC 한계 수치는 노심운영제한보고서(COLR)로 관리하는 체계가 유지됩니다.</li>
+<li>미국 표준 운영기술지침서는 현행 NUREG-1431 Rev.5(2021)입니다[3].</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, 10 CFR Part 50, Appendix A, General Design Criterion 11 "Reactor inherent protection".</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제18조. 국가법령정보센터.</li>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications — Westinghouse Plants, Rev. 5 (2021), LCO 3.1.3 "Moderator Temperature Coefficient".</li>
+<li>R. E. Ginna Nuclear Power Plant, Core Operating Limits Report Cycle 39 Rev. 0 (2015), 2.3.1, NRC ADAMS ML15308A102.</li>
+<li>U.S. NRC, NUREG-1432 Standard Technical Specifications — Combustion Engineering Plants, LCO 3.1.4.</li>
+<li>원자력안전위원회, 「운영기술지침서의 작성에 관한 기준」, 원자력안전위원회고시 제2024-13호(2024.12.31). 국가법령정보센터.</li>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, John Wiley &amp; Sons (1976), 14장(온도계수·반응도 제어).</li>
+</ol>

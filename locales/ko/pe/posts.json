@@ -3874,6 +3874,206 @@
     }
   },
   {
+    "id": "H2017",
+    "group": "exam",
+    "title": "[원자력발전기술사] 2017년 필기 기출 31문항 총정리",
+    "domain": "전 영역",
+    "year": 2017,
+    "session": 0,
+    "question": 0,
+    "url": "ko/pe/posts/h2017.html",
+    "body": "bodies/h2017.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기시험 문제(1~4교시, 31문항)",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/51c681ee8682d82dd730f50afc20677ea2353e499506b94bcf76679c98170809.webp",
+    "date": "2026-11-20",
+    "related": [
+      "Y2017-1-01",
+      "Y2017-1-02",
+      "Y2017-1-03",
+      "Y2017-1-04",
+      "Y2017-1-05",
+      "Y2017-1-06",
+      "Y2017-1-07",
+      "Y2017-1-08",
+      "Y2017-1-09",
+      "Y2017-1-10",
+      "Y2017-1-11",
+      "Y2017-1-12",
+      "Y2017-1-13",
+      "Y2017-2-01",
+      "Y2017-2-02",
+      "Y2017-2-03",
+      "Y2017-2-04",
+      "Y2017-2-05",
+      "Y2017-2-06",
+      "Y2017-3-01",
+      "Y2017-3-02",
+      "Y2017-3-03",
+      "Y2017-3-04",
+      "Y2017-3-05",
+      "Y2017-3-06",
+      "Y2017-4-01",
+      "Y2017-4-02",
+      "Y2017-4-03",
+      "Y2017-4-04",
+      "Y2017-4-05",
+      "Y2017-4-06",
+      "Y2018-1-06",
+      "Y2018-1-07",
+      "Y2018-1-09",
+      "Y2018-1-12",
+      "Y2018-2-01",
+      "Y2021-1-07",
+      "Y2023-3-02",
+      "Y2023-3-03",
+      "Y2025-1-05",
+      "Y2025-2-05",
+      "Y2025-4-01",
+      "Y2026-3-05",
+      "Y2021-3-03",
+      "Y2025-1-04",
+      "Y2025-2-06",
+      "Y2020-1-13",
+      "Y2021-2-02",
+      "Y2022-4-05",
+      "Y2019-1-13",
+      "H2018"
+    ],
+    "body_sha256": "7aaa7ba6161769e89aa6f75709c07ce964659e9d6890d39baaad0e3f3f5f33e6",
+    "assets": {
+      "assets/images/ko/pe/7a67f57960fa985724d9fd3485dc841d2c1de81276720e5979c0ddec7430efe7.webp": "4669f7bccaf50b9d3ecf707c43afdf60abc3ceec382d5330f24e045b3eb3a70c",
+      "assets/images/ko/pe/51c681ee8682d82dd730f50afc20677ea2353e499506b94bcf76679c98170809.webp": "d06bd8a53526266a271da6592db1fadb7de32ea605fc4cee54d019bd5c834cbc"
+    }
+  },
+  {
+    "id": "H2018",
+    "group": "exam",
+    "title": "[원자력발전기술사] 2018년 필기 기출 31문항 총정리",
+    "domain": "전 영역",
+    "year": 2018,
+    "session": 0,
+    "question": 0,
+    "url": "ko/pe/posts/h2018.html",
+    "body": "bodies/h2018.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기시험 문제(1~4교시, 31문항)",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/5da980ce7653f4e908cb0a1f7bd2739a0c2c6eb534153b8f01d7cc590f6202c0.webp",
+    "date": "2026-11-19",
+    "related": [
+      "Y2018-1-01",
+      "Y2018-1-02",
+      "Y2018-1-03",
+      "Y2018-1-04",
+      "Y2018-1-05",
+      "Y2018-1-06",
+      "Y2018-1-07",
+      "Y2018-1-08",
+      "Y2018-1-09",
+      "Y2018-1-10",
+      "Y2018-1-11",
+      "Y2018-1-12",
+      "Y2018-1-13",
+      "Y2018-2-01",
+      "Y2018-2-02",
+      "Y2018-2-03",
+      "Y2018-2-04",
+      "Y2018-2-05",
+      "Y2018-2-06",
+      "Y2018-3-01",
+      "Y2018-3-02",
+      "Y2018-3-03",
+      "Y2018-3-04",
+      "Y2018-3-05",
+      "Y2018-3-06",
+      "Y2018-4-01",
+      "Y2018-4-02",
+      "Y2018-4-03",
+      "Y2018-4-04",
+      "Y2018-4-05",
+      "Y2018-4-06",
+      "Y2019-3-05",
+      "Y2019-3-06",
+      "Y2021-4-01",
+      "Y2021-4-02",
+      "Y2022-1-13",
+      "Y2023-1-08",
+      "Y2023-3-01",
+      "Y2023-4-04",
+      "Y2024-1-11",
+      "Y2025-3-01",
+      "Y2026-4-06",
+      "H2019"
+    ],
+    "body_sha256": "4932e599b3e3d9640ae55b73465e5db7d71ca5419f65ad331853035d8b751d63",
+    "assets": {
+      "assets/images/ko/pe/0fc9cdf5f19ad7453181a3f09e8910631e3b980b7b90753eeefb76b9f409bd65.webp": "58ef0df5b6f646166aad0a66c1af8bb22259de1a56c43f7a6c886272d761436c",
+      "assets/images/ko/pe/5da980ce7653f4e908cb0a1f7bd2739a0c2c6eb534153b8f01d7cc590f6202c0.webp": "564d9c07a45031465c6569707fe9d79f1ac97c25dbd1fd4b918dd3ab2d71a906"
+    }
+  },
+  {
+    "id": "H2019",
+    "group": "exam",
+    "title": "[원자력발전기술사] 2019년 필기 기출 31문항 총정리",
+    "domain": "전 영역",
+    "year": 2019,
+    "session": 0,
+    "question": 0,
+    "url": "ko/pe/posts/h2019.html",
+    "body": "bodies/h2019.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기시험 문제(1~4교시, 31문항)",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/1964f0701c23dc799ca2fa0918f6f7e44cf22e73f97fbe54d295c79e11556a9c.webp",
+    "date": "2026-11-19",
+    "related": [
+      "Y2019-1-01",
+      "Y2019-1-02",
+      "Y2019-1-03",
+      "Y2019-1-04",
+      "Y2019-1-05",
+      "Y2019-1-06",
+      "Y2019-1-07",
+      "Y2019-1-08",
+      "Y2019-1-09",
+      "Y2019-1-10",
+      "Y2019-1-11",
+      "Y2019-1-12",
+      "Y2019-1-13",
+      "Y2019-2-01",
+      "Y2019-2-02",
+      "Y2019-2-03",
+      "Y2019-2-04",
+      "Y2019-2-05",
+      "Y2019-2-06",
+      "Y2019-3-01",
+      "Y2019-3-02",
+      "Y2019-3-03",
+      "Y2019-3-04",
+      "Y2019-3-05",
+      "Y2019-3-06",
+      "Y2019-4-01",
+      "Y2019-4-02",
+      "Y2019-4-03",
+      "Y2019-4-04",
+      "Y2019-4-05",
+      "Y2019-4-06",
+      "Y2020-3-06",
+      "Y2020-1-13",
+      "Y2021-2-02",
+      "Y2023-3-04",
+      "Y2025-1-02",
+      "Y2025-3-01",
+      "Y2025-4-02",
+      "Y2025-4-03",
+      "Y2026-3-06",
+      "Y2026-4-04",
+      "Y2026-4-05",
+      "H2020"
+    ],
+    "body_sha256": "efee331c55a421def5e8ee71a418cb59328f69d7146ece19468fb0be942cabf4",
+    "assets": {
+      "assets/images/ko/pe/ff195f9216b07fe7f4c0afc9e9f59dd925065a38036a65a1c6ef14f8f02ec8fc.webp": "994183a383687f8c348d25b7ab3828585b44b4bc9ab155ed44a43b8579444232",
+      "assets/images/ko/pe/1964f0701c23dc799ca2fa0918f6f7e44cf22e73f97fbe54d295c79e11556a9c.webp": "7b0af016469a40b59c9518f45b876c4602626d5ad2fefa430b25b3ae2f2a36fd"
+    }
+  },
+  {
     "id": "H2020",
     "group": "exam",
     "title": "[원자력발전기술사] 2020년 필기 기출 31문항 총정리",
@@ -4286,6 +4486,2458 @@
     "assets": {
       "assets/images/ko/pe/88630592b605199cd621f1e1c7e4bbcab9ea400402e36041cdfa6d1ddb066588.webp": "c5a0746a53425e939c79d40c5d0685366736ba402d4478c302d5d8ea5aed9b82",
       "assets/images/ko/pe/2a9a8a1c82a4edd510f113cb9fc3182324f0dce8f5d0b1b98dc33afb4b756324.webp": "3c3a1ecfa9b76182cfe2efad44e3a051e5dd896b865ee1bfd1b26917c96a9aa8"
+    }
+  },
+  {
+    "id": "Y2017-1-01",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 1교시 1번] 주기초 잉여반응도 — 왜 처음부터 반응도를 넉넉히 넣어 두는가",
+    "domain": "노물리·동특성",
+    "year": 2017,
+    "session": 1,
+    "question": 1,
+    "url": "ko/pe/posts/y2017-1-01.html",
+    "body": "bodies/y2017-1-01.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 1교시 1번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/25fef05221e00da521b8f68adfca49eea5dc6b5a6eebf0d643b59ccdd4fc443a.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-RX-011",
+      "C-RX-013",
+      "C-RX-009",
+      "Y2023-1-10",
+      "Y2025-2-06"
+    ],
+    "body_sha256": "9a9eb03dbfca5c2dd402241afc6d0aebe779096dba5aca44fda543c0dd317dc5",
+    "assets": {
+      "assets/images/ko/pe/a244b1bbbea554aacb0c19bb41db4fea85a737483831e6319146fb93e10046e7.webp": "bdbfa7be3d18e18aee52892ce1c5f57d53a606961c6a4078e612c111440e8825",
+      "assets/images/ko/pe/fef6016c1fc66b92cf1855b58f3499f5b06e7df55f1a71f36663aeff43a8bd31.webp": "baa7b6f2db883fd6e83f5d9e3e836ccd476a80aa0183ee45ca499a4cb9da3b86",
+      "assets/images/ko/pe/25fef05221e00da521b8f68adfca49eea5dc6b5a6eebf0d643b59ccdd4fc443a.webp": "2f8248bb4c2922ef9c5d493b7c3cd21af2b9822b194f7972cb5026da586d4963"
+    }
+  },
+  {
+    "id": "Y2017-1-02",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 1교시 2번] 역시간 방정식(In-hour Equation) — 반응도와 안정주기를 잇는 식과 인자의 뜻",
+    "domain": "노물리·동특성",
+    "year": 2017,
+    "session": 1,
+    "question": 2,
+    "url": "ko/pe/posts/y2017-1-02.html",
+    "body": "bodies/y2017-1-02.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 1교시 2번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/32cd50b7d8c5fc274014c7cb178f11ed1eedabdd96283a5624c002c8075ba69c.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-RX-024",
+      "C-RX-004",
+      "C-RX-001",
+      "C-RX-020",
+      "Y2021-3-06"
+    ],
+    "body_sha256": "ab8d1ed782a3fe1960925a95705f02ef7575e41b5918deb86e8a88626d64a86b",
+    "assets": {
+      "assets/images/ko/pe/9a4dce3ced2c67a2d3df3e0d493d97cc2a7daed341d1dec25101be84f5c2c9e3.webp": "239b5de43f19941aa1481e6e154cdc873fd52ee5111cf981bec06a9538858ea7",
+      "assets/images/ko/pe/60d7f1aa02a17bff995f973edca728f68771cb6cf906935997a41e711b260e4e.webp": "6d0815d6fdf67ee00fa30add37e81736a9064a4bbd96980dac27583fba088d51",
+      "assets/images/ko/pe/32cd50b7d8c5fc274014c7cb178f11ed1eedabdd96283a5624c002c8075ba69c.webp": "6fabfea25be6c672a0d63ea9681a8b7e96a604b38616fdbcedb03156c1a615bc"
+    }
+  },
+  {
+    "id": "Y2017-1-03",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 1교시 3번] 방사성폐기물 자체처분 허용선량 — 개인 10 μSv와 집단 1 man·Sv",
+    "domain": "폐기물·연료주기·해체",
+    "year": 2017,
+    "session": 1,
+    "question": 3,
+    "url": "ko/pe/posts/y2017-1-03.html",
+    "body": "bodies/y2017-1-03.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 1교시 3번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/794a028ee110c57fd2f1a1c9a3805724b2efde2a91f967e723b6b6fdb5223c24.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-WD-003",
+      "C-WD-004",
+      "Y2026-2-06"
+    ],
+    "body_sha256": "cf7f7aec80c9af7438da161f14a6b6fb6f8308198bf5307130a20d059653454d",
+    "assets": {
+      "assets/images/ko/pe/604be9b08671453b4083e7c12ff62a8c7e87c5847b9353ee64b51b5d78863a5c.webp": "44d0a6fb13c440e16b969fe275e68b7f1d10ea17975c7e079baa562599ea832e",
+      "assets/images/ko/pe/44976453758c794937ed41ca2817a5bb8efdbc4d13d2953ac07696e6394a699f.webp": "ccd381dbb65c983054fe2112d8d3116a7ac52c591f31de5b44b505f7891d7fe2",
+      "assets/images/ko/pe/794a028ee110c57fd2f1a1c9a3805724b2efde2a91f967e723b6b6fdb5223c24.webp": "ce03886f1575eda320fcae7b4a06b7e86ce51c83c4b12c86a39a48afcd655cd0"
+    }
+  },
+  {
+    "id": "Y2017-1-04",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 1교시 4번] 원자력 품질보증 기본요건 18개 — 10 CFR 50 App. B와 품질보증계획서 기재사항",
+    "domain": "운영·규제·품질",
+    "year": 2017,
+    "session": 1,
+    "question": 4,
+    "url": "ko/pe/posts/y2017-1-04.html",
+    "body": "bodies/y2017-1-04.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 1교시 4번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/825e281ca659fcd87dde7341d8b9e3264b7419aeba67a5f525641a1da7796f25.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-OP-008",
+      "Y2025-4-01",
+      "Y2019-2-06",
+      "Y2020-3-02"
+    ],
+    "body_sha256": "97377ce6ecfe16bcd3885512cbe2c54a5fa5e10ea30a45682df0723504eaac9c",
+    "assets": {
+      "assets/images/ko/pe/bd7fe19ff7d6f5550aef525c2b077a16a7ee4d0f4697253dfd68266074d41467.webp": "bc0463e5322afb98de18331ca1e2d828e48a86938344517073c0f009312b8b08",
+      "assets/images/ko/pe/e7d586077240284a974b54f4a9c23bf75f523ad7cd5bf2b48dae0060ba0e3cab.webp": "261f91d2f5192f9fcb3c081c37157ac558f83a6458c340bd2ff47efe4ebb12b7",
+      "assets/images/ko/pe/825e281ca659fcd87dde7341d8b9e3264b7419aeba67a5f525641a1da7796f25.webp": "853d264754e5ef2fca043e72eda060e746eae432b999f74eee8e1184373b2b2b"
+    }
+  },
+  {
+    "id": "Y2017-1-05",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 1교시 5번] 임계유동(Critical Flow) — 배압을 낮춰도 늘지 않는 최대 유량",
+    "domain": "열수력·열역학",
+    "year": 2017,
+    "session": 1,
+    "question": 5,
+    "url": "ko/pe/posts/y2017-1-05.html",
+    "body": "bodies/y2017-1-05.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 1교시 5번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/77cbb911f220448f26b0b6a9177e448dfae142d210b80a3993255a71fcbf0583.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-TH-015",
+      "Y2024-2-01",
+      "C-SA-007"
+    ],
+    "body_sha256": "f3611aacad92e8675ea4299036a04023af79ed5a5456a0c2a003bc09e99a5271",
+    "assets": {
+      "assets/images/ko/pe/00726a608e0133426c622b277f1224a9583c364e1d6219ee48b8ded6322be857.webp": "7096192f10bbc55d8efc1b3ef7d431626ac80c0e6b259590d9a5dd3e59f008c0",
+      "assets/images/ko/pe/9c39b3ea94d39e32098dfc3a4897672a787f210b9826705084951412535724c2.webp": "1e7d27bc87786630faff818e681afaf9f6b87954666e764c6c72a16f74d94dc8",
+      "assets/images/ko/pe/77cbb911f220448f26b0b6a9177e448dfae142d210b80a3993255a71fcbf0583.webp": "3af2da35bd6db1eea3f09bf0d5fb9d7b8476af6402218f51bb4d5470063bdf4a"
+    }
+  },
+  {
+    "id": "Y2017-1-06",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 1교시 6번] 원자로냉각재압력경계(RCPB)의 정의와 압력경계 밸브 선정 기준",
+    "domain": "계통·설비",
+    "year": 2017,
+    "session": 1,
+    "question": 6,
+    "url": "ko/pe/posts/y2017-1-06.html",
+    "body": "bodies/y2017-1-06.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 1교시 6번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/1a294794f3e2ef9a2f1e97f38b3912cce564bedfefa70923de91ffedafa71db2.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SY-009",
+      "Y2025-1-04"
+    ],
+    "body_sha256": "cb8f2c4188327e309a9fe816f0f918a0a270a956bc68550cb0d401b00cffcab4",
+    "assets": {
+      "assets/images/ko/pe/903d5ef8d89de89c16089e5dd5b3f62a09e897f2a01e8790d8cd10d3de86f5c1.webp": "70a1f849b1395f199605fd9cf1b2162adf8fc08ee44207ca1a84adb0cdc1db4d",
+      "assets/images/ko/pe/f5e603fc10d1afc60314a306f2bc5326270a2ae2b011c6ac6fdda95180447967.webp": "02e10a0388b1ae5e304aedc91677ddc2c01f0499b18baf7f11d07d49a5be8d02",
+      "assets/images/ko/pe/1a294794f3e2ef9a2f1e97f38b3912cce564bedfefa70923de91ffedafa71db2.webp": "94593bd27f2649dc249f3852742ee619a30b7ccd80d9aad5de06567962c15db8"
+    }
+  },
+  {
+    "id": "Y2017-1-07",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 1교시 7번] 가압기의 일반설계요건 5가지 — 물 체적과 증기 체적을 정하는 조건",
+    "domain": "계통·설비",
+    "year": 2017,
+    "session": 1,
+    "question": 7,
+    "url": "ko/pe/posts/y2017-1-07.html",
+    "body": "bodies/y2017-1-07.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 1교시 7번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/fb76e9035c2a0df63e806a0aa016de8c46f0caed06e6c4ed7715000d0c4b5a5c.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SY-029",
+      "C-SY-013",
+      "Y2020-3-04"
+    ],
+    "body_sha256": "4c8ef159e86603e64c014aa1c8a1ee63dea3cfc9afc78dbb9773cc0c9a5e4f42",
+    "assets": {
+      "assets/images/ko/pe/57a956987ea6f4c631a3a941a0f5cd037a28514f43aaa487787f87d6d469fad3.webp": "7867efce34f1eb361037e45f2286699af6f612982586c30505ef157344fe52b4",
+      "assets/images/ko/pe/83e01eef97ae0c9b39575c8594fb3f1092f698e6cb4cce3ae03d885bb3180142.webp": "cad604c02d7ff10cbc2e2e1a52622b1c36f8eef32940e4f6f153fba3f2177459",
+      "assets/images/ko/pe/fb76e9035c2a0df63e806a0aa016de8c46f0caed06e6c4ed7715000d0c4b5a5c.webp": "579d8eccabbebdf321b50fe12478ebf00b8d19c14d71188f2c8955cb0f707586"
+    }
+  },
+  {
+    "id": "Y2017-1-08",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 1교시 8번] 부분충수(Mid-loop) 운전의 목적과 운전 측면 취약성",
+    "domain": "운영·규제·품질",
+    "year": 2017,
+    "session": 1,
+    "question": 8,
+    "url": "ko/pe/posts/y2017-1-08.html",
+    "body": "bodies/y2017-1-08.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 1교시 8번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/edc7f029383a613199311153f25e264ceccaa124bf6d54107f356919b4c3c5c5.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-OP-011",
+      "Y2026-3-05",
+      "Y2018-4-05"
+    ],
+    "body_sha256": "bece5577185b8d431bf1bf77be29738e8fbeedc6ec38c988bc3933d71950590a",
+    "assets": {
+      "assets/images/ko/pe/6fde8e7c2a455e7fdeff6c7f43b98e5065e5651dc37c611aefddce0693143f38.webp": "31411f7e21a2055fd0a6d1a653cca5ebdde031849d7810ac511bcc98e60e43cf",
+      "assets/images/ko/pe/0b1ff6ee17f9de09e9b9855c20e78af0e713e58b4d16331bfcf8bf560145215e.webp": "f1b8580f54320124f37abe25b953896cc6f68007b877f58c8ef3f0f6c80e09c5",
+      "assets/images/ko/pe/edc7f029383a613199311153f25e264ceccaa124bf6d54107f356919b4c3c5c5.webp": "4cf562229b29199aeae20fb443f36f74c7d6a9ee424b15b4212246850263fb4d"
+    }
+  },
+  {
+    "id": "Y2017-1-09",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 1교시 9번] 운전기준지진(OBE)과 안전정지지진(SSE) — 무엇을 지키는 지진이고, 어떤 하중조합에 들어가나",
+    "domain": "사고·안전해석·중대사고",
+    "year": 2017,
+    "session": 1,
+    "question": 9,
+    "url": "ko/pe/posts/y2017-1-09.html",
+    "body": "bodies/y2017-1-09.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 1교시 9번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/26e3f7ec54e416b6781311d07c33011904ba5eaccf74639c9bd8d73b72af7fe9.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SA-012",
+      "Y2021-1-07"
+    ],
+    "body_sha256": "7a87d9a977340a04fb9a1f5fdc11a5339928ee0b54b7817338ddcac4b2358da9",
+    "assets": {
+      "assets/images/ko/pe/b78b413ed6b28f9b17f25a5592d80722bfb5b53b6c06740fadc42f76dcba3d45.webp": "2c7247b66252db70d4734c9bfd7ce91a88f806497f91f7167322c07c5b87fd88",
+      "assets/images/ko/pe/e30c086ce46f18ac20f1253ff32fd532e73b06b0edd7d37b0817405ec16869b1.webp": "3c87f825693dad9bd4b7ef2ed8ac6d5c3c9e106943db96f812580de31285fa5e",
+      "assets/images/ko/pe/26e3f7ec54e416b6781311d07c33011904ba5eaccf74639c9bd8d73b72af7fe9.webp": "53c9442b49add14c0660ced5442d7131ef4498f65a0679b1cc807cfa59ae2de3"
+    }
+  },
+  {
+    "id": "Y2017-1-10",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 1교시 10번] 핵연료 피복재가 갖추어야 할 요건 10가지 — 방벽이면서 중성자에게는 투명해야 한다",
+    "domain": "핵연료·재료",
+    "year": 2017,
+    "session": 1,
+    "question": 10,
+    "url": "ko/pe/posts/y2017-1-10.html",
+    "body": "bodies/y2017-1-10.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 1교시 10번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/88c6677304c7c0e18fdc566f38d8f04a764524a1f6f7915bfbfd35f80ac083e4.webp",
+    "date": "2026-11-19",
+    "related": [
+      "Y2025-1-05",
+      "C-FM-005",
+      "C-FM-010"
+    ],
+    "body_sha256": "9f0fa946add3b8763c3e424e1f832bf72b35171e94f4039c6499b1b61f61742e",
+    "assets": {
+      "assets/images/ko/pe/af5792af46d24dfb32d6d4653a972dcd698cd83de58892988ba82d8dec6151a6.webp": "b55fba41b8e9870931d0b2e98ac7b1edc712d3f66905505f09314c1e13c4b48d",
+      "assets/images/ko/pe/0acf5e197acfece5cd41375c1d278776095a38a185fa76bf7244082f79254f7e.webp": "b9a4a13a6372fe69ad4308392b9c6a3734798e96f81d0868852acbef8d75a352",
+      "assets/images/ko/pe/88c6677304c7c0e18fdc566f38d8f04a764524a1f6f7915bfbfd35f80ac083e4.webp": "fe90ac349133d9374a1fe8092f8bd347cd5baaee0f72e8fad39a775bb7607bb3"
+    }
+  },
+  {
+    "id": "Y2017-1-11",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 1교시 11번] 파이로 프로세싱 — 수용액 대신 용융염, 용매추출 대신 전기화학",
+    "domain": "폐기물·연료주기·해체",
+    "year": 2017,
+    "session": 1,
+    "question": 11,
+    "url": "ko/pe/posts/y2017-1-11.html",
+    "body": "bodies/y2017-1-11.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 1교시 11번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/bb9a8fd8c94d1eb695a249e4fb3b2eb612b17dc6fbc2cb6f009dbe722d409146.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-WD-006",
+      "Y2022-1-11"
+    ],
+    "body_sha256": "8d70316c5448c154a6057b57e7193fac8180952c90554aead770e26f21d40f6e",
+    "assets": {
+      "assets/images/ko/pe/2e00de51afabafd13970cce47688cb2301de1e4df68c9c1fc4b4d0aff46de66d.webp": "5433ebad46f56030400971203bebd9a27916ee477db0b4783eb5260ef47559bb",
+      "assets/images/ko/pe/bc6a3477fcf0a1a43f6debb691fea88756c5fad4189ce0afa87799feb3a75a88.webp": "ec7fccf6a99ead5e16b874bd2a580339bbd1f7797ffbbe4d8f134534300c0076",
+      "assets/images/ko/pe/bb9a8fd8c94d1eb695a249e4fb3b2eb612b17dc6fbc2cb6f009dbe722d409146.webp": "bef0b60317abfaafe9fb231b262de5f3ae96f8c70b11732365dfc75e732ef130"
+    }
+  },
+  {
+    "id": "Y2017-1-12",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 1교시 12번] 예비·최종해체계획서의 일반요건 — 건설부터 해체까지 같은 원칙으로 쓴다",
+    "domain": "폐기물·연료주기·해체",
+    "year": 2017,
+    "session": 1,
+    "question": 12,
+    "url": "ko/pe/posts/y2017-1-12.html",
+    "body": "bodies/y2017-1-12.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 1교시 12번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/93840a59bb08f3f21c8d4cdfef1e0219a3914585b0000259c361d0b18b9f93ef.webp",
+    "date": "2026-11-19",
+    "related": [
+      "Y2023-3-03",
+      "Y2023-4-01"
+    ],
+    "body_sha256": "bd6d7125a0768af19a3824448a5fdb7b091614f7c13534020525095784e2146c",
+    "assets": {
+      "assets/images/ko/pe/9eebcad845fd644ebc26f9e13a204832aee5bd286f42071f713656b84f013a58.webp": "8ca858082da6ff2bf4a49da69ffd7245a5848195a38cfcf666020041053a0bab",
+      "assets/images/ko/pe/e9cc9aaa4f97d7d04a2e611f9bde2d680f039f2ba5354aa264efdad1f68379a9.webp": "9071f9c1384c5859e80b62d76ef165445dd32785130ac2c6715feb3ef1cfbdbc",
+      "assets/images/ko/pe/93840a59bb08f3f21c8d4cdfef1e0219a3914585b0000259c361d0b18b9f93ef.webp": "7845efd000cbfa26ecb0158252b9bafc1200aaefcbd59dfcb0a6c541f0f0d6f0"
+    }
+  },
+  {
+    "id": "Y2017-1-13",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 1교시 13번] 긴급 주민보호조치 결정기준 — 대피 10, 소개 50, 갑상샘 100 mGy",
+    "domain": "방사선·방호·비상",
+    "year": 2017,
+    "session": 1,
+    "question": 13,
+    "url": "ko/pe/posts/y2017-1-13.html",
+    "body": "bodies/y2017-1-13.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 1교시 13번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/97a51b48f1bb207c785b8cacb6ffede35e49c494133e50a7b801272650a3c440.webp",
+    "date": "2026-11-19",
+    "related": [
+      "Y2025-2-05",
+      "Y2018-1-12",
+      "C-RP-001"
+    ],
+    "body_sha256": "1ebf7ea4c42bc193bb574b7d962689d21ca3acbd5578dee45e2c1cc34c0d0d8b",
+    "assets": {
+      "assets/images/ko/pe/43337e3c6c108904c02cb0e552709ae0323fd2abd111b769ed5ab3da4827ab6f.webp": "ec0cac9ba7e98ce31fc98ecb581ce277ab2a651370d3f0f80f54b109d3273a14",
+      "assets/images/ko/pe/4e7c572535c21e4af407190da6ead9f9ed2ca39a6e7820c11840f05369788251.webp": "c883f24cd9eb2d4e7c66c483deeadaeb4155aa4fe8212dce208a566f307f1790",
+      "assets/images/ko/pe/97a51b48f1bb207c785b8cacb6ffede35e49c494133e50a7b801272650a3c440.webp": "45bc7b40e85781862098d1e402ae3d613a90be9735990fe3b13e053fd4ca10ef"
+    }
+  },
+  {
+    "id": "Y2017-2-01",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 2교시 1번] 원자로보호계통과 안전계통의 설계원칙 — 단일고장·독립성·다양성·고장안전·시험성",
+    "domain": "계통·설비",
+    "year": 2017,
+    "session": 2,
+    "question": 1,
+    "url": "ko/pe/posts/y2017-2-01.html",
+    "body": "bodies/y2017-2-01.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 2교시 1번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/190c26f42c200f06e942b8bae9ee5ebb3ad36e26cabdd0b64d925d44bffb65ed.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SY-002",
+      "C-PR-002",
+      "C-SY-004",
+      "Y2021-3-01",
+      "Y2020-1-08",
+      "Y2023-2-02",
+      "Y2018-1-06"
+    ],
+    "body_sha256": "4baf3aee7cf4db70ab0b2bc6d5b20d5a1b548cc5d53e0ecfaf1eb388657efb84",
+    "assets": {
+      "assets/images/ko/pe/2be21cd2c1f74acc7f3c139159e608829b8d379d4b90e44a51d02b56eabb5ce3.webp": "c50fb309022446e86de829f27fa46cef07b469de68e566b3346defd951b26e3c",
+      "assets/images/ko/pe/1758c997602c96c33c9d74ffce2e0b28ab0c65102b6f7ee2b1fa3b0e686a395c.webp": "e5ce0a8385475199a4e71bb6883bd277bc816c6c74a7d85ea9e4b391aa4ff56c",
+      "assets/images/ko/pe/190c26f42c200f06e942b8bae9ee5ebb3ad36e26cabdd0b64d925d44bffb65ed.webp": "f7a33dcff009af4b457ff10810a561c80234bc2b58d06807ddab7d5a0b8f103b"
+    }
+  },
+  {
+    "id": "Y2017-2-02",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 2교시 2번] 표준형 원전 기체폐기물계통 — 설계기준·구성 기기·유입원·질소세정",
+    "domain": "폐기물·연료주기·해체",
+    "year": 2017,
+    "session": 2,
+    "question": 2,
+    "url": "ko/pe/posts/y2017-2-02.html",
+    "body": "bodies/y2017-2-02.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 2교시 2번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/cfd82579fd42cdd9dbe15736e5d5a77a999e2f55d7a3df186f355b3791f8f42f.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-WD-005",
+      "C-WD-004",
+      "Y2020-2-04",
+      "Y2026-4-02",
+      "Y2021-1-03"
+    ],
+    "body_sha256": "23eff9c4b099a0dcd83d4b583cfe3733ff19b202f8fa68988a66f199de93af9e",
+    "assets": {
+      "assets/images/ko/pe/f5d5ceed471c71cea852ff8f1dc73be23054533dd77a5c25d0e194aa75e4554c.webp": "f453a6b0e146bdc15eaf915d31bd700f509c92724d94261bbead673d0a8e34c8",
+      "assets/images/ko/pe/0fa036b4b5fa1c3155581d9bec37a7a06ec052a0d7d48ded50f2343f7a78aa38.webp": "a1fff604ca45cbad2f7caaa7ecc38a6e31c0675ab6bae9c3767261831e706733",
+      "assets/images/ko/pe/cfd82579fd42cdd9dbe15736e5d5a77a999e2f55d7a3df186f355b3791f8f42f.webp": "9e4e1552f18ec12d12945c40a4f45a7ee5b2d023f4c6291f1858e1314a7113df"
+    }
+  },
+  {
+    "id": "Y2017-2-03",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 2교시 3번] 출력운전 중 핵연료봉 현상 — 팽윤·고밀화, 핵분열기체 방출, 피복관 산화·수소화, 조사 성장",
+    "domain": "핵연료·재료",
+    "year": 2017,
+    "session": 2,
+    "question": 3,
+    "url": "ko/pe/posts/y2017-2-03.html",
+    "body": "bodies/y2017-2-03.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 2교시 3번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/e8bee699f80f760e34fdc0da8b07e23f6e58acdc62f5fee9dce837a9fb603ee8.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-FM-006",
+      "C-FM-011",
+      "C-FM-005",
+      "C-FM-010",
+      "C-FM-012",
+      "Y2023-3-02",
+      "Y2019-2-05"
+    ],
+    "body_sha256": "eea895fbd913998e63cb817f91b0905ff2f2508d5fb610dc3aa34b66b081c0f1",
+    "assets": {
+      "assets/images/ko/pe/04c269cd53ea3a616e015cc01776e228bef28ae460f03babc9400c382eb1a59f.webp": "bbdebe8a7049e859fc169e222f8eccf4a327f91f6742de1fc651804ceed2f3d6",
+      "assets/images/ko/pe/becbe6a919d94905f34ebe3112be1edbf5d41df1bf087e6aa0a744bd7a6ca22c.webp": "9f9f50fac42e4a9ef7beec2caa3172dfd42271b620ec663e889e888ca20255ae",
+      "assets/images/ko/pe/e8bee699f80f760e34fdc0da8b07e23f6e58acdc62f5fee9dce837a9fb603ee8.webp": "8949a4ae3c47c95101e9975274eb2bdc221429fa02086f28cb0ab61ed5b8ba1f"
+    }
+  },
+  {
+    "id": "Y2017-2-04",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 2교시 4번] 가압중수로의 원자로 특성 5가지와 운전 중 연료교체의 이유·장단점",
+    "domain": "정책·경제·노형",
+    "year": 2017,
+    "session": 2,
+    "question": 4,
+    "url": "ko/pe/posts/y2017-2-04.html",
+    "body": "bodies/y2017-2-04.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 2교시 4번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/cc7bb5094056bd7a8cd6e153b5577fe75d0af636fb561391577dc5e73ef5a9a1.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-PE-005",
+      "C-SY-027",
+      "C-RX-019",
+      "Y2020-4-03",
+      "Y2023-1-04",
+      "H2017"
+    ],
+    "body_sha256": "2c47605fafaeb6345bc2ddd1d583d7d8dabcc9039ffb504e1402de76710c65c2",
+    "assets": {
+      "assets/images/ko/pe/97c4546f7d96fbe61440ef7890b053dad12daad44b4771d9bbcf891e8d05cacc.webp": "6635d359526ac606c2b13deb42bb451e3c471a021386674ad72582e055be1ab8",
+      "assets/images/ko/pe/7df35cfeb9c45cdb7ec43107e725ca3f0195b8ca4077d452adc0b14065b0e514.webp": "6e76822f69ca963f39fe37cd2d385b82cc68f333a34ebdf5e69915942a1ce1f6",
+      "assets/images/ko/pe/cc7bb5094056bd7a8cd6e153b5577fe75d0af636fb561391577dc5e73ef5a9a1.webp": "81a09b10704b53adc11bd299c07be2d29e46dfee36e73d44fb8b94cdd199f026"
+    }
+  },
+  {
+    "id": "Y2017-2-05",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 2교시 5번] 축방향 cosine 열속분포에서 최대·평균 열속과 열출력 구하기",
+    "domain": "열수력·열역학",
+    "year": 2017,
+    "session": 2,
+    "question": 5,
+    "url": "ko/pe/posts/y2017-2-05.html",
+    "body": "bodies/y2017-2-05.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 2교시 5번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/67bfd95871f6534dece32e4909487670ed1987fc140f9e97c2ba90719d489b6d.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-TH-001",
+      "C-TH-002",
+      "C-TH-006",
+      "Y2026-2-02",
+      "P-TH-001",
+      "H2017"
+    ],
+    "body_sha256": "487ee228f9560d138a65d7ad40c77a7a03557729bcb55979919b86839258308d",
+    "assets": {
+      "assets/images/ko/pe/fd7245599b14f0cf4a39d570575938d4269c3acb5e803b10e173860948878128.webp": "c1290cb0ad72cf99b05f110ba2f8d07f35cc03da97a2a2ab4c2b3df18c1f9157",
+      "assets/images/ko/pe/9f581a9edf33db59533c82ddd9c42a3ba32a19c4e993dee4f2d8a4a741e92698.webp": "ea9559d707c047c9f661b2169adbb6dec40ed42f847896bc85e15f9902485dcb",
+      "assets/images/ko/pe/67bfd95871f6534dece32e4909487670ed1987fc140f9e97c2ba90719d489b6d.webp": "a7bee4d932f219ff992b5eb5562c14a4f5e493f834bde2d5fd42ff8ef461b9b6"
+    }
+  },
+  {
+    "id": "Y2017-2-06",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 2교시 6번] 사고관리계획서의 사고관리 범위와 사고관리능력 평가 세부기준",
+    "domain": "사고·안전해석·중대사고",
+    "year": 2017,
+    "session": 2,
+    "question": 6,
+    "url": "ko/pe/posts/y2017-2-06.html",
+    "body": "bodies/y2017-2-06.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 2교시 6번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/29ab0f616bf535174f3105003a6bb32573416d7ec1d8be5f5fb297fd9c06eddf.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SA-001",
+      "C-SA-017",
+      "C-SA-005",
+      "Y2019-2-04",
+      "Y2025-4-02",
+      "Y2026-4-04",
+      "H2017"
+    ],
+    "body_sha256": "541a450717860ca52ea88653af24cd5e0bb4745f2a6cc42c2226eff409a6f6ae",
+    "assets": {
+      "assets/images/ko/pe/5dfee536199156ec77c1edae5bd95ce8ffdd717636599c6265202392dbc23d2d.webp": "4a9f845a9739ca78d77a9b76c11a5d861be310aae386fc9cc09b4436c4701db0",
+      "assets/images/ko/pe/16fa3f304e2852ae366b8be75e8d7439a5008e576ff456324a274be91166789a.webp": "d5bdaeb02211461d1e73a2af23219f9a0e843bb4f63b7b3e69dc5c889b27f6e3",
+      "assets/images/ko/pe/29ab0f616bf535174f3105003a6bb32573416d7ec1d8be5f5fb297fd9c06eddf.webp": "953483d3f33c3374588e8ee0a9c66b5ca5bb689c4368171cb39c492574349c78"
+    }
+  },
+  {
+    "id": "Y2017-3-01",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 3교시 1번] 옥소 첨두현상(요오드 스파이크) — 정의와 출력·압력 변동에 따른 거동",
+    "domain": "방사선·방호·비상",
+    "year": 2017,
+    "session": 3,
+    "question": 1,
+    "url": "ko/pe/posts/y2017-3-01.html",
+    "body": "bodies/y2017-3-01.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 3교시 1번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/40e06f6c04524f4c93485ab526dbd22683c0fc408c943730d96c8a1502b355a3.webp",
+    "date": "2026-11-20",
+    "related": [
+      "C-FM-009",
+      "Y2022-2-06",
+      "Y2023-1-12",
+      "Y2019-3-04"
+    ],
+    "body_sha256": "34ff93198fca00557683dc6f84992bf4d0b79ba7168d989bc47cc1904e060078",
+    "assets": {
+      "assets/images/ko/pe/3f8f60fce6bf9d40b2313a182cabe01beaecfadf70a5d2bb569191fdb7683f41.webp": "2c5313d48048fb6c2bd2814c5df1f0620f9139cebbf9bdfc382d61974e22a5fc",
+      "assets/images/ko/pe/c05f115a6d7a3582de4946d559397e98c86fda813e485b5674611cc1c0081d5a.webp": "0bc58b502bb3979a7380ae69b1650a2e420a5f9585bf386d0da27e000de33ae1",
+      "assets/images/ko/pe/40e06f6c04524f4c93485ab526dbd22683c0fc408c943730d96c8a1502b355a3.webp": "95e01075c84ef742b42f4e43b59f156e8524df6c79ae953ad6bbf936731f99f0"
+    }
+  },
+  {
+    "id": "Y2017-3-02",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 3교시 2번] 딸핵종 방사능이 최대가 되는 시간 tm — Bateman 해로 유도하기",
+    "domain": "방사선·방호·비상",
+    "year": 2017,
+    "session": 3,
+    "question": 2,
+    "url": "ko/pe/posts/y2017-3-02.html",
+    "body": "bodies/y2017-3-02.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 3교시 2번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/6aa28c4c6fcf3e9bef97d0459e7fceb862eff7647f9331c7875a00c8b9e298b9.webp",
+    "date": "2026-11-20",
+    "related": [],
+    "body_sha256": "014bfc90bff7770c883aa50d51fd9fce92c116d35b50882a17e77c9a4bb58e71",
+    "assets": {
+      "assets/images/ko/pe/3a4eafbb60d0cb95bb3f89fa395ed2f24aa3e3dbdeb9bdf305a002f0766014d0.webp": "f3b07c7dfe7af6d54fe6270b804b2737045d054ec504692453aa11cf1833fa8f",
+      "assets/images/ko/pe/b22b0443a80e8538bec542475b1fd94dd8c01530022a57283880b29821db807a.webp": "bb56b1c53a49489b5ad2a2ce8b103441778e5713c6413146499402a2751e1233",
+      "assets/images/ko/pe/6aa28c4c6fcf3e9bef97d0459e7fceb862eff7647f9331c7875a00c8b9e298b9.webp": "0465c804fd46929627eaf2fb753bfb1383fed93ebdf257e596d4141ebf89eee0"
+    }
+  },
+  {
+    "id": "Y2017-3-03",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 3교시 3번] 사고 후 자연순환 냉각 — 형성 조건, 운전원 조치, 확인 지시값, 비응축성 기체, ECCS 허용기준",
+    "domain": "열수력·열역학",
+    "year": 2017,
+    "session": 3,
+    "question": 3,
+    "url": "ko/pe/posts/y2017-3-03.html",
+    "body": "bodies/y2017-3-03.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 3교시 3번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/0aec4588dd2604ee7d87b0249f28e694d492de2ada263c14d45ce9b4d9aee65b.webp",
+    "date": "2026-11-20",
+    "related": [
+      "C-TH-003",
+      "Y2025-3-05",
+      "Y2024-1-10",
+      "Y2023-2-04",
+      "Y2026-2-03"
+    ],
+    "body_sha256": "f8b94d457f22f2b9e3cd3e761755b22c4c96f33ab4b55a117c76f0e15aea8319",
+    "assets": {
+      "assets/images/ko/pe/60a405789a4ce09219105955bbf4603674664d52f27ec0620bf334b8b4e272a2.webp": "d58e06c6aa68d7bed681ef9266b1891e98953849a75c5a7c6601186ae7f839b3",
+      "assets/images/ko/pe/0d8c70b0c6faced83f2aef1e82325a6830875f9e50c123b35ff1882d131ccf95.webp": "3dfe9b62b6716de044f998bac8255a1ef3d564d6634882817fa43cb4dfe3c3c0",
+      "assets/images/ko/pe/0aec4588dd2604ee7d87b0249f28e694d492de2ada263c14d45ce9b4d9aee65b.webp": "d0e2c8c333d6a7aa17caefafec98e1ba2c49750268f859890b3c832b757b96de"
+    }
+  },
+  {
+    "id": "Y2017-3-04",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 3교시 4번] ANS Condition Ⅰ·Ⅱ에서의 핵연료봉 설계기준",
+    "domain": "핵연료·재료",
+    "year": 2017,
+    "session": 3,
+    "question": 4,
+    "url": "ko/pe/posts/y2017-3-04.html",
+    "body": "bodies/y2017-3-04.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 3교시 4번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/2f53f904fc9cc544299a5c8843b73acd19fdbe48016cc91181cdd22b0d301e82.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-FM-012",
+      "C-SA-025",
+      "C-TH-001",
+      "C-TH-009",
+      "C-OP-004",
+      "Y2023-4-02",
+      "Y2016-1-04",
+      "Y2017-1-10"
+    ],
+    "body_sha256": "2d57f484058188eda2966023b96cf0437d74f7a06b86f09e57f1008a8e62c208",
+    "assets": {
+      "assets/images/ko/pe/01c0ad362ac665bdabeb9aae0716d1e8cb809189917fc40255b637a5bda084fb.webp": "9c92c583ad4d69de8ffdb3847f4700d319e00b556158eb37f09bb8c07a27708f",
+      "assets/images/ko/pe/a29e2f45f43f12b8a3c1ad264622b66d1c9aef54d10380bd431d196477d253b5.webp": "fd98b34c0406ec54ae425501b1ef2ac97cba54690373c0ca687a00a7a8941294",
+      "assets/images/ko/pe/2f53f904fc9cc544299a5c8843b73acd19fdbe48016cc91181cdd22b0d301e82.webp": "d889d1a942919883a6824026cf5e43fb72b6ea18e7973d426ef4938c18e7dafd"
+    }
+  },
+  {
+    "id": "Y2017-3-05",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 3교시 5번] 지진사건 확률론적 안전성분석의 수행 단계와 보고서 기재 사항",
+    "domain": "확률론·신뢰도",
+    "year": 2017,
+    "session": 3,
+    "question": 5,
+    "url": "ko/pe/posts/y2017-3-05.html",
+    "body": "bodies/y2017-3-05.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 3교시 5번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/0b2e9f1968067149ad4a0a360dcaa7445e52c4c2a723205d0a84b34f4587991b.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-PR-007",
+      "C-PR-001",
+      "C-SA-012",
+      "Y2022-1-09",
+      "Y2022-3-02",
+      "Y2017-1-09"
+    ],
+    "body_sha256": "6fc65f9de46ed2a76906c4c061fbbea164dc697527a9ebc3256d21f68c9f3883",
+    "assets": {
+      "assets/images/ko/pe/40dd0a345bf1f83f48b8d2caff8f61a949a96e838f0e36b7ab4917905b779b2c.webp": "b10f4e789ca1da882fad9c9017840eaf83400b7c464cefdeacb6e38acab81c2f",
+      "assets/images/ko/pe/eb1670cbb6c8ea085eb0839e572f0c8ab0c141f655731546be60550a11be526e.webp": "7ced497ade7e5d7f39943894034f40117beec7fff0d4aa574dc137832e498b20",
+      "assets/images/ko/pe/0b2e9f1968067149ad4a0a360dcaa7445e52c4c2a723205d0a84b34f4587991b.webp": "b499301dc776225cc677c89e51ff9c39c14c8ef89010fe4b3184191a4951ab26"
+    }
+  },
+  {
+    "id": "Y2017-3-06",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 3교시 6번] 원자로냉각재계통 건전성 감시 — 음향누설 감시계통(ALMS)과 금속파편 감시계통(LPMS)",
+    "domain": "계통·설비",
+    "year": 2017,
+    "session": 3,
+    "question": 6,
+    "url": "ko/pe/posts/y2017-3-06.html",
+    "body": "bodies/y2017-3-06.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 3교시 6번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/9c56bcc51a7222fe318dc1e297d8822c86a43643e9713ef332b3518b635a84fb.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SY-030",
+      "C-SY-043",
+      "R071-3-06"
+    ],
+    "body_sha256": "ecae84e0dd046830ca0657fd75132104c382d68ab0cd9fd2f80e65c6499523fe",
+    "assets": {
+      "assets/images/ko/pe/334043cfca6afd838df090f437fbe5c2d392007eff84e053d758b1ecbe2bc643.webp": "1d03992dbc5a3915cb1185130997e7fbe156d9ab902f1b425ebaa11d5c095141",
+      "assets/images/ko/pe/55cfe047b30474227409d58a7df728e63905995aa75ee5d1dc9b5a8d11e8b291.webp": "9769bf1b56ec3767812d16e6fc5f83b077d4ff169963bb5d7985e27d05ef6edf",
+      "assets/images/ko/pe/9c56bcc51a7222fe318dc1e297d8822c86a43643e9713ef332b3518b635a84fb.webp": "35d0513e78ccdfcb9dee13cc36b53e42b08d094de7bc3f56dfe6237fe4f50fb5"
+    }
+  },
+  {
+    "id": "Y2017-4-01",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 4교시 1번] N-16의 발생원과 활용, 방사선방호 관점의 설계 대책",
+    "domain": "방사선·방호·비상",
+    "year": 2017,
+    "session": 4,
+    "question": 1,
+    "url": "ko/pe/posts/y2017-4-01.html",
+    "body": "bodies/y2017-4-01.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 4교시 1번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/b4a71d340b06d6668ac894c43139fbb2999649a27ed622e114535c708b2d6812.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SY-012",
+      "Y2024-1-13",
+      "Y2020-2-01",
+      "Y2022-2-04"
+    ],
+    "body_sha256": "bb22b276f570751dd75525b028b3e223f7c518efa52bb2b08f9e2896ac3cfbd7",
+    "assets": {
+      "assets/images/ko/pe/e4fe07390613cf19c7930a44109afea71c653977c0cdb24cdfc96c7fb5c22a5e.webp": "5d2d8ff56d2675ec00459b2e92226ae1af2750fedcbc8d62c25385bdf60a0c3a",
+      "assets/images/ko/pe/777abb930bc2689d74017a25245c0d8722ad2ee21147a3b0f4a7c84355cdc207.webp": "ae276fdf0e7e7b8a84a835adb7e5580273853dd907c2c5983c2fb57dfb4d9787",
+      "assets/images/ko/pe/b4a71d340b06d6668ac894c43139fbb2999649a27ed622e114535c708b2d6812.webp": "2bf88b1d59f33b59307b7a56b85b090e9ab5d617c69c98ef4c82b4ae2ee0f7f1"
+    }
+  },
+  {
+    "id": "Y2017-4-02",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 4교시 2번] 표준형 ESFAS 신호의 종류·신호원·기능과 설계기준사고의 관계",
+    "domain": "계통·설비",
+    "year": 2017,
+    "session": 4,
+    "question": 2,
+    "url": "ko/pe/posts/y2017-4-02.html",
+    "body": "bodies/y2017-4-02.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 4교시 2번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/4c9cef8dea22c890af9959b2efdd19854eb1b0de0d5ea39a64cf7bc227d188ce.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SY-011",
+      "C-SY-002",
+      "C-SY-004",
+      "C-SY-008",
+      "Y2021-4-05",
+      "Y2023-2-02"
+    ],
+    "body_sha256": "8e2a936c940f2b0e66e59951572c14bdd4b6e04a626fe379f54b81c56cf62741",
+    "assets": {
+      "assets/images/ko/pe/3163aa0d9454ae84348e4af0ff5d24b952f55a7e7477fbf77fb7aeb6642e36a7.webp": "dfa5600b017ba77e1066531adb218d903a31a16006b6c146feb5c8b769046986",
+      "assets/images/ko/pe/d25b95fa5d26eb62d6d4f15e7d689b36a042c78900ace82c80cb58ec334f6e70.webp": "550ca566f3631394e72620e9f3457255b07b2dcadd9a39c939f4ec75fc839bf9",
+      "assets/images/ko/pe/4c9cef8dea22c890af9959b2efdd19854eb1b0de0d5ea39a64cf7bc227d188ce.webp": "645cd58bdfee4cc8ba45a3d499846c7ed87cf89251c777282474157f302327f0"
+    }
+  },
+  {
+    "id": "Y2017-4-03",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 4교시 3번] 심층방어 — 5중 물리적 방호벽의 기능과 기능적 5단계 조치",
+    "domain": "사고·안전해석·중대사고",
+    "year": 2017,
+    "session": 4,
+    "question": 3,
+    "url": "ko/pe/posts/y2017-4-03.html",
+    "body": "bodies/y2017-4-03.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 4교시 3번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/8051302c035efc158ae14c86bcb2dc70b604f401617b1a450a3dd53121aecc2d.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SA-011",
+      "Y2021-3-03",
+      "Y2018-1-07",
+      "C-SA-017"
+    ],
+    "body_sha256": "ed6dbe05dfb6ce0284c497e87bbf86d6b4e95db42005a7bdc1c93516170a2f1f",
+    "assets": {
+      "assets/images/ko/pe/4dba17644ecf827e75ae1fe2c6984295fa0f3cb6171561195d78e7098ee32b79.webp": "1bda9c34a94b5372c6955dbaf5ce0cedeb5f4001d37315c62e68481dbf41d72c",
+      "assets/images/ko/pe/142321aa6ddd5774ec6ec4326cea81ac93fc47a4a2fb8f1071b853a1747b164c.webp": "f29adf6ca6abce287dc2ac48deb9db677297a69d18be679023406e606aa8ac45",
+      "assets/images/ko/pe/8051302c035efc158ae14c86bcb2dc70b604f401617b1a450a3dd53121aecc2d.webp": "200eed1bd17dff10402e4f58e6a2f32304de09a09fb60075e9ae567ec73d9319"
+    }
+  },
+  {
+    "id": "Y2017-4-04",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 4교시 4번] APR1400과 APR+의 고유안전성과 피동안전성",
+    "domain": "정책·경제·노형",
+    "year": 2017,
+    "session": 4,
+    "question": 4,
+    "url": "ko/pe/posts/y2017-4-04.html",
+    "body": "bodies/y2017-4-04.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 4교시 4번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/00655d6a3489cfe63b1f2d7fa21f9ea2f52de938808a9603eec457602c940aeb.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-RX-015",
+      "C-PE-002",
+      "Y2021-1-04",
+      "C-TH-003"
+    ],
+    "body_sha256": "a9e5d1a544d7f35ea700911ed082810c3fa7bf8104de9ebcc206d968fe1c1142",
+    "assets": {
+      "assets/images/ko/pe/5fd0675d451b5c976d9f6a1cdf4d89842c2571488dc5b7c68558f7ffee9cf18e.webp": "1ebfebb66fa622b3e447f913b56949c862f6330998da9f4cc5dbc537d9fc3a59",
+      "assets/images/ko/pe/d6880ea7febb7b475ef1e8fb6b3f8c6f557161eca4ddd3cf6006ba3efd241daa.webp": "6cb7f56f15ee8338f0ef480ffafbaa3f71c8d579d467cfe44406c1337c0a5185",
+      "assets/images/ko/pe/00655d6a3489cfe63b1f2d7fa21f9ea2f52de938808a9603eec457602c940aeb.webp": "f65bec8d21a313da1b98d055ff244c1025b663a1dea33fec438eee18463bb8f1"
+    }
+  },
+  {
+    "id": "Y2017-4-05",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 4교시 5번] 핵연료주기의 단계별 공정 특성과 가압경수로·가압중수로의 차이",
+    "domain": "폐기물·연료주기·해체",
+    "year": 2017,
+    "session": 4,
+    "question": 5,
+    "url": "ko/pe/posts/y2017-4-05.html",
+    "body": "bodies/y2017-4-05.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 4교시 5번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/6ff60654e6f7d1b76de500a3b036968d05b963066e2b693aaa1d0c4e3cc69a23.webp",
+    "date": "2026-11-19",
+    "related": [
+      "Y2019-1-13",
+      "Y2017-2-04",
+      "Y2018-4-04",
+      "C-WD-002",
+      "C-WD-006"
+    ],
+    "body_sha256": "a5beee370087d525929118247f6c0d7c13a80c95ff1e9c171342921c48bda363",
+    "assets": {
+      "assets/images/ko/pe/d0d600d06ffd5b7ae696f0d08f4f7b6689b244f917f52fc853ba2df8d4f28830.webp": "27028353e34817f246a384a6e79e120d591ee75e3dd34fa10f7b41f0bea9aedc",
+      "assets/images/ko/pe/47451514b362a5159a5129d19439efad17f6ae3a1f826e4377a3388d8fcf406f.webp": "0fb260c8b663105952638f18ec1240c5d153788e9265182498979792f14a7016",
+      "assets/images/ko/pe/6ff60654e6f7d1b76de500a3b036968d05b963066e2b693aaa1d0c4e3cc69a23.webp": "478b4a222b7002d889f38c255eaee111e8fb0632dfb315f5340d055bdc59d844"
+    }
+  },
+  {
+    "id": "Y2017-4-06",
+    "group": "exam",
+    "title": "[원자력발전기술사 2017년 4교시 6번] 원심형 펌프 성능곡선과 축동력·전동기 동력 계산",
+    "domain": "열수력·열역학",
+    "year": 2017,
+    "session": 4,
+    "question": 6,
+    "url": "ko/pe/posts/y2017-4-06.html",
+    "body": "bodies/y2017-4-06.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 4교시 6번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/00b2e33da82ac1f80f232d0e13b29a06885cd4e443b68f810dbb50212e39cb97.webp",
+    "date": "2026-11-19",
+    "related": [],
+    "body_sha256": "cf378087413d3af53cdf6cd138a5cfbd061e33bb415a8533124a1a299bbb9f7c",
+    "assets": {
+      "assets/images/ko/pe/191809882c1238d0c0bc32cb9a2ca73c8514327990d7dc283b564833f451b761.webp": "fa25a35fce5af66459ce718a078569361d25c7c318f9d896d0d09461050f4c0a",
+      "assets/images/ko/pe/271efc216fffa63e2645a6cf2869d3c16de6cea953ab82a647d392a3daf5ca80.webp": "0d656ba92fa660d524535b477cd067bd710d3294e908378e3c856e6313a3c7fe",
+      "assets/images/ko/pe/00b2e33da82ac1f80f232d0e13b29a06885cd4e443b68f810dbb50212e39cb97.webp": "439a849d179b7df985f9c1599dfbf865c37616479860073346f43813217ff59a"
+    }
+  },
+  {
+    "id": "Y2018-1-01",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 1교시 1번] 유효증배계수와 6인자 — 인자별 의미와 keff 범위에 따른 원자로 상태",
+    "domain": "노물리·동특성",
+    "year": 2018,
+    "session": 1,
+    "question": 1,
+    "url": "ko/pe/posts/y2018-1-01.html",
+    "body": "bodies/y2018-1-01.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 1교시 1번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/a73e8008bbfd97d36779d0c2ad232379ced948cfd7861dd9a88471b88d7631d1.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-RX-003",
+      "C-RX-014",
+      "C-RX-018",
+      "Y2023-2-03",
+      "Y2024-4-01"
+    ],
+    "body_sha256": "326476d60f9261374c92c1d30171278a27bfec569b828ebb2c1224f06f7e1dde",
+    "assets": {
+      "assets/images/ko/pe/d9264f00fa583ac140aeb62ac7e3a01b70f88f5e1d0730e33ec3c9d0b68a30d9.webp": "75d1cd862a11f9106ac1b9cbecc0e04ad8c6e46e0f8bc230d9d4f8a1bf7e1cb6",
+      "assets/images/ko/pe/cc09469df704931ed2754f2c2944ebe93b737be00ce67f30696d97dc66871426.webp": "743eb6a50d556ad24f16d25d7adb56eb9673632be4dc90b67caed0087605e5fd",
+      "assets/images/ko/pe/a73e8008bbfd97d36779d0c2ad232379ced948cfd7861dd9a88471b88d7631d1.webp": "6dab67588fb1ab6054db99786d983859a7417020dc443b9a8366a969ab7844a6"
+    }
+  },
+  {
+    "id": "Y2018-1-02",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 1교시 2번] 핵비등이탈(DNB)과 핵비등 열속 — 비등곡선 위에서 읽는 열전달의 한계",
+    "domain": "열수력·열역학",
+    "year": 2018,
+    "session": 1,
+    "question": 2,
+    "url": "ko/pe/posts/y2018-1-02.html",
+    "body": "bodies/y2018-1-02.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 1교시 2번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/89029fac0448ff5cd0330ba8cc76a1f613455d5c4853a973f83da2f4c1fb0897.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-TH-007",
+      "C-TH-010",
+      "C-TH-001",
+      "Y2023-1-03",
+      "Y2022-4-04"
+    ],
+    "body_sha256": "b9905a56249df6f3aa28c8b8eb23d06f477f1af002d46773c7f8e69b1cb931f7",
+    "assets": {
+      "assets/images/ko/pe/74258281b8d7bb1698439994035887198806f81b39ca95793730fff63c6a2a55.webp": "09f1e3de4a9d09f4b84531d660ad9e507ce962d0fcfc716df5077d8f4f4be406",
+      "assets/images/ko/pe/6bad612be1172b432599921904079462fe03a6bbe62c0923b19164b748aadc02.webp": "8a6c13c44aabac517781e83569d48710f57d609992d2539c54118de87453f636",
+      "assets/images/ko/pe/89029fac0448ff5cd0330ba8cc76a1f613455d5c4853a973f83da2f4c1fb0897.webp": "0eb943fa6df00956de108baf8b89c04fec42512b5e748f130abe463feb54e9e4"
+    }
+  },
+  {
+    "id": "Y2018-1-03",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 1교시 3번] OPR1000/APR1400 운전모드 — 6개 모드의 판정 조건과 두 노형의 차이",
+    "domain": "운영·규제·품질",
+    "year": 2018,
+    "session": 1,
+    "question": 3,
+    "url": "ko/pe/posts/y2018-1-03.html",
+    "body": "bodies/y2018-1-03.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 1교시 3번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/426a2ebc6a6fc44e0475abb59306c4b59834182cda060ec64a1e5ada1171b3b2.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-OP-001",
+      "C-OP-002",
+      "Y2022-1-13"
+    ],
+    "body_sha256": "82df6c3a12d34881ed4cfa46546aa9b3f436074f9b2b9045f1dcd9a0b148ba0f",
+    "assets": {
+      "assets/images/ko/pe/a0cc3c633c908e783d605a666a35f75877e7acc9011c306383c5b56484ceeec2.webp": "89b3594a12f550fb89c4d3a2f7d65913962b1c07368d86a1e8fa6b2f3d8249f8",
+      "assets/images/ko/pe/bae178a91e31a519b2128e5e1c00c603a3a4c5e4f292adbfc8d308b26dc2ce15.webp": "f87384b1e87815416c7ef64d7046e8879b7f09895dc1e0d291da9f4066fc757e",
+      "assets/images/ko/pe/426a2ebc6a6fc44e0475abb59306c4b59834182cda060ec64a1e5ada1171b3b2.webp": "92d1fd868a6fbdd9b5241c72cbdd90daa16c4381e582c49c1f29f8aa71e30729"
+    }
+  },
+  {
+    "id": "Y2018-1-04",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 1교시 4번] 고에너지·중에너지 배관계통의 정의 — 200 °F·275 psig 문턱과 가상 파손",
+    "domain": "계통·설비",
+    "year": 2018,
+    "session": 1,
+    "question": 4,
+    "url": "ko/pe/posts/y2018-1-04.html",
+    "body": "bodies/y2018-1-04.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 1교시 4번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/9440ae7d37a59ac057380a3d14e997014103f70ca9f03d7d3323ae38a28a0588.webp",
+    "date": "2026-11-19",
+    "related": [
+      "Y2026-1-07",
+      "C-SY-009"
+    ],
+    "body_sha256": "0eda0f7d74a4c28b09a1bbc553889950514e641e20dd911de63ad961f9510eaf",
+    "assets": {
+      "assets/images/ko/pe/457f01f4cdb84c5fa08cd083bcd74babfe78b53080cc2a870b558b09ba6a3371.webp": "eb0a871b47385d396d317fc66b928f95b25ddd7591b2ba612985ed974da6c8a0",
+      "assets/images/ko/pe/130c79581c01ad29b31efb186eb3785e927d12bb96f9c501adc23a24b6406b42.webp": "eda98aaaa273424291630b41117a116adab895657de950d82651d80fe4cc5656",
+      "assets/images/ko/pe/9440ae7d37a59ac057380a3d14e997014103f70ca9f03d7d3323ae38a28a0588.webp": "df48d42592b94a1f3774def029b68f78025b292c364e20329ff10a126a8c6608"
+    }
+  },
+  {
+    "id": "Y2018-1-05",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 1교시 5번] 중수로의 삼중수소 — 중수소의 중성자 포획과 WTRF 제거 공정",
+    "domain": "방사선·방호·비상",
+    "year": 2018,
+    "session": 1,
+    "question": 5,
+    "url": "ko/pe/posts/y2018-1-05.html",
+    "body": "bodies/y2018-1-05.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 1교시 5번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/5666df366a5afd8bbff2c82f98f5b0fa7cf61ec6d9f81d195b4324a40c3a097e.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-RP-005",
+      "Y2023-4-05",
+      "C-PE-005",
+      "R063-4-01",
+      "R067-3-05"
+    ],
+    "body_sha256": "59ecf0912341b2751f95fbefe4c3a6e34a669a1bd5756ff155233b18999b0dd3",
+    "assets": {
+      "assets/images/ko/pe/d23bce9dafa3fa4b5ddb8a74bf6e947dc33f3f9ca6099b3e705573fd932c07f8.webp": "cdbdb35e874a3b72be11b44a22e35ca3bda956346dc972fae1f1a5ebba538c70",
+      "assets/images/ko/pe/b39819f83b324c6a238fb4f2084ed079a1a63d81e9884a055e2a96bf48d5162a.webp": "1dfaea2619cf89e9888232c6f23091fac5f6fc7f76370c500fb602355413d359",
+      "assets/images/ko/pe/5666df366a5afd8bbff2c82f98f5b0fa7cf61ec6d9f81d195b4324a40c3a097e.webp": "1b60a7dd3c1eaf568e49c279f67210c4c28b831e99af4a8348330e5f415243d0"
+    }
+  },
+  {
+    "id": "Y2018-1-06",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 1교시 6번] 초기사건과 단일고장의 정의 — 해석의 출발점과 추가로 가정하는 고장",
+    "domain": "사고·안전해석·중대사고",
+    "year": 2018,
+    "session": 1,
+    "question": 6,
+    "url": "ko/pe/posts/y2018-1-06.html",
+    "body": "bodies/y2018-1-06.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 1교시 6번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/5a0e16c78fee507b368cef7d71622639ebde177540eae73b222ea3e67678a155.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-PR-002",
+      "C-SA-017",
+      "C-SA-025",
+      "Y2022-4-01",
+      "Y2022-3-02"
+    ],
+    "body_sha256": "8ff079c29892898956a2ac309ce80f0cbeba0e89072c7222019320950540fc26",
+    "assets": {
+      "assets/images/ko/pe/fbc7e5cde4f7e5a735410b28509d5cdfeedc5c7dce74fd2141b9d27feefb5263.webp": "9ab45febd5a768505f820897b77e70a307a04bd1d3446be9349c4c89d2f30d0c",
+      "assets/images/ko/pe/675da52340adff4dcaf4cae81dadaab83fc164a4f5b62bbe6688943ea1330140.webp": "3fdbba138e4dadb1420bd3785108357ba5d47edbe4753f3471027586010cd439",
+      "assets/images/ko/pe/5a0e16c78fee507b368cef7d71622639ebde177540eae73b222ea3e67678a155.webp": "fce42776c856b72ec04df6b078c2e176d402382cf7aee17a7ab44b8ac173d643"
+    }
+  },
+  {
+    "id": "Y2018-1-07",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 1교시 7번] 화재방호의 심층방어 — 예방하고, 진화하고, 그래도 안전정지는 지킨다",
+    "domain": "사고·안전해석·중대사고",
+    "year": 2018,
+    "session": 1,
+    "question": 7,
+    "url": "ko/pe/posts/y2018-1-07.html",
+    "body": "bodies/y2018-1-07.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 1교시 7번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/a34a4a3fd3e6b3c921db3eadb639ccfda19b5265aa043d3eda03f2563a2e8ca3.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SA-018",
+      "C-SA-011",
+      "Y2026-4-06"
+    ],
+    "body_sha256": "d6242d8fd5c138680a2961c3a7e43758efd11b49c49f10f01e3f93cc5f38810a",
+    "assets": {
+      "assets/images/ko/pe/3d5f580029cff1621a87c411104dae320d0d4a75bd6efb9b3d9947d4b7803e24.webp": "a0e9affe42e6699ca5efe270ceb8daaad2d56b74375eab65a4333238c2722993",
+      "assets/images/ko/pe/3a4ad220c718eda36ad690f4b904edb3e57a775b1dc788491daea0b697d0ce3b.webp": "b55c1808ac9ba7718a121aa71ffce2a579e7036bc9f25e06ec1e9bf50581d72e",
+      "assets/images/ko/pe/a34a4a3fd3e6b3c921db3eadb639ccfda19b5265aa043d3eda03f2563a2e8ca3.webp": "7ff34ae0b5fc6c044f63da5bcf27d621cd671e6b9f05613c5dd05316b3f1f80f"
+    }
+  },
+  {
+    "id": "Y2018-1-08",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 1교시 8번] EDG·AAC DG·이동형발전기 — 교류전원의 세 겹 백업",
+    "domain": "계통·설비",
+    "year": 2018,
+    "session": 1,
+    "question": 8,
+    "url": "ko/pe/posts/y2018-1-08.html",
+    "body": "bodies/y2018-1-08.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 1교시 8번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/5a9719976facaa4e30fc4cf863251abe65916ddebad62d0ebf9856d52c05f827.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SY-003",
+      "C-SA-009",
+      "Y2021-1-09",
+      "Y2024-2-03",
+      "Y2025-3-06"
+    ],
+    "body_sha256": "e9a040239fbced86ecea9c680c9dc455e6c572d4820d035b543e42a959e4b3db",
+    "assets": {
+      "assets/images/ko/pe/46abfc8a3091a4e78ee42760c635a85e464a71167b96944eb9318b4573cb5309.webp": "2d38e3cfdd71c583920e8ce6a2bcba078e2546122996d41531cb4cdeb2af7f2a",
+      "assets/images/ko/pe/fdf06028450f3d0bbaf02da660a414cc840b4b6ab6438de22782c6b2ac5c94bb.webp": "a2d6b830a6a91f5ab18d49bb02cb23b4aa45b4b2a00264c43c6c0909f1e82472",
+      "assets/images/ko/pe/5a9719976facaa4e30fc4cf863251abe65916ddebad62d0ebf9856d52c05f827.webp": "c263e849b962512eace040d24a9a8ef2f37cba27763857590849a53dd5cf6912"
+    }
+  },
+  {
+    "id": "Y2018-1-09",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 1교시 9번] 설계기준사고·설계기준초과사고·중대사고 — 설계기준 초과와 노심 현저 손상으로 가르는 세 범주",
+    "domain": "사고·안전해석·중대사고",
+    "year": 2018,
+    "session": 1,
+    "question": 9,
+    "url": "ko/pe/posts/y2018-1-09.html",
+    "body": "bodies/y2018-1-09.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 1교시 9번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/146474ce9c708d4dcb981b0fec7b5c22ca3e3e68daaf3f5efb3722a9d28a26e0.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SA-004",
+      "C-SA-032",
+      "C-SA-033",
+      "C-SA-001",
+      "C-SA-017",
+      "C-SA-025",
+      "Y2022-4-01"
+    ],
+    "body_sha256": "daf4da53c5350b1722fd61716ab838fb4aff2313ebcf4924a6233e39e7973cb2",
+    "assets": {
+      "assets/images/ko/pe/20b47785dd77a548aee0cd12326c541243e47cda1a6a68f4c89d76624568b333.webp": "5ded018cfe6fd47ce8ac22f57a12d3f4636c38ee40c8f30148403e132fdb559a",
+      "assets/images/ko/pe/a9d01e89ade4a81434ae5210ed866be6480fe614a3159bff310384dc6002e8ad.webp": "d35a137df238761536500a8b1ca370f7a8f29cfd7d0b23bdf2ed9abd682c0df6",
+      "assets/images/ko/pe/146474ce9c708d4dcb981b0fec7b5c22ca3e3e68daaf3f5efb3722a9d28a26e0.webp": "a85c526cbeb48734c514101c9d215a122e47ce4322625b9a3576759ebdebffe8"
+    }
+  },
+  {
+    "id": "Y2018-1-10",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 1교시 10번] 원자로 안전성에 대한 붕괴열의 중요성 — 끌 수 없는 열을 끝까지 식혀야 하는 이유",
+    "domain": "사고·안전해석·중대사고",
+    "year": 2018,
+    "session": 1,
+    "question": 10,
+    "url": "ko/pe/posts/y2018-1-10.html",
+    "body": "bodies/y2018-1-10.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 1교시 10번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/04b0fd00dee7fddcabf0088a7e60680a82f8e2387ee216a4caa2747bd9c33d50.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-TH-004",
+      "Y2021-1-01",
+      "C-SY-008",
+      "C-SA-009"
+    ],
+    "body_sha256": "80d83376f9f792e509c49f648d78ca2c71fddb8bab44aeb1441fa151a7c4a1eb",
+    "assets": {
+      "assets/images/ko/pe/e554b7829a33583d9d3ac8bbac1c75ece81972c3aa462583cf223c28ab6b80b9.webp": "0b7de61cc6bd3c4d428bf63fda514fb9af9990732922ba43daabc5e1d408ffc3",
+      "assets/images/ko/pe/37f68e2ddfe6ef2d9bb31704c510e8857cc28b9cdaa40fbcddca74d1644bffce.webp": "8eb4c9a2fed4d8a3df3a74b2cd326232f28e003949039a4321eee3d208c510be",
+      "assets/images/ko/pe/04b0fd00dee7fddcabf0088a7e60680a82f8e2387ee216a4caa2747bd9c33d50.webp": "bfa2b585974eafa6976edf594e804c236aa16a2d797d92bd3dc364046caf817b"
+    }
+  },
+  {
+    "id": "Y2018-1-11",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 1교시 11번] 보수적 안전해석과 최적 안전해석 — 여유를 가정에 넣느냐, 불확실성으로 재느냐",
+    "domain": "사고·안전해석·중대사고",
+    "year": 2018,
+    "session": 1,
+    "question": 11,
+    "url": "ko/pe/posts/y2018-1-11.html",
+    "body": "bodies/y2018-1-11.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 1교시 11번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/5328754422567acef65c25d12880b9e9d1dd4726aafe0680bd5c0f8810912405.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SA-058",
+      "C-SA-014",
+      "Y2026-1-12"
+    ],
+    "body_sha256": "147584a1ae4cfbe7519de7788c6761ebc8831b65209f83c6ece158df26f87bee",
+    "assets": {
+      "assets/images/ko/pe/9b4fb7411fcb48078e41a086b02010995014cb378ef4abab866f124fb91c79d2.webp": "4e1f41c3ca0e869ee5fa1496e644c939c3c91771cfdeeff0aeef517c1137a488",
+      "assets/images/ko/pe/fdc5a1fe4825c85e009d4b28eed481314e36ac8d67493c99820c38c9d7737511.webp": "0ecc5b9c480608bd61d1f392d5f46b6f50f21e772234545272c0112ed1861ce1",
+      "assets/images/ko/pe/5328754422567acef65c25d12880b9e9d1dd4726aafe0680bd5c0f8810912405.webp": "a0a06d14e3c6ae12a2df0f9a4c75b1f1017eb93067b75194152a2a42167ec977"
+    }
+  },
+  {
+    "id": "Y2018-1-12",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 1교시 12번] 방사선비상과 방사능재난 — 사업자가 발령하고 원안위가 선포한다",
+    "domain": "방사선·방호·비상",
+    "year": 2018,
+    "session": 1,
+    "question": 12,
+    "url": "ko/pe/posts/y2018-1-12.html",
+    "body": "bodies/y2018-1-12.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 1교시 12번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/ab108fda8a3f147f23db826bdc5103ede85feba217a7446048f6fa72692017da.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-RP-001",
+      "C-RP-007",
+      "C-RP-004",
+      "Y2023-4-04",
+      "Y2025-2-05"
+    ],
+    "body_sha256": "79d2936a37c65e5066e679fdb147fc7d8ba13331d00b78cad85ee95aea8a0c9c",
+    "assets": {
+      "assets/images/ko/pe/0f5f1b8abef815ee1487c308ccaac0571abf885e0e5fb0dc4345869d93310585.webp": "d047393ba7b726e76e7760b90099a7fc28eee3549c4f3730d72f2ad09a233bdc",
+      "assets/images/ko/pe/85b53dc5483bea0e4b956b4d08f7b38c66007d553f6924d764b6c4f62d45a39f.webp": "2aa6007468c0e833f4bab0ec9ffbac78ae88735ce112d2096a52e5be061ec03c",
+      "assets/images/ko/pe/ab108fda8a3f147f23db826bdc5103ede85feba217a7446048f6fa72692017da.webp": "3f2a1e2fd34bd88d4ca6e4dacac455c29df071c7ec05ff57ed74223567de4d62"
+    }
+  },
+  {
+    "id": "Y2018-1-13",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 1교시 13번] 방사성폐기물의 고화 처리 방법 — 시멘트·아스팔트·폴리머·유리화",
+    "domain": "폐기물·연료주기·해체",
+    "year": 2018,
+    "session": 1,
+    "question": 13,
+    "url": "ko/pe/posts/y2018-1-13.html",
+    "body": "bodies/y2018-1-13.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 1교시 13번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/0daf801e869127bd50602ed4a692f9397d145d1d3f5728470da6a9c087c98648.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-WD-009",
+      "C-WD-005",
+      "Y2023-3-01"
+    ],
+    "body_sha256": "a65be8b42ff8e4e7b9fed688bf755652f717f9f1fdeb1a73f7595343ba2d34d5",
+    "assets": {
+      "assets/images/ko/pe/a7598242b33b7bfb566e87942d7c163e376c4eb673d706925bb4213e650f5711.webp": "4cff3e8b30a78e44aa679f22fa7ca010b4e753c63ffc09cb84f5e8c2e5d48eb4",
+      "assets/images/ko/pe/1d4d67d15e43f6d78ea6c67c3c80c71870e72150e55c7e9cd4885ba3bb76f20f.webp": "4d39c3ae71c71173556192616ecf69a5d6b8c99824875d2f682bbb9c3e8801c3",
+      "assets/images/ko/pe/0daf801e869127bd50602ed4a692f9397d145d1d3f5728470da6a9c087c98648.webp": "ea45c7f70a87834e5bec01abbf2db37bf43bd8404d8920109d31b7f94ad86b5c"
+    }
+  },
+  {
+    "id": "Y2018-2-01",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 2교시 1번] 반응도와 지발중성자분율로 나누는 원자로의 5가지 동적 상태",
+    "domain": "노물리·동특성",
+    "year": 2018,
+    "session": 2,
+    "question": 1,
+    "url": "ko/pe/posts/y2018-2-01.html",
+    "body": "bodies/y2018-2-01.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 2교시 1번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/fb3318790ac1fde8a8cac0fd35d513ee1e45d1da42b1643d29dacc059833a1e2.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-RX-001",
+      "C-RX-004",
+      "C-RX-014",
+      "Y2025-1-10",
+      "Y2023-3-06",
+      "Y2022-1-04"
+    ],
+    "body_sha256": "0387ca0357e0b1141663d1703cc931ec92e4517c0988944300687e00acf68a80",
+    "assets": {
+      "assets/images/ko/pe/47f29087627faa60f778050e5c5a1315895bf27d037cbe07f6f7c6f371ca6171.webp": "4fbcd781fb2ab4d08a8217cce671f0e40e046931807437d2f9053d8acf57bf84",
+      "assets/images/ko/pe/93ec89193c2dfa85bbc7d49d560f4018af68f10bf1167f1fae1629a0ab91395a.webp": "3b4ae55673a2b1afe3342b9185883bf6ba2cac84f42c33606ae016af52e559d2",
+      "assets/images/ko/pe/fb3318790ac1fde8a8cac0fd35d513ee1e45d1da42b1643d29dacc059833a1e2.webp": "d2578d45f36ac288e7f3c51c61ae69851ed630ce3ed277e500254d4c3c32d597"
+    }
+  },
+  {
+    "id": "Y2018-2-02",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 2교시 2번] 피복관으로 둘러싸인 핵연료봉의 정상상태 온도분포 유도",
+    "domain": "열수력·열역학",
+    "year": 2018,
+    "session": 2,
+    "question": 2,
+    "url": "ko/pe/posts/y2018-2-02.html",
+    "body": "bodies/y2018-2-02.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 2교시 2번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/28c32c99650023f2b92a590d70dd6a0883bf61f50e0d95dfdc0b83be4286f2de.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-TH-008",
+      "Y2021-4-06"
+    ],
+    "body_sha256": "fb670bf254d12d1d39a429227d711c70aa1c6a53faab191198b404746e13779e",
+    "assets": {
+      "assets/images/ko/pe/4552053a78ae2bd446239e8de7114771b449a76f56ac475f6fe68ea8ba20a245.webp": "d9ba00633df942245275da4e143b4655c2aeae6e3235f1ff12516f7406ef6b97",
+      "assets/images/ko/pe/cf28e36b051e3902b88a9b5e62391c0c366bfa0c7d699d57b9ae7728eef6a7ec.webp": "bd29176e6c332b826a76ad7027fdc85e31c02493758a6c5f4356f21f4116c7f2",
+      "assets/images/ko/pe/28c32c99650023f2b92a590d70dd6a0883bf61f50e0d95dfdc0b83be4286f2de.webp": "5412fc84bb8e18d136e8b18d8cd1130160e0e87bb8d624bba5fe06e97e7ec8db"
+    }
+  },
+  {
+    "id": "Y2018-2-03",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 2교시 3번] 가압경수로 LOCA 시 원자로건물 안의 수소 생성원",
+    "domain": "사고·안전해석·중대사고",
+    "year": 2018,
+    "session": 2,
+    "question": 3,
+    "url": "ko/pe/posts/y2018-2-03.html",
+    "body": "bodies/y2018-2-03.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 2교시 3번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/27c4bd02db1a2095b58d4af19e0cd14a5bdce6b8b5edd579fee4212daabdd1a8.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SA-008",
+      "C-SA-003",
+      "Y2024-1-11",
+      "Y2022-2-02"
+    ],
+    "body_sha256": "e64df0868996d875efe1407970dfdc527c44cd6838c60753431591ad0d82c7d0",
+    "assets": {
+      "assets/images/ko/pe/3b44b506bfab9956342960145b3c148d4f3bc26896e2791f255290df9ed92f67.webp": "44b7f539f1b1a0a2590eac4c30d34424063cff03929dc393b73f2ffc51c29fb5",
+      "assets/images/ko/pe/239db08c7dafb5f0ef8f939e8fa5cd7d3dd8ea48a1a7ef956be24df2d768146c.webp": "2872ca2ea5dc9b75e91e0a143a9851ba1c55ae248b963e490a4d029a8b8115de",
+      "assets/images/ko/pe/27c4bd02db1a2095b58d4af19e0cd14a5bdce6b8b5edd579fee4212daabdd1a8.webp": "53f50e9df51fdbe28dbcb3b5cdda0a74bf78ec7f5f42e7db910d6bf1406dadc2"
+    }
+  },
+  {
+    "id": "Y2018-2-04",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 2교시 4번] 부적절한 노심냉각감시계통(ICCMS) — 설치 배경, 계측기, 세 가지 감시 기능",
+    "domain": "계통·설비",
+    "year": 2018,
+    "session": 2,
+    "question": 4,
+    "url": "ko/pe/posts/y2018-2-04.html",
+    "body": "bodies/y2018-2-04.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 2교시 4번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/f790924b38b717bb514ad971c4de5706c7326440ce1490cdfce1e719220ecc85.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-TH-017",
+      "C-SA-022",
+      "Y2026-3-01",
+      "Y2025-3-05",
+      "Y2024-1-10",
+      "C-SY-010",
+      "H2018"
+    ],
+    "body_sha256": "d1c122e5837a3f57aab18844cdef20b11d5fee00e792a51f6d47c7b9478fb514",
+    "assets": {
+      "assets/images/ko/pe/fd5041ca4794014d06a5f425f32618daa9e3219efe69b2b033f48def44b7839e.webp": "12728ef9c11fa9e048a2925883bf7b3d8bec6da380b74c504ee6de31fed829f5",
+      "assets/images/ko/pe/c8b10a499a08655e9ba1059c9d3d547bdd661cdccace93cf7827054479c2809f.webp": "208f395533bdcaf2e0ae353d3e95f37ab029f1508701561644dad3bc433cea5a",
+      "assets/images/ko/pe/9d1eb333405451ddd6a965b774a7d7898984f222baf7a185e5a646012008e4ec.webp": "2f0556e9d466dbd436ca5e79d245c8565fe8b0c40ac41ce8ee67e4f828db8570",
+      "assets/images/ko/pe/f790924b38b717bb514ad971c4de5706c7326440ce1490cdfce1e719220ecc85.webp": "2dcaac51158fa481358dbf17e51aed4d6c09597dab3b50514529c4111e555ad0"
+    }
+  },
+  {
+    "id": "Y2018-2-05",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 2교시 5번] 노외중성자 검출기와 고정형 노내중성자 검출기의 기능 — 빠르게 지키고, 자세히 본다",
+    "domain": "계통·설비",
+    "year": 2018,
+    "session": 2,
+    "question": 5,
+    "url": "ko/pe/posts/y2018-2-05.html",
+    "body": "bodies/y2018-2-05.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 2교시 5번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/604661eb5fdbec0fdd7646d92560f2dac96025d48976e603d3ccc6225ad30858.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SY-010",
+      "C-SY-006",
+      "C-RX-016",
+      "Y2024-1-06",
+      "Y2014-2-02",
+      "Y2018-2-04",
+      "H2018"
+    ],
+    "body_sha256": "7fc32be7be7153567a20b05dda5f9750c982acaf04d48148e749e4ec4fcf7e68",
+    "assets": {
+      "assets/images/ko/pe/5eb1eecfcf7b0c83f814343855a89452013a2eaf8d3f8f6dcf7d8b12b805bbd7.webp": "1a03ea769c9d0cccbf17c7a92abd81012069ad106cc2ce47d929af9612c9a099",
+      "assets/images/ko/pe/ef8c3eb8edf7995d4ce91af861b73e9d467742ebfa70da85e40f3bb7856ed997.webp": "1b92b286c11b6dfd016dde54c26d32d0c4ed695878979fa0ce81e1a8c9f9a26d",
+      "assets/images/ko/pe/bca1e608dfd693883e0e9d9208570f671ed0ae509a140c715599b106d9d5dc25.webp": "35dcb39cc42bafcef8e77c7a9f9f70fd4b698aa441b030269207001086b0a490",
+      "assets/images/ko/pe/604661eb5fdbec0fdd7646d92560f2dac96025d48976e603d3ccc6225ad30858.webp": "6929eb0df2c58c0d4d9a159312cb1694fec5db8e2fc96ca13eda719e19f44457"
+    }
+  },
+  {
+    "id": "Y2018-2-06",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 2교시 6번] 조사·흡수·등가·유효·예탁선량 — 물리량에서 방호량, 그리고 내부피폭까지",
+    "domain": "방사선·방호·비상",
+    "year": 2018,
+    "session": 2,
+    "question": 6,
+    "url": "ko/pe/posts/y2018-2-06.html",
+    "body": "bodies/y2018-2-06.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 2교시 6번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/e563f6153b69ad93170807949eaf7c19311e5ad1ca1a8b028a3318e4eabdd542.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-RP-002",
+      "C-RP-009",
+      "Y2023-1-08",
+      "Y2024-2-05",
+      "Y2016-1-12",
+      "Y2015-1-13",
+      "H2018"
+    ],
+    "body_sha256": "55e3ae5f7593f20690cc67c1f623278717aae9ba1f1c3a70ee60f61049a9a555",
+    "assets": {
+      "assets/images/ko/pe/06cb10bf75ddaab377bd06eabe3ba50ea8cf7b3bd9066964cc3eb4d7db4b51f8.webp": "6d5c3f34c2635568c021845fad00051fc7144a9465cc6042c5a354b1c7fe9a0f",
+      "assets/images/ko/pe/10ba6dddc6eae343ffe5844b71cba0efc1b8c6f835eea8120cd66790e092f569.webp": "5925f8c7730fd7d232822ceddd19b7e90006f5259ca10f10b0e47149bf9d0c57",
+      "assets/images/ko/pe/7ba7da08d1a5988b80706993d81f7b92c1389cecafadc38116f7766100b43378.webp": "65728165609da9c8246b6779d759736bf79d005d6404767301475219e0da9116",
+      "assets/images/ko/pe/e563f6153b69ad93170807949eaf7c19311e5ad1ca1a8b028a3318e4eabdd542.webp": "5e850a8c77b9598b4c05f7ef833c49427519e704b67c7071a2f6a8413a6caf97"
+    }
+  },
+  {
+    "id": "Y2018-3-01",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 3교시 1번] 산소(¹⁶O) 탄성 산란으로 본 중성자 감속 — 최소·평균 에너지, ξ, 충돌 횟수",
+    "domain": "노물리·동특성",
+    "year": 2018,
+    "session": 3,
+    "question": 1,
+    "url": "ko/pe/posts/y2018-3-01.html",
+    "body": "bodies/y2018-3-01.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 3교시 1번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/23dad9e22fa8fddd48483f5c1f2b1e3e87ee3b6cf514731696ba3e083950b50d.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-RX-025",
+      "C-RX-007",
+      "C-RX-019",
+      "Y2021-4-02",
+      "Y2022-1-01"
+    ],
+    "body_sha256": "e26aa4e03f2374b71afefbad3fe31c9077dac1c54829ded890e97cf2e2af8218",
+    "assets": {
+      "assets/images/ko/pe/04b6a10364f9cbf24fd45d2f7fa8944d5c782d3ad6aafff615d05f419b21d9b2.webp": "c79d98d86fe3b3c6a2d6658bffc0a2c47063d6a6237834100bfa15176417ae84",
+      "assets/images/ko/pe/f1eab372b5bead33ed51a91888e6ba7c70d9429788f5116f46735925ffc67c2d.webp": "c4caaf3d624d85355e5776f4683b25edbaf155178a9343b55c5779bc5dbd8b6d",
+      "assets/images/ko/pe/23dad9e22fa8fddd48483f5c1f2b1e3e87ee3b6cf514731696ba3e083950b50d.webp": "6a39e0ce4d0620facdea3dc3f1314f60332e2a4bf3d98c01e92df6324ef91029"
+    }
+  },
+  {
+    "id": "Y2018-3-02",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 3교시 2번] 중대사고 기기생존성 평가 — 대상 설비 선정, 환경조건 변수, 평가 방법",
+    "domain": "사고·안전해석·중대사고",
+    "year": 2018,
+    "session": 3,
+    "question": 2,
+    "url": "ko/pe/posts/y2018-3-02.html",
+    "body": "bodies/y2018-3-02.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 3교시 2번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/f6353ed1bc9147cd464960936ee3d68d8ba7f8d4bfcadd4bafc350dac1739d11.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SA-001",
+      "C-SA-013",
+      "C-SA-026",
+      "C-SA-008"
+    ],
+    "body_sha256": "2f021e681adbb1ed79263784d0a9e37aa2bac4429cf3b097e2314e5c64de02d9",
+    "assets": {
+      "assets/images/ko/pe/bb28a7aa54225907607c876180805d027d6903bc45196969666576c6b94ff70c.webp": "ba353792311b3450bf2275a8710595942b12db5546e217c77188d820e5d8ffde",
+      "assets/images/ko/pe/6599114c74d02337278648af091d552b1de4fd192190374e602c405035836494.webp": "3d8ac1e49ed6d671bdc4ddf492825cae3d6a82c863fe009361da80e073da7e35",
+      "assets/images/ko/pe/f6353ed1bc9147cd464960936ee3d68d8ba7f8d4bfcadd4bafc350dac1739d11.webp": "a48229abdadf05494bdee45f37a9116eba9e6cb49f92ec20a2d5eabb3525b2b7"
+    }
+  },
+  {
+    "id": "Y2018-3-03",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 3교시 3번] 재순환집수조 여과설비(Sump Strainer)의 설치 목적과 기능 — GSI-191이 바꾼 것",
+    "domain": "계통·설비",
+    "year": 2018,
+    "session": 3,
+    "question": 3,
+    "url": "ko/pe/posts/y2018-3-03.html",
+    "body": "bodies/y2018-3-03.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 3교시 3번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/6e4c9c30f2bde6883fa180313ab2ec24e7e433fc55cab2c6a80cfa42b1ed1228.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SY-008",
+      "C-SA-021",
+      "C-SA-014",
+      "C-PE-002"
+    ],
+    "body_sha256": "e69adf42c13892dc97f5c311fd33ad4c8039623df6e7bcad4d9a85c3e0392ca4",
+    "assets": {
+      "assets/images/ko/pe/2e05c4409b10fb8ddcccde5738d582870a7f8b3dcca4d9e009abb0f7a8d694c6.webp": "812ecc509881c36a4c94d493bf89a4deb696794d3c2dd9da7c639e250e19c8bb",
+      "assets/images/ko/pe/506137363a20608ca2ed5f85f0250b6a30d4dc4ceb2a6238cd44b44c72655806.webp": "204ad98d992718df0cae93c19a6f20d342129a8c2f97d508bf8ca8ef4959e4c7",
+      "assets/images/ko/pe/6e4c9c30f2bde6883fa180313ab2ec24e7e433fc55cab2c6a80cfa42b1ed1228.webp": "4961f55287af0fb97516115c70d5fb09e6ad77c52222daf3067b0ab0f4bf54a1"
+    }
+  },
+  {
+    "id": "Y2018-3-04",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 3교시 4번] 노심용융물 노내억류(IVR) 설비와 노외냉각설비(코어캐처)",
+    "domain": "사고·안전해석·중대사고",
+    "year": 2018,
+    "session": 3,
+    "question": 4,
+    "url": "ko/pe/posts/y2018-3-04.html",
+    "body": "bodies/y2018-3-04.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 3교시 4번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/6be25940e9b6eb3807ed4d0a79f92dec7555def0ea9d30527c6bffee99409af7.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SA-024",
+      "C-SA-013",
+      "Y2026-3-04",
+      "Y2022-4-05"
+    ],
+    "body_sha256": "438708a34ca9c4065566906c736554b35c8db0d31999024b98a85452a71bc201",
+    "assets": {
+      "assets/images/ko/pe/622565ac5627722d705628aaec5d06edaf415c1402d1451ed80dd197233ce1ff.webp": "529a9af50774637eceb2bcfd852527ed0ec718f88ef143979f2577689af9aa19",
+      "assets/images/ko/pe/295bf5801e6a8b45dd91a19f842fa1789fc5a6d2ff7e5df7c92f5c69b366ffc7.webp": "52bf6f31a2ba9f72db8b9091a52673a0b776e628147ae2d1057dce1c3c669353",
+      "assets/images/ko/pe/6be25940e9b6eb3807ed4d0a79f92dec7555def0ea9d30527c6bffee99409af7.webp": "c699dbe7b0b0d01bfa3e5ae2b676254ffa17cefb03cd5340658e5bb5519ad46d"
+    }
+  },
+  {
+    "id": "Y2018-3-05",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 3교시 5번] 핵연료 장전 중 노심의 임계안전성 확인 방법",
+    "domain": "노물리·동특성",
+    "year": 2018,
+    "session": 3,
+    "question": 5,
+    "url": "ko/pe/posts/y2018-3-05.html",
+    "body": "bodies/y2018-3-05.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 3교시 5번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/a7012985b415e48abf6e29be04efdf7c4a75e87be1c6a7e790b2e3b5b5678686.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-RX-027",
+      "C-SY-010",
+      "C-RX-013",
+      "Y2024-4-06",
+      "Y2021-4-04"
+    ],
+    "body_sha256": "6c003504dec3829dfcd2c00f6033e724bea297097e00accbb68a96a6c553c9ea",
+    "assets": {
+      "assets/images/ko/pe/c5d51e1927ea75de5dce07d0519d2f5981baadef3815f700a13b737a669c58be.webp": "b29d6eebcda66c1161c2327e51eae5283b7b44c6e0022aa0ec5d2d8af9c3341d",
+      "assets/images/ko/pe/8625f381f9227af530763745dc4af94be83496914f97079fcdda5ff0aede8b6a.webp": "080c15d58d368c7cf4935a945af545d496065d50b3a1f39dabd130a48808543d",
+      "assets/images/ko/pe/a7012985b415e48abf6e29be04efdf7c4a75e87be1c6a7e790b2e3b5b5678686.webp": "d95a9df2eb356a898147ef27b11774932bf2304df4ad5e3f7bea1da639a169e1"
+    }
+  },
+  {
+    "id": "Y2018-3-06",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 3교시 6번] 저온과압보호(LTOP) 계통의 설치 목적, 과압 유발 사건, 작동 최소화 요구사항",
+    "domain": "계통·설비",
+    "year": 2018,
+    "session": 3,
+    "question": 6,
+    "url": "ko/pe/posts/y2018-3-06.html",
+    "body": "bodies/y2018-3-06.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 3교시 6번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/24f4b3b3f4cc2d52c8e326c8e0ed1c3704e0bd640f43021a16e6ebd8a033fca8.webp",
+    "date": "2026-11-19",
+    "related": [
+      "Y2023-4-03",
+      "C-FM-002",
+      "C-FM-003",
+      "C-OP-004",
+      "C-SY-005"
+    ],
+    "body_sha256": "4e2cfdecd73460b72e35fcca8fa8bd2d43e0d74626c82fcaaf0282878befe904",
+    "assets": {
+      "assets/images/ko/pe/9692e0b39a7ed0016f149b18cb541a461a7a0350810bd47e25e1c9390efbe9b4.webp": "0b969d68bd91107a09617816cff9f8486412ecec879486be0240ea80bc56ebf8",
+      "assets/images/ko/pe/40cf7b7578af179224b3d8b512a2fe1f8256d700da04feea4f2dcf2d9a255711.webp": "89ee6477d495eed9c87ce71c4df5df9dd445d281af7b219a5584def056791280",
+      "assets/images/ko/pe/24f4b3b3f4cc2d52c8e326c8e0ed1c3704e0bd640f43021a16e6ebd8a033fca8.webp": "e80b1d50a38be78888e134597b6713b1374add4e864050124db2c1108f8efe25"
+    }
+  },
+  {
+    "id": "Y2018-4-01",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 4교시 1번] U-238 자발핵분열 반감기 — 7 fissions/g/1000 s로 부분 반감기 구하기",
+    "domain": "노물리·동특성",
+    "year": 2018,
+    "session": 4,
+    "question": 1,
+    "url": "ko/pe/posts/y2018-4-01.html",
+    "body": "bodies/y2018-4-01.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 4교시 1번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/8cbd0728e2f21e21476e0f1516dc16cfbb0033aa7b95c172698e09f1ccf1c9ee.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-RX-027",
+      "H2018"
+    ],
+    "body_sha256": "3171f1f8fb0233378ab120e78dd9ec1144fd6d4d4760c3832c845a86f44dcba1",
+    "assets": {
+      "assets/images/ko/pe/b52f3abe59f3394b8fc8d3af3cde61230b922602b63417fb958d9f5fbc694c15.webp": "5bb8395c79fbc816ecf5bcdf7f56c052298bfff8cdd77ded96dfbc81884345c3",
+      "assets/images/ko/pe/c576b7b8bfc5e2dae244dde1e9fee768f76ab2f582233be7410fa0ead36fe26e.webp": "406019983a92b0af9b1d9f88419b1aec056cc6149eb944380eb289359d413817",
+      "assets/images/ko/pe/8cbd0728e2f21e21476e0f1516dc16cfbb0033aa7b95c172698e09f1ccf1c9ee.webp": "33d5443df658b86c4db6a576b17fa9b5b3f338612974427c2599466ea7a395e0"
+    }
+  },
+  {
+    "id": "Y2018-4-02",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 4교시 2번] 격납건물 누설률시험 — 목적, 종합·국부 시험, 0.75 La·0.60 La 허용기준",
+    "domain": "계통·설비",
+    "year": 2018,
+    "session": 4,
+    "question": 2,
+    "url": "ko/pe/posts/y2018-4-02.html",
+    "body": "bodies/y2018-4-02.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 4교시 2번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/cb9ff11f8efc36488935e06010ac3dce7a40696c86e703af7b7dbb343310d81b.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SY-007",
+      "Y2025-3-01",
+      "Y2021-1-10",
+      "Y2020-3-05",
+      "C-SA-005",
+      "H2018"
+    ],
+    "body_sha256": "4bae7f7e60167108685b7b1c3c502207d091dde2ab48f8c92761610601af1950",
+    "assets": {
+      "assets/images/ko/pe/7fd70617cf39aa8a7b862d97d74995c11d2e7ff49744369e5d9d3743c2cb99c5.webp": "ef89b167c1e4f9abfe7bfd98224f4be9b7b17311a9171ef1cfefe29922967802",
+      "assets/images/ko/pe/d7e38f6929f66afde8095b25971e57576376b26509e7e240cc2ed0edda7e947f.webp": "04faa79d10eba9909fec85a30d11ca6d074cad6939342fb31f493a95bac01b20",
+      "assets/images/ko/pe/cb9ff11f8efc36488935e06010ac3dce7a40696c86e703af7b7dbb343310d81b.webp": "a97525e66413b424b75fda12bad15a3f34a3724a409ad28f689165895ed5c6ee"
+    }
+  },
+  {
+    "id": "Y2018-4-03",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 4교시 3번] ATWS 정의·경험사례·규제요건과 WH형·OPR/KSNP/APR형 조치사항",
+    "domain": "사고·안전해석·중대사고",
+    "year": 2018,
+    "session": 4,
+    "question": 3,
+    "url": "ko/pe/posts/y2018-4-03.html",
+    "body": "bodies/y2018-4-03.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 4교시 3번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/aee7da6ebf0dfc2ea3245c9bc3c7a385b02578916d9edc2b97c7f3392aed55a5.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SA-006",
+      "Y2021-4-01",
+      "C-SY-004",
+      "C-SY-002",
+      "C-SA-017",
+      "H2018"
+    ],
+    "body_sha256": "89c5e2308262acd0b5c8f567c1210a2152218dd75cf91ddb47869ab74065b797",
+    "assets": {
+      "assets/images/ko/pe/c40833b0890c867a738f55ddd569d059c9c9d762231e074212613d663db1b027.webp": "ae49490d40bbfc1bc33d7a64fb68a3b892050d1db6c8e58287c6fb6235c7807c",
+      "assets/images/ko/pe/a997b1fb52856cc52a020c4f9f46379ddf5ebc023749df818670bcbfcf77f31b.webp": "71138e32260ecee11e457df5495c2942cc01f5b0adfc9a79fb45bb77d007ed79",
+      "assets/images/ko/pe/b8f172a781621fa8aaa7d49bff0cc6a49b1e744e57c90d22d8958faf76f8280f.webp": "6b0b88320944eb179329be3b61c365c53661fefd4a5c4a6b2a5d84bbec2ed396",
+      "assets/images/ko/pe/aee7da6ebf0dfc2ea3245c9bc3c7a385b02578916d9edc2b97c7f3392aed55a5.webp": "3c6bae1f1843181a0dba01c0d7ef307e3ed96e8ee42327274bd645f43889b83d"
+    }
+  },
+  {
+    "id": "Y2018-4-04",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 4교시 4번] 사용후연료 건식저장과 습식저장의 장단점",
+    "domain": "폐기물·연료주기·해체",
+    "year": 2018,
+    "session": 4,
+    "question": 4,
+    "url": "ko/pe/posts/y2018-4-04.html",
+    "body": "bodies/y2018-4-04.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 4교시 4번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/70defd3def7fe3a95e0dc35a2b77d9765c48cbb980cf4202d3ab10094ed272b8.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-WD-002",
+      "Y2024-4-02",
+      "Y2023-1-06",
+      "C-WD-007"
+    ],
+    "body_sha256": "96bba125e3f5fb1b6b7235c42cda0c20535e8ee66780e21f341103fa4fa74632",
+    "assets": {
+      "assets/images/ko/pe/b30dc13f829ab69e360454782dad2549094a0e2ef8907a16b4cf5b1aabf47dba.webp": "e2db735256552ccf57f104a67a0dafbc23f097593664eb70a5badf78b6b27521",
+      "assets/images/ko/pe/86b22023e7c3c5408dc71fb708dc65524c7dc72c83fea325c37a39abde7180e6.webp": "1a0e71006b0438473f6b90916054f18ffa1f825747658d7c9c5f7d019da9a614",
+      "assets/images/ko/pe/70defd3def7fe3a95e0dc35a2b77d9765c48cbb980cf4202d3ab10094ed272b8.webp": "2d134e3bc8bc49e18fb3eb4d84a6897c3daa15267699c51aca0c953571773956"
+    }
+  },
+  {
+    "id": "Y2018-4-05",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 4교시 5번] PSA에서 정지·저출력 운전을 별도로 고려하는 이유",
+    "domain": "확률론·신뢰도",
+    "year": 2018,
+    "session": 4,
+    "question": 5,
+    "url": "ko/pe/posts/y2018-4-05.html",
+    "body": "bodies/y2018-4-05.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 4교시 5번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/972f39b83ed2a6879b2e05e317a1a5d56377ad1ce7756737881ccece793966c3.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-PR-001",
+      "Y2026-3-05",
+      "C-SA-001"
+    ],
+    "body_sha256": "39d7d4a4899e1c5b5f506034b1bccbff30dc854d5431ce0d8d00afa3d64810b7",
+    "assets": {
+      "assets/images/ko/pe/6a83c8fb557649cca0595b6f6012dbaf5be11a7658b06989b746b2624c45bf2e.webp": "5a72606f1ed1cddf8f70a3437e6ff0c39793faf20dcf2a2cab1867cc6b3cc216",
+      "assets/images/ko/pe/351bdf47c249e838e0be9bd8fe87d759cd6fab5b150a4a0dd314897e479ee7f5.webp": "4c8f7e2e4e32754c76fc61f5c81546b56246407011d6d165694574e272da48a7",
+      "assets/images/ko/pe/972f39b83ed2a6879b2e05e317a1a5d56377ad1ce7756737881ccece793966c3.webp": "b92c511f323c6232e3234fa53ef31a76ac6baa27c9d689c517a0d586a96da676"
+    }
+  },
+  {
+    "id": "Y2018-4-06",
+    "group": "exam",
+    "title": "[원자력발전기술사 2018년 4교시 6번] 운영기술지침서의 정지여유도 — 정의·가정조건과 안전해석상 보장 사항",
+    "domain": "노물리·동특성",
+    "year": 2018,
+    "session": 4,
+    "question": 6,
+    "url": "ko/pe/posts/y2018-4-06.html",
+    "body": "bodies/y2018-4-06.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 4교시 6번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/2ea21f7980a10b7d02fbe5625cde4a5827615174e9ef3b0ace9c65cdd0ee8b91.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-RX-013",
+      "C-RX-011",
+      "Y2025-2-06",
+      "C-SA-007"
+    ],
+    "body_sha256": "2f167c8e950e451fe088bdf4f68bd2f2284820b0c869690ee168951527c2affb",
+    "assets": {
+      "assets/images/ko/pe/7fbb0d69983c50adc922698d87ecc3844e8cb059ded0cbb2f57c17821c7391b5.webp": "92eeedd371d2e123b1c07d6951477c7b0f977f00a13c50fec5982f89aafed1be",
+      "assets/images/ko/pe/36f081fded23db7aeae3cbaa81360f5fb2fae687da56f13fc3f67041c441dcfe.webp": "78bb39a34eb543a86c1a313a76eb60d1719a25e9df9dd51fc79633b8033018b0",
+      "assets/images/ko/pe/2ea21f7980a10b7d02fbe5625cde4a5827615174e9ef3b0ace9c65cdd0ee8b91.webp": "2ae2e229ecaeaad0bd7ae9b6f5be4be514faafa86b91d4727cf3dac9a021ba5a"
+    }
+  },
+  {
+    "id": "Y2019-1-01",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 1교시 1번] 확인누설과 미확인누설 — 출처를 아는가, 어떻게 재고 얼마까지 허용하나",
+    "domain": "운영·규제·품질",
+    "year": 2019,
+    "session": 1,
+    "question": 1,
+    "url": "ko/pe/posts/y2019-1-01.html",
+    "body": "bodies/y2019-1-01.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 1교시 1번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/dfee276ffe4d34e38f09a6df55ee7a29c42fc849b907f78786b20fd069cb7fdd.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-OP-007",
+      "C-OP-001",
+      "Y2024-1-09",
+      "Y2026-3-06"
+    ],
+    "body_sha256": "31749d9f640c3a16b3dbe2558121214cf2419e9cf356f6e8b0312d0752942c30",
+    "assets": {
+      "assets/images/ko/pe/9f8273ee379f54b2e95d0cc8268bfbb635f59fcfb6adb5093f2f1901169d32cb.webp": "647aa29c49c575bae9b39ef69eea747af2a9e62ca07d18308208107fa078cd39",
+      "assets/images/ko/pe/c583bc574abda3667ae00ca71b75ee20d627bf52aecc0d58037739b3de555642.webp": "a6a0e81804560c7d4bcb30430202ef33e60da33fac8c39adc3621983318b2301",
+      "assets/images/ko/pe/dfee276ffe4d34e38f09a6df55ee7a29c42fc849b907f78786b20fd069cb7fdd.webp": "cc35f40bb2145317a23c15de2239d27d75b4767cb44e675c8f01acc53f248a94"
+    }
+  },
+  {
+    "id": "Y2019-1-02",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 1교시 2번] 주기적안전성평가(PSR)의 세부 평가항목 — 14개 안전인자를 다섯 묶음으로",
+    "domain": "운영·규제·품질",
+    "year": 2019,
+    "session": 1,
+    "question": 2,
+    "url": "ko/pe/posts/y2019-1-02.html",
+    "body": "bodies/y2019-1-02.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 1교시 2번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/d3a3e552f590a9717a074dc25dee860e9da40b2fb6a3cb43b6627ec3fc0c0e22.webp",
+    "date": "2026-11-19",
+    "related": [
+      "Y2023-3-04"
+    ],
+    "body_sha256": "18459d296bcae70cbb682e76e6959b8b66e5dd6a42a38d5a858dec646149bc6c",
+    "assets": {
+      "assets/images/ko/pe/817e79f4c6e36b1d3c0c9d3f6cf046ff9a111718db189e33653597f0404b6d31.webp": "85d3c05375b2dc8d3e3b1a4b2dbe0f9bf97f33b3f2cc2dca252ace149f5185dd",
+      "assets/images/ko/pe/5b7580388defde8dd69927604404a877e71c3c3bc3499a654f74ce4881579a76.webp": "d34d1000ffd01a46dfdf506e2e2f8d7185b546c81ee23ec38c661e9b5b620bdb",
+      "assets/images/ko/pe/d3a3e552f590a9717a074dc25dee860e9da40b2fb6a3cb43b6627ec3fc0c0e22.webp": "fbd531ead3f53f27a1f8270bdf559b72d7df4685be4663efdbf8f9c00722af2f"
+    }
+  },
+  {
+    "id": "Y2019-1-03",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 1교시 3번] 2015년 IAEA 비엔나 원자력안전선언 — 후쿠시마 이후 세 가지 원칙",
+    "domain": "운영·규제·품질",
+    "year": 2019,
+    "session": 1,
+    "question": 3,
+    "url": "ko/pe/posts/y2019-1-03.html",
+    "body": "bodies/y2019-1-03.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 1교시 3번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/675936421afe5f1183221604f954bc1be19905f018c5a717938f2f95caa1148e.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SA-011",
+      "Y2023-3-04"
+    ],
+    "body_sha256": "4960430018a0d1ecc092e8e1d10f187dfdf13388a810f10dab8b1bbcc47a52bd",
+    "assets": {
+      "assets/images/ko/pe/fc0b762a1b9a9992569731863ed85050cd999c8a3779a10e442cd6a478a1743e.webp": "b4424e28acdb75fffeff0d090989ae481c530593e971018c4dfe4ea09cd3872f",
+      "assets/images/ko/pe/e861bd705b52011cc204e9e88abdb36ea828c54629d55a1a97bb69987114c610.webp": "05faa6d2f9c7aa551b034d5799592282cba61b8566439919f9397c1c8893f9df",
+      "assets/images/ko/pe/675936421afe5f1183221604f954bc1be19905f018c5a717938f2f95caa1148e.webp": "3b083c26ab78ef784375f81a5d0f0d552e425a7bf978a8f497b70f704a49423f"
+    }
+  },
+  {
+    "id": "Y2019-1-04",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 1교시 4번] 노심용융물-콘크리트 상호작용(MCCI) — 침식·기체 발생과 공동 충수",
+    "domain": "사고·안전해석·중대사고",
+    "year": 2019,
+    "session": 1,
+    "question": 4,
+    "url": "ko/pe/posts/y2019-1-04.html",
+    "body": "bodies/y2019-1-04.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 1교시 4번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/fe92ceb55d64912244d1260bd2ccd91e3f3b0fe265f28fcb109c1117c143ac75.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SA-005",
+      "C-SA-013",
+      "C-SA-019",
+      "Y2022-1-03",
+      "Y2022-4-05"
+    ],
+    "body_sha256": "014f6a09cc641d1d05a5061a9595744dd353415940760b4c8d4ec2a215920cc1",
+    "assets": {
+      "assets/images/ko/pe/8787db3fba91d3701e3f730652ab37df7baaba4cdcc2298455fc60c29ca194e8.webp": "1cfd9eff3632927e40686f0993b25056354a9ef1998ad4c4b6bf7a875e3b342b",
+      "assets/images/ko/pe/485fe874c9deae0c46afa9a390f878d5b1e27204dd6b17866aaa51fedb30342b.webp": "28c86ca3fc97f9f660228f169ecf548b6b4321209ee2ad69d3f028191d329925",
+      "assets/images/ko/pe/fe92ceb55d64912244d1260bd2ccd91e3f3b0fe265f28fcb109c1117c143ac75.webp": "52f2b5a1ec0455f53c9ff567cfea8e15827e0dbba7f84c04e03d60285e0fd718"
+    }
+  },
+  {
+    "id": "Y2019-1-05",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 1교시 5번] 격납건물 최대허용누설률(La)과 허용기준 — 선량해석이 정한 상한, 시험은 그 75 %·60 %",
+    "domain": "계통·설비",
+    "year": 2019,
+    "session": 1,
+    "question": 5,
+    "url": "ko/pe/posts/y2019-1-05.html",
+    "body": "bodies/y2019-1-05.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 1교시 5번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/d82baef635ed2c166d25df60fd3f87dbe484eb917c26126c9b5b966482ddc281.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SY-007",
+      "Y2021-1-10",
+      "Y2025-3-01",
+      "Y2018-4-02",
+      "C-SA-005"
+    ],
+    "body_sha256": "a62d18f7c4dbc444e79cbcd8d74fc5310cd84a333c91ae7e85c22501366155d7",
+    "assets": {
+      "assets/images/ko/pe/5cb2b37ff2c3dd164fbbb9c003719291aa4050d33919403a744dc7f8a75c7ef7.webp": "a193f08edd6e88c30b64f91ab3af23fcd50bcd1711a2352017860433c2174b16",
+      "assets/images/ko/pe/4ba9d31d13b632aee7eb63a4d62a4688f2ebe24eac97a37578bb7ed8af6fa1f1.webp": "bef0d617eb9daee13ed4d77c21b1ed4340659c4b5410bebf9a92e7f8884a9c8a",
+      "assets/images/ko/pe/d82baef635ed2c166d25df60fd3f87dbe484eb917c26126c9b5b966482ddc281.webp": "0962fc6695156a25cd734c18ce6ee2bc2aeb507f2ef753e8778e4784a0c3391b"
+    }
+  },
+  {
+    "id": "Y2019-1-06",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 1교시 6번] 가연성흡수물질(Burnable absorber)의 종류와 사용목적 — 주기 초 잉여를 맡아 붕소를 낮추는 흡수체",
+    "domain": "노물리·동특성",
+    "year": 2019,
+    "session": 1,
+    "question": 6,
+    "url": "ko/pe/posts/y2019-1-06.html",
+    "body": "bodies/y2019-1-06.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 1교시 6번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/c52d5e7ac22752c5606a4c3acdd7f5b336e319fb7e2ea10fcc63393087100861.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-RX-036",
+      "Y2020-1-06",
+      "Y2021-1-11",
+      "C-RX-013"
+    ],
+    "body_sha256": "079013e21cb5a52540e5ae8e687d07348662afe14857a01228c8c5e70d225989",
+    "assets": {
+      "assets/images/ko/pe/6ceec24c99b8f9db8e3fc51823e9c69242c6391f4eb02dd3a6e7e22ab98ab740.webp": "a5edee066e1b247482397b319c83b7af637e01b1cb935c8bac0472e5f2a331b9",
+      "assets/images/ko/pe/2b305ffc4af12e3dee087339b88bb1212741e12fb1d3d9f6abf8342f13252ec6.webp": "0335e4978aacd819c087f00895cb8e5b2e9130b644b3be364bd9cc0ed27ed596",
+      "assets/images/ko/pe/c52d5e7ac22752c5606a4c3acdd7f5b336e319fb7e2ea10fcc63393087100861.webp": "648c82bed006844e6340906f59e0f37f4aedec8b1bff9fcae34dd865eaf6fc38"
+    }
+  },
+  {
+    "id": "Y2019-1-07",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 1교시 7번] Nusselt number(Nu)의 정의와 물리적 의미 — 대류가 전도의 몇 배인가",
+    "domain": "열수력·열역학",
+    "year": 2019,
+    "session": 1,
+    "question": 7,
+    "url": "ko/pe/posts/y2019-1-07.html",
+    "body": "bodies/y2019-1-07.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 1교시 7번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/81477216a2f318cdaeea9f269167f7c41b21354f075fe54a10ccf1d395d358c5.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-TH-023",
+      "C-TH-012"
+    ],
+    "body_sha256": "edd35164dbc579156e78929744ccaeb7f8b43ec7faad566c4a1b54774b1c9024",
+    "assets": {
+      "assets/images/ko/pe/eb95ece25dbdb75e52633d07acbf76510de8e56d118423c6019081c1e7e7b35c.webp": "1872f02c4cfb50e99b69692dc9ef8ae4778caf16858e252125889d53cb58af78",
+      "assets/images/ko/pe/98918e442a25d9af796c0bc6d5c4d74b905262b8b8bcfd04dbe3751f4194d708.webp": "24282ca7f6cb04d161628993ce3e2b8a6879a3a6092b9465a0d688a80326fa3d",
+      "assets/images/ko/pe/81477216a2f318cdaeea9f269167f7c41b21354f075fe54a10ccf1d395d358c5.webp": "097079521e08704e393f5a123524f8847373bb0fe12ea6ce453c74287073afa5"
+    }
+  },
+  {
+    "id": "Y2019-1-08",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 1교시 8번] 지발중성자(Delayed neutron)의 정의와 원자로 제어에 미치는 영향 — 0.65 %가 주기를 2,700배 늘린다",
+    "domain": "노물리·동특성",
+    "year": 2019,
+    "session": 1,
+    "question": 8,
+    "url": "ko/pe/posts/y2019-1-08.html",
+    "body": "bodies/y2019-1-08.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 1교시 8번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/ebc6acde85830884b3bc583deab5e91c7ccc1a698efbb5eaf11a980f95123f6d.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-RX-001",
+      "C-RX-014",
+      "C-RX-032",
+      "Y2022-1-04",
+      "Y2025-1-10",
+      "C-RX-004"
+    ],
+    "body_sha256": "4b420cc83de58a8821c145a8d8401aa48f7e5f05fcea606682c7fefcfdaf9277",
+    "assets": {
+      "assets/images/ko/pe/c1185c4fcf15d3f2f66cd0d39e37572108aabbf0cfda3171d116b439b3ce50a4.webp": "37f29561aad21ac06a24229834d3a7e5b61733958a786f82967140d3a3e67160",
+      "assets/images/ko/pe/ac722768c2f0cedc1adb4298cc92ac5884c99418e93469735526434f00df7b9f.webp": "ec9cf3f132bf68f0cc0e69f2ff47c88b4bcfffa5be2711e3b1dab12b2e862663",
+      "assets/images/ko/pe/ebc6acde85830884b3bc583deab5e91c7ccc1a698efbb5eaf11a980f95123f6d.webp": "4513ab1b665c4abcfbb287bef85b1422518a0d44e6f7b72b2a48873a11e06a78"
+    }
+  },
+  {
+    "id": "Y2019-1-09",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 1교시 9번] 중성자 감속비(Moderating ratio) — 흡수 대비 감속 효율 ξΣs/Σa",
+    "domain": "노물리·동특성",
+    "year": 2019,
+    "session": 1,
+    "question": 9,
+    "url": "ko/pe/posts/y2019-1-09.html",
+    "body": "bodies/y2019-1-09.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 1교시 9번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/e1f093ae0af395456eda5fa1671a9ef3165ba706b8d592f13e11c9fcc2f9822d.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-RX-019",
+      "C-RX-007",
+      "Y2022-1-01",
+      "Y2026-1-04"
+    ],
+    "body_sha256": "28f92a93b8dcbe16c82fb8e5b9b6443a8fbd72b2e68c085e16b5c3cddd049ec0",
+    "assets": {
+      "assets/images/ko/pe/82179bea7f9d4348b294c50672a602e89d1b3d6c42334f3a961852ca24c92642.webp": "f14dd5aaf742bfa341f81e349892cfff445730a110fef1d340caa28775c952b5",
+      "assets/images/ko/pe/f372c68b70879125192715667b7c808baee7f34117e9bf3ec6c34ab0f88df32b.webp": "6f95bbfc302a0dc274b4b0da9fb43886b9db4312dfd97025b89e7be610a7ebf0",
+      "assets/images/ko/pe/e1f093ae0af395456eda5fa1671a9ef3165ba706b8d592f13e11c9fcc2f9822d.webp": "a1e931c9e755a3360472756a32325436abe9da63d99fc6f7b7b43f0939300be4"
+    }
+  },
+  {
+    "id": "Y2019-1-10",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 1교시 10번] 원격정지실(Remote shutdown room) — 주제어실을 떠나도 원자로를 정지·유지하는 곳",
+    "domain": "계통·설비",
+    "year": 2019,
+    "session": 1,
+    "question": 10,
+    "url": "ko/pe/posts/y2019-1-10.html",
+    "body": "bodies/y2019-1-10.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 1교시 10번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/17d7879283c666c48dbdbe4e73f57d034f1f705ab4705767fb0f514e77d7ea9f.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SY-028",
+      "C-SA-018",
+      "Y2026-4-06"
+    ],
+    "body_sha256": "5f153b72cdf11cfd0283d2de0273419fb77e0980ce16fedc7f49eaeb9bbc381f",
+    "assets": {
+      "assets/images/ko/pe/ea6c04e953fb3c83ea2f3ba8ec5b75ff83b479ea47d534d1e0398f274a867a30.webp": "2db0ce09854632e44bdaaf7ba3fc9edfb5fb8722d2ec699952001d985da5c8dd",
+      "assets/images/ko/pe/8857f18a564c557388655599a419a0eb38d2dd24e377655c43b51e726330bd94.webp": "05a804f21bf35cb82d3ddcd417dbde40516cce519f509669524518578d1a05e0",
+      "assets/images/ko/pe/17d7879283c666c48dbdbe4e73f57d034f1f705ab4705767fb0f514e77d7ea9f.webp": "f2fafb4e1a5e50493a09e06bbfc956c345c8d739c0c87cd63def9186122514ca"
+    }
+  },
+  {
+    "id": "Y2019-1-11",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 1교시 11번] 경수로형 원전의 가동중검사(ISI) 대상 및 주기 — 등급별 검사범주와 10년 주기",
+    "domain": "운영·규제·품질",
+    "year": 2019,
+    "session": 1,
+    "question": 11,
+    "url": "ko/pe/posts/y2019-1-11.html",
+    "body": "bodies/y2019-1-11.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 1교시 11번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/06e9ee1f478f19a1a3c3c327b73e1e0519204014774bff2bcd1ff06f10e7b6d7.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-OP-010",
+      "Y2022-1-07"
+    ],
+    "body_sha256": "d99eba63b3d114b9a7b4b0f6845ec1972ed610a9eb4febd512e947ac50a0a0db",
+    "assets": {
+      "assets/images/ko/pe/a1ed7df39971ae9c8705b014b27c7af793a92a0cdf867b906e556c19256f9be3.webp": "2c7048d7b9325a55b24aad1603f455b427e00893525aa9a382c253afbfbade85",
+      "assets/images/ko/pe/65cb08dd69eb56bdfe75d495873ad326ad8faf82fa3231fb849178d10cb85a72.webp": "111b957d0e511c372fb52cf1490d77cae5a2569ef949beb04fe33b6333dce5f4",
+      "assets/images/ko/pe/06e9ee1f478f19a1a3c3c327b73e1e0519204014774bff2bcd1ff06f10e7b6d7.webp": "67f8fd3b9f28e2ef3bef77b3b3e0ee05d45935604aa0cc0cff79541440b97657"
+    }
+  },
+  {
+    "id": "Y2019-1-12",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 1교시 12번] 후열처리(PWHT)와 모의후열처리(SPWHT) — 부품의 열처리와 시험재의 열이력 모사",
+    "domain": "핵연료·재료",
+    "year": 2019,
+    "session": 1,
+    "question": 12,
+    "url": "ko/pe/posts/y2019-1-12.html",
+    "body": "bodies/y2019-1-12.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 1교시 12번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/5319aeac84595fbca3cbbe26d2f04a27d6aed74b3c99058cffe1a3a0dfbd7fdd.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-FM-018",
+      "Y2025-1-02"
+    ],
+    "body_sha256": "e219fa2913163218a711058b7229a06fda3872d93bea38ee1471b4a517e881c4",
+    "assets": {
+      "assets/images/ko/pe/f70a702092ac926e8aedd7a1bef64f547b6486c3a8b1ca64a73972266d207b3a.webp": "ab2bf0cd5d95a5421654fc84b866a2860789db7f4f14163abe85198c56129f0d",
+      "assets/images/ko/pe/67b4fc8f6ad6f24092af632bb245db7a2b98a5ba0cc2abd4d121a547d1145983.webp": "40cc264106d0752180d0cfecacba7e9ec458d2fe8f4e552a0969b2925135e3b9",
+      "assets/images/ko/pe/5319aeac84595fbca3cbbe26d2f04a27d6aed74b3c99058cffe1a3a0dfbd7fdd.webp": "c864727a4a6b2bfef14fac27f33f53ebee0762ea1b7c2f1ff85e13c7085504d2"
+    }
+  },
+  {
+    "id": "Y2019-1-13",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 1교시 13번] 선행 핵연료주기의 공정과 우라늄 화학형태 — 경수로와 중수로의 갈림길",
+    "domain": "폐기물·연료주기·해체",
+    "year": 2019,
+    "session": 1,
+    "question": 13,
+    "url": "ko/pe/posts/y2019-1-13.html",
+    "body": "bodies/y2019-1-13.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 1교시 13번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/50f5afc556b298b1353c667c0ad15ec56dfc276d6ec4439734f1605b8106f16f.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-WD-019"
+    ],
+    "body_sha256": "3abee698d3810831e31385d6f5c81d081f073d46cb4c3fd946ed239fbffdf094",
+    "assets": {
+      "assets/images/ko/pe/17289b3fca0ecaf2944bbf5f9ae6ee30d4fbb4b891e6b3d9ec3c709621831ea2.webp": "d66e1f4401968471dfb06c06c0d0a74be6efe2fdb64d71cf94b6823e50e38efc",
+      "assets/images/ko/pe/b966d736ef70d4f25c968306f54d70ff7827ca64b0c44c07e4c2dfc601590b9c.webp": "7b605382739b2e6b0aca59eb2b44c85418a41998ff82dc2abeccceafc5fdee33",
+      "assets/images/ko/pe/50f5afc556b298b1353c667c0ad15ec56dfc276d6ec4439734f1605b8106f16f.webp": "643ee16ee365739eb3fa9710bf7ba8a9500c6dc852760ec76e9861638788849f"
+    }
+  },
+  {
+    "id": "Y2019-2-01",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 2교시 1번] U-235 소모량·U-236 생성량·잔류 농축도 계산(1,400 MWe, UO₂ 100 t)",
+    "domain": "핵연료·재료",
+    "year": 2019,
+    "session": 2,
+    "question": 1,
+    "url": "ko/pe/posts/y2019-2-01.html",
+    "body": "bodies/y2019-2-01.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 2교시 1번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/03023db4dc067c67b2f92326c09c22d594ce5fd260792f25b86fd4e57551ddb4.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-FM-007",
+      "Y2020-3-06",
+      "Y2026-4-05",
+      "Y2024-3-04"
+    ],
+    "body_sha256": "90bb726b69f360cab127c523b8b2d06f85376f5ccf5ec35566a0671d5866bc94",
+    "assets": {
+      "assets/images/ko/pe/4c3432384e1d828d723d8578c5109bec74c0426b98f434c8699bad2741d634e3.webp": "2b5b222404b563a60a22b9709795ef2cf2bb6b4da1990810442326cf8d2e0fe2",
+      "assets/images/ko/pe/7fe7a4d66b2381153a536b30b0f37797192ff931e337ffe67d2b6f0772bf8cf9.webp": "1049fc469eb9516d1535bdaaf5767dd93e3b5755468822d43b5d344ce45bae79",
+      "assets/images/ko/pe/03023db4dc067c67b2f92326c09c22d594ce5fd260792f25b86fd4e57551ddb4.webp": "865f5bb76b0d4b050a92c182cd7dc19149ee6b19cc03d78f63c6d6f344d6c2df"
+    }
+  },
+  {
+    "id": "Y2019-2-02",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 2교시 2번] SBO+LBLOCA 중대사고 — CFVS 개방까지 격납건물 내 현상과 설비 역할",
+    "domain": "사고·안전해석·중대사고",
+    "year": 2019,
+    "session": 2,
+    "question": 2,
+    "url": "ko/pe/posts/y2019-2-02.html",
+    "body": "bodies/y2019-2-02.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 2교시 2번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/7b727e009ecfe2d8b9a02cfb69ede86c80a40dafaec842fe174f8ed9f591ed3b.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SA-019",
+      "C-SA-003",
+      "C-SA-013",
+      "C-SA-009",
+      "Y2022-4-05",
+      "Y2025-4-06",
+      "Y2026-3-04"
+    ],
+    "body_sha256": "5b4501c22b930c5d9560e3cc9b86ef367455e3405c20f8293922d88be2e09fe7",
+    "assets": {
+      "assets/images/ko/pe/1741a76adc88b05d1a4db5fc0460e98475228f1ab8c9647df1c6d5d1c678314b.webp": "c902fcb82c7d896974ad1b3ce6712d218b5a36849861f558e1ccaacb294ebddc",
+      "assets/images/ko/pe/b204d2e6fbbae888864637a8f8969f6672f5ba2e6f31a8dd68ab0838e0c7c772.webp": "4e7e4ba8ecc4cb9b082a630abbe82134cfa0c7e007d75ef81623a6b525fd4b77",
+      "assets/images/ko/pe/7b727e009ecfe2d8b9a02cfb69ede86c80a40dafaec842fe174f8ed9f591ed3b.webp": "4b2a51fc44d0cf112f1a3cfa83f12c75c212ba905d25496c8dd7f525d00c8858"
+    }
+  },
+  {
+    "id": "Y2019-2-03",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 2교시 3번] 신고리 5·6호기(현 새울 3·4) 설계개선 — 신고리 3·4호기 대비와 목적",
+    "domain": "정책·경제·노형",
+    "year": 2019,
+    "session": 2,
+    "question": 3,
+    "url": "ko/pe/posts/y2019-2-03.html",
+    "body": "bodies/y2019-2-03.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 2교시 3번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/c222afb40061763cb015f8e4f68b937baa973a87fa6bdb1ee808cf0a5efdc3c2.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-PE-002",
+      "C-SA-013",
+      "C-SY-005",
+      "C-SY-003",
+      "Y2026-3-04",
+      "Y2022-4-05"
+    ],
+    "body_sha256": "eb81db980effa3ef03ca0abcc911f819621e1b53b06735a20f7c0c6f11968807",
+    "assets": {
+      "assets/images/ko/pe/d16ab378482908b7fd765d127cc40d977f28732f1b7370317bd8dc9d31ebf2bd.webp": "07698d22d6c93797b5fa3436e7ec2eeda4c600188296dfbd4ad47dec85721fed",
+      "assets/images/ko/pe/808c8fdfc1cd172a068bb443c21b1dfdb0ad17512c0d2fbfb0c79cae6637675c.webp": "ff3c84c7a02b44a54d8b3601f437eaaabe405a6d30f64c193dbc25e531dbbc96",
+      "assets/images/ko/pe/c222afb40061763cb015f8e4f68b937baa973a87fa6bdb1ee808cf0a5efdc3c2.webp": "f159fa975124fbce2b37db713c4b2d11b0720e3db548ee474b266c41fc4564ad"
+    }
+  },
+  {
+    "id": "Y2019-2-04",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 2교시 4번] 사고관리계획서의 중대사고 예방단계 — 목적, 다중고장사고 9종, 극한재해",
+    "domain": "사고·안전해석·중대사고",
+    "year": 2019,
+    "session": 2,
+    "question": 4,
+    "url": "ko/pe/posts/y2019-2-04.html",
+    "body": "bodies/y2019-2-04.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 2교시 4번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/3b69b25dc24a529a0f5e636b81f8c8545ef94f8570c5713183afbb8a69725b10.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SA-001",
+      "C-SA-017",
+      "C-SA-023",
+      "Y2026-4-04",
+      "Y2026-1-03",
+      "Y2025-4-02",
+      "Y2022-4-03",
+      "Y2024-2-03",
+      "H2019"
+    ],
+    "body_sha256": "98194d93e0c0f29d0c1e6b5a52d238cf9389a113b7a4fe8a46152322774666f7",
+    "assets": {
+      "assets/images/ko/pe/662b26da74578d492f3449e0ad941feeb5fe674a5a339118a5e09454012d94e6.webp": "87984b4db87533e05d8052811b589c81265b6d464987a30a4005761a1380c616",
+      "assets/images/ko/pe/45d7aedc8caf1b8e0a9b61bba44878451c7edfce49ff34ecb25c1d0db5f1bd6a.webp": "fa72864544a084fa6fd68247c91a7e4630a56b7ce777411035d4fdf37ea4d092",
+      "assets/images/ko/pe/3b69b25dc24a529a0f5e636b81f8c8545ef94f8570c5713183afbb8a69725b10.webp": "8dff6373fcfad885119b99742acdb6e332c9629b5260f1a81e34badea469dfb4"
+    }
+  },
+  {
+    "id": "Y2019-2-05",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 2교시 5번] 연소에 따른 피복관·소결체 직경 변화 — 줄어드는 관, 부푸는 펠릿, 그리고 간극 폐쇄",
+    "domain": "핵연료·재료",
+    "year": 2019,
+    "session": 2,
+    "question": 5,
+    "url": "ko/pe/posts/y2019-2-05.html",
+    "body": "bodies/y2019-2-05.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 2교시 5번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/7818b61d976b3ae543c66ec0776cb2493ce045082ab9bfbe7dbf551a13c170ab.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-FM-010",
+      "C-FM-006",
+      "C-FM-012",
+      "C-FM-011",
+      "Y2023-3-02",
+      "Y2020-1-11",
+      "Y2025-1-05",
+      "H2019"
+    ],
+    "body_sha256": "da916048ea253164ae1105e2429ce607ee19fd1155b1993926655ee48772f9fd",
+    "assets": {
+      "assets/images/ko/pe/cd9b02c0947b844ae8ef912ea0be939fb87aec54ed184882157428da99463f1a.webp": "45e3ad67eaba8413bb759716929000375e335f365cc572488a1fdc70f496d09d",
+      "assets/images/ko/pe/6096aa4f14328cdb731a48ade3502c5e9f37ae06d8eccd204d96f70c764f09d2.webp": "469a75a902a5d40c233b10f99f5c67fa3089bf7f46f4f542367c7e708e72b523",
+      "assets/images/ko/pe/7818b61d976b3ae543c66ec0776cb2493ce045082ab9bfbe7dbf551a13c170ab.webp": "1150d64a6d350c4fd2ead680553308245a699cceea1504a24bd3ae4ab3593764"
+    }
+  },
+  {
+    "id": "Y2019-2-06",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 2교시 6번] 기자재 구매 품목의 CFSI 검증 — 목적, 근거, 대상, 구매부터 입고까지",
+    "domain": "운영·규제·품질",
+    "year": 2019,
+    "session": 2,
+    "question": 6,
+    "url": "ko/pe/posts/y2019-2-06.html",
+    "body": "bodies/y2019-2-06.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 2교시 6번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/b7986b9941f3af0c45a5644bc39ebb3c0add687b8f83da561cee2d048e8e721b.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-OP-008",
+      "Y2020-3-02",
+      "H2019"
+    ],
+    "body_sha256": "8f12da3f4c569e261db92a79fb2605991006dc73bc7a981671303054637c518f",
+    "assets": {
+      "assets/images/ko/pe/1a61e6b12a8ce8df90239a1260ed457b21205b6b90c6456d9f90b3ee24b4bf8b.webp": "9ef6d910bcdeb77d499f0650dc8b8101245863602bae10a5340734243328da1b",
+      "assets/images/ko/pe/2d613248a2fa3dedaabeb1530fffa161d1bed3a1a879a0cbcf6cced8ff87f65d.webp": "7ca96dc3e582b20fc7f2a57ff58e7007a7ef7395594d9de07549e8321991a89d",
+      "assets/images/ko/pe/b7986b9941f3af0c45a5644bc39ebb3c0add687b8f83da561cee2d048e8e721b.webp": "da9b3acf8c15d8d60555c9b60ad28ebdead25e329e87e72d6cd175609871830d"
+    }
+  },
+  {
+    "id": "Y2019-3-01",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 3교시 1번] 제논-135의 생성·소멸, 평형 농도, 기동 3일 후 정지 시 변화와 재기동 불능시간",
+    "domain": "노물리·동특성",
+    "year": 2019,
+    "session": 3,
+    "question": 1,
+    "url": "ko/pe/posts/y2019-3-01.html",
+    "body": "bodies/y2019-3-01.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 3교시 1번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/04902b2c77a4a0146414156ae885fc95d09d7d2cc264d87ca021b8ef8afca7e7.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-RX-008",
+      "C-RX-022",
+      "C-RX-011",
+      "Y2025-2-02",
+      "Y2025-1-07",
+      "Y2020-4-02"
+    ],
+    "body_sha256": "a19b7d0acef4399f3ebc2e80ba7317007d230d6a254b81235c37c9abfbb052fa",
+    "assets": {
+      "assets/images/ko/pe/a8b0f1229822da69821d71b1f53c53c708c74af5af66b8372eaccb81ec2b5488.webp": "05fc8683360700cb97a592e7531ee9d146b7130bff64520460af11ba3f7ae5e4",
+      "assets/images/ko/pe/ae73b6df23db7ecbb2a1bd4c68923c18ee579094b68278a07ef0aeab244d13e2.webp": "b9090cbbcc55b14ddeb98d28c44dc653e9ba79295220011de53ba73a62b1e14f",
+      "assets/images/ko/pe/04902b2c77a4a0146414156ae885fc95d09d7d2cc264d87ca021b8ef8afca7e7.webp": "15ff67334a78ed85ceccb66b44b3e76852957b4bc8137ebf3a4daf70b886859f"
+    }
+  },
+  {
+    "id": "Y2019-3-02",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 3교시 2번] 음의 MTC로 설계한 가압경수로가 주기초에 양의 MTC를 가질 수 있는 이유",
+    "domain": "노물리·동특성",
+    "year": 2019,
+    "session": 3,
+    "question": 2,
+    "url": "ko/pe/posts/y2019-3-02.html",
+    "body": "bodies/y2019-3-02.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 3교시 2번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/f60fd5c94c5bcc804e2f7485366791091e718012e11be65d50cc562aa68eb159.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-RX-006",
+      "C-RX-002",
+      "Y2026-3-02",
+      "Y2023-3-05",
+      "Y2023-4-06",
+      "Y2020-2-01"
+    ],
+    "body_sha256": "f55c3b6c99f524963318f026904407db5d712dd9dddceeddcbf001cc0d7f4ebf",
+    "assets": {
+      "assets/images/ko/pe/d356680811cdce155130366b8e32d1074fb307b1db6b1b0763189529a8b7be8a.webp": "a569da0aa3cf1ecb74b206db6a60ea8794b058a2060e702ba32d00852b098aab",
+      "assets/images/ko/pe/5843145a51f2ad189bf6672fb5df09210bf682324dfd9caa1e80c2bca88c7dbd.webp": "528e6a91763dadcdf78e5606206ca06949632111f9f0b6888a2061a41f4b927b",
+      "assets/images/ko/pe/f60fd5c94c5bcc804e2f7485366791091e718012e11be65d50cc562aa68eb159.webp": "88ff6f2a2968fd6bafc1df027b7231d7733d776056feb10bc2474cb3dc59f229"
+    }
+  },
+  {
+    "id": "Y2019-3-03",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 3교시 3번] 사용후핵연료의 조성, 운반용기 안전성 시험, 부지 내 건식저장, 운반 핵연료 선정 기준",
+    "domain": "폐기물·연료주기·해체",
+    "year": 2019,
+    "session": 3,
+    "question": 3,
+    "url": "ko/pe/posts/y2019-3-03.html",
+    "body": "bodies/y2019-3-03.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 3교시 3번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/b50ab7d256b17dadef224cd7a83e6c66bfc97ce8ccdc5fee1eeefd2c44d407c9.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-WD-002",
+      "Y2023-1-06",
+      "Y2024-4-02"
+    ],
+    "body_sha256": "1be2b68dc2375eae24958253d98d4f7cd263194afc7fd0216aa71358f7f2ac82",
+    "assets": {
+      "assets/images/ko/pe/b5662c533f912182521aafc03fedd2fdcfca26b070225012add15cca7a44d1d9.webp": "a8d5e70a8e3d3355213cd27a092c22899f29d7052456646903d999aed2a0eabe",
+      "assets/images/ko/pe/4307e5dfeeb82e88ee4970194ac4238a6986b31ad56b9c044bec205312c98e66.webp": "306a59aa0369390426d24020638462c1b26f8d1bf08b14f720abae13f8bc2a9f",
+      "assets/images/ko/pe/b50ab7d256b17dadef224cd7a83e6c66bfc97ce8ccdc5fee1eeefd2c44d407c9.webp": "3b50d05c0d6f40a798be9d566b37dc2a48254a2801f0689e1c730d609575b301"
+    }
+  },
+  {
+    "id": "Y2019-3-04",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 3교시 4번] 핵연료 건전성 진단 — 운전 중 냉각재 감시와 교체기간 핵연료검사",
+    "domain": "핵연료·재료",
+    "year": 2019,
+    "session": 3,
+    "question": 4,
+    "url": "ko/pe/posts/y2019-3-04.html",
+    "body": "bodies/y2019-3-04.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 3교시 4번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/3fa58f4662e80384f54cd544e87640a171f2c7efcb3f8897028c48ef55f0469b.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-FM-009",
+      "Y2022-2-06",
+      "Y2023-1-12",
+      "H2019"
+    ],
+    "body_sha256": "370a1730fd091e8049c32b0e7d9139df168cdd8f28e977424721f8425f808fd9",
+    "assets": {
+      "assets/images/ko/pe/209fa2aea04e0fa3ba2e98799e3bdbaff27743ded21de95c300daf8164be6167.webp": "8ef409804566a835e89e283a49737cf469ea38165f3816591aaf720bd89368d3",
+      "assets/images/ko/pe/5ed7c775ff8cbe7b667b7b547af26c536d98078d9b5504ebcb4dedaa54de9fc1.webp": "44251af338a64db62db3e6d0ab6c7523e158f6ee25dd27de79655e1a37a1ed2c",
+      "assets/images/ko/pe/3fa58f4662e80384f54cd544e87640a171f2c7efcb3f8897028c48ef55f0469b.webp": "975f8509f85b3f065ce9e3fe143122f7c9033d407f808c70931fbbcf48ad8ca2"
+    }
+  },
+  {
+    "id": "Y2019-3-05",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 3교시 5번] 적색비상 때 설치·가동되는 기구와 조직 — 중앙본부부터 비상대책실까지",
+    "domain": "방사선·방호·비상",
+    "year": 2019,
+    "session": 3,
+    "question": 5,
+    "url": "ko/pe/posts/y2019-3-05.html",
+    "body": "bodies/y2019-3-05.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 3교시 5번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/cd4d2a514ac48c7bc26b808db8ed1126ca9a6873461250d07733ab9d0e7439ae.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-RP-001",
+      "C-RP-004",
+      "Y2023-4-04",
+      "Y2020-4-06",
+      "Y2025-2-05",
+      "H2019"
+    ],
+    "body_sha256": "8c2700ef1c8ebc125a9d1bb7ca72f2fcf31370ead436bab87c0e9015714317f0",
+    "assets": {
+      "assets/images/ko/pe/4bcbee4101dfc3bbab44e2843f6685c621d3728941f6fcc86c48beab83e1246f.webp": "104fbe77914ce701c90434fd466208df56cd3e21b199a682dd2a9536ac6339ff",
+      "assets/images/ko/pe/bd3d92f0fea385ab843d8e4fcd010b8e1f7e222267cccddfa3c1957fd36491cd.webp": "e9627ead9cbccbe0700044834dabf4f35f3f2161352fe269b5a27898869b0f88",
+      "assets/images/ko/pe/cd4d2a514ac48c7bc26b808db8ed1126ca9a6873461250d07733ab9d0e7439ae.webp": "6237532dcdfc9205a5c949b71c4114f0222ce21f7d0c5aceeac2b616eae8fbf3"
+    }
+  },
+  {
+    "id": "Y2019-3-06",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 3교시 6번] EDG·AAC DG·이동형발전차의 공급 모선, EDG 자동기동 조건, 교류전원 운전제한조건",
+    "domain": "계통·설비",
+    "year": 2019,
+    "session": 3,
+    "question": 6,
+    "url": "ko/pe/posts/y2019-3-06.html",
+    "body": "bodies/y2019-3-06.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 3교시 6번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/d9c0b54cdf4027c927f01948c0da0120ef30b1f0bbf284d116d28086caf60d33.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SY-003",
+      "C-SA-009",
+      "Y2025-3-06",
+      "Y2021-1-09",
+      "Y2021-2-03",
+      "H2019"
+    ],
+    "body_sha256": "e6a618ad06b7599b6efd9b2a4dd151c3965234d78f1c0a6ca406c6815d494ef5",
+    "assets": {
+      "assets/images/ko/pe/5ce2765d8f116d4e6fff311460cb5c4f08c46e1f6088b39b5ed6155635337e5a.webp": "4b3f27f32aeb21e229aade48130c440af0497c262d2c7bfdc7d8aebb30e7e516",
+      "assets/images/ko/pe/552d09f48c9d3970b4fd17d4b4e0b5fbbca3b4e12410418e019c24e09d434a6d.webp": "28184d8af67935c969df3175fc75d1650f0b34e22949a5b845131a79a0eb1617",
+      "assets/images/ko/pe/d9c0b54cdf4027c927f01948c0da0120ef30b1f0bbf284d116d28086caf60d33.webp": "b6fc6a24153874a82eefc99880e7f8a1a9a6926591dea578445bffc187452937"
+    }
+  },
+  {
+    "id": "Y2019-4-01",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 4교시 1번] 원자로주기와 기동률 — 정의, 관계식 26.06/T 유도, 출력 감소 계산",
+    "domain": "노물리·동특성",
+    "year": 2019,
+    "session": 4,
+    "question": 1,
+    "url": "ko/pe/posts/y2019-4-01.html",
+    "body": "bodies/y2019-4-01.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 4교시 1번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/ccdafd44432d313b622590f686026485d2c5c29f30b5c944ccbddefd96db4c33.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-RX-004",
+      "C-RX-001",
+      "Y2021-3-06",
+      "Y2023-3-06",
+      "Y2023-4-06",
+      "Y2025-1-10"
+    ],
+    "body_sha256": "4ea21a030ec8b34d93b375a3ebc3c55a665bd28bb68fac8390ecd49fde408f90",
+    "assets": {
+      "assets/images/ko/pe/e38707948d0f6363f3b8a70cd0e562d02adc1f8689a301937bc44f82874bd055.webp": "1c794b8cd251c8205322136d9061c5ce56544a50d9f58355886fde675ba8cad8",
+      "assets/images/ko/pe/b41830f059433b634537d57def640d3c761bbafa34eb1b8c966ac9d034820dd3.webp": "60e22dc789f0f3a56deecca86df883ec5b28ff49afc7f34499a503ea6ad69e38",
+      "assets/images/ko/pe/ccdafd44432d313b622590f686026485d2c5c29f30b5c944ccbddefd96db4c33.webp": "7a46072c8781278cea9851e23b428535e19de8e801c7a0fac2273ba8357d504e"
+    }
+  },
+  {
+    "id": "Y2019-4-02",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 4교시 2번] 원전 사건 보고 — 방법·절차, 사례별 보고 시한과 등급평가 대상, 등급 분류체계",
+    "domain": "운영·규제·품질",
+    "year": 2019,
+    "session": 4,
+    "question": 2,
+    "url": "ko/pe/posts/y2019-4-02.html",
+    "body": "bodies/y2019-4-02.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 4교시 2번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/223e4bdcb62660df3f6e2827994ac6dd42e035696f92423061c42a86f90839a6.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SA-016",
+      "C-OP-001",
+      "C-OP-002",
+      "C-OP-007"
+    ],
+    "body_sha256": "7295b9f94be159f7987ffceacfc4eaf206630cd073a8b0465e70d92c71141e03",
+    "assets": {
+      "assets/images/ko/pe/a0efb4faa6b158aba7501e4ee2aca2176c966929a6cf47d84781efbb678fd4d3.webp": "62e5fc9e77f8b30ec6a8a61e80b96c7ed55cd98f84476310fc26246ff09b0ca2",
+      "assets/images/ko/pe/47ddb2a475d7e05af1eb9ba304e77d58a1343d54236a7ab3a1c5699836d51a1a.webp": "07fb04a3fb100c26c095a2ef80b4dd558a0a9972746fad3a062cad29f9e4ebf5",
+      "assets/images/ko/pe/223e4bdcb62660df3f6e2827994ac6dd42e035696f92423061c42a86f90839a6.webp": "41384f7bf4b54e0e136442e2ec63426a1a29501aa9bb0181b68810d6bc8040db"
+    }
+  },
+  {
+    "id": "Y2019-4-03",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 4교시 3번] 한국표준형원전(OPR1000) 안전주입계통 — 구성 기기별 기능",
+    "domain": "계통·설비",
+    "year": 2019,
+    "session": 4,
+    "question": 3,
+    "url": "ko/pe/posts/y2019-4-03.html",
+    "body": "bodies/y2019-4-03.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 4교시 3번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/fb244418fe4376593076549a84e646e1ca5079906f9aa9cf3c04bb25c4abc861.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SY-008",
+      "C-SY-011",
+      "Y2025-1-01",
+      "Y2023-4-03",
+      "Y2024-1-02"
+    ],
+    "body_sha256": "e713fb338f65d9397f3ccef6a31955b72d807f9248e33fd8000c3a1a803a6099",
+    "assets": {
+      "assets/images/ko/pe/2a5c55ed9f58d6b1d1791ba1cfd347e4e2ca9fccc541bd831b9311ccbd761f54.webp": "6df207c2740b811425dcf119a4149c6e4724dfdcf563ab5a173267b7570ad19c",
+      "assets/images/ko/pe/4dd24010b6ef15f327e6affa453279ccffd69d638b4f38cf9eef419d02103a08.webp": "8ce59a85767ff861c1e93ef4b763889d92ea1c2536646e7223413d563de24f9b",
+      "assets/images/ko/pe/fb244418fe4376593076549a84e646e1ca5079906f9aa9cf3c04bb25c4abc861.webp": "fc949c34e52d5a7b48c06cc0cd4f2309ca7fcabe4c253a141a0fdd295e2d48ac"
+    }
+  },
+  {
+    "id": "Y2019-4-04",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 4교시 4번] Zr 합금 인장곡선에서 비례한도·항복강도·탄성계수·인장강도·연신율 구하기",
+    "domain": "핵연료·재료",
+    "year": 2019,
+    "session": 4,
+    "question": 4,
+    "url": "ko/pe/posts/y2019-4-04.html",
+    "body": "bodies/y2019-4-04.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 4교시 4번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/78dd752a8d24fcf4f1061cdb8a773dc96c7a9eac776fdc558a6f75ba4d006056.webp",
+    "date": "2026-11-19",
+    "related": [
+      "Y2025-4-03",
+      "C-FM-003"
+    ],
+    "body_sha256": "d89ece258067bd6a25da2cf7327497fad3066c7b2b659a199a894fe7c73b1f93",
+    "assets": {
+      "assets/images/ko/pe/3a39b95631812c0ecc06c87833b3fb46339c77ed0fb2af4b50793f563c286c03.webp": "2f47178c21d82670db9de4abb5905651f6b8f0425bfd804a207bef5d711ded75",
+      "assets/images/ko/pe/b0eecd8d6e3e4226e977e6fb625cd081b5cc720be521442e976bbeb07adee840.webp": "9e6c7af42cbe36aa86a1f95ce69fe8d2d004a97d87a3d6fb979f49276d9b5542",
+      "assets/images/ko/pe/78dd752a8d24fcf4f1061cdb8a773dc96c7a9eac776fdc558a6f75ba4d006056.webp": "c7da87621657380fa9d4a8490823f637e95c6f131f5d228cdbb2cb51fb6963cf"
+    }
+  },
+  {
+    "id": "Y2019-4-05",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 4교시 5번] APR1400 격납건물의 수소 생성원과 가연성 기체 제어 수단",
+    "domain": "사고·안전해석·중대사고",
+    "year": 2019,
+    "session": 4,
+    "question": 5,
+    "url": "ko/pe/posts/y2019-4-05.html",
+    "body": "bodies/y2019-4-05.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 4교시 5번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/36fbb6be6c98ace4dc619a4e5761be3c62b71264ca2c1fdf56766be9058d0165.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-SA-003",
+      "C-SA-008",
+      "Y2022-2-02",
+      "Y2024-1-11",
+      "Y2026-3-04"
+    ],
+    "body_sha256": "218edde486627629eb0f8d5c110b919239ffc34092bc5d9ad526cb595f52f136",
+    "assets": {
+      "assets/images/ko/pe/dd904a7e9959d6aa7d1dd256a984a45275d7ae68185edec85f4518023ea66173.webp": "bb9fbaf8471271742203f0f4092fbce9231014f2bfdf9adead8b86d10c074901",
+      "assets/images/ko/pe/509c7cc084744b01cd720eedd300df1512d81d80ff43ee1b868fc4f052f0573b.webp": "5f2cdf6eea991d87bf4d383377d60ac2847af9026e614de8ed246cd8b9ce22c6",
+      "assets/images/ko/pe/36fbb6be6c98ace4dc619a4e5761be3c62b71264ca2c1fdf56766be9058d0165.webp": "6e903f9cd199a36498a42c414424908c7fd429d9b5f2aefd89b39a05f3bc390f"
+    }
+  },
+  {
+    "id": "Y2019-4-06",
+    "group": "exam",
+    "title": "[원자력발전기술사 2019년 4교시 6번] 원자로압력용기 감시시편 — USE·RTNDT 변화, 선별기준과 추가 정밀시험, 선배율, P-T 곡선",
+    "domain": "핵연료·재료",
+    "year": 2019,
+    "session": 4,
+    "question": 6,
+    "url": "ko/pe/posts/y2019-4-06.html",
+    "body": "bodies/y2019-4-06.html",
+    "summary": "출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 4교시 6번",
+    "thumbnail": "/GlobalNuclearNews/assets/images/ko/pe/319d61730f096e45faa7b751a7e41ff2c923333503ed92ba2faa0eb1704ee5fa.webp",
+    "date": "2026-11-19",
+    "related": [
+      "C-FM-003",
+      "C-FM-002",
+      "Y2025-4-03",
+      "Y2026-4-01",
+      "PUB:060"
+    ],
+    "body_sha256": "18c9e7279a2a488e02c3a8667739f7fb1c7389c6440b3d08868237fed71dc55b",
+    "assets": {
+      "assets/images/ko/pe/f023b5ea1b25ecaf641f55100b5a67a87ec208ef45ad6ebce6336102734e0c28.webp": "77974cf4d418b9d83f5e3eb6206af5bf2dd2c0922965fc8a22c10c542de4643c",
+      "assets/images/ko/pe/16606a6c80600d14a7d601689fb9328afa036fc75d8c8ee9003b52e73d2417a9.webp": "3bfc19d8aa78f6636f93627e5db805dd5373b98534a6b7dc28e362353c43476b",
+      "assets/images/ko/pe/3e0e7e3e9c3a83030b597879e3845e5bf9ccbb3fa9992c19bf849efb1df32b46.webp": "df44b229fa466ee2fe59130fde26c438c71b8e0c3153eb22a961eb83b162ac27",
+      "assets/images/ko/pe/319d61730f096e45faa7b751a7e41ff2c923333503ed92ba2faa0eb1704ee5fa.webp": "af9c4a7e0e37350acf55694c78882c0e0430ebd16359871f867d693ad0e2db0e"
     }
   },
   {

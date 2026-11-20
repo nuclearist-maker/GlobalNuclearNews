@@ -1,0 +1,181 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 4교시 6번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>원자로압력용기의 중성자 조사로 인한 기계적 건전성을 감시하기 위하여 감시시편(Irradiation specimen)을 설치하고 주기적으로 인출하여 파괴시험을 수행한다. 다음을 설명하시오.
+가. 중성자 조사가 최대흡수에너지(Upper shelf energy, USE) 및 기준 무연성 천이온도(RTNDT)에 미치는 영향
+나. 상기 시험시편의 파괴시험 선별기준(Screening criteria) 및 선별기준 불만족 시 수행하는 추가 정밀시험 항목
+다. 중성자 선배율(Lead factor)
+라. 압력-온도(P-T) 한계 곡선
+마. 감시시편 설치 위치</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>감시시험이 <strong>무엇을 재고(가), 무엇과 비교하고(나), 왜 앞서 조사하며(다), 결과를 어디에 쓰고(라), 어디에 두는지(마)</strong>를 한 흐름으로 묻습니다. 샤르피 천이곡선이 오른쪽으로 가고 위 선반이 내려앉는 그림을 그리고, ΔRTNDT를 41 J 온도 차로 읽는 법을 쓰는 것이 출발점입니다. 나에서는 선별기준 수치와 함께 <strong>기준을 못 맞출 때 무엇을 더 시험·평가하는지</strong>를 USE와 PTS로 나누어 써야 변별됩니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 감시시험의 목적과 근거(국내 고시, 10 CFR 50 App. G·H, 50.61)</li>
+<li>본론 가: 조사취화 기구 → 천이곡선 이동(ΔRTNDT)·USE 감소, 예측식</li>
+<li>본론 나: 선별기준 표 → 불만족 시 USE·PTS별 추가 정밀시험·평가</li>
+<li>본론 다: 선배율 정의·범위·활용</li>
+<li>본론 라: P-T 곡선의 원리와 감시시험 결과 반영</li>
+<li>본론 마: 노형별 설치 위치와 시편 구성</li>
+<li>결론: 감시시험 → ART → P-T·PTS·계속운전 평가</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>감시시험: 노심대(beltline) 재료와 같은 재료로 만든 시편을 용기 안에 넣어 <strong>용기보다 먼저 조사</strong>시키고, 주기적으로 꺼내 샤르피·인장·파괴인성 시험으로 취화를 실측하는 제도</li>
+<li>근거: 원안위고시 제2021-28호 「원자로압력용기 감시시험 기준」[1](위임: 기술기준규칙 제21조[2]), 10 CFR 50 App. H(감시)·App. G(파괴인성)·50.61(PTS)[3]</li>
+</ul>
+<p><strong>2. 가. 중성자 조사가 USE·RTNDT에 미치는 영향</strong></p>
+<ul>
+<li><strong>기구</strong>: 고속중성자(E &gt; 1 MeV)가 원자를 밀어내는 변위손상 → 점결함·Cu 석출물·Ni-Mn-Si 클러스터 → 전위 이동 방해(경화) → 인성 저하
+<ul>
+<li>Cu·Ni·P 함량이 클수록, fluence가 클수록 취화가 큼</li>
+</ul>
+</li>
+<li><strong>RTNDT 상승(천이곡선 오른쪽 이동)</strong>
+<ul>
+<li>RTNDT: 낙중시험 TNDT와 샤르피 시험으로 정하는 기준온도(KEPIC MNB-2330 → 고시 제3조)</li>
+<li><strong>ΔRTNDT는 조사 전후 샤르피 흡수에너지 41 J 온도의 차(ΔT41J)로 평가</strong>(고시 제3조 4호)[1]</li>
+<li>조사후 ART = RTNDT(U) + ΔRTNDT + 여유 M</li>
+<li>예측: ΔRTNDT = CF(Cu·Ni) × f^(0.28 − 0.10 log f), f는 10¹⁹ n/cm² 단위 → fluence가 늘수록 커지되 <strong>증가율은 둔화(포화형)</strong>(RG 1.99 Rev.2)[4]</li>
+</ul>
+</li>
+<li><strong>USE 감소(상부 선반 하강)</strong>
+<ul>
+<li>USE: 천이구역 상단 이상 온도에서 샤르피 흡수에너지 평균(고시 제3조)</li>
+<li>조사로 감소 → 연성파괴(찢김) 저항 감소, Cu 함량과 1/4T fluence로 예측[4]</li>
+</ul>
+</li>
+<li><strong>결과</strong>: 두 변화는 동시에 일어남 → 같은 온도에서 파괴인성 감소 → P-T 운전창 축소, PTS 여유 감소</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 샤르피 흡수에너지–온도 천이곡선의 조사 전·후 비교, 41 J선에서 ΔRTNDT, 상부 선반 하강 ΔUSE" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/f023b5ea1b25ecaf641f55100b5a67a87ec208ef45ad6ebce6336102734e0c28.webp"/><figcaption>답안용 도식: 샤르피 흡수에너지–온도 천이곡선의 조사 전·후 비교, 41 J선에서 ΔRTNDT, 상부 선반 하강 ΔUSE</figcaption></figure>
+<p><strong>3. 나. 파괴시험 선별기준과 불만족 시 추가 정밀시험</strong></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>선별기준</th>
+<th>판정 위치·근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RTPTS — 판재·단조재·축방향 용접</td>
+<td><strong>≤ 132.2 ℃ (270 °F)</strong></td>
+<td>수명말 내면 fluence, 고시 별표 5·10 CFR 50.61(b)(2)[1][3]</td>
+</tr>
+<tr>
+<td>RTPTS — 원주방향 용접</td>
+<td><strong>≤ 148.9 ℃ (300 °F)</strong></td>
+<td>같음</td>
+</tr>
+<tr>
+<td>USE — 조사 전</td>
+<td><strong>≥ 102 J (75 ft-lb)</strong></td>
+<td>고시 제15조①, App. G IV.A.1.a</td>
+</tr>
+<tr>
+<td>USE — 설계수명 중</td>
+<td><strong>≥ 68 J (50 ft-lb)</strong></td>
+<td>같음(1/4T fluence 예측)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>RTPTS = RTNDT(U) + M + ΔRTPTS(PWR 가압열충격 선별기준), 102·68 J는 <strong>상부 선반 에너지</strong> 기준임</li>
+<li><strong>불만족(예상) 시 — 기준별로 다름</strong>
+<ul>
+<li><strong>USE &lt; 68 J</strong>: 낮은 USE에서도 ASME XI 부록 G 수준의 안전여유가 있음을 <strong>등가 여유도 해석(ASME XI 부록 K, RG 1.161)</strong>으로 입증하고 규제기관 승인을 받음 → 입력으로 <strong>J-R 곡선 시험</strong>(J 적분 연성균열 저항, ASTM E1820)[5]</li>
+<li><strong>RTPTS 초과 예상</strong>: ① 합리적으로 가능한 <strong>중성자속 저감</strong>(저누설 장전·차폐) ② 원전별 <strong>안전성 평가</strong>(100 % 체적 비파괴검사, 추가 파괴인성시험, 확률론적 파괴역학 등) → 규제기관 검토·승인 ③ 위반 예상 <strong>3년 전</strong> 제출 ④ 필요 시 <strong>열처리(annealing)</strong>로 인성 회복(10 CFR 50.66)[1][3]</li>
+<li><strong>천이영역 인성 직접 측정(적용 규정에 따라 선택)</strong>: <strong>마스터커브 시험</strong>(CT·예균열 샤르피 → 기준온도 T₀, ASTM E1921) → RTT0로 RTNDT 보정 근거</li>
+<li>보조 확인: 추가 샤르피 시험, 화학성분(Cu·Ni·P) 재분석, 선량계 기반 fluence 재평가</li>
+</ul>
+</li>
+<li>수명말 USE ≤ 68 J 또는 조사후 RTNDT 약 93 ℃ 이상 예상 원자로는 <strong>열처리 가능 설계</strong> 요구(고시 제15조⑥)[1]</li>
+</ul>
+<figure class="article-image"><img alt="설명용 가정 샤르피 천이곡선(조사 전·후)의 ΔT41J 60 ℃·ΔUSE 40 J와 상부 선반 기준 102/68 J, 선별기준 표와 불만족 시 USE·PTS별 추가 시험·평가 분기" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/16606a6c80600d14a7d601689fb9328afa036fc75d8c8ee9003b52e73d2417a9.webp"/><figcaption>설명용 가정 샤르피 천이곡선(조사 전·후)의 ΔT41J 60 ℃·ΔUSE 40 J와 상부 선반 기준 102/68 J, 선별기준 표와 불만족 시 USE·PTS별 추가 시험·평가 분기</figcaption></figure>
+<p><strong>4. 다. 중성자 선배율(Lead factor)</strong></p>
+<ul>
+<li>정의: <strong>LF = 시편 위치 고속중성자속 / 용기 내벽 최대 중성자속</strong>(고시 제3조)[1]</li>
+<li>국내 기준: 가능한 한 <strong>1~3</strong>(고시 제8조③)</li>
+<li>의미: LF &gt; 1 → 시편이 용기보다 먼저 같은 fluence에 도달 → <strong>용기의 미래 상태를 선행 실측</strong>(LF 2 캡슐을 10 EFPY에 인출 ≈ 용기 20 EFPY 상태)
+<ul>
+<li>너무 크면 조사속도·스펙트럼 차이로 대표성 저하</li>
+</ul>
+</li>
+<li>운영: 첫 시험은 선배율이 가장 큰 캡슐(제12조①), 인출 후 <strong>1년 이내 보고</strong>(제13조③)</li>
+<li>예: OPR1000·APR1400 약 1.2~1.4, WH형 약 3.0[7], 미국 APR1400 DC 1.4[6]</li>
+</ul>
+<p><strong>5. 라. 압력-온도(P-T) 한계 곡선</strong></p>
+<ul>
+<li>목적: 가열·냉각·수압시험 중 노심대·플랜지의 <strong>취성파괴 방지</strong> → 곡선 오른쪽·아래만 운전 허용</li>
+<li>작성: 기준결함(깊이 1/4T·길이 1.5T) 가정, <strong>2K_Im + K_It &lt; K_Ic</strong>(수압시험 1.5K_Im), K_Ic = 36.5 + 22.783·exp[0.036(T − ART)] MPa√m[3][5]
+<ul>
+<li>냉각 시 내면 인장 → 1/4T, 가열 시 외면 인장 → 3/4T 위치 ART 사용</li>
+<li>노심 임계 시 P-T 한계 + 22.2 ℃(40 °F), 플랜지 최소온도 요건</li>
+</ul>
+</li>
+<li>감시시험 반영: ART 상승 → <strong>같은 압력에 필요한 최소 온도 상승</strong>(허용영역 축소) → 저온과압보호(LTOP) 설정·적용온도 갱신, 곡선의 유효 EFPY 명시(고시 제14조·별표 4)</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: P-T 한계곡선과 ART 상승에 따른 허용영역 축소, 노심 임계 +22 ℃선, LTOP 구간" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/3e0e7e3e9c3a83030b597879e3845e5bf9ccbb3fa9992c19bf849efb1df32b46.webp"/><figcaption>답안용 도식: P-T 한계곡선과 ART 상승에 따른 허용영역 축소, 노심 임계 +22 ℃선, LTOP 구간</figcaption></figure>
+<p><strong>6. 마. 감시시편 설치 위치</strong></p>
+<ul>
+<li>원칙: <strong>노심대 높이, 용기 내벽 가까운 강수부(downcomer)</strong>, 고속중성자속이 큰 방위 → 용기와 같은 스펙트럼·온도이력 재현(App. H III.B, 고시 제8조)[1][3]</li>
+<li><strong>CE형(OPR1000·APR1400)</strong>: 용기 내벽 피복에 용접된 <strong>시편함 고정대</strong>에 감시용기 장착[8], 국내 가동 원전 일반적으로 6개[7]</li>
+<li><strong>WH형</strong>: 노심배럴 바깥 <strong>열차폐체(중성자 패드)에 부착된 캡슐</strong></li>
+<li>감시용기: 견고·내식·불활성 분위기 밀폐, 시편 고정(제8조①②)</li>
+<li>내장물: 모재·용접금속·열영향부의 샤르피·인장·파괴인성 시편 + 중성자 선량계 + 온도감시자</li>
+</ul>
+<p><strong>7. 결론</strong></p>
+<ul>
+<li>감시시험은 예측식(RG 1.99)을 <strong>실측으로 검증</strong>하는 장치이며, 결과(ART·USE)는 <strong>P-T 곡선·LTOP·PTS 평가·계속운전 심사</strong>로 바로 이어짐</li>
+<li>선별기준을 못 맞추면 즉시 정지가 아니라 <strong>추가 시험·해석 → 승인</strong> 절차를 밟고, 승인이 없으면 운전할 수 없음</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: ΔRTNDT는 "이동량"입니다</h3>
+<p>샤르피 곡선의 41 J 온도(T41J)와 RTNDT의 절대값이 같다는 뜻이 아닙니다. 조사 전 RTNDT는 낙중시험과 샤르피 시험으로 정하고, 조사 후에는 그 값에 41 J 온도의 <strong>이동량</strong>을 더합니다. 그림의 두 곡선은 각각 (−20 ℃, 41 J), (+40 ℃, 41 J)를 지나도록 맞춘 설명용 가정 곡선이며 특정 원전의 실측이 아닙니다.</p>
+<h3>해설: 추가 정밀시험은 기준별로 다릅니다</h3>
+<p>"불만족 시 J-R 시험, 마스터커브, 체적검사, 열처리"를 한 줄로 이어 쓰면 일괄 의무 절차처럼 읽힙니다. USE가 낮으면 연성 찢김 저항(J-R 곡선)으로 등가 여유를 보이는 것이 핵심이고, RTPTS가 높으면 중성자속 저감·상세 안전성 평가·열처리가 핵심입니다. 마스터커브 T₀는 천이영역 인성을 직접 재는 방법으로, 적용하는 규정·코드 케이스에 따라 선택합니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>출제 당시(2019)</th>
+<th>현행(2026)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>국내 감시시험 고시</td>
+<td>구판 — PTS·USE 판정은 10 CFR 50.61·App. G 준용</td>
+<td>원안위고시 제2021-28호(2021.8.19): USE 기준(제15조①), PTS 기준(별표 5), 60년 인출계획(별표 3)을 국내 규정에 직접 반영[1]</td>
+</tr>
+<tr>
+<td>미국 App. H</td>
+<td>구판</td>
+<td>2020년 개정(2021.2 시행): HAZ 시편·상관감시재·온도감시자 일부 선택 사항화[3]</td>
+</tr>
+<tr>
+<td>기술기준규칙</td>
+<td>구판</td>
+<td>원안위규칙 제37호(2026.3.30), 제21조 위임 구조 유지[2]</td>
+</tr>
+</tbody>
+</table>
+<p>10 CFR 50.61의 270/300 °F와 App. G의 75/50 ft-lb 수치는 출제 이후 바뀌지 않았습니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로압력용기 감시시험 기준」, 원안위고시 제2021-28호(2021.8.19), 제3조·제8조·제12~15조, 별표 3~5. 국가법령정보센터.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제21조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix G "Fracture Toughness Requirements", Appendix H "Reactor Vessel Material Surveillance Program Requirements", 10 CFR 50.61, 10 CFR 50.66.</li>
+<li>U.S. NRC, Regulatory Guide 1.99 "Radiation Embrittlement of Reactor Vessel Materials", Rev. 2 (1988).</li>
+<li>U.S. NRC, Regulatory Guide 1.161 "Evaluation of Reactor Pressure Vessels with Charpy Upper-Shelf Energy Less Than 50 Ft-Lb" (1995); ASME BPVC Section XI, Nonmandatory Appendices G·K; ASTM E1820, E1921.</li>
+<li>KHNP, APR1400 Design Certification RAI 응답(감시시편 선배율 1.5 → 1.4 정정), NRC ADAMS ML15198A559.</li>
+<li>C. H. Lee, B. C. Kim, M. J. Lim, H. C. Lee, "Study on the application of the Supplemental Surveillance Capsule for APR 1400", Transactions of the Korean Nuclear Society Autumn Meeting (2024).</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Section 5.3.1.6, NRC 설계인증 공개 문서.</li>
+</ol>

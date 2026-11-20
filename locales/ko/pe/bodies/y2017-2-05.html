@@ -1,0 +1,87 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 2교시 5번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>유효노심의 길이가 12 ft인 원자로의 축방향(z) 국부 출력분포는 다음과 같다.</p>
+<p>q″(z) = q″MAX × cos(πz/144)</p>
+<p>아래에 주어진 정보를 이용하여 다음을 구하시오.</p>
+<ul>
+<li>최소 DNBR = 2.1</li>
+<li>임계열속 q″CRITICAL = 1.10×10⁶ Btu/hr·ft²</li>
+<li>열수로계수(Hot Channel Factor) F = 2.80</li>
+<li>핵연료봉 총열전달 면적 A = 5,000 ft²</li>
+</ul>
+<p>가. 국부최대열속 q″MAX
+나. 평균열속 q″AVG
+다. 원자로 정격 열출력</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>DNBR의 정의(임계열속 ÷ 국부 열속)와 열수로계수의 정의(최대 열속 ÷ 평균 열속)를 거꾸로 써서, 주어진 안전 여유로부터 허용되는 최대 열속과 노심 열출력을 역산할 수 있는지 확인하는 문제입니다. 계산은 세 줄이면 끝나므로 점수는 ① 분포식에서 z의 단위와 원점을 읽어 내는 문제 해석, ② MDNBR이 어디에서 생기는지에 대한 가정, ③ 영국 단위를 MWt로 바꾸는 환산과 검산에서 갈립니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 주어진 값, 분포식 해석(z 원점·단위, 완전 cosine), 계산 가정</li>
+<li>본론 가: MDNBR 정의 → 최소 위치(z = 0) → q″MAX</li>
+<li>본론 나: 열수로계수 정의 → q″AVG, 축방향 첨두/평균(π/2)과의 관계</li>
+<li>본론 다: Q = q″AVG × A → Btu/hr → MWt 환산, SI 검산</li>
+<li>결론: 결과 요약과 실제 노심에서 달라지는 점(CHF 축방향 변화, 절단 cosine)</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 문제 해석</strong></p>
+<ul>
+<li>H = 12 ft = <strong>144 in</strong> → 식의 z는 <strong>노심 중앙 원점, in 단위</strong>, −72 ≤ z ≤ +72 in</li>
+<li>z = ±72 in에서 cos(±π/2) = 0 → 양 끝이 0인 <strong>완전 cosine</strong> 분포(외삽거리 무시한 이상화)</li>
+<li>임계열속 q″CRIT를 <strong>축방향 일정으로 가정함</strong>(값 하나만 주어짐) → DNBR(z) = q″CRIT / q″(z)는 열속 최대점 z = 0에서 최소</li>
+<li><strong>F = 2.80 = 열속 열수로계수 FQ = q″MAX / q″AVG(노심 평균)로 해석함</strong>(핵적 × 공학적 총 인자)</li>
+<li>열속은 피복관 외표면 기준, A = 연료봉 외표면 합</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: −72~+72 in 완전 cosine 열속, 일정 임계열속선, z = 0에서 MDNBR 2.1" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/fd7245599b14f0cf4a39d570575938d4269c3acb5e803b10e173860948878128.webp"/><figcaption>답안용 도식: −72~+72 in 완전 cosine 열속, 일정 임계열속선, z = 0에서 MDNBR 2.1</figcaption></figure>
+<p><strong>2. 가. 국부최대열속 q″MAX</strong></p>
+<ul>
+<li>정의: DNBR = q″CRIT / q″local, 최솟값 MDNBR = q″CRIT / q″MAX</li>
+<li>q″MAX = q″CRIT / MDNBR = 1.10×10⁶ / 2.1</li>
+<li><strong>q″MAX = 5.24×10⁵ Btu/hr·ft²</strong> (523,810, SI 약 1.65 MW/m²)</li>
+<li>의미: CHF 일정 가정과 주어진 MDNBR 2.1에 대응하는 노심 최고 국부 열속</li>
+</ul>
+<p><strong>3. 나. 평균열속 q″AVG</strong></p>
+<ul>
+<li>정의: F = q″MAX / q″AVG → q″AVG = q″MAX / F</li>
+<li>q″AVG = 523,810 / 2.80 = <strong>1.87×10⁵ Btu/hr·ft²</strong> (187,075, SI 약 0.590 MW/m²)</li>
+<li>축방향 성분 확인: 완전 cosine의 첨두/평균 = π/2 = 1.571[2]
+<ul>
+<li>최대열속 연료봉의 축방향 평균 표면열속 = (2/π) × 523,810 = 3.33×10⁵ Btu/hr·ft²</li>
+<li>같은 cosine 축방향 형상을 가정한 등가 잔여계수(반경·국부·공학 성격) = 2.80 / 1.571 = <strong>1.78</strong></li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="축 −72~+72 in의 cosine 열속 곡선, q″MAX 5.24×10⁵·최대열속봉 축방향 평균 3.33×10⁵·노심 평균 1.87×10⁵·임계열속 1.10×10⁶ 기준선과 계산 흐름 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/9f581a9edf33db59533c82ddd9c42a3ba32a19c4e993dee4f2d8a4a741e92698.webp"/><figcaption>축 −72~+72 in의 cosine 열속 곡선, q″MAX 5.24×10⁵·최대열속봉 축방향 평균 3.33×10⁵·노심 평균 1.87×10⁵·임계열속 1.10×10⁶ 기준선과 계산 흐름 카드</figcaption></figure>
+<p><strong>4. 다. 원자로 정격 열출력</strong></p>
+<ul>
+<li>Q = q″AVG × A = 187,075 × 5,000 = <strong>9.35×10⁸ Btu/hr</strong></li>
+<li>환산: 1 W = 3.412 Btu/hr → Q = 9.354×10⁸ Btu/hr ÷ 3.41214 = 2.741×10⁸ W</li>
+<li><strong>Q ≈ 274 MWt</strong></li>
+<li>검산(SI): 0.590 MW/m² × 464.5 m²(= 5,000 ft²) = 274.1 MW ✓</li>
+<li>별도 열발생 분율 보정 조건이 없으므로 연료봉 표면 전달열을 원자로 열출력으로 간주함</li>
+</ul>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>q″MAX = 5.24×10⁵, q″AVG = 1.87×10⁵ Btu/hr·ft², 정격 열출력 약 274 MWt</li>
+<li>(참고) F를 "최대열속봉 축방향 평균 / 노심 평균"으로 해석하면 q″AVG = (2/π)q″MAX/F = 1.19×10⁵ Btu/hr·ft², 약 174.5 MWt → 해석을 반드시 명시</li>
+<li>실제 상향 유동 PWR에서는 냉각재 엔탈피 증가 등의 영향으로 MDNBR 위치가 열속 첨두보다 하류에 형성될 수 있고(위치는 국부 조건·출력분포에 따라 다름), 축방향 분포도 절단 cosine·연소 편향을 보이므로 설계는 국부 CHF 상관식으로 MDNBR을 평가함[1][3]</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 왜 z = 0에서 DNBR이 최소인가</h3>
+<p>이 문제는 임계열속을 축방향 일정값 하나로 주었습니다. 그러면 DNBR(z) = 2.1/cos(πz/144)가 되어 노심 중앙에서 2.1, z = ±36 in에서 2.97, z = ±48 in에서 4.20으로 커집니다. 따라서 "주어진 최소 DNBR은 열속 첨두에서의 값"이라는 연결이 성립하고, 가 항은 한 줄 나눗셈이 됩니다. 실제 가압경수로에서는 냉각재가 위로 올라가며 엔탈피(건도)가 커지므로 국부 CHF가 출구 쪽으로 갈수록 작아집니다. 그래서 국부 CHF/국부 열속이 최소인 지점은 열속 첨두보다 하류(노심 중앙보다 위쪽)에 형성될 수 있으며, 정확한 위치는 국부 조건과 출력분포에 따라 달라집니다. 답안 결론에 이 차이를 한 줄 적어 두면 문제 가정을 이해하고 있다는 인상을 줍니다.</p>
+<h3>해설: F를 어디에 써야 하나</h3>
+<p>이 문제에서 가장 많이 갈리는 지점은 나 항입니다. 분포식이 cosine이니 평균을 (2/π)q″MAX = 3.33×10⁵으로 구하고 끝내는 답안이 많은데, 이 값은 최대열속 연료봉 하나의 축방향 평균 표면열속입니다. 노심 전체 평균 열속에는 반경방향 출력 편차까지 들어가야 하고, 그 역할을 하는 것이 열수로계수 F입니다. 시리즈 표준 정의대로 F를 총 열속 열수로계수(FQ)로 보면, 축방향 첨두계수 1.571이 F = 2.80 안에 이미 포함되어 있고, 같은 cosine 형상을 가정하면 나머지 1.78이 반경·국부·공학 성격의 등가 잔여계수가 됩니다. 이 분해까지 보이면 분포식이 왜 주어졌는지에 대한 답도 됩니다. 문제에 F의 정의가 없으므로 어느 해석을 택했는지 "가정"으로 먼저 밝히고, 다른 해석의 결과(174.5 MWt)를 참고로 덧붙이는 것이 안전합니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>계산 원리와 정의는 출제 이후 달라지지 않았습니다. DNBR 설계 기준은 지금도 "적용 CHF 상관식의 통계적 한계(95/95)와 설계 불확실성을 반영한 DNBR 설계한계를 MDNBR이 만족할 것"이며(미국 SRP 4.4, GDC 10[3][4]), 국내는 기술기준규칙 제17조 제1항의 연료허용손상한계 여유 요건이 근거입니다[5]. 규칙 현행판은 원안위규칙 제37호(2026.3.30)이고 조 번호는 같습니다. 문제의 MDNBR 2.1은 계산 조건일 뿐 현행 상관식의 한계값이 아니므로 답안에서 둘을 섞지 않는 것이 좋습니다.</p>
+<h2>참고문헌</h2>
+<ol>
+<li>N. E. Todreas, M. S. Kazimi, Nuclear Systems I: Thermal Hydraulic Fundamentals, 2nd ed., CRC Press (2012) — 축방향 열속분포, 임계열속과 DNBR.</li>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 6장(원통 노심의 cosine 중성자속 분포)·8장(hot channel factor).</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.4 "Thermal and Hydraulic Design".</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criterion 10 "Reactor design".</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제2조 제1항 제10호·제17조 제1항. 국가법령정보센터.</li>
+</ol>

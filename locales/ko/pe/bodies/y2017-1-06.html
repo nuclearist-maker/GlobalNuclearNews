@@ -1,0 +1,56 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 1교시 6번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<ol start="6">
+<li>원자로냉각재압력경계(Reactor Coolant Pressure Boundary)의 정의와 압력경계에 있는 밸브 선정 기준</li>
+</ol>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>RCPB</strong>: 1차 냉각재 압력을 받는 압력용기·배관·펌프·밸브이며, 연결 배관은 경계 밸브까지 포함합니다.</li>
+<li><strong>경계 밸브 3목</strong>: 관통 배관은 최외곽 격납 격리밸브, 비관통 배관은 항상 닫힌 두 밸브 중 두 번째, 그리고 1차계통 안전·방출밸브입니다.</li>
+<li><strong>GDC 55</strong>: RCPB 관통 배관의 격납 내·외측 격리밸브 조합 기준입니다.</li>
+<li><strong>압력격리밸브(PIV)</strong>: 고압 RCS와 저압 연계계통 사이의 직렬 2중 밸브로, 계통간 LOCA를 막습니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 정의</strong></p>
+<ul>
+<li><strong>1차 냉각재로부터 압력을 받는 압력용기·배관·펌프·밸브</strong>(규칙 제2조 제1항 제4호[1], 10 CFR 50.2[2])</li>
+<li>원자로냉각재계통 + 연결 배관의 <strong>외곽한계(경계 밸브 포함)</strong>까지, 핵분열생성물 4방벽 중 <strong>세 번째 방벽</strong></li>
+<li>외곽한계: ① 격납건물 관통 배관 → <strong>최외곽 격납 격리밸브</strong> ② 비관통 배관 → <strong>정상운전 시 항상 닫혀 있는 두 밸브 중 두 번째 밸브</strong>(RCS에서 바깥쪽으로 셈) ③ <strong>1차계통 안전·방출밸브</strong></li>
+</ul>
+<p><strong>2. 압력경계 밸브 선정 기준</strong></p>
+<ul>
+<li><strong>① 격납 관통 RCPB 배관(GDC 55)</strong>[3]: 격납 내·외측 각 1개 격리밸브 — 잠금닫힘/자동 조합 4가지 중 택1, <strong>외측 자동밸브로 단순 체크밸브 불가</strong>, 외측 밸브는 격납건물에 최대한 가깝게, 자동밸브는 동력 상실 시 <strong>더 안전한 위치</strong>로 동작</li>
+<li><strong>② 고압–저압 연계(PIV)</strong>: RCS와 저압계통(안전주입·정지냉각) 사이 <strong>직렬 2중 격리</strong>(예: 체크밸브 2개, 체크밸브 + 전동밸브), <strong>누설시험</strong>으로 건전성 확인(NUREG-1431 LCO 3.4.14 예: 밸브별 공칭 1 in당 0.5 gpm, 최대 5 gpm)[4], 정지냉각 흡입밸브는 <strong>RCS 압력 인터록</strong>[5] → 계통간 LOCA 방지(규칙 제22조 ④)[1]</li>
+<li><strong>③ 품질등급</strong>: 경계 밸브는 원칙적으로 <strong>ASME III Class 1(안전등급 1)</strong>. 단 연결 기기가 정상 보충능력 이내이거나 <strong>직렬 2밸브로 격리(열린 밸브는 자동 닫힘, 닫힘 시간 조건)</strong>되면 Class 1 적용 예외(10 CFR 50.55a(c)(2), RCPB 범위에서 빠지는 것은 아님)[2]</li>
+<li><strong>④ 과압보호 밸브</strong>: 안전밸브(APR1400은 POSRV)는 주증기 안전밸브·원자로보호계통과 함께 지연 정지 부하상실에서 RCS 압력을 <strong>설계압력의 110 % 미만</strong>으로 제한하도록 용량 결정(ASME III NB-7000, 규칙 제37조)[1][6]</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: RCS 굵은 선과 외곽한계 3목(관통 배관 내·외측 격리밸브, 비관통 배관 닫힌 2밸브, 가압기 안전밸브) + 저압계통 PIV(기능 예)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/903d5ef8d89de89c16089e5dd5b3f62a09e897f2a01e8790d8cd10d3de86f5c1.webp"/><figcaption>답안용 도식: RCS 굵은 선과 외곽한계 3목(관통 배관 내·외측 격리밸브, 비관통 배관 닫힌 2밸브, 가압기 안전밸브) + 저압계통 PIV(기능 예)</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="RCPB 외곽한계 3목과 밸브 선정 기준 4가지(GDC 55 조합표, PIV 직렬 2밸브·누설 기준, Class 1 면제 조건, 과압보호 110 %)를 한 장의 계통 도식과 표로 정리" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/f5e603fc10d1afc60314a306f2bc5326270a2ae2b011c6ac6fdda95180447967.webp"/><figcaption>RCPB 외곽한계 3목과 밸브 선정 기준 4가지(GDC 55 조합표, PIV 직렬 2밸브·누설 기준, Class 1 면제 조건, 과압보호 110 %)를 한 장의 계통 도식과 표로 정리</figcaption></figure>
+<p>"밸브 선정 기준"은 두 겹으로 읽으면 답이 정리됩니다. 첫째는 <strong>어느 밸브가 경계가 되는가</strong>(외곽한계 3목)이고, 둘째는 <strong>그 경계 밸브가 갖춰야 할 조건</strong>(격리 조합, 2중성, 등급, 용량)입니다. 정의 문항이므로 3목을 먼저 쓰고, 선정 기준을 번호로 나열하면 채점자가 확인하기 쉽습니다.</p>
+<p>GDC 55의 조합은 "격납 안팎에 하나씩, 그중 자동밸브는 동력 상실 시 안전 위치"로 외우면 됩니다. 외측에 체크밸브만 두지 못하게 한 이유는 체크밸브가 역류만 막고 능동 격리 신호로 닫히는 밸브가 아니기 때문입니다. PIV는 외곽한계 3목과는 별개의 기능 분류로, 고압 RCS 압력이 저압 배관에 걸리는 것을 막는 밸브입니다. 하나가 새거나 열리면 저압계통이 파손돼 격납건물 밖으로 냉각재가 나가는 계통간 LOCA(우회 사고)가 될 수 있어 2중 구성과 누설시험을 요구합니다. RCPB 범위와 Class 1 범위가 같지 않다는 점도 한 줄로 구분해 두십시오.</p>
+<p><strong>현행 기준 메모</strong>: 출제 당시와 비교해 기준 내용은 같습니다. 국내 규칙은 현행 원안위규칙 제37호(2026.3.30)로, 안전등급 고시는 제2026-13호(2026.8.26)로 인용합니다[7].</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>"첫 번째 격리밸브"로 씀</strong>: 관통 배관은 최외곽 격리밸브까지입니다.</li>
+<li><strong>경계 밸브 포함 여부 누락</strong>: 경계 밸브 자체도 RCPB입니다.</li>
+<li><strong>외측 체크밸브 단독 허용</strong>: GDC 55는 외측 자동밸브로 단순 체크밸브를 금지합니다.</li>
+<li><strong>RCPB = 안전등급 1로 단정</strong>: 50.55a(c)(2) 면제 조건이 있습니다.</li>
+<li><strong>PIV 누락</strong>: 계통간 LOCA와 연결하면 가점 요소입니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제2조 제1항 제4호, 제22조, 제37조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR 50.2 "Definitions"(Reactor coolant pressure boundary), 10 CFR 50.55a(c).</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix A, Criterion 55 "Reactor coolant pressure boundary penetrating containment".</li>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications, Westinghouse Plants, LCO 3.4.14 "RCS Pressure Isolation Valve (PIV) Leakage".</li>
+<li>U.S. NRC HRTD, Combustion Engineering Technology Cross Training Course Manual, Ch. 11.2, NRC ADAMS ML11251A033.</li>
+<li>KEPCO &amp; KHNP, "Pressurizer Sizing and Overpressure Protection Evaluation", APR1400-Z-A-NR-14020-NP, Rev. 0 (2018.1), NRC ADAMS ML18087A117.</li>
+<li>원자력안전위원회, 「원자로시설의 안전등급과 등급별 규격에 관한 고시」, 원안위고시 제2026-13호(2026.8.26), 제5조. 국가법령정보센터.</li>
+</ol>

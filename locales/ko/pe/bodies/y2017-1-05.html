@@ -1,0 +1,60 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 1교시 5번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<ol start="5">
+<li>임계 유동(Critical Flow)</li>
+</ol>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>질식(choking)</strong>: 상류 정체 조건이 같으면 하류 압력을 더 낮춰도 질량유속이 늘지 않는 상태입니다.</li>
+<li><strong>임계압력비</strong>: 이상기체 등엔트로피 수축 노즐에서 P*/P₀ = (2/(k+1))^(k/(k−1))이며, k = 1.3이면 약 0.55입니다.</li>
+<li><strong>2상 임계유동 모델</strong>: 균질평형(HEM), Moody(슬립), Henry–Fauske(비평형)가 대표 모델입니다.</li>
+<li><strong>원전 적용</strong>: LOCA 파단 유량, 증기발생기 증기유량제한기, 안전밸브 방출용량 산정에 쓰입니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 정의</strong></p>
+<ul>
+<li>상류 정체 압력·엔탈피가 일정할 때 <strong>배압(하류 압력)을 낮춰도 질량유속 G가 최대값 G*에서 더 증가하지 않는</strong> 유동 상태임(질식유동)</li>
+<li>원인: 최소 단면(목)에서 유속이 <strong>국부 음속</strong>에 도달 → 하류 압력 변화가 상류로 전달되지 않음</li>
+<li>단상 이상기체·수축 노즐 임계압력비 <strong>P*/P₀ = (2/(k+1))^(k/(k−1))</strong>: 공기(k = 1.4) 0.528, 과열증기(k ≈ 1.3 가정) 0.546 (상수 k 가정의 참고값)</li>
+<li><strong>P_b/P₀ ≤ P*/P₀이면 G = G*(배압 무관)</strong>, 그보다 크면 G는 압력차에 따라 변함</li>
+</ul>
+<p><strong>2. 2상 임계유동 특징과 모델</strong></p>
+<ul>
+<li>2상 혼합물은 압축성이 커서 <strong>음속이 단상보다 훨씬 낮음</strong> → 낮은 유속에서 질식</li>
+<li><strong>HEM</strong>: 두 상 속도·온도 같음(평형) 가정, 긴 관에 적합</li>
+<li><strong>Moody(1965)</strong>: 슬립비 (ρ_l/ρ_g)^(1/3)로 유량 최대화 → HEM보다 큰 값을 주는 경향[1]</li>
+<li><strong>Henry–Fauske(1971)</strong>: 짧은 관·노즐의 열적 비평형(플래싱 지연) 반영[2]</li>
+<li>상류가 포화수·과냉수이면 목 근처에서 플래싱하며 2상이 됨 → <strong>같은 압력의 포화증기보다 질량유속이 큼</strong>(HEM 예 1~15.5 MPa에서 약 1.8~4.5배)</li>
+</ul>
+<p><strong>3. 원전 적용</strong></p>
+<ul>
+<li><strong>LOCA 블로다운</strong>: 파단 유량 = 임계유속 × 파단 면적 → 감압 속도·질량·에너지 방출 결정. 10 CFR 50 부록 K는 2상 방출에 <strong>Moody 모델</strong>, 방출계수 <strong>0.6~1.0 범위 최소 3개 값</strong>을 요구함[3]</li>
+<li><strong>SG 증기유량제한기</strong>: 출구노즐 벤투리 목에서 질식 → MSLB 방출 상한 W = G*(P_SG)·A_목(APR1400 SG당 2개, 1개 면적 = 주증기관의 30 %)[4]</li>
+<li><strong>안전밸브·POSRV 방출용량</strong>, 배관 파단 반력(추력) 산정</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 배압비–질량유속 곡선의 질식 평탄 구간과 임계압력비 약 0.55(k = 1.3 가정), 수축 노즐 출구의 음속 조건" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/00726a608e0133426c622b277f1224a9583c364e1d6219ee48b8ded6322be857.webp"/><figcaption>답안용 도식: 배압비–질량유속 곡선의 질식 평탄 구간과 임계압력비 약 0.55(k = 1.3 가정), 수축 노즐 출구의 음속 조건</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="배압비에 따른 질량유속비 곡선(k = 1.3 이상기체 수축 노즐, 임계압력비 0.546)과 포화수·포화증기의 HEM 임계 질량유속 비교(1~15.5 MPa, 설명용 계산값)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/9c39b3ea94d39e32098dfc3a4897672a787f210b9826705084951412535724c2.webp"/><figcaption>배압비에 따른 질량유속비 곡선(k = 1.3 이상기체 수축 노즐, 임계압력비 0.546)과 포화수·포화증기의 HEM 임계 질량유속 비교(1~15.5 MPa, 설명용 계산값)</figcaption></figure>
+<p>임계유동의 핵심은 "최소 단면에서 음속에 닿으면 하류 압력 변화가 상류로 못 올라간다"는 한 문장입니다. 그래서 상류 정체 조건을 고정하고 배압을 낮추면 유량이 늘다가 임계압력비에서 멈추고, 그 아래는 평탄합니다. 그림 왼쪽은 이 관계를 k = 1.3 이상기체 수축 노즐로 그린 것입니다(그래프는 오른쪽 1.0에서 왼쪽으로 읽습니다).</p>
+<p>오른쪽은 상류 정체 상태가 포화수일 때와 포화증기일 때의 HEM 임계 질량유속을 IAPWS-IF97 물성으로 계산한 값입니다(마찰 없는 등엔트로피 평형 팽창, 설명용). 7 MPa에서 포화수는 약 26,500 kg/m²s, 포화증기는 약 10,000 kg/m²s로 2.7배쯤 차이가 납니다. 액상 파단이 기상 파단보다 질량을 훨씬 빨리 잃는다는 뜻입니다. 부록 K가 2상 방출에 Moody 모델을 지정하면서도 방출계수를 0.6~1.0 범위로 바꿔 보게 한 것은, 방출량이 크다고 해서 항상 최고 피복재 온도(PCT)에 보수적인 것은 아니기 때문입니다.</p>
+<p><strong>현행 기준 메모</strong>: 출제 당시와 마찬가지로 현행 10 CFR 50 부록 K I.C.1.b의 Moody 모델 요건이 유효합니다. 2026년 제안규칙(FR 2026-14341)은 위험도 정보 활용 대체 ECCS 요건을 담은 자발적 50.46a 신설안이며 아직 확정되지 않았습니다. 최적평가(BEPU) 방법에서는 검증된 임계유동 모델과 그 불확도를 함께 다룹니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>"압력차가 클수록 유량이 계속 증가"</strong>: 임계압력비 아래에서는 배압과 무관합니다.</li>
+<li><strong>목의 음속 조건 누락</strong>: 질식의 물리적 원인을 한 줄로 써야 정의가 완성됩니다.</li>
+<li><strong>2상 음속을 단상처럼 취급</strong>: 2상 음속은 훨씬 낮습니다.</li>
+<li><strong>원전 적용 누락</strong>: LOCA 파단 유량(부록 K Moody, 방출계수 0.6~1.0)과 증기유량제한기를 쓰면 가점 요소입니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>F. J. Moody, "Maximum Flow Rate of a Single Component, Two-Phase Mixture," Journal of Heat Transfer, Trans. ASME, 87(1), 134–142 (1965).</li>
+<li>R. E. Henry, H. K. Fauske, "The Two-Phase Critical Flow of One-Component Mixtures in Nozzles, Orifices, and Short Tubes," Journal of Heat Transfer, Trans. ASME, 93(2), 179–187 (1971).</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix K "ECCS Evaluation Models", I.C.1.b "Discharge Model".</li>
+<li>S. Cho, K.-Y. Choi, H.-S. Park, K.-H. Kang, Y.-S. Kim, N.-H. Choi, C.-H. Song, "Break Size Effects on MSLB event using the ATLAS", Transactions of the Korean Nuclear Society Spring Meeting, Jeju (2012).</li>
+</ol>

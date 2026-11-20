@@ -1,0 +1,105 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 4교시 1번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>원자로주기(Reactor period)와 기동률(Startup rate)에 대해 다음을 설명 또는 계산하시오.
+가. 원자로주기와 기동률의 정의
+나. 원자로주기와 기동률의 관계를 수식으로 유도
+다. 원자로의 출력을 100 W에서 10 W로 감소시키는 데 2분이 소요되었다. 이 기동률로 원자로 출력을 계속하여 감소시킬 때 10 W에서 4분 후의 출력</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>출력 변화 속도를 나타내는 두 지표, 곧 <strong>초 단위 e배 시간(주기)</strong>과 <strong>분 단위 10배수 변화율(기동률)</strong>을 정확히 정의하는지 봅니다. 두 지수식을 같게 놓아 <strong>SUR = 26.06/T</strong>를 끌어내는 과정과, 주어진 출력 변화에서 기동률을 구해 외삽하는 계산이 핵심입니다. 여기에 음의 안정주기의 절댓값이 약 80초보다 작아질 수 없다는 점을 보충하면 계산 결과의 의미까지 해석한 답안이 됩니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 가정 및 문제 해석(일정 기동률 외삽, 단위)</li>
+<li>본론 1(가): 원자로주기·기동률 정의, 부호의 의미, 안정주기</li>
+<li>본론 2(나): 두 지수식 등치 → SUR = 60/(T·ln10) = 26.06/T, 미분형 확인</li>
+<li>본론 3(다): 주어진 값 → 기동률 → 주기 → 4분 후 출력 → 검산</li>
+<li>결론: 물리적 타당성(음의 안정주기 한계 약 −80 s)과 운전상 의미</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 문제 해석</strong></p>
+<ul>
+<li>다.의 "이 기동률로 계속 감소"는 <strong>기동률(주기)이 일정</strong>하다는 문제의 가정으로 해석함</li>
+<li>시간 단위: 주기 T는 <strong>초(s)</strong>, 기동률 SUR은 <strong>분당 decade(dpm)</strong></li>
+<li>출력은 중성자 밀도에 비례한다고 봄(붕괴열·γ 지연 성분 무시)</li>
+</ul>
+<p><strong>2. 가. 원자로주기와 기동률의 정의</strong></p>
+<ul>
+<li><strong>원자로주기 T</strong>: 중성자 밀도(출력)가 <strong>e배(약 2.718배)</strong> 변하는 데 걸리는 시간
+<ul>
+<li><strong>T = P/(dP/dt)</strong> [s], 주기가 일정하면 <strong>P(t) = P₀·e^(t/T)</strong></li>
+<li>T &gt; 0 출력 증가, T &lt; 0 출력 감소(|T| 동안 1/e배로 줄어듦), <strong>T = ∞ 출력 일정</strong>(외부 중성자원을 무시하면 임계)</li>
+<li>계단 반응도 투입 뒤 과도가 끝나고 남는 단일 지수항의 주기 = <strong>안정주기</strong>(계측기가 일정하게 보여 주는 값)</li>
+</ul>
+</li>
+<li><strong>기동률 SUR(Startup Rate)</strong>: 출력이 <strong>1분 동안 변하는 10배수(decade) 수</strong>
+<ul>
+<li>단위 <strong>dpm</strong>(decades per minute), <strong>SUR = d(log₁₀P)/dt</strong> (t: 분)</li>
+<li>기동률이 일정하면 <strong>P(t) = P₀·10^(SUR·t)</strong></li>
+<li>로그 출력 지시계에서 곡선의 <strong>기울기가 곧 기동률</strong> → 운전원은 기동 중 기동률을 직접 감시</li>
+</ul>
+</li>
+<li>공통점: 둘 다 출력의 <strong>상대 변화율</strong>(1/P·dP/dt)을 다른 단위로 표현한 것</li>
+</ul>
+<p><strong>3. 나. 관계식 유도</strong></p>
+<ul>
+<li>같은 출력 변화를 두 식으로 표현: P₀·e^(t/T) = P₀·10^(SUR·t/60) (t는 초)</li>
+<li>양변 자연로그: t/T = (SUR·t/60)·ln10</li>
+<li>정리하면 <strong>SUR = 60/(T·ln10) = 26.06/T</strong> (T: 초) [1][4]</li>
+<li>미분형 확인: SUR = 60·d(log₁₀P)/dt = (60/ln10)·(1/P)(dP/dt) = 26.06/T → 주기가 시간에 따라 변해도 <strong>각 순간에 성립</strong></li>
+<li>대표 환산: T = 26.06 s ↔ <strong>1 dpm</strong>, T = −80.6 s ↔ <strong>−0.323 dpm(약 −1/3 dpm)</strong>, T = ∞ ↔ 0 dpm</li>
+<li>배가시간 Td = T·ln2 = 0.693T (T = 26 s면 약 18 s), 감소 시 반감시간 = −T·ln2</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 로그 출력–시간 직선의 기울기 = 기동률, 두 지수식에서 SUR = 26.06/T 유도" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/e38707948d0f6363f3b8a70cd0e562d02adc1f8689a301937bc44f82874bd055.webp"/><figcaption>답안용 도식: 로그 출력–시간 직선의 기울기 = 기동률, 두 지수식에서 SUR = 26.06/T 유도</figcaption></figure>
+<p><strong>4. 다. 4분 후 출력 계산</strong></p>
+<ul>
+<li>주어진 값: P₁ = 100 W → P₂ = 10 W, Δt = 2 min</li>
+<li>기동률: <strong>SUR = log₁₀(P₂/P₁)/Δt = log₁₀(10/100)/2 = −1/2 = −0.5 dpm</strong></li>
+<li>주기: <strong>T = 26.06/SUR = 26.06/(−0.5) = −52.1 s</strong> (반감시간 52.1 × 0.693 ≈ 36 s)</li>
+<li>4분 후 출력: <strong>P = 10 W × 10^(−0.5 × 4) = 10 × 10⁻² = 0.1 W</strong></li>
+<li>검산(주기식): P = 10 × e^(−240/52.12) = 10 × e^(−4.605) = <strong>0.100 W</strong> ✓</li>
+<li>검산(직관): 2분마다 1 decade 감소 → 4분이면 2 decade → 10 W → 1 W → <strong>0.1 W</strong> ✓</li>
+</ul>
+<figure class="article-image"><img alt="100 W → 10 W(2분) → 0.1 W(6분)의 −0.5 dpm 직선, T = −80.6 s 가정 비교선(약 0.51 W), 주기↔기동률 환산표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/b41830f059433b634537d57def640d3c761bbafa34eb1b8c966ac9d034820dd3.webp"/><figcaption>100 W → 10 W(2분) → 0.1 W(6분)의 −0.5 dpm 직선, T = −80.6 s 가정 비교선(약 0.51 W), 주기↔기동률 환산표</figcaption></figure>
+<p><strong>5. 물리적 타당성(결론)</strong></p>
+<ul>
+<li>일정한 음의 반응도를 넣으면 즉발강하 뒤 장시간 지배 모드는 <strong>지발중성자 6군(Keepin) 중 제1군(λ₁ ≈ 0.0124 s⁻¹, 주 선행핵 Br-87)</strong>의 붕괴에 묶임 [1][3]
+<ul>
+<li>음의 안정주기 <strong>T₁ &lt; −1/λ₁, 곧 |T₁| &gt; 80.6 s</strong> → 기동률 크기 <strong>약 1/3 dpm 이하</strong>(외부 중성자원 무시)</li>
+</ul>
+</li>
+<li>따라서 <strong>−0.5 dpm(T = −52 s)을 계속 유지한다는 것은 문제의 가정</strong>이며 안정주기로는 나올 수 없는 값임
+<ul>
+<li>처음 2분의 −0.5 dpm은 두 관측값에서 나온 <strong>평균 로그 변화율</strong>일 뿐이고, 즉발강하·과도가 섞인 평균일 수 있음(안정주기라고 단정할 수 없음)</li>
+<li>비교: T = −80.6 s를 가정하면 4분 뒤 10 × e^(−240/80.6) ≈ <strong>0.51 W</strong>(실제 예측값이나 하한이 아니라 비교용)</li>
+</ul>
+</li>
+<li>결론: 문제의 가정(일정 기동률) 아래 답은 <strong>0.1 W</strong>, 실제 감소 이력은 반응도 크기와 선행핵 분포에 따라 달라 추가 조건이 필요함</li>
+<li>운전상 의미: 큰 음의 반응도 삽입 뒤 기동률계가 약 −1/3 dpm 부근으로 안정되는 것은 <strong>보조적 관찰</strong>이며, 정지 확인은 절차에 따른 미임계·정지여유 확인으로 함</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 26.06은 "60 ÷ ln10"입니다</h3>
+<p>기동률 공식에서 가장 흔한 실수는 단위입니다. 주기는 초, 기동률은 분 단위라서 60이 들어가고, e를 밑으로 하는 지수와 10을 밑으로 하는 지수를 바꾸느라 ln10(= 2.3026)이 들어갑니다. 60/2.3026 = 26.06입니다. 기억이 흐릿하면 "1 dpm이면 1분에 10배, 곧 ln10 = 2.3번 e배 → 주기 60/2.3 = 26초"로 즉석에서 확인할 수 있습니다. 답안에는 유도 과정을 두 줄 이상 쓰고, 미분형으로도 같은 결과가 나온다는 점을 보태면 유도가 완결됩니다.</p>
+<h3>해설: 계산 결과 0.1 W와 실제 원자로의 차이</h3>
+<p>다.의 계산은 기동률이 일정하다는 문제 조건으로 풀면 됩니다. 2분에 1 decade이므로 −0.5 dpm, 4분이면 2 decade가 줄어 0.1 W입니다. 그런데 −0.5 dpm은 주기로 −52초입니다. 점동특성의 역시간방정식에서 일정한 음의 반응도에 대한 지배 근은 −λ₁보다 0에 가까워, 음의 안정주기의 절댓값은 약 80.6초보다 작아질 수 없습니다[1][2]. 반응도 계단을 넣으면 출력은 먼저 β/(β−ρ)배로 즉발강하한 뒤, 짧은 수명 선행핵이 먼저 사라지면서 순간 주기가 점점 길어져 그 반응도에 대응하는 안정주기로 다가갑니다. 음의 반응도가 충분히 크면 그 값이 약 −80초에 가깝습니다. 그래서 처음 2분의 평균 기동률이 −0.5 dpm일 수는 있어도, 그 기울기가 안정주기로 "계속" 유지되지는 않습니다.</p>
+<p>이 내용은 물리적 보충 설명으로 덧붙이면 좋습니다. 다만 계산 답을 0.51 W로 바꿔 쓰면 문제 조건을 무시한 것이 됩니다. 0.51 W는 T = −80.6 s를 가정한 비교값일 뿐 실제 출력의 하한도 아닙니다. 2분 시점의 선행핵 분포를 모르면 이후 4분의 실제 출력은 정할 수 없기 때문입니다. "가정에 따른 답 0.1 W, 일정 기동률 −0.5 dpm은 안정주기로는 유지될 수 없는 값"처럼 두 가지를 구분해 적는 편이 안전합니다.</p>
+<h3>해설: 정의에서 놓치기 쉬운 점</h3>
+<p>주기는 "출력이 2배 되는 시간"이 아닙니다. 2배 시간은 배가시간 Td = 0.693T로 따로 부릅니다. 또 원자로주기는 즉발도약·즉발강하 같은 과도 중에도 순간값 P/(dP/dt)로 정의되지만, 그 값은 시간에 따라 변합니다. 계기가 일정한 값을 보여 주는 것은 과도가 끝난 안정주기 구간입니다. 기동률도 같은 순간값의 다른 표현이므로 26.06/T 관계는 과도 중에도 매 순간 성립합니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li>원자로주기·기동률의 정의와 관계식은 물리 법칙이라 출제 이후 달라진 것이 없습니다(확인 근거: Lamarsh &amp; Baratta 7장[1], NRC 운전원 일반기초시험 공식표[4]).</li>
+<li>기동 중 출력 급증을 다루는 설계 요건은 「원자로시설 등의 기술기준에 관한 규칙」 제26조(원자로보호계통)·제28조(반응도제어계통)입니다[5]. 이 규칙의 현행판은 원안위규칙 제37호(2026.3.30)이며 출제 당시와 조문 취지는 같습니다. 미국 심사 기준은 SRP 15.4.1(미임계·저출력 기동 중 제어봉 비정상 인출)입니다[6].</li>
+<li>기동률 관리값과 고기동률 경보·제어봉 인출 금지 설정값은 발전소별 운영 문서가 정하는 값이라 이 답안에는 쓰지 않았습니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 7장(원자로 주기·역시간방정식).</li>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, John Wiley &amp; Sons (1976), 6장(점동특성).</li>
+<li>G. R. Keepin, Physics of Nuclear Kinetics, Addison-Wesley (1965) — U-235 열중성자 지발중성자 6군 상수.</li>
+<li>U.S. NRC, Generic Fundamentals Examination(GFE) Equations and Conversions Sheet — SUR = 26.06/τ, P = P₀·10^(SUR·t).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제26조·제28조. 국가법령정보센터.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 15.4.1 "Uncontrolled Control Rod Assembly Withdrawal from a Subcritical or Low Power Startup Condition".</li>
+</ol>

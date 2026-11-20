@@ -1,0 +1,103 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 2교시 2번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>두께가 b인 피복관으로 둘러싸인 반지름 a의 매우 긴 원통형 핵연료봉의 온도 분포가 정상상태(Steady state)에 있다. 이때 다음을 구하시오. 단, 핵연료봉내에서 체적열생성률은 q‴로 일정하며 핵연료봉 중심에서의 온도는 Tm으로 유한하다. 또한, 피복관에서의 열방출은 없으며 표면의 온도는 Tc이다. 핵연료봉 및 피복관의 길이방향과 원주방향에 따라 온도 변화는 없다.
+가) 핵연료봉의 온도 분포
+나) 핵연료봉 표면의 온도
+다) 피복관의 온도 분포</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>원통 좌표 열전도 방정식을 세우고, 발열이 있는 연료(포물선)와 발열이 없는 피복관(로그)을 각각 풀어 경계조건으로 적분상수를 정할 수 있는지 봅니다. 중심 유한 조건으로 ln r 항을 지우는 것, 경계면에서 온도와 열속을 잇는 것이 채점의 뼈대입니다. 연료 온도강하가 반경과 무관하게 선출력으로만 정해진다는 해석까지 쓰면 변별됩니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>가정 및 문제 해석: 피복 발열 없음, Tc = 피복관 외표면, 완전 접촉, 물성 일정</li>
+<li>지배방정식과 일반해</li>
+<li>가) 연료 온도분포(중심 유한, T(0) = Tm)</li>
+<li>나) 연료 표면 온도(연료식·피복식, q‴ 소거형)</li>
+<li>다) 피복관 온도분포(열속 연속, T(a+b) = Tc)</li>
+<li>검산: 수치 예, 정합조건, 선출력 형태</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 문제 해석</strong></p>
+<ul>
+<li>"피복관에서의 열방출은 없으며" → <strong>피복관 내부 열생성 없음(q‴_c = 0)</strong>으로 해석함(외표면 단열로 읽으면 연료 발열과 정상상태가 모순)</li>
+<li>"표면의 온도 Tc" → <strong>피복관 외표면(r = a+b)</strong> 온도</li>
+<li>연료–피복 <strong>완전 접촉</strong>(간극 저항 무시), 열전도도 k_f(연료)·k_c(피복) <strong>일정</strong>, 1차원 반경방향 정상 전도</li>
+<li>Tm·Tc·q‴는 서로 독립이 아님 → 끝에 정합조건으로 확인</li>
+</ul>
+<p><strong>2. 지배방정식</strong></p>
+<ul>
+<li>원통 좌표 정상 열전도: <strong>(1/r)·d/dr(r·dT/dr) + q‴/k = 0</strong></li>
+<li>연료(발열 q‴): 적분 두 번 → T_f = −q‴r²/(4k_f) + C₁·ln r + C₂</li>
+<li>피복(발열 0): T_cl = A·ln r + B</li>
+</ul>
+<p><strong>3. 가) 핵연료봉의 온도 분포(0 ≤ r ≤ a)</strong></p>
+<ul>
+<li>경계조건 ①: r = 0에서 온도 유한 → ln r 발산 방지 → <strong>C₁ = 0</strong>(대칭 조건 dT/dr|₀ = 0과 같음)</li>
+<li>경계조건 ②: T_f(0) = Tm → <strong>C₂ = Tm</strong></li>
+<li><strong>T_f(r) = Tm − q‴r²/(4k_f)</strong> → 중심이 최고인 포물선</li>
+<li>무차원형: T_f(r) = Tm − (Tm − T_s)·(r/a)²</li>
+</ul>
+<p><strong>4. 나) 핵연료봉 표면의 온도</strong></p>
+<ul>
+<li>연료식에 r = a 대입: <strong>T_s = Tm − q‴a²/(4k_f)</strong></li>
+<li>피복 쪽에서 본 같은 값: T_s = Tc + (q‴a²/2k_c)·ln[(a+b)/a]</li>
+<li>두 식에서 q‴ 소거(열저항 비로 가중평균):
+<ul>
+<li><strong>T_s = [2k_f·ln(1+b/a)·Tm + k_c·Tc] / [2k_f·ln(1+b/a) + k_c]</strong></li>
+</ul>
+</li>
+<li>선출력 q′ = q‴πa²로 쓰면 연료 온도강하 <strong>Tm − T_s = q′/(4πk_f)</strong> → 반경과 무관</li>
+</ul>
+<p><strong>5. 다) 피복관의 온도 분포(a ≤ r ≤ a+b)</strong></p>
+<ul>
+<li>경계조건 ③(경계면 열속 연속): −k_c·dT_cl/dr|ₐ = 연료 발열/둘레 = q‴πa²/(2πa) = <strong>q‴a/2</strong>
+<ul>
+<li>dT_cl/dr = A/r → A = <strong>−q‴a²/(2k_c)</strong></li>
+</ul>
+</li>
+<li>경계조건 ④: T_cl(a+b) = Tc → B = Tc + (q‴a²/2k_c)·ln(a+b)</li>
+<li><strong>T_cl(r) = Tc + (q‴a²/2k_c)·ln[(a+b)/r]</strong> → 로그 분포</li>
+<li>무차원형: T_cl(r) = Tc + (T_s − Tc)·ln[(a+b)/r] / ln[(a+b)/a]</li>
+<li>피복 내 열속 q″(r) = q‴a²/(2r) → 반경이 커질수록 감소</li>
+<li>경계면에서 <strong>온도·열속은 연속, 기울기는 불연속</strong>(기울기 크기 비 피복/연료 = k_f/k_c)</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 연료(포물선)·피복(로그) 온도분포와 경계조건 4개" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/4552053a78ae2bd446239e8de7114771b449a76f56ac475f6fe68ea8ba20a245.webp"/><figcaption>답안용 도식: 연료(포물선)·피복(로그) 온도분포와 경계조건 4개</figcaption></figure>
+<p><strong>6. 검산(설명용 가정 수치 예)</strong></p>
+<ul>
+<li>가정: a = 4.1 mm, b = 0.57 mm, k_f = 3.0 W/m·K, k_c = 17 W/m·K, q′ = 17.9 kW/m → q‴ = q′/(πa²) = <strong>3.39×10⁸ W/m³</strong>, Tc = 330 °C</li>
+<li>피복 ΔT = q′·ln(1+b/a)/(2πk_c) = 17,900 × 0.1302/(2π × 17) = <strong>21.8 °C</strong> → T_s = <strong>351.8 °C</strong></li>
+<li>연료 ΔT = q′/(4πk_f) = 17,900/(4π × 3.0) = <strong>474.8 °C</strong> → Tm = <strong>826.6 °C</strong></li>
+<li>q‴ 소거식에 Tm·Tc 대입 → T_s = 351.8 °C로 일치</li>
+<li>단위: (W/m³)·m²/(W/m·K) = K ✔</li>
+<li><strong>정합조건</strong>: Tm − Tc = q‴a²/(4k_f) + (q‴a²/2k_c)·ln[(a+b)/a] → 셋 중 둘이 주어지면 나머지가 정해짐</li>
+</ul>
+<p><strong>7. 결론</strong></p>
+<ul>
+<li>연료는 <strong>포물선</strong>, 피복관은 <strong>로그</strong> 분포이며, 온도강하의 대부분(이 예 약 96 %)이 연료 안에서 생김</li>
+<li>연료 내부 온도차는 <strong>선출력 q′(kW/m)</strong>로 정해짐 → 중심 용융 방지를 선출력으로 관리하는 근거(중심온도 자체는 피복 온도차·표면온도·열전도도에도 의존)</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 그래프로 보는 두 곡선과 경계면</h3>
+<figure class="article-image"><img alt="수치 예의 T(r) 곡선(연료 포물선·피복 로그, 경계면 확대), 가·나·다 수식 카드와 경계조건 4개" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/cf28e36b051e3902b88a9b5e62391c0c366bfa0c7d699d57b9ae7728eef6a7ec.webp"/><figcaption>수치 예의 T(r) 곡선(연료 포물선·피복 로그, 경계면 확대), 가·나·다 수식 카드와 경계조건 4개</figcaption></figure>
+<p>연료 안에서는 반경이 커질수록 통과해야 하는 열(그 반경 안의 발열)이 r²에 비례해 늘어나므로 기울기가 점점 가팔라집니다. 피복관에서는 통과하는 열 q′가 일정한데 단면 둘레가 r에 비례해 커지므로 열속이 1/r로 줄고, 기울기도 완만해집니다. 경계면 r = a에서 열속은 같지만 열전도도가 다르므로(3 대 17) 기울기는 약 5.7배 차이가 납니다. 그래프에서 두 곡선을 매끈하게 잇지 않고 꺾이게 그려야 하는 이유입니다.</p>
+<h3>해설: 실제 연료봉과 다른 점</h3>
+<p>시험 조건은 간극이 없고 물성이 일정한 이상화 모델입니다. 실제 PWR 연료봉에는 펠릿과 피복관 사이에 기체 간극이 있어 선출력과 연소 상태에 따라 수십~수백 °C의 온도강하가 더 생기고, UO₂ 열전도도는 온도와 연소도에 따라 떨어집니다[3]. 그래서 설계에서는 열전도도 적분 ∫k dT = q′/(4π)를 쓰고, 연소 열화를 반영한 코드로 중심온도를 계산합니다[4]. 답안 끝에 이 한계를 한두 줄 붙이면 실무 감각을 보여 줄 수 있습니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li>열전도 해석식은 출제 이후 달라진 것이 없습니다[1][2].</li>
+<li>현행 연료 성능 평가는 UO₂ 열전도도의 연소 열화를 반영하는 것을 전제로 합니다. 미국은 NRC IN 2009-23·2011-21로 열화 미반영 코드를 경고했고[4], 물성 상관식은 NUREG/CR-7024 Rev.1(수정 NFI 상관식)을 씁니다[3].</li>
+<li>중심 용융 방지는 핵연료허용손상한계의 한 축입니다. 「원자로시설 등의 기술기준에 관한 규칙」 제2조제1항제10호(정의)와 제17조(원자로의 설계)가 근거이며, 이 규칙은 2026년 개정(원안위규칙 제37호, 2026.3.30)됐지만 해당 취지는 같습니다[5]. 미국 기준은 SRP 4.2(연료계통 설계)입니다[6].</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>N. E. Todreas, M. S. Kazimi, Nuclear Systems I: Thermal Hydraulic Fundamentals, 2nd ed., CRC Press (2012), 8장.</li>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 8장.</li>
+<li>U.S. NRC, NUREG/CR-7024 Rev. 1 "Material Property Correlations: Comparisons between FRAPCON-3.5, FRAPTRAN-1.5, and MATPRO" (2014).</li>
+<li>U.S. NRC, Information Notice 2009-23 "Nuclear Fuel Thermal Conductivity Degradation" (2009), Information Notice 2011-21 (2011).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제2조·제17조. 국가법령정보센터.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.2 "Fuel System Design", Rev. 3 (2007).</li>
+</ol>

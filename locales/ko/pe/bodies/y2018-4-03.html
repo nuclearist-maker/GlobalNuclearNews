@@ -1,0 +1,188 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 4교시 3번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>ATWS(Anticipated Transient Without Scram, 원자로정지불능 예상과도상태)에 대하여 다음을 기술하시오.
+가) ATWS란 무엇인가?(국내외 경험사례를 포함할 것)
+나) ATWS 관련 가압경수로에 대한 규제요건
+다) ATWS 관련 WH형 원전과 OPR/KSNP/APR형 원전의 조치사항</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>ATWS를 정의만 외웠는지가 아니라 <strong>경험 → 규제 → 설비</strong>의 인과 사슬로 설명하는지를 봅니다. Salem 1호기 정지차단기 실패(1983)가 Generic Letter 83-28과 10 CFR 50.62(1984)로 이어졌고, 그 규칙이 웨스팅하우스(WH)형에는 터빈정지·보조급수 다양화(AMSAC)를, CE형 계열에는 다양성 원자로정지(DSS)까지 요구해 국내 OPR1000(KSNP)·APR1400의 DPS로 이어진 흐름을 써야 합니다. 국내 규제(기술기준규칙 제27조, 사고관리 다중고장)와 판정기준(ASME Level C)까지 연결하면 고득점입니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론(가): 정의, 분류, 과도 거동, 판정기준</li>
+<li>본론(가): 국외 경험(Browns Ferry 3, Salem 1)과 국내 경험(설계·제도 반영)</li>
+<li>본론(나): 미국 10 CFR 50.62·SRP 15.8·GL 83-28, 국내 기술기준규칙 제27조·사고관리 고시</li>
+<li>본론(다): WH형 조치 / OPR·KSNP·APR형 조치 비교</li>
+<li>결론: 다양성 확보 방식의 차이</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가) ATWS의 정의</strong></p>
+<ul>
+<li><strong>정의</strong>: 예상운전과도(AOO)가 일어났는데 원자로보호계통의 <strong>원자로정지 기능이 실패</strong>해 제어봉이 삽입되지 않는 사건(10 CFR 50.62(b))[1]</li>
+<li><strong>분류</strong>: AOO(빈도 높음) × 정지 실패(공통원인고장 필요, 확률 매우 낮음) → <strong>설계기준 초과 사건</strong>, 국내 사고관리 고시 별표 1 다중고장 9종 중 <strong>① ATWS</strong>[4]</li>
+<li><strong>실패 원인</strong>: 신호 경로(센서·논리·디지털 소프트웨어 공통원인고장) / 작동 경로(정지차단기 미개방, 제어봉 기계적 고착)</li>
+<li><strong>과도 거동(PWR)</strong>: 출력 유지 + 2차측 열제거 감소 → 냉각재 온도·체적 증가 → 가압기 만수 → 안전밸브 방출 → <strong>RCS 압력 첨두</strong> → 감속재온도계수(MTC) 음의 궤환으로 출력 감소 → 보조급수·붕산 주입으로 안정화</li>
+<li><strong>최제한 사건</strong>: 터빈정지가 없는 <strong>정상급수상실</strong>(SG 재고가 가장 빨리 고갈)</li>
+<li><strong>판정기준</strong>: 첨두 RCS 압력 ≤ <strong>ASME Service Level C 약 3,200 psig = 22.06 MPa(g)</strong>(SRP 15.8)[2]</li>
+<li><strong>UET</strong>: 첨두압력이 기준을 넘게 하는 MTC가 유지되는 주기 중 기간 → 붕소 농도가 높은 <strong>주기 초</strong>에 집중</li>
+</ul>
+<p><strong>2. 가) 국내외 경험사례</strong></p>
+<ul>
+<li><strong>Browns Ferry 3호기(미국 BWR, 1980.6)</strong>: 스크램 배출 용기에 물이 차 제어봉 다수가 1차 스크램에서 덜 삽입됨 → 반복 수동 스크램으로 삽입 완료[5]</li>
+<li><strong>Salem 1호기(미국 PWR, 1983.2.25)</strong>: 자동 정지신호에도 원자로정지차단기 2개가 열리지 않음 → 약 30초 뒤 수동 정지. 원인은 <strong>저전압 트립장치 고착</strong>(정비 불량·마모), 2.22에도 같은 실패가 있었음이 뒤늦게 확인됨. 노심손상·방출 없음[3]</li>
+<li><strong>후속 조치</strong>: NUREG-1000(1983) → <strong>GL 83-28</strong>(정지차단기 시험·정비, <strong>분로(션트) 트립 자동화</strong>) → <strong>10 CFR 50.62 공포(1984.6.26)</strong>[1][3]</li>
+<li><strong>국내</strong>: 실제 정지 실패 사건의 공개 보고는 없음 → 경험은 설계·제도 반영으로 나타남
+<ul>
+<li>표준형(KSNP/OPR1000)·APR1400은 다양성보호계통(DPS)을, 국내 WH형은 AMSAC을 갖춤(미국 ATWS 규칙 체계 반영)</li>
+<li>2016.6 사고관리계획서 제도 시행으로 ATWS를 <strong>다중고장 필수 사고</strong>로 평가</li>
+<li>OPR1000 DPS에 <strong>SG 저압력 원자로정지 추가</strong> 설계변경(원안위 제183회 2023.9 등, 호기별 시점 상이)[10]</li>
+<li>APR1400(새울 1·2, 신한울 1·2) 사고관리계획서 ATWS 최대압력 <strong>17.59 MPa(g)</strong> &lt; 22.06 MPa(g)(원안위 제206회, 2025.1 — 해당 호기 해석 결과)[11]</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="ATWS 압력 판정 눈금(정상 15.41, 설계 17.14, 안전한계 18.86, APR1400 사고관리 해석 17.59, Level C 22.06 MPa(g))과 1978~2025 경험·규제 연표, 가압기·안전밸브 개념 모형" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/c40833b0890c867a738f55ddd569d059c9c9d762231e074212613d663db1b027.webp"/><figcaption>ATWS 압력 판정 눈금(정상 15.41, 설계 17.14, 안전한계 18.86, APR1400 사고관리 해석 17.59, Level C 22.06 MPa(g))과 1978~2025 경험·규제 연표, 가압기·안전밸브 개념 모형</figcaption></figure>
+<p><strong>3. 나) 가압경수로 ATWS 규제요건</strong></p>
+<ul>
+<li><strong>10 CFR 50.62(c)(1)</strong> — 모든 PWR: 원자로정지계통과 <strong>다양하고 독립적인 설비</strong>로 ATWS 조건에서 <strong>보조급수 자동 기동 + 터빈정지</strong>(센서 출력~최종 작동장치까지 독립)[1]</li>
+<li><strong>10 CFR 50.62(c)(2)</strong> — CE·B&amp;W형 PWR: 센서 출력~제어봉 전원 차단까지 독립된 <strong>다양성 스크램계통(DSS)</strong> 추가[1]
+<ul>
+<li>근거: 규칙 제정 당시 CE·B&amp;W형은 계산 첨두압력이 Level C를 넘었고 WH형은 압력방출 능력이 커서 정지회로 변경까지 요구하지 않음</li>
+</ul>
+</li>
+<li><strong>SRP 15.8 / NUREG-0460</strong>: 첨두 RCS 압력 Level C, 연료·격납건물 건전성 등 수용기준, 해석 가정(현실적 평가)[2]</li>
+<li><strong>GL 83-28</strong>: 정지차단기 신뢰성(분로 트립 자동화·정기 시험), 기기 분류·사후 검토[3]</li>
+<li><strong>국내 「원자로시설 등의 기술기준에 관한 규칙」 제27조(다양성보호계통)</strong>: ① 원자로정지·비상보조급수 작동·터빈정지 기능의 별도 보호계통 ② 감지장치 출력~최종작동기 구동장치까지 원자로보호계통과 독립 → <strong>노형 구분 없이 원자로정지 기능까지 요구</strong>[6]</li>
+<li><strong>국내 사고관리</strong>: 규칙 제85조의19~23, 원안위고시 제2026-1호 별표 1 ① ATWS → 사고관리계획서에서 대처능력 평가[4][6]</li>
+</ul>
+<p><strong>4. 다) WH형과 OPR/KSNP/APR형의 조치사항</strong></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>WH형(고리 2~4·한빛 1·2 등)</th>
+<th>OPR1000(KSNP)</th>
+<th>APR1400</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>미국 규정 대응</td>
+<td>50.62(c)(1)</td>
+<td>(c)(1) + (c)(2) 상당</td>
+<td>(c)(1) + (c)(2) 상당, 디지털 CCF 대응 겸함</td>
+</tr>
+<tr>
+<td>다양성 설비</td>
+<td><strong>AMSAC</strong></td>
+<td><strong>DPS</strong>(DSS + 다양성 터빈정지·보조급수)</td>
+<td><strong>DPS</strong></td>
+</tr>
+<tr>
+<td>감지 변수</td>
+<td>SG 저-저수위(설계에 따라 주급수 유량 저)</td>
+<td>가압기·격납건물 고압력(+ SG 저압력 추가), SG 저수위</td>
+<td>가압기·격납건물 고압력, SG 저수위</td>
+</tr>
+<tr>
+<td>원자로정지</td>
+<td><strong>AMSAC 자체 정지 기능 없음</strong>(RPS 정지는 별개, C-20 약 40 % 출력 이상 활성화)[7]</td>
+<td>CEDM MG 세트 출력 차단기 개방</td>
+<td>원자로정지 차단기 <strong>분로 트립 코일 여자</strong>(미국 인증)[8]</td>
+</tr>
+<tr>
+<td>차단기·논리</td>
+<td>GL 83-28 <strong>분로 트립 자동화</strong></td>
+<td>변수별 2/2·변수 간 OR, 제어기 PLC → FPGA(호기별)</td>
+<td>국내 2채널 2/2, 미국 인증 4채널 2/4[8]</td>
+</tr>
+<tr>
+<td>압력방출</td>
+<td>가압기 안전밸브 + PORV</td>
+<td>가압기 안전밸브</td>
+<td><strong>POSRV 4개</strong>(설정 2,470 psia)[8]</td>
+</tr>
+<tr>
+<td>노심·운전</td>
+<td>MTC·UET 관리(장전모형·가연성 흡수체), 기능회복절차의 ATWS 대응</td>
+<td>같음 + 반응도 제어 안전기능 우선</td>
+<td>같음 + ATWS 평가 제한 주기(초기노심)[9]</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>WH형 조치의 요지</strong>: 열제거 경로만 다양화(AMSAC)하고, 출력 감소는 음의 MTC·운전원 수동 정지·비상 붕산 주입에 맡김. Salem 이후 정지차단기의 저전압 트립 + 분로 트립으로 <strong>차단기 내부 다양성</strong>을 보강함</li>
+<li><strong>OPR/KSNP/APR형 조치의 요지</strong>: 가압기 고압력으로 <strong>제어봉 전원을 다른 경로로 차단</strong>해 중력 삽입(DSS 기능) + 터빈정지·보조급수 작동. APR1400 DPS는 디지털 안전 I&amp;C의 소프트웨어 공통원인고장 대응을 겸함[9]</li>
+<li><strong>공통 대응 기능</strong>: 원자로정지 확보(수동 정지, 제어봉 구동장치 전원 차단), 터빈정지·보조급수 확보, <strong>비상 붕산 주입</strong>으로 미임계 확보 — 실제 조치·순서는 호기별 비상운전절차서를 따름</li>
+</ul>
+<figure class="article-image"><img alt="WH형·OPR1000(KSNP)·APR1400 ATWS 조치 비교표(근거 조항, 감지 변수, 원자로정지 방식, 압력방출, 운전 대응)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/a997b1fb52856cc52a020c4f9f46379ddf5ebc023749df818670bcbfcf77f31b.webp"/><figcaption>WH형·OPR1000(KSNP)·APR1400 ATWS 조치 비교표(근거 조항, 감지 변수, 원자로정지 방식, 압력방출, 운전 대응)</figcaption></figure>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>ATWS 대책은 <strong>정지 실패 확률 낮추기</strong>(차단기 신뢰성·다양성 정지)와 <strong>결과 완화</strong>(음의 MTC·압력방출·열제거 회복) 두 축임</li>
+<li>WH형은 열제거 다양화 중심, OPR/KSNP/APR형은 원자로정지까지 다양화해 국내 제27조의 세 기능에 직접 대응함</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 정상급수상실 ATWS의 RCS 압력 과도(개념적 추세) — 가압기 만수·안전밸브 방출, MTC 궤환, 보조급수 회복과 22.06 MPa(g) 기준선" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/b8f172a781621fa8aaa7d49bff0cc6a49b1e744e57c90d22d8958faf76f8280f.webp"/><figcaption>답안용 도식: 정상급수상실 ATWS의 RCS 압력 과도(개념적 추세) — 가압기 만수·안전밸브 방출, MTC 궤환, 보조급수 회복과 22.06 MPa(g) 기준선</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 경험사례를 쓸 때 주의할 점</h3>
+<p>Browns Ferry 3호기는 BWR 사건이므로 "PWR ATWS 사례"로 쓰지 않고, 제어봉 삽입 실패의 기계적 원인(배출 용기 수위) 사례로 씁니다. Salem은 두 번의 실패(2.22, 2.25)가 있었고 두 번째에서 원인이 드러났다는 점, 그리고 결과가 "노심손상 없음"이었다는 점을 함께 적어야 과장이 없습니다. 국내는 실제 사건보다 규제·설계 반영(사고관리 다중고장, DPS 설계개선)을 경험으로 쓰는 편이 정확합니다.</p>
+<h3>해설: "KSNP"라는 표기</h3>
+<p>KSNP(한국표준형원전)는 OPR1000의 이전 명칭입니다. 문제의 "OPR/KSNP/APR형"은 CE 기술 기반 국내 노형을 묶은 표현이므로, 답안에서는 OPR1000(KSNP)과 APR1400을 나눠 쓰되 DPS라는 공통점과 정지 방식·논리의 차이를 함께 보여 주면 됩니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>출제 당시(2018년)</th>
+<th>현행(2026년)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 CFR 50.62</td>
+<td>1984년 규칙</td>
+<td>변경 없음[1]</td>
+</tr>
+<tr>
+<td>사고관리 고시</td>
+<td>제2017-34호, 다중고장 별표 1 ① ATWS</td>
+<td><strong>제2026-1호(2026.1.16)</strong>, 별표 1 ① ATWS 유지(위협요인 표는 별표 2 → 3)[4]</td>
+</tr>
+<tr>
+<td>기술기준규칙</td>
+<td>2018년 당시 판</td>
+<td>원안위규칙 제37호(2026.3.30), 제27조 요지 유지[6]</td>
+</tr>
+<tr>
+<td>OPR1000 DPS</td>
+<td>가압기·격납건물 압력 정지</td>
+<td>SG 저압력 원자로정지 추가(2020~2023 호기별), FPGA 제어기[10]</td>
+</tr>
+<tr>
+<td>APR1400</td>
+<td>새울 1·2 운전 초기</td>
+<td>사고관리계획서 승인 — ATWS 최대 17.59 MPa(g)(2025.1)[11]</td>
+</tr>
+<tr>
+<td>디지털 CCF 지침</td>
+<td>BTP 7-19 Rev.7</td>
+<td>BTP 7-19 Rev.9(2024.5)</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, 10 CFR 50.62 "Requirements for reduction of risk from anticipated transients without scram (ATWS) events for light-water-cooled nuclear power plants", (b)·(c)(1)·(c)(2) (1984.6.26 공포).</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 15.8 "Anticipated Transients Without Scram"; NUREG-0460 "Anticipated Transients Without Scram for Light Water Reactors" (1978).</li>
+<li>U.S. NRC, NUREG-1000 "Generic Implications of ATWS Events at the Salem Nuclear Power Plant" (1983); Generic Letter 83-28 "Required Actions Based on Generic Implications of Salem ATWS Events" (1983.7.8).</li>
+<li>원자력안전위원회, 원안위고시 제2026-1호(2026.1.16, 사고관리 범위·평가 세부기준), 별표 1(다중고장). 국가법령정보센터.</li>
+<li>U.S. NRC, IE Bulletin 80-17 "Failure of Control Blades to Insert During a Scram at a BWR" (1980).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제27조·제85조의19~23. 국가법령정보센터.</li>
+<li>U.S. NRC, Safety Evaluation of Westinghouse Owners Group Topical Report WCAP-10858 "AMSAC Generic Design Package" (1986).</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Rev. 3 (2018), 7.2·7.8절(PPS·DPS), 5장(POSRV). NRC ADAMS 공개.</li>
+<li>KEPCO &amp; KHNP, "ATWS Evaluation", APR1400-Z-A-NR-14014-NP Rev. 1, NRC ADAMS ML18087A121; "Common Cause Failure Coping Analysis", APR1400-Z-A-NR-14019-NP Rev. 3, ML18225A340.</li>
+<li>원자력안전위원회, 제183회 원자력안전위원회 회의(2023.9.7) 의안(DPS 설계변경 관련 KINS 심사결과).</li>
+<li>원자력안전위원회, 제206회 원자력안전위원회 회의(2025.1.9) 의안(새울 1·2, 신한울 1·2 사고관리계획서).</li>
+</ol>

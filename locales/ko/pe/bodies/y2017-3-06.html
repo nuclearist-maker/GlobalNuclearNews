@@ -1,0 +1,128 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 3교시 6번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>원자로냉각재계통의 다음 건전성 감시 계통에 대하여 기술하시오.
+가. 음향누설 감시계통(Acoustic Leak Monitoring System)
+나. 금속파편 감시계통(Loose Part Monitoring System)</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>두 계통 모두 원자로냉각재 압력경계(RCPB) 바깥에 붙인 센서로 안쪽에서 나는 "소리"를 듣습니다. 그러나 듣는 소리가 다릅니다. ALMS는 좁은 틈으로 냉각재가 새면서 내는 <strong>연속 잡음</strong>을, LPMS는 떨어져 나온 금속이 벽에 부딪칠 때 나는 <strong>충격 버스트</strong>를 듣습니다. 채점자는 이 신호 차이에서 센서 위치·판정 방법·한계가 갈라진다는 점과 RG 1.45·RG 1.133의 요건을 함께 쓰는지를 봅니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: RCS 건전성 감시와 NSSS 건전성 감시계통(NIMS)</li>
+<li>본론 1(가): ALMS — 목적, 원리, 구성·감시 위치, 판정, 규제 근거, 한계</li>
+<li>본론 2(나): LPMS — 목적, 원리, 센서 배치·감도, 경보·진단, 시험, 신호 분석</li>
+<li>결론: 두 계통 비교와 다른 감시 수단과의 관계</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>RCS 건전성 감시: 압력경계 <strong>누설</strong>과 1차계통 <strong>이물·구조물 이상</strong>을 조기 발견해 사고·손상으로 커지기 전에 조치</li>
+<li>OPR1000·APR1400의 <strong>NIMS</strong>는 통상 4개 하위 계통으로 구성되는 비안전 감시계통 [3]
+<ul>
+<li><strong>ALMS</strong>(음향누설), <strong>LPMS</strong>(금속파편), IVMS(노내구조물 진동), RCPVMS(RCP 진동)</li>
+<li>참고 기준: ASME OM-S/G Part 12(금속파편), Part 5(노내구조물), Part 14(회전기기) — 적용 판본은 호기별</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. 가) 음향누설 감시계통(ALMS)</strong></p>
+<ul>
+<li><strong>목적</strong>: RCPB 용접부·관통부의 미세 누설을 <strong>누설 초기 단계에서 탐지·위치 추정</strong> → 붕산 부식·균열 확대 전 조치</li>
+<li><strong>원리</strong>: 압력차로 냉각재가 미세 누설경로를 통과할 때 생기는 <strong>연속성 광대역 고주파 탄성파(음향방출)</strong>를 검출
+<ul>
+<li>균열 발생·성장 AE는 <strong>버스트성 신호</strong>로 별개 — 센서 배열과 사건 판별 기능이 있으면 균열 성장 감시에도 활용 [1]</li>
+</ul>
+</li>
+<li><strong>구성</strong>: 압력경계 외면 압전 AE 센서(+도파관·전치증폭기) → 신호처리·경보 장치 → 분석 컴퓨터</li>
+<li><strong>감시 위치 예</strong>: 원자로용기 상부헤드 관통부 등 주요 용접부, 신고리 3·4는 <strong>가압기 하부헤드 1채널 추가</strong>, OPR1000의 가압기 안전밸브 채널은 APR1400에서 제외(POSRV는 별도 계통이 누설 감시) [3]</li>
+<li><strong>판정</strong>: 선정 주파수 대역 <strong>RMS·추세</strong>를 운전조건별 배경값·경보설정치와 비교 → 경보, 센서 간 상대 크기로 <strong>대략 위치</strong> 추정(전파 감쇠·부착 상태 영향)</li>
+<li><strong>규제 근거</strong>: RG 1.45 Rev.1 — T/S 누설감시(섬프 수위·유량, 격납건물 입자 방사능, 냉각기 응축수)에 더해 <strong>보조 수단 (e) 음향방출 감시</strong> [1]
+<ul>
+<li>상용 AE 장치의 공급사 보고 감도 예 <strong>0.003~0.25 gpm</strong>(NUREG/CR-6861 인용) — 규제 요구값·국내 보증 성능 아님, 현장 감도는 설치·배경잡음에 따라 다름 [1][2]</li>
+</ul>
+</li>
+<li><strong>한계</strong>: RCP·유동 배경잡음, 정량 누설률은 섬프 수위·유량·재고량 수지가 주 수단(ALMS 정량 추정은 현장 보정 필요), T/S 인정 여부는 호기 인허가 기준</li>
+</ul>
+<p><strong>3. 나) 금속파편 감시계통(LPMS)</strong></p>
+<ul>
+<li><strong>목적</strong>: 기기에서 이탈한 금속물과 정비·건설 중 유입·잔류한 금속 이물을 조기 검출 → 연료·SG 전열관·내부구조물 손상과 유로 막힘 예방, 손상 기기 조기 발견 [4]</li>
+<li><strong>원리</strong>: 이물이 유동에 실려 압력경계 내면에 <strong>충돌</strong>할 때마다 생기는 충격파(감쇠 진동 버스트, 반복 가능)를 외면 <strong>가속도계</strong>로 검출</li>
+<li><strong>센서 배치</strong>(RG 1.133 Rev.1): 압력경계 <strong>외면</strong>, <strong>자연 집적부</strong>(원자로용기 상·하부 플레넘, 각 SG 냉각재 입구 수실)마다 <strong>최소 2개</strong>, 같은 영역 두 채널은 물리적으로 분리 [4]</li>
+<li><strong>감도</strong>: <strong>0.11~13.6 kg(0.25~30 lb)</strong> 금속물이 <strong>0.68 J(0.5 ft-lb)</strong>로 센서 <strong>0.91 m(3 ft)</strong> 이내 내면에 충돌하면 자동 검출(예: 0.23 kg 파편이 2.4 m/s) [4]</li>
+<li><strong>경보·진단</strong>: 경보준위 초과 → 제어실 경보 + <strong>자동 데이터 기록</strong>(최소 4개 센서 동시) → 의심 시 <strong>72시간 이내</strong> 존재 여부·안전 중요성 판단 조치 착수 [4]</li>
+<li><strong>내환경</strong>: 격납건물 내 장비는 <strong>OBE 이하 지진 후 기능 유지</strong>(경보가 유지되면 기록장치는 정비 후 복구 허용)</li>
+<li><strong>정기 시험</strong>(RG 1.133 권고, 실제 주기는 호기별) [4]
+<ul>
+<li>24시간 채널 점검, 7일 오디오 청취, 31일 채널 기능시험, 92일 배경잡음 확인</li>
+<li>18개월(저온정지·재장전) <strong>낙하 추 등 기계적 입력</strong>으로 교정 확인, 필요 시 재교정</li>
+</ul>
+</li>
+<li><strong>신호 분석</strong>: 복수 센서의 <strong>도달시간차</strong>·전파경로 분석 → 충돌 위치 추정, 접촉시간·스펙트럼·진폭 + 보정자료 → 질량·에너지 <strong>추정</strong>(일대일 관계 아님)</li>
+<li><strong>APR1400 예</strong>(신고리 3·4): DMIMS-DX 적용, <strong>100 kHz 샘플링</strong>, 최소 <strong>0.5~15 kHz</strong> 신호 대역, 기록 문턱 이상 충격 전부 기록, 오경보 판별 [3]</li>
+</ul>
+<figure class="article-image"><img alt="일반 PWR 1차계통 감시 위치 개념도의 LPMS 센서(원자로용기 상·하부 플레넘 외면, SG 입구 수실 외면 각 2개)와 ALMS 감시 위치(상부헤드 관통부 주변·가압기 하부헤드 용접부), 연속 누설음(RMS 추세)과 충돌별 버스트 개념 파형, 두 계통 비교표" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/334043cfca6afd838df090f437fbe5c2d392007eff84e053d758b1ecbe2bc643.webp"/><figcaption>일반 PWR 1차계통 감시 위치 개념도의 LPMS 센서(원자로용기 상·하부 플레넘 외면, SG 입구 수실 외면 각 2개)와 ALMS 감시 위치(상부헤드 관통부 주변·가압기 하부헤드 용접부), 연속 누설음(RMS 추세)과 충돌별 버스트 개념 파형, 두 계통 비교표</figcaption></figure>
+<p><strong>4. 결론 — 두 계통 비교</strong></p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>ALMS</th>
+<th>LPMS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>감시 대상</td>
+<td>압력경계 미세 누설</td>
+<td>이탈·잔류 금속 이물 충돌</td>
+</tr>
+<tr>
+<td>신호</td>
+<td>연속성 광대역 잡음</td>
+<td>충돌별 감쇠 버스트(반복 가능)</td>
+</tr>
+<tr>
+<td>판정</td>
+<td>대역 RMS·추세 vs 배경</td>
+<td>경보준위 초과 → 추가 진단</td>
+</tr>
+<tr>
+<td>위치</td>
+<td>센서별 크기·감쇠 비교(구역)</td>
+<td>복수 센서 Δt·전파경로</td>
+</tr>
+<tr>
+<td>근거</td>
+<td>RG 1.45 Rev.1 보조 수단</td>
+<td>RG 1.133 Rev.1, OM Part 12</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>두 계통은 <strong>정량 판정 수단이 아니라 조기 경보·위치 추정 수단</strong> → ALMS는 섬프·방사능 누설감시와, LPMS는 공정변수·RCP 진동·정비 시 육안점검과 묶어 판단</li>
+<li>충돌하지 않는 이물(가라앉아 정지한 파편)은 LPMS로 검출하기 어려워 <strong>이물 유입 관리(FME)</strong>가 함께 필요</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 원자로용기·SG 단순 선도에 LPMS 센서(외면, 영역당 2개)와 ALMS 센서 위치, 연속 잡음 vs 충격 버스트 파형" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/55cfe047b30474227409d58a7df728e63905995aa75ee5d1dc9b5a8d11e8b291.webp"/><figcaption>답안용 도식: 원자로용기·SG 단순 선도에 LPMS 센서(외면, 영역당 2개)와 ALMS 센서 위치, 연속 잡음 vs 충격 버스트 파형</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 왜 "자연 집적부"에 센서를 두나요</h3>
+<p>이탈물은 유속이 느려지거나 유로가 꺾이는 곳에 모입니다. PWR에서는 원자로용기 하부 플레넘(하향 유로가 방향을 바꾸는 곳), 상부 플레넘, SG 입구 수실(고온관에서 들어온 흐름이 전열관판에 부딪히는 곳)이 그렇습니다. 그곳에 2개씩 두는 이유는 두 가지입니다. 한 채널이 고장 나도 감시가 이어지고, 두 센서의 도달시간차로 충돌 위치를 좁힐 수 있습니다. RG 1.133의 0.68 J 감도는 정상 운전 배경잡음 속에서도 이 크기의 금속 충돌은 구분된다는 운전 경험에서 정해졌습니다[4].</p>
+<h3>해설: ALMS 경보가 울리면 바로 누설인가요</h3>
+<p>아닙니다. 음향 RMS는 RCP 기동, 유량 변화, 밸브 작동에도 오릅니다. 그래서 운전조건별 배경값을 따로 두고, 경보가 나면 섬프 수위·유량과 격납건물 방사능, 습도·온도 추세를 함께 봅니다. RG 1.45 Rev.1도 여러 감시 수단의 자료를 종합해 누설을 확인하고 단계별 조치 수준을 두라고 권고합니다[1]. ALMS의 강점은 "어디쯤에서 새는가"를 알려 주는 데 있습니다. 섬프 수위가 늘어난 것만으로는 위치를 알 수 없기 때문입니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li><strong>미국 LPMS 요건 완화</strong>: BWR은 NEDC-32975P(2001 NRC 승인), PWR은 PWROG-20016 Rev.0 "Regulatory Relaxation for PWR Loose-Part-Detection Systems"(NRC 승인본 2021.12 송부)가 호기별 인허가 변경의 일반 근거가 되었습니다[5]. 미국 사업자의 선택 사항이며 국내에 자동 적용되지 않습니다.</li>
+<li><strong>기술기준규칙</strong>: 현행 원안위규칙 제37호(2026.3.30) 제20조(계측 및 제어장치)·제21조(원자로냉각재압력경계)가 근거 조항입니다[6].</li>
+<li>RG 1.45 Rev.1(2008)과 RG 1.133 Rev.1(1981)은 출제 이후 개정되지 않았습니다[1][4].</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, Regulatory Guide 1.45 "Guidance on Monitoring and Responding to Reactor Coolant System Leakage", Rev. 1 (2008.5), NRC ADAMS ML073200271.</li>
+<li>U.S. NRC, NUREG/CR-6861 "Barrier Integrity Research Program: Final Report", D. S. Kupperman 외 (2004).</li>
+<li>Y. G. Oh, Y. H. Kim, K. I. Baik, K. W. Lee, S. Galin, "The Fifth (5th) Design Improvement of NSSS Integrity Monitoring System", Transactions of the Korean Nuclear Society Autumn Meeting, PyeongChang (2008.10).</li>
+<li>U.S. NRC, Regulatory Guide 1.133 "Loose-Part Detection Program for the Primary System of Light-Water-Cooled Reactors", Rev. 1 (1981.5), NRC ADAMS ML20004E544.</li>
+<li>PWROG, Topical Report PWROG-20016-NP-A Rev. 0 "Regulatory Relaxation for PWR Loose-Part-Detection Systems", NRC 승인본 송부(2021.12), NRC ADAMS ML21351A095.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제20·21조. 국가법령정보센터.</li>
+</ol>

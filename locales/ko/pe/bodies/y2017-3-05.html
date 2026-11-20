@@ -1,0 +1,98 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 3교시 5번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>외부사건 분석 중 지진사건 확률론적 안전성 분석에 대한 다음 사항에 대하여 기술하시오.
+가. 지진사건 확률론적 안전성 분석 수행 단계 및 상세 사항
+나. 지진사건 확률론적 안전성 분석 보고서에 기재하여야 하는 사항</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>지진 PSA를 <strong>재해도(얼마나 자주 얼마나 세게) × 취약도(얼마의 지진에 고장 나는가) → 발전소 응답 → 정량화</strong>의 4단계로 설명할 수 있는지 봅니다. 지진은 여러 계통을 한꺼번에 흔드는 상관 사건이고 소외전원상실을 거의 확실히 동반하므로, 내부사건 PSA와 무엇이 다른지를 단계마다 짚어야 합니다. 나)는 검토자가 결과를 재현하고 판단할 수 있도록 <strong>가정·자료·불확실성·취약점</strong>까지 남기는지를 묻습니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 지진 PSA의 정의와 목적, 적용 표준</li>
+<li>본론 1(가): ① 지진재해도 분석 ② 지진 취약도 분석 ③ 발전소 응답(계통·사고경위) 분석 ④ 정량화</li>
+<li>본론 2(나): 보고서 기재 사항(범위·방법, 재해도, 취약도, 모델, 결과, 취약점, 품질)</li>
+<li>결론: 결과 활용과 국내 안전목표</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li><strong>지진 PSA</strong>: 부지에서 일어날 수 있는 모든 크기의 지진에 대해 발생빈도와 그로 인한 노심손상 확률을 결합해 <strong>지진 노심손상빈도(CDF)</strong>·대량조기방출빈도(LERF)를 구하는 외부사건 PSA</li>
+<li>목적: 설계기준(SSE)을 넘는 지진까지 포함한 위험도 파악, 지배 사고경위·취약 기기 도출, 내진 보강 우선순위</li>
+<li>표준: ASME/ANS RA-Sa-2009 Part 5 — 기술요소 <strong>SHA(재해도)·SFR(취약도)·SPR(발전소 응답·정량화)</strong>, 미국 RG 1.200 Rev.3이 NRC 보충·예외 조건으로 수용 [1][2] → 답안은 설명 편의상 <strong>4단계</strong>로 나눔</li>
+<li>특징: 내부사건 모델을 바탕으로 <strong>지진 고장을 덧붙이고 상관 고장 반영</strong> [3]</li>
+</ul>
+<p><strong>2. 가) 수행 단계 및 상세 사항</strong></p>
+<p><strong>① 지진재해도 분석(PSHA)</strong></p>
+<ul>
+<li>지진원 모델: 단층원·영역원, 지진원별 재발 모형(예: Gutenberg-Richter 규모-빈도 관계), 최대규모</li>
+<li><strong>지반운동예측식(GMPE)</strong>: 규모·거리 → 부지 지반운동, 부지 증폭(지반 응답) 반영</li>
+<li>인식론적 불확실성: <strong>로직트리</strong>, 전문가 판단 절차(SSHAC) [4]</li>
+<li>결과: PGA(또는 스펙트럼가속도)별 <strong>연 초과빈도 곡선</strong>(평균·5/50/95 % 분위), <strong>등재해도 응답스펙트럼(UHS)</strong> — 같은 연 초과빈도의 주기별 응답값을 이은 스펙트럼(단일 지진의 스펙트럼 아님)</li>
+<li>재해도와 취약도는 <strong>같은 위치·성분·지진동 지표</strong>(예: 자유장 지표 PGA)로 정의해 부지 응답·SSI의 중복 반영 방지</li>
+</ul>
+<p><strong>② 지진 취약도 분석</strong></p>
+<ul>
+<li><strong>지진기기목록(SEL)</strong>: 안전기능에 필요한 구조물·계통·기기 선정</li>
+<li><strong>현장 점검(walkdown)</strong>: 설치·정착 상태, 비내진 기기의 낙하·충돌(Ⅱ/Ⅰ 상호작용) 확인, 내력 큰 기기 선별</li>
+<li><strong>대수정규 모델</strong>: 중앙값 내력 <strong>Am</strong>, 무작위성 <strong>βR</strong>, 불확실성 <strong>βU</strong></li>
+<li>분리변수법: Am = F × A_기준, F = 내력계수(강도·연성) × 구조물 응답계수(해석 보수성·감쇠·SSI) × 기기 응답계수(기기의 경우) — 각 계수는 여유계수</li>
+<li><strong>HCLPF = Am·exp[−1.645(βR + βU)]</strong>: 95 % 신뢰도로 파손확률 5 % 이하인 가속도 [3]</li>
+</ul>
+<p><strong>③ 발전소 응답(계통·사고경위) 분석</strong></p>
+<ul>
+<li>지진 초기사건: <strong>지진 유발 소외전원상실</strong>(스위치야드 기기 내력이 낮아 중간 이상 지진에서 확률 높음 — 취약도로 평가하거나 근거를 밝혀 1로 보수 가정), 지진 유발 LOCA·구조물 손상 가능성</li>
+<li>PGA 구간별 <strong>지진 사건수목</strong>: 지진동 구간 → 초기사건·동시손상 조건 → 정지·전원·냉각·잔열제거 성공/실패 → 노심손상(LOOP와 기기 손상은 동시에 일어날 수 있어 배타 분기로 두지 않음)</li>
+<li>고장수목에 지진 고장 기본사건 추가, <strong>상관 고장</strong>: 같은 형식·위치·입력운동의 기기를 상관그룹으로 묶고(완전상관 가정이 흔함) 상관 가정의 민감도 평가</li>
+<li>계전기 채터링, 지진 유발 화재·침수, 무작위 고장·정비 비가용 결합</li>
+<li><strong>지진 상황 인간신뢰도 분석(HRA)</strong>: 접근성·조명·스트레스 악화를 수행 영향인자로 반영</li>
+</ul>
+<p><strong>④ 정량화</strong></p>
+<ul>
+<li><strong>CDF = ∫(−dH/da)·P(CD|a)da ≈ Σ ΔH_i · P(CD|a_i)</strong>, ΔH_i = H(a_i,하한) − H(a_i,상한) — PGA 구간 발생빈도 × 발전소 조건부 노심손상확률(기기 취약도가 아니라 계통 모델 결과)</li>
+<li>발전소 수준 취약도·HCLPF, 지배 사고경위, 주요 기여 기기, 중요도(F-V·RAW)</li>
+<li><strong>불확실성 전파</strong>(로직트리·몬테카를로 표본추출) + 민감도(상관 가정·재해곡선 적분 범위·HRA), 2단계 연계로 LERF</li>
+</ul>
+<figure class="article-image"><img alt="지진 PSA 4단계: 가상 재해곡선(log-log), 가상 발전소 조건부 노심손상확률 곡선(Am 1.0 g, βR 0.25·βU 0.35, HCLPF 0.37 g), 지진 사건수목, PGA 구간별 CDF 기여 막대(0.05~2.0 g 적분 약 5.1×10⁻⁶/년, 설명용)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/40dd0a345bf1f83f48b8d2caff8f61a949a96e838f0e36b7ab4917905b779b2c.webp"/><figcaption>지진 PSA 4단계: 가상 재해곡선(log-log), 가상 발전소 조건부 노심손상확률 곡선(Am 1.0 g, βR 0.25·βU 0.35, HCLPF 0.37 g), 지진 사건수목, PGA 구간별 CDF 기여 막대(0.05~2.0 g 적분 약 5.1×10⁻⁶/년, 설명용)</figcaption></figure>
+<p><strong>3. 나) 보고서에 기재하여야 하는 사항</strong></p>
+<ul>
+<li><strong>범위·방법</strong>: 목적, 운전모드, 위험 척도(CDF·LERF), 적용 표준·전산코드, 내부사건 모델과의 관계, 선별·제외 근거 [5]</li>
+<li><strong>재해도</strong>: 지진원·GMPE·부지 응답, 재해곡선(분위 포함)·UHS, 자료 출처와 불확실성 처리</li>
+<li><strong>취약도</strong>: SEL, walkdown 절차·팀 구성·결과, 산정 방법, 주요 SSC의 <strong>파손모드·위치와 Am·βR·βU·HCLPF</strong>, 선별 기준</li>
+<li><strong>발전소 모델</strong>: 지진 초기사건, 사건수목·고장수목, 상관 가정, 채터링·화재·침수 처리, HRA</li>
+<li><strong>정량화 결과</strong>: 지진 CDF·LERF, 지배 경위·최소절단집합, 주요 기여 기기, 발전소 수준 HCLPF, 적분 범위·절단오차, 불확실성·민감도</li>
+<li><strong>취약점·개선 대책</strong>: 보강 대상, 절차 개선, 개선 후 위험도 변화</li>
+<li><strong>가정·제한·미해결 항목</strong>, <strong>품질보증·동료 검토</strong> 지적사항과 조치</li>
+<li>(NUREG-1407은 IPEEE 제출 지침이므로 항목 구성의 참고로 쓰고, 현행 PSA 보고서는 적용 표준의 문서화 요건을 따름)</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 재해도 → 취약도 → 발전소 응답 → 정량화 4단계 상자와 CDF ≈ Σ ΔH·P(CD|a) 식" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/eb1670cbb6c8ea085eb0839e572f0c8ab0c141f655731546be60550a11be526e.webp"/><figcaption>답안용 도식: 재해도 → 취약도 → 발전소 응답 → 정량화 4단계 상자와 CDF ≈ Σ ΔH·P(CD|a) 식</figcaption></figure>
+<p><strong>4. 결론</strong></p>
+<ul>
+<li>지진 PSA는 "<strong>자주 오는 약한 지진</strong>"이 아니라 <strong>SSE를 넘는 중간~큰 지진</strong> 구간이 CDF를 지배하는 경우가 많음 → 발전소 HCLPF·취약 기기 보강이 핵심</li>
+<li>국내 안전목표(사고관리 고시 제9조): 초기사망·암사망 위험도 각각 전체 위험도의 <strong>0.1 % 이하</strong>, Cs-137 100 TBq 초과 빈도 합 <strong>10⁻⁶/년 미만</strong>(LERF와 별개 지표, 지진 CDF 단독 기준 아님) → PSA 범위는 지진 등 외부사건까지 종합적으로 [6]</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 그림의 숫자는 무엇을 보여주나요</h3>
+<p>그림의 재해곡선과 조건부 노심손상확률 곡선은 계산 흐름을 보이려는 <strong>설명용 가정</strong>입니다(실제 원전 값 아님). 재해는 H(a) = 1×10⁻³·(a/0.1 g)^−2.5로 두어 0.3 g에서 연 6.4×10⁻⁵, 1.0 g에서 3.2×10⁻⁶입니다. 발전소 수준 P(CD|a)는 계통 모델 결과를 대수정규식으로 근사했다고 보고 Am 1.0 g, βR 0.25, βU 0.35를 썼습니다. HCLPF는 1.0 × exp(−1.645 × 0.60) ≈ 0.37 g이며, <strong>95 % 신뢰 곡선에서 파손확률 5 %가 되는 점</strong>입니다(평균 곡선의 5 % 점이 아님).</p>
+<p>구간별로 적분하면 0.05~0.2 g 구간은 빈도가 높아도 조건부 확률이 거의 0이라 기여가 5×10⁻⁹에 그칩니다. 반대로 0.6~1.0 g 구간이 2.0×10⁻⁶으로 가장 크고, 0.6~2.0 g 두 구간이 외삽 포함 전체의 약 68 %를 차지합니다. 0.05~2.0 g 적분값은 약 5.1×10⁻⁶/년이고, 같은 식을 2.0 g 위로 외삽하면 약 0.55×10⁻⁶이 더해집니다. 결과가 <strong>재해곡선 꼬리와 적분 범위</strong>에 민감하므로, 보고서에 절단 근거와 민감도를 남기라는 요구가 여기서 나옵니다.</p>
+<h3>해설: 내부사건 PSA와 다른 세 가지</h3>
+<p>첫째, <strong>상관 고장</strong>입니다. 지진은 같은 층에 놓인 같은 기기를 동시에 흔듭니다. 내부사건의 공통원인고장(β 인자)처럼 작은 확률로 다루면 위험도를 과소평가할 수 있어, 상관그룹을 정하고 가정의 민감도를 봅니다. 둘째, <strong>소외전원상실 확률이 높습니다</strong>. 스위치야드 애자 등은 내력이 낮아, 중간 크기 이상의 지진에서는 비상디젤발전기와 교류 전원 회복 실패가 사고경위의 중심이 되기 쉽습니다. 셋째, <strong>운전원 조치 여건</strong>입니다. 여진, 접근로 손상, 조명 상실 때문에 HRA 오류확률을 높여 잡습니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>답안은 2017년 기출을 현행 기준과 지침으로 보완해 작성했습니다. 출제 이후 바뀐 점은 다음과 같습니다.</p>
+<ul>
+<li><strong>사고관리 고시</strong>: 출제 당시 원안위고시 제2017-34호에서 현행 제2026-1호(2026.1.16)로 바뀌었습니다. 제9조 안전목표는 같고, 위협요인 표가 별표 3으로 옮겨졌으며 "외부재해 이후 시설상태"를 정한 별표 2가 새로 생겼습니다[6].</li>
+<li><strong>지진 설계·부지 기준</strong>: 2026.1.20 원안위고시 제2026-6호(지질·지진)가 제정되고 구 「원자로시설의 위치에 관한 기술기준」(제2017-15호)이 폐지되었습니다. 지진재해도 입력과 SSE 정의는 새 고시로 인용합니다.</li>
+<li><strong>국제 지침</strong>: IAEA SSG-3이 Rev.1(2024)로 개정되어 내부재해·외부재해를 Level 1 PSA 범위에 포함합니다[3]. 미국은 RG 1.200 Rev.3(2020.12)이 현행이며, RA-S-1.1-2022판을 승인한 개정판은 아직 없습니다[2].</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>ASME/ANS, RA-Sa-2009 "Addenda to ASME/ANS RA-S-2008, Standard for Level 1/Large Early Release Frequency Probabilistic Risk Assessment for Nuclear Power Plant Applications", Part 5 (Seismic Events) (2009).</li>
+<li>U.S. NRC, Regulatory Guide 1.200 "Acceptability of Probabilistic Risk Assessment Results for Risk-Informed Activities", Rev. 3 (2020.12).</li>
+<li>IAEA, Development and Application of Level 1 Probabilistic Safety Assessment for Nuclear Power Plants, Specific Safety Guide No. SSG-3 (Rev. 1), Vienna (2024).</li>
+<li>U.S. NRC, NUREG-2117 Rev. 1 "Practical Implementation Guidelines for SSHAC Level 3 and 4 Hazard Studies" (2012).</li>
+<li>U.S. NRC, NUREG-1407 "Procedural and Submittal Guidance for the Individual Plant Examination of External Events (IPEEE) for Severe Accident Vulnerabilities" (1991).</li>
+<li>원자력안전위원회, 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」, 원안위고시 제2026-1호(2026.1.16), 제9조. 국가법령정보센터.</li>
+</ol>

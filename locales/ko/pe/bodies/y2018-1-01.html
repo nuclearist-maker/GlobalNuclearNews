@@ -1,0 +1,61 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 1교시 1번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<ol>
+<li>중성자 유효증배계수와 각 6인자들의 의미, 유효증배계수의 범위에 따른 원자로 상태</li>
+</ol>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>keff</strong>: 한 세대에 새로 생긴 중성자 수를 앞 세대에서 흡수·누설로 사라진 중성자 수로 나눈 값입니다.</li>
+<li><strong>4인자·6인자 공식</strong>: 누설이 없는 무한 매질의 k∞ = η·f·p·ε에 두 비누설확률을 곱하면 keff가 됩니다.</li>
+<li><strong>비누설확률</strong>: 고속 P_FNL ≈ e^(−B²τ), 열 P_TNL = 1/(1+L²B²)(B² 버클링, τ 페르미 연령, L 확산거리 — 균질·기본모드 근사)로, 노심이 클수록 1에 가깝습니다.</li>
+<li><strong>지발초임계·즉발임계</strong>: 초임계라도 ρ &lt; β이면 지발중성자가 출력 증가 속도를 지배합니다. ρ = β이면 즉발중성자만으로 임계(즉발임계), ρ &gt; β이면 즉발초임계입니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 정의</strong></p>
+<ul>
+<li>keff = 생성률 ÷ (흡수율 + 누설률) = 한 세대 중성자 수의 비임[1]</li>
+<li>keff = <strong>ε·P_FNL·p·P_TNL·f·η</strong> = k∞·P_FNL·P_TNL (k∞ = η·f·p·ε)</li>
+</ul>
+<p><strong>2. 6인자의 의미</strong></p>
+<ul>
+<li><strong>ε (고속분열인자)</strong>: 열분열 고속중성자 1개가 U-238 고속분열까지 포함해 만드는 고속중성자 수, 비균질 경수로 약 1.03</li>
+<li><strong>P_FNL (고속 비누설확률)</strong>: 감속 중 노심 밖으로 새지 않을 확률 ≈ e^(−B²τ)</li>
+<li><strong>p (공명이탈확률)</strong>: 감속 중 공명흡수(주로 U-238, 첫 공명 6.67 eV)를 피할 확률, 연료온도 상승 시 도플러 확대로 감소 → 음의 FTC</li>
+<li><strong>P_TNL (열 비누설확률)</strong>: 열중성자 확산 중 비누설확률 = 1/(1+L²B²)</li>
+<li><strong>f (열중성자 이용률)</strong>: 전체 열중성자 흡수 중 연료 흡수 비율 = Σa,F/Σa, 붕소·제어봉·Xe 흡수로 감소</li>
+<li><strong>η (재생인자)</strong>: 연료 흡수 열중성자 1개당 생성 중성자 = ν·Σf/Σa,F, U-235 약 2.07·천연 U 약 1.33[1]</li>
+</ul>
+<p><strong>3. keff 범위별 원자로 상태 (ρ = (keff−1)/keff)</strong></p>
+<ul>
+<li><strong>keff &lt; 1 미임계</strong>: 중성자 감소, 선원 있으면 1/(1−k) 증배 평형</li>
+<li><strong>keff = 1 임계</strong>: 정상상태 출력 일정</li>
+<li><strong>keff &gt; 1 초임계</strong>: 0 &lt; ρ &lt; β <strong>지발초임계</strong>(제어 가능), ρ = β(keff ≈ 1.0065, β(엄밀히 βeff) = 0.0065 가정) <strong>즉발임계</strong>, ρ &gt; β <strong>즉발초임계</strong> → 주기 급감</li>
+<li>운전: 정지 시 정지여유도 확보, 저장 keff ≤ 0.95[3]</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 6인자 순환 고리(ε → P_FNL → p → P_TNL → f → η)와 keff 상태 수직선" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/d9264f00fa583ac140aeb62ac7e3a01b70f88f5e1d0730e33ec3c9d0b68a30d9.webp"/><figcaption>답안용 도식: 6인자 순환 고리(ε → P_FNL → p → P_TNL → f → η)와 keff 상태 수직선</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="설명용 가정값으로 따라간 중성자 1,000개의 한 세대(인자별 증감)와 keff 범위별 원자로 상태 수직선" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/cc09469df704931ed2754f2c2944ebe93b737be00ce67f30696d97dc66871426.webp"/><figcaption>설명용 가정값으로 따라간 중성자 1,000개의 한 세대(인자별 증감)와 keff 범위별 원자로 상태 수직선</figcaption></figure>
+<p>그림은 U-235 농축도 3 wt%의 UO₂ 격자를 가정해 중성자 1,000개가 한 세대를 도는 과정을 숫자로 따라간 것입니다. 고속분열로 30개가 늘고, 고속 누설로 31개, 공명 흡수로 250개, 열 누설로 7개가 빠집니다. 남은 742개 가운데 연료에 흡수되는 것은 73 %인 542개입니다(흡수 542개가 곧 분열 542회는 아니며, 일부는 포획됩니다). 여기에 η = 1.85를 곱하면 다음 세대는 약 1,002개(단계별 반올림)로, keff ≈ 1.002인 약한 초임계입니다. 이 예에서는 손실 중 공명 흡수와 연료 밖 흡수가 가장 크므로, 설계에서 p와 f를 함께 조정한다는 점을 볼 수 있습니다. η = 1.85는 2200 m/s 단면적으로 계산한 값이라 실제 노심의 스펙트럼 평균값과는 다릅니다[1][2].</p>
+<p>인자마다 바꾸는 손잡이가 다릅니다. 감속재를 늘리면 p는 오르지만 감속재 흡수가 늘어 f가 내려가므로 최적 감속비가 생깁니다. 붕산 농도는 주로 f를, 노심 크기는 두 비누설확률을, 농축도는 η를 바꿉니다. 연소가 진행되면 η와 f가 줄고 p도 조금 줄어드는데, 운전 중에는 붕산을 희석해 f를 올려 이를 보상합니다.</p>
+<p>상태 구분에서는 초임계와 즉발임계를 섞지 않는 것이 핵심입니다. 지발중성자는 전체의 0.65 %에 불과하지만, 반응도가 β보다 작으면 이들이 늦게 나오는 시간 때문에 출력 증가가 운전원이 제어할 수 있을 만큼 느려집니다[2].</p>
+<p><strong>현행 기준 메모</strong>: 기초 물리 개념이라 출제 이후 바뀐 기준은 없습니다. 저장조 임계 기준(10 CFR 50.68)도 그대로입니다[3].</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>정의에서 누설 누락</strong>: keff는 흡수와 누설을 모두 분모에 넣어야 합니다. k∞와 구분해 쓰십시오.</li>
+<li><strong>f 정의 오류</strong>: "열중성자 중"이 아니라 "흡수된 열중성자 중" 연료에 흡수된 비율입니다.</li>
+<li><strong>η와 ν 혼동</strong>: ν는 분열당 중성자 수이고, η는 포획까지 포함한 흡수당 중성자 수입니다.</li>
+<li><strong>초임계 = 즉발임계로 씀</strong>: ρ와 β를 비교해 지발초임계와 즉발임계를 나눠야 점수를 받습니다.</li>
+<li><strong>인자 순서·기호 혼용</strong>: 중성자 생애 순서(ε → P_FNL → p → P_TNL → f → η)로 쓰면 정리가 쉽습니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 6장.</li>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, John Wiley &amp; Sons (1976), 3·6장.</li>
+<li>U.S. NRC, 10 CFR 50.68 "Criticality accident requirements", (b)(4).</li>
+</ol>

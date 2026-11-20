@@ -1,0 +1,64 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 1교시 10번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<ol start="10">
+<li>원격정지실(Remote shutdown room)</li>
+</ol>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>원격정지실(RSR)</strong>: 주제어실(MCR)을 쓸 수 없을 때 MCR과 분리된 장소에서 원자로를 정지 상태로 유지하고 냉각하는 방입니다.</li>
+<li><strong>GDC 19</strong>: 제어실 밖에서 신속한 고온정지와, 절차를 통한 후속 저온정지가 가능해야 한다는 미국 설계기준입니다.</li>
+<li><strong>물리적·전기적 분리</strong>: 다른 방화지역·층·환기계통, 전환 스위치로 MCR 회로를 끊는 구조입니다.</li>
+<li><strong>대체정지 성능목표</strong>: 반응도 제어, 냉각재 보충, 잔열 제거, 공정 감시, 지원 기능입니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 정의·목적</strong></p>
+<ul>
+<li>MCR이 <strong>화재·독성가스·방사선</strong> 등으로 거주 불능일 때 운전원이 이동해 원자로를 <strong>고온정지로 유지</strong>하고 <strong>저온정지</strong>까지 가져가는 MCR 외부 제어 장소</li>
+<li>국내 근거: 기술기준규칙 <strong>제25조④</strong> — 제어실 사용 불가 대비, 제어실과 <strong>물리적·전기적으로 분리된</strong> 장소에 정지·안전 유지 장치 설치[1]</li>
+<li>미국 근거: <strong>GDC 19</strong> — 제어실 밖 신속한 고온정지 능력 + 절차에 의한 후속 저온정지 잠재능력[2]</li>
+</ul>
+<p><strong>2. 설계 요건</strong></p>
+<ul>
+<li><strong>분리</strong>: MCR과 다른 위치·층, <strong>별도 환기</strong>, 다중 통신, 조명된 접근로 → MCR 대피를 부르는 단일 사건이 RSR까지 잃게 하지 않음[4]</li>
+<li><strong>제어권 전환</strong>: 안전 구분마다 <strong>마스터 전환 스위치</strong> → RSR 모드에서 전환 대상 MCR 제어신호 차단(화재로 인한 오동작 방지, 수동 원자로정지·MSIS는 예외), 전환 상태 양쪽 표시·경보[4]</li>
+<li><strong>보안</strong>: 평상시 키 잠금·행정 관리, MCR 출구 어느 쪽에서도 접근</li>
+</ul>
+<p><strong>3. 수행 기능(대체정지 성능목표)</strong>[3]</p>
+<ul>
+<li>반응도 제어(정지 유지·붕산) / 냉각재 보충(재고량·압력) / 잔열 제거(SG·보조급수 → 정지냉각) / 공정 감시 / 지원 기능(전원·냉각수)</li>
+<li>감시 예: 중성자속(대수), 고온·저온관 온도, 가압기 압력·수위, SG 압력·수위[4]</li>
+</ul>
+<p><strong>4. 운용</strong></p>
+<ul>
+<li>가능하면 <strong>대피 전 MCR에서 원자로 정지</strong> → RSR 이관 → 고온대기 유지 → 절차에 따라 저온정지</li>
+<li>국내 화재 기준: 안전정지 달성·유지 <strong>72 h</strong> 확인[5]</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: MCR과 RSR의 분리(방화지역·환기), 전환 스위치, 현장 기기로 가는 제어 경로와 고온정지→저온정지 흐름" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/ea6c04e953fb3c83ea2f3ba8ec5b75ff83b479ea47d534d1e0398f274a867a30.webp"/><figcaption>답안용 도식: MCR과 RSR의 분리(방화지역·환기), 전환 스위치, 현장 기기로 가는 제어 경로와 고온정지→저온정지 흐름</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="APR1400 예: MCR·RSR 분리 배치와 구분별 마스터 전환 스위치, 원격정지 콘솔의 고온정지·저온정지 기능 표, MCR 대피에서 저온정지까지의 시간축" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/8857f18a564c557388655599a419a0eb38d2dd24e377655c43b51e726330bd94.webp"/><figcaption>APR1400 예: MCR·RSR 분리 배치와 구분별 마스터 전환 스위치, 원격정지 콘솔의 고온정지·저온정지 기능 표, MCR 대피에서 저온정지까지의 시간축</figcaption></figure>
+<p>그림은 APR1400 설계인증 문서(DCD) 7.4절의 원격정지 설계를 정리한 것입니다. 설계 가정은 "MCR 내부 화재로 설비가 손상되어 대피한다"이고, 운전원이 대피 전에 원자로를 정지시킨다고 봅니다. 그래서 원격정지 콘솔(RSC)은 처음부터 출력 운전이 아니라 정지 후 상태를 지키는 데 필요한 계측·제어만 갖춥니다. 수동 원자로정지와 주증기 격리(MSIS) 스위치는 전환과 관계없이 MCR과 RSR 어디서나 쓸 수 있습니다[4].</p>
+<p>전환 스위치가 핵심입니다. MCR이 불타는 동안 그 안의 케이블이 단락되면 엉뚱한 밸브가 열릴 수 있습니다. RSR 모드로 바꾸면 MCR 쪽 신호를 전부 끊고 RSR 신호만 받아들이므로, 화재로 인한 오동작이 원격 운전을 방해하지 않습니다.</p>
+<p>규정의 출처도 구분하십시오. GDC 19는 "고온정지 + 후속 저온정지 잠재능력"을 요구하고, 72시간은 화재 방호 기준(App. R III.L, 국내 화재위험도분석 고시)의 대체정지 목표입니다. APR1400에는 항공기 충돌에 대비한 원격제어콘솔(RCC)이 따로 있는데, 이는 원격정지실과 다른 설비입니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제(2019) 이후 원격정지 설비 요건의 본질은 그대로입니다. 국내 규칙은 현행 원안위규칙 제37호(2026.3.30) 제25조로 인용하고, 화재 관련 72 h는 원안위고시 제2024-9호 제10조로 인용합니다.</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>목적 서술 부족</strong>: "MCR 사용 불가 시 정지·유지·냉각"과 "물리적·전기적 분리"가 함께 들어가야 합니다.</li>
+<li><strong>전환 스위치 누락</strong>: MCR 회로를 끊어야 화재 오동작을 막을 수 있다는 점이 변별 포인트입니다.</li>
+<li><strong>비상대응시설과 혼동</strong>: 기술지원실(TSC)·비상운영시설(EOF)은 지원·지휘 시설이지 원자로 제어 장소가 아닙니다.</li>
+<li><strong>근거 혼합</strong>: GDC 19와 72 h 화재 기준을 한 문장으로 섞어 단정하지 않습니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제25조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix A, General Design Criterion 19 "Control room".</li>
+<li>U.S. NRC, 10 CFR Part 50, Appendix R, Sections III.G.3, III.L "Alternative and dedicated shutdown capability".</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Chapter 7, Section 7.4 "Safe Shutdown Systems", 표 7.4-1·7.4-2, Rev. 3 (2018), NRC ADAMS ML18228A654.</li>
+<li>원자력안전위원회, 「화재위험도분석에 관한 기술기준」, 원안위고시 제2024-9호, 제10조·제18조. 국가법령정보센터.</li>
+</ol>

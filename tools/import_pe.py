@@ -32,6 +32,14 @@ def repair_korean_emphasis(soup):
         node.insert_before(value[offset:]);node.extract()
     return soup
 
+def repair_numeric_section_references(soup):
+    """Keep literal bracketed limits plus dotted SR numbers, not broken links."""
+    for link in list(soup.find_all('a', href=True)):
+        if link.find_parent(['code', 'pre', 'script', 'style']):continue
+        if re.fullmatch(r'[0-9]+(?:\.[0-9]+){2,}', link['href']):
+            link.replace_with('[' + link.get_text() + '](' + link['href'] + ')')
+    return soup
+
 def convert(source, receipt, include_finals=False):
     target = ROOT/'locales/ko/pe'
     target.mkdir(parents=True, exist_ok=True)
@@ -47,7 +55,7 @@ def convert(source, receipt, include_finals=False):
         if not isinstance(meta['related'],list):raise ValueError('Invalid related list: '+ident)
         pattern = r'C-[A-Z]{2}-\d{3}' if group == 'concept' else r'(?:Y\d{4}-[1-4]-\d{2}|H\d{4})'
         if not re.fullmatch(pattern, ident):raise ValueError('Invalid PE ID: '+ident)
-        soup = repair_korean_emphasis(BeautifulSoup(markdown(read(src)), 'html.parser'))
+        soup = repair_numeric_section_references(repair_korean_emphasis(BeautifulSoup(markdown(read(src)), 'html.parser')))
         heading = soup.find('h1')
         if not heading:raise ValueError('Missing heading: '+ident)
         title = heading.get_text(' ',strip=True)

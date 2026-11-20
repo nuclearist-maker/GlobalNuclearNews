@@ -1,0 +1,62 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 1교시 2번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<ol start="2">
+<li>핵비등이탈(DNB)과 핵비등 열속</li>
+</ol>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>비등곡선</strong>: 벽 과열도 ΔTe = Tw − Tsat에 따른 열속 변화로, 자연대류·핵비등·천이비등·막비등 4영역과 CHF점으로 나눕니다.</li>
+<li><strong>핵비등 열속</strong>: 핵비등 영역에서는 열속이 과열도의 약 세제곱에 비례해 급증하므로 작은 과열도로 큰 열을 내보냅니다.</li>
+<li><strong>CHF(임계열속)</strong>: 핵비등이 유지될 수 있는 최대 열속이며, 저건도에서 이 한계에 이르는 형태가 DNB입니다.</li>
+<li><strong>DNBR</strong>: 국부 임계열속과 실제 열속의 비이며, 노심 전체의 최솟값 MDNBR로 설계 여유를 판단합니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 핵비등 열속</strong></p>
+<ul>
+<li><strong>핵비등</strong>: 가열면 공동에서 기포가 생성·이탈하며 액체를 교반 → 단상 대류보다 열전달계수가 매우 큼</li>
+<li>풀비등 Rohsenow: <strong>q″ ∝ ΔTe³</strong>(발달 핵비등, Csf는 표면–유체 조합 상수)[1]</li>
+<li>유동비등(PWR): Jens–Lottes ΔTsat = 25(q″/10⁶)^0.25·e^(−P/62), Thom ΔTsat = 22.65(q″/10⁶)^0.5·e^(−P/87)[2]</li>
+<li>155 bar·1 MW/m²에서 벽 과열도 <strong>약 2~4 K</strong> → 작은 과열도로 큰 열속 제거</li>
+<li>상한 = <strong>CHF</strong>(1 atm 포화수 풀비등 약 1.26 MW/m²)[1]</li>
+</ul>
+<p><strong>2. 핵비등이탈(DNB)</strong></p>
+<ul>
+<li>과냉~저건도·고열속에서 기포 밀집·합체 → 국부 건조, <strong>벽면 재습윤 저해 → 열전달 급감</strong></li>
+<li>핵연료는 <strong>열속 제어면</strong> → CHF 초과 시 벽온도 급상승(막비등 쪽 도약) → 피복관 산화·손상</li>
+<li>환상류 벽면 액막 소진은 <strong>dryout</strong>(BWR의 대표 CHF 기구)으로 구분</li>
+</ul>
+<p><strong>3. 설계 관리</strong></p>
+<ul>
+<li>DNBR = q″CHF(z)/q″(z), <strong>MDNBR ≥ 상관식별 설계한계</strong>(95 % 신뢰수준에서 DNB 미발생 확률 95 % 이상, 예 APR1400 KCE-1 1.29)[4][5]</li>
+<li>근거: 기술기준규칙 제2조①10호·제17조① 연료허용손상한계[3], GDC 10</li>
+<li>DNBR 감소 방향: 압력↓·입구온도↑·유량↓·첨두열속↑ → CPC 저 DNBR 트립·LCO로 보호</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 비등곡선 4영역과 CHF(DNB)점, 열속 제어면의 온도 도약" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/74258281b8d7bb1698439994035887198806f81b39ca95793730fff63c6a2a55.webp"/><figcaption>답안용 도식: 비등곡선 4영역과 CHF(DNB)점, 열속 제어면의 온도 도약</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="1 atm 포화수 풀비등 개념 곡선(CHF 약 1.26 MW/m², 최소열속 약 19 kW/m²), 155 bar 유동 핵비등 벽 과열도 예시, DNB와 dryout 구분·DNBR 정의" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/6bad612be1172b432599921904079462fe03a6bbe62c0923b19164b748aadc02.webp"/><figcaption>1 atm 포화수 풀비등 개념 곡선(CHF 약 1.26 MW/m², 최소열속 약 19 kW/m²), 155 bar 유동 핵비등 벽 과열도 예시, DNB와 dryout 구분·DNBR 정의</figcaption></figure>
+<p>문제의 "핵비등 열속"은 두 가지로 읽을 수 있습니다. 하나는 핵비등 영역에서 벽이 내보내는 열속과 과열도의 관계이고, 다른 하나는 핵비등이 버틸 수 있는 상한 열속, 곧 CHF입니다. 답안은 비등곡선 하나에 둘을 함께 올려 연결하면 깔끔합니다.</p>
+<p>그림 왼쪽은 1기압 포화수의 풀비등 개념 곡선입니다. CHF 약 1.26 MW/m²와 최소열속 약 19 kW/m²는 각각 Lienhard–Dhir 계수 0.149와 Zuber 계수 0.09로 직접 계산한 값입니다[1]. CHF에서의 과열도는 이 식이 정하지 않고 표면 상태에 따라 달라지므로 "약 20~30 K"는 예시일 뿐입니다. PWR의 DNB를 정량 예측하는 곡선이 아니라는 점도 유의하십시오.</p>
+<p>오른쪽은 PWR 압력 155 bar(절대압)에서 열속 1 MW/m²를 가정한 발달 핵비등의 벽 과열도입니다. Jens–Lottes로 2.1 K, Thom으로 3.8 K가 나옵니다[2]. 두 값은 상관식의 차이이지 오차 범위가 아닙니다. 고압에서는 몇 K만 과열해도 큰 열을 내보낼 수 있어, 노심 고온봉 상부의 국부 과냉비등은 설계상 허용됩니다. 문제는 열속이 CHF에 다가갈 때입니다. 원자로 연료처럼 열발생이 정해진 면에서는 CHF를 넘는 순간 같은 열을 내보내기 위해 벽온도가 막비등 쪽으로 뛰어오르고, 막비등 정상상태에 이르기 전에 피복관이 손상될 수 있습니다. 그래서 설계는 DNB 자체를 피하는 방향, 즉 MDNBR을 설계한계 위로 유지하는 방향으로 짜입니다.</p>
+<p><strong>현행 기준 메모</strong>: 개념과 판정 방식은 출제 이후 그대로이며, 국내 근거 조항은 현행 원안위규칙 제37호(2026.3.30)로 인용했습니다[3].</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>"핵비등 열속"을 CHF만으로 답함</strong>: 핵비등 영역의 q″–ΔT 관계(세제곱 비례, 유동비등 상관식)를 함께 써야 합니다.</li>
+<li><strong>ONB와 혼동</strong>: DNB는 끓기 시작하는 점이 아니라 핵비등이 끝나는 한계입니다.</li>
+<li><strong>DNBR을 곡선 사이 거리로 씀</strong>: 국부 열속 비의 최솟값입니다.</li>
+<li><strong>95/95를 DNBR 숫자로 씀</strong>: 95/95는 미발생 확률·신뢰도 기준이고, 한계값은 상관식과 설계방법론이 정합니다.</li>
+<li><strong>dryout과 혼동</strong>: 고건도 액막 소진은 dryout으로 구분합니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>F. P. Incropera, D. P. DeWitt et al., Fundamentals of Heat and Mass Transfer, 7th ed., Wiley (2011), 10장.</li>
+<li>N. E. Todreas, M. S. Kazimi, Nuclear Systems Vol. I, 2nd ed., CRC Press (2012), 12·13장.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제2조·제17조. 국가법령정보센터.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.4 "Thermal and Hydraulic Design", Rev. 2 (2007).</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Ch. 4.4 "Thermal and Hydraulic Design" (NRC 설계인증 공개본) — KCE-1 DNBR 설계한계.</li>
+</ol>

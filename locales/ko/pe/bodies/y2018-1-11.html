@@ -1,0 +1,104 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 1교시 11번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<ol start="11">
+<li>보수적 안전해석과 최적 안전해석</li>
+</ol>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>보수적 안전해석</strong>: 계산 모델·초기조건·계통 가용성을 허용기준에 불리하게 가정해 결과가 실제보다 나쁘게 나오도록 하는 결정론적 해석입니다.</li>
+<li><strong>최적 안전해석(BEPU)</strong>: 현실적 코드와 최적추정 입력으로 계산하고, 주요 불확실성을 정량화해 상한값을 허용기준과 비교합니다.</li>
+<li><strong>App. K</strong>: 미국 LOCA 보수적 평가모델의 필수 가정 목록입니다.</li>
+<li><strong>Wilks 공식</strong>: 단일 출력·단측 상한 기준 1차 59회, 2차 93회 계산으로 95 %/95 % 상한을 얻습니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>설계기준사고는 결정론적으로 평가함(기술기준규칙 제42조②)[1]. <strong>안전여유를 어디에 두느냐</strong>에 따라 보수적 해석과 최적 해석으로 나뉨(아래는 경수로 LOCA/ECCS 평가 예)</li>
+<li>국내 ECCS 성능 평가는 두 방법 중 <strong>택1</strong>, 파단 크기·위치 스펙트럼으로 최악 사례 포함(고시 제2017-23호 제4조)[2]</li>
+</ul>
+<p><strong>2. 보수적 안전해석 (Conservative)</strong></p>
+<ul>
+<li>보수적 코드·모델 + 보수적 초기·경계조건 + 보수적 가용성(단일고장·소외전원 상실)</li>
+<li>App. K 예: 출력 허가출력의 <strong>1.02배</strong> 이상(계측 불확도 입증 시 완화), 핵분열생성물 붕괴열 ANS(1971) <strong>× 1.2</strong>, Zr-물 반응 <strong>Baker-Just 식</strong>, CHF 이후 블로우다운 중 핵비등 복귀 불허[3]</li>
+<li>장점: 단순·투명, 인허가 실적 많음, 계산 부담 작음</li>
+<li>단점: 내재 보수성과 실제 여유를 <strong>분리하기 어려움</strong>, 보수성 중첩으로 현상이 왜곡될 수 있음, 운전 유연성·출력증강 제약</li>
+</ul>
+<p><strong>3. 최적 안전해석 (BEPU)</strong></p>
+<ul>
+<li>최적평가 코드(RELAP5, MARS-KS, SPACE 등) + 최적추정 입력 + 모델·입력 불확실성 정량화, 계통 가용성은 보수적 가정 유지</li>
+<li>10 CFR 50.46(a)(1)(i): 허용기준을 초과하지 않을 <strong>높은 확률</strong>을 입증해야 함[3] → 통상 <strong>95/95 상한</strong>으로 입증</li>
+<li>방법론: CSAU(NUREG/CR-5249, 1989), RG 1.157, RG 1.203(EMDAP)[4]</li>
+<li>통계: Wilks 비모수 표본(독립 표본·단일 출력·단측) — 1차 <strong>59회</strong>(최댓값), 2차 <strong>93회</strong>(두 번째 큰 값)[6]</li>
+<li>장점: 모델·불확실성 평가에 근거해 여유를 추정 → 출력증강·연료 이용 개선, 현상 재현성</li>
+<li>단점: 코드 검증·불확실성 평가 비용 큼, 입력 분포 설정에 판단 개입</li>
+</ul>
+<p><strong>4. 비교(IAEA SSG-2 Rev.1 분류)</strong>[5]</p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>코드</th>
+<th>초기·경계조건</th>
+<th>가용성</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>옵션 1(보수적)</td>
+<td>보수적</td>
+<td>보수적</td>
+<td>보수적</td>
+</tr>
+<tr>
+<td>옵션 2(혼합)</td>
+<td>최적</td>
+<td>보수적</td>
+<td>보수적</td>
+</tr>
+<tr>
+<td>옵션 3(BEPU)</td>
+<td>최적</td>
+<td>최적추정 + 불확실성</td>
+<td>보수적</td>
+</tr>
+<tr>
+<td>옵션 4</td>
+<td>최적</td>
+<td>최적추정</td>
+<td>현실적·확률론적</td>
+</tr>
+</tbody>
+</table>
+<figure class="article-image"><img alt="답안용 도식: 허용기준선 아래 보수적 결과 막대와 BEPU 예시 분포·95/95 상한, 각각의 여유" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/9b4fb7411fcb48078e41a086b02010995014cb378ef4abab866f124fb91c79d2.webp"/><figcaption>답안용 도식: 허용기준선 아래 보수적 결과 막대와 BEPU 예시 분포·95/95 상한, 각각의 여유</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="개념적 PCT 축에서 허용기준 1,204 ℃, 보수적 결과, BEPU 예시 분포와 95/95 상한, SSG-2 옵션 표·Wilks 표본 수·App. K 가정" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/fdc5a1fe4825c85e009d4b28eed481314e36ac8d67493c99820c38c9d7737511.webp"/><figcaption>개념적 PCT 축에서 허용기준 1,204 ℃, 보수적 결과, BEPU 예시 분포와 95/95 상한, SSG-2 옵션 표·Wilks 표본 수·App. K 가정</figcaption></figure>
+<p>두 방법 모두 결과가 허용기준 아래라는 점을 보이는 것이 목적입니다. LOCA라면 PCT 외에 산화율·수소 발생·냉각 가능 형상·장기 냉각 기준도 함께 만족해야 합니다. 차이는 여유를 어디에 두느냐입니다. 보수적 해석은 허용기준에 불리한 가정을 골라 결과를 위로 올리므로, 기준까지의 계산상 여유는 보이지만 실제 거동 대비 여유는 따로 떼어 보기 어렵습니다. BEPU는 결과 분포를 계산해 상한과 기준 사이의 거리를 보여 줍니다.</p>
+<p>"최적평가는 덜 안전하다"는 서술은 틀립니다. 같은 허용기준을 높은 확률로 만족해야 하고, 단일고장 같은 계통 가정은 그대로 보수적입니다. 옵션 4는 계통 가용성까지 현실적(확률론적)으로 다루는 방식으로, 설계기준사고 인허가 해석의 기본 옵션은 아닙니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li>IAEA SSG-2는 2019년 Rev.1으로 개정되었습니다[5].</li>
+<li>50.46c는 2024.4.11 위원회가 직원에게 반환해 제정되지 않았습니다. 2026.7 제안규칙(FR 2026-14341)은 위험도 정보 활용 대체 ECCS 요건을 새 50.46a로 두는 안이며, 아직 제안 단계입니다[3].</li>
+<li>국내 ECCS 고시 제2017-23호는 출제 당시와 같은 현행판입니다[2].</li>
+</ul>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>비교 축 누락</strong>: 코드·입력·가용성 세 축으로 나누면 차이가 명확해집니다.</li>
+<li><strong>App. K 예시</strong>: 1.02·1.2·Baker-Just 중 두 개 이상을 쓰십시오.</li>
+<li><strong>불확실성 정량화 누락</strong>: BEPU를 "현실적 계산"으로만 쓰면 반쪽 답입니다.</li>
+<li><strong>확률론과 혼동</strong>: BEPU는 결정론적 해석의 한 방법이며 PSA가 아닙니다. 95/95는 사고 발생확률이 아니라 결과 분포의 상한입니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제42조. 국가법령정보센터.</li>
+<li>원자력안전위원회, 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」, 원안위고시 제2017-23호, 제4조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR 50.46(a)(1) 및 10 CFR Part 50 Appendix K "ECCS Evaluation Models", I.A·I.C.4.e; SRM-SECY-16-0033 (2024.4.11).</li>
+<li>U.S. NRC, NUREG/CR-5249 "Quantifying Reactor Safety Margins" (1989); Regulatory Guide 1.157 (1989); Regulatory Guide 1.203 (2005).</li>
+<li>IAEA, Specific Safety Guide No. SSG-2 (Rev. 1), Deterministic Safety Analysis for Nuclear Power Plants (2019), 2장.</li>
+<li>S. S. Wilks, "Determination of Sample Sizes for Setting Tolerance Limits", Annals of Mathematical Statistics 12, 91 (1941).</li>
+</ol>

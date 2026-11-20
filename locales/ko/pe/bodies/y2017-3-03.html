@@ -1,0 +1,232 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 3교시 3번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>사고 후 냉각(Post Accident Cooling)과 관련하여 다음에 사항에 대하여 기술하시오.
+가. 자연순환을 형성시키기 위한 조건
+나. 자연순환을 위한 운전원 조치
+다. 자연순환이 되고 있음을 판단할 수 있는 지시값
+라. 자연순환을 방해하는 비웅축성 가스의 생성원
+마. 비상노심냉각계통 허용기준</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>RCP를 쓸 수 없는 사고 뒤에 붕괴열을 어떻게 빼는지를 물리(가), 운전(나·다), 방해 요인(라), 판정 기준(마)으로 한 번에 묻는 종합 문제입니다. 가~라는 "구동력이 생기고 → 운전원이 유지하고 → 지시값으로 확인하고 → 기체가 그것을 깨뜨린다"는 한 흐름으로 이어지게 쓰는 것이 좋습니다. 마는 성격이 다른 소문항으로, 10 CFR 50.46(b)의 5개 기준을 수치와 함께 정확히 적는지가 점수를 가릅니다(시험지 "비웅축성"은 "비응축성"의 오기입니다).</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 사고 후 냉각 수단으로서 자연순환</li>
+<li>본론 가: 구동력 식, 형성·유지 조건</li>
+<li>본론 나: 운전원 조치(냉각률·압력·재고량·상부헤드)</li>
+<li>본론 다: 확인 지시값 5가지</li>
+<li>본론 라: 비응축성 기체 생성원 표, 축적 위치·제거</li>
+<li>본론 마: ECCS 허용기준 5가지, 국내 근거</li>
+<li>결론</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>소외전원 상실·RCP 정지가 동반된 사고 뒤 <strong>붕괴열(정지 10분 약 1.5 %)</strong>을 SG로 보내는 기본 수단 = <strong>자연순환</strong></li>
+<li>자연순환이 실패하면 급수·방출(feed &amp; bleed) 등 다른 열제거로 넘어가야 하므로, 형성 조건과 확인이 핵심임</li>
+</ul>
+<p><strong>2. 가. 자연순환 형성 조건</strong></p>
+<ul>
+<li>구동압: <strong>ΔPb = (ρc − ρh)·g·ΔH</strong>, ΔH = SG 열중심 − 노심 열중심(열중심 z = ∫z dQ/∫dQ)</li>
+<li>준정상·단상(구동 = 마찰, 압력손실 ∝ 유량², 물성·손실계수 일정): <strong>ṁ ∝ (Q·ΔH)^1/3, ΔT ∝ Q^2/3·ΔH^−1/3</strong>(층류면 지수 1/2)[5]</li>
+<li>조건(단상 루프 자연순환 기준)
+<ul>
+<li>① <strong>배치</strong>: 열침원(SG) 열중심이 열원(노심)보다 높음(ΔH &gt; 0)</li>
+<li>② <strong>열침원 유지</strong>: SG 2차측 수위(보조급수) + 증기 방출(ADV·터빈우회)</li>
+<li>③ <strong>재고량·과냉각</strong>: RCS가 채워져 있고 압력이 유지되어 단상 연속 유로 형성</li>
+<li>④ <strong>공극 없음</strong>: 고온관·U-관 정상부에 증기·비응축성 기체가 모이지 않음</li>
+<li>⑤ <strong>유로</strong>: RCP 정지 후에도 루프가 막히지 않음(저항이 작을수록 유량 증가)</li>
+</ul>
+</li>
+<li>재고량이 줄면 대표적으로 단상 → 이상 → 리플럭스 응축 모드로 바뀌며(계통·사고 조건에 따라 다름) 이상 자연순환으로도 열제거가 가능함</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 1차 루프와 열중심 고도차 ΔH, 지시값 위치(CET·Th·Tc·SG 압력·SMM)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/60a405789a4ce09219105955bbf4603674664d52f27ec0620bf334b8b4e272a2.webp"/><figcaption>답안용 도식: 1차 루프와 열중심 고도차 ΔH, 지시값 위치(CET·Th·Tc·SG 압력·SMM)</figcaption></figure>
+<p><strong>3. 나. 자연순환을 위한 운전원 조치</strong>[1]</p>
+<ul>
+<li><strong>원자로 정지·미임계 확인</strong>, RCP 정지 확인(자연순환 냉각의 전제 — 소외전원 상실 시 타행 정지)</li>
+<li><strong>SG 열침원 확보</strong>: 보조급수로 SG 수위 유지(수원 재고 지속성 확인), ADV(또는 터빈우회)로 SG 압력 조절 → <strong>냉각률 제어</strong></li>
+<li><strong>RCS 압력·재고량 유지</strong>: 가압기 히터로 압력·<strong>과냉각여유도</strong> 유지, 감압이 필요할 때 보조살수, 충전으로 가압기 수위 유지 — 가압기 수위만으로 원자로용기 재고량을 판단하지 않음</li>
+<li><strong>반응도 관리</strong>: 냉각 전 붕산 농도 확인(냉각에 따른 양의 반응도 대비 정지여유도)</li>
+<li><strong>상부헤드 기포 방지</strong>: 냉각·감압 속도 제한, 설계·절차상 효과가 확인된 경우 CRDM 냉각팬 가동 — 정체된 헤드 물이 감압 때 플래싱하지 않게 함. 감압 중 <strong>설명되지 않는 가압기 수위 급상승</strong>은 헤드 공극의 징후</li>
+<li>지시값 감시, 미확립 시 SG 수위·증기 방출 경로를 절차에 따라 회복(과도한 냉각·감압은 헤드 플래싱 유발), 기포 발생 시 재가압·필요하면 고점 배기</li>
+<li>정지냉각 진입 조건에서 정지냉각계통으로 전환(APR1400 예: 350 °F 개시, SCS 최대 운전압력 450 psia — 발전소별로 다름)[6]</li>
+<li>냉각률·과냉각 기준 수치는 발전소별 비상운전절차서가 정함</li>
+</ul>
+<p><strong>4. 다. 자연순환 확인 지시값</strong>[1][2]</p>
+<table>
+<thead>
+<tr>
+<th>지시값</th>
+<th>판단 기준</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>과냉각여유도(SMM)</td>
+<td>Tsat(RCS 압력) − T(CET·고온관) &gt; 0, 유지</td>
+<td>측정 위치 과냉각(헤드 공극 부재까지 보증하지는 않음)</td>
+</tr>
+<tr>
+<td>SG 압력</td>
+<td>안정 또는 감소(급수·증기 방출과 함께 판단)</td>
+<td>2차측의 지속적 열제거</td>
+</tr>
+<tr>
+<td>Th·CET</td>
+<td>안정 또는 감소, <strong>CET가 Th를 추종</strong></td>
+<td>노심 → 고온관 유동 존재</td>
+</tr>
+<tr>
+<td>Tc</td>
+<td>Tsat(SG 압력)에 근접(작은 접근 온도차)</td>
+<td>SG에서 냉각된 물이 돌아옴</td>
+</tr>
+<tr>
+<td>루프 ΔT</td>
+<td>Th &gt; Tc, 전출력 ΔT보다 작고 일정·감소</td>
+<td>유량이 붕괴열에 맞게 형성</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>판정은 한 지시값이 아니라 <strong>조합</strong>: 유량이 정체하면 CET는 빨리 오르고 고온관 RTD는 늦게 따라감 — ΔT 증가·CET 상승은 냉각 이상의 징후(유로 폐색의 확정 증거는 아님)</li>
+</ul>
+<p><strong>5. 라. 비응축성 기체 생성원</strong></p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>생성원</th>
+<th>기체</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정상운전</td>
+<td>냉각재 용존 수소(감압·가열 시 탈기)</td>
+<td>H₂</td>
+</tr>
+<tr>
+<td>정상운전</td>
+<td>냉각재 방사선분해(수소 첨가로 순생성 억제)</td>
+<td>H₂·O₂</td>
+</tr>
+<tr>
+<td>정상운전</td>
+<td>붕소 B-10(n,α)Li-7 반응</td>
+<td>He</td>
+</tr>
+<tr>
+<td>기동</td>
+<td>히드라진 분해(사용 시)</td>
+<td>N₂·H₂(NH₃는 용해성 큼)</td>
+</tr>
+<tr>
+<td>사고</td>
+<td>지르코늄-물 반응(피복 고온 산화)</td>
+<td>H₂</td>
+</tr>
+<tr>
+<td>사고</td>
+<td>안전주입탱크 배출 완료 후 질소 유입(격리 여부에 따름)</td>
+<td>N₂</td>
+</tr>
+<tr>
+<td>사고·보충</td>
+<td>주입수(RWST·IRWST) 용존 공기</td>
+<td>N₂·O₂</td>
+</tr>
+<tr>
+<td>연료 파손</td>
+<td>핵분열기체·봉 내 충전 헬륨</td>
+<td>Xe·Kr·He</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>축적 위치: 원자로용기 상부헤드, <strong>SG U-관 정상부</strong>, 가압기 증기공간</li>
+<li>영향: 단상 유로 차단, 리플럭스 응축 열전달 저하(증기 분압 감소 + 벽면 근처 기체 농축·확산 저항), 수위 지시 왜곡</li>
+<li>제거: 원자로용기 헤드·가압기 <strong>고점 배기</strong>(NUREG-0737 II.B.1, 10 CFR 50.46a)[3] — U-관 전열관은 배기 설치 의무의 예외일 뿐 기체 축적 위험의 예외가 아니므로 탈기·충수 관리로 예방</li>
+</ul>
+<p><strong>6. 마. 비상노심냉각계통 허용기준</strong>(10 CFR 50.46(b))[4]</p>
+<table>
+<thead>
+<tr>
+<th>번호</th>
+<th>기준</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>피복재 최고온도(PCT)</td>
+<td><strong>≤ 1,204 °C(2,200 °F)</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>최대 피복재 산화량(국부 등가 피복재 반응량, 파열 후 내면 포함)</td>
+<td><strong>≤ 산화 전 피복 두께의 17 %</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>수소 발생량</td>
+<td><strong>≤ 피복재(플레넘 제외) 전량 반응 가상량의 1 %</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>노심 형상</td>
+<td>냉각 가능한 형상 유지</td>
+</tr>
+<tr>
+<td>5</td>
+<td>장기 냉각</td>
+<td>노심 온도를 낮게 유지, 붕괴열 장기 제거</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>국내: 기술기준규칙 제30조(비상노심냉각장치) → 원안위고시 제2017-23호 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」 — 같은 5개 기준, 보수적 평가 또는 최적평가 선택[7]</li>
+<li>수소 1 %는 격납건물 농도가 아니라 <strong>피복 전량 반응 가상량 대비</strong> 값임</li>
+<li>이 기준은 LOCA에 대해 <strong>계산된 ECCS 성능의 판정 기준</strong>이며, 자연순환 운전 중 실시간 판단 기준과 구분함</li>
+</ul>
+<figure class="article-image"><img alt="1차 루프 위 자연순환 조건·지시값·기체 축적 위치, 붕괴열과 자연순환 유량·ΔT 추세 그래프, ECCS 허용기준 5가지 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/0d8c70b0c6faced83f2aef1e82325a6830875f9e50c123b35ff1882d131ccf95.webp"/><figcaption>1차 루프 위 자연순환 조건·지시값·기체 축적 위치, 붕괴열과 자연순환 유량·ΔT 추세 그래프, ECCS 허용기준 5가지 카드</figcaption></figure>
+<p><strong>7. 결론</strong></p>
+<ul>
+<li>자연순환은 <strong>ΔH &gt; 0 + SG 열침원 + 재고량·과냉각 + 공극 없는 유로</strong>가 함께 있어야 유지됨</li>
+<li>운전원은 미임계·열침원·냉각률·압력·상부헤드를 관리하고, 과냉각여유도·SG 압력·Th/CET·Tc·ΔT 조합으로 확인함</li>
+<li>비응축성 기체는 고점에 모여 유로를 막으므로 탈기·고점 배기로 관리하고, ECCS 성능은 50.46(b) 5개 기준으로 판정함</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 붕괴열이 줄면 자연순환 유량도 줄지만, 비율로는 완만합니다</h3>
+<p>fig1의 그래프는 붕괴열(Way-Wigner, 1년 운전 가정)과 단상 준정상 세제곱근 유량 관계로 만든 설명용 비교이며, 운전 판정 기준이 아닙니다. 실제 냉각 중에는 냉각재·구조물의 저장열도 함께 빠지므로 추세가 이와 다를 수 있습니다. 정지 10분의 붕괴열 1.53 %가 1시간에 1.01 %, 24시간에 0.44 %로 줄어도, ΔH와 루프 저항이 같다면 자연순환 유량은 10분 값의 0.87배, 0.66배로만 줄고 루프 ΔT는 0.76배, 0.44배가 됩니다. 그래서 자연순환이 잘 되고 있으면 ΔT가 시간에 따라 서서히 줄어드는 모습이 보이고, 반대로 ΔT가 커지거나 CET만 오르면 유량 저하나 공극을 의심할 징후입니다. 1980년 St. Lucie 1호기 자연순환 냉각 중 상부헤드 기포가 생긴 사건 뒤, NRC는 GL 81-21로 자연순환 냉각 절차와 훈련을 점검하게 했습니다[1].</p>
+<h3>해설: 채점 포인트와 흔한 실수</h3>
+<ul>
+<li>라 항에 <strong>증기</strong>를 넣는 실수: 증기는 응축되므로 비응축성 기체가 아닙니다.</li>
+<li>다 항을 "과냉각여유도" 하나로 끝내는 실수: 다섯 가지를 조합으로 쓰고 CET–Th 추종을 함께 적는 것이 좋습니다.</li>
+<li>마 항에서 PCT를 1,200 °C로 쓰거나 수소 1 %를 격납건물 농도로 쓰는 실수: 1,204 °C(2,200 °F), 피복 전량 반응 대비입니다.</li>
+</ul>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li>10 CFR 50.46c(신 ECCS 기준)는 2024.4.11 SRM-SECY-16-0033으로 위원회가 직원에게 반환해 제정되지 않았고, 현행 50.46(b)가 그대로 유효합니다. 2026.7.16 제안규칙(FR 2026-14341)은 그 연구결과를 새 자발적 50.46a에 담고 기존 50.46a(RCS 배기)를 50.46b로 재지정하는 안이며 아직 제안 단계입니다[4][8].</li>
+<li>국내 ECCS 고시는 현행 제2017-23호(2017.12.26 시행)이며 이후 개정이 없습니다. 출제 당시에는 그 전 판이 적용되었으나 5개 기준의 틀은 같습니다. 근거 규칙은 현행 원안위규칙 제37호(2026.3.30) 제30조입니다[7].</li>
+<li>장기 냉각(5번 기준)과 관련된 재순환 여과기 현안 GSI-191은 2019.7 NRC 프로그램상 종결되었고(발전소별 조치 완료와는 별개), RG 1.82는 현행 Rev.5(2022.8.8)입니다[9].</li>
+<li>GL 81-21(자연순환 냉각 절차·훈련 점검 요청)과 NUREG-0737·10 CFR 50.46a 고점 배기 요건은 그대로입니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, Generic Letter 81-21 "Natural Circulation Cooldown" (1981).</li>
+<li>U.S. NRC, NUREG-0737 "Clarification of TMI Action Plan Requirements" (1980), II.F.2(과냉각여유도 감시·CET).</li>
+<li>U.S. NRC, 10 CFR 50.46a "Acceptance criteria for reactor coolant system venting systems"; NUREG-0737 II.B.1.</li>
+<li>U.S. NRC, 10 CFR 50.46 "Acceptance criteria for emergency core cooling systems for light-water nuclear power reactors", (b)(1)~(5).</li>
+<li>N. E. Todreas, M. S. Kazimi, Nuclear Systems I: Thermal Hydraulic Fundamentals, Taylor &amp; Francis, 자연순환(부력 구동 유동) 장.</li>
+<li>KHNP, APR1400 Design Certification RAI 233-8244 응답, NRC ADAMS ML15348A085.</li>
+<li>원자력안전위원회, 「가압경수로의 비상노심냉각계통의 성능에 관한 기준」, 원안위고시 제2017-23호; 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제30조. 국가법령정보센터.</li>
+<li>U.S. NRC, SRM-SECY-16-0033 (2024.4.11); Federal Register Doc. 2026-14341 (2026.7.16, NRC-2025-0975).</li>
+<li>U.S. NRC, Regulatory Guide 1.82 Rev.5 "Water Sources for Long-Term Cooling Following a Loss-of-Coolant Accident" (2022.8).</li>
+</ol>

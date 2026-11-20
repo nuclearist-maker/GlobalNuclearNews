@@ -1,0 +1,202 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 2교시 3번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>출력운전 중 핵연료봉에서 발생할 수 있는 다음 현상에 대하여 기술하시오.
+가. 핵연료 팽윤 및 고밀화
+나. 핵분열기체 방출
+다. 피복관 산화 및 수소화
+라. 피복관 조사 성장</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>연료봉의 네 가지 대표 조사 거동을 "현상 → 기구 → 영향 → 설계·운전 대응"의 같은 틀로 설명할 수 있는지 봅니다. 네 현상은 따로 노는 것이 아니라 펠릿–간극–피복관의 온도와 치수를 통해 서로 이어집니다. 그 연결(특히 간극 열전달과 연료 온도의 되먹임)을 숫자로 한 번 보여 주면 답안의 깊이가 달라집니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 연료봉 구조와 규제 목표(연료허용손상한계 여유)</li>
+<li>본론 가: 고밀화(초기 수축)와 팽윤(고체·기체), 순 거동</li>
+<li>본론 나: 핵분열기체 생성·방출 기구, 온도 문턱, 영향</li>
+<li>본론 다: 수측 부식(산화)과 수소 흡수·수소화물</li>
+<li>본론 라: 지르코늄 이방성에 의한 조사 성장</li>
+<li>결론: 연료봉 반경 방향 온도 분포로 본 네 현상의 연결</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>연료봉 = UO₂ 소결 펠릿 + He 충전 간극 + 지르코늄 합금 피복관 + 상부 플레넘(스프링)</li>
+<li>출력운전 중 <strong>핵분열(생성물 축적)·고온·고속중성자 조사</strong>가 함께 작용 → 펠릿 치수, 봉 내압, 피복관 두께·연성·길이가 변함</li>
+<li>규제 목표: 정상운전·예상운전과도에서 <strong>연료허용손상한계(SAFDL)</strong> 여유 확보(기술기준규칙 제17조①, GDC 10), 세부 판단은 SRP 4.2의 손상·파손 기준[1][2][3]</li>
+</ul>
+<p><strong>2. 가. 핵연료 팽윤 및 고밀화</strong></p>
+<ul>
+<li><strong>고밀화(densification)</strong>
+<ul>
+<li>기구: 소결 펠릿의 미세 기공이 핵분열 파편에 의해 소멸 → 밀도↑·체적↓(노내 재소결)</li>
+<li>시기: 조사 초기, 비교적 낮은 연소도(일반적으로 10,000 MWd/t 미만)에서 포화</li>
+<li>영향: 직경 감소 → <strong>간극 확대 → 간극 열전달계수↓ → 연료 온도·저장에너지↑</strong>, 길이 감소 → 연료주 축방향 간극 → 국부 출력첨두·피복관 붕괴(무가압봉)</li>
+<li>평가: 최대 밀도 변화를 노외 재소결 시험(1,700 °C, 24 h)으로 가정(RG 1.126 Rev.2)[4]</li>
+</ul>
+</li>
+<li><strong>팽윤(swelling)</strong>
+<ul>
+<li>기구: U 원자 1개 → 핵분열생성물 원자 2개 → 격자 안 고체 생성물 축적 + 기체 생성물 기포 → 체적 증가</li>
+<li>고체 FP 팽윤: 연소도에 거의 비례, 국내 PWR 조사후시험 예 약 <strong>0.091 %/(GWd/tU)</strong>(체적, 직경 환산 약 0.030 %/(GWd/tU))[5]</li>
+<li>기체 FP 팽윤: Xe·Kr 기포 성장, 고온부·출력 상승 과도에서 커짐</li>
+</ul>
+</li>
+<li><strong>순 거동</strong>: 초기 수축(고밀화) → 같은 조사후시험 예에서 5~20 GWd/tU 부근 누적 상쇄 → 이후 팽윤 우세 → 피복관 크립다운과 함께 <strong>간극 폐쇄 → 펠릿–피복관 기계적 상호작용(PCMI)</strong>[5]
+<ul>
+<li>PCMI는 접촉 하중(응력)이고, 출력 급상승 시 이 응력에 요오드 등 부식성 핵분열생성물이 겹치면 <strong>PCI-SCC(응력부식균열)</strong> 파손이 됨 — 둘을 구분</li>
+</ul>
+</li>
+<li><strong>대응</strong>: 안정 펠릿(기공 분포·결정립 제어), He 사전가압(피복관 붕괴 방지), 출력 상승률 제한(PCI 파손 방지)</li>
+</ul>
+<p><strong>3. 나. 핵분열기체 방출(FGR)</strong></p>
+<ul>
+<li><strong>생성</strong>: 핵분열당 Xe·Kr 약 0.25개(약 25 cm³(STP)/MWd)[10]</li>
+<li><strong>방출 기구</strong>
+<ul>
+<li>저온부: 반조(recoil)·녹아웃 — 온도 무관, 소량</li>
+<li>고온부: 결정립 내 확산 → 결정립계 기포 → 포화·연결 → 개방 기공으로 방출(<strong>온도 문턱형</strong>)</li>
+<li>출력 과도·정지: 결정립계 균열로 단시간 방출 증가</li>
+</ul>
+</li>
+<li><strong>문턱 온도</strong>: 봉 단위 1 % 방출에 대응하는 경험적 중심온도 지표가 연소도와 함께 낮아짐(Halden 경험식 Bu = 0.005·exp(9800/T_c), Bu는 MWd/kgUO₂, T_c는 °C) — 50 GWd/tU(약 44.1 MWd/kgUO₂)에서 약 <strong>1,079 °C</strong>[6]</li>
+<li><strong>영향</strong>: ① 봉 내압↑ → 피복관 원주 인장응력, 내압이 냉각재 압력을 넘으면 외향 크립으로 간극 재개방 ② 간극 기체 열전도 저하(Xe·Kr의 열전도는 He의 수십 분의 1) → 연료 온도↑ → FGR↑의 <strong>양의 되먹임</strong> ③ 피복관 손상 시 간극·플레넘 재고가 냉각재로 먼저 방출될 수 있음</li>
+<li><strong>대응</strong>: 첨두 선출력 제한, 플레넘 부피·He 충전압 설계, 수명 말 봉 내압 평가(연료성능 코드)</li>
+</ul>
+<p><strong>4. 다. 피복관 산화 및 수소화</strong></p>
+<ul>
+<li><strong>산화(수측 부식)</strong>: Zr + 2H₂O → ZrO₂ + 2H₂
+<ul>
+<li>천이 전 치밀한 산화막(성장률 감소) → 약 2~3 μm에서 균열·다공화(천이) 반복 → 거시적으로 준선형 증가</li>
+<li>가속 인자: 산화막 단열에 따른 금속–산화막 계면 온도 상승(되먹임), 열속, 냉각재 Li 농도, 크러드·과냉 비등, 체류 시간</li>
+<li>영향: 벽 감육, 열저항↑(산화막 50 μm, ZrO₂ k ≈ 2 W/m·K 가정 시 q″ 0.67 MW/m²에서 약 17 K), 산화막 박리 시 냉점 → 수소화물 국부 집중</li>
+</ul>
+</li>
+<li><strong>수소화</strong>
+<ul>
+<li>부식 수소의 일부(Zircaloy-4 약 15~20 %)가 금속에 흡수 → 산화막 1 μm당 약 7.5 wppm(흡수 분율 15 %·벽 두께 0.57 mm 가정)</li>
+<li>고용한도(300 °C 약 66 wppm)를 넘으면 <strong>δ-수소화물 석출</strong>, 온도가 낮은 외면 쪽에 수소화물 림 형성(열확산)[7]</li>
+<li>영향: 연성 저하(반경 방향 수소화물이면 특히 취약), RIA 시 PCMI 파손 문턱 저하(미국 RG 1.236은 연료 엔탈피 증가량 문턱을 초과 수소 함량의 함수로 제시)[8]</li>
+<li>내면 1차 수소화: 펠릿 잔류 수분 → 국부 수소화물(선파손 원인) → 펠릿 수분 관리</li>
+</ul>
+</li>
+<li><strong>대응</strong>: Nb 첨가 개량 합금(ZIRLO·M5·HANA), 수화학(Li·B·pH) 관리, 산화막 두께·수소 함량 설계 한도</li>
+</ul>
+<p><strong>5. 라. 피복관 조사 성장</strong></p>
+<ul>
+<li><strong>정의</strong>: 외부 응력 없이 고속중성자 조사만으로 <strong>체적이 거의 일정한 채 형상이 바뀌는</strong> 현상(응력이 필요한 조사 크립과 구별)</li>
+<li><strong>기구</strong>: 지르코늄 <strong>hcp 결정의 이방성</strong> — 조사로 생긴 격자간원자·공공이 서로 다른 면에 루프로 모임 → <a> 방향 신장, <c> 방향 수축</c></a></li>
+<li>피복관은 제조 집합조직상 c축이 주로 반경·원주 방향 → <strong>축방향(길이) 신장</strong></li>
+<li><strong>경향</strong>: 고속중성자 조사량에 따라 증가, 재결정 합금은 중간 조사량(약 3×10²⁵ n/m², E &gt; 1 MeV, 약 580 K 예)부터 가속될 수 있음. 냉간가공도·집합조직·합금 조성·열처리·온도에 따라 크게 다름[9]</li>
+<li><strong>영향</strong>: 봉 길이↑ → 상·하단 고정체와의 간격이 소진되면 <strong>봉 굽힘</strong>·지지격자 간섭, 안내관 성장 → 집합체 길이↑·굽힘 → 제어봉 삽입 지연 가능성</li>
+<li><strong>대응</strong>: 수명 말 성장 + 열팽창을 수용하는 봉–노즐 축방향 간격, 저성장 합금·열처리, 누름 스프링 설계</li>
+</ul>
+<figure class="article-image"><img alt="연료봉 반경 방향 온도 분포(선출력 20 kW/m 설명용 가정: 냉각재 310 °C → 피복관 외면 332 °C → 내면 359 °C → 펠릿 표면 515 °C → 중심 약 1,045 °C), h_gap 절반 시 중심 약 1,200 °C와 1 % FGR 경험 지표 1,079 °C, 구역별 네 현상 위치" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/04c269cd53ea3a616e015cc01776e228bef28ae460f03babc9400c382eb1a59f.webp"/><figcaption>연료봉 반경 방향 온도 분포(선출력 20 kW/m 설명용 가정: 냉각재 310 °C → 피복관 외면 332 °C → 내면 359 °C → 펠릿 표면 515 °C → 중심 약 1,045 °C), h_gap 절반 시 중심 약 1,200 °C와 1 % FGR 경험 지표 1,079 °C, 구역별 네 현상 위치</figcaption></figure>
+<p><strong>6. 결론 — 네 현상의 연결</strong></p>
+<ul>
+<li>설명용 계산(선출력 20 kW/m, 냉각재 310 °C, 펠릿 반경 4.10 mm, 피복관 내·외반경 4.18·4.75 mm, 간극 열전달계수 h_gap 5,000 W/m²·K, 펠릿 평균 열전도도 3 W/m·K 일정 가정): 온도 강하는 막 22 K, 피복관 27 K, <strong>간극 155 K</strong>, 펠릿 531 K → 피복관 외면 332 °C·내면 359 °C, 펠릿 표면 515 °C, 중심 약 1,045 °C</li>
+<li>같은 형상·물성에서 h_gap만 절반으로 바꾸면(간극 확대·기체 오염의 민감도 비교) 간극 강하가 약 310 K로 커져 펠릿 표면 약 670 °C, 중심 약 1,200 °C → 50 GWd/tU의 1 % FGR 경험 지표(약 1,079 °C)를 넘는 수준 → FGR이 간극 기체를 오염시켜 다시 온도를 올리는 방향</li>
+<li>실제 고연소도 상태에는 팽윤·크립다운(간극 폐쇄)·기체 조성 변화가 함께 작용함 — 간극이 닫히면 온도는 내려가지만 <strong>PCMI 응력</strong>이 생김</li>
+<li>산화·수소화와 조사 성장은 피복관 자체의 두께·연성·길이를 바꾸며, 산화막은 피복관 온도를 올려 연료 온도에도 간접 영향</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>소문항</th>
+<th>위치</th>
+<th>주 인자</th>
+<th>주 영향</th>
+<th>대응</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>가</td>
+<td>펠릿</td>
+<td>연소도·온도</td>
+<td>간극 확대 → 폐쇄·PCMI</td>
+<td>안정 펠릿, He 가압</td>
+</tr>
+<tr>
+<td>나</td>
+<td>펠릿 → 간극·플레넘</td>
+<td>중심온도·연소도</td>
+<td>내압↑, 열전도↓</td>
+<td>선출력 제한, 플레넘</td>
+</tr>
+<tr>
+<td>다</td>
+<td>피복관 외면</td>
+<td>온도·체류·수화학</td>
+<td>감육, 연성↓</td>
+<td>개량 합금, 수화학</td>
+</tr>
+<tr>
+<td>라</td>
+<td>피복관 축방향</td>
+<td>고속중성자 조사량</td>
+<td>봉·집합체 굽힘</td>
+<td>축방향 간격</td>
+</tr>
+</tbody>
+</table>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<figure class="article-image"><img alt="답안용 도식: 반경 방향 온도 분포 곡선(중심–펠릿 표면–간극–피복관–냉각재)과 네 현상 표시" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/becbe6a919d94905f34ebe3112be1edbf5d41df1bf087e6aa0a744bd7a6ca22c.webp"/><figcaption>답안용 도식: 반경 방향 온도 분포 곡선(중심–펠릿 표면–간극–피복관–냉각재)과 네 현상 표시</figcaption></figure>
+<h3>해설: 간극 155 K가 답안의 열쇠입니다</h3>
+<p>연료봉 온도 분포에서 펠릿 내부 강하가 가장 크지만, 운전 중 가장 크게 "변하는" 항은 간극입니다. 간극 열전달계수는 간극 폭과 간극 기체 조성에 따라 몇 배씩 바뀌기 때문입니다. 고밀화(간극 확대)와 FGR(기체 오염)은 간극 강하를 키우고, 팽윤과 크립다운(간극 폐쇄)은 줄입니다. 네 현상을 따로 쓰고 끝내지 말고 이 연결을 한 문단으로 묶으면 25점 답안의 결론이 됩니다. 위 숫자는 일정 열전도도 근사의 설명용 계산이며, 실제 설계는 온도·연소도 의존 물성을 쓰는 연료성능 코드로 평가합니다.</p>
+<h3>해설: 조사 성장의 지배 인자는 연소도가 아닙니다</h3>
+<p>조사 성장은 고속중성자 조사량(fluence)으로 정리합니다. 연소도와 상관될 수는 있지만 보편적인 비례 관계는 아닙니다. 또 "피복관이 부풀어 길어진다"는 표현은 틀립니다. 조사 성장은 체적이 거의 변하지 않는 형상 변화입니다. 체적이 늘어나는 것은 펠릿의 팽윤입니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>출제 당시(2017)</th>
+<th>현행(2026)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>국내 근거</td>
+<td>「원자로시설 등의 기술기준에 관한 규칙」 구판</td>
+<td>원안위규칙 제37호(2026.3.30), 제17조① 연료허용손상한계 여유(취지 같음)[1]</td>
+</tr>
+<tr>
+<td>RIA 피복관 기준(미국)</td>
+<td>RG 1.77(1974) 280 cal/g 체계, SRP 4.2 부록 B 잠정 기준</td>
+<td>RG 1.236(2020.6, NRC 허용 지침): 냉각가능성 = 첨두 반경평균 엔탈피 230 cal/g 미만, PCMI 파손 문턱 = 엔탈피 증가량의 초과 수소 함수. 기존 RG 1.77 인허가 기준 사용도 인정[8]</td>
+</tr>
+<tr>
+<td>LOCA 피복관 기준(미국)</td>
+<td>50.46c 규칙 제정 진행</td>
+<td>2024.4.11 SRM-SECY-16-0033으로 반환·미제정 → 현행 50.46(b) 유지, 2026.7 제안규칙(FR 2026-14341)에서 고연소 FFRD 등 재논의[11]</td>
+</tr>
+<tr>
+<td>국내 ECCS 고시</td>
+<td>원안위고시 제2017-23호</td>
+<td>같음(이후 개정 없음)</td>
+</tr>
+<tr>
+<td>현상 메커니즘·평가 지침</td>
+<td>SRP 4.2 Rev.3, RG 1.126 Rev.2</td>
+<td>같음</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제17조①. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criterion 10.</li>
+<li>U.S. NRC, NUREG-0800 Standard Review Plan 4.2 "Fuel System Design", Rev. 3 (2007).</li>
+<li>U.S. NRC, Regulatory Guide 1.126 "An Acceptable Model and Related Statistical Methods for the Analysis of Fuel Densification", Rev. 2 (2010).</li>
+<li>민덕기 외(KAERI), "Post-Irradiation Examination of PWR Nuclear Fuel — Swelling Behavior", 한국원자력학회 2003 추계학술발표회.</li>
+<li>C. Vitanza, E. Kolstad, U. Graziani, "Fission Gas Release from UO2 Pellet Fuel at High Burn-up", Proc. ANS Topical Meeting on Light Water Reactor Fuel Performance, Portland (1979).</li>
+<li>J. J. Kearns, "Terminal Solubility and Partitioning of Hydrogen in the Alpha Phase of Zirconium, Zircaloy-2 and Zircaloy-4", Journal of Nuclear Materials 22 (1967) 292–303.</li>
+<li>U.S. NRC, Regulatory Guide 1.236 "Pressurized-Water Reactor Control Rod Ejection and Boiling-Water Reactor Control Rod Drop Accidents" (2020.6).</li>
+<li>R. B. Adamson, C. E. Coleman, M. Griffiths, "Irradiation Creep and Growth of Zirconium Alloys: A Critical Review", Journal of Nuclear Materials 521 (2019) 167–244.</li>
+<li>D. R. Olander, Fundamental Aspects of Nuclear Reactor Fuel Elements, TID-26711-P1, U.S. ERDA (1976).</li>
+<li>U.S. NRC, SRM-SECY-16-0033 (2024.4.11); Federal Register 2026-14341, Docket NRC-2025-0975 (2026.7.16) 제안규칙.</li>
+</ol>

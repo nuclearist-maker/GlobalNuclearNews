@@ -1,0 +1,125 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 3교시 2번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>방사성동위원소 A가 붕괴하여 C로 안정화 될 때 방사성동위원소 B의 방사능이 최대가 되는 시간을 tm이라고 한다. 다음 식이 성립함을 유도하시오. 단, t=0 일 때 방사성동위원소 B는 존재하지 않으며, tm일 때 A와 B의 방사능은 같고 λ는 방사성 붕괴 상수이다.</p>
+<p>tm = [1/(λB − λA)] · ln(λB/λA)</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>A → B → C(안정) 2단 연쇄 붕괴에서 딸핵종 B의 수지식을 세우고 풀 수 있는지 확인하는 문제입니다. 답안에서 보여야 할 것은 세 가지입니다. 첫째, 1계 선형 미분방정식을 초기조건 NB(0) = 0으로 풀어 Bateman 해를 얻는지입니다. 둘째, 극값 조건 dAB/dt = 0에서 tm을 정리하는지입니다. 셋째, 문제가 준 "tm에서 A와 B의 방사능이 같다"는 조건이 사실은 극대 조건 dNB/dt = 0과 같은 말이라는 점을 짚는지입니다. 여기에 평형(과도·영속)과 원전 핵종 예시를 붙이면 답안이 충실해집니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 연쇄 붕괴 모델, 가정, 기호</li>
+<li>본론 1: A·B 수지식과 Bateman 해</li>
+<li>본론 2: 유도 ① 극값 조건 dAB/dt = 0</li>
+<li>본론 3: 유도 ② 문제 조건 AA = AB, 극대 확인</li>
+<li>본론 4: 적용 범위(λA &gt; λB, λA = λB)와 평형, 수치 예(Te-132 → I-132)</li>
+<li>결론: 결과식과 의미</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 가정 및 문제 해석</strong></p>
+<ul>
+<li>연쇄: <strong>A →(λA) B →(λB) C(안정)</strong>, 분기비 1, 외부 생성·제거(중성자 흡수, 정화) 없음</li>
+<li>붕괴상수 <strong>λ = ln 2/T½</strong>(Bq로 계산할 때는 s⁻¹ 단위) — C가 안정인지는 B 수지식에 영향 없음</li>
+<li>초기조건: NA(0) = NA0, <strong>NB(0) = 0</strong></li>
+<li>방사능 A = λN(Bq) → <strong>AB = λB·NB</strong>이므로 AB 최대 시각 = NB 최대 시각</li>
+<li>λA ≠ λB 가정(같은 경우는 극한으로 별도 처리)</li>
+</ul>
+<p><strong>2. 수지식과 Bateman 해</strong>[1][2]</p>
+<ul>
+<li>어미핵 A: dNA/dt = −λA·NA → <strong>NA = NA0·e^(−λA t)</strong></li>
+<li>딸핵 B: <strong>dNB/dt = λA·NA − λB·NB</strong> (생성 − 붕괴)</li>
+<li>적분인자 e^(λB t)를 곱함: d(NB·e^(λB t))/dt = λA·NA0·e^((λB−λA)t)</li>
+<li>0~t 적분, NB(0) = 0 대입:
+<ul>
+<li><strong>NB(t) = λA·NA0/(λB − λA) · [e^(−λA t) − e^(−λB t)]</strong></li>
+</ul>
+</li>
+<li>방사능으로 바꾸면(AA0 = λA·NA0):
+<ul>
+<li><strong>AB(t) = AA0 · λB/(λB − λA) · [e^(−λA t) − e^(−λB t)]</strong></li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: AA(t)·AB(t) 곡선과 교점 tm" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/3a4eafbb60d0cb95bb3f89fa395ed2f24aa3e3dbdeb9bdf305a002f0766014d0.webp"/><figcaption>답안용 도식: AA(t)·AB(t) 곡선과 교점 tm</figcaption></figure>
+<p><strong>3. 유도 ① — 극값 조건</strong></p>
+<ul>
+<li>dAB/dt = AA0·λB/(λB − λA) · [−λA·e^(−λA t) + λB·e^(−λB t)] = 0</li>
+<li>→ <strong>λA·e^(−λA tm) = λB·e^(−λB tm)</strong></li>
+<li>→ e^((λB − λA)tm) = λB/λA</li>
+<li>→ <strong>tm = [1/(λB − λA)]·ln(λB/λA)</strong> ∎</li>
+</ul>
+<p><strong>4. 유도 ② — 문제 조건 "tm에서 AA = AB"</strong></p>
+<ul>
+<li>B 수지식을 방사능으로 쓰면 <strong>dNB/dt = AA − AB</strong></li>
+<li>최대점에서 dNB/dt = 0 → <strong>AA(tm) = AB(tm)</strong> — 문제의 조건은 곧 극대 조건임</li>
+<li>대입: AA0·e^(−λA t) = AA0·λB/(λB − λA)·[e^(−λA t) − e^(−λB t)]</li>
+<li>양변 ×(λB − λA): (λB − λA)·e^(−λA t) = λB·e^(−λA t) − λB·e^(−λB t)</li>
+<li>정리: λA·e^(−λA t) = λB·e^(−λB t) → 같은 식 <strong>tm = ln(λB/λA)/(λB − λA)</strong> ∎</li>
+<li>극대 확인: t &lt; tm에서는 AA &gt; AB이므로 dNB/dt &gt; 0(증가), t &gt; tm에서는 AB &gt; AA이므로 dNB/dt &lt; 0(감소) → <strong>최솟값이 아니라 최댓값</strong></li>
+<li>2계 도함수로도 확인: d²NB/dt² = −λA²NA − λB·dNB/dt → tm에서 <strong>= −λA·AA(tm) &lt; 0</strong></li>
+</ul>
+<p><strong>5. 적용 범위와 평형</strong></p>
+<ul>
+<li>λA &gt; λB(딸이 더 오래 삶)여도 분자 ln(λB/λA)와 분모 λB − λA가 함께 음이 되어 <strong>같은 식이 그대로 성립</strong></li>
+<li>λA → λB 극한: ln(λB/λA) ≈ (λB − λA)/λA → <strong>tm = 1/λ</strong>(이때 NB = λ·NA0·t·e^(−λt))</li>
+<li>비: <strong>AB/AA = λB/(λB − λA)·[1 − e^(−(λB − λA)t)]</strong> → tm에서 1</li>
+<li>λA &lt; λB이고 (λB − λA)t ≫ 1이면 AB/AA → <strong>λB/(λB − λA) &gt; 1</strong>(과도평형), λA ≪ λB면 → 1(영속평형) — 비가 일정해진 채 함께 감소</li>
+<li>그래서 tm 이후 AB가 AA보다 큰 것은 정상임</li>
+</ul>
+<p><strong>6. 수치 예 — Te-132 → I-132 → Xe-132(안정)</strong>[3]</p>
+<ul>
+<li>T½: Te-132 3.204 d, I-132 2.295 h → λA = 0.009014 h⁻¹, λB = 0.3020 h⁻¹</li>
+<li>tm = ln(0.3020/0.009014)/(0.3020 − 0.009014) = ln(33.51)/0.2930 = 3.512/0.2930 = <strong>11.98 h ≈ 12.0 h</strong></li>
+<li>검산: AA(tm) = AA0·e^(−0.009014×11.98) = <strong>0.898·AA0</strong>, AB(tm) = AA0·(0.3020/0.2930)·(0.8976 − 0.0268) = <strong>0.898·AA0</strong> → 같음 ✓</li>
+<li>이후 과도평형 AB/AA → 0.3020/0.2930 = <strong>1.031</strong></li>
+</ul>
+<figure class="article-image"><img alt="Te-132/I-132 방사능 곡선과 tm = 12.0 h 교점, I-135/Xe-135(λA &gt; λB) 비교, 유도 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/b22b0443a80e8538bec542475b1fd94dd8c01530022a57283880b29821db807a.webp"/><figcaption>Te-132/I-132 방사능 곡선과 tm = 12.0 h 교점, I-135/Xe-135(λA &gt; λB) 비교, 유도 카드</figcaption></figure>
+<p><strong>7. 결론</strong></p>
+<ul>
+<li>결과: <strong>tm = [1/(λB − λA)]·ln(λB/λA)</strong>, 단위는 λ의 역수(시간)</li>
+<li>tm은 어미·딸의 붕괴상수만으로 정해지며 <strong>NA0와 무관</strong>함</li>
+<li>의미: 발생기에서 완전 용출 후 딸핵종이 다시 차오르는 정점(Mo-99 → Tc-99m 약 23 h), 핵분열생성물 연쇄의 방사능 정점 시각 예측에 씀</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: 두 유도 경로는 같은 식을 다른 쪽에서 본 것입니다</h3>
+<p>경로 ①은 Bateman 해를 시간으로 미분하는 정공법이고, 경로 ②는 수지식 dNB/dt = AA − AB를 그대로 읽는 방법입니다. 딸핵의 개수는 "들어오는 속도(어미의 방사능)"와 "나가는 속도(자기 방사능)"가 같아지는 순간 더 늘지도 줄지도 않습니다. 그래서 문제의 단서 "tm에서 A와 B의 방사능은 같다"는 따로 주어진 사실이 아니라 이 모델에서 극값의 필요조건이며, 앞뒤 부호 변화로 극대임을 확인합니다. 답안에 이 한 줄을 적어 두면 단서를 그냥 대입만 한 답안보다 이해도가 분명히 드러납니다. 시간이 부족하면 경로 ②만 써도 유도가 완결됩니다. 다만 Bateman 해는 어느 경로든 필요하므로 반드시 적분 과정을 보여 주십시오.</p>
+<h3>해설: λA &gt; λB인 경우와 원전 예</h3>
+<p>딸이 어미보다 오래 사는 I-135(6.58 h) → Xe-135(9.14 h)에 같은 식을 쓰면 λA = 0.1053 h⁻¹, λB = 0.07584 h⁻¹이고 tm = ln(0.7201)/(−0.02950) = 11.14 h입니다. 이때 AB(tm)/AA0 = 0.309로 정점이 낮고, 충분히 시간이 지나면 평형 없이 B의 붕괴를 따라 줄어듭니다. Xe-135의 딸 Cs-135는 안정 핵종이 아니지만 B 수지식에는 영향이 없습니다. 이 값은 중성자 흡수가 없고 t = 0에 제논이 없다는 가상 조건의 결과입니다. 실제 원자로 정지 후 제논 극대(전출력 정지 후 약 10시간 전후 예, 정지 전 출력·운전 이력에 따라 다름)는 운전 중 쌓인 제논이 처음부터 있어 초기조건이 다른 문제이므로, 같은 식으로 계산하지 않습니다. 분기비 b &lt; 1인 연쇄(Mo-99 → Tc-99m 약 88 %)에서는 AB 진폭이 b배가 될 뿐 tm은 같습니다. 대신 정점에서 성립하는 조건이 AB = b·AA로 바뀝니다.</p>
+<h3>해설: 자주 하는 실수</h3>
+<table>
+<thead>
+<tr>
+<th>실수</th>
+<th>결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>반감기를 그대로 대입</td>
+<td>λ = ln 2/T½ 변환 누락, tm 틀림</td>
+</tr>
+<tr>
+<td>ln 대신 log₁₀</td>
+<td>tm이 2.303배 작게 나옴</td>
+</tr>
+<tr>
+<td>NB 최대와 AB 최대를 따로 계산</td>
+<td>AB = λB·NB이므로 같은 시각</td>
+</tr>
+<tr>
+<td>tm 이후 AB &gt; AA를 모순으로 봄</td>
+<td>과도평형에서 AB/AA → λB/(λB − λA) &gt; 1</td>
+</tr>
+</tbody>
+</table>
+<h2>현행 기준으로 달라진 점</h2>
+<p>출제 이후 달라진 기준 없음(확인 근거: 규제 기준의 적용 대상이 아닌 방사성붕괴 연쇄의 물리 유도 문제임). 반감기 수치는 현행 핵데이터 평가값(NUBASE2020)을 썼습니다[3].</p>
+<h2>참고문헌</h2>
+<ol>
+<li>J. R. Lamarsh, A. J. Baratta, Introduction to Nuclear Engineering, 3rd ed., Prentice Hall (2001), 2장(방사성붕괴, 연쇄 붕괴).</li>
+<li>K. S. Krane, Introductory Nuclear Physics, John Wiley &amp; Sons (1988), 6장(Radioactive Decay).</li>
+<li>F. G. Kondev, M. Wang, W. J. Huang, S. Naimi, G. Audi, "The NUBASE2020 evaluation of nuclear physics properties", Chinese Physics C 45, 030001 (2021).</li>
+</ol>

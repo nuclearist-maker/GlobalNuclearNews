@@ -1,0 +1,141 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 3교시 4번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>중대사고 대응설비 중 노심용융물 노내억류(In-Vessel Retention) 설비와 노심용융물 노외냉각설비(Core Catcher)에 대하여 기술하시오.</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>노심용융물을 <strong>원자로용기 안에 가두는 전략(IVR)</strong>과 <strong>용기 밖에서 받아 식히는 전략(코어캐처)</strong>을 같은 목표(냉각 가능한 형상 + 장기 열제거) 아래 두 갈래로 정리할 수 있는지 봅니다. IVR은 "공동을 물로 채운다"에서 멈추지 말고 감압·유로·국부 열속 &lt; 임계열속이라는 성공 조건까지, 코어캐처는 확산형·도가니형 같은 실제 유형과 희생재의 역할까지 써야 점수가 납니다. 국내 APR1400에는 코어캐처가 없고 공동 충수계통(CFS)이 있다는 점을 구분하는지도 확인합니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 용기 파손 후 노외 현상(FCI·MCCI·HPME/DCH)과 두 전략의 위치</li>
+<li>본론 1: IVR — 원리(ERVC), 용융풀 성층과 집속 효과, 열적 판정, 설비 구성과 성공 조건, 적용 사례와 한계</li>
+<li>본론 2: 코어캐처 — 기능, 유형(EPR 확산형, VVER 도가니형, EU-APR PECS), 한계</li>
+<li>본론 3: 두 전략 비교표, 국내 APR1400의 대응(CFS)</li>
+<li>결론: 출력 규모·설계 철학에 따른 선택, 감압과의 결합</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>노심용융물이 원자로용기(RV) 하부헤드를 뚫으면 격납건물에서 <strong>노외 용융물–냉각재 상호작용(FCI, 조건에 따라 증기폭발)</strong>, <strong>용융물–콘크리트 상호작용(MCCI)</strong>, <strong>고압 분출·격납건물 직접가열(HPME·DCH)</strong>이 문제가 됨 → 사고관리 고시 별표 3 위협요인과 같은 범주 [6]</li>
+<li>대응 목표: 용융물을 <strong>냉각 가능한 형상에 붙잡아 두고 붕괴열을 장기 제거</strong> → 격납건물 건전성 유지</li>
+<li>두 갈래: <strong>노내억류(IVR)</strong> = 용기 파손 <strong>방지</strong> / <strong>코어캐처</strong> = 용기 파손 <strong>후</strong> 노외에서 받아 냉각</li>
+</ul>
+<p><strong>2. 노내억류(IVR) 설비</strong></p>
+<ul>
+<li><strong>원리</strong>: 원자로공동을 물로 채워 하부헤드 <strong>외벽을 냉각(ERVC)</strong> → 외벽 핵비등, 보온재–용기 간극이 <strong>2상 자연순환 유로</strong></li>
+<li><strong>용융풀 구조</strong>: 아래 <strong>산화물풀</strong>(UO₂·ZrO₂, 붕괴열 대부분) + 위 <strong>경금속층</strong>(강재·미산화 Zr)
+<ul>
+<li>금속층이 얇을수록 측벽 좁은 띠로 열이 몰림 → <strong>집속 효과(focusing effect)</strong>, 국부 최대 열속</li>
+<li>산소 부족 조건에서는 우라늄 일부가 금속상으로 옮겨 금속상 밀도가 커지고, 무거운 금속층이 산화물풀 아래로 가는 3층 구조가 생길 수 있음(OECD MASCA) [3] → 위 경금속층이 더 얇아져 집속 효과 심화</li>
+</ul>
+</li>
+<li><strong>열적 판정</strong>: 모든 각도 θ에서 <strong>외벽 열속 q″(θ) &lt; 하향면 임계열속 q″CHF(θ)</strong>
+<ul>
+<li>ULPU-III 상관식: θ = 0°(바닥) 약 <strong>0.49 MW/m²</strong> → 90°(적도) 약 <strong>1.49 MW/m²</strong> [2][3]</li>
+<li>이는 <strong>열적 필요조건</strong>이며, 감압·잔존 벽의 구조 건전성·지속 냉각은 별도로 만족해야 함</li>
+</ul>
+</li>
+<li><strong>설비 구성(성공 조건과 짝)</strong> [1]
+<ul>
+<li>① <strong>RCS 감압 설비</strong>: 저압이어야 벽 응력·크리프 파손 회피(APR1400 감압 목표 250 psia = 1.72 MPa) [7]</li>
+<li>② <strong>공동 침수 유로</strong>: IRWST → 공동, 하부헤드가 잠기는 수위 확보(AP1000은 전동·스퀴브 밸브 개방)</li>
+<li>③ <strong>보온재 유로</strong>: 물 유입구·증기 배출구·배플 → 자연순환 유량과 CHF 확보</li>
+<li>④ <strong>외표면 상태</strong>: 젖음 방해 없는 무도장 표면, 하부헤드 관통부 없는 설계(AP1000)</li>
+</ul>
+</li>
+<li><strong>적용</strong>: Loviisa(VVER-440, 최초·후행 적용), AP600·AP1000(PRA 크레딧), APR1400은 <strong>SAMG 전략</strong>(설계 설비는 CFS, 인허가 크레딧 없음)</li>
+<li><strong>한계</strong>: 고출력일수록 붕괴열↑ → CHF 여유 감소(APR1400급은 CHF 향상 수단 연구) [3], 금속층 두께·상관식 불확실성, 실패 시 침수된 공동으로 낙하 → <strong>노외 FCI(증기폭발) 하중</strong></li>
+</ul>
+<figure class="article-image"><img alt="하부헤드 외벽 각도별 ULPU-III 임계열속 곡선(0.49→1.49 MW/m²)과 얇은 금속층의 국부 열속 집중 개념, 코어캐처 3유형 비교 카드" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/622565ac5627722d705628aaec5d06edaf415c1402d1451ed80dd197233ce1ff.webp"/><figcaption>하부헤드 외벽 각도별 ULPU-III 임계열속 곡선(0.49→1.49 MW/m²)과 얇은 금속층의 국부 열속 집중 개념, 코어캐처 3유형 비교 카드</figcaption></figure>
+<p><strong>3. 노외냉각설비(코어캐처)</strong></p>
+<ul>
+<li><strong>기능</strong>: 용기 파손 후 낙하 용융물을 전용 구조물에서 ① <strong>조성·확산</strong>(희생재로 온도·점도·밀도 조절, 냉각 면적 확보) ② <strong>침수·냉각</strong> ③ <strong>장기 열제거</strong> → <strong>MCCI·기초 관통 방지</strong></li>
+<li><strong>유형</strong>
+<ul>
+<li><strong>확산형(EPR)</strong> [4]: 원자로 공동 희생 콘크리트에 용융물을 모아 조성 → <strong>용융 플러그</strong> 관통 → 넓은 <strong>확산실</strong>로 퍼짐 → 용융물 도달로 침수 밸브가 열려 IRWST 물이 <strong>중력으로 피동 공급</strong>, 바닥 아래 냉각유로로 아래·위 동시 냉각</li>
+<li><strong>도가니형(VVER-1000/1200)</strong> [5]: 원자로용기 바로 아래 <strong>도가니 모양 열교환 용기</strong> + <strong>희생재</strong>(산화물·강재 계열) → 용융물 조성 후 외벽을 물로 냉각(톈완·쿠단쿨람 최초 적용)</li>
+<li><strong>EU-APR PECS</strong>: 공동 바닥 캐처 본체(희생재 층) + 아래 <strong>경사 냉각유로</strong>·하강관 → 하부 유로 간접 냉각 + 상부 침수 직접 냉각, 물은 IRWST에서 피동 공급 [8]</li>
+</ul>
+</li>
+<li><strong>한계</strong>: 대형 구조물·희생재 설계와 비용, <strong>침수 시점 관리</strong>(물이 고인 곳에 고온 용융물이 떨어지면 FCI·증기폭발 우려 → EPR은 확산 후 침수), 용기 파손 자체는 허용하므로 HPME·DCH는 <strong>감압으로 별도 방지</strong></li>
+</ul>
+<p><strong>4. 두 전략 비교</strong></p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>노내억류(IVR-ERVC)</th>
+<th>코어캐처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>용기 파손</td>
+<td>막음</td>
+<td>허용(파손 후 대응)</td>
+</tr>
+<tr>
+<td>냉각 위치</td>
+<td>하부헤드 외벽</td>
+<td>전용 노외 구조물</td>
+</tr>
+<tr>
+<td>주 차단 위협</td>
+<td>FCI·MCCI·DCH 원천 차단</td>
+<td>MCCI 방지, 장기 냉각</td>
+</tr>
+<tr>
+<td>핵심 조건</td>
+<td>감압 + 침수 + 국부 열속 &lt; CHF</td>
+<td>확산·조성 + 피동 침수 + 냉각유로</td>
+</tr>
+<tr>
+<td>출력 적합성</td>
+<td>중·소출력 여유 큼, 대출력은 CHF 향상 필요</td>
+<td>대출력에도 적용</td>
+</tr>
+<tr>
+<td>예</td>
+<td>Loviisa, AP1000, APR1400(SAMG)</td>
+<td>EPR, VVER-1000/1200, EU-APR</td>
+</tr>
+</tbody>
+</table>
+<figure class="article-image"><img alt="답안용 도식: 왼쪽 침수 공동 속 하부헤드(외벽 물·증기 흐름, θ, q″ &lt; CHF), 오른쪽 용기 아래 코어캐처(희생재·냉각유로·IRWST 침수)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/295bf5801e6a8b45dd91a19f842fa1789fc5a6d2ff7e5df7c92f5c69b366ffc7.webp"/><figcaption>답안용 도식: 왼쪽 침수 공동 속 하부헤드(외벽 물·증기 흐름, θ, q″ &lt; CHF), 오른쪽 용기 아래 코어캐처(희생재·냉각유로·IRWST 침수)</figcaption></figure>
+<ul>
+<li><strong>국내 APR1400</strong>: 코어캐처 없음 → <strong>원자로공동 충수계통(CFS)</strong>: 전동밸브를 열면 IRWST → HVT → 공동으로 수두차 충수(펌프 없음), 노외 용융물을 위에서 냉각 + 넓은 공동 바닥과 공동 콘크리트 설계로 MCCI 완화(콘크리트 구성은 호기별 설계) [7]</li>
+</ul>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>두 설비 모두 <strong>용융물을 냉각 가능한 형상으로 가두는 최후 방벽 보호 수단</strong>이며, 어느 쪽이든 <strong>용기 파손 전 RCS 감압이 중요</strong>(IVR은 벽 응력, 코어캐처는 HPME·DCH 방지)</li>
+<li>중·소출력은 IVR이 노외 현상을 원천 차단해 유리, 대출력·유럽 요건 노형은 코어캐처로 결정론적 입증을 택함</li>
+<li>현행 국내 기준은 특정 설비를 의무화하지 않고 위협요인별 <strong>대처능력을 사고관리계획서로 입증</strong>하도록 요구</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h3>해설: CFS와 코어캐처를 같은 것으로 쓰지 마세요</h3>
+<p>APR1400의 공동 충수계통(CFS)은 공동에 물을 채워 용기 밖으로 나온 용융물을 위에서 식히는 계통입니다. 용융물을 받아 조성·확산하는 전용 구조물이 없으므로 코어캐처가 아닙니다. 같은 IRWST 물을 써도 IVR은 용기 파손 <strong>전에</strong> 하부헤드를 잠기게 하는 것이고, CFS의 1차 목적은 파손 <strong>후</strong> 냉각입니다. APR1400 계열 중에서는 유럽 수출형 EU-APR만 코어캐처를 채택했습니다.</p>
+<h3>해설: IVR의 성패는 평균이 아니라 국부 열속이 정합니다</h3>
+<p>외벽 임계열속은 바닥(θ = 0°)에서 가장 작고 적도 쪽으로 커집니다. 하지만 CHF가 가장 작은 곳이 여유가 가장 작은 곳은 아닙니다. 열부하는 금속층이 닿는 측벽 띠에서 가장 큽니다. 그래서 그림처럼 금속층 높이의 국부 열속과 그 각도의 CHF를 비교해야 하며, 금속층이 얇아질수록 여유가 줄어듭니다. 답안에 "q″(θ) &lt; q″CHF(θ), 모든 θ"를 식으로 적고 집속 효과를 한 줄 덧붙이면 핵심을 짚은 답이 됩니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li><strong>법제화 완료와 첫 승인</strong>: 사고관리계획서 제도는 2016.6.23 시행됐고, 출제 당시(2018)에는 계획서 심사가 진행 중이었습니다. 2025.1.9 원안위 제206회 회의에서 새울 1·2·신한울 1·2호기 계획서가 처음 승인됐습니다[7].</li>
+<li><strong>고시 번호·별표 변경</strong>: 위협요인 표는 출제 당시 고시 제2017-34호 별표 2에서 현행 원안위고시 제2026-1호(2026.1.16) <strong>별표 3</strong>으로 옮겨졌습니다[6]. 고시는 IVR이나 코어캐처 같은 특정 설비를 지정하지 않고 위협요인별 대처능력 입증을 요구합니다.</li>
+<li><strong>기술기준규칙</strong>: 사고관리 요건은 현행 원안위규칙 제37호(2026.3.30) 제85조의19~23에 있습니다[9].</li>
+<li><strong>국제 기준</strong>: IAEA SSR-2/1 Rev.1(2016) 요건 20의 설계확장조건(노심용융 포함) 요건은 현행이며, 대량 조기방출의 "실질적 배제" 지침이 SSG-88(2024)로 정리됐습니다[10].</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>Westinghouse, AP1000 Design Control Document, Rev. 19 (2011), Tier 2 Ch. 19, Sec. 19.39 "In-Vessel Retention of Molten Core Debris". NRC ADAMS 공개.</li>
+<li>T. G. Theofanous 외, "In-Vessel Coolability and Retention of a Core Melt", DOE/ID-10460, U.S. DOE (1995).</li>
+<li>W. Ma 외, "In-Vessel Melt Retention of Pressurized Water Reactors: Historical Review and Future Research Needs", Engineering 2 (2016) 103–111.</li>
+<li>M. Fischer, "The Core Melt Stabilization Concept of the EPR and its Experimental Validation", ICONE-14 (2006), OSTI ID 20997007.</li>
+<li>OECD/NEA MDEP VVER Working Group, Technical Report TR-VVERWG-04 "Core Catcher".</li>
+<li>원자력안전위원회 고시 제2026-1호 「사고관리 범위 및 사고관리능력 평가의 세부기준에 관한 규정」(2026.1.16), 별표 3. 국가법령정보센터.</li>
+<li>원자력안전위원회, 제206회 회의(2025.1.9) 의안 — 새울 1·2호기, 신한울 1·2호기 사고관리계획서 심사 결과.</li>
+<li>한국원자력학회 추계학술발표회(2014) 발표 논문 14A-92 — EU-APR1400 PECS 냉각유로 개선(KHNP 중앙연구원).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제85조의19~23. 국가법령정보센터.</li>
+<li>IAEA, SSR-2/1 (Rev. 1) "Safety of Nuclear Power Plants: Design" (2016), Requirement 20; IAEA SSG-88 (2024).</li>
+</ol>

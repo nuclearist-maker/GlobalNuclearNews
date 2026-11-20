@@ -1,0 +1,117 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 1교시 3번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<ol start="3">
+<li>OPR1000/APR1400 원전의 운전모드(Operation Mode)</li>
+</ol>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>운전모드</strong>: 노심 반응도(keff), 출력, 냉각재 온도, 원자로용기 헤드 체결볼트 상태의 조합으로 정한 발전소 상태입니다.</li>
+<li><strong>적용 모드</strong>: 운영기술지침서의 각 운영제한조건(LCO)이 지켜져야 하는 모드이며, 조치 요건의 목표 상태도 모드로 표현합니다.</li>
+<li><strong>온도 판정 변수</strong>: APR1400은 저온관 온도(Tcold), CE형 표준기술지침서 골격은 평균온도(Tavg)를 씁니다.</li>
+<li><strong>LCO 3.0.3</strong>: 해당 조치가 없거나 이행할 수 없을 때 정해진 시간 안에 단계적으로 저온 모드로 내려가는 일반 요건입니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 정의·목적</strong></p>
+<ul>
+<li>운영기술지침서 표 1.1-1에 정한 6개 발전소 상태(원자로용기 내 핵연료가 있을 때)</li>
+<li>LCO <strong>적용 모드</strong>와 조치 목표 모드의 기준, 모드별 필요한 안전기능·설비를 구분함</li>
+</ul>
+<p><strong>2. 운전모드 (APR1400 DCD Ch.16 표 1.1-1 기준)</strong>[1]</p>
+<table>
+<thead>
+<tr>
+<th>모드</th>
+<th>명칭</th>
+<th>keff</th>
+<th>출력(%RTP)*</th>
+<th>온도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>출력운전</td>
+<td>≥ 0.99</td>
+<td>&gt; 5</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2</td>
+<td>기동</td>
+<td>≥ 0.99</td>
+<td>≤ 5</td>
+<td>—</td>
+</tr>
+<tr>
+<td>3</td>
+<td>고온대기</td>
+<td>&lt; 0.99</td>
+<td>—</td>
+<td>≥ 177 °C (350 °F)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>고온정지**</td>
+<td>&lt; 0.99</td>
+<td>—</td>
+<td>177 °C 미만 ~ 99 °C 초과</td>
+</tr>
+<tr>
+<td>5</td>
+<td>저온정지**</td>
+<td>&lt; 0.99</td>
+<td>—</td>
+<td>≤ 99 °C (210 °F)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>핵연료재장전***</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>* 붕괴열 제외 / ** 헤드 체결볼트 전부 완전 장력 / *** 헤드 체결볼트 1개 이상 완전 장력 미만</li>
+</ul>
+<p><strong>3. OPR1000과 APR1400의 차이</strong></p>
+<ul>
+<li>APR1400: 온도 = <strong>저온관 온도 Tcold</strong>, 모드 4·5 경계 <strong>99 °C(210 °F)</strong>[1][2]</li>
+<li>OPR1000: CE형 표준기술지침서 골격 — 온도 = <strong>평균온도 Tavg</strong>, 경계 177 °C·<strong>93 °C(200 °F)</strong>[3]</li>
+<li>모드 구분 변수(keff 0.99, 5 %RTP, 헤드 볼트)는 동일</li>
+</ul>
+<p><strong>4. 활용</strong></p>
+<ul>
+<li>모드 1·2 노심 안전제한치·CPC 트립, 3·4 정지여유도·열제거, 5 정지냉각·저온 과압보호, 6 붕소 농도·재장전 수위</li>
+<li><strong>LCO 3.0.3</strong>(적용 조건 해당 시): 진입부터 1 h 이내 조치 착수, 7 h 모드 3, 13 h 모드 4, 37 h 모드 5[1]</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: keff·출력·온도·헤드 볼트로 6개 모드를 가르는 판정 트리" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/a0cc3c633c908e783d605a666a35f75877e7acc9011c306383c5b56484ceeec2.webp"/><figcaption>답안용 도식: keff·출력·온도·헤드 볼트로 6개 모드를 가르는 판정 트리</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+
+<h2>해설</h2>
+<figure class="article-image"><img alt="OPR1000(CE STS 기준 Tavg)과 APR1400(Tcold)의 모드 3~5 온도 사다리 비교, 모드 1·2 출력 조건과 모드 6 헤드 볼트 조건, LCO 3.0.3 누적 기한" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/bae178a91e31a519b2128e5e1c00c603a3a4c5e4f292adbfc8d308b26dc2ce15.webp"/><figcaption>OPR1000(CE STS 기준 Tavg)과 APR1400(Tcold)의 모드 3~5 온도 사다리 비교, 모드 1·2 출력 조건과 모드 6 헤드 볼트 조건, LCO 3.0.3 누적 기한</figcaption></figure>
+<p>운전모드 표는 판정 순서가 아니라 조건의 조합입니다. 모드 1·2는 반응도와 출력만, 모드 3은 반응도와 온도만, 모드 4·5는 여기에 헤드 체결볼트가 모두 완전히 조여져 있다는 조건이 더해집니다. 모드 6은 반응도·출력·온도와 무관하게 볼트 하나라도 완전 장력 미만이면 성립합니다. 헤드를 들어 올린 상태만 모드 6이라고 쓰면 정의를 좁히는 셈입니다. 핵연료를 원자로용기에서 모두 꺼내면 어느 모드에도 해당하지 않습니다.</p>
+<p>모드 1과 2를 가르는 기준은 임계 여부가 아니라 출력 5 %RTP입니다. keff ≥ 0.99도 임계 판정이 아니라 "임계에 이를 수 있는 반응도 영역"이라는 뜻입니다.</p>
+<p>두 노형의 차이는 온도 쪽에 있습니다. APR1400은 저온관 온도를 쓰고 모드 4·5 경계를 210 °F(99 °C)로 둡니다[1][2]. OPR1000은 CE형 표준기술지침서와 같은 골격으로 평균온도와 200 °F(93 °C) 경계를 쓰는 것으로 정리했습니다[3]. 다만 호기별 수치는 각 발전소 운영기술지침서가 기준이므로, 답안에는 "CE형 표준 기준"이라고 밝히는 편이 안전합니다. 그림의 93 °C와 99 °C 차이는 축척상 좁아 따로 확대해 표시했습니다.</p>
+<p><strong>현행 기준 메모</strong>: 모드 정의는 출제 이후 바뀌지 않았습니다. 지침서 작성 근거 고시는 출제 당시 제2017-5호에서 제2023-9호를 거쳐 현행 제2024-13호(2024.12.31 시행)입니다[4].</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>판정 변수 네 가지</strong>를 모두 씁니다. 모드 4·5의 헤드 볼트 조건을 빠뜨리기 쉽습니다.</li>
+<li><strong>모드 1·2 구분</strong>: 임계가 아니라 출력 5 %RTP(붕괴열 제외)입니다.</li>
+<li><strong>노형별 온도 기준</strong>: APR1400은 Tcold·99 °C, CE형 표준 기준은 Tavg·93 °C로 구분합니다.</li>
+<li><strong>모드 6 정의</strong>: "헤드 개방"이 아니라 "볼트 1개 이상 완전 장력 미만"입니다.</li>
+<li><strong>활용까지</strong>: LCO 적용 모드와 3.0.3 시간을 덧붙이면 실무형 답안이 됩니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>KHNP, APR1400 Design Control Document Tier 2, Chapter 16 "Technical Specifications", Rev. 0, §1.1 Table 1.1-1 "MODES", LCO 3.0.3. NRC ADAMS ML13281A767.</li>
+<li>U.S. NRC, Final Safety Evaluation Report for the APR1400 Design Certification, Chapter 16 "Technical Specifications" (2018), NRC ADAMS ML18227A061.</li>
+<li>U.S. NRC, NUREG-1432, Standard Technical Specifications — Combustion Engineering Plants, Vol. 1 (Specifications), §1.1 Table 1.1-1.</li>
+<li>원자력안전위원회, 「운영기술지침서의 작성에 관한 기준」, 원안위고시 제2024-13호(2024.12.31 시행). 국가법령정보센터.</li>
+</ol>

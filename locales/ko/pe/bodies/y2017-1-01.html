@@ -1,0 +1,67 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 1교시 1번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<ol>
+<li>주기초(Beginning of Cycle) 잉여반응도 확보 이유</li>
+</ol>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>잉여반응도(ρex)</strong>: 지정한 노심 상태에서 제어 흡수체(제어봉·용해 붕소·가연성 흡수체)를 모두 뺐다고 가정할 때의 반응도이며, ρex = (k_max − 1)/k_max로 씁니다[1].</li>
+<li><strong>반응도 결손 요인</strong>: 연소(U-235 소모·핵분열생성물 축적), 제논·사마륨 독물질, 온도·출력결손이 주기 동안 반응도를 빼앗습니다.</li>
+<li><strong>제어 분담</strong>: PWR은 제어봉(빠른 조절·정지), 용해 붕소(느린 변화), 가연성 흡수체(주기초 몫)로 잉여반응도를 누릅니다.</li>
+<li><strong>총 제어능 = 잉여반응도 + 정지여유도</strong>: 같은 기준 상태에서 성립하는 관계입니다(전 제어요소 삽입 기준)[1].</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 정의</strong></p>
+<ul>
+<li>제어 흡수체를 모두 제거했다고 가정한 반응도, <strong>ρex = (k_max − 1)/k_max</strong> — 기준 상태(온도·제논·연소도)를 함께 명시함</li>
+<li>운전 중 노심은 임계(ρ = 0)이며, 잉여반응도는 제어 흡수체가 붙잡고 있는 양임</li>
+</ul>
+<p><strong>2. 주기초에 확보하는 이유</strong></p>
+<ul>
+<li><strong>① 연소 보상(가장 큰 몫)</strong>: 주기 동안 U-235 감소·핵분열생성물 축적으로 잃을 반응도를 미리 장전 → <strong>주기 길이를 결정</strong>함</li>
+<li><strong>② 독물질 보상</strong>: 평형 Xe-135·Sm-149가 빼앗는 반응도를 이겨야 전출력 임계 유지</li>
+<li><strong>③ 온도·출력결손 보상</strong>: 냉간 → 고온 영출력 → 전출력으로 갈 때 음의 감속재·핵연료 온도계수가 반응도를 감소시킴</li>
+<li><strong>④ 운전 여유</strong>: 정지 후 <strong>제논 정점 중 재기동</strong>, 부하추종·출력 상승에 필요한 양의 반응도</li>
+<li>참고 크기(D&amp;H 표 14-1 PWR 청정 노심): 냉간 0.293 → 운전온도 0.248 → 평형 Xe·Sm 0.181(Δk/k)[1]</li>
+</ul>
+<p><strong>3. 확보한 잉여반응도의 제어와 제약</strong></p>
+<ul>
+<li>제어봉(약 7 %) + 가연성 흡수체(약 8 %) + 붕소(약 17 %) = 총 제어능 약 32 %[1]</li>
+<li>지나치게 크면 ① 붕소 농도 증가로 <strong>감속재온도계수가 양</strong>이 될 수 있음 ② 제어봉 이탈·붕소 희석 시 <strong>투입 가능 반응도 증가</strong> ③ 독물질 흡수로 <strong>중성자 경제 악화</strong> → 가연성 흡수체로 주기초 몫을 분담함</li>
+<li>정지여유도 확보: (총 제어능 − 최대 반응도가 봉 1개 고착분) = 잉여반응도 + 정지여유도[2]</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 주기초 잉여반응도 막대를 연소·독물질·온도출력결손·운전여유로 나누고 제어봉·가연성 흡수체·붕소가 맞잡는 반응도 예산" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/a244b1bbbea554aacb0c19bb41db4fea85a737483831e6319146fb93e10046e7.webp"/><figcaption>답안용 도식: 주기초 잉여반응도 막대를 연소·독물질·온도출력결손·운전여유로 나누고 제어봉·가연성 흡수체·붕소가 맞잡는 반응도 예산</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="D&amp;H 표 14-1 상태별 잉여반응도 계단(29.3·24.8·18.1 %)과 총 제어능 32 % 분담, 예시 주기 모델의 붕소 강하(1,200 → 10 ppm)로 본 연소 중 잉여반응도 감소" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/fef6016c1fc66b92cf1855b58f3499f5b06e7df55f1a71f36663aeff43a8bd31.webp"/><figcaption>D&amp;H 표 14-1 상태별 잉여반응도 계단(29.3·24.8·18.1 %)과 총 제어능 32 % 분담, 예시 주기 모델의 붕소 강하(1,200 → 10 ppm)로 본 연소 중 잉여반응도 감소</figcaption></figure>
+<p>잉여반응도는 상태마다 값이 다릅니다. 냉간·청정 상태에서 가장 크고, 가열·출력 상승·독물질 축적으로 줄어듭니다. 그래서 제어계통 용량은 가장 큰 냉간 값을 기준으로 정하고, 주기 길이는 고온 전출력·평형 제논 상태의 잉여반응도로 정합니다. 이 값이 0에 가까워져 임계 붕소 농도가 바닥에 닿는 시점이 주기말(EOC)입니다.</p>
+<p>운전 중에는 연소로 줄어드는 잉여반응도를 붕소 희석으로 따라갑니다. 붕소 강하곡선이 그 모습입니다. 그림의 붕소 곡선은 설명용 예시 모델(500 EFPD, 1,200 → 10 ppm, −10 pcm/ppm)이며, 실제 값은 노심설계마다 다릅니다.</p>
+<p>온라인 재장전을 하는 CANDU는 핵연료를 매일 조금씩 바꿔 잉여반응도를 작게 유지합니다. 경수로처럼 주기초에 큰 잉여반응도를 넣을 필요가 없다는 점을 비교로 쓰면 좋습니다[3].</p>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>정의식 오류</strong>: k − 1로 쓰면 큰 값에서 틀립니다. k_max = 1.41이면 k − 1 = 0.41이지만 ρex = 0.291입니다.</li>
+<li><strong>기준 상태 누락</strong>: 냉간·청정인지 고온 전출력·평형 제논인지 밝히지 않으면 숫자가 의미를 잃습니다.</li>
+<li><strong>이유를 연소 하나로만 씀</strong>: 독물질, 온도·출력결손, 제논 재기동 여유까지 네 갈래로 쓰면 충실해 보입니다.</li>
+<li><strong>부작용 누락</strong>: 큰 잉여반응도가 MTC·반응도 사고·중성자 경제에 주는 영향과 가연성 흡수체의 역할을 한 줄 덧붙입니다.</li>
+</ul>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li>잉여반응도의 개념과 확보 이유는 2017년과 같습니다. 반응도 제어계통 요건(10 CFR 50 App. A GDC 26~28, 기술기준규칙 제28조)도 골격이 그대로입니다[4][5].</li>
+<li>반응도 사고 판단기준은 RG 1.77(1974)에서 RG 1.236(2020)으로 바뀌었습니다[6]. 잉여반응도가 클수록 이 기준에 대한 제어봉 이탈 해석 여유가 중요해집니다.</li>
+<li>무붕산 운전을 택한 소형모듈원자로(i-SMR)는 붕소 없이 잉여반응도를 감당해야 해서, 원안위가 잉여반응도 검증평가 방법론 개발을 과제로 제시했습니다(2026.2 보고안건)[7].</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>J. J. Duderstadt, L. J. Hamilton, Nuclear Reactor Analysis, John Wiley &amp; Sons (1976), 14장(식 14-2, 표 14-1).</li>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications — Westinghouse Plants, LCO 3.1.1 "SHUTDOWN MARGIN" 및 Bases.</li>
+<li>E. E. Lewis, Fundamentals of Nuclear Reactor Physics, Academic Press (2008), 9.4절.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix A, General Design Criteria 26~28.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제28조. 국가법령정보센터.</li>
+<li>U.S. NRC, Regulatory Guide 1.236 "Pressurized-Water Reactor Control Rod Ejection and Boiling-Water Reactor Control Rod Drop Accidents" (2020).</li>
+<li>원자력안전위원회, 제2026-2회 회의 보고안건 「SMR 규제체계 구축 로드맵(안)」 (2026.2.12).</li>
+</ol>

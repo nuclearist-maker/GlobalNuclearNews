@@ -1,0 +1,83 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2019년 원자력발전기술사 필기 1교시 5번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<ol start="5">
+<li>원자로격납건물 최대허용누설률(Lₐ)과 허용기준</li>
+</ol>
+</blockquote>
+<h2>핵심 키워드</h2>
+<ul>
+<li><strong>Pa(기준시험압력)</strong>: 설계기준사고 때 계산된 격납건물 최대 내부압력입니다. 설계압력이 아닙니다.</li>
+<li><strong>La(허용누설률)</strong>: Pa에서 허용되는 최대 누설률로, 공기 질량의 %/day 단위이며 운영기술지침서에서 정합니다.</li>
+<li><strong>0.75 La / 0.60 La</strong>: 종합 누설률시험과 국부 누설률시험(최대경로 합)의 합격선입니다.</li>
+<li><strong>선량해석 입력</strong>: La는 사고 방사선 영향평가에서 격납건물 누설률로 가정하는 값입니다.</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 정의</strong></p>
+<ul>
+<li><strong>Pa</strong>: 설계기준사고(LOCA·MSLB) 시 계산된 격납건물 최대 내부압력[1]</li>
+<li><strong>La</strong>: <strong>Pa에서의 격납건물 누설률 제한치</strong>, 운영기술지침서(T/S)에 정하는 수치[1][2]</li>
+<li>단위: 격납건물 내 <strong>공기 질량 %/day</strong>(wt%/24 h), 부피 기준 아님</li>
+<li>예: APR1400(미국 DC) <strong>La = 0.1 %/day</strong>[4]</li>
+</ul>
+<p><strong>2. La의 의미 — 왜 그 값인가</strong></p>
+<ul>
+<li>사고 선량해석의 <strong>누설 입력값</strong>: PWR은 처음 <strong>24 h La</strong>, 이후 <strong>0.5 La</strong>로 누설 가정[5]</li>
+<li>방출량 ∝ 누설률 → La 이하 유지 = EAB·LPZ 선량 기준(현행 유효선량 250 mSv) 판단의 전제 유지</li>
+<li>측정값(Lam, 종합 누설률)과 구분 — La는 "제한치"</li>
+</ul>
+<p><strong>3. 허용기준(고시 제2018-5호)[1]</strong></p>
+<ul>
+<li><strong>종합 누설률시험(Type A)</strong>: 종합 누설률 <strong>≤ 0.75 La</strong>(제6조①)
+<ul>
+<li>시험압력 설계압력 이하·<strong>Pa의 96 % 이상</strong> 유지, 안정 후 24 h 이상 자료</li>
+<li><strong>확인시험</strong> 측정 오차 <strong>≤ 0.25 La</strong>(제6조②)</li>
+</ul>
+</li>
+<li><strong>국부 누설률시험(Type B·C)</strong>: <strong>최대경로</strong> 국부 누설률 합 <strong>≤ 0.60 La</strong>(제10조①), 개별 관통부 기준치 이하
+<ul>
+<li>시험압력 <strong>Pa 이상 1.1 Pa 이하</strong></li>
+</ul>
+</li>
+<li><strong>운전 판정(미국 STS)</strong>: 보수전(as-found) 평가 누설률 <strong>&gt; 1.0 La</strong> → 격납건물 운전불능[3]</li>
+</ul>
+<p><strong>4. 여유 배분의 이유</strong></p>
+<ul>
+<li>0.75: 다음 시험까지의 <strong>열화 여유 25 %</strong></li>
+<li>0.60: Type A가 B·C 경로를 포함 → 국부 시험 대상 외 누설·열화를 고려한 더 엄격한 합산 기준(두 결과를 더하지 않음)</li>
+<li>최대경로 = 한 경로 두 격리방벽 중 <strong>큰 값</strong>(단일고장 고려)</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 0~1.0 La 눈금 위 0.60(국부 합)·0.75(종합)·1.0(La, 선량해석 입력) 표시, 확인시험 오차 0.25 La는 별도 메모" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/5cb2b37ff2c3dd164fbbb9c003719291aa4050d33919403a744dc7f8a75c7ef7.webp"/><figcaption>답안용 도식: 0~1.0 La 눈금 위 0.60(국부 합)·0.75(종합)·1.0(La, 선량해석 입력) 표시, 확인시험 오차 0.25 La는 별도 메모</figcaption></figure>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="La 기준 사다리(0.60·0.75·1.0 La, 환산 예와 신고리 4호기 실측 0.33 La, 확인시험 오차 0.25 La 별도 주석) + PWR LOCA 선량해석의 누설 가정 계단 그래프(0~24 h La, 이후 0.5 La, 720 h)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/4ba9d31d13b632aee7eb63a4d62a4688f2ebe24eac97a37578bb7ed8af6fa1f1.webp"/><figcaption>La 기준 사다리(0.60·0.75·1.0 La, 환산 예와 신고리 4호기 실측 0.33 La, 확인시험 오차 0.25 La 별도 주석) + PWR LOCA 선량해석의 누설 가정 계단 그래프(0~24 h La, 이후 0.5 La, 720 h)</figcaption></figure>
+<p>이 문제의 핵심은 La를 "시험에서 재는 값"이 아니라 "운영기술지침서의 제한치이자 사고 선량해석의 입력"으로 설명하는 것입니다. 설계자는 사고 때 격납건물이 La로 샌다고 가정하고 주민 선량을 계산합니다(그림의 계단은 실제 누설의 시간 변화가 아니라 해석 가정입니다). 다른 조건이 같으면 격납건물 누설에 의한 방출률은 누설률에 비례하므로, La는 선량 판단을 떠받치는 입력값 중 하나입니다. 시험은 실제 누설이 이 가정보다 충분히 작다는 것을 보이는 절차입니다.</p>
+<p>그래서 시험 합격선은 La보다 낮게 잡습니다. 그림의 사다리처럼 종합 시험은 0.75 La, 관통부·격리밸브 국부 시험의 최대경로 합은 0.60 La입니다. 실제 예로 신고리 4호기(현 새울 2호기) 운영허가 때 종합 누설률은 0.0328 wt%/24 h로, 기준 0.075 wt%/24 h(0.75 La)의 절반 이하였습니다[6].</p>
+<p>확인시험 오차 0.25 La는 측정계가 알려진 인위 누설을 제대로 읽는지 보는 기준이지, 누설률 합격선이 아닙니다. 단위도 자주 틀립니다. La는 격납건물 안 공기 질량에 대한 하루당 백분율입니다. 시험은 압력·온도·이슬점으로 건공기 질량을 계산해 그 감소율을 구하므로 질량 기준이 자연스럽습니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li>국내 「원자로격납건물 기밀시험에 관한 기준」은 2019년 출제 당시와 같은 제2018-5호가 현행이며, 0.75·0.60·0.25 La 기준은 그대로입니다[1].</li>
+<li>위치제한 선량은 구 기준(전신 250 mSv·갑상선 3 Sv)에서 2026.1.20 제정된 고시 제2026-7호의 유효선량 단일 기준(EAB 2 h 250 mSv)으로 바뀌었습니다[7]. 선량해석에서 La의 역할은 같습니다.</li>
+<li>미국은 RG 1.163 Rev.1(2023)로 성능기반 시험 주기(Type A 최대 15년)를 지침 차원에서 승인했고, RG 1.183도 Rev.1(2023)로 개정됐습니다[2][5]. 국내 종합 시험 주기 상한은 10년입니다.</li>
+</ul>
+<h2>채점 포인트와 흔한 실수</h2>
+<ul>
+<li><strong>Pa를 설계압력으로 쓰기</strong>: Pa는 설계기준사고 계산 최대압력입니다.</li>
+<li><strong>단위 누락</strong>: "공기 질량 %/day"까지 써야 합니다.</li>
+<li><strong>0.75 La와 La 혼동</strong>: La는 제한치, 0.75 La는 종합 시험 합격선입니다.</li>
+<li><strong>0.60 La를 종합 기준으로 쓰기</strong>: 0.60 La는 국부 시험 최대경로 합의 기준입니다.</li>
+<li><strong>선량해석 연결 누락</strong>: La가 사고 선량평가 입력이라는 한 줄이 득점 포인트입니다.</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로격납건물 기밀시험에 관한 기준」, 원안위고시 제2018-5호(2018.11.27), 제2·3·5·6·9·10조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix J "Primary Reactor Containment Leakage Testing for Water-Cooled Power Reactors", Option A·B; Regulatory Guide 1.163 Rev. 1 (2023).</li>
+<li>U.S. NRC, NUREG-1431 Standard Technical Specifications, Westinghouse Plants, Rev. 5 (2021), LCO 3.6.1 및 5.5 "Containment Leakage Rate Testing Program".</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Rev. 3 (2018), 6.2.1·6.2.6. NRC ADAMS 공개.</li>
+<li>U.S. NRC, Regulatory Guide 1.183 Rev. 1 "Alternative Radiological Source Terms for Evaluating Design Basis Accidents at Nuclear Power Reactors" (2023).</li>
+<li>원자력안전위원회, 제96회 원자력안전위원회 회의 안건(2019.2.1) — 신고리 4호기 운영허가(안).</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제23조; 원안위고시 제2026-7호(2026.1.20). 국가법령정보센터.</li>
+</ol>

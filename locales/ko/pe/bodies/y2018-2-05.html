@@ -1,0 +1,164 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2018년 원자력발전기술사 필기 2교시 5번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>표준형 원자력발전소의 노외중성자 검출기(Ex-core Neutron Detector)와 고정형 노내중성자 검출기(Fixed In-core Neutron Detector)의 기능에 대하여 기술하시오.</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>한국표준형 원전(CE계)에서 두 계측이 왜 함께 필요한지, 각각 어떤 계통에 신호를 주는지 아는지 봅니다. 노외 검출기는 원자로보호계통(PPS)·노심보호연산기(CPC)·제어계통으로, 고정형 노내 검출기는 노심운전제한감시계통(COLSS)·노외 교정·노심출구온도로 이어진다는 점을 짚어야 합니다. 위치, 검출 원리, 응답 속도, 측정 범위의 차이로 역할 분담을 설명하면 상위 점수입니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: 두 검출기의 위치와 역할 분담</li>
+<li>본론 1: 노외중성자 검출기 — 구성, 원리, 기능(보호·CPC·기동·제어·사고 후 감시)</li>
+<li>본론 2: 고정형 노내중성자 검출기 — 구성, 원리, 기능(3차원 분포·COLSS·교정·노심 추적·CET)</li>
+<li>본론 3: 비교표</li>
+<li>결론: 상호보완 관계</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li><strong>노외중성자 검출기(ENFMS)</strong>: 원자로용기 밖 생체차폐 콘크리트의 계기 우물에서 노심 <strong>누설 중성자</strong> 측정 → 출력 총량·변화율·축방향 분포를 <strong>빠르게</strong> 제공 [1][2]</li>
+<li><strong>고정형 노내중성자 검출기(ICI)</strong>: 연료집합체 중앙 계측관에 넣은 <strong>로듐 자기출력형 검출기(SPND)</strong> → 집합체·높이별 국부 중성자속을 재어 <strong>3차원 출력분포</strong> 제공 [4]</li>
+<li>역할 분담: 노외 = 빠르고 넓게(보호·제어), 노내 = 느리지만 자세히(감시·교정)</li>
+</ul>
+<figure class="article-image"><img alt="답안용 도식: 원자로용기 밖 노외 검출기(3단)와 노심 안 노내 Rh 검출기 5단·CET, 신호 행선지" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/5eb1eecfcf7b0c83f814343855a89452013a2eaf8d3f8f6dcf7d8b12b805bbd7.webp"/><figcaption>답안용 도식: 원자로용기 밖 노외 검출기(3단)와 노심 안 노내 Rh 검출기 5단·CET, 신호 행선지</figcaption></figure>
+<p><strong>2. 노외중성자 검출기의 기능</strong></p>
+<ul>
+<li><strong>구성(설계 예)</strong>: OPR1000 초기 호기 8채널 — 안전채널 4(핵분열함, 90° 간격), 기동채널 2(BF₃), 제어채널 2(비보상 전리함) [3]
+<ul>
+<li>안전채널은 노심 높이 방향 <strong>3단</strong> 신호, 대수증폭(계수 + 평균제곱전압) → 대수출력, 선형증폭(직류) → 선형출력</li>
+<li>범위 예: <strong>2×10⁻⁸ %~200 %(10 decade)</strong> — APR1400 설계 예 [2][8], 호기별 범위는 각 설계 기준</li>
+</ul>
+</li>
+<li><strong>기능</strong>
+<ul>
+<li>① <strong>전 범위 출력 감시</strong>: 정지(선원 준위)~기동~출력 운전을 영역 겹침으로 연속 지시</li>
+<li>② <strong>원자로보호계통 트립 입력</strong> [2]
+<ul>
+<li>고대수출력 트립: 정지·저출력에서 붕소 희석·제어봉 인출에 의한 비계획 임계 방호(출력 운전 시 운전 우회)</li>
+<li>가변과출력 트립(VOPT): 선형출력의 급격한 상승 방호</li>
+</ul>
+</li>
+<li>③ <strong>CPC 입력</strong>: 3단 선형 신호 → 형상 소멸 행렬·제어봉(CEA) 그림자·온도 그림자 보정 → 축방향 출력분포 합성 → CPC가 냉각재 온도·압력·유량과 결합해 <strong>DNBR·LPD</strong>를 계산 → 저 DNBR·고 LPD 트립 신호는 PPS가 수행</li>
+<li>④ <strong>기동률(SUR) 감시</strong>: 대수 신호 미분, SUR(dpm) = 26.06/T(s) → 임계 접근 감시(기동채널은 가청 계수율)</li>
+<li>⑤ <strong>출력 제어 입력</strong>: 제어채널(비안전, 선형) → 원자로 조절계통</li>
+<li>⑥ <strong>사고 후 출력 감시</strong>: RG 1.97 사고감시 변수(대수 원자로출력) [8]</li>
+</ul>
+</li>
+<li><strong>특징</strong>: 응답 빠름, 안전등급 4채널(다중성·독립성), 노심 <strong>주변부 가중</strong> → 분포를 직접 재지는 못함 → 선형출력은 2차측 열평형, 축방향 형상은 노내 측정으로 교정</li>
+</ul>
+<p><strong>3. 고정형 노내중성자 검출기의 기능</strong></p>
+<ul>
+<li><strong>구성</strong>: 집합체 하나에 <strong>Rh 검출기 5개(노심 높이 10·30·50·70·90 %)</strong> + <strong>배경 검출기 1개</strong> + <strong>노심출구열전대(CET) 1개</strong> [4]
+<ul>
+<li>OPR1000에서 약 30년 사용, APR1400도 같은 형식(APR1400은 하부헤드 관통 61개) [4]</li>
+</ul>
+</li>
+<li><strong>원리</strong>: ¹⁰³Rh(n,γ)¹⁰⁴Rh → β⁻(T½ 약 42 s) → 에미터를 떠난 β 전하가 전류(외부 전원 불필요) [5]
+<ul>
+<li>배경 검출기(에미터 없는 도선)로 리드선에서 생기는 감마 유도 배경전류 보정</li>
+<li>신호에 Rh-104 붕괴에 따른 지연 성분이 있음(준안정 ¹⁰⁴ᵐRh 경로 포함) → 동적 보상 후 표시, 이 설계에서는 출력분포 감시에 사용 [9]</li>
+<li>Rh 소모로 감도 감소 → 감도 보정, 주기적 교체(논문 사례: 18개월 주기에서 노심 중앙부 ICI는 2주기 말 교체) [4]</li>
+</ul>
+</li>
+<li><strong>기능</strong>
+<ul>
+<li>① <strong>3차원 출력분포 측정</strong>: 집합체별 5단 신호 + 설계 결합계수 → 노심 분포 합성 → FQ·Fr(FΔH)·ASI·방위각 경사(tilt)</li>
+<li>② <strong>COLSS 온라인 감시</strong>: 측정 분포와 냉각재 조건으로 LHR·DNBR 한계에 대응하는 <strong>허용 노심출력(POL)</strong>을 계산해 실제 열출력과 비교, 여유 경보 → 운영기술지침서의 출력분포 운전제한조건 감시 [6]
+<ul>
+<li>COLSS 불능 시에는 T/S에 정한 조건과 감시요건에 따라 CPC 값으로 감시하며 허용 영역이 더 좁음</li>
+</ul>
+</li>
+<li>③ <strong>노외 검출기 교정</strong>: 노내 측정 분포·ASI로 노외 3단의 형상 소멸 행렬·ASI를 교정(노내–노외 교정)</li>
+<li>④ <strong>노심 추적·설계 검증</strong>: 기동 물리시험과 주기 중 측정 분포를 설계 계산과 비교, 연소도 분포 추적</li>
+<li>⑤ <strong>노심출구온도 측정 위치 제공</strong>: 같은 집합체에 든 별도 센서 CET의 온도 신호 → ICCMS(노심냉각 상태 감시). ICI 위치는 출력 경사 측정·노심출구온도 감시 요건을 만족하도록 선정 [4]</li>
+<li>⑥ 국부 이상 탐지: 제어봉 낙하·오정렬, 반경방향 출력 경사</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="노외 검출기(계기 우물, 3단)와 고정형 노내 검출기(Rh 5단·배경·CET)의 배치, 각각의 기능(PPS·CPC·기동·제어 / 3차원 분포·COLSS·교정·노심 추적, CET → ICCMS)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/ef8c3eb8edf7995d4ce91af861b73e9d467742ebfa70da85e40f3bb7856ed997.webp"/><figcaption>노외 검출기(계기 우물, 3단)와 고정형 노내 검출기(Rh 5단·배경·CET)의 배치, 각각의 기능(PPS·CPC·기동·제어 / 3차원 분포·COLSS·교정·노심 추적, CET → ICCMS)</figcaption></figure>
+<p><strong>4. 비교</strong></p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>노외중성자 검출기</th>
+<th>고정형 노내중성자 검출기</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>위치</td>
+<td>원자로용기 밖 계기 우물</td>
+<td>연료집합체 계측관(노심 안)</td>
+</tr>
+<tr>
+<td>검출기</td>
+<td>핵분열함·BF₃·비보상 전리함</td>
+<td>Rh SPND 5단 + 배경 + CET</td>
+</tr>
+<tr>
+<td>범위</td>
+<td>2×10⁻⁸~200 %(10 decade, APR1400 예)</td>
+<td>출력 운전 영역</td>
+</tr>
+<tr>
+<td>응답</td>
+<td>빠름</td>
+<td>Rh-104 붕괴 지연 성분(T½ 약 42 s)</td>
+</tr>
+<tr>
+<td>측정 대상</td>
+<td>주변부 누설 중성자(총량·3단)</td>
+<td>집합체·높이별 국부 중성자속(3차원)</td>
+</tr>
+<tr>
+<td>주 용도</td>
+<td>PPS 트립·CPC·제어·기동 감시</td>
+<td>COLSS 감시·노외 교정·노심 추적(CET는 ICCMS로)</td>
+</tr>
+<tr>
+<td>교정</td>
+<td>2차측 열평형·노내 측정</td>
+<td>감도 소모 보정·교체</td>
+</tr>
+</tbody>
+</table>
+<p><strong>5. 결론</strong></p>
+<ul>
+<li>노외는 넓은 범위를 빠르게 따라가므로 <strong>신속한 출력 감시·보호 입력</strong>에, 노내는 국부 분포를 재므로 <strong>공간분포 감시·교정</strong>에 씀</li>
+<li>노내 측정이 노외 검출기의 축방향 형상을 교정하고, 노외 신호를 쓰는 CPC는 COLSS가 불능일 때 감시를 대신함 → 두 계측은 서로 보완함</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<h2>해설</h2>
+<figure class="article-image"><img alt="노외 대수출력 범위(2×10⁻⁸~200 %, APR1400 예)와 노내 감시 영역, 42 s 단일 지연 성분 이상화 응답(63 % 61 s·90 % 140 s·99 % 279 s)" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/bca1e608dfd693883e0e9d9208570f671ed0ae509a140c715599b106d9d5dc25.webp"/><figcaption>노외 대수출력 범위(2×10⁻⁸~200 %, APR1400 예)와 노내 감시 영역, 42 s 단일 지연 성분 이상화 응답(63 % 61 s·90 % 140 s·99 % 279 s)</figcaption></figure>
+<p>두 검출기의 역할이 갈리는 이유는 위치·범위·응답 속도입니다. APR1400 예에서 노외 안전채널은 2×10⁻⁸ %에서 200 %까지 10 decade를 덮고, 핵분열함·전리함 신호는 중성자속을 빠르게 따라갑니다. 그래서 정지 중 비계획 임계와 출력 급상승을 막는 트립 입력에 쓸 수 있습니다.</p>
+<p>로듐 검출기는 중성자를 흡수해 생긴 Rh-104가 β 붕괴할 때 나오는 전류를 주로 재므로, 중성자속이 계단처럼 바뀌어도 신호의 지연 성분은 1 − exp(−t·ln2/42 s)를 따라 늦게 올라갑니다. 42 s 단일 지연 성분만 둔 이상화 모델로 계산하면 63 %에 약 61 s, 90 %에 약 140 s가 걸립니다. 실제 검출기에는 작은 즉발 성분과 준안정 상태 경로도 있고, 계통은 디지털 동적 보상으로 지연을 줄여 표시하므로 이 값이 실제 응답시간은 아닙니다. 그래도 이 설계에서 노내 신호는 트립이 아니라, 집합체별·높이별 값으로 FQ·Fr 같은 국부 첨두를 확인하는 감시에 씁니다.</p>
+<h3>채점 포인트와 흔한 실수</h3>
+<ul>
+<li><strong>노내 검출기로 트립한다고 씀</strong>: 한국표준형에서 트립 입력은 노외 신호(PPS·CPC)가 맡고, 노내는 COLSS 감시용입니다(SPND를 보호에 쓰는 노형도 있으므로 '이 설계에서'로 한정).</li>
+<li><strong>노외 검출기가 출력분포를 직접 잰다고 씀</strong>: 주변부 누설 중성자를 보므로 노내 측정으로 교정합니다.</li>
+<li><strong>SPND에 전원이 필요하다고 씀</strong>: β 전류를 쓰는 자기출력형입니다.</li>
+<li><strong>COLSS와 CPC를 혼동</strong>: CPC는 노외 3단(보호), COLSS는 노내 분포(감시)입니다.</li>
+<li><strong>CET를 빠뜨림</strong>: 노내 집합체가 ICCMS의 노심출구온도 입력도 제공한다는 점을 적으면 좋습니다.</li>
+</ul>
+<h2>현행 기준으로 달라진 점</h2>
+<ul>
+<li><strong>기본 기능</strong>: 출제 이후 두 검출기의 기능과 신호 분배는 달라지지 않았습니다. 국내 기술기준은 「원자로시설 등의 기술기준에 관한 규칙」 현행 원안위규칙 제37호(2026.3.30)의 제20조(계측 및 제어장치)·제26조(원자로보호계통)·제44조(신뢰성)로 인용합니다 [7].</li>
+<li><strong>장수명 노내 검출기</strong>: 운전주기가 18개월로 길어지며 로듐 소모에 따른 교체 부담이 커져, 바나듐 에미터 ICI 2개를 2021년 7월 OPR1000에 설치해 실증했습니다. 출력 상승 중 대칭 위치 로듐 검출기와의 중성자속 차이는 2 % 이내였고, 3개월 관측을 바탕으로 전출력 10년 감도 감소를 약 5 %로 추정했습니다 [4]. 아직 실증 단계로, 현행 표준 사양이 바뀐 것은 아닙니다.</li>
+<li><strong>사고감시계측</strong>: RG 1.97은 Rev.5(2019)가 최신판입니다. APR1400 설계인증은 Rev.4를 적용했고, 대수 원자로출력을 2×10⁻⁸~200 % 범위의 사고감시 변수로 둡니다 [8].</li>
+</ul>
+<h2>참고문헌</h2>
+<ol>
+<li>U.S. NRC, HRTD Combustion Engineering Technology Manual, Ch. 9.1 "Excore Neutron Monitoring System", ML11251A025.</li>
+<li>U.S. NRC, Final Safety Evaluation Report for the APR1400 Design Certification, Chapter 7, ML18215A241.</li>
+<li>이환수·신호철·이은기, "A New Approach to ENFMS by using Variable Moderator Equipment", 한국원자력학회 2010 추계학술발표회.</li>
+<li>K. G. Kim, D. Kim, Y. S. Choi, "Demonstration Test of Vanadium Fixed In-Core Detector Assembly", Transactions of the Korean Nuclear Society Spring Meeting (2022.5).</li>
+<li>G. F. Knoll, Radiation Detection and Measurement, 4th ed., Wiley (2010), 자기출력형 중성자 검출기.</li>
+<li>U.S. NRC, NUREG-1432 Rev.5 "Standard Technical Specifications — Combustion Engineering Plants" (2021), 3.2 Power Distribution Limits.</li>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제20·26·44조. 국가법령정보센터.</li>
+<li>KEPCO/KHNP, APR1400 Design Control Document Tier 2, Table 7.5-1 — RAI 38-7878 Question 07.05-1 Rev.2 응답 첨부, NRC ADAMS ML17271A085.</li>
+<li>W. H. Todt, "Characteristics of Self-Powered Neutron Detectors Used in Power Reactors", OECD/NEA Specialists' Meeting on In-Core Instrumentation and Reactor Core Assessment (1996).</li>
+</ol>

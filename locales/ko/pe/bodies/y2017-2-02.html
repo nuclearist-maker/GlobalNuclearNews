@@ -1,0 +1,192 @@
+
+<blockquote>
+<p>출처: KINS 원자력면허시험 자료실, 2017년 원자력발전기술사 필기 2교시 2번</p>
+</blockquote>
+<h2>문제</h2>
+<blockquote>
+<p>표준형 원자력발전소의 기체폐기물계통(Gaseous Radwaste System)과 관련하여 다음 사항에 대하여 기술하시오.
+가. 설계기준(등급분류 포함)
+나. 계통 구성 기기
+다. 유입원
+라. 질소세정설비 목적</p>
+</blockquote>
+<h2>출제 의도</h2>
+<p>기체폐기물계통(GRS)을 "수소가 섞인 방사성 기체를 모아 붕괴시킨 뒤 감시하며 내보내는 비안전 계통"으로 정확히 규정할 수 있는지 봅니다. 설계기준은 방출 선량 목표, 수소 폭발 방지, 탱크 파손 방출 해석, 등급분류(비안전등급 + RW 등급)의 네 축으로 정리해야 점수가 납니다. 질소세정은 "산소 희석으로 가연 범위를 피한다"가 핵심이고, 과도한 희석이 방출량을 늘린다는 단서까지 쓰면 변별력이 생깁니다.</p>
+<h2>답안 구성</h2>
+<ul>
+<li>서론: GRS의 기능과 위치(1차 냉각재 탈기 기체 처리, 건물 환기 계통과 구분)</li>
+<li>본론 가: 설계기준 — 방출 설계목표, 처리 용량, 폭발 방지, 탱크 파손 해석, 감시·격리, 등급분류</li>
+<li>본론 나: 구성 기기 — 수집 헤더·서지탱크·압축기·감쇠탱크·분석기·질소 공급·방출 설비</li>
+<li>본론 다: 유입원 — 냉각재 탈기 경로별 기체 성분</li>
+<li>본론 라: 질소세정설비 목적과 운영상 유의점</li>
+<li>결론: 지연·감시 방출 구조와 APR1400의 변화</li>
+</ul>
+<h2>답안 예시</h2>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li><strong>기능</strong>: 1차 냉각재에서 탈기된 <strong>수소 + 핵분열 불활성기체(Xe·Kr)</strong>를 모아 <strong>지연·붕괴</strong>시킨 뒤 시료 분석과 방사선 감시를 거쳐 배기구로 방출</li>
+<li><strong>처리 원리</strong>: 지연·감쇠(Xe-133 반감기 5.24일) — 처리로 방사능을 없애는 것이 아니라 시간으로 줄임</li>
+<li><strong>범위 구분</strong>: 건물 환기·복수기 공기추출기 배기는 별도(환기계통의 HEPA·요오드 흡착기 → 감시 방출)</li>
+<li><strong>방식</strong>: 표준형(OPR1000)은 압축기로 기체를 <strong>가압 감쇠탱크</strong>에 저장하는 회분식이 기본 구성이고, APR1400은 상온 <strong>활성탄 지연대</strong> 연속식으로 바뀜[4]</li>
+</ul>
+
+<p><strong>2. 가. 설계기준(등급분류 포함)</strong></p>
+<ul>
+<li><strong>① 방출 설계목표(ALARA)</strong>: 정상운전·예상운전과도의 기체 방출로 인한 제한구역 경계 연간 선량이 설계목표 이하 — γ 공기흡수선량 0.1 mGy, β 0.2 mGy, 외부피폭 유효선량 0.05 mSv, 피부 0.15 mSv, 입자·H-3·C-14·방사성옥소 장기 등가선량 0.15 mSv(「방사선방호 등에 관한 기준」 제16조②, 10 CFR 50 App. I와 같은 수준)[2][3]</li>
+<li><strong>② 처리 용량</strong>: 기동·정지 시 냉각재 탈기(수소 제거) 같은 <strong>최대 유입</strong>과 연료 결함을 가정한 선원항(설계 기준 냉각재 방사능)을 수용, 압축기·탱크는 정비 중에도 처리가 끊기지 않게 여유 배치</li>
+<li><strong>③ 수소 폭발 방지</strong>: 수소·산소 혼합 가능성이 있으면 <strong>폭발성 혼합기 형성을 막거나</strong>, 폭발에 견디도록 설계(RG 1.143 Rev.2)[5]
+<ul>
+<li>이중 <strong>수소·산소 분석기</strong>로 연속 감시, 산소 고경보</li>
+<li>운영기술지침서 폭발성 기체 감시 프로그램의 제한 예: 수소 농도가 4 % 이상이면 산소 농도를 체적 4 % 이하로 유지(일부 호기는 산소 2 % 이하 — 호기별 승인 기준 적용)[6][8]</li>
+<li>내폭 설계로 대응하는 경우의 압력 요건 예: 운전압력의 20배 이상 설계압력(학회 발표의 국내 GRS 저압부 예 — 운전압력 2 psig, 설계압력 100 psig 이상)[6]</li>
+</ul>
+</li>
+<li><strong>④ 탱크 파손 방출 해석</strong>: 감쇠탱크 1기 파손 시 전량 방출을 가정해 부지 경계 선량을 평가 → 폭발·지진에 견디지 않는 계통은 EAB 1 mSv(0.1 rem) 이하(BTP 11-5)[7] → 운영기술지침서 <strong>기체 저장탱크 방사능 한도</strong>·폭발성 기체 감시 프로그램으로 관리[8]</li>
+<li><strong>⑤ 감시·격리</strong>: 방출선 <strong>방사선감시기 고준위 신호 → 방출 격리밸브 자동 폐쇄</strong>, 방출 전 탱크 시료 분석·방출 허가, 누설 최소화(용접 접속·벨로우즈 밀봉 밸브), 차폐 격실 배치</li>
+<li><strong>⑥ 등급분류</strong>
+<ul>
+<li><strong>안전등급: 비안전등급</strong> — 안전등급 1~3의 안전기능을 수행하는 설비로 분류되지 않음(안전등급 고시 제5~8조)[9]</li>
+<li><strong>방사성폐기물 설계 등급(미국 RG 1.143 Rev.2)</strong>: 비완화 방출 결과와 보유량으로 구분 — 국내 호기의 실제 적용 등급은 해당 FSAR 인허가 기준[5]
+<ul>
+<li>건물 등급: 비보호구역 경계 500 mrem/년 또는 보호구역 종사자 5 rem/년 초과 → RW-IIa, 미만 → RW-IIb</li>
+<li>기기 등급: 보유량 &gt; A₁ → RW-IIa, A₂ &lt; 보유량 ≤ A₁ → RW-IIb, 그 밖 → RW-IIc(10 CFR 71 부록 A의 A₁·A₂)</li>
+<li>RW-IIa 지진 설계 = OBE 또는 1/2 SSE, 압력기기 ASME VIII·배관 B31.3급 규격(ASME III 아님)</li>
+</ul>
+</li>
+<li>감쇠탱크처럼 방사성 기체를 모아 저장하는 기기는 보유량이 A₁을 넘으면 RW-IIa 대상(보유 핵종·방사능 평가로 결정)</li>
+</ul>
+</li>
+</ul>
+<figure class="article-image"><img alt="표준형 GRS 흐름도(유입원 → 수집 헤더·서지탱크 → 압축기 → 감쇠탱크 → 감시 방출, 수소·산소 분석기와 질소 공급, 방출 격리) + 60일 격리 저장 가정 핵종별 잔존비 표 + RG 1.143 등급 기준" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/f5d5ceed471c71cea852ff8f1dc73be23054533dd77a5c25d0e194aa75e4554c.webp"/><figcaption>표준형 GRS 흐름도(유입원 → 수집 헤더·서지탱크 → 압축기 → 감쇠탱크 → 감시 방출, 수소·산소 분석기와 질소 공급, 방출 격리) + 60일 격리 저장 가정 핵종별 잔존비 표 + RG 1.143 등급 기준</figcaption></figure>
+<p><strong>3. 나. 계통 구성 기기</strong></p>
+<table>
+<thead>
+<tr>
+<th>기기</th>
+<th>기능</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>수집 헤더·<strong>기체 서지탱크</strong></td>
+<td>각 탱크 배기를 모아 유량 변동 완충, 압축기 기동 빈도 감소</td>
+</tr>
+<tr>
+<td><strong>기체 압축기</strong>(복수, 병렬)</td>
+<td>저압 헤더 기체를 가압해 감쇠탱크에 충전(습분 분리 포함)</td>
+</tr>
+<tr>
+<td><strong>기체 감쇠탱크</strong>(복수)</td>
+<td>가압 저장으로 수십 일 붕괴 — 탱크별 입·출구 격리밸브로 충전·격리 저장·방출을 서로 분리, 회분식</td>
+</tr>
+<tr>
+<td><strong>수소·산소 분석기</strong>(이중)</td>
+<td>헤더·탱크 기체의 H₂·O₂ 연속 감시, 산소 고경보</td>
+</tr>
+<tr>
+<td><strong>질소 공급 설비</strong></td>
+<td>계통 퍼지·희석·덮개가스(라 참고)</td>
+</tr>
+<tr>
+<td>방출 유량조절밸브·필터</td>
+<td>감시 방출 유량 제어, 입자 제거(Xe·Kr 기체는 제거 못 함 — 설치 위치는 호기 설계)</td>
+</tr>
+<tr>
+<td><strong>방출선 방사선감시기</strong>·격리밸브</td>
+<td>설정점 초과 시 자동 방출 차단</td>
+</tr>
+<tr>
+<td>배기구(plant vent)</td>
+<td>감시 후 대기 방출(유출물 감시)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>탱크는 운전원이 시료 분석 결과로 방출 여부를 정함 → 감시 + 방출 허가 + 기록(ODCM 절차)</li>
+</ul>
+<p><strong>4. 다. 유입원</strong></p>
+<ul>
+<li>대표적 유입원 예시(연결 여부·중요도는 호기 계통도 기준)</li>
+<li><strong>체적제어탱크(VCT) 퍼지·배기</strong>: 수소 덮개가스 + 탈기된 Xe·Kr — 주요 방사능 유입원</li>
+<li><strong>원자로배수탱크·기기배수탱크 배기</strong>: 1차 냉각재 누설·배수 회수분의 탈기 기체</li>
+<li><strong>붕산회수계통 탈기기·홀드업 탱크 배기</strong>: 유출수 탈기 시 수소·핵분열기체(기동·정지·희석 때 증가)</li>
+<li><strong>가압기 방출탱크(PRT) 배기</strong>: 가압기 방출·누설로 들어온 기체</li>
+<li><strong>1차 시료 채취·액체폐기물 탱크 덮개가스</strong>: 탈기 시료·탱크 호흡 기체</li>
+<li><strong>성분</strong>: 대부분 <strong>수소·질소</strong>, 방사성 성분은 Xe-133·135, Kr-85·85m·87·88, 미량 요오드(정상 시 저준위). 연료 결함·출력 과도 시 증가</li>
+<li><strong>별도 경로(GRS 아님)</strong>: 격납·보조건물 환기, 복수기 공기추출기, SG 취출 탱크 배기</li>
+</ul>
+<p><strong>5. 라. 질소세정설비 목적</strong></p>
+<ul>
+<li><strong>① 가연 범위 회피(산소 희석)</strong>: 냉각재 배출 기체의 주성분이 수소이므로, 공기 유입으로 산소가 생기면 질소로 희석해 <strong>산소 4 % 이하</strong> 유지 → 수소·산소 폭발 방지(수소를 4 % 아래로 희석하는 것보다 합리적)[6]</li>
+<li><strong>② 기동 전·정비 전 세정(purge)</strong>: 계통 충전 전 공기(산소)를 질소로 치환, 정비 전 수소·방사성기체를 몰아내 작업자 피폭·화재 위험 저감</li>
+<li><strong>③ 덮개가스·양압 유지</strong>: 탱크·헤더를 질소로 채워 공기 유입 차단(참고: 활성탄 지연대 방식인 AP1000은 산소 상승 시 질소 퍼지 자동 개시 — 표준형과 다른 설계)[10]</li>
+<li><strong>④ 분석기·시료 라인 퍼지</strong>: 측정 라인 잔류 기체 제거 → 분석 신뢰도 확보</li>
+<li><strong>유의점</strong>: 질소 희석은 기체 <strong>체적과 저장 부담을 늘림</strong> → 탱크 회전이 빨라져 유효 저장기간이 짧아지면 방사능 방출량이 늘 수 있음. 산소 제한을 낮게 운영할수록 희석 운전이 잦아진다는 학회 분석이 있음(제한값 자체는 호기별 승인 기준을 따름)[6]</li>
+</ul>
+<p><strong>6. 결론</strong></p>
+<ul>
+<li>GRS = <strong>모아서(수집) → 가두고(감쇠탱크) → 확인하고(시료·감시) → 내보내는(감시 방출)</strong> 비안전 계통</li>
+<li>안전 측면 설계기준의 중심은 <strong>수소 폭발 방지</strong>와 <strong>탱크 파손 시 부지 선량 제한</strong></li>
+<li>APR1400은 활성탄 지연대(건조·보호층 → 활성탄층)로 바꿔 고압 탱크·압축기 의존을 줄였음[4]</li>
+</ul>
+<p>※ 답안 예시이며 공식 정답이 아닙니다. 현행 기준(2026년)으로 작성했습니다.</p>
+<figure class="article-image"><img alt="답안용 도식: 유입원 → 서지탱크 → 압축기 → 감쇠탱크 → 감시기·격리밸브 → 배기구, 질소 공급과 H₂/O₂ 분석기" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/pe/0fa036b4b5fa1c3155581d9bec37a7a06ec052a0d7d48ded50f2343f7a78aa38.webp"/><figcaption>답안용 도식: 유입원 → 서지탱크 → 압축기 → 감쇠탱크 → 감시기·격리밸브 → 배기구, 질소 공급과 H₂/O₂ 분석기</figcaption></figure>
+<h3>해설: 60일이면 무엇이 남나 — 지연의 효과와 한계</h3>
+<p>감쇠탱크의 효과는 반감기로 바로 계산됩니다. 격리 저장 중 추가 유입·모핵종 공급이 없다고 보고 개별 핵종 잔존비 A/A₀ = 2^(−t/T½)를 쓰면, 설명용 60일 저장에서 Xe-133(5.24일)은 약 3.6×10⁻⁴, Xe-131m(11.9일)은 약 3 %만 남고, Kr-85m·Kr-88·Xe-135처럼 반감기가 몇 시간인 핵종은 매우 작아집니다(Kr-85m의 일부는 Kr-85로 붕괴). 반면 Kr-85(10.76년)는 약 99 %가 그대로 남습니다. 그래서 "지연으로 처리한다"는 설명 뒤에 "장반감기 Kr-85와 H-3는 감시·방출 제한으로 관리한다"를 덧붙여야 정확합니다.</p>
+<h3>해설: 등급분류는 두 층으로 쓰십시오</h3>
+<p>"기체폐기물계통 = 비안전등급"만 쓰면 반쪽 답입니다. 안전등급(원자로 안전기능 기준)으로는 비안전이지만, 방사성물질 보유량에 따른 별도의 설계 등급(RG 1.143의 RW-IIa·IIb·IIc)이 지진·재료·품질 요건을 정합니다. 두 체계를 나눠 쓰고, 감쇠탱크가 왜 높은 등급을 받는지(보유량 &gt; A₁)를 한 줄로 연결하면 됩니다.</p>
+<h2>현행 기준으로 달라진 점</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>출제 당시(2017)</th>
+<th>현행(2026)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>처리시설 기술기준</td>
+<td>「원자로시설 등의 기술기준에 관한 규칙」 구판</td>
+<td>원안위규칙 제37호(2026.3.30), 제32조(방사성폐기물 처리·저장시설) — 요건 취지 같음[1]</td>
+</tr>
+<tr>
+<td>설계 선량목표</td>
+<td>「방사선방호 등에 관한 기준」 구판</td>
+<td>원안위고시 제2026-12호(2026.7.9) 제16조[2]</td>
+</tr>
+<tr>
+<td>안전등급</td>
+<td>안전등급 고시 구판</td>
+<td>원안위고시 제2026-13호(2026.8.26), 등급 구분 체계 같음[9]</td>
+</tr>
+<tr>
+<td>RG 1.143</td>
+<td>Rev.2(2001)</td>
+<td>Rev.2 유지(2020 주기 검토, 개정 없음)[5]</td>
+</tr>
+<tr>
+<td>BTP 11-5</td>
+<td>Rev.4(2016.1)</td>
+<td>같음[7]</td>
+</tr>
+<tr>
+<td>신규 노형</td>
+<td>—</td>
+<td>APR1400(새울 등)은 활성탄 지연대 방식[4]</td>
+</tr>
+</tbody>
+</table>
+<h2>참고문헌</h2>
+<ol>
+<li>원자력안전위원회, 「원자로시설 등의 기술기준에 관한 규칙」, 원안위규칙 제37호(2026.3.30), 제32조. 국가법령정보센터.</li>
+<li>원자력안전위원회, 「방사선방호 등에 관한 기준」, 원안위고시 제2026-12호(2026.7.9), 제16조. 국가법령정보센터.</li>
+<li>U.S. NRC, 10 CFR Part 50 Appendix I "Numerical Guides for Design Objectives … to Meet the Criterion 'As Low as Is Reasonably Achievable'".</li>
+<li>KHNP, APR1400 Design Control Document Tier 2, Chapter 11 "Radioactive Waste Management", Rev. 3 (2018), NRC ADAMS ML18228A658 — 11.3(GRS).</li>
+<li>U.S. NRC, Regulatory Guide 1.143 "Design Guidance for Radioactive Waste Management Systems, Structures, and Components Installed in Light-Water-Cooled Nuclear Power Plants", Rev. 2 (2001), ML013100305 — 2.2절, Regulatory Position 5, Table 2.</li>
+<li>성기방·백영희·정은경·권혁철(한수원 중앙연구원), "기체방사성폐기물 처리계통 수소가스 농도 제한치 평가", 한국방사성폐기물학회 2016 춘계학술대회 논문요약집, pp. 295–296.</li>
+<li>U.S. NRC, NUREG-0800 Branch Technical Position 11-5 "Postulated Radioactive Releases Due to a Waste Gas System Leak or Failure", Rev. 4 (2016).</li>
+<li>U.S. NRC, NUREG-1432 "Standard Technical Specifications — Combustion Engineering Plants", 5.5 Programs and Manuals(Explosive Gas and Storage Tank Radioactivity Monitoring Program).</li>
+<li>원자력안전위원회, 「원자로시설의 안전등급과 등급별 규격에 관한 고시」, 원안위고시 제2026-13호(2026.8.26), 제5~8조. 국가법령정보센터.</li>
+<li>Westinghouse, AP1000 Design Control Document Tier 2, Chapter 11.3 "Gaseous Waste Management System". NRC ADAMS 공개본.</li>
+</ol>
