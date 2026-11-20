@@ -11,6 +11,9 @@ def localization_scope_errors(scope,actual):
     if scope.get('kind')!='pe-board' and scope.get('new_posts')!=[]:errors.append('Invalid localization deployment scope')
     if scope.get('kind')=='language-edition':
         if scope.get('new_localized_pages')!=actual:errors.append('Localization deployment coverage mismatch')
+    elif scope.get('kind')=='news-publication':
+        paths=scope.get('new_news_paths',[])
+        if not paths or len(paths)!=len(set(paths)) or any('ko/'+p not in actual for p in paths):errors.append('News counterpart coverage mismatch')
     elif scope.get('kind')=='editorial-maintenance':
         existing=set(actual)|{p[3:] for p in actual if p.startswith('ko/')}
         if any(x.get('path') not in existing for x in scope.get('changed_features',[])):errors.append('Maintenance counterpart missing')
@@ -25,6 +28,11 @@ def check(root,source=None):
     actual=sorted(p.relative_to(root).as_posix() for p in content_html_files(root/'ko'))
     assert not localization_scope_errors(scope,actual),localization_scope_errors(scope,actual)
     assert {p['url'] for p in en}=={p['url'] for p in ko},'Different article sets'
+    if scope.get('kind')=='news-publication':
+        for rel in scope.get('new_news_paths',[]):
+            for path in [root/rel,root/'ko'/rel]:
+                body=BeautifulSoup(path.read_text(encoding='utf8'),'html.parser').select_one('article')
+                assert body and not re.search(r'blog_report_basis|image_sources/|approvals/|data/qa/|image_gen_request|fact_sheet|v1_draft|local-source-archive',str(body)),(str(path),'private workflow marker')
     if scope.get('kind')=='pe-board':
         from check_pe import check as check_pe
         check_pe(source,root)

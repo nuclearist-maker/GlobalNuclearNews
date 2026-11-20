@@ -1,5 +1,57 @@
 const posts = [
   {
+    "title": "When the Nuclear Outlook Rises: The IEA's WEO 2026 and Bulgaria's BWRX-300 MOU on the Path From Scenario to Project",
+    "date": "2026.11.20",
+    "displayDate": "2026.11.20",
+    "publishedAt": "2026-11-20T17:18:14.743348+00:00",
+    "section": "news",
+    "category": "SMR",
+    "summary": "The IEA's World Energy Outlook 2026, released on 19 November, raises the nuclear power outlook compared with last year's edition, with China and the United States as the main drivers. About 90 GW of nuclear capacity was under construction in mid-2026, the highest level in more than 35 years, and more than 50 countries have nuclear plans or targets. The outlook's scenarios are conditional pathways. The same day, World Nuclear News reported that Bulgaria's state utility NEK signed an MOU with Poland's SGE and Bulgaria's Blue Bird Energy to jointly assess BWRX-300 deployment, covering potential sites, financing structure, project delivery model and licensing. Reactor purchase contracts, a construction licence and a final investment decision are later steps.",
+    "thumbnail": "assets/images/news/2026-11-20-iea-weo-outlook-bulgaria-bwrx300-mou/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail for the IEA outlook and Bulgaria's SMR MOU",
+    "url": "posts/news/2026-11-20-iea-weo-outlook-bulgaria-bwrx300-mou.html",
+    "keywords": "Nuclear Outlook World Energy Outlook 2026 IEA Bulgaria BWRX-300 Small Modular Reactors SMR NEK SGE Blue Bird Energy Memorandum of Understanding Nuclear Licensing Net Zero Scenarios Long-Term Operation Nuclear Energy"
+  },
+  {
+    "title": "From Used CANDU Fuel to Fuel Salt: What Nuclea Bought From Moltex and Where WATSS and SSR-W Stand",
+    "date": "2026.11.20",
+    "displayDate": "2026.11.20",
+    "publishedAt": "2026-11-20T17:18:14.743348+00:00",
+    "section": "news",
+    "category": "Fuel Cycle",
+    "summary": "Nuclea Energy announced on 18 November 2026 that its subsidiary Nuclea Energy Canada closed the acquisition of certain Moltex Energy assets, technology and intellectual property on 17 November. The deal brings the WATSS process, a non-aqueous high-temperature chemical method that recovers transuranic elements from used CANDU fuel to make chloride fuel salt, and the SSR-W, a 300-500 MWe fast-neutron molten salt reactor design meant to burn recycled fuel. The company reports transuranic recovery above 90% in Canadian Nuclear Laboratories tests with real used fuel, and says SSR-W has completed Phase 1 of the Canadian regulator's vendor design review. Construction and operating licences, commercial-scale process demonstration and a separate Nasdaq listing are later steps.",
+    "thumbnail": "assets/images/news/2026-11-20-nuclea-moltex-watss-ssr-w-acquisition/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail for Nuclea and Moltex fuel recycling",
+    "url": "posts/news/2026-11-20-nuclea-moltex-watss-ssr-w-acquisition.html",
+    "keywords": "used fuel recycling transuranic elements fuel salt molten salt reactor fast reactor Nuclea Moltex WATSS SSR-W CANDU Vendor Design Review Canadian Nuclear Laboratories closed fuel cycle nuclear energy"
+  },
+  {
+    "title": "Reading C$882 Billion and 3.45 Million Job-Years: The Industrial Case for Ontario's Four Nuclear Projects",
+    "date": "2026.11.20",
+    "displayDate": "2026.11.20",
+    "publishedAt": "2026-11-20T17:18:14.743348+00:00",
+    "section": "news",
+    "category": "Policy & Regulation",
+    "summary": "Canadian Manufacturers & Exporters (CME) published an assessment on 16 November 2026, reported by World Nuclear News on 19 November, that combines economic impact studies for four Ontario nuclear projects: the Darlington SMR, the Pickering refurbishment, Bruce C and Wesleyville. CME estimates lifecycle contributions of about C$882 billion to Canadian GDP (2024 dollars) and 3.45 million job-years. Dividing the two gives about C$256,000 of GDP per job-year as a simple lifecycle average. CME sees room for suppliers of precision parts, transformers, electrical equipment, robotics and control systems, and asks for timely project decisions, long-term procurement visibility, training tied to project schedules, and trade and export finance.",
+    "thumbnail": "assets/images/news/2026-11-20-ontario-nuclear-economic-impact-job-years/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail for Ontario nuclear economic impact",
+    "url": "posts/news/2026-11-20-ontario-nuclear-economic-impact-job-years.html",
+    "keywords": "Ontario nuclear nuclear economic impact job-years Canadian Manufacturers & Exporters CME Darlington SMR Pickering refurbishment Bruce C Wesleyville nuclear supply chain SMR Canada nuclear nuclear manufacturing nuclear energy"
+  },
+  {
+    "title": "Akkuyu 1 Heats Up Without Fuel: What Hot and Cold Functional Tests Check Before Fuel Loading",
+    "date": "2026.11.20",
+    "displayDate": "2026.11.20",
+    "publishedAt": "2026-11-20T17:18:14.743348+00:00",
+    "section": "news",
+    "category": "Large Reactors",
+    "summary": "World Nuclear News reported on 19 November 2026 that hot and cold functional testing is under way at Unit 1 of Türkiye's Akkuyu nuclear plant. Instead of real fuel, Akkuyu Nuclear has loaded dummy fuel assemblies and is gradually heating the reactor plant, bringing primary coolant temperature and pressure up to rated test conditions to check equipment strength, piping, vibration, safety systems and reactor control and protection systems, including simulated off-normal conditions. After the tests, the regulator will inspect compliance with design requirements and decide separately on fuel loading and physical start-up. Rosatom expects fuel loading as early as December if the tests succeed.",
+    "thumbnail": "assets/images/news/2026-11-20-akkuyu-1-hot-cold-functional-tests/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail for Akkuyu 1 hot and cold functional tests",
+    "url": "posts/news/2026-11-20-akkuyu-1-hot-cold-functional-tests.html",
+    "keywords": "Akkuyu Akkuyu Nuclear hot functional testing cold functional testing commissioning dummy fuel assemblies fuel loading reactor protection system first criticality grid connection Rosatom Turkiye nuclear nuclear regulation nuclear safety nuclear energy"
+  },
+  {
     "title": "When AI Cyberattacks Move Faster Than Nuclear Approvals: Reading VCDNP's Two Conclusions and Five Principles",
     "date": "2026.11.19",
     "displayDate": "2026.11.19",

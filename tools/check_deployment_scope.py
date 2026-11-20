@@ -38,7 +38,11 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--manifest',type=Path,required=True);p.add_argument('--first',type=int);p.add_argument('--last',type=int);p.add_argument('--site',type=Path);p.add_argument('--report',type=Path);p.add_argument('--http',type=Path);p.add_argument('--out',type=Path);a=p.parse_args()
     read=lambda x:json.loads(x.read_text(encoding='utf-8-sig'))
     manifest=read(a.manifest)
-    if manifest.get('kind')=='pe-board':
+    if manifest.get('kind')=='news-publication':
+        from news_deployment_scope import scope_errors
+        if not a.site:p.error('news-publication requires --site')
+        problems=scope_errors(manifest,Path(__file__).resolve().parents[1],a.site)
+    elif manifest.get('kind')=='pe-board':
         from check_pe import scope_errors
         if not a.site:p.error('pe-board requires --site')
         problems=scope_errors(manifest,Path(__file__).resolve().parents[1],a.site)
@@ -55,7 +59,7 @@ def main():
     else:
         if a.first is None or a.last is None:p.error('article deployment requires --first and --last')
         problems=errors(manifest,a.first,a.last,read(a.report) if a.report else None,read(a.http) if a.http else None)
-    scope=(manifest['new_posts'] if manifest.get('kind')=='pe-board' else [x['path'] for x in manifest['changed_features']] if manifest.get('kind')=='editorial-maintenance' else manifest.get('new_localized_pages') if manifest.get('kind')=='language-edition' else list(range(a.first,a.last+1)))
+    scope=(manifest['new_news_paths'] if manifest.get('kind')=='news-publication' else manifest['new_posts'] if manifest.get('kind')=='pe-board' else [x['path'] for x in manifest['changed_features']] if manifest.get('kind')=='editorial-maintenance' else manifest.get('new_localized_pages') if manifest.get('kind')=='language-edition' else list(range(a.first,a.last+1)))
     result={'status':'FAIL' if problems else 'PASS','errors':problems,'scope':scope}
     if a.out:a.out.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
     print(json.dumps(result));return bool(problems)

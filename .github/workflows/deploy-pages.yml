@@ -25,7 +25,7 @@ jobs:
       - name: Fetch editorial maintenance comparison tree
         shell: bash
         run: |
-          BASE=$(python -c "import json; m=json.load(open('qa/deployments/current.json')); print(m.get('base_commit','') if m.get('kind')=='editorial-maintenance' else '')")
+          BASE=$(python -c "import json; m=json.load(open('qa/deployments/current.json')); print(m.get('base_commit','') if m.get('kind') in ('editorial-maintenance','news-publication') else '')")
           if [ -n "$BASE" ]; then
             [[ "$BASE" =~ ^[0-9a-f]{40}$ ]] || exit 1
             git fetch --no-tags --depth=1 origin "$BASE"
@@ -37,6 +37,8 @@ jobs:
         run: python -m pip install beautifulsoup4==4.14.3
       - name: Test editorial deployment guards
         run: python -m unittest discover -s tools -p test_editorial_deployment_scope.py
+      - name: Test news deployment guards
+        run: python -m unittest discover -s tools -p test_news_deployment_scope.py
       - name: Test Korean study board guards
         run: python -m unittest discover -s tools -p test_pe.py
       - name: Package public site files (fails on any missing linked file)
