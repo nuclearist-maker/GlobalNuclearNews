@@ -1,0 +1,71 @@
+<figure class="article-image"><img alt="로봇이 해체 현장에 들어가기 전에 맞춰야 할 것: DORADO 디지털트윈의 좌표·시각·선량 검증 대표 이미지" src="/GlobalNuclearNews/assets/images/ko/news/2026-11-23-dorado-decommissioning-digital-twin/thumbnail_01.avif"/></figure>
+<p>원전 해체라고 하면 방호복을 입은 작업자가 방사선 구역에 들어가는 장면이 먼저 떠오르실 겁니다. "로봇과 AI가 대신 들어가면 되지 않을까?"라는 질문에 답하려는 유럽 공동연구가 DORADO입니다. 다만 로봇이 안전하게 일하려면 먼저 <strong>현장의 데이터가 서로 맞물려야</strong> 합니다.</p>
+<p>DORADO는 Euratom 지원 EU 사업으로 <strong>2024년 9월부터 2027년 8월까지</strong> 진행되며, 핀란드 VTT가 조정하고 KIT·IFE 등이 참여합니다. 2026년 11월 20일 Frontiers in Nuclear Engineering 논문과 KIT의 10월 발표를 함께 보면, 지금은 <strong>부분 기능 시연 이후 통합 실증을 진행하는 단계</strong>입니다.</p>
+<h2>해체 현장의 데이터는 네 단계로 넘어갑니다</h2>
+<p>BIM(건설정보모델링)은 설비의 3차원 형상에 속성을 붙인 모델이고, 디지털트윈은 여기에 측정값과 작업 진행을 계속 반영하는 '살아 있는 복제본'입니다. 온톨로지는 설비·로봇·측정·임무의 관계를 정한 공통 사전, DTXS는 모듈끼리 기록·파일·시계열 데이터를 주고받는 교환규약입니다. 데이터 흐름은 네 단계입니다.</p>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>하는 일</th>
+<th>다음 단계로 넘기는 것</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 현장 취득</td>
+<td>점군·사진·센서값 취득, 위치·시간 정합</td>
+<td>공통 좌표의 측정값</td>
+</tr>
+<tr>
+<td>② 형상 갱신</td>
+<td>다른 시기 점군 비교, 반자동 IFC 변환</td>
+<td>변경 분포와 설비 모델</td>
+</tr>
+<tr>
+<td>③ 방사선 계산</td>
+<td>스펙트럼·선량률 지도·형상을 RADTwin에 입력</td>
+<td>갱신된 선량률 분포</td>
+</tr>
+<tr>
+<td>④ 임무 계획·실행</td>
+<td>작업점·방사선 구역 설정, 로봇에 배정</td>
+<td>검사 경로·측정 기록</td>
+</tr>
+</tbody>
+</table>
+<p>(출처: DORADO Consortium, System Design and Data Plan 및 Räty 외 2026 논문 재구성)</p>
+<p>핵심은 <strong>앞 단계의 작은 어긋남이 뒤 단계로 그대로 전달된다</strong>는 점입니다. 로봇 지도(SLAM)의 로컬 좌표는 시설 공통 좌표로 바꾸고, 카메라와 방사선 센서의 위치 차이·시계 차이는 미리 교정합니다. 해체로 벽체가 없어지고 폐기물이 옮겨지면 통로와 차폐조건도 바뀌므로, 형상 변경과 선원·차폐 변경을 같은 시점에 함께 기록해야 합니다.</p>
+<p><figure class="article-image"><img alt="해체 현장 데이터가 네 단계로 넘어가는 흐름도" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/news/2026-11-23-dorado-decommissioning-digital-twin/body_01.avif"/></figure>
+<em>DORADO 데이터 인계 4단계 (출처: DORADO D3.1, Räty 외 2026 재구성)</em></p>
+<h2>어디까지 시연됐나: 네 시설의 증거</h2>
+<p>공개 자료에서 확인되는 시연은 시설마다 성격이 다릅니다.</p>
+<ul>
+<li><strong>핀란드 FiR1 연구로</strong>: 점군을 분할해 IFC 모델로 변환했고, 열화상 자료를 BIM 모델에 배치하는 위치정합을 시연했습니다. 발표된 질의시간은 약 3초입니다.</li>
+<li><strong>벨기에 BR1·BR3</strong>: 스캔·형상·선량계획과 저장구역 방사선 지도가 제시됐습니다.</li>
+<li><strong>리투아니아 이그날리나 원전(INPP)</strong>: DTXS 개발도구로 기록을 자동 생성하고, 방사선 임계값 초과 사건을 위치와 연결해 분류하는 사례를 보였습니다.</li>
+<li><strong>노르웨이 Halden 연구로</strong>: 설계보고서에 기존 모델의 수집 상태가 정리돼 있습니다.</li>
+</ul>
+<p>나란히 놓으면 FiR1은 '형상·위치 맞추기', BR1·BR3는 '방사선 지도', INPP는 '사건 기록', Halden은 '기존 모델 확보'에 해당합니다. 데이터 흐름의 각 단계가 서로 다른 시설에서 따로 시연된 상태입니다. 다음에 필요한 자료는 좌표 기준점과 오차 분포, 측정기 교정과 독립 비교점, 원시값·단위·경보 임계값의 정의입니다. 약 3초라는 질의시간도 위치 오차·실패율·네트워크 조건과 함께 확인할 값입니다.</p>
+<p><figure class="article-image"><img alt="FiR1, BR1·BR3, INPP, Halden 네 시설의 공개 시연 내용" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/news/2026-11-23-dorado-decommissioning-digital-twin/body_02.avif"/></figure>
+<em>시설별 공개 시연 현황 (출처: KIT 발표 2026-10, DORADO D3.1 재구성)</em></p>
+<p>효과는 KBI·S-KPI·T-KPI 지표를 연결해 <strong>회피한 사람 출입 횟수와 집단선량</strong>으로 평가합니다. 작업시간 비교에는 모델 준비·교정·재시도·로봇 회수 시간까지 넣어야 공정하며, 현장 절감률은 시설별 실증을 거쳐 산정됩니다.</p>
+<h2>선량지도를 믿으려면: 보간과 예측의 검증</h2>
+<p>작업자가 받는 선량은 그 위치의 <strong>선량률(시간당 피폭량)과 머무는 시간</strong>으로 정해집니다. <strong>가정 예시</strong>로, 선량률이 0.5 mSv/h인 지점에서 30분 머물면 0.5 × 0.5 = 0.25 mSv입니다. 같은 지점이 지도에서 실제의 절반 값으로 잘못 표시되면 계획 선량도 절반으로 계산됩니다(모두 설명용 가정 수치입니다). 피폭을 합리적으로 가능한 한 낮추는 ALARA 계획이 정확한 지도에 기대는 이유입니다.</p>
+<p>선량지도에는 성격이 다른 두 계산이 들어갑니다. <strong>보간</strong>은 측정점 사이의 빈 공간을 채우는 계산이라, 일부 측정점을 숨겨 두었다가 예측값과 비교해 오차를 확인합니다. <strong>예측</strong>은 벽을 철거한 뒤의 상태를 계산하는 것이라, 형상·차폐·선원이 바뀐 뒤 새로 측정해 대조합니다. 위치 오차가 큰 측정값은 다른 곳의 방사선 값을 엉뚱한 자리에 놓을 수 있으므로, 센서 위치와 시간 동기화 오차를 함께 검토하고 원시 측정과 보간 결과를 따로 보존합니다.</p>
+<p><figure class="article-image"><img alt="선량지도의 보간과 예측 검증 방법 비교" loading="lazy" src="/GlobalNuclearNews/assets/images/ko/news/2026-11-23-dorado-decommissioning-digital-twin/body_03.avif"/></figure>
+<em>보간과 예측의 검증 방법 (출처: DORADO D3.1, Räty 외 2026, KIT 2026-10 재구성)</em></p>
+<p>IAEA SSG-47도 해체 특성평가에서 오염·방사화·선량률·물질 상태를 함께 다루고 붕괴·제염에 따라 지도를 갱신하도록 권고합니다. 모든 시설에 공통으로 적용할 선량계산 오차 한도나 모델 승인 기준은 공개자료에 아직 제시되지 않았으므로, 측정 불확실성과 작업 위험에 맞춘 허용오차 설정이 다음 과제입니다.</p>
+<h2>로봇 임무가 멈출 때와 기록</h2>
+<p>로봇 임무는 두 층입니다. 상위 계획이 검사 대상·시작점·경유점·측정점을 정하면, 하위 계획이 로봇의 이동능력·센서·현장 지도를 결합해 실제 이동 순서로 바꿉니다. 로봇 모듈은 ROS2로, 공용 정보는 DTXS로 연결됩니다.</p>
+<p>통신 중단, 위치추정 상실, 예상하지 못한 장애물은 각각 다른 실패입니다. 상황마다 정지·원격 확인·회수·재계획 중 무엇을 할지 정하고, 재개 전에 갱신할 데이터를 지정해 두는 시험이 필요합니다. DTXS는 기록의 생성·수정·이력 조회를 정의하므로 측정값·모델·경보가 언제 왜 바뀌었는지 되짚을 수 있고, 현장 음성 입력 모듈은 통신이 될 때 서버와 동기화한 뒤 중복·누락을 확인합니다.</p>
+<p>해체 로봇의 경쟁력은 로봇 자체의 성능만큼 <strong>좌표·시각·버전이 맞는 데이터</strong>에서 나옵니다. 2027년 8월까지의 통합 실증에서 오차 분포와 실패 대응 결과가 나오면, 작업자 피폭을 얼마나 줄일지 숫자로 따져 볼 수 있습니다.</p>
+<h2>참고 자료</h2>
+<ul>
+<li>European Commission, "DORADO Project Fact Sheet" (CORDIS) — https://cordis.europa.eu/project/id/101165990</li>
+<li>DORADO Consortium, "System Design and Data Plan" (D3.1), 2025-05-31 — https://www.dorado-project.eu/downloads/D3.1%20System%20Design%20and%20Data%20Plan.pdf</li>
+<li>DORADO Consortium, "State-of-the-Art and Business Value Analysis Report" (D2.1), 2025-06-04 — https://www.dorado-project.eu/downloads/D2.1%20State-of-the-Art%20and%20Business%20Value%20Analysis%20Report.pdf</li>
+<li>KIT·DORADO Consortium, "The Use of Digital Models from Scan-to-BIM for Robot Assisted Decommissioning Operations", 2026-10-26 — https://www.dorado-project.eu/downloads/RIDAO_WEROBO_20261026-29_Fukushima-Japan.pdf</li>
+<li>Räty A. 외, "Applying digital twins and ontology to robot-assisted decommissioning operations: the Euratom project DORADO", Frontiers in Nuclear Engineering, 2026-11-20 — https://www.frontiersin.org/journals/nuclear-engineering/articles/10.3389/fnuen.2026.1920600/pdf</li>
+<li>IAEA, "Decommissioning of Nuclear Power Plants, Research Reactors and Other Nuclear Fuel Cycle Facilities" (SSG-47) — https://www-pub.iaea.org/MTCD/Publications/PDF/P1812_web.pdf</li>
+</ul>

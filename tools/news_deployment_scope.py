@@ -35,6 +35,8 @@ def scope_errors(manifest,root,site,require_proof=True):
         controlled=('posts/','assets/','locales/','tools/','.github/','docs/','policies/')
         changed|={x for x in untracked if x.startswith(controlled)}
         changed.discard('qa/deployments/current.json')
+        # The coordinator manifest is verified separately by publication_release_guard.py.
+        changed.discard('qa/deployments/publication.json')
         if changed!=set(files):fail('changed-file coverage mismatch: '+str(sorted(changed^set(files))))
         if not (set(files)&old_paths)<=declared:fail('existing changed files lack feature reasons')
         if not declared<=set(files):fail('feature outside release files')

@@ -1,16 +1,81 @@
 const posts = [
   {
-    "title": "When the Nuclear Outlook Rises: The IEA's WEO 2026 and Bulgaria's BWRX-300 MOU on the Path From Scenario to Project",
+    "title": "What One Approval Unlocks: Radiant's Fuel Facility Review and Pacific Fusion's Tritium License",
+    "date": "2026.11.23",
+    "displayDate": "2026.11.23",
+    "publishedAt": "2026-11-24T12:30:26Z",
+    "section": "news",
+    "category": "Policy & Regulation",
+    "summary": "On 23 November 2026 the NRC published an Environmental Assessment and Finding of No Significant Impact for Radiant's fuel facility in Oak Ridge, Tennessee, which has applied for a 10 CFR Part 70 special nuclear material license to receive and store fresh TRISO fuel and insert compacts into fuel monoliths for the 1 MW-class Kaleidos microreactor. The Part 70 license decision comes next, and reactor loading, testing and spent fuel storage each need separate review. On 20 November Pacific Fusion announced that the New Mexico Environment Department approved a radioactive materials license for tritium at its Albuquerque campus; facility completion, experiments and its 2030 net energy gain goal lie ahead.",
+    "thumbnail": "assets/images/news/2026-11-23-radiant-fuel-ea-pacific-fusion-tritium-license/thumbnail_01.webp",
+    "thumbnailAlt": "Black cylindrical fuel compacts on a steel tray inside a glovebox",
+    "url": "posts/news/2026-11-23-radiant-fuel-ea-pacific-fusion-tritium-license.html",
+    "keywords": "nuclear licensing environmental assessment FONSI Radiant Kaleidos microreactor TRISO fuel special nuclear material NRC Pacific Fusion fusion energy tritium New Mexico nuclear energy"
+  },
+  {
+    "title": "Before Construction Starts: What Gets Decided First in Poland's AP1000 Project and the UK Nuclear Roadmap",
+    "date": "2026.11.23",
+    "displayDate": "2026.11.23",
+    "publishedAt": "2026-11-24T12:30:26Z",
+    "section": "news",
+    "category": "Large Reactors",
+    "summary": "World Nuclear News reported on 20 November 2026 that Polish project company PEJ and the Westinghouse-Bechtel consortium signed a letter of intent to prepare procurement of additional long-lead equipment for the first of three AP1000 units planned at Lubiatowo-Kopalino, with US support for export credit talks; PEJ said on 21 November that EPC negotiations continue. The same day, the UK House of Commons Energy Security and Net Zero Committee recommended updating the nuclear roadmap within six months of the Strategic Spatial Energy Plan, raising GBE-N's final investment decision target from two to three this Parliament, and making the 70% UK supply pledge for SMRs enforceable.",
+    "thumbnail": "assets/images/news/2026-11-23-poland-ap1000-long-lead-uk-roadmap-report/thumbnail_01.webp",
+    "thumbnailAlt": "Large reactor pressure vessel forging being machined in a heavy workshop",
+    "url": "posts/news/2026-11-23-poland-ap1000-long-lead-uk-roadmap-report.html",
+    "keywords": "nuclear power Poland nuclear AP1000 long-lead equipment letter of intent EPC contract final investment decision export credit UK nuclear roadmap SMR local content Sizewell C Westinghouse Bechtel Great British Energy–Nuclear"
+  },
+  {
+    "title": "Going Digital in the Control Room: When Does a Nuclear Plant Need NRC Approval First? The 50.59 Guidance Revision and Software Common Cause Failure",
+    "date": "2026.11.23",
+    "displayDate": "2026.11.23",
+    "publishedAt": "2026-11-24T12:30:26Z",
+    "section": "news",
+    "category": "Policy & Regulation",
+    "summary": "On 20 November 2026 the U.S. Nuclear Regulatory Commission published draft revisions to RIS 2002-22 and Supplement 1, its guidance on licensing digital instrumentation and control upgrades. The drafts delete sentences that said RPS and ESFAS changes were likely to need staff review, clarify that the qualitative assessment addresses software common cause failure, and recommend the latest applicable NRC-endorsed guidance. Whether a change needs prior approval is still decided under the eight criteria of 10 CFR 50.59(c)(2) and the plant's Technical Specifications. Comments are due 21 December 2026 (NRC-2026-5248), after which the NRC will decide on final issuance.",
+    "thumbnail": "assets/images/news/2026-11-23-nrc-digital-ic-5059-guidance/thumbnail_01.webp",
+    "thumbnailAlt": "Nuclear plant control room with digital screens beside analog gauges",
+    "url": "posts/news/2026-11-23-nrc-digital-ic-5059-guidance.html",
+    "keywords": "digital I&C software common cause failure nuclear instrumentation and control NRC 10 CFR 50.59 RIS 2002-22 reactor protection system ESFAS license amendment UFSAR NEI 01-01 nuclear licensing nuclear regulation nuclear power"
+  },
+  {
+    "title": "What Do Classification Rules for Nuclear Ships Actually Set? Lloyd's Register's Technology-Neutral Rules",
+    "date": "2026.11.23",
+    "displayDate": "2026.11.23",
+    "publishedAt": "2026-11-24T12:30:26Z",
+    "section": "news",
+    "category": "Marine Nuclear",
+    "summary": "Lloyd's Register announced on 19 November 2026 that its ships and offshore technical committee approved classification rules for vessels and offshore units integrating nuclear power, as reported by World Nuclear News on 20 November. The rules set goals and functional requirements rather than naming a reactor design, and LR plans to use its risk-based certification process to align maritime requirements with nuclear licensing. They can apply to propulsion, floating power units and power supply for ports and nearby industry. Individual ship classification, national nuclear licensing, international rules and port readiness are the steps that follow.",
+    "thumbnail": "assets/images/news/2026-11-23-lloyds-register-nuclear-maritime-rules/thumbnail_01.webp",
+    "thumbnailAlt": "Large cargo ship sailing on a calm sea at golden hour",
+    "url": "posts/news/2026-11-23-lloyds-register-nuclear-maritime-rules.html",
+    "keywords": "maritime nuclear nuclear ships classification rules Lloyd's Register classification society goal-based rules technology neutral floating nuclear power nuclear propulsion port electricity nuclear licensing risk-based certification World Nuclear News nuclear energy"
+  },
+  {
+    "title": "What Has to Line Up Before Robots Enter a Decommissioning Site: Coordinates, Time and Dose in the DORADO Digital Twin",
+    "date": "2026.11.23",
+    "displayDate": "2026.11.23",
+    "publishedAt": "2026-11-24T12:30:26Z",
+    "section": "news",
+    "category": "Fuel Cycle",
+    "summary": "DORADO, an EU project coordinated by VTT and running from September 2024 to August 2027, is building a platform that connects BIM models, digital twins, an ontology and the DTXS exchange standard so that site scans, dose-rate maps and robot inspection missions refer to the same coordinates, time and model version. A paper published on 20 November 2026 and a KIT presentation in October show partial demonstrations at FiR1 in Finland, BR1 and BR3 in Belgium, Ignalina in Lithuania and Halden in Norway. Field use will depend on validated alignment, dose-map checks against new measurements and defined recovery procedures, with savings to be established through site-by-site validation.",
+    "thumbnail": "assets/images/news/2026-11-23-dorado-decommissioning-digital-twin/thumbnail_01.webp",
+    "thumbnailAlt": "Tracked inspection robot in a research reactor hall under decommissioning",
+    "url": "posts/news/2026-11-23-dorado-decommissioning-digital-twin.html",
+    "keywords": "nuclear decommissioning digital twin decommissioning robots DORADO BIM ontology DTXS radiological characterisation dose mapping ALARA VTT KIT IAEA Euratom"
+  },
+  {
+    "title": "Reading C$882 Billion and 3.45 Million Job-Years: The Industrial Case for Ontario's Four Nuclear Projects",
     "date": "2026.11.20",
     "displayDate": "2026.11.20",
     "publishedAt": "2026-11-20T17:18:14.743348+00:00",
     "section": "news",
-    "category": "SMR",
-    "summary": "The IEA's World Energy Outlook 2026, released on 19 November, raises the nuclear power outlook compared with last year's edition, with China and the United States as the main drivers. About 90 GW of nuclear capacity was under construction in mid-2026, the highest level in more than 35 years, and more than 50 countries have nuclear plans or targets. The outlook's scenarios are conditional pathways. The same day, World Nuclear News reported that Bulgaria's state utility NEK signed an MOU with Poland's SGE and Bulgaria's Blue Bird Energy to jointly assess BWRX-300 deployment, covering potential sites, financing structure, project delivery model and licensing. Reactor purchase contracts, a construction licence and a final investment decision are later steps.",
-    "thumbnail": "assets/images/news/2026-11-20-iea-weo-outlook-bulgaria-bwrx300-mou/thumbnail_01.webp",
-    "thumbnailAlt": "Thumbnail for the IEA outlook and Bulgaria's SMR MOU",
-    "url": "posts/news/2026-11-20-iea-weo-outlook-bulgaria-bwrx300-mou.html",
-    "keywords": "Nuclear Outlook World Energy Outlook 2026 IEA Bulgaria BWRX-300 Small Modular Reactors SMR NEK SGE Blue Bird Energy Memorandum of Understanding Nuclear Licensing Net Zero Scenarios Long-Term Operation Nuclear Energy"
+    "category": "Policy & Regulation",
+    "summary": "Canadian Manufacturers & Exporters (CME) published an assessment on 16 November 2026, reported by World Nuclear News on 19 November, that combines economic impact studies for four Ontario nuclear projects: the Darlington SMR, the Pickering refurbishment, Bruce C and Wesleyville. CME estimates lifecycle contributions of about C$882 billion to Canadian GDP (2024 dollars) and 3.45 million job-years. Dividing the two gives about C$256,000 of GDP per job-year as a simple lifecycle average. CME sees room for suppliers of precision parts, transformers, electrical equipment, robotics and control systems, and asks for timely project decisions, long-term procurement visibility, training tied to project schedules, and trade and export finance.",
+    "thumbnail": "assets/images/news/2026-11-20-ontario-nuclear-economic-impact-job-years/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail for Ontario nuclear economic impact",
+    "url": "posts/news/2026-11-20-ontario-nuclear-economic-impact-job-years.html",
+    "keywords": "Ontario nuclear nuclear economic impact job-years Canadian Manufacturers & Exporters CME Darlington SMR Pickering refurbishment Bruce C Wesleyville nuclear supply chain SMR Canada nuclear nuclear manufacturing nuclear energy"
   },
   {
     "title": "From Used CANDU Fuel to Fuel Salt: What Nuclea Bought From Moltex and Where WATSS and SSR-W Stand",
@@ -26,17 +91,17 @@ const posts = [
     "keywords": "used fuel recycling transuranic elements fuel salt molten salt reactor fast reactor Nuclea Moltex WATSS SSR-W CANDU Vendor Design Review Canadian Nuclear Laboratories closed fuel cycle nuclear energy"
   },
   {
-    "title": "Reading C$882 Billion and 3.45 Million Job-Years: The Industrial Case for Ontario's Four Nuclear Projects",
+    "title": "When the Nuclear Outlook Rises: The IEA's WEO 2026 and Bulgaria's BWRX-300 MOU on the Path From Scenario to Project",
     "date": "2026.11.20",
     "displayDate": "2026.11.20",
     "publishedAt": "2026-11-20T17:18:14.743348+00:00",
     "section": "news",
-    "category": "Policy & Regulation",
-    "summary": "Canadian Manufacturers & Exporters (CME) published an assessment on 16 November 2026, reported by World Nuclear News on 19 November, that combines economic impact studies for four Ontario nuclear projects: the Darlington SMR, the Pickering refurbishment, Bruce C and Wesleyville. CME estimates lifecycle contributions of about C$882 billion to Canadian GDP (2024 dollars) and 3.45 million job-years. Dividing the two gives about C$256,000 of GDP per job-year as a simple lifecycle average. CME sees room for suppliers of precision parts, transformers, electrical equipment, robotics and control systems, and asks for timely project decisions, long-term procurement visibility, training tied to project schedules, and trade and export finance.",
-    "thumbnail": "assets/images/news/2026-11-20-ontario-nuclear-economic-impact-job-years/thumbnail_01.webp",
-    "thumbnailAlt": "Thumbnail for Ontario nuclear economic impact",
-    "url": "posts/news/2026-11-20-ontario-nuclear-economic-impact-job-years.html",
-    "keywords": "Ontario nuclear nuclear economic impact job-years Canadian Manufacturers & Exporters CME Darlington SMR Pickering refurbishment Bruce C Wesleyville nuclear supply chain SMR Canada nuclear nuclear manufacturing nuclear energy"
+    "category": "SMR",
+    "summary": "The IEA's World Energy Outlook 2026, released on 19 November, raises the nuclear power outlook compared with last year's edition, with China and the United States as the main drivers. About 90 GW of nuclear capacity was under construction in mid-2026, the highest level in more than 35 years, and more than 50 countries have nuclear plans or targets. The outlook's scenarios are conditional pathways. The same day, World Nuclear News reported that Bulgaria's state utility NEK signed an MOU with Poland's SGE and Bulgaria's Blue Bird Energy to jointly assess BWRX-300 deployment, covering potential sites, financing structure, project delivery model and licensing. Reactor purchase contracts, a construction licence and a final investment decision are later steps.",
+    "thumbnail": "assets/images/news/2026-11-20-iea-weo-outlook-bulgaria-bwrx300-mou/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail for the IEA outlook and Bulgaria's SMR MOU",
+    "url": "posts/news/2026-11-20-iea-weo-outlook-bulgaria-bwrx300-mou.html",
+    "keywords": "Nuclear Outlook World Energy Outlook 2026 IEA Bulgaria BWRX-300 Small Modular Reactors SMR NEK SGE Blue Bird Energy Memorandum of Understanding Nuclear Licensing Net Zero Scenarios Long-Term Operation Nuclear Energy"
   },
   {
     "title": "Akkuyu 1 Heats Up Without Fuel: What Hot and Cold Functional Tests Check Before Fuel Loading",

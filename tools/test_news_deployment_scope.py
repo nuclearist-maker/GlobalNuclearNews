@@ -47,5 +47,9 @@ class NewsScopeTests(unittest.TestCase):
   (self.site/'ko'/self.new).unlink();self.assertTrue(self.errors())
  def test_duplicate_paths(self):
   self.m['new_news_paths']*=2;self.assertTrue(self.errors())
+ def test_coordinator_manifest_only(self):
+  self.put('qa/deployments/publication.json','{}');self.put('qa/deployments/other.json','{}');self.g('add','qa');self.g('commit','-qm','coordinator')
+  self.m['base_commit']=self.g('rev-parse','HEAD');self.put('qa/deployments/publication.json','{"v":2}');self.assertEqual([],self.errors())
+  self.put('qa/deployments/other.json','{"v":2}');self.assertTrue(self.errors())
 
 if __name__=='__main__':unittest.main()
