@@ -59,7 +59,7 @@ def main():
     else:
         if a.first is None or a.last is None:p.error('article deployment requires --first and --last')
         problems=errors(manifest,a.first,a.last,read(a.report) if a.report else None,read(a.http) if a.http else None)
-    scope=(manifest['new_news_paths'] if manifest.get('kind')=='news-publication' else manifest['new_posts'] if manifest.get('kind')=='pe-board' else [x['path'] for x in manifest['changed_features']] if manifest.get('kind')=='editorial-maintenance' else manifest.get('new_localized_pages') if manifest.get('kind')=='language-edition' else list(range(a.first,a.last+1)))
+    scope=(sorted(manifest['new_news_paths']+manifest.get('revised_news_paths',[])) if manifest.get('kind')=='news-publication' else manifest['new_posts'] if manifest.get('kind')=='pe-board' else [x['path'] for x in manifest['changed_features']] if manifest.get('kind')=='editorial-maintenance' else manifest.get('new_localized_pages') if manifest.get('kind')=='language-edition' else list(range(a.first,a.last+1)))
     result={'status':'FAIL' if problems else 'PASS','errors':problems,'scope':scope}
     if a.out:a.out.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
     print(json.dumps(result));return bool(problems)

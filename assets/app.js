@@ -60,7 +60,7 @@ const posts = [
     "category": "Policy & Regulation",
     "summary": "NRC's final interim staff guidance DANU-ISG-2026-02 sets the two conditions and site-specific caveats for reusing DOE and DOW demonstration safety evidence in commercial Part 50 and Part 52 applications.",
     "thumbnail": "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.webp",
-    "thumbnailAlt": "A lens between two vessel models represents comparing test evidence with a commercial design",
+    "thumbnailAlt": "Two-card comparison of DANU-ISG-2026-02 guidance and 10 CFR 50.43(f) and 53.440(a)(1) rule, with effective dates and roles",
     "url": "posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html",
     "keywords": "nuclear NRC DOE DOW ISG DANUISG202602 10CFR50 10CFR53 demonstrationreactor commercialreactor licensing atmosphericdispersion priorapproval non LWR riskinformedperformancebased"
   },
@@ -73,7 +73,7 @@ const posts = [
     "category": "Fuel Cycle",
     "summary": "Deep Isolation signed a three-year ARPA-E agreement for a non-radioactive UCS demonstration in Texas while Posiva's Olkiluoto encapsulation plant handled its first real transfer cask without fuel.",
     "thumbnail": "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.webp",
-    "thumbnailAlt": "A concept scene of an empty steel transfer cask on a yellow trolley",
+    "thumbnailAlt": "Summary card of Posiva's first real transfer cask arrival at the encapsulation plant on 19 Nov 2026 (no fuel loaded, route extended from a few hundred metres to about 3 km, next step is the fuel transfer machine test with no date set)",
     "url": "posts/news/2026-11-24-disposal-demonstration-transfer-tests.html",
     "keywords": "nuclear spent fuel disposal facility Deep Isolation ARPA-E UCS deep borehole Posiva Olkiluoto TVO Fortum STUK e Vinci encapsulation plant transfer cask"
   },

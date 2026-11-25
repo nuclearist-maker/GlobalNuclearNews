@@ -20,8 +20,16 @@ def scope_errors(manifest,root,site,require_proof=True):
     base=manifest.get('base_commit','');paths=manifest.get('new_news_paths',[])
     if manifest.get('kind')!='news-publication' or manifest.get('new_posts')!=[]:fail('invalid kind/reserved scope')
     if not re.fullmatch('[0-9a-f]{40}',base):return errors+['NEWS-DEPLOY: invalid base commit']
-    if not isinstance(paths,list) or not paths or any(not isinstance(x,str) or not re.fullmatch(r'posts/news/\d{4}-\d{2}-\d{2}-[a-z0-9-]+\.html',x) for x in paths):return errors+['NEWS-DEPLOY: invalid new news paths']
-    if paths!=sorted(set(paths)):fail('new paths must be sorted and unique')
+    revised=manifest.get('revised_news_paths',[])
+    for group in (paths, revised):
+        if not isinstance(group,list) or any(not isinstance(x,str) or not re.fullmatch(r'posts/news/\d{4}-\d{2}-\d{2}-[a-z0-9-]+\.html',x) for x in group):
+            return errors+['NEWS-DEPLOY: invalid news paths']
+        if group!=sorted(set(group)):fail('news paths must be sorted and unique')
+    allowed=set(paths)|set(revised)
+    if not allowed or set(paths)&set(revised):fail('news path groups empty or overlapping')
+    slugs={Path(path).stem for path in allowed}
+    def owns_image(rel):
+        return any(rel.startswith(prefix+slug+'/') for slug in slugs for prefix in ('assets/images/news/','assets/images/ko/news/'))
     files=manifest.get('release_files',{});features=manifest.get('changed_features',[])
     if not isinstance(files,dict) or not files:return errors+['NEWS-DEPLOY: missing release files']
     if not isinstance(features,list) or not features or any(not isinstance(x,dict) or not all(isinstance(x.get(k),str) and x[k].strip() for k in ['path','feature','reason']) for x in features):return errors+['NEWS-DEPLOY: invalid changed features']
@@ -44,7 +52,13 @@ def scope_errors(manifest,root,site,require_proof=True):
         old_news={x for x in old_paths if x.startswith('posts/news/') and x.endswith('.html') and not re.search(r'\.r\d+\.html$',x)}
         current={p.relative_to(root).as_posix() for p in (root/'posts/news').glob('*.html') if not re.search(r'\.r\d+\.html$',p.name)}
         if current-old_news!=set(paths) or old_news-current:fail('new news set mismatch/deletion')
-        for url in paths:
+        if not set(revised)<=old_news:fail('revised article absent at baseline')
+        for rel in files:
+            if rel.startswith(('posts/','locales/ko/posts/')) and rel.removeprefix('locales/ko/') not in allowed:
+                fail('article outside declared news scope '+rel)
+            if rel.startswith('assets/images/') and not owns_image(rel):
+                fail('image outside declared article folders '+rel)
+        for url in allowed:
             for rel in [url,'locales/ko/'+url]:
                 if rel not in files or not (root/rel).is_file():fail('missing paired release body '+rel)
             for rel in [url,'ko/'+url]:
@@ -53,9 +67,14 @@ def scope_errors(manifest,root,site,require_proof=True):
             before=parse(git(root,'show',base+':'+name));after=parse((root/name).read_text(encoding='utf8'))
             old={x['url']:x for x in before};new={x['url']:x for x in after}
             if len(new)!=len(after) or set(new)-set(old)!=set(paths) or set(old)-set(new):fail(lang+' metadata URL set mismatch')
-            if any(new.get(k)!=v for k,v in old.items()):fail(lang+' existing metadata modified')
+            if not set(revised)<=set(old):fail(lang+' revised article missing from baseline metadata')
+            if [x['url'] for x in before if x['url'] not in revised]!=[x['url'] for x in after if x['url'] not in allowed]:
+                fail(lang+' unrelated metadata ordering changed')
+            if any(new.get(k)!=v for k,v in old.items() if k not in revised):fail(lang+' existing metadata modified')
         old_assets=json.loads(git(root,'show',base+':locales/ko/assets.json'));new_assets=json.loads((root/'locales/ko/assets.json').read_text(encoding='utf8'))
-        if any(new_assets.get(k)!=v for k,v in old_assets.items()):fail('existing asset bindings modified')
+        for rel in set(old_assets)|set(new_assets):
+            if old_assets.get(rel)!=new_assets.get(rel) and not (owns_image(rel) and rel.startswith('assets/images/ko/news/') and rel in files and rel in new_assets):
+                fail('asset binding outside changed article files '+rel)
         for rel in files:
             if rel.startswith('assets/images/ko/') and new_assets.get(rel)!=digest(root/rel):fail('new Korean asset is not bound '+rel)
     except (OSError,ValueError,KeyError,TypeError,subprocess.SubprocessError) as exc:

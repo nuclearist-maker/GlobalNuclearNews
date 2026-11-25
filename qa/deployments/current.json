@@ -2,8 +2,12 @@
   "version": 1,
   "kind": "news-publication",
   "new_posts": [],
-  "base_commit": "b37edde401337307f64c246ad2925d3fc352d92e",
-  "new_news_paths": [
+  "base_commit": "67e8061b233dcac5745ec83ef49582dc32618b31",
+  "new_news_paths": [],
+  "revised_news_paths": [
+    "posts/news/2026-11-24-disposal-demonstration-transfer-tests.html",
+    "posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html",
+    "posts/news/2026-11-24-triso-facility-dsa-readiness.html",
     "posts/news/2026-11-25-ap1000-manufacturing-qualification.html",
     "posts/news/2026-11-25-dry-storage-canister-monitoring.html",
     "posts/news/2026-11-25-epr2-internals-manufacturing.html"
@@ -11,54 +15,287 @@
   "changed_features": [
     {
       "path": "assets/app.js",
-      "feature": "English news listing",
-      "reason": "Register the three 2026-11-25 news pairs and their images."
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
     },
     {
-      "path": "locales/ko/posts.json",
-      "feature": "Korean news listing",
-      "reason": "Register the three 2026-11-25 news pairs and their images."
+      "path": "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/body_01.avif",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/body_02.avif",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.avif",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.thumb.avif",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/body_01.avif",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/body_02.avif",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.avif",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.thumb.avif",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/body_02.avif",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/body_01.avif",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/body_02.avif",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/body_01.avif",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/body_02.avif",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/body_01.avif",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/body_02.avif",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/body_01.webp",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/body_02.webp",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.webp",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/body_01.webp",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/body_02.webp",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.webp",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/news/2026-11-24-triso-facility-dsa-readiness/body_02.webp",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/body_01.webp",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/body_02.webp",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/news/2026-11-25-dry-storage-canister-monitoring/body_01.webp",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/news/2026-11-25-dry-storage-canister-monitoring/body_02.webp",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/news/2026-11-25-epr2-internals-manufacturing/body_01.webp",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "assets/images/news/2026-11-25-epr2-internals-manufacturing/body_02.webp",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
     },
     {
       "path": "locales/ko/assets.json",
-      "feature": "Korean image bindings",
-      "reason": "Register the three 2026-11-25 news pairs and their images."
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "locales/ko/posts.json",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "locales/ko/posts/news/2026-11-24-disposal-demonstration-transfer-tests.html",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "locales/ko/posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "locales/ko/posts/news/2026-11-24-triso-facility-dsa-readiness.html",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "locales/ko/posts/news/2026-11-25-ap1000-manufacturing-qualification.html",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "locales/ko/posts/news/2026-11-25-dry-storage-canister-monitoring.html",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "locales/ko/posts/news/2026-11-25-epr2-internals-manufacturing.html",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "posts/news/2026-11-24-disposal-demonstration-transfer-tests.html",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "posts/news/2026-11-24-triso-facility-dsa-readiness.html",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "posts/news/2026-11-25-ap1000-manufacturing-qualification.html",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "posts/news/2026-11-25-dry-storage-canister-monitoring.html",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "posts/news/2026-11-25-epr2-internals-manufacturing.html",
+      "feature": "Bounded existing news quality revision",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "tools/check_bilingual.py",
+      "feature": "Explicit existing news revision scope validation",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "tools/check_deployment_scope.py",
+      "feature": "Explicit existing news revision scope validation",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
+    },
+    {
+      "path": "tools/news_deployment_scope.py",
+      "feature": "Explicit existing news revision scope validation",
+      "reason": "Publish the authorized November24/25 six bilingual revisions; preserve unrelated content and fail closed on scope."
     }
   ],
   "release_files": {
-    "assets/app.js": "8d2c3c079e9779befd38a17fcdc0dc62134f3298c12fafd4273d47ed1d066959",
-    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/body_01.avif": "bad9616d77a0e7a69e30a64101e7640afabcf96b741ffa765411c5ddc91b962f",
-    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/body_02.avif": "3a6f5dee629e9c311e1d950f70eb927b4dea2d39bece76ef994bf81736519183",
-    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/thumbnail_01.avif": "d1a81e1e86d526d0fe0a5f6dc154a28aa3e56809d684d133190791f55957ce6b",
-    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/thumbnail_01.thumb.avif": "40fdea612673b28709c31db5b3399e118eb2e4115d123af8bc43ca04faa9b44d",
-    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/body_01.avif": "87daa630369bcaa38b587cfba455840d1b45de78272a92a217645ae843e16479",
-    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/body_02.avif": "7b1027e5f842c2201b05527b7f06dc287d59c66e4dd3b3eacbef2102c264e854",
-    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/thumbnail_01.avif": "f2f8d9a6dfe18541104bb24b0b6fbd7f090d6efbef63625c6cb11b8f78674d16",
-    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/thumbnail_01.thumb.avif": "f6cb8aec819b70a33d7056b15a75ea67e08f29f2f3f850cea315d9fab96f7335",
-    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/body_01.avif": "3e95daaa597d9ff4c254156244264d2e1eec23b9a36485a75b5faefb00d4241a",
-    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/body_02.avif": "2f32921555c53b6b8b3140e96acb4bc6715c5ea62a5d48faca37673fbd199334",
-    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/thumbnail_01.avif": "cadba8fa9f83610e5bdc28b9ea1de4704aa647aa1ee473f6506aa0b9d9483e90",
-    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/thumbnail_01.thumb.avif": "9592b6c7334195d1e768739cf698072ce9882b9d1c59c3812a030cb514a954fa",
-    "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/body_01.webp": "2d7bbf07b50bedadb7859cbfb2a4cc63b714143c29fd33cdc4d9e92c37baa1f3",
-    "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/body_02.webp": "fb41b27b591b041109a5f615e38ef4bcfd9e69898628ac52bfd41119f569d524",
-    "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/thumbnail_01.webp": "e683b20a8f314b0209b757e07cc2bd45506d615f683d223d3511e2e59c195aae",
-    "assets/images/news/2026-11-25-dry-storage-canister-monitoring/body_01.webp": "7872004872ff046e0fae66a099c53a7e14b2d09428c82acb6efbc06188ef9a32",
-    "assets/images/news/2026-11-25-dry-storage-canister-monitoring/body_02.webp": "a7be22814282e79712f424283969c3c1369b8cc993939d7849efc52f004f3478",
-    "assets/images/news/2026-11-25-dry-storage-canister-monitoring/thumbnail_01.webp": "6a4483900c13130a606fa1d12c95a7fa0def884c8b37107bca80c1b9dfcb5be7",
-    "assets/images/news/2026-11-25-epr2-internals-manufacturing/body_01.webp": "94f79a2b65ddfd69200ec5d8414e0efcdde947c2c14243cdf01dbf307c32e941",
-    "assets/images/news/2026-11-25-epr2-internals-manufacturing/body_02.webp": "f7a7ee35265c1765dd96a63b0bea0989000ccfea2e8df40d61d6ff74c1c04f73",
-    "assets/images/news/2026-11-25-epr2-internals-manufacturing/thumbnail_01.webp": "9b45ab84c46c73e9e4261fc278d7857b9cce26b0cc18d420ae7e5fd66e5a6cc3",
-    "locales/ko/assets.json": "0a5a74af4e0c84966a45ffc3bfe71f8d2d6a236c29c9ef43ef508c031bd0105c",
-    "locales/ko/posts.json": "40d43fa6a64c66022e74036e6cda90d85c7cb3a5b77e779c21d24ca2956a7222",
-    "locales/ko/posts/news/2026-11-25-ap1000-manufacturing-qualification.html": "db7604a2f5a9face3d53c94766ccf9694fae9695fb521ced5912edc10144f97d",
-    "locales/ko/posts/news/2026-11-25-dry-storage-canister-monitoring.html": "17eeda603787a3e2d5dc6c9e9480ae76cf6afdbf004b92d6c52470741fd93274",
-    "locales/ko/posts/news/2026-11-25-epr2-internals-manufacturing.html": "2b7b8e43d294bcf7e8318748f4f228581a84dd60ccf22fe66bb23b09a331df96",
-    "posts/news/2026-11-25-ap1000-manufacturing-qualification.html": "3d539d658a79fe186db45455869f9601cc6ba2d92c333e5b73ffbb0e4700c311",
-    "posts/news/2026-11-25-dry-storage-canister-monitoring.html": "24ae59a8974006f73300dd8aac7acfec1e5014dd00cb8343c90effb59fc40d48",
-    "posts/news/2026-11-25-epr2-internals-manufacturing.html": "921fa95694bf505c0ae62fd2641394ee64b7490167fbe180bef8327a743e62a7"
+    "assets/app.js": "51dd70356a1439c4ece7bae9e080032278f485b037696b36ec3787dc272d4199",
+    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/body_01.avif": "5b4c1b30235571702f408a4a91bf6cbb3dd10b92b030648a72e4b6d073b7f2c8",
+    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/body_02.avif": "80286c7a9fe0eab0ef3ed3da652832c3f1672deb032ae75f6a2b671b10cc23fa",
+    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.avif": "caead6040e3aeb9631e036d2d00d0cc9542027fb9d8c72cb3987a2ad73c4e9bf",
+    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.thumb.avif": "bfc374e0341450d8a06c0bae6bfde51a37ed3e947f1a580385dd296073e8c996",
+    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/body_01.avif": "39ee80b0df2e668da5c3a97034514931b35ec59cc0348ca497e6e91b8fb547d0",
+    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/body_02.avif": "c2ca083231c0b82d52f481aef4053f407a126b88c5fdb3f0709e8bbd0ce4c2b0",
+    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.avif": "7e056e120a670c3a2121b8a760089de185b99adcbf9438958e72e0160716e2d2",
+    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.thumb.avif": "24280ad8e3846c32073835c3522d12888d5af6063528376e007926b9beafcfb3",
+    "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/body_02.avif": "87007880c715d3af2c700bfcfb06067053e981e2c933d8bdebb38b0a260cf85c",
+    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/body_01.avif": "29f5049cf1fe35a48b9f893eeb114d40804f6c8663a7e4492df0d6f0f5775848",
+    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/body_02.avif": "2a7e04e5fb4e0d97cd277be5f67af65e7ea6310ec9f9515b6aca127eafa59660",
+    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/body_01.avif": "6bcb327b37ca3c2ee740638fca0ba491b5efb9837d0eaa8859cd9438838f6cbd",
+    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/body_02.avif": "c0560f4e1d31d771a42e232dda709f9f32ffe7cb0854d24d6becffe0910c9c49",
+    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/body_01.avif": "bdcfaa06a5632be94a778283b94d9250297bcc26274602f6a9fca4016e198533",
+    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/body_02.avif": "0d3900a45d01f448c5f7f9b518a10f8382ae43d89d22fcb4802fac801233040a",
+    "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/body_01.webp": "17124aedb4855f00c249eff29c06dce212ac9a3d11556822e068e722e0faf751",
+    "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/body_02.webp": "a8c50db8c76c6c25a040fe2b86c0754f18287d15c55e627803c38278f199c524",
+    "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.webp": "88fae0448cb605116c62e5d3344c695f24dd4fb3d4998960c6f4ba58b507f8d4",
+    "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/body_01.webp": "95623e6e08d4d1aed44bdd23cbb7825bc469b5576d12c7201180b4b6f72fe616",
+    "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/body_02.webp": "d50b61c9d99892cec2e6ae8e14c9da8175e9bb41337c2f655841e6cacc65c337",
+    "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.webp": "591d7079d90cc5eecd04376bf8aed6afa1c450dd427acb84f05c36b332ff42e1",
+    "assets/images/news/2026-11-24-triso-facility-dsa-readiness/body_02.webp": "8ddd27ab47779f1488342e3728c1ae5c992820c190aaac65defa13772e19a4c0",
+    "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/body_01.webp": "a14b7a85712e390ef4931ea8b5854368632dc6135a17c8658a1a92e0983e56e4",
+    "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/body_02.webp": "579489b4cd537f5db42cfe012983ce8bfa148e61b1c8521de6e74b68bde4df01",
+    "assets/images/news/2026-11-25-dry-storage-canister-monitoring/body_01.webp": "b3716124ecf772ee72332351472219d334305ce9cae5aa1cad4906326673b670",
+    "assets/images/news/2026-11-25-dry-storage-canister-monitoring/body_02.webp": "9d3cd67a9267b844916ce23577126040c261f14feeb7eab8489bf61f1f374591",
+    "assets/images/news/2026-11-25-epr2-internals-manufacturing/body_01.webp": "2c8b2d99c0aa4095683fbf4efeee0cf8d2b6169442ebc60e121ce575c84dd6c0",
+    "assets/images/news/2026-11-25-epr2-internals-manufacturing/body_02.webp": "b087c2bb9131202cb2da70edc8ed758a887e7f72bd5a881db442a96d1981f0f7",
+    "locales/ko/assets.json": "67d4175b3c6f7b710a56235d36a9069c333a5f53de28fc8823f1ebddcdb3797d",
+    "locales/ko/posts.json": "d20217698970afd2e562c72a38141ffc1111cd74e3ba5658bfcb887ffc636342",
+    "locales/ko/posts/news/2026-11-24-disposal-demonstration-transfer-tests.html": "b744fe9f57b906b5a19387e096b0b599af430c7630c0b21f3b071c605d9c1fe1",
+    "locales/ko/posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html": "9c05c3db6009f6de60fa19218577aa3f667248c3fc362763542d9b21d0788105",
+    "locales/ko/posts/news/2026-11-24-triso-facility-dsa-readiness.html": "969a41bc63bae0304b4866810878e8e4b790f294f9badeba46c981baad2cec34",
+    "locales/ko/posts/news/2026-11-25-ap1000-manufacturing-qualification.html": "0584926397b8da39f67ffa6835dd5b8f58e18b0b2934a245acf4dbd931e55fc3",
+    "locales/ko/posts/news/2026-11-25-dry-storage-canister-monitoring.html": "7b19417c4551f5d16846d02c2364403cff25ea62d165f0b291329cfe13ff5e35",
+    "locales/ko/posts/news/2026-11-25-epr2-internals-manufacturing.html": "39e20118e810fb069e2365804d8a86bdb7227ebc8a8ebaa2f6e7a3aa917c40b0",
+    "posts/news/2026-11-24-disposal-demonstration-transfer-tests.html": "270d09cd03bfab865a70e69600be038b4c8edf3a77007866fb2419822eee0b49",
+    "posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html": "1586c45c1286edf957846a1b04471ceb74c11d73f8052822e2b63b55ef36392d",
+    "posts/news/2026-11-24-triso-facility-dsa-readiness.html": "41176f2e36f507c6ddeb35bd77f415cb25cfdf95581322464480b751f5ec002f",
+    "posts/news/2026-11-25-ap1000-manufacturing-qualification.html": "f8ed6cbe63aa2d6caaad79124ada1990e62760c73eb55a497fcd11efa26a3805",
+    "posts/news/2026-11-25-dry-storage-canister-monitoring.html": "70c65b49d3b8fc910f914a56f2e6ead7a1ef3b4bf9c328ccd0f882faade390f8",
+    "posts/news/2026-11-25-epr2-internals-manufacturing.html": "42f8e865a72ca376ba7aa214a99ea7983709b734a416a6d013a5fa0991ea6194",
+    "tools/check_bilingual.py": "58a1586fc266d59c95f31859e11ebf03a5c619c5d35fce3b1599ac6b7c79c438",
+    "tools/check_deployment_scope.py": "d7db5a63600c90a411b11dc59b28f4e9bb0f9f66a3b4f6349b898fe8a0e51eed",
+    "tools/news_deployment_scope.py": "db6b68f1ff758e4403249ce61fc138fdfb68366f423a144a2530c1e6d3f18021"
   },
   "verification": {
-    "local_publish_gate_sha256": "5afc25e2aea38a94716e00c2499ccb059a5f159ba223477c34db677db092dd7d",
-    "content_review_sha256": "1490019f45ae0873f6bf7488a962f004abb3456ce9d1b0f5242a79f04c41ae3b"
+    "local_publish_gate_sha256": "386d62ef79de0c34a9e688cd8c2884aaeda3259717f745d8b201d6b7c1bbcecc",
+    "content_review_sha256": "67260521254ad6223b2b046be53c63f815c63d6c1db90cce7f7fc77a7a62158e",
+    "review_status": "REWORK_WITH_USER_EXCEPTION",
+    "user_exception_sha256": "7fce316929ffb718e6e33dadced15750b0966f130124d6e4608ab1dcc5b1a2a9"
   }
 }
