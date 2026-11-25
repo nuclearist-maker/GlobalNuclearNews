@@ -2,99 +2,63 @@
   "version": 1,
   "kind": "news-publication",
   "new_posts": [],
-  "base_commit": "7fe4f58788eb8561f1ec4b43ca7d8cea9f0f9955",
+  "base_commit": "909a6b981bb589e74500f745f7d095de55ffeeeb",
   "new_news_paths": [
-    "posts/news/2026-11-23-dorado-decommissioning-digital-twin.html",
-    "posts/news/2026-11-23-lloyds-register-nuclear-maritime-rules.html",
-    "posts/news/2026-11-23-nrc-digital-ic-5059-guidance.html",
-    "posts/news/2026-11-23-poland-ap1000-long-lead-uk-roadmap-report.html",
-    "posts/news/2026-11-23-radiant-fuel-ea-pacific-fusion-tritium-license.html"
+    "posts/news/2026-11-24-disposal-demonstration-transfer-tests.html",
+    "posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html",
+    "posts/news/2026-11-24-triso-facility-dsa-readiness.html"
   ],
   "changed_features": [
     {
       "path": "assets/app.js",
-      "feature": "news listing metadata",
-      "reason": "Add listing entries for five new paired 2026-11-23 news articles; existing entries unchanged."
+      "feature": "English news listing",
+      "reason": "Register the three 2026-11-24 news pairs and their images."
+    },
+    {
+      "path": "locales/ko/posts.json",
+      "feature": "Korean news listing",
+      "reason": "Register the three 2026-11-24 news pairs and their images."
     },
     {
       "path": "locales/ko/assets.json",
       "feature": "Korean image bindings",
-      "reason": "Bind the new Korean article images; existing bindings unchanged."
-    },
-    {
-      "path": "locales/ko/posts.json",
-      "feature": "Korean news listing metadata",
-      "reason": "Add Korean counterpart entries for the five new articles; existing entries unchanged."
-    },
-    {
-      "path": "tools/news_deployment_scope.py",
-      "feature": "news scope check under the publication coordinator",
-      "reason": "Exclude the coordinator manifest qa/deployments/publication.json, which publication_release_guard.py verifies separately."
-    },
-    {
-      "path": "tools/test_news_deployment_scope.py",
-      "feature": "news scope check test",
-      "reason": "Cover the coordinator manifest exclusion and keep other tracked qa changes failing."
+      "reason": "Register the three 2026-11-24 news pairs and their images."
     }
   ],
   "release_files": {
-    "assets/app.js": "9dc230492cf542b59bdeb1cb3a24970ec20b4adb0c4953fb9dddd7d021c1d982",
-    "assets/images/ko/news/2026-11-23-dorado-decommissioning-digital-twin/body_01.avif": "e8fdbc7154889ec3687b6ba4925b617a49932d34fbb08b7f27af7f5d4f305f9a",
-    "assets/images/ko/news/2026-11-23-dorado-decommissioning-digital-twin/body_02.avif": "9f3906dc7fc9ba2f0b678fff55bdbc37368b4d6e2219db8d53126283ca547bdb",
-    "assets/images/ko/news/2026-11-23-dorado-decommissioning-digital-twin/body_03.avif": "d6b52d96d67ad7818007f68baac6c14caf38763ebbc6009a274da99b1d51e347",
-    "assets/images/ko/news/2026-11-23-dorado-decommissioning-digital-twin/thumbnail_01.avif": "8d5d3d9264ff3c7efa77ed5cf96a6bd21205c6f4657217f7b927ee2c53127b1b",
-    "assets/images/ko/news/2026-11-23-dorado-decommissioning-digital-twin/thumbnail_01.thumb.avif": "f63dbacb655ac9fe63e25aad4ae1acbe06a7de05248856cea107566f0375bc34",
-    "assets/images/ko/news/2026-11-23-lloyds-register-nuclear-maritime-rules/body_01.avif": "99aedbc685964db240c7eaa44205b2012e704e9ab5acaa1d14ace7244c696e65",
-    "assets/images/ko/news/2026-11-23-lloyds-register-nuclear-maritime-rules/body_02.avif": "e98a6b66b40abcfef1b9c38d0d11341bfc8af3a307ba9a30c9c8a19d6a3b584b",
-    "assets/images/ko/news/2026-11-23-lloyds-register-nuclear-maritime-rules/thumbnail_01.avif": "2f3615320e6116fc22b62751a24858eb3f7ca745f36b946b88b92709d9c1535f",
-    "assets/images/ko/news/2026-11-23-lloyds-register-nuclear-maritime-rules/thumbnail_01.thumb.avif": "8575ab5e91ba929fc46a3671a6c8b8bec9d6eb46895d4826d7ef41a3592ed6d8",
-    "assets/images/ko/news/2026-11-23-nrc-digital-ic-5059-guidance/body_01.avif": "119db7fb561f8df1df094acf76976fdebedb1570456a602163cde911628aea32",
-    "assets/images/ko/news/2026-11-23-nrc-digital-ic-5059-guidance/body_02.avif": "04def8ed8e0e3b6692a2c654dd49924482a0cb6960749352cbba5e5052ede0ad",
-    "assets/images/ko/news/2026-11-23-nrc-digital-ic-5059-guidance/body_03.avif": "c78ba8d03a3c62580abf15d773a030b215eb5ed46e4326ae0783988b6803aa95",
-    "assets/images/ko/news/2026-11-23-nrc-digital-ic-5059-guidance/thumbnail_01.avif": "53d51a69d14d8ae7f2b1260633f9a2d39d1c69b049e708f7406c5e80f0df5425",
-    "assets/images/ko/news/2026-11-23-nrc-digital-ic-5059-guidance/thumbnail_01.thumb.avif": "6feb6518262823ee3b50358b75413c05e24c56f689950d753902e736da7435ab",
-    "assets/images/ko/news/2026-11-23-poland-ap1000-long-lead-uk-roadmap-report/body_01.avif": "8469a0d47c4051e107ac1a74cb004dc05943e191dd65ba61ebfc9951b87979c5",
-    "assets/images/ko/news/2026-11-23-poland-ap1000-long-lead-uk-roadmap-report/body_02.avif": "a54ac37c0016a939375300acc518cccaccfb44d61ee35e931e3dc5c1926e1627",
-    "assets/images/ko/news/2026-11-23-poland-ap1000-long-lead-uk-roadmap-report/thumbnail_01.avif": "c4227cfa986e3ec0d018fd790960aef00df2757b4c6ff3b134f2a5934c1f413d",
-    "assets/images/ko/news/2026-11-23-poland-ap1000-long-lead-uk-roadmap-report/thumbnail_01.thumb.avif": "ad2ea60ac2ec820a6ef0799a85887c7d9076ccfff227302a3f2c112f2e0917da",
-    "assets/images/ko/news/2026-11-23-radiant-fuel-ea-pacific-fusion-tritium-license/body_01.avif": "86593f949e8900c4e12b7f1587acc87d1465ffbfbad7f80bb78d35b648b12a3c",
-    "assets/images/ko/news/2026-11-23-radiant-fuel-ea-pacific-fusion-tritium-license/body_02.avif": "d93d0e3947d94a94bca0011304b7be3c9a215ead46118db3f466c8007cf34032",
-    "assets/images/ko/news/2026-11-23-radiant-fuel-ea-pacific-fusion-tritium-license/thumbnail_01.avif": "1646a934ca9291eec4f86276b47747d123cb1a53e934a05a62298b863bcb1929",
-    "assets/images/ko/news/2026-11-23-radiant-fuel-ea-pacific-fusion-tritium-license/thumbnail_01.thumb.avif": "c100c6cb1d14b7e92630253e6ca8417a09deebb8ddbb95a8ed77691639f33859",
-    "assets/images/news/2026-11-23-dorado-decommissioning-digital-twin/body_01.webp": "676507b36953f934137e2511c8ba054b3181a4f456492e6a74641ca2455f86da",
-    "assets/images/news/2026-11-23-dorado-decommissioning-digital-twin/body_02.webp": "6a649770481fa383c49ab5f7b86138d530036eee8b41e485cd11d88d8050d190",
-    "assets/images/news/2026-11-23-dorado-decommissioning-digital-twin/body_03.webp": "cc062f0d9b23ed1ffd7076c151ec8431c4cb7f1e3ddd967e6aeaaccb99796fc4",
-    "assets/images/news/2026-11-23-dorado-decommissioning-digital-twin/thumbnail_01.webp": "15ff7cecc97c69716021b9ac1a8c218feb0150f0721a52ae828a2b2dd08cc782",
-    "assets/images/news/2026-11-23-lloyds-register-nuclear-maritime-rules/body_01.webp": "4eaf1547c1386d56e8cda3cacb8b4b88a54fbaf64f07412f72cd03f371ed0374",
-    "assets/images/news/2026-11-23-lloyds-register-nuclear-maritime-rules/body_02.webp": "efbf16eadaff18f8f4bbb7c6a632bb505b5afefa53da19bf75c854fdadc5391d",
-    "assets/images/news/2026-11-23-lloyds-register-nuclear-maritime-rules/thumbnail_01.webp": "ccad7ca767cc537c0f2bf0a28405cd7b9a189e4c9d9a23a916e28ead82729dff",
-    "assets/images/news/2026-11-23-nrc-digital-ic-5059-guidance/body_01.webp": "b5cb116db07b856ef252d74b7382df946b9c1f8c9c8ebf29349c0359a13a3cb0",
-    "assets/images/news/2026-11-23-nrc-digital-ic-5059-guidance/body_02.webp": "97df9119bdc22cd7ce5acb43edb6f6013122c819844ff84e712d738fbe73c0fb",
-    "assets/images/news/2026-11-23-nrc-digital-ic-5059-guidance/body_03.webp": "03fa60dcb11b18b0f757f7c1405d9f478a112cd0bd2b29f10145bd103cc9748b",
-    "assets/images/news/2026-11-23-nrc-digital-ic-5059-guidance/thumbnail_01.webp": "794b332461123128a0a10f7973dcca92f9d1815f3eef2aea5075aadc99884764",
-    "assets/images/news/2026-11-23-poland-ap1000-long-lead-uk-roadmap-report/body_01.webp": "8d672e327cf7c74b984757311e2b9a320caeddbb3abd0c90e4daedeebf4d151a",
-    "assets/images/news/2026-11-23-poland-ap1000-long-lead-uk-roadmap-report/body_02.webp": "185c3976880a6cc2bcdabfcd7bb0af5d547d913567695f5ad64121b9586ec3dd",
-    "assets/images/news/2026-11-23-poland-ap1000-long-lead-uk-roadmap-report/thumbnail_01.webp": "2ecd133954f874edd2876c2779eec397288343daf4c1c0dc7943649ef68032c8",
-    "assets/images/news/2026-11-23-radiant-fuel-ea-pacific-fusion-tritium-license/body_01.webp": "e2025913c5f93fe277f7b349a53367884d386c74cdd4fd9513e4197be7f09871",
-    "assets/images/news/2026-11-23-radiant-fuel-ea-pacific-fusion-tritium-license/body_02.webp": "516c0646aab6110bdfca8cd34cdf7704ac490f49eab79e07bab9dbb2d3a1dea8",
-    "assets/images/news/2026-11-23-radiant-fuel-ea-pacific-fusion-tritium-license/thumbnail_01.webp": "e02b35f69ee7a718e9320fb5c5a22ef495eb407690cd176aa9ec044b714cbce4",
-    "locales/ko/assets.json": "8a030cfb779806bfbf069ee155255886049ddf41071cd4516ff4a77e6d417b99",
-    "locales/ko/posts.json": "092abbfb05c60a8cdba4b1a465b83acc241008bd70ccdebc24b22affa3bd79a8",
-    "locales/ko/posts/news/2026-11-23-dorado-decommissioning-digital-twin.html": "7a0e36797a997aa5b9f62ed5d566580753bff38961a2c38298000175f63c05fe",
-    "locales/ko/posts/news/2026-11-23-lloyds-register-nuclear-maritime-rules.html": "d9e84ce2c81a1464b9e99deabcf074512fc136d412098b4e0ec2d51b86ae1f85",
-    "locales/ko/posts/news/2026-11-23-nrc-digital-ic-5059-guidance.html": "7c50abcf2ca3193210f6893ad4ae7038f6f74997ad151281cc29d6b7b0cdf49e",
-    "locales/ko/posts/news/2026-11-23-poland-ap1000-long-lead-uk-roadmap-report.html": "9008382fbb95d01a03d18376af01d34d9e2ec3d3f9c4c29297e52c0f8edc6c98",
-    "locales/ko/posts/news/2026-11-23-radiant-fuel-ea-pacific-fusion-tritium-license.html": "5124bdf3a6198e64d29a5c1e85bf6fd5b3e7d884928a26cf857c2265e8379d06",
-    "posts/news/2026-11-23-dorado-decommissioning-digital-twin.html": "1b207d8d2e3d1ab24ef5b87e71535da74240899dcb87004f44a38a7adef440e7",
-    "posts/news/2026-11-23-lloyds-register-nuclear-maritime-rules.html": "5f9a9050683f066a8432ac0f7946de5efcfb20114d7d65adb50faf001125c01d",
-    "posts/news/2026-11-23-nrc-digital-ic-5059-guidance.html": "b2c2a051b4cda36feb98534706a6c83f358f3b1b72823551d4885ea3b8a434b8",
-    "posts/news/2026-11-23-poland-ap1000-long-lead-uk-roadmap-report.html": "1ef8eba3093c78f6ba5a4c1b6dbb86f1880849e3eb4bbfaa0f099b90e91f1d92",
-    "posts/news/2026-11-23-radiant-fuel-ea-pacific-fusion-tritium-license.html": "33283d7b42de42f9233d75645d7f093de7780340b439779934846efdfcd74929",
-    "tools/news_deployment_scope.py": "78f287b5b2d2e1e633ec932977ec49edf6e23308bca6576afc9962a47685130c",
-    "tools/test_news_deployment_scope.py": "72d9b792064006cb1ae4a452309b7f4ad18adbdfc8cb0828bc795f1d147231e7"
+    "assets/app.js": "f95b1423d26cd2c84ec7e6385b19768ce38ec055b33d3c241a83a90f43328546",
+    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/body_01.avif": "0676e4be7cd0f89f1dcf3101ecf8a7aef433c1017c933bf384ffaee8e827ccd9",
+    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/body_02.avif": "311a238ba904f49206332b3cddc82de98cd9b37d34407774d60a2eaade5fa9bf",
+    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.avif": "681fcae3ecfc143619c7b86fc929a43e429ae7c065ce93ae0db6d922e577f98f",
+    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.thumb.avif": "b0b185b32b06069cb0866d23145f7cbe08363de76d1aaaf1cfe31592d28e24dd",
+    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/body_01.avif": "a86af7acadaa6e7051e989ced815d189c449517f99fbdbe7f3a8f34b1c8b6ff9",
+    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/body_02.avif": "bd80ea9d5e2b8c5bed1c1907916c78f554d21dae7e8e8db2033d998ebec85ee9",
+    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.avif": "d967eb51c2b7c8582670872774984e3386a8993f6aaacddcec0b5794cbda35a7",
+    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.thumb.avif": "38fd348beb7112bf90107ca9fe472161794c1a80cf4035f27e9ab27540811348",
+    "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/body_01.avif": "cea8948c69d80ef7acee51e32de8f5bc8cc1bd6bd2f6827c1a9013d39a1c1643",
+    "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/body_02.avif": "274dbd29bbc6dd04302a79aa72094a23a62cc9422a5d777049644215035f8323",
+    "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/thumbnail_01.avif": "4b7c2b5dfd7a5dac291acdb835b593dc22c54bfb6d85a0e0a81a4666f85c30a6",
+    "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/thumbnail_01.thumb.avif": "d2c75db4274e31da77caee0bdaa52be5479acd9b0409302064331849b3620f1f",
+    "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/body_01.webp": "6ebe187c65d15e803b1c6a38affb9bc0430f5b231cf27719be417598aa0e9f5e",
+    "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/body_02.webp": "99128f4770aeef80282de350465dccbe22ae3eeba1dddb1628108df26808abaf",
+    "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.webp": "c9c9d276195fb742ad1e29f4bff9cbf6ef5612dbf6f5866509196908b97cc26a",
+    "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/body_01.webp": "d246a912855c3b494bf649e230c71a4eadec752e49dd7a8b11664619ed07a032",
+    "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/body_02.webp": "050a65ee56d82391f08b4bf2ec538f9b912de95e64b0d2fd7f1bea2c4b2394c0",
+    "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.webp": "ad78d2bc13623ad6deb5437e31301d0e8b27972c82d6c5f9cc88520631500429",
+    "assets/images/news/2026-11-24-triso-facility-dsa-readiness/body_01.webp": "dcceaa2f9cce46bde5eba1933d86eed386f4e17d075d6e00d257c0218bdd84dd",
+    "assets/images/news/2026-11-24-triso-facility-dsa-readiness/body_02.webp": "51f5337348fc8352d4e2f534fb2242c224cd2e885a3a6d41e7e2c8f25da1c553",
+    "assets/images/news/2026-11-24-triso-facility-dsa-readiness/thumbnail_01.webp": "10d76ecd95f8f2b731888abce043826b71f838400bdcdb237d323510f664c7c9",
+    "locales/ko/assets.json": "ef5ca80281e8ede6b1b014d51ec1a2a6ee97f923b532b091ca53962221832be9",
+    "locales/ko/posts.json": "dba7ad7ff5621c664121a87c164e249aecea20db4fb362528082b36c74a6dbee",
+    "locales/ko/posts/news/2026-11-24-disposal-demonstration-transfer-tests.html": "c6e8c5c1eac8d760cfae44491aa744e8c1b44f0d7637a9ee1c3875ce604531f7",
+    "locales/ko/posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html": "5b9babf602dea6a1003da512ffd2213c2ec32eff40195f5eb20a29ba51d1ea07",
+    "locales/ko/posts/news/2026-11-24-triso-facility-dsa-readiness.html": "25ae792274049cfa680d74104e61492c592150679fd13603dc6051f073c0259e",
+    "posts/news/2026-11-24-disposal-demonstration-transfer-tests.html": "071bc4131c60844ab59eab5d3606344ca5921c3d379d88c6c37ba2537ee33e25",
+    "posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html": "7a087817baf4a118d6063cc550b455fc6ffde1a1fce1fdadce241e520c63df95",
+    "posts/news/2026-11-24-triso-facility-dsa-readiness.html": "80f51b90d352fcc672888bc58d5e0241302bff5436a1df1ef8d2ab4b691f1296"
   },
   "verification": {
-    "content_review_sha256": "06643e2423d9b07c84c0d41348375852a0da4da07f552ce393583ea021016ebe",
-    "local_publish_gate_sha256": "bcadd78f64bf2620f4686d7b596aef26f3e0dc60cf863532cec632743bc170d0"
+    "local_publish_gate_sha256": "26222798c7f26a42e3a97bd14dc6d1065dacd94abacbbdbfe211b866dd33db0b",
+    "content_review_sha256": "39ed09d73fd37b803db51735f1c1d5a3a72cf9ec3a583895a222383933c12eff"
   }
 }

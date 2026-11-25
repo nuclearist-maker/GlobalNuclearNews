@@ -1,5 +1,44 @@
 const posts = [
   {
+    "title": "Safety Review and Startup Readiness for the U.S. TRISO Fuel Fabrication Facilities",
+    "date": "2026.11.24",
+    "displayDate": "2026.11.24",
+    "publishedAt": "2026-11-25T00:40:05Z",
+    "section": "news",
+    "category": "Fuel Cycle",
+    "summary": "Standard Nuclear submitted final DSAs for its Tennessee and Idaho TRISO plants. DOE guidance illustrates general readiness steps; the company has not disclosed whether the two facilities use the DOE-STD-1271-2026 pathway.",
+    "thumbnail": "assets/images/news/2026-11-24-triso-facility-dsa-readiness/thumbnail_01.webp",
+    "thumbnailAlt": "An enlarged TRISO particle cutaway in front of generic fuel fabrication equipment",
+    "url": "posts/news/2026-11-24-triso-facility-dsa-readiness.html",
+    "keywords": "nuclear TRISO Standard Nuclear DOE DSA TSR DOESTD12712026 NEO4251 Si C nuclearfuel Idaho Tennessee SNTN SNID fuelfabrication"
+  },
+  {
+    "title": "Conditions for Reusing Demonstration Reactor Safety Evidence in U.S. Commercial Licensing",
+    "date": "2026.11.24",
+    "displayDate": "2026.11.24",
+    "publishedAt": "2026-11-25T00:40:05Z",
+    "section": "news",
+    "category": "Policy & Regulation",
+    "summary": "NRC's final interim staff guidance DANU-ISG-2026-02 sets the two conditions and site-specific caveats for reusing DOE and DOW demonstration safety evidence in commercial Part 50 and Part 52 applications.",
+    "thumbnail": "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.webp",
+    "thumbnailAlt": "A lens between two vessel models represents comparing test evidence with a commercial design",
+    "url": "posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html",
+    "keywords": "nuclear NRC DOE DOW ISG DANUISG202602 10CFR50 10CFR53 demonstrationreactor commercialreactor licensing atmosphericdispersion priorapproval non LWR riskinformedperformancebased"
+  },
+  {
+    "title": "Pre-Operation Test Scope at Spent Fuel Disposal Facilities",
+    "date": "2026.11.24",
+    "displayDate": "2026.11.24",
+    "publishedAt": "2026-11-25T00:40:05Z",
+    "section": "news",
+    "category": "Fuel Cycle",
+    "summary": "Deep Isolation signed a three-year ARPA-E agreement for a non-radioactive UCS demonstration in Texas while Posiva's Olkiluoto encapsulation plant handled its first real transfer cask without fuel.",
+    "thumbnail": "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.webp",
+    "thumbnailAlt": "A concept scene of an empty steel transfer cask on a yellow trolley",
+    "url": "posts/news/2026-11-24-disposal-demonstration-transfer-tests.html",
+    "keywords": "nuclear spent fuel disposal facility Deep Isolation ARPA-E UCS deep borehole Posiva Olkiluoto TVO Fortum STUK e Vinci encapsulation plant transfer cask"
+  },
+  {
     "title": "What One Approval Unlocks: Radiant's Fuel Facility Review and Pacific Fusion's Tritium License",
     "date": "2026.11.23",
     "displayDate": "2026.11.23",
