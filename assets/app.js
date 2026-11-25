@@ -1,5 +1,44 @@
 const posts = [
   {
+    "title": "EPR2 reactor-vessel internals: manufacturing, assembly and delivery preparations",
+    "date": "2026.11.25",
+    "displayDate": "2026.11.25",
+    "publishedAt": "2026-11-25T12:21:09Z",
+    "section": "news",
+    "category": "Large Reactors",
+    "summary": "Framatome opened a dedicated reactor-vessel internals workshop at Le Creusot on 24 November 2026. Production had already started in July 2026, and first deliveries for the six-unit French EPR2 program are planned from 2032. The three dates mark separate steps in the project.",
+    "thumbnail": "assets/images/news/2026-11-25-epr2-internals-manufacturing/thumbnail_01.webp",
+    "thumbnailAlt": "Illustrative workshop scene showing a reactor-vessel internals basket and support grids on an assembly fixture",
+    "url": "posts/news/2026-11-25-epr2-internals-manufacturing.html",
+    "keywords": "epr2 reactor-vessel-internals framatome le-creusot france-nuclear reactor-pressure-vessel fuel-assembly precision-assembly traceability nuclear-manufacturing large-reactor nuclear-supply-chain nuclear"
+  },
+  {
+    "title": "Monitoring dry-storage canisters: a planned full-scale trial and conditions for site adoption",
+    "date": "2026.11.25",
+    "displayDate": "2026.11.25",
+    "publishedAt": "2026-11-25T12:21:09Z",
+    "section": "news",
+    "category": "Fuel Cycle",
+    "summary": "The U.S. Department of Energy's Center for Used Fuel Research has selected Guidedwave for a full-scale demonstration of passive acoustic emission monitoring on dry-storage canisters, planned for San Onofre starting February 2027 for about one year. The test article is an empty Holtec UMAX canister with electric heaters simulating the thermal load; site adoption follows only after a successful demonstration together with a revised site Aging Management Plan under the NRC NUREG-2214 framework.",
+    "thumbnail": "assets/images/news/2026-11-25-dry-storage-canister-monitoring/thumbnail_01.webp",
+    "thumbnailAlt": "An empty stainless dry-storage test canister on a secured laboratory support with small contact sensors attached, a technician checking a sensor connection",
+    "url": "posts/news/2026-11-25-dry-storage-canister-monitoring.html",
+    "keywords": "Dry Cask Storage Used Nuclear Fuel Spent Fuel Storage Acoustic Emission Passive Monitoring Continuous Monitoring INL Guidedwave San Onofre Holtec UMAX NRC NUREG2214 Aging Management Nondestructive Evaluation Nuclear"
+  },
+  {
+    "title": "Major AP1000 Components: Manufacturing Qualification and the Road to Commercial Supply",
+    "date": "2026.11.25",
+    "displayDate": "2026.11.25",
+    "publishedAt": "2026-11-25T12:21:09Z",
+    "section": "news",
+    "category": "Large Reactors",
+    "summary": "On 2026-11-23 Westinghouse Canada and BWXT Canada announced supplier qualification contracts for major AP1000 components. Cambridge, Ontario makes steam-generator demonstration pieces and York, Pennsylvania makes reactor-vessel internals demonstration pieces; commercial supply would come later as separate orders after a positive qualification decision.",
+    "thumbnail": "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/thumbnail_01.webp",
+    "thumbnailAlt": "Workshop scene representing AP1000 manufacturing qualification; a technician inspects the edge of a demonstration piece",
+    "url": "posts/news/2026-11-25-ap1000-manufacturing-qualification.html",
+    "keywords": "nuclear AP1000 Westinghouse BWXT steamgenerator reactorinternals Cambridge York 10CFR50Appendix B NUREG1793 supplierqualification demonstrationpieces nuclearsupplychain"
+  },
+  {
     "title": "Safety Review and Startup Readiness for the U.S. TRISO Fuel Fabrication Facilities",
     "date": "2026.11.24",
     "displayDate": "2026.11.24",

@@ -2,63 +2,63 @@
   "version": 1,
   "kind": "news-publication",
   "new_posts": [],
-  "base_commit": "909a6b981bb589e74500f745f7d095de55ffeeeb",
+  "base_commit": "b37edde401337307f64c246ad2925d3fc352d92e",
   "new_news_paths": [
-    "posts/news/2026-11-24-disposal-demonstration-transfer-tests.html",
-    "posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html",
-    "posts/news/2026-11-24-triso-facility-dsa-readiness.html"
+    "posts/news/2026-11-25-ap1000-manufacturing-qualification.html",
+    "posts/news/2026-11-25-dry-storage-canister-monitoring.html",
+    "posts/news/2026-11-25-epr2-internals-manufacturing.html"
   ],
   "changed_features": [
     {
       "path": "assets/app.js",
       "feature": "English news listing",
-      "reason": "Register the three 2026-11-24 news pairs and their images."
+      "reason": "Register the three 2026-11-25 news pairs and their images."
     },
     {
       "path": "locales/ko/posts.json",
       "feature": "Korean news listing",
-      "reason": "Register the three 2026-11-24 news pairs and their images."
+      "reason": "Register the three 2026-11-25 news pairs and their images."
     },
     {
       "path": "locales/ko/assets.json",
       "feature": "Korean image bindings",
-      "reason": "Register the three 2026-11-24 news pairs and their images."
+      "reason": "Register the three 2026-11-25 news pairs and their images."
     }
   ],
   "release_files": {
-    "assets/app.js": "f95b1423d26cd2c84ec7e6385b19768ce38ec055b33d3c241a83a90f43328546",
-    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/body_01.avif": "0676e4be7cd0f89f1dcf3101ecf8a7aef433c1017c933bf384ffaee8e827ccd9",
-    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/body_02.avif": "311a238ba904f49206332b3cddc82de98cd9b37d34407774d60a2eaade5fa9bf",
-    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.avif": "681fcae3ecfc143619c7b86fc929a43e429ae7c065ce93ae0db6d922e577f98f",
-    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.thumb.avif": "b0b185b32b06069cb0866d23145f7cbe08363de76d1aaaf1cfe31592d28e24dd",
-    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/body_01.avif": "a86af7acadaa6e7051e989ced815d189c449517f99fbdbe7f3a8f34b1c8b6ff9",
-    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/body_02.avif": "bd80ea9d5e2b8c5bed1c1907916c78f554d21dae7e8e8db2033d998ebec85ee9",
-    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.avif": "d967eb51c2b7c8582670872774984e3386a8993f6aaacddcec0b5794cbda35a7",
-    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.thumb.avif": "38fd348beb7112bf90107ca9fe472161794c1a80cf4035f27e9ab27540811348",
-    "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/body_01.avif": "cea8948c69d80ef7acee51e32de8f5bc8cc1bd6bd2f6827c1a9013d39a1c1643",
-    "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/body_02.avif": "274dbd29bbc6dd04302a79aa72094a23a62cc9422a5d777049644215035f8323",
-    "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/thumbnail_01.avif": "4b7c2b5dfd7a5dac291acdb835b593dc22c54bfb6d85a0e0a81a4666f85c30a6",
-    "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/thumbnail_01.thumb.avif": "d2c75db4274e31da77caee0bdaa52be5479acd9b0409302064331849b3620f1f",
-    "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/body_01.webp": "6ebe187c65d15e803b1c6a38affb9bc0430f5b231cf27719be417598aa0e9f5e",
-    "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/body_02.webp": "99128f4770aeef80282de350465dccbe22ae3eeba1dddb1628108df26808abaf",
-    "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.webp": "c9c9d276195fb742ad1e29f4bff9cbf6ef5612dbf6f5866509196908b97cc26a",
-    "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/body_01.webp": "d246a912855c3b494bf649e230c71a4eadec752e49dd7a8b11664619ed07a032",
-    "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/body_02.webp": "050a65ee56d82391f08b4bf2ec538f9b912de95e64b0d2fd7f1bea2c4b2394c0",
-    "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.webp": "ad78d2bc13623ad6deb5437e31301d0e8b27972c82d6c5f9cc88520631500429",
-    "assets/images/news/2026-11-24-triso-facility-dsa-readiness/body_01.webp": "dcceaa2f9cce46bde5eba1933d86eed386f4e17d075d6e00d257c0218bdd84dd",
-    "assets/images/news/2026-11-24-triso-facility-dsa-readiness/body_02.webp": "51f5337348fc8352d4e2f534fb2242c224cd2e885a3a6d41e7e2c8f25da1c553",
-    "assets/images/news/2026-11-24-triso-facility-dsa-readiness/thumbnail_01.webp": "10d76ecd95f8f2b731888abce043826b71f838400bdcdb237d323510f664c7c9",
-    "locales/ko/assets.json": "ef5ca80281e8ede6b1b014d51ec1a2a6ee97f923b532b091ca53962221832be9",
-    "locales/ko/posts.json": "dba7ad7ff5621c664121a87c164e249aecea20db4fb362528082b36c74a6dbee",
-    "locales/ko/posts/news/2026-11-24-disposal-demonstration-transfer-tests.html": "c6e8c5c1eac8d760cfae44491aa744e8c1b44f0d7637a9ee1c3875ce604531f7",
-    "locales/ko/posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html": "5b9babf602dea6a1003da512ffd2213c2ec32eff40195f5eb20a29ba51d1ea07",
-    "locales/ko/posts/news/2026-11-24-triso-facility-dsa-readiness.html": "25ae792274049cfa680d74104e61492c592150679fd13603dc6051f073c0259e",
-    "posts/news/2026-11-24-disposal-demonstration-transfer-tests.html": "071bc4131c60844ab59eab5d3606344ca5921c3d379d88c6c37ba2537ee33e25",
-    "posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html": "7a087817baf4a118d6063cc550b455fc6ffde1a1fce1fdadce241e520c63df95",
-    "posts/news/2026-11-24-triso-facility-dsa-readiness.html": "80f51b90d352fcc672888bc58d5e0241302bff5436a1df1ef8d2ab4b691f1296"
+    "assets/app.js": "8d2c3c079e9779befd38a17fcdc0dc62134f3298c12fafd4273d47ed1d066959",
+    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/body_01.avif": "bad9616d77a0e7a69e30a64101e7640afabcf96b741ffa765411c5ddc91b962f",
+    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/body_02.avif": "3a6f5dee629e9c311e1d950f70eb927b4dea2d39bece76ef994bf81736519183",
+    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/thumbnail_01.avif": "d1a81e1e86d526d0fe0a5f6dc154a28aa3e56809d684d133190791f55957ce6b",
+    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/thumbnail_01.thumb.avif": "40fdea612673b28709c31db5b3399e118eb2e4115d123af8bc43ca04faa9b44d",
+    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/body_01.avif": "87daa630369bcaa38b587cfba455840d1b45de78272a92a217645ae843e16479",
+    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/body_02.avif": "7b1027e5f842c2201b05527b7f06dc287d59c66e4dd3b3eacbef2102c264e854",
+    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/thumbnail_01.avif": "f2f8d9a6dfe18541104bb24b0b6fbd7f090d6efbef63625c6cb11b8f78674d16",
+    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/thumbnail_01.thumb.avif": "f6cb8aec819b70a33d7056b15a75ea67e08f29f2f3f850cea315d9fab96f7335",
+    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/body_01.avif": "3e95daaa597d9ff4c254156244264d2e1eec23b9a36485a75b5faefb00d4241a",
+    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/body_02.avif": "2f32921555c53b6b8b3140e96acb4bc6715c5ea62a5d48faca37673fbd199334",
+    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/thumbnail_01.avif": "cadba8fa9f83610e5bdc28b9ea1de4704aa647aa1ee473f6506aa0b9d9483e90",
+    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/thumbnail_01.thumb.avif": "9592b6c7334195d1e768739cf698072ce9882b9d1c59c3812a030cb514a954fa",
+    "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/body_01.webp": "2d7bbf07b50bedadb7859cbfb2a4cc63b714143c29fd33cdc4d9e92c37baa1f3",
+    "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/body_02.webp": "fb41b27b591b041109a5f615e38ef4bcfd9e69898628ac52bfd41119f569d524",
+    "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/thumbnail_01.webp": "e683b20a8f314b0209b757e07cc2bd45506d615f683d223d3511e2e59c195aae",
+    "assets/images/news/2026-11-25-dry-storage-canister-monitoring/body_01.webp": "7872004872ff046e0fae66a099c53a7e14b2d09428c82acb6efbc06188ef9a32",
+    "assets/images/news/2026-11-25-dry-storage-canister-monitoring/body_02.webp": "a7be22814282e79712f424283969c3c1369b8cc993939d7849efc52f004f3478",
+    "assets/images/news/2026-11-25-dry-storage-canister-monitoring/thumbnail_01.webp": "6a4483900c13130a606fa1d12c95a7fa0def884c8b37107bca80c1b9dfcb5be7",
+    "assets/images/news/2026-11-25-epr2-internals-manufacturing/body_01.webp": "94f79a2b65ddfd69200ec5d8414e0efcdde947c2c14243cdf01dbf307c32e941",
+    "assets/images/news/2026-11-25-epr2-internals-manufacturing/body_02.webp": "f7a7ee35265c1765dd96a63b0bea0989000ccfea2e8df40d61d6ff74c1c04f73",
+    "assets/images/news/2026-11-25-epr2-internals-manufacturing/thumbnail_01.webp": "9b45ab84c46c73e9e4261fc278d7857b9cce26b0cc18d420ae7e5fd66e5a6cc3",
+    "locales/ko/assets.json": "0a5a74af4e0c84966a45ffc3bfe71f8d2d6a236c29c9ef43ef508c031bd0105c",
+    "locales/ko/posts.json": "40d43fa6a64c66022e74036e6cda90d85c7cb3a5b77e779c21d24ca2956a7222",
+    "locales/ko/posts/news/2026-11-25-ap1000-manufacturing-qualification.html": "db7604a2f5a9face3d53c94766ccf9694fae9695fb521ced5912edc10144f97d",
+    "locales/ko/posts/news/2026-11-25-dry-storage-canister-monitoring.html": "17eeda603787a3e2d5dc6c9e9480ae76cf6afdbf004b92d6c52470741fd93274",
+    "locales/ko/posts/news/2026-11-25-epr2-internals-manufacturing.html": "2b7b8e43d294bcf7e8318748f4f228581a84dd60ccf22fe66bb23b09a331df96",
+    "posts/news/2026-11-25-ap1000-manufacturing-qualification.html": "3d539d658a79fe186db45455869f9601cc6ba2d92c333e5b73ffbb0e4700c311",
+    "posts/news/2026-11-25-dry-storage-canister-monitoring.html": "24ae59a8974006f73300dd8aac7acfec1e5014dd00cb8343c90effb59fc40d48",
+    "posts/news/2026-11-25-epr2-internals-manufacturing.html": "921fa95694bf505c0ae62fd2641394ee64b7490167fbe180bef8327a743e62a7"
   },
   "verification": {
-    "local_publish_gate_sha256": "26222798c7f26a42e3a97bd14dc6d1065dacd94abacbbdbfe211b866dd33db0b",
-    "content_review_sha256": "39ed09d73fd37b803db51735f1c1d5a3a72cf9ec3a583895a222383933c12eff"
+    "local_publish_gate_sha256": "5afc25e2aea38a94716e00c2499ccb059a5f159ba223477c34db677db092dd7d",
+    "content_review_sha256": "1490019f45ae0873f6bf7488a962f004abb3456ce9d1b0f5242a79f04c41ae3b"
   }
 }
