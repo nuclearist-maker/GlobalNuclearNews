@@ -10,24 +10,21 @@ from search_discovery import BASE,SECTIONS,enrich,content_html_files
 
 PREFIX='/GlobalNuclearNews/'
 KBASE=BASE+'ko/'
-def image_manifest(inputs,assets):
-    """Every hash manifest that may own a deployed Korean image: locales/ko/assets.json (news, theory, concepts,
-    history; verified against the files before this is called) and the PE import rows' `assets` maps."""
-    owned=dict(assets)
-    pe=inputs/'pe/posts.json'
-    if pe.is_file():
-        for row in json.loads(read(pe)):owned.update(row.get('assets') or {})
-    return owned
-def copy_images(references,root,out,owned):
-    """Copy every referenced Korean image (src/href/srcset, incl. phone twins) into the deployed site. Each must be
-    owned by a manifest with a matching hash (Codex review r4/r5 F04); otherwise the build fails."""
+def copy_images(references,root,out):
+    """Copy every referenced Korean image (src/href/srcset) into the deployed site. A missing file or a path outside
+    assets/images/ko fails the build. 2026-11-26 user: no per-image hash-manifest comparison at deploy time."""
     def one(ref):
         rel=unquote(ref.removeprefix(PREFIX));src=(root/rel).resolve()
         if not src.is_relative_to((root/'assets/images/ko').resolve()) or not src.is_file():raise ValueError('BILINGUAL: missing/unsafe image '+ref)
-        if rel not in owned:raise ValueError('BILINGUAL: image not in any hash manifest '+ref)
-        if hashlib.sha256(src.read_bytes()).hexdigest()!=owned[rel]:raise ValueError('BILINGUAL: image hash differs from its manifest '+ref)
         dst=out/rel;dst.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(src,dst)
     with ThreadPoolExecutor(max_workers=16) as pool:list(pool.map(one,sorted(references)))
+def check_assets(root,assets):
+    """Every Korean asset listed in locales/ko/assets.json must be an existing file inside assets/images. 2026-11-26 user:
+    the listed SHA-256 values are not compared at deploy time (no hash-manifest comparison in the site builder)."""
+    base=(root/'assets/images').resolve()
+    for rel in assets:
+        asset=(root/rel).resolve()
+        if not asset.is_relative_to(base) or not asset.is_file():raise ValueError('BILINGUAL: missing/unsafe asset '+rel)
 class _AttrRefs(HTMLParser):
     """src/href/srcset values from real HTML attribute parsing (any quoting or case; Codex review r5 F03)."""
     def __init__(self,names):
@@ -131,10 +128,7 @@ def install(root,out):
     for p in posts:
         for key,path in [('en_sha256',root/p['url']),('ko_sha256',inputs/p['url'])]:
             if digest(path)!=p[key]:raise ValueError('BILINGUAL: stale counterpart '+p['url']+'; run python tools/import_korean.py --map <internal-source-map.json>')
-    assets=json.loads(read(inputs/'assets.json'))
-    for rel,expected in assets.items():
-        asset=(root/rel).resolve()
-        if not asset.is_relative_to((root/'assets/images').resolve()) or hashlib.sha256(asset.read_bytes()).hexdigest()!=expected:raise ValueError('BILINGUAL: changed/unsafe asset '+rel)
+    check_assets(root,json.loads(read(inputs/'assets.json')))
     ko=out/'ko';ko.mkdir(exist_ok=True);(ko/'assets').mkdir(exist_ok=True)
     (out/'assets/languages.css').write_text(STYLE,encoding='utf8')
     app=read(root/'assets/app.js');_,start=app.split('const posts = ',1);_,end=json.JSONDecoder().raw_decode(start)
@@ -173,7 +167,7 @@ def install(root,out):
     references=set()
     for p in ko.rglob('*.html'):references.update(image_refs(read(p)))
     references.update(p['thumbnail'] for p in posts if '/assets/images/ko/' in p['thumbnail'])
-    copy_images(references,root,out,image_manifest(inputs,assets))
+    copy_images(references,root,out)
     config=json.loads(read(root/'tools/search_config.json'));config['verification']={}
     enrich(ko,config,base=KBASE,language='ko',sections={s:words[label] for s,label in SECTIONS.items()})
     for p in content_html_files(ko):

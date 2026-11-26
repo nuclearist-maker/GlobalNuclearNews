@@ -71,30 +71,34 @@ class PhoneTwinTests(unittest.TestCase):
         self.assertEqual(bb.image_refs(page), {'/GlobalNuclearNews/assets/images/ko/news/s/a.avif',
                                               '/GlobalNuclearNews/assets/images/ko/news/s/a_m.avif'})
 
-    def test_copy_images_into_empty_site_requires_manifest_hash(self):  # r4/r5 F04 integration
-        import hashlib
+    def test_copy_images_needs_only_an_existing_safe_file(self):  # 2026-11-26: no hash-manifest comparison
         with tempfile.TemporaryDirectory() as d:
             root, out = Path(d) / 'repo', Path(d) / 'out'
             img = root / 'assets/images/ko/news/s'; img.mkdir(parents=True); out.mkdir()
-            (img / 'a.avif').write_bytes(b'land'); (img / 'a_m.avif').write_bytes(b'phone')
-            h = lambda b: hashlib.sha256(b).hexdigest()
-            refs = bb.image_refs('<picture><source srcset="/GlobalNuclearNews/assets/images/ko/news/s/a_m.avif 1x">'
-                                 '<img src="/GlobalNuclearNews/assets/images/ko/news/s/a.avif"></picture>')
-            owned = {'assets/images/ko/news/s/a.avif': h(b'land'), 'assets/images/ko/news/s/a_m.avif': h(b'phone')}
-            bb.copy_images(refs, root, out, owned)
-            self.assertEqual((out / 'assets/images/ko/news/s/a_m.avif').read_bytes(), b'phone')
-            with self.assertRaises(ValueError):  # twin missing from every manifest
-                bb.copy_images(refs, root, out, {'assets/images/ko/news/s/a.avif': h(b'land')})
-            with self.assertRaises(ValueError):  # hash mismatch
-                bb.copy_images(refs, root, out, dict(owned, **{'assets/images/ko/news/s/a_m.avif': h(b'other')}))
+            (img / 'a.avif').write_bytes(b'land')
+            bb.copy_images(bb.image_refs('<img src="/GlobalNuclearNews/assets/images/ko/news/s/a.avif">'), root, out)
+            self.assertEqual((out / 'assets/images/ko/news/s/a.avif').read_bytes(), b'land')
+            with self.assertRaises(ValueError):  # missing file
+                bb.copy_images({'/GlobalNuclearNews/assets/images/ko/news/s/none.avif'}, root, out)
+            # outside assets/images/ko: a REAL file reached through '..', so only the path check can reject it
+            (root / 'tools').mkdir(); (root / 'tools/x.py').write_bytes(b'code')
+            escape = '/GlobalNuclearNews/assets/images/ko/../../../tools/x.py'
+            self.assertTrue((root / escape.removeprefix('/GlobalNuclearNews/')).resolve().is_file())
+            with self.assertRaises(ValueError):
+                bb.copy_images({escape}, root, out)
+            self.assertFalse((out / 'tools/x.py').exists())
 
-    def test_pe_rows_are_a_manifest(self):  # PE images are owned by locales/ko/pe/posts.json rows
-        import json
+    def test_asset_list_hash_mismatch_does_not_fail_build(self):  # F01: install no longer compares assets.json hashes
         with tempfile.TemporaryDirectory() as d:
-            inputs = Path(d); (inputs / 'pe').mkdir()
-            (inputs / 'pe/posts.json').write_text(json.dumps([{'assets': {'assets/images/ko/pe/x.webp': 'h'}}]), encoding='utf-8')
-            owned = bb.image_manifest(inputs, {'assets/images/ko/news/s/a.avif': 'g'})
-            self.assertEqual(owned, {'assets/images/ko/news/s/a.avif': 'g', 'assets/images/ko/pe/x.webp': 'h'})
+            root = Path(d)
+            img = root / 'assets/images/ko/news/s'; img.mkdir(parents=True)
+            (img / 'a.avif').write_bytes(b'new pixels')
+            (root / 'tools').mkdir(); (root / 'tools/x.py').write_bytes(b'code')
+            bb.check_assets(root, {'assets/images/ko/news/s/a.avif': '0' * 64})  # stale hash: accepted
+            with self.assertRaises(ValueError):  # missing file
+                bb.check_assets(root, {'assets/images/ko/news/s/none.avif': '0' * 64})
+            with self.assertRaises(ValueError):  # real file outside assets/images
+                bb.check_assets(root, {'assets/images/../../tools/x.py': '0' * 64})
 
 
 if __name__ == '__main__':

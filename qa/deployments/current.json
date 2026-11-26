@@ -2,7 +2,7 @@
   "version": 1,
   "kind": "news-publication",
   "new_posts": [],
-  "base_commit": "998bbe612dd44a0a49bf1701dc55a1bc6091c28a",
+  "base_commit": "0765b21c327bb38646450acb2256223b11e12049",
   "new_news_paths": [],
   "revised_news_paths": [
     "posts/news/2026-11-24-disposal-demonstration-transfer-tests.html",
@@ -31,427 +31,348 @@
     {
       "path": "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/body_01.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/body_02.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.thumb.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/body_01.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/body_02.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.thumb.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/body_01.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/body_02.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/thumbnail_01.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/thumbnail_01.thumb.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/body_01.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/body_02.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/thumbnail_01.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/thumbnail_01.thumb.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/body_01.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/body_02.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/thumbnail_01.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/thumbnail_01.thumb.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/body_01.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/body_02.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/thumbnail_01.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/thumbnail_01.thumb.avif",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/body_01.webp",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/body_02.webp",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.webp",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/body_01.webp",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/body_02.webp",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.webp",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/news/2026-11-24-triso-facility-dsa-readiness/body_01.webp",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/news/2026-11-24-triso-facility-dsa-readiness/body_02.webp",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/news/2026-11-24-triso-facility-dsa-readiness/thumbnail_01.webp",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/body_01.webp",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/body_02.webp",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/thumbnail_01.webp",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/news/2026-11-25-dry-storage-canister-monitoring/body_01.webp",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/news/2026-11-25-dry-storage-canister-monitoring/body_02.webp",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/news/2026-11-25-dry-storage-canister-monitoring/thumbnail_01.webp",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/news/2026-11-25-epr2-internals-manufacturing/body_01.webp",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/news/2026-11-25-epr2-internals-manufacturing/body_02.webp",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "assets/images/news/2026-11-25-epr2-internals-manufacturing/thumbnail_01.webp",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "locales/ko/posts/news/2026-11-24-disposal-demonstration-transfer-tests.html",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "locales/ko/posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "locales/ko/posts/news/2026-11-24-triso-facility-dsa-readiness.html",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "locales/ko/posts/news/2026-11-25-ap1000-manufacturing-qualification.html",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "locales/ko/posts/news/2026-11-25-dry-storage-canister-monitoring.html",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "locales/ko/posts/news/2026-11-25-epr2-internals-manufacturing.html",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "posts/news/2026-11-24-disposal-demonstration-transfer-tests.html",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "posts/news/2026-11-24-triso-facility-dsa-readiness.html",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "posts/news/2026-11-25-ap1000-manufacturing-qualification.html",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "posts/news/2026-11-25-dry-storage-canister-monitoring.html",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "posts/news/2026-11-25-epr2-internals-manufacturing.html",
       "feature": "Authorized existing news revision",
-      "reason": "User-approved image revision of the 24-25 Nov 2026 posts: layered editorial diagrams over AI-generated scenes, legible text, phone portrait twins"
-    },
-    {
-      "path": "docs/english-post-package.md",
-      "feature": "Reviewed publication tooling change",
-      "reason": "Source folder table updated after the 2026-11-25 source relocation"
+      "reason": "User-approved (2026-11-26 '승인') image remake r2 of six published Nov 24-25 posts: new thumbnail/body images, matching alt text and captions, phone-twin <picture> wrappers removed; article prose unchanged"
     },
     {
       "path": "tools/build_bilingual.py",
       "feature": "Reviewed publication tooling change",
-      "reason": "Korean image links wrap the whole <picture>; src/href/srcset refs parsed from HTML; every deployed Korean image must match assets.json or the PE rows' hash manifest"
-    },
-    {
-      "path": "tools/claude_review_gate.py",
-      "feature": "Reviewed publication tooling change",
-      "reason": "Accept provider-bound Codex review receipts (ordered event-log check) alongside Claude Code receipts"
-    },
-    {
-      "path": "tools/import_korean.py",
-      "feature": "Reviewed publication tooling change",
-      "reason": "Phone portrait twins become <picture> sources; import cache keyed on resolved sources and twins; re-encode unless source and output hashes match; 1600 px text-safe AVIF"
-    },
-    {
-      "path": "tools/public_review_gate.py",
-      "feature": "Reviewed publication tooling change",
-      "reason": "Public provenance check uses the same reviewer-identity rule"
-    },
-    {
-      "path": "tools/publish_en_posts.py",
-      "feature": "Reviewed publication tooling change",
-      "reason": "Feature: srcset images (phone portrait twins) are collected, rewritten to public paths and published as WebP; docstring paths updated after the 2026-11-25 relocation"
-    },
-    {
-      "path": "tools/publish_sources.json",
-      "feature": "Reviewed publication tooling change",
-      "reason": "Source roots point to the relocated blog/news and blog/nuclear folders (rewritten by the verified migration)"
-    },
-    {
-      "path": "tools/review_identity.py",
-      "feature": "Reviewed publication tooling change",
-      "reason": "Cross-family independent reviewer identity: Claude-authored work requires a Codex reviewer and vice versa"
+      "reason": "User 2026-11-26: no image hash-list comparison at deploy time; copy_images and install (check_assets) keep only file-existence and safe-path checks; assets.json image SHA-256 comparison removed"
     },
     {
       "path": "tools/test_phone_twins.py",
       "feature": "Reviewed publication tooling change",
-      "reason": "Regression tests for phone portrait twins (deploy refs, manifest-bound copy into an empty site, picture/figure nesting, cache dependencies)"
+      "reason": "Tests for copy_images/check_assets without hash comparison: stale hash accepted, missing file fails, real file outside the image folder reached via .. fails"
     }
   ],
   "release_files": {
-    "assets/app.js": "2d5e31f09acab11b56013a8e2762d54d0c49f6d7ecc6ed982c7eff6bd017abf6",
-    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/body_01.avif": "10e1a181ec83294d613881f157e46212ea19d6214729283dd302df938b426c1c",
-    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/body_01_m.avif": "23f3b77abd1d091c88261f1ad3a3325cbf4eb2488a220d55c2439f02c9db1cd9",
-    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/body_02.avif": "16df1951fc859889ef2423f94e94ae213f4356f96ee91dc8c16f17e13ca34c1e",
-    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/body_02_m.avif": "71d6b5ee227d73c90d97e770b8648987a186a5b5515c55bfc6465a7abbcc318b",
-    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.avif": "89baf2cf3c3075cbce28457f9d43ad1bafcb8267063daa8f9063e7c696124eaf",
-    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.thumb.avif": "8bf1bcc4232235f62d9f970ad87a8bde3f64ad1b0fad347723b905d84f07e2ce",
-    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01_m.avif": "fe5475f18bff20ccc447c7ddc54703e75b2660be782242450cf904b4bbd9a1ab",
-    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/body_01.avif": "63e96b7e32c3f8ec7f877a3a8b91ae03b3a1a0057b2b4213a1304ad805075cfa",
-    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/body_01_m.avif": "81d53f160c472e8741936362481366893f830fb51de7c44dedc5f73b8310e03e",
-    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/body_02.avif": "6362235847c8ee18e73dd2336c0826eb7907d108a6db2b6b00549ed7b04d0615",
-    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/body_02_m.avif": "71413825a0044105f32f2ca64fc4e7b862b2d7df28134de5f0ead63e3f3f1b40",
-    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.avif": "c29fcc3113d580f353eaea8bfa3c2736b73f6220732e749998fbcb9eabc9c1ec",
-    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.thumb.avif": "bb48724efca61ccc268098f0a3a4788cedc3c31ac525e632d869e3d1d5db158e",
-    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01_m.avif": "d8a55d99bab9551d22b60a7e4c24a2cf8819859968b1200589c0c61e5a3e4c87",
-    "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/body_01.avif": "c40e92bb03f87bbb0db928358bb670be2266feeb62251bfffd22d2f0829b12d9",
-    "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/body_01_m.avif": "7914e897c4437852ebc57a0d8a07ef7249cfb5e8d7fea8a51790d09a334f737d",
-    "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/body_02.avif": "5ae219d9bf1873a4dd0236727cb4b05b1226e15c02ea1aa2bb4fe0785622cddf",
-    "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/body_02_m.avif": "4a391fb60ab3bcb96b4a586fc3e2c608af55700b6cc16cf9cb497d0924ea6924",
-    "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/thumbnail_01.avif": "0534b1e3b29aaeccbe888b8fa6f1436037caeda7f63a0652ac8e086745921a9b",
-    "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/thumbnail_01.thumb.avif": "27771a1f722cd908a149e71841d106cba362e8bb530338c0e89f04a31ac78202",
-    "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/thumbnail_01_m.avif": "f9d1fd5f6b38d23e53cdc30bccf832c58bf7d390095e369f43e98df3f1df60d1",
-    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/body_01.avif": "96e13406b6076884e105487aaddb999b4b81e6441c7e5f9dc3e010a31a600aa2",
-    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/body_01_m.avif": "08f3b646d368f017ba5528c368dfba860ea3cdf3376a2165075ea6b4b3470830",
-    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/body_02.avif": "08b0af1032ee2e1c8820dddc661afe251e97e10cf35f84430fd4be9e168abaa2",
-    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/body_02_m.avif": "f3da751ca9d0c260c7202221e94ff8b6a7f1ea0682bffcb117d575f5c4be2c51",
-    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/thumbnail_01.avif": "4808e42a9c0911a7bd01b6ef76365265ebe3507525e91f2e8d827653a7b0d828",
-    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/thumbnail_01.thumb.avif": "496ab0173541d0b040c943fcb2c2ebea09cf77db9dcebf10d032ca24e948b6a9",
-    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/thumbnail_01_m.avif": "8b23a8064578bbb0f5d160a98d1686155f6608bdcfab27c6308a3ec4360eed4e",
-    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/body_01.avif": "5b7a8d769349e5b84ed17a9994ac25c12d786b0005b7e3e97520546a1818eeda",
-    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/body_01_m.avif": "804dbf46097c1c160540d73692e11fccea2cceb1038cdb060ce6aa3d5d23ea61",
-    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/body_02.avif": "4d140362a2f48f02d6f8b69c587ab65c67db2ebabfc9af103c4c550601e9d753",
-    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/body_02_m.avif": "c24d257d18c232476b9c308318d16f5464a8cdd9df05ad4f1898dddc2d5ac26d",
-    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/thumbnail_01.avif": "db2faab99f9058ef0cc318ca2819ad15e204994ffaf9085ca541b019757838e3",
-    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/thumbnail_01.thumb.avif": "14aec59fe777a602feab4508e2702804a3752e5582460e79058a37b566fd1900",
-    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/thumbnail_01_m.avif": "f68eb7ee12948a6730a3764432175d54851ab0426a96f3f462d469caf4ea7bff",
-    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/body_01.avif": "d33393cfe560e234ad12180aae7ef2d41641a1f0c5ea81a2845b4aaf53f549ba",
-    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/body_01_m.avif": "58601b07abe4bafce526cdbfc7655df2155a3f7a8a6aa0b6b475c2fd94118daf",
-    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/body_02.avif": "ec2c7c21fe0c5328ab7e3e2d9805618bebcc76ebc075147b68851380d622938d",
-    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/body_02_m.avif": "52e184680e8ce163f625a944dc0180d3b04f8e0c6da4b96ad9c79ac1623ced1c",
-    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/thumbnail_01.avif": "cf73700788b89f1876e56de5dc1098b1d29d434b9b0373d79774a3fe361bf2c1",
-    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/thumbnail_01.thumb.avif": "1a3f102a2298ea0ff5df5171740a4e9d9ee37d7e57f203c89c43c09e1764221e",
-    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/thumbnail_01_m.avif": "9e82bc42d737d1d6cf317b70383a74d150b08b6700331862ad4c9dc56e8eb64e",
-    "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/body_01.webp": "c54869318d2417c7eece6ef21c8af165d2673c14860f76bf56dd76ca6fdf8e8e",
-    "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/body_01_m.webp": "c0fe5501ef239044cda7ac1b18267110744ebe61fb3d5beaa9a28d174cef5558",
-    "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/body_02.webp": "f9db36c4cb8d88221366bcceb66b59444ee25e2e4025238586f4a6acb4951edf",
-    "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/body_02_m.webp": "11a3013e27aa195cc6cad11d2d036e720badc216fec8d99ff9342db149fcba16",
-    "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.webp": "95bf6b59970239febc6ff323a84c66f5d1a3e6865204dbcbfc6e600e02c885cd",
-    "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01_m.webp": "050ee3127b7ceeeabb94d28135e7015090beedd6e2f93ab57f768b2d9cf8bf94",
-    "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/body_01.webp": "d21b147a8e2b82a622a86b4ae665bf4673cbbf9cf7ad6e0fb34f745cdd3b61ad",
-    "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/body_01_m.webp": "cf75e1d7d3760677604ca13719091462a6fcc8bca7135ceeebde37bda20d7a33",
-    "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/body_02.webp": "72b1c47c0cbc8b714bdde87f607686af7a2b12f64cde9d6fdf0583c474172366",
-    "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/body_02_m.webp": "a6a9432a310cb6accd048703e8a834f46199047cfd2f8860fa1189dc437fb7d9",
-    "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.webp": "716949aeaff2c021804eb975155020bf3c631b812c3d4543eea6ca0404d33dfe",
-    "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01_m.webp": "0baeff5507f72a45814e6dac6f15949dd2fbc1d5a208cc9df39d39d83cd3fba5",
-    "assets/images/news/2026-11-24-triso-facility-dsa-readiness/body_01.webp": "879a4073f3dcd4c4d3dac337976d0b5a1cd1fdc7b8cb17df0656f806894aff72",
-    "assets/images/news/2026-11-24-triso-facility-dsa-readiness/body_01_m.webp": "98d7d54111e0d8d274855fb3953eafb1eecda2f5ed16314b4c4acd4dda5c8827",
-    "assets/images/news/2026-11-24-triso-facility-dsa-readiness/body_02.webp": "6b23397ae3a24d06bcda928ee56e305e160a1f2aadee9ef12f3b2743549c9fdc",
-    "assets/images/news/2026-11-24-triso-facility-dsa-readiness/body_02_m.webp": "b1e602a8a67057b140d36f07e06bad4a5be7ffaef6407b4d66ccfb946b2aec23",
-    "assets/images/news/2026-11-24-triso-facility-dsa-readiness/thumbnail_01.webp": "342c0d742f5d94688f70d57c9ffc9df84cbc5795ba70a5dce66432950eea35f4",
-    "assets/images/news/2026-11-24-triso-facility-dsa-readiness/thumbnail_01_m.webp": "5f01c15c21f6e8ffa738d10cbd1b689371399261d14c7eb14448d1b5ecade7b3",
-    "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/body_01.webp": "dc2c69e0f483611eef932e7df2eabd1db9a310679fcd3042e6ac054921aa454e",
-    "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/body_01_m.webp": "d3bdc5b9e685b61cf5bd7a0d0c0b01d38ca025c9d5608eed017ffee012c15053",
-    "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/body_02.webp": "1cfb6b75b139a8824b18ff21871c73fc4e5422263d3a303ff5991ed166920649",
-    "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/body_02_m.webp": "a885bfea38460fe350e6973c636381611f3f9c3a95392b39b319d35fc2071457",
-    "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/thumbnail_01.webp": "20f4f3c47d6c90c4569b29279255fb980583ff7533f8e1c09ded6b2cd5df46a4",
-    "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/thumbnail_01_m.webp": "aed340ebd5e063a311f70dc67c894b1e32ea84258fbe823d184c1279e2958405",
-    "assets/images/news/2026-11-25-dry-storage-canister-monitoring/body_01.webp": "84925d31ebef8b0c91a2adbe0548051e6a992ba44d1fd9f6c0b1bbd846f98a3c",
-    "assets/images/news/2026-11-25-dry-storage-canister-monitoring/body_01_m.webp": "b0ca91d2b27b71e031a0f0cc94f0fda44b7eb69e0265718067663e317b4fa096",
-    "assets/images/news/2026-11-25-dry-storage-canister-monitoring/body_02.webp": "1094048f486fbc37a4a63e691c75e51c222fd2a82d689af10d521438d4133444",
-    "assets/images/news/2026-11-25-dry-storage-canister-monitoring/body_02_m.webp": "0b656bae15b87c4af2b189bd3ab6171ce052e0609c5e4ebbdba91ace8756933e",
-    "assets/images/news/2026-11-25-dry-storage-canister-monitoring/thumbnail_01.webp": "704efe402a3cda74a56375b1cf730494107e6091f4cec651d0199ee69483d035",
-    "assets/images/news/2026-11-25-dry-storage-canister-monitoring/thumbnail_01_m.webp": "bfe9b77aaec8c16f02f4d8020d54ea71639e02a066faf6f7ef638c0accb115e7",
-    "assets/images/news/2026-11-25-epr2-internals-manufacturing/body_01.webp": "2f521bdd8bae90ac8ae1f03105c8cbba2a95980ee278d37f5dd6ce80eb49d440",
-    "assets/images/news/2026-11-25-epr2-internals-manufacturing/body_01_m.webp": "e23462ae4bb5a16d502fc70ece82baa7fb6c67adffbab1be8a6675d6a9716351",
-    "assets/images/news/2026-11-25-epr2-internals-manufacturing/body_02.webp": "026549ab330ae03205061f775374bd79dc102895eb1c788455dce55be1573723",
-    "assets/images/news/2026-11-25-epr2-internals-manufacturing/body_02_m.webp": "5ed00b459134810120868d1f3b684a6b0a24d3998780da707d75087d0eb4376d",
-    "assets/images/news/2026-11-25-epr2-internals-manufacturing/thumbnail_01.webp": "b38d50e09904b62756387af51952fe3d2f90cda79129dc88cc5def9c086e0186",
-    "assets/images/news/2026-11-25-epr2-internals-manufacturing/thumbnail_01_m.webp": "54d0405dd4eee69ec719e6187a6a128f8d4893823301b7d6f208e231850efcf1",
-    "docs/english-post-package.md": "aed1c85595614023ecb01e29bce5c51838b71d7717ee8377c44f8ae76c8c271c",
-    "locales/ko/assets.json": "43a130627cdc948eafc3ae439582d890eefdfd9942208b2cae4e249d1d5d944d",
-    "locales/ko/posts.json": "ff8d9bcd38e343e33745f2b94addd833ab112e8c66de4c6786164fb4b7960f76",
-    "locales/ko/posts/news/2026-11-24-disposal-demonstration-transfer-tests.html": "251e5b1471cd17eabb06056cbabdc58a30071471cc24533807e02940dda4aac5",
-    "locales/ko/posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html": "5357396d1cd2ad80a2eef54be17e5bcc4812e35c56fef9791596d8a3f14022d6",
-    "locales/ko/posts/news/2026-11-24-triso-facility-dsa-readiness.html": "b87da2c5d2e7fdeff4f51a012a20e1a8c54977abb8f031df52e6f5b70310b2b2",
-    "locales/ko/posts/news/2026-11-25-ap1000-manufacturing-qualification.html": "6dfa224b8a8762a371f2afbfa8b0ca27a07d5ae26ed7388fd2485065250850cf",
-    "locales/ko/posts/news/2026-11-25-dry-storage-canister-monitoring.html": "bab82e6c1c8e9613307a7dcbea9f74159aa6be9e9051c8366ea579bf60c42d6c",
-    "locales/ko/posts/news/2026-11-25-epr2-internals-manufacturing.html": "826e300fa5777e54c18ad07849de1c7c87c9bf17c28bbb66f4e672baaee2f9c3",
-    "posts/news/2026-11-24-disposal-demonstration-transfer-tests.html": "4bd04f2c5ff53ce9ec8151d6bb02e26cf3afb478a3edae36c43b671662ca9050",
-    "posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html": "464bce493065dfd3535ce17fae21c8fc63facf3e10e8ae8b05b99f78b56f8464",
-    "posts/news/2026-11-24-triso-facility-dsa-readiness.html": "f780dcde8479dd8d8f5d102d2cfc553fa8b9df12541c649c1f61173de48eb82f",
-    "posts/news/2026-11-25-ap1000-manufacturing-qualification.html": "1b3a5e099d92ecb57bfbbf938b8338dbe5984707c838ef9ba7826affcbda6304",
-    "posts/news/2026-11-25-dry-storage-canister-monitoring.html": "7428d0f21545e5a8b11c8164c56ced1f142f03f4e77ec670f8fc0f0836ea2c57",
-    "posts/news/2026-11-25-epr2-internals-manufacturing.html": "e149acc205a4a4cb2cf4942dd44cc3565b6e3db3145b96d3f91110663f4c3d9c",
-    "tools/build_bilingual.py": "443d2e2891dc0b7bad9190036dd8330badfabd0bc11e68216a131dd30c4a7776",
-    "tools/claude_review_gate.py": "52b2211359a5975b9031a6455fef8d92300af3ce9bbec6095e5418074c2c9494",
-    "tools/import_korean.py": "3790214463bb880765e23f56aadf3014536c7c2f7e4951877283fd34c6b87870",
-    "tools/public_review_gate.py": "c4d0c4452efce22adae209f53772b13915b4d9825d37bd0d8908c2ab662d0162",
-    "tools/publish_en_posts.py": "890954040d5c199c5cdf47980cdb6012c8f202f6596a65a9e2e0c45cc6923af7",
-    "tools/publish_sources.json": "16f451bb5243dcb1e200bc8b9f355e397fe49b383e6d6fefc8a8d16342089ab9",
-    "tools/review_identity.py": "d7d6f8c27e94a429468d6936e26dd9cf4857b48880b0c7661f123b5ba9e20ed1",
-    "tools/test_phone_twins.py": "002d916e77a1792b44049139d3892b73c3f2af1405d67ba19c9df22c4030b1a2"
+    "assets/app.js": "5fddd6db4ac7c842f2375862df4092214482a4df7470a8200ad082c978b6c81d",
+    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/body_01.avif": "21ed046ce5b1d084a5d5442fd61e152c0f945db32f420b2ab5e8fba5ca727fd6",
+    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/body_02.avif": "45e253d4a1bfcb195b7c2be2624cae83ae65ef3bfdd2d1f3bc9e5acc84d3f1d5",
+    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.avif": "aaca72b24c4d0e20cb7e8b71b87da52434158c2af7e7393c8c63916a21a665d5",
+    "assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.thumb.avif": "067af2fbdc4fbc8edab8f05a81ef90522f7dd2503d4813771c7c1544475dd06f",
+    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/body_01.avif": "f0aeb1b0bfca6a9a2aab097742e3b2fc4799c9f2a876b77a79eab3ba770c91a2",
+    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/body_02.avif": "4348f503d6caa5eee9098ba5d9ee3489d72ab9e7b9c505c0cfef5ca6e2a1e403",
+    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.avif": "98a8453ea3fee7f0ddeb9c8d33ccbea76d4f7f2c1c37f98354002313f6219460",
+    "assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.thumb.avif": "791386c26575ad2cc6db406326d4950ffc6c856e245ee2014878c70d3d19293e",
+    "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/body_01.avif": "997cab9b0906d6c3160b60cdd19304b36616b30617c09b0745c815f519a22176",
+    "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/body_02.avif": "397fd3012b09c2e9f23996dbedc79055f0b321d98254dc736bd0a8232b1fc89e",
+    "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/thumbnail_01.avif": "89a0d09a698459d1a62b0b5234b05a12c3f2dd854df313258531444d6bbb5fed",
+    "assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/thumbnail_01.thumb.avif": "7578d0de02501a05c76fbf726b8207b1c445762392a00b010402185b20762ed4",
+    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/body_01.avif": "51f9687d6829e29fd090c28a9b4619d352195827e7138193041c6b4ae4bf5cab",
+    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/body_02.avif": "0b302b0542fbf7d81bd5283efef9bb003c82b43766d4b4f2f681b1ad66866c1e",
+    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/thumbnail_01.avif": "d75718f92def3a155d3668050cdfa2e4eb0cf031351c787890dfd5eac998ddc5",
+    "assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/thumbnail_01.thumb.avif": "8723412c8973bd39995bf41b5dade3671ec309831350427094569e9740ed64ed",
+    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/body_01.avif": "155fa772451d54ae7bf4823f9a3606bcd8d3916bb43099883c8363afe487b172",
+    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/body_02.avif": "d003f4d5a2d020f3a0d74011e5d10ca823c87c7c096a21e0b018c951f06b69fa",
+    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/thumbnail_01.avif": "3c1c928f1f637e05f668c988d6918e08d7025c89d8e2e0b8f083cdb11b34f41a",
+    "assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/thumbnail_01.thumb.avif": "62eb0aff27e7b9a445c68cb940ed20217fa09920d7e4bd7110de173de422c6df",
+    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/body_01.avif": "e64986c68c4096f92b92ed5d942f913263022934d60c3763a066f2bd7c2ff8e0",
+    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/body_02.avif": "c8901d2d698fb6d1b14d922c3f46453641d8bac3d774ff7071d0e5ada5507602",
+    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/thumbnail_01.avif": "98f63f18826dd78eb0aae58f40e627126a22bb0511acea1be0e46d0865092642",
+    "assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/thumbnail_01.thumb.avif": "e528db243277cee2226ba2e2070057a85ee48682c1ab4e1533b12da330c87cde",
+    "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/body_01.webp": "042a88d4a57b04d7e17448beb12e42c4d56e1feb368eacec8057b02bb944e0dc",
+    "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/body_02.webp": "a143342686d75c2c469de95cf39f5a869e674056a7730a861b998643a3b4d18d",
+    "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.webp": "76e7a106dd8f4149a54949cbea6d6e7b56d1dc59001b630cb0296da63012dbc4",
+    "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/body_01.webp": "125069ba7426e6e03b4ddaae93d172082df00e453942cf4e11f70c4e717bb7e9",
+    "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/body_02.webp": "fadaeee634c18e685331c4add858424038ac560c7df7923e0006c628fea5abe2",
+    "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.webp": "a0c985df3ec1ce0ee482491719848a449d8a07eedde84d805a1041e9efe8b6ed",
+    "assets/images/news/2026-11-24-triso-facility-dsa-readiness/body_01.webp": "15f187ce969aa896428e9b380664287195c43858e71d4d77b257d1eb3ca4003f",
+    "assets/images/news/2026-11-24-triso-facility-dsa-readiness/body_02.webp": "beca3083d2a6fde5f66795647666513a9d7861bbba92bcba14c5e0f3168f4ef9",
+    "assets/images/news/2026-11-24-triso-facility-dsa-readiness/thumbnail_01.webp": "f8c7b7fc93e89a1a1f78a4504f35bff8aeb0d129b50f6617dd7b11a35dcffcf2",
+    "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/body_01.webp": "caea10dc4228e67efc67c4e14c5a6f7a8e43a23ea19d546309e51194893e60d2",
+    "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/body_02.webp": "229b2ac01a8104fcff87edbed10ec50b0ea5c10f4190903535a06d5c4f179ccb",
+    "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/thumbnail_01.webp": "14655ff9bdc13c150a6ed6c7e8c4b9def43d625e3309e72d2b7ece13b7ddb279",
+    "assets/images/news/2026-11-25-dry-storage-canister-monitoring/body_01.webp": "f4cedc2ee29f41eb7af4c81479d1f5d81ff63f46b41ca449bb0f96af4c87c61f",
+    "assets/images/news/2026-11-25-dry-storage-canister-monitoring/body_02.webp": "ece6f090cc46d04a65146409091ff439e7468d62b86b1c30c766fbdc7d0dab15",
+    "assets/images/news/2026-11-25-dry-storage-canister-monitoring/thumbnail_01.webp": "f028edcf5d9a1741dde1518abcad1356b533e5f5ce40e8968f51157314dea274",
+    "assets/images/news/2026-11-25-epr2-internals-manufacturing/body_01.webp": "d5197ac4750a41d2c5f71b008491d9e4de0f77baa250891f8de78dfe80cf9435",
+    "assets/images/news/2026-11-25-epr2-internals-manufacturing/body_02.webp": "0204f1b239238aa6936319dbec239975438823f89d8a28400d45e3d2c3b5cd91",
+    "assets/images/news/2026-11-25-epr2-internals-manufacturing/thumbnail_01.webp": "e267e2fc60be6c6fb07303896b9d7d6d30458b227bd1c45e8cb35977dee829dd",
+    "locales/ko/assets.json": "87573d044dbb5b34145b66743b2360d608d0580172057fcd30478ed807386eb9",
+    "locales/ko/posts.json": "fac3824ddfd26451d15ee39047cddc1bb2290e21892f7e6f26c80ca993fe21e9",
+    "locales/ko/posts/news/2026-11-24-disposal-demonstration-transfer-tests.html": "be54038060f1c28da734813b3e8ee41b7153b4953b32775e319e567ff7bb27ac",
+    "locales/ko/posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html": "c3f967661ab3a4d1f54e964c93ebdb3dd56cd5ca1f4a5c50e75f25ea6bb8b900",
+    "locales/ko/posts/news/2026-11-24-triso-facility-dsa-readiness.html": "cbb07317f44f00aa118d453dcf40679deddc17186f87e0f09afdad99ab7e0514",
+    "locales/ko/posts/news/2026-11-25-ap1000-manufacturing-qualification.html": "3c29a0a07cee69e02828ab207ef49080319e3a801d9274634a5da5b418762d23",
+    "locales/ko/posts/news/2026-11-25-dry-storage-canister-monitoring.html": "35faf6b2e504bcf3e3d8a2a53ea8ee3cad29905d638ec066b65ff08795d56931",
+    "locales/ko/posts/news/2026-11-25-epr2-internals-manufacturing.html": "89ecaecf9b69266de388b713de44c63001fedf4bf11b57432f71102eba9d65b3",
+    "posts/news/2026-11-24-disposal-demonstration-transfer-tests.html": "78e2fdbb24385cdd8326ee690b899db863039726d6172ed2d899cb97b96a9c8b",
+    "posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html": "b29df6c3ee7bcad93351e22dcb88c4eb3c16173795f948969f127321d1023b8b",
+    "posts/news/2026-11-24-triso-facility-dsa-readiness.html": "79b31b2602530cba6c1d4bb72b0fa1dfbd6890c0b43e9ee28828e9ca9d027a61",
+    "posts/news/2026-11-25-ap1000-manufacturing-qualification.html": "bf09cb2d30b3f7b2751aef535d6c7d4b91c687db5a1b6c7120b010368e72abb5",
+    "posts/news/2026-11-25-dry-storage-canister-monitoring.html": "51413d397e21a0219ad5c49001f15185af5d502d14debfc30a404dba18cbb701",
+    "posts/news/2026-11-25-epr2-internals-manufacturing.html": "5cc7ac22c941ffd23cc35ed0fecc1fdea9c7015a687f834b82f47c0640005d55",
+    "tools/build_bilingual.py": "36bffda5e125e4094a17092eb6433f44ead7755596506b82ea460ef8211e057b",
+    "tools/test_phone_twins.py": "385f369e69bde5c808cf9d0b29e03722cd48be1e712fac9213b0f6fcd547cfa1"
   },
   "verification": {
-    "local_publish_gate_sha256": "cacdb804bb675c0ca27588e70c1aa48d192d8b1b4944f1ccac3da827e726c88d",
-    "content_review_sha256": "82151df906ec11d53c50b4500f39142434193ae12ad706fd1ebf45d94b07b010",
-    "review_status": "REWORK_WITH_USER_EXCEPTION",
-    "user_exception_sha256": "0673ef566f276dc6b443bea2fe17445bb5501fbd3ce902632d68db0313a5a54d"
+    "local_publish_gate_sha256": "7194e3f050f69916f2a71406ec3fbeee66c519e1ce1ff83ca350e2fc761cbad5",
+    "content_review_sha256": "08fdf717ccf6824ba09657b592f6c98c49f859ca4ca3072683250743bfac7a86",
+    "review_status": "PASS"
   }
 }
