@@ -8,7 +8,7 @@ const posts = [
     "category": "Large Reactors",
     "summary": "Framatome opened a dedicated reactor-vessel internals workshop at Le Creusot on 24 November 2026. Production had already started in July 2026, and first deliveries for the six-unit French EPR2 program are planned from 2032. The three dates mark separate steps in the project.",
     "thumbnail": "assets/images/news/2026-11-25-epr2-internals-manufacturing/thumbnail_01.webp",
-    "thumbnailAlt": "Illustrative workshop scene showing a reactor-vessel internals basket and support grids on an assembly fixture",
+    "thumbnailAlt": "Reactor vessel internals hanging from a crane in an assembly hall (AI-generated scene) with the headline \"EPR2 internals workshop opens\"",
     "url": "posts/news/2026-11-25-epr2-internals-manufacturing.html",
     "keywords": "epr2 reactor-vessel-internals framatome le-creusot france-nuclear reactor-pressure-vessel fuel-assembly precision-assembly traceability nuclear-manufacturing large-reactor nuclear-supply-chain nuclear"
   },
@@ -21,7 +21,7 @@ const posts = [
     "category": "Fuel Cycle",
     "summary": "The U.S. Department of Energy's Center for Used Fuel Research has selected Guidedwave for a full-scale demonstration of passive acoustic emission monitoring on dry-storage canisters, planned for San Onofre starting February 2027 for about one year. The test article is an empty Holtec UMAX canister with electric heaters simulating the thermal load; site adoption follows only after a successful demonstration together with a revised site Aging Management Plan under the NRC NUREG-2214 framework.",
     "thumbnail": "assets/images/news/2026-11-25-dry-storage-canister-monitoring/thumbnail_01.webp",
-    "thumbnailAlt": "An empty stainless dry-storage test canister on a secured laboratory support with small contact sensors attached, a technician checking a sensor connection",
+    "thumbnailAlt": "A stainless test canister with attached sensors on a coastal test stand (AI-generated scene) with the headline \"Dry storage canisters, monitored continuously\"",
     "url": "posts/news/2026-11-25-dry-storage-canister-monitoring.html",
     "keywords": "Dry Cask Storage Used Nuclear Fuel Spent Fuel Storage Acoustic Emission Passive Monitoring Continuous Monitoring INL Guidedwave San Onofre Holtec UMAX NRC NUREG2214 Aging Management Nondestructive Evaluation Nuclear"
   },
@@ -34,7 +34,7 @@ const posts = [
     "category": "Large Reactors",
     "summary": "On 2026-11-23 Westinghouse Canada and BWXT Canada announced supplier qualification contracts for major AP1000 components. Cambridge, Ontario makes steam-generator demonstration pieces and York, Pennsylvania makes reactor-vessel internals demonstration pieces; commercial supply would come later as separate orders after a positive qualification decision.",
     "thumbnail": "assets/images/news/2026-11-25-ap1000-manufacturing-qualification/thumbnail_01.webp",
-    "thumbnailAlt": "Workshop scene representing AP1000 manufacturing qualification; a technician inspects the edge of a demonstration piece",
+    "thumbnailAlt": "A steam generator U-tube bundle in a fabrication workshop (AI-generated scene) with the headline \"AP1000 key components enter qualification\"",
     "url": "posts/news/2026-11-25-ap1000-manufacturing-qualification.html",
     "keywords": "nuclear AP1000 Westinghouse BWXT steamgenerator reactorinternals Cambridge York 10CFR50Appendix B NUREG1793 supplierqualification demonstrationpieces nuclearsupplychain"
   },
@@ -47,7 +47,7 @@ const posts = [
     "category": "Fuel Cycle",
     "summary": "Standard Nuclear submitted final DSAs for its Tennessee and Idaho TRISO plants. DOE guidance illustrates general readiness steps; the company has not disclosed whether the two facilities use the DOE-STD-1271-2026 pathway.",
     "thumbnail": "assets/images/news/2026-11-24-triso-facility-dsa-readiness/thumbnail_01.webp",
-    "thumbnailAlt": "An enlarged TRISO particle cutaway in front of generic fuel fabrication equipment",
+    "thumbnailAlt": "TRISO coated particles and graphite fuel compacts in a steel tray (AI-generated scene) with the headline \"TRISO fuel plants: safety before startup\"",
     "url": "posts/news/2026-11-24-triso-facility-dsa-readiness.html",
     "keywords": "nuclear TRISO Standard Nuclear DOE DSA TSR DOESTD12712026 NEO4251 Si C nuclearfuel Idaho Tennessee SNTN SNID fuelfabrication"
   },
@@ -60,7 +60,7 @@ const posts = [
     "category": "Policy & Regulation",
     "summary": "NRC's final interim staff guidance DANU-ISG-2026-02 sets the two conditions and site-specific caveats for reusing DOE and DOW demonstration safety evidence in commercial Part 50 and Part 52 applications.",
     "thumbnail": "assets/images/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.webp",
-    "thumbnailAlt": "Two-card comparison of DANU-ISG-2026-02 guidance and 10 CFR 50.43(f) and 53.440(a)(1) rule, with effective dates and roles",
+    "thumbnailAlt": "A demonstration reactor building and a meteorological mast at dusk (AI-generated scene) with the headline \"Reusing demo data for licensing\"",
     "url": "posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html",
     "keywords": "nuclear NRC DOE DOW ISG DANUISG202602 10CFR50 10CFR53 demonstrationreactor commercialreactor licensing atmosphericdispersion priorapproval non LWR riskinformedperformancebased"
   },
@@ -73,7 +73,7 @@ const posts = [
     "category": "Fuel Cycle",
     "summary": "Deep Isolation signed a three-year ARPA-E agreement for a non-radioactive UCS demonstration in Texas while Posiva's Olkiluoto encapsulation plant handled its first real transfer cask without fuel.",
     "thumbnail": "assets/images/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.webp",
-    "thumbnailAlt": "Summary card of Posiva's first real transfer cask arrival at the encapsulation plant on 19 Nov 2026 (no fuel loaded, route extended from a few hundred metres to about 3 km, next step is the fuel transfer machine test with no date set)",
+    "thumbnailAlt": "A transfer cask on a trailer driving through forest towards a plant (AI-generated scene) with the headline \"Real transfer cask, received without fuel\"",
     "url": "posts/news/2026-11-24-disposal-demonstration-transfer-tests.html",
     "keywords": "nuclear spent fuel disposal facility Deep Isolation ARPA-E UCS deep borehole Posiva Olkiluoto TVO Fortum STUK e Vinci encapsulation plant transfer cask"
   },

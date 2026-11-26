@@ -41,6 +41,29 @@ def markdown(text):
     for i,f in enumerate(formulas):result=result.replace(f'GNNMATHPLACEHOLDER{i}END',html.escape(f))
     return result
 
+PHONE_MEDIA='(max-width: 600px)'
+TWIN_RULE='picture-v1'  # bump when the phone-twin markup/encoding rule changes (invalidates the import cache)
+def twin_of(p):
+    """1080x1350 phone portrait twin `<id>_m.<ext>` beside an article image (2026-11-26)."""
+    return p.with_name(p.stem+'_m'+p.suffix)
+def twin_state(sources):
+    """Cache dependency (Codex review r4 F02): for every image the article actually resolved (any folder that
+    locate() supports), whether its phone twin exists and its content hash."""
+    out=[]
+    for s in sorted({str(x) for x in sources}):
+        q=Path(s)
+        if q.stem.endswith('_m'):continue
+        tw=twin_of(q);out.append([str(tw),sha(tw) if tw.is_file() else None])
+    return out
+def sources_current(images):
+    """Cache hit requires every resolved image source to still hold the bytes recorded at import (r4 F01)."""
+    try:return all(sha(Path(im['source']))==im['source_sha256'] for im in images)
+    except OSError:return False
+def add_twin(soup,img,mobile_src):
+    """<picture><source media srcset=twin><img></picture>; returns the element to place in a figure."""
+    pic=soup.new_tag('picture');img.wrap(pic)
+    pic.insert(0,soup.new_tag('source',attrs={'media':PHONE_MEDIA,'srcset':mobile_src,'width':'1080','height':'1350'}))
+    return pic
 def locate(base,name):
     value=unquote(urlsplit(name).path)
     if urlsplit(name).scheme or value.startswith('/') or '..' in Path(value).parts:
@@ -60,6 +83,8 @@ def main():
     byurl={p['url']:p for p in posts};assert len(pairs)==len(byurl) and {r['url'] for r in pairs}==set(byurl)
     vocab=json.loads(read(ROOT/'locales/ko/ui.json'))|json.loads(read(ROOT/'locales/ko/categories.json'))
     records=[];evidence=[];jobs={};issues=[];errors=[]
+    prev_path=args.map.parent/'import-evidence.json'
+    previous={im['output']:(im['source_sha256'],im.get('output_sha256')) for r in (json.loads(read(prev_path)) if prev_path.is_file() else []) for im in r.get('images',[])}
     cache=args.map.parent/'import-cache';cache.mkdir(exist_ok=True)
     def prepare(row):
         if len(row['ko'])!=1:raise ValueError('Exactly one Korean final required: '+row['url'])
@@ -67,7 +92,7 @@ def main():
         cachepath=cache/(slug+'.json')
         if cachepath.exists():
             c=json.loads(read(cachepath));out=ROOT/'locales/ko'/row['url']
-            if c['source_sha256']==sha(src) and c['record']['en_sha256']==sha(ROOT/row['url']) and out.exists() and sha(out)==c['record']['ko_sha256']:
+            if c['source_sha256']==sha(src) and c.get('twin_rule')==TWIN_RULE and sources_current(c['evidence']['images']) and c.get('twins')==twin_state(im['source'] for im in c['evidence']['images']) and c['record']['en_sha256']==sha(ROOT/row['url']) and out.exists() and sha(out)==c['record']['ko_sha256']:
                 records.append(c['record']);evidence.append(c['evidence'])
                 for im in c['evidence']['images']:
                     if not im['shared']:jobs[ROOT/im['output']]=(Path(im['source']),'.thumb.' in im['output'],im['source_sha256'])
@@ -86,6 +111,8 @@ def main():
         for el in soup.find_all():
             for attr in list(el.attrs):
                 if attr.startswith('on') or attr in ('style','srcset'):del el[attr]
+        for el in soup.find_all('source'):el.decompose()  # srcset was stripped above; twins are re-added below
+        for el in soup.find_all('picture'):el.unwrap()
         # Use only actual referenced final figures. Match original EN source bytes
         # to share unlabelled historical photographs without a second encoding.
         image_receipts=[]
@@ -110,9 +137,11 @@ def main():
                 p=src.parent/'nrc-assets'/Path(value).name
             else:p=locate(base,value)
             img['src']=asset(p);img['loading']='lazy'
+            # 2026-11-26: <id>_m.<ext> beside the source is the 1080x1350 phone portrait twin -> <picture> below 600 px
+            box=add_twin(soup,img,asset(twin_of(p))) if twin_of(p).is_file() else img
             if not img.get('alt'):img['alt']=title+' 설명 그림'
             if not img.find_parent('figure'):
-                figure=soup.new_tag('figure',attrs={'class':'article-image'});img.wrap(figure)
+                figure=soup.new_tag('figure',attrs={'class':'article-image'});box.wrap(figure)
         for a in soup.find_all('a',href=True):
             href=a['href']
             if src.name=='nrc-original.html' and re.search(r'\.(?:png|webp|jpg)$',href):
@@ -138,13 +167,14 @@ def main():
             # 2026-11-18: in-article hero uses the full-size encode (1440px); the 640px .thumb stays for list cards only.
             hero=asset(thumb,False) if thumb else thumbnail
             fig=soup.new_tag('figure',attrs={'class':'article-image'});im=soup.new_tag('img',src=hero,alt=title+' 대표 이미지');fig.append(im);soup.insert(0,fig)
+            if thumb and twin_of(thumb).is_file():add_twin(soup,im,asset(twin_of(thumb)))  # 2026-11-26 phone portrait twin
         body=str(soup)
         if '이미지 삽입:' in body:raise ValueError('Unresolved image anchor: '+str(src))
         out=ROOT/'locales/ko'/row['url'];out.parent.mkdir(parents=True,exist_ok=True);out.write_text(body,encoding='utf8')
         record=dict(en,title=title,summary=summary,category=vocab[en['category']],thumbnail=thumbnail,thumbnailAlt=title+' 대표 이미지',keywords=title+' '+en.get('keywords',''),en_sha256=sha(ROOT/row['url']),ko_sha256=sha(out))
         receipt=dict(url=row['url'],source=str(src),source_sha256=sha(src),en_sha256=record['en_sha256'],ko_sha256=record['ko_sha256'],images=image_receipts)
         records.append(record);evidence.append(receipt)
-        dump(cachepath,{'source_sha256':sha(src),'record':record,'evidence':receipt})
+        dump(cachepath,{'source_sha256':sha(src),'twin_rule':TWIN_RULE,'twins':twin_state(im['source'] for im in receipt['images']),'record':record,'evidence':receipt})
         if len(records)%50==0:print('Prepared',len(records),'/',len(pairs),flush=True)
     def safe_prepare(row):
         try:prepare(row)
@@ -157,10 +187,15 @@ def main():
     records.sort(key=lambda r:order[r['url']]);evidence.sort(key=lambda r:order[r['url']])
     def encode(item):
         target,(p,thumb,digest)=item;target.parent.mkdir(parents=True,exist_ok=True)
-        if target.exists() and target.stat().st_mtime>=p.stat().st_mtime:return
+        # 2026-11-26: skip only when the previous import encoded this target from the SAME source bytes (mtime-based
+        # skipping missed changed sources after a checkout refreshed the target's mtime)
+        # and only while the existing output still has the recorded bytes (r4 F01: a changed output is re-encoded)
+        if target.exists() and previous.get(target.relative_to(ROOT).as_posix())==(digest,sha(target)):return
         with Image.open(p) as im:
-            im.thumbnail((640,640) if thumb else (1440,2000))
-            im.convert('RGBA' if im.mode in ('RGBA','LA') else 'RGB').save(target,'AVIF',quality=60 if not thumb else 40,speed=6)  # 2026-11-18: 42→60 for new encodes; existing files are skipped above
+            # 2026-11-25: text in explanatory images blurred at 1440 px/q60 (cards 640 px/q40); keep the 1600 px master
+            # width and encode text-safe quality for NEW encodes (existing files are skipped above; storage impact ~1 MB/day).
+            im.thumbnail((640,640) if thumb else (1600,2000))
+            im.convert('RGBA' if im.mode in ('RGBA','LA') else 'RGB').save(target,'AVIF',quality=85 if not thumb else 70,speed=6)
     print('Encoding',len(jobs),'Korean images',flush=True)
     with ThreadPoolExecutor(max_workers=8) as pool:list(pool.map(encode,jobs.items()))
     for row in evidence:

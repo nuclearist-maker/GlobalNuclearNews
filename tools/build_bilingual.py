@@ -1,6 +1,7 @@
 """Install portable Korean inputs after English enrichment, then link both editions."""
 from pathlib import Path
 from urllib.parse import unquote
+from html.parser import HTMLParser
 import hashlib,html,json,re,shutil,posixpath
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
@@ -9,6 +10,38 @@ from search_discovery import BASE,SECTIONS,enrich,content_html_files
 
 PREFIX='/GlobalNuclearNews/'
 KBASE=BASE+'ko/'
+def image_manifest(inputs,assets):
+    """Every hash manifest that may own a deployed Korean image: locales/ko/assets.json (news, theory, concepts,
+    history; verified against the files before this is called) and the PE import rows' `assets` maps."""
+    owned=dict(assets)
+    pe=inputs/'pe/posts.json'
+    if pe.is_file():
+        for row in json.loads(read(pe)):owned.update(row.get('assets') or {})
+    return owned
+def copy_images(references,root,out,owned):
+    """Copy every referenced Korean image (src/href/srcset, incl. phone twins) into the deployed site. Each must be
+    owned by a manifest with a matching hash (Codex review r4/r5 F04); otherwise the build fails."""
+    def one(ref):
+        rel=unquote(ref.removeprefix(PREFIX));src=(root/rel).resolve()
+        if not src.is_relative_to((root/'assets/images/ko').resolve()) or not src.is_file():raise ValueError('BILINGUAL: missing/unsafe image '+ref)
+        if rel not in owned:raise ValueError('BILINGUAL: image not in any hash manifest '+ref)
+        if hashlib.sha256(src.read_bytes()).hexdigest()!=owned[rel]:raise ValueError('BILINGUAL: image hash differs from its manifest '+ref)
+        dst=out/rel;dst.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(src,dst)
+    with ThreadPoolExecutor(max_workers=16) as pool:list(pool.map(one,sorted(references)))
+class _AttrRefs(HTMLParser):
+    """src/href/srcset values from real HTML attribute parsing (any quoting or case; Codex review r5 F03)."""
+    def __init__(self,names):
+        super().__init__(convert_charrefs=True);self.names=names;self.refs=[]
+    def handle_starttag(self,tag,attrs):
+        for name,value in attrs:
+            if name in self.names and value:
+                parts=[p.strip().split()[0] for p in value.split(',') if p.strip()] if name=='srcset' else [value.strip()]
+                self.refs+=[p.split('#')[0].split('?')[0] for p in parts if p]
+    handle_startendtag=handle_starttag
+def image_refs(text):
+    """Korean image files a page needs in the deployed output: src, href and every srcset candidate (phone twins)."""
+    p=_AttrRefs({'src','href','srcset'});p.feed(text)
+    return {r for r in p.refs if r.startswith(PREFIX+'assets/images/ko/')}
 def digest(p):return hashlib.sha256(p.read_bytes().replace(b'\r\n',b'\n')).hexdigest()
 def read(p):return p.read_text(encoding='utf8')
 def vocabulary(root):
@@ -130,19 +163,17 @@ def install(root,out):
             for attr in ['href','src']:
                 if el.get(attr,'').startswith('../../assets/'):el[attr]=PREFIX+el[attr][6:]
         for im in source.select('figure img'):
-            if not im.find_parent('a'):im.wrap(source.new_tag('a',href=im['src']))
+            # 2026-11-26: keep <source> and <img> siblings inside <picture> (phone portrait twin) by linking the picture
+            box=im.parent if im.parent is not None and im.parent.name=='picture' else im
+            if not box.find_parent('a'):box.wrap(source.new_tag('a',href=im['src']))
         if re.search(r'\$\$|\\\(|\\\[',str(article)):
             cfg=source.new_tag('script');cfg.string="window.MathJax={tex:{inlineMath:[['$','$'],['\\\\(','\\\\)']]},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};";source.head.append(cfg)
             source.head.append(source.new_tag('script',src='https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js',defer=True))
         target=ko/p['url'];target.parent.mkdir(parents=True,exist_ok=True);target.write_text(localize(str(source),words),encoding='utf8')
     references=set()
-    for p in ko.rglob('*.html'):references.update(re.findall(r'(?:src|href)="(/GlobalNuclearNews/assets/images/ko/[^"?#]+)',read(p)))
+    for p in ko.rglob('*.html'):references.update(image_refs(read(p)))
     references.update(p['thumbnail'] for p in posts if '/assets/images/ko/' in p['thumbnail'])
-    def copy_image(ref):
-        rel=unquote(ref.removeprefix(PREFIX));src=(root/rel).resolve()
-        if not src.is_relative_to((root/'assets/images/ko').resolve()) or not src.is_file():raise ValueError('BILINGUAL: missing/unsafe image '+ref)
-        dst=out/rel;dst.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(src,dst)
-    with ThreadPoolExecutor(max_workers=16) as pool:list(pool.map(copy_image,references))
+    copy_images(references,root,out,image_manifest(inputs,assets))
     config=json.loads(read(root/'tools/search_config.json'));config['verification']={}
     enrich(ko,config,base=KBASE,language='ko',sections={s:words[label] for s,label in SECTIONS.items()})
     for p in content_html_files(ko):

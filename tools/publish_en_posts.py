@@ -1,10 +1,10 @@
 """Publish English posts from the writing folders into this GitHub Pages site.
 
 Sources (see tools/publish_sources.json):
-  theory   -> G:/내 드라이브/My_Claude/Blog-Nuclear/output-EN/<post>/web/
-  news     -> G:/내 드라이브/My_Claude/Blog/output/drafts_EN/<post>/web/
-  concepts -> G:/내 드라이브/My_Claude/Blog-Nuclear/output-pe-EN/<post>/web/
-  history  -> G:/내 드라이브/My_Claude/Blog-Nuclear/output-history/<post>/web/
+  theory   -> G:/내 드라이브/MY_CODEX/Global Nuclear Daily Brief/blog/nuclear/output-EN/<post>/web/
+  news     -> G:/내 드라이브/MY_CODEX/Global Nuclear Daily Brief/blog/news/output/drafts_EN/<post>/web/
+  concepts -> G:/내 드라이브/MY_CODEX/Global Nuclear Daily Brief/blog/nuclear/output-pe-EN/<post>/web/
+  history  -> G:/내 드라이브/MY_CODEX/Global Nuclear Daily Brief/blog/nuclear/output-history/<post>/web/
 
 Each post folder publishes only when it contains a web/ package:
   web/post.json      metadata; "status": "ready" to publish ("draft" = skip)
@@ -50,7 +50,8 @@ REQUIRED = ["status", "section", "slug", "title", "page_title", "description", "
             "subtitle", "date", "category", "summary", "list_title", "thumbnail",
             "thumbnailAlt", "keywords"]
 ASSET_V = "20261025-en2"
-IMG_RE = re.compile(r'(src|href)="([^"/\\:#?]+\.(?:png|jpe?g|webp|gif|svg))"', re.I)
+# srcset added 2026-11-26: a <picture><source srcset="<id>_m.png"> phone portrait twin is published like any image
+IMG_RE = re.compile(r'(src|href|srcset)="([^"/\\:#?]+\.(?:png|jpe?g|webp|gif|svg))"', re.I)
 KOREAN = re.compile(r"[\uac00-\ud7a3]")
 
 BRAND = ('<a class="brand" href="../../index.html" aria-label="GlobalNuclearNews home">'

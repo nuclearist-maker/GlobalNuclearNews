@@ -6,10 +6,10 @@ written elsewhere:
 
 | Board | Writing folder | Site location |
 |---|---|---|
-| Nuclear Theory | `G:\내 드라이브\My_Claude\Blog-Nuclear\output-EN\<NNN_slug>\` | `posts/theory/<slug>.html` |
-| Global Nuclear News | `G:\내 드라이브\My_Claude\Blog\output\drafts_EN\<YYYY-MM-DD-slug>\` | `posts/news/<slug>.html` |
-| Concept Dictionary | `G:\내 드라이브\My_Claude\Blog-Nuclear\output-pe-EN\<C-XX-NNN_slug>\` | `posts/concepts/<slug>.html` |
-| Nuclear History | `G:\내 드라이브\My_Claude\Blog-Nuclear\output-history\<NNN_slug>\` | `posts/history/<slug>.html` |
+| Nuclear Theory | `G:\내 드라이브\MY_CODEX\Global Nuclear Daily Brief\blog\nuclear\output-EN\<NNN_slug>\` | `posts/theory/<slug>.html` |
+| Global Nuclear News | `G:\내 드라이브\MY_CODEX\Global Nuclear Daily Brief\blog\news\output\drafts_EN\<YYYY-MM-DD-slug>\` | `posts/news/<slug>.html` |
+| Concept Dictionary | `G:\내 드라이브\MY_CODEX\Global Nuclear Daily Brief\blog\nuclear\output-pe-EN\<C-XX-NNN_slug>\` | `posts/concepts/<slug>.html` |
+| Nuclear History | `G:\내 드라이브\MY_CODEX\Global Nuclear Daily Brief\blog\nuclear\output-history\<NNN_slug>\` | `posts/history/<slug>.html` |
 
 A post folder may hold any working files (draft, fact sheet, figure sources, review notes).
 It is published only through its `web/` subfolder:

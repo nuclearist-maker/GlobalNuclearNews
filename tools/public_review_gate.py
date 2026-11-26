@@ -2,6 +2,7 @@
 from datetime import datetime
 from uuid import UUID
 from project_quality_gate import digest, local
+from review_identity import reviewer_errors
 
 def sha(value):
     return isinstance(value,str) and len(value)==64 and all(c in '0123456789abcdef' for c in value)
@@ -23,9 +24,9 @@ def public_review_errors(proof, root, kind, required, artifacts, author):
         sessions=set();last=None
         for checkpoint in required:
             r=proof['reviews'][checkpoint]
-            check(r['checkpoint']==checkpoint and r['provider']=='claude-code' and r['status']=='PASS' and r['exit_code']==0,'incomplete '+checkpoint)
+            check(r['checkpoint']==checkpoint and r['status']=='PASS' and r['exit_code']==0,'incomplete '+checkpoint)
             check(r['findings']==[] and r['limitations']==[],'unresolved '+checkpoint)
-            check('Claude Code' in r['cli_version'],'CLI identity missing')
+            for msg in reviewer_errors(r['provider'],r['cli_version'],author):check(False,checkpoint+': '+msg)
             sid=r['session_id'];check(str(UUID(sid))==sid and sid not in sessions,'invalid/reused session');sessions.add(sid)
             start=datetime.fromisoformat(r['started_at']);end=datetime.fromisoformat(r['finished_at'])
             check(start.tzinfo is not None and end.tzinfo is not None and start<=end<=exported and (last is None or start>=last),'invalid review ordering');last=end

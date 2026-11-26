@@ -4,6 +4,7 @@ from uuid import UUID
 import hashlib
 import json
 from project_quality_gate import digest, local, read
+from review_identity import reviewer_errors
 
 CHECKPOINTS = ['direction', 'plan', 'research', 'design', 'draft', 'final']
 
@@ -29,9 +30,9 @@ def response_errors(raw, request):
         errors.append('unsuccessful CLI response or missing session')
     try:
         if str(UUID(raw.get('session_id', ''))) != raw.get('session_id'):
-            errors.append('noncanonical Claude session UUID')
+            errors.append('noncanonical reviewer session UUID')
     except (ValueError, TypeError, AttributeError):
-        errors.append('invalid Claude session UUID')
+        errors.append('invalid reviewer session UUID')
     result = raw.get('structured_output')
     if not isinstance(result, dict):
         return errors + ['missing structured_output']
@@ -58,6 +59,85 @@ def response_errors(raw, request):
     return errors
 
 
+def codex_events_errors(text, raw):
+    """Structural check of a `codex exec --json` event log against the normalized response (r2 F01).
+
+    Requires exactly one thread.started whose thread_id is the response session, a turn.completed,
+    no turn.failed/error event, and a final agent_message whose JSON equals structured_output.
+    """
+    # Ordered turn tracking (2026-11-26 Codex workflow review F01): every turn must be
+    # thread.started -> turn.started -> items -> turn.completed; the adopted response is the last
+    # agent_message of the LAST turn and that turn must have completed. A later unfinished turn, a
+    # completion without a start, or any event after the final completion is rejected.
+    errors, threads, failed, final = [], [], False, None
+    open_turn, turn_msg, turns_done, after_done = False, None, 0, False
+    for line in text.splitlines():
+        if not line.strip():
+            continue
+        try:
+            ev = json.loads(line)
+        except ValueError:
+            return ['codex events log is not valid JSONL']
+        kind = ev.get('type')
+        if not open_turn and kind not in ('thread.started', 'turn.started'):
+            # 2026-11-26 Codex workflow review r2 F01: any item/completion outside an open turn is a permanent
+            # ordering error; a later well-formed turn must not clear it.
+            errors.append('codex %s event outside a started turn' % (kind or 'untyped'))
+        if turns_done and not open_turn and kind != 'turn.started':
+            after_done = True  # anything but a new turn after a completed turn
+        if kind == 'thread.started':
+            if open_turn or turns_done:
+                errors.append('codex thread.started inside or after a turn')
+            threads.append(ev.get('thread_id'))
+        elif kind == 'turn.started':
+            if open_turn or not threads:
+                errors.append('codex turn.started without a thread or inside an open turn')
+            open_turn, turn_msg, after_done = True, None, False
+        elif kind == 'turn.completed':
+            if not open_turn:
+                errors.append('codex turn.completed without a started turn')
+            final, open_turn, turns_done = turn_msg, False, turns_done + 1
+        elif kind in ('turn.failed', 'error'):
+            failed = True
+        elif kind == 'item.completed' and isinstance(ev.get('item'), dict) and ev['item'].get('type') == 'agent_message':
+            if not open_turn:
+                errors.append('codex agent_message outside a started turn')
+            turn_msg = ev['item'].get('text')
+    if threads != [raw.get('session_id')] or not raw.get('session_id'):
+        errors.append('codex events log does not belong to exactly this session')
+    if not turns_done or open_turn or failed or after_done:
+        errors.append('codex turn did not complete successfully')
+    try:
+        if final is None or json.loads(final) != raw.get('structured_output'):
+            errors.append('codex final message differs from normalized response')
+    except ValueError:
+        errors.append('codex final message is not the structured response')
+    return errors
+
+
+def provider_evidence_errors(receipt, raw, read_bound):
+    """Bind the recorded provider to the provider-specific raw evidence (2026-11-25 independent review F01).
+
+    read_bound(path, sha) must return file text only when the hash matches, else raise ValueError.
+    """
+    errors = []
+    provider = receipt.get('provider')
+    if provider == 'claude-code':
+        if raw.get('type') != 'result' or 'provider' in raw:
+            errors.append('raw response is not a Claude Code CLI result')
+    elif provider == 'codex':
+        if raw.get('provider') != 'codex':
+            errors.append('raw response provider is not codex')
+        events = receipt.get('events')
+        if not isinstance(events, str):
+            errors.append('codex events log not bound in receipt')
+        else:
+            errors += codex_events_errors(read_bound(events, receipt.get('events_sha256')), raw)
+    else:
+        errors.append('unknown reviewer provider')
+    return errors
+
+
 def review_errors(manifest, root, kind, required, artifacts, author, *, public_site=False):
     if manifest.get('version') == 2:
         if not public_site:
@@ -80,10 +160,11 @@ def review_errors(manifest, root, kind, required, artifacts, author, *, public_s
         for checkpoint in required:
             entry = reviews.get(checkpoint, {})
             receipt = read(bound(entry['receipt'], entry['sha256']))
-            if receipt.get('provider') != 'claude-code' or receipt.get('exit_code') != 0 or receipt.get('status') != 'PASS':
+            if receipt.get('exit_code') != 0 or receipt.get('status') != 'PASS':
                 fail(checkpoint + ': incomplete/failed execution')
-            if not isinstance(receipt.get('cli_version'), str) or 'Claude Code' not in receipt['cli_version']:
-                fail(checkpoint + ': missing Claude Code CLI version')
+            # Cross-family independence: Codex-authored -> Claude Code, Claude-authored -> Codex.
+            for msg in reviewer_errors(receipt.get('provider'), receipt.get('cli_version'), author):
+                fail(checkpoint + ': ' + msg)
             request = read(bound(receipt['request'], receipt['request_sha256']))
             raw = read(bound(receipt['response'], receipt['response_sha256']))
             if request.get('kind') != kind or request.get('checkpoint') != checkpoint:
@@ -91,6 +172,8 @@ def review_errors(manifest, root, kind, required, artifacts, author, *, public_s
             if request.get('author') != author:
                 fail(checkpoint + ': author mismatch')
             for msg in response_errors(raw, request): fail(checkpoint + ': ' + msg)
+            for msg in provider_evidence_errors(receipt, raw, lambda n, h: bound(n, h).read_text(encoding='utf-8')):
+                fail(checkpoint + ': ' + msg)
             session = raw.get('session_id')
             if session in sessions or session != receipt.get('session_id'):
                 fail(checkpoint + ': reused/mismatched reviewer session')

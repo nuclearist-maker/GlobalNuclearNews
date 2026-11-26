@@ -12608,11 +12608,11 @@
     "category": "정책 및 규제",
     "summary": "11월 23일 발효 DANU-ISG-2026-02가 제시하는 재사용 조건과 추가 입증 범위를 정리합니다.",
     "thumbnail": "/GlobalNuclearNews/assets/images/ko/news/2026-11-24-nrc-doe-dow-evidence-isg/thumbnail_01.thumb.avif",
-    "thumbnailAlt": "DANU-ISG-2026-02 지침과 10 CFR 50.43(f)·53.440(a)(1) 규정의 발효일·역할 비교 카드",
+    "thumbnailAlt": "황혼의 실증 원자로 건물과 기상 관측탑(AI 생성 장면)과 \"실증자료를 상업 인허가 근거로\" 제목",
     "url": "posts/news/2026-11-24-nrc-doe-dow-evidence-isg.html",
     "keywords": "미국 실증 원자로 안전자료의 상업 인허가 활용 조건 nuclear NRC DOE DOW ISG DANUISG202602 10CFR50 10CFR53 demonstrationreactor commercialreactor licensing atmosphericdispersion priorapproval non LWR riskinformedperformancebased",
-    "en_sha256": "1586c45c1286edf957846a1b04471ceb74c11d73f8052822e2b63b55ef36392d",
-    "ko_sha256": "9c05c3db6009f6de60fa19218577aa3f667248c3fc362763542d9b21d0788105"
+    "en_sha256": "464bce493065dfd3535ce17fae21c8fc63facf3e10e8ae8b05b99f78b56f8464",
+    "ko_sha256": "5357396d1cd2ad80a2eef54be17e5bcc4812e35c56fef9791596d8a3f14022d6"
   },
   {
     "title": "미국 TRISO 연료 제조시설의 안전심사와 가동 준비 조건",
@@ -12623,11 +12623,11 @@
     "category": "핵연료주기",
     "summary": "테네시·아이다호 두 시설의 최종 DSA 제출과 DOE 준비도 검토까지의 공개 이정표",
     "thumbnail": "/GlobalNuclearNews/assets/images/ko/news/2026-11-24-triso-facility-dsa-readiness/thumbnail_01.thumb.avif",
-    "thumbnailAlt": "연료 제조설비 앞에 놓인 TRISO 입자 단면 확대 모형",
+    "thumbnailAlt": "스테인리스 쟁반에 담긴 TRISO 피복입자와 흑연 연료 컴팩트(AI 생성 장면)과 \"TRISO 연료공장 가동 전 안전 확인\" 제목",
     "url": "posts/news/2026-11-24-triso-facility-dsa-readiness.html",
     "keywords": "미국 TRISO 연료 제조시설의 안전심사와 가동 준비 조건 nuclear TRISO Standard Nuclear DOE DSA TSR DOESTD12712026 NEO4251 Si C nuclearfuel Idaho Tennessee SNTN SNID fuelfabrication",
-    "en_sha256": "41176f2e36f507c6ddeb35bd77f415cb25cfdf95581322464480b751f5ec002f",
-    "ko_sha256": "969a41bc63bae0304b4866810878e8e4b790f294f9badeba46c981baad2cec34"
+    "en_sha256": "f780dcde8479dd8d8f5d102d2cfc553fa8b9df12541c649c1f61173de48eb82f",
+    "ko_sha256": "b87da2c5d2e7fdeff4f51a012a20e1a8c54977abb8f031df52e6f5b70310b2b2"
   },
   {
     "title": "사용후핵연료 처분시설의 가동 전 시험 범위",
@@ -12638,11 +12638,11 @@
     "category": "핵연료주기",
     "summary": "사용후핵연료를 다루는 사업에서 \"용기 시험\"이라는 말이 서로 다른 의미로 쓰일 때가 있습니다. 2026년 11월 23일과 24일, 미국과 핀란드에서 한 건씩 발표가 나왔습니다. 미국 Deep Isolation은 심부시추공 처분용 범용 용기 시스템(Universal Canister System, UCS)을 텍사스에서 비방사성 물질로 실규모 실증하겠다는 3년 협약을 맺었고, 핀란드…",
     "thumbnail": "/GlobalNuclearNews/assets/images/ko/news/2026-11-24-disposal-demonstration-transfer-tests/thumbnail_01.thumb.avif",
-    "thumbnailAlt": "Posiva 봉입시설이 2026-11-19에 실제 이송용기를 처음 받은 시험 요약 카드(연료 미장전, 운반거리 수백 m → 약 3 km, 다음 단계는 연료이송기 작동 시험, 일정 미정)",
+    "thumbnailAlt": "숲길을 지나 시설로 향하는 트레일러 위 이송용기(AI 생성 장면)과 \"빈 이송용기, 봉입시설 첫 인수\" 제목",
     "url": "posts/news/2026-11-24-disposal-demonstration-transfer-tests.html",
     "keywords": "사용후핵연료 처분시설의 가동 전 시험 범위 nuclear spent fuel disposal facility Deep Isolation ARPA-E UCS deep borehole Posiva Olkiluoto TVO Fortum STUK e Vinci encapsulation plant transfer cask",
-    "en_sha256": "270d09cd03bfab865a70e69600be038b4c8edf3a77007866fb2419822eee0b49",
-    "ko_sha256": "b744fe9f57b906b5a19387e096b0b599af430c7630c0b21f3b071c605d9c1fe1"
+    "en_sha256": "4bd04f2c5ff53ce9ec8151d6bb02e26cf3afb478a3edae36c43b671662ca9050",
+    "ko_sha256": "251e5b1471cd17eabb06056cbabdc58a30071471cc24533807e02940dda4aac5"
   },
   {
     "title": "AP1000 주요 기기의 제작 자격화와 상업 공급 진입 조건",
@@ -12653,11 +12653,11 @@
     "category": "대형 원전",
     "summary": "원전 뉴스에서 \"공급 계약 체결\"이라는 문구를 보면 당장 발전소에 쓰일 큰 부품이 주문된 것으로 생각하기 쉽습니다. 그런데 실제 공급망에서는 발주자가 공급자에게 그 부품을 만들 수 있는 역량이 있는지 먼저 시험 제작으로 확인하고, 그 결과를 토대로 뒤이은 상업 발주를 별도의 계약으로 체결하는 경우가 많습니다. 2026년 11월 23일 북미에서 나온 AP1000 관련 발표가 바로 그 앞…",
     "thumbnail": "/GlobalNuclearNews/assets/images/ko/news/2026-11-25-ap1000-manufacturing-qualification/thumbnail_01.thumb.avif",
-    "thumbnailAlt": "AP1000 주요 기기 제작 자격화 작업을 상징하는 작업장 장면 — 기술자가 시제품의 가장자리를 계측하는 모습",
+    "thumbnailAlt": "제작 공장의 증기발생기 U자관 다발(AI 생성 장면)과 \"AP1000 핵심 기기, 제작 자격화 시작\" 제목",
     "url": "posts/news/2026-11-25-ap1000-manufacturing-qualification.html",
     "keywords": "AP1000 주요 기기의 제작 자격화와 상업 공급 진입 조건 nuclear AP1000 Westinghouse BWXT steamgenerator reactorinternals Cambridge York 10CFR50Appendix B NUREG1793 supplierqualification demonstrationpieces nuclearsupplychain",
-    "en_sha256": "f8ed6cbe63aa2d6caaad79124ada1990e62760c73eb55a497fcd11efa26a3805",
-    "ko_sha256": "0584926397b8da39f67ffa6835dd5b8f58e18b0b2934a245acf4dbd931e55fc3"
+    "en_sha256": "1b3a5e099d92ecb57bfbbf938b8338dbe5984707c838ef9ba7826affcbda6304",
+    "ko_sha256": "6dfa224b8a8762a371f2afbfa8b0ca27a07d5ae26ed7388fd2485065250850cf"
   },
   {
     "title": "EPR2 원자로용기 내부구조물의 제조·조립과 납품 준비",
@@ -12668,11 +12668,11 @@
     "category": "대형 원전",
     "summary": "새 원전 이야기가 나오면 거대한 돔과 냉각탑이 먼저 떠오릅니다. 그러나 실제 원자로의 심장은 두꺼운 압력용기 안에 조용히 들어앉은 금속 바구니입니다. 2026년 11월 24일, 프랑스 프라마톰(Framatome)은 르크뢰조에 이 금속 바구니를 전용으로 만드는 원자로용기 내부구조물 공장 을 열었습니다. 같은 해 7월부터 생산은 이미 시작되어 있었고, 첫 납품 개시는 2032년으로…",
     "thumbnail": "/GlobalNuclearNews/assets/images/ko/news/2026-11-25-epr2-internals-manufacturing/thumbnail_01.thumb.avif",
-    "thumbnailAlt": "설명용 제조장 조립 지그 위의 원자로용기 내부구조물 바구니와 지지 격자",
+    "thumbnailAlt": "크레인에 매달린 원자로 내부구조물 조립품(AI 생성 장면)과 \"EPR2 내부구조물 전용 공장 개소\" 제목",
     "url": "posts/news/2026-11-25-epr2-internals-manufacturing.html",
     "keywords": "EPR2 원자로용기 내부구조물의 제조·조립과 납품 준비 epr2 reactor-vessel-internals framatome le-creusot france-nuclear reactor-pressure-vessel fuel-assembly precision-assembly traceability nuclear-manufacturing large-reactor nuclear-supply-chain nuclear",
-    "en_sha256": "42f8e865a72ca376ba7aa214a99ea7983709b734a416a6d013a5fa0991ea6194",
-    "ko_sha256": "39e20118e810fb069e2365804d8a86bdb7227ebc8a8ebaa2f6e7a3aa917c40b0"
+    "en_sha256": "e149acc205a4a4cb2cf4942dd44cc3565b6e3db3145b96d3f91110663f4c3d9c",
+    "ko_sha256": "826e300fa5777e54c18ad07849de1c7c87c9bf17c28bbb66f4e672baaee2f9c3"
   },
   {
     "title": "사용후핵연료 건식저장 용기의 자동감시 실증과 적용 조건",
@@ -12683,10 +12683,10 @@
     "category": "핵연료주기",
     "summary": "원자력발전소 마당 한편에 세워진 두꺼운 금속 용기들을 보신 적이 있으실 겁니다. 그 안에는 원자로에서 꺼낸 사용후핵연료 가 들어 있고, 용기는 수십 년에 걸쳐 열을 식히며 보관됩니다. 많은 분들이 궁금해하시는 지점은 분명합니다. \"저렇게 오래 두어도 용기는 괜찮은가? 안쪽 상태는 어떻게 확인하는가?\" 주기적 검사에서는 전문 장비를 투입하며, 한 가지 예로 원격 카메라로 용기 외부를…",
     "thumbnail": "/GlobalNuclearNews/assets/images/ko/news/2026-11-25-dry-storage-canister-monitoring/thumbnail_01.thumb.avif",
-    "thumbnailAlt": "실험실에 안전하게 거치된 빈 스테인리스 건식저장 시험용기와 외부에 부착된 작은 접촉식 센서, 센서 연결을 점검하는 작업자",
+    "thumbnailAlt": "바닷가 시험대 위 센서를 부착한 스테인리스 시험용기(AI 생성 장면)과 \"건식저장 용기, 연속 감시 실증\" 제목",
     "url": "posts/news/2026-11-25-dry-storage-canister-monitoring.html",
     "keywords": "사용후핵연료 건식저장 용기의 자동감시 실증과 적용 조건 Dry Cask Storage Used Nuclear Fuel Spent Fuel Storage Acoustic Emission Passive Monitoring Continuous Monitoring INL Guidedwave San Onofre Holtec UMAX NRC NUREG2214 Aging Management Nondestructive Evaluation Nuclear",
-    "en_sha256": "70c65b49d3b8fc910f914a56f2e6ead7a1ef3b4bf9c328ccd0f882faade390f8",
-    "ko_sha256": "7b19417c4551f5d16846d02c2364403cff25ea62d165f0b291329cfe13ff5e35"
+    "en_sha256": "7428d0f21545e5a8b11c8164c56ced1f142f03f4e77ec670f8fc0f0836ea2c57",
+    "ko_sha256": "bab82e6c1c8e9613307a7dcbea9f74159aa6be9e9051c8366ea579bf60c42d6c"
   }
 ]
