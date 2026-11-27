@@ -1,5 +1,44 @@
 const posts = [
   {
+    "title": "A Cyber Incident in Uranium Mining Control Systems: The Lance Suspension and the Reach of U.S. Nuclear Cyber Rules",
+    "date": "2026.11.27",
+    "displayDate": "2026.11.27",
+    "publishedAt": "2026-11-27T18:23:55Z",
+    "section": "news",
+    "category": "Fuel Cycle",
+    "summary": "On 20 November 2026 a cybersecurity incident was identified in the plant and wellfield operating and control systems of the Lance uranium project in Wyoming, and operations were temporarily shut down. The reactor cybersecurity rule 10 CFR 73.54 is in force, the fuel cycle 73.53 paper was withdrawn in July 2025, and that draft's scope list has no entry for in-situ recovery sites. The company anticipates announcing restart timing before normal trading on 30 November.",
+    "thumbnail": "assets/images/news/2026-11-27-lance-uranium-isr-cyber-rules/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail with a headline and key dates over a uranium in-situ recovery wellfield with a header house and well covers on a prairie",
+    "url": "posts/news/2026-11-27-lance-uranium-isr-cyber-rules.html",
+    "keywords": "uranium in-situ-recovery cybersecurity control-systems Lance Peninsula Energy Strata Energy NRC 10CFR73.54 fuel-cycle-facilities Agreement-State Wyoming design-basis-threat nuclear"
+  },
+  {
+    "title": "An SMR Control Room Simulator for Indonesia: Five Areas of U.S. FIRST Support and Where the Nuclear Program Stands",
+    "date": "2026.11.27",
+    "displayDate": "2026.11.27",
+    "publishedAt": "2026-11-27T18:23:55Z",
+    "section": "news",
+    "category": "SMR",
+    "summary": "On November 20, 2026 the United States announced an SMR control room simulator and support for siting, regulation, workforce and waste management for Indonesia under the FIRST program. Indonesia has nuclear targets in its national plans, while the reactor design, supplier and implementing organization are unconfirmed in public documents.",
+    "thumbnail": "assets/images/news/2026-11-27-indonesia-smr-simulator-first-program/thumbnail_01.webp",
+    "thumbnailAlt": "Thumbnail with a headline and summary chips over a training room where an instructor and a trainee sit at a control room simulator console",
+    "url": "posts/news/2026-11-27-indonesia-smr-simulator-first-program.html",
+    "keywords": "SMRControl Room Simulator Indonesia Nuclear FIRSTProgram Small Modular Reactor Nuclear Newcomer BRIN BAPETEN KEN RUPTL INIR NEPIO Site License Design Approval Nuclear Regulation Nuclear Energy"
+  },
+  {
+    "title": "The 10 µSv Clearance Criterion and the Industry's \"Practical Lower Bound\": How Clearance Levels Differ Under One Dose Basis",
+    "date": "2026.11.27",
+    "displayDate": "2026.11.27",
+    "publishedAt": "2026-11-27T18:23:55Z",
+    "section": "news",
+    "category": "Policy & Regulation",
+    "summary": "On 25 November 2026 the World Nuclear Association issued a position statement that proposed a practical cut-off for very low doses. The current clearance criterion is of the order of 10 µSv in a year, and under that same dose basis Germany's specific clearance with limits on use and quantity moves the Co-60 landfill level from 0.1 Bq/g to 2–6 Bq/g.",
+    "thumbnail": "assets/images/news/2026-11-27-clearance-10-usv-practical-lower-bound/thumbnail_01.webp",
+    "thumbnailAlt": "A worker surveying cut metal scrap with a handheld contamination monitor at a dismantling site, with a title plate showing the 10 µSv clearance criterion, the Co-60 generic level of 0.1 Bq/g and the German specific levels of 2–6 Bq/g",
+    "url": "posts/news/2026-11-27-clearance-10-usv-practical-lower-bound.html",
+    "keywords": "clearance specific-clearance practical-cut-off very-low-dose trivial-dose LNT decommissioning World-Nuclear-Association IAEA ICRP GSR-Part-3 GSG-18 radiological-protection nuclear"
+  },
+  {
     "title": "White Mesa Mill Restarts Uranium Processing in December: Why One Mill Moves U.S. Quarterly Output",
     "date": "2026.11.26",
     "displayDate": "2026.11.26",
